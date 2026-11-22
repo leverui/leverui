@@ -78,6 +78,8 @@ jobs:
           node-version: 24
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      # The packed consumer test drives the built example in Chromium.
+      - run: pnpm exec playwright install --with-deps chromium
       - run: pnpm test:packed-consumer
       - run: pnpm test:release-bundles
       - run: pnpm --dir website build
