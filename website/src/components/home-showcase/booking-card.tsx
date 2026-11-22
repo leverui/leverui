@@ -52,26 +52,9 @@ function BookingFlow(): JSX.Element {
   }
 
   return (
-    <Show
-      when={!booked()}
-      fallback={
-        <div class="home-example-stack">
-          <Alert.Root status="success" size="sm">
-            <Alert.Indicator />
-            <Alert.Content>
-              <Alert.Title>You're booked</Alert.Title>
-              <Alert.Description>
-                {dayLabel()} at {formatTime(time())}. We sent you an invite.
-              </Alert.Description>
-            </Alert.Content>
-          </Alert.Root>
-          <Button type="button" variant="outline" size="sm" onClick={reset}>
-            Book another call
-          </Button>
-        </div>
-      }
-    >
-      <div class="home-example-stack">
+    <div class="home-showcase-booking">
+      {/* The form stays in place, hidden, so the card keeps its height after booking. */}
+      <div class={booked() ? 'home-example-stack home-showcase-hidden' : 'home-example-stack'}>
         <DatePicker.Root
           inline
           size="sm"
@@ -120,7 +103,23 @@ function BookingFlow(): JSX.Element {
           </Button>
         </Show>
       </div>
-    </Show>
+      <Show when={booked()}>
+        <div class="home-example-stack home-showcase-booked">
+          <Alert.Root status="success" size="sm">
+            <Alert.Indicator />
+            <Alert.Content>
+              <Alert.Title>You're booked</Alert.Title>
+              <Alert.Description>
+                {dayLabel()} at {formatTime(time())}. We sent you an invite.
+              </Alert.Description>
+            </Alert.Content>
+          </Alert.Root>
+          <Button type="button" variant="outline" size="sm" onClick={reset}>
+            Book another call
+          </Button>
+        </div>
+      </Show>
+    </div>
   );
 }
 

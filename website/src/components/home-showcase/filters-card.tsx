@@ -43,8 +43,8 @@ export function FiltersCard(): JSX.Element {
           >
             <div class="home-example-row home-showcase-between">
               <Slider.Label>Price</Slider.Label>
-              <span class="home-showcase-hint">
-                ${price()[0]} to ${price()[1]}
+              <span class="home-showcase-hint home-showcase-price">
+                <span>${price()[0]}</span> to <span>${price()[1]}</span>
               </span>
             </div>
             <Slider.Control>
