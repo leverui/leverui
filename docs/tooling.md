@@ -18,7 +18,8 @@ root:
 | `pnpm build`                    | Bundles, declarations, default CSS, package smoke test     |
 
 GitHub Actions runs lint, formatting, typecheck, tests, the package checks, and
-the website build on every pull request and push to `main`. See
+the website build on every pull request and push to `main`, as four parallel
+jobs. Typecheck is the slowest, at about an hour. See
 `.github/workflows/ci.yml`.
 
 `pnpm format` applies Prettier. `pnpm lint:fix` applies only safe ESLint fixes;
