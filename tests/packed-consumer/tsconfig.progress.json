@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/progress-types.tsx", "src/progress-main.tsx"],
+  "exclude": []
+}

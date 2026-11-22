@@ -1,0 +1,4 @@
+.avatar-example-ring {
+  outline: 2px solid var(--leverui-colors-color-palette-500);
+  outline-offset: 2px;
+}

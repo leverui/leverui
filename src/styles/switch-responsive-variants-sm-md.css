@@ -1,0 +1,71 @@
+@layer leverui.recipes {
+  @media (min-width: 480px) {
+    .leverui-switch__root:not([data-unstyled]) {
+      &[data-variant-sm='solid'] {
+        --leverui-private-switch-control-height: var(--leverui-private-switch-height);
+        --leverui-private-switch-control-bg: var(--leverui-colors-bg-emphasized);
+        --leverui-private-switch-control-checked-bg: var(--leverui-colors-color-palette-solid);
+        --leverui-private-switch-control-shadow: none;
+        --leverui-private-switch-control-focus-width: 2px;
+        --leverui-private-switch-thumb-position: static;
+        --leverui-private-switch-thumb-top: 0px;
+        --leverui-private-switch-thumb-scale: 0.8;
+        --leverui-private-switch-thumb-shadow: var(--leverui-shadows-sm);
+        --leverui-private-switch-thumb-checked-bg: var(--leverui-colors-color-palette-contrast);
+        --leverui-private-switch-thumb-focus-width: 0px;
+      }
+      &[data-variant-sm='raised'] {
+        --leverui-private-switch-control-height: calc(var(--leverui-private-switch-height) / 2);
+        --leverui-private-switch-control-bg: var(--leverui-colors-bg-muted);
+        --leverui-private-switch-control-checked-bg: color-mix(
+          in srgb,
+          var(--leverui-colors-color-palette-solid) 60%,
+          transparent
+        );
+        --leverui-private-switch-control-shadow: var(--leverui-shadows-inset);
+        --leverui-private-switch-control-focus-width: 0px;
+        --leverui-private-switch-thumb-position: relative;
+        --leverui-private-switch-thumb-top: calc(var(--leverui-private-switch-height) * -0.25);
+        --leverui-private-switch-thumb-scale: 1;
+        --leverui-private-switch-thumb-shadow: var(--leverui-shadows-xs);
+        --leverui-private-switch-thumb-checked-bg: var(--leverui-colors-color-palette-solid);
+        --leverui-private-switch-thumb-focus-width: 2px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .leverui-switch__root:not([data-unstyled]) {
+      &[data-variant-md='solid'] {
+        --leverui-private-switch-control-height: var(--leverui-private-switch-height);
+        --leverui-private-switch-control-bg: var(--leverui-colors-bg-emphasized);
+        --leverui-private-switch-control-checked-bg: var(--leverui-colors-color-palette-solid);
+        --leverui-private-switch-control-shadow: none;
+        --leverui-private-switch-control-focus-width: 2px;
+        --leverui-private-switch-thumb-position: static;
+        --leverui-private-switch-thumb-top: 0px;
+        --leverui-private-switch-thumb-scale: 0.8;
+        --leverui-private-switch-thumb-shadow: var(--leverui-shadows-sm);
+        --leverui-private-switch-thumb-checked-bg: var(--leverui-colors-color-palette-contrast);
+        --leverui-private-switch-thumb-focus-width: 0px;
+      }
+      &[data-variant-md='raised'] {
+        --leverui-private-switch-control-height: calc(var(--leverui-private-switch-height) / 2);
+        --leverui-private-switch-control-bg: var(--leverui-colors-bg-muted);
+        --leverui-private-switch-control-checked-bg: color-mix(
+          in srgb,
+          var(--leverui-colors-color-palette-solid) 60%,
+          transparent
+        );
+        --leverui-private-switch-control-shadow: var(--leverui-shadows-inset);
+        --leverui-private-switch-control-focus-width: 0px;
+        --leverui-private-switch-thumb-position: relative;
+        --leverui-private-switch-thumb-top: calc(var(--leverui-private-switch-height) * -0.25);
+        --leverui-private-switch-thumb-scale: 1;
+        --leverui-private-switch-thumb-shadow: var(--leverui-shadows-xs);
+        --leverui-private-switch-thumb-checked-bg: var(--leverui-colors-color-palette-solid);
+        --leverui-private-switch-thumb-focus-width: 2px;
+      }
+    }
+  }
+}

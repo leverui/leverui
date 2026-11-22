@@ -1,0 +1,10 @@
+.date-picker-calendar-time-divider {
+  border-bottom-width: 1px;
+}
+
+@media (min-width: 768px) {
+  .date-picker-calendar-time-divider {
+    border-inline-end-width: 1px;
+    border-bottom-width: 0;
+  }
+}

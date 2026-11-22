@@ -1,0 +1,41 @@
+@layer leverui.recipes {
+  .leverui-spacer:not([data-unstyled]) {
+    flex: var(--leverui-spacer-flex, 1);
+    justify-self: stretch;
+    align-self: stretch;
+  }
+
+  .leverui-spacer[data-spacer-flex-base] {
+    flex: var(--leverui-private-spacer-flex-base);
+  }
+
+  @media (min-width: 30rem) {
+    .leverui-spacer[data-spacer-flex-sm] {
+      flex: var(--leverui-private-spacer-flex-sm);
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .leverui-spacer[data-spacer-flex-md] {
+      flex: var(--leverui-private-spacer-flex-md);
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .leverui-spacer[data-spacer-flex-lg] {
+      flex: var(--leverui-private-spacer-flex-lg);
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .leverui-spacer[data-spacer-flex-xl] {
+      flex: var(--leverui-private-spacer-flex-xl);
+    }
+  }
+
+  @media (min-width: 96rem) {
+    .leverui-spacer[data-spacer-flex-2xl] {
+      flex: var(--leverui-private-spacer-flex-2xl);
+    }
+  }
+}

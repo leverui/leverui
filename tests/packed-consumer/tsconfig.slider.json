@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/slider-types.tsx", "src/slider-example.tsx", "src/slider-main.tsx"],
+  "exclude": []
+}

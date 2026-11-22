@@ -1,0 +1,72 @@
+@layer leverui.recipes {
+  @media (min-width: 480px) {
+    .leverui-select__trigger:not([data-unstyled])[data-variant-sm='outline'] {
+      --leverui-private-select-background: transparent;
+      --leverui-private-select-border-width: 1px;
+      --leverui-private-select-border-color: var(
+        --leverui-select-border-color,
+        var(--leverui-colors-border)
+      );
+      --leverui-private-select-open-background: transparent;
+      --leverui-private-select-open-border-color: var(--leverui-colors-border-emphasized);
+    }
+    .leverui-select__trigger:not([data-unstyled])[data-variant-sm='subtle'] {
+      --leverui-private-select-background: var(
+        --leverui-select-subtle-background,
+        var(--leverui-colors-bg-muted)
+      );
+      --leverui-private-select-border-width: 1px;
+      --leverui-private-select-border-color: transparent;
+      --leverui-private-select-open-background: var(
+        --leverui-select-subtle-background,
+        var(--leverui-colors-bg-muted)
+      );
+      --leverui-private-select-open-border-color: transparent;
+    }
+    .leverui-select__trigger:not([data-unstyled])[data-variant-sm='ghost'] {
+      --leverui-private-select-background: transparent;
+      --leverui-private-select-border-width: 0;
+      --leverui-private-select-border-color: transparent;
+      --leverui-private-select-open-background: var(
+        --leverui-select-subtle-background,
+        var(--leverui-colors-bg-muted)
+      );
+      --leverui-private-select-open-border-color: transparent;
+    }
+  }
+  @media (min-width: 768px) {
+    .leverui-select__trigger:not([data-unstyled])[data-variant-md='outline'] {
+      --leverui-private-select-background: transparent;
+      --leverui-private-select-border-width: 1px;
+      --leverui-private-select-border-color: var(
+        --leverui-select-border-color,
+        var(--leverui-colors-border)
+      );
+      --leverui-private-select-open-background: transparent;
+      --leverui-private-select-open-border-color: var(--leverui-colors-border-emphasized);
+    }
+    .leverui-select__trigger:not([data-unstyled])[data-variant-md='subtle'] {
+      --leverui-private-select-background: var(
+        --leverui-select-subtle-background,
+        var(--leverui-colors-bg-muted)
+      );
+      --leverui-private-select-border-width: 1px;
+      --leverui-private-select-border-color: transparent;
+      --leverui-private-select-open-background: var(
+        --leverui-select-subtle-background,
+        var(--leverui-colors-bg-muted)
+      );
+      --leverui-private-select-open-border-color: transparent;
+    }
+    .leverui-select__trigger:not([data-unstyled])[data-variant-md='ghost'] {
+      --leverui-private-select-background: transparent;
+      --leverui-private-select-border-width: 0;
+      --leverui-private-select-border-color: transparent;
+      --leverui-private-select-open-background: var(
+        --leverui-select-subtle-background,
+        var(--leverui-colors-bg-muted)
+      );
+      --leverui-private-select-open-border-color: transparent;
+    }
+  }
+}

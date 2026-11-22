@@ -1,0 +1,12 @@
+.em-story-normal {
+  font-style: normal;
+}
+
+.em-story-reactive {
+  color: var(--leverui-colors-red-500);
+}
+
+.em-story-reactive.em-story-plain {
+  color: var(--leverui-colors-blue-500);
+  font-style: normal;
+}

@@ -1,0 +1,15 @@
+.checkbox-card-example-table {
+  border-collapse: collapse;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.checkbox-card-example-table thead {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.checkbox-card-example-table td {
+  padding-bottom: 32px;
+  padding-right: 32px;
+}

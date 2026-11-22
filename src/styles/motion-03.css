@@ -1,0 +1,170 @@
+@layer leverui.base {
+  @-webkit-keyframes slide-from-bottom-full {
+    from {
+      -webkit-translate: 0 100%;
+      -moz-translate: 0 100%;
+      -ms-translate: 0 100%;
+      translate: 0 100%;
+    }
+    to {
+      -webkit-translate: 0 0;
+      -moz-translate: 0 0;
+      -ms-translate: 0 0;
+      translate: 0 0;
+    }
+  }
+  @keyframes slide-from-bottom-full {
+    from {
+      -webkit-translate: 0 100%;
+      -moz-translate: 0 100%;
+      -ms-translate: 0 100%;
+      translate: 0 100%;
+    }
+    to {
+      -webkit-translate: 0 0;
+      -moz-translate: 0 0;
+      -ms-translate: 0 0;
+      translate: 0 0;
+    }
+  }
+  @-webkit-keyframes slide-to-left-full {
+    from {
+      -webkit-translate: 0 0;
+      -moz-translate: 0 0;
+      -ms-translate: 0 0;
+      translate: 0 0;
+    }
+    to {
+      -webkit-translate: -100% 0;
+      -moz-translate: -100% 0;
+      -ms-translate: -100% 0;
+      translate: -100% 0;
+    }
+  }
+  @keyframes slide-to-left-full {
+    from {
+      -webkit-translate: 0 0;
+      -moz-translate: 0 0;
+      -ms-translate: 0 0;
+      translate: 0 0;
+    }
+    to {
+      -webkit-translate: -100% 0;
+      -moz-translate: -100% 0;
+      -ms-translate: -100% 0;
+      translate: -100% 0;
+    }
+  }
+  @-webkit-keyframes slide-to-right-full {
+    from {
+      -webkit-translate: 0 0;
+      -moz-translate: 0 0;
+      -ms-translate: 0 0;
+      translate: 0 0;
+    }
+    to {
+      -webkit-translate: 100% 0;
+      -moz-translate: 100% 0;
+      -ms-translate: 100% 0;
+      translate: 100% 0;
+    }
+  }
+  @keyframes slide-to-right-full {
+    from {
+      -webkit-translate: 0 0;
+      -moz-translate: 0 0;
+      -ms-translate: 0 0;
+      translate: 0 0;
+    }
+    to {
+      -webkit-translate: 100% 0;
+      -moz-translate: 100% 0;
+      -ms-translate: 100% 0;
+      translate: 100% 0;
+    }
+  }
+  @-webkit-keyframes slide-to-top-full {
+    from {
+      -webkit-translate: 0 0;
+      -moz-translate: 0 0;
+      -ms-translate: 0 0;
+      translate: 0 0;
+    }
+    to {
+      -webkit-translate: 0 -100%;
+      -moz-translate: 0 -100%;
+      -ms-translate: 0 -100%;
+      translate: 0 -100%;
+    }
+  }
+  @keyframes slide-to-top-full {
+    from {
+      -webkit-translate: 0 0;
+      -moz-translate: 0 0;
+      -ms-translate: 0 0;
+      translate: 0 0;
+    }
+    to {
+      -webkit-translate: 0 -100%;
+      -moz-translate: 0 -100%;
+      -ms-translate: 0 -100%;
+      translate: 0 -100%;
+    }
+  }
+  @-webkit-keyframes slide-to-bottom-full {
+    from {
+      -webkit-translate: 0 0;
+      -moz-translate: 0 0;
+      -ms-translate: 0 0;
+      translate: 0 0;
+    }
+    to {
+      -webkit-translate: 0 100%;
+      -moz-translate: 0 100%;
+      -ms-translate: 0 100%;
+      translate: 0 100%;
+    }
+  }
+  @keyframes slide-to-bottom-full {
+    from {
+      -webkit-translate: 0 0;
+      -moz-translate: 0 0;
+      -ms-translate: 0 0;
+      translate: 0 0;
+    }
+    to {
+      -webkit-translate: 0 100%;
+      -moz-translate: 0 100%;
+      -ms-translate: 0 100%;
+      translate: 0 100%;
+    }
+  }
+  @-webkit-keyframes slide-from-top {
+    0% {
+      -webkit-translate: 0 calc(var(--leverui-private-slide-from-top-distance, 0.5rem) * -1);
+      -moz-translate: 0 calc(var(--leverui-private-slide-from-top-distance, 0.5rem) * -1);
+      -ms-translate: 0 calc(var(--leverui-private-slide-from-top-distance, 0.5rem) * -1);
+      translate: 0 calc(var(--leverui-private-slide-from-top-distance, 0.5rem) * -1);
+    }
+    to {
+      -webkit-translate: 0;
+      -moz-translate: 0;
+      -ms-translate: 0;
+      translate: 0;
+    }
+  }
+  @keyframes slide-from-top {
+    0% {
+      -webkit-translate: 0 calc(var(--leverui-private-slide-from-top-distance, 0.5rem) * -1);
+      -moz-translate: 0 calc(var(--leverui-private-slide-from-top-distance, 0.5rem) * -1);
+      -ms-translate: 0 calc(var(--leverui-private-slide-from-top-distance, 0.5rem) * -1);
+      translate: 0 calc(var(--leverui-private-slide-from-top-distance, 0.5rem) * -1);
+    }
+    to {
+      -webkit-translate: 0;
+      -moz-translate: 0;
+      -ms-translate: 0;
+      translate: 0;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@layer leverui.recipes {
+  .leverui-checkbox__indicator:not([data-unstyled]) {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 3px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .leverui-checkbox__control .leverui-checkbox__indicator:not([data-unstyled]) {
+    width: 100%;
+    height: 100%;
+  }
+
+  .leverui-checkbox__indicator [data-glyph] {
+    display: none;
+  }
+
+  .leverui-checkbox__indicator[data-state='indeterminate'] [data-glyph='indeterminate'],
+  .leverui-checkbox__indicator[data-state='checked'] [data-glyph='checked'] {
+    display: inline;
+  }
+}

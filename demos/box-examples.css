@@ -1,0 +1,38 @@
+.box-example-panel {
+  padding: var(--leverui-spacing-4);
+  border-radius: var(--leverui-radii-l2);
+  background: var(--leverui-colors-bg-muted);
+}
+
+.box-example-heading {
+  margin-block-end: var(--leverui-spacing-1);
+}
+
+.box-example-card {
+  max-width: var(--leverui-sizes-sm);
+  border-width: 1px;
+}
+
+.box-example-card-body {
+  padding: var(--leverui-spacing-4);
+}
+
+.box-example-card-body > :not(style, [hidden]) ~ :not(style, [hidden]) {
+  margin-block-start: var(--leverui-spacing-2);
+}
+.box-property-star {
+  color: var(--leverui-colors-orange-400);
+}
+
+.box-example-rating,
+.box-example-title {
+  font-weight: var(--leverui-font-weights-medium);
+}
+
+.box-example-title {
+  color: var(--leverui-colors-fg);
+}
+
+.box-example-meta {
+  color: var(--leverui-colors-fg-muted);
+}

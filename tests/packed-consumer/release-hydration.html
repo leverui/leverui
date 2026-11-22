@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lever UI release hydration</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.__releaseServerInput = document.querySelector('[data-testid="release-input"]');
+      window.__releaseServerLabel = document.querySelector('label[for]');
+      window.__releaseServerLabelFor = window.__releaseServerLabel?.htmlFor;
+      window.__releaseServerInputId = window.__releaseServerInput?.id;
+      window.__releaseServerStyleCount = document.querySelectorAll('style').length;
+      window.__releaseServerButton = document.querySelector('[data-testid="release-validate"]');
+      window.__releaseServerButtonBackground = getComputedStyle(
+        window.__releaseServerButton,
+      ).backgroundColor;
+    </script>
+    <script type="module" src="/src/release-hydration-client.mjs"></script>
+  </body>
+</html>

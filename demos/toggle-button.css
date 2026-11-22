@@ -1,0 +1,31 @@
+.toggle-example-solid-when-pressed[aria-pressed='true'] {
+  background-color: var(--leverui-colors-color-palette-solid);
+  color: var(--leverui-colors-color-palette-contrast);
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.toggle-example-solid-when-pressed[aria-pressed='true']:hover:not(:disabled) {
+  background-color: color-mix(in srgb, var(--leverui-colors-color-palette-solid) 90%, transparent);
+}
+
+.toggle-example-blue[aria-pressed='true'] {
+  background-color: var(--leverui-colors-blue-500);
+}
+
+.toggle-example-blue[aria-pressed='true']:hover:not(:disabled) {
+  background-color: var(--leverui-colors-blue-500);
+}
+
+.toggle-example-red[aria-pressed='true'] {
+  background-color: var(--leverui-colors-red-solid);
+  color: var(--leverui-colors-red-contrast);
+}
+
+.toggle-example-red[aria-pressed='true']:hover:not(:disabled) {
+  background-color: color-mix(in srgb, var(--leverui-colors-red-solid) 90%, transparent);
+}
+
+.toggle-example-red[aria-pressed='true']:focus-visible {
+  outline-color: var(--leverui-colors-red-focus-ring);
+}

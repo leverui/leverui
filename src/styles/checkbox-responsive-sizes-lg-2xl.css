@@ -1,0 +1,74 @@
+@layer leverui.recipes {
+  @media (min-width: 1024px) {
+    .leverui-checkbox:not([data-unstyled]) {
+      &[data-size-lg='xs'] {
+        --leverui-private-checkbox-gap: var(--leverui-spacing-1\.5);
+        --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-xs);
+        --leverui-private-checkbox-label-line-height: 1rem;
+      }
+      &[data-size-lg='sm'] {
+        --leverui-private-checkbox-gap: var(--leverui-spacing-2);
+        --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-checkbox-label-line-height: 1.25rem;
+      }
+      &[data-size-lg='md'] {
+        --leverui-private-checkbox-gap: var(--leverui-spacing-2\.5);
+        --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-checkbox-label-line-height: 1.25rem;
+      }
+      &[data-size-lg='lg'] {
+        --leverui-private-checkbox-gap: var(--leverui-spacing-3);
+        --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-md);
+        --leverui-private-checkbox-label-line-height: 1.5rem;
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    .leverui-checkbox:not([data-unstyled]) {
+      &[data-size-xl='xs'] {
+        --leverui-private-checkbox-gap: var(--leverui-spacing-1\.5);
+        --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-xs);
+        --leverui-private-checkbox-label-line-height: 1rem;
+      }
+      &[data-size-xl='sm'] {
+        --leverui-private-checkbox-gap: var(--leverui-spacing-2);
+        --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-checkbox-label-line-height: 1.25rem;
+      }
+      &[data-size-xl='md'] {
+        --leverui-private-checkbox-gap: var(--leverui-spacing-2\.5);
+        --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-checkbox-label-line-height: 1.25rem;
+      }
+      &[data-size-xl='lg'] {
+        --leverui-private-checkbox-gap: var(--leverui-spacing-3);
+        --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-md);
+        --leverui-private-checkbox-label-line-height: 1.5rem;
+      }
+    }
+  }
+  @media (min-width: 1536px) {
+    .leverui-checkbox:not([data-unstyled]) {
+      &[data-size-2xl='xs'] {
+        --leverui-private-checkbox-gap: var(--leverui-spacing-1\.5);
+        --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-xs);
+        --leverui-private-checkbox-label-line-height: 1rem;
+      }
+      &[data-size-2xl='sm'] {
+        --leverui-private-checkbox-gap: var(--leverui-spacing-2);
+        --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-checkbox-label-line-height: 1.25rem;
+      }
+      &[data-size-2xl='md'] {
+        --leverui-private-checkbox-gap: var(--leverui-spacing-2\.5);
+        --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-checkbox-label-line-height: 1.25rem;
+      }
+      &[data-size-2xl='lg'] {
+        --leverui-private-checkbox-gap: var(--leverui-spacing-3);
+        --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-md);
+        --leverui-private-checkbox-label-line-height: 1.5rem;
+      }
+    }
+  }
+}

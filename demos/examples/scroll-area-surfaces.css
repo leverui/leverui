@@ -1,0 +1,160 @@
+.scroll-area-example-copy {
+  font-size: var(--leverui-font-sizes-sm);
+  line-height: 1.25rem;
+}
+
+/* The scrollbar sits over the content, so text keeps clear of it on that side. */
+.scroll-area-example-copy,
+.scroll-area-example-gutter {
+  padding-inline-end: var(--leverui-spacing-5);
+}
+
+.scroll-area-example-basic {
+  height: 8.5rem;
+  max-width: var(--leverui-sizes-lg);
+}
+
+.scroll-area-example-stack {
+  max-width: var(--leverui-sizes-lg);
+}
+
+.scroll-area-example-label {
+  font-weight: var(--leverui-font-weights-medium);
+}
+
+.scroll-area-example-size {
+  height: 8rem;
+}
+
+.scroll-area-example-both {
+  height: 12rem;
+  width: var(--leverui-sizes-lg);
+  padding: var(--leverui-spacing-2);
+}
+
+/* Text also keeps clear of the horizontal scrollbar along the bottom. */
+.scroll-area-example-wide {
+  width: 40rem;
+  padding-block-end: var(--leverui-spacing-3);
+}
+
+.scroll-area-example-corner {
+  background: var(--leverui-colors-bg);
+}
+
+.scroll-area-example-horizontal,
+.scroll-area-example-rtl {
+  width: 24rem;
+}
+
+.scroll-area-example-horizontal-content {
+  padding-block: var(--leverui-spacing-4);
+}
+
+.scroll-area-example-row {
+  gap: var(--leverui-spacing-4);
+}
+
+.scroll-area-example-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--leverui-colors-bg-emphasized);
+  background-clip: padding-box;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  border-width: 1px;
+}
+
+.scroll-area-example-tile-horizontal {
+  flex-shrink: 0;
+  width: var(--leverui-sizes-40);
+  height: var(--leverui-sizes-20);
+  border-radius: var(--leverui-radii-sm);
+}
+
+.scroll-area-example-tile-shadow {
+  height: var(--leverui-sizes-20);
+}
+
+.scroll-area-example-shadow-root {
+  height: 20rem;
+  max-width: var(--leverui-sizes-lg);
+}
+
+.scroll-area-example-rtl {
+  height: 8rem;
+}
+
+.scroll-area-example-rtl-content {
+  padding: var(--leverui-spacing-2);
+  padding-inline-end: var(--leverui-spacing-5);
+}
+
+/* One sentence to a line, so neighboring sentences do not run together. */
+.scroll-area-example-rtl-content > span {
+  display: block;
+}
+
+.scroll-area-example-store {
+  height: 8.5rem;
+}
+
+.scroll-area-example-store .scroll-area-example-copy {
+  font-size: var(--leverui-font-sizes-md);
+  line-height: 1.5rem;
+}
+
+.scroll-area-example-thumb-root {
+  height: 8rem;
+  max-width: var(--leverui-sizes-2xl);
+}
+
+.scroll-area-example-thumb-copy {
+  font-size: var(--leverui-font-sizes-md);
+  line-height: 1.5rem;
+}
+
+.scroll-area-example-red-track {
+  background: var(--leverui-colors-red-subtle);
+}
+
+.scroll-area-example-red-thumb {
+  background: var(--leverui-colors-red-solid);
+}
+
+.scroll-area-example-controls {
+  max-width: var(--leverui-sizes-xl);
+}
+
+.scroll-area-example-control-root {
+  height: 8rem;
+  width: 24rem;
+}
+
+.scroll-area-example-copy > * + * {
+  margin-block-start: var(--leverui-spacing-4);
+}
+
+.scroll-area-example-shadow {
+  --scroll-shadow-size: 4rem;
+  mask-image: linear-gradient(#000, #000);
+}
+
+.scroll-area-example-shadow[data-overflow-y] {
+  mask-image: linear-gradient(
+    #000,
+    #000,
+    transparent 0,
+    #000 var(--scroll-shadow-size),
+    #000 calc(100% - var(--scroll-shadow-size)),
+    transparent
+  );
+}
+
+.scroll-area-example-shadow[data-overflow-y][data-at-top] {
+  mask-image: linear-gradient(180deg, #000 calc(100% - var(--scroll-shadow-size)), transparent);
+}
+
+.scroll-area-example-shadow[data-overflow-y][data-at-bottom] {
+  mask-image: linear-gradient(0deg, #000 calc(100% - var(--scroll-shadow-size)), transparent);
+}

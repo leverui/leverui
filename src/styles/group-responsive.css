@@ -1,0 +1,148 @@
+@layer leverui.recipes {
+  .leverui-group:not([data-unstyled], [data-leverui-private-style-runtime]) {
+    @media (min-width: 30rem) {
+      &[data-orientation-sm='horizontal'] {
+        flex-direction: row;
+      }
+      &[data-orientation-sm='vertical'] {
+        flex-direction: column;
+      }
+      &[data-grow-sm='true'] {
+        display: flex;
+        > * {
+          flex-grow: 1;
+          flex-basis: 0%;
+        }
+      }
+      &[data-grow-sm='false'] {
+        display: inline-flex;
+        > * {
+          flex-grow: 0;
+          flex-basis: auto;
+        }
+      }
+      &[data-attached-sm='true'] {
+        gap: 0;
+      }
+      &[data-attached-sm='false'] {
+        gap: var(--leverui-group-gap, 0.5rem);
+      }
+    }
+
+    @media (min-width: 48rem) {
+      &[data-orientation-md='horizontal'] {
+        flex-direction: row;
+      }
+      &[data-orientation-md='vertical'] {
+        flex-direction: column;
+      }
+      &[data-grow-md='true'] {
+        display: flex;
+        > * {
+          flex-grow: 1;
+          flex-basis: 0%;
+        }
+      }
+      &[data-grow-md='false'] {
+        display: inline-flex;
+        > * {
+          flex-grow: 0;
+          flex-basis: auto;
+        }
+      }
+      &[data-attached-md='true'] {
+        gap: 0;
+      }
+      &[data-attached-md='false'] {
+        gap: var(--leverui-group-gap, 0.5rem);
+      }
+    }
+
+    @media (min-width: 64rem) {
+      &[data-orientation-lg='horizontal'] {
+        flex-direction: row;
+      }
+      &[data-orientation-lg='vertical'] {
+        flex-direction: column;
+      }
+      &[data-grow-lg='true'] {
+        display: flex;
+        > * {
+          flex-grow: 1;
+          flex-basis: 0%;
+        }
+      }
+      &[data-grow-lg='false'] {
+        display: inline-flex;
+        > * {
+          flex-grow: 0;
+          flex-basis: auto;
+        }
+      }
+      &[data-attached-lg='true'] {
+        gap: 0;
+      }
+      &[data-attached-lg='false'] {
+        gap: var(--leverui-group-gap, 0.5rem);
+      }
+    }
+
+    @media (min-width: 80rem) {
+      &[data-orientation-xl='horizontal'] {
+        flex-direction: row;
+      }
+      &[data-orientation-xl='vertical'] {
+        flex-direction: column;
+      }
+      &[data-grow-xl='true'] {
+        display: flex;
+        > * {
+          flex-grow: 1;
+          flex-basis: 0%;
+        }
+      }
+      &[data-grow-xl='false'] {
+        display: inline-flex;
+        > * {
+          flex-grow: 0;
+          flex-basis: auto;
+        }
+      }
+      &[data-attached-xl='true'] {
+        gap: 0;
+      }
+      &[data-attached-xl='false'] {
+        gap: var(--leverui-group-gap, 0.5rem);
+      }
+    }
+
+    @media (min-width: 96rem) {
+      &[data-orientation-2xl='horizontal'] {
+        flex-direction: row;
+      }
+      &[data-orientation-2xl='vertical'] {
+        flex-direction: column;
+      }
+      &[data-grow-2xl='true'] {
+        display: flex;
+        > * {
+          flex-grow: 1;
+          flex-basis: 0%;
+        }
+      }
+      &[data-grow-2xl='false'] {
+        display: inline-flex;
+        > * {
+          flex-grow: 0;
+          flex-basis: auto;
+        }
+      }
+      &[data-attached-2xl='true'] {
+        gap: 0;
+      }
+      &[data-attached-2xl='false'] {
+        gap: var(--leverui-group-gap, 0.5rem);
+      }
+    }
+  }
+}

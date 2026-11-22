@@ -1,0 +1,11 @@
+.accordion-rich-actions > :not(style, [hidden]) ~ :not(style, [hidden]) {
+  margin-block-start: var(--leverui-spacing-4);
+}
+
+.accordion-rich-action-host {
+  position: relative;
+}
+
+.absolute-center-accordion-action {
+  inset-inline-end: 0;
+}

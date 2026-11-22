@@ -1,0 +1,87 @@
+@layer leverui.recipes {
+  .leverui-file-upload__root:not([data-unstyled])
+    .leverui-file-upload__itemGroup:not([data-unstyled]) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: var(--leverui-spacing-3);
+
+    &:empty {
+      display: none;
+    }
+  }
+
+  .leverui-file-upload__root:not([data-unstyled]) .leverui-file-upload__item:not([data-unstyled]) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: var(--leverui-spacing-4);
+    gap: var(--leverui-spacing-3);
+    background: var(--leverui-colors-bg);
+    border-width: 1px;
+    border-radius: var(--leverui-radii-l2);
+    font-size: var(--leverui-font-sizes-sm);
+    line-height: 1.25rem;
+    animation-name: fade-in;
+    animation-duration: var(--leverui-durations-moderate);
+  }
+
+  .leverui-file-upload__root:not([data-unstyled])
+    .leverui-file-upload__itemContent:not([data-unstyled]) {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: var(--leverui-spacing-0\.5);
+  }
+
+  .leverui-file-upload__root:not([data-unstyled])
+    .leverui-file-upload__itemName:not([data-unstyled]) {
+    color: var(--leverui-colors-fg);
+    font-weight: var(--leverui-font-weights-medium);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+  }
+
+  .leverui-file-upload__root:not([data-unstyled])
+    .leverui-file-upload__item-name-fill:not([data-unstyled]) {
+    flex: 1;
+  }
+
+  .leverui-file-upload__root:not([data-unstyled])
+    .leverui-file-upload__itemSizeText:not([data-unstyled]) {
+    color: var(--leverui-colors-fg-muted);
+    font-size: var(--leverui-font-sizes-xs);
+    line-height: 1rem;
+  }
+
+  .leverui-file-upload__root:not([data-unstyled])
+    .leverui-file-upload__itemDeleteTrigger:not([data-unstyled]) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    width: var(--leverui-sizes-5);
+    height: var(--leverui-sizes-5);
+    padding: 2px;
+    color: var(--leverui-colors-fg-muted);
+    cursor: var(--leverui-cursor-button);
+
+    &:is([data-disabled], [disabled], [aria-disabled='true']) {
+      cursor: var(--leverui-cursor-disabled);
+      opacity: 0.5;
+    }
+  }
+
+  .leverui-file-upload__root:not([data-unstyled])
+    .leverui-file-upload__itemPreview:not([data-unstyled]) {
+    color: var(--leverui-colors-fg-muted);
+
+    svg {
+      width: var(--leverui-spacing-4\.5);
+      height: var(--leverui-spacing-4\.5);
+    }
+  }
+}

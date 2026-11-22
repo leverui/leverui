@@ -1,0 +1,14 @@
+@layer leverui.recipes {
+  .leverui-skeleton:not([data-unstyled])[data-variant='shine'] {
+    --leverui-private-skeleton-background: var(--leverui-private-skeleton-shine-background);
+    --leverui-private-skeleton-background-size: 400% 100%;
+    --leverui-private-skeleton-animation: bg-position var(--leverui-skeleton-duration, 5s)
+      ease-in-out infinite;
+  }
+
+  .leverui-skeleton:not([data-unstyled])[data-variant='none'] {
+    --leverui-private-skeleton-background: none;
+    --leverui-private-skeleton-animation: none;
+    --leverui-private-skeleton-background-size: auto;
+  }
+}

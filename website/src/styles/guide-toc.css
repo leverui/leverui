@@ -1,0 +1,75 @@
+/* The On this page button stays in the corner and opens the section drawer. */
+.guide-toc-trigger {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border: 1px solid var(--site-border);
+  border-radius: 999px;
+  background: var(--site-panel);
+  color: var(--site-fg);
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 6px 20px var(--site-shadow);
+  cursor: pointer;
+}
+.guide-toc-trigger:hover {
+  border-color: var(--site-border-strong);
+  color: var(--site-fg);
+}
+.guide-toc-trigger:focus-visible {
+  outline: 2px solid var(--site-accent);
+  outline-offset: 2px;
+}
+.guide-toc-drawer {
+  position: relative;
+  background: var(--site-panel);
+  color: var(--site-fg);
+}
+.guide-toc-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: var(--leverui-radii-full);
+  background: transparent;
+  color: var(--site-muted);
+  cursor: pointer;
+}
+.guide-toc-close:hover {
+  background: var(--site-nav-hover-bg);
+  color: var(--site-fg);
+}
+.guide-toc {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.guide-toc a {
+  padding: 6px 12px;
+  border-radius: var(--leverui-radii-full);
+  color: var(--site-muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+.guide-toc a:hover {
+  background: var(--site-nav-hover-bg);
+  color: var(--site-fg);
+}
+.guide-toc a.nested {
+  padding-left: 26px;
+}
+@media (max-width: 640px) {
+  .guide-toc-trigger {
+    right: 16px;
+    bottom: 16px;
+  }
+}

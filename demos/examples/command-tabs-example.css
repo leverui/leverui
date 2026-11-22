@@ -1,0 +1,16 @@
+.command-tabs-category {
+  padding-inline: var(--leverui-spacing-3);
+  padding-block: var(--leverui-spacing-2);
+  border-bottom-width: 1px;
+}
+
+.command-tabs-list {
+  gap: var(--leverui-spacing-1);
+}
+
+.command-tabs-description {
+  overflow: hidden;
+  color: var(--leverui-colors-fg-subtle);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

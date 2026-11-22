@@ -1,0 +1,63 @@
+@layer leverui.recipes {
+  .leverui-sparkline:not([data-unstyled]) {
+    display: block;
+    overflow: visible;
+    width: var(--leverui-sparkline-width, 112px);
+    height: var(--leverui-sparkline-height, 48px);
+
+    .leverui-sparkline__gradient-start {
+      stop-color: var(--leverui-sparkline-color, var(--leverui-colors-teal-solid));
+      stop-opacity: 1;
+    }
+
+    .leverui-sparkline__gradient-end {
+      stop-color: var(--leverui-sparkline-color, var(--leverui-colors-teal-solid));
+      stop-opacity: 0.01;
+    }
+
+    .leverui-sparkline__area {
+      fill-opacity: var(--leverui-sparkline-area-opacity, 0.2);
+    }
+
+    &[data-gradient] .leverui-sparkline__area {
+      fill-opacity: var(--leverui-sparkline-area-opacity, 0.6);
+    }
+
+    .leverui-sparkline__area:not([fill]) {
+      fill: var(--leverui-sparkline-color, var(--leverui-colors-teal-solid));
+    }
+
+    .leverui-sparkline__line {
+      stroke: var(--leverui-sparkline-color, var(--leverui-colors-teal-solid));
+      stroke-width: var(--leverui-sparkline-line-width, 2);
+    }
+
+    .leverui-sparkline__bar {
+      fill: var(
+        --leverui-private-sparkline-bar-color,
+        var(--leverui-sparkline-color, var(--leverui-colors-teal-solid))
+      );
+    }
+
+    .leverui-sparkline__reference-line {
+      stroke: var(--leverui-sparkline-reference-color, var(--leverui-colors-border-emphasized));
+      stroke-dasharray: 4 4;
+    }
+
+    .leverui-sparkline__reference-label {
+      fill: var(--leverui-sparkline-label-color, var(--leverui-colors-fg-muted));
+      font-size: 12px;
+    }
+
+    .leverui-sparkline__active-guide {
+      stroke: var(--leverui-sparkline-color, var(--leverui-colors-teal-solid));
+      stroke-width: 1;
+    }
+
+    .leverui-sparkline__active-point {
+      fill: var(--leverui-sparkline-color, var(--leverui-colors-teal-solid));
+      stroke: var(--leverui-sparkline-active-point-stroke, var(--leverui-colors-bg));
+      stroke-width: 2;
+    }
+  }
+}

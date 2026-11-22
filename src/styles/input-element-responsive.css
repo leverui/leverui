@@ -1,0 +1,56 @@
+@layer leverui.recipes {
+  @media (min-width: 30rem) {
+    .leverui-input-element:not([data-unstyled])[data-placement-sm='start'] {
+      inset-inline-start: 0;
+      inset-inline-end: auto;
+    }
+    .leverui-input-element:not([data-unstyled])[data-placement-sm='end'] {
+      inset-inline-start: auto;
+      inset-inline-end: 0;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .leverui-input-element:not([data-unstyled])[data-placement-md='start'] {
+      inset-inline-start: 0;
+      inset-inline-end: auto;
+    }
+    .leverui-input-element:not([data-unstyled])[data-placement-md='end'] {
+      inset-inline-start: auto;
+      inset-inline-end: 0;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .leverui-input-element:not([data-unstyled])[data-placement-lg='start'] {
+      inset-inline-start: 0;
+      inset-inline-end: auto;
+    }
+    .leverui-input-element:not([data-unstyled])[data-placement-lg='end'] {
+      inset-inline-start: auto;
+      inset-inline-end: 0;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .leverui-input-element:not([data-unstyled])[data-placement-xl='start'] {
+      inset-inline-start: 0;
+      inset-inline-end: auto;
+    }
+    .leverui-input-element:not([data-unstyled])[data-placement-xl='end'] {
+      inset-inline-start: auto;
+      inset-inline-end: 0;
+    }
+  }
+
+  @media (min-width: 96rem) {
+    .leverui-input-element:not([data-unstyled])[data-placement-2xl='start'] {
+      inset-inline-start: 0;
+      inset-inline-end: auto;
+    }
+    .leverui-input-element:not([data-unstyled])[data-placement-2xl='end'] {
+      inset-inline-start: auto;
+      inset-inline-end: 0;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.example-dialog-body-bottom {
+  padding-bottom: var(--leverui-spacing-8);
+}
+
+.example-dialog-body-bottom-six {
+  padding-bottom: var(--leverui-spacing-6);
+}
+
+.example-dialog-body-top {
+  padding-top: var(--leverui-spacing-4);
+}
+
+.example-dialog-body-spaced > * + * {
+  margin-top: var(--leverui-spacing-4);
+}
+
+.example-dialog-body-context {
+  padding-top: var(--leverui-spacing-6);
+}
+
+.example-dialog-body-context > * + * {
+  margin-top: var(--leverui-spacing-3);
+}
+
+.example-dialog-description-gap {
+  margin-bottom: var(--leverui-spacing-4);
+}
+
+.example-dialog-close-outside {
+  top: 0;
+  inset-inline-end: calc(-1 * var(--leverui-spacing-12));
+  background: var(--leverui-colors-bg);
+}
+
+.example-dialog-video {
+  border-radius: var(--leverui-radii-lg);
+  overflow: hidden;
+}
+
+.example-dialog-popover-title {
+  font-weight: var(--leverui-font-weights-medium);
+}
+
+.example-dialog-popover-text {
+  margin-block: var(--leverui-spacing-4);
+}
+
+.example-dialog-blurred-backdrop {
+  backdrop-filter: blur(var(--leverui-blurs-md));
+  background: var(--leverui-colors-black-alpha-600);
+}

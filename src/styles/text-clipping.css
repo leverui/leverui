@@ -1,0 +1,19 @@
+@layer leverui.recipes {
+  .leverui-text {
+    &[data-truncate] {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    &[data-line-clamp='value'] {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: var(--leverui-private-text-line-clamp);
+      -webkit-box-orient: vertical;
+      text-wrap: wrap;
+    }
+    &[data-line-clamp='none'] {
+      -webkit-line-clamp: unset;
+    }
+  }
+}

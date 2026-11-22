@@ -1,0 +1,9 @@
+@layer leverui.recipes {
+  .leverui-avatar-group:not([data-unstyled]) {
+    --leverui-group-gap: 0px;
+
+    > .leverui-avatar__root ~ .leverui-avatar__root {
+      margin-inline-start: var(--leverui-avatar-group-overlap, calc(-1 * var(--leverui-spacing-3)));
+    }
+  }
+}

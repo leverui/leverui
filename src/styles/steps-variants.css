@@ -1,0 +1,52 @@
+@layer leverui.recipes {
+  .leverui-steps__root:not([data-unstyled])[data-variant='solid'] {
+    --leverui-private-steps-incomplete-bg: transparent;
+    --leverui-private-steps-incomplete-border-width: var(--leverui-private-steps-thickness);
+    --leverui-private-steps-current-bg: var(--leverui-colors-color-palette-muted);
+    --leverui-private-steps-current-border-width: var(--leverui-private-steps-thickness);
+    --leverui-private-steps-current-border-color: var(--leverui-colors-color-palette-solid);
+    --leverui-private-steps-current-color: var(--leverui-colors-color-palette-fg);
+    --leverui-private-steps-complete-bg: var(--leverui-colors-color-palette-solid);
+    --leverui-private-steps-complete-border-color: var(--leverui-colors-color-palette-solid);
+    --leverui-private-steps-complete-color: var(--leverui-colors-color-palette-contrast);
+    --leverui-private-steps-complete-separator-bg: var(--leverui-colors-color-palette-solid);
+  }
+
+  .leverui-steps__root:not([data-unstyled])[data-variant='subtle'] {
+    --leverui-private-steps-incomplete-bg: var(--leverui-colors-bg-muted);
+    --leverui-private-steps-incomplete-border-width: 0px;
+    --leverui-private-steps-current-bg: var(--leverui-colors-color-palette-muted);
+    --leverui-private-steps-current-border-width: 0px;
+    --leverui-private-steps-current-border-color: var(--leverui-colors-border);
+    --leverui-private-steps-current-color: var(--leverui-colors-color-palette-fg);
+    --leverui-private-steps-complete-bg: var(--leverui-colors-color-palette-emphasized);
+    --leverui-private-steps-complete-border-color: var(--leverui-colors-border);
+    --leverui-private-steps-complete-color: var(--leverui-colors-color-palette-fg);
+    --leverui-private-steps-complete-separator-bg: var(--leverui-colors-color-palette-emphasized);
+  }
+
+  .leverui-steps__root:not([data-unstyled]) .leverui-steps__indicator:not([data-unstyled]) {
+    &[data-incomplete] {
+      background: var(--leverui-private-steps-incomplete-bg);
+      border-style: solid;
+      border-width: var(--leverui-private-steps-incomplete-border-width);
+    }
+    &[data-current] {
+      background: var(--leverui-private-steps-current-bg);
+      border-style: solid;
+      border-width: var(--leverui-private-steps-current-border-width);
+      border-color: var(--leverui-private-steps-current-border-color);
+      color: var(--leverui-private-steps-current-color);
+    }
+    &[data-complete] {
+      background: var(--leverui-private-steps-complete-bg);
+      border-color: var(--leverui-private-steps-complete-border-color);
+      color: var(--leverui-private-steps-complete-color);
+    }
+  }
+
+  .leverui-steps__root:not([data-unstyled])
+    .leverui-steps__separator:not([data-unstyled])[data-complete] {
+    background: var(--leverui-private-steps-complete-separator-bg);
+  }
+}

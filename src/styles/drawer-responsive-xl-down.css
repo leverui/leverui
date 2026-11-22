@@ -1,0 +1,74 @@
+@layer leverui.recipes {
+  @media (max-width: 1279px) {
+    .leverui-drawer__content[data-leverui-drawer-css] {
+      &[data-size-xl-down='xs'] {
+        --leverui-private-drawer-size-max-width: var(--leverui-sizes-xs);
+        --leverui-private-drawer-height: auto;
+      }
+      &[data-size-xl-down='sm'] {
+        --leverui-private-drawer-size-max-width: var(--leverui-sizes-md);
+        --leverui-private-drawer-height: auto;
+      }
+      &[data-size-xl-down='md'] {
+        --leverui-private-drawer-size-max-width: var(--leverui-sizes-lg);
+        --leverui-private-drawer-height: auto;
+      }
+      &[data-size-xl-down='lg'] {
+        --leverui-private-drawer-size-max-width: var(--leverui-sizes-2xl);
+        --leverui-private-drawer-height: auto;
+      }
+      &[data-size-xl-down='xl'] {
+        --leverui-private-drawer-size-max-width: var(--leverui-sizes-4xl);
+        --leverui-private-drawer-height: auto;
+      }
+      &[data-size-xl-down='full'] {
+        --leverui-private-drawer-size-max-width: 100vw;
+        --leverui-private-drawer-height: 100dvh;
+      }
+      &[data-placement-xl-down='start'] {
+        --leverui-drawer-max-width: var(--leverui-private-drawer-size-max-width);
+        --leverui-private-drawer-open-animation: var(--leverui-private-drawer-start-open);
+        --leverui-private-drawer-closed-animation: var(--leverui-private-drawer-start-closed);
+      }
+      &[data-placement-xl-down='end'] {
+        --leverui-drawer-max-width: var(--leverui-private-drawer-size-max-width);
+        --leverui-private-drawer-open-animation: var(--leverui-private-drawer-end-open);
+        --leverui-private-drawer-closed-animation: var(--leverui-private-drawer-end-closed);
+      }
+      &[data-placement-xl-down='top'] {
+        --leverui-drawer-max-width: 100%;
+        --leverui-private-drawer-open-animation: slide-from-top-full, fade-in;
+        --leverui-private-drawer-closed-animation: slide-to-top-full, fade-out;
+      }
+      &[data-placement-xl-down='bottom'] {
+        --leverui-drawer-max-width: 100%;
+        --leverui-private-drawer-open-animation: slide-from-bottom-full, fade-in;
+        --leverui-private-drawer-closed-animation: slide-to-bottom-full, fade-out;
+      }
+      &[data-contained-xl-down='true'] {
+        --leverui-private-drawer-radius: var(--leverui-radii-l3);
+      }
+    }
+    .leverui-drawer__positioner[data-leverui-drawer-css] {
+      &[data-placement-xl-down='start'] {
+        justify-content: flex-start;
+        align-items: stretch;
+      }
+      &[data-placement-xl-down='end'] {
+        justify-content: flex-end;
+        align-items: stretch;
+      }
+      &[data-placement-xl-down='top'] {
+        justify-content: stretch;
+        align-items: flex-start;
+      }
+      &[data-placement-xl-down='bottom'] {
+        justify-content: stretch;
+        align-items: flex-end;
+      }
+      &[data-contained-xl-down='true'] {
+        --leverui-private-drawer-contained-padding: var(--leverui-spacing-4);
+      }
+    }
+  }
+}

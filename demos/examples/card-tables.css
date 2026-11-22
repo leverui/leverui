@@ -1,0 +1,21 @@
+.card-example-table {
+  width: 100%;
+  margin-bottom: 32px;
+  border-collapse: collapse;
+}
+
+.card-example-table thead {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.card-example-table td {
+  padding-right: 32px;
+  padding-bottom: 32px;
+}
+
+.card-example-table-label {
+  font-size: var(--leverui-font-sizes-sm);
+  color: var(--leverui-colors-fg-muted);
+  min-width: 8ch;
+}

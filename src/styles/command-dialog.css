@@ -1,0 +1,5 @@
+@layer leverui.recipes {
+  .leverui-command-dialog__content:not([data-unstyled]) {
+    overflow: hidden;
+  }
+}

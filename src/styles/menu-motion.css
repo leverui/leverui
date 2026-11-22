@@ -1,0 +1,39 @@
+@layer leverui.recipes {
+  .leverui-menu__content[data-leverui-menu-css] {
+    transform-origin: var(--transform-origin);
+
+    &[data-state='open'] {
+      animation-duration: var(--leverui-durations-fast);
+
+      &[data-placement^='top'] {
+        animation-name: slide-from-bottom, fade-in;
+      }
+      &[data-placement^='bottom'] {
+        animation-name: slide-from-top, fade-in;
+      }
+      &[data-placement^='left'] {
+        animation-name: slide-from-right, fade-in;
+      }
+      &[data-placement^='right'] {
+        animation-name: slide-from-left, fade-in;
+      }
+    }
+
+    &[data-state='closed'] {
+      animation-duration: var(--leverui-durations-faster);
+
+      &[data-placement^='top'] {
+        animation-name: slide-to-bottom, fade-out;
+      }
+      &[data-placement^='bottom'] {
+        animation-name: slide-to-top, fade-out;
+      }
+      &[data-placement^='left'] {
+        animation-name: slide-to-right, fade-out;
+      }
+      &[data-placement^='right'] {
+        animation-name: slide-to-left, fade-out;
+      }
+    }
+  }
+}

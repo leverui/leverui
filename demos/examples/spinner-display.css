@@ -1,0 +1,46 @@
+.spinner-example-teal {
+  color: var(--leverui-colors-teal-500);
+}
+
+.spinner-example-green {
+  color: var(--leverui-colors-green-500);
+  margin: var(--leverui-spacing-3);
+}
+
+.spinner-example-blue {
+  color: var(--leverui-colors-blue-500);
+}
+
+.spinner-example-fast {
+  animation-duration: 0.8s;
+}
+
+.spinner-example-thick {
+  border-width: 4px;
+}
+
+.spinner-example-icon {
+  border-width: 0;
+}
+
+.spinner-example-icon > svg {
+  width: 100%;
+  height: 100%;
+}
+
+.spinner-example-palette {
+  color: var(--leverui-colors-color-palette-600);
+}
+
+.spinner-example-palette-row {
+  padding-inline: var(--leverui-spacing-4);
+}
+
+.spinner-example-track {
+  color: var(--leverui-colors-red-500);
+  --leverui-spinner-track-color: var(--leverui-colors-gray-200);
+}
+
+.spinner-example-label {
+  color: var(--leverui-colors-teal-600);
+}

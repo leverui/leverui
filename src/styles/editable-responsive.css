@@ -1,0 +1,91 @@
+@layer leverui.recipes {
+  @media (min-width: 30rem) {
+    .leverui-editable__root[data-size-sm='sm'] {
+      --leverui-private-editable-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-editable-line-height: 1.25rem;
+      --leverui-private-editable-control-height: var(--leverui-sizes-8);
+    }
+    .leverui-editable__root[data-size-sm='md'] {
+      --leverui-private-editable-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-editable-line-height: 1.25rem;
+      --leverui-private-editable-control-height: var(--leverui-sizes-9);
+    }
+    .leverui-editable__root[data-size-sm='lg'] {
+      --leverui-private-editable-font-size: var(--leverui-font-sizes-md);
+      --leverui-private-editable-line-height: 1.5rem;
+      --leverui-private-editable-control-height: var(--leverui-sizes-10);
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .leverui-editable__root[data-size-md='sm'] {
+      --leverui-private-editable-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-editable-line-height: 1.25rem;
+      --leverui-private-editable-control-height: var(--leverui-sizes-8);
+    }
+    .leverui-editable__root[data-size-md='md'] {
+      --leverui-private-editable-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-editable-line-height: 1.25rem;
+      --leverui-private-editable-control-height: var(--leverui-sizes-9);
+    }
+    .leverui-editable__root[data-size-md='lg'] {
+      --leverui-private-editable-font-size: var(--leverui-font-sizes-md);
+      --leverui-private-editable-line-height: 1.5rem;
+      --leverui-private-editable-control-height: var(--leverui-sizes-10);
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .leverui-editable__root[data-size-lg='sm'] {
+      --leverui-private-editable-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-editable-line-height: 1.25rem;
+      --leverui-private-editable-control-height: var(--leverui-sizes-8);
+    }
+    .leverui-editable__root[data-size-lg='md'] {
+      --leverui-private-editable-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-editable-line-height: 1.25rem;
+      --leverui-private-editable-control-height: var(--leverui-sizes-9);
+    }
+    .leverui-editable__root[data-size-lg='lg'] {
+      --leverui-private-editable-font-size: var(--leverui-font-sizes-md);
+      --leverui-private-editable-line-height: 1.5rem;
+      --leverui-private-editable-control-height: var(--leverui-sizes-10);
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .leverui-editable__root[data-size-xl='sm'] {
+      --leverui-private-editable-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-editable-line-height: 1.25rem;
+      --leverui-private-editable-control-height: var(--leverui-sizes-8);
+    }
+    .leverui-editable__root[data-size-xl='md'] {
+      --leverui-private-editable-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-editable-line-height: 1.25rem;
+      --leverui-private-editable-control-height: var(--leverui-sizes-9);
+    }
+    .leverui-editable__root[data-size-xl='lg'] {
+      --leverui-private-editable-font-size: var(--leverui-font-sizes-md);
+      --leverui-private-editable-line-height: 1.5rem;
+      --leverui-private-editable-control-height: var(--leverui-sizes-10);
+    }
+  }
+
+  @media (min-width: 96rem) {
+    .leverui-editable__root[data-size-2xl='sm'] {
+      --leverui-private-editable-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-editable-line-height: 1.25rem;
+      --leverui-private-editable-control-height: var(--leverui-sizes-8);
+    }
+    .leverui-editable__root[data-size-2xl='md'] {
+      --leverui-private-editable-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-editable-line-height: 1.25rem;
+      --leverui-private-editable-control-height: var(--leverui-sizes-9);
+    }
+    .leverui-editable__root[data-size-2xl='lg'] {
+      --leverui-private-editable-font-size: var(--leverui-font-sizes-md);
+      --leverui-private-editable-line-height: 1.5rem;
+      --leverui-private-editable-control-height: var(--leverui-sizes-10);
+    }
+  }
+}

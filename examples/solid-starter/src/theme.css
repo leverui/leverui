@@ -1,0 +1,32 @@
+:root {
+  --leverui-fonts-body: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--leverui-fonts-body);
+}
+
+.page {
+  min-height: 100vh;
+  padding: 3rem 1.5rem;
+  background: #e9edf7;
+}
+
+.demo-panel {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 32rem;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  --leverui-colors-bg: #f7f5ff;
+  --leverui-colors-fg: #282040;
+  --leverui-colors-blue-solid: #6254c7;
+  --leverui-colors-blue-contrast: #fff;
+}
+
+.demo-panel h1,
+.demo-panel p {
+  margin: 0;
+}

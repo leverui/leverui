@@ -1,0 +1,82 @@
+@layer leverui.recipes {
+  .leverui-command__item:not([data-unstyled]) {
+    position: relative;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: var(
+      --leverui-command-item-gap,
+      var(--leverui-private-command-item-gap, var(--leverui-spacing-2))
+    );
+    flex-shrink: 0;
+    cursor: default;
+    text-align: start;
+    border-radius: var(--leverui-radii-l1);
+    padding-block: var(
+      --leverui-command-item-padding-y,
+      var(--leverui-private-command-item-padding-y, var(--leverui-spacing-2))
+    );
+    padding-inline: var(
+      --leverui-command-item-padding-x,
+      var(--leverui-private-command-item-padding-x, var(--leverui-spacing-2\.5))
+    );
+    font-size: var(--leverui-private-command-result-font-size, var(--leverui-font-sizes-sm));
+    line-height: var(--leverui-private-command-result-line-height, 1.25rem);
+  }
+
+  .leverui-command__item:not([data-unstyled]) svg {
+    width: var(
+      --leverui-command-indicator-size,
+      var(--leverui-private-command-indicator-size, var(--leverui-sizes-4))
+    );
+    height: var(
+      --leverui-command-indicator-size,
+      var(--leverui-private-command-indicator-size, var(--leverui-sizes-4))
+    );
+    flex-shrink: 0;
+    color: var(--leverui-colors-fg-muted);
+  }
+
+  .leverui-command__itemText:not([data-unstyled]) {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .leverui-command__itemText:not([data-unstyled]) mark {
+    background: transparent;
+    color: inherit;
+    font-weight: var(--leverui-font-weights-semibold);
+  }
+
+  .leverui-command__itemCommand:not([data-unstyled]) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    min-width: var(--leverui-sizes-5);
+    height: var(--leverui-sizes-5);
+    padding-inline: var(--leverui-spacing-1);
+    margin-inline-start: auto;
+    border-radius: var(--leverui-radii-l2);
+    border-width: 1px;
+    border-style: solid;
+    background: var(--leverui-colors-bg-subtle);
+    color: var(--leverui-colors-fg-muted);
+    font-family: var(--leverui-fonts-mono);
+    font-size: var(--leverui-font-sizes-xs);
+    line-height: 1rem;
+    font-weight: var(--leverui-font-weights-medium);
+    white-space: nowrap;
+  }
+
+  .leverui-command__itemCommand:not([data-unstyled])
+    ~ .leverui-command__itemCommand:not([data-unstyled]) {
+    margin-inline-start: calc(
+      var(--leverui-spacing-1) -
+        var(--leverui-command-item-gap, var(--leverui-private-command-item-gap))
+    );
+  }
+}

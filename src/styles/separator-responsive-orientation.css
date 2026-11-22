@@ -1,0 +1,73 @@
+@layer leverui.recipes {
+  /* Breakpoint rules add an edge without removing the earlier edge. */
+  @media (min-width: 30rem) {
+    .leverui-separator:not([data-unstyled])[data-orientation-sm='horizontal'] {
+      border-top-width: var(
+        --leverui-separator-thickness,
+        var(--leverui-private-separator-thickness)
+      );
+    }
+    .leverui-separator:not([data-unstyled])[data-orientation-sm='vertical'] {
+      border-inline-start-width: var(
+        --leverui-separator-thickness,
+        var(--leverui-private-separator-thickness)
+      );
+    }
+  }
+  @media (min-width: 48rem) {
+    .leverui-separator:not([data-unstyled])[data-orientation-md='horizontal'] {
+      border-top-width: var(
+        --leverui-separator-thickness,
+        var(--leverui-private-separator-thickness)
+      );
+    }
+    .leverui-separator:not([data-unstyled])[data-orientation-md='vertical'] {
+      border-inline-start-width: var(
+        --leverui-separator-thickness,
+        var(--leverui-private-separator-thickness)
+      );
+    }
+  }
+  @media (min-width: 64rem) {
+    .leverui-separator:not([data-unstyled])[data-orientation-lg='horizontal'] {
+      border-top-width: var(
+        --leverui-separator-thickness,
+        var(--leverui-private-separator-thickness)
+      );
+    }
+    .leverui-separator:not([data-unstyled])[data-orientation-lg='vertical'] {
+      border-inline-start-width: var(
+        --leverui-separator-thickness,
+        var(--leverui-private-separator-thickness)
+      );
+    }
+  }
+  @media (min-width: 80rem) {
+    .leverui-separator:not([data-unstyled])[data-orientation-xl='horizontal'] {
+      border-top-width: var(
+        --leverui-separator-thickness,
+        var(--leverui-private-separator-thickness)
+      );
+    }
+    .leverui-separator:not([data-unstyled])[data-orientation-xl='vertical'] {
+      border-inline-start-width: var(
+        --leverui-separator-thickness,
+        var(--leverui-private-separator-thickness)
+      );
+    }
+  }
+  @media (min-width: 96rem) {
+    .leverui-separator:not([data-unstyled])[data-orientation-2xl='horizontal'] {
+      border-top-width: var(
+        --leverui-separator-thickness,
+        var(--leverui-private-separator-thickness)
+      );
+    }
+    .leverui-separator:not([data-unstyled])[data-orientation-2xl='vertical'] {
+      border-inline-start-width: var(
+        --leverui-separator-thickness,
+        var(--leverui-private-separator-thickness)
+      );
+    }
+  }
+}

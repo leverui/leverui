@@ -1,0 +1,44 @@
+@layer leverui.recipes {
+  .leverui-date-input__segmentGroup:not([data-unstyled])[data-size='2xs'] {
+    --leverui-private-date-input-font-size: var(--leverui-font-sizes-xs);
+    --leverui-private-date-input-line-height: 1rem;
+    --leverui-private-date-input-padding: var(--leverui-spacing-1\.5);
+    --leverui-private-date-input-height: var(--leverui-sizes-7);
+  }
+  .leverui-date-input__segmentGroup:not([data-unstyled])[data-size='xs'] {
+    --leverui-private-date-input-font-size: var(--leverui-font-sizes-xs);
+    --leverui-private-date-input-line-height: 1rem;
+    --leverui-private-date-input-padding: var(--leverui-spacing-1\.5);
+    --leverui-private-date-input-height: var(--leverui-sizes-8);
+  }
+  .leverui-date-input__segmentGroup:not([data-unstyled])[data-size='sm'] {
+    --leverui-private-date-input-font-size: var(--leverui-font-sizes-sm);
+    --leverui-private-date-input-line-height: 1.25rem;
+    --leverui-private-date-input-padding: var(--leverui-spacing-2);
+    --leverui-private-date-input-height: var(--leverui-sizes-9);
+  }
+  .leverui-date-input__segmentGroup:not([data-unstyled])[data-size='md'] {
+    --leverui-private-date-input-font-size: var(--leverui-font-sizes-sm);
+    --leverui-private-date-input-line-height: 1.25rem;
+    --leverui-private-date-input-padding: var(--leverui-spacing-2\.5);
+    --leverui-private-date-input-height: var(--leverui-sizes-10);
+  }
+  .leverui-date-input__segmentGroup:not([data-unstyled])[data-size='lg'] {
+    --leverui-private-date-input-font-size: var(--leverui-font-sizes-md);
+    --leverui-private-date-input-line-height: 1.5rem;
+    --leverui-private-date-input-padding: var(--leverui-spacing-3\.5);
+    --leverui-private-date-input-height: var(--leverui-sizes-11);
+  }
+  .leverui-date-input__segmentGroup:not([data-unstyled])[data-size='xl'] {
+    --leverui-private-date-input-font-size: var(--leverui-font-sizes-md);
+    --leverui-private-date-input-line-height: 1.5rem;
+    --leverui-private-date-input-padding: var(--leverui-spacing-4);
+    --leverui-private-date-input-height: var(--leverui-sizes-12);
+  }
+  .leverui-date-input__segmentGroup:not([data-unstyled])[data-size='2xl'] {
+    --leverui-private-date-input-font-size: var(--leverui-font-sizes-lg);
+    --leverui-private-date-input-line-height: 1.75rem;
+    --leverui-private-date-input-padding: var(--leverui-spacing-4\.5);
+    --leverui-private-date-input-height: var(--leverui-sizes-16);
+  }
+}

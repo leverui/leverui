@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/list-types.tsx", "src/list-example.tsx", "src/list-main.tsx"],
+  "exclude": []
+}

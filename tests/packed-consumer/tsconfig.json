@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "preserve",
+    "jsxImportSource": "@solidjs/web",
+    "strict": true,
+    "skipLibCheck": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noEmit": true,
+    "types": ["vite/client"],
+    "lib": ["ES2022", "ESNext.Disposable", "DOM", "DOM.Iterable"]
+  },
+  "include": ["src"],
+  "exclude": [
+    "src/alert-types.tsx",
+    "src/alert-example.tsx",
+    "src/alert-main.tsx",
+    "src/checkmark-types.tsx",
+    "src/checkmark-example.tsx",
+    "src/checkmark-main.tsx",
+    "src/empty-state-types.tsx",
+    "src/empty-state-example.tsx",
+    "src/empty-state-main.tsx",
+    "src/progress-types.tsx",
+    "src/progress-example.tsx",
+    "src/progress-main.tsx",
+    "src/progress-circle-types.tsx",
+    "src/progress-circle-example.tsx",
+    "src/progress-circle-main.tsx",
+    "src/radiomark-types.tsx",
+    "src/radiomark-example.tsx",
+    "src/radiomark-main.tsx",
+    "src/skeleton-types.tsx",
+    "src/skeleton-example.tsx",
+    "src/skeleton-main.tsx",
+    "src/toast-types.tsx"
+  ]
+}

@@ -1,0 +1,7 @@
+.icon-example-pink {
+  color: var(--leverui-colors-pink-700);
+}
+
+.icon-example-muted {
+  color: var(--leverui-colors-fg-muted);
+}

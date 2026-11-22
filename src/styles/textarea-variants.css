@@ -1,0 +1,31 @@
+@layer leverui.recipes {
+  .leverui-textarea:not([data-unstyled])[data-variant='outline'] {
+    --leverui-private-textarea-background: transparent;
+    --leverui-private-textarea-border-width: 1px;
+    --leverui-private-textarea-border-color: var(--leverui-colors-border);
+    --leverui-private-textarea-radius: var(--leverui-radii-l2);
+    --leverui-private-textarea-padding-inline: var(--leverui-private-textarea-size-padding-inline);
+    --leverui-private-textarea-focus-outline-width: var(--focus-ring-width, 1px);
+    --leverui-private-textarea-focus-shadow: none;
+  }
+
+  .leverui-textarea:not([data-unstyled])[data-variant='subtle'] {
+    --leverui-private-textarea-background: var(--leverui-colors-bg-muted);
+    --leverui-private-textarea-border-width: 1px;
+    --leverui-private-textarea-border-color: transparent;
+    --leverui-private-textarea-radius: var(--leverui-radii-l2);
+    --leverui-private-textarea-padding-inline: var(--leverui-private-textarea-size-padding-inline);
+    --leverui-private-textarea-focus-outline-width: var(--focus-ring-width, 1px);
+    --leverui-private-textarea-focus-shadow: none;
+  }
+
+  .leverui-textarea:not([data-unstyled])[data-variant='flushed'] {
+    --leverui-private-textarea-background: transparent;
+    --leverui-private-textarea-border-width: 0 0 1px;
+    --leverui-private-textarea-border-color: var(--leverui-colors-border);
+    --leverui-private-textarea-radius: 0;
+    --leverui-private-textarea-padding-inline: 0;
+    --leverui-private-textarea-focus-outline-width: 0;
+    --leverui-private-textarea-focus-shadow: 0 1px 0 0 var(--leverui-private-textarea-focus-color);
+  }
+}

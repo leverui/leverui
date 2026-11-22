@@ -1,0 +1,49 @@
+.card-composition-sparkline,
+.card-composition-testimonial {
+  max-width: var(--leverui-sizes-sm);
+}
+
+.card-composition-stock-body {
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-composition-clipped {
+  overflow: hidden;
+}
+
+.card-composition-search {
+  width: 320px;
+}
+
+.card-composition-search-body {
+  gap: var(--leverui-spacing-6);
+}
+
+.card-composition-search-footer {
+  justify-content: space-between;
+  margin-top: var(--leverui-spacing-3);
+}
+
+.card-composition-bar-chart {
+  max-width: var(--leverui-sizes-md);
+  width: 100%;
+}
+
+.card-composition-bar-header {
+  align-items: flex-start;
+}
+
+.card-composition-line-chart {
+  max-width: var(--leverui-sizes-lg);
+}
+
+.card-composition-testimonial {
+  height: 100%;
+}
+
+.card-composition-testimonial-description {
+  color: var(--leverui-colors-fg-muted);
+  font-size: var(--leverui-font-sizes-md);
+  min-height: var(--leverui-sizes-16);
+}

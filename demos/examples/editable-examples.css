@@ -1,0 +1,10 @@
+.example-editable-disabled-preview {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.example-editable-textarea-preview {
+  width: 100%;
+  min-height: var(--leverui-sizes-12);
+  align-items: flex-start;
+}

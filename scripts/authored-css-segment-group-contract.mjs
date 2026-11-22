@@ -1,0 +1,32 @@
+/** Require Segment Group's public parts, states, variables, and sizes. */
+export const segmentGroupContracts = [
+  {
+    family: 'segment-group',
+    required: [
+      '.leverui-segment-group__root:not([data-unstyled])',
+      '.leverui-segment-group__item:not([data-unstyled])',
+      '.leverui-segment-group__indicator:not([data-unstyled])',
+      '.leverui-segment-group__item-hit-area',
+      '.leverui-segment-group__item-hit-target',
+      '--leverui-segment-group-radius',
+      '--leverui-segment-group-background',
+      '--leverui-segment-group-indicator-background',
+      '--leverui-segment-group-item-height',
+      '--leverui-segment-group-item-line-height',
+      "[data-orientation='horizontal']",
+      "[data-orientation='vertical']",
+      "[data-state='checked']",
+      '[data-disabled]',
+      '[data-ssr]',
+      "[data-size='xs']",
+      "[data-size='sm']",
+      "[data-size='md']",
+      "[data-size='lg']",
+      "[data-size-sm='xs']",
+      "[data-size-md='md']",
+      "[data-size-lg='lg']",
+      "[data-size-xl='lg']",
+      "[data-size-2xl='lg']",
+    ],
+  },
+];

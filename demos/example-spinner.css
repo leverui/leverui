@@ -1,0 +1,30 @@
+.example-beat-spinner {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.example-beat-spinner span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+  animation: example-beat 0.7s infinite alternate ease-in-out;
+}
+
+.example-beat-spinner span[data-beat='2'] {
+  animation-delay: 0.2s;
+}
+
+.example-beat-spinner span[data-beat='3'] {
+  animation-delay: 0.4s;
+}
+
+@keyframes example-beat {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.75);
+  }
+}

@@ -1,0 +1,11 @@
+.theme-scope-content {
+  background: var(--leverui-colors-bg);
+}
+
+[data-leverui-color-mode='dark'] > .theme-scope-content {
+  color: var(--leverui-colors-red-500);
+}
+
+[data-leverui-color-mode='light'] > .theme-scope-content {
+  color: var(--leverui-colors-blue-500);
+}

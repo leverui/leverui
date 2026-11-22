@@ -1,0 +1,191 @@
+.guide-layout {
+  display: grid;
+  grid-template-columns: 292px minmax(0, 620px) minmax(0, 1fr);
+  align-items: start;
+  min-height: 75vh;
+}
+.guide-layout.page-container {
+  width: min(100% - 64px, 1400px);
+}
+/* Pages without a table of contents, such as the Concepts overview, use its column too. */
+@media (min-width: 1151px) {
+  main.guide-layout.guide-layout-wide.page-container {
+    grid-template-columns: 292px minmax(0, 1fr);
+  }
+}
+.guide-sidebar {
+  position: sticky;
+  top: var(--site-header-height);
+  height: calc(100vh - var(--site-header-height));
+  height: calc(100dvh - var(--site-header-height));
+  min-height: 0;
+}
+/* The scroll area is only as wide as the links, so its rail sits beside them, clear of the page. */
+.guide-sidebar-scroll-area {
+  width: 240px;
+  max-width: 100%;
+  height: 100%;
+  --leverui-scroll-area-track-color: var(--site-nav-track);
+  --leverui-scroll-area-thumb-color: var(--site-nav-thumb);
+  --leverui-scroll-area-thumb-hover-color: var(--site-nav-thumb-hover);
+}
+.guide-sidebar-scroll-area .leverui-scroll-area__scrollbar {
+  opacity: 0;
+  transition: opacity 150ms 300ms;
+}
+/* Show the scrollbar while the pointer is anywhere over the sidebar, or while it scrolls. */
+.guide-sidebar:hover .guide-sidebar-scroll-area .leverui-scroll-area__scrollbar,
+.guide-sidebar-scroll-area
+  .leverui-scroll-area__scrollbar:is([data-scrolling], :hover, :active, :focus-within) {
+  opacity: 1;
+  transition-delay: 0ms;
+}
+.guide-sidebar-content {
+  padding: 35px 14px 50px 0;
+}
+.guide-sidebar h2 {
+  margin: 26px 0 var(--leverui-spacing-2);
+  padding-inline-start: var(--leverui-spacing-4);
+  color: var(--leverui-colors-fg);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: normal;
+}
+.guide-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.guide-sidebar nav a {
+  padding: var(--leverui-spacing-1\.5) var(--leverui-spacing-3) var(--leverui-spacing-1\.5)
+    var(--leverui-spacing-4);
+  border-radius: var(--leverui-radii-full);
+  color: var(--leverui-colors-fg-muted);
+  font-size: 14px;
+  line-height: 21px;
+}
+.guide-sidebar nav a:hover {
+  background: var(--leverui-colors-gray-subtle);
+  color: var(--leverui-colors-gray-fg);
+}
+.guide-sidebar nav a.active {
+  background: var(--leverui-colors-gray-muted);
+  color: var(--leverui-colors-fg);
+  font-weight: var(--leverui-font-weights-medium);
+}
+.guide-article {
+  min-width: 0;
+  padding: 35px 0 100px;
+}
+.guide-title {
+  margin: 0 0 16px;
+  color: var(--leverui-colors-fg);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: -0.025em;
+}
+.guide-lead {
+  margin: 0 0 18px;
+  color: var(--leverui-colors-fg-muted);
+  font-size: 16px;
+  line-height: 1.5;
+}
+.guide-lead p {
+  margin: 0;
+}
+.guide-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  color: var(--leverui-colors-fg-muted);
+  font-size: 12px;
+  margin-bottom: 38px;
+}
+.guide-breadcrumb a {
+  color: var(--site-fg);
+}
+.guide-markdown {
+  color: var(--leverui-colors-fg);
+  font-size: 16px;
+  line-height: 1.75;
+}
+.guide-markdown h1 {
+  font-size: clamp(42px, 5vw, 62px);
+  line-height: 1.15;
+  color: var(--leverui-colors-fg);
+  margin: 0 0 20px;
+}
+.guide-markdown h2 {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: var(--leverui-colors-fg);
+  margin: 1.6em 0 0.8em;
+  scroll-margin-top: 30px;
+}
+.guide-markdown h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: var(--leverui-colors-fg);
+  margin: 1.5em 0 0.4em;
+  scroll-margin-top: 30px;
+}
+.guide-markdown p {
+  margin: 0 0 16px;
+  color: var(--leverui-colors-fg-muted);
+}
+.guide-markdown ul,
+.guide-markdown ol {
+  margin: 16px 0;
+}
+/* The page reset removes list markers; written lists, which carry no class, get them back. */
+.guide-markdown ul:not([class]),
+.guide-markdown ol:not([class]) {
+  padding-inline-start: 1.25em;
+}
+.guide-markdown ul:not([class]) {
+  list-style: disc;
+}
+.guide-markdown ol:not([class]) {
+  list-style: decimal;
+}
+.guide-markdown li {
+  margin: 0.8em 0;
+  padding-inline-start: 0.4em;
+  line-height: 1.5;
+}
+.guide-markdown li::marker {
+  color: var(--leverui-colors-fg-subtle);
+}
+.guide-markdown a:not([class*='leverui-']) {
+  color: var(--leverui-colors-fg);
+  font-weight: var(--leverui-font-weights-medium);
+  text-decoration: underline;
+  text-decoration-color: var(--leverui-colors-border-emphasized);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+:is(.guide-markdown :not(pre) > code, .guide-story-description code, .guide-lead code) {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.8em;
+  letter-spacing: -0.01em;
+  white-space: pre;
+  color: var(--leverui-colors-fg);
+  background: var(--leverui-colors-bg-muted);
+  border: 0.5px solid var(--leverui-colors-border);
+  padding: 0.1em 0.4em;
+  border-radius: var(--leverui-radii-md);
+}
+.guide-markdown blockquote {
+  border-left: 4px solid var(--site-highlight-border);
+  margin: 25px 0;
+  padding: 2px 20px;
+  color: var(--leverui-colors-fg-muted);
+}
+.guide-markdown blockquote > :last-child {
+  margin-bottom: 0;
+}

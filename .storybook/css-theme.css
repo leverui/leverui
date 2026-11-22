@@ -1,0 +1,24 @@
+.brand-theme {
+  --leverui-colors-bg: #f5f0ff;
+  --leverui-colors-fg: #281c42;
+  --leverui-colors-blue-solid: #6254c7;
+  --leverui-colors-blue-contrast: #fff;
+  --leverui-colors-blue-subtle: #e9e1ff;
+  --leverui-colors-blue-fg: #43328c;
+  --leverui-colors-blue-border: #7a69db;
+  --leverui-radii-l2: 12px;
+}
+
+.css-theme-content {
+  background: var(--leverui-colors-bg);
+  color: var(--leverui-colors-fg);
+  padding: var(--leverui-spacing-4);
+}
+
+.css-theme-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+}

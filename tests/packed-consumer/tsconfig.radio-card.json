@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/radio-card-types.tsx", "src/radio-card-example.tsx", "src/radio-card-main.tsx"],
+  "exclude": []
+}

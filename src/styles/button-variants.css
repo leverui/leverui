@@ -1,0 +1,73 @@
+@layer leverui.recipes {
+  .leverui-button:not([data-unstyled]) {
+    background-color: var(--leverui-private-button-bg, transparent);
+    color: var(--leverui-private-button-fg, inherit);
+    border-color: var(--leverui-private-button-border, transparent);
+    box-shadow: var(--leverui-private-button-shadow, none);
+  }
+
+  .leverui-button:not([data-unstyled]):is(
+      :hover,
+      [data-hover],
+      [aria-expanded='true'],
+      [data-expanded],
+      [data-state='expanded']
+    ):not(:disabled, [data-disabled], [aria-disabled='true']) {
+    background-color: var(
+      --leverui-private-button-hover-bg,
+      var(--leverui-private-button-bg, transparent)
+    );
+  }
+
+  .leverui-button:not([data-unstyled]):is([data-variant='solid'], :not([data-variant])) {
+    --leverui-private-button-bg: var(--leverui-colors-color-palette-solid);
+    --leverui-private-button-fg: var(--leverui-colors-color-palette-contrast);
+    --leverui-private-button-border: transparent;
+    --leverui-private-button-shadow: none;
+    --leverui-private-button-hover-bg: color-mix(
+      in srgb,
+      var(--leverui-colors-color-palette-solid) 90%,
+      transparent
+    );
+  }
+
+  .leverui-button:not([data-unstyled])[data-variant='subtle'] {
+    --leverui-private-button-bg: var(--leverui-colors-color-palette-subtle);
+    --leverui-private-button-fg: var(--leverui-colors-color-palette-fg);
+    --leverui-private-button-border: transparent;
+    --leverui-private-button-shadow: none;
+    --leverui-private-button-hover-bg: var(--leverui-colors-color-palette-muted);
+  }
+
+  .leverui-button:not([data-unstyled])[data-variant='surface'] {
+    --leverui-private-button-bg: var(--leverui-colors-color-palette-subtle);
+    --leverui-private-button-fg: var(--leverui-colors-color-palette-fg);
+    --leverui-private-button-border: transparent;
+    --leverui-private-button-shadow: 0 0 0 1px var(--leverui-colors-color-palette-muted);
+    --leverui-private-button-hover-bg: var(--leverui-colors-color-palette-muted);
+  }
+
+  .leverui-button:not([data-unstyled])[data-variant='outline'] {
+    --leverui-private-button-bg: transparent;
+    --leverui-private-button-fg: var(--leverui-colors-color-palette-fg);
+    --leverui-private-button-border: var(--leverui-colors-color-palette-border);
+    --leverui-private-button-shadow: none;
+    --leverui-private-button-hover-bg: var(--leverui-colors-color-palette-subtle);
+  }
+
+  .leverui-button:not([data-unstyled])[data-variant='ghost'] {
+    --leverui-private-button-bg: transparent;
+    --leverui-private-button-fg: var(--leverui-colors-color-palette-fg);
+    --leverui-private-button-border: transparent;
+    --leverui-private-button-shadow: none;
+    --leverui-private-button-hover-bg: var(--leverui-colors-color-palette-subtle);
+  }
+
+  .leverui-button:not([data-unstyled])[data-variant='plain'] {
+    --leverui-private-button-bg: transparent;
+    --leverui-private-button-fg: var(--leverui-colors-color-palette-fg);
+    --leverui-private-button-border: transparent;
+    --leverui-private-button-shadow: none;
+    --leverui-private-button-hover-bg: transparent;
+  }
+}

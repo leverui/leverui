@@ -1,0 +1,101 @@
+@layer leverui.recipes {
+  @media (min-width: 64rem) {
+    .leverui-native-select__root:not([data-unstyled])[data-variant-lg='outline'] {
+      --leverui-private-native-select-background: transparent;
+      --leverui-private-native-select-border-width: 1px;
+      --leverui-private-native-select-border-color: var(--leverui-colors-border);
+      --leverui-private-native-select-color: inherit;
+      --leverui-private-native-select-focus-width: var(--focus-ring-width, 1px);
+    }
+
+    .leverui-native-select__root:not([data-unstyled])[data-variant-lg='subtle'] {
+      --leverui-private-native-select-background: var(--leverui-colors-bg-muted);
+      --leverui-private-native-select-border-width: 1px;
+      --leverui-private-native-select-border-color: transparent;
+      --leverui-private-native-select-color: inherit;
+      --leverui-private-native-select-focus-width: var(--focus-ring-width, 1px);
+    }
+
+    .leverui-native-select__root:not([data-unstyled])[data-variant-lg='plain'] {
+      --leverui-private-native-select-background: transparent;
+      --leverui-private-native-select-border-width: 0;
+      --leverui-private-native-select-border-color: var(--leverui-colors-border);
+      --leverui-private-native-select-color: var(--leverui-colors-fg);
+      --leverui-private-native-select-focus-width: 2px;
+    }
+
+    .leverui-native-select__root:not([data-unstyled])[data-variant-lg='ghost'] {
+      --leverui-private-native-select-background: transparent;
+      --leverui-private-native-select-border-width: 0;
+      --leverui-private-native-select-border-color: var(--leverui-colors-border);
+      --leverui-private-native-select-color: inherit;
+      --leverui-private-native-select-focus-width: var(--focus-ring-width, 1px);
+    }
+  }
+  @media (min-width: 80rem) {
+    .leverui-native-select__root:not([data-unstyled])[data-variant-xl='outline'] {
+      --leverui-private-native-select-background: transparent;
+      --leverui-private-native-select-border-width: 1px;
+      --leverui-private-native-select-border-color: var(--leverui-colors-border);
+      --leverui-private-native-select-color: inherit;
+      --leverui-private-native-select-focus-width: var(--focus-ring-width, 1px);
+    }
+
+    .leverui-native-select__root:not([data-unstyled])[data-variant-xl='subtle'] {
+      --leverui-private-native-select-background: var(--leverui-colors-bg-muted);
+      --leverui-private-native-select-border-width: 1px;
+      --leverui-private-native-select-border-color: transparent;
+      --leverui-private-native-select-color: inherit;
+      --leverui-private-native-select-focus-width: var(--focus-ring-width, 1px);
+    }
+
+    .leverui-native-select__root:not([data-unstyled])[data-variant-xl='plain'] {
+      --leverui-private-native-select-background: transparent;
+      --leverui-private-native-select-border-width: 0;
+      --leverui-private-native-select-border-color: var(--leverui-colors-border);
+      --leverui-private-native-select-color: var(--leverui-colors-fg);
+      --leverui-private-native-select-focus-width: 2px;
+    }
+
+    .leverui-native-select__root:not([data-unstyled])[data-variant-xl='ghost'] {
+      --leverui-private-native-select-background: transparent;
+      --leverui-private-native-select-border-width: 0;
+      --leverui-private-native-select-border-color: var(--leverui-colors-border);
+      --leverui-private-native-select-color: inherit;
+      --leverui-private-native-select-focus-width: var(--focus-ring-width, 1px);
+    }
+  }
+  @media (min-width: 96rem) {
+    .leverui-native-select__root:not([data-unstyled])[data-variant-2xl='outline'] {
+      --leverui-private-native-select-background: transparent;
+      --leverui-private-native-select-border-width: 1px;
+      --leverui-private-native-select-border-color: var(--leverui-colors-border);
+      --leverui-private-native-select-color: inherit;
+      --leverui-private-native-select-focus-width: var(--focus-ring-width, 1px);
+    }
+
+    .leverui-native-select__root:not([data-unstyled])[data-variant-2xl='subtle'] {
+      --leverui-private-native-select-background: var(--leverui-colors-bg-muted);
+      --leverui-private-native-select-border-width: 1px;
+      --leverui-private-native-select-border-color: transparent;
+      --leverui-private-native-select-color: inherit;
+      --leverui-private-native-select-focus-width: var(--focus-ring-width, 1px);
+    }
+
+    .leverui-native-select__root:not([data-unstyled])[data-variant-2xl='plain'] {
+      --leverui-private-native-select-background: transparent;
+      --leverui-private-native-select-border-width: 0;
+      --leverui-private-native-select-border-color: var(--leverui-colors-border);
+      --leverui-private-native-select-color: var(--leverui-colors-fg);
+      --leverui-private-native-select-focus-width: 2px;
+    }
+
+    .leverui-native-select__root:not([data-unstyled])[data-variant-2xl='ghost'] {
+      --leverui-private-native-select-background: transparent;
+      --leverui-private-native-select-border-width: 0;
+      --leverui-private-native-select-border-color: var(--leverui-colors-border);
+      --leverui-private-native-select-color: inherit;
+      --leverui-private-native-select-focus-width: var(--focus-ring-width, 1px);
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.hover-card-example-narrow {
+  max-width: var(--leverui-sizes-60);
+}
+
+.hover-card-example-pointer {
+  cursor: pointer;
+}
+
+.example-hover-card-title {
+  font-weight: var(--leverui-font-weights-semibold);
+}
+
+.example-hover-card-description {
+  color: var(--leverui-colors-fg-muted);
+}
+
+.example-hover-card-stats {
+  color: var(--leverui-colors-fg-subtle);
+}

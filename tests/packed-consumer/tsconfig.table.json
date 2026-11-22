@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/table-example.tsx", "src/table-main.tsx", "src/table-types.tsx"],
+  "exclude": []
+}

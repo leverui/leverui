@@ -1,0 +1,38 @@
+@layer leverui.recipes {
+  .leverui-command__clearTrigger:not([data-unstyled]) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: var(--leverui-sizes-6);
+    height: var(--leverui-sizes-6);
+    border-radius: var(--leverui-radii-l1);
+    color: var(--leverui-colors-fg-muted);
+    cursor: pointer;
+  }
+
+  .leverui-command__clearTrigger:not([data-unstyled]) svg {
+    width: var(--leverui-sizes-3\.5);
+    height: var(--leverui-sizes-3\.5);
+  }
+
+  .leverui-command__clearTrigger:not([data-unstyled]):is(:hover, [data-hover]) {
+    background: var(--leverui-colors-bg-muted);
+    color: var(--leverui-colors-fg);
+  }
+
+  .leverui-command__clearTrigger:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
+    outline: 2px solid
+      var(--leverui-command-focus-color, var(--leverui-colors-color-palette-focus-ring));
+    outline-offset: -2px;
+  }
+
+  .leverui-command__item:not([data-unstyled])[data-highlighted] {
+    background: color-mix(in srgb, var(--leverui-colors-bg-emphasized) 60%, transparent);
+  }
+
+  .leverui-command__item:not([data-unstyled])[data-disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}

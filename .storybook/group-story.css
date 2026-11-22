@@ -1,0 +1,33 @@
+.group-story-item {
+  width: 40px;
+  height: 20px;
+}
+
+.group-story-wide-item {
+  width: 60px;
+  height: 20px;
+}
+
+.group-story-width-240 {
+  width: 240px;
+}
+
+.group-story-width-180 {
+  width: 180px;
+}
+
+.group-story-width-100 {
+  width: 100px;
+}
+
+.group-story-override {
+  gap: 7px;
+}
+
+/* A stretching column narrower than the three Buttons it holds. */
+.group-story-narrow-column {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 200px;
+}

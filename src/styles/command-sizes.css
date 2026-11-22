@@ -1,0 +1,46 @@
+@layer leverui.recipes {
+  .leverui-command__root:not([data-unstyled])[data-size='sm'] {
+    --leverui-private-command-control-padding-x: var(--leverui-spacing-3);
+    --leverui-private-command-input-height: var(--leverui-sizes-10);
+    --leverui-private-command-indicator-size: var(--leverui-sizes-4);
+    --leverui-private-command-list-padding: var(--leverui-spacing-1);
+    --leverui-private-command-item-padding-x: var(--leverui-spacing-2);
+    --leverui-private-command-item-padding-y: var(--leverui-spacing-1\.5);
+    --leverui-private-command-item-gap: var(--leverui-spacing-2);
+    --leverui-private-command-list-max-height: var(--leverui-sizes-72);
+    --leverui-private-command-footer-padding-y: var(--leverui-spacing-2);
+    --leverui-private-command-control-gap: var(--leverui-spacing-2);
+    --leverui-private-command-result-font-size: var(--leverui-font-sizes-sm);
+    --leverui-private-command-result-line-height: 1.25rem;
+  }
+
+  .leverui-command__root:not([data-unstyled])[data-size='md'] {
+    --leverui-private-command-control-padding-x: var(--leverui-spacing-4);
+    --leverui-private-command-input-height: var(--leverui-sizes-12);
+    --leverui-private-command-indicator-size: var(--leverui-sizes-4);
+    --leverui-private-command-list-padding: var(--leverui-spacing-1\.5);
+    --leverui-private-command-item-padding-x: var(--leverui-spacing-2\.5);
+    --leverui-private-command-item-padding-y: var(--leverui-spacing-2);
+    --leverui-private-command-item-gap: var(--leverui-spacing-2);
+    --leverui-private-command-list-max-height: var(--leverui-sizes-96);
+    --leverui-private-command-footer-padding-y: var(--leverui-spacing-2\.5);
+    --leverui-private-command-control-gap: var(--leverui-spacing-2);
+    --leverui-private-command-result-font-size: var(--leverui-font-sizes-sm);
+    --leverui-private-command-result-line-height: 1.25rem;
+  }
+
+  .leverui-command__root:not([data-unstyled])[data-size='lg'] {
+    --leverui-private-command-control-padding-x: var(--leverui-spacing-5);
+    --leverui-private-command-input-height: var(--leverui-sizes-14);
+    --leverui-private-command-indicator-size: var(--leverui-sizes-5);
+    --leverui-private-command-list-padding: var(--leverui-spacing-2);
+    --leverui-private-command-item-padding-x: var(--leverui-spacing-3);
+    --leverui-private-command-item-padding-y: var(--leverui-spacing-2\.5);
+    --leverui-private-command-item-gap: var(--leverui-spacing-3);
+    --leverui-private-command-list-max-height: var(--leverui-sizes-md);
+    --leverui-private-command-footer-padding-y: var(--leverui-spacing-3);
+    --leverui-private-command-control-gap: var(--leverui-spacing-3);
+    --leverui-private-command-result-font-size: var(--leverui-font-sizes-md);
+    --leverui-private-command-result-line-height: 1.5rem;
+  }
+}

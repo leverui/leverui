@@ -1,0 +1,3 @@
+.tree-view-gallery-expanded-branch[data-state='open'] {
+  background: color-mix(in srgb, var(--leverui-colors-teal-subtle) 30%, transparent);
+}

@@ -1,0 +1,117 @@
+@layer leverui.recipes {
+  .leverui-radio-card:not([data-unstyled]) {
+    display: flex;
+    flex-direction: column;
+    gap: var(--leverui-radio-card-root-gap, var(--leverui-spacing-1\.5));
+    isolation: isolate;
+  }
+
+  .leverui-radio-card__item:not([data-unstyled]) {
+    --leverui-private-radio-card-align: flex-start;
+    --leverui-private-radio-card-justify: normal;
+    --leverui-private-radio-card-focus-background: color-mix(
+      in srgb,
+      var(--leverui-colors-color-palette-muted) 20%,
+      transparent
+    );
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+    user-select: none;
+    border-radius: var(--leverui-radio-card-radius, var(--leverui-radii-l2));
+    border-width: var(--leverui-private-radio-card-border-width, 0);
+    border-color: var(--leverui-private-radio-card-border-color, var(--leverui-colors-border));
+    background-color: var(--leverui-private-radio-card-background, transparent);
+    color: var(--leverui-private-radio-card-color, inherit);
+    font-size: var(--leverui-private-radio-card-font-size);
+    line-height: var(--leverui-private-radio-card-line-height);
+    cursor: var(--leverui-cursor-radio, pointer);
+  }
+
+  .leverui-radio-card__item:not([data-unstyled]):is(:focus, [data-focus]) {
+    background-color: var(--leverui-private-radio-card-focus-background);
+  }
+
+  .leverui-radio-card__item:not([data-unstyled])[data-state='checked'] {
+    z-index: 1;
+    background-color: var(
+      --leverui-private-radio-card-checked-background,
+      var(--leverui-private-radio-card-background, transparent)
+    );
+    color: var(
+      --leverui-private-radio-card-checked-color,
+      var(--leverui-private-radio-card-color, inherit)
+    );
+    border-color: var(
+      --leverui-private-radio-card-checked-border,
+      var(--leverui-private-radio-card-border-color, var(--leverui-colors-border))
+    );
+    box-shadow: var(--leverui-private-radio-card-checked-shadow, none);
+  }
+
+  .leverui-radio-card__item:not([data-unstyled])[data-disabled] {
+    opacity: 0.5;
+    cursor: var(--leverui-cursor-disabled);
+  }
+
+  .leverui-radio-card__label:not([data-unstyled]) {
+    display: inline-flex;
+    font-weight: var(--leverui-font-weights-medium);
+    font-size: var(--leverui-font-sizes-sm);
+    line-height: 1.25rem;
+  }
+
+  .leverui-radio-card__label:not([data-unstyled])[data-disabled] {
+    opacity: 0.5;
+  }
+
+  .leverui-radio-card__itemText:not([data-unstyled]) {
+    font-weight: var(--leverui-font-weights-medium);
+    flex: 1;
+  }
+
+  .leverui-radio-card__itemDescription:not([data-unstyled]) {
+    opacity: 0.64;
+    font-size: var(--leverui-font-sizes-sm);
+    line-height: 1.25rem;
+  }
+
+  .leverui-radio-card__itemControl:not([data-unstyled]) {
+    display: inline-flex;
+    flex: 1;
+    position: relative;
+    border-radius: inherit;
+    padding: var(--leverui-radio-card-control-padding, var(--leverui-private-radio-card-padding));
+    gap: var(--leverui-radio-card-control-gap, var(--leverui-private-radio-card-gap));
+    justify-content: var(--leverui-private-radio-card-justify);
+    align-items: var(--leverui-private-radio-card-align);
+    flex-direction: var(--leverui-private-radio-card-direction, row);
+    text-align: var(--leverui-private-radio-card-text-align, start);
+  }
+
+  .leverui-radio-card__itemControl:not([data-unstyled])[data-disabled] {
+    background-color: var(--leverui-private-radio-card-disabled-control-background);
+  }
+
+  .leverui-radio-card__itemContent:not([data-unstyled]) {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: var(--leverui-spacing-1);
+    justify-content: var(--leverui-private-radio-card-justify);
+    align-items: var(--leverui-private-radio-card-align);
+  }
+
+  .leverui-radio-card__itemAddon:not([data-unstyled]) {
+    padding-inline: var(--leverui-private-radio-card-addon-padding-x);
+    padding-block: var(--leverui-private-radio-card-addon-padding-y);
+    border-top-width: 1px;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+  }
+
+  .leverui-radio-card__itemAddon:not([data-unstyled])[data-disabled] {
+    color: var(--leverui-colors-fg-muted);
+  }
+}

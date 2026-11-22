@@ -1,0 +1,8 @@
+.collapsible-width-preview {
+  width: 240px;
+  padding: 12px;
+}
+
+.collapsible-slow-exit {
+  animation-duration: 400ms;
+}

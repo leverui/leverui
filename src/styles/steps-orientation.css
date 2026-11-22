@@ -1,0 +1,33 @@
+@layer leverui.recipes {
+  .leverui-steps__root:not([data-unstyled])[data-orientation='horizontal']
+    .leverui-steps__separator:not([data-unstyled]) {
+    width: 100%;
+    height: var(--leverui-private-steps-thickness);
+    margin-inline: var(--leverui-private-steps-gutter);
+  }
+
+  .leverui-steps__root:not([data-unstyled])[data-orientation='vertical'] {
+    flex-direction: row;
+    height: 100%;
+
+    .leverui-steps__list:not([data-unstyled]) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .leverui-steps__item:not([data-unstyled]) {
+      align-items: flex-start;
+    }
+
+    .leverui-steps__separator:not([data-unstyled]) {
+      position: absolute;
+      top: calc(var(--leverui-private-steps-size) + var(--leverui-private-steps-gutter));
+      inset-inline-start: calc(var(--leverui-private-steps-size) / 2 - 1px);
+      width: var(--leverui-private-steps-thickness);
+      height: 100%;
+      max-height: calc(
+        100% - var(--leverui-private-steps-size) - var(--leverui-private-steps-gutter) * 2
+      );
+    }
+  }
+}

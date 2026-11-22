@@ -1,0 +1,9 @@
+.carousel-responsive-root {
+  width: 200px;
+}
+
+@media (min-width: 48rem) {
+  .carousel-responsive-root {
+    width: 360px;
+  }
+}

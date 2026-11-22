@@ -1,0 +1,78 @@
+.example-file-upload-icon {
+  display: inline-flex;
+  color: var(--leverui-colors-fg-muted);
+  font-size: var(--leverui-font-sizes-xl);
+}
+
+.example-file-upload-dropzone-root {
+  max-width: var(--leverui-sizes-xl);
+  align-items: stretch;
+}
+
+.example-file-upload-hint {
+  color: var(--leverui-colors-fg-muted);
+}
+
+.example-file-upload-dialog-dropzone {
+  width: 100%;
+}
+
+.example-file-upload-dialog-icon {
+  color: var(--leverui-colors-fg-muted);
+  font-size: 32px;
+}
+
+.example-file-upload-submit {
+  margin-top: var(--leverui-spacing-4);
+}
+
+.example-file-upload-field {
+  gap: var(--leverui-spacing-1);
+  max-width: 300px;
+}
+
+.example-file-upload-file-name {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.example-file-upload-preview {
+  width: var(--leverui-sizes-20);
+  height: var(--leverui-sizes-20);
+  padding: var(--leverui-spacing-2);
+}
+
+.example-file-upload-preview-remove {
+  width: var(--leverui-sizes-4);
+  height: var(--leverui-sizes-4);
+  background: var(--leverui-colors-gray-solid);
+  color: var(--leverui-colors-gray-contrast);
+}
+
+.example-file-upload-pasted-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--leverui-spacing-3);
+}
+
+.example-file-upload-pasted-item {
+  position: relative;
+  width: auto;
+  padding: var(--leverui-spacing-2);
+}
+
+.example-file-upload-pasted-remove {
+  padding: var(--leverui-spacing-0\.5);
+  border-width: 1px;
+  border-radius: var(--leverui-radii-l1);
+  background: var(--leverui-colors-bg);
+}
+
+.example-file-upload-pasted-image {
+  width: var(--leverui-sizes-12);
+  height: var(--leverui-sizes-12);
+  border-radius: var(--leverui-radii-l1);
+  object-fit: cover;
+}

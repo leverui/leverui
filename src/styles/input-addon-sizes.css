@@ -1,0 +1,50 @@
+@layer leverui.recipes {
+  .leverui-input-addon:not([data-unstyled])[data-size='2xs'] {
+    --leverui-private-input-addon-font-size: var(--leverui-font-sizes-xs);
+    --leverui-private-input-addon-line-height: 1rem;
+    --leverui-private-input-addon-size-padding: var(--leverui-spacing-2);
+    --leverui-private-input-addon-height: var(--leverui-sizes-7);
+  }
+
+  .leverui-input-addon:not([data-unstyled])[data-size='xs'] {
+    --leverui-private-input-addon-font-size: var(--leverui-font-sizes-xs);
+    --leverui-private-input-addon-line-height: 1rem;
+    --leverui-private-input-addon-size-padding: var(--leverui-spacing-2);
+    --leverui-private-input-addon-height: var(--leverui-sizes-8);
+  }
+
+  .leverui-input-addon:not([data-unstyled])[data-size='sm'] {
+    --leverui-private-input-addon-font-size: var(--leverui-font-sizes-sm);
+    --leverui-private-input-addon-line-height: 1.25rem;
+    --leverui-private-input-addon-size-padding: var(--leverui-spacing-2\.5);
+    --leverui-private-input-addon-height: var(--leverui-sizes-9);
+  }
+
+  .leverui-input-addon:not([data-unstyled])[data-size='md'] {
+    --leverui-private-input-addon-font-size: var(--leverui-font-sizes-sm);
+    --leverui-private-input-addon-line-height: 1.25rem;
+    --leverui-private-input-addon-size-padding: var(--leverui-spacing-3);
+    --leverui-private-input-addon-height: var(--leverui-sizes-10);
+  }
+
+  .leverui-input-addon:not([data-unstyled])[data-size='lg'] {
+    --leverui-private-input-addon-font-size: var(--leverui-font-sizes-md);
+    --leverui-private-input-addon-line-height: 1.5rem;
+    --leverui-private-input-addon-size-padding: var(--leverui-spacing-4);
+    --leverui-private-input-addon-height: var(--leverui-sizes-11);
+  }
+
+  .leverui-input-addon:not([data-unstyled])[data-size='xl'] {
+    --leverui-private-input-addon-font-size: var(--leverui-font-sizes-md);
+    --leverui-private-input-addon-line-height: 1.5rem;
+    --leverui-private-input-addon-size-padding: var(--leverui-spacing-4\.5);
+    --leverui-private-input-addon-height: var(--leverui-sizes-12);
+  }
+
+  .leverui-input-addon:not([data-unstyled])[data-size='2xl'] {
+    --leverui-private-input-addon-font-size: var(--leverui-font-sizes-lg);
+    --leverui-private-input-addon-line-height: 1.75rem;
+    --leverui-private-input-addon-size-padding: var(--leverui-spacing-5);
+    --leverui-private-input-addon-height: var(--leverui-sizes-16);
+  }
+}

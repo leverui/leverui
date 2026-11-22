@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/toggle-types.tsx", "src/toggle-example.tsx", "src/toggle-main.tsx"],
+  "exclude": []
+}

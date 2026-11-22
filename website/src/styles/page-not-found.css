@@ -1,0 +1,54 @@
+/* The in-app not-found message, matching the static 404 page in `public/404.html`. */
+.page-not-found {
+  display: flex;
+  /* Span the whole docs layout, which otherwise keeps its first column for a sidebar. */
+  grid-column: 1 / -1;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 96px 16px;
+  text-align: center;
+}
+.page-not-found-code {
+  margin: 0;
+  color: var(--site-muted);
+  font-size: 14px;
+  font-weight: 600;
+}
+.page-not-found h1 {
+  margin: 8px 0 12px;
+  font-size: 36px;
+  letter-spacing: -0.02em;
+}
+.page-not-found p {
+  margin: 0;
+  color: var(--site-muted);
+  line-height: 1.5;
+}
+.page-not-found nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+.page-not-found nav a {
+  padding: 8px 18px;
+  border: 1px solid var(--site-border);
+  border-radius: var(--leverui-radii-full);
+  color: var(--site-fg);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.page-not-found nav a:hover {
+  background: var(--leverui-colors-gray-subtle);
+}
+.page-not-found nav a.page-not-found-primary {
+  border-color: var(--site-fg);
+  background: var(--site-fg);
+  color: var(--site-canvas);
+}
+.page-not-found nav a.page-not-found-primary:hover {
+  opacity: 0.85;
+}

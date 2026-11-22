@@ -1,0 +1,70 @@
+/*
+ * The full-page menu for narrow screens: every section of the site and every page in it. Wider
+ * screens use the header tabs and the docs sidebar, so the menu never shows there.
+ */
+.site-menu {
+  display: none;
+}
+@media (max-width: 800px) {
+  .site-menu.open {
+    display: block;
+    position: fixed;
+    inset: var(--site-header-height) 0 0;
+    z-index: 10;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 4px 24px 72px;
+    background: var(--site-canvas);
+  }
+  /* The page behind the open menu does not scroll, and its floating button stays out of the way. */
+  html:has(.site-menu.open) {
+    overflow: hidden;
+  }
+  html:has(.site-menu.open) .guide-toc-trigger {
+    display: none;
+  }
+}
+.site-menu-section {
+  justify-content: space-between;
+  width: 100%;
+  font-size: 18px;
+  font-weight: var(--leverui-font-weights-semibold);
+}
+/* The section's content clips while it opens and closes, so links are inset, not outdented. */
+.site-menu-groups h2 {
+  margin: 24px 0 4px;
+  padding-inline: 12px;
+  color: var(--site-fg);
+  font-size: 16px;
+  font-weight: var(--leverui-font-weights-semibold);
+  line-height: 24px;
+  letter-spacing: normal;
+}
+.site-menu-groups section:first-child h2 {
+  margin-top: 0;
+}
+.site-menu-groups a {
+  display: block;
+  padding: 9px 12px;
+  border-radius: var(--leverui-radii-full);
+  color: var(--site-muted);
+  font-size: 16px;
+  line-height: 24px;
+}
+.site-menu-groups a:hover {
+  background: var(--site-nav-hover-bg);
+}
+.site-menu-groups a[aria-current='page'] {
+  background: var(--leverui-colors-gray-muted);
+  color: var(--site-fg);
+  font-weight: var(--leverui-font-weights-medium);
+}
+.site-menu-external {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
+  color: var(--site-fg);
+  font-size: 18px;
+  font-weight: var(--leverui-font-weights-semibold);
+}

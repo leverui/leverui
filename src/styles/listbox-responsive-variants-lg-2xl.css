@@ -1,0 +1,104 @@
+@layer leverui.recipes {
+  @media (min-width: 1024px) {
+    .leverui-listbox__content:not([data-unstyled]):is(
+        [data-variant-lg='subtle'],
+        [data-variant-lg='solid']
+      ) {
+      --leverui-private-listbox-background: var(--leverui-colors-bg-panel);
+      --leverui-private-listbox-border-width: 1px;
+      --leverui-private-listbox-radius: var(--leverui-radii-l2);
+    }
+    .leverui-listbox__content:not([data-unstyled])[data-variant-lg='plain'] {
+      --leverui-private-listbox-background: transparent;
+      --leverui-private-listbox-border-width: 0;
+      --leverui-private-listbox-radius: 0;
+    }
+    .leverui-listbox__item:not([data-unstyled])[data-variant-lg='subtle'] {
+      --leverui-private-listbox-selected-background: var(--leverui-colors-bg-muted);
+      --leverui-private-listbox-selected-color: inherit;
+      --leverui-private-listbox-hover-background: color-mix(
+        in srgb,
+        var(--leverui-colors-bg-emphasized) 60%,
+        transparent
+      );
+    }
+    .leverui-listbox__item:not([data-unstyled])[data-variant-lg='solid'] {
+      --leverui-private-listbox-selected-background: var(--leverui-colors-color-palette-solid);
+      --leverui-private-listbox-selected-color: var(--leverui-colors-color-palette-contrast);
+      --leverui-private-listbox-hover-background: initial;
+    }
+    .leverui-listbox__item:not([data-unstyled])[data-variant-lg='plain'] {
+      --leverui-private-listbox-selected-background: transparent;
+      --leverui-private-listbox-selected-color: inherit;
+      --leverui-private-listbox-hover-background: initial;
+    }
+  }
+  @media (min-width: 1280px) {
+    .leverui-listbox__content:not([data-unstyled]):is(
+        [data-variant-xl='subtle'],
+        [data-variant-xl='solid']
+      ) {
+      --leverui-private-listbox-background: var(--leverui-colors-bg-panel);
+      --leverui-private-listbox-border-width: 1px;
+      --leverui-private-listbox-radius: var(--leverui-radii-l2);
+    }
+    .leverui-listbox__content:not([data-unstyled])[data-variant-xl='plain'] {
+      --leverui-private-listbox-background: transparent;
+      --leverui-private-listbox-border-width: 0;
+      --leverui-private-listbox-radius: 0;
+    }
+    .leverui-listbox__item:not([data-unstyled])[data-variant-xl='subtle'] {
+      --leverui-private-listbox-selected-background: var(--leverui-colors-bg-muted);
+      --leverui-private-listbox-selected-color: inherit;
+      --leverui-private-listbox-hover-background: color-mix(
+        in srgb,
+        var(--leverui-colors-bg-emphasized) 60%,
+        transparent
+      );
+    }
+    .leverui-listbox__item:not([data-unstyled])[data-variant-xl='solid'] {
+      --leverui-private-listbox-selected-background: var(--leverui-colors-color-palette-solid);
+      --leverui-private-listbox-selected-color: var(--leverui-colors-color-palette-contrast);
+      --leverui-private-listbox-hover-background: initial;
+    }
+    .leverui-listbox__item:not([data-unstyled])[data-variant-xl='plain'] {
+      --leverui-private-listbox-selected-background: transparent;
+      --leverui-private-listbox-selected-color: inherit;
+      --leverui-private-listbox-hover-background: initial;
+    }
+  }
+  @media (min-width: 1536px) {
+    .leverui-listbox__content:not([data-unstyled]):is(
+        [data-variant-2xl='subtle'],
+        [data-variant-2xl='solid']
+      ) {
+      --leverui-private-listbox-background: var(--leverui-colors-bg-panel);
+      --leverui-private-listbox-border-width: 1px;
+      --leverui-private-listbox-radius: var(--leverui-radii-l2);
+    }
+    .leverui-listbox__content:not([data-unstyled])[data-variant-2xl='plain'] {
+      --leverui-private-listbox-background: transparent;
+      --leverui-private-listbox-border-width: 0;
+      --leverui-private-listbox-radius: 0;
+    }
+    .leverui-listbox__item:not([data-unstyled])[data-variant-2xl='subtle'] {
+      --leverui-private-listbox-selected-background: var(--leverui-colors-bg-muted);
+      --leverui-private-listbox-selected-color: inherit;
+      --leverui-private-listbox-hover-background: color-mix(
+        in srgb,
+        var(--leverui-colors-bg-emphasized) 60%,
+        transparent
+      );
+    }
+    .leverui-listbox__item:not([data-unstyled])[data-variant-2xl='solid'] {
+      --leverui-private-listbox-selected-background: var(--leverui-colors-color-palette-solid);
+      --leverui-private-listbox-selected-color: var(--leverui-colors-color-palette-contrast);
+      --leverui-private-listbox-hover-background: initial;
+    }
+    .leverui-listbox__item:not([data-unstyled])[data-variant-2xl='plain'] {
+      --leverui-private-listbox-selected-background: transparent;
+      --leverui-private-listbox-selected-color: inherit;
+      --leverui-private-listbox-hover-background: initial;
+    }
+  }
+}

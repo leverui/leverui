@@ -1,0 +1,103 @@
+@layer leverui.recipes {
+  @media (min-width: 64rem) {
+    .leverui-number-input__root:not([data-unstyled])[data-size-lg='xs'] {
+      --leverui-private-number-input-stepper-width: var(
+        --leverui-number-input-stepper-width,
+        var(--leverui-sizes-4)
+      );
+      --leverui-private-number-input-stepper-font-size: var(--leverui-font-sizes-2xs);
+    }
+
+    .leverui-number-input__root:not([data-unstyled])[data-size-lg='sm'] {
+      --leverui-private-number-input-stepper-width: var(
+        --leverui-number-input-stepper-width,
+        var(--leverui-sizes-5)
+      );
+      --leverui-private-number-input-stepper-font-size: var(--leverui-font-sizes-xs);
+    }
+
+    .leverui-number-input__root:not([data-unstyled])[data-size-lg='md'] {
+      --leverui-private-number-input-stepper-width: var(
+        --leverui-number-input-stepper-width,
+        var(--leverui-sizes-6)
+      );
+      --leverui-private-number-input-stepper-font-size: var(--leverui-font-sizes-sm);
+    }
+
+    .leverui-number-input__root:not([data-unstyled])[data-size-lg='lg'] {
+      --leverui-private-number-input-stepper-width: var(
+        --leverui-number-input-stepper-width,
+        var(--leverui-sizes-6)
+      );
+      --leverui-private-number-input-stepper-font-size: var(--leverui-font-sizes-sm);
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .leverui-number-input__root:not([data-unstyled])[data-size-xl='xs'] {
+      --leverui-private-number-input-stepper-width: var(
+        --leverui-number-input-stepper-width,
+        var(--leverui-sizes-4)
+      );
+      --leverui-private-number-input-stepper-font-size: var(--leverui-font-sizes-2xs);
+    }
+
+    .leverui-number-input__root:not([data-unstyled])[data-size-xl='sm'] {
+      --leverui-private-number-input-stepper-width: var(
+        --leverui-number-input-stepper-width,
+        var(--leverui-sizes-5)
+      );
+      --leverui-private-number-input-stepper-font-size: var(--leverui-font-sizes-xs);
+    }
+
+    .leverui-number-input__root:not([data-unstyled])[data-size-xl='md'] {
+      --leverui-private-number-input-stepper-width: var(
+        --leverui-number-input-stepper-width,
+        var(--leverui-sizes-6)
+      );
+      --leverui-private-number-input-stepper-font-size: var(--leverui-font-sizes-sm);
+    }
+
+    .leverui-number-input__root:not([data-unstyled])[data-size-xl='lg'] {
+      --leverui-private-number-input-stepper-width: var(
+        --leverui-number-input-stepper-width,
+        var(--leverui-sizes-6)
+      );
+      --leverui-private-number-input-stepper-font-size: var(--leverui-font-sizes-sm);
+    }
+  }
+
+  @media (min-width: 96rem) {
+    .leverui-number-input__root:not([data-unstyled])[data-size-2xl='xs'] {
+      --leverui-private-number-input-stepper-width: var(
+        --leverui-number-input-stepper-width,
+        var(--leverui-sizes-4)
+      );
+      --leverui-private-number-input-stepper-font-size: var(--leverui-font-sizes-2xs);
+    }
+
+    .leverui-number-input__root:not([data-unstyled])[data-size-2xl='sm'] {
+      --leverui-private-number-input-stepper-width: var(
+        --leverui-number-input-stepper-width,
+        var(--leverui-sizes-5)
+      );
+      --leverui-private-number-input-stepper-font-size: var(--leverui-font-sizes-xs);
+    }
+
+    .leverui-number-input__root:not([data-unstyled])[data-size-2xl='md'] {
+      --leverui-private-number-input-stepper-width: var(
+        --leverui-number-input-stepper-width,
+        var(--leverui-sizes-6)
+      );
+      --leverui-private-number-input-stepper-font-size: var(--leverui-font-sizes-sm);
+    }
+
+    .leverui-number-input__root:not([data-unstyled])[data-size-2xl='lg'] {
+      --leverui-private-number-input-stepper-width: var(
+        --leverui-number-input-stepper-width,
+        var(--leverui-sizes-6)
+      );
+      --leverui-private-number-input-stepper-font-size: var(--leverui-font-sizes-sm);
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/skip-nav-types.tsx", "src/skip-nav-example.tsx", "src/skip-nav-main.tsx"],
+  "exclude": []
+}

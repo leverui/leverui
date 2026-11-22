@@ -1,0 +1,16 @@
+.dialog-polymorphic-header {
+  padding-top: 12px;
+}
+
+.dialog-polymorphic-body {
+  padding-top: 14px;
+}
+
+.dialog-polymorphic-footer {
+  padding-top: 16px;
+}
+
+.dialog-polymorphic-close {
+  position: static;
+  margin-left: 8px;
+}

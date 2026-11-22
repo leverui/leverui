@@ -1,0 +1,46 @@
+.example-code-medium-width {
+  max-width: var(--leverui-sizes-md);
+}
+
+.example-code-inline {
+  display: inline-flex;
+}
+
+.example-code-end-padding {
+  padding-inline-end: var(--leverui-spacing-10);
+}
+
+.example-code-inline-text {
+  display: inline-block;
+}
+
+.example-code-xs,
+.example-code-tabs-trigger {
+  font-size: var(--leverui-font-sizes-xs);
+}
+
+.example-code-collapse-text {
+  font-size: var(--leverui-font-sizes-sm);
+}
+
+.example-code-select-positioner {
+  z-index: var(--leverui-z-index-popover);
+}
+
+.example-code-tabs-header {
+  border-bottom-width: 1px;
+}
+
+.example-code-tabs-list {
+  width: 100%;
+  border: 0;
+  margin-inline-start: calc(-1 * var(--leverui-spacing-1));
+}
+
+.example-code-tabs-content {
+  padding-top: var(--leverui-spacing-1);
+}
+
+.example-code-surface {
+  background: var(--leverui-colors-bg);
+}

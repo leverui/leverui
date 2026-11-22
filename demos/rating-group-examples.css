@@ -1,0 +1,17 @@
+.rating-example-emoji {
+  min-width: var(--leverui-sizes-9);
+  filter: grayscale(1);
+  transition: scale 0.1s;
+}
+
+.rating-example-emoji[data-checked] {
+  filter: none;
+}
+
+.rating-example-emoji:hover {
+  scale: 1.1;
+}
+
+.example-rating-group-label {
+  gap: var(--leverui-spacing-4);
+}

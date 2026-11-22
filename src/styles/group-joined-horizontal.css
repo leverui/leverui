@@ -1,0 +1,101 @@
+@layer leverui.recipes {
+  @media (width < 30rem) {
+    .leverui-group:not([data-unstyled])[data-joined-base='horizontal']:has(
+        > :nth-child(
+          2 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
+        )
+      ) {
+      > :nth-child(
+        1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
+      ) {
+        border-start-end-radius: 0;
+        border-end-end-radius: 0;
+        margin-inline-end: -1px;
+      }
+      > :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip]):not(
+          :nth-child(
+            1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
+          )
+        ):not(
+          :nth-last-child(
+            1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
+          )
+        ) {
+        border-radius: 0;
+        margin-inline-end: -1px;
+      }
+      > :nth-last-child(
+        1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
+      ) {
+        border-start-start-radius: 0;
+        border-end-start-radius: 0;
+      }
+    }
+  }
+  @media (30rem <= width < 48rem) {
+    .leverui-group:not([data-unstyled])[data-joined-sm='horizontal']:has(
+        > :nth-child(
+          2 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
+        )
+      ) {
+      > :nth-child(
+        1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
+      ) {
+        border-start-end-radius: 0;
+        border-end-end-radius: 0;
+        margin-inline-end: -1px;
+      }
+      > :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip]):not(
+          :nth-child(
+            1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
+          )
+        ):not(
+          :nth-last-child(
+            1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
+          )
+        ) {
+        border-radius: 0;
+        margin-inline-end: -1px;
+      }
+      > :nth-last-child(
+        1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
+      ) {
+        border-start-start-radius: 0;
+        border-end-start-radius: 0;
+      }
+    }
+  }
+  @media (48rem <= width < 64rem) {
+    .leverui-group:not([data-unstyled])[data-joined-md='horizontal']:has(
+        > :nth-child(
+          2 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
+        )
+      ) {
+      > :nth-child(
+        1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
+      ) {
+        border-start-end-radius: 0;
+        border-end-end-radius: 0;
+        margin-inline-end: -1px;
+      }
+      > :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip]):not(
+          :nth-child(
+            1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
+          )
+        ):not(
+          :nth-last-child(
+            1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
+          )
+        ) {
+        border-radius: 0;
+        margin-inline-end: -1px;
+      }
+      > :nth-last-child(
+        1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
+      ) {
+        border-start-start-radius: 0;
+        border-end-start-radius: 0;
+      }
+    }
+  }
+}

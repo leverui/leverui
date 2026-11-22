@@ -1,0 +1,79 @@
+@layer leverui.recipes {
+  @media (min-width: 64rem) {
+    .leverui-input-addon:not([data-unstyled])[data-variant-lg='outline'] {
+      --leverui-private-input-addon-border-width: 1px;
+      --leverui-private-input-addon-border-color: var(--leverui-colors-border);
+      --leverui-private-input-addon-background: var(--leverui-colors-bg-muted);
+      --leverui-private-input-addon-radius: var(--leverui-radii-l2);
+      --leverui-private-input-addon-padding: var(--leverui-private-input-addon-size-padding);
+    }
+
+    .leverui-input-addon:not([data-unstyled])[data-variant-lg='subtle'] {
+      --leverui-private-input-addon-border-width: 1px;
+      --leverui-private-input-addon-border-color: transparent;
+      --leverui-private-input-addon-background: var(--leverui-colors-bg-emphasized);
+      --leverui-private-input-addon-radius: var(--leverui-radii-l2);
+      --leverui-private-input-addon-padding: var(--leverui-private-input-addon-size-padding);
+    }
+
+    .leverui-input-addon:not([data-unstyled])[data-variant-lg='flushed'] {
+      --leverui-private-input-addon-border-width: 0 0 1px;
+      --leverui-private-input-addon-border-color: inherit;
+      --leverui-private-input-addon-background: transparent;
+      --leverui-private-input-addon-radius: 0;
+      --leverui-private-input-addon-padding: 0;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .leverui-input-addon:not([data-unstyled])[data-variant-xl='outline'] {
+      --leverui-private-input-addon-border-width: 1px;
+      --leverui-private-input-addon-border-color: var(--leverui-colors-border);
+      --leverui-private-input-addon-background: var(--leverui-colors-bg-muted);
+      --leverui-private-input-addon-radius: var(--leverui-radii-l2);
+      --leverui-private-input-addon-padding: var(--leverui-private-input-addon-size-padding);
+    }
+
+    .leverui-input-addon:not([data-unstyled])[data-variant-xl='subtle'] {
+      --leverui-private-input-addon-border-width: 1px;
+      --leverui-private-input-addon-border-color: transparent;
+      --leverui-private-input-addon-background: var(--leverui-colors-bg-emphasized);
+      --leverui-private-input-addon-radius: var(--leverui-radii-l2);
+      --leverui-private-input-addon-padding: var(--leverui-private-input-addon-size-padding);
+    }
+
+    .leverui-input-addon:not([data-unstyled])[data-variant-xl='flushed'] {
+      --leverui-private-input-addon-border-width: 0 0 1px;
+      --leverui-private-input-addon-border-color: inherit;
+      --leverui-private-input-addon-background: transparent;
+      --leverui-private-input-addon-radius: 0;
+      --leverui-private-input-addon-padding: 0;
+    }
+  }
+
+  @media (min-width: 96rem) {
+    .leverui-input-addon:not([data-unstyled])[data-variant-2xl='outline'] {
+      --leverui-private-input-addon-border-width: 1px;
+      --leverui-private-input-addon-border-color: var(--leverui-colors-border);
+      --leverui-private-input-addon-background: var(--leverui-colors-bg-muted);
+      --leverui-private-input-addon-radius: var(--leverui-radii-l2);
+      --leverui-private-input-addon-padding: var(--leverui-private-input-addon-size-padding);
+    }
+
+    .leverui-input-addon:not([data-unstyled])[data-variant-2xl='subtle'] {
+      --leverui-private-input-addon-border-width: 1px;
+      --leverui-private-input-addon-border-color: transparent;
+      --leverui-private-input-addon-background: var(--leverui-colors-bg-emphasized);
+      --leverui-private-input-addon-radius: var(--leverui-radii-l2);
+      --leverui-private-input-addon-padding: var(--leverui-private-input-addon-size-padding);
+    }
+
+    .leverui-input-addon:not([data-unstyled])[data-variant-2xl='flushed'] {
+      --leverui-private-input-addon-border-width: 0 0 1px;
+      --leverui-private-input-addon-border-color: inherit;
+      --leverui-private-input-addon-background: transparent;
+      --leverui-private-input-addon-radius: 0;
+      --leverui-private-input-addon-padding: 0;
+    }
+  }
+}

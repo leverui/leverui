@@ -1,0 +1,15 @@
+export const alertCssFiles = [
+  'alert-base.css',
+  'alert-sizes.css',
+  'alert-responsive-sizes.css',
+  'alert-status-base.css',
+  'alert-status-sm.css',
+  'alert-status-md.css',
+  'alert-status-lg.css',
+  'alert-status-xl.css',
+  'alert-status-2xl.css',
+  'alert-variants.css',
+  'alert-responsive-variants.css',
+  'alert-inline.css',
+  'alert-responsive-inline.css',
+];

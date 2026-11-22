@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/marquee-types.tsx"],
+  "compilerOptions": {
+    "noEmit": true,
+    "types": []
+  }
+}

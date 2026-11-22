@@ -1,0 +1,146 @@
+@layer leverui.recipes {
+  .leverui-tags-input__root:not([data-unstyled]) {
+    --leverui-private-tags-input-height: var(--leverui-sizes-10);
+    --leverui-private-tags-input-px: var(--leverui-spacing-1\.5);
+    --leverui-private-tags-input-py: var(--leverui-spacing-1);
+    --leverui-private-tags-input-gap: var(--leverui-spacing-1);
+    --leverui-private-tags-input-item-height: var(--leverui-sizes-7);
+    --leverui-private-tags-input-item-px: var(--leverui-spacing-2);
+    --leverui-private-tags-input-font-size: var(--leverui-font-sizes-sm);
+    --leverui-private-tags-input-line-height: 1.25rem;
+    --leverui-private-tags-input-focus-color: var(--leverui-colors-color-palette-focus-ring);
+    --leverui-private-tags-input-error-color: var(--leverui-colors-border-error);
+    display: flex;
+    flex-direction: column;
+    gap: var(--leverui-spacing-1\.5);
+    width: 100%;
+    font-size: var(--leverui-private-tags-input-font-size);
+    line-height: var(--leverui-private-tags-input-line-height);
+
+    .leverui-tags-input__label:not([data-unstyled]) {
+      font-weight: var(--leverui-font-weights-medium);
+      font-size: var(--leverui-font-sizes-sm);
+      line-height: 1.25rem;
+
+      &:is([data-disabled], [aria-disabled='true']) {
+        opacity: 0.5;
+      }
+    }
+
+    .leverui-tags-input__control:not([data-unstyled]) {
+      min-height: var(--leverui-private-tags-input-height);
+      padding-inline: var(--leverui-private-tags-input-px);
+      padding-block: var(--leverui-private-tags-input-py);
+      gap: var(--leverui-private-tags-input-gap);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      border-radius: var(--leverui-radii-l2);
+      position: relative;
+      transition-property: border-color, box-shadow;
+      transition-duration: var(--leverui-durations-normal);
+
+      &:is([data-disabled], [aria-disabled='true']) {
+        opacity: 0.5;
+      }
+
+      &:is([data-invalid], [aria-invalid='true']) {
+        border-color: var(--leverui-private-tags-input-error-color);
+      }
+    }
+
+    .leverui-tags-input__input:not([data-unstyled]) {
+      flex: 1;
+      min-width: var(--leverui-sizes-20);
+      outline: none;
+      background: transparent;
+      color: var(--leverui-colors-fg);
+      padding-inline: calc(var(--leverui-private-tags-input-item-px) / 1.25);
+      height: var(--leverui-private-tags-input-item-height);
+
+      &:is([data-readonly], [readonly], [aria-readonly='true']) {
+        display: none;
+      }
+    }
+
+    .leverui-tags-input__item:not([data-unstyled]) {
+      max-width: 100%;
+      min-width: 0;
+    }
+
+    .leverui-tags-input__itemText:not([data-unstyled]) {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+      min-width: 0;
+    }
+
+    .leverui-tags-input__itemInput:not([data-unstyled]) {
+      outline: none;
+      background: transparent;
+      min-width: 2ch;
+      color: inherit;
+      padding-inline: var(--leverui-private-tags-input-item-px);
+      height: var(--leverui-private-tags-input-item-height);
+    }
+
+    .leverui-tags-input__itemPreview:not([data-unstyled]) {
+      height: var(--leverui-private-tags-input-item-height);
+      user-select: none;
+      display: inline-flex;
+      align-items: center;
+      gap: var(--leverui-spacing-1);
+      border-radius: var(--leverui-radii-l1);
+      padding-inline: var(--leverui-private-tags-input-item-px);
+      max-width: 100%;
+    }
+
+    .leverui-tags-input__itemDeleteTrigger:not([data-unstyled]) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      width: calc(var(--leverui-private-tags-input-item-height) / 1.5);
+      height: calc(var(--leverui-private-tags-input-item-height) / 1.5);
+      cursor: var(--leverui-cursor-button);
+      margin-inline-end: calc(var(--leverui-spacing-1) * -1);
+      opacity: 0.4;
+
+      &:hover,
+      [data-highlighted] & {
+        opacity: 1;
+      }
+
+      &:is([data-disabled], [disabled], [aria-disabled='true']) {
+        cursor: initial;
+      }
+
+      svg {
+        width: 80%;
+        height: 80%;
+      }
+    }
+
+    .leverui-tags-input__clearTrigger:not([data-unstyled]) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: calc(var(--leverui-private-tags-input-item-height) / 1.5);
+      height: calc(var(--leverui-private-tags-input-item-height) / 1.5);
+      cursor: var(--leverui-cursor-button);
+      color: var(--leverui-colors-fg-muted);
+      border-radius: var(--leverui-radii-l1);
+
+      &:is(:focus-visible, [data-focus-visible]) {
+        outline: 2px solid var(--leverui-colors-color-palette-focus-ring);
+        outline-offset: -2px;
+      }
+
+      svg {
+        width: var(--leverui-sizes-5);
+        height: var(--leverui-sizes-5);
+      }
+    }
+  }
+}

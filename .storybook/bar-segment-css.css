@@ -1,0 +1,7 @@
+.consumer-bar-segment {
+  --leverui-bar-segment-legend-gap: 0.75rem;
+}
+
+.consumer-bar-segment .leverui-bar-segment__segment {
+  border-radius: 9px;
+}

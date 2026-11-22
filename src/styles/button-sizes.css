@@ -1,0 +1,91 @@
+@layer leverui.recipes {
+  .leverui-button:not([data-unstyled]):is([data-size='2xs']) {
+    height: var(--leverui-sizes-6);
+    min-width: var(--leverui-sizes-6);
+    font-size: var(--leverui-font-sizes-xs);
+    line-height: 1rem;
+    padding-inline: var(--leverui-spacing-2);
+    gap: var(--leverui-spacing-1);
+  }
+
+  .leverui-button:not([data-unstyled])[data-size='xs'] {
+    height: var(--leverui-sizes-8);
+    min-width: var(--leverui-sizes-8);
+    font-size: var(--leverui-font-sizes-xs);
+    line-height: 1rem;
+    padding-inline: var(--leverui-spacing-2\.5);
+    gap: var(--leverui-spacing-1);
+  }
+
+  .leverui-button:not([data-unstyled])[data-size='sm'] {
+    height: var(--leverui-sizes-9);
+    min-width: var(--leverui-sizes-9);
+    font-size: var(--leverui-font-sizes-sm);
+    line-height: 1.25rem;
+    padding-inline: var(--leverui-spacing-3\.5);
+    gap: var(--leverui-spacing-2);
+  }
+
+  .leverui-button:not([data-unstyled]):is([data-size='md'], :not([data-size])) {
+    height: var(--leverui-sizes-10);
+    min-width: var(--leverui-sizes-10);
+    font-size: var(--leverui-font-sizes-sm);
+    line-height: 1.25rem;
+    padding-inline: var(--leverui-spacing-4);
+    gap: var(--leverui-spacing-2);
+  }
+
+  .leverui-button:not([data-unstyled])[data-size='lg'] {
+    height: var(--leverui-sizes-11);
+    min-width: var(--leverui-sizes-11);
+    font-size: var(--leverui-font-sizes-md);
+    line-height: 1.5rem;
+    padding-inline: var(--leverui-spacing-5);
+    gap: var(--leverui-spacing-3);
+  }
+
+  .leverui-button:not([data-unstyled])[data-size='xl'] {
+    height: var(--leverui-sizes-12);
+    min-width: var(--leverui-sizes-12);
+    font-size: var(--leverui-font-sizes-md);
+    line-height: 1.5rem;
+    padding-inline: var(--leverui-spacing-5);
+    gap: var(--leverui-spacing-2\.5);
+  }
+
+  .leverui-button:not([data-unstyled])[data-size='2xl'] {
+    height: var(--leverui-sizes-16);
+    min-width: var(--leverui-sizes-16);
+    font-size: var(--leverui-font-sizes-lg);
+    line-height: 1.75rem;
+    padding-inline: var(--leverui-spacing-7);
+    gap: var(--leverui-spacing-3);
+  }
+
+  .leverui-button:not([data-unstyled]):is([data-size='2xs']) :is(svg, [data-leverui-icon]) {
+    width: var(--leverui-sizes-3\.5);
+    height: var(--leverui-sizes-3\.5);
+  }
+
+  .leverui-button:not([data-unstyled]):is([data-size='xs'], [data-size='sm'])
+    :is(svg, [data-leverui-icon]) {
+    width: var(--leverui-sizes-4);
+    height: var(--leverui-sizes-4);
+  }
+
+  .leverui-button:not([data-unstyled]):is(
+      [data-size='md'],
+      [data-size='lg'],
+      [data-size='xl'],
+      :not([data-size])
+    )
+    :is(svg, [data-leverui-icon]) {
+    width: var(--leverui-sizes-5);
+    height: var(--leverui-sizes-5);
+  }
+
+  .leverui-button:not([data-unstyled])[data-size='2xl'] :is(svg, [data-leverui-icon]) {
+    width: var(--leverui-sizes-6);
+    height: var(--leverui-sizes-6);
+  }
+}

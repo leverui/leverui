@@ -1,0 +1,21 @@
+/** Keep authored Input family styles in their cascade order. */
+export const inputCssFiles = [
+  'input-group.css',
+  'input-element.css',
+  'input-element-responsive.css',
+  'input-addon-base.css',
+  'input-addon-sizes.css',
+  'input-addon-responsive-sizes-sm-md.css',
+  'input-addon-responsive-sizes-lg-2xl.css',
+  'input-addon-variants.css',
+  'input-addon-responsive-variants-sm-md.css',
+  'input-addon-responsive-variants-lg-2xl.css',
+  'input-base.css',
+  'input-sizes.css',
+  'input-responsive-sizes-sm-md.css',
+  'input-responsive-sizes-lg-2xl.css',
+  'input-variants.css',
+  'input-responsive-variants-sm-md.css',
+  'input-responsive-variants-lg-2xl.css',
+  'input-states.css',
+];

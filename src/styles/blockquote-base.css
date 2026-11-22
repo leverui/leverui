@@ -1,0 +1,62 @@
+@layer leverui.recipes {
+  .leverui-blockquote__root:not([data-unstyled]) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--leverui-spacing-2);
+    padding-inline: var(--leverui-spacing-5);
+    align-items: var(--leverui-private-blockquote-align, flex-start);
+    text-align: var(--leverui-private-blockquote-text-align, start);
+    border-inline-start-width: var(--leverui-private-blockquote-border-width, 0px);
+    border-inline-start-style: var(--leverui-private-blockquote-border-style, none);
+    border-inline-start-color: var(--leverui-private-blockquote-border-color, currentColor);
+
+    &[data-justify='start'] {
+      --leverui-private-blockquote-align: flex-start;
+      --leverui-private-blockquote-text-align: start;
+    }
+    &[data-justify='center'] {
+      --leverui-private-blockquote-align: center;
+      --leverui-private-blockquote-text-align: center;
+    }
+    &[data-justify='end'] {
+      --leverui-private-blockquote-align: flex-end;
+      --leverui-private-blockquote-text-align: end;
+    }
+    &:is([data-variant='subtle'], [data-variant='solid']) {
+      --leverui-private-blockquote-border-width: 4px;
+      --leverui-private-blockquote-border-style: solid;
+    }
+    &[data-variant='subtle'] {
+      --leverui-private-blockquote-border-color: var(--leverui-colors-color-palette-muted);
+      --leverui-private-blockquote-icon-color: var(--leverui-colors-color-palette-fg);
+    }
+    &[data-variant='solid'] {
+      --leverui-private-blockquote-border-color: var(--leverui-colors-color-palette-solid);
+      --leverui-private-blockquote-icon-color: var(--leverui-colors-color-palette-solid);
+    }
+    &[data-variant='plain'] {
+      --leverui-private-blockquote-border-width: 0px;
+      --leverui-private-blockquote-border-style: none;
+      --leverui-private-blockquote-border-color: currentColor;
+      --leverui-private-blockquote-icon-color: var(--leverui-colors-color-palette-solid);
+    }
+  }
+
+  @scope (.leverui-blockquote__root:not([data-unstyled])) to (.leverui-blockquote__root) {
+    .leverui-blockquote__caption:not([data-unstyled]) {
+      font-size: var(--leverui-font-sizes-sm);
+      line-height: 1.25rem;
+      color: var(--leverui-colors-fg-muted);
+    }
+
+    .leverui-blockquote__icon:not([data-unstyled]) {
+      width: var(--leverui-sizes-5);
+      height: var(--leverui-sizes-5);
+      color: var(
+        --leverui-private-blockquote-icon-color,
+        var(--leverui-colors-color-palette-solid)
+      );
+    }
+  }
+}

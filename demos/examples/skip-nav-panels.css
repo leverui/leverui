@@ -1,0 +1,25 @@
+.skip-nav-example-panel {
+  padding: var(--leverui-spacing-4);
+  border-radius: var(--leverui-radii-md);
+}
+
+.skip-nav-example-panel--gray {
+  background: var(--leverui-colors-gray-100);
+  margin-bottom: var(--leverui-spacing-4);
+}
+
+.skip-nav-example-panel--blue {
+  background: var(--leverui-colors-blue-50);
+}
+
+.skip-nav-example-panel--green {
+  background: var(--leverui-colors-green-50);
+}
+
+.skip-nav-example-panel--purple {
+  background: var(--leverui-colors-purple-50);
+  padding: var(--leverui-spacing-6);
+}
+.skip-nav-example-heading {
+  margin-bottom: var(--leverui-spacing-4);
+}

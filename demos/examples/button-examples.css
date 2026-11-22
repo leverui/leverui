@@ -1,0 +1,39 @@
+.example-button-radius-l1 {
+  border-radius: var(--leverui-radii-l1);
+}
+
+.example-button-radius-l2 {
+  border-radius: var(--leverui-radii-l2);
+}
+
+.example-button-radius-l3 {
+  border-radius: var(--leverui-radii-l3);
+}
+
+.example-button-radius-sm {
+  border-radius: var(--leverui-radii-sm);
+}
+
+.example-button-radius-md {
+  border-radius: var(--leverui-radii-md);
+}
+
+.example-button-radius-lg {
+  border-radius: var(--leverui-radii-lg);
+}
+
+.example-button-radius-xl {
+  border-radius: var(--leverui-radii-xl);
+}
+
+.example-button-radius-2xl {
+  border-radius: var(--leverui-radii-2xl);
+}
+
+.example-button-radius-full {
+  border-radius: var(--leverui-radii-full);
+}
+
+.example-button-pill {
+  border-radius: var(--leverui-radii-3xl);
+}

@@ -1,0 +1,65 @@
+@layer leverui.recipes {
+  @media (min-width: 30rem) {
+    .leverui-input:not([data-unstyled])[data-variant-sm='outline'] {
+      --leverui-private-input-background: transparent;
+      --leverui-private-input-border-width: 1px;
+      --leverui-private-input-border-color: var(--leverui-colors-border);
+      --leverui-private-input-radius: var(--leverui-radii-l2);
+      --leverui-private-input-padding: var(--leverui-private-input-size-padding);
+      --leverui-private-input-focus-outline-width: var(--focus-ring-width, 1px);
+      --leverui-private-input-focus-shadow: none;
+    }
+
+    .leverui-input:not([data-unstyled])[data-variant-sm='subtle'] {
+      --leverui-private-input-background: var(--leverui-colors-bg-muted);
+      --leverui-private-input-border-width: 1px;
+      --leverui-private-input-border-color: transparent;
+      --leverui-private-input-radius: var(--leverui-radii-l2);
+      --leverui-private-input-padding: var(--leverui-private-input-size-padding);
+      --leverui-private-input-focus-outline-width: var(--focus-ring-width, 1px);
+      --leverui-private-input-focus-shadow: none;
+    }
+
+    .leverui-input:not([data-unstyled])[data-variant-sm='flushed'] {
+      --leverui-private-input-background: transparent;
+      --leverui-private-input-border-width: 0 0 1px;
+      --leverui-private-input-border-color: var(--leverui-colors-border);
+      --leverui-private-input-radius: 0;
+      --leverui-private-input-padding: 0;
+      --leverui-private-input-focus-outline-width: 0;
+      --leverui-private-input-focus-shadow: 0 1px 0 0 var(--leverui-private-input-focus-color);
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .leverui-input:not([data-unstyled])[data-variant-md='outline'] {
+      --leverui-private-input-background: transparent;
+      --leverui-private-input-border-width: 1px;
+      --leverui-private-input-border-color: var(--leverui-colors-border);
+      --leverui-private-input-radius: var(--leverui-radii-l2);
+      --leverui-private-input-padding: var(--leverui-private-input-size-padding);
+      --leverui-private-input-focus-outline-width: var(--focus-ring-width, 1px);
+      --leverui-private-input-focus-shadow: none;
+    }
+
+    .leverui-input:not([data-unstyled])[data-variant-md='subtle'] {
+      --leverui-private-input-background: var(--leverui-colors-bg-muted);
+      --leverui-private-input-border-width: 1px;
+      --leverui-private-input-border-color: transparent;
+      --leverui-private-input-radius: var(--leverui-radii-l2);
+      --leverui-private-input-padding: var(--leverui-private-input-size-padding);
+      --leverui-private-input-focus-outline-width: var(--focus-ring-width, 1px);
+      --leverui-private-input-focus-shadow: none;
+    }
+
+    .leverui-input:not([data-unstyled])[data-variant-md='flushed'] {
+      --leverui-private-input-background: transparent;
+      --leverui-private-input-border-width: 0 0 1px;
+      --leverui-private-input-border-color: var(--leverui-colors-border);
+      --leverui-private-input-radius: 0;
+      --leverui-private-input-padding: 0;
+      --leverui-private-input-focus-outline-width: 0;
+      --leverui-private-input-focus-shadow: 0 1px 0 0 var(--leverui-private-input-focus-color);
+    }
+  }
+}

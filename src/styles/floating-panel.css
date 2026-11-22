@@ -1,0 +1,92 @@
+@layer leverui.recipes {
+  .leverui-floating-panel__positioner[data-leverui-floating-panel-css] {
+    --leverui-private-floating-panel-z-index: var(--leverui-z-index-popover);
+    z-index: calc(var(--leverui-private-floating-panel-z-index) + var(--layer-index, 0));
+
+    &:has([data-topmost]) {
+      --layer-index: 100;
+    }
+
+    &:has([data-behind]) {
+      --layer-index: -100;
+    }
+  }
+
+  .leverui-floating-panel__content[data-leverui-floating-panel-css] {
+    display: flex;
+    flex-direction: column;
+    background: var(--leverui-colors-bg-panel);
+    border-radius: var(--leverui-radii-l2);
+    box-shadow: var(--leverui-shadows-lg);
+    overflow: hidden;
+    outline: 0;
+    position: relative;
+
+    &[data-state='open'] {
+      animation-name: scale-in, fade-in;
+      animation-duration: var(--leverui-durations-moderate);
+    }
+  }
+
+  .leverui-floating-panel__dragTrigger[data-leverui-floating-panel-css] {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: var(--leverui-spacing-2);
+    min-width: 0;
+  }
+
+  .leverui-floating-panel__header[data-leverui-floating-panel-css] {
+    display: flex;
+    align-items: center;
+    gap: var(--leverui-spacing-2);
+    padding-inline: var(--leverui-spacing-3);
+    padding-block: var(--leverui-spacing-2);
+    border-bottom-width: 1px;
+    background: var(--leverui-colors-bg-subtle);
+    flex: none;
+  }
+
+  .leverui-floating-panel__title[data-leverui-floating-panel-css] {
+    font-weight: var(--leverui-font-weights-semibold);
+    font-size: var(--leverui-font-sizes-sm);
+    line-height: 1.25rem;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .leverui-floating-panel__body[data-leverui-floating-panel-css] {
+    flex: 1;
+    overflow: auto;
+    padding: var(--leverui-spacing-3);
+    font-size: var(--leverui-font-sizes-sm);
+    line-height: 1.25rem;
+  }
+
+  .leverui-floating-panel__resizeTrigger[data-leverui-floating-panel-css] {
+    z-index: 1;
+    --leverui-private-floating-panel-handle-size: var(--leverui-sizes-2\.5);
+
+    &[data-placement='n'],
+    &[data-placement='s'] {
+      height: var(--leverui-private-floating-panel-handle-size);
+    }
+
+    &[data-placement='e'],
+    &[data-placement='w'] {
+      width: var(--leverui-private-floating-panel-handle-size);
+    }
+
+    &[data-placement]:is(
+        [data-placement='ne'],
+        [data-placement='nw'],
+        [data-placement='se'],
+        [data-placement='sw']
+      ) {
+      width: var(--leverui-private-floating-panel-handle-size);
+      height: var(--leverui-private-floating-panel-handle-size);
+    }
+  }
+}

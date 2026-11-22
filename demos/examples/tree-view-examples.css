@@ -1,0 +1,11 @@
+.example-tree-view-sample {
+  max-width: var(--leverui-sizes-sm);
+}
+
+.example-tree-view-flat {
+  --leverui-tree-indentation: 0px;
+}
+
+.example-tree-view-link-icon {
+  font-size: var(--leverui-font-sizes-xs);
+}

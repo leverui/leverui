@@ -1,0 +1,10 @@
+@layer leverui.recipes {
+  .leverui-scroll-area__root:not([data-unstyled]) {
+    &[data-variant='hover'] {
+      --leverui-private-scroll-area-opacity: 0;
+    }
+    &[data-variant='always'] {
+      --leverui-private-scroll-area-opacity: 1;
+    }
+  }
+}

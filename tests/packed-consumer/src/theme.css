@@ -1,0 +1,172 @@
+@import './box-layout.css';
+@import './card.css';
+@import './consumer-system.css';
+
+:root {
+  --leverui-colors-bg: rgb(242, 239, 255);
+}
+
+.brand-scope {
+  --leverui-colors-blue-solid: rgb(98, 84, 199);
+}
+
+.packed-highlight-red {
+  color: var(--leverui-colors-red-500);
+}
+
+.packed-code-custom {
+  background-color: rgb(101, 69, 160);
+  min-height: 36px;
+}
+
+.packed-code-block {
+  --leverui-code-block-radius: 12px;
+}
+
+.packed-kbd-custom {
+  background-color: rgb(91, 52, 122);
+  letter-spacing: 2px;
+}
+
+.packed-spinner-custom {
+  border-width: 5px;
+  --leverui-spinner-track-color: rgb(9, 22, 54);
+}
+
+.packed-loader-overlay {
+  background: rgb(23 45 67 / 80%);
+  border-radius: 6px;
+}
+
+.packed-strong-reactive-plain,
+.packed-quote-reactive-plain {
+  font-weight: 400;
+}
+
+.packed-field {
+  --leverui-colors-fg-error: rgb(128, 40, 120);
+}
+
+.packed-field .leverui-input {
+  border-radius: 13px;
+}
+
+.packed-field .leverui-input-addon {
+  border-radius: 15px;
+}
+
+.packed-field .leverui-input-element {
+  color: rgb(10, 80, 170);
+}
+
+.packed-field .leverui-input-group {
+  outline: 2px solid rgb(10, 80, 170);
+}
+
+.packed-native-select .leverui-native-select__field {
+  border-radius: 11px;
+}
+
+.packed-number-input .leverui-number-input__input {
+  border-radius: 12px;
+}
+
+.packed-pin-input .leverui-pin-input__input {
+  border-radius: 12px;
+}
+
+.packed-textarea .leverui-textarea {
+  border-radius: 14px;
+}
+
+.packed-checkbox-card .leverui-checkbox-card__control {
+  border-radius: 17px;
+}
+
+.packed-combobox .leverui-combobox__input {
+  border-radius: 19px;
+}
+
+.packed-accordion .leverui-accordion__itemTrigger {
+  border-radius: 17px;
+}
+
+.packed-action-bar .leverui-action-bar__content {
+  border-radius: 19px;
+}
+
+.packed-collapsible .leverui-collapsible__content {
+  border-radius: 23px;
+}
+
+.packed-listbox .leverui-listbox__item {
+  border-radius: 21px;
+}
+
+.packed-radio-card .leverui-radio-card__itemControl {
+  border-radius: 23px;
+}
+
+.packed-radio-group .leverui-radio-group__itemControl {
+  border-radius: 29px;
+}
+
+.packed-fieldset {
+  --leverui-colors-fg-error: rgb(90, 30, 170);
+}
+
+.packed-file-upload {
+  --leverui-colors-bg: rgb(30, 40, 90);
+}
+
+.packed-editable {
+  --leverui-colors-bg-muted: rgb(30, 40, 90);
+}
+
+:where(.packed-link-css) .leverui-linkbox {
+  position: static;
+}
+
+:where(.packed-link-css) .leverui-linkbox__overlay {
+  position: relative;
+}
+
+:where(.packed-list-css) .leverui-list__item {
+  color: rgb(9, 8, 7);
+}
+
+:where(.packed-qr-css) .leverui-qr-code__frame {
+  fill: rgb(9, 8, 7);
+}
+
+:where(.packed-quote-css) .leverui-quote {
+  font-weight: 400;
+}
+
+:where(.packed-separator-css) .leverui-separator {
+  border-top-color: rgb(1, 2, 3);
+}
+
+.packed-span-css span {
+  color: rgb(1, 2, 3);
+}
+
+.packed-span-bold {
+  font-weight: 700;
+}
+
+.packed-strong-css .leverui-strong {
+  font-weight: 300;
+}
+
+.packed-table-css .leverui-table__cell {
+  color: rgb(1, 2, 3);
+}
+
+.packed-tag-css .leverui-tag__label {
+  color: rgb(1, 2, 3);
+}
+
+.packed-timeline-css .leverui-timeline__title {
+  color: rgb(1, 2, 3);
+}

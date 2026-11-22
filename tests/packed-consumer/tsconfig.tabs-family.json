@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/packed-tabs-family.tsx", "src/tabs-types.tsx"],
+  "exclude": []
+}

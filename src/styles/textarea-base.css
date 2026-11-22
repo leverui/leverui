@@ -1,0 +1,26 @@
+@layer leverui.recipes {
+  .leverui-textarea:not([data-unstyled]) {
+    width: 100%;
+    min-width: 0;
+    outline: 0;
+    position: relative;
+    appearance: none;
+    text-align: start;
+    font-size: var(--leverui-private-textarea-font-size);
+    line-height: var(--leverui-private-textarea-line-height);
+    padding-inline: var(--leverui-private-textarea-padding-inline);
+    padding-block: var(--leverui-private-textarea-padding-block);
+    scroll-padding-bottom: var(--leverui-private-textarea-scroll-padding);
+    border-radius: var(--leverui-private-textarea-radius, var(--leverui-radii-l2));
+    border-style: solid;
+    border-width: var(--leverui-private-textarea-border-width, 1px);
+    border-color: var(--leverui-private-textarea-border-color, var(--leverui-colors-border));
+    background: var(--leverui-private-textarea-background, transparent);
+    --leverui-private-textarea-focus-color: var(--leverui-colors-color-palette-focus-ring);
+    --leverui-private-textarea-error-color: var(--leverui-colors-border-error);
+  }
+
+  .leverui-textarea[data-autoresize] {
+    resize: none;
+  }
+}

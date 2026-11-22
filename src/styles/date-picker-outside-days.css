@@ -1,0 +1,72 @@
+@layer leverui.recipes {
+  .leverui-date-picker__tableCellTrigger:not(
+      [data-unstyled]
+    )[data-outside-range][data-hide-outside-days='true'] {
+    visibility: hidden;
+  }
+
+  @media (min-width: 30rem) {
+    .leverui-date-picker__tableCellTrigger:not(
+        [data-unstyled]
+      )[data-outside-range][data-hide-outside-days-sm='true'] {
+      visibility: hidden;
+    }
+    .leverui-date-picker__tableCellTrigger:not(
+        [data-unstyled]
+      )[data-outside-range][data-hide-outside-days-sm='false'] {
+      visibility: visible;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .leverui-date-picker__tableCellTrigger:not(
+        [data-unstyled]
+      )[data-outside-range][data-hide-outside-days-md='true'] {
+      visibility: hidden;
+    }
+    .leverui-date-picker__tableCellTrigger:not(
+        [data-unstyled]
+      )[data-outside-range][data-hide-outside-days-md='false'] {
+      visibility: visible;
+    }
+  }
+
+  @media (min-width: 62rem) {
+    .leverui-date-picker__tableCellTrigger:not(
+        [data-unstyled]
+      )[data-outside-range][data-hide-outside-days-lg='true'] {
+      visibility: hidden;
+    }
+    .leverui-date-picker__tableCellTrigger:not(
+        [data-unstyled]
+      )[data-outside-range][data-hide-outside-days-lg='false'] {
+      visibility: visible;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .leverui-date-picker__tableCellTrigger:not(
+        [data-unstyled]
+      )[data-outside-range][data-hide-outside-days-xl='true'] {
+      visibility: hidden;
+    }
+    .leverui-date-picker__tableCellTrigger:not(
+        [data-unstyled]
+      )[data-outside-range][data-hide-outside-days-xl='false'] {
+      visibility: visible;
+    }
+  }
+
+  @media (min-width: 96rem) {
+    .leverui-date-picker__tableCellTrigger:not(
+        [data-unstyled]
+      )[data-outside-range][data-hide-outside-days-2xl='true'] {
+      visibility: hidden;
+    }
+    .leverui-date-picker__tableCellTrigger:not(
+        [data-unstyled]
+      )[data-outside-range][data-hide-outside-days-2xl='false'] {
+      visibility: visible;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.aspect-ratio-example-basic {
+  background: var(--leverui-colors-bg-muted);
+}
+
+.aspect-ratio-example-basic-label {
+  font-size: var(--leverui-font-sizes-xl);
+}
+
+.aspect-ratio-example-image {
+  max-width: 400px;
+}
+
+.aspect-ratio-example-video {
+  max-width: 560px;
+}
+
+.aspect-ratio-example-responsive {
+  max-width: 300px;
+}

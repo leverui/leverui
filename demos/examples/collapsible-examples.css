@@ -1,0 +1,55 @@
+.collapsible-example-trigger {
+  padding-block: var(--leverui-spacing-3);
+}
+
+.collapsible-example-inline-trigger {
+  display: flex;
+  align-items: center;
+  gap: var(--leverui-spacing-2);
+}
+
+.collapsible-example-disabled-trigger[data-disabled] {
+  opacity: 0.5;
+}
+
+.collapsible-example-panel {
+  padding: var(--leverui-spacing-4);
+  border: 1px solid var(--leverui-colors-border);
+}
+
+.collapsible-example-rounded-panel {
+  border-radius: var(--leverui-radii-l2);
+}
+
+.collapsible-example-preview-content[data-state='closed'] {
+  box-shadow: inset 0 -12px 12px -12px rgb(0 0 0 / 50%);
+}
+
+.collapsible-example-preview-trigger {
+  margin-top: var(--leverui-spacing-4);
+}
+
+.collapsible-example-down-indicator,
+.collapsible-example-right-indicator {
+  transition: transform 0.2s;
+}
+
+.collapsible-example-down-indicator[data-state='open'] {
+  transform: rotate(180deg);
+}
+
+.collapsible-example-right-indicator[data-state='open'] {
+  transform: rotate(90deg);
+}
+
+.collapsible-example-state {
+  font-weight: var(--leverui-font-weights-medium);
+}
+
+.collapsible-example-description {
+  color: var(--leverui-colors-fg-muted);
+}
+
+.collapsible-example-full-content {
+  width: 100%;
+}

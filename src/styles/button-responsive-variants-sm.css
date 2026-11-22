@@ -1,0 +1,35 @@
+@layer leverui.recipes {
+  @media (min-width: 30rem) {
+    .leverui-button:not([data-unstyled])[data-variant-sm='solid'] {
+      --leverui-private-button-bg: var(--leverui-colors-color-palette-solid);
+      --leverui-private-button-fg: var(--leverui-colors-color-palette-contrast);
+      --leverui-private-button-border: transparent;
+    }
+
+    .leverui-button:not([data-unstyled])[data-variant-sm='subtle'] {
+      --leverui-private-button-bg: var(--leverui-colors-color-palette-subtle);
+      --leverui-private-button-fg: var(--leverui-colors-color-palette-fg);
+      --leverui-private-button-border: transparent;
+    }
+
+    .leverui-button:not([data-unstyled])[data-variant-sm='surface'] {
+      --leverui-private-button-bg: var(--leverui-colors-color-palette-subtle);
+      --leverui-private-button-fg: var(--leverui-colors-color-palette-fg);
+      --leverui-private-button-shadow: 0 0 0 1px var(--leverui-colors-color-palette-muted);
+    }
+
+    .leverui-button:not([data-unstyled])[data-variant-sm='outline'] {
+      --leverui-private-button-fg: var(--leverui-colors-color-palette-fg);
+      --leverui-private-button-border: var(--leverui-colors-color-palette-border);
+    }
+
+    .leverui-button:not([data-unstyled])[data-variant-sm='ghost'] {
+      --leverui-private-button-bg: transparent;
+      --leverui-private-button-fg: var(--leverui-colors-color-palette-fg);
+    }
+
+    .leverui-button:not([data-unstyled])[data-variant-sm='plain'] {
+      --leverui-private-button-fg: var(--leverui-colors-color-palette-fg);
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/status-example.tsx", "src/status-main.tsx", "src/status-types.tsx"],
+  "exclude": []
+}

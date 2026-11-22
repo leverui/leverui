@@ -1,0 +1,40 @@
+@layer leverui.recipes {
+  .leverui-alert__root:not([data-unstyled]) {
+    gap: var(--leverui-private-alert-gap);
+    padding: var(--leverui-private-alert-padding);
+    font-size: var(--leverui-private-alert-font-size);
+    line-height: var(--leverui-private-alert-line-height);
+
+    & .leverui-alert__indicator:not([data-unstyled]) {
+      font-size: var(--leverui-private-alert-indicator-font-size);
+      line-height: var(--leverui-private-alert-indicator-line-height);
+    }
+
+    &[data-size='sm'] {
+      --leverui-private-alert-gap: var(--leverui-spacing-2);
+      --leverui-private-alert-padding: var(--leverui-spacing-3);
+      --leverui-private-alert-font-size: var(--leverui-font-sizes-xs);
+      --leverui-private-alert-line-height: 1rem;
+      --leverui-private-alert-indicator-font-size: var(--leverui-font-sizes-lg);
+      --leverui-private-alert-indicator-line-height: 1.75rem;
+    }
+
+    &[data-size='md'] {
+      --leverui-private-alert-gap: var(--leverui-spacing-3);
+      --leverui-private-alert-padding: var(--leverui-spacing-4);
+      --leverui-private-alert-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-alert-line-height: 1.25rem;
+      --leverui-private-alert-indicator-font-size: var(--leverui-font-sizes-xl);
+      --leverui-private-alert-indicator-line-height: 1.875rem;
+    }
+
+    &[data-size='lg'] {
+      --leverui-private-alert-gap: var(--leverui-spacing-3);
+      --leverui-private-alert-padding: var(--leverui-spacing-4);
+      --leverui-private-alert-font-size: var(--leverui-font-sizes-md);
+      --leverui-private-alert-line-height: 1.5rem;
+      --leverui-private-alert-indicator-font-size: var(--leverui-font-sizes-2xl);
+      --leverui-private-alert-indicator-line-height: 2rem;
+    }
+  }
+}

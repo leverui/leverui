@@ -1,0 +1,24 @@
+.hydrated-box {
+  color: rebeccapurple;
+}
+
+.default-hydrated-box,
+.shared-padding {
+  padding: var(--leverui-spacing-4);
+}
+
+.default-hydrated-box {
+  background: var(--leverui-colors-blue-500);
+}
+
+.scoped-hydration-box {
+  background: var(--leverui-colors-bg);
+}
+
+#hydrated-scope > .scoped-hydration-box {
+  color: var(--leverui-colors-red-500);
+}
+
+#hydrated-inner-scope > .scoped-hydration-box {
+  color: var(--leverui-colors-blue-500);
+}

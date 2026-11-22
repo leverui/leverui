@@ -1,0 +1,63 @@
+@layer leverui.recipes {
+  .leverui-bar-chart:not([data-unstyled]) {
+    position: relative;
+    width: 100%;
+    min-width: var(--leverui-bar-chart-min-width, 280px);
+
+    .leverui-bar-chart__svg {
+      display: block;
+      width: 100%;
+      overflow: visible;
+    }
+
+    .leverui-bar-chart__axes {
+      font-family: inherit;
+      font-size: var(--leverui-bar-chart-axis-font-size, 12px);
+      fill: var(--leverui-bar-chart-axis-color, var(--leverui-colors-fg-muted));
+    }
+
+    .leverui-bar-chart__grid-line {
+      stroke: var(
+        --leverui-bar-chart-grid-color,
+        var(--leverui-chart-grid-color, var(--leverui-colors-border-muted))
+      );
+      stroke-opacity: var(--leverui-chart-grid-opacity, 1);
+      stroke-dasharray: var(--leverui-chart-grid-dasharray, none);
+    }
+
+    .leverui-bar-chart__axes[data-grid-dashed] .leverui-bar-chart__grid-line {
+      stroke-dasharray: var(--leverui-chart-grid-dasharray, 3 3);
+    }
+
+    .leverui-bar-chart__axis-line {
+      fill: none;
+      stroke: var(--leverui-bar-chart-axis-line-color, var(--leverui-colors-border));
+    }
+
+    .leverui-bar-chart__bar-label {
+      font-size: var(--leverui-bar-chart-label-font-size, 12px);
+      font-weight: var(--leverui-bar-chart-label-weight, 600);
+      fill: var(--leverui-bar-chart-label-color, var(--leverui-colors-fg));
+    }
+
+    .leverui-bar-chart__wick {
+      stroke: var(--leverui-bar-chart-wick-color, var(--leverui-colors-fg));
+      stroke-width: var(--leverui-bar-chart-wick-width, 1.5);
+    }
+
+    .leverui-bar-chart__reference-area {
+      fill: var(--leverui-bar-chart-reference-fill, var(--leverui-colors-red-muted));
+      fill-opacity: var(--leverui-bar-chart-reference-opacity, 0.4);
+    }
+
+    .leverui-bar-chart__reference-label {
+      fill: var(--leverui-bar-chart-reference-label-color, var(--leverui-colors-red-fg));
+      font-size: var(--leverui-bar-chart-reference-label-font-size, 12px);
+    }
+
+    .leverui-bar-chart__reference-line {
+      stroke: var(--leverui-bar-chart-reference-line-color, var(--leverui-colors-red-fg));
+      stroke-dasharray: 3 3;
+    }
+  }
+}

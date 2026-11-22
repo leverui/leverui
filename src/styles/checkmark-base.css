@@ -1,0 +1,26 @@
+@layer leverui.recipes {
+  .leverui-checkmark:not([data-unstyled]) {
+    --leverui-private-checkmark-base-background: transparent;
+    --leverui-private-checkmark-active-background: transparent;
+    --leverui-private-checkmark-base-border: transparent;
+    --leverui-private-checkmark-active-border: transparent;
+    --leverui-private-checkmark-base-color: var(--leverui-colors-white);
+    --leverui-private-checkmark-active-color: var(--leverui-colors-white);
+    --leverui-private-checkmark-filled-active-background: var(--leverui-colors-bg);
+    --leverui-private-checkmark-filled-background: var(--leverui-colors-bg);
+    --leverui-private-checkmark-background: var(--leverui-private-checkmark-base-background);
+    --leverui-private-checkmark-border: var(--leverui-private-checkmark-base-border);
+    --leverui-private-checkmark-color: var(--leverui-private-checkmark-base-color);
+    --leverui-private-checkmark-fill: var(--leverui-private-checkmark-background);
+    display: inline-block;
+    flex-shrink: 0;
+    width: var(--leverui-private-checkmark-size);
+    height: var(--leverui-private-checkmark-size);
+    padding: var(--leverui-private-checkmark-padding, 0);
+    border: 1px solid var(--leverui-private-checkmark-border);
+    border-radius: var(--leverui-radii-l1);
+    color: var(--leverui-private-checkmark-color);
+    background-color: var(--leverui-private-checkmark-fill);
+    cursor: var(--leverui-cursor-checkbox);
+  }
+}

@@ -1,0 +1,17 @@
+.menu-danger-item {
+  color: var(--leverui-colors-fg-error);
+}
+
+.menu-danger-item:hover {
+  background: var(--leverui-colors-bg-error);
+  color: var(--leverui-colors-fg-error);
+}
+
+.menu-avatar-trigger {
+  border-radius: var(--leverui-radii-full);
+}
+
+.menu-avatar-trigger:focus-visible {
+  outline: 2px solid var(--leverui-colors-blue-focus-ring);
+  outline-offset: 2px;
+}

@@ -1,0 +1,46 @@
+@media (max-width: 1150px) {
+  main.guide-layout.page-container {
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 35px;
+  }
+}
+@media (max-width: 950px) {
+  main.guide-layout.page-container {
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: 30px;
+  }
+  .guide-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .docs-index {
+    padding-top: 65px;
+  }
+  .guide-card-grid {
+    grid-template-columns: 1fr;
+  }
+  main.guide-layout.page-container {
+    display: block;
+    width: min(100% - 48px, 1220px);
+  }
+  .guide-sidebar {
+    display: none;
+  }
+  .guide-article {
+    padding-top: 35px;
+  }
+  .guide-markdown {
+    font-size: 14px;
+  }
+}
+@media (max-width: 550px) {
+  main.guide-layout.page-container {
+    width: min(100% - 32px, 1220px);
+  }
+}
+@media (max-width: 450px) {
+  .docs-index-hero h1 {
+    font-size: 52px;
+  }
+}

@@ -1,0 +1,88 @@
+@layer leverui.recipes {
+  .leverui-radial-chart {
+    position: relative;
+    width: var(--leverui-private-radial-chart-size, 200px);
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .leverui-radial-chart__svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  .leverui-radial-chart__sector {
+    stroke: var(
+      --leverui-private-radial-sector-stroke,
+      var(--leverui-radial-chart-sector-stroke, white)
+    );
+    stroke-width: var(
+      --leverui-private-radial-sector-stroke-width,
+      var(--leverui-radial-chart-sector-stroke-width, 1)
+    );
+  }
+
+  .leverui-radial-chart__labelLine {
+    stroke: var(--leverui-radial-chart-label-line-color, var(--leverui-colors-border-emphasized));
+    visibility: hidden;
+  }
+
+  .leverui-radial-chart__labels[data-placement='point'] .leverui-radial-chart__labelLine {
+    visibility: visible;
+  }
+
+  .leverui-radial-chart__label {
+    fill: var(--leverui-radial-chart-inside-label-color, white);
+    font-size: var(--leverui-radial-chart-label-font-size, 12px);
+    font-weight: 400;
+  }
+
+  .leverui-radial-chart__labels:not([data-placement='inside']) .leverui-radial-chart__label {
+    fill: var(--leverui-radial-chart-outside-label-color, var(--leverui-colors-fg-muted));
+  }
+
+  .leverui-radial-chart__labels[data-placement='point'] .leverui-radial-chart__label {
+    font-weight: 600;
+  }
+
+  .leverui-radial-chart__center {
+    fill: var(--leverui-radial-chart-center-color, var(--leverui-colors-fg));
+  }
+
+  .leverui-radial-chart__centerTitle {
+    font-size: var(--leverui-radial-chart-center-title-font-size, 32px);
+    font-weight: 600;
+  }
+
+  .leverui-radial-chart__centerDescription {
+    fill: var(--leverui-radial-chart-center-description-color, var(--leverui-colors-fg-muted));
+    font-size: var(--leverui-radial-chart-center-description-font-size, 12px);
+  }
+
+  .leverui-radial-chart__legend {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: var(--leverui-radial-chart-legend-gap, 12px);
+    font-size: var(--leverui-radial-chart-legend-font-size, 12px);
+    line-height: 16px;
+  }
+
+  .leverui-radial-chart__legendItem {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--leverui-radial-chart-legend-item-gap, 5px);
+  }
+
+  .leverui-radial-chart__legendSwatch {
+    width: var(--leverui-radial-chart-legend-swatch-size, 8px);
+    height: var(--leverui-radial-chart-legend-swatch-size, 8px);
+    border-radius: var(--leverui-radial-chart-legend-swatch-radius, 2px);
+    background: var(--leverui-private-radial-legend-color);
+  }
+}

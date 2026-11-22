@@ -1,0 +1,45 @@
+@layer leverui.recipes {
+  .leverui-select__trigger:not([data-unstyled])[data-variant='outline'] {
+    --leverui-private-select-background: transparent;
+    --leverui-private-select-border-width: 1px;
+    --leverui-private-select-border-color: var(
+      --leverui-select-border-color,
+      var(--leverui-colors-border)
+    );
+    --leverui-private-select-open-background: transparent;
+    --leverui-private-select-open-border-color: var(--leverui-colors-border-emphasized);
+  }
+  .leverui-select__trigger:not([data-unstyled])[data-variant='subtle'] {
+    --leverui-private-select-background: var(
+      --leverui-select-subtle-background,
+      var(--leverui-colors-bg-muted)
+    );
+    --leverui-private-select-border-width: 1px;
+    --leverui-private-select-border-color: transparent;
+    --leverui-private-select-open-background: var(
+      --leverui-select-subtle-background,
+      var(--leverui-colors-bg-muted)
+    );
+    --leverui-private-select-open-border-color: transparent;
+  }
+  .leverui-select__trigger:not([data-unstyled])[data-variant='ghost'] {
+    --leverui-private-select-background: transparent;
+    --leverui-private-select-border-width: 0;
+    --leverui-private-select-border-color: var(--leverui-colors-border);
+    --leverui-private-select-open-background: var(
+      --leverui-select-subtle-background,
+      var(--leverui-colors-bg-muted)
+    );
+    --leverui-private-select-open-border-color: transparent;
+  }
+  .leverui-select__trigger:not([data-unstyled])[data-state='open'] {
+    background: var(
+      --leverui-select-trigger-open-background,
+      var(--leverui-private-select-open-background)
+    );
+    border-color: var(
+      --leverui-select-open-border-color,
+      var(--leverui-private-select-open-border-color)
+    );
+  }
+}

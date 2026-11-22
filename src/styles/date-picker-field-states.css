@@ -1,0 +1,41 @@
+@layer leverui.recipes {
+  .leverui-date-picker__input:not([data-unstyled]):is([data-invalid], [aria-invalid='true']) {
+    --leverui-private-date-picker-focus-color: var(--leverui-private-date-picker-error-color);
+    border-color: var(--leverui-private-date-picker-error-color);
+  }
+
+  .leverui-date-picker__input:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
+    outline: var(--focus-ring-width, 1px) var(--focus-ring-style, solid)
+      var(--leverui-private-date-picker-focus-color);
+    outline-offset: 0;
+    border-color: var(--leverui-private-date-picker-focus-color);
+    box-shadow: var(--leverui-private-date-picker-focus-shadow, none);
+  }
+
+  :is(.leverui-date-picker__trigger, .leverui-date-picker__clearTrigger):not(
+      [data-unstyled]
+    ):hover {
+    color: var(--leverui-colors-fg);
+  }
+
+  :is(.leverui-date-picker__trigger, .leverui-date-picker__clearTrigger):not([data-unstyled]):is(
+      :focus-visible,
+      [data-focus-visible]
+    ) {
+    outline: var(--focus-ring-width, 2px) var(--focus-ring-style, solid)
+      var(--leverui-date-picker-focus-color, var(--leverui-colors-color-palette-focus-ring));
+    outline-offset: -2px;
+  }
+
+  .leverui-date-picker__content:not([data-unstyled])[data-state='open'] {
+    animation-name: var(--leverui-date-picker-open-animation, scale-in, fade-in);
+    animation-duration: var(--leverui-date-picker-open-duration, var(--leverui-durations-fast));
+    transform-origin: var(--transform-origin);
+  }
+
+  .leverui-date-picker__content:not([data-unstyled])[data-state='closed'] {
+    animation-name: var(--leverui-date-picker-closed-animation, scale-out, fade-out);
+    animation-duration: var(--leverui-date-picker-closed-duration, var(--leverui-durations-faster));
+    transform-origin: var(--transform-origin);
+  }
+}

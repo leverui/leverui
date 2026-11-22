@@ -1,0 +1,9 @@
+.absolute-center-phone {
+  padding: var(--leverui-spacing-4);
+  background: tomato;
+  color: white;
+}
+
+.absolute-center-tags-clear {
+  inset-inline-end: var(--leverui-spacing-3);
+}

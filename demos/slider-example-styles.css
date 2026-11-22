@@ -1,0 +1,30 @@
+.slider-example-rounded-thumb {
+  border-radius: var(--leverui-radii-l1);
+}
+
+.slider-example-drag-indicator {
+  position: absolute;
+  top: var(--leverui-spacing-6);
+  padding-inline: var(--leverui-spacing-1\.5);
+  border-radius: var(--leverui-radii-sm);
+  background: var(--leverui-colors-color-palette-solid);
+  color: var(--leverui-colors-color-palette-contrast);
+}
+
+.slider-example-custom-track {
+  background: var(--leverui-colors-red-100);
+}
+
+.slider-example-custom-range {
+  background: tomato;
+}
+
+.slider-example-custom-thumb {
+  width: var(--leverui-sizes-6);
+  height: var(--leverui-sizes-6);
+  border-color: tomato;
+}
+
+.slider-example-custom-icon {
+  color: tomato;
+}

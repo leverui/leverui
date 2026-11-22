@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/skeleton-types.tsx", "src/skeleton-main.tsx"],
+  "exclude": []
+}

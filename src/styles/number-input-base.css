@@ -1,0 +1,77 @@
+@layer leverui.recipes {
+  .leverui-number-input__root:not([data-unstyled]) {
+    position: relative;
+    z-index: 0;
+    isolation: isolate;
+    --leverui-private-number-input-stepper-width: var(
+      --leverui-number-input-stepper-width,
+      var(--leverui-sizes-6)
+    );
+    --leverui-private-number-input-stepper-font-size: var(--leverui-font-sizes-sm);
+  }
+
+  .leverui-number-input__root:not([data-unstyled])
+    .leverui-number-input__input:not([data-unstyled]) {
+    vertical-align: top;
+  }
+
+  .leverui-number-input__root:not([data-unstyled])
+    .leverui-number-input__control:not([data-unstyled]) {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    inset-inline-end: 0;
+    margin: 1px;
+    width: var(--leverui-private-number-input-stepper-width);
+    height: calc(100% - 2px);
+    z-index: 1;
+    font-size: var(--leverui-private-number-input-stepper-font-size);
+    border-inline-start: 1px solid var(--leverui-colors-border);
+  }
+
+  .leverui-number-input__control:not([data-unstyled]) > * + * {
+    border-top: 1px solid var(--leverui-colors-border);
+  }
+
+  .leverui-number-input__root:not([data-unstyled])
+    :is(.leverui-number-input__incrementTrigger, .leverui-number-input__decrementTrigger):not(
+      [data-unstyled]
+    ) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    user-select: none;
+    cursor: pointer;
+    line-height: 1;
+    color: var(--leverui-colors-fg-muted);
+    --leverui-private-number-input-stepper-radius: var(
+      --leverui-number-input-stepper-radius,
+      calc(var(--leverui-radii-l1) + 1px)
+    );
+  }
+
+  .leverui-number-input__root:not([data-unstyled])
+    :is(.leverui-number-input__incrementTrigger, .leverui-number-input__decrementTrigger):not(
+      [data-unstyled]
+    )
+    svg {
+    width: 1em;
+    height: 1em;
+  }
+
+  .leverui-number-input__incrementTrigger:not([data-unstyled]) {
+    border-start-end-radius: var(--leverui-private-number-input-stepper-radius);
+  }
+
+  .leverui-number-input__decrementTrigger:not([data-unstyled]) {
+    border-end-end-radius: var(--leverui-private-number-input-stepper-radius);
+  }
+
+  .leverui-number-input__valueText:not([data-unstyled]) {
+    font-weight: var(--leverui-font-weights-medium);
+    font-feature-settings: 'pnum';
+    font-variant-numeric: proportional-nums;
+  }
+}

@@ -1,0 +1,39 @@
+.example-radio-card-composition {
+  gap: var(--leverui-spacing-4);
+  max-width: var(--leverui-sizes-sm);
+}
+
+.example-radio-card-full {
+  width: 100%;
+}
+
+.example-radio-card-icon {
+  margin-bottom: var(--leverui-spacing-2);
+  color: var(--leverui-colors-fg-muted);
+  font-size: var(--leverui-font-sizes-2xl);
+}
+
+.example-radio-card-icon-large {
+  font-size: var(--leverui-sizes-7);
+}
+
+.example-radio-card-payment-icon {
+  color: var(--leverui-colors-fg-muted);
+  font-size: var(--leverui-font-sizes-2xl);
+}
+
+.example-radio-card-payment-icon-subtle {
+  color: var(--leverui-colors-fg-subtle);
+}
+
+.example-radio-card-payment-wide {
+  max-width: var(--leverui-sizes-lg);
+}
+
+.example-radio-card-payment-compact {
+  max-width: 400px;
+}
+
+.example-radio-card-payment-text {
+  margin-inline-start: calc(-1 * var(--leverui-spacing-4));
+}

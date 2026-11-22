@@ -1,0 +1,42 @@
+@layer leverui.recipes {
+  .leverui-slider__root:not([data-unstyled]) {
+    --leverui-slider-range-color: var(--leverui-colors-color-palette-solid);
+    --leverui-slider-track-color: color-mix(
+      in srgb,
+      var(--leverui-colors-bg-emphasized) 72%,
+      transparent
+    );
+    --leverui-slider-thumb-color: var(--leverui-colors-bg);
+    --leverui-slider-thumb-border-color: var(--leverui-colors-color-palette-solid);
+    --leverui-private-slider-track-shadow: var(--leverui-shadows-inset);
+    --leverui-private-slider-thumb-border-width: 2px;
+    --leverui-private-slider-disabled-track-color: var(--leverui-slider-track-color);
+
+    &[data-variant='solid'] {
+      --leverui-slider-track-color: var(--leverui-colors-color-palette-subtle);
+      --leverui-slider-thumb-color: var(--leverui-colors-color-palette-solid);
+      --leverui-slider-thumb-border-color: var(--leverui-colors-border);
+      --leverui-private-slider-track-shadow: none;
+      --leverui-private-slider-thumb-border-width: 0;
+      --leverui-private-slider-disabled-track-color: var(--leverui-colors-bg-muted);
+    }
+
+    .leverui-slider__track:not([data-unstyled]) {
+      box-shadow: var(--leverui-private-slider-track-shadow);
+
+      &[data-disabled] {
+        background: var(--leverui-private-slider-disabled-track-color);
+      }
+    }
+
+    .leverui-slider__thumb:not([data-unstyled]) {
+      border: var(--leverui-private-slider-thumb-border-width) solid
+        var(--leverui-slider-thumb-border-color);
+
+      &[data-disabled] {
+        background: var(--leverui-colors-border-emphasized);
+        border-color: var(--leverui-colors-border-emphasized);
+      }
+    }
+  }
+}

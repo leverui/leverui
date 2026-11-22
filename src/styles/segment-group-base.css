@@ -1,0 +1,72 @@
+@layer leverui.recipes {
+  .leverui-segment-group__root:not([data-unstyled]) {
+    --leverui-private-segment-radius: var(--leverui-segment-group-radius, var(--leverui-radii-l2));
+    border-radius: var(--leverui-private-segment-radius);
+    display: inline-flex;
+    box-shadow: var(--leverui-shadows-inset);
+    min-width: max-content;
+    text-align: center;
+    position: relative;
+    isolation: isolate;
+    background: var(--leverui-segment-group-background, var(--leverui-colors-bg-muted));
+  }
+
+  .leverui-segment-group__root:not([data-unstyled])[data-orientation='vertical'] {
+    flex-direction: column;
+  }
+
+  .leverui-segment-group__item:not([data-unstyled]) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-size: var(
+      --leverui-segment-group-item-font-size,
+      var(--leverui-private-segment-font-size)
+    );
+    line-height: var(
+      --leverui-segment-group-item-line-height,
+      var(--leverui-private-segment-line-height)
+    );
+    padding-inline: var(
+      --leverui-segment-group-item-padding-inline,
+      var(--leverui-private-segment-padding-inline)
+    );
+    gap: var(--leverui-segment-group-item-gap, var(--leverui-private-segment-gap));
+    height: var(--leverui-segment-group-item-height, var(--leverui-private-segment-height));
+    position: relative;
+    color: var(--leverui-segment-group-item-color, var(--leverui-colors-fg));
+    border-radius: var(--leverui-private-segment-radius);
+    cursor: pointer;
+  }
+
+  .leverui-segment-group__item {
+    position: relative;
+  }
+
+  .leverui-segment-group__item:not([data-unstyled])[data-disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .leverui-segment-group__indicator:not([data-unstyled]) {
+    box-shadow: var(--leverui-segment-group-indicator-shadow, var(--leverui-shadows-sm));
+    position: absolute;
+    background: var(--leverui-segment-group-indicator-background);
+    width: var(--width);
+    height: var(--height);
+    top: var(--top);
+    left: var(--left);
+    z-index: -1;
+    border-radius: var(--leverui-private-segment-radius);
+  }
+
+  .leverui-segment-group__item-hit-area {
+    display: contents;
+  }
+
+  .leverui-segment-group__item-hit-target {
+    position: absolute;
+    inset: 0;
+  }
+}

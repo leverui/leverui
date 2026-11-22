@@ -1,0 +1,82 @@
+@layer leverui.recipes {
+  .leverui-checkbox-card:not([data-unstyled]) {
+    --leverui-private-checkbox-card-align: flex-start;
+    --leverui-private-checkbox-card-justify: normal;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 1;
+    user-select: none;
+    border-radius: var(--leverui-checkbox-card-radius, var(--leverui-radii-l2));
+    font-size: var(--leverui-private-checkbox-card-font-size);
+    line-height: var(--leverui-private-checkbox-card-line-height);
+    cursor: var(--leverui-cursor-checkbox);
+  }
+
+  .leverui-checkbox-card:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
+    outline-width: var(--focus-ring-width, 2px);
+    outline-offset: var(--focus-ring-offset, 2px);
+    outline-style: var(--focus-ring-style, solid);
+    outline-color: var(--leverui-colors-color-palette-focus-ring);
+  }
+
+  .leverui-checkbox-card:not([data-unstyled])[data-disabled] {
+    opacity: 0.8;
+    cursor: var(--leverui-cursor-disabled);
+  }
+
+  .leverui-checkbox-card:not([data-unstyled])[data-invalid] {
+    outline: 2px solid var(--leverui-colors-border-error);
+  }
+
+  .leverui-checkbox-card__control:not([data-unstyled]) {
+    display: inline-flex;
+    flex: 1;
+    position: relative;
+    border-radius: inherit;
+    padding: var(
+      --leverui-checkbox-card-control-padding,
+      var(--leverui-private-checkbox-card-control-padding)
+    );
+    gap: var(--leverui-checkbox-card-control-gap, var(--leverui-private-checkbox-card-control-gap));
+    justify-content: var(--leverui-private-checkbox-card-justify);
+    align-items: var(--leverui-private-checkbox-card-align);
+    flex-direction: var(--leverui-private-checkbox-card-direction, row);
+  }
+
+  .leverui-checkbox-card__content:not([data-unstyled]) {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: var(--leverui-spacing-1);
+    justify-content: var(--leverui-private-checkbox-card-justify);
+    align-items: var(--leverui-private-checkbox-card-align);
+    text-align: var(--leverui-private-checkbox-card-text-align, start);
+  }
+
+  .leverui-checkbox-card__label:not([data-unstyled]) {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: var(--leverui-spacing-2);
+    font-weight: var(--leverui-font-weights-medium);
+  }
+
+  .leverui-checkbox-card__label:not([data-unstyled])[data-disabled],
+  .leverui-checkbox-card__description:not([data-unstyled])[data-disabled],
+  .leverui-checkbox-card__addon:not([data-unstyled])[data-disabled] {
+    opacity: 0.5;
+  }
+
+  .leverui-checkbox-card__description:not([data-unstyled]) {
+    opacity: 0.64;
+    font-size: var(--leverui-font-sizes-sm);
+    line-height: 1.25rem;
+  }
+
+  .leverui-checkbox-card__addon:not([data-unstyled]) {
+    padding-inline: var(--leverui-private-checkbox-card-addon-padding-x);
+    padding-block: var(--leverui-private-checkbox-card-addon-padding-y);
+    border-top-width: 1px;
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src/action-bar-contract.ts",
+    "src/action-bar-example.tsx",
+    "src/action-bar-main.tsx"
+  ],
+  "exclude": []
+}

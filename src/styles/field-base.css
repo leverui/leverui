@@ -1,0 +1,62 @@
+@layer leverui.recipes {
+  .leverui-field__root:not([data-unstyled]) {
+    display: flex;
+    width: 100%;
+    position: relative;
+    gap: var(--leverui-spacing-1\.5);
+    flex-direction: var(--leverui-private-field-direction);
+    align-items: var(--leverui-private-field-align);
+    justify-content: var(--leverui-private-field-justify);
+  }
+
+  .leverui-field__root[data-orientation='vertical'] {
+    --leverui-private-field-direction: column;
+    --leverui-private-field-align: flex-start;
+    --leverui-private-field-justify: normal;
+    --leverui-private-field-label-flex: 0 1 auto;
+  }
+
+  .leverui-field__root[data-orientation='horizontal'] {
+    --leverui-private-field-direction: row;
+    --leverui-private-field-align: center;
+    --leverui-private-field-justify: space-between;
+    --leverui-private-field-label-flex: 0 0 var(--leverui-field-label-width, 80px);
+  }
+
+  .leverui-field__label:not([data-unstyled]) {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    font-size: var(--leverui-font-sizes-sm);
+    line-height: 1.25rem;
+    font-weight: var(--leverui-font-weights-medium);
+    gap: var(--leverui-spacing-1);
+    user-select: none;
+    flex: var(--leverui-private-field-label-flex, 0 1 auto);
+  }
+
+  .leverui-field__label:not([data-unstyled])[data-disabled] {
+    opacity: 0.5;
+  }
+
+  .leverui-field__errorText:not([data-unstyled]) {
+    display: inline-flex;
+    align-items: center;
+    font-weight: var(--leverui-font-weights-medium);
+    gap: var(--leverui-spacing-1);
+    color: var(--leverui-colors-fg-error);
+    font-size: var(--leverui-font-sizes-xs);
+    line-height: 1rem;
+  }
+
+  .leverui-field__helperText:not([data-unstyled]) {
+    color: var(--leverui-colors-fg-muted);
+    font-size: var(--leverui-font-sizes-xs);
+    line-height: 1rem;
+  }
+
+  .leverui-field__requiredIndicator:not([data-unstyled]) {
+    color: var(--leverui-colors-fg-error);
+    line-height: 1;
+  }
+}

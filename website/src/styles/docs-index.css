@@ -1,0 +1,60 @@
+.docs-index {
+  padding-top: 86px;
+  padding-bottom: 120px;
+  min-height: 75vh;
+}
+.docs-index-hero {
+  max-width: 760px;
+  margin-bottom: 54px;
+}
+.docs-index-hero h1 {
+  font-size: clamp(56px, 6vw, 84px);
+  line-height: 1.05;
+  margin: 17px 0 22px;
+  font-weight: 650;
+}
+.docs-index-hero p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--leverui-colors-fg-muted);
+  max-width: 600px;
+}
+.guide-card-grid a:hover {
+  border-color: var(--leverui-colors-border-emphasized);
+  transform: translateY(-2px);
+}
+.guide-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.guide-card-grid a {
+  min-height: 210px;
+  position: relative;
+  padding: 27px;
+  border: 1px solid var(--leverui-colors-border);
+  border-radius: 12px;
+  background: var(--leverui-colors-bg-panel);
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
+}
+.guide-card-number {
+  font-size: 11px;
+  color: var(--site-muted);
+}
+.guide-card-grid h2 {
+  font-size: 21px;
+  margin: 29px 0 10px;
+}
+.guide-card-grid p {
+  font-size: 12px;
+  color: var(--leverui-colors-fg-muted);
+  line-height: 1.5;
+}
+.guide-card-arrow {
+  position: absolute;
+  top: 24px;
+  right: 27px;
+  color: var(--site-muted);
+}

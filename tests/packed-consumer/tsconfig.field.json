@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/field-types.tsx", "src/field-example.tsx", "src/field-main.tsx"],
+  "exclude": []
+}

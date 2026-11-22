@@ -1,0 +1,14 @@
+.example-client-only-clock-placeholder {
+  width: var(--leverui-sizes-32);
+  height: var(--leverui-sizes-5);
+}
+
+.example-client-only-title {
+  font-weight: var(--leverui-font-weights-medium);
+}
+
+.example-client-only-details-placeholder {
+  width: 100%;
+  max-width: var(--leverui-sizes-sm);
+  height: var(--leverui-sizes-12);
+}

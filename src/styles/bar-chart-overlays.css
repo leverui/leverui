@@ -1,0 +1,53 @@
+@layer leverui.recipes {
+  .leverui-bar-chart:not([data-unstyled]) {
+    .leverui-bar-chart__legend {
+      position: absolute;
+      bottom: 3px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: var(--leverui-bar-chart-legend-gap, 12px);
+      font-size: var(--leverui-bar-chart-legend-font-size, 12px);
+      color: var(--leverui-bar-chart-legend-color, var(--leverui-colors-fg-muted));
+    }
+
+    .leverui-bar-chart__legend[data-placement='top-right'] {
+      top: 5px;
+      right: 5px;
+      bottom: auto;
+      left: auto;
+      width: max-content;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: var(--leverui-bar-chart-side-legend-gap, 8px);
+    }
+
+    .leverui-bar-chart__legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--leverui-bar-chart-legend-item-gap, 4px);
+    }
+
+    .leverui-bar-chart__legend-swatch {
+      width: var(--leverui-bar-chart-legend-swatch-size, 8px);
+      height: var(--leverui-bar-chart-legend-swatch-size, 8px);
+      border-radius: var(--leverui-bar-chart-legend-swatch-radius, 2px);
+      background: var(--leverui-private-bar-chart-swatch);
+    }
+
+    .leverui-bar-chart__tooltip {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      padding: var(--leverui-bar-chart-tooltip-padding, 8px 10px);
+      background: var(--leverui-bar-chart-tooltip-background, var(--leverui-colors-bg-panel));
+      border: 1px solid var(--leverui-bar-chart-tooltip-border, var(--leverui-colors-border));
+      border-radius: var(--leverui-bar-chart-tooltip-radius, 6px);
+      box-shadow: var(--leverui-bar-chart-tooltip-shadow, var(--leverui-shadows-sm));
+      font-size: var(--leverui-bar-chart-tooltip-font-size, 12px);
+      pointer-events: none;
+    }
+  }
+}

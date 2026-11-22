@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="80 80 840 840" width="840" height="840" role="img" aria-labelledby="leverui-title">
+<title id="leverui-title">Lever UI</title>
+  <path fill="currentColor" transform="translate(16.8 16.8) scale(0.94)" d="M250 170H310A80 80 0 0 1 390 250V390H170V250A80 80 0 0 1 250 170Z" />
+  <path fill="currentColor" transform="translate(16.8 30) scale(0.94)" d="M170 390H390V610H170Z" />
+  <path fill="currentColor" transform="translate(16.8 43.2) scale(0.94)" d="M170 610H390V830A220 220 0 0 1 170 610Z" />
+  <path fill="currentColor" transform="translate(30 43.2) scale(0.94)" d="M390 610H610V830H390Z" />
+  <path fill="currentColor" transform="translate(43.2 43.2) scale(0.94)" d="M610 610H830A220 220 0 0 1 610 830Z" />
+</svg>

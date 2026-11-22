@@ -1,0 +1,188 @@
+@layer leverui.recipes {
+  @media (min-width: 1024px) {
+    .leverui-select__root:not([data-unstyled])[data-size-lg='xs'],
+    .leverui-select__content:not([data-unstyled])[data-size-lg='xs'] {
+      --leverui-private-select-trigger-height: var(--leverui-sizes-8);
+      --leverui-private-select-content-gap: var(--leverui-spacing-1);
+      --leverui-private-select-trigger-padding-x: var(--leverui-spacing-2);
+      --leverui-private-select-content-padding: var(--leverui-spacing-1);
+      --leverui-private-select-font-size: var(--leverui-font-sizes-xs);
+      --leverui-private-select-line-height: 1rem;
+      --leverui-private-select-trigger-gap: var(--leverui-spacing-1);
+      --leverui-private-select-trigger-padding-y: 0;
+      --leverui-private-select-item-padding-y: var(--leverui-spacing-1);
+      --leverui-private-select-item-padding-x: var(--leverui-spacing-2);
+      --leverui-private-select-item-group-margin: 0;
+      --leverui-private-select-indicator-size: var(--leverui-sizes-3\.5);
+    }
+    .leverui-select__root:not([data-unstyled])[data-size-lg='sm'],
+    .leverui-select__content:not([data-unstyled])[data-size-lg='sm'] {
+      --leverui-private-select-trigger-height: var(--leverui-sizes-9);
+      --leverui-private-select-content-gap: 0;
+      --leverui-private-select-trigger-padding-x: var(--leverui-spacing-2\.5);
+      --leverui-private-select-content-padding: var(--leverui-spacing-1);
+      --leverui-private-select-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-select-line-height: 1.25rem;
+      --leverui-private-select-trigger-gap: var(--leverui-spacing-1);
+      --leverui-private-select-trigger-padding-y: 0;
+      --leverui-private-select-item-padding-y: var(--leverui-spacing-1);
+      --leverui-private-select-item-padding-x: var(--leverui-spacing-1\.5);
+      --leverui-private-select-item-group-margin: var(--leverui-spacing-1);
+      --leverui-private-select-indicator-size: var(--leverui-sizes-4);
+    }
+    .leverui-select__root:not([data-unstyled])[data-size-lg='md'],
+    .leverui-select__content:not([data-unstyled])[data-size-lg='md'] {
+      --leverui-private-select-trigger-height: var(--leverui-sizes-10);
+      --leverui-private-select-content-gap: 0;
+      --leverui-private-select-trigger-padding-x: var(--leverui-spacing-3);
+      --leverui-private-select-content-padding: var(--leverui-spacing-1);
+      --leverui-private-select-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-select-line-height: 1.25rem;
+      --leverui-private-select-trigger-gap: var(--leverui-spacing-2);
+      --leverui-private-select-trigger-padding-y: 0;
+      --leverui-private-select-item-padding-y: var(--leverui-spacing-1\.5);
+      --leverui-private-select-item-padding-x: var(--leverui-spacing-2);
+      --leverui-private-select-item-group-margin: var(--leverui-spacing-1\.5);
+      --leverui-private-select-indicator-size: var(--leverui-sizes-4);
+    }
+    .leverui-select__root:not([data-unstyled])[data-size-lg='lg'],
+    .leverui-select__content:not([data-unstyled])[data-size-lg='lg'] {
+      --leverui-private-select-trigger-height: var(--leverui-sizes-12);
+      --leverui-private-select-content-gap: 0;
+      --leverui-private-select-trigger-padding-x: var(--leverui-spacing-4);
+      --leverui-private-select-content-padding: var(--leverui-spacing-1\.5);
+      --leverui-private-select-font-size: var(--leverui-font-sizes-md);
+      --leverui-private-select-line-height: 1.5rem;
+      --leverui-private-select-trigger-gap: var(--leverui-spacing-2);
+      --leverui-private-select-trigger-padding-y: var(--leverui-spacing-3);
+      --leverui-private-select-item-padding-y: var(--leverui-spacing-2);
+      --leverui-private-select-item-padding-x: var(--leverui-spacing-3);
+      --leverui-private-select-item-group-margin: var(--leverui-spacing-2);
+      --leverui-private-select-indicator-size: var(--leverui-sizes-5);
+    }
+  }
+  @media (min-width: 1280px) {
+    .leverui-select__root:not([data-unstyled])[data-size-xl='xs'],
+    .leverui-select__content:not([data-unstyled])[data-size-xl='xs'] {
+      --leverui-private-select-trigger-height: var(--leverui-sizes-8);
+      --leverui-private-select-content-gap: var(--leverui-spacing-1);
+      --leverui-private-select-trigger-padding-x: var(--leverui-spacing-2);
+      --leverui-private-select-content-padding: var(--leverui-spacing-1);
+      --leverui-private-select-font-size: var(--leverui-font-sizes-xs);
+      --leverui-private-select-line-height: 1rem;
+      --leverui-private-select-trigger-gap: var(--leverui-spacing-1);
+      --leverui-private-select-trigger-padding-y: 0;
+      --leverui-private-select-item-padding-y: var(--leverui-spacing-1);
+      --leverui-private-select-item-padding-x: var(--leverui-spacing-2);
+      --leverui-private-select-item-group-margin: 0;
+      --leverui-private-select-indicator-size: var(--leverui-sizes-3\.5);
+    }
+    .leverui-select__root:not([data-unstyled])[data-size-xl='sm'],
+    .leverui-select__content:not([data-unstyled])[data-size-xl='sm'] {
+      --leverui-private-select-trigger-height: var(--leverui-sizes-9);
+      --leverui-private-select-content-gap: 0;
+      --leverui-private-select-trigger-padding-x: var(--leverui-spacing-2\.5);
+      --leverui-private-select-content-padding: var(--leverui-spacing-1);
+      --leverui-private-select-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-select-line-height: 1.25rem;
+      --leverui-private-select-trigger-gap: var(--leverui-spacing-1);
+      --leverui-private-select-trigger-padding-y: 0;
+      --leverui-private-select-item-padding-y: var(--leverui-spacing-1);
+      --leverui-private-select-item-padding-x: var(--leverui-spacing-1\.5);
+      --leverui-private-select-item-group-margin: var(--leverui-spacing-1);
+      --leverui-private-select-indicator-size: var(--leverui-sizes-4);
+    }
+    .leverui-select__root:not([data-unstyled])[data-size-xl='md'],
+    .leverui-select__content:not([data-unstyled])[data-size-xl='md'] {
+      --leverui-private-select-trigger-height: var(--leverui-sizes-10);
+      --leverui-private-select-content-gap: 0;
+      --leverui-private-select-trigger-padding-x: var(--leverui-spacing-3);
+      --leverui-private-select-content-padding: var(--leverui-spacing-1);
+      --leverui-private-select-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-select-line-height: 1.25rem;
+      --leverui-private-select-trigger-gap: var(--leverui-spacing-2);
+      --leverui-private-select-trigger-padding-y: 0;
+      --leverui-private-select-item-padding-y: var(--leverui-spacing-1\.5);
+      --leverui-private-select-item-padding-x: var(--leverui-spacing-2);
+      --leverui-private-select-item-group-margin: var(--leverui-spacing-1\.5);
+      --leverui-private-select-indicator-size: var(--leverui-sizes-4);
+    }
+    .leverui-select__root:not([data-unstyled])[data-size-xl='lg'],
+    .leverui-select__content:not([data-unstyled])[data-size-xl='lg'] {
+      --leverui-private-select-trigger-height: var(--leverui-sizes-12);
+      --leverui-private-select-content-gap: 0;
+      --leverui-private-select-trigger-padding-x: var(--leverui-spacing-4);
+      --leverui-private-select-content-padding: var(--leverui-spacing-1\.5);
+      --leverui-private-select-font-size: var(--leverui-font-sizes-md);
+      --leverui-private-select-line-height: 1.5rem;
+      --leverui-private-select-trigger-gap: var(--leverui-spacing-2);
+      --leverui-private-select-trigger-padding-y: var(--leverui-spacing-3);
+      --leverui-private-select-item-padding-y: var(--leverui-spacing-2);
+      --leverui-private-select-item-padding-x: var(--leverui-spacing-3);
+      --leverui-private-select-item-group-margin: var(--leverui-spacing-2);
+      --leverui-private-select-indicator-size: var(--leverui-sizes-5);
+    }
+  }
+  @media (min-width: 1536px) {
+    .leverui-select__root:not([data-unstyled])[data-size-2xl='xs'],
+    .leverui-select__content:not([data-unstyled])[data-size-2xl='xs'] {
+      --leverui-private-select-trigger-height: var(--leverui-sizes-8);
+      --leverui-private-select-content-gap: var(--leverui-spacing-1);
+      --leverui-private-select-trigger-padding-x: var(--leverui-spacing-2);
+      --leverui-private-select-content-padding: var(--leverui-spacing-1);
+      --leverui-private-select-font-size: var(--leverui-font-sizes-xs);
+      --leverui-private-select-line-height: 1rem;
+      --leverui-private-select-trigger-gap: var(--leverui-spacing-1);
+      --leverui-private-select-trigger-padding-y: 0;
+      --leverui-private-select-item-padding-y: var(--leverui-spacing-1);
+      --leverui-private-select-item-padding-x: var(--leverui-spacing-2);
+      --leverui-private-select-item-group-margin: 0;
+      --leverui-private-select-indicator-size: var(--leverui-sizes-3\.5);
+    }
+    .leverui-select__root:not([data-unstyled])[data-size-2xl='sm'],
+    .leverui-select__content:not([data-unstyled])[data-size-2xl='sm'] {
+      --leverui-private-select-trigger-height: var(--leverui-sizes-9);
+      --leverui-private-select-content-gap: 0;
+      --leverui-private-select-trigger-padding-x: var(--leverui-spacing-2\.5);
+      --leverui-private-select-content-padding: var(--leverui-spacing-1);
+      --leverui-private-select-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-select-line-height: 1.25rem;
+      --leverui-private-select-trigger-gap: var(--leverui-spacing-1);
+      --leverui-private-select-trigger-padding-y: 0;
+      --leverui-private-select-item-padding-y: var(--leverui-spacing-1);
+      --leverui-private-select-item-padding-x: var(--leverui-spacing-1\.5);
+      --leverui-private-select-item-group-margin: var(--leverui-spacing-1);
+      --leverui-private-select-indicator-size: var(--leverui-sizes-4);
+    }
+    .leverui-select__root:not([data-unstyled])[data-size-2xl='md'],
+    .leverui-select__content:not([data-unstyled])[data-size-2xl='md'] {
+      --leverui-private-select-trigger-height: var(--leverui-sizes-10);
+      --leverui-private-select-content-gap: 0;
+      --leverui-private-select-trigger-padding-x: var(--leverui-spacing-3);
+      --leverui-private-select-content-padding: var(--leverui-spacing-1);
+      --leverui-private-select-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-select-line-height: 1.25rem;
+      --leverui-private-select-trigger-gap: var(--leverui-spacing-2);
+      --leverui-private-select-trigger-padding-y: 0;
+      --leverui-private-select-item-padding-y: var(--leverui-spacing-1\.5);
+      --leverui-private-select-item-padding-x: var(--leverui-spacing-2);
+      --leverui-private-select-item-group-margin: var(--leverui-spacing-1\.5);
+      --leverui-private-select-indicator-size: var(--leverui-sizes-4);
+    }
+    .leverui-select__root:not([data-unstyled])[data-size-2xl='lg'],
+    .leverui-select__content:not([data-unstyled])[data-size-2xl='lg'] {
+      --leverui-private-select-trigger-height: var(--leverui-sizes-12);
+      --leverui-private-select-content-gap: 0;
+      --leverui-private-select-trigger-padding-x: var(--leverui-spacing-4);
+      --leverui-private-select-content-padding: var(--leverui-spacing-1\.5);
+      --leverui-private-select-font-size: var(--leverui-font-sizes-md);
+      --leverui-private-select-line-height: 1.5rem;
+      --leverui-private-select-trigger-gap: var(--leverui-spacing-2);
+      --leverui-private-select-trigger-padding-y: var(--leverui-spacing-3);
+      --leverui-private-select-item-padding-y: var(--leverui-spacing-2);
+      --leverui-private-select-item-padding-x: var(--leverui-spacing-3);
+      --leverui-private-select-item-group-margin: var(--leverui-spacing-2);
+      --leverui-private-select-indicator-size: var(--leverui-sizes-5);
+    }
+  }
+}

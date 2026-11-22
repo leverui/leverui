@@ -1,0 +1,174 @@
+/*
+ * Fixed, not sticky: a sticky header slides with the page when a trackpad pulls it past the
+ * top, and a fixed one stays put. The body leaves room for it in site-base.css.
+ */
+.site-header-shell {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  border-bottom: 1px solid var(--site-border);
+  transition: border-color 150ms;
+}
+.site-header {
+  position: relative;
+  z-index: 20;
+  background: var(--site-canvas);
+  backdrop-filter: blur(18px);
+  transition: background-color 150ms;
+}
+/* At the top of the home page the header has no surface, so the hero shows through it. */
+.site-header-shell[data-blended] {
+  border-bottom-color: transparent;
+}
+.site-header-shell[data-blended] .site-header {
+  background: transparent;
+  backdrop-filter: none;
+}
+.site-header-inner {
+  width: min(100% - 64px, 1400px);
+  /* The shell's bottom border makes up the last pixel of the header height. */
+  height: calc(var(--site-header-height) - 1px);
+  margin: auto;
+  /* Equal side columns keep the links centered, whatever sits on the left or right. */
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 30px;
+}
+/* The logo and the release-stage badge share the left column. */
+.site-brand {
+  display: flex;
+  grid-column: 1;
+  align-items: center;
+  justify-self: start;
+  gap: 10px;
+}
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+}
+.site-stage {
+  border-radius: var(--leverui-radii-full);
+}
+.wordmark img {
+  display: block;
+  width: 118px;
+  height: auto;
+}
+.site-header .wordmark img {
+  width: 96px;
+}
+.wordmark .wordmark-dark {
+  display: none;
+}
+html[data-leverui-color-mode='dark'] .wordmark .wordmark-light {
+  display: none;
+}
+html[data-leverui-color-mode='dark'] .wordmark .wordmark-dark {
+  display: block;
+}
+.desktop-nav {
+  display: flex;
+  grid-column: 2;
+  align-items: center;
+  gap: 4px;
+  color: var(--leverui-colors-fg-muted);
+  font-size: 13px;
+}
+.desktop-nav a {
+  padding: 5px 12px;
+  border-radius: 9999px;
+  font-weight: var(--leverui-font-weights-medium);
+  white-space: nowrap;
+}
+.desktop-nav a:hover {
+  color: var(--leverui-colors-fg);
+}
+/* Hovering shows the same pill as the current section, in light gray. */
+.desktop-nav a:not(.active):hover {
+  background: var(--leverui-colors-gray-muted);
+}
+/* The home page has no current section, so hovering there shows the filled pill itself. */
+.site-header-shell[data-home] .desktop-nav a:not(.active):hover {
+  background: var(--leverui-colors-fg);
+  color: var(--leverui-colors-bg);
+}
+/*
+ * The current section is a filled pill: dark on light pages, light on dark pages. It keeps the
+ * same font weight as the other links, so marking a link never moves its neighbors.
+ */
+.desktop-nav a.active {
+  background: var(--leverui-colors-fg);
+  color: var(--leverui-colors-bg);
+}
+.header-actions {
+  display: flex;
+  grid-column: 3;
+  align-items: center;
+  justify-self: end;
+  gap: 4px;
+}
+.site-theme-toggle.leverui-icon-button {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  padding: 8px;
+  border: 0;
+  border-radius: var(--leverui-radii-full);
+  background: transparent;
+  color: var(--site-fg);
+}
+.site-theme-toggle.leverui-icon-button:hover {
+  background: var(--leverui-colors-gray-subtle);
+}
+.site-theme-toggle .site-icon {
+  font-size: 18px;
+}
+.site-theme-toggle .site-theme-moon,
+html[data-leverui-color-mode='dark'] .site-theme-toggle .site-theme-sun {
+  display: none;
+}
+html[data-leverui-color-mode='dark'] .site-theme-toggle .site-theme-moon {
+  display: block;
+}
+/*
+ * Search, GitHub, and the theme switch share one 38px round button, so their icons sit on one
+ * line. The GitHub mark is a filled circle, so it is a little smaller to look the same size.
+ */
+.github-link {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--leverui-radii-full);
+  color: var(--site-fg);
+  font-size: 17px;
+}
+.github-link:hover {
+  background: var(--leverui-colors-gray-subtle);
+  color: var(--site-fg);
+}
+:is(.site-search-trigger, .github-link, .site-theme-toggle) .site-icon {
+  line-height: 1;
+}
+.menu-toggle {
+  display: none;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: var(--leverui-radii-full);
+  background: transparent;
+}
+.menu-toggle:hover {
+  background: var(--leverui-colors-gray-subtle);
+}
+.menu-toggle .site-icon {
+  color: var(--leverui-colors-fg);
+  font-size: 20px;
+}

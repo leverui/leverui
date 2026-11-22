@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/timeline-example.tsx", "src/timeline-main.tsx", "src/timeline-types.tsx"],
+  "exclude": []
+}

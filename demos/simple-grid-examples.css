@@ -1,0 +1,9 @@
+.simple-grid-example-span {
+  gap: 24px;
+}
+
+@media (min-width: 48rem) {
+  .simple-grid-example-span {
+    gap: 40px;
+  }
+}

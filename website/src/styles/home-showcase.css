@@ -1,0 +1,159 @@
+/* A second wall of working examples, below the hero. */
+.home-showcase-section {
+  padding: 40px 0 64px;
+}
+/* The heading matches the Features heading further down the page. */
+.home-showcase-heading.page-container {
+  width: min(100% - 64px, 1400px);
+  margin-bottom: 40px;
+}
+.home-showcase-heading h2 {
+  margin: 0;
+  font-size: clamp(32px, 3.4vw, 46px);
+  font-weight: 600;
+  line-height: 1.12;
+}
+.home-showcase.page-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  width: min(100% - 64px, 1400px);
+}
+/*
+ * Columns side by side are as tall as the tallest, and the last card in each stretches to
+ * the bottom, so the wall ends on one straight line however tall the cards grow.
+ */
+.home-showcase-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.home-showcase-column > :last-child {
+  flex: 1;
+}
+.home-showcase .leverui-card__root {
+  box-shadow: var(--leverui-shadows-sm);
+}
+.home-showcase-filters {
+  display: grid;
+  gap: 20px;
+}
+/* As wide as its content, not the card. */
+.home-showcase-fit {
+  justify-self: start;
+}
+.home-showcase-between {
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.home-showcase-hint {
+  color: var(--site-muted);
+  font-size: 12px;
+}
+.home-showcase-grow {
+  flex: 1;
+  text-align: start;
+}
+/* An answer reads a step smaller than its question. */
+.home-showcase .leverui-accordion__itemBody {
+  font-size: var(--leverui-font-sizes-sm);
+  line-height: 1.25rem;
+}
+.home-showcase-feedback {
+  display: grid;
+  gap: 16px;
+}
+.home-showcase-rating-word {
+  color: var(--site-muted);
+  font-size: 14px;
+  font-weight: var(--leverui-font-weights-medium);
+}
+.home-showcase-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+/* A pill-shaped text box reads as a search field, so it gets the same corner as inputs. */
+.home-showcase-comment.leverui-textarea {
+  border-radius: 12px;
+  resize: none;
+}
+.home-showcase-count {
+  align-self: flex-end;
+}
+.home-showcase-thanks {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  padding: 12px 0 4px;
+  text-align: center;
+}
+.home-showcase-thanks-icon {
+  color: var(--leverui-colors-green-solid);
+  font-size: 32px;
+}
+.home-showcase-thanks .leverui-button {
+  margin-top: 8px;
+}
+.home-showcase-end {
+  text-align: end;
+}
+/* The inline calendar fills the card. */
+.home-showcase .leverui-date-picker__root {
+  width: 100%;
+}
+.home-showcase-month {
+  font-size: 14px;
+  font-weight: var(--leverui-font-weights-medium);
+}
+/* Holds the calendar's place until it renders in the browser. */
+.home-showcase-calendar-placeholder {
+  height: 290px;
+  border-radius: 12px;
+}
+/* The code fields sit in the middle of the card. */
+.home-showcase-code {
+  justify-self: center;
+}
+.home-showcase-code .leverui-pin-input__control {
+  justify-content: center;
+}
+.home-showcase-times {
+  display: grid;
+  gap: 10px;
+  font-size: 14px;
+}
+/* Three times to a row, scrolling when the day has many. */
+.home-showcase-time-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  max-height: 128px;
+  padding: 2px;
+  overflow-y: auto;
+}
+@media (max-width: 1180px) {
+  .home-showcase.page-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+/* One column on a phone, and only half the cards, so the page does not run on and on. */
+@media (max-width: 650px) {
+  .home-showcase.page-container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .home-showcase-column:nth-child(n + 3) {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .home-showcase-section {
+    padding: 32px 0 48px;
+  }
+}
+@media (max-width: 550px) {
+  .home-showcase-heading.page-container,
+  .home-showcase.page-container {
+    width: min(100% - 32px, 1220px);
+  }
+}

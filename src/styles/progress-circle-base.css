@@ -1,0 +1,61 @@
+@layer leverui.recipes {
+  .leverui-progress-circle__root:not([data-unstyled]) {
+    display: inline-flex;
+    position: relative;
+    font-size: var(--leverui-font-sizes-sm);
+    line-height: 1.25rem;
+  }
+
+  .leverui-progress-circle__circle:not([data-unstyled]) {
+    --size: var(--leverui-progress-circle-size, var(--leverui-private-progress-circle-size));
+    --thickness: var(
+      --leverui-progress-circle-thickness,
+      var(--leverui-private-progress-circle-thickness)
+    );
+  }
+
+  .leverui-progress-circle__circle:not([data-unstyled])[data-state='indeterminate'] {
+    animation: spin 2s linear infinite;
+  }
+
+  .leverui-progress-circle__circleTrack:not([data-unstyled], [stroke]) {
+    stroke: var(--leverui-progress-circle-track-color, var(--leverui-colors-color-palette-muted));
+  }
+
+  .leverui-progress-circle__circleRange:not([data-unstyled], [stroke]) {
+    stroke: var(--leverui-progress-circle-range-color, var(--leverui-colors-color-palette-solid));
+  }
+
+  .leverui-progress-circle__circleRange:not([data-unstyled]) {
+    transition-property: stroke-dashoffset, stroke-dasharray;
+    transition-duration: 0.6s;
+  }
+
+  .leverui-progress-circle__circleRange:not([data-unstyled])[data-state='indeterminate'] {
+    animation: circular-progress 1.5s linear infinite;
+  }
+
+  .leverui-progress-circle__label:not([data-unstyled]) {
+    display: inline-flex;
+  }
+
+  .leverui-progress-circle__valueText:not([data-unstyled]) {
+    font-size: var(--leverui-private-progress-circle-value-font-size);
+    line-height: var(--leverui-private-progress-circle-value-line-height);
+    font-weight: var(--leverui-font-weights-medium);
+    letter-spacing: var(--leverui-letter-spacings-tight);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @layer leverui.recipes {
+    .leverui-progress-circle__circle:not([data-unstyled])[data-state='indeterminate'],
+    .leverui-progress-circle__circleRange:not([data-unstyled])[data-state='indeterminate'] {
+      animation: none;
+    }
+    .leverui-progress-circle__circleRange:not([data-unstyled]) {
+      transition-duration: 0s;
+    }
+  }
+}

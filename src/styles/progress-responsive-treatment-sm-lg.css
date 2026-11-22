@@ -1,0 +1,94 @@
+@layer leverui.recipes {
+  @media (min-width: 30rem) {
+    .leverui-progress__root:not([data-unstyled]) {
+      &[data-variant-sm='outline'] {
+        --leverui-private-progress-track-color: var(--leverui-colors-bg-muted);
+        --leverui-private-progress-range-color: var(--leverui-colors-color-palette-solid);
+        --leverui-private-progress-track-shadow: var(--leverui-shadows-inset);
+      }
+      &[data-variant-sm='subtle'] {
+        --leverui-private-progress-track-color: var(--leverui-colors-color-palette-muted);
+        --leverui-private-progress-range-color: color-mix(
+          in srgb,
+          var(--leverui-colors-color-palette-solid) 72%,
+          transparent
+        );
+        --leverui-private-progress-track-shadow: none;
+      }
+      &[data-striped-sm='true'] {
+        --leverui-private-progress-stripes: var(--leverui-private-progress-stripe-pattern);
+      }
+      &[data-striped-sm='false'] {
+        --leverui-private-progress-stripes: none;
+      }
+      &[data-animated-sm='true'] {
+        --leverui-private-progress-animation: bg-position 1s linear infinite;
+      }
+      &[data-animated-sm='false'] {
+        --leverui-private-progress-animation: none;
+      }
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .leverui-progress__root:not([data-unstyled]) {
+      &[data-variant-md='outline'] {
+        --leverui-private-progress-track-color: var(--leverui-colors-bg-muted);
+        --leverui-private-progress-range-color: var(--leverui-colors-color-palette-solid);
+        --leverui-private-progress-track-shadow: var(--leverui-shadows-inset);
+      }
+      &[data-variant-md='subtle'] {
+        --leverui-private-progress-track-color: var(--leverui-colors-color-palette-muted);
+        --leverui-private-progress-range-color: color-mix(
+          in srgb,
+          var(--leverui-colors-color-palette-solid) 72%,
+          transparent
+        );
+        --leverui-private-progress-track-shadow: none;
+      }
+      &[data-striped-md='true'] {
+        --leverui-private-progress-stripes: var(--leverui-private-progress-stripe-pattern);
+      }
+      &[data-striped-md='false'] {
+        --leverui-private-progress-stripes: none;
+      }
+      &[data-animated-md='true'] {
+        --leverui-private-progress-animation: bg-position 1s linear infinite;
+      }
+      &[data-animated-md='false'] {
+        --leverui-private-progress-animation: none;
+      }
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .leverui-progress__root:not([data-unstyled]) {
+      &[data-variant-lg='outline'] {
+        --leverui-private-progress-track-color: var(--leverui-colors-bg-muted);
+        --leverui-private-progress-range-color: var(--leverui-colors-color-palette-solid);
+        --leverui-private-progress-track-shadow: var(--leverui-shadows-inset);
+      }
+      &[data-variant-lg='subtle'] {
+        --leverui-private-progress-track-color: var(--leverui-colors-color-palette-muted);
+        --leverui-private-progress-range-color: color-mix(
+          in srgb,
+          var(--leverui-colors-color-palette-solid) 72%,
+          transparent
+        );
+        --leverui-private-progress-track-shadow: none;
+      }
+      &[data-striped-lg='true'] {
+        --leverui-private-progress-stripes: var(--leverui-private-progress-stripe-pattern);
+      }
+      &[data-striped-lg='false'] {
+        --leverui-private-progress-stripes: none;
+      }
+      &[data-animated-lg='true'] {
+        --leverui-private-progress-animation: bg-position 1s linear infinite;
+      }
+      &[data-animated-lg='false'] {
+        --leverui-private-progress-animation: none;
+      }
+    }
+  }
+}

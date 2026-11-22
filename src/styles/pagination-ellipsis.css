@@ -1,0 +1,10 @@
+@layer leverui.recipes {
+  .leverui-button.leverui-pagination__ellipsis-button:not([data-unstyled]) {
+    padding-inline: 0;
+    padding-block: 0;
+  }
+
+  .leverui-button.leverui-pagination__ellipsis-button:not([data-unstyled]) :where(svg) {
+    font-size: 1.2em;
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src/segment-group-types.tsx",
+    "src/segment-group-example.tsx",
+    "src/segment-group-main.tsx"
+  ],
+  "exclude": []
+}

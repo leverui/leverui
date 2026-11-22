@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/textarea-example.tsx", "src/textarea-main.tsx", "src/textarea-types.tsx"],
+  "exclude": []
+}

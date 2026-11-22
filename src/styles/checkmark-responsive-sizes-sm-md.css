@@ -1,0 +1,42 @@
+@layer leverui.recipes {
+  @media (min-width: 480px) {
+    .leverui-checkmark:not([data-unstyled]) {
+      &[data-size-sm='xs'] {
+        --leverui-private-checkmark-size: var(--leverui-sizes-3);
+        --leverui-private-checkmark-padding: 0;
+      }
+      &[data-size-sm='sm'] {
+        --leverui-private-checkmark-size: var(--leverui-sizes-4);
+        --leverui-private-checkmark-padding: 0;
+      }
+      &[data-size-sm='md'] {
+        --leverui-private-checkmark-size: var(--leverui-sizes-5);
+        --leverui-private-checkmark-padding: var(--leverui-spacing-0\.5);
+      }
+      &[data-size-sm='lg'] {
+        --leverui-private-checkmark-size: var(--leverui-sizes-6);
+        --leverui-private-checkmark-padding: var(--leverui-spacing-0\.5);
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .leverui-checkmark:not([data-unstyled]) {
+      &[data-size-md='xs'] {
+        --leverui-private-checkmark-size: var(--leverui-sizes-3);
+        --leverui-private-checkmark-padding: 0;
+      }
+      &[data-size-md='sm'] {
+        --leverui-private-checkmark-size: var(--leverui-sizes-4);
+        --leverui-private-checkmark-padding: 0;
+      }
+      &[data-size-md='md'] {
+        --leverui-private-checkmark-size: var(--leverui-sizes-5);
+        --leverui-private-checkmark-padding: var(--leverui-spacing-0\.5);
+      }
+      &[data-size-md='lg'] {
+        --leverui-private-checkmark-size: var(--leverui-sizes-6);
+        --leverui-private-checkmark-padding: var(--leverui-spacing-0\.5);
+      }
+    }
+  }
+}

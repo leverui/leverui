@@ -1,0 +1,63 @@
+@layer leverui.recipes {
+  @media (min-width: 80rem) {
+    .leverui-progress__root:not([data-unstyled]) {
+      &[data-variant-xl='outline'] {
+        --leverui-private-progress-track-color: var(--leverui-colors-bg-muted);
+        --leverui-private-progress-range-color: var(--leverui-colors-color-palette-solid);
+        --leverui-private-progress-track-shadow: var(--leverui-shadows-inset);
+      }
+      &[data-variant-xl='subtle'] {
+        --leverui-private-progress-track-color: var(--leverui-colors-color-palette-muted);
+        --leverui-private-progress-range-color: color-mix(
+          in srgb,
+          var(--leverui-colors-color-palette-solid) 72%,
+          transparent
+        );
+        --leverui-private-progress-track-shadow: none;
+      }
+      &[data-striped-xl='true'] {
+        --leverui-private-progress-stripes: var(--leverui-private-progress-stripe-pattern);
+      }
+      &[data-striped-xl='false'] {
+        --leverui-private-progress-stripes: none;
+      }
+      &[data-animated-xl='true'] {
+        --leverui-private-progress-animation: bg-position 1s linear infinite;
+      }
+      &[data-animated-xl='false'] {
+        --leverui-private-progress-animation: none;
+      }
+    }
+  }
+
+  @media (min-width: 96rem) {
+    .leverui-progress__root:not([data-unstyled]) {
+      &[data-variant-2xl='outline'] {
+        --leverui-private-progress-track-color: var(--leverui-colors-bg-muted);
+        --leverui-private-progress-range-color: var(--leverui-colors-color-palette-solid);
+        --leverui-private-progress-track-shadow: var(--leverui-shadows-inset);
+      }
+      &[data-variant-2xl='subtle'] {
+        --leverui-private-progress-track-color: var(--leverui-colors-color-palette-muted);
+        --leverui-private-progress-range-color: color-mix(
+          in srgb,
+          var(--leverui-colors-color-palette-solid) 72%,
+          transparent
+        );
+        --leverui-private-progress-track-shadow: none;
+      }
+      &[data-striped-2xl='true'] {
+        --leverui-private-progress-stripes: var(--leverui-private-progress-stripe-pattern);
+      }
+      &[data-striped-2xl='false'] {
+        --leverui-private-progress-stripes: none;
+      }
+      &[data-animated-2xl='true'] {
+        --leverui-private-progress-animation: bg-position 1s linear infinite;
+      }
+      &[data-animated-2xl='false'] {
+        --leverui-private-progress-animation: none;
+      }
+    }
+  }
+}

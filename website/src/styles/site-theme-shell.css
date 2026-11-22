@@ -1,0 +1,35 @@
+html[data-leverui-color-mode='light'] em {
+  color: var(--site-fg);
+}
+html[data-leverui-color-mode='light'] .site-header {
+  background: var(--site-canvas);
+}
+html[data-leverui-color-mode='light'] .desktop-nav {
+  color: var(--site-muted);
+}
+html[data-leverui-color-mode='light'] .desktop-nav a:not(.active):hover {
+  color: var(--site-fg);
+}
+html[data-leverui-color-mode='light'] .menu-toggle .site-icon {
+  color: var(--site-fg);
+}
+html[data-leverui-color-mode='light'] :is(.hero-copy > p, .section-heading p) {
+  color: var(--site-muted);
+}
+html[data-leverui-color-mode='light'] :is(.eyebrow, .text-link, .prompt-symbol) {
+  color: var(--site-fg);
+}
+html[data-leverui-color-mode='light'] .site-footer {
+  border-color: var(--site-border);
+  background: var(--site-panel-alt);
+  color: var(--site-muted);
+}
+html[data-leverui-color-mode='light'] :is(.footer-links strong, .site-footer .wordmark) {
+  color: var(--site-fg);
+}
+html[data-leverui-color-mode='light'] .footer-bottom {
+  border-color: var(--site-border);
+}
+html[data-leverui-color-mode='light'] .footer-links a:hover {
+  color: var(--site-fg);
+}

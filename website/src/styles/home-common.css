@@ -1,0 +1,61 @@
+/*
+ * The home page shows Lever UI with fully rounded controls. Buttons, inputs, badges, and tags
+ * become pills; cards and other large surfaces get a generous corner.
+ */
+.home {
+  --leverui-radii-l1: var(--leverui-radii-full);
+  --leverui-radii-l2: var(--leverui-radii-full);
+  --leverui-radii-l3: 1.25rem;
+}
+/* A pill-shaped text field reads as a search box, so fields get a softer corner instead. */
+.home .leverui-input {
+  border-radius: 12px;
+}
+/* A round checkbox reads as a radio button, and a two-line choice card cannot be a pill. */
+.home .leverui-checkbox__control {
+  border-radius: 4px;
+}
+.home .leverui-radio-card__item {
+  border-radius: 1rem;
+}
+/* An accordion panel hides its overflow, so a pill corner would cut off the edges of its text. */
+.home .leverui-accordion__itemContent {
+  border-radius: 8px;
+}
+/* A key cap should look like a key, not a pill. */
+.home .leverui-kbd {
+  border-radius: 6px;
+}
+/* The copy button on a code sample follows the pill shape too. */
+.home .guide-code-toolbar button {
+  border-radius: var(--leverui-radii-full);
+}
+/* Less room above a heading than below the content that ends a section. */
+.section {
+  padding: 40px 0 64px;
+}
+.component-section {
+  background: var(--leverui-colors-bg-subtle);
+  border-top: 1px solid var(--leverui-colors-border);
+  border-bottom: 1px solid var(--leverui-colors-border);
+}
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 42px;
+}
+.section-heading h2 {
+  font-size: clamp(40px, 4.4vw, 62px);
+  line-height: 1.12;
+  font-weight: 620;
+  margin: 17px 0;
+}
+.section-heading p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--leverui-colors-fg-muted);
+  max-width: 550px;
+  margin: 0;
+}

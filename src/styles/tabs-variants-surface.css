@@ -1,0 +1,48 @@
+@layer leverui.recipes {
+  .leverui-tabs__root:not([data-unstyled]) {
+    &[data-variant='subtle'] .leverui-tabs__trigger:not([data-unstyled]) {
+      border-radius: var(--leverui-tabs-trigger-radius);
+      color: var(--leverui-colors-fg-muted);
+
+      &[data-selected] {
+        background: var(--leverui-colors-color-palette-subtle);
+        color: var(--leverui-colors-color-palette-fg);
+      }
+    }
+
+    &[data-variant='enclosed'] {
+      .leverui-tabs__list:not([data-unstyled]) {
+        background: var(--leverui-colors-bg-muted);
+        padding: var(--leverui-spacing-1);
+        border-radius: var(--leverui-radii-l3);
+        min-height: calc(var(--leverui-private-tabs-height) - 4px);
+      }
+
+      .leverui-tabs__trigger:not([data-unstyled]) {
+        justify-content: center;
+        color: var(--leverui-colors-fg-muted);
+        border-radius: var(--leverui-tabs-trigger-radius);
+
+        &[data-selected] {
+          background: var(--leverui-colors-bg);
+          color: var(--leverui-colors-color-palette-fg);
+          box-shadow: var(--leverui-shadows-xs);
+        }
+      }
+    }
+
+    &[data-variant='plain'] .leverui-tabs__trigger:not([data-unstyled]) {
+      color: var(--leverui-colors-fg-muted);
+      border-radius: var(--leverui-tabs-trigger-radius);
+
+      &[data-selected] {
+        color: var(--leverui-colors-color-palette-fg);
+      }
+
+      &[data-selected][data-ssr] {
+        background: var(--leverui-tabs-indicator-bg);
+        box-shadow: var(--leverui-tabs-indicator-shadow);
+      }
+    }
+  }
+}

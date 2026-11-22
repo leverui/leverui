@@ -1,0 +1,98 @@
+@layer leverui.recipes {
+  @media (min-width: 1024px) {
+    .leverui-timeline__root:not([data-unstyled]) {
+      &[data-size-lg='sm'] {
+        --leverui-private-timeline-indicator-size: var(--leverui-sizes-4);
+        --leverui-private-timeline-font-size: var(--leverui-font-sizes-2xs);
+        --leverui-private-timeline-title-font-size: var(--leverui-font-sizes-xs);
+        --leverui-private-timeline-title-line-height: 1rem;
+        --leverui-private-timeline-title-margin-top: 0;
+      }
+      &[data-size-lg='md'] {
+        --leverui-private-timeline-indicator-size: var(--leverui-sizes-5);
+        --leverui-private-timeline-font-size: var(--leverui-font-sizes-xs);
+        --leverui-private-timeline-title-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-timeline-title-line-height: 1.25rem;
+        --leverui-private-timeline-title-margin-top: 0;
+      }
+      &[data-size-lg='lg'] {
+        --leverui-private-timeline-indicator-size: var(--leverui-sizes-6);
+        --leverui-private-timeline-font-size: var(--leverui-font-sizes-xs);
+        --leverui-private-timeline-title-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-timeline-title-line-height: 1.25rem;
+        --leverui-private-timeline-title-margin-top: var(--leverui-spacing-0\.5);
+      }
+      &[data-size-lg='xl'] {
+        --leverui-private-timeline-indicator-size: var(--leverui-sizes-8);
+        --leverui-private-timeline-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-timeline-title-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-timeline-title-line-height: 1.25rem;
+        --leverui-private-timeline-title-margin-top: var(--leverui-spacing-1\.5);
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    .leverui-timeline__root:not([data-unstyled]) {
+      &[data-size-xl='sm'] {
+        --leverui-private-timeline-indicator-size: var(--leverui-sizes-4);
+        --leverui-private-timeline-font-size: var(--leverui-font-sizes-2xs);
+        --leverui-private-timeline-title-font-size: var(--leverui-font-sizes-xs);
+        --leverui-private-timeline-title-line-height: 1rem;
+        --leverui-private-timeline-title-margin-top: 0;
+      }
+      &[data-size-xl='md'] {
+        --leverui-private-timeline-indicator-size: var(--leverui-sizes-5);
+        --leverui-private-timeline-font-size: var(--leverui-font-sizes-xs);
+        --leverui-private-timeline-title-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-timeline-title-line-height: 1.25rem;
+        --leverui-private-timeline-title-margin-top: 0;
+      }
+      &[data-size-xl='lg'] {
+        --leverui-private-timeline-indicator-size: var(--leverui-sizes-6);
+        --leverui-private-timeline-font-size: var(--leverui-font-sizes-xs);
+        --leverui-private-timeline-title-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-timeline-title-line-height: 1.25rem;
+        --leverui-private-timeline-title-margin-top: var(--leverui-spacing-0\.5);
+      }
+      &[data-size-xl='xl'] {
+        --leverui-private-timeline-indicator-size: var(--leverui-sizes-8);
+        --leverui-private-timeline-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-timeline-title-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-timeline-title-line-height: 1.25rem;
+        --leverui-private-timeline-title-margin-top: var(--leverui-spacing-1\.5);
+      }
+    }
+  }
+  @media (min-width: 1536px) {
+    .leverui-timeline__root:not([data-unstyled]) {
+      &[data-size-2xl='sm'] {
+        --leverui-private-timeline-indicator-size: var(--leverui-sizes-4);
+        --leverui-private-timeline-font-size: var(--leverui-font-sizes-2xs);
+        --leverui-private-timeline-title-font-size: var(--leverui-font-sizes-xs);
+        --leverui-private-timeline-title-line-height: 1rem;
+        --leverui-private-timeline-title-margin-top: 0;
+      }
+      &[data-size-2xl='md'] {
+        --leverui-private-timeline-indicator-size: var(--leverui-sizes-5);
+        --leverui-private-timeline-font-size: var(--leverui-font-sizes-xs);
+        --leverui-private-timeline-title-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-timeline-title-line-height: 1.25rem;
+        --leverui-private-timeline-title-margin-top: 0;
+      }
+      &[data-size-2xl='lg'] {
+        --leverui-private-timeline-indicator-size: var(--leverui-sizes-6);
+        --leverui-private-timeline-font-size: var(--leverui-font-sizes-xs);
+        --leverui-private-timeline-title-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-timeline-title-line-height: 1.25rem;
+        --leverui-private-timeline-title-margin-top: var(--leverui-spacing-0\.5);
+      }
+      &[data-size-2xl='xl'] {
+        --leverui-private-timeline-indicator-size: var(--leverui-sizes-8);
+        --leverui-private-timeline-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-timeline-title-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-timeline-title-line-height: 1.25rem;
+        --leverui-private-timeline-title-margin-top: var(--leverui-spacing-1\.5);
+      }
+    }
+  }
+}

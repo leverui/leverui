@@ -1,0 +1,66 @@
+@media (max-width: 900px) {
+  .hero.page-container {
+    width: min(100% - 48px, 1220px);
+  }
+  /* Stack the pitch above the wall, and show a shorter piece of the wall. */
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+  }
+  .hero-copy {
+    padding-top: 56px;
+  }
+  .home-examples {
+    height: 520px;
+    padding-top: 0;
+  }
+  /* Two cards to a row; the last card takes a full row. */
+  .feature-card,
+  .feature-card-wide {
+    grid-column: span 3;
+  }
+  .feature-card:last-child {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 650px) {
+  .hero-copy {
+    padding-top: 40px;
+  }
+  .hero h1 {
+    font-size: clamp(32px, 9vw, 40px);
+  }
+  .hero-copy > p {
+    font-size: 16px;
+  }
+  .hero-actions {
+    flex-wrap: wrap;
+  }
+  .home-examples {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .home-examples-column:nth-child(2) {
+    display: none;
+  }
+  .section {
+    padding: 32px 0 48px;
+  }
+  .section-heading {
+    display: block;
+  }
+  .feature-card,
+  .feature-card-wide {
+    grid-column: 1 / -1;
+  }
+  .section-heading h2 {
+    font-size: 43px;
+  }
+}
+@media (max-width: 550px) {
+  .hero.page-container {
+    width: min(100% - 32px, 1220px);
+  }
+}

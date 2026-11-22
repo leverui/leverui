@@ -1,0 +1,3 @@
+.consumer-circle-indeterminate[data-state='indeterminate'] {
+  stroke: var(--leverui-colors-purple-500);
+}

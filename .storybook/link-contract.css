@@ -1,0 +1,14 @@
+.link-contract-current[aria-current='page'] {
+  font-weight: 700;
+}
+
+.link-contract-color {
+  color: rgb(20 30 40);
+}
+
+.link-contract-card {
+  width: 320px;
+  height: 160px;
+  padding: 16px;
+  border: 1px solid var(--leverui-colors-border);
+}

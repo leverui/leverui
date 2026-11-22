@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/listbox-types.tsx", "src/listbox-example.tsx", "src/listbox-main.tsx"],
+  "exclude": []
+}

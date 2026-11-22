@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src/collapsible-contract.ts",
+    "src/collapsible-example.tsx",
+    "src/collapsible-main.tsx"
+  ],
+  "exclude": []
+}

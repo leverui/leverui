@@ -1,0 +1,49 @@
+@layer leverui.recipes {
+  .leverui-radial-bar-chart {
+    position: relative;
+    width: var(--leverui-private-radial-bar-size, 352px);
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .leverui-radial-bar-chart__svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .leverui-radial-bar-chart__track {
+    fill: var(--leverui-radial-bar-track-color, #eee);
+  }
+
+  .leverui-radial-bar-chart__label {
+    fill: var(--leverui-radial-bar-label-color, white);
+    font-size: var(--leverui-radial-bar-label-font-size, 12px);
+  }
+
+  .leverui-radial-bar-chart__legend {
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: var(--leverui-radial-bar-legend-gap, 12px);
+    margin-bottom: var(--leverui-radial-bar-legend-offset, 0px);
+    color: var(--leverui-radial-bar-legend-color, var(--leverui-colors-fg-muted));
+    font-size: var(--leverui-radial-bar-legend-font-size, 12px);
+  }
+
+  .leverui-radial-bar-chart__legendItem {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--leverui-radial-bar-legend-item-gap, 4px);
+  }
+
+  .leverui-radial-bar-chart__legendSwatch {
+    width: var(--leverui-radial-bar-legend-swatch-size, 8px);
+    height: var(--leverui-radial-bar-legend-swatch-size, 8px);
+    border-radius: var(--leverui-radial-bar-legend-swatch-radius, 2px);
+    background: var(--leverui-private-radial-bar-color);
+  }
+}

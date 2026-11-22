@@ -1,0 +1,7 @@
+.packed-action-bar-positioner {
+  --leverui-action-bar-offset: 23px;
+}
+
+.packed-action-bar-content {
+  border-radius: 19px;
+}

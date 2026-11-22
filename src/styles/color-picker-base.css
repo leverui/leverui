@@ -1,0 +1,198 @@
+@layer leverui.recipes {
+  .leverui-color-picker__root[data-leverui-color-picker-css] {
+    display: flex;
+    flex-direction: column;
+    gap: var(--leverui-color-picker-root-gap, var(--leverui-spacing-1\.5));
+  }
+
+  .leverui-color-picker__label[data-leverui-color-picker-css] {
+    color: var(--leverui-colors-fg);
+    font-size: var(--leverui-font-sizes-sm);
+    font-weight: var(--leverui-font-weights-medium);
+    line-height: 1.25rem;
+  }
+
+  .leverui-color-picker__label[data-leverui-color-picker-css][data-disabled] {
+    opacity: 0.5;
+  }
+
+  .leverui-color-picker__valueText[data-leverui-color-picker-css] {
+    text-align: start;
+  }
+
+  .leverui-color-picker__control[data-leverui-color-picker-css] {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--leverui-spacing-2);
+  }
+
+  .leverui-color-picker__swatchTrigger[data-leverui-color-picker-css] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .leverui-color-picker__trigger[data-leverui-color-picker-css] {
+    --leverui-private-color-picker-focus-color: var(
+      --leverui-color-picker-focus-color,
+      var(--leverui-colors-color-palette-focus-ring)
+    );
+
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    gap: var(--leverui-spacing-2);
+    min-width: var(
+      --leverui-color-picker-trigger-height,
+      var(--leverui-private-color-picker-trigger-height)
+    );
+    min-height: var(
+      --leverui-color-picker-trigger-height,
+      var(--leverui-private-color-picker-trigger-height)
+    );
+    padding-inline: var(--leverui-spacing-1);
+    border-radius: var(--leverui-radii-l2);
+    font-size: var(--leverui-font-sizes-sm);
+    line-height: 1.25rem;
+  }
+
+  .leverui-color-picker__trigger[data-leverui-color-picker-css][data-disabled] {
+    opacity: 0.5;
+  }
+
+  .leverui-color-picker__trigger[data-leverui-color-picker-css]:focus-visible {
+    border-color: var(--leverui-private-color-picker-focus-color);
+    outline: 1px solid var(--leverui-private-color-picker-focus-color);
+  }
+
+  .leverui-color-picker__trigger[data-leverui-color-picker-css][data-fit-content] {
+    --leverui-private-color-picker-trigger-height: initial;
+
+    padding-inline: 0;
+  }
+
+  .leverui-color-picker__content[data-leverui-color-picker-css] {
+    display: flex;
+    flex-direction: column;
+    gap: var(--leverui-spacing-3);
+    width: var(--leverui-color-picker-content-width, var(--leverui-sizes-64));
+    padding: var(--leverui-spacing-4);
+    border-radius: var(--leverui-radii-l3);
+    background: var(--leverui-color-picker-content-background, var(--leverui-colors-bg-panel));
+    box-shadow: var(--leverui-shadows-lg);
+    z-index: calc(
+      var(--leverui-color-picker-z-index, var(--leverui-z-index-popover)) + var(--layer-index, 0)
+    );
+  }
+
+  .leverui-color-picker__area[data-leverui-color-picker-css] {
+    height: var(--leverui-color-picker-area-height, 180px);
+    overflow: hidden;
+    border-radius: var(--leverui-radii-l2);
+  }
+
+  .leverui-color-picker__areaBackground[data-leverui-color-picker-css] {
+    height: 100%;
+  }
+
+  .leverui-color-picker__areaThumb[data-leverui-color-picker-css] {
+    width: var(
+      --leverui-color-picker-thumb-size,
+      var(--leverui-private-color-picker-area-thumb-size)
+    );
+    height: var(
+      --leverui-color-picker-thumb-size,
+      var(--leverui-private-color-picker-area-thumb-size)
+    );
+    border: 2px solid white;
+    border-radius: var(--leverui-radii-full);
+    box-shadow: var(--leverui-shadows-sm);
+  }
+
+  .leverui-color-picker__channelSlider[data-leverui-color-picker-css] {
+    flex: 1;
+    border-radius: var(--leverui-radii-l2);
+  }
+
+  .leverui-color-picker__channelSliderTrack[data-leverui-color-picker-css] {
+    height: var(
+      --leverui-color-picker-slider-height,
+      var(--leverui-private-color-picker-slider-height)
+    );
+    border-radius: inherit;
+    box-shadow: inset 0 0 0 1px rgb(0 0 0 / 10%);
+  }
+
+  .leverui-color-picker__channelSliderThumb[data-leverui-color-picker-css] {
+    width: var(
+      --leverui-color-picker-thumb-size,
+      var(--leverui-private-color-picker-slider-thumb-size)
+    );
+    height: var(
+      --leverui-color-picker-thumb-size,
+      var(--leverui-private-color-picker-slider-thumb-size)
+    );
+    border: 2px solid white;
+    border-radius: var(--leverui-radii-full);
+    box-shadow: var(--leverui-shadows-sm);
+    transform: translate(-50%, -50%);
+  }
+
+  .leverui-color-picker__channelText[data-leverui-color-picker-css] {
+    color: var(--leverui-colors-fg-muted);
+    font-size: var(--leverui-font-sizes-xs);
+    font-weight: var(--leverui-font-weights-medium);
+    line-height: 1rem;
+    text-transform: capitalize;
+  }
+
+  .leverui-color-picker__swatchGroup[data-leverui-color-picker-css] {
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--leverui-spacing-2);
+  }
+
+  .leverui-color-picker__swatchIndicator[data-leverui-color-picker-css] {
+    color: white;
+    border-radius: var(--leverui-radii-full);
+  }
+
+  .leverui-color-picker__formatSelect[data-leverui-color-picker-css] {
+    min-height: var(--leverui-sizes-6);
+    border: 1px solid var(--leverui-colors-border);
+    border-radius: var(--leverui-radii-l2);
+    font-size: var(--leverui-font-sizes-xs);
+    line-height: 1rem;
+    text-transform: uppercase;
+  }
+
+  .leverui-color-picker__transparencyGrid[data-leverui-color-picker-css] {
+    border-radius: var(--leverui-radii-l2);
+  }
+
+  .leverui-color-picker__view[data-leverui-color-picker-css] {
+    display: flex;
+    flex-direction: column;
+    gap: var(--leverui-spacing-2);
+  }
+
+  .leverui-color-picker__sliders[data-leverui-color-picker-css] {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: var(--leverui-spacing-1);
+    padding-inline: var(--leverui-spacing-1);
+  }
+
+  /* Zag 2 sets no z-index and isolates the positioner, so the content's z-index
+     cannot escape it. Stack the positioner itself, offset by its layer index. */
+  .leverui-color-picker__positioner {
+    z-index: calc(
+      var(--leverui-color-picker-z-index, var(--leverui-z-index-popover)) + var(--layer-index, 0)
+    );
+  }
+}

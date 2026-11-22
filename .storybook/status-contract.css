@@ -1,0 +1,8 @@
+.status-contract-custom {
+  gap: 24px;
+}
+
+.status-contract-custom .leverui-status__indicator {
+  width: 23px;
+  height: 17px;
+}

@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/packed-tree-view-family.tsx", "src/tree-view-types.tsx"],
+  "exclude": []
+}

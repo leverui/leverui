@@ -1,0 +1,35 @@
+/** Verify the Input's public hooks, finite choices, and group padding. */
+export const inputContracts = [
+  {
+    family: 'input',
+    files: [
+      'input-base.css',
+      'input-sizes.css',
+      'input-responsive-sizes-sm-md.css',
+      'input-responsive-sizes-lg-2xl.css',
+      'input-variants.css',
+      'input-responsive-variants-sm-md.css',
+      'input-responsive-variants-lg-2xl.css',
+      'input-states.css',
+    ],
+    required: [
+      '.leverui-input:not([data-unstyled])',
+      "[data-size='2xs']",
+      "[data-size='xs']",
+      "[data-size='sm']",
+      "[data-size='md']",
+      "[data-size='lg']",
+      "[data-size='xl']",
+      "[data-size='2xl']",
+      "[data-size-sm='md']",
+      "[data-size-2xl='md']",
+      "[data-variant='outline']",
+      "[data-variant='subtle']",
+      "[data-variant='flushed']",
+      "[data-variant-sm='outline']",
+      "[data-variant-2xl='outline']",
+      '[data-invalid]',
+      ':focus-visible',
+    ],
+  },
+];

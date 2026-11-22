@@ -1,0 +1,37 @@
+@layer leverui.recipes {
+  .leverui-button:not([data-unstyled]) {
+    display: inline-flex;
+    appearance: none;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    position: relative;
+    border-radius: var(--leverui-radii-l2);
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    cursor: var(--leverui-cursor-button);
+    flex-shrink: 0;
+    outline: 0;
+    line-height: 1.2;
+    isolation: isolate;
+    font-weight: var(--leverui-font-weights-medium);
+    transition-property:
+      background-color, border-color, color, fill, stroke, opacity, box-shadow, translate, transform;
+    transition-duration: var(--leverui-durations-moderate);
+  }
+
+  .leverui-button:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
+    outline: 2px solid var(--leverui-colors-color-palette-focus-ring);
+    outline-offset: 2px;
+  }
+
+  .leverui-button:not([data-unstyled]):is(:disabled, [data-disabled], [aria-disabled='true']) {
+    opacity: 0.5;
+    cursor: var(--leverui-cursor-disabled);
+  }
+
+  .leverui-button:not([data-unstyled]) :is(svg, [data-leverui-icon]) {
+    flex-shrink: 0;
+  }
+}

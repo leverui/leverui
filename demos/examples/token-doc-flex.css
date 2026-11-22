@@ -1,0 +1,12 @@
+.token-doc-flex-header {
+  font-size: var(--leverui-font-sizes-sm);
+  font-weight: var(--leverui-font-weights-medium);
+  padding-block: var(--leverui-spacing-1);
+  padding-inline: var(--leverui-spacing-3);
+  border-bottom-width: 1px;
+}
+
+.token-doc-flex-row {
+  font-size: var(--leverui-font-sizes-sm);
+  padding-block: var(--leverui-spacing-1);
+}

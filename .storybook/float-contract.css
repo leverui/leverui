@@ -1,0 +1,14 @@
+.float-contract-parent {
+  position: relative;
+  width: 200px;
+  height: 120px;
+}
+
+.float-contract-item {
+  width: 20px;
+  height: 20px;
+}
+
+.float-contract-override {
+  inset-block-start: 24px;
+}

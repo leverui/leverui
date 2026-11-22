@@ -1,0 +1,39 @@
+@layer leverui.recipes {
+  :is(.leverui-square, .leverui-circle) {
+    width: var(--leverui-private-square-size-base, var(--leverui-square-size, auto));
+    height: var(--leverui-private-square-size-base, var(--leverui-square-size, auto));
+
+    @media (min-width: 30rem) {
+      width: var(--leverui-private-square-size-sm, var(--leverui-square-size, auto));
+      height: var(--leverui-private-square-size-sm, var(--leverui-square-size, auto));
+    }
+
+    @media (min-width: 48rem) {
+      width: var(--leverui-private-square-size-md, var(--leverui-square-size, auto));
+      height: var(--leverui-private-square-size-md, var(--leverui-square-size, auto));
+    }
+
+    @media (min-width: 64rem) {
+      width: var(--leverui-private-square-size-lg, var(--leverui-square-size, auto));
+      height: var(--leverui-private-square-size-lg, var(--leverui-square-size, auto));
+    }
+
+    @media (min-width: 80rem) {
+      width: var(--leverui-private-square-size-xl, var(--leverui-square-size, auto));
+      height: var(--leverui-private-square-size-xl, var(--leverui-square-size, auto));
+    }
+
+    @media (min-width: 96rem) {
+      width: var(--leverui-private-square-size-2xl, var(--leverui-square-size, auto));
+      height: var(--leverui-private-square-size-2xl, var(--leverui-square-size, auto));
+    }
+  }
+
+  :is(.leverui-square, .leverui-circle):not([data-unstyled]) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+}

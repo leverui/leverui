@@ -1,0 +1,52 @@
+@layer leverui.recipes {
+  @media (min-width: 480px) {
+    .leverui-scroll-area__root:not([data-unstyled]) {
+      &[data-variant-sm='hover'] {
+        --leverui-private-scroll-area-opacity: 0;
+      }
+      &[data-variant-sm='always'] {
+        --leverui-private-scroll-area-opacity: 1;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .leverui-scroll-area__root:not([data-unstyled]) {
+      &[data-variant-md='hover'] {
+        --leverui-private-scroll-area-opacity: 0;
+      }
+      &[data-variant-md='always'] {
+        --leverui-private-scroll-area-opacity: 1;
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    .leverui-scroll-area__root:not([data-unstyled]) {
+      &[data-variant-lg='hover'] {
+        --leverui-private-scroll-area-opacity: 0;
+      }
+      &[data-variant-lg='always'] {
+        --leverui-private-scroll-area-opacity: 1;
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    .leverui-scroll-area__root:not([data-unstyled]) {
+      &[data-variant-xl='hover'] {
+        --leverui-private-scroll-area-opacity: 0;
+      }
+      &[data-variant-xl='always'] {
+        --leverui-private-scroll-area-opacity: 1;
+      }
+    }
+  }
+  @media (min-width: 1536px) {
+    .leverui-scroll-area__root:not([data-unstyled]) {
+      &[data-variant-2xl='hover'] {
+        --leverui-private-scroll-area-opacity: 0;
+      }
+      &[data-variant-2xl='always'] {
+        --leverui-private-scroll-area-opacity: 1;
+      }
+    }
+  }
+}

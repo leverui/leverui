@@ -1,0 +1,3 @@
+{
+  "source": "const veryLongValue = \"ThisUnbrokenSourceTokenDemonstratesHorizontalScrollingAndWordWrappingAcrossTheNarrowCodeSurface\"\nconsole.log(veryLongValue)"
+}

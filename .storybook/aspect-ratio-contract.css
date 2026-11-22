@@ -1,0 +1,15 @@
+.aspect-ratio-contract .ratio-wide {
+  width: 240px;
+}
+
+.aspect-ratio-contract .ratio-narrow {
+  width: 160px;
+}
+
+.aspect-ratio-contract .ratio-reactive {
+  width: 200px;
+}
+
+.aspect-ratio-contract .ratio-content {
+  background: var(--leverui-colors-blue-500);
+}

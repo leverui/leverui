@@ -1,0 +1,72 @@
+.flex-example-pattern {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: var(--leverui-sizes-10);
+  background-color: var(--leverui-colors-bg-emphasized);
+  background-clip: padding-box;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  border-width: 1px;
+}
+
+.flex-example-pattern--short {
+  height: var(--leverui-sizes-4);
+}
+
+.flex-example-pattern--medium {
+  height: var(--leverui-sizes-8);
+}
+
+.flex-example-pattern--width-40 {
+  width: var(--leverui-sizes-40);
+}
+
+.flex-example-pattern--width-120 {
+  width: 120px;
+}
+
+.flex-example-pattern--width-200 {
+  width: 200px;
+}
+
+.flex-example-pattern--margin-end {
+  margin-inline-end: auto;
+}
+
+.flex-example-pattern--order-1 {
+  order: 1;
+}
+
+.flex-example-pattern--order-2 {
+  order: 2;
+}
+
+.flex-example-pattern--order-3 {
+  order: 3;
+}
+
+.flex-example-gap-4 {
+  gap: var(--leverui-spacing-4);
+}
+
+.flex-example-gap-8 {
+  gap: var(--leverui-spacing-8);
+}
+
+.flex-example-max-width {
+  max-width: 500px;
+}
+
+.flex-example-box {
+  padding: var(--leverui-spacing-4);
+  color: white;
+}
+
+.flex-example-box--red {
+  background: var(--leverui-colors-red-400);
+}
+
+.flex-example-box--green {
+  background: var(--leverui-colors-green-400);
+}

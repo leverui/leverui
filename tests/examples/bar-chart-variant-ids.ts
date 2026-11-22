@@ -1,0 +1,22 @@
+/** Every public Bar Chart variant story, by its Storybook id suffix. */
+export const barChartVariantIds = [
+  'bar-color',
+  'basic',
+  'candlestick',
+  'composition',
+  'fill-with-value',
+  'histogram',
+  'horizontal',
+  'legend-position',
+  'multiple',
+  'percent',
+  'rounded',
+  'stacked',
+  'stacked-mix',
+  'formatter',
+  'no-gap',
+  'bar-label',
+  'reference-lines',
+  'range',
+  'avatar-ticks',
+] as const;

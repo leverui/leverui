@@ -1,0 +1,50 @@
+@layer leverui.recipes {
+  @media (min-width: 30rem) {
+    .leverui-mark:not([data-unstyled], [data-leverui-private-style-runtime]) {
+      &[data-variant-sm='subtle'] {
+        --leverui-private-mark-background: var(--leverui-colors-color-palette-subtle);
+        --leverui-private-mark-color: inherit;
+        --leverui-private-mark-font-weight: inherit;
+      }
+      &[data-variant-sm='solid'] {
+        --leverui-private-mark-background: var(--leverui-colors-color-palette-solid);
+        --leverui-private-mark-color: var(--leverui-colors-color-palette-contrast);
+        --leverui-private-mark-font-weight: inherit;
+      }
+      &[data-variant-sm='text'] {
+        --leverui-private-mark-background: transparent;
+        --leverui-private-mark-color: inherit;
+        --leverui-private-mark-font-weight: var(--leverui-font-weights-medium);
+      }
+      &[data-variant-sm='plain'] {
+        --leverui-private-mark-background: transparent;
+        --leverui-private-mark-color: inherit;
+        --leverui-private-mark-font-weight: inherit;
+      }
+    }
+  }
+  @media (min-width: 48rem) {
+    .leverui-mark:not([data-unstyled], [data-leverui-private-style-runtime]) {
+      &[data-variant-md='subtle'] {
+        --leverui-private-mark-background: var(--leverui-colors-color-palette-subtle);
+        --leverui-private-mark-color: inherit;
+        --leverui-private-mark-font-weight: inherit;
+      }
+      &[data-variant-md='solid'] {
+        --leverui-private-mark-background: var(--leverui-colors-color-palette-solid);
+        --leverui-private-mark-color: var(--leverui-colors-color-palette-contrast);
+        --leverui-private-mark-font-weight: inherit;
+      }
+      &[data-variant-md='text'] {
+        --leverui-private-mark-background: transparent;
+        --leverui-private-mark-color: inherit;
+        --leverui-private-mark-font-weight: var(--leverui-font-weights-medium);
+      }
+      &[data-variant-md='plain'] {
+        --leverui-private-mark-background: transparent;
+        --leverui-private-mark-color: inherit;
+        --leverui-private-mark-font-weight: inherit;
+      }
+    }
+  }
+}

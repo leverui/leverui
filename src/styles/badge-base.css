@@ -1,0 +1,16 @@
+@layer leverui.recipes {
+  .leverui-badge:not([data-unstyled], [data-leverui-private-style-runtime]) {
+    display: inline-flex;
+    align-items: center;
+    border-radius: var(--leverui-radii-l2);
+    gap: var(--leverui-spacing-1);
+    font-weight: var(--leverui-font-weights-medium);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+    user-select: none;
+    font-size: var(--leverui-private-badge-font-size);
+    line-height: var(--leverui-private-badge-line-height);
+    padding-inline: var(--leverui-private-badge-padding);
+    min-height: var(--leverui-private-badge-min-height);
+  }
+}

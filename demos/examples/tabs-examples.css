@@ -1,0 +1,19 @@
+.tabs-example-animation-panel {
+  position: absolute;
+  inset: 0;
+}
+
+.tabs-example-animation-panel[data-state='open'] {
+  animation-name: fade-in, scale-in;
+  animation-duration: 300ms;
+}
+
+.tabs-example-animation-panel[data-state='closed'] {
+  animation-name: fade-out, scale-out;
+  animation-duration: 120ms;
+}
+
+.example-tabs-grid {
+  width: 100%;
+  gap: var(--leverui-spacing-14);
+}

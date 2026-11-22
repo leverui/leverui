@@ -1,0 +1,66 @@
+@layer leverui.recipes {
+  @media (min-width: 30rem) {
+    .leverui-pin-input__root[data-attached-sm='true'] {
+      --leverui-private-pin-input-gap: 0px;
+      --leverui-private-pin-input-overlap: -1px;
+      --leverui-private-pin-input-inner-radius: 0px;
+    }
+    .leverui-pin-input__root[data-attached-sm='false'] {
+      --leverui-private-pin-input-gap: var(--leverui-spacing-2);
+      --leverui-private-pin-input-overlap: 0px;
+      --leverui-private-pin-input-inner-radius: initial;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .leverui-pin-input__root[data-attached-md='true'] {
+      --leverui-private-pin-input-gap: 0px;
+      --leverui-private-pin-input-overlap: -1px;
+      --leverui-private-pin-input-inner-radius: 0px;
+    }
+    .leverui-pin-input__root[data-attached-md='false'] {
+      --leverui-private-pin-input-gap: var(--leverui-spacing-2);
+      --leverui-private-pin-input-overlap: 0px;
+      --leverui-private-pin-input-inner-radius: initial;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .leverui-pin-input__root[data-attached-lg='true'] {
+      --leverui-private-pin-input-gap: 0px;
+      --leverui-private-pin-input-overlap: -1px;
+      --leverui-private-pin-input-inner-radius: 0px;
+    }
+    .leverui-pin-input__root[data-attached-lg='false'] {
+      --leverui-private-pin-input-gap: var(--leverui-spacing-2);
+      --leverui-private-pin-input-overlap: 0px;
+      --leverui-private-pin-input-inner-radius: initial;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .leverui-pin-input__root[data-attached-xl='true'] {
+      --leverui-private-pin-input-gap: 0px;
+      --leverui-private-pin-input-overlap: -1px;
+      --leverui-private-pin-input-inner-radius: 0px;
+    }
+    .leverui-pin-input__root[data-attached-xl='false'] {
+      --leverui-private-pin-input-gap: var(--leverui-spacing-2);
+      --leverui-private-pin-input-overlap: 0px;
+      --leverui-private-pin-input-inner-radius: initial;
+    }
+  }
+
+  @media (min-width: 96rem) {
+    .leverui-pin-input__root[data-attached-2xl='true'] {
+      --leverui-private-pin-input-gap: 0px;
+      --leverui-private-pin-input-overlap: -1px;
+      --leverui-private-pin-input-inner-radius: 0px;
+    }
+    .leverui-pin-input__root[data-attached-2xl='false'] {
+      --leverui-private-pin-input-gap: var(--leverui-spacing-2);
+      --leverui-private-pin-input-overlap: 0px;
+      --leverui-private-pin-input-inner-radius: initial;
+    }
+  }
+}

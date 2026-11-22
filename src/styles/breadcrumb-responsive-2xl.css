@@ -1,0 +1,37 @@
+@layer leverui.recipes {
+  @media (min-width: 1536px) {
+    .leverui-breadcrumb__root:not([data-unstyled]) {
+      &[data-size-2xl='sm'] {
+        --leverui-private-breadcrumb-gap: var(--leverui-spacing-1);
+        --leverui-private-breadcrumb-font-size: var(--leverui-font-sizes-xs);
+        --leverui-private-breadcrumb-line-height: 1rem;
+      }
+      &[data-size-2xl='md'] {
+        --leverui-private-breadcrumb-gap: var(--leverui-spacing-1\.5);
+        --leverui-private-breadcrumb-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-breadcrumb-line-height: 1.25rem;
+      }
+      &[data-size-2xl='lg'] {
+        --leverui-private-breadcrumb-gap: var(--leverui-spacing-2);
+        --leverui-private-breadcrumb-font-size: var(--leverui-font-sizes-md);
+        --leverui-private-breadcrumb-line-height: 1.5rem;
+      }
+      &[data-variant-2xl='plain'] {
+        --leverui-private-breadcrumb-link-color: var(--leverui-colors-fg-muted);
+        --leverui-private-breadcrumb-link-hover-color: var(--leverui-colors-fg);
+        --leverui-private-breadcrumb-current-color: var(--leverui-colors-fg);
+        --leverui-private-breadcrumb-decoration: none;
+        --leverui-private-breadcrumb-decoration-offset: auto;
+        --leverui-private-breadcrumb-decoration-color: currentColor;
+      }
+      &[data-variant-2xl='underline'] {
+        --leverui-private-breadcrumb-link-color: var(--leverui-colors-color-palette-fg);
+        --leverui-private-breadcrumb-link-hover-color: var(--leverui-colors-color-palette-fg);
+        --leverui-private-breadcrumb-current-color: var(--leverui-colors-color-palette-fg);
+        --leverui-private-breadcrumb-decoration: underline;
+        --leverui-private-breadcrumb-decoration-offset: 0.2em;
+        --leverui-private-breadcrumb-decoration-color: var(--leverui-colors-color-palette-muted);
+      }
+    }
+  }
+}

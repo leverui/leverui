@@ -1,0 +1,57 @@
+@layer leverui.recipes {
+  @media (min-width: 480px) {
+    .leverui-color-swatch:not([data-unstyled])[data-shape-sm='square'] {
+      --leverui-swatch-radius: 0px;
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-shape-sm='circle'] {
+      --leverui-swatch-radius: var(--leverui-radii-full);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-shape-sm='rounded'] {
+      --leverui-swatch-radius: var(--leverui-radii-l1);
+    }
+  }
+  @media (min-width: 768px) {
+    .leverui-color-swatch:not([data-unstyled])[data-shape-md='square'] {
+      --leverui-swatch-radius: 0px;
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-shape-md='circle'] {
+      --leverui-swatch-radius: var(--leverui-radii-full);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-shape-md='rounded'] {
+      --leverui-swatch-radius: var(--leverui-radii-l1);
+    }
+  }
+  @media (min-width: 1024px) {
+    .leverui-color-swatch:not([data-unstyled])[data-shape-lg='square'] {
+      --leverui-swatch-radius: 0px;
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-shape-lg='circle'] {
+      --leverui-swatch-radius: var(--leverui-radii-full);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-shape-lg='rounded'] {
+      --leverui-swatch-radius: var(--leverui-radii-l1);
+    }
+  }
+  @media (min-width: 1280px) {
+    .leverui-color-swatch:not([data-unstyled])[data-shape-xl='square'] {
+      --leverui-swatch-radius: 0px;
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-shape-xl='circle'] {
+      --leverui-swatch-radius: var(--leverui-radii-full);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-shape-xl='rounded'] {
+      --leverui-swatch-radius: var(--leverui-radii-l1);
+    }
+  }
+  @media (min-width: 1536px) {
+    .leverui-color-swatch:not([data-unstyled])[data-shape-2xl='square'] {
+      --leverui-swatch-radius: 0px;
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-shape-2xl='circle'] {
+      --leverui-swatch-radius: var(--leverui-radii-full);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-shape-2xl='rounded'] {
+      --leverui-swatch-radius: var(--leverui-radii-l1);
+    }
+  }
+}

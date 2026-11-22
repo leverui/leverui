@@ -1,0 +1,11 @@
+.radio-group-responsive {
+  display: flex;
+  flex-direction: row;
+  gap: var(--leverui-spacing-3);
+}
+
+@media (min-width: 48rem) {
+  .radio-group-responsive {
+    flex-direction: column;
+  }
+}

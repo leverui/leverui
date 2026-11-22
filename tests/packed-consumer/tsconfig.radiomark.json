@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/radiomark-types.tsx", "src/radiomark-main.tsx"],
+  "exclude": []
+}

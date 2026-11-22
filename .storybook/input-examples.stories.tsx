@@ -1,0 +1,36 @@
+import { meta as demo } from '../demos/input';
+
+export default { ...demo, title: 'Components/Input' };
+
+export {
+  Basic,
+  Variants,
+  Sizes,
+  HelperText,
+  ErrorText,
+  Field,
+  HookForm,
+  StartIcon,
+  StartText,
+  StartAndEndText,
+  Kbd,
+  Select,
+  StartAddon,
+  EndAddon,
+  StartAndEndAddon,
+  Disabled,
+  EndButton,
+  FocusErrorColor,
+  PlaceholderStyle,
+  FloatingLabel,
+  Mask,
+  CharacterCounter,
+  CardNumber,
+  CardDetails,
+  ClearButton,
+  EndIcon,
+  EndText,
+  StartElementEndAddon,
+  SizeMatrix,
+  VariantMatrix,
+} from '../demos/input';

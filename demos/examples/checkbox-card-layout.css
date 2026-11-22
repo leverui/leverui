@@ -1,0 +1,20 @@
+.example-checkbox-card-sample {
+  max-width: var(--leverui-sizes-60);
+}
+
+.example-checkbox-card-stack {
+  max-width: var(--leverui-sizes-80);
+}
+
+.example-checkbox-card-group-label {
+  font-weight: var(--leverui-font-weights-medium);
+}
+
+.example-checkbox-card-options {
+  gap: var(--leverui-spacing-2);
+}
+
+.example-checkbox-card-icon {
+  margin-bottom: var(--leverui-spacing-2);
+  font-size: var(--leverui-font-sizes-2xl);
+}

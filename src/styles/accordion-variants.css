@@ -1,0 +1,48 @@
+@layer leverui.recipes {
+  .leverui-accordion__root:not([data-unstyled]) {
+    &[data-variant='outline'] {
+      --leverui-private-accordion-root-border-width: 0;
+      --leverui-private-accordion-root-radius: 0;
+      --leverui-private-accordion-root-overflow: visible;
+      --leverui-private-accordion-item-border-bottom-width: 1px;
+      --leverui-private-accordion-item-border-top-width: 0;
+      --leverui-private-accordion-item-radius: 0;
+      --leverui-private-accordion-trigger-padding-x: 0;
+      --leverui-private-accordion-content-padding-x: 0;
+      --leverui-private-accordion-open-background: transparent;
+    }
+    &[data-variant='subtle'] {
+      --leverui-private-accordion-root-border-width: 0;
+      --leverui-private-accordion-root-radius: 0;
+      --leverui-private-accordion-root-overflow: visible;
+      --leverui-private-accordion-item-border-bottom-width: 0;
+      --leverui-private-accordion-item-border-top-width: 0;
+      --leverui-private-accordion-item-radius: var(--leverui-private-accordion-radius);
+      --leverui-private-accordion-trigger-padding-x: var(--leverui-private-accordion-padding-x);
+      --leverui-private-accordion-content-padding-x: var(--leverui-private-accordion-padding-x);
+      --leverui-private-accordion-open-background: var(--leverui-colors-color-palette-subtle);
+    }
+    &[data-variant='enclosed'] {
+      --leverui-private-accordion-root-border-width: 1px;
+      --leverui-private-accordion-root-radius: var(--leverui-private-accordion-radius);
+      --leverui-private-accordion-root-overflow: hidden;
+      --leverui-private-accordion-item-border-bottom-width: 0;
+      --leverui-private-accordion-item-border-top-width: 1px;
+      --leverui-private-accordion-item-radius: 0;
+      --leverui-private-accordion-trigger-padding-x: var(--leverui-private-accordion-padding-x);
+      --leverui-private-accordion-content-padding-x: var(--leverui-private-accordion-padding-x);
+      --leverui-private-accordion-open-background: var(--leverui-colors-bg-subtle);
+    }
+    &[data-variant='plain'] {
+      --leverui-private-accordion-root-border-width: 0;
+      --leverui-private-accordion-root-radius: 0;
+      --leverui-private-accordion-root-overflow: visible;
+      --leverui-private-accordion-item-border-bottom-width: 0;
+      --leverui-private-accordion-item-border-top-width: 0;
+      --leverui-private-accordion-item-radius: 0;
+      --leverui-private-accordion-trigger-padding-x: 0;
+      --leverui-private-accordion-content-padding-x: 0;
+      --leverui-private-accordion-open-background: transparent;
+    }
+  }
+}

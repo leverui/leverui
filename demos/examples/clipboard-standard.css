@@ -1,0 +1,18 @@
+.clipboard-example-input-root {
+  max-width: 300px;
+}
+
+.clipboard-example-label {
+  font-size: var(--leverui-font-sizes-sm);
+  font-weight: var(--leverui-font-weights-medium);
+}
+
+.clipboard-example-inset-trigger {
+  margin-inline-end: calc(-1 * var(--leverui-spacing-2));
+}
+
+.clipboard-example-link {
+  color: var(--leverui-colors-blue-fg);
+  font-size: var(--leverui-font-sizes-sm);
+  line-height: 1.25rem;
+}

@@ -1,0 +1,13 @@
+.example-blockquote-row {
+  width: 100%;
+  padding-inline: var(--leverui-spacing-4);
+}
+
+.example-blockquote-label {
+  min-width: 8ch;
+}
+
+.example-blockquote-justify-label {
+  min-width: 6rem;
+  color: var(--leverui-colors-fg-muted);
+}

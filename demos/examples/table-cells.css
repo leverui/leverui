@@ -1,0 +1,21 @@
+.example-table-end {
+  text-align: end;
+}
+
+.example-table-wide {
+  min-width: 400px;
+}
+
+.example-table-price {
+  min-width: 200px;
+  text-align: end;
+}
+
+.example-table-sticky-start {
+  left: 0;
+}
+
+.example-table-sticky-name {
+  min-width: var(--leverui-sizes-40);
+  left: 0;
+}

@@ -1,0 +1,116 @@
+@layer leverui.recipes {
+  .leverui-prose:not([data-unstyled]) {
+    color: var(--leverui-prose-color, var(--leverui-colors-fg-muted));
+    max-width: var(--leverui-prose-max-width, 65ch);
+    font-size: var(--leverui-prose-font-size, var(--leverui-font-sizes-sm));
+    line-height: var(--leverui-prose-line-height, 1.7em);
+
+    &[data-size='lg'] {
+      font-size: var(--leverui-prose-font-size, var(--leverui-font-sizes-md));
+    }
+
+    & :where(p):not(.not-prose, .not-prose *) {
+      margin-block: 1em;
+    }
+    & :where(blockquote):not(.not-prose, .not-prose *) {
+      margin-block: 1.285em;
+      padding-inline: 1.285em;
+      border-inline-start-width: 0.25em;
+      color: var(--leverui-colors-fg);
+    }
+    & :where(a):not(.not-prose, .not-prose *) {
+      color: var(--leverui-colors-fg);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 2px;
+      text-decoration-color: var(--leverui-colors-border-muted);
+      font-weight: 500;
+    }
+    & :where(strong):not(.not-prose, .not-prose *) {
+      font-weight: 600;
+    }
+    & :where(a strong):not(.not-prose, .not-prose *) {
+      color: inherit;
+    }
+    & :where(em):not(.not-prose, .not-prose *) {
+      font-style: italic;
+    }
+    & :where(h1):not(.not-prose, .not-prose *) {
+      font-size: 2.15em;
+      letter-spacing: -0.02em;
+      margin-block: 0 0.8em;
+      line-height: 1.2em;
+    }
+    & :where(h2):not(.not-prose, .not-prose *) {
+      font-size: 1.65em;
+      letter-spacing: -0.02em;
+      margin-block: 1.6em 0.8em;
+      line-height: 1.3em;
+    }
+    & :where(h3):not(.not-prose, .not-prose *) {
+      font-size: 1.35em;
+      letter-spacing: -0.01em;
+      margin-block: 1.5em 0.4em;
+      line-height: 1.4em;
+    }
+    & :where(h4):not(.not-prose, .not-prose *) {
+      margin-block: 1.4em 0.5em;
+      letter-spacing: -0.01em;
+      line-height: 1.5em;
+    }
+    & :where(img):not(.not-prose, .not-prose *) {
+      margin-block: 1.7em;
+      border-radius: var(--leverui-radii-lg);
+      box-shadow: var(--leverui-shadows-inset);
+    }
+    & :where(picture, video):not(.not-prose, .not-prose *) {
+      margin-block: 1.7em;
+    }
+    & :where(picture > img):not(.not-prose, .not-prose *) {
+      margin-block: 0;
+    }
+    & :where(kbd):not(.not-prose, .not-prose *) {
+      font-size: 0.85em;
+      border-radius: var(--leverui-radii-xs);
+      padding-block: 0.15em;
+      padding-inline: 0.35em;
+      font-family: inherit;
+      color: var(--leverui-colors-fg-muted);
+      box-shadow:
+        0 0 0 1px var(--leverui-colors-border),
+        0 1px 0 1px var(--leverui-colors-border);
+    }
+    & :where(code):not(.not-prose, .not-prose *) {
+      font-size: 0.925em;
+      background: var(--leverui-colors-bg-muted);
+      letter-spacing: -0.01em;
+      line-height: 1;
+      border-radius: var(--leverui-radii-md);
+      border-width: 1px;
+      padding-inline: 0.25em;
+    }
+    & :where(pre code):not(.not-prose, .not-prose *) {
+      font-size: inherit;
+      letter-spacing: inherit;
+      border-width: inherit;
+      padding: 0;
+      background: transparent;
+    }
+    & :where(h2 code):not(.not-prose, .not-prose *) {
+      font-size: 0.9em;
+    }
+    & :where(h3 code):not(.not-prose, .not-prose *) {
+      font-size: 0.8em;
+    }
+    & :where(pre):not(.not-prose, .not-prose *) {
+      background-color: var(--leverui-colors-bg-muted);
+      margin-block: 1.6em;
+      border-radius: var(--leverui-radii-md);
+      font-size: 0.9em;
+      padding-block: 0.65em;
+      padding-inline: 1em;
+      overflow-x: auto;
+      font-weight: 400;
+    }
+  }
+}

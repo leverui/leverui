@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src/semantic-inline-example.tsx",
+    "src/semantic-inline-main.tsx",
+    "src/semantic-inline-types.tsx",
+    "src/span-example.tsx"
+  ],
+  "exclude": []
+}

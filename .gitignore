@@ -1,0 +1,12 @@
+node_modules/
+dist/
+storybook-static/
+playwright-report/
+test-results/
+visual-results/
+debug-storybook.log
+coverage/
+.pnpm-store/
+.tmp/
+.leverui-declarations-*/
+.DS_Store

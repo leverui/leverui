@@ -1,0 +1,44 @@
+@layer leverui.recipes {
+  .leverui-separator:not([data-unstyled]) {
+    --leverui-private-separator-thickness: 1px;
+    display: block;
+    border: 0;
+    border-color: var(--leverui-separator-color, var(--leverui-colors-border));
+    border-style: solid;
+    border-top-width: var(
+      --leverui-separator-thickness,
+      var(--leverui-private-separator-thickness)
+    );
+  }
+
+  .leverui-separator:not([data-unstyled])[data-size='xs'] {
+    --leverui-private-separator-thickness: 0.5px;
+  }
+  .leverui-separator:not([data-unstyled])[data-size='sm'] {
+    --leverui-private-separator-thickness: 1px;
+  }
+  .leverui-separator:not([data-unstyled])[data-size='md'] {
+    --leverui-private-separator-thickness: 2px;
+  }
+  .leverui-separator:not([data-unstyled])[data-size='lg'] {
+    --leverui-private-separator-thickness: 3px;
+  }
+
+  .leverui-separator:not([data-unstyled])[data-variant='solid'] {
+    border-style: solid;
+  }
+  .leverui-separator:not([data-unstyled])[data-variant='dashed'] {
+    border-style: dashed;
+  }
+  .leverui-separator:not([data-unstyled])[data-variant='dotted'] {
+    border-style: dotted;
+  }
+
+  .leverui-separator:not([data-unstyled])[data-orientation='vertical'] {
+    border-top-width: 0;
+    border-inline-start-width: var(
+      --leverui-separator-thickness,
+      var(--leverui-private-separator-thickness)
+    );
+  }
+}

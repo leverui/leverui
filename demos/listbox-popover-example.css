@@ -1,0 +1,28 @@
+.listbox-popover-content[data-state='closed'] {
+  animation: none;
+}
+.example-listbox-popover-body {
+  padding: 0;
+}
+.example-listbox-popover-listbox {
+  gap: 0;
+  overflow: hidden;
+}
+.example-listbox-popover-input {
+  min-height: var(--leverui-sizes-10);
+  padding-inline: var(--leverui-spacing-3);
+  border-top-left-radius: var(--leverui-radii-l2);
+  border-top-right-radius: var(--leverui-radii-l2);
+  background: transparent;
+  outline: 0;
+}
+.example-listbox-popover-options,
+.example-listbox-popover-options > .leverui-listbox__list {
+  gap: 0;
+}
+.example-listbox-popover-options {
+  border-width: 0;
+  border-top-width: 1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

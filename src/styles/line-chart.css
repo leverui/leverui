@@ -1,0 +1,9 @@
+@layer leverui.recipes {
+  .leverui-line-chart .leverui-cartesian-chart__gridLine {
+    stroke: var(--leverui-chart-grid-color, var(--leverui-colors-border));
+  }
+
+  .leverui-line-chart .leverui-cartesian-chart__line {
+    fill: none;
+  }
+}

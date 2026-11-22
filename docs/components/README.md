@@ -1,0 +1,177 @@
+# Component guides
+
+These guides explain each Lever UI component and show Solid examples. Before
+you render a component, import the stylesheet as shown in
+[Getting started](../getting-started.md). Pick a guide from the list below.
+
+- [AbsoluteCenter](absolute-center.md)
+- [Accordion](accordion.md)
+- [Action Bar](action-bar.md)
+- [Alert](alert.md)
+- [AspectRatio](aspect-ratio.md)
+- [Avatar](avatar.md)
+- [Badge](badge.md)
+- [Bar List](bar-list.md)
+- [Bar Segment](bar-segment.md)
+- [Bleed](bleed.md)
+- [Blockquote](blockquote.md)
+- [Box](box.md)
+- [Breadcrumb](breadcrumb.md)
+- [Button](button.md)
+- [Calendar](calendar.md)
+- [Card](card.md)
+- [Carousel](carousel.md)
+- [Center](center.md)
+- [Checkbox Card](checkbox-card.md)
+- [Checkbox](checkbox.md)
+- [Checkmark](checkmark.md)
+- [Circle](center.md)
+- [ClientOnly](client-only.md)
+- [Close Button](close-button.md)
+- [Clipboard](clipboard.md)
+- [Code Block](code-block.md)
+- [Code](code.md)
+- [Color Picker](color-picker.md)
+- [Color Swatch](color-swatch.md)
+- [Combobox](combobox.md)
+- [Command](command.md)
+- Component CSS customization
+- [Collapsible](collapsible.md)
+- [Container](container.md)
+- [Data List](data-list.md)
+- [Date Input](date-input.md)
+- [Date Picker Guide](date-picker.md)
+- [Date Picker](date-picker.md)
+- [Dialog](dialog.md)
+- [Download Trigger](download-trigger.md)
+- [Donut Chart](donut-chart.md)
+- [Drawer](drawer.md)
+- [Editable](editable.md)
+- [Em](em.md)
+- [Empty State](empty-state.md)
+- [Environment](environment-provider.md)
+- [Environment Provider](environment-provider.md)
+- [Field](field.md)
+- [Fieldset](fieldset.md)
+- [File Upload](file-upload.md)
+- [Flex](flex.md)
+- [Float](float.md)
+- [Floating Panel](floating-panel.md)
+- Focus Trap
+- [For](for.md)
+- [Format](format-number.md)
+- [Format Byte](format-byte.md)
+- [Format Number](format-number.md)
+- [Grid](grid.md)
+- [Group](group.md)
+- [Heading](heading.md)
+- [Highlight](highlight.md)
+- [Hover Card](hover-card.md)
+- [Icon](icon.md)
+- [Image](image.md)
+- [Input Addon](input.md)
+- [Input Element](input.md)
+- [Input Group](input.md)
+- [Icon Button](icon-button.md)
+- [Input](input.md)
+- [Kbd](kbd.md)
+- [Link](link.md)
+- [Link Overlay](link-overlay.md)
+- [List](list.md)
+- [Listbox](listbox.md)
+- Loader
+- [Locale](locale-provider.md)
+- [Locale Provider](locale-provider.md)
+- [Mark](mark.md)
+- [Marquee](marquee.md)
+- [Menu](menu.md)
+- [Native Select](native-select.md)
+- [Number Input](number-input.md)
+- [Pagination](pagination.md)
+- [Pie Chart](pie-chart.md)
+- [Password Input composition](password-input.md)
+- [Pin Input](pin-input.md)
+- [Popover](popover.md)
+- [Portal](portal.md)
+- [Presence](presence.md)
+- [Prose](prose.md)
+- [Progress Circle](progress-circle.md)
+- [Progress](progress.md)
+- [Qr Code](qr-code.md)
+- Quote
+- [Radio Card](radio-card.md)
+- [Radio](radio.md)
+- [Radiomark](radiomark.md)
+- [Rating](rating.md)
+- [Scroll Area](scroll-area.md)
+- [Segmented Control](segmented-control.md)
+- [Select](select.md)
+- [Separator](separator.md)
+- [Show](show.md)
+- [SimpleGrid](simple-grid.md)
+- [Skip Nav](skip-nav.md)
+- [Skeleton](skeleton.md)
+- [Slider](slider.md)
+- Span
+- [Spacer](flex.md)
+- [Spinner](spinner.md)
+- [Splitter](splitter.md)
+- [Square](center.md)
+- [Stack](stack.md)
+- [Stat](stat.md)
+- [Status](status.md)
+- [Steps](steps.md)
+- [Sticky](table.md)
+- Strong
+- [Switch](switch.md)
+- [Tabs](tabs.md)
+- [Table](table.md)
+- [Tag](tag.md)
+- [Tags Input](tags-input.md)
+- [Text](text.md)
+- [Textarea](textarea.md)
+- [Theme](theme.md)
+- [Timeline](timeline.md)
+- [Toast](toast.md)
+- [Toggle Tip](toggle-tip.md)
+- Toggle
+- [Tooltip](tooltip.md)
+- [Tree View](tree-view.md)
+- [VisuallyHidden](visually-hidden.md)
+- [Wrap](wrap.md)
+
+## Charts
+
+- [Charts](../charts.md)
+- [useChart](use-chart.md)
+- [Axis (X and Y)](axes.md)
+- [Cartesian Grid](cartesian-grid.md)
+- [Area Chart](area-chart.md)
+- [Bar Chart](bar-chart.md)
+- [Line Chart](line-chart.md)
+- [Radar Chart](radar-chart.md)
+- Radial bar chart
+- Radial chart
+- [Scatter Chart](scatter-chart.md)
+- [Sparkline](sparkline.md)
+
+## Hooks
+
+- useBreakpoint
+- useBreakpointValue
+- useCallbackRef
+- useConst
+- Controlled state hooks
+- useDisclosure
+- useElementRect
+- useLiveRef
+- useMediaQuery
+- usePaymentInputs
+- usePrevious
+- useUpdateEffect
+- [Overlay Manager](overlay-manager.md)
+
+## Utilities
+
+- createContext
+- mergeProps

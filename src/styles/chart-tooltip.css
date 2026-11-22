@@ -1,0 +1,51 @@
+@layer leverui.recipes {
+  .leverui-chart-tooltip {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: var(--leverui-chart-tooltip-gap, 4px);
+    min-width: 128px;
+    width: max-content;
+    padding: var(--leverui-chart-tooltip-padding, 4px 10px);
+    background: var(--leverui-chart-tooltip-bg, var(--leverui-colors-bg-panel));
+    border-radius: var(--leverui-chart-tooltip-radius, 4px);
+    box-shadow: var(--leverui-chart-tooltip-shadow, var(--leverui-shadows-md));
+    font-size: var(--leverui-chart-tooltip-font-size, 12px);
+    line-height: 16px;
+    pointer-events: none;
+  }
+
+  .leverui-chart-tooltip__label {
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .leverui-chart-tooltip__item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .leverui-chart-tooltip__swatch {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--leverui-private-chart-tooltip-swatch);
+  }
+
+  .leverui-chart-tooltip__values {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .leverui-chart-tooltip__name {
+    color: var(--leverui-colors-fg-muted);
+  }
+
+  .leverui-chart-tooltip__value {
+    font-family: var(--leverui-fonts-mono);
+    font-weight: 500;
+  }
+}

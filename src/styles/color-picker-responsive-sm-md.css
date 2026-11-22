@@ -1,0 +1,117 @@
+@layer leverui.recipes {
+  @media (min-width: 480px) {
+    [data-leverui-color-picker-css][data-size-sm='2xs'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-4\.5);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-7);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3);
+    }
+
+    [data-leverui-color-picker-css][data-size-sm='xs'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-5);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-8);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-sm='sm'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-6);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-9);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-sm='md'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-7);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-10);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-sm='lg'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-7);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-11);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-sm='xl'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-8);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-12);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-sm='2xl'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-10);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-16);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+  }
+
+  @media (min-width: 768px) {
+    [data-leverui-color-picker-css][data-size-md='2xs'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-4\.5);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-7);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3);
+    }
+
+    [data-leverui-color-picker-css][data-size-md='xs'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-5);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-8);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-md='sm'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-6);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-9);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-md='md'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-7);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-10);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-md='lg'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-7);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-11);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-md='xl'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-8);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-12);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-md='2xl'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-10);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-16);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+  }
+}

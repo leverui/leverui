@@ -1,0 +1,42 @@
+@layer leverui.recipes {
+  @media (min-width: 480px) {
+    .leverui-avatar__root:not([data-unstyled])[data-borderless-sm='true'] {
+      --leverui-private-avatar-group-border-width: 0px;
+    }
+    .leverui-avatar__root:not([data-unstyled])[data-borderless-sm='false'] {
+      --leverui-private-avatar-group-border-width: 2px;
+    }
+  }
+  @media (min-width: 768px) {
+    .leverui-avatar__root:not([data-unstyled])[data-borderless-md='true'] {
+      --leverui-private-avatar-group-border-width: 0px;
+    }
+    .leverui-avatar__root:not([data-unstyled])[data-borderless-md='false'] {
+      --leverui-private-avatar-group-border-width: 2px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .leverui-avatar__root:not([data-unstyled])[data-borderless-lg='true'] {
+      --leverui-private-avatar-group-border-width: 0px;
+    }
+    .leverui-avatar__root:not([data-unstyled])[data-borderless-lg='false'] {
+      --leverui-private-avatar-group-border-width: 2px;
+    }
+  }
+  @media (min-width: 1280px) {
+    .leverui-avatar__root:not([data-unstyled])[data-borderless-xl='true'] {
+      --leverui-private-avatar-group-border-width: 0px;
+    }
+    .leverui-avatar__root:not([data-unstyled])[data-borderless-xl='false'] {
+      --leverui-private-avatar-group-border-width: 2px;
+    }
+  }
+  @media (min-width: 1536px) {
+    .leverui-avatar__root:not([data-unstyled])[data-borderless-2xl='true'] {
+      --leverui-private-avatar-group-border-width: 0px;
+    }
+    .leverui-avatar__root:not([data-unstyled])[data-borderless-2xl='false'] {
+      --leverui-private-avatar-group-border-width: 2px;
+    }
+  }
+}

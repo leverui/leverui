@@ -1,0 +1,33 @@
+@media (max-width: 800px) {
+  .desktop-nav,
+  .github-link {
+    display: none;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  .site-footer-inner {
+    display: block;
+    padding: 55px 0;
+  }
+  .footer-links {
+    margin-top: 44px;
+    gap: 35px;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 550px) {
+  .page-container,
+  .site-header-inner,
+  .site-footer-inner,
+  .footer-bottom {
+    width: min(100% - 32px, 1220px);
+  }
+  .footer-links {
+    flex-wrap: wrap;
+    row-gap: 32px;
+  }
+  .footer-links > div {
+    min-width: 95px;
+  }
+}

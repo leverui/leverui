@@ -1,0 +1,28 @@
+.example-qr-code-row {
+  gap: var(--leverui-spacing-4);
+}
+
+.example-qr-code-loading {
+  width: 100%;
+  height: 100%;
+  background: color-mix(in srgb, var(--leverui-colors-bg) 80%, transparent);
+}
+
+.example-qr-code-spinner {
+  color: red;
+}
+
+.example-qr-code-logo {
+  width: 33%;
+  height: 33%;
+  padding: var(--leverui-spacing-2);
+  background: white;
+}
+
+.example-qr-code-download {
+  margin-top: var(--leverui-spacing-3);
+}
+
+.example-qr-code-download-wide {
+  margin-top: var(--leverui-spacing-4);
+}

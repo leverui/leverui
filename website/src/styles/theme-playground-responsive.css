@@ -1,0 +1,23 @@
+@media (max-width: 900px) {
+  .playground-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .playground-preview-card {
+    max-width: none;
+  }
+}
+@media (max-width: 550px) {
+  .playground-page {
+    padding-top: 64px;
+  }
+  .playground-controls,
+  .playground-preview {
+    padding: 21px;
+  }
+  .playground-preview-card {
+    padding: 22px;
+  }
+  .playground-hero h1 {
+    font-size: 50px;
+  }
+}

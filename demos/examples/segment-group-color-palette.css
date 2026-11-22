@@ -1,0 +1,8 @@
+.segment-group-orange {
+  --leverui-segment-group-background: var(--leverui-colors-orange-50);
+}
+
+.segment-group-orange [data-state='checked'] .segment-group-orange-text {
+  color: var(--leverui-colors-orange-fg);
+  font-weight: var(--leverui-font-weights-medium);
+}

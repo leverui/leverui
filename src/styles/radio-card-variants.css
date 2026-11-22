@@ -1,0 +1,52 @@
+@layer leverui.recipes {
+  .leverui-radio-card__item:not([data-unstyled]) {
+    &[data-variant='surface'] {
+      --leverui-private-radio-card-border-width: 1px;
+      --leverui-private-radio-card-border-color: var(--leverui-colors-border);
+      --leverui-private-radio-card-checked-background: var(--leverui-colors-color-palette-subtle);
+      --leverui-private-radio-card-checked-color: var(--leverui-colors-color-palette-fg);
+      --leverui-private-radio-card-checked-border: var(--leverui-colors-color-palette-muted);
+      --leverui-private-radio-card-disabled-control-background: var(--leverui-colors-bg-muted);
+    }
+    &[data-variant='subtle'] {
+      --leverui-private-radio-card-background: var(--leverui-colors-bg-muted);
+      --leverui-private-radio-card-border-color: var(--leverui-colors-border);
+      --leverui-private-radio-card-checked-control-background: var(
+        --leverui-colors-color-palette-muted
+      );
+      --leverui-private-radio-card-checked-control-color: var(--leverui-colors-color-palette-fg);
+      --leverui-private-radio-card-disabled-control-background: var(--leverui-colors-bg-muted);
+    }
+    &[data-variant='outline'] {
+      --leverui-private-radio-card-border-width: 1px;
+      --leverui-private-radio-card-border-color: var(--leverui-colors-border);
+      --leverui-private-radio-card-checked-border: var(--leverui-colors-color-palette-solid);
+      --leverui-private-radio-card-checked-shadow: inset 0 0 0 1px
+        var(--leverui-colors-color-palette-solid);
+      --leverui-private-radio-card-disabled-control-background: transparent;
+    }
+    &[data-variant='solid'] {
+      --leverui-private-radio-card-border-width: 1px;
+      --leverui-private-radio-card-checked-background: var(--leverui-colors-color-palette-solid);
+      --leverui-private-radio-card-checked-color: var(--leverui-colors-color-palette-contrast);
+      --leverui-private-radio-card-checked-border: var(--leverui-colors-color-palette-solid);
+      --leverui-private-radio-card-disabled-control-background: transparent;
+    }
+  }
+
+  .leverui-radio-card__itemControl:not([data-unstyled])[data-state='checked'] {
+    background-color: var(--leverui-private-radio-card-checked-control-background, transparent);
+    color: var(--leverui-private-radio-card-checked-control-color, inherit);
+  }
+
+  .leverui-radio-card__itemIndicator.leverui-radiomark:not([data-unstyled]):is(
+      [data-variant='outline'],
+      [data-variant='inverted']
+    ):not([data-checked]) {
+    --leverui-private-radiomark-border: var(--leverui-colors-border);
+  }
+
+  .leverui-radio-card__itemControl:not([data-unstyled])[data-disabled] {
+    background-color: var(--leverui-private-radio-card-disabled-control-background);
+  }
+}

@@ -1,0 +1,55 @@
+.flex-contract-default {
+  width: 240px;
+  height: 80px;
+  gap: var(--leverui-spacing-4);
+}
+
+.flex-contract-inline {
+  gap: var(--leverui-spacing-2);
+}
+
+.flex-contract-aliases {
+  width: 240px;
+  height: 100px;
+}
+
+.flex-contract-width-120 {
+  width: 120px;
+}
+
+.flex-contract-item,
+.flex-contract-width-20,
+.flex-contract-order-first,
+.flex-contract-order-later,
+.flex-contract-auto-item {
+  width: 20px;
+}
+
+.flex-contract-item {
+  height: 10px;
+}
+
+.flex-contract-wrap-item {
+  width: 50px;
+  height: 10px;
+}
+
+.flex-contract-order-first {
+  order: 1;
+}
+
+.flex-contract-order-later {
+  order: 2;
+}
+
+.flex-contract-auto-item {
+  margin-left: auto;
+}
+
+.flex-contract-override {
+  flex-direction: row;
+}
+
+.flex-contract-position {
+  position: fixed;
+}

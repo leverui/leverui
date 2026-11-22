@@ -1,0 +1,9 @@
+.tree-view-node-actions {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+[role='row']:hover .tree-view-node-actions,
+[role='row']:focus-within .tree-view-node-actions {
+  opacity: 1;
+}

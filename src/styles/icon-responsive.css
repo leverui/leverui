@@ -1,0 +1,182 @@
+@layer leverui.recipes {
+  @media (min-width: 30rem) {
+    .leverui-icon:not([data-unstyled]) {
+      &[data-size-sm='inherit'] {
+        width: var(--leverui-icon-size, 1em);
+        height: var(--leverui-icon-size, 1em);
+      }
+      &:not(svg)[data-size-sm='inherit'] {
+        width: var(--leverui-icon-size, auto);
+        height: var(--leverui-icon-size, auto);
+      }
+      &[data-size-sm='xs'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-3));
+        height: var(--leverui-icon-size, var(--leverui-sizes-3));
+      }
+      &[data-size-sm='sm'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-4));
+        height: var(--leverui-icon-size, var(--leverui-sizes-4));
+      }
+      &[data-size-sm='md'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-5));
+        height: var(--leverui-icon-size, var(--leverui-sizes-5));
+      }
+      &[data-size-sm='lg'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-6));
+        height: var(--leverui-icon-size, var(--leverui-sizes-6));
+      }
+      &[data-size-sm='xl'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-7));
+        height: var(--leverui-icon-size, var(--leverui-sizes-7));
+      }
+      &[data-size-sm='2xl'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-8));
+        height: var(--leverui-icon-size, var(--leverui-sizes-8));
+      }
+    }
+  }
+  @media (min-width: 48rem) {
+    .leverui-icon:not([data-unstyled]) {
+      &[data-size-md='inherit'] {
+        width: var(--leverui-icon-size, 1em);
+        height: var(--leverui-icon-size, 1em);
+      }
+      &:not(svg)[data-size-md='inherit'] {
+        width: var(--leverui-icon-size, auto);
+        height: var(--leverui-icon-size, auto);
+      }
+      &[data-size-md='xs'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-3));
+        height: var(--leverui-icon-size, var(--leverui-sizes-3));
+      }
+      &[data-size-md='sm'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-4));
+        height: var(--leverui-icon-size, var(--leverui-sizes-4));
+      }
+      &[data-size-md='md'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-5));
+        height: var(--leverui-icon-size, var(--leverui-sizes-5));
+      }
+      &[data-size-md='lg'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-6));
+        height: var(--leverui-icon-size, var(--leverui-sizes-6));
+      }
+      &[data-size-md='xl'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-7));
+        height: var(--leverui-icon-size, var(--leverui-sizes-7));
+      }
+      &[data-size-md='2xl'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-8));
+        height: var(--leverui-icon-size, var(--leverui-sizes-8));
+      }
+    }
+  }
+  @media (min-width: 64rem) {
+    .leverui-icon:not([data-unstyled]) {
+      &[data-size-lg='inherit'] {
+        width: var(--leverui-icon-size, 1em);
+        height: var(--leverui-icon-size, 1em);
+      }
+      &:not(svg)[data-size-lg='inherit'] {
+        width: var(--leverui-icon-size, auto);
+        height: var(--leverui-icon-size, auto);
+      }
+      &[data-size-lg='xs'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-3));
+        height: var(--leverui-icon-size, var(--leverui-sizes-3));
+      }
+      &[data-size-lg='sm'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-4));
+        height: var(--leverui-icon-size, var(--leverui-sizes-4));
+      }
+      &[data-size-lg='md'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-5));
+        height: var(--leverui-icon-size, var(--leverui-sizes-5));
+      }
+      &[data-size-lg='lg'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-6));
+        height: var(--leverui-icon-size, var(--leverui-sizes-6));
+      }
+      &[data-size-lg='xl'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-7));
+        height: var(--leverui-icon-size, var(--leverui-sizes-7));
+      }
+      &[data-size-lg='2xl'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-8));
+        height: var(--leverui-icon-size, var(--leverui-sizes-8));
+      }
+    }
+  }
+  @media (min-width: 80rem) {
+    .leverui-icon:not([data-unstyled]) {
+      &[data-size-xl='inherit'] {
+        width: var(--leverui-icon-size, 1em);
+        height: var(--leverui-icon-size, 1em);
+      }
+      &:not(svg)[data-size-xl='inherit'] {
+        width: var(--leverui-icon-size, auto);
+        height: var(--leverui-icon-size, auto);
+      }
+      &[data-size-xl='xs'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-3));
+        height: var(--leverui-icon-size, var(--leverui-sizes-3));
+      }
+      &[data-size-xl='sm'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-4));
+        height: var(--leverui-icon-size, var(--leverui-sizes-4));
+      }
+      &[data-size-xl='md'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-5));
+        height: var(--leverui-icon-size, var(--leverui-sizes-5));
+      }
+      &[data-size-xl='lg'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-6));
+        height: var(--leverui-icon-size, var(--leverui-sizes-6));
+      }
+      &[data-size-xl='xl'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-7));
+        height: var(--leverui-icon-size, var(--leverui-sizes-7));
+      }
+      &[data-size-xl='2xl'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-8));
+        height: var(--leverui-icon-size, var(--leverui-sizes-8));
+      }
+    }
+  }
+  @media (min-width: 96rem) {
+    .leverui-icon:not([data-unstyled]) {
+      &[data-size-2xl='inherit'] {
+        width: var(--leverui-icon-size, 1em);
+        height: var(--leverui-icon-size, 1em);
+      }
+      &:not(svg)[data-size-2xl='inherit'] {
+        width: var(--leverui-icon-size, auto);
+        height: var(--leverui-icon-size, auto);
+      }
+      &[data-size-2xl='xs'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-3));
+        height: var(--leverui-icon-size, var(--leverui-sizes-3));
+      }
+      &[data-size-2xl='sm'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-4));
+        height: var(--leverui-icon-size, var(--leverui-sizes-4));
+      }
+      &[data-size-2xl='md'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-5));
+        height: var(--leverui-icon-size, var(--leverui-sizes-5));
+      }
+      &[data-size-2xl='lg'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-6));
+        height: var(--leverui-icon-size, var(--leverui-sizes-6));
+      }
+      &[data-size-2xl='xl'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-7));
+        height: var(--leverui-icon-size, var(--leverui-sizes-7));
+      }
+      &[data-size-2xl='2xl'] {
+        width: var(--leverui-icon-size, var(--leverui-sizes-8));
+        height: var(--leverui-icon-size, var(--leverui-sizes-8));
+      }
+    }
+  }
+}

@@ -1,0 +1,137 @@
+.carousel-example-md {
+  max-width: var(--leverui-sizes-md);
+  margin-inline: auto;
+}
+
+.carousel-example-xl {
+  max-width: var(--leverui-sizes-xl);
+  margin-inline: auto;
+}
+
+.carousel-example-2xl {
+  max-width: var(--leverui-sizes-2xl);
+  margin-inline: auto;
+}
+
+.carousel-example-vertical {
+  height: 320px;
+}
+
+.carousel-example-full {
+  width: 100%;
+}
+
+.carousel-example-height-full {
+  height: 100%;
+}
+
+.carousel-example-grow {
+  flex-grow: 1;
+}
+
+.carousel-example-gap-3 {
+  gap: var(--leverui-spacing-3);
+}
+
+.carousel-example-gap-4 {
+  gap: var(--leverui-spacing-4);
+}
+
+.carousel-example-control-center {
+  justify-content: center;
+}
+
+.carousel-example-control-vertical {
+  justify-content: space-between;
+  height: 100%;
+}
+
+.carousel-example-control-padding {
+  padding-inline: var(--leverui-spacing-4);
+}
+
+.carousel-example-padding-2 {
+  padding: var(--leverui-spacing-2);
+}
+
+.carousel-example-scroll-margin-12 {
+  scroll-margin-inline: var(--leverui-spacing-12);
+}
+
+.carousel-example-numbered-group {
+  min-width: 0;
+}
+
+.carousel-example-decorative {
+  width: 100%;
+  background: var(--leverui-colors-bg-emphasized);
+  background-clip: padding-box;
+  border: 1px solid var(--leverui-colors-border);
+  border-radius: var(--leverui-radii-lg);
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+.carousel-example-square {
+  border-radius: 0;
+}
+
+.carousel-example-progress {
+  font-size: var(--leverui-font-sizes-sm);
+  min-width: var(--leverui-sizes-8);
+}
+
+.carousel-example-progress-margin {
+  margin-inline-end: var(--leverui-spacing-4);
+}
+
+.carousel-example-auto-width {
+  width: auto;
+}
+
+.carousel-example-thumbnail[data-current] {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.carousel-example-relative,
+.carousel-example-images {
+  position: relative;
+}
+
+.carousel-example-images {
+  --leverui-colors-color-palette-subtle: rgb(255 255 255 / 40%);
+  --leverui-colors-color-palette-solid: #fff;
+}
+
+.carousel-example-image-indicator {
+  width: var(--leverui-sizes-2);
+  height: var(--leverui-sizes-2);
+  opacity: 0.5;
+  transform-origin: center;
+  transition: width 0.2s ease-in-out;
+}
+
+.carousel-example-image-indicator[data-current] {
+  width: var(--leverui-sizes-10);
+  opacity: 1;
+}
+
+.carousel-example-dialog-content {
+  background: transparent;
+  box-shadow: none;
+}
+
+.carousel-example-dialog-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0;
+}
+.example-carousel-arrow-icon {
+  font-size: var(--leverui-font-sizes-2xl);
+}

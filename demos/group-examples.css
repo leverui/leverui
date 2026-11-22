@@ -1,0 +1,22 @@
+.group-example-pattern {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--leverui-sizes-40);
+  height: var(--leverui-sizes-20);
+  border: 1px solid var(--leverui-colors-border);
+  background-color: var(--leverui-colors-bg-emphasized);
+  background-clip: padding-box;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.group-example-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--leverui-spacing-4);
+}
+
+.group-example-grow {
+  width: 100%;
+}

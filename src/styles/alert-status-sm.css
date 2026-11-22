@@ -1,0 +1,111 @@
+@layer leverui.recipes {
+  @media (min-width: 480px) {
+    .leverui-alert__root:not([data-unstyled], [data-leverui-color-palette]) {
+      &[data-status-sm='info'] {
+        --leverui-colors-color-palette-50: var(--leverui-colors-blue-50);
+        --leverui-colors-color-palette-100: var(--leverui-colors-blue-100);
+        --leverui-colors-color-palette-200: var(--leverui-colors-blue-200);
+        --leverui-colors-color-palette-300: var(--leverui-colors-blue-300);
+        --leverui-colors-color-palette-400: var(--leverui-colors-blue-400);
+        --leverui-colors-color-palette-500: var(--leverui-colors-blue-500);
+        --leverui-colors-color-palette-600: var(--leverui-colors-blue-600);
+        --leverui-colors-color-palette-700: var(--leverui-colors-blue-700);
+        --leverui-colors-color-palette-800: var(--leverui-colors-blue-800);
+        --leverui-colors-color-palette-900: var(--leverui-colors-blue-900);
+        --leverui-colors-color-palette-950: var(--leverui-colors-blue-950);
+        --leverui-colors-color-palette-contrast: var(--leverui-colors-blue-contrast);
+        --leverui-colors-color-palette-fg: var(--leverui-colors-blue-fg);
+        --leverui-colors-color-palette-subtle: var(--leverui-colors-blue-subtle);
+        --leverui-colors-color-palette-muted: var(--leverui-colors-blue-muted);
+        --leverui-colors-color-palette-emphasized: var(--leverui-colors-blue-emphasized);
+        --leverui-colors-color-palette-solid: var(--leverui-colors-blue-solid);
+        --leverui-colors-color-palette-focus-ring: var(--leverui-colors-blue-focus-ring);
+        --leverui-colors-color-palette-border: var(--leverui-colors-blue-border);
+      }
+      &[data-status-sm='warning'] {
+        --leverui-colors-color-palette-50: var(--leverui-colors-orange-50);
+        --leverui-colors-color-palette-100: var(--leverui-colors-orange-100);
+        --leverui-colors-color-palette-200: var(--leverui-colors-orange-200);
+        --leverui-colors-color-palette-300: var(--leverui-colors-orange-300);
+        --leverui-colors-color-palette-400: var(--leverui-colors-orange-400);
+        --leverui-colors-color-palette-500: var(--leverui-colors-orange-500);
+        --leverui-colors-color-palette-600: var(--leverui-colors-orange-600);
+        --leverui-colors-color-palette-700: var(--leverui-colors-orange-700);
+        --leverui-colors-color-palette-800: var(--leverui-colors-orange-800);
+        --leverui-colors-color-palette-900: var(--leverui-colors-orange-900);
+        --leverui-colors-color-palette-950: var(--leverui-colors-orange-950);
+        --leverui-colors-color-palette-contrast: var(--leverui-colors-orange-contrast);
+        --leverui-colors-color-palette-fg: var(--leverui-colors-orange-fg);
+        --leverui-colors-color-palette-subtle: var(--leverui-colors-orange-subtle);
+        --leverui-colors-color-palette-muted: var(--leverui-colors-orange-muted);
+        --leverui-colors-color-palette-emphasized: var(--leverui-colors-orange-emphasized);
+        --leverui-colors-color-palette-solid: var(--leverui-colors-orange-solid);
+        --leverui-colors-color-palette-focus-ring: var(--leverui-colors-orange-focus-ring);
+        --leverui-colors-color-palette-border: var(--leverui-colors-orange-border);
+      }
+      &[data-status-sm='success'] {
+        --leverui-colors-color-palette-50: var(--leverui-colors-green-50);
+        --leverui-colors-color-palette-100: var(--leverui-colors-green-100);
+        --leverui-colors-color-palette-200: var(--leverui-colors-green-200);
+        --leverui-colors-color-palette-300: var(--leverui-colors-green-300);
+        --leverui-colors-color-palette-400: var(--leverui-colors-green-400);
+        --leverui-colors-color-palette-500: var(--leverui-colors-green-500);
+        --leverui-colors-color-palette-600: var(--leverui-colors-green-600);
+        --leverui-colors-color-palette-700: var(--leverui-colors-green-700);
+        --leverui-colors-color-palette-800: var(--leverui-colors-green-800);
+        --leverui-colors-color-palette-900: var(--leverui-colors-green-900);
+        --leverui-colors-color-palette-950: var(--leverui-colors-green-950);
+        --leverui-colors-color-palette-contrast: var(--leverui-colors-green-contrast);
+        --leverui-colors-color-palette-fg: var(--leverui-colors-green-fg);
+        --leverui-colors-color-palette-subtle: var(--leverui-colors-green-subtle);
+        --leverui-colors-color-palette-muted: var(--leverui-colors-green-muted);
+        --leverui-colors-color-palette-emphasized: var(--leverui-colors-green-emphasized);
+        --leverui-colors-color-palette-solid: var(--leverui-colors-green-solid);
+        --leverui-colors-color-palette-focus-ring: var(--leverui-colors-green-focus-ring);
+        --leverui-colors-color-palette-border: var(--leverui-colors-green-border);
+      }
+      &[data-status-sm='error'] {
+        --leverui-colors-color-palette-50: var(--leverui-colors-red-50);
+        --leverui-colors-color-palette-100: var(--leverui-colors-red-100);
+        --leverui-colors-color-palette-200: var(--leverui-colors-red-200);
+        --leverui-colors-color-palette-300: var(--leverui-colors-red-300);
+        --leverui-colors-color-palette-400: var(--leverui-colors-red-400);
+        --leverui-colors-color-palette-500: var(--leverui-colors-red-500);
+        --leverui-colors-color-palette-600: var(--leverui-colors-red-600);
+        --leverui-colors-color-palette-700: var(--leverui-colors-red-700);
+        --leverui-colors-color-palette-800: var(--leverui-colors-red-800);
+        --leverui-colors-color-palette-900: var(--leverui-colors-red-900);
+        --leverui-colors-color-palette-950: var(--leverui-colors-red-950);
+        --leverui-colors-color-palette-contrast: var(--leverui-colors-red-contrast);
+        --leverui-colors-color-palette-fg: var(--leverui-colors-red-fg);
+        --leverui-colors-color-palette-subtle: var(--leverui-colors-red-subtle);
+        --leverui-colors-color-palette-muted: var(--leverui-colors-red-muted);
+        --leverui-colors-color-palette-emphasized: var(--leverui-colors-red-emphasized);
+        --leverui-colors-color-palette-solid: var(--leverui-colors-red-solid);
+        --leverui-colors-color-palette-focus-ring: var(--leverui-colors-red-focus-ring);
+        --leverui-colors-color-palette-border: var(--leverui-colors-red-border);
+      }
+      &[data-status-sm='neutral'] {
+        --leverui-colors-color-palette-50: var(--leverui-colors-gray-50);
+        --leverui-colors-color-palette-100: var(--leverui-colors-gray-100);
+        --leverui-colors-color-palette-200: var(--leverui-colors-gray-200);
+        --leverui-colors-color-palette-300: var(--leverui-colors-gray-300);
+        --leverui-colors-color-palette-400: var(--leverui-colors-gray-400);
+        --leverui-colors-color-palette-500: var(--leverui-colors-gray-500);
+        --leverui-colors-color-palette-600: var(--leverui-colors-gray-600);
+        --leverui-colors-color-palette-700: var(--leverui-colors-gray-700);
+        --leverui-colors-color-palette-800: var(--leverui-colors-gray-800);
+        --leverui-colors-color-palette-900: var(--leverui-colors-gray-900);
+        --leverui-colors-color-palette-950: var(--leverui-colors-gray-950);
+        --leverui-colors-color-palette-contrast: var(--leverui-colors-gray-contrast);
+        --leverui-colors-color-palette-fg: var(--leverui-colors-gray-fg);
+        --leverui-colors-color-palette-subtle: var(--leverui-colors-gray-subtle);
+        --leverui-colors-color-palette-muted: var(--leverui-colors-gray-muted);
+        --leverui-colors-color-palette-emphasized: var(--leverui-colors-gray-emphasized);
+        --leverui-colors-color-palette-solid: var(--leverui-colors-gray-solid);
+        --leverui-colors-color-palette-focus-ring: var(--leverui-colors-gray-focus-ring);
+        --leverui-colors-color-palette-border: var(--leverui-colors-gray-border);
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src/visually-hidden-types.tsx",
+    "src/visually-hidden-example.tsx",
+    "src/visually-hidden-main.tsx"
+  ],
+  "exclude": []
+}

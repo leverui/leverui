@@ -1,0 +1,9 @@
+.collapsible-story-panel {
+  padding: 16px;
+  border: 1px solid currentColor;
+}
+
+.collapsible-story-preview {
+  height: 160px;
+  padding: 12px;
+}

@@ -1,0 +1,57 @@
+.presence-example-trigger {
+  align-self: flex-start;
+}
+
+.presence-example-center {
+  padding: var(--leverui-spacing-10);
+  background: var(--leverui-colors-color-palette-muted);
+  color: var(--leverui-colors-color-palette-fg);
+}
+
+.presence-example-center-rounded {
+  border-start-start-radius: var(--leverui-radii-md);
+  border-start-end-radius: var(--leverui-radii-md);
+}
+
+.presence-example-motion {
+  animation-duration: var(--leverui-durations-moderate);
+  animation-fill-mode: both;
+}
+
+.presence-example-fade[data-state='open'] {
+  animation-name: fade-in;
+}
+
+.presence-example-fade[data-state='closed'] {
+  animation-name: fade-out;
+}
+
+.presence-example-scale[data-state='open'] {
+  animation-name: scale-in, fade-in;
+}
+
+.presence-example-scale[data-state='closed'] {
+  animation-name: scale-out, fade-out;
+}
+
+.presence-example-slide {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+}
+
+.presence-example-slide[data-state='open'] {
+  animation-name: slide-from-bottom-full;
+}
+
+.presence-example-slide[data-state='closed'] {
+  animation-name: slide-to-bottom-full;
+}
+
+.presence-example-slide-fade[data-state='open'] {
+  animation-name: slide-from-bottom, fade-in;
+}
+
+.presence-example-slide-fade[data-state='closed'] {
+  animation-name: slide-to-bottom, fade-out;
+}

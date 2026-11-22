@@ -1,0 +1,51 @@
+.site-footer {
+  border-top: 1px solid var(--leverui-colors-border);
+  background: var(--leverui-colors-bg);
+  color: var(--leverui-colors-fg-muted);
+}
+.site-footer-inner {
+  width: min(100% - 48px, 1220px);
+  margin: auto;
+  padding: 72px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+.site-footer-inner p {
+  font-size: 14px;
+  margin: 19px 0;
+}
+.footer-links {
+  display: flex;
+  gap: 90px;
+}
+.footer-links > div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 13px;
+}
+.footer-links strong {
+  color: var(--leverui-colors-fg);
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+.footer-links a:hover {
+  color: var(--site-fg);
+}
+.footer-bottom {
+  border-top: 1px solid var(--leverui-colors-border);
+  width: min(100% - 48px, 1220px);
+  margin: auto;
+  padding: 24px 0;
+  font-size: 12px;
+}
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--site-muted);
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 0.17em;
+}

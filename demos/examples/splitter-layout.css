@@ -1,0 +1,25 @@
+.splitter-example-framed {
+  border-width: 1px;
+  min-height: var(--leverui-sizes-60);
+}
+
+.splitter-example-border {
+  border-width: 1px;
+}
+
+.splitter-example-min-80 {
+  min-height: var(--leverui-sizes-80);
+}
+
+.splitter-example-min-600 {
+  min-height: 600px;
+}
+
+.splitter-example-fill {
+  height: 100%;
+}
+
+.splitter-example-panel {
+  background: var(--leverui-colors-bg);
+  color: var(--leverui-colors-fg);
+}

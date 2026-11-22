@@ -1,0 +1,42 @@
+.absolute-center-contract .center-stage {
+  position: relative;
+  width: 240px;
+  height: 160px;
+}
+
+.absolute-center-contract .leverui-absolute-center {
+  width: 60px;
+  height: 40px;
+}
+
+.absolute-center-contract .horizontal-center {
+  top: 12px;
+}
+
+.absolute-center-contract .vertical-center {
+  left: 12px;
+}
+
+.absolute-center-contract .rtl-vertical-center {
+  right: 12px;
+}
+
+.absolute-center-contract .overlay-center {
+  width: 80px;
+  height: 40px;
+  background: var(--leverui-colors-blue-500);
+}
+
+.absolute-center-contract .reactive-center {
+  padding-inline: 8px;
+}
+
+.absolute-center-contract .reactive-center[data-axis='horizontal'] {
+  padding-inline: 16px;
+}
+
+@media (min-width: 768px) {
+  .absolute-center-contract .both-center {
+    width: 80px;
+  }
+}

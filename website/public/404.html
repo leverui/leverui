@@ -1,0 +1,178 @@
+<!doctype html>
+<!--
+  The static host serves this page for any address with no file. It loads no app script: the
+  site's pages hydrate against the address they were built for, and this one serves many.
+-->
+<html lang="en" data-leverui-color-mode="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Page not found | Lever UI</title>
+    <link rel="icon" href="/leverui-symbol-color.svg" type="image/svg+xml" />
+    <script>
+      try {
+        const saved = localStorage.getItem('leverui-site-color-mode');
+        const mode =
+          saved === 'light' || saved === 'dark'
+            ? saved
+            : matchMedia('(prefers-color-scheme: dark)').matches
+              ? 'dark'
+              : 'light';
+        document.documentElement.setAttribute('data-leverui-color-mode', mode);
+      } catch {}
+    </script>
+    <style>
+      :root {
+        --bg: #fff;
+        --fg: #000;
+        --muted: #52525b;
+        --border: #e4e4e7;
+        --hover: #f4f4f5;
+        --badge: #27272a;
+        color-scheme: light;
+      }
+      [data-leverui-color-mode='dark'] {
+        --bg: #000;
+        --fg: #fafafa;
+        --muted: #a1a1aa;
+        --border: #27272a;
+        --hover: #18181b;
+        --badge: #e4e4e7;
+        color-scheme: dark;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font-family:
+          Inter,
+          -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      /* The same measurements as the site header, so the logo sits where it does on every page. */
+      header {
+        border-bottom: 1px solid var(--border);
+      }
+      .header-inner {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: min(100% - 64px, 1400px);
+        height: 52px;
+        margin: auto;
+      }
+      @media (max-width: 550px) {
+        .header-inner {
+          width: min(100% - 32px, 1220px);
+        }
+      }
+      .badge {
+        display: flex;
+        align-items: center;
+        height: 20px;
+        padding: 0 6px;
+        border-radius: 9999px;
+        box-shadow: inset 0 0 0 1px var(--border);
+        color: var(--badge);
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+      }
+      header img {
+        display: block;
+        width: 96px;
+        height: auto;
+      }
+      .wordmark-dark,
+      [data-leverui-color-mode='dark'] .wordmark-light {
+        display: none;
+      }
+      [data-leverui-color-mode='dark'] .wordmark-dark {
+        display: block;
+      }
+      main {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 64px 16px;
+        text-align: center;
+      }
+      .code {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+        font-weight: 600;
+      }
+      h1 {
+        margin: 8px 0 12px;
+        font-size: 36px;
+        letter-spacing: -0.02em;
+      }
+      p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 32px;
+      }
+      nav a {
+        padding: 8px 18px;
+        border: 1px solid var(--border);
+        border-radius: 9999px;
+        color: var(--fg);
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+      }
+      nav a:hover {
+        background: var(--hover);
+      }
+      nav a.primary {
+        border-color: var(--fg);
+        background: var(--fg);
+        color: var(--bg);
+      }
+      nav a.primary:hover {
+        opacity: 0.85;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <a href="/" aria-label="Lever UI home">
+          <img class="wordmark-light" src="/leverui-wordmark-color.svg" alt="" />
+          <img class="wordmark-dark" src="/leverui-wordmark-on-dark.svg" alt="" />
+        </a>
+        <span class="badge" title="Lever UI is in alpha">Alpha</span>
+      </div>
+    </header>
+    <main>
+      <p class="code">404</p>
+      <h1>Page not found</h1>
+      <p>This page doesn't exist or has moved.</p>
+      <nav aria-label="Pages">
+        <a class="primary" href="/docs/getting-started">Browse the docs</a>
+        <a href="/">Go to the home page</a>
+      </nav>
+    </main>
+  </body>
+</html>

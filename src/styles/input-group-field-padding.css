@@ -1,0 +1,121 @@
+@layer leverui.recipes {
+  .leverui-number-input__input {
+    --leverui-private-input-group-field-height: var(
+      --leverui-private-input-height,
+      var(--leverui-sizes-10)
+    );
+  }
+
+  .leverui-input-group:not([data-unstyled]) {
+    &[data-group-start] {
+      > :is(
+        .leverui-input,
+        .leverui-number-input__input,
+        .leverui-input-group__field,
+        .leverui-native-select__field
+      ),
+      > .leverui-native-select__root > .leverui-native-select__field {
+        padding-inline-start: calc(
+          var(
+              --leverui-private-input-group-field-height,
+              var(--leverui-input-group-field-height, var(--leverui-sizes-10))
+            ) -
+            var(--leverui-private-input-group-start-offset)
+        );
+      }
+    }
+
+    &[data-group-end] {
+      > :is(
+        .leverui-input,
+        .leverui-number-input__input,
+        .leverui-input-group__field,
+        .leverui-native-select__field
+      ),
+      > .leverui-native-select__root > .leverui-native-select__field {
+        padding-inline-end: calc(
+          var(
+              --leverui-private-input-group-field-height,
+              var(--leverui-input-group-field-height, var(--leverui-sizes-10))
+            ) -
+            var(--leverui-private-input-group-end-offset)
+        );
+      }
+    }
+
+    @media (min-width: 30rem) {
+      &[data-group-start-sm] {
+        > :is(
+          .leverui-input,
+          .leverui-number-input__input,
+          .leverui-input-group__field,
+          .leverui-native-select__field
+        ),
+        > .leverui-native-select__root > .leverui-native-select__field {
+          padding-inline-start: calc(
+            var(
+                --leverui-private-input-group-field-height,
+                var(--leverui-input-group-field-height, var(--leverui-sizes-10))
+              ) -
+              var(--leverui-private-input-group-start-offset-sm)
+          );
+        }
+      }
+
+      &[data-group-end-sm] {
+        > :is(
+          .leverui-input,
+          .leverui-number-input__input,
+          .leverui-input-group__field,
+          .leverui-native-select__field
+        ),
+        > .leverui-native-select__root > .leverui-native-select__field {
+          padding-inline-end: calc(
+            var(
+                --leverui-private-input-group-field-height,
+                var(--leverui-input-group-field-height, var(--leverui-sizes-10))
+              ) -
+              var(--leverui-private-input-group-end-offset-sm)
+          );
+        }
+      }
+    }
+    @media (min-width: 48rem) {
+      &[data-group-start-md] {
+        > :is(
+          .leverui-input,
+          .leverui-number-input__input,
+          .leverui-input-group__field,
+          .leverui-native-select__field
+        ),
+        > .leverui-native-select__root > .leverui-native-select__field {
+          padding-inline-start: calc(
+            var(
+                --leverui-private-input-group-field-height,
+                var(--leverui-input-group-field-height, var(--leverui-sizes-10))
+              ) -
+              var(--leverui-private-input-group-start-offset-md)
+          );
+        }
+      }
+
+      &[data-group-end-md] {
+        > :is(
+          .leverui-input,
+          .leverui-number-input__input,
+          .leverui-input-group__field,
+          .leverui-native-select__field
+        ),
+        > .leverui-native-select__root > .leverui-native-select__field {
+          padding-inline-end: calc(
+            var(
+                --leverui-private-input-group-field-height,
+                var(--leverui-input-group-field-height, var(--leverui-sizes-10))
+              ) -
+              var(--leverui-private-input-group-end-offset-md)
+          );
+        }
+      }
+    }
+  }
+}

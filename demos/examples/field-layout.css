@@ -1,0 +1,33 @@
+.field-example-width {
+  width: 320px;
+}
+
+.field-example-full-width,
+.field-example-floating-host {
+  width: 100%;
+}
+
+.field-example-floating-host {
+  position: relative;
+}
+
+.field-example-floating-label {
+  position: absolute;
+  background: var(--leverui-colors-bg);
+  padding-inline: var(--leverui-spacing-0\.5);
+  top: var(--leverui-spacing-2\.5);
+  inset-inline-start: var(--leverui-spacing-3);
+  font-weight: var(--leverui-font-weights-normal);
+  pointer-events: none;
+  transition:
+    top 0.2s ease,
+    inset-inline-start 0.2s ease,
+    color 0.2s ease;
+  color: var(--leverui-colors-fg-muted);
+}
+
+.field-example-floating-label[data-float] {
+  top: calc(var(--leverui-spacing-3) * -1);
+  inset-inline-start: var(--leverui-spacing-2);
+  color: var(--leverui-colors-fg);
+}

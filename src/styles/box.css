@@ -1,0 +1,5 @@
+@layer leverui.recipes {
+  .leverui-box {
+    box-sizing: border-box;
+  }
+}

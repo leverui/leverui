@@ -1,0 +1,23 @@
+.example-switch-row {
+  padding-inline: var(--leverui-spacing-4);
+}
+
+.example-switch-label {
+  min-width: 8ch;
+}
+
+.example-switch-submit {
+  margin-top: var(--leverui-spacing-4);
+}
+
+.example-switch-off-icon {
+  color: black;
+}
+
+.example-switch-moon-icon {
+  color: var(--leverui-colors-gray-400);
+}
+
+.example-switch-sun-icon {
+  color: var(--leverui-colors-yellow-400);
+}

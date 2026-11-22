@@ -1,0 +1,7 @@
+.shared-splitter {
+  border: 3px solid transparent;
+}
+
+.instance-splitter {
+  border-width: 1px;
+}

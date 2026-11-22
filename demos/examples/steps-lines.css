@@ -1,0 +1,17 @@
+.steps-lines-list {
+  gap: var(--leverui-spacing-4);
+}
+
+.steps-lines-item {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--leverui-spacing-2);
+}
+
+.steps-lines-separator {
+  display: initial;
+  flex: unset;
+  height: 3px;
+  margin-inline: 0;
+}

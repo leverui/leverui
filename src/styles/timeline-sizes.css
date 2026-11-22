@@ -1,0 +1,38 @@
+@layer leverui.recipes {
+  .leverui-timeline__root:not([data-unstyled]) {
+    --leverui-private-timeline-indicator-size: var(--leverui-sizes-5);
+    --leverui-private-timeline-font-size: var(--leverui-font-sizes-xs);
+    --leverui-private-timeline-title-font-size: var(--leverui-font-sizes-sm);
+    --leverui-private-timeline-title-line-height: 1.25rem;
+    --leverui-private-timeline-title-margin-top: 0;
+
+    &[data-size='sm'] {
+      --leverui-private-timeline-indicator-size: var(--leverui-sizes-4);
+      --leverui-private-timeline-font-size: var(--leverui-font-sizes-2xs);
+      --leverui-private-timeline-title-font-size: var(--leverui-font-sizes-xs);
+      --leverui-private-timeline-title-line-height: 1rem;
+      --leverui-private-timeline-title-margin-top: 0;
+    }
+    &[data-size='md'] {
+      --leverui-private-timeline-indicator-size: var(--leverui-sizes-5);
+      --leverui-private-timeline-font-size: var(--leverui-font-sizes-xs);
+      --leverui-private-timeline-title-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-timeline-title-line-height: 1.25rem;
+      --leverui-private-timeline-title-margin-top: 0;
+    }
+    &[data-size='lg'] {
+      --leverui-private-timeline-indicator-size: var(--leverui-sizes-6);
+      --leverui-private-timeline-font-size: var(--leverui-font-sizes-xs);
+      --leverui-private-timeline-title-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-timeline-title-line-height: 1.25rem;
+      --leverui-private-timeline-title-margin-top: var(--leverui-spacing-0\.5);
+    }
+    &[data-size='xl'] {
+      --leverui-private-timeline-indicator-size: var(--leverui-sizes-8);
+      --leverui-private-timeline-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-timeline-title-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-timeline-title-line-height: 1.25rem;
+      --leverui-private-timeline-title-margin-top: var(--leverui-spacing-1\.5);
+    }
+  }
+}

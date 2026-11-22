@@ -1,0 +1,26 @@
+@layer leverui.recipes {
+  .leverui-linkbox:not([data-unstyled]) {
+    position: relative;
+
+    & :is(a[href]:not(.leverui-linkbox__overlay), abbr[title]) {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .leverui-linkbox__overlay:not([data-unstyled]) {
+    position: static;
+
+    &::before {
+      content: '';
+      cursor: inherit;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

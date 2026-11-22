@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/combobox-types.tsx", "src/combobox-example.tsx", "src/combobox-main.tsx"],
+  "exclude": []
+}

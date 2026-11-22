@@ -1,0 +1,128 @@
+@layer leverui.reset {
+  /*
+   * Each Lever UI element resets itself. Nothing here reaches elements without a
+   * leverui- class, so the consumer's own markup keeps its browser and app styles.
+   */
+  :where([class^='leverui-'], [class*=' leverui-']) {
+    margin: 0px;
+    padding: 0px;
+    font: inherit;
+    word-wrap: break-word;
+    -webkit-tap-highlight-color: transparent;
+  }
+  :where([class^='leverui-'], [class*=' leverui-']),
+  :where([class^='leverui-'], [class*=' leverui-'])::before,
+  :where([class^='leverui-'], [class*=' leverui-'])::after,
+  :where([class^='leverui-'], [class*=' leverui-'])::backdrop {
+    box-sizing: border-box;
+    border-width: 0px;
+    border-style: solid;
+    border-color: var(--global-color-border, currentColor);
+  }
+  /*
+   * Layout and typography primitives inherit from their surroundings. Every other
+   * component brings the theme font, text color, and line height on its outermost
+   * element; everything inside it inherits them.
+   */
+  :where([class^='leverui-'], [class*=' leverui-']):not(
+      :where(
+        .leverui-absolute-center,
+        .leverui-aspect-ratio,
+        .leverui-bleed,
+        .leverui-box,
+        .leverui-center,
+        .leverui-circle,
+        .leverui-container,
+        .leverui-download-trigger,
+        .leverui-em,
+        .leverui-flex,
+        .leverui-float,
+        .leverui-focus-trap,
+        .leverui-grid,
+        .leverui-grid-item,
+        .leverui-heading,
+        .leverui-icon,
+        .leverui-image,
+        .leverui-link,
+        .leverui-list,
+        .leverui-mark,
+        .leverui-presence,
+        .leverui-separator,
+        .leverui-skip-nav-content,
+        .leverui-spacer,
+        .leverui-span,
+        .leverui-square,
+        .leverui-stack,
+        .leverui-stack-separator,
+        .leverui-sticky,
+        .leverui-strong,
+        .leverui-text,
+        .leverui-visually-hidden,
+        .leverui-wrap
+      )
+    ):not(
+      :where([class^='leverui-'], [class*=' leverui-']):not(
+          :where(
+            .leverui-absolute-center,
+            .leverui-aspect-ratio,
+            .leverui-bleed,
+            .leverui-box,
+            .leverui-center,
+            .leverui-circle,
+            .leverui-container,
+            .leverui-download-trigger,
+            .leverui-em,
+            .leverui-flex,
+            .leverui-float,
+            .leverui-focus-trap,
+            .leverui-grid,
+            .leverui-grid-item,
+            .leverui-heading,
+            .leverui-icon,
+            .leverui-image,
+            .leverui-link,
+            .leverui-list,
+            .leverui-mark,
+            .leverui-presence,
+            .leverui-separator,
+            .leverui-skip-nav-content,
+            .leverui-spacer,
+            .leverui-span,
+            .leverui-square,
+            .leverui-stack,
+            .leverui-stack-separator,
+            .leverui-sticky,
+            .leverui-strong,
+            .leverui-text,
+            .leverui-visually-hidden,
+            .leverui-wrap
+          )
+        )
+        *
+    ) {
+    font-family: var(
+      --global-font-body,
+      ui-sans-serif,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      Roboto,
+      'Helvetica Neue',
+      Arial,
+      'Noto Sans',
+      sans-serif,
+      'Apple Color Emoji',
+      'Segoe UI Emoji',
+      'Segoe UI Symbol',
+      'Noto Color Emoji'
+    );
+    font-feature-settings: 'cv11';
+    line-height: 1.5;
+    color: var(--leverui-colors-fg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    tab-size: 4;
+  }
+}

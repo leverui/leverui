@@ -1,0 +1,101 @@
+@layer leverui.recipes {
+  @media (min-width: 30rem) {
+    .leverui-card__root:not([data-unstyled])[data-size-sm='sm'] {
+      --leverui-card-padding: var(--leverui-spacing-4);
+      --leverui-private-card-title-size: var(--leverui-font-sizes-md);
+      --leverui-private-card-title-line-height: 1.5rem;
+    }
+
+    .leverui-card__root:not([data-unstyled])[data-size-sm='md'] {
+      --leverui-card-padding: var(--leverui-spacing-6);
+      --leverui-private-card-title-size: var(--leverui-font-sizes-lg);
+      --leverui-private-card-title-line-height: 1.75rem;
+    }
+
+    .leverui-card__root:not([data-unstyled])[data-size-sm='lg'] {
+      --leverui-card-padding: var(--leverui-spacing-7);
+      --leverui-private-card-title-size: var(--leverui-font-sizes-xl);
+      --leverui-private-card-title-line-height: 1.875rem;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .leverui-card__root:not([data-unstyled])[data-size-md='sm'] {
+      --leverui-card-padding: var(--leverui-spacing-4);
+      --leverui-private-card-title-size: var(--leverui-font-sizes-md);
+      --leverui-private-card-title-line-height: 1.5rem;
+    }
+
+    .leverui-card__root:not([data-unstyled])[data-size-md='md'] {
+      --leverui-card-padding: var(--leverui-spacing-6);
+      --leverui-private-card-title-size: var(--leverui-font-sizes-lg);
+      --leverui-private-card-title-line-height: 1.75rem;
+    }
+
+    .leverui-card__root:not([data-unstyled])[data-size-md='lg'] {
+      --leverui-card-padding: var(--leverui-spacing-7);
+      --leverui-private-card-title-size: var(--leverui-font-sizes-xl);
+      --leverui-private-card-title-line-height: 1.875rem;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .leverui-card__root:not([data-unstyled])[data-size-lg='sm'] {
+      --leverui-card-padding: var(--leverui-spacing-4);
+      --leverui-private-card-title-size: var(--leverui-font-sizes-md);
+      --leverui-private-card-title-line-height: 1.5rem;
+    }
+
+    .leverui-card__root:not([data-unstyled])[data-size-lg='md'] {
+      --leverui-card-padding: var(--leverui-spacing-6);
+      --leverui-private-card-title-size: var(--leverui-font-sizes-lg);
+      --leverui-private-card-title-line-height: 1.75rem;
+    }
+
+    .leverui-card__root:not([data-unstyled])[data-size-lg='lg'] {
+      --leverui-card-padding: var(--leverui-spacing-7);
+      --leverui-private-card-title-size: var(--leverui-font-sizes-xl);
+      --leverui-private-card-title-line-height: 1.875rem;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .leverui-card__root:not([data-unstyled])[data-size-xl='sm'] {
+      --leverui-card-padding: var(--leverui-spacing-4);
+      --leverui-private-card-title-size: var(--leverui-font-sizes-md);
+      --leverui-private-card-title-line-height: 1.5rem;
+    }
+
+    .leverui-card__root:not([data-unstyled])[data-size-xl='md'] {
+      --leverui-card-padding: var(--leverui-spacing-6);
+      --leverui-private-card-title-size: var(--leverui-font-sizes-lg);
+      --leverui-private-card-title-line-height: 1.75rem;
+    }
+
+    .leverui-card__root:not([data-unstyled])[data-size-xl='lg'] {
+      --leverui-card-padding: var(--leverui-spacing-7);
+      --leverui-private-card-title-size: var(--leverui-font-sizes-xl);
+      --leverui-private-card-title-line-height: 1.875rem;
+    }
+  }
+
+  @media (min-width: 96rem) {
+    .leverui-card__root:not([data-unstyled])[data-size-2xl='sm'] {
+      --leverui-card-padding: var(--leverui-spacing-4);
+      --leverui-private-card-title-size: var(--leverui-font-sizes-md);
+      --leverui-private-card-title-line-height: 1.5rem;
+    }
+
+    .leverui-card__root:not([data-unstyled])[data-size-2xl='md'] {
+      --leverui-card-padding: var(--leverui-spacing-6);
+      --leverui-private-card-title-size: var(--leverui-font-sizes-lg);
+      --leverui-private-card-title-line-height: 1.75rem;
+    }
+
+    .leverui-card__root:not([data-unstyled])[data-size-2xl='lg'] {
+      --leverui-card-padding: var(--leverui-spacing-7);
+      --leverui-private-card-title-size: var(--leverui-font-sizes-xl);
+      --leverui-private-card-title-line-height: 1.875rem;
+    }
+  }
+}

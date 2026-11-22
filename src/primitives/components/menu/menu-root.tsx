@@ -1,0 +1,80 @@
+import { mergeProps } from '../../utils/merge-part-props';
+import { onSettled } from 'solid-js';
+import { type JSX } from '@solidjs/web';
+import { createSplitProps } from '../../utils/create-split-props';
+import {
+  PresenceProvider,
+  type UsePresenceProps,
+  splitPresenceProps,
+  usePresence,
+} from '../presence/index';
+import { type UseMenuProps, useMenu } from './use-menu';
+import { MenuProvider, useMenuContext } from './use-menu-context';
+import { MenuMachineProvider, useMenuMachineContext } from './use-menu-machine-context';
+import { MenuTriggerItemProvider } from './use-menu-trigger-item-context';
+
+export type MenuRootBaseProps = UseMenuProps & UsePresenceProps;
+export interface MenuRootProps extends MenuRootBaseProps {
+  children?: JSX.Element;
+}
+
+/** Render the Menu root. */
+export const MenuRoot = (props: MenuRootProps) => {
+  const [presenceProps, menuProps] = splitPresenceProps(props);
+  const [useMenuProps, localProps] = createSplitProps<UseMenuProps>()(menuProps, [
+    'anchorPoint',
+    'autoHighlight',
+    'collection',
+    'finalFocusEl',
+    'initialFocusEl',
+    'scrollToIndexFn',
+    'aria-label',
+    'closeOnSelect',
+    'defaultHighlightedValue',
+    'defaultOpen',
+    'highlightedValue',
+    'id',
+    'ids',
+    'loopFocus',
+    'navigate',
+    'onEscapeKeyDown',
+    'onFocusOutside',
+    'onHighlightChange',
+    'onInteractOutside',
+    'onOpenChange',
+    'onPointerDownOutside',
+    'onRequestDismiss',
+    'onSelect',
+    'open',
+    'positioning',
+    'popupType',
+    'typeahead',
+    'triggerValue',
+    'defaultTriggerValue',
+    'onTriggerValueChange',
+  ]);
+
+  const parentApi = useMenuContext();
+  const parentMachine = useMenuMachineContext();
+  const menu = useMenu(useMenuProps);
+  const presenceApi = usePresence(mergeProps(presenceProps, () => ({ present: menu.api().open })));
+
+  onSettled(() => {
+    if (!parentMachine) return;
+    parentApi?.().setChild(menu.service);
+    menu.api().setParent(parentMachine);
+  });
+
+  /** Trigger item context. */
+  const triggerItemContext = () => parentApi?.().getTriggerItemProps(menu.api());
+
+  return (
+    <MenuTriggerItemProvider value={triggerItemContext}>
+      <MenuMachineProvider value={menu.service}>
+        <MenuProvider value={menu.api}>
+          <PresenceProvider value={presenceApi}>{localProps.children}</PresenceProvider>
+        </MenuProvider>
+      </MenuMachineProvider>
+    </MenuTriggerItemProvider>
+  );
+};

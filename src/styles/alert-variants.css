@@ -1,0 +1,28 @@
+@layer leverui.recipes {
+  .leverui-alert__root:not([data-unstyled]) {
+    background: var(--leverui-private-alert-background, transparent);
+    color: var(--leverui-private-alert-foreground);
+    box-shadow: var(--leverui-private-alert-shadow, none);
+
+    &[data-variant='subtle'] {
+      --leverui-private-alert-background: var(--leverui-colors-color-palette-subtle);
+      --leverui-private-alert-foreground: var(--leverui-colors-color-palette-fg);
+    }
+
+    &[data-variant='surface'] {
+      --leverui-private-alert-background: var(--leverui-colors-color-palette-subtle);
+      --leverui-private-alert-foreground: var(--leverui-colors-color-palette-fg);
+      --leverui-private-alert-shadow: inset 0 0 0 1px var(--leverui-colors-color-palette-muted);
+    }
+
+    &[data-variant='outline'] {
+      --leverui-private-alert-foreground: var(--leverui-colors-color-palette-fg);
+      --leverui-private-alert-shadow: inset 0 0 0 1px var(--leverui-colors-color-palette-border);
+    }
+
+    &[data-variant='solid'] {
+      --leverui-private-alert-background: var(--leverui-colors-color-palette-solid);
+      --leverui-private-alert-foreground: var(--leverui-colors-color-palette-contrast);
+    }
+  }
+}

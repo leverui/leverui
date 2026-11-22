@@ -1,0 +1,78 @@
+.card-example-narrow {
+  width: 320px;
+}
+
+.card-example-product {
+  max-width: var(--leverui-sizes-sm);
+  overflow: hidden;
+}
+
+.card-example-horizontal {
+  max-width: var(--leverui-sizes-xl);
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.card-example-horizontal-image {
+  max-width: 200px;
+  object-fit: cover;
+}
+
+.card-example-body-gap,
+.card-example-footer-gap {
+  gap: var(--leverui-spacing-2);
+}
+
+.card-example-title-top,
+.card-example-price {
+  margin-top: var(--leverui-spacing-2);
+}
+
+.card-example-title-bottom {
+  margin-bottom: var(--leverui-spacing-2);
+}
+
+.card-example-footer-end {
+  justify-content: flex-end;
+}
+
+.card-example-price {
+  font-weight: var(--leverui-font-weights-medium);
+  letter-spacing: var(--leverui-letter-spacings-tight);
+}
+
+.card-example-badges {
+  margin-top: var(--leverui-spacing-4);
+}
+
+.card-example-inviter {
+  margin-bottom: var(--leverui-spacing-6);
+}
+
+.card-example-inviter-name {
+  font-weight: var(--leverui-font-weights-semibold);
+}
+
+.card-example-inviter-handle {
+  color: var(--leverui-colors-fg-muted);
+}
+
+.card-example-inviter-strong {
+  color: var(--leverui-colors-fg);
+}
+
+.card-example-action {
+  flex: 1;
+}
+
+.card-example-form-fields {
+  width: 100%;
+}
+
+.card-example-variants {
+  flex-wrap: wrap;
+}
+
+.card-example-size-body {
+  color: var(--leverui-colors-fg-muted);
+}

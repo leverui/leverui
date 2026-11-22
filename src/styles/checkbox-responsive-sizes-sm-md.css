@@ -1,0 +1,50 @@
+@layer leverui.recipes {
+  @media (min-width: 480px) {
+    .leverui-checkbox:not([data-unstyled]) {
+      &[data-size-sm='xs'] {
+        --leverui-private-checkbox-gap: var(--leverui-spacing-1\.5);
+        --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-xs);
+        --leverui-private-checkbox-label-line-height: 1rem;
+      }
+      &[data-size-sm='sm'] {
+        --leverui-private-checkbox-gap: var(--leverui-spacing-2);
+        --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-checkbox-label-line-height: 1.25rem;
+      }
+      &[data-size-sm='md'] {
+        --leverui-private-checkbox-gap: var(--leverui-spacing-2\.5);
+        --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-checkbox-label-line-height: 1.25rem;
+      }
+      &[data-size-sm='lg'] {
+        --leverui-private-checkbox-gap: var(--leverui-spacing-3);
+        --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-md);
+        --leverui-private-checkbox-label-line-height: 1.5rem;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .leverui-checkbox:not([data-unstyled]) {
+      &[data-size-md='xs'] {
+        --leverui-private-checkbox-gap: var(--leverui-spacing-1\.5);
+        --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-xs);
+        --leverui-private-checkbox-label-line-height: 1rem;
+      }
+      &[data-size-md='sm'] {
+        --leverui-private-checkbox-gap: var(--leverui-spacing-2);
+        --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-checkbox-label-line-height: 1.25rem;
+      }
+      &[data-size-md='md'] {
+        --leverui-private-checkbox-gap: var(--leverui-spacing-2\.5);
+        --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-checkbox-label-line-height: 1.25rem;
+      }
+      &[data-size-md='lg'] {
+        --leverui-private-checkbox-gap: var(--leverui-spacing-3);
+        --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-md);
+        --leverui-private-checkbox-label-line-height: 1.5rem;
+      }
+    }
+  }
+}

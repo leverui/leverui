@@ -1,0 +1,96 @@
+@layer leverui.recipes {
+  @media (min-width: 480px) {
+    .leverui-skeleton:not([data-unstyled])[data-variant-sm='pulse'] {
+      --leverui-private-skeleton-background: var(--leverui-private-skeleton-pulse-background);
+      --leverui-private-skeleton-background-size: auto;
+      --leverui-private-skeleton-animation: pulse var(--leverui-skeleton-duration, 1.2s);
+    }
+    .leverui-skeleton:not([data-unstyled])[data-variant-sm='shine'] {
+      --leverui-private-skeleton-background: var(--leverui-private-skeleton-shine-background);
+      --leverui-private-skeleton-background-size: 400% 100%;
+      --leverui-private-skeleton-animation: bg-position var(--leverui-skeleton-duration, 5s)
+        ease-in-out infinite;
+    }
+    .leverui-skeleton:not([data-unstyled])[data-variant-sm='none'] {
+      --leverui-private-skeleton-background: none;
+      --leverui-private-skeleton-background-size: auto;
+      --leverui-private-skeleton-animation: none;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .leverui-skeleton:not([data-unstyled])[data-variant-md='pulse'] {
+      --leverui-private-skeleton-background: var(--leverui-private-skeleton-pulse-background);
+      --leverui-private-skeleton-background-size: auto;
+      --leverui-private-skeleton-animation: pulse var(--leverui-skeleton-duration, 1.2s);
+    }
+    .leverui-skeleton:not([data-unstyled])[data-variant-md='shine'] {
+      --leverui-private-skeleton-background: var(--leverui-private-skeleton-shine-background);
+      --leverui-private-skeleton-background-size: 400% 100%;
+      --leverui-private-skeleton-animation: bg-position var(--leverui-skeleton-duration, 5s)
+        ease-in-out infinite;
+    }
+    .leverui-skeleton:not([data-unstyled])[data-variant-md='none'] {
+      --leverui-private-skeleton-background: none;
+      --leverui-private-skeleton-background-size: auto;
+      --leverui-private-skeleton-animation: none;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .leverui-skeleton:not([data-unstyled])[data-variant-lg='pulse'] {
+      --leverui-private-skeleton-background: var(--leverui-private-skeleton-pulse-background);
+      --leverui-private-skeleton-background-size: auto;
+      --leverui-private-skeleton-animation: pulse var(--leverui-skeleton-duration, 1.2s);
+    }
+    .leverui-skeleton:not([data-unstyled])[data-variant-lg='shine'] {
+      --leverui-private-skeleton-background: var(--leverui-private-skeleton-shine-background);
+      --leverui-private-skeleton-background-size: 400% 100%;
+      --leverui-private-skeleton-animation: bg-position var(--leverui-skeleton-duration, 5s)
+        ease-in-out infinite;
+    }
+    .leverui-skeleton:not([data-unstyled])[data-variant-lg='none'] {
+      --leverui-private-skeleton-background: none;
+      --leverui-private-skeleton-background-size: auto;
+      --leverui-private-skeleton-animation: none;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .leverui-skeleton:not([data-unstyled])[data-variant-xl='pulse'] {
+      --leverui-private-skeleton-background: var(--leverui-private-skeleton-pulse-background);
+      --leverui-private-skeleton-background-size: auto;
+      --leverui-private-skeleton-animation: pulse var(--leverui-skeleton-duration, 1.2s);
+    }
+    .leverui-skeleton:not([data-unstyled])[data-variant-xl='shine'] {
+      --leverui-private-skeleton-background: var(--leverui-private-skeleton-shine-background);
+      --leverui-private-skeleton-background-size: 400% 100%;
+      --leverui-private-skeleton-animation: bg-position var(--leverui-skeleton-duration, 5s)
+        ease-in-out infinite;
+    }
+    .leverui-skeleton:not([data-unstyled])[data-variant-xl='none'] {
+      --leverui-private-skeleton-background: none;
+      --leverui-private-skeleton-background-size: auto;
+      --leverui-private-skeleton-animation: none;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .leverui-skeleton:not([data-unstyled])[data-variant-2xl='pulse'] {
+      --leverui-private-skeleton-background: var(--leverui-private-skeleton-pulse-background);
+      --leverui-private-skeleton-background-size: auto;
+      --leverui-private-skeleton-animation: pulse var(--leverui-skeleton-duration, 1.2s);
+    }
+    .leverui-skeleton:not([data-unstyled])[data-variant-2xl='shine'] {
+      --leverui-private-skeleton-background: var(--leverui-private-skeleton-shine-background);
+      --leverui-private-skeleton-background-size: 400% 100%;
+      --leverui-private-skeleton-animation: bg-position var(--leverui-skeleton-duration, 5s)
+        ease-in-out infinite;
+    }
+    .leverui-skeleton:not([data-unstyled])[data-variant-2xl='none'] {
+      --leverui-private-skeleton-background: none;
+      --leverui-private-skeleton-background-size: auto;
+      --leverui-private-skeleton-animation: none;
+    }
+  }
+}

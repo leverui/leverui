@@ -1,0 +1,27 @@
+.wrap-contract-width-112 {
+  width: 112px;
+}
+
+.wrap-contract-width-140 {
+  width: 140px;
+}
+
+.wrap-contract-item-48 {
+  width: 48px;
+  height: 24px;
+}
+
+.wrap-contract-item-56 {
+  width: 56px;
+  height: 20px;
+}
+
+.wrap-contract-item-centered {
+  align-items: center;
+}
+
+.wrap-contract-override {
+  display: grid;
+  flex-wrap: nowrap;
+  gap: 20px;
+}

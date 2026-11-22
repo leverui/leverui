@@ -1,0 +1,64 @@
+@layer leverui.recipes {
+  @media (min-width: 480px) {
+    .leverui-checkbox-card:not([data-unstyled]) {
+      &[data-align-sm='start'] {
+        --leverui-private-checkbox-card-align: flex-start;
+        --leverui-private-checkbox-card-text-align: start;
+      }
+      &[data-align-sm='center'] {
+        --leverui-private-checkbox-card-align: center;
+        --leverui-private-checkbox-card-text-align: center;
+      }
+      &[data-align-sm='end'] {
+        --leverui-private-checkbox-card-align: flex-end;
+        --leverui-private-checkbox-card-text-align: end;
+      }
+      &[data-justify-sm='start'] {
+        --leverui-private-checkbox-card-justify: flex-start;
+      }
+      &[data-justify-sm='center'] {
+        --leverui-private-checkbox-card-justify: center;
+      }
+      &[data-justify-sm='end'] {
+        --leverui-private-checkbox-card-justify: flex-end;
+      }
+      &[data-orientation-sm='horizontal'] {
+        --leverui-private-checkbox-card-direction: row;
+      }
+      &[data-orientation-sm='vertical'] {
+        --leverui-private-checkbox-card-direction: column;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .leverui-checkbox-card:not([data-unstyled]) {
+      &[data-align-md='start'] {
+        --leverui-private-checkbox-card-align: flex-start;
+        --leverui-private-checkbox-card-text-align: start;
+      }
+      &[data-align-md='center'] {
+        --leverui-private-checkbox-card-align: center;
+        --leverui-private-checkbox-card-text-align: center;
+      }
+      &[data-align-md='end'] {
+        --leverui-private-checkbox-card-align: flex-end;
+        --leverui-private-checkbox-card-text-align: end;
+      }
+      &[data-justify-md='start'] {
+        --leverui-private-checkbox-card-justify: flex-start;
+      }
+      &[data-justify-md='center'] {
+        --leverui-private-checkbox-card-justify: center;
+      }
+      &[data-justify-md='end'] {
+        --leverui-private-checkbox-card-justify: flex-end;
+      }
+      &[data-orientation-md='horizontal'] {
+        --leverui-private-checkbox-card-direction: row;
+      }
+      &[data-orientation-md='vertical'] {
+        --leverui-private-checkbox-card-direction: column;
+      }
+    }
+  }
+}

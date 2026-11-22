@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/packed-steps-family.tsx", "src/steps-types.tsx"],
+  "exclude": []
+}

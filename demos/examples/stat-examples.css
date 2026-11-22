@@ -1,0 +1,25 @@
+.example-stat-narrow {
+  max-width: var(--leverui-sizes-60);
+}
+
+.example-stat-card {
+  border-width: 1px;
+  border-radius: var(--leverui-radii-md);
+  padding: var(--leverui-spacing-4);
+}
+
+.example-stat-icon {
+  color: var(--leverui-colors-fg-muted);
+}
+
+.example-stat-flush-badge {
+  padding-inline: 0;
+}
+
+.example-stat-tight-badge {
+  gap: 0;
+}
+
+.example-stat-help-text {
+  margin-bottom: var(--leverui-spacing-2);
+}

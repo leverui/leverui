@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/switch-types.tsx", "src/switch-example.tsx", "src/switch-main.tsx"],
+  "exclude": []
+}

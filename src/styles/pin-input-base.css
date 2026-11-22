@@ -1,0 +1,54 @@
+@layer leverui.recipes {
+  .leverui-pin-input__root {
+    --leverui-private-pin-input-gap: var(--leverui-spacing-2);
+    --leverui-private-pin-input-overlap: 0px;
+  }
+
+  .leverui-pin-input__root:not([data-unstyled]) .leverui-pin-input__control:not([data-unstyled]) {
+    display: inline-flex;
+    gap: var(--leverui-private-pin-input-gap);
+    isolation: isolate;
+  }
+
+  .leverui-pin-input__control:not([data-unstyled]) > :not(:first-child) {
+    margin-inline-start: var(--leverui-private-pin-input-overlap);
+  }
+
+  .leverui-pin-input__input.leverui-input:not([data-unstyled]) {
+    width: var(--leverui-private-input-height);
+    text-align: center;
+    padding-inline: min(var(--leverui-private-input-padding), var(--leverui-spacing-1));
+  }
+
+  .leverui-pin-input__input.leverui-input:not([data-unstyled]):not(:first-child) {
+    border-start-start-radius: var(
+      --leverui-private-pin-input-inner-radius,
+      var(--leverui-private-input-radius, var(--leverui-radii-l2))
+    );
+    border-end-start-radius: var(
+      --leverui-private-pin-input-inner-radius,
+      var(--leverui-private-input-radius, var(--leverui-radii-l2))
+    );
+  }
+
+  .leverui-pin-input__input.leverui-input:not([data-unstyled]):not(:last-child) {
+    border-start-end-radius: var(
+      --leverui-private-pin-input-inner-radius,
+      var(--leverui-private-input-radius, var(--leverui-radii-l2))
+    );
+    border-end-end-radius: var(
+      --leverui-private-pin-input-inner-radius,
+      var(--leverui-private-input-radius, var(--leverui-radii-l2))
+    );
+  }
+
+  .leverui-pin-input__input.leverui-input:not([data-unstyled]):focus-visible {
+    z-index: 1;
+  }
+
+  .leverui-pin-input__root[data-attached='true'] {
+    --leverui-private-pin-input-gap: 0px;
+    --leverui-private-pin-input-overlap: -1px;
+    --leverui-private-pin-input-inner-radius: 0px;
+  }
+}

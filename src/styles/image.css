@@ -1,0 +1,144 @@
+@layer leverui.recipes {
+  .leverui-image {
+    --leverui-private-image-align-base: initial;
+    --leverui-private-image-align-sm: initial;
+    --leverui-private-image-align-md: initial;
+    --leverui-private-image-align-lg: initial;
+    --leverui-private-image-align-xl: initial;
+    --leverui-private-image-align-2xl: initial;
+  }
+
+  .leverui-image:not([data-unstyled]) {
+    object-fit: var(--leverui-image-fit, cover);
+    object-position: var(
+      --leverui-private-image-align-base,
+      var(--leverui-image-position, 50% 50%)
+    );
+
+    &[data-fit-base='cover'] {
+      object-fit: cover;
+    }
+    &[data-fit-base='contain'] {
+      object-fit: contain;
+    }
+    &[data-fit-base='fill'] {
+      object-fit: fill;
+    }
+    &[data-fit-base='none'] {
+      object-fit: none;
+    }
+    &[data-fit-base='scale-down'] {
+      object-fit: scale-down;
+    }
+
+    @media (min-width: 30rem) {
+      object-position: var(
+        --leverui-private-image-align-sm,
+        var(--leverui-image-position, 50% 50%)
+      );
+      &[data-fit-sm='cover'] {
+        object-fit: cover;
+      }
+      &[data-fit-sm='contain'] {
+        object-fit: contain;
+      }
+      &[data-fit-sm='fill'] {
+        object-fit: fill;
+      }
+      &[data-fit-sm='none'] {
+        object-fit: none;
+      }
+      &[data-fit-sm='scale-down'] {
+        object-fit: scale-down;
+      }
+    }
+
+    @media (min-width: 48rem) {
+      object-position: var(
+        --leverui-private-image-align-md,
+        var(--leverui-image-position, 50% 50%)
+      );
+      &[data-fit-md='cover'] {
+        object-fit: cover;
+      }
+      &[data-fit-md='contain'] {
+        object-fit: contain;
+      }
+      &[data-fit-md='fill'] {
+        object-fit: fill;
+      }
+      &[data-fit-md='none'] {
+        object-fit: none;
+      }
+      &[data-fit-md='scale-down'] {
+        object-fit: scale-down;
+      }
+    }
+
+    @media (min-width: 64rem) {
+      object-position: var(
+        --leverui-private-image-align-lg,
+        var(--leverui-image-position, 50% 50%)
+      );
+      &[data-fit-lg='cover'] {
+        object-fit: cover;
+      }
+      &[data-fit-lg='contain'] {
+        object-fit: contain;
+      }
+      &[data-fit-lg='fill'] {
+        object-fit: fill;
+      }
+      &[data-fit-lg='none'] {
+        object-fit: none;
+      }
+      &[data-fit-lg='scale-down'] {
+        object-fit: scale-down;
+      }
+    }
+
+    @media (min-width: 80rem) {
+      object-position: var(
+        --leverui-private-image-align-xl,
+        var(--leverui-image-position, 50% 50%)
+      );
+      &[data-fit-xl='cover'] {
+        object-fit: cover;
+      }
+      &[data-fit-xl='contain'] {
+        object-fit: contain;
+      }
+      &[data-fit-xl='fill'] {
+        object-fit: fill;
+      }
+      &[data-fit-xl='none'] {
+        object-fit: none;
+      }
+      &[data-fit-xl='scale-down'] {
+        object-fit: scale-down;
+      }
+    }
+
+    @media (min-width: 96rem) {
+      object-position: var(
+        --leverui-private-image-align-2xl,
+        var(--leverui-image-position, 50% 50%)
+      );
+      &[data-fit-2xl='cover'] {
+        object-fit: cover;
+      }
+      &[data-fit-2xl='contain'] {
+        object-fit: contain;
+      }
+      &[data-fit-2xl='fill'] {
+        object-fit: fill;
+      }
+      &[data-fit-2xl='none'] {
+        object-fit: none;
+      }
+      &[data-fit-2xl='scale-down'] {
+        object-fit: scale-down;
+      }
+    }
+  }
+}

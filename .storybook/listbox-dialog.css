@@ -1,0 +1,14 @@
+.listbox-dialog-footer {
+  font-size: var(--leverui-font-sizes-xs);
+  line-height: 1rem;
+  border-top: 1px solid var(--leverui-colors-border);
+}
+
+.listbox-dialog-group-label {
+  text-transform: capitalize;
+}
+
+.listbox-dialog-results {
+  padding-inline: var(--leverui-spacing-3);
+  max-height: 300px;
+}

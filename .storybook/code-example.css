@@ -1,0 +1,16 @@
+#code-css-override {
+  --leverui-colors-blue-solid: rgb(12 34 56);
+}
+
+.consumer-child-code {
+  color: rgb(20 30 40);
+}
+
+.consumer-code {
+  background-color: rgb(91 42 120);
+  color: rgb(255 255 0);
+}
+
+.code-story-border {
+  border-top: 4px solid;
+}

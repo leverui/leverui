@@ -1,0 +1,45 @@
+@layer leverui.recipes {
+  .leverui-dialog__positioner[data-leverui-dialog-css] {
+    &[data-placement='center'] {
+      align-items: center;
+    }
+
+    &[data-placement='top'] {
+      align-items: flex-start;
+    }
+
+    &[data-placement='bottom'] {
+      align-items: flex-end;
+    }
+
+    &[data-scroll-behavior='inside'] {
+      overflow: hidden;
+    }
+
+    &[data-scroll-behavior='outside'] {
+      overflow: auto;
+      pointer-events: auto;
+    }
+  }
+
+  .leverui-dialog__content[data-leverui-dialog-css] {
+    &[data-placement='center'] {
+      --leverui-private-dialog-base-margin: auto;
+      margin-inline: auto;
+    }
+
+    &[data-placement='top'],
+    &[data-placement='bottom'] {
+      --leverui-private-dialog-base-margin: var(--leverui-spacing-16);
+      margin-inline: auto;
+    }
+
+    &[data-scroll-behavior='inside'] {
+      max-height: calc(100% - 7.5rem);
+    }
+  }
+
+  .leverui-dialog__body[data-leverui-dialog-css][data-scroll-behavior='inside'] {
+    overflow: auto;
+  }
+}

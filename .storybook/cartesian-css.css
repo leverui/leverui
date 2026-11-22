@@ -1,0 +1,7 @@
+.consumer-area-chart {
+  --leverui-cartesian-chart-legend-gap: 20px;
+}
+
+.consumer-line-chart .leverui-cartesian-chart__tooltip {
+  background: rgb(123, 45, 67);
+}

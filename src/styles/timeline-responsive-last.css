@@ -1,0 +1,52 @@
+@layer leverui.recipes {
+  @media (min-width: 480px) {
+    .leverui-timeline__root:not([data-unstyled]) {
+      &[data-show-last-separator-sm='true'] {
+        --leverui-private-timeline-last-separator-display: initial;
+      }
+      &[data-show-last-separator-sm='false'] {
+        --leverui-private-timeline-last-separator-display: none;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .leverui-timeline__root:not([data-unstyled]) {
+      &[data-show-last-separator-md='true'] {
+        --leverui-private-timeline-last-separator-display: initial;
+      }
+      &[data-show-last-separator-md='false'] {
+        --leverui-private-timeline-last-separator-display: none;
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    .leverui-timeline__root:not([data-unstyled]) {
+      &[data-show-last-separator-lg='true'] {
+        --leverui-private-timeline-last-separator-display: initial;
+      }
+      &[data-show-last-separator-lg='false'] {
+        --leverui-private-timeline-last-separator-display: none;
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    .leverui-timeline__root:not([data-unstyled]) {
+      &[data-show-last-separator-xl='true'] {
+        --leverui-private-timeline-last-separator-display: initial;
+      }
+      &[data-show-last-separator-xl='false'] {
+        --leverui-private-timeline-last-separator-display: none;
+      }
+    }
+  }
+  @media (min-width: 1536px) {
+    .leverui-timeline__root:not([data-unstyled]) {
+      &[data-show-last-separator-2xl='true'] {
+        --leverui-private-timeline-last-separator-display: initial;
+      }
+      &[data-show-last-separator-2xl='false'] {
+        --leverui-private-timeline-last-separator-display: none;
+      }
+    }
+  }
+}

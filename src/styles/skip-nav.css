@@ -1,0 +1,35 @@
+@layer leverui.recipes {
+  .leverui-skip-nav:not([data-unstyled]) {
+    display: inline-flex;
+    background: var(--leverui-colors-bg-panel);
+    padding: var(--leverui-spacing-2\.5);
+    border-radius: var(--leverui-radii-l2);
+    font-weight: var(--leverui-font-weights-semibold);
+    font-size: var(--leverui-font-sizes-sm);
+    line-height: 1.25rem;
+    user-select: none;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    outline: 0;
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+  }
+
+  .leverui-skip-nav:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
+    clip: auto;
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: var(--leverui-spacing-6);
+    inset-inline-start: var(--leverui-spacing-6);
+    outline: 2px solid var(--leverui-colors-color-palette-focus-ring);
+    outline-offset: 2px;
+  }
+
+  .leverui-skip-nav-content {
+    outline: 0;
+  }
+}

@@ -1,0 +1,53 @@
+@layer leverui.recipes {
+  .leverui-prose:not([data-unstyled]) {
+    & :where(table):not(.not-prose, .not-prose *) {
+      width: 100%;
+      table-layout: auto;
+      text-align: start;
+      line-height: 1.5em;
+      margin-block: 2em;
+    }
+    & :where(thead):not(.not-prose, .not-prose *) {
+      border-bottom-width: 1px;
+      color: var(--leverui-colors-fg);
+    }
+    & :where(tbody tr):not(.not-prose, .not-prose *) {
+      border-bottom-width: 1px;
+      border-bottom-color: var(--leverui-colors-border);
+    }
+    & :where(thead th):not(.not-prose, .not-prose *) {
+      padding-inline: 1em;
+      padding-bottom: 0.65em;
+      font-weight: var(--leverui-font-weights-medium);
+      text-align: start;
+    }
+    & :where(tbody td, tfoot td):not(.not-prose, .not-prose *) {
+      padding-block: 0.65em;
+      padding-inline: 1em;
+    }
+    & :where(thead th:first-of-type):not(.not-prose, .not-prose *),
+    & :where(tbody td:first-of-type, tfoot td:first-of-type):not(.not-prose, .not-prose *) {
+      padding-inline-start: 0;
+    }
+    & :where(thead th:last-of-type):not(.not-prose, .not-prose *),
+    & :where(tbody td:last-of-type, tfoot td:last-of-type):not(.not-prose, .not-prose *) {
+      padding-inline-end: 0;
+    }
+    & :where(figure):not(.not-prose, .not-prose *) {
+      margin-block: 1.625em;
+    }
+    & :where(figure > *):not(.not-prose, .not-prose *) {
+      margin-block: 0;
+    }
+    & :where(figcaption):not(.not-prose, .not-prose *) {
+      font-size: 0.85em;
+      line-height: 1.25em;
+      margin-top: 0.85em;
+      color: var(--leverui-colors-fg-muted);
+    }
+    & :where(h1, h2, h3, h4, h5, h6):not(.not-prose, .not-prose *) {
+      color: var(--leverui-colors-fg);
+      font-weight: 600;
+    }
+  }
+}

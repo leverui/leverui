@@ -1,0 +1,56 @@
+@layer leverui.recipes {
+  .leverui-center:not([data-unstyled]) {
+    display: flex;
+    align-items: var(--leverui-center-align, center);
+    justify-content: var(--leverui-center-justify, center);
+
+    &[data-inline='true'] {
+      display: inline-flex;
+    }
+
+    @media (min-width: 30rem) {
+      &[data-inline-sm='true'] {
+        display: inline-flex;
+      }
+      &[data-inline-sm='false'] {
+        display: flex;
+      }
+    }
+
+    @media (min-width: 48rem) {
+      &[data-inline-md='true'] {
+        display: inline-flex;
+      }
+      &[data-inline-md='false'] {
+        display: flex;
+      }
+    }
+
+    @media (min-width: 64rem) {
+      &[data-inline-lg='true'] {
+        display: inline-flex;
+      }
+      &[data-inline-lg='false'] {
+        display: flex;
+      }
+    }
+
+    @media (min-width: 80rem) {
+      &[data-inline-xl='true'] {
+        display: inline-flex;
+      }
+      &[data-inline-xl='false'] {
+        display: flex;
+      }
+    }
+
+    @media (min-width: 96rem) {
+      &[data-inline-2xl='true'] {
+        display: inline-flex;
+      }
+      &[data-inline-2xl='false'] {
+        display: flex;
+      }
+    }
+  }
+}

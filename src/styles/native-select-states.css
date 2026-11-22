@@ -1,0 +1,33 @@
+@layer leverui.recipes {
+  .leverui-native-select__root:not([data-unstyled])
+    .leverui-native-select__field:not([data-unstyled]):is(
+      :disabled,
+      [disabled],
+      [data-disabled],
+      [aria-disabled='true']
+    ) {
+    opacity: 0.5;
+    cursor: var(--leverui-cursor-disabled);
+  }
+
+  .leverui-native-select__root:not([data-unstyled])
+    .leverui-native-select__field:not([data-unstyled]):is([data-invalid], [aria-invalid='true']) {
+    border-color: var(--leverui-private-native-select-error-color);
+  }
+
+  .leverui-native-select__root:not([data-unstyled])
+    .leverui-native-select__field:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
+    outline-offset: 0;
+    outline-width: var(--leverui-private-native-select-focus-width);
+    outline-color: var(--leverui-colors-color-palette-focus-ring);
+    outline-style: var(--focus-ring-style, solid);
+  }
+
+  .leverui-native-select__root:not([data-unstyled])
+    .leverui-native-select__field:not([data-unstyled]):is(:focus-visible, [data-focus-visible]):is(
+      [data-invalid],
+      [aria-invalid='true']
+    ) {
+    outline-color: var(--leverui-private-native-select-error-color);
+  }
+}

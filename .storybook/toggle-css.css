@@ -1,0 +1,18 @@
+.toggle-css-named {
+  border: 3px solid #22c55e;
+}
+
+.toggle-css-instance {
+  border: 5px solid #a855f7;
+  --leverui-toggle-empty-indicator-display: inline;
+}
+
+.toggle-css-named .toggle-css-indicator,
+.toggle-css-named .toggle-css-probe {
+  letter-spacing: 2px;
+}
+
+.toggle-css-instance .toggle-css-indicator,
+.toggle-css-instance .toggle-css-probe {
+  letter-spacing: 4px;
+}

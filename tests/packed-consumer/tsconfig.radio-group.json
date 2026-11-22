@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src/radio-group-types.tsx",
+    "src/radio-group-example.tsx",
+    "src/radio-group-main.tsx"
+  ],
+  "exclude": []
+}

@@ -1,0 +1,158 @@
+@layer leverui.recipes {
+  :is(.leverui-badge, .leverui-code):not([data-unstyled], [data-leverui-private-style-runtime]) {
+    &[data-size='xs'] {
+      --leverui-private-badge-font-size: var(--leverui-font-sizes-2xs);
+      --leverui-private-badge-line-height: 0.75rem;
+      --leverui-private-badge-padding: var(--leverui-spacing-1);
+      --leverui-private-badge-min-height: var(--leverui-sizes-4);
+    }
+    &[data-size='sm'] {
+      --leverui-private-badge-font-size: var(--leverui-font-sizes-xs);
+      --leverui-private-badge-line-height: 1rem;
+      --leverui-private-badge-padding: var(--leverui-spacing-1\.5);
+      --leverui-private-badge-min-height: var(--leverui-sizes-5);
+    }
+    &[data-size='md'] {
+      --leverui-private-badge-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-badge-line-height: 1.25rem;
+      --leverui-private-badge-padding: var(--leverui-spacing-2);
+      --leverui-private-badge-min-height: var(--leverui-sizes-6);
+    }
+    &[data-size='lg'] {
+      --leverui-private-badge-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-badge-line-height: 1.25rem;
+      --leverui-private-badge-padding: var(--leverui-spacing-2\.5);
+      --leverui-private-badge-min-height: var(--leverui-sizes-7);
+    }
+    @media (min-width: 30rem) {
+      &[data-size-sm='xs'] {
+        --leverui-private-badge-font-size: var(--leverui-font-sizes-2xs);
+        --leverui-private-badge-line-height: 0.75rem;
+        --leverui-private-badge-padding: var(--leverui-spacing-1);
+        --leverui-private-badge-min-height: var(--leverui-sizes-4);
+      }
+      &[data-size-sm='sm'] {
+        --leverui-private-badge-font-size: var(--leverui-font-sizes-xs);
+        --leverui-private-badge-line-height: 1rem;
+        --leverui-private-badge-padding: var(--leverui-spacing-1\.5);
+        --leverui-private-badge-min-height: var(--leverui-sizes-5);
+      }
+      &[data-size-sm='md'] {
+        --leverui-private-badge-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-badge-line-height: 1.25rem;
+        --leverui-private-badge-padding: var(--leverui-spacing-2);
+        --leverui-private-badge-min-height: var(--leverui-sizes-6);
+      }
+      &[data-size-sm='lg'] {
+        --leverui-private-badge-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-badge-line-height: 1.25rem;
+        --leverui-private-badge-padding: var(--leverui-spacing-2\.5);
+        --leverui-private-badge-min-height: var(--leverui-sizes-7);
+      }
+    }
+    @media (min-width: 48rem) {
+      &[data-size-md='xs'] {
+        --leverui-private-badge-font-size: var(--leverui-font-sizes-2xs);
+        --leverui-private-badge-line-height: 0.75rem;
+        --leverui-private-badge-padding: var(--leverui-spacing-1);
+        --leverui-private-badge-min-height: var(--leverui-sizes-4);
+      }
+      &[data-size-md='sm'] {
+        --leverui-private-badge-font-size: var(--leverui-font-sizes-xs);
+        --leverui-private-badge-line-height: 1rem;
+        --leverui-private-badge-padding: var(--leverui-spacing-1\.5);
+        --leverui-private-badge-min-height: var(--leverui-sizes-5);
+      }
+      &[data-size-md='md'] {
+        --leverui-private-badge-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-badge-line-height: 1.25rem;
+        --leverui-private-badge-padding: var(--leverui-spacing-2);
+        --leverui-private-badge-min-height: var(--leverui-sizes-6);
+      }
+      &[data-size-md='lg'] {
+        --leverui-private-badge-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-badge-line-height: 1.25rem;
+        --leverui-private-badge-padding: var(--leverui-spacing-2\.5);
+        --leverui-private-badge-min-height: var(--leverui-sizes-7);
+      }
+    }
+    @media (min-width: 64rem) {
+      &[data-size-lg='xs'] {
+        --leverui-private-badge-font-size: var(--leverui-font-sizes-2xs);
+        --leverui-private-badge-line-height: 0.75rem;
+        --leverui-private-badge-padding: var(--leverui-spacing-1);
+        --leverui-private-badge-min-height: var(--leverui-sizes-4);
+      }
+      &[data-size-lg='sm'] {
+        --leverui-private-badge-font-size: var(--leverui-font-sizes-xs);
+        --leverui-private-badge-line-height: 1rem;
+        --leverui-private-badge-padding: var(--leverui-spacing-1\.5);
+        --leverui-private-badge-min-height: var(--leverui-sizes-5);
+      }
+      &[data-size-lg='md'] {
+        --leverui-private-badge-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-badge-line-height: 1.25rem;
+        --leverui-private-badge-padding: var(--leverui-spacing-2);
+        --leverui-private-badge-min-height: var(--leverui-sizes-6);
+      }
+      &[data-size-lg='lg'] {
+        --leverui-private-badge-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-badge-line-height: 1.25rem;
+        --leverui-private-badge-padding: var(--leverui-spacing-2\.5);
+        --leverui-private-badge-min-height: var(--leverui-sizes-7);
+      }
+    }
+    @media (min-width: 80rem) {
+      &[data-size-xl='xs'] {
+        --leverui-private-badge-font-size: var(--leverui-font-sizes-2xs);
+        --leverui-private-badge-line-height: 0.75rem;
+        --leverui-private-badge-padding: var(--leverui-spacing-1);
+        --leverui-private-badge-min-height: var(--leverui-sizes-4);
+      }
+      &[data-size-xl='sm'] {
+        --leverui-private-badge-font-size: var(--leverui-font-sizes-xs);
+        --leverui-private-badge-line-height: 1rem;
+        --leverui-private-badge-padding: var(--leverui-spacing-1\.5);
+        --leverui-private-badge-min-height: var(--leverui-sizes-5);
+      }
+      &[data-size-xl='md'] {
+        --leverui-private-badge-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-badge-line-height: 1.25rem;
+        --leverui-private-badge-padding: var(--leverui-spacing-2);
+        --leverui-private-badge-min-height: var(--leverui-sizes-6);
+      }
+      &[data-size-xl='lg'] {
+        --leverui-private-badge-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-badge-line-height: 1.25rem;
+        --leverui-private-badge-padding: var(--leverui-spacing-2\.5);
+        --leverui-private-badge-min-height: var(--leverui-sizes-7);
+      }
+    }
+    @media (min-width: 96rem) {
+      &[data-size-2xl='xs'] {
+        --leverui-private-badge-font-size: var(--leverui-font-sizes-2xs);
+        --leverui-private-badge-line-height: 0.75rem;
+        --leverui-private-badge-padding: var(--leverui-spacing-1);
+        --leverui-private-badge-min-height: var(--leverui-sizes-4);
+      }
+      &[data-size-2xl='sm'] {
+        --leverui-private-badge-font-size: var(--leverui-font-sizes-xs);
+        --leverui-private-badge-line-height: 1rem;
+        --leverui-private-badge-padding: var(--leverui-spacing-1\.5);
+        --leverui-private-badge-min-height: var(--leverui-sizes-5);
+      }
+      &[data-size-2xl='md'] {
+        --leverui-private-badge-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-badge-line-height: 1.25rem;
+        --leverui-private-badge-padding: var(--leverui-spacing-2);
+        --leverui-private-badge-min-height: var(--leverui-sizes-6);
+      }
+      &[data-size-2xl='lg'] {
+        --leverui-private-badge-font-size: var(--leverui-font-sizes-sm);
+        --leverui-private-badge-line-height: 1.25rem;
+        --leverui-private-badge-padding: var(--leverui-spacing-2\.5);
+        --leverui-private-badge-min-height: var(--leverui-sizes-7);
+      }
+    }
+  }
+}

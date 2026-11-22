@@ -1,0 +1,99 @@
+.guide-code-block {
+  margin: 25.6px 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 6px;
+  background: var(--leverui-colors-gray-900);
+}
+.guide-code-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--leverui-colors-gray-800);
+  color: var(--leverui-colors-gray-300);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  font-weight: 600;
+}
+.guide-code-toolbar button {
+  padding: 5px 9px;
+  border: 1px solid var(--leverui-colors-gray-700);
+  border-radius: 5px;
+  background: var(--leverui-colors-gray-800);
+  color: var(--leverui-colors-gray-200);
+  font-size: 11px;
+  cursor: pointer;
+}
+.guide-code-toolbar button:hover,
+.guide-code-toolbar button:focus-visible {
+  border-color: var(--leverui-colors-gray-400);
+}
+.guide-code-block pre,
+.guide-markdown .guide-code-block pre {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  padding: 2em;
+  background: var(--leverui-colors-gray-900);
+  color: var(--leverui-colors-gray-300);
+  color-scheme: dark;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.25;
+  max-height: 480px;
+  overflow: auto;
+}
+.guide-markdown .guide-code-block pre {
+  padding: 2em;
+  font-size: 0.9rem;
+  max-height: 400px;
+}
+.guide-code-block pre code,
+.guide-markdown .guide-code-block pre code {
+  padding: 0;
+  background: transparent;
+  color: var(--leverui-colors-gray-300);
+  font: inherit;
+  white-space: pre;
+}
+.guide-code-block pre code span {
+  font-size: 0.82rem;
+  font-style: normal;
+}
+.guide-code-block ::selection {
+  background: rgb(255 255 255 / 20%);
+}
+.guide-code-block.is-floating-copy {
+  position: relative;
+}
+.is-floating-copy .guide-code-toolbar {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  z-index: 1;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+}
+.is-floating-copy .guide-code-toolbar > span,
+.is-floating-copy .guide-code-toolbar button span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.is-floating-copy .guide-code-toolbar button {
+  padding: 6px;
+  border: 0;
+  background: transparent;
+  color: var(--leverui-colors-gray-300);
+  font-size: 14px;
+}
+.is-floating-copy .guide-code-toolbar button:hover,
+.is-floating-copy .guide-code-toolbar button:focus-visible {
+  background: var(--leverui-colors-gray-800);
+}

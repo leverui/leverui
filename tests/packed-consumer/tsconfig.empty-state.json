@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/empty-state-types.tsx", "src/empty-state-main.tsx"],
+  "exclude": []
+}

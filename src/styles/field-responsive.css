@@ -1,0 +1,76 @@
+@layer leverui.recipes {
+  @media (min-width: 30rem) {
+    .leverui-field__root[data-orientation-sm='vertical'] {
+      --leverui-private-field-direction: column;
+      --leverui-private-field-align: flex-start;
+      --leverui-private-field-justify: normal;
+      --leverui-private-field-label-flex: 0 1 auto;
+    }
+    .leverui-field__root[data-orientation-sm='horizontal'] {
+      --leverui-private-field-direction: row;
+      --leverui-private-field-align: center;
+      --leverui-private-field-justify: space-between;
+      --leverui-private-field-label-flex: 0 0 var(--leverui-field-label-width, 80px);
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .leverui-field__root[data-orientation-md='vertical'] {
+      --leverui-private-field-direction: column;
+      --leverui-private-field-align: flex-start;
+      --leverui-private-field-justify: normal;
+      --leverui-private-field-label-flex: 0 1 auto;
+    }
+    .leverui-field__root[data-orientation-md='horizontal'] {
+      --leverui-private-field-direction: row;
+      --leverui-private-field-align: center;
+      --leverui-private-field-justify: space-between;
+      --leverui-private-field-label-flex: 0 0 var(--leverui-field-label-width, 80px);
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .leverui-field__root[data-orientation-lg='vertical'] {
+      --leverui-private-field-direction: column;
+      --leverui-private-field-align: flex-start;
+      --leverui-private-field-justify: normal;
+      --leverui-private-field-label-flex: 0 1 auto;
+    }
+    .leverui-field__root[data-orientation-lg='horizontal'] {
+      --leverui-private-field-direction: row;
+      --leverui-private-field-align: center;
+      --leverui-private-field-justify: space-between;
+      --leverui-private-field-label-flex: 0 0 var(--leverui-field-label-width, 80px);
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .leverui-field__root[data-orientation-xl='vertical'] {
+      --leverui-private-field-direction: column;
+      --leverui-private-field-align: flex-start;
+      --leverui-private-field-justify: normal;
+      --leverui-private-field-label-flex: 0 1 auto;
+    }
+    .leverui-field__root[data-orientation-xl='horizontal'] {
+      --leverui-private-field-direction: row;
+      --leverui-private-field-align: center;
+      --leverui-private-field-justify: space-between;
+      --leverui-private-field-label-flex: 0 0 var(--leverui-field-label-width, 80px);
+    }
+  }
+
+  @media (min-width: 96rem) {
+    .leverui-field__root[data-orientation-2xl='vertical'] {
+      --leverui-private-field-direction: column;
+      --leverui-private-field-align: flex-start;
+      --leverui-private-field-justify: normal;
+      --leverui-private-field-label-flex: 0 1 auto;
+    }
+    .leverui-field__root[data-orientation-2xl='horizontal'] {
+      --leverui-private-field-direction: row;
+      --leverui-private-field-align: center;
+      --leverui-private-field-justify: space-between;
+      --leverui-private-field-label-flex: 0 0 var(--leverui-field-label-width, 80px);
+    }
+  }
+}

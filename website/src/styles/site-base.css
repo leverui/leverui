@@ -1,0 +1,110 @@
+/* Self-hosted Inter, the library's default font, so every visitor sees the same text. */
+@import '@fontsource-variable/inter/wght.css';
+@import '@fontsource-variable/inter/wght-italic.css';
+
+:root {
+  /* How much of the viewport the sticky header covers. */
+  --site-header-height: 53px;
+  scroll-padding-top: var(--site-header-height);
+  --leverui-fonts-body: 'Inter Variable', var(--site-font-fallback);
+  --leverui-fonts-heading: 'Inter Variable', var(--site-font-fallback);
+  --site-font-fallback:
+    ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: var(--leverui-fonts-body);
+  color: var(--leverui-colors-fg);
+  background: var(--leverui-colors-bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  /* Room for the fixed header. */
+  padding-top: var(--site-header-height);
+  min-width: 320px;
+}
+button:not([class*='leverui-']),
+input:not([class*='leverui-']) {
+  font: inherit;
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--site-muted);
+  opacity: 1;
+}
+:where(a:not([class*='leverui-'])) {
+  color: inherit;
+}
+a {
+  text-decoration: none;
+}
+.site-icon {
+  display: inline-block;
+  line-height: 1;
+  vertical-align: -0.08em;
+}
+button:not([class*='leverui-']) {
+  cursor: pointer;
+}
+:where(a:not([class*='leverui-']), button:not([class*='leverui-']), summary):focus-visible {
+  outline: 2px solid var(--site-accent-bright);
+  outline-offset: 3px;
+}
+::selection {
+  background: var(--leverui-colors-cyan-solid);
+  color: var(--leverui-colors-cyan-contrast);
+}
+.page-container {
+  width: min(100% - 48px, 1220px);
+  margin-inline: auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+.skip-link {
+  position: absolute;
+  z-index: 100;
+  top: -100px;
+  left: 16px;
+  padding: 12px 18px;
+  background: var(--leverui-colors-cyan-solid);
+  color: var(--leverui-colors-cyan-contrast);
+  border-radius: 8px;
+}
+.skip-link:focus {
+  top: 16px;
+}
+/* A text link that stands on its own: underlined, like the links inside the docs. */
+.text-link {
+  color: var(--site-fg);
+  font-size: 14px;
+  font-weight: var(--leverui-font-weights-medium);
+  text-decoration: underline;
+  text-decoration-color: var(--leverui-colors-border-emphasized);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+.text-link:hover {
+  text-decoration-color: currentColor;
+}
+/* Unlayered site rules would override Prose's layered typography, so leave its content alone. */
+:is(h1, h2, h3, p):not(:where(.leverui-prose *)) {
+  margin-top: 0;
+}
+:is(h1, h2, h3):not(:where(.leverui-prose *)) {
+  letter-spacing: -0.045em;
+}
+em:not(.leverui-em, .leverui-prose *) {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  color: var(--site-fg);
+}

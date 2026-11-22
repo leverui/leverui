@@ -1,0 +1,9 @@
+.image-story-responsive {
+  width: 100px;
+}
+
+@media (min-width: 48rem) {
+  .image-story-responsive {
+    width: 180px;
+  }
+}

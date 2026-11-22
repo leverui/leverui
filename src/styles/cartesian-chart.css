@@ -1,0 +1,150 @@
+@layer leverui.recipes {
+  .leverui-cartesian-chart__root {
+    position: relative;
+    width: 100%;
+    min-width: var(--leverui-cartesian-chart-min-width, 280px);
+  }
+
+  .leverui-cartesian-chart__svg {
+    display: block;
+    width: 100%;
+    overflow: visible;
+  }
+
+  .leverui-cartesian-chart__axes,
+  .leverui-cartesian-chart__rightAxis {
+    font-family: inherit;
+    font-size: 12px;
+    fill: var(--leverui-colors-fg-muted);
+  }
+
+  .leverui-cartesian-chart__gridLine {
+    stroke: var(--leverui-chart-grid-color, var(--leverui-colors-border-muted));
+    stroke-opacity: var(--leverui-chart-grid-opacity, 1);
+    stroke-dasharray: var(--leverui-chart-grid-dasharray, none);
+  }
+
+  .leverui-cartesian-chart__axisLine {
+    fill: none;
+    stroke: var(--leverui-chart-axis-line-color, var(--leverui-colors-border));
+  }
+
+  .leverui-cartesian-chart__cursor {
+    stroke: var(--leverui-colors-border-emphasized);
+    stroke-dasharray: 3 3;
+  }
+
+  .leverui-cartesian-chart__interaction {
+    fill: transparent;
+  }
+
+  .leverui-cartesian-chart__gradientStart {
+    stop-opacity: 0.3;
+  }
+
+  .leverui-cartesian-chart__gradientEnd {
+    stop-opacity: 0.05;
+  }
+
+  .leverui-cartesian-chart__axes[data-grid-dashed] .leverui-cartesian-chart__gridLine {
+    stroke-dasharray: var(--leverui-chart-grid-dasharray, 3 3);
+  }
+
+  .leverui-cartesian-chart__axisTitle {
+    fill: var(--leverui-colors-fg);
+  }
+
+  .leverui-cartesian-chart__series[data-muted] {
+    opacity: 0.2;
+  }
+
+  .leverui-cartesian-chart__pointLabel {
+    font-size: 12px;
+    font-weight: 600;
+    fill: var(--leverui-colors-fg);
+  }
+
+  .leverui-cartesian-chart__pointLabel[data-position='right'] {
+    text-anchor: start;
+    dominant-baseline: middle;
+  }
+
+  .leverui-cartesian-chart__pointLabel[data-position='top'] {
+    text-anchor: middle;
+  }
+
+  .leverui-cartesian-chart__referenceArea {
+    fill-opacity: 0.2;
+  }
+
+  .leverui-cartesian-chart__referenceLabel {
+    font-size: 12px;
+    fill: var(--leverui-colors-red-fg);
+  }
+
+  .leverui-cartesian-chart__referenceValueLabel {
+    font-size: 12px;
+  }
+
+  .leverui-cartesian-chart__referencePoint {
+    stroke: var(--leverui-colors-bg);
+    stroke-width: 2;
+  }
+
+  .leverui-cartesian-chart__legend {
+    display: flex;
+    justify-content: center;
+    gap: var(--leverui-cartesian-chart-legend-gap, 12px);
+    margin-top: 10px;
+    font-size: 12px;
+    color: var(--leverui-colors-fg-muted);
+  }
+
+  .leverui-cartesian-chart__legend[data-placement='top-right'] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+
+  .leverui-cartesian-chart__legendItem {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+
+  .leverui-cartesian-chart__legendSwatch {
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    background: var(--leverui-private-cartesian-color);
+  }
+
+  .leverui-cartesian-chart__tooltip {
+    position: absolute;
+    top: 8px;
+    padding: 8px 10px;
+    border: 1px solid var(--leverui-colors-border);
+    border-radius: 6px;
+    background: var(--leverui-cartesian-chart-tooltip-bg, var(--leverui-colors-bg-panel));
+    box-shadow: var(--leverui-shadows-sm);
+    font-size: 12px;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .leverui-cartesian-chart__tooltipItem {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .leverui-cartesian-chart__tooltipSwatch {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--leverui-private-cartesian-color);
+  }
+}

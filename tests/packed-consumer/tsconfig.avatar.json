@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/avatar-types.tsx", "src/avatar-example.tsx", "src/avatar-main.tsx"],
+  "exclude": []
+}

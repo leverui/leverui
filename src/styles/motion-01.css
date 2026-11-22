@@ -1,0 +1,174 @@
+@layer leverui.base {
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes pulse {
+    50% {
+      opacity: 0.5;
+    }
+  }
+  @keyframes pulse {
+    50% {
+      opacity: 0.5;
+    }
+  }
+  @-webkit-keyframes ping {
+    75%,
+    100% {
+      -webkit-transform: scale(2);
+      -moz-transform: scale(2);
+      -ms-transform: scale(2);
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  @keyframes ping {
+    75%,
+    100% {
+      -webkit-transform: scale(2);
+      -moz-transform: scale(2);
+      -ms-transform: scale(2);
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes bounce {
+    0%,
+    100% {
+      -webkit-transform: translateY(-25%);
+      -moz-transform: translateY(-25%);
+      -ms-transform: translateY(-25%);
+      transform: translateY(-25%);
+      -webkit-animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+      transform: none;
+      -webkit-animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+  @keyframes bounce {
+    0%,
+    100% {
+      -webkit-transform: translateY(-25%);
+      -moz-transform: translateY(-25%);
+      -ms-transform: translateY(-25%);
+      transform: translateY(-25%);
+      -webkit-animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+      transform: none;
+      -webkit-animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+  @-webkit-keyframes bg-position {
+    from {
+      -webkit-background-position: var(--leverui-private-animate-from, 1rem) 0;
+      background-position: var(--leverui-private-animate-from, 1rem) 0;
+    }
+    to {
+      -webkit-background-position: var(--leverui-private-animate-to, 0) 0;
+      background-position: var(--leverui-private-animate-to, 0) 0;
+    }
+  }
+  @keyframes bg-position {
+    from {
+      -webkit-background-position: var(--leverui-private-animate-from, 1rem) 0;
+      background-position: var(--leverui-private-animate-from, 1rem) 0;
+    }
+    to {
+      -webkit-background-position: var(--leverui-private-animate-to, 0) 0;
+      background-position: var(--leverui-private-animate-to, 0) 0;
+    }
+  }
+  @-webkit-keyframes position {
+    from {
+      inset-inline-start: var(--leverui-private-animate-from-x);
+      inset-block-start: var(--leverui-private-animate-from-y);
+    }
+    to {
+      inset-inline-start: var(--leverui-private-animate-to-x);
+      inset-block-start: var(--leverui-private-animate-to-y);
+    }
+  }
+  @keyframes position {
+    from {
+      inset-inline-start: var(--leverui-private-animate-from-x);
+      inset-block-start: var(--leverui-private-animate-from-y);
+    }
+    to {
+      inset-inline-start: var(--leverui-private-animate-to-x);
+      inset-block-start: var(--leverui-private-animate-to-y);
+    }
+  }
+  @-webkit-keyframes circular-progress {
+    0% {
+      stroke-dasharray: 1, 400;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 400, 400;
+      stroke-dashoffset: -100%;
+    }
+    100% {
+      stroke-dasharray: 400, 400;
+      stroke-dashoffset: -260%;
+    }
+  }
+  @keyframes circular-progress {
+    0% {
+      stroke-dasharray: 1, 400;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 400, 400;
+      stroke-dashoffset: -100%;
+    }
+    100% {
+      stroke-dasharray: 400, 400;
+      stroke-dashoffset: -260%;
+    }
+  }
+  @-webkit-keyframes expand-height {
+    from {
+      height: var(--collapsed-height, 0);
+    }
+    to {
+      height: var(--height);
+    }
+  }
+}

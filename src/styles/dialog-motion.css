@@ -1,0 +1,55 @@
+@layer leverui.recipes {
+  .leverui-dialog__content[data-leverui-dialog-css]:not(
+      [data-leverui-private-skip-initial-animation]
+    ) {
+    &[data-motion-preset='scale'] {
+      &[data-state='open'] {
+        animation-name: scale-in, fade-in;
+      }
+
+      &[data-state='closed'] {
+        animation-name: scale-out, fade-out;
+      }
+    }
+
+    &[data-motion-preset='slide-in-bottom'] {
+      &[data-state='open'] {
+        animation-name: slide-from-bottom, fade-in;
+      }
+
+      &[data-state='closed'] {
+        animation-name: slide-to-bottom, fade-out;
+      }
+    }
+
+    &[data-motion-preset='slide-in-top'] {
+      &[data-state='open'] {
+        animation-name: slide-from-top, fade-in;
+      }
+
+      &[data-state='closed'] {
+        animation-name: slide-to-top, fade-out;
+      }
+    }
+
+    &[data-motion-preset='slide-in-left'] {
+      &[data-state='open'] {
+        animation-name: slide-from-left, fade-in;
+      }
+
+      &[data-state='closed'] {
+        animation-name: slide-to-left, fade-out;
+      }
+    }
+
+    &[data-motion-preset='slide-in-right'] {
+      &[data-state='open'] {
+        animation-name: slide-from-right, fade-in;
+      }
+
+      &[data-state='closed'] {
+        animation-name: slide-to-right, fade-out;
+      }
+    }
+  }
+}

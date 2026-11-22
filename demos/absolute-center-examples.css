@@ -1,0 +1,102 @@
+.absolute-center-gallery-frame {
+  padding: var(--leverui-spacing-10);
+}
+
+.absolute-center-gallery-panel {
+  position: relative;
+  background: var(--leverui-colors-bg-muted);
+  border-radius: var(--leverui-radii-md);
+}
+
+.absolute-center-gallery-panel--basic,
+.absolute-center-gallery-panel--heart,
+.absolute-center-gallery-panel--rtl {
+  height: 100px;
+}
+
+.absolute-center-gallery-panel--heart {
+  width: 100px;
+}
+
+.absolute-center-gallery-panel--axis {
+  height: 80px;
+  outline: 1px solid red;
+}
+
+.absolute-center-gallery-panel--overlay {
+  height: 120px;
+  padding: var(--leverui-spacing-10);
+}
+
+.absolute-center-gallery-panel--rtl {
+  outline: 1px solid red;
+}
+
+.absolute-center-gallery-content {
+  padding-inline: var(--leverui-spacing-4);
+  padding-block: var(--leverui-spacing-2);
+  border-radius: var(--leverui-radii-md);
+  background: var(--leverui-colors-bg-emphasized);
+  color: var(--leverui-colors-fg);
+}
+
+.absolute-center-gallery-axis-content {
+  padding-inline: var(--leverui-spacing-3);
+  padding-block: var(--leverui-spacing-1);
+  border-radius: var(--leverui-radii-sm);
+  background: var(--leverui-colors-blue-solid);
+  color: var(--leverui-colors-blue-contrast);
+}
+
+.absolute-center-gallery-heart {
+  display: grid;
+  place-items: center;
+  inline-size: 44px;
+  block-size: 44px;
+  border-radius: var(--leverui-radii-full);
+  background: var(--leverui-colors-red-solid);
+  color: var(--leverui-colors-red-contrast);
+  font-size: 20px;
+  line-height: 1;
+}
+
+.absolute-center-gallery-heart .bi {
+  display: grid;
+  place-items: center;
+  inline-size: 20px;
+  block-size: 20px;
+}
+
+.absolute-center-gallery-label {
+  font-weight: var(--leverui-font-weights-medium);
+}
+
+.absolute-center-gallery-dimmed {
+  opacity: 0.75;
+}
+
+.absolute-center-gallery-loading {
+  color: var(--leverui-colors-fg-muted);
+  font-size: var(--leverui-font-sizes-sm);
+}
+
+.absolute-center-gallery-rtl-content {
+  padding-inline: var(--leverui-spacing-4);
+  padding-block: var(--leverui-spacing-2);
+  border-radius: var(--leverui-radii-md);
+  background: var(--leverui-colors-green-solid);
+  color: var(--leverui-colors-green-contrast);
+}
+
+.absolute-center-gallery-overlay {
+  padding: var(--leverui-spacing-4);
+  border-radius: var(--leverui-radii-md);
+  background: color-mix(in srgb, var(--leverui-colors-bg) 80%, transparent);
+  backdrop-filter: blur(2px);
+}
+
+@media (max-width: 700px) {
+  .absolute-center-gallery-frame {
+    padding: var(--leverui-spacing-6);
+  }
+}

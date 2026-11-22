@@ -1,0 +1,147 @@
+@layer leverui.recipes {
+  @media (min-width: 480px) {
+    .leverui-color-swatch:not([data-unstyled])[data-size-sm='2xs'] {
+      --leverui-swatch-size: var(--leverui-sizes-3\.5);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-sm='xs'] {
+      --leverui-swatch-size: var(--leverui-sizes-4);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-sm='sm'] {
+      --leverui-swatch-size: var(--leverui-sizes-4\.5);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-sm='md'] {
+      --leverui-swatch-size: var(--leverui-sizes-5);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-sm='lg'] {
+      --leverui-swatch-size: var(--leverui-sizes-6);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-sm='xl'] {
+      --leverui-swatch-size: var(--leverui-sizes-7);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-sm='2xl'] {
+      --leverui-swatch-size: var(--leverui-sizes-8);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-sm='inherit'] {
+      --leverui-swatch-size: inherit;
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-sm='full'] {
+      --leverui-swatch-size: 100%;
+    }
+  }
+  @media (min-width: 768px) {
+    .leverui-color-swatch:not([data-unstyled])[data-size-md='2xs'] {
+      --leverui-swatch-size: var(--leverui-sizes-3\.5);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-md='xs'] {
+      --leverui-swatch-size: var(--leverui-sizes-4);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-md='sm'] {
+      --leverui-swatch-size: var(--leverui-sizes-4\.5);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-md='md'] {
+      --leverui-swatch-size: var(--leverui-sizes-5);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-md='lg'] {
+      --leverui-swatch-size: var(--leverui-sizes-6);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-md='xl'] {
+      --leverui-swatch-size: var(--leverui-sizes-7);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-md='2xl'] {
+      --leverui-swatch-size: var(--leverui-sizes-8);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-md='inherit'] {
+      --leverui-swatch-size: inherit;
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-md='full'] {
+      --leverui-swatch-size: 100%;
+    }
+  }
+  @media (min-width: 1024px) {
+    .leverui-color-swatch:not([data-unstyled])[data-size-lg='2xs'] {
+      --leverui-swatch-size: var(--leverui-sizes-3\.5);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-lg='xs'] {
+      --leverui-swatch-size: var(--leverui-sizes-4);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-lg='sm'] {
+      --leverui-swatch-size: var(--leverui-sizes-4\.5);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-lg='md'] {
+      --leverui-swatch-size: var(--leverui-sizes-5);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-lg='lg'] {
+      --leverui-swatch-size: var(--leverui-sizes-6);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-lg='xl'] {
+      --leverui-swatch-size: var(--leverui-sizes-7);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-lg='2xl'] {
+      --leverui-swatch-size: var(--leverui-sizes-8);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-lg='inherit'] {
+      --leverui-swatch-size: inherit;
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-lg='full'] {
+      --leverui-swatch-size: 100%;
+    }
+  }
+  @media (min-width: 1280px) {
+    .leverui-color-swatch:not([data-unstyled])[data-size-xl='2xs'] {
+      --leverui-swatch-size: var(--leverui-sizes-3\.5);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-xl='xs'] {
+      --leverui-swatch-size: var(--leverui-sizes-4);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-xl='sm'] {
+      --leverui-swatch-size: var(--leverui-sizes-4\.5);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-xl='md'] {
+      --leverui-swatch-size: var(--leverui-sizes-5);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-xl='lg'] {
+      --leverui-swatch-size: var(--leverui-sizes-6);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-xl='xl'] {
+      --leverui-swatch-size: var(--leverui-sizes-7);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-xl='2xl'] {
+      --leverui-swatch-size: var(--leverui-sizes-8);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-xl='inherit'] {
+      --leverui-swatch-size: inherit;
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-xl='full'] {
+      --leverui-swatch-size: 100%;
+    }
+  }
+  @media (min-width: 1536px) {
+    .leverui-color-swatch:not([data-unstyled])[data-size-2xl='2xs'] {
+      --leverui-swatch-size: var(--leverui-sizes-3\.5);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-2xl='xs'] {
+      --leverui-swatch-size: var(--leverui-sizes-4);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-2xl='sm'] {
+      --leverui-swatch-size: var(--leverui-sizes-4\.5);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-2xl='md'] {
+      --leverui-swatch-size: var(--leverui-sizes-5);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-2xl='lg'] {
+      --leverui-swatch-size: var(--leverui-sizes-6);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-2xl='xl'] {
+      --leverui-swatch-size: var(--leverui-sizes-7);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-2xl='2xl'] {
+      --leverui-swatch-size: var(--leverui-sizes-8);
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-2xl='inherit'] {
+      --leverui-swatch-size: inherit;
+    }
+    .leverui-color-swatch:not([data-unstyled])[data-size-2xl='full'] {
+      --leverui-swatch-size: 100%;
+    }
+  }
+}

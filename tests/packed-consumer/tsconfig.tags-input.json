@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/tags-input-types.tsx", "src/tags-input-example.tsx", "src/tags-input-main.tsx"],
+  "exclude": []
+}

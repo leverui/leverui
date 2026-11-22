@@ -1,0 +1,19 @@
+.pin-input-css-root {
+  --leverui-colors-border: rgb(21, 87, 156);
+}
+
+.pin-input-css-custom {
+  background: rgb(244, 235, 250);
+}
+
+.pin-input-css-label {
+  color: rgb(73, 41, 133);
+}
+
+.pin-input-css-control {
+  padding: 3px;
+}
+
+.pin-input-css-unstyled {
+  background: rgb(112, 37, 97);
+}

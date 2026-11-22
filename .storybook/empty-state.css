@@ -1,0 +1,8 @@
+.empty-state-contract-override {
+  padding-top: 20px;
+  --leverui-empty-state-gap: 2px;
+}
+
+.empty-state-contract-override .leverui-empty-state__title {
+  color: rgb(11 99 176);
+}

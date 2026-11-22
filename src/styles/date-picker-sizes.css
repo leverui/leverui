@@ -1,0 +1,56 @@
+@layer leverui.recipes {
+  :is(.leverui-date-picker__root, .leverui-date-picker__content):not(
+      [data-unstyled]
+    )[data-size='xs'] {
+    --leverui-private-date-picker-input-height: var(--leverui-sizes-8);
+    --leverui-private-date-picker-input-padding: var(--leverui-spacing-2);
+    --leverui-private-date-picker-indicators-offset: var(--leverui-spacing-2);
+    --leverui-private-date-picker-cell-size: var(--leverui-sizes-8);
+    --leverui-private-date-picker-nav-size: var(--leverui-sizes-7);
+    --leverui-private-date-picker-select-height: var(--leverui-sizes-8);
+  }
+
+  :is(.leverui-date-picker__root, .leverui-date-picker__content):not(
+      [data-unstyled]
+    )[data-size='sm'] {
+    --leverui-private-date-picker-input-height: var(--leverui-sizes-9);
+    --leverui-private-date-picker-input-padding: var(--leverui-spacing-2\.5);
+    --leverui-private-date-picker-indicators-offset: var(--leverui-spacing-2\.5);
+    --leverui-private-date-picker-cell-size: var(--leverui-sizes-9);
+    --leverui-private-date-picker-nav-size: var(--leverui-sizes-8);
+    --leverui-private-date-picker-select-height: var(--leverui-sizes-9);
+  }
+
+  :is(.leverui-date-picker__root, .leverui-date-picker__content):not(
+      [data-unstyled]
+    )[data-size='md'] {
+    --leverui-private-date-picker-input-height: var(--leverui-sizes-10);
+    --leverui-private-date-picker-input-padding: var(--leverui-spacing-3);
+    --leverui-private-date-picker-indicators-offset: var(--leverui-spacing-3);
+    --leverui-private-date-picker-cell-size: var(--leverui-sizes-10);
+    --leverui-private-date-picker-nav-size: var(--leverui-sizes-8);
+    --leverui-private-date-picker-select-height: var(--leverui-sizes-10);
+  }
+
+  :is(.leverui-date-picker__root, .leverui-date-picker__content):not(
+      [data-unstyled]
+    )[data-size='lg'] {
+    --leverui-private-date-picker-input-height: var(--leverui-sizes-11);
+    --leverui-private-date-picker-input-padding: var(--leverui-spacing-4);
+    --leverui-private-date-picker-indicators-offset: var(--leverui-spacing-3);
+    --leverui-private-date-picker-cell-size: var(--leverui-sizes-10);
+    --leverui-private-date-picker-nav-size: var(--leverui-sizes-9);
+    --leverui-private-date-picker-select-height: var(--leverui-sizes-10);
+  }
+
+  :is(.leverui-date-picker__root, .leverui-date-picker__content):not(
+      [data-unstyled]
+    )[data-size='xl'] {
+    --leverui-private-date-picker-input-height: var(--leverui-sizes-12);
+    --leverui-private-date-picker-input-padding: var(--leverui-spacing-4\.5);
+    --leverui-private-date-picker-indicators-offset: var(--leverui-spacing-3);
+    --leverui-private-date-picker-cell-size: var(--leverui-sizes-10);
+    --leverui-private-date-picker-nav-size: var(--leverui-sizes-9);
+    --leverui-private-date-picker-select-height: var(--leverui-sizes-10);
+  }
+}

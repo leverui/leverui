@@ -1,0 +1,12 @@
+.disposal-scope-alpha {
+  --leverui-colors-blue-600: #123456;
+}
+
+.disposal-scope-beta {
+  --leverui-colors-blue-600: #a95500;
+}
+
+.disposal-scope-sample {
+  background: var(--leverui-colors-blue-600);
+  padding: var(--leverui-spacing-4);
+}

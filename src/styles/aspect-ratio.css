@@ -1,0 +1,58 @@
+@layer leverui.recipes {
+  .leverui-aspect-ratio:not([data-unstyled]) {
+    position: relative;
+    display: block;
+
+    &::before {
+      height: 0;
+      content: '';
+      display: block;
+      padding-bottom: var(--leverui-private-aspect-ratio-padding-base, 75%);
+    }
+
+    & > *:not(style) {
+      overflow: hidden;
+      position: absolute;
+      inset: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    & > :is(img, video) {
+      object-fit: cover;
+    }
+
+    @media (min-width: 30rem) {
+      &::before {
+        padding-bottom: var(--leverui-private-aspect-ratio-padding-sm, 75%);
+      }
+    }
+
+    @media (min-width: 48rem) {
+      &::before {
+        padding-bottom: var(--leverui-private-aspect-ratio-padding-md, 75%);
+      }
+    }
+
+    @media (min-width: 64rem) {
+      &::before {
+        padding-bottom: var(--leverui-private-aspect-ratio-padding-lg, 75%);
+      }
+    }
+
+    @media (min-width: 80rem) {
+      &::before {
+        padding-bottom: var(--leverui-private-aspect-ratio-padding-xl, 75%);
+      }
+    }
+
+    @media (min-width: 96rem) {
+      &::before {
+        padding-bottom: var(--leverui-private-aspect-ratio-padding-2xl, 75%);
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.container-contract-centered {
+  height: 100px;
+}
+
+.container-contract-sized {
+  --leverui-container-max-width: var(--leverui-sizes-sm);
+  padding-inline: var(--leverui-spacing-2);
+}
+
+.container-contract-custom {
+  --leverui-container-max-width: 500px;
+}
+
+@media (min-width: 48rem) {
+  .container-contract-sized {
+    --leverui-container-max-width: var(--leverui-sizes-lg);
+  }
+}

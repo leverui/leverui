@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/alert-types.tsx", "src/alert-main.tsx"],
+  "exclude": []
+}

@@ -1,0 +1,32 @@
+.packed-em-override {
+  font-style: oblique;
+}
+
+.packed-em-plain {
+  font-style: normal;
+}
+
+.packed-strong-override {
+  font-weight: 300;
+}
+
+.packed-strong-plain {
+  font-weight: 400;
+}
+
+.packed-quote-plain {
+  font-weight: 400;
+}
+
+.packed-quote-override {
+  font-weight: 300;
+  line-height: 2;
+}
+
+.packed-span {
+  font-size: 19px;
+}
+
+.packed-span-plain {
+  font-size: 16px;
+}

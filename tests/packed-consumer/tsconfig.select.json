@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/select-types.tsx", "src/select-example.tsx", "src/select-main.tsx"],
+  "exclude": []
+}

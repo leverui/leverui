@@ -1,0 +1,16 @@
+.theme-example-panel {
+  padding: var(--leverui-spacing-4);
+}
+
+.theme-example-nested-box {
+  padding: var(--leverui-spacing-8);
+  border-width: 1px;
+}
+
+.theme-example-popover-body > * + * {
+  margin-block-start: var(--leverui-spacing-4);
+}
+
+.theme-example-popover-title {
+  font-weight: var(--leverui-font-weights-medium);
+}

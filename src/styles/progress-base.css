@@ -1,0 +1,84 @@
+@layer leverui.recipes {
+  .leverui-progress__root:not([data-unstyled]) {
+    position: relative;
+    font-size: var(--leverui-font-sizes-sm);
+    line-height: 1.25rem;
+  }
+
+  .leverui-progress__track:not([data-unstyled]) {
+    position: relative;
+    overflow: hidden;
+    height: var(
+      --leverui-progress-track-height,
+      var(--leverui-private-progress-track-height, var(--leverui-sizes-2\.5))
+    );
+    border-radius: var(
+      --leverui-progress-track-radius,
+      var(--leverui-private-progress-track-radius, var(--leverui-radii-l1))
+    );
+    background-color: var(
+      --leverui-progress-track-color,
+      var(--leverui-private-progress-track-color, var(--leverui-colors-bg-muted))
+    );
+    box-shadow: var(--leverui-private-progress-track-shadow, var(--leverui-shadows-inset));
+  }
+
+  .leverui-progress__range:not([data-unstyled]) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: var(
+      --leverui-progress-range-color,
+      var(--leverui-private-progress-range-color, var(--leverui-colors-color-palette-solid))
+    );
+    background-image: var(--leverui-private-progress-stripes, none);
+    background-size: var(--leverui-progress-stripe-size, 1rem)
+      var(--leverui-progress-stripe-size, 1rem);
+    transition-property: width, height;
+    transition-duration: var(--leverui-durations-slow);
+    animation: var(--leverui-private-progress-animation, none);
+  }
+
+  .leverui-progress__range:not([data-unstyled])[data-state='indeterminate'] {
+    --leverui-private-animate-from-x: -40%;
+    --leverui-private-animate-to-x: 100%;
+    position: absolute;
+    min-width: 50%;
+    will-change: left;
+    background-image: linear-gradient(
+      to right,
+      transparent 0%,
+      var(
+          --leverui-progress-range-color,
+          var(--leverui-private-progress-range-color, var(--leverui-colors-color-palette-solid))
+        )
+        50%,
+      transparent 100%
+    );
+    animation: position 1s ease infinite;
+  }
+
+  .leverui-progress__label:not([data-unstyled]) {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--leverui-spacing-1);
+    font-weight: var(--leverui-font-weights-medium);
+  }
+
+  .leverui-progress__valueText:not([data-unstyled]) {
+    font-size: var(--leverui-font-sizes-xs);
+    line-height: 1;
+    font-weight: var(--leverui-font-weights-medium);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @layer leverui.recipes {
+    .leverui-progress__range:not([data-unstyled]),
+    .leverui-progress__range:not([data-unstyled])[data-state='indeterminate'] {
+      transition-duration: 0s;
+      animation: none;
+    }
+  }
+}

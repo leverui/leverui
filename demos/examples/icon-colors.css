@@ -1,0 +1,15 @@
+.example-icon-pink {
+  color: var(--leverui-colors-pink-700);
+}
+
+.example-icon-tomato {
+  color: tomato;
+}
+
+.example-icon-red {
+  color: var(--leverui-colors-red-500);
+}
+
+.example-icon-blue {
+  color: var(--leverui-colors-blue-400);
+}

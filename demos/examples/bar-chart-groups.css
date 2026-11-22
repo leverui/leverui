@@ -1,0 +1,9 @@
+.bar-chart-legend-position {
+  container-type: inline-size;
+}
+
+@container (max-width: 400px) {
+  .bar-chart-legend-position [data-mobile-hidden] {
+    display: none;
+  }
+}

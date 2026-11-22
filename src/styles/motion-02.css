@@ -1,0 +1,174 @@
+@layer leverui.base {
+  @keyframes expand-height {
+    from {
+      height: var(--collapsed-height, 0);
+    }
+    to {
+      height: var(--height);
+    }
+  }
+  @-webkit-keyframes collapse-height {
+    from {
+      height: var(--height);
+    }
+    to {
+      height: var(--collapsed-height, 0);
+    }
+  }
+  @keyframes collapse-height {
+    from {
+      height: var(--height);
+    }
+    to {
+      height: var(--collapsed-height, 0);
+    }
+  }
+  @-webkit-keyframes expand-width {
+    from {
+      width: var(--collapsed-width, 0);
+    }
+    to {
+      width: var(--width);
+    }
+  }
+  @keyframes expand-width {
+    from {
+      width: var(--collapsed-width, 0);
+    }
+    to {
+      width: var(--width);
+    }
+  }
+  @-webkit-keyframes collapse-width {
+    from {
+      width: var(--width);
+    }
+    to {
+      width: var(--collapsed-width, 0);
+    }
+  }
+  @keyframes collapse-width {
+    from {
+      width: var(--width);
+    }
+    to {
+      width: var(--collapsed-width, 0);
+    }
+  }
+  @-webkit-keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes slide-from-left-full {
+    from {
+      -webkit-translate: -100% 0;
+      -moz-translate: -100% 0;
+      -ms-translate: -100% 0;
+      translate: -100% 0;
+    }
+    to {
+      -webkit-translate: 0 0;
+      -moz-translate: 0 0;
+      -ms-translate: 0 0;
+      translate: 0 0;
+    }
+  }
+  @keyframes slide-from-left-full {
+    from {
+      -webkit-translate: -100% 0;
+      -moz-translate: -100% 0;
+      -ms-translate: -100% 0;
+      translate: -100% 0;
+    }
+    to {
+      -webkit-translate: 0 0;
+      -moz-translate: 0 0;
+      -ms-translate: 0 0;
+      translate: 0 0;
+    }
+  }
+  @-webkit-keyframes slide-from-right-full {
+    from {
+      -webkit-translate: 100% 0;
+      -moz-translate: 100% 0;
+      -ms-translate: 100% 0;
+      translate: 100% 0;
+    }
+    to {
+      -webkit-translate: 0 0;
+      -moz-translate: 0 0;
+      -ms-translate: 0 0;
+      translate: 0 0;
+    }
+  }
+  @keyframes slide-from-right-full {
+    from {
+      -webkit-translate: 100% 0;
+      -moz-translate: 100% 0;
+      -ms-translate: 100% 0;
+      translate: 100% 0;
+    }
+    to {
+      -webkit-translate: 0 0;
+      -moz-translate: 0 0;
+      -ms-translate: 0 0;
+      translate: 0 0;
+    }
+  }
+  @-webkit-keyframes slide-from-top-full {
+    from {
+      -webkit-translate: 0 -100%;
+      -moz-translate: 0 -100%;
+      -ms-translate: 0 -100%;
+      translate: 0 -100%;
+    }
+    to {
+      -webkit-translate: 0 0;
+      -moz-translate: 0 0;
+      -ms-translate: 0 0;
+      translate: 0 0;
+    }
+  }
+  @keyframes slide-from-top-full {
+    from {
+      -webkit-translate: 0 -100%;
+      -moz-translate: 0 -100%;
+      -ms-translate: 0 -100%;
+      translate: 0 -100%;
+    }
+    to {
+      -webkit-translate: 0 0;
+      -moz-translate: 0 0;
+      -ms-translate: 0 0;
+      translate: 0 0;
+    }
+  }
+}

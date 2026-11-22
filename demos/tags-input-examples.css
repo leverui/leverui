@@ -1,0 +1,15 @@
+.tags-input-long-tags {
+  max-width: var(--leverui-sizes-md);
+}
+
+.tags-input-start-control {
+  padding-inline-start: var(--leverui-spacing-8);
+}
+
+.tags-input-padded-control {
+  padding-inline-end: var(--leverui-spacing-8);
+}
+
+.tags-input-colored-preview[data-highlighted] {
+  filter: brightness(0.9);
+}

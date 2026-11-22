@@ -1,0 +1,7 @@
+.input-placeholder-example {
+  color: teal;
+}
+
+.input-placeholder-example::placeholder {
+  color: inherit;
+}

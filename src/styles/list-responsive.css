@@ -1,0 +1,127 @@
+@layer leverui.recipes {
+  @media (min-width: 480px) {
+    .leverui-list__root:not([data-unstyled]) {
+      &[data-variant-sm='marker'] {
+        --leverui-private-list-item-display: list-item;
+        --leverui-private-list-variant-align: normal;
+        --leverui-private-list-marker-color: var(--leverui-colors-fg-subtle);
+        list-style: revert;
+      }
+      &[data-variant-sm='plain'] {
+        --leverui-private-list-item-display: inline-flex;
+        --leverui-private-list-variant-align: flex-start;
+        --leverui-private-list-marker-color: currentColor;
+        list-style: none;
+      }
+      &[data-align-sm='start'] {
+        --leverui-private-list-align: flex-start;
+      }
+      &[data-align-sm='center'] {
+        --leverui-private-list-align: center;
+      }
+      &[data-align-sm='end'] {
+        --leverui-private-list-align: flex-end;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .leverui-list__root:not([data-unstyled]) {
+      &[data-variant-md='marker'] {
+        --leverui-private-list-item-display: list-item;
+        --leverui-private-list-variant-align: normal;
+        --leverui-private-list-marker-color: var(--leverui-colors-fg-subtle);
+        list-style: revert;
+      }
+      &[data-variant-md='plain'] {
+        --leverui-private-list-item-display: inline-flex;
+        --leverui-private-list-variant-align: flex-start;
+        --leverui-private-list-marker-color: currentColor;
+        list-style: none;
+      }
+      &[data-align-md='start'] {
+        --leverui-private-list-align: flex-start;
+      }
+      &[data-align-md='center'] {
+        --leverui-private-list-align: center;
+      }
+      &[data-align-md='end'] {
+        --leverui-private-list-align: flex-end;
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    .leverui-list__root:not([data-unstyled]) {
+      &[data-variant-lg='marker'] {
+        --leverui-private-list-item-display: list-item;
+        --leverui-private-list-variant-align: normal;
+        --leverui-private-list-marker-color: var(--leverui-colors-fg-subtle);
+        list-style: revert;
+      }
+      &[data-variant-lg='plain'] {
+        --leverui-private-list-item-display: inline-flex;
+        --leverui-private-list-variant-align: flex-start;
+        --leverui-private-list-marker-color: currentColor;
+        list-style: none;
+      }
+      &[data-align-lg='start'] {
+        --leverui-private-list-align: flex-start;
+      }
+      &[data-align-lg='center'] {
+        --leverui-private-list-align: center;
+      }
+      &[data-align-lg='end'] {
+        --leverui-private-list-align: flex-end;
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    .leverui-list__root:not([data-unstyled]) {
+      &[data-variant-xl='marker'] {
+        --leverui-private-list-item-display: list-item;
+        --leverui-private-list-variant-align: normal;
+        --leverui-private-list-marker-color: var(--leverui-colors-fg-subtle);
+        list-style: revert;
+      }
+      &[data-variant-xl='plain'] {
+        --leverui-private-list-item-display: inline-flex;
+        --leverui-private-list-variant-align: flex-start;
+        --leverui-private-list-marker-color: currentColor;
+        list-style: none;
+      }
+      &[data-align-xl='start'] {
+        --leverui-private-list-align: flex-start;
+      }
+      &[data-align-xl='center'] {
+        --leverui-private-list-align: center;
+      }
+      &[data-align-xl='end'] {
+        --leverui-private-list-align: flex-end;
+      }
+    }
+  }
+  @media (min-width: 1536px) {
+    .leverui-list__root:not([data-unstyled]) {
+      &[data-variant-2xl='marker'] {
+        --leverui-private-list-item-display: list-item;
+        --leverui-private-list-variant-align: normal;
+        --leverui-private-list-marker-color: var(--leverui-colors-fg-subtle);
+        list-style: revert;
+      }
+      &[data-variant-2xl='plain'] {
+        --leverui-private-list-item-display: inline-flex;
+        --leverui-private-list-variant-align: flex-start;
+        --leverui-private-list-marker-color: currentColor;
+        list-style: none;
+      }
+      &[data-align-2xl='start'] {
+        --leverui-private-list-align: flex-start;
+      }
+      &[data-align-2xl='center'] {
+        --leverui-private-list-align: center;
+      }
+      &[data-align-2xl='end'] {
+        --leverui-private-list-align: flex-end;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@layer leverui.recipes {
+  .leverui-textarea:not([data-unstyled]) {
+    --leverui-private-textarea-font-size: var(--leverui-font-sizes-sm);
+    --leverui-private-textarea-line-height: 1.25rem;
+    --leverui-private-textarea-size-padding-inline: var(--leverui-spacing-3);
+    --leverui-private-textarea-padding-block: var(--leverui-spacing-2);
+    --leverui-private-textarea-scroll-padding: var(--leverui-spacing-2);
+  }
+
+  .leverui-textarea:not([data-unstyled])[data-size='xs'] {
+    --leverui-private-textarea-font-size: var(--leverui-font-sizes-xs);
+    --leverui-private-textarea-line-height: 1rem;
+    --leverui-private-textarea-size-padding-inline: var(--leverui-spacing-2);
+    --leverui-private-textarea-padding-block: var(--leverui-spacing-1\.5);
+    --leverui-private-textarea-scroll-padding: var(--leverui-spacing-1\.5);
+  }
+
+  .leverui-textarea:not([data-unstyled])[data-size='sm'] {
+    --leverui-private-textarea-font-size: var(--leverui-font-sizes-sm);
+    --leverui-private-textarea-line-height: 1.25rem;
+    --leverui-private-textarea-size-padding-inline: var(--leverui-spacing-2\.5);
+    --leverui-private-textarea-padding-block: var(--leverui-spacing-2);
+    --leverui-private-textarea-scroll-padding: var(--leverui-spacing-2);
+  }
+
+  .leverui-textarea:not([data-unstyled])[data-size='lg'] {
+    --leverui-private-textarea-font-size: var(--leverui-font-sizes-md);
+    --leverui-private-textarea-line-height: 1.5rem;
+    --leverui-private-textarea-size-padding-inline: var(--leverui-spacing-4);
+    --leverui-private-textarea-padding-block: var(--leverui-spacing-3);
+    --leverui-private-textarea-scroll-padding: var(--leverui-spacing-3);
+  }
+
+  .leverui-textarea:not([data-unstyled])[data-size='xl'] {
+    --leverui-private-textarea-font-size: var(--leverui-font-sizes-md);
+    --leverui-private-textarea-line-height: 1.5rem;
+    --leverui-private-textarea-size-padding-inline: var(--leverui-spacing-4\.5);
+    --leverui-private-textarea-padding-block: var(--leverui-spacing-3\.5);
+    --leverui-private-textarea-scroll-padding: var(--leverui-spacing-3\.5);
+  }
+}

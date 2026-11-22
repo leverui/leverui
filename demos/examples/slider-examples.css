@@ -1,0 +1,7 @@
+.example-slider-sample {
+  width: 200px;
+}
+
+.example-slider-hint {
+  color: var(--leverui-colors-fg-muted);
+}

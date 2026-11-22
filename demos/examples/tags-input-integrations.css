@@ -1,0 +1,14 @@
+.example-tags-input-copy-label {
+  margin-bottom: var(--leverui-spacing-2);
+  font-weight: var(--leverui-font-weights-medium);
+}
+
+.example-tags-input-copy-value {
+  margin-inline-end: var(--leverui-spacing-3);
+  font-family: var(--leverui-fonts-mono);
+  font-size: var(--leverui-font-sizes-sm);
+}
+
+.example-tags-input-submit {
+  margin-top: var(--leverui-spacing-3);
+}

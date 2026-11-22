@@ -1,0 +1,109 @@
+.color-palettes {
+  margin-top: 32px;
+}
+/* Says what a click does, then confirms what was copied. It stays in view while scrolling. */
+.color-status {
+  position: sticky;
+  top: calc(var(--site-header-height) + 12px);
+  z-index: 1;
+  width: fit-content;
+  margin: 0 0 8px;
+  padding: 6px 12px;
+  border: 1px solid var(--site-border);
+  border-radius: var(--leverui-radii-full);
+  background: var(--leverui-colors-bg-panel);
+  color: var(--site-muted);
+  font-size: 13px;
+}
+.color-note {
+  margin: 0 0 16px;
+  color: var(--site-muted);
+  font-size: 14px;
+}
+/* A name, then one column for each color in the row. */
+.color-row {
+  display: grid;
+  grid-template-columns: 84px repeat(var(--color-columns), minmax(0, 1fr));
+  gap: 6px;
+  align-items: start;
+  margin-bottom: 10px;
+}
+.color-row-name {
+  padding-top: 10px;
+  font-size: 13px;
+  font-weight: var(--leverui-font-weights-medium);
+  text-transform: capitalize;
+}
+.color-swatch {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+.color-swatch span {
+  display: block;
+  height: 40px;
+  background: var(--swatch);
+  border: 1px solid color-mix(in srgb, currentColor 12%, transparent);
+  border-radius: 8px;
+}
+.color-swatch:hover span {
+  outline: 2px solid currentColor;
+  outline-offset: 1px;
+}
+.color-swatch:focus-visible {
+  outline: 2px solid var(--site-accent);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+.color-swatch small {
+  overflow: hidden;
+  color: var(--leverui-colors-fg-muted);
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* Each panel carries its own color mode, so it needs its own surface and text color. */
+.color-mode-panel {
+  margin-bottom: 16px;
+  padding: 20px 20px 10px;
+  border: 1px solid var(--leverui-colors-border);
+  border-radius: 14px;
+  background: var(--leverui-colors-bg);
+  color: var(--leverui-colors-fg);
+}
+.color-mode-panel h3 {
+  margin: 0 0 14px;
+  font-size: 14px;
+  font-weight: var(--leverui-font-weights-semibold);
+  letter-spacing: 0;
+}
+/* A checked surface shows how much of each see-through color lets the page through. */
+.color-row-alpha .color-swatch span {
+  background:
+    linear-gradient(var(--swatch), var(--swatch)),
+    repeating-conic-gradient(
+        var(--leverui-colors-gray-400) 0 25%,
+        var(--leverui-colors-gray-100) 0 50%
+      )
+      0 0 / 12px 12px;
+}
+@media (max-width: 700px) {
+  .color-row {
+    grid-template-columns: repeat(var(--color-columns), minmax(0, 1fr));
+  }
+  .color-row-name {
+    grid-column: 1 / -1;
+    padding-top: 6px;
+  }
+  .color-swatch span {
+    height: 30px;
+  }
+  .color-swatch small {
+    font-size: 9px;
+  }
+}

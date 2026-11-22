@@ -1,0 +1,12 @@
+.segment-group-card {
+  width: 320px;
+}
+
+.segment-group-card-body {
+  gap: var(--leverui-spacing-6);
+}
+
+.segment-group-card-footer {
+  justify-content: space-between;
+  margin-top: var(--leverui-spacing-3);
+}

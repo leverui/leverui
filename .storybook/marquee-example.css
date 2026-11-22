@@ -1,0 +1,40 @@
+.marquee-example-contract-item {
+  padding-inline: var(--leverui-spacing-4);
+}
+
+.marquee-example-css-width,
+.consumer-marquee {
+  width: 320px;
+}
+
+.marquee-example-fill-root {
+  width: 600px;
+}
+
+.marquee-css-custom-root {
+  width: 320px;
+}
+
+.marquee-css-custom-viewport {
+  height: 80px;
+}
+
+.marquee-css-custom-content {
+  animation-duration: 11s;
+}
+
+.marquee-css-custom-item {
+  padding-inline: 13px;
+}
+
+.marquee-css-custom-edge {
+  background: linear-gradient(to right, rgb(0, 0, 255), transparent);
+}
+
+.consumer-marquee {
+  --leverui-marquee-duration: 27s;
+  --leverui-marquee-delay: 3s;
+  --leverui-marquee-loop-count: 5;
+  --leverui-marquee-edge-color: rgb(0, 128, 0);
+  --leverui-marquee-edge-size: 25%;
+}

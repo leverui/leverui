@@ -1,0 +1,111 @@
+@layer leverui.recipes {
+  .leverui-breadcrumb__root:not([data-unstyled]) {
+    --leverui-private-breadcrumb-gap: var(--leverui-spacing-1\.5);
+    --leverui-private-breadcrumb-font-size: var(--leverui-font-sizes-sm);
+    --leverui-private-breadcrumb-line-height: 1.25rem;
+    --leverui-private-breadcrumb-link-color: var(--leverui-colors-fg-muted);
+    --leverui-private-breadcrumb-link-hover-color: var(--leverui-colors-fg);
+    --leverui-private-breadcrumb-current-color: var(--leverui-colors-fg);
+    --leverui-private-breadcrumb-decoration: none;
+    --leverui-private-breadcrumb-decoration-offset: auto;
+    --leverui-private-breadcrumb-decoration-color: currentColor;
+
+    &[data-size='sm'] {
+      --leverui-private-breadcrumb-gap: var(--leverui-spacing-1);
+      --leverui-private-breadcrumb-font-size: var(--leverui-font-sizes-xs);
+      --leverui-private-breadcrumb-line-height: 1rem;
+    }
+    &[data-size='md'] {
+      --leverui-private-breadcrumb-gap: var(--leverui-spacing-1\.5);
+      --leverui-private-breadcrumb-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-breadcrumb-line-height: 1.25rem;
+    }
+    &[data-size='lg'] {
+      --leverui-private-breadcrumb-gap: var(--leverui-spacing-2);
+      --leverui-private-breadcrumb-font-size: var(--leverui-font-sizes-md);
+      --leverui-private-breadcrumb-line-height: 1.5rem;
+    }
+    &[data-variant='plain'] {
+      --leverui-private-breadcrumb-link-color: var(--leverui-colors-fg-muted);
+      --leverui-private-breadcrumb-link-hover-color: var(--leverui-colors-fg);
+      --leverui-private-breadcrumb-current-color: var(--leverui-colors-fg);
+      --leverui-private-breadcrumb-decoration: none;
+      --leverui-private-breadcrumb-decoration-offset: auto;
+      --leverui-private-breadcrumb-decoration-color: currentColor;
+    }
+    &[data-variant='underline'] {
+      --leverui-private-breadcrumb-link-color: var(--leverui-colors-color-palette-fg);
+      --leverui-private-breadcrumb-link-hover-color: var(--leverui-colors-color-palette-fg);
+      --leverui-private-breadcrumb-current-color: var(--leverui-colors-color-palette-fg);
+      --leverui-private-breadcrumb-decoration: underline;
+      --leverui-private-breadcrumb-decoration-offset: 0.2em;
+      --leverui-private-breadcrumb-decoration-color: var(--leverui-colors-color-palette-muted);
+    }
+  }
+
+  @scope (.leverui-breadcrumb__root:not([data-unstyled])) to (.leverui-breadcrumb__root) {
+    .leverui-breadcrumb__list:not([data-unstyled]) {
+      display: flex;
+      align-items: center;
+      word-break: break-word;
+      color: var(--leverui-colors-fg-muted);
+      list-style: none;
+      gap: var(--leverui-private-breadcrumb-gap);
+      font-size: var(--leverui-private-breadcrumb-font-size);
+      line-height: var(--leverui-private-breadcrumb-line-height);
+    }
+
+    .leverui-breadcrumb__item:not([data-unstyled]) {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .leverui-breadcrumb__link:not([data-unstyled]) {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--leverui-spacing-2);
+      border-radius: var(--leverui-radii-l1);
+      outline: 0;
+      color: var(--leverui-private-breadcrumb-link-color);
+      text-decoration-line: var(--leverui-private-breadcrumb-decoration);
+      text-underline-offset: var(--leverui-private-breadcrumb-decoration-offset);
+      text-decoration-color: var(--leverui-private-breadcrumb-decoration-color);
+
+      &:hover {
+        color: var(--leverui-private-breadcrumb-link-hover-color);
+      }
+      &:is(:focus-visible, [data-focus-visible]) {
+        outline: 2px solid var(--leverui-colors-color-palette-focus-ring);
+        outline-offset: 2px;
+      }
+    }
+
+    .leverui-breadcrumb__currentLink:not([data-unstyled]) {
+      color: var(--leverui-private-breadcrumb-current-color);
+    }
+
+    .leverui-breadcrumb__separator:not([data-unstyled]) {
+      color: var(--leverui-colors-fg-muted);
+      opacity: 0.8;
+
+      &:dir(rtl) {
+        rotate: 180deg;
+      }
+      & svg {
+        width: 1em;
+        height: 1em;
+      }
+    }
+
+    .leverui-breadcrumb__ellipsis:not([data-unstyled]) {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      & svg {
+        width: 1em;
+        height: 1em;
+      }
+    }
+  }
+}

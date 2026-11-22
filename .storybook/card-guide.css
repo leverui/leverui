@@ -1,0 +1,17 @@
+.card-story-fixed-width {
+  width: 280px;
+}
+
+.card-story-horizontal {
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.card-story-avatar {
+  width: 320px;
+}
+
+.card-story-override {
+  --leverui-card-padding: 44px;
+  --leverui-colors-bg-panel: rgb(12, 34, 56);
+}

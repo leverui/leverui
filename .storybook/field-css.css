@@ -1,0 +1,11 @@
+.field-css-custom {
+  --leverui-field-label-width: 96px;
+}
+
+.field-css-override-label {
+  color: rgb(21, 87, 156);
+}
+
+.field-css-unstyled-label {
+  color: rgb(112, 37, 97);
+}

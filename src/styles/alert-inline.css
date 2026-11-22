@@ -1,0 +1,15 @@
+@layer leverui.recipes {
+  .leverui-alert__root:not([data-unstyled]) {
+    &[data-inline='false'] {
+      --leverui-private-alert-content-display: flex;
+      --leverui-private-alert-content-direction: column;
+      --leverui-private-alert-content-align: normal;
+    }
+
+    &[data-inline='true'] {
+      --leverui-private-alert-content-display: inline-flex;
+      --leverui-private-alert-content-direction: row;
+      --leverui-private-alert-content-align: center;
+    }
+  }
+}

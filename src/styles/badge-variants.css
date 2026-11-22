@@ -1,0 +1,24 @@
+@layer leverui.recipes {
+  :is(.leverui-badge, .leverui-code):not([data-unstyled], [data-leverui-private-style-runtime]) {
+    &[data-variant='solid'] {
+      background-color: var(--leverui-colors-color-palette-solid);
+      color: var(--leverui-colors-color-palette-contrast);
+    }
+    &[data-variant='subtle'] {
+      background-color: var(--leverui-colors-color-palette-subtle);
+      color: var(--leverui-colors-color-palette-fg);
+    }
+    &[data-variant='outline'] {
+      color: var(--leverui-colors-color-palette-fg);
+      box-shadow: inset 0 0 0px 1px var(--leverui-colors-color-palette-border);
+    }
+    &[data-variant='surface'] {
+      background-color: var(--leverui-colors-color-palette-subtle);
+      color: var(--leverui-colors-color-palette-fg);
+      box-shadow: inset 0 0 0px 1px var(--leverui-colors-color-palette-muted);
+    }
+    &[data-variant='plain'] {
+      color: var(--leverui-colors-color-palette-fg);
+    }
+  }
+}

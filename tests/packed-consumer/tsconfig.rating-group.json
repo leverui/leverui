@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src/rating-group-types.tsx",
+    "src/rating-group-example.tsx",
+    "src/rating-group-main.tsx"
+  ],
+  "exclude": []
+}

@@ -1,0 +1,79 @@
+@layer leverui.recipes {
+  @media (min-width: 64rem) {
+    .leverui-tree-view__root:not([data-unstyled])[data-size-lg='xs'] {
+      --leverui-private-tree-default-icon-size: var(--leverui-spacing-3);
+      --leverui-private-tree-default-padding-inline: var(--leverui-spacing-2);
+      --leverui-private-tree-default-padding-block: var(--leverui-spacing-1);
+      --leverui-private-tree-default-font-size: var(--leverui-font-sizes-xs);
+      --leverui-private-tree-default-line-height: 1rem;
+    }
+
+    .leverui-tree-view__root:not([data-unstyled])[data-size-lg='sm'] {
+      --leverui-private-tree-default-icon-size: var(--leverui-spacing-3);
+      --leverui-private-tree-default-padding-inline: var(--leverui-spacing-3);
+      --leverui-private-tree-default-padding-block: var(--leverui-spacing-1);
+      --leverui-private-tree-default-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-tree-default-line-height: 1.25rem;
+    }
+
+    .leverui-tree-view__root:not([data-unstyled])[data-size-lg='md'] {
+      --leverui-private-tree-default-icon-size: var(--leverui-spacing-4);
+      --leverui-private-tree-default-padding-inline: var(--leverui-spacing-3);
+      --leverui-private-tree-default-padding-block: calc(var(--leverui-spacing-1) * 1.5);
+      --leverui-private-tree-default-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-tree-default-line-height: 1.25rem;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .leverui-tree-view__root:not([data-unstyled])[data-size-xl='xs'] {
+      --leverui-private-tree-default-icon-size: var(--leverui-spacing-3);
+      --leverui-private-tree-default-padding-inline: var(--leverui-spacing-2);
+      --leverui-private-tree-default-padding-block: var(--leverui-spacing-1);
+      --leverui-private-tree-default-font-size: var(--leverui-font-sizes-xs);
+      --leverui-private-tree-default-line-height: 1rem;
+    }
+
+    .leverui-tree-view__root:not([data-unstyled])[data-size-xl='sm'] {
+      --leverui-private-tree-default-icon-size: var(--leverui-spacing-3);
+      --leverui-private-tree-default-padding-inline: var(--leverui-spacing-3);
+      --leverui-private-tree-default-padding-block: var(--leverui-spacing-1);
+      --leverui-private-tree-default-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-tree-default-line-height: 1.25rem;
+    }
+
+    .leverui-tree-view__root:not([data-unstyled])[data-size-xl='md'] {
+      --leverui-private-tree-default-icon-size: var(--leverui-spacing-4);
+      --leverui-private-tree-default-padding-inline: var(--leverui-spacing-3);
+      --leverui-private-tree-default-padding-block: calc(var(--leverui-spacing-1) * 1.5);
+      --leverui-private-tree-default-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-tree-default-line-height: 1.25rem;
+    }
+  }
+
+  @media (min-width: 96rem) {
+    .leverui-tree-view__root:not([data-unstyled])[data-size-2xl='xs'] {
+      --leverui-private-tree-default-icon-size: var(--leverui-spacing-3);
+      --leverui-private-tree-default-padding-inline: var(--leverui-spacing-2);
+      --leverui-private-tree-default-padding-block: var(--leverui-spacing-1);
+      --leverui-private-tree-default-font-size: var(--leverui-font-sizes-xs);
+      --leverui-private-tree-default-line-height: 1rem;
+    }
+
+    .leverui-tree-view__root:not([data-unstyled])[data-size-2xl='sm'] {
+      --leverui-private-tree-default-icon-size: var(--leverui-spacing-3);
+      --leverui-private-tree-default-padding-inline: var(--leverui-spacing-3);
+      --leverui-private-tree-default-padding-block: var(--leverui-spacing-1);
+      --leverui-private-tree-default-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-tree-default-line-height: 1.25rem;
+    }
+
+    .leverui-tree-view__root:not([data-unstyled])[data-size-2xl='md'] {
+      --leverui-private-tree-default-icon-size: var(--leverui-spacing-4);
+      --leverui-private-tree-default-padding-inline: var(--leverui-spacing-3);
+      --leverui-private-tree-default-padding-block: calc(var(--leverui-spacing-1) * 1.5);
+      --leverui-private-tree-default-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-tree-default-line-height: 1.25rem;
+    }
+  }
+}

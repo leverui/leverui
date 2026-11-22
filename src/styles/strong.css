@@ -1,0 +1,5 @@
+@layer leverui.recipes {
+  .leverui-strong:not([data-unstyled]) {
+    font-weight: var(--leverui-font-weights-semibold);
+  }
+}

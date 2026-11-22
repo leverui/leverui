@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/breadcrumb-types.tsx", "src/breadcrumb-example.tsx", "src/breadcrumb-main.tsx"],
+  "exclude": []
+}

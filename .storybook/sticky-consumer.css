@@ -1,0 +1,35 @@
+.sticky-contract-scroll {
+  overflow-y: auto;
+  width: 240px;
+  height: 120px;
+}
+
+.sticky-contract-before {
+  height: 40px;
+}
+
+.sticky-contract-after {
+  height: 300px;
+}
+
+.sticky-contract-content {
+  height: 24px;
+}
+
+.consumer-sticky-offset {
+  --leverui-sticky-top: var(--leverui-spacing-4);
+}
+
+.consumer-sticky-responsive {
+  --leverui-sticky-top: var(--leverui-spacing-4);
+}
+
+@media (min-width: 48rem) {
+  .consumer-sticky-responsive {
+    --leverui-sticky-top: var(--leverui-spacing-8);
+  }
+}
+
+.consumer-sticky-override {
+  top: 20px;
+}

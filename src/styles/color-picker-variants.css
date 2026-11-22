@@ -1,0 +1,76 @@
+@layer leverui.recipes {
+  .leverui-color-picker__trigger[data-leverui-color-picker-css][data-variant='outline'] {
+    border: 1px solid var(--leverui-colors-border);
+  }
+
+  .leverui-color-picker__trigger[data-leverui-color-picker-css][data-variant='subtle'] {
+    border: 1px solid transparent;
+    background: var(--leverui-colors-bg-muted);
+  }
+
+  .leverui-color-picker__swatch.leverui-color-swatch[data-leverui-color-picker-css] {
+    --leverui-swatch-size: var(
+      --leverui-color-picker-swatch-size,
+      var(--leverui-private-color-picker-swatch-size)
+    );
+    --leverui-swatch-radius: var(--leverui-radii-l1);
+  }
+
+  @media (min-width: 480px) {
+    .leverui-color-picker__trigger[data-leverui-color-picker-css][data-variant-sm='outline'] {
+      border: 1px solid var(--leverui-colors-border);
+      background: transparent;
+    }
+    .leverui-color-picker__trigger[data-leverui-color-picker-css][data-variant-sm='subtle'] {
+      border: 1px solid transparent;
+      background: var(--leverui-colors-bg-muted);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .leverui-color-picker__trigger[data-leverui-color-picker-css][data-variant-md='outline'] {
+      border: 1px solid var(--leverui-colors-border);
+      background: transparent;
+    }
+    .leverui-color-picker__trigger[data-leverui-color-picker-css][data-variant-md='subtle'] {
+      border: 1px solid transparent;
+      background: var(--leverui-colors-bg-muted);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .leverui-color-picker__trigger[data-leverui-color-picker-css][data-variant-lg='outline'] {
+      border: 1px solid var(--leverui-colors-border);
+      background: transparent;
+    }
+    .leverui-color-picker__trigger[data-leverui-color-picker-css][data-variant-lg='subtle'] {
+      border: 1px solid transparent;
+      background: var(--leverui-colors-bg-muted);
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .leverui-color-picker__trigger[data-leverui-color-picker-css][data-variant-xl='outline'] {
+      border: 1px solid var(--leverui-colors-border);
+      background: transparent;
+    }
+    .leverui-color-picker__trigger[data-leverui-color-picker-css][data-variant-xl='subtle'] {
+      border: 1px solid transparent;
+      background: var(--leverui-colors-bg-muted);
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .leverui-color-picker__trigger[data-leverui-color-picker-css][data-variant-2xl='outline'] {
+      border: 1px solid var(--leverui-colors-border);
+      background: transparent;
+    }
+    .leverui-color-picker__trigger[data-leverui-color-picker-css][data-variant-2xl='subtle'] {
+      border: 1px solid transparent;
+      background: var(--leverui-colors-bg-muted);
+    }
+  }
+  .leverui-color-picker__trigger[data-leverui-color-picker-css][data-fit-content] {
+    border: 0;
+  }
+}

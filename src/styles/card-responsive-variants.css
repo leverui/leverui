@@ -1,0 +1,86 @@
+@layer leverui.recipes {
+  @media (min-width: 30rem) {
+    .leverui-card__root:not([data-unstyled])[data-variant-sm='elevated'] {
+      --leverui-private-card-background: var(--leverui-colors-bg-panel);
+      --leverui-private-card-shadow: var(--leverui-shadows-md);
+    }
+
+    .leverui-card__root:not([data-unstyled])[data-variant-sm='outline'] {
+      --leverui-private-card-background: var(--leverui-colors-bg-panel);
+      --leverui-private-card-border-width: 1px;
+      --leverui-private-card-border-color: var(--leverui-colors-border);
+    }
+
+    .leverui-card__root:not([data-unstyled])[data-variant-sm='subtle'] {
+      --leverui-private-card-background: var(--leverui-colors-bg-muted);
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .leverui-card__root:not([data-unstyled])[data-variant-md='elevated'] {
+      --leverui-private-card-background: var(--leverui-colors-bg-panel);
+      --leverui-private-card-shadow: var(--leverui-shadows-md);
+    }
+
+    .leverui-card__root:not([data-unstyled])[data-variant-md='outline'] {
+      --leverui-private-card-background: var(--leverui-colors-bg-panel);
+      --leverui-private-card-border-width: 1px;
+      --leverui-private-card-border-color: var(--leverui-colors-border);
+    }
+
+    .leverui-card__root:not([data-unstyled])[data-variant-md='subtle'] {
+      --leverui-private-card-background: var(--leverui-colors-bg-muted);
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .leverui-card__root:not([data-unstyled])[data-variant-lg='elevated'] {
+      --leverui-private-card-background: var(--leverui-colors-bg-panel);
+      --leverui-private-card-shadow: var(--leverui-shadows-md);
+    }
+
+    .leverui-card__root:not([data-unstyled])[data-variant-lg='outline'] {
+      --leverui-private-card-background: var(--leverui-colors-bg-panel);
+      --leverui-private-card-border-width: 1px;
+      --leverui-private-card-border-color: var(--leverui-colors-border);
+    }
+
+    .leverui-card__root:not([data-unstyled])[data-variant-lg='subtle'] {
+      --leverui-private-card-background: var(--leverui-colors-bg-muted);
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .leverui-card__root:not([data-unstyled])[data-variant-xl='elevated'] {
+      --leverui-private-card-background: var(--leverui-colors-bg-panel);
+      --leverui-private-card-shadow: var(--leverui-shadows-md);
+    }
+
+    .leverui-card__root:not([data-unstyled])[data-variant-xl='outline'] {
+      --leverui-private-card-background: var(--leverui-colors-bg-panel);
+      --leverui-private-card-border-width: 1px;
+      --leverui-private-card-border-color: var(--leverui-colors-border);
+    }
+
+    .leverui-card__root:not([data-unstyled])[data-variant-xl='subtle'] {
+      --leverui-private-card-background: var(--leverui-colors-bg-muted);
+    }
+  }
+
+  @media (min-width: 96rem) {
+    .leverui-card__root:not([data-unstyled])[data-variant-2xl='elevated'] {
+      --leverui-private-card-background: var(--leverui-colors-bg-panel);
+      --leverui-private-card-shadow: var(--leverui-shadows-md);
+    }
+
+    .leverui-card__root:not([data-unstyled])[data-variant-2xl='outline'] {
+      --leverui-private-card-background: var(--leverui-colors-bg-panel);
+      --leverui-private-card-border-width: 1px;
+      --leverui-private-card-border-color: var(--leverui-colors-border);
+    }
+
+    .leverui-card__root:not([data-unstyled])[data-variant-2xl='subtle'] {
+      --leverui-private-card-background: var(--leverui-colors-bg-muted);
+    }
+  }
+}

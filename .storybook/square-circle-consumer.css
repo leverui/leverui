@@ -1,0 +1,19 @@
+.consumer-shape-token {
+  background: var(--leverui-colors-blue-700);
+  color: white;
+}
+
+.consumer-shape-child {
+  width: 10px;
+  height: 10px;
+}
+
+.consumer-shape-fixed {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+}
+
+.consumer-circle-radius {
+  --leverui-circle-radius: 8px;
+}

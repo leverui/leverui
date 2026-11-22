@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/stat-example.tsx", "src/stat-main.tsx", "src/stat-types.tsx"],
+  "exclude": []
+}

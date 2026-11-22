@@ -1,0 +1,7 @@
+.bar-list-consumer {
+  --leverui-colors-bg-subtle: rgb(123, 45, 67);
+}
+
+.bar-list-consumer .leverui-bar-list__fill {
+  border-radius: 9px;
+}

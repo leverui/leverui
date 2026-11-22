@@ -1,0 +1,13 @@
+.icon-consumer-color {
+  color: rgb(1, 2, 3);
+}
+
+.icon-custom-size {
+  --leverui-icon-size: 30px;
+}
+
+.icon-unstyled {
+  color: rgb(5, 6, 7);
+  width: 20px;
+  height: 20px;
+}

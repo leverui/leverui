@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/link-types.tsx", "src/link-example.tsx", "src/link-main.tsx"],
+  "exclude": []
+}

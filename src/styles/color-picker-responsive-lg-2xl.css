@@ -1,0 +1,175 @@
+@layer leverui.recipes {
+  @media (min-width: 1024px) {
+    [data-leverui-color-picker-css][data-size-lg='2xs'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-4\.5);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-7);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3);
+    }
+
+    [data-leverui-color-picker-css][data-size-lg='xs'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-5);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-8);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-lg='sm'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-6);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-9);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-lg='md'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-7);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-10);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-lg='lg'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-7);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-11);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-lg='xl'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-8);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-12);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-lg='2xl'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-10);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-16);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+  }
+
+  @media (min-width: 1280px) {
+    [data-leverui-color-picker-css][data-size-xl='2xs'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-4\.5);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-7);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3);
+    }
+
+    [data-leverui-color-picker-css][data-size-xl='xs'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-5);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-8);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-xl='sm'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-6);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-9);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-xl='md'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-7);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-10);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-xl='lg'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-7);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-11);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-xl='xl'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-8);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-12);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-xl='2xl'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-10);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-16);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+  }
+
+  @media (min-width: 1536px) {
+    [data-leverui-color-picker-css][data-size-2xl='2xs'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-4\.5);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-7);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3);
+    }
+
+    [data-leverui-color-picker-css][data-size-2xl='xs'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-5);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-8);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-2xl='sm'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-6);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-9);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-2xl='md'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-7);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-10);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-2xl='lg'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-7);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-11);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-2xl='xl'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-8);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-12);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+
+    [data-leverui-color-picker-css][data-size-2xl='2xl'] {
+      --leverui-private-color-picker-swatch-size: var(--leverui-sizes-10);
+      --leverui-private-color-picker-trigger-height: var(--leverui-sizes-16);
+      --leverui-private-color-picker-area-thumb-size: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-height: var(--leverui-sizes-3\.5);
+      --leverui-private-color-picker-slider-thumb-size: var(--leverui-sizes-3\.5);
+    }
+  }
+}

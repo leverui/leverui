@@ -1,0 +1,73 @@
+@layer leverui.recipes {
+  .leverui-command__itemGroup:not([data-unstyled]) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .leverui-command__itemGroup:not([data-unstyled])
+    ~ .leverui-command__itemGroup:not([data-unstyled]) {
+    margin-top: var(--leverui-spacing-1\.5);
+  }
+
+  .leverui-command__itemGroupLabel:not([data-unstyled]) {
+    padding-block: var(--leverui-spacing-1\.5);
+    padding-inline: var(
+      --leverui-command-item-padding-x,
+      var(--leverui-private-command-item-padding-x, var(--leverui-spacing-2\.5))
+    );
+    font-size: var(--leverui-font-sizes-xs);
+    line-height: 1rem;
+    font-weight: var(--leverui-font-weights-medium);
+    color: var(--leverui-colors-fg-muted);
+    user-select: none;
+  }
+
+  /* The primitive keeps Empty mounted as a status region; pad it only while it shows a message. */
+  .leverui-command__empty:not([data-unstyled]):not(:empty) {
+    padding-block: var(--leverui-spacing-10);
+    padding-inline: var(--leverui-spacing-4);
+    text-align: center;
+    color: var(--leverui-colors-fg-muted);
+  }
+
+  .leverui-command__loading:not([data-unstyled]) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--leverui-spacing-2);
+    padding-block: var(--leverui-spacing-10);
+    padding-inline: var(--leverui-spacing-4);
+    color: var(--leverui-colors-fg-muted);
+  }
+
+  .leverui-command__separator:not([data-unstyled]) {
+    flex-shrink: 0;
+    border-top-width: 1px;
+    border-top-style: solid;
+    margin-block: var(--leverui-spacing-1\.5);
+    margin-inline: calc(
+      var(--leverui-command-list-padding, var(--leverui-private-command-list-padding)) * -1
+    );
+  }
+
+  .leverui-command__footer:not([data-unstyled]) {
+    display: flex;
+    align-items: center;
+    gap: var(--leverui-spacing-4);
+    border-top-width: 1px;
+    border-top-style: solid;
+    background: var(--leverui-colors-bg-subtle);
+    padding-inline: var(
+      --leverui-command-control-padding-x,
+      var(--leverui-private-command-control-padding-x, var(--leverui-spacing-4))
+    );
+    padding-block: var(
+      --leverui-command-footer-padding-y,
+      var(--leverui-private-command-footer-padding-y, var(--leverui-spacing-2\.5))
+    );
+    font-size: var(--leverui-font-sizes-xs);
+    line-height: 1rem;
+    color: var(--leverui-colors-fg-muted);
+    flex-shrink: 0;
+  }
+}

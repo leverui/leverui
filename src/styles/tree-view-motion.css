@@ -1,0 +1,95 @@
+@layer leverui.recipes {
+  .leverui-tree-view__root:not([data-unstyled]) {
+    --leverui-private-tree-open-animation: none;
+    --leverui-private-tree-closed-animation: none;
+  }
+
+  .leverui-tree-view__root:not([data-unstyled])[data-animate-content='true'] {
+    --leverui-private-tree-open-animation: expand-height, fade-in;
+    --leverui-private-tree-closed-animation: collapse-height, fade-out;
+  }
+
+  @media (min-width: 30rem) {
+    .leverui-tree-view__root:not([data-unstyled])[data-animate-content-sm='true'] {
+      --leverui-private-tree-open-animation: expand-height, fade-in;
+      --leverui-private-tree-closed-animation: collapse-height, fade-out;
+    }
+
+    .leverui-tree-view__root:not([data-unstyled])[data-animate-content-sm='false'] {
+      --leverui-private-tree-open-animation: none;
+      --leverui-private-tree-closed-animation: none;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .leverui-tree-view__root:not([data-unstyled])[data-animate-content-md='true'] {
+      --leverui-private-tree-open-animation: expand-height, fade-in;
+      --leverui-private-tree-closed-animation: collapse-height, fade-out;
+    }
+
+    .leverui-tree-view__root:not([data-unstyled])[data-animate-content-md='false'] {
+      --leverui-private-tree-open-animation: none;
+      --leverui-private-tree-closed-animation: none;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .leverui-tree-view__root:not([data-unstyled])[data-animate-content-lg='true'] {
+      --leverui-private-tree-open-animation: expand-height, fade-in;
+      --leverui-private-tree-closed-animation: collapse-height, fade-out;
+    }
+
+    .leverui-tree-view__root:not([data-unstyled])[data-animate-content-lg='false'] {
+      --leverui-private-tree-open-animation: none;
+      --leverui-private-tree-closed-animation: none;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .leverui-tree-view__root:not([data-unstyled])[data-animate-content-xl='true'] {
+      --leverui-private-tree-open-animation: expand-height, fade-in;
+      --leverui-private-tree-closed-animation: collapse-height, fade-out;
+    }
+
+    .leverui-tree-view__root:not([data-unstyled])[data-animate-content-xl='false'] {
+      --leverui-private-tree-open-animation: none;
+      --leverui-private-tree-closed-animation: none;
+    }
+  }
+
+  @media (min-width: 96rem) {
+    .leverui-tree-view__root:not([data-unstyled])[data-animate-content-2xl='true'] {
+      --leverui-private-tree-open-animation: expand-height, fade-in;
+      --leverui-private-tree-closed-animation: collapse-height, fade-out;
+    }
+
+    .leverui-tree-view__root:not([data-unstyled])[data-animate-content-2xl='false'] {
+      --leverui-private-tree-open-animation: none;
+      --leverui-private-tree-closed-animation: none;
+    }
+  }
+
+  .leverui-tree-view__root:not([data-unstyled])
+    .leverui-tree-view__branchContent:not([data-unstyled]) {
+    &[data-state='open'] {
+      animation-name: var(--leverui-private-tree-open-animation);
+      animation-duration: var(--leverui-durations-moderate, 200ms);
+    }
+
+    &[data-state='closed'] {
+      animation-name: var(--leverui-private-tree-closed-animation);
+      animation-duration: var(--leverui-durations-moderate, 200ms);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .leverui-tree-view__root:not([data-unstyled])
+      .leverui-tree-view__branchContent:not([data-unstyled]):is(
+        [data-state='open'],
+        [data-state='closed']
+      ) {
+      animation-name: none;
+      animation-duration: 0s;
+    }
+  }
+}

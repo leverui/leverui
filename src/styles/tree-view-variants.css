@@ -1,0 +1,71 @@
+@layer leverui.recipes {
+  .leverui-tree-view__root:not([data-unstyled])[data-variant='subtle'] {
+    --leverui-private-tree-selected-bg: var(--leverui-colors-color-palette-subtle);
+    --leverui-private-tree-selected-fg: var(--leverui-colors-color-palette-fg);
+  }
+
+  .leverui-tree-view__root:not([data-unstyled])[data-variant='solid'] {
+    --leverui-private-tree-selected-bg: var(--leverui-colors-color-palette-solid);
+    --leverui-private-tree-selected-fg: var(--leverui-colors-color-palette-contrast);
+  }
+
+  @media (min-width: 30rem) {
+    .leverui-tree-view__root:not([data-unstyled])[data-variant-sm='subtle'] {
+      --leverui-private-tree-selected-bg: var(--leverui-colors-color-palette-subtle);
+      --leverui-private-tree-selected-fg: var(--leverui-colors-color-palette-fg);
+    }
+
+    .leverui-tree-view__root:not([data-unstyled])[data-variant-sm='solid'] {
+      --leverui-private-tree-selected-bg: var(--leverui-colors-color-palette-solid);
+      --leverui-private-tree-selected-fg: var(--leverui-colors-color-palette-contrast);
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .leverui-tree-view__root:not([data-unstyled])[data-variant-md='subtle'] {
+      --leverui-private-tree-selected-bg: var(--leverui-colors-color-palette-subtle);
+      --leverui-private-tree-selected-fg: var(--leverui-colors-color-palette-fg);
+    }
+
+    .leverui-tree-view__root:not([data-unstyled])[data-variant-md='solid'] {
+      --leverui-private-tree-selected-bg: var(--leverui-colors-color-palette-solid);
+      --leverui-private-tree-selected-fg: var(--leverui-colors-color-palette-contrast);
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .leverui-tree-view__root:not([data-unstyled])[data-variant-lg='subtle'] {
+      --leverui-private-tree-selected-bg: var(--leverui-colors-color-palette-subtle);
+      --leverui-private-tree-selected-fg: var(--leverui-colors-color-palette-fg);
+    }
+
+    .leverui-tree-view__root:not([data-unstyled])[data-variant-lg='solid'] {
+      --leverui-private-tree-selected-bg: var(--leverui-colors-color-palette-solid);
+      --leverui-private-tree-selected-fg: var(--leverui-colors-color-palette-contrast);
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .leverui-tree-view__root:not([data-unstyled])[data-variant-xl='subtle'] {
+      --leverui-private-tree-selected-bg: var(--leverui-colors-color-palette-subtle);
+      --leverui-private-tree-selected-fg: var(--leverui-colors-color-palette-fg);
+    }
+
+    .leverui-tree-view__root:not([data-unstyled])[data-variant-xl='solid'] {
+      --leverui-private-tree-selected-bg: var(--leverui-colors-color-palette-solid);
+      --leverui-private-tree-selected-fg: var(--leverui-colors-color-palette-contrast);
+    }
+  }
+
+  @media (min-width: 96rem) {
+    .leverui-tree-view__root:not([data-unstyled])[data-variant-2xl='subtle'] {
+      --leverui-private-tree-selected-bg: var(--leverui-colors-color-palette-subtle);
+      --leverui-private-tree-selected-fg: var(--leverui-colors-color-palette-fg);
+    }
+
+    .leverui-tree-view__root:not([data-unstyled])[data-variant-2xl='solid'] {
+      --leverui-private-tree-selected-bg: var(--leverui-colors-color-palette-solid);
+      --leverui-private-tree-selected-fg: var(--leverui-colors-color-palette-contrast);
+    }
+  }
+}

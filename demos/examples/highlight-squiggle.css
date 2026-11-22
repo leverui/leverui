@@ -1,0 +1,10 @@
+.example-highlight-squiggle {
+  position: relative;
+  font-style: italic;
+  color: var(--leverui-colors-red-500);
+}
+
+.example-highlight-squiggle-line {
+  position: absolute;
+  left: 0;
+}

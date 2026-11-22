@@ -1,0 +1,127 @@
+@layer leverui.recipes {
+  .leverui-menu__item[data-leverui-menu-css] {
+    --leverui-private-menu-subtle-highlight: color-mix(
+      in srgb,
+      var(--leverui-colors-bg-emphasized) 60%,
+      transparent
+    );
+    --leverui-menu-highlight-background: var(--leverui-private-menu-subtle-highlight);
+    --leverui-menu-highlight-color: var(--leverui-colors-fg);
+
+    &[data-variant='solid'] {
+      --leverui-menu-highlight-background: var(
+        --leverui-colors-color-palette-solid,
+        var(--leverui-colors-gray-solid)
+      );
+      --leverui-menu-highlight-color: var(
+        --leverui-colors-color-palette-contrast,
+        var(--leverui-colors-gray-contrast)
+      );
+    }
+
+    &[data-highlighted] {
+      background: var(--leverui-menu-highlight-background);
+      color: var(--leverui-menu-highlight-color);
+    }
+  }
+
+  @media (min-width: 480px) {
+    .leverui-menu__item[data-leverui-menu-css] {
+      &[data-variant-sm='subtle'] {
+        --leverui-menu-highlight-background: var(--leverui-private-menu-subtle-highlight);
+        --leverui-menu-highlight-color: var(--leverui-colors-fg);
+      }
+
+      &[data-variant-sm='solid'] {
+        --leverui-menu-highlight-background: var(
+          --leverui-colors-color-palette-solid,
+          var(--leverui-colors-gray-solid)
+        );
+        --leverui-menu-highlight-color: var(
+          --leverui-colors-color-palette-contrast,
+          var(--leverui-colors-gray-contrast)
+        );
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .leverui-menu__item[data-leverui-menu-css] {
+      &[data-variant-md='subtle'] {
+        --leverui-menu-highlight-background: var(--leverui-private-menu-subtle-highlight);
+        --leverui-menu-highlight-color: var(--leverui-colors-fg);
+      }
+
+      &[data-variant-md='solid'] {
+        --leverui-menu-highlight-background: var(
+          --leverui-colors-color-palette-solid,
+          var(--leverui-colors-gray-solid)
+        );
+        --leverui-menu-highlight-color: var(
+          --leverui-colors-color-palette-contrast,
+          var(--leverui-colors-gray-contrast)
+        );
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .leverui-menu__item[data-leverui-menu-css] {
+      &[data-variant-lg='subtle'] {
+        --leverui-menu-highlight-background: var(--leverui-private-menu-subtle-highlight);
+        --leverui-menu-highlight-color: var(--leverui-colors-fg);
+      }
+
+      &[data-variant-lg='solid'] {
+        --leverui-menu-highlight-background: var(
+          --leverui-colors-color-palette-solid,
+          var(--leverui-colors-gray-solid)
+        );
+        --leverui-menu-highlight-color: var(
+          --leverui-colors-color-palette-contrast,
+          var(--leverui-colors-gray-contrast)
+        );
+      }
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .leverui-menu__item[data-leverui-menu-css] {
+      &[data-variant-xl='subtle'] {
+        --leverui-menu-highlight-background: var(--leverui-private-menu-subtle-highlight);
+        --leverui-menu-highlight-color: var(--leverui-colors-fg);
+      }
+
+      &[data-variant-xl='solid'] {
+        --leverui-menu-highlight-background: var(
+          --leverui-colors-color-palette-solid,
+          var(--leverui-colors-gray-solid)
+        );
+        --leverui-menu-highlight-color: var(
+          --leverui-colors-color-palette-contrast,
+          var(--leverui-colors-gray-contrast)
+        );
+      }
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .leverui-menu__item[data-leverui-menu-css] {
+      &[data-variant-2xl='subtle'] {
+        --leverui-menu-highlight-background: var(--leverui-private-menu-subtle-highlight);
+        --leverui-menu-highlight-color: var(--leverui-colors-fg);
+      }
+
+      &[data-variant-2xl='solid'] {
+        --leverui-menu-highlight-background: var(
+          --leverui-colors-color-palette-solid,
+          var(--leverui-colors-gray-solid)
+        );
+        --leverui-menu-highlight-color: var(
+          --leverui-colors-color-palette-contrast,
+          var(--leverui-colors-gray-contrast)
+        );
+      }
+    }
+  }
+}

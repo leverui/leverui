@@ -1,0 +1,29 @@
+html[data-leverui-color-mode='light'] :is(.docs-index-hero p, .guide-card-grid p) {
+  color: var(--site-muted);
+}
+html[data-leverui-color-mode='light'] .guide-card-grid a {
+  border-color: var(--site-border);
+  background: var(--site-panel);
+  color: var(--site-fg);
+}
+html[data-leverui-color-mode='light'] .guide-card-grid a:hover {
+  border-color: var(--site-accent);
+}
+html[data-leverui-color-mode='light'] :is(.guide-card-number, .guide-card-arrow) {
+  color: var(--site-muted);
+}
+html[data-leverui-color-mode='light'] .guide-sidebar {
+  border-color: var(--site-border);
+}
+html[data-leverui-color-mode='light'] .guide-breadcrumb {
+  color: var(--site-subtle);
+}
+html[data-leverui-color-mode='light'] .guide-breadcrumb a {
+  color: var(--site-fg);
+}
+html[data-leverui-color-mode='light'] .guide-markdown h2 {
+  border-color: var(--site-border);
+}
+html[data-leverui-color-mode='light'] .guide-markdown blockquote {
+  border-color: var(--site-highlight-border);
+}

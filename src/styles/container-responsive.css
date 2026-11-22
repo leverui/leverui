@@ -1,0 +1,98 @@
+@layer leverui.recipes {
+  .leverui-container:not([data-unstyled]) {
+    @media (min-width: 30rem) {
+      &[data-center-content-sm='true'] {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &[data-center-content-sm='false'] {
+        display: block;
+        flex-direction: row;
+        align-items: normal;
+      }
+      &[data-fluid-sm='true'] {
+        max-width: var(--leverui-container-fluid-max-width, var(--leverui-sizes-full));
+      }
+      &[data-fluid-sm='false'] {
+        max-width: var(--leverui-container-max-width, var(--leverui-sizes-8xl));
+      }
+    }
+
+    @media (min-width: 48rem) {
+      &[data-center-content-md='true'] {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &[data-center-content-md='false'] {
+        display: block;
+        flex-direction: row;
+        align-items: normal;
+      }
+      &[data-fluid-md='true'] {
+        max-width: var(--leverui-container-fluid-max-width, var(--leverui-sizes-full));
+      }
+      &[data-fluid-md='false'] {
+        max-width: var(--leverui-container-max-width, var(--leverui-sizes-8xl));
+      }
+    }
+
+    @media (min-width: 64rem) {
+      &[data-center-content-lg='true'] {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &[data-center-content-lg='false'] {
+        display: block;
+        flex-direction: row;
+        align-items: normal;
+      }
+      &[data-fluid-lg='true'] {
+        max-width: var(--leverui-container-fluid-max-width, var(--leverui-sizes-full));
+      }
+      &[data-fluid-lg='false'] {
+        max-width: var(--leverui-container-max-width, var(--leverui-sizes-8xl));
+      }
+    }
+
+    @media (min-width: 80rem) {
+      &[data-center-content-xl='true'] {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &[data-center-content-xl='false'] {
+        display: block;
+        flex-direction: row;
+        align-items: normal;
+      }
+      &[data-fluid-xl='true'] {
+        max-width: var(--leverui-container-fluid-max-width, var(--leverui-sizes-full));
+      }
+      &[data-fluid-xl='false'] {
+        max-width: var(--leverui-container-max-width, var(--leverui-sizes-8xl));
+      }
+    }
+
+    @media (min-width: 96rem) {
+      &[data-center-content-2xl='true'] {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &[data-center-content-2xl='false'] {
+        display: block;
+        flex-direction: row;
+        align-items: normal;
+      }
+      &[data-fluid-2xl='true'] {
+        max-width: var(--leverui-container-fluid-max-width, var(--leverui-sizes-full));
+      }
+      &[data-fluid-2xl='false'] {
+        max-width: var(--leverui-container-max-width, var(--leverui-sizes-8xl));
+      }
+    }
+  }
+}

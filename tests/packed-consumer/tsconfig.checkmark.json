@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/checkmark-types.tsx", "src/checkmark-main.tsx"],
+  "exclude": []
+}

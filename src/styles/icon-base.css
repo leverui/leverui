@@ -1,0 +1,40 @@
+@layer leverui.recipes {
+  .leverui-icon:not([data-unstyled]) {
+    display: inline-block;
+    line-height: 1em;
+    flex-shrink: 0;
+    color: currentColor;
+    vertical-align: middle;
+
+    /* Let an icon component inside a non-SVG Icon, such as a span, fill it. */
+    &:not(svg) > svg:only-child {
+      width: 100%;
+      height: 100%;
+    }
+
+    &[data-size='xs'] {
+      width: var(--leverui-icon-size, var(--leverui-sizes-3));
+      height: var(--leverui-icon-size, var(--leverui-sizes-3));
+    }
+    &[data-size='sm'] {
+      width: var(--leverui-icon-size, var(--leverui-sizes-4));
+      height: var(--leverui-icon-size, var(--leverui-sizes-4));
+    }
+    &[data-size='md'] {
+      width: var(--leverui-icon-size, var(--leverui-sizes-5));
+      height: var(--leverui-icon-size, var(--leverui-sizes-5));
+    }
+    &[data-size='lg'] {
+      width: var(--leverui-icon-size, var(--leverui-sizes-6));
+      height: var(--leverui-icon-size, var(--leverui-sizes-6));
+    }
+    &[data-size='xl'] {
+      width: var(--leverui-icon-size, var(--leverui-sizes-7));
+      height: var(--leverui-icon-size, var(--leverui-sizes-7));
+    }
+    &[data-size='2xl'] {
+      width: var(--leverui-icon-size, var(--leverui-sizes-8));
+      height: var(--leverui-icon-size, var(--leverui-sizes-8));
+    }
+  }
+}

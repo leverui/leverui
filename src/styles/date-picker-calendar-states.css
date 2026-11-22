@@ -1,0 +1,102 @@
+@layer leverui.recipes {
+  :is(
+      .leverui-date-picker__viewTrigger,
+      .leverui-date-picker__prevTrigger,
+      .leverui-date-picker__nextTrigger,
+      .leverui-date-picker__tableCellTrigger
+    ):not([data-unstyled]):hover {
+    background: var(--leverui-colors-color-palette-subtle);
+  }
+
+  :is(
+      .leverui-date-picker__viewTrigger,
+      .leverui-date-picker__prevTrigger,
+      .leverui-date-picker__nextTrigger,
+      .leverui-date-picker__tableCellTrigger
+    ):not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
+    outline: var(--focus-ring-width, 2px) var(--focus-ring-style, solid)
+      var(--leverui-date-picker-focus-color, var(--leverui-colors-color-palette-focus-ring));
+    outline-offset: -2px;
+  }
+
+  :is(.leverui-date-picker__prevTrigger, .leverui-date-picker__nextTrigger):not([data-unstyled]):is(
+      :focus-visible,
+      [data-focus-visible]
+    ) {
+    box-shadow: 0 0 0 2px var(--leverui-colors-color-palette-focus-ring);
+  }
+
+  :is(.leverui-date-picker__prevTrigger, .leverui-date-picker__nextTrigger):not([data-unstyled]):is(
+      :disabled,
+      [data-disabled]
+    ) {
+    opacity: 0.5;
+  }
+
+  .leverui-date-picker__tableCellTrigger:not([data-unstyled])[data-today] {
+    color: var(--leverui-colors-color-palette-fg);
+    font-weight: var(--leverui-font-weights-semibold);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+  }
+
+  .leverui-date-picker__tableCellTrigger:not([data-unstyled])[data-selected] {
+    background: var(--leverui-colors-color-palette-solid);
+    color: var(--leverui-colors-color-palette-contrast);
+  }
+
+  .leverui-date-picker__tableCellTrigger:not([data-unstyled])[data-selected]:hover {
+    background: var(--leverui-colors-color-palette-solid);
+  }
+
+  .leverui-date-picker__tableCellTrigger:not([data-unstyled])[data-in-range] {
+    background: var(--leverui-colors-color-palette-subtle);
+    color: var(--leverui-colors-color-palette-fg);
+    border-radius: 0;
+  }
+
+  .leverui-date-picker__tableCellTrigger:not([data-unstyled])[data-in-range]:hover {
+    background: var(--leverui-colors-color-palette-subtle);
+  }
+
+  .leverui-date-picker__tableCellTrigger:not([data-unstyled])[data-in-range][data-selected] {
+    background: var(--leverui-colors-color-palette-solid);
+    color: var(--leverui-colors-color-palette-contrast);
+  }
+
+  .leverui-date-picker__tableCellTrigger:not([data-unstyled])[data-in-range][data-selected]:hover {
+    background: var(--leverui-colors-color-palette-solid);
+  }
+
+  .leverui-date-picker__tableCellTrigger:not([data-unstyled])[data-range-start][data-range-end] {
+    border-radius: var(--leverui-radii-l2);
+  }
+
+  .leverui-date-picker__tableCellTrigger:not([data-unstyled])[data-range-start]:not(
+      [data-range-end]
+    ) {
+    border-start-start-radius: var(--leverui-radii-l2);
+    border-end-start-radius: var(--leverui-radii-l2);
+  }
+
+  .leverui-date-picker__tableCellTrigger:not([data-unstyled])[data-range-end]:not(
+      [data-range-start]
+    ) {
+    border-start-end-radius: var(--leverui-radii-l2);
+    border-end-end-radius: var(--leverui-radii-l2);
+  }
+
+  .leverui-date-picker__tableCellTrigger:not([data-unstyled]):is(:disabled, [data-disabled]) {
+    opacity: 0.4;
+  }
+
+  :is(.leverui-date-picker__monthSelect, .leverui-date-picker__yearSelect):not([data-unstyled]):is(
+      :focus-visible,
+      [data-focus-visible]
+    ) {
+    outline: var(--focus-ring-width, 1px) var(--focus-ring-style, solid)
+      var(--leverui-date-picker-focus-color, var(--leverui-colors-color-palette-focus-ring));
+    outline-offset: -1px;
+  }
+}

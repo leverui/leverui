@@ -1,0 +1,25 @@
+@layer leverui.recipes {
+  .leverui-switch__root:not([data-unstyled]) {
+    --leverui-private-switch-width: var(--leverui-sizes-10);
+    --leverui-private-switch-height: var(--leverui-sizes-5);
+    --leverui-private-switch-indicator-font-size: var(--leverui-font-sizes-sm);
+
+    &[data-size='xs'] {
+      --leverui-private-switch-width: var(--leverui-sizes-6);
+      --leverui-private-switch-height: var(--leverui-sizes-3);
+      --leverui-private-switch-indicator-font-size: var(--leverui-font-sizes-xs);
+    }
+
+    &[data-size='sm'] {
+      --leverui-private-switch-width: var(--leverui-sizes-8);
+      --leverui-private-switch-height: var(--leverui-sizes-4);
+      --leverui-private-switch-indicator-font-size: var(--leverui-font-sizes-xs);
+    }
+
+    &[data-size='lg'] {
+      --leverui-private-switch-width: var(--leverui-sizes-12);
+      --leverui-private-switch-height: var(--leverui-sizes-6);
+      --leverui-private-switch-indicator-font-size: var(--leverui-font-sizes-md);
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.example-native-select-sample {
+  width: var(--leverui-sizes-60);
+}
+
+.example-native-select-submit {
+  margin-top: var(--leverui-spacing-4);
+}

@@ -1,0 +1,59 @@
+@layer leverui.recipes {
+  .leverui-list__root:not([data-unstyled]) {
+    --leverui-private-list-item-display: list-item;
+    --leverui-private-list-variant-align: normal;
+    --leverui-private-list-align: initial;
+    --leverui-private-list-marker-color: var(--leverui-colors-fg-subtle);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--leverui-list-gap, 0);
+    list-style: revert;
+
+    &[data-variant='marker'] {
+      --leverui-private-list-item-display: list-item;
+      --leverui-private-list-variant-align: normal;
+      --leverui-private-list-marker-color: var(--leverui-colors-fg-subtle);
+      list-style: revert;
+    }
+    &[data-variant='plain'] {
+      --leverui-private-list-item-display: inline-flex;
+      --leverui-private-list-variant-align: flex-start;
+      --leverui-private-list-marker-color: currentColor;
+      list-style: none;
+    }
+    &[data-align='start'] {
+      --leverui-private-list-align: flex-start;
+    }
+    &[data-align='center'] {
+      --leverui-private-list-align: center;
+    }
+    &[data-align='end'] {
+      --leverui-private-list-align: flex-end;
+    }
+  }
+
+  @scope (.leverui-list__root:not([data-unstyled])) to (.leverui-list__root) {
+    :scope :where(ul, ol) {
+      margin-top: var(--leverui-list-gap, 0);
+    }
+
+    .leverui-list__item:not([data-unstyled]) {
+      white-space: normal;
+      display: var(--leverui-private-list-item-display);
+      align-items: var(--leverui-private-list-align, var(--leverui-private-list-variant-align));
+
+      &::marker {
+        color: var(--leverui-private-list-marker-color);
+      }
+    }
+
+    .leverui-list__indicator:not([data-unstyled]) {
+      margin-inline-end: var(--leverui-spacing-2);
+      min-height: 1lh;
+      flex-shrink: 0;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

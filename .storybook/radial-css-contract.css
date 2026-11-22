@@ -1,0 +1,12 @@
+.radial-consumer {
+  --leverui-radial-chart-sector-stroke: rgb(37, 99, 235);
+  --leverui-radial-chart-label-font-size: 14px;
+  --leverui-radial-chart-legend-gap: 18px;
+  --leverui-radial-chart-center-title-font-size: 28px;
+}
+
+.radial-bar-consumer {
+  --leverui-radial-bar-track-color: rgb(225, 231, 236);
+  --leverui-radial-bar-label-color: rgb(255, 255, 255);
+  --leverui-radial-bar-legend-gap: 20px;
+}

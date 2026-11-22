@@ -1,0 +1,44 @@
+.presence-contract-motion {
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+}
+
+.presence-contract-padding {
+  padding: var(--leverui-spacing-4);
+}
+
+.presence-contract-initial {
+  animation-name: none;
+}
+
+.presence-contract-fade[data-state='open'] {
+  animation-name: fade-in;
+}
+
+.presence-contract-fade[data-state='closed'] {
+  animation-name: fade-out;
+}
+
+.presence-contract-scale[data-state='open'] {
+  animation-name: scale-in, fade-in;
+}
+
+.presence-contract-scale[data-state='closed'] {
+  animation-name: scale-out, fade-out;
+}
+
+.presence-contract-slide-fade[data-state='open'] {
+  animation-name: slide-from-bottom, fade-in;
+}
+
+.presence-contract-slide-fade[data-state='closed'] {
+  animation-name: slide-to-bottom, fade-out;
+}
+
+.presence-contract-slide[data-state='open'] {
+  animation-name: slide-from-bottom-full;
+}
+
+.presence-contract-slide[data-state='closed'] {
+  animation-name: slide-to-bottom-full;
+}

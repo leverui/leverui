@@ -1,0 +1,19 @@
+.file-upload-css-root {
+  --leverui-colors-bg: rgb(241 247 253);
+}
+
+.file-upload-css-label {
+  color: rgb(73 41 133);
+}
+
+.file-upload-css-dropzone {
+  border-color: rgb(21 87 156);
+}
+
+.file-upload-css-root .leverui-file-upload__item {
+  border-color: rgb(21 87 156);
+}
+
+.file-upload-css-unstyled {
+  background: rgb(112 37 97);
+}

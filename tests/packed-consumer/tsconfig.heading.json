@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/heading-example.tsx", "src/heading-main.tsx", "src/heading-types.tsx"],
+  "exclude": []
+}

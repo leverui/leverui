@@ -1,0 +1,118 @@
+@layer leverui.recipes {
+  @media (min-width: 480px) {
+    .leverui-combobox__root:not([data-unstyled])[data-size-sm='xs'],
+    .leverui-combobox__content:not([data-unstyled])[data-size-sm='xs'] {
+      --leverui-private-combobox-input-height: var(--leverui-sizes-8);
+      --leverui-private-combobox-input-padding-x: var(--leverui-spacing-2);
+      --leverui-private-combobox-indicator-size: var(--leverui-sizes-3\.5);
+      --leverui-private-combobox-font-size: var(--leverui-font-sizes-xs);
+      --leverui-private-combobox-line-height: 1rem;
+      --leverui-private-combobox-trigger-gap: var(--leverui-spacing-1);
+      --leverui-private-combobox-trigger-padding-y: 0;
+      --leverui-private-combobox-item-padding-x: var(--leverui-spacing-1\.5);
+      --leverui-private-combobox-item-padding-y: var(--leverui-spacing-1);
+      --leverui-private-combobox-content-padding: var(--leverui-spacing-1);
+      --leverui-private-combobox-item-indicator-display: block;
+    }
+    .leverui-combobox__root:not([data-unstyled])[data-size-sm='sm'],
+    .leverui-combobox__content:not([data-unstyled])[data-size-sm='sm'] {
+      --leverui-private-combobox-input-height: var(--leverui-sizes-9);
+      --leverui-private-combobox-input-padding-x: var(--leverui-spacing-2\.5);
+      --leverui-private-combobox-indicator-size: var(--leverui-sizes-4);
+      --leverui-private-combobox-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-combobox-line-height: 1.25rem;
+      --leverui-private-combobox-trigger-gap: var(--leverui-spacing-1);
+      --leverui-private-combobox-trigger-padding-y: 0;
+      --leverui-private-combobox-item-padding-x: var(--leverui-spacing-2);
+      --leverui-private-combobox-item-padding-y: var(--leverui-spacing-1\.5);
+      --leverui-private-combobox-content-padding: var(--leverui-spacing-1);
+      --leverui-private-combobox-item-indicator-display: block;
+    }
+    .leverui-combobox__root:not([data-unstyled])[data-size-sm='md'],
+    .leverui-combobox__content:not([data-unstyled])[data-size-sm='md'] {
+      --leverui-private-combobox-input-height: var(--leverui-sizes-10);
+      --leverui-private-combobox-input-padding-x: var(--leverui-spacing-3);
+      --leverui-private-combobox-indicator-size: var(--leverui-sizes-4);
+      --leverui-private-combobox-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-combobox-line-height: 1.25rem;
+      --leverui-private-combobox-trigger-gap: var(--leverui-spacing-2);
+      --leverui-private-combobox-trigger-padding-y: 0;
+      --leverui-private-combobox-item-padding-x: var(--leverui-spacing-2);
+      --leverui-private-combobox-item-padding-y: var(--leverui-spacing-1\.5);
+      --leverui-private-combobox-content-padding: var(--leverui-spacing-1);
+      --leverui-private-combobox-item-indicator-display: flex;
+    }
+    .leverui-combobox__root:not([data-unstyled])[data-size-sm='lg'],
+    .leverui-combobox__content:not([data-unstyled])[data-size-sm='lg'] {
+      --leverui-private-combobox-input-height: var(--leverui-sizes-12);
+      --leverui-private-combobox-input-padding-x: var(--leverui-spacing-4);
+      --leverui-private-combobox-indicator-size: var(--leverui-sizes-5);
+      --leverui-private-combobox-font-size: var(--leverui-font-sizes-md);
+      --leverui-private-combobox-line-height: 1.5rem;
+      --leverui-private-combobox-trigger-gap: var(--leverui-spacing-2);
+      --leverui-private-combobox-trigger-padding-y: var(--leverui-spacing-3);
+      --leverui-private-combobox-item-padding-x: var(--leverui-spacing-3);
+      --leverui-private-combobox-item-padding-y: var(--leverui-spacing-2);
+      --leverui-private-combobox-content-padding: var(--leverui-spacing-1\.5);
+      --leverui-private-combobox-item-indicator-display: block;
+    }
+  }
+  @media (min-width: 768px) {
+    .leverui-combobox__root:not([data-unstyled])[data-size-md='xs'],
+    .leverui-combobox__content:not([data-unstyled])[data-size-md='xs'] {
+      --leverui-private-combobox-input-height: var(--leverui-sizes-8);
+      --leverui-private-combobox-input-padding-x: var(--leverui-spacing-2);
+      --leverui-private-combobox-indicator-size: var(--leverui-sizes-3\.5);
+      --leverui-private-combobox-font-size: var(--leverui-font-sizes-xs);
+      --leverui-private-combobox-line-height: 1rem;
+      --leverui-private-combobox-trigger-gap: var(--leverui-spacing-1);
+      --leverui-private-combobox-trigger-padding-y: 0;
+      --leverui-private-combobox-item-padding-x: var(--leverui-spacing-1\.5);
+      --leverui-private-combobox-item-padding-y: var(--leverui-spacing-1);
+      --leverui-private-combobox-content-padding: var(--leverui-spacing-1);
+      --leverui-private-combobox-item-indicator-display: block;
+    }
+    .leverui-combobox__root:not([data-unstyled])[data-size-md='sm'],
+    .leverui-combobox__content:not([data-unstyled])[data-size-md='sm'] {
+      --leverui-private-combobox-input-height: var(--leverui-sizes-9);
+      --leverui-private-combobox-input-padding-x: var(--leverui-spacing-2\.5);
+      --leverui-private-combobox-indicator-size: var(--leverui-sizes-4);
+      --leverui-private-combobox-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-combobox-line-height: 1.25rem;
+      --leverui-private-combobox-trigger-gap: var(--leverui-spacing-1);
+      --leverui-private-combobox-trigger-padding-y: 0;
+      --leverui-private-combobox-item-padding-x: var(--leverui-spacing-2);
+      --leverui-private-combobox-item-padding-y: var(--leverui-spacing-1\.5);
+      --leverui-private-combobox-content-padding: var(--leverui-spacing-1);
+      --leverui-private-combobox-item-indicator-display: block;
+    }
+    .leverui-combobox__root:not([data-unstyled])[data-size-md='md'],
+    .leverui-combobox__content:not([data-unstyled])[data-size-md='md'] {
+      --leverui-private-combobox-input-height: var(--leverui-sizes-10);
+      --leverui-private-combobox-input-padding-x: var(--leverui-spacing-3);
+      --leverui-private-combobox-indicator-size: var(--leverui-sizes-4);
+      --leverui-private-combobox-font-size: var(--leverui-font-sizes-sm);
+      --leverui-private-combobox-line-height: 1.25rem;
+      --leverui-private-combobox-trigger-gap: var(--leverui-spacing-2);
+      --leverui-private-combobox-trigger-padding-y: 0;
+      --leverui-private-combobox-item-padding-x: var(--leverui-spacing-2);
+      --leverui-private-combobox-item-padding-y: var(--leverui-spacing-1\.5);
+      --leverui-private-combobox-content-padding: var(--leverui-spacing-1);
+      --leverui-private-combobox-item-indicator-display: flex;
+    }
+    .leverui-combobox__root:not([data-unstyled])[data-size-md='lg'],
+    .leverui-combobox__content:not([data-unstyled])[data-size-md='lg'] {
+      --leverui-private-combobox-input-height: var(--leverui-sizes-12);
+      --leverui-private-combobox-input-padding-x: var(--leverui-spacing-4);
+      --leverui-private-combobox-indicator-size: var(--leverui-sizes-5);
+      --leverui-private-combobox-font-size: var(--leverui-font-sizes-md);
+      --leverui-private-combobox-line-height: 1.5rem;
+      --leverui-private-combobox-trigger-gap: var(--leverui-spacing-2);
+      --leverui-private-combobox-trigger-padding-y: var(--leverui-spacing-3);
+      --leverui-private-combobox-item-padding-x: var(--leverui-spacing-3);
+      --leverui-private-combobox-item-padding-y: var(--leverui-spacing-2);
+      --leverui-private-combobox-content-padding: var(--leverui-spacing-1\.5);
+      --leverui-private-combobox-item-indicator-display: block;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@layer leverui.recipes {
+  .leverui-prose:not([data-unstyled]) {
+    & :where(ol, ul):not(.not-prose, .not-prose *) {
+      margin-block: 1em;
+      padding-inline-start: 1.5em;
+    }
+    & :where(li):not(.not-prose, .not-prose *) {
+      margin-block: 0.285em;
+    }
+    & :where(ol > li):not(.not-prose, .not-prose *) {
+      padding-inline-start: 0.4em;
+      list-style-type: decimal;
+    }
+    & :where(ul > li):not(.not-prose, .not-prose *) {
+      padding-inline-start: 0.4em;
+      list-style-type: disc;
+    }
+    & :where(ol > li, ul > li):not(.not-prose, .not-prose *)::marker {
+      color: var(--leverui-colors-fg-muted);
+    }
+    & > :where(ul, ol) > li p:not(.not-prose, .not-prose *) {
+      margin-block: 0.5em;
+    }
+    & > :where(ul, ol) > li > p:first-of-type:not(.not-prose, .not-prose *) {
+      margin-top: 0;
+    }
+    & > :where(ul, ol) > li > p:last-of-type:not(.not-prose, .not-prose *) {
+      margin-bottom: 0;
+    }
+    & :where(ul ul, ul ol, ol ul, ol ol):not(.not-prose, .not-prose *) {
+      margin-block: 0.5em;
+    }
+    & :where(dl):not(.not-prose, .not-prose *) {
+      margin-block: 1em;
+    }
+    & :where(dt):not(.not-prose, .not-prose *) {
+      font-weight: 600;
+      margin-top: 1em;
+    }
+    & :where(dd):not(.not-prose, .not-prose *) {
+      margin-top: 0.285em;
+      padding-inline-start: 1.5em;
+    }
+    & :where(hr):not(.not-prose, .not-prose *) {
+      margin-block: 2.25em;
+    }
+    & :where(:is(h1, h2, h3, h4, h5, hr) + *):not(.not-prose, .not-prose *) {
+      margin-top: 0;
+    }
+  }
+}

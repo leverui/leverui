@@ -1,0 +1,94 @@
+/* A full-width band, so the angled planes behind the hero can reach the window edges. */
+.hero-band {
+  position: relative;
+  /* Slide up behind the header, so the planes show through it at the top of the page. */
+  margin-top: calc(-1 * var(--site-header-height));
+  padding-top: var(--site-header-height);
+  overflow: hidden;
+  border-bottom: 1px solid var(--site-border);
+  --hero-plane: color-mix(in srgb, var(--site-accent) 9%, transparent);
+  --hero-plane-strong: color-mix(in srgb, var(--site-accent) 15%, transparent);
+}
+html[data-leverui-color-mode='dark'] .hero-band {
+  --hero-plane: color-mix(in srgb, var(--site-accent) 14%, transparent);
+  --hero-plane-strong: color-mix(in srgb, var(--site-accent) 24%, transparent);
+}
+/* Three large flat planes that cross behind the content, like sheets of tinted glass. */
+.hero-backdrop {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.hero-backdrop span {
+  position: absolute;
+  inset: 0;
+}
+.hero-backdrop span:nth-child(1) {
+  background: linear-gradient(170deg, var(--hero-plane), transparent 75%);
+  clip-path: polygon(0 0, 44% 0, 24% 100%, 0 100%);
+}
+.hero-backdrop span:nth-child(2) {
+  background: linear-gradient(200deg, var(--hero-plane), transparent 85%);
+  clip-path: polygon(52% 0, 100% 0, 100% 70%, 70% 100%, 30% 100%);
+}
+.hero-backdrop span:nth-child(3) {
+  background: linear-gradient(190deg, var(--hero-plane-strong), transparent 80%);
+  clip-path: polygon(34% 0, 52% 0, 30% 100%, 12% 100%);
+}
+/* One screen: the pitch on the left, a wall of working examples on the right. */
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 56px;
+  align-items: start;
+  height: calc(100dvh - var(--site-header-height));
+  min-height: 640px;
+  max-height: 900px;
+  overflow: hidden;
+}
+.hero.page-container {
+  width: min(100% - 64px, 1400px);
+}
+.hero-copy {
+  padding-top: clamp(40px, 9vh, 96px);
+}
+/* A label, not a link: it states what Lever UI is built for. */
+.hero-announcement {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: var(--leverui-radii-full);
+  background: var(--site-accent-soft);
+  color: var(--site-accent-bright);
+  font-size: 13px;
+  font-weight: var(--leverui-font-weights-medium);
+}
+.hero h1 {
+  margin: 24px 0 16px;
+  font-size: clamp(36px, 3.6vw, 54px);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+.hero-copy > p {
+  max-width: 520px;
+  margin: 0 0 24px;
+  color: var(--site-muted);
+  font-size: 18px;
+  line-height: 1.55;
+}
+.hero .guide-code-block {
+  max-width: 520px;
+  margin: 0 0 24px;
+  border-radius: 16px;
+}
+.hero-actions {
+  display: flex;
+  gap: 12px;
+}
+.hero-actions .leverui-button {
+  min-width: 150px;
+  justify-content: center;
+}

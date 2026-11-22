@@ -1,0 +1,10 @@
+import { type JSX } from '@solidjs/web';
+import { type UseFileUploadContext, useFileUploadContext } from './use-file-upload-context';
+
+export interface FileUploadContextProps {
+  children: (context: UseFileUploadContext) => JSX.Element;
+}
+
+/** Render the FileUpload context context through a function child. */
+export const FileUploadContext = (props: FileUploadContextProps) =>
+  props.children(useFileUploadContext());

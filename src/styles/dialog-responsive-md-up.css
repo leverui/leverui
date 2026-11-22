@@ -1,0 +1,32 @@
+@layer leverui.recipes {
+  @media (min-width: 768px) {
+    .leverui-dialog__content[data-leverui-dialog-css][data-size-md='xs'] {
+      --leverui-private-dialog-size-max-width: var(--leverui-sizes-sm);
+    }
+    .leverui-dialog__content[data-leverui-dialog-css][data-size-md='sm'] {
+      --leverui-private-dialog-size-max-width: var(--leverui-sizes-md);
+    }
+    .leverui-dialog__content[data-leverui-dialog-css][data-size-md='md'] {
+      --leverui-private-dialog-size-max-width: var(--leverui-sizes-lg);
+    }
+    .leverui-dialog__content[data-leverui-dialog-css][data-size-md='lg'] {
+      --leverui-private-dialog-size-max-width: var(--leverui-sizes-2xl);
+    }
+    .leverui-dialog__content[data-leverui-dialog-css][data-size-md='xl'] {
+      --leverui-private-dialog-size-max-width: var(--leverui-sizes-4xl);
+    }
+    .leverui-dialog__content[data-leverui-dialog-css][data-size-md='cover'] {
+      --leverui-private-dialog-size-height: 100%;
+      --leverui-private-dialog-size-margin: 0;
+    }
+    .leverui-dialog__content[data-leverui-dialog-css][data-size-md='full'] {
+      --leverui-private-dialog-size-max-width: 100dvw;
+      --leverui-private-dialog-size-min-height: 100dvh;
+      --leverui-private-dialog-size-radius: 0;
+      --leverui-private-dialog-size-margin: 0;
+    }
+    .leverui-dialog__positioner[data-leverui-dialog-css][data-size-md='cover'] {
+      --leverui-private-dialog-positioner-padding: var(--leverui-spacing-10);
+    }
+  }
+}

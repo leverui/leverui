@@ -1,0 +1,27 @@
+@layer leverui.recipes {
+  .leverui-container:not([data-unstyled]) {
+    position: relative;
+    width: 100%;
+    max-width: var(--leverui-container-max-width, var(--leverui-sizes-8xl));
+    margin-inline: auto;
+    padding-inline: var(--leverui-container-padding, var(--leverui-spacing-4));
+
+    &[data-center-content-base='true'] {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &[data-fluid-base='true'] {
+      max-width: var(--leverui-container-fluid-max-width, var(--leverui-sizes-full));
+    }
+
+    @media (min-width: 48rem) {
+      padding-inline: var(--leverui-container-padding-md, var(--leverui-spacing-6));
+    }
+
+    @media (min-width: 64rem) {
+      padding-inline: var(--leverui-container-padding-lg, var(--leverui-spacing-8));
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.example-fieldset-form {
+  max-width: var(--leverui-sizes-md);
+}
+
+.example-fieldset-submit {
+  align-self: flex-start;
+}

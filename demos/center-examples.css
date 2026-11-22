@@ -1,0 +1,32 @@
+.center-example-basic {
+  width: 100%;
+  max-width: 320px;
+  height: 100px;
+  background: var(--leverui-colors-bg-emphasized);
+}
+
+.center-example-count {
+  font-size: var(--leverui-font-sizes-lg);
+  font-weight: var(--leverui-font-weights-bold);
+}
+
+.center-example-icon {
+  width: 40px;
+  height: 40px;
+  background: tomato;
+  color: #111827;
+}
+
+.center-example-inline {
+  gap: var(--leverui-spacing-4);
+}
+
+.center-example-square {
+  background: var(--leverui-colors-purple-700);
+  color: white;
+}
+
+.center-example-circle {
+  background: var(--leverui-colors-blue-700);
+  color: white;
+}

@@ -1,0 +1,76 @@
+.color-picker-example-compact {
+  max-width: 200px;
+}
+
+.color-picker-example-align-start {
+  align-items: flex-start;
+}
+
+.color-picker-example-channel-label {
+  min-width: 5ch;
+}
+
+.color-picker-example-channel-input {
+  height: var(--leverui-sizes-7);
+  padding-inline: 0;
+  font-size: var(--leverui-font-sizes-xs);
+  text-align: center;
+}
+
+.color-picker-example-swatch-compact {
+  --leverui-color-picker-swatch-size: var(--leverui-sizes-4\.5);
+}
+
+.color-picker-example-swatch-large {
+  --leverui-color-picker-swatch-size: var(--leverui-sizes-6);
+}
+
+.color-picker-example-swatch-short {
+  height: var(--leverui-sizes-2);
+}
+
+.color-picker-example-trigger-round {
+  border-radius: var(--leverui-radii-full);
+}
+
+.color-picker-example-radius-inherit {
+  border-radius: inherit;
+}
+
+.color-picker-example-trigger-padded {
+  padding-inline: var(--leverui-spacing-2);
+}
+
+.color-picker-example-value-wide {
+  min-width: 160px;
+}
+
+.color-picker-example-inline-content {
+  padding: 0;
+  box-shadow: none;
+  animation: none;
+}
+
+.color-picker-example-swatch-indicator {
+  width: var(--leverui-sizes-3);
+  height: var(--leverui-sizes-3);
+  background: white;
+}
+
+.color-picker-example-trigger-large {
+  font-size: var(--leverui-font-sizes-lg);
+  line-height: 1.75rem;
+}
+
+.color-picker-example-adornment {
+  padding-inline: var(--leverui-spacing-1);
+}
+
+.color-picker-example-adornment-interactive {
+  pointer-events: all;
+}
+
+.color-picker-example-type-icon {
+  display: flex;
+  line-height: 1;
+}

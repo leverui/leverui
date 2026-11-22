@@ -1,0 +1,51 @@
+@layer leverui.recipes {
+  @media (min-width: 480px) {
+    .leverui-switch__root:not([data-unstyled]) {
+      &[data-size-sm='xs'] {
+        --leverui-private-switch-width: var(--leverui-sizes-6);
+        --leverui-private-switch-height: var(--leverui-sizes-3);
+        --leverui-private-switch-indicator-font-size: var(--leverui-font-sizes-xs);
+      }
+      &[data-size-sm='sm'] {
+        --leverui-private-switch-width: var(--leverui-sizes-8);
+        --leverui-private-switch-height: var(--leverui-sizes-4);
+        --leverui-private-switch-indicator-font-size: var(--leverui-font-sizes-xs);
+      }
+      &[data-size-sm='md'] {
+        --leverui-private-switch-width: var(--leverui-sizes-10);
+        --leverui-private-switch-height: var(--leverui-sizes-5);
+        --leverui-private-switch-indicator-font-size: var(--leverui-font-sizes-sm);
+      }
+      &[data-size-sm='lg'] {
+        --leverui-private-switch-width: var(--leverui-sizes-12);
+        --leverui-private-switch-height: var(--leverui-sizes-6);
+        --leverui-private-switch-indicator-font-size: var(--leverui-font-sizes-md);
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .leverui-switch__root:not([data-unstyled]) {
+      &[data-size-md='xs'] {
+        --leverui-private-switch-width: var(--leverui-sizes-6);
+        --leverui-private-switch-height: var(--leverui-sizes-3);
+        --leverui-private-switch-indicator-font-size: var(--leverui-font-sizes-xs);
+      }
+      &[data-size-md='sm'] {
+        --leverui-private-switch-width: var(--leverui-sizes-8);
+        --leverui-private-switch-height: var(--leverui-sizes-4);
+        --leverui-private-switch-indicator-font-size: var(--leverui-font-sizes-xs);
+      }
+      &[data-size-md='md'] {
+        --leverui-private-switch-width: var(--leverui-sizes-10);
+        --leverui-private-switch-height: var(--leverui-sizes-5);
+        --leverui-private-switch-indicator-font-size: var(--leverui-font-sizes-sm);
+      }
+      &[data-size-md='lg'] {
+        --leverui-private-switch-width: var(--leverui-sizes-12);
+        --leverui-private-switch-height: var(--leverui-sizes-6);
+        --leverui-private-switch-indicator-font-size: var(--leverui-font-sizes-md);
+      }
+    }
+  }
+}

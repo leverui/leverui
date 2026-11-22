@@ -1,0 +1,8 @@
+.dialog-final-focus-target {
+  padding: var(--leverui-spacing-4);
+  border: 2px dashed;
+}
+
+.dialog-final-focus-target:focus {
+  outline: 2px solid red;
+}

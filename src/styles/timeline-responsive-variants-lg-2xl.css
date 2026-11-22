@@ -1,0 +1,92 @@
+@layer leverui.recipes {
+  @media (min-width: 1024px) {
+    .leverui-timeline__root:not([data-unstyled]) {
+      &[data-variant-lg='subtle'] {
+        --leverui-private-timeline-indicator-bg: var(--leverui-colors-color-palette-muted);
+        --leverui-private-timeline-indicator-color: inherit;
+        --leverui-private-timeline-indicator-border-width: 0;
+        --leverui-private-timeline-indicator-border-color: var(--leverui-colors-border);
+      }
+      &[data-variant-lg='solid'] {
+        --leverui-private-timeline-indicator-bg: var(--leverui-colors-color-palette-solid);
+        --leverui-private-timeline-indicator-color: var(--leverui-colors-color-palette-contrast);
+        --leverui-private-timeline-indicator-border-width: 0;
+        --leverui-private-timeline-indicator-border-color: var(--leverui-colors-border);
+      }
+      &[data-variant-lg='outline'] {
+        --leverui-private-timeline-indicator-bg: var(--bg-currentcolor);
+        --leverui-private-timeline-indicator-color: inherit;
+        --leverui-private-timeline-indicator-border-width: 1px;
+        --leverui-private-timeline-indicator-border-color: var(
+          --leverui-colors-color-palette-muted
+        );
+      }
+      &[data-variant-lg='plain'] {
+        --leverui-private-timeline-indicator-bg: transparent;
+        --leverui-private-timeline-indicator-color: inherit;
+        --leverui-private-timeline-indicator-border-width: 0;
+        --leverui-private-timeline-indicator-border-color: var(--leverui-colors-border);
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    .leverui-timeline__root:not([data-unstyled]) {
+      &[data-variant-xl='subtle'] {
+        --leverui-private-timeline-indicator-bg: var(--leverui-colors-color-palette-muted);
+        --leverui-private-timeline-indicator-color: inherit;
+        --leverui-private-timeline-indicator-border-width: 0;
+        --leverui-private-timeline-indicator-border-color: var(--leverui-colors-border);
+      }
+      &[data-variant-xl='solid'] {
+        --leverui-private-timeline-indicator-bg: var(--leverui-colors-color-palette-solid);
+        --leverui-private-timeline-indicator-color: var(--leverui-colors-color-palette-contrast);
+        --leverui-private-timeline-indicator-border-width: 0;
+        --leverui-private-timeline-indicator-border-color: var(--leverui-colors-border);
+      }
+      &[data-variant-xl='outline'] {
+        --leverui-private-timeline-indicator-bg: var(--bg-currentcolor);
+        --leverui-private-timeline-indicator-color: inherit;
+        --leverui-private-timeline-indicator-border-width: 1px;
+        --leverui-private-timeline-indicator-border-color: var(
+          --leverui-colors-color-palette-muted
+        );
+      }
+      &[data-variant-xl='plain'] {
+        --leverui-private-timeline-indicator-bg: transparent;
+        --leverui-private-timeline-indicator-color: inherit;
+        --leverui-private-timeline-indicator-border-width: 0;
+        --leverui-private-timeline-indicator-border-color: var(--leverui-colors-border);
+      }
+    }
+  }
+  @media (min-width: 1536px) {
+    .leverui-timeline__root:not([data-unstyled]) {
+      &[data-variant-2xl='subtle'] {
+        --leverui-private-timeline-indicator-bg: var(--leverui-colors-color-palette-muted);
+        --leverui-private-timeline-indicator-color: inherit;
+        --leverui-private-timeline-indicator-border-width: 0;
+        --leverui-private-timeline-indicator-border-color: var(--leverui-colors-border);
+      }
+      &[data-variant-2xl='solid'] {
+        --leverui-private-timeline-indicator-bg: var(--leverui-colors-color-palette-solid);
+        --leverui-private-timeline-indicator-color: var(--leverui-colors-color-palette-contrast);
+        --leverui-private-timeline-indicator-border-width: 0;
+        --leverui-private-timeline-indicator-border-color: var(--leverui-colors-border);
+      }
+      &[data-variant-2xl='outline'] {
+        --leverui-private-timeline-indicator-bg: var(--bg-currentcolor);
+        --leverui-private-timeline-indicator-color: inherit;
+        --leverui-private-timeline-indicator-border-width: 1px;
+        --leverui-private-timeline-indicator-border-color: var(
+          --leverui-colors-color-palette-muted
+        );
+      }
+      &[data-variant-2xl='plain'] {
+        --leverui-private-timeline-indicator-bg: transparent;
+        --leverui-private-timeline-indicator-color: inherit;
+        --leverui-private-timeline-indicator-border-width: 0;
+        --leverui-private-timeline-indicator-border-color: var(--leverui-colors-border);
+      }
+    }
+  }
+}
