@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { cp, readFile, rm } from 'node:fs/promises';
+import { cp, mkdir, readFile, rm } from 'node:fs/promises';
 import { join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import ts from 'typescript';
@@ -138,6 +138,8 @@ async function main() {
       'Declaration inputs changed during the build.',
     );
     const destination = join(projectRoot, 'dist');
+    // A fresh checkout has no build output yet.
+    await mkdir(destination, { recursive: true });
     await removeOldDeclarations(destination);
     await cp(outputRoot, destination, { recursive: true });
     console.log(`Built declarations for ${entries.length} public modules.`);
