@@ -17,8 +17,10 @@ root:
 | `pnpm generate:theme-reference` | Regenerate CSS variable pages from authored CSS            |
 | `pnpm build`                    | Bundles, declarations, default CSS, package smoke test     |
 
-GitHub Actions runs lint, formatting, typecheck, tests, the package checks, and
-the website build on every pull request and push to `main`. See
+GitHub Actions runs the build, tests, lint, typecheck, and formatting check as
+parallel jobs on every pull request and push to `main`. Typecheck is the
+slowest, at about an hour. The packed consumer and release bundle checks run
+before a release instead; see [Releasing](releasing.md). The workflow is
 `.github/workflows/ci.yml`.
 
 `pnpm format` applies Prettier. `pnpm lint:fix` applies only safe ESLint fixes;
