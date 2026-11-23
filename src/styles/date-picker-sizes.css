@@ -1,7 +1,5 @@
 @layer leverui.recipes {
-  :is(.leverui-date-picker__root, .leverui-date-picker__content):not(
-      [data-unstyled]
-    )[data-size='xs'] {
+  :is(.lui-date-picker__root, .lui-date-picker__content):not([data-unstyled])[data-size='xs'] {
     --lui-private-date-picker-input-height: var(--lui-sizes-8);
     --lui-private-date-picker-input-padding: var(--lui-spacing-2);
     --lui-private-date-picker-indicators-offset: var(--lui-spacing-2);
@@ -10,9 +8,7 @@
     --lui-private-date-picker-select-height: var(--lui-sizes-8);
   }
 
-  :is(.leverui-date-picker__root, .leverui-date-picker__content):not(
-      [data-unstyled]
-    )[data-size='sm'] {
+  :is(.lui-date-picker__root, .lui-date-picker__content):not([data-unstyled])[data-size='sm'] {
     --lui-private-date-picker-input-height: var(--lui-sizes-9);
     --lui-private-date-picker-input-padding: var(--lui-spacing-2\.5);
     --lui-private-date-picker-indicators-offset: var(--lui-spacing-2\.5);
@@ -21,9 +17,7 @@
     --lui-private-date-picker-select-height: var(--lui-sizes-9);
   }
 
-  :is(.leverui-date-picker__root, .leverui-date-picker__content):not(
-      [data-unstyled]
-    )[data-size='md'] {
+  :is(.lui-date-picker__root, .lui-date-picker__content):not([data-unstyled])[data-size='md'] {
     --lui-private-date-picker-input-height: var(--lui-sizes-10);
     --lui-private-date-picker-input-padding: var(--lui-spacing-3);
     --lui-private-date-picker-indicators-offset: var(--lui-spacing-3);
@@ -32,9 +26,7 @@
     --lui-private-date-picker-select-height: var(--lui-sizes-10);
   }
 
-  :is(.leverui-date-picker__root, .leverui-date-picker__content):not(
-      [data-unstyled]
-    )[data-size='lg'] {
+  :is(.lui-date-picker__root, .lui-date-picker__content):not([data-unstyled])[data-size='lg'] {
     --lui-private-date-picker-input-height: var(--lui-sizes-11);
     --lui-private-date-picker-input-padding: var(--lui-spacing-4);
     --lui-private-date-picker-indicators-offset: var(--lui-spacing-3);
@@ -43,9 +35,7 @@
     --lui-private-date-picker-select-height: var(--lui-sizes-10);
   }
 
-  :is(.leverui-date-picker__root, .leverui-date-picker__content):not(
-      [data-unstyled]
-    )[data-size='xl'] {
+  :is(.lui-date-picker__root, .lui-date-picker__content):not([data-unstyled])[data-size='xl'] {
     --lui-private-date-picker-input-height: var(--lui-sizes-12);
     --lui-private-date-picker-input-padding: var(--lui-spacing-4\.5);
     --lui-private-date-picker-indicators-offset: var(--lui-spacing-3);

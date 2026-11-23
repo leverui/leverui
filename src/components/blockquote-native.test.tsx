@@ -47,19 +47,19 @@ function verifiesNativeComposition(): void {
 
   const root = screen.getByTestId('owned-quote');
   expect(root.tagName).toBe('SECTION');
-  expect(root.classList.contains('leverui-blockquote__root')).toBe(true);
+  expect(root.classList.contains('lui-blockquote__root')).toBe(true);
   expect(root.classList.contains('owned-root')).toBe(true);
   expect(root.classList.contains('custom-root')).toBe(true);
   expect(root.getAttribute('data-variant')).toBe('solid');
   const content = screen.getByTestId('selected-content');
   expect(content.tagName).toBe('SECTION');
-  expect(content.classList.contains('leverui-blockquote__content')).toBe(true);
-  expect(
-    screen.getByTestId('owned-caption').classList.contains('leverui-blockquote__caption'),
-  ).toBe(true);
+  expect(content.classList.contains('lui-blockquote__content')).toBe(true);
+  expect(screen.getByTestId('owned-caption').classList.contains('lui-blockquote__caption')).toBe(
+    true,
+  );
   const icon = screen.getByTestId('owned-icon');
   expect(icon).toBe(receivedIcon);
-  expect(icon.classList.contains('leverui-blockquote__icon')).toBe(true);
+  expect(icon.classList.contains('lui-blockquote__icon')).toBe(true);
   expect(icon.querySelector('path')).not.toBeNull();
 }
 

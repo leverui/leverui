@@ -8,9 +8,7 @@ type ColorMode = 'light' | 'dark';
 
 /** Read the mode selected before hydration by the document's theme script. */
 function documentMode(): ColorMode {
-  return document.documentElement.getAttribute('data-leverui-color-mode') === 'dark'
-    ? 'dark'
-    : 'light';
+  return document.documentElement.getAttribute('data-lui-color-mode') === 'dark' ? 'dark' : 'light';
 }
 
 /** Let visitors switch the site and Lever UI components together. */
@@ -20,7 +18,7 @@ export function SiteThemeToggle(): JSX.Element {
   /** Persist a manual choice and update the root before the next render. */
   function toggleMode(): void {
     const nextMode = documentMode() === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-leverui-color-mode', nextMode);
+    document.documentElement.setAttribute('data-lui-color-mode', nextMode);
     document.documentElement.style.colorScheme = nextMode;
     try {
       localStorage.setItem(storageKey, nextMode);

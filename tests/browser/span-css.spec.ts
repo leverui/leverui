@@ -27,7 +27,7 @@ async function verifiesSpanCssHydration({ page }: { page: Page }): Promise<void>
     /** Match the browser's reactive class tree. */
     () => renderSpanCssHydrationTree(server),
   );
-  expect(markup).toContain('leverui-span');
+  expect(markup).toContain('lui-span');
   await page.goto('/iframe.html?id=setup-hydration-host--ready');
   await page.setContent(
     `${generateHydrationScript()}<style>${defaultCss}</style><style>${consumerCss}</style><div id="span-css-hydration-root">${markup}</div>`,
@@ -69,7 +69,7 @@ async function verifiesScriptFreeSpan({ page }: { page: Page }): Promise<void> {
         children: 'Inline text',
       }),
   );
-  expect(markup).toContain('leverui-span');
+  expect(markup).toContain('lui-span');
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(
     `<style>${defaultCss}</style><style>.consumer-inline{font-weight:700}</style>${markup}`,

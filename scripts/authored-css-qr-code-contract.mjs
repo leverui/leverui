@@ -3,9 +3,9 @@ export const qrCodeContracts = [
   {
     family: 'qr-code',
     required: [
-      '.leverui-qr-code__root',
-      '.leverui-qr-code__frame',
-      '.leverui-qr-code__overlay',
+      '.lui-qr-code__root',
+      '.lui-qr-code__frame',
+      '.lui-qr-code__overlay',
       "[data-size='2xs']",
       "[data-size='full']",
       "[data-size-md='xl']",

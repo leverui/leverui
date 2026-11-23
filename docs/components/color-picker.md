@@ -185,8 +185,8 @@ Give its icon button an accessible name, such as `aria-label`.
 
 ## Customize with CSS
 
-Part classes: `.leverui-color-picker__<slot>`. `Sliders` uses
-`.leverui-color-picker__sliders`. Variables:
+Part classes: `.lui-color-picker__<slot>`. `Sliders` uses
+`.lui-color-picker__sliders`. Variables:
 
 - `--lui-color-picker-root-gap`
 - `--lui-color-picker-trigger-height` and

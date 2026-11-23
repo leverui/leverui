@@ -78,6 +78,6 @@ export function selectAppearanceAttributes(
   return {
     ...choiceAttributes('size', state.size()),
     ...choiceAttributes('variant', state.variant()),
-    'data-leverui-color-palette': state.colorPalette(),
+    'data-lui-color-palette': state.colorPalette(),
   };
 }

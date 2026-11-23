@@ -49,7 +49,7 @@ export function renderButtonHydrationTree(
           createComponent(Button, {
             id: 'hydrated-middle',
             /** Exclude the middle Button when compact mode starts. */
-            get 'data-leverui-group-skip'() {
+            get 'data-lui-group-skip'() {
               return compact() ? '' : undefined;
             },
             children: 'Middle',

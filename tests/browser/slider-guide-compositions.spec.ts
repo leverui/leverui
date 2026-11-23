@@ -13,7 +13,7 @@ async function verifiesPalettes({ page }: { page: Page }): Promise<void> {
       { timeout: 30_000 },
     );
     colors.push(
-      await root.locator('.leverui-slider__range').evaluate(
+      await root.locator('.lui-slider__range').evaluate(
         /** Read the resolved palette color from the actual range. */
         (element) => getComputedStyle(element).backgroundColor,
       ),
@@ -30,8 +30,8 @@ async function verifiesVerticalMarks({ page }: { page: Page }): Promise<void> {
   const root = page.getByTestId('slider-vertical-marks');
   const thumb = root.getByRole('slider', { name: 'Vertical percentage' });
   await expect(thumb).toHaveAttribute('aria-orientation', 'vertical', { timeout: 30_000 });
-  await expect(root.locator('.leverui-slider__markerLabel')).toHaveText(['0%', '50%', '100%']);
-  const marks = root.locator('.leverui-slider__marker');
+  await expect(root.locator('.lui-slider__markerLabel')).toHaveText(['0%', '50%', '100%']);
+  const marks = root.locator('.lui-slider__marker');
   const first = await marks.first().boundingBox();
   const last = await marks.last().boundingBox();
   if (!first || !last) throw new Error('Vertical Slider marks have no browser bounds.');
@@ -54,13 +54,13 @@ async function verifiesAlignment({ page }: { page: Page }): Promise<void> {
     await thumb.focus();
     await thumb.press('ArrowRight');
     await expect(thumb).toHaveAttribute('aria-valuenow', '50');
-    await expect(root.locator('.leverui-slider__valueText')).toContainText('50');
+    await expect(root.locator('.lui-slider__valueText')).toContainText('50');
     await thumb.press('Home');
   }
   const containedThumb = await contain.getByRole('slider').boundingBox();
   const centeredThumb = await center.getByRole('slider').boundingBox();
-  const containedTrack = await contain.locator('.leverui-slider__track').boundingBox();
-  const centeredTrack = await center.locator('.leverui-slider__track').boundingBox();
+  const containedTrack = await contain.locator('.lui-slider__track').boundingBox();
+  const centeredTrack = await center.locator('.lui-slider__track').boundingBox();
   if (!containedThumb || !centeredThumb || !containedTrack || !centeredTrack) {
     throw new Error('Slider alignment specimens have no browser bounds.');
   }
@@ -97,14 +97,14 @@ async function verifiesClosedSlider({ page }: { page: Page }): Promise<void> {
   const form = page.getByTestId('slider-closed-form');
   const thumb = form.getByRole('slider', { name: 'Volume' });
   await expect(thumb).toHaveAttribute('aria-valuenow', '40', { timeout: 30_000 });
-  const labelRow = form.locator('.leverui-slider__label').locator('..');
+  const labelRow = form.locator('.lui-slider__label').locator('..');
   await expect(labelRow).toHaveCSS('align-items', 'center');
   await expect(labelRow).toHaveCSS('gap', '8px');
   await expect(form.getByText('Half')).toBeVisible();
-  await expect(form.locator('.leverui-slider__valueText')).toContainText('40');
+  await expect(form.locator('.lui-slider__valueText')).toContainText('40');
   await thumb.focus();
   await thumb.press('ArrowRight');
-  await expect(form.locator('.leverui-slider__valueText')).toContainText('41');
+  await expect(form.locator('.lui-slider__valueText')).toContainText('41');
   expect(await form.evaluate(sliderGuideFormValue, 'volume')).toBe('41');
 }
 
@@ -116,10 +116,10 @@ async function verifiesDefaultClosedSlider({ page }: { page: Page }): Promise<vo
   const form = page.getByTestId('slider-closed-default-form');
   const root = page.getByTestId('slider-closed-default-root');
   const thumb = root.getByRole('slider', { name: 'Level' });
-  await expect(root.locator(':scope > .leverui-slider__label')).toHaveText('Level', {
+  await expect(root.locator(':scope > .lui-slider__label')).toHaveText('Level', {
     timeout: 30_000,
   });
-  await expect(root.locator('.leverui-slider__valueText')).toHaveCount(0);
+  await expect(root.locator('.lui-slider__valueText')).toHaveCount(0);
   await thumb.focus();
   await thumb.press('ArrowRight');
   await expect(thumb).toHaveAttribute('aria-valuenow', '31');

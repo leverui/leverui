@@ -41,7 +41,7 @@ function renderInstalledCard() {
 
 const markup = renderInstalledCard();
 assert.match(markup, /<div[^>]*id="packed-server-card"/);
-assert.match(markup, /leverui-card/);
+assert.match(markup, /lui-card/);
 assert.match(markup, /<h3[^>]*>Installed title<\/h3>/);
 assert.match(markup, /<p[^>]*>Installed description<\/p>/);
 assert.match(markup, /Installed body/);

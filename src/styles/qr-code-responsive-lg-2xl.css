@@ -1,79 +1,79 @@
 @layer leverui.recipes {
   @media (min-width: 1024px) {
-    .leverui-qr-code__root:not([data-unstyled])[data-size-lg='2xs'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-lg='2xs'] {
       --lui-private-qr-code-size: 40px;
     }
-    .leverui-qr-code__root:not([data-unstyled])[data-size-lg='xs'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-lg='xs'] {
       --lui-private-qr-code-size: 64px;
     }
-    .leverui-qr-code__root:not([data-unstyled])[data-size-lg='sm'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-lg='sm'] {
       --lui-private-qr-code-size: 80px;
     }
-    .leverui-qr-code__root:not([data-unstyled])[data-size-lg='md'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-lg='md'] {
       --lui-private-qr-code-size: 120px;
     }
-    .leverui-qr-code__root:not([data-unstyled])[data-size-lg='lg'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-lg='lg'] {
       --lui-private-qr-code-size: 160px;
     }
-    .leverui-qr-code__root:not([data-unstyled])[data-size-lg='xl'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-lg='xl'] {
       --lui-private-qr-code-size: 200px;
     }
-    .leverui-qr-code__root:not([data-unstyled])[data-size-lg='2xl'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-lg='2xl'] {
       --lui-private-qr-code-size: 240px;
     }
-    .leverui-qr-code__root:not([data-unstyled])[data-size-lg='full'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-lg='full'] {
       --lui-private-qr-code-size: 100%;
     }
   }
   @media (min-width: 1280px) {
-    .leverui-qr-code__root:not([data-unstyled])[data-size-xl='2xs'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-xl='2xs'] {
       --lui-private-qr-code-size: 40px;
     }
-    .leverui-qr-code__root:not([data-unstyled])[data-size-xl='xs'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-xl='xs'] {
       --lui-private-qr-code-size: 64px;
     }
-    .leverui-qr-code__root:not([data-unstyled])[data-size-xl='sm'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-xl='sm'] {
       --lui-private-qr-code-size: 80px;
     }
-    .leverui-qr-code__root:not([data-unstyled])[data-size-xl='md'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-xl='md'] {
       --lui-private-qr-code-size: 120px;
     }
-    .leverui-qr-code__root:not([data-unstyled])[data-size-xl='lg'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-xl='lg'] {
       --lui-private-qr-code-size: 160px;
     }
-    .leverui-qr-code__root:not([data-unstyled])[data-size-xl='xl'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-xl='xl'] {
       --lui-private-qr-code-size: 200px;
     }
-    .leverui-qr-code__root:not([data-unstyled])[data-size-xl='2xl'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-xl='2xl'] {
       --lui-private-qr-code-size: 240px;
     }
-    .leverui-qr-code__root:not([data-unstyled])[data-size-xl='full'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-xl='full'] {
       --lui-private-qr-code-size: 100%;
     }
   }
   @media (min-width: 1536px) {
-    .leverui-qr-code__root:not([data-unstyled])[data-size-2xl='2xs'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-2xl='2xs'] {
       --lui-private-qr-code-size: 40px;
     }
-    .leverui-qr-code__root:not([data-unstyled])[data-size-2xl='xs'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-2xl='xs'] {
       --lui-private-qr-code-size: 64px;
     }
-    .leverui-qr-code__root:not([data-unstyled])[data-size-2xl='sm'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-2xl='sm'] {
       --lui-private-qr-code-size: 80px;
     }
-    .leverui-qr-code__root:not([data-unstyled])[data-size-2xl='md'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-2xl='md'] {
       --lui-private-qr-code-size: 120px;
     }
-    .leverui-qr-code__root:not([data-unstyled])[data-size-2xl='lg'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-2xl='lg'] {
       --lui-private-qr-code-size: 160px;
     }
-    .leverui-qr-code__root:not([data-unstyled])[data-size-2xl='xl'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-2xl='xl'] {
       --lui-private-qr-code-size: 200px;
     }
-    .leverui-qr-code__root:not([data-unstyled])[data-size-2xl='2xl'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-2xl='2xl'] {
       --lui-private-qr-code-size: 240px;
     }
-    .leverui-qr-code__root:not([data-unstyled])[data-size-2xl='full'] {
+    .lui-qr-code__root:not([data-unstyled])[data-size-2xl='full'] {
       --lui-private-qr-code-size: 100%;
     }
   }

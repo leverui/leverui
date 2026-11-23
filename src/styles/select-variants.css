@@ -1,12 +1,12 @@
 @layer leverui.recipes {
-  .leverui-select__trigger:not([data-unstyled])[data-variant='outline'] {
+  .lui-select__trigger:not([data-unstyled])[data-variant='outline'] {
     --lui-private-select-background: transparent;
     --lui-private-select-border-width: 1px;
     --lui-private-select-border-color: var(--lui-select-border-color, var(--lui-colors-border));
     --lui-private-select-open-background: transparent;
     --lui-private-select-open-border-color: var(--lui-colors-border-emphasized);
   }
-  .leverui-select__trigger:not([data-unstyled])[data-variant='subtle'] {
+  .lui-select__trigger:not([data-unstyled])[data-variant='subtle'] {
     --lui-private-select-background: var(
       --lui-select-subtle-background,
       var(--lui-colors-bg-muted)
@@ -19,7 +19,7 @@
     );
     --lui-private-select-open-border-color: transparent;
   }
-  .leverui-select__trigger:not([data-unstyled])[data-variant='ghost'] {
+  .lui-select__trigger:not([data-unstyled])[data-variant='ghost'] {
     --lui-private-select-background: transparent;
     --lui-private-select-border-width: 0;
     --lui-private-select-border-color: var(--lui-colors-border);
@@ -29,7 +29,7 @@
     );
     --lui-private-select-open-border-color: transparent;
   }
-  .leverui-select__trigger:not([data-unstyled])[data-state='open'] {
+  .lui-select__trigger:not([data-unstyled])[data-state='open'] {
     background: var(
       --lui-select-trigger-open-background,
       var(--lui-private-select-open-background)

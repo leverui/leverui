@@ -117,7 +117,7 @@ function ButtonContractExample(): JSX.Element {
         </ButtonGroup>
         <ButtonGroup attached data-testid="skipped-single-group">
           <Button variant="outline">Keep</Button>
-          <Button variant="outline" data-leverui-group-skip="">
+          <Button variant="outline" data-lui-group-skip="">
             Skip
           </Button>
         </ButtonGroup>

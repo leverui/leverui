@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-list__root:not([data-unstyled]) {
+  .lui-list__root:not([data-unstyled]) {
     --lui-private-list-item-display: list-item;
     --lui-private-list-variant-align: normal;
     --lui-private-list-align: initial;
@@ -33,12 +33,12 @@
     }
   }
 
-  @scope (.leverui-list__root:not([data-unstyled])) to (.leverui-list__root) {
+  @scope (.lui-list__root:not([data-unstyled])) to (.lui-list__root) {
     :scope :where(ul, ol) {
       margin-top: var(--lui-list-gap, 0);
     }
 
-    .leverui-list__item:not([data-unstyled]) {
+    .lui-list__item:not([data-unstyled]) {
       white-space: normal;
       display: var(--lui-private-list-item-display);
       align-items: var(--lui-private-list-align, var(--lui-private-list-variant-align));
@@ -48,7 +48,7 @@
       }
     }
 
-    .leverui-list__indicator:not([data-unstyled]) {
+    .lui-list__indicator:not([data-unstyled]) {
       margin-inline-end: var(--lui-spacing-2);
       min-height: 1lh;
       flex-shrink: 0;

@@ -47,7 +47,7 @@ async function verifiesFloat({ page }: { page: Page }): Promise<void> {
   await expect(root).toHaveCSS('display', 'flex');
   await expect(root).toHaveCSS('align-items', 'center');
   await expect(root).toHaveCSS('justify-content', 'center');
-  await expect(root).toHaveClass(/leverui-float/);
+  await expect(root).toHaveClass(/lui-float/);
   expectNear((await placement(page, 'float-default-parent', 'float-default')).x, 190);
   expectNear((await placement(page, 'float-default-parent', 'float-default')).y, -10);
 
@@ -142,11 +142,11 @@ async function verifiesFloat({ page }: { page: Page }): Promise<void> {
   await page.keyboard.press('Enter');
   await expect(page).toHaveURL(/#float-target$/);
   await page.addStyleTag({
-    content: '.leverui-float[data-testid="float-default"] { color: red; }',
+    content: '.lui-float[data-testid="float-default"] { color: red; }',
   });
   await expect(root).toHaveCSS('color', 'rgb(255, 0, 0)');
   await page.addStyleTag({
-    content: '.leverui-float[data-testid="float-default"] { --lui-float-offset-x: 8px; }',
+    content: '.lui-float[data-testid="float-default"] { --lui-float-offset-x: 8px; }',
   });
   expectNear((await placement(page, 'float-default-parent', 'float-default')).x, 182);
 }

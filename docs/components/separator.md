@@ -42,7 +42,7 @@ separators inside it. Defaults are reactive. A prop on a separator wins.
 ## Customize with CSS
 
 Import `@leverui/components/styles.css` before your own CSS. Your CSS can then
-target `.leverui-separator` without `!important`. Set
+target `.lui-separator` without `!important`. Set
 `--lui-separator-color` and `--lui-separator-thickness` on one
 separator or on a theme wrapper.
 

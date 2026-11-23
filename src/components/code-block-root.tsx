@@ -74,11 +74,11 @@ export function CodeBlockRoot<As extends PrimitiveNativeTag = 'div'>(
         return local.unstyled ? '' : undefined;
       },
       /** Scope syntax tokens to the requested mode. */
-      get 'data-leverui-color-mode'() {
+      get 'data-lui-color-mode'() {
         return state.meta().colorScheme;
       },
       /** Establish a closest-scope token boundary for this block. */
-      'data-leverui-theme': '',
+      'data-lui-theme': '',
       /** Reflect focused-line state for consumer selectors. */
       get 'data-has-focused'() {
         return state.meta().focusedLineNumbers?.length ? '' : undefined;

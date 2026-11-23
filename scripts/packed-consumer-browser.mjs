@@ -57,7 +57,7 @@ async function verifyBrowser(page, url) {
       /** Read only the public Box hook and the consumer's own class. */
       (element) => [...element.classList],
     ),
-    ['leverui-box', 'packed-box-surface'],
+    ['lui-box', 'packed-box-surface'],
   );
   assert.equal(
     await page.locator('#packed-escaped-box').evaluate(

@@ -64,8 +64,8 @@ function renderServerRadioCard(): string {
 function verifiesServerRadioCard(): void {
   const markup = renderServerRadioCard();
   expect(markup).toContain('data-radio-group-');
-  expect(markup).toContain('leverui-radio-card__root');
-  expect(markup).toContain('leverui-radio-card__itemControl');
+  expect(markup).toContain('lui-radio-card__root');
+  expect(markup).toContain('lui-radio-card__itemControl');
   expect(markup).toContain('type="radio"');
   expect(markup).toContain('data-state="checked"');
   expect(markup).toContain('Solid');

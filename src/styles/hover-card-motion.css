@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-hoverCard__content:not([data-unstyled]) {
+  .lui-hoverCard__content:not([data-unstyled]) {
     &[data-state='open'] {
       animation-duration: var(--lui-durations-fast);
 

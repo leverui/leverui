@@ -95,7 +95,7 @@ default.
 
 Override the `--lui-*` theme variables, such as
 `--lui-tabs-indicator-bg`, `--lui-tabs-indicator-shadow`, and
-`--lui-tabs-trigger-radius`, or style the `.leverui-tabs__*` part classes.
+`--lui-tabs-trigger-radius`, or style the `.lui-tabs__*` part classes.
 Every part accepts `class` and `style`. `unstyled` on the root or a single part
 turns off its default styles.
 

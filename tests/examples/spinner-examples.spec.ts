@@ -18,9 +18,9 @@ const counts = {
 async function verifiesSpinnerStories({ page }: { page: Page }): Promise<void> {
   for (const [story, count] of Object.entries(counts)) {
     await page.goto(`/iframe.html?id=components-spinner--${story}`);
-    await expect(page.locator('#storybook-root .leverui-spinner')).toHaveCount(count);
+    await expect(page.locator('#storybook-root .lui-spinner')).toHaveCount(count);
     await expect(
-      page.locator('#storybook-root .leverui-spinner[data-leverui-private-style-runtime]'),
+      page.locator('#storybook-root .lui-spinner[data-lui-private-style-runtime]'),
     ).toHaveCount(0);
   }
 }
@@ -28,7 +28,7 @@ async function verifiesSpinnerStories({ page }: { page: Page }): Promise<void> {
 /** Check the custom indicator and busy overlay at their DOM boundaries. */
 async function verifiesSpinnerComposition({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-spinner--custom-indicator');
-  const indicator = page.locator('#storybook-root .leverui-spinner');
+  const indicator = page.locator('#storybook-root .lui-spinner');
   await expect(indicator.locator('svg.lucide-loader')).toHaveCount(1);
   await expect(indicator).toHaveCSS('width', '20px');
   await expect(indicator.locator('svg')).toHaveCSS('width', '20px');
@@ -43,20 +43,17 @@ test('Spinner custom glyph and busy overlay preserve composition', verifiesSpinn
 /** Verify gallery color, track, and ring choices come from consumer CSS. */
 async function verifiesSpinnerCssChoices({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-spinner--custom-color');
-  await expect(page.locator('#storybook-root .leverui-spinner')).toHaveCSS(
+  await expect(page.locator('#storybook-root .lui-spinner')).toHaveCSS(
     'color',
     'rgb(20, 184, 166)',
   );
   await page.goto('/iframe.html?id=components-spinner--track-color');
-  await expect(page.locator('#storybook-root .leverui-spinner')).toHaveCSS(
+  await expect(page.locator('#storybook-root .lui-spinner')).toHaveCSS(
     'border-bottom-color',
     'rgb(228, 228, 231)',
   );
   await page.goto('/iframe.html?id=components-spinner--custom-thickness');
-  await expect(page.locator('#storybook-root .leverui-spinner')).toHaveCSS(
-    'border-top-width',
-    '4px',
-  );
+  await expect(page.locator('#storybook-root .lui-spinner')).toHaveCSS('border-top-width', '4px');
 }
 
 test('Spinner gallery choices use consumer CSS', verifiesSpinnerCssChoices);

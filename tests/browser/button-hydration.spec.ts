@@ -69,7 +69,7 @@ async function verifyButtonHydration(
   await expect(last).toHaveCSS('z-index', lastIndex);
   await page.locator('#hydrated-button-toggle').click();
   await expect(page.locator('#hydrated-button-toggle')).toHaveAttribute('data-compact', 'true');
-  await expect(page.locator('#hydrated-middle')).toHaveAttribute('data-leverui-group-skip', '');
+  await expect(page.locator('#hydrated-middle')).toHaveAttribute('data-lui-group-skip', '');
   await expect(first).toHaveCSS('height', '36px');
   await expect(first).toHaveAttribute('data-variant', 'outline');
   await expect(first).toHaveAttribute('data-variant-md', 'ghost');

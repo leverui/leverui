@@ -68,7 +68,7 @@ function renderServerBreadcrumb(): string {
 function verifiesServerMarkup(): void {
   const markup = renderServerBreadcrumb();
   expect(markup).toMatch(/<nav\b[^>]*aria-label="breadcrumb"/);
-  expect(markup).toMatch(/<ol\b[^>]*leverui-breadcrumb__list/);
+  expect(markup).toMatch(/<ol\b[^>]*lui-breadcrumb__list/);
   expect(markup).toMatch(/<a\b[^>]*href="\/home"/);
   expect(markup).toMatch(/<span\b[^>]*role="link"[^>]*aria-current="page"/);
   expect(markup).toContain('role="presentation"');

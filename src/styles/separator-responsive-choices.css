@@ -1,120 +1,120 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-separator:not([data-unstyled])[data-size-sm='xs'] {
+    .lui-separator:not([data-unstyled])[data-size-sm='xs'] {
       --lui-private-separator-thickness: 0.5px;
     }
-    .leverui-separator:not([data-unstyled])[data-size-sm='sm'] {
+    .lui-separator:not([data-unstyled])[data-size-sm='sm'] {
       --lui-private-separator-thickness: 1px;
     }
-    .leverui-separator:not([data-unstyled])[data-size-sm='md'] {
+    .lui-separator:not([data-unstyled])[data-size-sm='md'] {
       --lui-private-separator-thickness: 2px;
     }
-    .leverui-separator:not([data-unstyled])[data-size-sm='lg'] {
+    .lui-separator:not([data-unstyled])[data-size-sm='lg'] {
       --lui-private-separator-thickness: 3px;
     }
-    .leverui-separator:not([data-unstyled])[data-variant-sm='solid'] {
+    .lui-separator:not([data-unstyled])[data-variant-sm='solid'] {
       border-style: solid;
     }
-    .leverui-separator:not([data-unstyled])[data-variant-sm='dashed'] {
+    .lui-separator:not([data-unstyled])[data-variant-sm='dashed'] {
       border-style: dashed;
     }
-    .leverui-separator:not([data-unstyled])[data-variant-sm='dotted'] {
+    .lui-separator:not([data-unstyled])[data-variant-sm='dotted'] {
       border-style: dotted;
     }
   }
 
   @media (min-width: 768px) {
-    .leverui-separator:not([data-unstyled])[data-size-md='xs'] {
+    .lui-separator:not([data-unstyled])[data-size-md='xs'] {
       --lui-private-separator-thickness: 0.5px;
     }
-    .leverui-separator:not([data-unstyled])[data-size-md='sm'] {
+    .lui-separator:not([data-unstyled])[data-size-md='sm'] {
       --lui-private-separator-thickness: 1px;
     }
-    .leverui-separator:not([data-unstyled])[data-size-md='md'] {
+    .lui-separator:not([data-unstyled])[data-size-md='md'] {
       --lui-private-separator-thickness: 2px;
     }
-    .leverui-separator:not([data-unstyled])[data-size-md='lg'] {
+    .lui-separator:not([data-unstyled])[data-size-md='lg'] {
       --lui-private-separator-thickness: 3px;
     }
-    .leverui-separator:not([data-unstyled])[data-variant-md='solid'] {
+    .lui-separator:not([data-unstyled])[data-variant-md='solid'] {
       border-style: solid;
     }
-    .leverui-separator:not([data-unstyled])[data-variant-md='dashed'] {
+    .lui-separator:not([data-unstyled])[data-variant-md='dashed'] {
       border-style: dashed;
     }
-    .leverui-separator:not([data-unstyled])[data-variant-md='dotted'] {
+    .lui-separator:not([data-unstyled])[data-variant-md='dotted'] {
       border-style: dotted;
     }
   }
 
   @media (min-width: 1024px) {
-    .leverui-separator:not([data-unstyled])[data-size-lg='xs'] {
+    .lui-separator:not([data-unstyled])[data-size-lg='xs'] {
       --lui-private-separator-thickness: 0.5px;
     }
-    .leverui-separator:not([data-unstyled])[data-size-lg='sm'] {
+    .lui-separator:not([data-unstyled])[data-size-lg='sm'] {
       --lui-private-separator-thickness: 1px;
     }
-    .leverui-separator:not([data-unstyled])[data-size-lg='md'] {
+    .lui-separator:not([data-unstyled])[data-size-lg='md'] {
       --lui-private-separator-thickness: 2px;
     }
-    .leverui-separator:not([data-unstyled])[data-size-lg='lg'] {
+    .lui-separator:not([data-unstyled])[data-size-lg='lg'] {
       --lui-private-separator-thickness: 3px;
     }
-    .leverui-separator:not([data-unstyled])[data-variant-lg='solid'] {
+    .lui-separator:not([data-unstyled])[data-variant-lg='solid'] {
       border-style: solid;
     }
-    .leverui-separator:not([data-unstyled])[data-variant-lg='dashed'] {
+    .lui-separator:not([data-unstyled])[data-variant-lg='dashed'] {
       border-style: dashed;
     }
-    .leverui-separator:not([data-unstyled])[data-variant-lg='dotted'] {
+    .lui-separator:not([data-unstyled])[data-variant-lg='dotted'] {
       border-style: dotted;
     }
   }
 
   @media (min-width: 1280px) {
-    .leverui-separator:not([data-unstyled])[data-size-xl='xs'] {
+    .lui-separator:not([data-unstyled])[data-size-xl='xs'] {
       --lui-private-separator-thickness: 0.5px;
     }
-    .leverui-separator:not([data-unstyled])[data-size-xl='sm'] {
+    .lui-separator:not([data-unstyled])[data-size-xl='sm'] {
       --lui-private-separator-thickness: 1px;
     }
-    .leverui-separator:not([data-unstyled])[data-size-xl='md'] {
+    .lui-separator:not([data-unstyled])[data-size-xl='md'] {
       --lui-private-separator-thickness: 2px;
     }
-    .leverui-separator:not([data-unstyled])[data-size-xl='lg'] {
+    .lui-separator:not([data-unstyled])[data-size-xl='lg'] {
       --lui-private-separator-thickness: 3px;
     }
-    .leverui-separator:not([data-unstyled])[data-variant-xl='solid'] {
+    .lui-separator:not([data-unstyled])[data-variant-xl='solid'] {
       border-style: solid;
     }
-    .leverui-separator:not([data-unstyled])[data-variant-xl='dashed'] {
+    .lui-separator:not([data-unstyled])[data-variant-xl='dashed'] {
       border-style: dashed;
     }
-    .leverui-separator:not([data-unstyled])[data-variant-xl='dotted'] {
+    .lui-separator:not([data-unstyled])[data-variant-xl='dotted'] {
       border-style: dotted;
     }
   }
 
   @media (min-width: 1536px) {
-    .leverui-separator:not([data-unstyled])[data-size-2xl='xs'] {
+    .lui-separator:not([data-unstyled])[data-size-2xl='xs'] {
       --lui-private-separator-thickness: 0.5px;
     }
-    .leverui-separator:not([data-unstyled])[data-size-2xl='sm'] {
+    .lui-separator:not([data-unstyled])[data-size-2xl='sm'] {
       --lui-private-separator-thickness: 1px;
     }
-    .leverui-separator:not([data-unstyled])[data-size-2xl='md'] {
+    .lui-separator:not([data-unstyled])[data-size-2xl='md'] {
       --lui-private-separator-thickness: 2px;
     }
-    .leverui-separator:not([data-unstyled])[data-size-2xl='lg'] {
+    .lui-separator:not([data-unstyled])[data-size-2xl='lg'] {
       --lui-private-separator-thickness: 3px;
     }
-    .leverui-separator:not([data-unstyled])[data-variant-2xl='solid'] {
+    .lui-separator:not([data-unstyled])[data-variant-2xl='solid'] {
       border-style: solid;
     }
-    .leverui-separator:not([data-unstyled])[data-variant-2xl='dashed'] {
+    .lui-separator:not([data-unstyled])[data-variant-2xl='dashed'] {
       border-style: dashed;
     }
-    .leverui-separator:not([data-unstyled])[data-variant-2xl='dotted'] {
+    .lui-separator:not([data-unstyled])[data-variant-2xl='dotted'] {
       border-style: dotted;
     }
   }

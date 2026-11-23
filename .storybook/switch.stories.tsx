@@ -98,7 +98,7 @@ const appearanceMatrix = [
 function SwitchAppearanceExample(): JSX.Element {
   return (
     <>
-      <style>{'.switch-consumer .leverui-switch__control { background: rgb(1, 99, 222); }'}</style>
+      <style>{'.switch-consumer .lui-switch__control { background: rgb(1, 99, 222); }'}</style>
       <div style={{ display: 'grid', gap: '16px', padding: '24px' }}>
         <For each={appearanceMatrix}>
           {

@@ -37,5 +37,5 @@ const standalone = renderToString(
 );
 assert.match(standalone, /<svg[^>]*id="standalone-checkmark"/);
 assert.match(standalone, /data-size="sm"/);
-assert.match(standalone, /data-leverui-color-palette="teal"/);
+assert.match(standalone, /data-lui-color-palette="teal"/);
 console.log('Packed Checkmark server rendering passed.');

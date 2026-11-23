@@ -1,18 +1,18 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-fieldset__root[data-size-sm='sm'] {
+    .lui-fieldset__root[data-size-sm='sm'] {
       --lui-private-fieldset-space-y: var(--lui-spacing-2);
       --lui-private-fieldset-content-gap: var(--lui-spacing-1\.5);
       --lui-private-fieldset-legend-size: var(--lui-font-sizes-sm);
       --lui-private-fieldset-legend-line-height: 1.25rem;
     }
-    .leverui-fieldset__root[data-size-sm='md'] {
+    .lui-fieldset__root[data-size-sm='md'] {
       --lui-private-fieldset-space-y: var(--lui-spacing-4);
       --lui-private-fieldset-content-gap: var(--lui-spacing-4);
       --lui-private-fieldset-legend-size: var(--lui-font-sizes-sm);
       --lui-private-fieldset-legend-line-height: 1.25rem;
     }
-    .leverui-fieldset__root[data-size-sm='lg'] {
+    .lui-fieldset__root[data-size-sm='lg'] {
       --lui-private-fieldset-space-y: var(--lui-spacing-6);
       --lui-private-fieldset-content-gap: var(--lui-spacing-4);
       --lui-private-fieldset-legend-size: var(--lui-font-sizes-md);
@@ -21,19 +21,19 @@
   }
 
   @media (min-width: 768px) {
-    .leverui-fieldset__root[data-size-md='sm'] {
+    .lui-fieldset__root[data-size-md='sm'] {
       --lui-private-fieldset-space-y: var(--lui-spacing-2);
       --lui-private-fieldset-content-gap: var(--lui-spacing-1\.5);
       --lui-private-fieldset-legend-size: var(--lui-font-sizes-sm);
       --lui-private-fieldset-legend-line-height: 1.25rem;
     }
-    .leverui-fieldset__root[data-size-md='md'] {
+    .lui-fieldset__root[data-size-md='md'] {
       --lui-private-fieldset-space-y: var(--lui-spacing-4);
       --lui-private-fieldset-content-gap: var(--lui-spacing-4);
       --lui-private-fieldset-legend-size: var(--lui-font-sizes-sm);
       --lui-private-fieldset-legend-line-height: 1.25rem;
     }
-    .leverui-fieldset__root[data-size-md='lg'] {
+    .lui-fieldset__root[data-size-md='lg'] {
       --lui-private-fieldset-space-y: var(--lui-spacing-6);
       --lui-private-fieldset-content-gap: var(--lui-spacing-4);
       --lui-private-fieldset-legend-size: var(--lui-font-sizes-md);
@@ -42,19 +42,19 @@
   }
 
   @media (min-width: 1024px) {
-    .leverui-fieldset__root[data-size-lg='sm'] {
+    .lui-fieldset__root[data-size-lg='sm'] {
       --lui-private-fieldset-space-y: var(--lui-spacing-2);
       --lui-private-fieldset-content-gap: var(--lui-spacing-1\.5);
       --lui-private-fieldset-legend-size: var(--lui-font-sizes-sm);
       --lui-private-fieldset-legend-line-height: 1.25rem;
     }
-    .leverui-fieldset__root[data-size-lg='md'] {
+    .lui-fieldset__root[data-size-lg='md'] {
       --lui-private-fieldset-space-y: var(--lui-spacing-4);
       --lui-private-fieldset-content-gap: var(--lui-spacing-4);
       --lui-private-fieldset-legend-size: var(--lui-font-sizes-sm);
       --lui-private-fieldset-legend-line-height: 1.25rem;
     }
-    .leverui-fieldset__root[data-size-lg='lg'] {
+    .lui-fieldset__root[data-size-lg='lg'] {
       --lui-private-fieldset-space-y: var(--lui-spacing-6);
       --lui-private-fieldset-content-gap: var(--lui-spacing-4);
       --lui-private-fieldset-legend-size: var(--lui-font-sizes-md);
@@ -63,19 +63,19 @@
   }
 
   @media (min-width: 1280px) {
-    .leverui-fieldset__root[data-size-xl='sm'] {
+    .lui-fieldset__root[data-size-xl='sm'] {
       --lui-private-fieldset-space-y: var(--lui-spacing-2);
       --lui-private-fieldset-content-gap: var(--lui-spacing-1\.5);
       --lui-private-fieldset-legend-size: var(--lui-font-sizes-sm);
       --lui-private-fieldset-legend-line-height: 1.25rem;
     }
-    .leverui-fieldset__root[data-size-xl='md'] {
+    .lui-fieldset__root[data-size-xl='md'] {
       --lui-private-fieldset-space-y: var(--lui-spacing-4);
       --lui-private-fieldset-content-gap: var(--lui-spacing-4);
       --lui-private-fieldset-legend-size: var(--lui-font-sizes-sm);
       --lui-private-fieldset-legend-line-height: 1.25rem;
     }
-    .leverui-fieldset__root[data-size-xl='lg'] {
+    .lui-fieldset__root[data-size-xl='lg'] {
       --lui-private-fieldset-space-y: var(--lui-spacing-6);
       --lui-private-fieldset-content-gap: var(--lui-spacing-4);
       --lui-private-fieldset-legend-size: var(--lui-font-sizes-md);
@@ -84,19 +84,19 @@
   }
 
   @media (min-width: 1536px) {
-    .leverui-fieldset__root[data-size-2xl='sm'] {
+    .lui-fieldset__root[data-size-2xl='sm'] {
       --lui-private-fieldset-space-y: var(--lui-spacing-2);
       --lui-private-fieldset-content-gap: var(--lui-spacing-1\.5);
       --lui-private-fieldset-legend-size: var(--lui-font-sizes-sm);
       --lui-private-fieldset-legend-line-height: 1.25rem;
     }
-    .leverui-fieldset__root[data-size-2xl='md'] {
+    .lui-fieldset__root[data-size-2xl='md'] {
       --lui-private-fieldset-space-y: var(--lui-spacing-4);
       --lui-private-fieldset-content-gap: var(--lui-spacing-4);
       --lui-private-fieldset-legend-size: var(--lui-font-sizes-sm);
       --lui-private-fieldset-legend-line-height: 1.25rem;
     }
-    .leverui-fieldset__root[data-size-2xl='lg'] {
+    .lui-fieldset__root[data-size-2xl='lg'] {
       --lui-private-fieldset-space-y: var(--lui-spacing-6);
       --lui-private-fieldset-content-gap: var(--lui-spacing-4);
       --lui-private-fieldset-legend-size: var(--lui-font-sizes-md);

@@ -42,8 +42,8 @@ function verifiesServerProgress(): void {
   const markup = renderServerProgress();
   expect(markup).toContain('data-progress-');
   expect(markup).toContain('data-size="lg"');
-  expect(markup).toContain('leverui-progress__root');
-  expect(markup).toContain('leverui-progress__range');
+  expect(markup).toContain('lui-progress__root');
+  expect(markup).toContain('lui-progress__range');
   expect(markup).toContain('role="progressbar"');
   expect(markup).toContain('aria-labelledby="server-progress-label"');
   expect(markup).toContain('aria-valuenow="30"');

@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-radio-group__root:not([data-unstyled]) {
+  .lui-radio-group__root:not([data-unstyled]) {
     &[data-size='xs'] {
       --lui-private-radio-group-item-gap: var(--lui-spacing-1\.5);
       --lui-private-radio-group-font-size: var(--lui-font-sizes-xs);

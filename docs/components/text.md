@@ -76,7 +76,7 @@ import { Text, TextPropsProvider } from '@leverui/components';
 
 ## Customize with CSS
 
-Class: `.leverui-text`.
+Class: `.lui-text`.
 
 ```tsx
 <Text class="supporting-copy">Supporting copy</Text>

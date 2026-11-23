@@ -31,7 +31,7 @@ async function verifiesNumberInputHydration({ page }: { page: Page }): Promise<v
   );
   const input = page.getByTestId('hydrated-number-input');
   const root = page.locator('#number-input-hydration-root > section');
-  await expect(root).toHaveClass(/leverui-number-input__root/);
+  await expect(root).toHaveClass(/lui-number-input__root/);
   const inputId = await input.getAttribute('id');
   expect(inputId).toBeTruthy();
   await expect(page.locator(`label[for="${inputId}"]`)).toHaveCount(1);
@@ -66,7 +66,7 @@ async function verifiesNumberInputHydration({ page }: { page: Page }): Promise<v
   await expect(root).toHaveAttribute('data-root-ref', 'true');
   await expect(input).toHaveAttribute('data-parent-ref', 'true');
   await expect(input).toHaveAttribute('data-child-ref', 'true');
-  await expect(input).toHaveClass(/leverui-number-input__input/);
+  await expect(input).toHaveClass(/lui-number-input__input/);
   await expect(page.locator(`label[for="${inputId}"]`)).toHaveCount(1);
   await page.getByTestId('hydrated-number-increment').click();
   await expect(input).toHaveValue('4');

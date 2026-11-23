@@ -130,7 +130,7 @@ on, a focused slice shows its tooltip.
   --lui-radial-chart-legend-gap: 1rem;
 }
 
-.share-pie .leverui-radial-chart__label {
+.share-pie .lui-radial-chart__label {
   font-weight: 600;
 }
 ```
@@ -168,14 +168,14 @@ The `stroke` and `strokeWidth` props win over the two slice variables.
 
 ### Classes
 
-Root: `.leverui-radial-chart`.
+Root: `.lui-radial-chart`.
 
-Parts, each prefixed with `.leverui-radial-chart__`: `svg`, `sector`, `labels`,
+Parts, each prefixed with `.lui-radial-chart__`: `svg`, `sector`, `labels`,
 `labelLine`, `label`, `center`, `centerTitle`, `centerDescription`, `legend`,
 `legendItem`, `legendSwatch`.
 
-Tooltip: `.leverui-chart-tooltip`. Parts, each prefixed with
-`.leverui-chart-tooltip__`: `item`, `swatch`, `values`, `name`, `value`.
+Tooltip: `.lui-chart-tooltip`. Parts, each prefixed with
+`.lui-chart-tooltip__`: `item`, `swatch`, `values`, `name`, `value`.
 
 Root attributes:
 

@@ -1,5 +1,5 @@
 @layer leverui.tokens {
-  @scope (html:not([data-leverui-color-mode=dark]), [data-leverui-theme][data-leverui-color-mode=light]) to ([data-leverui-theme][data-leverui-color-mode]) {
+  @scope (html:not([data-lui-color-mode=dark]), [data-lui-theme][data-lui-color-mode=light]) to ([data-lui-theme][data-lui-color-mode]) {
     :scope {
       --lui-colors-bg: var(--lui-colors-white);
       --lui-segment-group-indicator-background: var(--lui-colors-bg);

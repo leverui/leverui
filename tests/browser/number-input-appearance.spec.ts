@@ -26,7 +26,7 @@ async function verifiesNumberInputAppearance({ page }: { page: Page }): Promise<
   const control = page.getByTestId('responsive-number-control');
   await expect(root).toHaveAttribute('data-size', 'xs');
   await expect(input).toHaveAttribute('data-variant', 'outline');
-  await expect(input).toHaveClass(/leverui-input/);
+  await expect(input).toHaveClass(/lui-input/);
   const small = await readGeometry(input, control);
   await page.setViewportSize({ width: 900, height: 700 });
   const large = await readGeometry(input, control);

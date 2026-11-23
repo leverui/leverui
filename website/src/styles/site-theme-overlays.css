@@ -1,21 +1,21 @@
-html[data-leverui-color-mode='light'] .site-search-dialog {
+html[data-lui-color-mode='light'] .site-search-dialog {
   border-color: var(--site-border-strong);
   background: var(--site-panel);
   color: var(--site-fg);
 }
-html[data-leverui-color-mode='light'] .site-search-field {
+html[data-lui-color-mode='light'] .site-search-field {
   border-color: var(--site-border);
 }
-html[data-leverui-color-mode='light'] .site-search-field input {
+html[data-lui-color-mode='light'] .site-search-field input {
   background: var(--site-panel-alt);
 }
-html[data-leverui-color-mode='light'] .site-search-results > p {
+html[data-lui-color-mode='light'] .site-search-results > p {
   color: var(--site-muted);
 }
-html[data-leverui-color-mode='light']
+html[data-lui-color-mode='light']
   :is(.site-search-results a:hover, .site-search-results a:focus-visible) {
   background: var(--site-highlight-strong-bg);
 }
-html[data-leverui-color-mode='light'] .site-search-results a span:first-child {
+html[data-lui-color-mode='light'] .site-search-results a span:first-child {
   color: var(--site-muted);
 }

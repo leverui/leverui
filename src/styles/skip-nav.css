@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-skip-nav:not([data-unstyled]) {
+  .lui-skip-nav:not([data-unstyled]) {
     display: inline-flex;
     background: var(--lui-colors-bg-panel);
     padding: var(--lui-spacing-2\.5);
@@ -18,7 +18,7 @@
     clip: rect(0 0 0 0);
   }
 
-  .leverui-skip-nav:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
+  .lui-skip-nav:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
     clip: auto;
     width: auto;
     height: auto;
@@ -29,7 +29,7 @@
     outline-offset: 2px;
   }
 
-  .leverui-skip-nav-content {
+  .lui-skip-nav-content {
     outline: 0;
   }
 }

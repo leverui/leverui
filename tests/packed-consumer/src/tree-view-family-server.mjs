@@ -72,13 +72,13 @@ function verifyInstalledMarkup(markup) {
     assert.ok(item);
     assert.equal(tree.getAttribute('aria-labelledby'), label.id);
     assert.equal(item.getAttribute('aria-selected'), 'true');
-    assert.match(item.className, /leverui-tree-view__item/);
+    assert.match(item.className, /lui-tree-view__item/);
   } finally {
     window.close();
   }
 }
 
 const markup = renderInstalledTree();
-assert.match(markup, /leverui-tree-view__root/);
+assert.match(markup, /lui-tree-view__root/);
 verifyInstalledMarkup(markup);
 console.log('Packed Tree View server rendering passed.');

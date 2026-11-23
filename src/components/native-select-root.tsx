@@ -56,7 +56,7 @@ function NativeSelectRootImpl(props: NativeSelectRuntimeRootProps): JSX.Element 
         local.class,
         local.className,
       ),
-      'data-leverui-color-palette': local.colorPalette,
+      'data-lui-color-palette': local.colorPalette,
       'data-disabled': disabled() ? '' : undefined,
       'data-invalid': invalid() ? '' : undefined,
       'data-unstyled': local.unstyled ? '' : undefined,

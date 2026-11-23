@@ -41,9 +41,9 @@ async function verifiesConsumerCss({ page }: { page: Page }): Promise<void> {
   await expect(select).toBeVisible({ timeout: 30_000 });
   await page.addStyleTag({
     content: [
-      '.leverui-native-select__root { width: 260px; }',
-      '.leverui-native-select__field { border-color: rgb(255, 0, 0); }',
-      '.leverui-native-select__indicator { color: rgb(0, 0, 255); }',
+      '.lui-native-select__root { width: 260px; }',
+      '.lui-native-select__field { border-color: rgb(255, 0, 0); }',
+      '.lui-native-select__indicator { color: rgb(0, 0, 255); }',
     ].join('\n'),
   });
   await expect(root).toHaveCSS('width', '260px');

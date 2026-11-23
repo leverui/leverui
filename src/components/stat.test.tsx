@@ -88,8 +88,8 @@ function verifiesStatPresentationPaths(): void {
 
   const authored = screen.getByTestId('authored-stat');
   expect(authored.getAttribute('data-size')).toBe('lg');
-  expect(authored.hasAttribute('data-leverui-private-style-runtime')).toBe(false);
-  expect(screen.getByTestId('authored-label').className).toContain('leverui-stat__label');
+  expect(authored.hasAttribute('data-lui-private-style-runtime')).toBe(false);
+  expect(screen.getByTestId('authored-label').className).toContain('lui-stat__label');
   expect(screen.getByTestId('unstyled-stat').hasAttribute('data-unstyled')).toBe(true);
   expect(screen.getByTestId('unstyled-label').hasAttribute('data-unstyled')).toBe(true);
   expect(screen.getByTestId('custom-stat').getAttribute('style')).toContain('padding: 4px');
@@ -123,11 +123,11 @@ function verifiesOwnedStatParts(): void {
   const root = screen.getByTestId('owned-stat-root');
   expect(root.tagName).toBe('DL');
   expect(root.getAttribute('data-size')).toBe('lg');
-  expect(root.className).toContain('leverui-stat__root');
+  expect(root.className).toContain('lui-stat__root');
   expect(root.className).toContain('owned-stat-root');
   const label = screen.getByTestId('owned-stat-label');
   expect(label.tagName).toBe('DT');
-  expect(label.className).toContain('leverui-stat__label');
+  expect(label.className).toContain('lui-stat__label');
   expect(label.textContent).toBe('Visitors');
 }
 
@@ -161,7 +161,7 @@ function verifiesOwnedGroupRef(): void {
   const section = screen.getByTestId('owned-stat-group');
   expect(section).toBe(group);
   expect(section.tagName).toBe('SECTION');
-  expect(section.className).toContain('leverui-stat__group');
+  expect(section.className).toContain('lui-stat__group');
   expect(screen.getByTestId('owned-group-stat').getAttribute('data-size')).toBe('lg');
 }
 

@@ -67,7 +67,7 @@ Also accepts the standard HTML attributes, including `class` and `style`.
 
 ## Customize with CSS
 
-Style `.leverui-kbd`, or select its `data-size` and `data-variant` attributes.
+Style `.lui-kbd`, or select its `data-size` and `data-variant` attributes.
 Import `@leverui/components/styles.css` once and load your stylesheet after it.
 
 No general style props, CSS objects, or custom recipes. Use

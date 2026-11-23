@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-checkbox-card:not([data-unstyled]) {
+  .lui-checkbox-card:not([data-unstyled]) {
     &[data-align='start'] {
       --lui-private-checkbox-card-align: flex-start;
       --lui-private-checkbox-card-text-align: start;

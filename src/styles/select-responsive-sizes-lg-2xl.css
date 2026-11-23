@@ -1,7 +1,7 @@
 @layer leverui.recipes {
   @media (min-width: 1024px) {
-    .leverui-select__root:not([data-unstyled])[data-size-lg='xs'],
-    .leverui-select__content:not([data-unstyled])[data-size-lg='xs'] {
+    .lui-select__root:not([data-unstyled])[data-size-lg='xs'],
+    .lui-select__content:not([data-unstyled])[data-size-lg='xs'] {
       --lui-private-select-trigger-height: var(--lui-sizes-8);
       --lui-private-select-content-gap: var(--lui-spacing-1);
       --lui-private-select-trigger-padding-x: var(--lui-spacing-2);
@@ -15,8 +15,8 @@
       --lui-private-select-item-group-margin: 0;
       --lui-private-select-indicator-size: var(--lui-sizes-3\.5);
     }
-    .leverui-select__root:not([data-unstyled])[data-size-lg='sm'],
-    .leverui-select__content:not([data-unstyled])[data-size-lg='sm'] {
+    .lui-select__root:not([data-unstyled])[data-size-lg='sm'],
+    .lui-select__content:not([data-unstyled])[data-size-lg='sm'] {
       --lui-private-select-trigger-height: var(--lui-sizes-9);
       --lui-private-select-content-gap: 0;
       --lui-private-select-trigger-padding-x: var(--lui-spacing-2\.5);
@@ -30,8 +30,8 @@
       --lui-private-select-item-group-margin: var(--lui-spacing-1);
       --lui-private-select-indicator-size: var(--lui-sizes-4);
     }
-    .leverui-select__root:not([data-unstyled])[data-size-lg='md'],
-    .leverui-select__content:not([data-unstyled])[data-size-lg='md'] {
+    .lui-select__root:not([data-unstyled])[data-size-lg='md'],
+    .lui-select__content:not([data-unstyled])[data-size-lg='md'] {
       --lui-private-select-trigger-height: var(--lui-sizes-10);
       --lui-private-select-content-gap: 0;
       --lui-private-select-trigger-padding-x: var(--lui-spacing-3);
@@ -45,8 +45,8 @@
       --lui-private-select-item-group-margin: var(--lui-spacing-1\.5);
       --lui-private-select-indicator-size: var(--lui-sizes-4);
     }
-    .leverui-select__root:not([data-unstyled])[data-size-lg='lg'],
-    .leverui-select__content:not([data-unstyled])[data-size-lg='lg'] {
+    .lui-select__root:not([data-unstyled])[data-size-lg='lg'],
+    .lui-select__content:not([data-unstyled])[data-size-lg='lg'] {
       --lui-private-select-trigger-height: var(--lui-sizes-12);
       --lui-private-select-content-gap: 0;
       --lui-private-select-trigger-padding-x: var(--lui-spacing-4);
@@ -62,8 +62,8 @@
     }
   }
   @media (min-width: 1280px) {
-    .leverui-select__root:not([data-unstyled])[data-size-xl='xs'],
-    .leverui-select__content:not([data-unstyled])[data-size-xl='xs'] {
+    .lui-select__root:not([data-unstyled])[data-size-xl='xs'],
+    .lui-select__content:not([data-unstyled])[data-size-xl='xs'] {
       --lui-private-select-trigger-height: var(--lui-sizes-8);
       --lui-private-select-content-gap: var(--lui-spacing-1);
       --lui-private-select-trigger-padding-x: var(--lui-spacing-2);
@@ -77,8 +77,8 @@
       --lui-private-select-item-group-margin: 0;
       --lui-private-select-indicator-size: var(--lui-sizes-3\.5);
     }
-    .leverui-select__root:not([data-unstyled])[data-size-xl='sm'],
-    .leverui-select__content:not([data-unstyled])[data-size-xl='sm'] {
+    .lui-select__root:not([data-unstyled])[data-size-xl='sm'],
+    .lui-select__content:not([data-unstyled])[data-size-xl='sm'] {
       --lui-private-select-trigger-height: var(--lui-sizes-9);
       --lui-private-select-content-gap: 0;
       --lui-private-select-trigger-padding-x: var(--lui-spacing-2\.5);
@@ -92,8 +92,8 @@
       --lui-private-select-item-group-margin: var(--lui-spacing-1);
       --lui-private-select-indicator-size: var(--lui-sizes-4);
     }
-    .leverui-select__root:not([data-unstyled])[data-size-xl='md'],
-    .leverui-select__content:not([data-unstyled])[data-size-xl='md'] {
+    .lui-select__root:not([data-unstyled])[data-size-xl='md'],
+    .lui-select__content:not([data-unstyled])[data-size-xl='md'] {
       --lui-private-select-trigger-height: var(--lui-sizes-10);
       --lui-private-select-content-gap: 0;
       --lui-private-select-trigger-padding-x: var(--lui-spacing-3);
@@ -107,8 +107,8 @@
       --lui-private-select-item-group-margin: var(--lui-spacing-1\.5);
       --lui-private-select-indicator-size: var(--lui-sizes-4);
     }
-    .leverui-select__root:not([data-unstyled])[data-size-xl='lg'],
-    .leverui-select__content:not([data-unstyled])[data-size-xl='lg'] {
+    .lui-select__root:not([data-unstyled])[data-size-xl='lg'],
+    .lui-select__content:not([data-unstyled])[data-size-xl='lg'] {
       --lui-private-select-trigger-height: var(--lui-sizes-12);
       --lui-private-select-content-gap: 0;
       --lui-private-select-trigger-padding-x: var(--lui-spacing-4);
@@ -124,8 +124,8 @@
     }
   }
   @media (min-width: 1536px) {
-    .leverui-select__root:not([data-unstyled])[data-size-2xl='xs'],
-    .leverui-select__content:not([data-unstyled])[data-size-2xl='xs'] {
+    .lui-select__root:not([data-unstyled])[data-size-2xl='xs'],
+    .lui-select__content:not([data-unstyled])[data-size-2xl='xs'] {
       --lui-private-select-trigger-height: var(--lui-sizes-8);
       --lui-private-select-content-gap: var(--lui-spacing-1);
       --lui-private-select-trigger-padding-x: var(--lui-spacing-2);
@@ -139,8 +139,8 @@
       --lui-private-select-item-group-margin: 0;
       --lui-private-select-indicator-size: var(--lui-sizes-3\.5);
     }
-    .leverui-select__root:not([data-unstyled])[data-size-2xl='sm'],
-    .leverui-select__content:not([data-unstyled])[data-size-2xl='sm'] {
+    .lui-select__root:not([data-unstyled])[data-size-2xl='sm'],
+    .lui-select__content:not([data-unstyled])[data-size-2xl='sm'] {
       --lui-private-select-trigger-height: var(--lui-sizes-9);
       --lui-private-select-content-gap: 0;
       --lui-private-select-trigger-padding-x: var(--lui-spacing-2\.5);
@@ -154,8 +154,8 @@
       --lui-private-select-item-group-margin: var(--lui-spacing-1);
       --lui-private-select-indicator-size: var(--lui-sizes-4);
     }
-    .leverui-select__root:not([data-unstyled])[data-size-2xl='md'],
-    .leverui-select__content:not([data-unstyled])[data-size-2xl='md'] {
+    .lui-select__root:not([data-unstyled])[data-size-2xl='md'],
+    .lui-select__content:not([data-unstyled])[data-size-2xl='md'] {
       --lui-private-select-trigger-height: var(--lui-sizes-10);
       --lui-private-select-content-gap: 0;
       --lui-private-select-trigger-padding-x: var(--lui-spacing-3);
@@ -169,8 +169,8 @@
       --lui-private-select-item-group-margin: var(--lui-spacing-1\.5);
       --lui-private-select-indicator-size: var(--lui-sizes-4);
     }
-    .leverui-select__root:not([data-unstyled])[data-size-2xl='lg'],
-    .leverui-select__content:not([data-unstyled])[data-size-2xl='lg'] {
+    .lui-select__root:not([data-unstyled])[data-size-2xl='lg'],
+    .lui-select__content:not([data-unstyled])[data-size-2xl='lg'] {
       --lui-private-select-trigger-height: var(--lui-sizes-12);
       --lui-private-select-content-gap: 0;
       --lui-private-select-trigger-padding-x: var(--lui-spacing-4);

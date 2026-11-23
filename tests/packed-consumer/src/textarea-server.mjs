@@ -23,7 +23,7 @@ function renderInstalledTextarea() {
 }
 
 const markup = renderInstalledTextarea();
-assert.match(markup, /leverui-textarea/);
+assert.match(markup, /lui-textarea/);
 assert.match(markup, /<textarea\b[^>]*>Draft notes<\/textarea>/);
 assert.match(markup, /for="packed-server-notes"/);
 assert.match(markup, /required/);
@@ -32,5 +32,5 @@ const standalone = renderToString(
   /** Render the installed control with packaged CSS. */
   () => createComponent(Textarea, { 'aria-label': 'Standalone notes' }),
 );
-assert.match(standalone, /class="leverui-textarea/);
+assert.match(standalone, /class="lui-textarea/);
 console.log('Packed Textarea server rendering passed.');

@@ -58,7 +58,7 @@ export function PaginationItems(props: PaginationItemsProps): JSX.Element {
                 <Button
                   as="span"
                   unstyled={rootUnstyled()}
-                  {...getProps({ class: 'leverui-pagination__ellipsis-button' })}
+                  {...getProps({ class: 'lui-pagination__ellipsis-button' })}
                 >
                   <PaginationEllipsisIcon />
                 </Button>

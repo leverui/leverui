@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-segment-group__root:not([data-unstyled]) {
+  .lui-segment-group__root:not([data-unstyled]) {
     --lui-private-segment-radius: var(--lui-segment-group-radius, var(--lui-radii-l2));
     border-radius: var(--lui-private-segment-radius);
     display: inline-flex;
@@ -11,11 +11,11 @@
     background: var(--lui-segment-group-background, var(--lui-colors-bg-muted));
   }
 
-  .leverui-segment-group__root:not([data-unstyled])[data-orientation='vertical'] {
+  .lui-segment-group__root:not([data-unstyled])[data-orientation='vertical'] {
     flex-direction: column;
   }
 
-  .leverui-segment-group__item:not([data-unstyled]) {
+  .lui-segment-group__item:not([data-unstyled]) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,16 +34,16 @@
     cursor: pointer;
   }
 
-  .leverui-segment-group__item {
+  .lui-segment-group__item {
     position: relative;
   }
 
-  .leverui-segment-group__item:not([data-unstyled])[data-disabled] {
+  .lui-segment-group__item:not([data-unstyled])[data-disabled] {
     opacity: 0.5;
     cursor: not-allowed;
   }
 
-  .leverui-segment-group__indicator:not([data-unstyled]) {
+  .lui-segment-group__indicator:not([data-unstyled]) {
     box-shadow: var(--lui-segment-group-indicator-shadow, var(--lui-shadows-sm));
     position: absolute;
     background: var(--lui-segment-group-indicator-background);
@@ -55,11 +55,11 @@
     border-radius: var(--lui-private-segment-radius);
   }
 
-  .leverui-segment-group__item-hit-area {
+  .lui-segment-group__item-hit-area {
     display: contents;
   }
 
-  .leverui-segment-group__item-hit-target {
+  .lui-segment-group__item-hit-target {
     position: absolute;
     inset: 0;
   }

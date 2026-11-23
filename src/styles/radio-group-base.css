@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-radio-group__item:not([data-unstyled]) {
+  .lui-radio-group__item:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
     position: relative;
@@ -9,23 +9,21 @@
     line-height: var(--lui-private-radio-group-line-height);
   }
 
-  .leverui-radio-group__item:not([data-unstyled])[data-disabled] {
+  .lui-radio-group__item:not([data-unstyled])[data-disabled] {
     cursor: var(--lui-cursor-disabled);
   }
 
-  .leverui-radio-group__label:not([data-unstyled]) {
+  .lui-radio-group__label:not([data-unstyled]) {
     user-select: none;
     font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
   }
 
-  .leverui-radio-group__label:not([data-unstyled])[data-disabled] {
+  .lui-radio-group__label:not([data-unstyled])[data-disabled] {
     opacity: 0.5;
   }
 
-  .leverui-radio-group__itemControl:not([data-unstyled])[data-variant='outline']:not(
-      [data-checked]
-    ) {
+  .lui-radio-group__itemControl:not([data-unstyled])[data-variant='outline']:not([data-checked]) {
     --lui-private-radiomark-border: var(--lui-colors-border);
   }
 }

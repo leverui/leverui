@@ -45,8 +45,8 @@ function verifiesServerCircle(): void {
   const markup = renderServerCircle();
   expect(markup).toContain('data-progress-');
   expect(markup).toContain('data-size="lg"');
-  expect(markup).toContain('leverui-progress-circle__root');
-  expect(markup).toContain('leverui-progress-circle__circleRange');
+  expect(markup).toContain('lui-progress-circle__root');
+  expect(markup).toContain('lui-progress-circle__circleRange');
   expect(markup).toContain('role="progressbar"');
   expect(markup).toContain('aria-labelledby="server-circle-label"');
   expect(markup).toContain('aria-valuenow="30"');

@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-rating-group__root:not([data-unstyled]) {
+    .lui-rating-group__root:not([data-unstyled]) {
       &[data-size-sm='xs'] {
         --lui-private-rating-group-item-font-size: var(--lui-font-sizes-sm);
         --lui-private-rating-group-item-line-height: 1.25rem;
@@ -20,7 +20,7 @@
     }
   }
   @media (min-width: 768px) {
-    .leverui-rating-group__root:not([data-unstyled]) {
+    .lui-rating-group__root:not([data-unstyled]) {
       &[data-size-md='xs'] {
         --lui-private-rating-group-item-font-size: var(--lui-font-sizes-sm);
         --lui-private-rating-group-item-line-height: 1.25rem;

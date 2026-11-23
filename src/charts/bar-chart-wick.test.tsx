@@ -21,7 +21,7 @@ function drawsWickFromHighToLow(): void {
       />
     ),
   );
-  const stems = [...container.querySelectorAll('.leverui-bar-chart__wick')].map(
+  const stems = [...container.querySelectorAll('.lui-bar-chart__wick')].map(
     /** Read the top and bottom of one wick's stem. */
     (wick) => {
       const stem = wick.querySelector('line');

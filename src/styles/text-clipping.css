@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-text {
+  .lui-text {
     &[data-truncate] {
       overflow: hidden;
       text-overflow: ellipsis;

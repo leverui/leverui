@@ -26,12 +26,12 @@ const stylesheet = readFileSync(
 );
 assert.match(markup, /id="packed-server-float"/);
 assert.match(markup, /Installed server float/);
-assert.match(markup, /class="leverui-float\b/);
+assert.match(markup, /class="lui-float\b/);
 assert.match(markup, /data-placement-base="bottom-start"/);
 assert.match(markup, /--lui-private-float-y-base:var\(--lui-spacing-4\)/);
 assert.match(markup, /--lui-private-float-x-base:8px/);
-assert.match(stylesheet, /\.leverui-float\s*\{[^}]*display: inline-flex;/);
-assert.match(stylesheet, /\.leverui-float\s*\{[^}]*position: absolute;/);
+assert.match(stylesheet, /\.lui-float\s*\{[^}]*display: inline-flex;/);
+assert.match(stylesheet, /\.lui-float\s*\{[^}]*position: absolute;/);
 assert.match(stylesheet, /\[data-placement-base\^='bottom-'\][^}]*inset-block-end:/);
 assert.match(stylesheet, /\[data-placement-base\$='-start'\][^}]*inset-inline-start:/);
 assert.doesNotMatch(markup, /\s(?:placement|offset|offsetX|css)=/);

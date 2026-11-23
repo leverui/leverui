@@ -92,7 +92,7 @@ the nearest field's state with `Field.Context` or `useFieldContext`.
 ## Customize with CSS
 
 Load the [package stylesheet](../getting-started.md) first. Classes:
-`.leverui-field__root`, `__label`, `__helperText`, `__errorText`,
+`.lui-field__root`, `__label`, `__helperText`, `__errorText`,
 `__requiredIndicator`. Or add your own class to a part and style it after the
 Lever UI stylesheet.
 
@@ -105,7 +105,7 @@ field. Default: `80px`.
   --lui-field-label-width: 96px;
 }
 
-.account-form .leverui-field__label {
+.account-form .lui-field__label {
   font-weight: 700;
 }
 ```

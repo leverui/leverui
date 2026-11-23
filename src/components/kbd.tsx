@@ -57,7 +57,7 @@ function KbdRoot(props: KbdRootProps): JSX.Element {
     /** Keep native attributes and finite presentation choices reactive. */
     () => ({
       ...native,
-      class: cx('leverui-kbd', local.class, local.className),
+      class: cx('lui-kbd', local.class, local.className),
       'data-size': choices().size.base,
       'data-size-sm': choices().size.sm,
       'data-size-md': choices().size.md,
@@ -70,7 +70,7 @@ function KbdRoot(props: KbdRootProps): JSX.Element {
       'data-variant-lg': choices().variant.lg,
       'data-variant-xl': choices().variant.xl,
       'data-variant-2xl': choices().variant['2xl'],
-      'data-leverui-color-palette': local.colorPalette,
+      'data-lui-color-palette': local.colorPalette,
       'data-unstyled': local.unstyled ? '' : undefined,
       ref: attachNode,
     }),

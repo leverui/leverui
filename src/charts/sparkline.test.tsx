@@ -26,18 +26,18 @@ function verifiesChangingSeries(): void {
   );
   const chart = view.container.querySelector('svg');
   if (!chart) throw new Error('The Sparkline test SVG did not mount.');
-  expect(chart.querySelector('.leverui-sparkline__active-point')).not.toBeNull();
+  expect(chart.querySelector('.lui-sparkline__active-point')).not.toBeNull();
 
   setData([{ value: 10 }]);
   flush();
-  expect(chart.querySelector('.leverui-sparkline__active-point')).toBeNull();
+  expect(chart.querySelector('.lui-sparkline__active-point')).toBeNull();
   setActiveIndex(0);
   flush();
-  expect(chart.querySelector('.leverui-sparkline__active-point')).not.toBeNull();
+  expect(chart.querySelector('.lui-sparkline__active-point')).not.toBeNull();
 
   setData([]);
   flush();
-  expect(chart.querySelector('.leverui-sparkline__active-point')).toBeNull();
+  expect(chart.querySelector('.lui-sparkline__active-point')).toBeNull();
   fireEvent.pointerMove(chart);
   expect(onActiveIndexChange).toHaveBeenLastCalledWith(null);
 }

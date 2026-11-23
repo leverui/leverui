@@ -6,9 +6,7 @@ const storyIds = ['basic', 'colors', 'sizes', 'variants', 'size-matrix', 'varian
 async function verifiesCodeExamples({ page }: { page: Page }): Promise<void> {
   for (const id of storyIds) {
     await page.goto(`/iframe.html?id=typography-code--${id}`);
-    await expect(page.locator('#storybook-root .leverui-code').first()).toContainText(
-      'console.log',
-    );
+    await expect(page.locator('#storybook-root .lui-code').first()).toContainText('console.log');
   }
 }
 
@@ -17,18 +15,13 @@ async function verifiesCodeTables({ page }: { page: Page }): Promise<void> {
   for (const id of ['size-matrix', 'variant-matrix']) {
     await page.goto(`/iframe.html?id=typography-code--${id}`);
     await expect(page.locator('#storybook-root tbody tr')).toHaveCount(10);
-    await expect(
-      page.locator('#storybook-root tbody tr').first().locator('.leverui-code'),
-    ).toHaveCount(id === 'size-matrix' ? 4 : 5);
-    await expect(page.locator('#storybook-root thead th').nth(1)).toHaveCSS('font-size', '14px');
-    await expect(page.locator('#storybook-root .leverui-code').first()).toContainText(
-      'Lever UI v3!',
+    await expect(page.locator('#storybook-root tbody tr').first().locator('.lui-code')).toHaveCount(
+      id === 'size-matrix' ? 4 : 5,
     );
+    await expect(page.locator('#storybook-root thead th').nth(1)).toHaveCSS('font-size', '14px');
+    await expect(page.locator('#storybook-root .lui-code').first()).toContainText('Lever UI v3!');
     if (id === 'variant-matrix') {
-      await expect(page.locator('#storybook-root .leverui-code').first()).toHaveCSS(
-        'height',
-        '32px',
-      );
+      await expect(page.locator('#storybook-root .lui-code').first()).toHaveCSS('height', '32px');
       await expect(page.locator('#storybook-root tbody tr').first()).toHaveCSS('height', '70px');
     }
   }

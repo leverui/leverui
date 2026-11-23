@@ -50,7 +50,7 @@ function ColorPickerSlidersImpl(props: RuntimeProps): JSX.Element {
     () => rest,
     {
       /** Gate authored spacing when the root or part is unstyled. */
-      get 'data-leverui-color-picker-css'() {
+      get 'data-lui-color-picker-css'() {
         return appearance.unstyled() || local.unstyled ? undefined : '';
       },
       /** Expose unstyled to consumer CSS. */

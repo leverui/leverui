@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-checkmark:not([data-unstyled]):is([data-state='checked'], [data-state='indeterminate']) {
+  .lui-checkmark:not([data-unstyled]):is([data-state='checked'], [data-state='indeterminate']) {
     --lui-private-checkmark-background: var(--lui-private-checkmark-active-background);
     --lui-private-checkmark-border: var(--lui-private-checkmark-active-border);
     --lui-private-checkmark-color: var(--lui-private-checkmark-active-color);
@@ -8,20 +8,20 @@
     );
   }
 
-  .leverui-checkmark:not([data-unstyled])[data-filled] {
+  .lui-checkmark:not([data-unstyled])[data-filled] {
     --lui-private-checkmark-fill: var(--lui-private-checkmark-filled-background);
   }
 
-  .leverui-checkmark:not([data-unstyled]):is([data-invalid], [aria-invalid='true']) {
+  .lui-checkmark:not([data-unstyled]):is([data-invalid], [aria-invalid='true']) {
     --lui-private-checkmark-border: var(--lui-colors-border-error);
   }
 
-  .leverui-checkmark:not([data-unstyled])[data-disabled] {
+  .lui-checkmark:not([data-unstyled])[data-disabled] {
     opacity: 0.5;
     cursor: var(--lui-cursor-disabled);
   }
 
-  .leverui-checkmark:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
+  .lui-checkmark:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
     outline-width: var(--focus-ring-width, 2px);
     outline-offset: var(--focus-ring-offset, 2px);
     outline-style: var(--focus-ring-style, solid);

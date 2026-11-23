@@ -28,16 +28,16 @@ function PaletteModeScopeExample(): JSX.Element {
         </CodeBlock.Header>
       </CodeBlock.Root>
       {/* A scope written as plain attributes sets no palette, so the palette around it applies. */}
-      <div data-leverui-color-palette="blue">
-        <div data-leverui-theme="" data-leverui-color-mode="dark">
+      <div data-lui-color-palette="blue">
+        <div data-lui-theme="" data-lui-color-mode="dark">
           <Button variant="ghost" data-testid="scope-blue-dark-button">
             Blue, dark
           </Button>
         </div>
       </div>
-      <div data-leverui-color-palette="red">
-        <div data-leverui-color-palette="blue">
-          <div data-leverui-theme="" data-leverui-color-mode="dark">
+      <div data-lui-color-palette="red">
+        <div data-lui-color-palette="blue">
+          <div data-lui-theme="" data-lui-color-mode="dark">
             <Button variant="ghost" data-testid="scope-red-blue-dark-button">
               Nearest palette, dark
             </Button>
@@ -45,7 +45,7 @@ function PaletteModeScopeExample(): JSX.Element {
         </div>
       </div>
       {/* DarkMode is a Theme, which sets its own palette: gray unless told otherwise. */}
-      <div data-leverui-color-palette="blue">
+      <div data-lui-color-palette="blue">
         <DarkMode>
           <Button variant="ghost" data-testid="scope-blue-theme-button">
             Theme resets the palette

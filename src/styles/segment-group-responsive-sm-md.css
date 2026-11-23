@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-segment-group__root:not([data-unstyled]) {
+    .lui-segment-group__root:not([data-unstyled]) {
       &[data-size-sm='xs'] {
         --lui-private-segment-font-size: var(--lui-font-sizes-xs);
         --lui-private-segment-line-height: 1rem;
@@ -32,7 +32,7 @@
     }
   }
   @media (min-width: 768px) {
-    .leverui-segment-group__root:not([data-unstyled]) {
+    .lui-segment-group__root:not([data-unstyled]) {
       &[data-size-md='xs'] {
         --lui-private-segment-font-size: var(--lui-font-sizes-xs);
         --lui-private-segment-line-height: 1rem;

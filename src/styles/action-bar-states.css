@@ -1,10 +1,10 @@
 @layer leverui.recipes {
-  .leverui-action-bar__content:not([data-unstyled])[data-state='open'] {
+  .lui-action-bar__content:not([data-unstyled])[data-state='open'] {
     animation-name: slide-from-bottom, fade-in;
     animation-duration: var(--lui-durations-moderate);
   }
 
-  .leverui-action-bar__content:not([data-unstyled])[data-state='closed'] {
+  .lui-action-bar__content:not([data-unstyled])[data-state='closed'] {
     animation-name: slide-to-bottom, fade-out;
     animation-duration: var(--lui-durations-faster);
   }

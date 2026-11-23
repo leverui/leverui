@@ -88,8 +88,8 @@ function verifiesPublishedTree(): void {
   expect(markup).toContain('role="treegrid"');
   expect(markup).toContain('role="row"');
   expect(markup).toContain('aria-selected="true"');
-  expect(markup).toContain('leverui-tree-view__root');
-  expect(markup).toContain('leverui-tree-view__item');
+  expect(markup).toContain('lui-tree-view__root');
+  expect(markup).toContain('lui-tree-view__item');
   expect(markup).toContain('README.md');
 }
 

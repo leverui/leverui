@@ -62,8 +62,8 @@ async function verifiesBoxContract({ page }: { page: Page }): Promise<void> {
   await expect(box).toHaveJSProperty('tagName', 'SECTION');
   await expect(box).toHaveAttribute('data-ref-tag', 'section');
   await expect(box).toHaveAttribute('aria-label', 'Box contract');
-  await expect(box).toHaveClass(/leverui-box/);
-  await expect(box).toHaveClass('leverui-box consumer-box');
+  await expect(box).toHaveClass(/lui-box/);
+  await expect(box).toHaveClass('lui-box consumer-box');
   await expect(box).toHaveCSS('padding', '8px');
   await expect(box).toHaveCSS('background-color', 'rgb(239, 68, 68)');
   await expect(box).toHaveCSS('border-top-width', '1px');
@@ -110,13 +110,13 @@ async function verifiesBoxContract({ page }: { page: Page }): Promise<void> {
   );
   await expect(page.getByTestId('svg-box')).toHaveJSProperty('tagName', 'svg');
   await expect(page.getByTestId('svg-box')).toHaveAttribute('data-ref-tag', 'svg');
-  await expect(page.getByTestId('svg-box')).toHaveClass('leverui-box');
+  await expect(page.getByTestId('svg-box')).toHaveClass('lui-box');
   await expect(page.getByTestId('svg-box').locator('circle')).toHaveCount(1);
 
   await page.getByTestId('box-toggle').click();
   await expect(conditional).toHaveCSS('background-color', 'rgb(59, 130, 246)');
   await expect(conditional).toHaveAttribute('data-box-node', 'true');
-  await expect(box).toHaveClass('leverui-box consumer-box active-box');
+  await expect(box).toHaveClass('lui-box consumer-box active-box');
   await expect(box).toHaveCSS('background-color', 'rgb(59, 130, 246)');
   await expect(box).toHaveAttribute('data-ref-tag', 'section');
   await expect(link).toHaveCSS('padding', '16px');
@@ -134,7 +134,7 @@ async function verifiesServerBox({ browser }: { browser: Browser }): Promise<voi
   expect(markup).toContain('width="40"');
   expect(markup).toContain('height="20"');
   expect(markup).toContain('Server content');
-  expect(markup).toMatch(/class="leverui-box consumer-box\s*"/);
+  expect(markup).toMatch(/class="lui-box consumer-box\s*"/);
 
   const context = await browser.newContext({ javaScriptEnabled: false });
   try {
@@ -158,7 +158,7 @@ test('Box renders responsive consumer CSS and native attributes on the server', 
 /** Verify a plain Box needs no component style tag before browser JavaScript runs. */
 async function verifiesPlainBoxCss({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderPlainServerBox);
-  expect(markup).toMatch(/class="leverui-box consumer-plain-box\b/);
+  expect(markup).toMatch(/class="lui-box consumer-plain-box\b/);
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(
     `<style>${defaultCss}</style><style>.consumer-plain-box{--lui-colors-bg-panel:rgb(12,34,56);background:var(--lui-colors-bg-panel);padding:12px}</style>${markup}`,

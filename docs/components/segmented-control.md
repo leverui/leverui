@@ -95,7 +95,7 @@ group shows its value, but its inputs are disabled, so it is not submitted.
 ## Customize with CSS
 
 Import the library CSS once. Customize with `class` and `style`, the
-`.leverui-segment-group__*` part classes, and public variables such as
+`.lui-segment-group__*` part classes, and public variables such as
 `--lui-segment-group-background`,
 `--lui-segment-group-indicator-background`,
 `--lui-segment-group-indicator-shadow`,

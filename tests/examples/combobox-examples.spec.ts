@@ -10,7 +10,7 @@ async function verifiesExtendedModes({ page }: { page: Page }): Promise<void> {
   await openStory(page, 'multiple');
   await page.getByRole('combobox').fill('type');
   await page.getByRole('option', { name: 'TypeScript' }).click();
-  await expect(page.locator('[data-combobox-root] .leverui-badge')).toHaveText('TypeScript');
+  await expect(page.locator('[data-combobox-root] .lui-badge')).toHaveText('TypeScript');
 
   await openStory(page, 'option-group');
   await page.getByRole('button', { name: 'Toggle suggestions' }).click();
@@ -42,7 +42,7 @@ async function verifiesExtendedModes({ page }: { page: Page }): Promise<void> {
   await expect(page.getByRole('option', { name: 'Solid' })).toBeVisible();
 
   await openStory(page, 'input-group');
-  await expect(page.locator('.leverui-combobox__root svg.lucide-code')).toHaveCount(1);
+  await expect(page.locator('.lui-combobox__root svg.lucide-code')).toHaveCount(1);
 
   await openStory(page, 'field');
   await expect(page.getByText('The framework you use most')).toBeVisible();

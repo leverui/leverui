@@ -8,7 +8,7 @@ async function verifiesCodeMatrix({ page }: { page: Page }): Promise<void> {
   await expect(code).toHaveText('npm run build');
   await expect(code).toHaveAttribute('title', 'Build command');
   await expect(code).toHaveAttribute('data-ref-tag', 'code');
-  await expect(code).toHaveClass(/(?:^|\s)leverui-code(?:\s|$)/);
+  await expect(code).toHaveClass(/(?:^|\s)lui-code(?:\s|$)/);
   await expect(code).toHaveCSS('display', 'inline-flex');
   await expect(code).toHaveCSS('font-family', /monospace/);
   await expect(code).toHaveCSS('border-radius', '4px');

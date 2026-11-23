@@ -42,7 +42,7 @@ async function verifiesRootProvider(): Promise<void> {
   const root = screen.getByTestId('provider-root');
   expect(input.checked).toBe(true);
   expect(input.name).toBe('saved');
-  expect(root.className).toContain('leverui-checkbox');
+  expect(root.className).toContain('lui-checkbox');
   expect(screen.getByTestId('provider-state').textContent).toBe('true');
   fireEvent.click(input);
   await waitFor(
@@ -94,7 +94,7 @@ async function verifiesCheckboxGroup(): Promise<void> {
   const beta = screen.getByRole('checkbox', { name: 'Beta' }) as HTMLInputElement;
   expect(group.getAttribute('role')).toBe('group');
   expect(screen.getByRole('group', { name: 'Topics' })).toBe(group);
-  expect(group.className).toContain('leverui-checkbox-group');
+  expect(group.className).toContain('lui-checkbox-group');
   expect(alpha.checked).toBe(true);
   expect(alpha.name).toBe('topics');
   expect(beta.disabled).toBe(true);

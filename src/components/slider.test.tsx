@@ -60,12 +60,10 @@ async function verifiesSliderComposition(): Promise<void> {
   await settle();
   const thumb = screen.getByRole('slider', { name: 'Volume' });
   expect(thumb).toHaveAttribute('aria-valuenow', '30');
-  expect(thumb).toHaveClass('leverui-slider__thumb');
-  expect(screen.getByText('Volume').closest('[data-slider-root]')).toHaveClass(
-    'leverui-slider__root',
-  );
-  expect(document.querySelector('.leverui-slider__track')).not.toBeNull();
-  expect(document.querySelector('.leverui-slider__range')).not.toBeNull();
+  expect(thumb).toHaveClass('lui-slider__thumb');
+  expect(screen.getByText('Volume').closest('[data-slider-root]')).toHaveClass('lui-slider__root');
+  expect(document.querySelector('.lui-slider__track')).not.toBeNull();
+  expect(document.querySelector('.lui-slider__range')).not.toBeNull();
   expect(new FormData(screen.getByTestId('slider-form') as HTMLFormElement).get('volume')).toBe(
     '30',
   );
@@ -95,8 +93,8 @@ async function verifiesRangeHelpers(): Promise<void> {
   await settle();
   expect(screen.getAllByRole('slider')).toHaveLength(2);
   expect(document.querySelectorAll('input[type="text"]')).toHaveLength(2);
-  expect(screen.getByText('Middle')).toHaveClass('leverui-slider__markerLabel');
-  expect(document.querySelectorAll('.leverui-slider__marker')).toHaveLength(3);
+  expect(screen.getByText('Middle')).toHaveClass('lui-slider__markerLabel');
+  expect(document.querySelectorAll('.lui-slider__marker')).toHaveLength(3);
 }
 
 it('renders one native input per thumb and labeled marks', verifiesRangeHelpers);

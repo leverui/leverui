@@ -4,7 +4,7 @@ export const breadcrumbContracts = [
     required: [
       ...['root', 'list', 'item', 'link', 'currentLink', 'separator', 'ellipsis'].map(
         /** Require every public Breadcrumb part hook. */
-        (part) => `.leverui-breadcrumb__${part}:not([data-unstyled]`,
+        (part) => `.lui-breadcrumb__${part}:not([data-unstyled]`,
       ),
       ...['sm', 'md', 'lg'].map(
         /** Require each base list size. */

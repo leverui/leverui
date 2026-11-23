@@ -117,7 +117,7 @@ Your own `onFocus`, `onBlur`, and `onKeyDown` handlers run after the chart's.
   --lui-radar-chart-series-fill-opacity: 0.35;
 }
 
-.usage-radar .leverui-radar-chart__angle-label {
+.usage-radar .lui-radar-chart__angle-label {
   font-weight: 600;
 }
 ```
@@ -165,14 +165,14 @@ The `width` and `height` props still set the proportions.
 
 ### Classes
 
-Root: `.leverui-radar-chart`.
+Root: `.lui-radar-chart`.
 
-Parts, each prefixed with `.leverui-radar-chart__`: `svg`, `grid`, `ring`,
+Parts, each prefixed with `.lui-radar-chart__`: `svg`, `grid`, `ring`,
 `spoke`, `angle-label`, `radius-label`, `series`, `shape`, `point`,
 `point-dot`, `point-label`, `legend`, `legend-item`, `legend-swatch`.
 
-Tooltip: `.leverui-chart-tooltip`. Parts, each prefixed with
-`.leverui-chart-tooltip__`: `label`, `item`, `swatch`, `values`, `name`,
+Tooltip: `.lui-chart-tooltip`. Parts, each prefixed with
+`.lui-chart-tooltip__`: `label`, `item`, `swatch`, `values`, `name`,
 `value`.
 
 Part attributes:

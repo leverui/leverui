@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-slider__root:not([data-unstyled]) {
+    .lui-slider__root:not([data-unstyled]) {
       &[data-size-sm='sm'] {
         --lui-slider-thumb-size: var(--lui-sizes-4);
         --lui-slider-track-size: var(--lui-sizes-1\.5);
@@ -46,7 +46,7 @@
   }
 
   @media (min-width: 768px) {
-    .leverui-slider__root:not([data-unstyled]) {
+    .lui-slider__root:not([data-unstyled]) {
       &[data-size-md='sm'] {
         --lui-slider-thumb-size: var(--lui-sizes-4);
         --lui-slider-track-size: var(--lui-sizes-1\.5);

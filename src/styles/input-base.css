@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-input:not([data-unstyled]) {
+  .lui-input:not([data-unstyled]) {
     width: 100%;
     min-width: var(--lui-private-input-height);
     outline: 0;

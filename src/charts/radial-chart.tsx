@@ -85,7 +85,7 @@ export function RadialChart(props: RadialChartProps): JSX.Element {
     <div
       {...native}
       ref={props.ref}
-      class={['leverui-radial-chart', props.class, props.className]}
+      class={['lui-radial-chart', props.class, props.className]}
       data-chart-shape={innerRadius() > 0 ? 'donut' : 'pie'}
       data-label-placement={props.label}
       data-legend={props.legend ? '' : undefined}
@@ -94,7 +94,7 @@ export function RadialChart(props: RadialChartProps): JSX.Element {
     >
       <svg
         ref={svgRef}
-        class="leverui-radial-chart__svg"
+        class="lui-radial-chart__svg"
         role="img"
         aria-label={props['aria-label'] ?? 'Radial chart'}
         width={size()}
@@ -141,7 +141,7 @@ export function RadialChart(props: RadialChartProps): JSX.Element {
               }
               return (
                 <path
-                  class="leverui-radial-chart__sector"
+                  class="lui-radial-chart__sector"
                   d={path()}
                   fill={fill()}
                   style={{

@@ -54,7 +54,7 @@ async function verifiesButtonBrowserContract({ page }: { page: Page }): Promise<
   await expect(customLoading).toHaveText('Sending●');
   await expect(page.getByTestId('css-button')).toHaveCSS('letter-spacing', '1.6px');
   await expect(page.getByTestId('css-button')).not.toHaveAttribute(
-    'data-leverui-private-style-runtime',
+    'data-lui-private-style-runtime',
   );
   await expect(page.getByTestId('grow-group')).toHaveCSS('display', 'flex');
   await expect(page.getByRole('button', { name: 'Open settings' })).toHaveCSS(
@@ -67,8 +67,8 @@ async function verifiesButtonBrowserContract({ page }: { page: Page }): Promise<
   const lastGroupButton = attachedGroup.getByRole('button', { name: 'Last', exact: true });
   await expect(attachedGroup).toHaveCSS('gap', '0px');
   await expect(attachedGroup).toHaveAttribute('data-ref-tag', 'div');
-  await expect(firstGroupButton).toHaveAttribute('data-leverui-group-first', '');
-  await expect(lastGroupButton).toHaveAttribute('data-leverui-group-last', '');
+  await expect(firstGroupButton).toHaveAttribute('data-lui-group-first', '');
+  await expect(lastGroupButton).toHaveAttribute('data-lui-group-last', '');
   await expect(firstGroupButton).toHaveCSS('z-index', '0');
   await expect(lastGroupButton).toHaveCSS('z-index', '1');
   await expect(page.getByRole('button', { name: 'Only' })).toHaveCSS(
@@ -106,8 +106,8 @@ async function verifiesServerButton({ page }: { page: Page }): Promise<void> {
   expect(markup).toContain('aria-label="Server action"');
   expect(markup).toContain('data-size="lg"');
   expect(markup).toContain('data-variant="outline"');
-  expect(markup).toContain('data-leverui-color-palette="blue"');
-  expect(markup).toContain('leverui-button');
+  expect(markup).toContain('data-lui-color-palette="blue"');
+  expect(markup).toContain('lui-button');
   expect(markup).not.toMatch(/<style[^>]*>[^<]+<\/style>/);
   expect(markup).not.toMatch(/<button[^>]*\s(?:variant|size)=/);
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
@@ -139,11 +139,11 @@ async function verifiesNativeStyleContract({ page }: { page: Page }): Promise<vo
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(`<style>${defaultCss}</style>${markup}`);
   const button = page.getByRole('button', { name: 'Native action' });
-  await expect(button).toHaveClass(/leverui-button/);
+  await expect(button).toHaveClass(/lui-button/);
   await expect(button).toHaveClass(/consumer-native-button/);
   await expect(button).toHaveAttribute('data-unstyled', '');
   await expect(button).toHaveCSS('background-color', 'rgb(34, 197, 94)');
-  await expect(button).not.toHaveAttribute('data-leverui-private-style-runtime');
+  await expect(button).not.toHaveAttribute('data-lui-private-style-runtime');
 }
 
 test('Button family browser contract', verifiesButtonBrowserContract);

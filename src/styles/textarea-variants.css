@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-textarea:not([data-unstyled])[data-variant='outline'] {
+  .lui-textarea:not([data-unstyled])[data-variant='outline'] {
     --lui-private-textarea-background: transparent;
     --lui-private-textarea-border-width: 1px;
     --lui-private-textarea-border-color: var(--lui-colors-border);
@@ -9,7 +9,7 @@
     --lui-private-textarea-focus-shadow: none;
   }
 
-  .leverui-textarea:not([data-unstyled])[data-variant='subtle'] {
+  .lui-textarea:not([data-unstyled])[data-variant='subtle'] {
     --lui-private-textarea-background: var(--lui-colors-bg-muted);
     --lui-private-textarea-border-width: 1px;
     --lui-private-textarea-border-color: transparent;
@@ -19,7 +19,7 @@
     --lui-private-textarea-focus-shadow: none;
   }
 
-  .leverui-textarea:not([data-unstyled])[data-variant='flushed'] {
+  .lui-textarea:not([data-unstyled])[data-variant='flushed'] {
     --lui-private-textarea-background: transparent;
     --lui-private-textarea-border-width: 0 0 1px;
     --lui-private-textarea-border-color: var(--lui-colors-border);

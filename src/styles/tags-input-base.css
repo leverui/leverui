@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-tags-input__root:not([data-unstyled]) {
+  .lui-tags-input__root:not([data-unstyled]) {
     --lui-private-tags-input-height: var(--lui-sizes-10);
     --lui-private-tags-input-px: var(--lui-spacing-1\.5);
     --lui-private-tags-input-py: var(--lui-spacing-1);
@@ -17,7 +17,7 @@
     font-size: var(--lui-private-tags-input-font-size);
     line-height: var(--lui-private-tags-input-line-height);
 
-    .leverui-tags-input__label:not([data-unstyled]) {
+    .lui-tags-input__label:not([data-unstyled]) {
       font-weight: var(--lui-font-weights-medium);
       font-size: var(--lui-font-sizes-sm);
       line-height: 1.25rem;
@@ -27,7 +27,7 @@
       }
     }
 
-    .leverui-tags-input__control:not([data-unstyled]) {
+    .lui-tags-input__control:not([data-unstyled]) {
       min-height: var(--lui-private-tags-input-height);
       padding-inline: var(--lui-private-tags-input-px);
       padding-block: var(--lui-private-tags-input-py);
@@ -49,7 +49,7 @@
       }
     }
 
-    .leverui-tags-input__input:not([data-unstyled]) {
+    .lui-tags-input__input:not([data-unstyled]) {
       flex: 1;
       min-width: var(--lui-sizes-20);
       outline: none;
@@ -63,12 +63,12 @@
       }
     }
 
-    .leverui-tags-input__item:not([data-unstyled]) {
+    .lui-tags-input__item:not([data-unstyled]) {
       max-width: 100%;
       min-width: 0;
     }
 
-    .leverui-tags-input__itemText:not([data-unstyled]) {
+    .lui-tags-input__itemText:not([data-unstyled]) {
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 1;
@@ -76,7 +76,7 @@
       min-width: 0;
     }
 
-    .leverui-tags-input__itemInput:not([data-unstyled]) {
+    .lui-tags-input__itemInput:not([data-unstyled]) {
       outline: none;
       background: transparent;
       min-width: 2ch;
@@ -85,7 +85,7 @@
       height: var(--lui-private-tags-input-item-height);
     }
 
-    .leverui-tags-input__itemPreview:not([data-unstyled]) {
+    .lui-tags-input__itemPreview:not([data-unstyled]) {
       height: var(--lui-private-tags-input-item-height);
       user-select: none;
       display: inline-flex;
@@ -96,7 +96,7 @@
       max-width: 100%;
     }
 
-    .leverui-tags-input__itemDeleteTrigger:not([data-unstyled]) {
+    .lui-tags-input__itemDeleteTrigger:not([data-unstyled]) {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -122,7 +122,7 @@
       }
     }
 
-    .leverui-tags-input__clearTrigger:not([data-unstyled]) {
+    .lui-tags-input__clearTrigger:not([data-unstyled]) {
       display: flex;
       align-items: center;
       justify-content: center;

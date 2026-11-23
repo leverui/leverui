@@ -51,9 +51,9 @@ function renderOpenDialog(): string {
 /** Check the native tag emitted for each Dialog part. */
 function verifiesDialogNativeTags(): void {
   const markup = renderOpenDialog();
-  expect(markup).toMatch(/<div\b[^>]*leverui-dialog__content/);
-  expect(markup).toMatch(/<div\b[^>]*leverui-dialog__description/);
-  expect(markup).not.toMatch(/<(?:section|p)\b[^>]*leverui-dialog__(?:content|description)/);
+  expect(markup).toMatch(/<div\b[^>]*lui-dialog__content/);
+  expect(markup).toMatch(/<div\b[^>]*lui-dialog__description/);
+  expect(markup).not.toMatch(/<(?:section|p)\b[^>]*lui-dialog__(?:content|description)/);
   expect(markup).toContain('role="dialog"');
   expect(markup).toContain('Server summary');
 }

@@ -27,18 +27,18 @@ async function verifiesMarkHydration({ page }: { page: Page }): Promise<void> {
     () => renderMarkHydrationTree(server),
   );
   expect(markup.match(/<mark\b/g)).toHaveLength(2);
-  expect(markup).toContain('leverui-mark');
+  expect(markup).toContain('lui-mark');
   expect(markup).not.toMatch(/<mark[^>]*\svariant=/);
   await page.setViewportSize({ width: 600, height: 800 });
   await page.goto('/iframe.html?id=setup-hydration-host--ready');
   await page.setContent(
-    `${generateHydrationScript()}<style>${defaultCss}</style><style>.leverui-mark{outline:2px solid rgb(1, 2, 3)}</style><div id="mark-hydration-root">${markup}</div>`,
+    `${generateHydrationScript()}<style>${defaultCss}</style><style>.lui-mark{outline:2px solid rgb(1, 2, 3)}</style><div id="mark-hydration-root">${markup}</div>`,
   );
   const root = page.locator('#mark-hydration-root');
   const mark = page.locator('#hydrated-mark');
   const responsive = page.locator('#hydrated-responsive-mark');
   await expect(mark).toHaveAttribute('data-variant', 'solid');
-  await expect(mark).not.toHaveAttribute('data-leverui-private-style-runtime');
+  await expect(mark).not.toHaveAttribute('data-lui-private-style-runtime');
   await expect(mark).toHaveCSS('outline-color', 'rgb(1, 2, 3)');
   await expect(responsive).not.toHaveCSS(
     'background-color',
@@ -72,7 +72,7 @@ async function verifiesMarkHydration({ page }: { page: Page }): Promise<void> {
   );
   await page.locator('#mark-hydration-toggle').click();
   await expect(mark).toHaveAttribute('data-variant', 'text');
-  await expect(mark).not.toHaveAttribute('data-leverui-private-style-runtime');
+  await expect(mark).not.toHaveAttribute('data-lui-private-style-runtime');
   await expect(mark).toHaveCSS('font-weight', '500');
   await expect(mark).toHaveAttribute('data-server-node', 'true');
   await expect(mark).toHaveCSS('outline-color', 'rgb(1, 2, 3)');

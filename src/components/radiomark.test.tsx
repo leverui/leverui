@@ -50,7 +50,7 @@ function verifiesStaticRadiomark(): void {
   expect(checked.querySelector('[data-testid="custom-child"]')).toBeNull();
   expect(checked.children).toHaveLength(1);
   expect(checked.textContent).toBe('');
-  expect(checked.className).toContain('leverui-radiomark');
+  expect(checked.className).toContain('lui-radiomark');
   expect(owned.querySelectorAll('.dot')).toHaveLength(1);
   for (const attribute of ['checked', 'disabled', 'variant', 'filled', 'size']) {
     expect(checked.hasAttribute(attribute)).toBe(false);
@@ -146,7 +146,7 @@ function verifiesOwnedRadiomark(): void {
   setChecked(true);
   flush();
   expect(screen.getByTestId('owned-live')).toBe(mark);
-  expect(mark.querySelectorAll('.leverui-radiomark__dot')).toHaveLength(1);
+  expect(mark.querySelectorAll('.lui-radiomark__dot')).toHaveLength(1);
 }
 
 it('composes caller-owned child refs and native styles without a provider', verifiesOwnedRadiomark);

@@ -1,22 +1,22 @@
 @layer leverui.recipes {
-  .leverui-bar-chart:not([data-unstyled]) {
+  .lui-bar-chart:not([data-unstyled]) {
     position: relative;
     width: 100%;
     min-width: var(--lui-bar-chart-min-width, 280px);
 
-    .leverui-bar-chart__svg {
+    .lui-bar-chart__svg {
       display: block;
       width: 100%;
       overflow: visible;
     }
 
-    .leverui-bar-chart__axes {
+    .lui-bar-chart__axes {
       font-family: inherit;
       font-size: var(--lui-bar-chart-axis-font-size, 12px);
       fill: var(--lui-bar-chart-axis-color, var(--lui-colors-fg-muted));
     }
 
-    .leverui-bar-chart__grid-line {
+    .lui-bar-chart__grid-line {
       stroke: var(
         --lui-bar-chart-grid-color,
         var(--lui-chart-grid-color, var(--lui-colors-border-muted))
@@ -25,37 +25,37 @@
       stroke-dasharray: var(--lui-chart-grid-dasharray, none);
     }
 
-    .leverui-bar-chart__axes[data-grid-dashed] .leverui-bar-chart__grid-line {
+    .lui-bar-chart__axes[data-grid-dashed] .lui-bar-chart__grid-line {
       stroke-dasharray: var(--lui-chart-grid-dasharray, 3 3);
     }
 
-    .leverui-bar-chart__axis-line {
+    .lui-bar-chart__axis-line {
       fill: none;
       stroke: var(--lui-bar-chart-axis-line-color, var(--lui-colors-border));
     }
 
-    .leverui-bar-chart__bar-label {
+    .lui-bar-chart__bar-label {
       font-size: var(--lui-bar-chart-label-font-size, 12px);
       font-weight: var(--lui-bar-chart-label-weight, 600);
       fill: var(--lui-bar-chart-label-color, var(--lui-colors-fg));
     }
 
-    .leverui-bar-chart__wick {
+    .lui-bar-chart__wick {
       stroke: var(--lui-bar-chart-wick-color, var(--lui-colors-fg));
       stroke-width: var(--lui-bar-chart-wick-width, 1.5);
     }
 
-    .leverui-bar-chart__reference-area {
+    .lui-bar-chart__reference-area {
       fill: var(--lui-bar-chart-reference-fill, var(--lui-colors-red-muted));
       fill-opacity: var(--lui-bar-chart-reference-opacity, 0.4);
     }
 
-    .leverui-bar-chart__reference-label {
+    .lui-bar-chart__reference-label {
       fill: var(--lui-bar-chart-reference-label-color, var(--lui-colors-red-fg));
       font-size: var(--lui-bar-chart-reference-label-font-size, 12px);
     }
 
-    .leverui-bar-chart__reference-line {
+    .lui-bar-chart__reference-line {
       stroke: var(--lui-bar-chart-reference-line-color, var(--lui-colors-red-fg));
       stroke-dasharray: 3 3;
     }

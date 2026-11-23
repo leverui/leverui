@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-tooltip__content:not([data-unstyled]) {
+  .lui-tooltip__content:not([data-unstyled]) {
     --lui-tooltip-background: var(--lui-colors-bg-inverted);
     --lui-tooltip-foreground: var(--lui-colors-fg-inverted);
     --lui-tooltip-max-width: var(--lui-sizes-xs);
@@ -27,13 +27,13 @@
     }
   }
 
-  .leverui-tooltip__arrow:not([data-unstyled]) {
+  .lui-tooltip__arrow:not([data-unstyled]) {
     --lui-tooltip-arrow-size: var(--lui-sizes-2);
     --arrow-size: var(--lui-tooltip-arrow-size);
     --arrow-background: var(--lui-tooltip-background);
   }
 
-  .leverui-tooltip__arrowTip:not([data-unstyled]) {
+  .lui-tooltip__arrowTip:not([data-unstyled]) {
     border-top-width: 1px;
     border-left-width: 1px;
     border-color: var(--lui-tooltip-background);
@@ -41,7 +41,7 @@
 
   /* Zag 2 sets no z-index and isolates the positioner, so the content's z-index
      cannot escape it. Stack the positioner itself. */
-  .leverui-tooltip__positioner {
+  .lui-tooltip__positioner {
     z-index: var(--lui-z-index-tooltip);
   }
 }

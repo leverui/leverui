@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-steps__root:not([data-unstyled])[data-variant='solid'] {
+  .lui-steps__root:not([data-unstyled])[data-variant='solid'] {
     --lui-private-steps-incomplete-bg: transparent;
     --lui-private-steps-incomplete-border-width: var(--lui-private-steps-thickness);
     --lui-private-steps-current-bg: var(--lui-colors-color-palette-muted);
@@ -12,7 +12,7 @@
     --lui-private-steps-complete-separator-bg: var(--lui-colors-color-palette-solid);
   }
 
-  .leverui-steps__root:not([data-unstyled])[data-variant='subtle'] {
+  .lui-steps__root:not([data-unstyled])[data-variant='subtle'] {
     --lui-private-steps-incomplete-bg: var(--lui-colors-bg-muted);
     --lui-private-steps-incomplete-border-width: 0px;
     --lui-private-steps-current-bg: var(--lui-colors-color-palette-muted);
@@ -25,7 +25,7 @@
     --lui-private-steps-complete-separator-bg: var(--lui-colors-color-palette-emphasized);
   }
 
-  .leverui-steps__root:not([data-unstyled]) .leverui-steps__indicator:not([data-unstyled]) {
+  .lui-steps__root:not([data-unstyled]) .lui-steps__indicator:not([data-unstyled]) {
     &[data-incomplete] {
       background: var(--lui-private-steps-incomplete-bg);
       border-style: solid;
@@ -45,8 +45,7 @@
     }
   }
 
-  .leverui-steps__root:not([data-unstyled])
-    .leverui-steps__separator:not([data-unstyled])[data-complete] {
+  .lui-steps__root:not([data-unstyled]) .lui-steps__separator:not([data-unstyled])[data-complete] {
     background: var(--lui-private-steps-complete-separator-bg);
   }
 }

@@ -117,12 +117,12 @@ async function verifiesNativeComposition({ page }: { page: Page }): Promise<void
   await expect(edge).toBeVisible();
   await expect(edge).toHaveJSProperty('tagName', 'SPAN');
   await expect(edge).toHaveAttribute('data-side', 'start');
-  await expect(edge).toHaveClass(/leverui-marquee__edge/);
+  await expect(edge).toHaveClass(/lui-marquee__edge/);
   await expect(edge).toHaveCSS('background-image', /linear-gradient/);
   await expect(page.getByTestId('marquee-composed-refs')).toHaveText('matched');
   const viewport = page.getByTestId('marquee-composed-viewport');
   await expect(viewport).toHaveJSProperty('tagName', 'SECTION');
-  await expect(viewport).toHaveClass(/leverui-marquee__viewport/);
+  await expect(viewport).toHaveClass(/lui-marquee__viewport/);
 }
 
 test('Marquee parts preserve native composition and refs', verifiesNativeComposition);

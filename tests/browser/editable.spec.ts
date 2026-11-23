@@ -8,7 +8,7 @@ async function verifiesEditableBrowser({ page }: { page: Page }): Promise<void> 
   const preview = page.getByTestId('editable-preview');
   const input = page.getByTestId('editable-input');
   await expect(input).toHaveJSProperty('type', 'text', { timeout: 30_000 });
-  await expect(root).toHaveClass(/leverui-editable__root/);
+  await expect(root).toHaveClass(/lui-editable__root/);
   await expect(root).toHaveCSS('display', 'inline-flex');
   await expect(preview).toHaveText('Click to edit');
   await page.getByTestId('editable-edit').click();

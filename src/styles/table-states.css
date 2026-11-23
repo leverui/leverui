@@ -1,41 +1,41 @@
 @layer leverui.recipes {
-  @scope (.leverui-table__root:not([data-unstyled])) to (.leverui-table__root) {
-    :is(.leverui-table__columnHeader, :scope[data-native] thead th):not([data-unstyled]) {
+  @scope (.lui-table__root:not([data-unstyled])) to (.lui-table__root) {
+    :is(.lui-table__columnHeader, :scope[data-native] thead th):not([data-unstyled]) {
       border-bottom-width: 1px;
     }
-    :is(.leverui-table__cell, :scope[data-native] td):not([data-unstyled]) {
+    :is(.lui-table__cell, :scope[data-native] td):not([data-unstyled]) {
       border-bottom-width: var(--lui-private-table-cell-border);
     }
-    :is(.leverui-table__row, :scope[data-native] tr):not([data-unstyled]):not(:last-of-type) {
+    :is(.lui-table__row, :scope[data-native] tr):not([data-unstyled]):not(:last-of-type) {
       border-bottom-width: var(--lui-private-table-row-border);
     }
-    :is(.leverui-table__footer, :scope[data-native] tfoot):not([data-unstyled]) {
+    :is(.lui-table__footer, :scope[data-native] tfoot):not([data-unstyled]) {
       border-top-width: var(--lui-private-table-footer-border);
     }
     :scope[data-show-column-border]
       :is(
-        .leverui-table__columnHeader,
+        .lui-table__columnHeader,
         :scope[data-native] thead th,
-        .leverui-table__cell,
+        .lui-table__cell,
         :scope[data-native] td
       ):not([data-unstyled]):not(:last-of-type) {
       border-inline-end-width: 1px;
     }
     :scope[data-striped]
-      :is(.leverui-table__row, :scope[data-native] tr):not([data-unstyled]):nth-of-type(odd)
+      :is(.lui-table__row, :scope[data-native] tr):not([data-unstyled]):nth-of-type(odd)
       td:not([data-unstyled]) {
       background-color: var(--lui-colors-bg-muted);
     }
-    :is(.leverui-table__row, :scope[data-native] tr):not([data-unstyled])[data-selected] {
+    :is(.lui-table__row, :scope[data-native] tr):not([data-unstyled])[data-selected] {
       background-color: var(--lui-colors-color-palette-subtle);
     }
     :scope[data-interactive]
-      :is(.leverui-table__body, :scope[data-native] tbody):not([data-unstyled])
+      :is(.lui-table__body, :scope[data-native] tbody):not([data-unstyled])
       tr:not([data-unstyled]):hover {
       background-color: var(--lui-colors-color-palette-subtle);
     }
     :scope[data-sticky-header]
-      :is(.leverui-table__header, :scope[data-native] thead):not([data-unstyled])
+      :is(.lui-table__header, :scope[data-native] thead):not([data-unstyled])
       tr:not([data-unstyled]) {
       position: sticky;
       top: var(--table-sticky-offset, 0px);

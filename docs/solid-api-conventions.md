@@ -64,7 +64,7 @@ family's [component guide](components/README.md) lists its own API and parts.
 - `Group` and `ButtonGroup` take
   `skip={(element: HTMLElement | SVGElement | MathMLElement) => ...}`. Solid
   supplies the rendered native element after mount. For server-rendered
-  groups, set `data-leverui-group-skip` on a child that must be excluded from
+  groups, set `data-lui-group-skip` on a child that must be excluded from
   the joined edge and stacking calculation. Example:
   `<Group skip={(element) => element.getAttribute('data-separator') === 'true'}>...</Group>`.
 - Both groups use `--lui-group-gap` for spacing and write

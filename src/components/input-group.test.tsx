@@ -38,14 +38,14 @@ function verifiesComposition(): void {
   const group = screen.getByTestId('input-group');
   const input = screen.getByRole('textbox', { name: 'Website' }) as HTMLInputElement;
   expect(group).toBe(received);
-  expect(group.className).toContain('leverui-input-group');
-  expect(group.querySelectorAll('.leverui-input-addon')).toHaveLength(2);
-  expect(group.querySelectorAll('.leverui-input-element')).toHaveLength(2);
-  expect(screen.getByTitle('User marker').getAttribute('data-leverui-group-auto-skip')).toBe('');
-  expect(screen.getByTitle('Protocol').getAttribute('data-leverui-group-item')).toBe('');
-  expect(screen.getByTitle('Domain ending').getAttribute('data-leverui-group-auto-skip')).toBe('');
+  expect(group.className).toContain('lui-input-group');
+  expect(group.querySelectorAll('.lui-input-addon')).toHaveLength(2);
+  expect(group.querySelectorAll('.lui-input-element')).toHaveLength(2);
+  expect(screen.getByTitle('User marker').getAttribute('data-lui-group-auto-skip')).toBe('');
+  expect(screen.getByTitle('Protocol').getAttribute('data-lui-group-item')).toBe('');
+  expect(screen.getByTitle('Domain ending').getAttribute('data-lui-group-auto-skip')).toBe('');
   expect(input.hasAttribute('startElement')).toBe(false);
-  expect(input.className).toContain('leverui-input');
+  expect(input.className).toContain('lui-input');
   fireEvent.input(input, { target: { value: 'updated' } });
   expect(input.value).toBe('updated');
 }
@@ -77,7 +77,7 @@ function verifiesReactivePadding(): void {
   );
   const reactive = screen.getByRole('textbox', { name: 'Reactive field' });
   const explicit = screen.getByRole('textbox', { name: 'Explicit field' });
-  const group = reactive.closest('.leverui-input-group') as HTMLElement;
+  const group = reactive.closest('.lui-input-group') as HTMLElement;
   const firstOffset = group.style.getPropertyValue('--lui-private-input-group-start-offset');
   expect(group).toHaveAttribute('data-group-start', '');
   expect(explicit.style.paddingInlineStart).toBe('2rem');

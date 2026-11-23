@@ -42,7 +42,7 @@ function verifiesReactiveTextDefaults(): void {
   );
   const paragraph = screen.getByText('Reactive text');
   expect(paragraph.tagName).toBe('P');
-  expect(paragraph.className).toContain('leverui-text');
+  expect(paragraph.className).toContain('lui-text');
   expect(paragraph.className).toContain('provider-copy');
   expect(paragraph.className).toContain('instance-copy');
   expect(paragraph.getAttribute('style')).toContain('color: red');

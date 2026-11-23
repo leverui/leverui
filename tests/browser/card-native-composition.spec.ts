@@ -74,7 +74,7 @@ async function verifiesNativeCardComposition({ page }: { page: Page }): Promise<
   expect(markup).toMatch(/<main[^>]*id="selected-body"/);
   expect(markup).toMatch(/<article[^>]*id="owned-card"/);
   expect(markup).toMatch(/<h2[^>]*id="owned-title"/);
-  expect(markup).not.toContain('data-leverui-private-style-runtime');
+  expect(markup).not.toContain('data-lui-private-style-runtime');
   await page.setContent(`<style>${defaultCss}</style>${markup}`);
   await expect(page.locator('#selected-card')).toHaveCSS('display', 'flex');
   await expect(page.locator('#selected-body')).toHaveCSS('padding-top', '28px');

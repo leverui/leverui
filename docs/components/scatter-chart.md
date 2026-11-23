@@ -131,7 +131,7 @@ The chart takes focus when the tooltip is on. Focus shows the first point.
   --lui-scatter-chart-legend-gap: 1rem;
 }
 
-.sales-scatter .leverui-scatter-chart__point {
+.sales-scatter .lui-scatter-chart__point {
   opacity: 0.8;
 }
 ```
@@ -162,11 +162,11 @@ The chart takes focus when the tooltip is on. Focus shows the first point.
 
 ### Classes
 
-Root: `.leverui-scatter-chart`.
+Root: `.lui-scatter-chart`.
 
-Parts, each prefixed with `.leverui-scatter-chart__`: `svg`, `axes`,
+Parts, each prefixed with `.lui-scatter-chart__`: `svg`, `axes`,
 `axis-line`, `tick`, `tick-label`, `cursor`, `trend`, `series`, `connection`,
 `point`, `legend`, `legend-item`, `legend-swatch`.
 
 Each `series` group has a `data-scatter-series` attribute set to the series
-name. Tooltip: `.leverui-chart-tooltip`.
+name. Tooltip: `.lui-chart-tooltip`.

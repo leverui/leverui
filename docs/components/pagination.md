@@ -78,9 +78,9 @@ With more than one pagination on a page, give each its own accessible label.
 Import `@leverui/components/styles.css` once for the default page text weight
 and ellipsis look.
 
-Classes: `.leverui-pagination__root`, `.leverui-pagination__item`,
-`.leverui-pagination__ellipsis`, `.leverui-pagination__prevTrigger`,
-`.leverui-pagination__nextTrigger`, and `.leverui-pagination__page-text` for
+Classes: `.lui-pagination__root`, `.lui-pagination__item`,
+`.lui-pagination__ellipsis`, `.lui-pagination__prevTrigger`,
+`.lui-pagination__nextTrigger`, and `.lui-pagination__page-text` for
 the page text.
 
 Each part keeps its own attribute (such as `data-pagination-item`),

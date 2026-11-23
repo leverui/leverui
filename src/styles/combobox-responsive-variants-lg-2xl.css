@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 1024px) {
-    .leverui-combobox__input:not([data-unstyled])[data-variant-lg='outline'] {
+    .lui-combobox__input:not([data-unstyled])[data-variant-lg='outline'] {
       --lui-private-combobox-input-background: transparent;
       --lui-private-combobox-border-width: 1px;
       --lui-private-combobox-border-color: var(
@@ -16,12 +16,12 @@
       --lui-private-combobox-focus-outline-width: var(--focus-ring-width, 1px);
       --lui-private-combobox-focus-shadow: none;
     }
-    .leverui-combobox__indicatorGroup:not([data-unstyled])[data-variant-lg='outline'] {
+    .lui-combobox__indicatorGroup:not([data-unstyled])[data-variant-lg='outline'] {
       --lui-private-combobox-variant-indicator-padding-x: var(
         --lui-private-combobox-input-padding-x
       );
     }
-    .leverui-combobox__input:not([data-unstyled])[data-variant-lg='subtle'] {
+    .lui-combobox__input:not([data-unstyled])[data-variant-lg='subtle'] {
       --lui-private-combobox-input-background: var(
         --lui-combobox-subtle-background,
         var(--lui-colors-bg-muted)
@@ -37,12 +37,12 @@
       --lui-private-combobox-focus-outline-width: var(--focus-ring-width, 1px);
       --lui-private-combobox-focus-shadow: none;
     }
-    .leverui-combobox__indicatorGroup:not([data-unstyled])[data-variant-lg='subtle'] {
+    .lui-combobox__indicatorGroup:not([data-unstyled])[data-variant-lg='subtle'] {
       --lui-private-combobox-variant-indicator-padding-x: var(
         --lui-private-combobox-input-padding-x
       );
     }
-    .leverui-combobox__input:not([data-unstyled])[data-variant-lg='flushed'] {
+    .lui-combobox__input:not([data-unstyled])[data-variant-lg='flushed'] {
       --lui-private-combobox-input-background: transparent;
       --lui-private-combobox-border-width: 0 0 1px;
       --lui-private-combobox-border-color: var(
@@ -56,12 +56,12 @@
       --lui-private-combobox-focus-shadow: 0 1px 0 0
         var(--lui-combobox-focus-color, var(--lui-colors-color-palette-focus-ring));
     }
-    .leverui-combobox__indicatorGroup:not([data-unstyled])[data-variant-lg='flushed'] {
+    .lui-combobox__indicatorGroup:not([data-unstyled])[data-variant-lg='flushed'] {
       --lui-private-combobox-variant-indicator-padding-x: 0;
     }
   }
   @media (min-width: 1280px) {
-    .leverui-combobox__input:not([data-unstyled])[data-variant-xl='outline'] {
+    .lui-combobox__input:not([data-unstyled])[data-variant-xl='outline'] {
       --lui-private-combobox-input-background: transparent;
       --lui-private-combobox-border-width: 1px;
       --lui-private-combobox-border-color: var(
@@ -77,12 +77,12 @@
       --lui-private-combobox-focus-outline-width: var(--focus-ring-width, 1px);
       --lui-private-combobox-focus-shadow: none;
     }
-    .leverui-combobox__indicatorGroup:not([data-unstyled])[data-variant-xl='outline'] {
+    .lui-combobox__indicatorGroup:not([data-unstyled])[data-variant-xl='outline'] {
       --lui-private-combobox-variant-indicator-padding-x: var(
         --lui-private-combobox-input-padding-x
       );
     }
-    .leverui-combobox__input:not([data-unstyled])[data-variant-xl='subtle'] {
+    .lui-combobox__input:not([data-unstyled])[data-variant-xl='subtle'] {
       --lui-private-combobox-input-background: var(
         --lui-combobox-subtle-background,
         var(--lui-colors-bg-muted)
@@ -98,12 +98,12 @@
       --lui-private-combobox-focus-outline-width: var(--focus-ring-width, 1px);
       --lui-private-combobox-focus-shadow: none;
     }
-    .leverui-combobox__indicatorGroup:not([data-unstyled])[data-variant-xl='subtle'] {
+    .lui-combobox__indicatorGroup:not([data-unstyled])[data-variant-xl='subtle'] {
       --lui-private-combobox-variant-indicator-padding-x: var(
         --lui-private-combobox-input-padding-x
       );
     }
-    .leverui-combobox__input:not([data-unstyled])[data-variant-xl='flushed'] {
+    .lui-combobox__input:not([data-unstyled])[data-variant-xl='flushed'] {
       --lui-private-combobox-input-background: transparent;
       --lui-private-combobox-border-width: 0 0 1px;
       --lui-private-combobox-border-color: var(
@@ -117,12 +117,12 @@
       --lui-private-combobox-focus-shadow: 0 1px 0 0
         var(--lui-combobox-focus-color, var(--lui-colors-color-palette-focus-ring));
     }
-    .leverui-combobox__indicatorGroup:not([data-unstyled])[data-variant-xl='flushed'] {
+    .lui-combobox__indicatorGroup:not([data-unstyled])[data-variant-xl='flushed'] {
       --lui-private-combobox-variant-indicator-padding-x: 0;
     }
   }
   @media (min-width: 1536px) {
-    .leverui-combobox__input:not([data-unstyled])[data-variant-2xl='outline'] {
+    .lui-combobox__input:not([data-unstyled])[data-variant-2xl='outline'] {
       --lui-private-combobox-input-background: transparent;
       --lui-private-combobox-border-width: 1px;
       --lui-private-combobox-border-color: var(
@@ -138,12 +138,12 @@
       --lui-private-combobox-focus-outline-width: var(--focus-ring-width, 1px);
       --lui-private-combobox-focus-shadow: none;
     }
-    .leverui-combobox__indicatorGroup:not([data-unstyled])[data-variant-2xl='outline'] {
+    .lui-combobox__indicatorGroup:not([data-unstyled])[data-variant-2xl='outline'] {
       --lui-private-combobox-variant-indicator-padding-x: var(
         --lui-private-combobox-input-padding-x
       );
     }
-    .leverui-combobox__input:not([data-unstyled])[data-variant-2xl='subtle'] {
+    .lui-combobox__input:not([data-unstyled])[data-variant-2xl='subtle'] {
       --lui-private-combobox-input-background: var(
         --lui-combobox-subtle-background,
         var(--lui-colors-bg-muted)
@@ -159,12 +159,12 @@
       --lui-private-combobox-focus-outline-width: var(--focus-ring-width, 1px);
       --lui-private-combobox-focus-shadow: none;
     }
-    .leverui-combobox__indicatorGroup:not([data-unstyled])[data-variant-2xl='subtle'] {
+    .lui-combobox__indicatorGroup:not([data-unstyled])[data-variant-2xl='subtle'] {
       --lui-private-combobox-variant-indicator-padding-x: var(
         --lui-private-combobox-input-padding-x
       );
     }
-    .leverui-combobox__input:not([data-unstyled])[data-variant-2xl='flushed'] {
+    .lui-combobox__input:not([data-unstyled])[data-variant-2xl='flushed'] {
       --lui-private-combobox-input-background: transparent;
       --lui-private-combobox-border-width: 0 0 1px;
       --lui-private-combobox-border-color: var(
@@ -178,7 +178,7 @@
       --lui-private-combobox-focus-shadow: 0 1px 0 0
         var(--lui-combobox-focus-color, var(--lui-colors-color-palette-focus-ring));
     }
-    .leverui-combobox__indicatorGroup:not([data-unstyled])[data-variant-2xl='flushed'] {
+    .lui-combobox__indicatorGroup:not([data-unstyled])[data-variant-2xl='flushed'] {
       --lui-private-combobox-variant-indicator-padding-x: 0;
     }
   }

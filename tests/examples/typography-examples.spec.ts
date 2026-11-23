@@ -66,18 +66,15 @@ async function verifiesTypographyVariants({ page }: { page: Page }): Promise<voi
   await page.goto('/iframe.html?id=typography-mark--variants');
   await expect(page.locator('#storybook-root mark')).toHaveCount(4);
   await page.goto('/iframe.html?id=typography-text--sizes');
-  await expect(page.locator('#storybook-root .leverui-text')).toHaveCount(11);
+  await expect(page.locator('#storybook-root .lui-text')).toHaveCount(11);
 }
 
 /** Keep the text truncation and line-clamp behavior. */
 async function verifiesTextOverflow({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=typography-text--truncate');
-  await expect(page.locator('#storybook-root .leverui-text')).toHaveCSS(
-    'text-overflow',
-    'ellipsis',
-  );
+  await expect(page.locator('#storybook-root .lui-text')).toHaveCSS('text-overflow', 'ellipsis');
   await page.goto('/iframe.html?id=typography-text--line-clamp');
-  await expect(page.locator('#storybook-root .leverui-text')).toHaveCSS('-webkit-line-clamp', '2');
+  await expect(page.locator('#storybook-root .lui-text')).toHaveCSS('-webkit-line-clamp', '2');
 }
 
 /** Keep navigation semantics while using Lever UI copy and URLs. */
@@ -86,18 +83,16 @@ async function verifiesLinks({ page }: { page: Page }): Promise<void> {
   await expect(page.getByRole('link', { name: 'Visit Lever UI' })).toHaveAttribute('href', '#');
   await page.goto('/iframe.html?id=typography-link--variant-matrix');
   await expect(page.locator('#storybook-root tbody tr')).toHaveCount(10);
-  await expect(
-    page.locator('#storybook-root tbody tr').first().locator('.leverui-link'),
-  ).toHaveCount(2);
+  await expect(page.locator('#storybook-root tbody tr').first().locator('.lui-link')).toHaveCount(
+    2,
+  );
   await page.goto('/iframe.html?id=typography-link--within-text');
   await expect(page.getByRole('link', { name: 'Lever UI' })).toHaveAttribute(
     'href',
     'https://leverui.com',
   );
   await page.goto('/iframe.html?id=typography-linkoverlay--basic');
-  await expect(page.getByRole('link', { name: 'Click me' })).toHaveClass(
-    /leverui-linkbox__overlay/,
-  );
+  await expect(page.getByRole('link', { name: 'Click me' })).toHaveClass(/lui-linkbox__overlay/);
   await page.goto('/iframe.html?id=typography-linkoverlay--article');
   await expect(page.getByRole('link', { name: 'Lever UI theming workshop' })).toHaveAttribute(
     'href',

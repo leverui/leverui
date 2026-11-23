@@ -8,7 +8,7 @@ async function verifiesSelectContract({ page }: { page: Page }): Promise<void> {
   await expect(trigger).toHaveAttribute('role', 'combobox', { timeout: 30_000 });
   await expect(trigger).toHaveAttribute('aria-expanded', 'false');
   await expect(trigger).toHaveAccessibleName('Framework');
-  await expect(root).toHaveClass(/leverui-select__root/);
+  await expect(root).toHaveClass(/lui-select__root/);
   await trigger.click();
   await expect(trigger).toHaveAttribute('aria-expanded', 'true');
   await expect(page.getByRole('listbox', { name: 'Framework' })).toBeVisible();

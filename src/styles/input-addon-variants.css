@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-input-addon:not([data-unstyled])[data-variant='outline'] {
+  .lui-input-addon:not([data-unstyled])[data-variant='outline'] {
     --lui-private-input-addon-border-width: 1px;
     --lui-private-input-addon-border-color: var(--lui-colors-border);
     --lui-private-input-addon-background: var(--lui-colors-bg-muted);
@@ -7,7 +7,7 @@
     --lui-private-input-addon-padding: var(--lui-private-input-addon-size-padding);
   }
 
-  .leverui-input-addon:not([data-unstyled])[data-variant='subtle'] {
+  .lui-input-addon:not([data-unstyled])[data-variant='subtle'] {
     --lui-private-input-addon-border-width: 1px;
     --lui-private-input-addon-border-color: transparent;
     --lui-private-input-addon-background: var(--lui-colors-bg-emphasized);
@@ -15,7 +15,7 @@
     --lui-private-input-addon-padding: var(--lui-private-input-addon-size-padding);
   }
 
-  .leverui-input-addon:not([data-unstyled])[data-variant='flushed'] {
+  .lui-input-addon:not([data-unstyled])[data-variant='flushed'] {
     --lui-private-input-addon-border-width: 0 0 1px;
     --lui-private-input-addon-border-color: inherit;
     --lui-private-input-addon-background: transparent;

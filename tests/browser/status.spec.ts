@@ -9,8 +9,8 @@ async function verifiesStatusParts({ page }: { page: Page }): Promise<void> {
   await expect(root).toHaveJSProperty('tagName', 'DIV');
   await expect(root).toHaveAttribute('data-ref-tag', 'div');
   await expect(root).toHaveAttribute('data-size', 'md');
-  await expect(root).toHaveAttribute('data-leverui-color-palette', 'red');
-  await expect(root).not.toHaveAttribute('data-leverui-private-style-runtime');
+  await expect(root).toHaveAttribute('data-lui-color-palette', 'red');
+  await expect(root).not.toHaveAttribute('data-lui-private-style-runtime');
   await expect(root).not.toHaveAttribute('role');
   await expect(indicator).toHaveJSProperty('tagName', 'DIV');
   await expect(root).toHaveCSS('display', 'flex');
@@ -26,7 +26,7 @@ async function verifiesStatusParts({ page }: { page: Page }): Promise<void> {
     /** Compose a custom native part through the documented public class. */
     (element) => {
       const custom = document.createElement('div');
-      custom.className = 'leverui-status__indicator';
+      custom.className = 'lui-status__indicator';
       custom.dataset.testid = 'status-consumer-indicator';
       element.append(custom);
     },
@@ -41,7 +41,7 @@ async function verifiesStatusParts({ page }: { page: Page }): Promise<void> {
   );
   await expect(indicator).toHaveCSS('background-color', 'rgba(0, 0, 0, 0)');
   await page.addStyleTag({
-    content: '.leverui-status__root { gap: 19px; } .leverui-status__indicator { width: 15px; }',
+    content: '.lui-status__root { gap: 19px; } .lui-status__indicator { width: 15px; }',
   });
   await expect(root).toHaveCSS('gap', '19px');
   await expect(indicator).toHaveCSS('width', '15px');
@@ -81,7 +81,7 @@ async function verifiesStatusProvider({ page }: { page: Page }): Promise<void> {
   );
   await page.getByTestId('status-toggle').click();
   await expect(reactive).toHaveAttribute('data-size', 'lg');
-  await expect(reactive).toHaveAttribute('data-leverui-color-palette', 'green');
+  await expect(reactive).toHaveAttribute('data-lui-color-palette', 'green');
   await expect(reactive).toHaveAttribute('data-original-node', 'true');
   await expect(reactive).toHaveCSS(
     'font-size',
@@ -148,10 +148,10 @@ async function verifiesCustomStatusStyles({ page }: { page: Page }): Promise<voi
   const custom = page.getByTestId('status-custom');
   const indicator = page.getByTestId('status-custom-indicator');
   await expect(custom).toHaveAttribute('title', 'Custom status');
-  await expect(custom).not.toHaveAttribute('data-leverui-private-style-runtime');
+  await expect(custom).not.toHaveAttribute('data-lui-private-style-runtime');
   await expect(custom).toHaveClass(/status-contract-custom/);
   await expect(custom).toHaveCSS('gap', '24px');
-  await expect(indicator).toHaveClass(/leverui-status__indicator/);
+  await expect(indicator).toHaveClass(/lui-status__indicator/);
   await expect(indicator).toHaveCSS('width', '23px');
   await expect(indicator).toHaveCSS('height', '17px');
   await expect(custom).not.toHaveAttribute('recipe');

@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-status__root:not([data-unstyled]) {
+    .lui-status__root:not([data-unstyled]) {
       &[data-size-sm='sm'] {
         --lui-private-status-font-size: var(--lui-font-sizes-xs);
         --lui-private-status-line-height: 1rem;
@@ -16,7 +16,7 @@
     }
   }
   @media (min-width: 768px) {
-    .leverui-status__root:not([data-unstyled]) {
+    .lui-status__root:not([data-unstyled]) {
       &[data-size-md='sm'] {
         --lui-private-status-font-size: var(--lui-font-sizes-xs);
         --lui-private-status-line-height: 1rem;
@@ -32,7 +32,7 @@
     }
   }
   @media (min-width: 1024px) {
-    .leverui-status__root:not([data-unstyled]) {
+    .lui-status__root:not([data-unstyled]) {
       &[data-size-lg='sm'] {
         --lui-private-status-font-size: var(--lui-font-sizes-xs);
         --lui-private-status-line-height: 1rem;
@@ -48,7 +48,7 @@
     }
   }
   @media (min-width: 1280px) {
-    .leverui-status__root:not([data-unstyled]) {
+    .lui-status__root:not([data-unstyled]) {
       &[data-size-xl='sm'] {
         --lui-private-status-font-size: var(--lui-font-sizes-xs);
         --lui-private-status-line-height: 1rem;
@@ -64,7 +64,7 @@
     }
   }
   @media (min-width: 1536px) {
-    .leverui-status__root:not([data-unstyled]) {
+    .lui-status__root:not([data-unstyled]) {
       &[data-size-2xl='sm'] {
         --lui-private-status-font-size: var(--lui-font-sizes-xs);
         --lui-private-status-line-height: 1rem;

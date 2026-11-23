@@ -4,7 +4,7 @@ export const floatContracts = [
   {
     family: 'float',
     required: [
-      '.leverui-float',
+      '.lui-float',
       '--lui-float-offset-x',
       '--lui-float-offset-y',
       ...breakpoints.flatMap(

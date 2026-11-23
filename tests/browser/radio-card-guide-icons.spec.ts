@@ -20,9 +20,9 @@ async function verifiesNoIndicator({ page }: { page: Page }): Promise<void> {
   const root = page.getByTestId('guide-radio-card-payment');
   await expect(root).toHaveAttribute('aria-orientation', 'horizontal');
   await expect(root.getByRole('radio')).toHaveCount(3);
-  await expect(root.locator('.leverui-radio-card__itemIndicator')).toHaveCount(0);
+  await expect(root.locator('.lui-radio-card__itemIndicator')).toHaveCount(0);
   await expect(root.locator('svg[data-icon="wallet"]')).toHaveAttribute('fill', 'currentColor');
-  await expect(root.locator('svg.leverui-icon').first()).toHaveCSS('width', '24px');
+  await expect(root.locator('svg.lui-icon').first()).toHaveCSS('width', '24px');
   await root.getByText('Mobile pay', { exact: true }).click();
   await expect(root.getByRole('radio').nth(1)).toBeChecked();
 }
@@ -34,11 +34,11 @@ async function verifiesNoIndicatorVertical({ page }: { page: Page }): Promise<vo
   await page.goto('/iframe.html?id=components-radio-card-guide-icons--no-indicator-vertical');
   const root = page.getByTestId('guide-radio-card-payment');
   await expect(root).toHaveAttribute('aria-orientation', 'vertical');
-  await expect(root.locator('.leverui-radio-card__itemControl').first()).toHaveCSS(
+  await expect(root.locator('.lui-radio-card__itemControl').first()).toHaveCSS(
     'flex-direction',
     'column',
   );
-  await expect(root.locator('.leverui-radio-card__itemIndicator')).toHaveCount(0);
+  await expect(root.locator('.lui-radio-card__itemIndicator')).toHaveCount(0);
 }
 
 test('Radio Card vertical payment guide arranges content', verifiesNoIndicatorVertical);
@@ -97,7 +97,7 @@ async function verifiesCentered({ page }: { page: Page }): Promise<void> {
   await expect(root.getByRole('radio')).toHaveCount(3);
   await expect(root.getByRole('radio', { checked: true })).toHaveCount(0);
   await expect(root.locator('svg[data-icon]')).toHaveCount(3);
-  await expect(root.locator('.leverui-radio-card__itemControl').first()).toHaveCSS(
+  await expect(root.locator('.lui-radio-card__itemControl').first()).toHaveCSS(
     'flex-direction',
     'column',
   );

@@ -6,8 +6,8 @@ export async function verifyPackedRadioGroup(page) {
   const solid = page.getByRole('radio', { name: 'Solid' });
   const indicator = page.getByTestId('packed-radio-group-indicator');
   await root.waitFor();
-  assert.match(await root.getAttribute('class'), /leverui-radio-group__root/);
-  assert.match(await indicator.getAttribute('class'), /leverui-radio-group__itemControl/);
+  assert.match(await root.getAttribute('class'), /lui-radio-group__root/);
+  assert.match(await indicator.getAttribute('class'), /lui-radio-group__itemControl/);
   assert.equal(
     await indicator.evaluate(
       /** Read the app's plain CSS part override. */

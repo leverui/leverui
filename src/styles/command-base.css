@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-command__root:not([data-unstyled]) {
+  .lui-command__root:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -25,7 +25,7 @@
     --lui-private-command-result-line-height: 1.25rem;
   }
 
-  .leverui-command__label:not([data-unstyled]) {
+  .lui-command__label:not([data-unstyled]) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -37,7 +37,7 @@
     border: 0;
   }
 
-  .leverui-command__control:not([data-unstyled]) {
+  .lui-command__control:not([data-unstyled]) {
     display: flex;
     align-items: center;
     gap: var(
@@ -53,7 +53,7 @@
     flex-shrink: 0;
   }
 
-  .leverui-command__indicator:not([data-unstyled]) {
+  .lui-command__indicator:not([data-unstyled]) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,7 +61,7 @@
     flex-shrink: 0;
   }
 
-  .leverui-command__indicator:not([data-unstyled]) svg {
+  .lui-command__indicator:not([data-unstyled]) svg {
     width: var(
       --lui-command-indicator-size,
       var(--lui-private-command-indicator-size, var(--lui-sizes-4))
@@ -72,7 +72,7 @@
     );
   }
 
-  .leverui-command__input:not([data-unstyled]) {
+  .lui-command__input:not([data-unstyled]) {
     flex: 1;
     width: 100%;
     min-width: 0;
@@ -86,11 +86,11 @@
     line-height: var(--lui-private-command-result-line-height, 1.25rem);
   }
 
-  .leverui-command__input:not([data-unstyled])::placeholder {
+  .lui-command__input:not([data-unstyled])::placeholder {
     color: var(--lui-colors-fg-muted);
   }
 
-  .leverui-command__list:not([data-unstyled]) {
+  .lui-command__list:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -109,12 +109,12 @@
     );
   }
 
-  .leverui-command__list:not([data-unstyled]) > :not(.leverui-command__listbox) {
+  .lui-command__list:not([data-unstyled]) > :not(.lui-command__listbox) {
     flex-shrink: 0;
   }
 
   /* The primitive puts the listbox role on a List inside Command's scroll container. */
-  .leverui-command__list:not([data-unstyled]) > .leverui-command__listbox {
+  .lui-command__list:not([data-unstyled]) > .lui-command__listbox {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
@@ -125,7 +125,7 @@
     outline: 0;
   }
 
-  .leverui-command__listbox > * {
+  .lui-command__listbox > * {
     flex-shrink: 0;
   }
 }

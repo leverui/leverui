@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-button:not([data-unstyled])[data-size-sm='2xs'] {
+    .lui-button:not([data-unstyled])[data-size-sm='2xs'] {
       height: var(--lui-sizes-6);
       min-width: var(--lui-sizes-6);
       font-size: var(--lui-font-sizes-xs);
@@ -9,12 +9,12 @@
       gap: var(--lui-spacing-1);
     }
 
-    .leverui-button:not([data-unstyled])[data-size-sm='2xs'] :is(svg, [data-leverui-icon]) {
+    .lui-button:not([data-unstyled])[data-size-sm='2xs'] :is(svg, [data-lui-icon]) {
       width: var(--lui-sizes-3\.5);
       height: var(--lui-sizes-3\.5);
     }
 
-    .leverui-button:not([data-unstyled])[data-size-sm='xs'] {
+    .lui-button:not([data-unstyled])[data-size-sm='xs'] {
       height: var(--lui-sizes-8);
       min-width: var(--lui-sizes-8);
       font-size: var(--lui-font-sizes-xs);
@@ -23,12 +23,12 @@
       gap: var(--lui-spacing-1);
     }
 
-    .leverui-button:not([data-unstyled])[data-size-sm='xs'] :is(svg, [data-leverui-icon]) {
+    .lui-button:not([data-unstyled])[data-size-sm='xs'] :is(svg, [data-lui-icon]) {
       width: var(--lui-sizes-4);
       height: var(--lui-sizes-4);
     }
 
-    .leverui-button:not([data-unstyled])[data-size-sm='sm'] {
+    .lui-button:not([data-unstyled])[data-size-sm='sm'] {
       height: var(--lui-sizes-9);
       min-width: var(--lui-sizes-9);
       font-size: var(--lui-font-sizes-sm);
@@ -37,12 +37,12 @@
       gap: var(--lui-spacing-2);
     }
 
-    .leverui-button:not([data-unstyled])[data-size-sm='sm'] :is(svg, [data-leverui-icon]) {
+    .lui-button:not([data-unstyled])[data-size-sm='sm'] :is(svg, [data-lui-icon]) {
       width: var(--lui-sizes-4);
       height: var(--lui-sizes-4);
     }
 
-    .leverui-button:not([data-unstyled])[data-size-sm='md'] {
+    .lui-button:not([data-unstyled])[data-size-sm='md'] {
       height: var(--lui-sizes-10);
       min-width: var(--lui-sizes-10);
       font-size: var(--lui-font-sizes-sm);
@@ -51,12 +51,12 @@
       gap: var(--lui-spacing-2);
     }
 
-    .leverui-button:not([data-unstyled])[data-size-sm='md'] :is(svg, [data-leverui-icon]) {
+    .lui-button:not([data-unstyled])[data-size-sm='md'] :is(svg, [data-lui-icon]) {
       width: var(--lui-sizes-5);
       height: var(--lui-sizes-5);
     }
 
-    .leverui-button:not([data-unstyled])[data-size-sm='lg'] {
+    .lui-button:not([data-unstyled])[data-size-sm='lg'] {
       height: var(--lui-sizes-11);
       min-width: var(--lui-sizes-11);
       font-size: var(--lui-font-sizes-md);
@@ -65,12 +65,12 @@
       gap: var(--lui-spacing-3);
     }
 
-    .leverui-button:not([data-unstyled])[data-size-sm='lg'] :is(svg, [data-leverui-icon]) {
+    .lui-button:not([data-unstyled])[data-size-sm='lg'] :is(svg, [data-lui-icon]) {
       width: var(--lui-sizes-5);
       height: var(--lui-sizes-5);
     }
 
-    .leverui-button:not([data-unstyled])[data-size-sm='xl'] {
+    .lui-button:not([data-unstyled])[data-size-sm='xl'] {
       height: var(--lui-sizes-12);
       min-width: var(--lui-sizes-12);
       font-size: var(--lui-font-sizes-md);
@@ -79,12 +79,12 @@
       gap: var(--lui-spacing-2\.5);
     }
 
-    .leverui-button:not([data-unstyled])[data-size-sm='xl'] :is(svg, [data-leverui-icon]) {
+    .lui-button:not([data-unstyled])[data-size-sm='xl'] :is(svg, [data-lui-icon]) {
       width: var(--lui-sizes-5);
       height: var(--lui-sizes-5);
     }
 
-    .leverui-button:not([data-unstyled])[data-size-sm='2xl'] {
+    .lui-button:not([data-unstyled])[data-size-sm='2xl'] {
       height: var(--lui-sizes-16);
       min-width: var(--lui-sizes-16);
       font-size: var(--lui-font-sizes-lg);
@@ -93,7 +93,7 @@
       gap: var(--lui-spacing-3);
     }
 
-    .leverui-button:not([data-unstyled])[data-size-sm='2xl'] :is(svg, [data-leverui-icon]) {
+    .lui-button:not([data-unstyled])[data-size-sm='2xl'] :is(svg, [data-lui-icon]) {
       width: var(--lui-sizes-6);
       height: var(--lui-sizes-6);
     }

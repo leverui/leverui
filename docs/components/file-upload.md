@@ -124,7 +124,7 @@ anchor props, including `href`.
 ## Customize with CSS
 
 Load the [package stylesheet](../getting-started.md) first, then your CSS.
-Every part has a `.leverui-file-upload__*` class, including the hidden input.
+Every part has a `.lui-file-upload__*` class, including the hidden input.
 
 ```css
 .my-upload {
@@ -132,7 +132,7 @@ Every part has a `.leverui-file-upload__*` class, including the hidden input.
   --lui-colors-fg-muted: #435276;
 }
 
-.my-upload .leverui-file-upload__dropzone {
+.my-upload .lui-file-upload__dropzone {
   border-color: #5573a5;
 }
 ```

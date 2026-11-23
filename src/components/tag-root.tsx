@@ -44,7 +44,7 @@ function TagRootComponent(props: TagRootRuntimeProps): JSX.Element {
     () => ({
       ...native,
       ...tagAttributes(selected()),
-      'data-leverui-color-palette': readTagPalette(local.colorPalette),
+      'data-lui-color-palette': readTagPalette(local.colorPalette),
       'data-unstyled': local.unstyled ? '' : undefined,
       class: composeRecipeClassNames('tag__root', undefined, local.class, local.className),
       ref: attachNode,

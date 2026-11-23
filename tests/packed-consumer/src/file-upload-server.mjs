@@ -27,9 +27,9 @@ function renderInstalledFileUpload() {
 const markup = renderInstalledFileUpload();
 assert.match(markup, /type="file"/);
 assert.match(markup, /name="documents"/);
-assert.match(markup, /leverui-file-upload__root/);
-assert.match(markup, /leverui-file-upload__dropzone/);
-assert.match(markup, /leverui-file-upload__hiddenInput/);
+assert.match(markup, /lui-file-upload__root/);
+assert.match(markup, /lui-file-upload__dropzone/);
+assert.match(markup, /lui-file-upload__hiddenInput/);
 assert.match(markup, /required/);
 assert.doesNotMatch(markup, /\s(?:recipe|unstyled|maxFiles)=/);
 console.log('Packed File Upload server rendering passed.');

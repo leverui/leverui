@@ -10,9 +10,7 @@ async function verifiesDialogFamily({ page }: { page: Page }): Promise<void> {
 
   await trigger.click();
   await expect(content).toBeVisible();
-  await expect(page.getByTestId('dialog-family-action')).toHaveClass(
-    /leverui-dialog__actionTrigger/,
-  );
+  await expect(page.getByTestId('dialog-family-action')).toHaveClass(/lui-dialog__actionTrigger/);
   // The prevented action is a Lever-owned button, not a primitive dialog part.
   await expect(page.getByTestId('dialog-family-prevented-action')).not.toHaveAttribute(
     'data-dialog-close-trigger',

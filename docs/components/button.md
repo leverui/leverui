@@ -46,7 +46,7 @@ Give the button a class and style it. The `variant` prop accepts only the six
 built-in variants.
 
 ```css
-.action-pill.leverui-button {
+.action-pill.lui-button {
   border-radius: 9999px;
   padding-inline: 1.5rem;
   background: var(--lui-colors-blue-solid);
@@ -67,7 +67,7 @@ export function Demo() {
 Give the button a class and set the size in CSS.
 
 ```css
-.action-xxl.leverui-button {
+.action-xxl.lui-button {
   min-height: 4rem;
   min-width: 4rem;
   padding-inline: 2rem;

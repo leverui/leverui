@@ -145,8 +145,8 @@ object with the keys `base`, `sm`, `md`, `lg`, `xl`, and `2xl`. The root and
 every part accept `class` and `style`. Set `unstyled` on the root or on one
 part to turn off its default styles.
 
-Each part has a fixed class, such as `.leverui-tree-view__item` or
-`.leverui-tree-view__branchControl`.
+Each part has a fixed class, such as `.lui-tree-view__item` or
+`.lui-tree-view__branchControl`.
 
 ```css
 .project-tree {
@@ -158,7 +158,7 @@ Each part has a fixed class, such as `.leverui-tree-view__item` or
   --lui-tree-item-gap: 0.5rem;
 }
 
-.project-tree .leverui-tree-view__item[data-selected] {
+.project-tree .lui-tree-view__item[data-selected] {
   font-weight: 600;
 }
 ```

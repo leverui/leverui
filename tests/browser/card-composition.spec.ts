@@ -5,7 +5,7 @@ async function verifiesCardComposition({ page }: { page: Page }): Promise<void> 
   await page.goto('/iframe.html?id=content-card-composition--guide');
   const horizontal = page.getByTestId('card-horizontal');
   await expect(horizontal).toHaveCSS('flex-direction', 'row');
-  await expect(horizontal).not.toHaveAttribute('data-leverui-private-style-runtime');
+  await expect(horizontal).not.toHaveAttribute('data-lui-private-style-runtime');
   await expect(page.getByTestId('card-image')).toHaveAttribute('alt', 'Purple preview');
   await expect(page.getByTestId('card-image')).toHaveJSProperty('complete', true);
   await expect(horizontal.locator('h3')).toHaveText('Image card');

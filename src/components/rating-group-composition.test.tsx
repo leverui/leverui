@@ -127,7 +127,7 @@ async function verifiesCustomComposition(): Promise<void> {
   expect(icon.querySelectorAll('svg')).toHaveLength(2);
   expect(icon.querySelector('[data-bg]')).not.toBeNull();
   expect(icon.querySelector('[data-fg]')).not.toBeNull();
-  expect(screen.getByTestId('second-icon')).toHaveClass('leverui-rating-group__itemIndicator');
+  expect(screen.getByTestId('second-icon')).toHaveClass('lui-rating-group__itemIndicator');
   expect(screen.getByTestId('second-icon').querySelectorAll('svg')).toHaveLength(2);
   expect(indicatorRefs).toContain(screen.getByTestId('second-icon'));
   expect(childRefs).toContain(screen.getByTestId('second-icon'));
@@ -179,12 +179,12 @@ function verifiesProviderAppearance(): void {
     /** Mount one root beneath reactive defaults. */
     () => <Example />,
   );
-  const root = document.querySelector('.leverui-rating-group__root');
+  const root = document.querySelector('.lui-rating-group__root');
   const item = screen.getByRole('radio', { name: '2 stars' });
   expect(root).toHaveAttribute('data-size', 'sm');
   const stableClass = item.getAttribute('class');
   fireEvent.click(screen.getByRole('button', { name: 'Resize' }));
-  expect(document.querySelector('.leverui-rating-group__root')).toBe(root);
+  expect(document.querySelector('.lui-rating-group__root')).toBe(root);
   expect(item).toHaveAttribute('aria-checked', 'true');
   expect(root).toHaveAttribute('data-size', 'lg');
   expect(item.getAttribute('class')).toBe(stableClass);

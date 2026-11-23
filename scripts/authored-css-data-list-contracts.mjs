@@ -4,7 +4,7 @@ export const dataListContracts = [
     required: [
       ...['root', 'item', 'itemLabel', 'itemValue'].map(
         /** Require every public Data List part. */
-        (part) => `.leverui-data-list__${part}:not([data-unstyled]`,
+        (part) => `.lui-data-list__${part}:not([data-unstyled]`,
       ),
       ...['sm', 'md', 'lg'].map(
         /** Require each base size. */

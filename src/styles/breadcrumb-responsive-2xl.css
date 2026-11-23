@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 1536px) {
-    .leverui-breadcrumb__root:not([data-unstyled]) {
+    .lui-breadcrumb__root:not([data-unstyled]) {
       &[data-size-2xl='sm'] {
         --lui-private-breadcrumb-gap: var(--lui-spacing-1);
         --lui-private-breadcrumb-font-size: var(--lui-font-sizes-xs);

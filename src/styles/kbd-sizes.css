@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-kbd:not([data-unstyled]) {
+  .lui-kbd:not([data-unstyled]) {
     &[data-size='sm'] {
       --lui-private-kbd-size: var(--lui-sizes-4\.5);
       --lui-private-kbd-font-size: var(--lui-font-sizes-xs);

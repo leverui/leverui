@@ -3,7 +3,7 @@ export const tabsContract = {
   required: [
     ...['root', 'list', 'trigger', 'content', 'indicator'].map(
       /** Require every styled Tabs part. */
-      (part) => `.leverui-tabs__${part}`,
+      (part) => `.lui-tabs__${part}`,
     ),
     ...['sm', 'lg'].map(
       /** Require the nondefault Tabs sizes. */

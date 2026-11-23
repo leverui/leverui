@@ -44,13 +44,13 @@ async function verifiesServerStack({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderServerStack);
   expect(markup).toContain('First');
   expect(markup).toContain('Second');
-  expect(markup).toMatch(/leverui-stack-separator/);
+  expect(markup).toMatch(/lui-stack-separator/);
   expect(markup).not.toMatch(/<div[^>]*\s(?:gap|direction|separator)=/);
   await page.setViewportSize({ width: 600, height: 700 });
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(`<style>${defaultCss}</style>${markup}`);
   const stack = page.locator('#server-stack');
-  const line = stack.locator('.leverui-stack-separator');
+  const line = stack.locator('.lui-stack-separator');
   await expect(line).toHaveCount(1);
   await expect(stack).toHaveCSS('flex-direction', 'column');
   await expect(line).toHaveCSS('border-top-width', '1px');
@@ -65,7 +65,7 @@ async function verifiesTokenSeparatorSpacing({ page }: { page: Page }): Promise<
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(`<style>${defaultCss}</style>${markup}`);
   const stack = page.locator('#server-stack');
-  const line = stack.locator('.leverui-stack-separator');
+  const line = stack.locator('.lui-stack-separator');
   await page.setViewportSize({ width: 600, height: 700 });
   await expect(stack).toHaveCSS('flex-direction', 'column');
   await expect(line).toHaveCSS('margin-top', '16px');
@@ -91,7 +91,7 @@ async function verifiesExpressionSeparatorSpacing({ page }: { page: Page }): Pro
       () => renderServerStack(gap),
     );
     await page.setContent(`<style>${defaultCss}</style>${markup}`);
-    await expect(page.locator('#server-stack .leverui-stack-separator')).toHaveCSS(edge, expected);
+    await expect(page.locator('#server-stack .lui-stack-separator')).toHaveCSS(edge, expected);
   }
 }
 

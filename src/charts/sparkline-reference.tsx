@@ -30,21 +30,21 @@ export function SparklineReferenceLines(props: SparklineReferenceProps): JSX.Ele
   return (
     <>
       <line
-        class="leverui-sparkline__reference-line"
+        class="lui-sparkline__reference-line"
         x1={props.inset}
         x2={props.width - props.inset}
         y1={bounds().bottom}
         y2={bounds().bottom}
       />
       <line
-        class="leverui-sparkline__reference-line"
+        class="lui-sparkline__reference-line"
         x1={props.inset}
         x2={props.width - props.inset}
         y1={bounds().top}
         y2={bounds().top}
       />
       <text
-        class="leverui-sparkline__reference-label"
+        class="lui-sparkline__reference-label"
         x="0"
         y={bounds().bottom + 4.5}
         text-anchor="end"
@@ -52,7 +52,7 @@ export function SparklineReferenceLines(props: SparklineReferenceProps): JSX.Ele
         {Math.min(...props.values)}
       </text>
       <text
-        class="leverui-sparkline__reference-label"
+        class="lui-sparkline__reference-label"
         x={props.width}
         y={bounds().top + 4.5}
         text-anchor="start"

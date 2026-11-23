@@ -19,11 +19,11 @@ async function verifiesDataListMatrix({ page }: { page: Page }): Promise<void> {
   await expect(page.getByTestId('default-value')).toHaveJSProperty('tagName', 'DD');
   await expect(page.getByTestId('default-label')).toHaveText('Status');
   await expect(page.getByTestId('default-value')).toHaveText('Active');
-  await expect(list).toHaveClass(/leverui-data-list__root/);
+  await expect(list).toHaveClass(/lui-data-list__root/);
   await expect(list).toHaveAttribute('data-size', 'md');
   await expect(list).toHaveAttribute('data-orientation', 'vertical');
   await expect(list).toHaveAttribute('data-variant', 'subtle');
-  await expect(list).not.toHaveAttribute('data-leverui-private-style-runtime');
+  await expect(list).not.toHaveAttribute('data-lui-private-style-runtime');
   await expect(list).not.toHaveAttribute('size');
   await expect(list).not.toHaveAttribute('orientation');
   await expect(list).not.toHaveAttribute('variant');

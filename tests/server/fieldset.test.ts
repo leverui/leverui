@@ -50,10 +50,10 @@ function renderServerFieldset(): string {
 function verifiesServerFieldset(): void {
   const markup = renderServerFieldset();
   expect(markup).toContain('<fieldset');
-  expect(markup).toContain('leverui-fieldset__root');
-  expect(markup).toContain('leverui-fieldset__content');
-  expect(markup).toContain('leverui-fieldset__legend');
-  expect(markup).toContain('leverui-fieldset__errorText');
+  expect(markup).toContain('lui-fieldset__root');
+  expect(markup).toContain('lui-fieldset__content');
+  expect(markup).toContain('lui-fieldset__legend');
+  expect(markup).toContain('lui-fieldset__errorText');
   expect(markup).toContain('disabled');
   expect(markup).toContain('aria-labelledby="fieldset::server-group::legend"');
   expect(markup).toContain('Server error');

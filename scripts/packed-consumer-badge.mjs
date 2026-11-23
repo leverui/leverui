@@ -5,7 +5,7 @@ export async function verifyPackedBadge(page) {
   const solid = page.locator('#packed-badge-solid');
   assert.equal(await solid.textContent(), 'Active');
   assert.equal(await solid.getAttribute('title'), 'Package status');
-  assert.match((await solid.getAttribute('class')) ?? '', /leverui-badge/);
+  assert.match((await solid.getAttribute('class')) ?? '', /lui-badge/);
   assert.equal(await solid.getAttribute('variant'), null);
   assert.equal(
     await solid.evaluate(

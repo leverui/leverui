@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-tag__root:not([data-unstyled]) {
+    .lui-tag__root:not([data-unstyled]) {
       &[data-variant-sm='subtle'] {
         --lui-private-tag-background: var(--lui-colors-color-palette-subtle);
         --lui-private-tag-color: var(--lui-colors-color-palette-fg);
@@ -24,7 +24,7 @@
     }
   }
   @media (min-width: 768px) {
-    .leverui-tag__root:not([data-unstyled]) {
+    .lui-tag__root:not([data-unstyled]) {
       &[data-variant-md='subtle'] {
         --lui-private-tag-background: var(--lui-colors-color-palette-subtle);
         --lui-private-tag-color: var(--lui-colors-color-palette-fg);

@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-icon:not([data-unstyled]) {
+  .lui-icon:not([data-unstyled]) {
     display: inline-block;
     line-height: 1em;
     flex-shrink: 0;

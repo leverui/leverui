@@ -3,8 +3,8 @@ import { expect, test, type Page } from '@playwright/test';
 /** Verify chart hooks, inherited tokens, native props, and reactive dimensions. */
 async function verifiesChartCss({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=internal-radar-and-scatter-css-contract--contract');
-  const radar = page.locator('.leverui-radar-chart');
-  const scatter = page.locator('.leverui-scatter-chart');
+  const radar = page.locator('.lui-radar-chart');
+  const scatter = page.locator('.lui-scatter-chart');
   await expect(radar).toBeVisible({ timeout: 30_000 });
   await expect(scatter).toBeVisible();
   await expect(radar).toHaveClass(/consumer-radar/);
@@ -27,16 +27,16 @@ async function verifiesChartCss({ page }: { page: Page }): Promise<void> {
   await expect(scatter).toHaveCSS('margin-left', '17px');
   await expect(radar).toHaveCSS('width', '384px');
   await expect(scatter).toHaveCSS('height', '384px');
-  await expect(radar.locator('.leverui-radar-chart__angle-label').first()).toHaveCSS(
+  await expect(radar.locator('.lui-radar-chart__angle-label').first()).toHaveCSS(
     'font-size',
     '12px',
   );
-  await expect(radar.locator('.leverui-radar-chart__legend')).toHaveCSS('display', 'flex');
-  await expect(scatter.locator('.leverui-scatter-chart__tick-label').first()).toHaveCSS(
+  await expect(radar.locator('.lui-radar-chart__legend')).toHaveCSS('display', 'flex');
+  await expect(scatter.locator('.lui-scatter-chart__tick-label').first()).toHaveCSS(
     'font-size',
     '12px',
   );
-  await expect(scatter.locator('.leverui-scatter-chart__trend')).toHaveCSS('stroke-width', '2px');
+  await expect(scatter.locator('.lui-scatter-chart__trend')).toHaveCSS('stroke-width', '2px');
   await radar.focus();
   await expect(radar).toHaveAttribute('data-native-focus', 'true');
   await radar.press('ArrowRight');
@@ -49,14 +49,8 @@ async function verifiesChartCss({ page }: { page: Page }): Promise<void> {
     content:
       ':root { --lui-radar-chart-grid-fill: rgb(255, 0, 0); --lui-scatter-chart-trend-stroke: rgb(0, 128, 0); }',
   });
-  await expect(radar.locator('.leverui-radar-chart__ring').first()).toHaveCSS(
-    'fill',
-    'rgb(255, 0, 0)',
-  );
-  await expect(scatter.locator('.leverui-scatter-chart__trend')).toHaveCSS(
-    'stroke',
-    'rgb(0, 128, 0)',
-  );
+  await expect(radar.locator('.lui-radar-chart__ring').first()).toHaveCSS('fill', 'rgb(255, 0, 0)');
+  await expect(scatter.locator('.lui-scatter-chart__trend')).toHaveCSS('stroke', 'rgb(0, 128, 0)');
   const widthOverride = await page.addStyleTag({
     content: ':root { --lui-radar-chart-width: 300px; }',
   });

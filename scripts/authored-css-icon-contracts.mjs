@@ -1,7 +1,7 @@
 const sizes = ['xs', 'sm', 'md', 'lg', 'xl', '2xl'];
 const breakpoints = ['sm', 'md', 'lg', 'xl', '2xl'];
 const required = [
-  '.leverui-icon:not([data-unstyled])',
+  '.lui-icon:not([data-unstyled])',
   '--lui-icon-size',
   'display: inline-block',
   'line-height: 1em',

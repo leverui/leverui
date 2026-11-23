@@ -1,9 +1,9 @@
 @layer leverui.recipes {
-  .leverui-area-chart .leverui-cartesian-chart__area {
+  .lui-area-chart .lui-cartesian-chart__area {
     stroke: none;
   }
 
-  .leverui-area-chart .leverui-cartesian-chart__line {
+  .lui-area-chart .lui-cartesian-chart__line {
     fill: none;
   }
 }

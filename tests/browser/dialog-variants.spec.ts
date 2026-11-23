@@ -56,7 +56,7 @@ async function verifiesResponsiveSize({ page }: { page: Page }): Promise<void> {
   if (!contentId) throw new Error('Responsive Dialog is missing a content ID.');
   await expect(content).toHaveAttribute('data-size-md-down', 'full');
   await expect(content).toHaveAttribute('data-size-md', 'lg');
-  await expect(content).toHaveAttribute('data-leverui-dialog-css', '');
+  await expect(content).toHaveAttribute('data-lui-dialog-css', '');
   await expect(content).toHaveCSS('max-width', '700px');
   await expect(content).toHaveCSS('min-height', '700px');
   await page.setViewportSize({ width: 1024, height: 700 });

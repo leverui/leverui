@@ -43,7 +43,7 @@ function verifiesServerEmptyState(): void {
   const markup = renderServerEmptyState();
   expect(markup).toMatch(/<div[^>]*id="server-empty-state"/);
   expect(markup).toContain('role="status"');
-  expect(markup).toContain('leverui-empty-state__indicator');
+  expect(markup).toContain('lui-empty-state__indicator');
   expect(markup).toMatch(/<h3[^>]*>No items<\/h3>/);
   expect(markup).toMatch(/<p[^>]*>Add one to begin\.<\/p>/);
   expect(markup).not.toMatch(/<div[^>]*\s(?:size|recipe|css|unstyled)=/);

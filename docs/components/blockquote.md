@@ -70,16 +70,16 @@ prop on a blockquote wins.
 
 ## Customize with CSS
 
-Stable classes: `.leverui-blockquote__root`, `__content`, `__caption`,
+Stable classes: `.lui-blockquote__root`, `__content`, `__caption`,
 `__icon`. Root attributes: `data-variant`, `data-justify`,
-`data-leverui-color-palette`.
+`data-lui-color-palette`.
 
 ```css
 .article-quote {
   --lui-colors-color-palette-solid: rebeccapurple;
 }
 
-.article-quote .leverui-blockquote__caption {
+.article-quote .lui-blockquote__caption {
   color: rebeccapurple;
 }
 ```

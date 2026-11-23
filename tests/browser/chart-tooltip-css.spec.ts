@@ -27,12 +27,12 @@ async function verifiesTooltipCss({ page }: { page: Page }): Promise<void> {
   await page.setContent(
     `<style>${defaultCss}</style><style>:root { --lui-chart-tooltip-bg: rgb(12, 34, 56); --lui-chart-tooltip-radius: 9px; }</style><div style="position: relative">${markup}</div>`,
   );
-  const tooltip = page.locator('.leverui-chart-tooltip');
+  const tooltip = page.locator('.lui-chart-tooltip');
   await expect(tooltip).toHaveCSS('left', '30px');
   await expect(tooltip).toHaveCSS('top', '30px');
   await expect(tooltip).toHaveCSS('background-color', 'rgb(12, 34, 56)');
   await expect(tooltip).toHaveCSS('border-radius', '9px');
-  await expect(tooltip.locator('.leverui-chart-tooltip__swatch')).toHaveCSS(
+  await expect(tooltip.locator('.lui-chart-tooltip__swatch')).toHaveCSS(
     'background-color',
     'rgb(200, 20, 30)',
   );

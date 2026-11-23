@@ -3,12 +3,12 @@ export const numberInputContracts = [
   {
     family: 'number-input',
     required: [
-      '.leverui-number-input__root',
-      '.leverui-number-input__input',
-      '.leverui-number-input__control',
-      '.leverui-number-input__incrementTrigger',
-      '.leverui-number-input__decrementTrigger',
-      '.leverui-number-input__valueText',
+      '.lui-number-input__root',
+      '.lui-number-input__input',
+      '.lui-number-input__control',
+      '.lui-number-input__incrementTrigger',
+      '.lui-number-input__decrementTrigger',
+      '.lui-number-input__valueText',
       '--lui-number-input-stepper-width',
       '--lui-number-input-stepper-radius',
       ...['', '-sm', '-md', '-lg', '-xl', '-2xl'].flatMap(

@@ -1,102 +1,102 @@
 @layer leverui.recipes {
   @media (min-width: 1024px) {
-    .leverui-avatar__root:not([data-unstyled])[data-size-lg='full'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-lg='full'] {
       --lui-private-avatar-size: 100%;
       --lui-private-avatar-font-size: 100%;
     }
-    .leverui-avatar__root:not([data-unstyled])[data-size-lg='2xs'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-lg='2xs'] {
       --lui-private-avatar-size: var(--lui-sizes-6);
       --lui-private-avatar-font-size: var(--lui-font-sizes-2xs);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-size-lg='xs'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-lg='xs'] {
       --lui-private-avatar-size: var(--lui-sizes-8);
       --lui-private-avatar-font-size: var(--lui-font-sizes-xs);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-size-lg='sm'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-lg='sm'] {
       --lui-private-avatar-size: var(--lui-sizes-9);
       --lui-private-avatar-font-size: var(--lui-font-sizes-sm);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-size-lg='md'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-lg='md'] {
       --lui-private-avatar-size: var(--lui-sizes-10);
       --lui-private-avatar-font-size: var(--lui-font-sizes-md);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-size-lg='lg'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-lg='lg'] {
       --lui-private-avatar-size: var(--lui-sizes-11);
       --lui-private-avatar-font-size: var(--lui-font-sizes-md);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-size-lg='xl'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-lg='xl'] {
       --lui-private-avatar-size: var(--lui-sizes-12);
       --lui-private-avatar-font-size: var(--lui-font-sizes-lg);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-size-lg='2xl'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-lg='2xl'] {
       --lui-private-avatar-size: var(--lui-sizes-16);
       --lui-private-avatar-font-size: var(--lui-font-sizes-xl);
     }
   }
   @media (min-width: 1280px) {
-    .leverui-avatar__root:not([data-unstyled])[data-size-xl='full'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-xl='full'] {
       --lui-private-avatar-size: 100%;
       --lui-private-avatar-font-size: 100%;
     }
-    .leverui-avatar__root:not([data-unstyled])[data-size-xl='2xs'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-xl='2xs'] {
       --lui-private-avatar-size: var(--lui-sizes-6);
       --lui-private-avatar-font-size: var(--lui-font-sizes-2xs);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-size-xl='xs'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-xl='xs'] {
       --lui-private-avatar-size: var(--lui-sizes-8);
       --lui-private-avatar-font-size: var(--lui-font-sizes-xs);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-size-xl='sm'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-xl='sm'] {
       --lui-private-avatar-size: var(--lui-sizes-9);
       --lui-private-avatar-font-size: var(--lui-font-sizes-sm);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-size-xl='md'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-xl='md'] {
       --lui-private-avatar-size: var(--lui-sizes-10);
       --lui-private-avatar-font-size: var(--lui-font-sizes-md);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-size-xl='lg'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-xl='lg'] {
       --lui-private-avatar-size: var(--lui-sizes-11);
       --lui-private-avatar-font-size: var(--lui-font-sizes-md);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-size-xl='xl'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-xl='xl'] {
       --lui-private-avatar-size: var(--lui-sizes-12);
       --lui-private-avatar-font-size: var(--lui-font-sizes-lg);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-size-xl='2xl'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-xl='2xl'] {
       --lui-private-avatar-size: var(--lui-sizes-16);
       --lui-private-avatar-font-size: var(--lui-font-sizes-xl);
     }
   }
   @media (min-width: 1536px) {
-    .leverui-avatar__root:not([data-unstyled])[data-size-2xl='full'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-2xl='full'] {
       --lui-private-avatar-size: 100%;
       --lui-private-avatar-font-size: 100%;
     }
-    .leverui-avatar__root:not([data-unstyled])[data-size-2xl='2xs'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-2xl='2xs'] {
       --lui-private-avatar-size: var(--lui-sizes-6);
       --lui-private-avatar-font-size: var(--lui-font-sizes-2xs);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-size-2xl='xs'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-2xl='xs'] {
       --lui-private-avatar-size: var(--lui-sizes-8);
       --lui-private-avatar-font-size: var(--lui-font-sizes-xs);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-size-2xl='sm'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-2xl='sm'] {
       --lui-private-avatar-size: var(--lui-sizes-9);
       --lui-private-avatar-font-size: var(--lui-font-sizes-sm);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-size-2xl='md'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-2xl='md'] {
       --lui-private-avatar-size: var(--lui-sizes-10);
       --lui-private-avatar-font-size: var(--lui-font-sizes-md);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-size-2xl='lg'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-2xl='lg'] {
       --lui-private-avatar-size: var(--lui-sizes-11);
       --lui-private-avatar-font-size: var(--lui-font-sizes-md);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-size-2xl='xl'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-2xl='xl'] {
       --lui-private-avatar-size: var(--lui-sizes-12);
       --lui-private-avatar-font-size: var(--lui-font-sizes-lg);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-size-2xl='2xl'] {
+    .lui-avatar__root:not([data-unstyled])[data-size-2xl='2xl'] {
       --lui-private-avatar-size: var(--lui-sizes-16);
       --lui-private-avatar-font-size: var(--lui-font-sizes-xl);
     }

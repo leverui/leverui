@@ -1,7 +1,7 @@
 @layer leverui.recipes {
   @media (min-width: 1024px) {
-    .leverui-combobox__root:not([data-unstyled])[data-size-lg='xs'],
-    .leverui-combobox__content:not([data-unstyled])[data-size-lg='xs'] {
+    .lui-combobox__root:not([data-unstyled])[data-size-lg='xs'],
+    .lui-combobox__content:not([data-unstyled])[data-size-lg='xs'] {
       --lui-private-combobox-input-height: var(--lui-sizes-8);
       --lui-private-combobox-input-padding-x: var(--lui-spacing-2);
       --lui-private-combobox-indicator-size: var(--lui-sizes-3\.5);
@@ -14,8 +14,8 @@
       --lui-private-combobox-content-padding: var(--lui-spacing-1);
       --lui-private-combobox-item-indicator-display: block;
     }
-    .leverui-combobox__root:not([data-unstyled])[data-size-lg='sm'],
-    .leverui-combobox__content:not([data-unstyled])[data-size-lg='sm'] {
+    .lui-combobox__root:not([data-unstyled])[data-size-lg='sm'],
+    .lui-combobox__content:not([data-unstyled])[data-size-lg='sm'] {
       --lui-private-combobox-input-height: var(--lui-sizes-9);
       --lui-private-combobox-input-padding-x: var(--lui-spacing-2\.5);
       --lui-private-combobox-indicator-size: var(--lui-sizes-4);
@@ -28,8 +28,8 @@
       --lui-private-combobox-content-padding: var(--lui-spacing-1);
       --lui-private-combobox-item-indicator-display: block;
     }
-    .leverui-combobox__root:not([data-unstyled])[data-size-lg='md'],
-    .leverui-combobox__content:not([data-unstyled])[data-size-lg='md'] {
+    .lui-combobox__root:not([data-unstyled])[data-size-lg='md'],
+    .lui-combobox__content:not([data-unstyled])[data-size-lg='md'] {
       --lui-private-combobox-input-height: var(--lui-sizes-10);
       --lui-private-combobox-input-padding-x: var(--lui-spacing-3);
       --lui-private-combobox-indicator-size: var(--lui-sizes-4);
@@ -42,8 +42,8 @@
       --lui-private-combobox-content-padding: var(--lui-spacing-1);
       --lui-private-combobox-item-indicator-display: flex;
     }
-    .leverui-combobox__root:not([data-unstyled])[data-size-lg='lg'],
-    .leverui-combobox__content:not([data-unstyled])[data-size-lg='lg'] {
+    .lui-combobox__root:not([data-unstyled])[data-size-lg='lg'],
+    .lui-combobox__content:not([data-unstyled])[data-size-lg='lg'] {
       --lui-private-combobox-input-height: var(--lui-sizes-12);
       --lui-private-combobox-input-padding-x: var(--lui-spacing-4);
       --lui-private-combobox-indicator-size: var(--lui-sizes-5);
@@ -58,8 +58,8 @@
     }
   }
   @media (min-width: 1280px) {
-    .leverui-combobox__root:not([data-unstyled])[data-size-xl='xs'],
-    .leverui-combobox__content:not([data-unstyled])[data-size-xl='xs'] {
+    .lui-combobox__root:not([data-unstyled])[data-size-xl='xs'],
+    .lui-combobox__content:not([data-unstyled])[data-size-xl='xs'] {
       --lui-private-combobox-input-height: var(--lui-sizes-8);
       --lui-private-combobox-input-padding-x: var(--lui-spacing-2);
       --lui-private-combobox-indicator-size: var(--lui-sizes-3\.5);
@@ -72,8 +72,8 @@
       --lui-private-combobox-content-padding: var(--lui-spacing-1);
       --lui-private-combobox-item-indicator-display: block;
     }
-    .leverui-combobox__root:not([data-unstyled])[data-size-xl='sm'],
-    .leverui-combobox__content:not([data-unstyled])[data-size-xl='sm'] {
+    .lui-combobox__root:not([data-unstyled])[data-size-xl='sm'],
+    .lui-combobox__content:not([data-unstyled])[data-size-xl='sm'] {
       --lui-private-combobox-input-height: var(--lui-sizes-9);
       --lui-private-combobox-input-padding-x: var(--lui-spacing-2\.5);
       --lui-private-combobox-indicator-size: var(--lui-sizes-4);
@@ -86,8 +86,8 @@
       --lui-private-combobox-content-padding: var(--lui-spacing-1);
       --lui-private-combobox-item-indicator-display: block;
     }
-    .leverui-combobox__root:not([data-unstyled])[data-size-xl='md'],
-    .leverui-combobox__content:not([data-unstyled])[data-size-xl='md'] {
+    .lui-combobox__root:not([data-unstyled])[data-size-xl='md'],
+    .lui-combobox__content:not([data-unstyled])[data-size-xl='md'] {
       --lui-private-combobox-input-height: var(--lui-sizes-10);
       --lui-private-combobox-input-padding-x: var(--lui-spacing-3);
       --lui-private-combobox-indicator-size: var(--lui-sizes-4);
@@ -100,8 +100,8 @@
       --lui-private-combobox-content-padding: var(--lui-spacing-1);
       --lui-private-combobox-item-indicator-display: flex;
     }
-    .leverui-combobox__root:not([data-unstyled])[data-size-xl='lg'],
-    .leverui-combobox__content:not([data-unstyled])[data-size-xl='lg'] {
+    .lui-combobox__root:not([data-unstyled])[data-size-xl='lg'],
+    .lui-combobox__content:not([data-unstyled])[data-size-xl='lg'] {
       --lui-private-combobox-input-height: var(--lui-sizes-12);
       --lui-private-combobox-input-padding-x: var(--lui-spacing-4);
       --lui-private-combobox-indicator-size: var(--lui-sizes-5);
@@ -116,8 +116,8 @@
     }
   }
   @media (min-width: 1536px) {
-    .leverui-combobox__root:not([data-unstyled])[data-size-2xl='xs'],
-    .leverui-combobox__content:not([data-unstyled])[data-size-2xl='xs'] {
+    .lui-combobox__root:not([data-unstyled])[data-size-2xl='xs'],
+    .lui-combobox__content:not([data-unstyled])[data-size-2xl='xs'] {
       --lui-private-combobox-input-height: var(--lui-sizes-8);
       --lui-private-combobox-input-padding-x: var(--lui-spacing-2);
       --lui-private-combobox-indicator-size: var(--lui-sizes-3\.5);
@@ -130,8 +130,8 @@
       --lui-private-combobox-content-padding: var(--lui-spacing-1);
       --lui-private-combobox-item-indicator-display: block;
     }
-    .leverui-combobox__root:not([data-unstyled])[data-size-2xl='sm'],
-    .leverui-combobox__content:not([data-unstyled])[data-size-2xl='sm'] {
+    .lui-combobox__root:not([data-unstyled])[data-size-2xl='sm'],
+    .lui-combobox__content:not([data-unstyled])[data-size-2xl='sm'] {
       --lui-private-combobox-input-height: var(--lui-sizes-9);
       --lui-private-combobox-input-padding-x: var(--lui-spacing-2\.5);
       --lui-private-combobox-indicator-size: var(--lui-sizes-4);
@@ -144,8 +144,8 @@
       --lui-private-combobox-content-padding: var(--lui-spacing-1);
       --lui-private-combobox-item-indicator-display: block;
     }
-    .leverui-combobox__root:not([data-unstyled])[data-size-2xl='md'],
-    .leverui-combobox__content:not([data-unstyled])[data-size-2xl='md'] {
+    .lui-combobox__root:not([data-unstyled])[data-size-2xl='md'],
+    .lui-combobox__content:not([data-unstyled])[data-size-2xl='md'] {
       --lui-private-combobox-input-height: var(--lui-sizes-10);
       --lui-private-combobox-input-padding-x: var(--lui-spacing-3);
       --lui-private-combobox-indicator-size: var(--lui-sizes-4);
@@ -158,8 +158,8 @@
       --lui-private-combobox-content-padding: var(--lui-spacing-1);
       --lui-private-combobox-item-indicator-display: flex;
     }
-    .leverui-combobox__root:not([data-unstyled])[data-size-2xl='lg'],
-    .leverui-combobox__content:not([data-unstyled])[data-size-2xl='lg'] {
+    .lui-combobox__root:not([data-unstyled])[data-size-2xl='lg'],
+    .lui-combobox__content:not([data-unstyled])[data-size-2xl='lg'] {
       --lui-private-combobox-input-height: var(--lui-sizes-12);
       --lui-private-combobox-input-padding-x: var(--lui-spacing-4);
       --lui-private-combobox-indicator-size: var(--lui-sizes-5);

@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-switch__root:not([data-unstyled]) {
+  .lui-switch__root:not([data-unstyled]) {
     display: inline-flex;
     gap: var(--lui-spacing-2\.5);
     align-items: center;
@@ -14,7 +14,7 @@
       --lui-private-switch-x: calc(var(--lui-private-switch-diff) * -1);
     }
 
-    .leverui-switch__label:not([data-unstyled]) {
+    .lui-switch__label:not([data-unstyled]) {
       line-height: 1;
       user-select: none;
       font-size: var(--lui-font-sizes-sm);
@@ -25,7 +25,7 @@
       }
     }
 
-    .leverui-switch__control:not([data-unstyled]) {
+    .lui-switch__control:not([data-unstyled]) {
       display: inline-flex;
       gap: 0.5rem;
       flex-shrink: 0;
@@ -50,7 +50,7 @@
       }
     }
 
-    .leverui-switch__thumb:not([data-unstyled]) {
+    .lui-switch__thumb:not([data-unstyled]) {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -64,7 +64,7 @@
       }
     }
 
-    .leverui-switch__indicator:not([data-unstyled]) {
+    .lui-switch__indicator:not([data-unstyled]) {
       position: absolute;
       height: var(--lui-private-switch-height);
       width: var(--lui-private-switch-height);

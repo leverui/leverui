@@ -8,11 +8,11 @@ async function verifiesDrawerVariants({ page }: { page: Page }): Promise<void> {
   const size = page.getByRole('combobox', { name: 'Drawer size' });
   const placement = page.getByRole('combobox', { name: 'Drawer placement' });
   await expect(content).toBeVisible({ timeout: 30_000 });
-  await expect(content).toHaveAttribute('data-leverui-drawer-css', '');
+  await expect(content).toHaveAttribute('data-lui-drawer-css', '');
   await expect(content).toHaveAttribute('data-size', 'xs');
   await expect(positioner).toHaveAttribute('data-placement', 'end');
   await page.addStyleTag({
-    content: '.leverui-drawer__content { --lui-drawer-background: rgb(240, 248, 255); }',
+    content: '.lui-drawer__content { --lui-drawer-background: rgb(240, 248, 255); }',
   });
   await expect(content).toHaveCSS('background-color', 'rgb(240, 248, 255)');
   const id = await content.getAttribute('id');
@@ -52,11 +52,11 @@ async function verifiesDrawerVariants({ page }: { page: Page }): Promise<void> {
   await expect(positioner).toHaveCSS('padding', '16px');
   await expect(content).toHaveAttribute('id', id);
   await page.getByRole('checkbox', { name: 'Unstyled' }).check();
-  await expect(content).not.toHaveAttribute('data-leverui-drawer-css', '');
+  await expect(content).not.toHaveAttribute('data-lui-drawer-css', '');
   await expect(content).toHaveAttribute('data-unstyled', '');
   await expect(content).toHaveAttribute('id', id);
   await page.getByRole('checkbox', { name: 'Unstyled' }).uncheck();
-  await expect(content).toHaveAttribute('data-leverui-drawer-css', '');
+  await expect(content).toHaveAttribute('data-lui-drawer-css', '');
   await expect(content).toHaveAttribute('id', id);
 }
 
@@ -72,7 +72,7 @@ async function verifiesResponsiveDrawer({ page }: { page: Page }): Promise<void>
   const content = page.getByTestId('drawer-responsive-content');
   const positioner = page.getByTestId('drawer-responsive-positioner');
   await expect(content).toBeVisible({ timeout: 30_000 });
-  await expect(content).toHaveAttribute('data-leverui-drawer-css', '');
+  await expect(content).toHaveAttribute('data-lui-drawer-css', '');
   await expect(content).toHaveAttribute('data-size-md-down', 'full');
   await expect(content).toHaveAttribute('data-size-md', 'lg');
   await expect(content).toHaveAttribute('data-placement-md-down', 'bottom');

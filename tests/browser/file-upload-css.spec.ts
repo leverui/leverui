@@ -9,10 +9,10 @@ async function verifiesFileUploadCss({ page }: { page: Page }): Promise<void> {
   const dropzone = page.getByTestId('file-css-dropzone');
   const list = page.getByTestId('file-css-list');
   await expect(root).toBeVisible({ timeout: 30_000 });
-  await expect(root).toHaveClass(/leverui-file-upload__root/);
-  await expect(root).toHaveAttribute('data-leverui-color-palette', 'blue');
-  await expect(input).toHaveClass(/leverui-file-upload__hiddenInput/);
-  await expect(dropzone).toHaveClass(/leverui-file-upload__dropzone/);
+  await expect(root).toHaveClass(/lui-file-upload__root/);
+  await expect(root).toHaveAttribute('data-lui-color-palette', 'blue');
+  await expect(input).toHaveClass(/lui-file-upload__hiddenInput/);
+  await expect(dropzone).toHaveClass(/lui-file-upload__dropzone/);
   await expect(dropzone).toHaveCSS('border-top-color', 'rgb(21, 87, 156)');
   await expect(dropzone).toHaveCSS('background-color', 'rgb(241, 247, 253)');
   await expect(label).toHaveCSS('color', 'rgb(73, 41, 133)');
@@ -23,10 +23,10 @@ async function verifiesFileUploadCss({ page }: { page: Page }): Promise<void> {
     buffer: Buffer.from('ok'),
   });
   await expect(list).toContainText('report.txt');
-  const item = list.locator('.leverui-file-upload__item');
+  const item = list.locator('.lui-file-upload__item');
   await expect(item).toHaveCSS('border-top-color', 'rgb(21, 87, 156)');
-  await expect(item.locator('.leverui-file-upload__itemName')).toBeVisible();
-  await expect(item.locator('.leverui-file-upload__itemDeleteTrigger')).toBeVisible();
+  await expect(item.locator('.lui-file-upload__itemName')).toBeVisible();
+  await expect(item.locator('.lui-file-upload__itemDeleteTrigger')).toBeVisible();
 
   const unstyledRoot = page.getByTestId('file-css-unstyled-root');
   const unstyled = page.getByTestId('file-css-unstyled');

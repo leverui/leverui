@@ -33,17 +33,17 @@ function renderDialog(size?: DialogRootProps['size']): string {
 /** Verify the default Dialog emits CSS hooks without a style tag. */
 function verifiesDefaultBypass(): void {
   const markup = renderDialog();
-  expect(markup).toContain('leverui-dialog__trigger');
-  expect(markup).toContain('data-leverui-dialog-css');
+  expect(markup).toContain('lui-dialog__trigger');
+  expect(markup).toContain('data-lui-dialog-css');
 }
 
 /** Reflect responsive sizes in server attributes without inserting CSS. */
 function verifiesResponsiveBypass(): void {
   const markup = renderDialog({ mdDown: 'full', md: 'lg' });
-  expect(markup).toContain('leverui-dialog__trigger');
+  expect(markup).toContain('lui-dialog__trigger');
   expect(markup).toContain('data-size-md-down="full"');
   expect(markup).toContain('data-size-md="lg"');
-  expect(markup).toContain('data-leverui-dialog-css');
+  expect(markup).toContain('data-lui-dialog-css');
 }
 
 test('default Dialog renders CSS hooks without inserted rules', verifiesDefaultBypass);

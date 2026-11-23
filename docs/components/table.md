@@ -67,7 +67,7 @@ adapter inside `Table.Root native`. The TanStack example uses
 
 ## Customize with CSS
 
-Classes: `.leverui-table__root`, `__header`, `__body`, `__row`,
+Classes: `.lui-table__root`, `__header`, `__body`, `__row`,
 `__columnHeader`, `__cell`, `__footer`, `__caption`, `__columnGroup`,
 `__column`, and `__scrollArea`. The root also has attributes for size, variant,
 stripes, hover, sticky header, column borders, palette, native mode, and
@@ -78,7 +78,7 @@ part's class to your own HTML element to give it that part's look.
 <Table.Root>
   <Table.Body>
     <Table.Row>
-      <td class="leverui-table__cell custom-cell">Custom cell</td>
+      <td class="lui-table__cell custom-cell">Custom cell</td>
     </Table.Row>
   </Table.Body>
 </Table.Root>

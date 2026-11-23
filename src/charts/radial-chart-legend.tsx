@@ -11,13 +11,13 @@ export interface RadialChartLegendProps {
 /** Draw the reversed radial legend inside its chart area. */
 export function RadialChartLegend(props: RadialChartLegendProps): JSX.Element {
   return (
-    <div class="leverui-radial-chart__legend">
+    <div class="lui-radial-chart__legend">
       <For each={[...props.data].reverse()}>
         {/** Pair each legend swatch with its source series name. */}
         {(item) => (
-          <span class="leverui-radial-chart__legendItem">
+          <span class="lui-radial-chart__legendItem">
             <span
-              class="leverui-radial-chart__legendSwatch"
+              class="lui-radial-chart__legendSwatch"
               style={{
                 '--lui-private-radial-legend-color': chartColor(item.color, item.color),
               }}

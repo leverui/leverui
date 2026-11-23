@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-menu__content[data-leverui-menu-css] {
+  .lui-menu__content[data-lui-menu-css] {
     --lui-menu-background: var(--lui-colors-bg-panel);
     --lui-menu-z-index: var(--lui-z-index-popover);
     --lui-private-menu-item-gap: var(--lui-spacing-2);
@@ -30,7 +30,7 @@
     }
   }
 
-  .leverui-menu__item[data-leverui-menu-css] {
+  .lui-menu__item[data-lui-menu-css] {
     text-decoration: none;
     color: var(--lui-colors-fg);
     user-select: none;
@@ -59,18 +59,18 @@
     }
   }
 
-  .leverui-menu__itemText[data-leverui-menu-css] {
+  .lui-menu__itemText[data-lui-menu-css] {
     flex: 1;
   }
 
-  .leverui-menu__itemIndicator[data-leverui-menu-css] {
+  .lui-menu__itemIndicator[data-lui-menu-css] {
     position: absolute;
     inset-inline-start: var(--lui-spacing-2);
     transform: translateY(-50%);
     top: 50%;
   }
 
-  .leverui-menu__itemGroupLabel[data-leverui-menu-css] {
+  .lui-menu__itemGroupLabel[data-lui-menu-css] {
     padding-inline: var(--lui-spacing-2);
     padding-block: var(--lui-spacing-1\.5);
     font-weight: var(--lui-font-weights-semibold);
@@ -78,14 +78,14 @@
     line-height: 1.25rem;
   }
 
-  .leverui-menu__indicator[data-leverui-menu-css] {
+  .lui-menu__indicator[data-lui-menu-css] {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
   }
 
-  .leverui-menu__itemCommand[data-leverui-menu-css] {
+  .lui-menu__itemCommand[data-lui-menu-css] {
     opacity: 0.6;
     font-size: var(--lui-font-sizes-xs);
     line-height: 1rem;
@@ -95,26 +95,26 @@
     font-family: inherit;
   }
 
-  .leverui-menu__separator[data-leverui-menu-css] {
+  .lui-menu__separator[data-lui-menu-css] {
     height: 1px;
     background: var(--lui-colors-bg-muted);
     margin-block: var(--lui-spacing-1);
     margin-inline: calc(var(--lui-spacing-1) * -1);
   }
 
-  .leverui-menu__arrow[data-leverui-menu-css] {
+  .lui-menu__arrow[data-lui-menu-css] {
     --arrow-size: var(--lui-sizes-3);
     --arrow-background: var(--lui-menu-background, var(--lui-colors-bg-panel));
   }
 
-  .leverui-menu__arrowTip[data-leverui-menu-css] {
+  .lui-menu__arrowTip[data-lui-menu-css] {
     border-top-width: 1px;
     border-left-width: 1px;
   }
 
   /* Zag 2 sets no z-index and isolates the positioner, so the content's z-index
      cannot escape it. Stack the positioner itself, offset by its layer index. */
-  .leverui-menu__positioner {
+  .lui-menu__positioner {
     z-index: calc(var(--lui-menu-z-index, var(--lui-z-index-popover)) + var(--layer-index, 0));
   }
 }

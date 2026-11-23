@@ -1,48 +1,48 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-input-addon:not([data-unstyled])[data-size-sm='2xs'] {
+    .lui-input-addon:not([data-unstyled])[data-size-sm='2xs'] {
       --lui-private-input-addon-font-size: var(--lui-font-sizes-xs);
       --lui-private-input-addon-line-height: 1rem;
       --lui-private-input-addon-size-padding: var(--lui-spacing-2);
       --lui-private-input-addon-height: var(--lui-sizes-7);
     }
 
-    .leverui-input-addon:not([data-unstyled])[data-size-sm='xs'] {
+    .lui-input-addon:not([data-unstyled])[data-size-sm='xs'] {
       --lui-private-input-addon-font-size: var(--lui-font-sizes-xs);
       --lui-private-input-addon-line-height: 1rem;
       --lui-private-input-addon-size-padding: var(--lui-spacing-2);
       --lui-private-input-addon-height: var(--lui-sizes-8);
     }
 
-    .leverui-input-addon:not([data-unstyled])[data-size-sm='sm'] {
+    .lui-input-addon:not([data-unstyled])[data-size-sm='sm'] {
       --lui-private-input-addon-font-size: var(--lui-font-sizes-sm);
       --lui-private-input-addon-line-height: 1.25rem;
       --lui-private-input-addon-size-padding: var(--lui-spacing-2\.5);
       --lui-private-input-addon-height: var(--lui-sizes-9);
     }
 
-    .leverui-input-addon:not([data-unstyled])[data-size-sm='md'] {
+    .lui-input-addon:not([data-unstyled])[data-size-sm='md'] {
       --lui-private-input-addon-font-size: var(--lui-font-sizes-sm);
       --lui-private-input-addon-line-height: 1.25rem;
       --lui-private-input-addon-size-padding: var(--lui-spacing-3);
       --lui-private-input-addon-height: var(--lui-sizes-10);
     }
 
-    .leverui-input-addon:not([data-unstyled])[data-size-sm='lg'] {
+    .lui-input-addon:not([data-unstyled])[data-size-sm='lg'] {
       --lui-private-input-addon-font-size: var(--lui-font-sizes-md);
       --lui-private-input-addon-line-height: 1.5rem;
       --lui-private-input-addon-size-padding: var(--lui-spacing-4);
       --lui-private-input-addon-height: var(--lui-sizes-11);
     }
 
-    .leverui-input-addon:not([data-unstyled])[data-size-sm='xl'] {
+    .lui-input-addon:not([data-unstyled])[data-size-sm='xl'] {
       --lui-private-input-addon-font-size: var(--lui-font-sizes-md);
       --lui-private-input-addon-line-height: 1.5rem;
       --lui-private-input-addon-size-padding: var(--lui-spacing-4\.5);
       --lui-private-input-addon-height: var(--lui-sizes-12);
     }
 
-    .leverui-input-addon:not([data-unstyled])[data-size-sm='2xl'] {
+    .lui-input-addon:not([data-unstyled])[data-size-sm='2xl'] {
       --lui-private-input-addon-font-size: var(--lui-font-sizes-lg);
       --lui-private-input-addon-line-height: 1.75rem;
       --lui-private-input-addon-size-padding: var(--lui-spacing-5);
@@ -51,49 +51,49 @@
   }
 
   @media (min-width: 768px) {
-    .leverui-input-addon:not([data-unstyled])[data-size-md='2xs'] {
+    .lui-input-addon:not([data-unstyled])[data-size-md='2xs'] {
       --lui-private-input-addon-font-size: var(--lui-font-sizes-xs);
       --lui-private-input-addon-line-height: 1rem;
       --lui-private-input-addon-size-padding: var(--lui-spacing-2);
       --lui-private-input-addon-height: var(--lui-sizes-7);
     }
 
-    .leverui-input-addon:not([data-unstyled])[data-size-md='xs'] {
+    .lui-input-addon:not([data-unstyled])[data-size-md='xs'] {
       --lui-private-input-addon-font-size: var(--lui-font-sizes-xs);
       --lui-private-input-addon-line-height: 1rem;
       --lui-private-input-addon-size-padding: var(--lui-spacing-2);
       --lui-private-input-addon-height: var(--lui-sizes-8);
     }
 
-    .leverui-input-addon:not([data-unstyled])[data-size-md='sm'] {
+    .lui-input-addon:not([data-unstyled])[data-size-md='sm'] {
       --lui-private-input-addon-font-size: var(--lui-font-sizes-sm);
       --lui-private-input-addon-line-height: 1.25rem;
       --lui-private-input-addon-size-padding: var(--lui-spacing-2\.5);
       --lui-private-input-addon-height: var(--lui-sizes-9);
     }
 
-    .leverui-input-addon:not([data-unstyled])[data-size-md='md'] {
+    .lui-input-addon:not([data-unstyled])[data-size-md='md'] {
       --lui-private-input-addon-font-size: var(--lui-font-sizes-sm);
       --lui-private-input-addon-line-height: 1.25rem;
       --lui-private-input-addon-size-padding: var(--lui-spacing-3);
       --lui-private-input-addon-height: var(--lui-sizes-10);
     }
 
-    .leverui-input-addon:not([data-unstyled])[data-size-md='lg'] {
+    .lui-input-addon:not([data-unstyled])[data-size-md='lg'] {
       --lui-private-input-addon-font-size: var(--lui-font-sizes-md);
       --lui-private-input-addon-line-height: 1.5rem;
       --lui-private-input-addon-size-padding: var(--lui-spacing-4);
       --lui-private-input-addon-height: var(--lui-sizes-11);
     }
 
-    .leverui-input-addon:not([data-unstyled])[data-size-md='xl'] {
+    .lui-input-addon:not([data-unstyled])[data-size-md='xl'] {
       --lui-private-input-addon-font-size: var(--lui-font-sizes-md);
       --lui-private-input-addon-line-height: 1.5rem;
       --lui-private-input-addon-size-padding: var(--lui-spacing-4\.5);
       --lui-private-input-addon-height: var(--lui-sizes-12);
     }
 
-    .leverui-input-addon:not([data-unstyled])[data-size-md='2xl'] {
+    .lui-input-addon:not([data-unstyled])[data-size-md='2xl'] {
       --lui-private-input-addon-font-size: var(--lui-font-sizes-lg);
       --lui-private-input-addon-line-height: 1.75rem;
       --lui-private-input-addon-size-padding: var(--lui-spacing-5);

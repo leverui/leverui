@@ -49,8 +49,8 @@ function renderServerSlider(): string {
 function verifiesServerSlider(): void {
   const markup = renderServerSlider();
   expect(markup).toContain('data-slider-');
-  expect(markup).toContain('leverui-slider__root');
-  expect(markup).toContain('leverui-slider__thumb');
+  expect(markup).toContain('lui-slider__root');
+  expect(markup).toContain('lui-slider__thumb');
   expect(markup).toContain('role="slider"');
   expect(markup).toContain('aria-valuenow="30"');
   expect(markup).toContain('name="volume"');

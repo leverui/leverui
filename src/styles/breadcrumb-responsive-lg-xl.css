@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 1024px) {
-    .leverui-breadcrumb__root:not([data-unstyled]) {
+    .lui-breadcrumb__root:not([data-unstyled]) {
       &[data-size-lg='sm'] {
         --lui-private-breadcrumb-gap: var(--lui-spacing-1);
         --lui-private-breadcrumb-font-size: var(--lui-font-sizes-xs);
@@ -35,7 +35,7 @@
     }
   }
   @media (min-width: 1280px) {
-    .leverui-breadcrumb__root:not([data-unstyled]) {
+    .lui-breadcrumb__root:not([data-unstyled]) {
       &[data-size-xl='sm'] {
         --lui-private-breadcrumb-gap: var(--lui-spacing-1);
         --lui-private-breadcrumb-font-size: var(--lui-font-sizes-xs);

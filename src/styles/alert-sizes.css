@@ -1,11 +1,11 @@
 @layer leverui.recipes {
-  .leverui-alert__root:not([data-unstyled]) {
+  .lui-alert__root:not([data-unstyled]) {
     gap: var(--lui-private-alert-gap);
     padding: var(--lui-private-alert-padding);
     font-size: var(--lui-private-alert-font-size);
     line-height: var(--lui-private-alert-line-height);
 
-    & .leverui-alert__indicator:not([data-unstyled]) {
+    & .lui-alert__indicator:not([data-unstyled]) {
       font-size: var(--lui-private-alert-indicator-font-size);
       line-height: var(--lui-private-alert-indicator-line-height);
     }

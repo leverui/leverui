@@ -17,7 +17,7 @@ export function ratingGroupAttributes(appearance: RatingGroupAppearance): {
   'data-size-lg': string | undefined;
   'data-size-xl': string | undefined;
   'data-size-2xl': string | undefined;
-  'data-leverui-color-palette': string | undefined;
+  'data-lui-color-palette': string | undefined;
   'data-unstyled': string | undefined;
 } {
   const sizes = readRatingGroupSizes(appearance.size);
@@ -28,7 +28,7 @@ export function ratingGroupAttributes(appearance: RatingGroupAppearance): {
     'data-size-lg': sizes.lg,
     'data-size-xl': sizes.xl,
     'data-size-2xl': sizes['2xl'],
-    'data-leverui-color-palette': readRatingGroupPalette(appearance.colorPalette),
+    'data-lui-color-palette': readRatingGroupPalette(appearance.colorPalette),
     'data-unstyled': appearance.unstyled ? '' : undefined,
   };
 }

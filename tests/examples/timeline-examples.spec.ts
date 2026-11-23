@@ -7,9 +7,7 @@ async function verifiesTimelineBasic({ page }: { page: Page }): Promise<void> {
   await expect(page.getByRole('listitem').first()).toContainText('Order shipped');
   await expect(page.getByRole('listitem').nth(1)).toContainText('Customs cleared');
   await expect(page.getByRole('listitem').last()).toContainText('Order delivered');
-  await expect(page.locator('#storybook-root .leverui-timeline__indicator svg.lucide')).toHaveCount(
-    3,
-  );
+  await expect(page.locator('#storybook-root .lui-timeline__indicator svg.lucide')).toHaveCount(3);
   await expect(page.getByText('FedEx')).toBeVisible();
 }
 

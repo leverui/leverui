@@ -21,7 +21,7 @@ async function verifiesVisuallyHiddenContract({ page }: { page: Page }): Promise
   await expect(search).toHaveAttribute('data-parent', 'hidden-input');
   await expect(search).toHaveAttribute('data-parent-ref', 'input');
   await expect(search).toHaveClass(/search-child/);
-  await expect(search).toHaveClass(/leverui-visually-hidden/);
+  await expect(search).toHaveClass(/lui-visually-hidden/);
   await expect(page.locator('[data-testid="visually-hidden-story"] > span')).toHaveCount(0);
   await page.getByTestId('notification-button').focus();
   await page.keyboard.press('Tab');
@@ -34,7 +34,7 @@ async function verifiesVisuallyHiddenContract({ page }: { page: Page }): Promise
   await page.getByTestId('hidden-width-toggle').click();
   await expect(label).toHaveCSS('width', '2px');
   await expect(page.getByTestId('visible-search')).toHaveAttribute('id', 'visible-search');
-  await page.addStyleTag({ content: '.leverui-visually-hidden { width: 5px; }' });
+  await page.addStyleTag({ content: '.lui-visually-hidden { width: 5px; }' });
   await expect(label).toHaveCSS('width', '5px');
 }
 

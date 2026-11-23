@@ -58,7 +58,7 @@ function LoaderOverlayRoot(props: RuntimeProps): JSX.Element {
     /** Preserve native attributes and reactive consumer classes. */
     () => ({
       ...native,
-      class: cx('leverui-loader-overlay', local.class, local.className),
+      class: cx('lui-loader-overlay', local.class, local.className),
       'data-unstyled': local.unstyled ? '' : undefined,
       ref: attachNode,
     }),

@@ -12,7 +12,7 @@ export interface ColorModeControls {
   readonly toggleColorMode: () => void;
 }
 
-const colorModeAttribute = 'data-leverui-color-mode';
+const colorModeAttribute = 'data-lui-color-mode';
 
 /** The storage key that remembers the reader's chosen mode. */
 export const colorModeStorageKey = 'leverui-color-mode';

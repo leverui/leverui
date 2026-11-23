@@ -3,7 +3,7 @@
   The static host serves this page for any address with no file. It loads no app script: the
   site's pages hydrate against the address they were built for, and this one serves many.
 -->
-<html lang="en" data-leverui-color-mode="light">
+<html lang="en" data-lui-color-mode="light">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,7 +19,7 @@
             : matchMedia('(prefers-color-scheme: dark)').matches
               ? 'dark'
               : 'light';
-        document.documentElement.setAttribute('data-leverui-color-mode', mode);
+        document.documentElement.setAttribute('data-lui-color-mode', mode);
       } catch {}
     </script>
     <style>
@@ -32,7 +32,7 @@
         --badge: #27272a;
         color-scheme: light;
       }
-      [data-leverui-color-mode='dark'] {
+      [data-lui-color-mode='dark'] {
         --bg: #000;
         --fg: #fafafa;
         --muted: #a1a1aa;
@@ -95,10 +95,10 @@
         height: auto;
       }
       .wordmark-dark,
-      [data-leverui-color-mode='dark'] .wordmark-light {
+      [data-lui-color-mode='dark'] .wordmark-light {
         display: none;
       }
-      [data-leverui-color-mode='dark'] .wordmark-dark {
+      [data-lui-color-mode='dark'] .wordmark-dark {
         display: block;
       }
       main {

@@ -20,7 +20,7 @@ function renderInstalledCode() {
 
 const markup = renderInstalledCode();
 assert.match(markup, /<code[^>]*id="packed-server-code"/);
-assert.match(markup, /leverui-code/);
+assert.match(markup, /lui-code/);
 assert.match(markup, /npm run build/);
 assert.doesNotMatch(markup, /\s(?:size|variant|colorPalette)=/);
 console.log('Packed Code server rendering passed.');

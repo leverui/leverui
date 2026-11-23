@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-group {
+  .lui-group {
     --lui-private-group-align-base: initial;
     --lui-private-group-align-sm: initial;
     --lui-private-group-align-md: initial;
@@ -20,7 +20,7 @@
     --lui-private-group-wrap-2xl: initial;
   }
 
-  .leverui-group:not([data-unstyled]) {
+  .lui-group:not([data-unstyled]) {
     align-items: var(--lui-private-group-align-base, var(--lui-group-align, center));
     justify-content: var(--lui-private-group-justify-base, var(--lui-group-justify, flex-start));
     flex-wrap: var(--lui-private-group-wrap-base, var(--lui-group-wrap, nowrap));

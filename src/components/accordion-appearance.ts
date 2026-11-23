@@ -23,10 +23,7 @@ export interface AccordionAppearanceState {
 type Choice = 'size' | 'variant';
 type Breakpoint = 'sm' | 'md' | 'lg' | 'xl' | '2xl';
 type Attribute =
-  | `data-${Choice}`
-  | `data-${Choice}-${Breakpoint}`
-  | 'data-leverui-color-palette'
-  | 'data-unstyled';
+  `data-${Choice}` | `data-${Choice}-${Breakpoint}` | 'data-lui-color-palette' | 'data-unstyled';
 export type AccordionAttributes = Partial<Record<Attribute, string | undefined>>;
 
 const AccordionAppearanceContext = createOptionalContext<AccordionAppearanceState>();
@@ -84,7 +81,7 @@ export function accordionAppearanceAttributes(
   return {
     ...choiceAttributes('size', size),
     ...choiceAttributes('variant', variant),
-    'data-leverui-color-palette': readPalette(appearance.colorPalette),
+    'data-lui-color-palette': readPalette(appearance.colorPalette),
     'data-unstyled': appearance.unstyled ? '' : undefined,
   };
 }

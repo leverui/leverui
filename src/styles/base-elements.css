@@ -32,7 +32,7 @@
    * again. Otherwise its children would inherit the outer mode's colors.
    */
   html,
-  :where([data-leverui-theme][data-leverui-color-mode]) {
+  :where([data-lui-theme][data-lui-color-mode]) {
     --bg-currentcolor: var(--lui-colors-bg);
     --lui-colors-color-palette-50: var(--lui-colors-gray-50);
     --lui-colors-color-palette-100: var(--lui-colors-gray-100);
@@ -54,8 +54,8 @@
     --lui-colors-color-palette-focus-ring: var(--lui-colors-gray-focus-ring);
     --lui-colors-color-palette-border: var(--lui-colors-gray-border);
   }
-  :where([class^='leverui-'], [class*=' leverui-'])::placeholder,
-  :where([class^='leverui-'], [class*=' leverui-'])[data-placeholder] {
+  :where([class^='lui-'], [class*=' lui-'])::placeholder,
+  :where([class^='lui-'], [class*=' lui-'])[data-placeholder] {
     --mix-color: color-mix(in srgb, var(--lui-colors-fg-muted) 80%, transparent);
     color: var(--mix-color, var(--lui-colors-fg-muted));
   }

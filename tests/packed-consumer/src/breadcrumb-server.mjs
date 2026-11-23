@@ -39,5 +39,5 @@ function renderBreadcrumb() {
 
 const markup = renderToString(renderBreadcrumb);
 assert.match(markup, /aria-label="breadcrumb"/);
-assert.match(markup, /leverui-breadcrumb__list/);
+assert.match(markup, /lui-breadcrumb__list/);
 assert.match(markup, /aria-current="page"/);

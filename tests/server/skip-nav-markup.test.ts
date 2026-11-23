@@ -31,10 +31,10 @@ function renderSkipNav(targetId?: string): string {
 /** Verify the default target, native attributes, and Lever UI class. */
 function verifiesDefaultMarkup(): void {
   const markup = renderSkipNav();
-  expect(markup).toContain('href="#leverui-skip-nav"');
-  expect(markup).toContain('id="leverui-skip-nav"');
+  expect(markup).toContain('href="#lui-skip-nav"');
+  expect(markup).toContain('id="lui-skip-nav"');
   expect(markup).toMatch(/tabindex="-1"/i);
-  expect(markup).toContain('leverui-skip-nav');
+  expect(markup).toContain('lui-skip-nav');
 }
 
 /** Keep a consumer ID paired across both server-rendered parts. */

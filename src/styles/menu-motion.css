@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-menu__content[data-leverui-menu-css] {
+  .lui-menu__content[data-lui-menu-css] {
     transform-origin: var(--transform-origin);
 
     &[data-state='open'] {

@@ -32,8 +32,8 @@ function renderBarList() {
 }
 
 const markup = renderBarList();
-assert.match(markup, /leverui-bar-list__root/);
-assert.match(markup, /leverui-bar-list__fill/);
+assert.match(markup, /lui-bar-list__root/);
+assert.match(markup, /lui-bar-list__fill/);
 assert.match(markup, /--lui-bar-list-size:3rem/);
 assert.match(markup, /--lui-private-bar-list-width:100%/);
 console.log('Packed Bar List server rendering passed.');

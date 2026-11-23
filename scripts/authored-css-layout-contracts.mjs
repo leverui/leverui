@@ -1,12 +1,12 @@
 import { imageLayoutContract } from './authored-css-image-contract.mjs';
 
 export const layoutContracts = [
-  { family: 'theme', required: ['.leverui-theme', '[data-leverui-no-background]'] },
-  { family: 'box', required: ['.leverui-box'] },
+  { family: 'theme', required: ['.lui-theme', '[data-lui-no-background]'] },
+  { family: 'box', required: ['.lui-box'] },
   {
     family: 'absolute-center',
     required: [
-      '.leverui-absolute-center:not([data-unstyled])',
+      '.lui-absolute-center:not([data-unstyled])',
       ...['horizontal', 'vertical', 'both'].map(
         /** Require every finite axis choice in authored CSS. */
         (axis) => `[data-axis='${axis}']`,
@@ -19,7 +19,7 @@ export const layoutContracts = [
   {
     family: 'aspect-ratio',
     required: [
-      '.leverui-aspect-ratio:not([data-unstyled])',
+      '.lui-aspect-ratio:not([data-unstyled])',
       '&::before',
       '& > *:not(style)',
       '& > :is(img, video)',
@@ -32,7 +32,7 @@ export const layoutContracts = [
   {
     family: 'bleed',
     required: [
-      '.leverui-bleed',
+      '.lui-bleed',
       ...['inline-start', 'inline-end', 'block-start', 'block-end'].flatMap(
         /** Require a native margin variable for each edge and breakpoint. */
         (edge) =>
@@ -46,7 +46,7 @@ export const layoutContracts = [
   {
     family: 'center',
     required: [
-      '.leverui-center',
+      '.lui-center',
       '--lui-center-align',
       '--lui-center-justify',
       "[data-inline='true']",
@@ -63,7 +63,7 @@ export const layoutContracts = [
   {
     family: 'flex',
     required: [
-      '.leverui-flex',
+      '.lui-flex',
       "[data-inline='true']",
       ...['align', 'justify', 'wrap', 'direction', 'basis', 'grow', 'shrink'].flatMap(
         /** Require a CSS variable for each native alias and breakpoint. */
@@ -78,7 +78,7 @@ export const layoutContracts = [
   {
     family: 'grid',
     required: [
-      '.leverui-grid',
+      '.lui-grid',
       "[data-inline='true']",
       ...[
         'template-columns',
@@ -102,7 +102,7 @@ export const layoutContracts = [
   {
     family: 'grid-item',
     required: [
-      '.leverui-grid-item',
+      '.lui-grid-item',
       ...['area', 'column', 'row', 'column-start', 'column-end', 'row-start', 'row-end'].flatMap(
         /** Require every GridItem placement alias at each breakpoint. */
         (alias) =>
@@ -120,8 +120,8 @@ export const layoutContracts = [
   {
     family: 'stack',
     required: [
-      '.leverui-stack:not([data-unstyled])',
-      '.leverui-stack-separator:not([data-unstyled])',
+      '.lui-stack:not([data-unstyled])',
+      '.lui-stack-separator:not([data-unstyled])',
       ...['base', 'sm', 'md', 'lg', 'xl', '2xl'].flatMap(
         /** Require layout and both separator axes at each breakpoint. */
         (breakpoint) => [
@@ -136,7 +136,7 @@ export const layoutContracts = [
   {
     family: 'spacer',
     required: [
-      '.leverui-spacer:not([data-unstyled])',
+      '.lui-spacer:not([data-unstyled])',
       '--lui-spacer-flex',
       ...['base', 'sm', 'md', 'lg', 'xl', '2xl'].flatMap(
         /** Require each responsive native flex selection. */
@@ -149,12 +149,12 @@ export const layoutContracts = [
   },
   {
     family: 'sticky',
-    required: ['.leverui-sticky:not([data-unstyled])', 'position: sticky', '--lui-sticky-top'],
+    required: ['.lui-sticky:not([data-unstyled])', 'position: sticky', '--lui-sticky-top'],
   },
   {
     family: 'wrap',
     required: [
-      '.leverui-wrap:not([data-unstyled])',
+      '.lui-wrap:not([data-unstyled])',
       '--lui-wrap-gap',
       ...['align', 'justify', 'direction', 'gap', 'row-gap', 'column-gap'].flatMap(
         /** Require every Wrap alias at every ordinary breakpoint. */
@@ -167,14 +167,14 @@ export const layoutContracts = [
             ],
           ),
       ),
-      '.leverui-wrap__listitem:not([data-unstyled])',
+      '.lui-wrap__listitem:not([data-unstyled])',
       '--lui-wrap-item-align',
     ],
   },
   {
     family: 'container',
     required: [
-      '.leverui-container:not([data-unstyled])',
+      '.lui-container:not([data-unstyled])',
       '--lui-container-max-width',
       '--lui-container-padding',
       ...['base', 'sm', 'md', 'lg', 'xl', '2xl'].flatMap(

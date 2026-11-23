@@ -30,8 +30,8 @@ function verifiesServerQrCode(): void {
   expect(markup).toContain('data-qr-code-');
   expect(markup).toContain('data-size="lg"');
   expect(markup).toContain('data-qr-code-frame');
-  expect(markup).toContain('leverui-qr-code__root');
-  expect(markup).toContain('leverui-qr-code__pattern');
+  expect(markup).toContain('lui-qr-code__root');
+  expect(markup).toContain('lui-qr-code__pattern');
   expect(markup).toMatch(/<path[^>]*\sd="/);
   expect(markup).not.toMatch(/<div[^>]*\s(?:size|recipe|encoding)=/);
 }

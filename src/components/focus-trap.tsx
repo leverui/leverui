@@ -80,7 +80,7 @@ function FocusTrapImpl(props: RuntimeFocusTrapProps): JSX.Element {
     /** Keep the public hook and consumer attributes live on the native node. */
     () => ({
       ...native,
-      class: cx('leverui-focus-trap', local.class),
+      class: cx('lui-focus-trap', local.class),
       ref: attachNode,
     }),
   );

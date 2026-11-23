@@ -3,10 +3,10 @@ export const marqueeContracts = [
   {
     family: 'marquee',
     required: [
-      '.leverui-marquee__root:not([data-unstyled])',
-      '.leverui-marquee__viewport:not([data-unstyled])',
-      '.leverui-marquee__content:not([data-unstyled])',
-      '.leverui-marquee__edge:not([data-unstyled])',
+      '.lui-marquee__root:not([data-unstyled])',
+      '.lui-marquee__viewport:not([data-unstyled])',
+      '.lui-marquee__content:not([data-unstyled])',
+      '.lui-marquee__edge:not([data-unstyled])',
       '[data-paused] *',
       "[data-side='start']",
       "[data-side='bottom']",

@@ -7,7 +7,7 @@ async function verifiesColorSwatchMatrix({ page }: { page: Page }): Promise<void
   await expect(swatch).toHaveJSProperty('tagName', 'SPAN');
   await expect(swatch).toHaveAttribute('data-value', 'red');
   await expect(swatch).toHaveAttribute('title', 'Red sample');
-  await expect(swatch).toHaveClass(/leverui-color-swatch/);
+  await expect(swatch).toHaveClass(/lui-color-swatch/);
   await expect(swatch).toHaveCSS('width', '20px');
   await expect(swatch).toHaveCSS('height', '20px');
   await expect(swatch).not.toHaveAttribute('size');
@@ -48,9 +48,9 @@ async function verifiesMixedSwatches({ page }: { page: Page }): Promise<void> {
     'span 2 / span 2',
   );
   await page.addStyleTag({
-    content: '.leverui-color-swatch__mix-grid { column-gap: 3px; }',
+    content: '.lui-color-swatch__mix-grid { column-gap: 3px; }',
   });
-  await expect(page.getByTestId('mix-three').locator('.leverui-color-swatch__mix-grid')).toHaveCSS(
+  await expect(page.getByTestId('mix-three').locator('.lui-color-swatch__mix-grid')).toHaveCSS(
     'column-gap',
     '3px',
   );

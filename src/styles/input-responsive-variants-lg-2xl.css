@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 1024px) {
-    .leverui-input:not([data-unstyled])[data-variant-lg='outline'] {
+    .lui-input:not([data-unstyled])[data-variant-lg='outline'] {
       --lui-private-input-background: transparent;
       --lui-private-input-border-width: 1px;
       --lui-private-input-border-color: var(--lui-colors-border);
@@ -10,7 +10,7 @@
       --lui-private-input-focus-shadow: none;
     }
 
-    .leverui-input:not([data-unstyled])[data-variant-lg='subtle'] {
+    .lui-input:not([data-unstyled])[data-variant-lg='subtle'] {
       --lui-private-input-background: var(--lui-colors-bg-muted);
       --lui-private-input-border-width: 1px;
       --lui-private-input-border-color: transparent;
@@ -20,7 +20,7 @@
       --lui-private-input-focus-shadow: none;
     }
 
-    .leverui-input:not([data-unstyled])[data-variant-lg='flushed'] {
+    .lui-input:not([data-unstyled])[data-variant-lg='flushed'] {
       --lui-private-input-background: transparent;
       --lui-private-input-border-width: 0 0 1px;
       --lui-private-input-border-color: var(--lui-colors-border);
@@ -32,7 +32,7 @@
   }
 
   @media (min-width: 1280px) {
-    .leverui-input:not([data-unstyled])[data-variant-xl='outline'] {
+    .lui-input:not([data-unstyled])[data-variant-xl='outline'] {
       --lui-private-input-background: transparent;
       --lui-private-input-border-width: 1px;
       --lui-private-input-border-color: var(--lui-colors-border);
@@ -42,7 +42,7 @@
       --lui-private-input-focus-shadow: none;
     }
 
-    .leverui-input:not([data-unstyled])[data-variant-xl='subtle'] {
+    .lui-input:not([data-unstyled])[data-variant-xl='subtle'] {
       --lui-private-input-background: var(--lui-colors-bg-muted);
       --lui-private-input-border-width: 1px;
       --lui-private-input-border-color: transparent;
@@ -52,7 +52,7 @@
       --lui-private-input-focus-shadow: none;
     }
 
-    .leverui-input:not([data-unstyled])[data-variant-xl='flushed'] {
+    .lui-input:not([data-unstyled])[data-variant-xl='flushed'] {
       --lui-private-input-background: transparent;
       --lui-private-input-border-width: 0 0 1px;
       --lui-private-input-border-color: var(--lui-colors-border);
@@ -64,7 +64,7 @@
   }
 
   @media (min-width: 1536px) {
-    .leverui-input:not([data-unstyled])[data-variant-2xl='outline'] {
+    .lui-input:not([data-unstyled])[data-variant-2xl='outline'] {
       --lui-private-input-background: transparent;
       --lui-private-input-border-width: 1px;
       --lui-private-input-border-color: var(--lui-colors-border);
@@ -74,7 +74,7 @@
       --lui-private-input-focus-shadow: none;
     }
 
-    .leverui-input:not([data-unstyled])[data-variant-2xl='subtle'] {
+    .lui-input:not([data-unstyled])[data-variant-2xl='subtle'] {
       --lui-private-input-background: var(--lui-colors-bg-muted);
       --lui-private-input-border-width: 1px;
       --lui-private-input-border-color: transparent;
@@ -84,7 +84,7 @@
       --lui-private-input-focus-shadow: none;
     }
 
-    .leverui-input:not([data-unstyled])[data-variant-2xl='flushed'] {
+    .lui-input:not([data-unstyled])[data-variant-2xl='flushed'] {
       --lui-private-input-background: transparent;
       --lui-private-input-border-width: 0 0 1px;
       --lui-private-input-border-color: var(--lui-colors-border);

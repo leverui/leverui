@@ -17,9 +17,9 @@ export const barListContracts = [
         'tooltip',
       ].map(
         /** Keep one stable selector for each styled Bar List part. */
-        (part) => `.leverui-bar-list__${part}`,
+        (part) => `.lui-bar-list__${part}`,
       ),
-      '.leverui-bar-list__row[data-hovered]',
+      '.lui-bar-list__row[data-hovered]',
       '--lui-bar-list-size',
       '--lui-private-bar-list-width',
       '--lui-private-bar-list-color',

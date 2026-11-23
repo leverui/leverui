@@ -22,7 +22,7 @@ export function TreeViewRow(props: NodeProps): JSX.Element {
       /** Wrap the row's content in its grid cell. */
       get children() {
         return createComponent(PrimitiveTreeView.Cell, {
-          class: 'leverui-tree-view__cell',
+          class: 'lui-tree-view__cell',
           /** Read the caller's content inside the cell. */
           get children() {
             return content.children;

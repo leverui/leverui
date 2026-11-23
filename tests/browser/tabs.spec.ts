@@ -56,7 +56,7 @@ async function verifiesControlledTabs({ page }: { page: Page }): Promise<void> {
   await page.keyboard.press('ArrowRight');
   await expect(one).toBeFocused();
   await expect(one).toHaveAttribute('aria-selected', 'true');
-  const root = page.locator('.leverui-tabs__root').first();
+  const root = page.locator('.lui-tabs__root').first();
   // Zag 2 gives the root no `id`; its scoped part attribute keeps the machine ID.
   const rootId = await root.getAttribute('data-tabs-root');
   if (!rootId) throw new Error('Tabs root is missing its scoped part ID.');
@@ -68,8 +68,8 @@ async function verifiesControlledTabs({ page }: { page: Page }): Promise<void> {
   await expect(one).toHaveAttribute('data-ref-tag', 'button');
   await expect(page.getByTestId('panel-one')).toHaveAttribute('data-ref-tag', 'div');
   await expect(one).toHaveCSS('height', '44px');
-  await expect(root).toHaveClass(/leverui-tabs__root/);
-  await expect(page.getByTestId('tabs-indicator')).toHaveClass(/leverui-tabs__indicator/);
+  await expect(root).toHaveClass(/lui-tabs__root/);
+  await expect(page.getByTestId('tabs-indicator')).toHaveClass(/lui-tabs__indicator/);
 }
 
 /** Verify vertical manual navigation moves focus before selection. */
@@ -112,7 +112,7 @@ function verifiesPublishedTabs(): void {
   const markup = renderToString(renderServerTabs);
   expect(markup).toContain('First tab');
   expect(markup).toContain('First panel');
-  expect(markup).toContain('leverui-tabs__root');
+  expect(markup).toContain('lui-tabs__root');
   expect(markup).toContain('aria-selected="true"');
 }
 

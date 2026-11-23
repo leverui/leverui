@@ -29,6 +29,6 @@ assert.match(markup, /<div[^>]*id="packed-server-skeleton"/);
 assert.match(markup, /<div[^>]*id="packed-server-circle"/);
 assert.match(markup, /<div[^>]*id="packed-server-text"/);
 assert.equal((markup.match(/Packed text/g) ?? []).length, 2);
-assert.match(markup, /leverui-skeleton/);
+assert.match(markup, /lui-skeleton/);
 assert.doesNotMatch(markup, /<div[^>]*\s(?:loading|variant|size|noOfLines)=/);
 console.log('Packed Skeleton server rendering passed.');

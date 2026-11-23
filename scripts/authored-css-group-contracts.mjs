@@ -4,8 +4,8 @@ export const groupContracts = [
   {
     family: 'group',
     required: [
-      '.leverui-group',
-      '.leverui-button-group',
+      '.lui-group',
+      '.lui-button-group',
       '--lui-group-gap',
       "[data-stacking='first-on-top']",
       "[data-stacking='last-on-top']",

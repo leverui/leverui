@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-radiomark:not([data-unstyled]) {
+  .lui-radiomark:not([data-unstyled]) {
     --lui-private-radiomark-unfilled-background: transparent;
     --lui-private-radiomark-background: var(--lui-private-radiomark-unfilled-background);
     --lui-private-radiomark-border: transparent;
@@ -22,7 +22,7 @@
     cursor: var(--lui-cursor-radio, pointer);
   }
 
-  .leverui-radiomark:not([data-unstyled]) > .leverui-radiomark__dot {
+  .lui-radiomark:not([data-unstyled]) > .lui-radiomark__dot {
     width: 100%;
     height: 100%;
     border-radius: var(--lui-radii-full);

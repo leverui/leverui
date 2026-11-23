@@ -42,14 +42,14 @@ function verifiesExternalProviderDefaults(): void {
     /** Mount an external machine beneath changing appearance defaults. */
     () => <Example />,
   );
-  const root = document.querySelector('.leverui-rating-group__root');
+  const root = document.querySelector('.lui-rating-group__root');
   if (!root) throw new Error('Rating Group root was not rendered.');
   const before = root.getAttribute('style');
   expect(root).toHaveClass('inherited-rating');
   expect(screen.getAllByRole('radio')[0]).toHaveAttribute('aria-checked', 'true');
   expect(root).toHaveStyle({ color: 'rgb(1, 2, 3)' });
   fireEvent.click(screen.getByRole('button', { name: 'Change color' }));
-  expect(document.querySelector('.leverui-rating-group__root')).toBe(root);
+  expect(document.querySelector('.lui-rating-group__root')).toBe(root);
   expect(root.getAttribute('style')).not.toBe(before);
   expect(root).toHaveStyle({ color: 'rgb(4, 5, 6)' });
   expect(screen.getAllByRole('radio')[0]).toHaveAttribute('aria-checked', 'true');

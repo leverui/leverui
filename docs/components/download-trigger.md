@@ -73,6 +73,6 @@ loading state, and color palettes.
 
 ## Customize with CSS
 
-Set `class` or `style` on the trigger, or target `.leverui-download-trigger`.
+Set `class` or `style` on the trigger, or target `.lui-download-trigger`.
 Import `@leverui/components/styles.css` when you use it with styled components
 such as `Button`.

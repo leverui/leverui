@@ -67,7 +67,7 @@ async function verifiesToastLifecycle(): Promise<void> {
     () => expect(screen.getByText('Saved')).not.toBeNull(),
   );
   expect(screen.getByTestId('toaster').getAttribute('aria-label')).toContain('Notifications');
-  expect(screen.getByTestId('toast-root').className).toContain('leverui-toast__root');
+  expect(screen.getByTestId('toast-root').className).toContain('lui-toast__root');
   expect(screen.getByTestId('indicator').tagName.toLowerCase()).toBe('svg');
   expect(screen.getByTestId('owned-title')).toBe(titleElement);
   expect(titleElement?.hasAttribute('data-toast-title')).toBe(true);

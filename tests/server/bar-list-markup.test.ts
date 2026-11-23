@@ -50,10 +50,10 @@ function renderBarList(barSize?: string): string {
 /** Require static classes and only data-driven native style values. */
 function verifiesBarListMarkup(): void {
   const markup = renderBarList();
-  expect(markup).toContain('leverui-bar-list__root');
-  expect(markup).toContain('leverui-bar-list__row');
-  expect(markup).toContain('leverui-bar-list__fill');
-  expect(markup).toContain('leverui-bar-list__valueRow');
+  expect(markup).toContain('lui-bar-list__root');
+  expect(markup).toContain('lui-bar-list__row');
+  expect(markup).toContain('lui-bar-list__fill');
+  expect(markup).toContain('lui-bar-list__valueRow');
   expect(markup).toContain('id="server-bar-list"');
   expect(markup).toContain('aria-label="Server traffic"');
   expect(markup).toContain('id="server-bar-column"');

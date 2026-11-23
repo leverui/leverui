@@ -5,7 +5,7 @@ async function verifiesBasicDate({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-dateinput--basic');
   const segments = page.getByTestId('date-input-basic-segments');
   await expect(segments).toBeVisible({ timeout: 30_000 });
-  await expect(segments).toHaveClass(/leverui-date-input__segmentGroup/);
+  await expect(segments).toHaveClass(/lui-date-input__segmentGroup/);
   await expect(segments.getByRole('spinbutton')).toHaveCount(3);
   await expect(page.getByTestId('date-input-basic-hidden')).toHaveValue('3/14/2026');
   await page.getByText('Date of birth').click();

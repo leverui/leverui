@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-table__root:not([data-unstyled]) {
+  .lui-table__root:not([data-unstyled]) {
     width: 100%;
     border-collapse: collapse;
     text-align: start;
@@ -55,7 +55,7 @@
     box-shadow: var(--lui-private-table-root-shadow);
   }
 
-  .leverui-table__scrollArea:not([data-unstyled]) {
+  .lui-table__scrollArea:not([data-unstyled]) {
     display: block;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
@@ -63,34 +63,34 @@
     max-width: 100%;
   }
 
-  @scope (.leverui-table__root:not([data-unstyled])) to (.leverui-table__root) {
-    :is(.leverui-table__header, :scope[data-native] thead):not([data-unstyled]) {
+  @scope (.lui-table__root:not([data-unstyled])) to (.lui-table__root) {
+    :is(.lui-table__header, :scope[data-native] thead):not([data-unstyled]) {
       background-color: var(--lui-private-table-header-background);
     }
-    :is(.leverui-table__row, :scope[data-native] tr):not([data-unstyled]) {
+    :is(.lui-table__row, :scope[data-native] tr):not([data-unstyled]) {
       background-color: var(--lui-private-table-row-background);
     }
-    :is(.leverui-table__cell, :scope[data-native] td):not([data-unstyled]),
-    :is(.leverui-table__columnHeader, :scope[data-native] thead th):not([data-unstyled]) {
+    :is(.lui-table__cell, :scope[data-native] td):not([data-unstyled]),
+    :is(.lui-table__columnHeader, :scope[data-native] thead th):not([data-unstyled]) {
       padding: var(--lui-private-table-padding-block) var(--lui-private-table-padding-inline);
       text-align: start;
     }
-    :is(.leverui-table__columnHeader, :scope[data-native] thead th):not([data-unstyled]) {
+    :is(.lui-table__columnHeader, :scope[data-native] thead th):not([data-unstyled]) {
       color: var(--lui-colors-fg);
       font-weight: var(--lui-font-weights-medium);
     }
-    :is(.leverui-table__caption, :scope[data-native] caption):not([data-unstyled]) {
+    :is(.lui-table__caption, :scope[data-native] caption):not([data-unstyled]) {
       font-size: var(--lui-font-sizes-xs);
       line-height: 1rem;
       font-weight: var(--lui-font-weights-medium);
     }
-    .leverui-table__caption:not([data-unstyled]) {
+    .lui-table__caption:not([data-unstyled]) {
       caption-side: bottom;
       &[data-caption-side='top'] {
         caption-side: top;
       }
     }
-    :is(.leverui-table__footer, :scope[data-native] tfoot):not([data-unstyled]) {
+    :is(.lui-table__footer, :scope[data-native] tfoot):not([data-unstyled]) {
       font-weight: var(--lui-font-weights-medium);
     }
   }

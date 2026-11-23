@@ -8,22 +8,22 @@
   --lui-radii-l3: 1.25rem;
 }
 /* A pill-shaped text field reads as a search box, so fields get a softer corner instead. */
-.home .leverui-input {
+.home .lui-input {
   border-radius: 12px;
 }
 /* A round checkbox reads as a radio button, and a two-line choice card cannot be a pill. */
-.home .leverui-checkbox__control {
+.home .lui-checkbox__control {
   border-radius: 4px;
 }
-.home .leverui-radio-card__item {
+.home .lui-radio-card__item {
   border-radius: 1rem;
 }
 /* An accordion panel hides its overflow, so a pill corner would cut off the edges of its text. */
-.home .leverui-accordion__itemContent {
+.home .lui-accordion__itemContent {
   border-radius: 8px;
 }
 /* A key cap should look like a key, not a pill. */
-.home .leverui-kbd {
+.home .lui-kbd {
   border-radius: 6px;
 }
 /* The copy button on a code sample follows the pill shape too. */

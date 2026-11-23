@@ -42,7 +42,7 @@ function renderServerHighlight(): string {
 function verifiesServerHighlight(): void {
   const markup = renderServerHighlight();
   expect(markup.match(/<mark\b/g)).toHaveLength(3);
-  expect(markup).toContain('leverui-mark');
+  expect(markup).toContain('lui-mark');
   expect(markup.match(/server-provider-mark/g)).toHaveLength(3);
   expect(markup.match(/title="Provided match"/g)).toHaveLength(3);
   expect(markup.match(/consumer-highlight/g)).toHaveLength(3);

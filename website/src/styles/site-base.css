@@ -27,8 +27,8 @@ body {
   padding-top: var(--site-header-height);
   min-width: 320px;
 }
-button:not([class*='leverui-']),
-input:not([class*='leverui-']) {
+button:not([class*='lui-']),
+input:not([class*='lui-']) {
   font: inherit;
 }
 input::placeholder,
@@ -36,7 +36,7 @@ textarea::placeholder {
   color: var(--site-muted);
   opacity: 1;
 }
-:where(a:not([class*='leverui-'])) {
+:where(a:not([class*='lui-'])) {
   color: inherit;
 }
 a {
@@ -47,10 +47,10 @@ a {
   line-height: 1;
   vertical-align: -0.08em;
 }
-button:not([class*='leverui-']) {
+button:not([class*='lui-']) {
   cursor: pointer;
 }
-:where(a:not([class*='leverui-']), button:not([class*='leverui-']), summary):focus-visible {
+:where(a:not([class*='lui-']), button:not([class*='lui-']), summary):focus-visible {
   outline: 2px solid var(--site-accent-bright);
   outline-offset: 3px;
 }
@@ -97,13 +97,13 @@ button:not([class*='leverui-']) {
   text-decoration-color: currentColor;
 }
 /* Unlayered site rules would override Prose's layered typography, so leave its content alone. */
-:is(h1, h2, h3, p):not(:where(.leverui-prose *)) {
+:is(h1, h2, h3, p):not(:where(.lui-prose *)) {
   margin-top: 0;
 }
-:is(h1, h2, h3):not(:where(.leverui-prose *)) {
+:is(h1, h2, h3):not(:where(.lui-prose *)) {
   letter-spacing: -0.045em;
 }
-em:not(.leverui-em, .leverui-prose *) {
+em:not(.lui-em, .lui-prose *) {
   font-family: Georgia, serif;
   font-weight: 400;
   color: var(--site-fg);

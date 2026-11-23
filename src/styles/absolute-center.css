@@ -7,7 +7,7 @@
     --lui-private-absolute-center-inline-translate: 50%;
   }
 
-  .leverui-absolute-center:not([data-unstyled]) {
+  .lui-absolute-center:not([data-unstyled]) {
     position: absolute;
     display: flex;
     align-items: center;

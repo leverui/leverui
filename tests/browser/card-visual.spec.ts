@@ -5,22 +5,20 @@ async function verifiesCardVisualCss({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=content-card-visual--states');
   const card = page.getByTestId('card-visual-default');
   await expect(card).toBeVisible({ timeout: 45_000 });
-  await expect(card).not.toHaveAttribute('data-leverui-private-style-runtime');
-  await expect(card).toHaveClass(/(?:^|\s)leverui-card__root(?:\s|$)/);
+  await expect(card).not.toHaveAttribute('data-lui-private-style-runtime');
+  await expect(card).toHaveClass(/(?:^|\s)lui-card__root(?:\s|$)/);
   await expect(page.getByTestId('card-visual-header')).toHaveClass(
-    /(?:^|\s)leverui-card__header(?:\s|$)/,
+    /(?:^|\s)lui-card__header(?:\s|$)/,
   );
-  await expect(page.getByTestId('card-visual-body')).toHaveClass(
-    /(?:^|\s)leverui-card__body(?:\s|$)/,
-  );
+  await expect(page.getByTestId('card-visual-body')).toHaveClass(/(?:^|\s)lui-card__body(?:\s|$)/);
   await expect(page.getByTestId('card-visual-footer')).toHaveClass(
-    /(?:^|\s)leverui-card__footer(?:\s|$)/,
+    /(?:^|\s)lui-card__footer(?:\s|$)/,
   );
   await expect(page.getByTestId('card-visual-title')).toHaveClass(
-    /(?:^|\s)leverui-card__title(?:\s|$)/,
+    /(?:^|\s)lui-card__title(?:\s|$)/,
   );
   await expect(page.getByTestId('card-visual-description')).toHaveClass(
-    /(?:^|\s)leverui-card__description(?:\s|$)/,
+    /(?:^|\s)lui-card__description(?:\s|$)/,
   );
   await expect(card).toHaveCSS('display', 'flex');
   await expect(card).toHaveCSS('position', 'relative');

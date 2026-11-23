@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-radio-card__item:not([data-unstyled]) {
+  .lui-radio-card__item:not([data-unstyled]) {
     &[data-variant='surface'] {
       --lui-private-radio-card-border-width: 1px;
       --lui-private-radio-card-border-color: var(--lui-colors-border);
@@ -31,19 +31,19 @@
     }
   }
 
-  .leverui-radio-card__itemControl:not([data-unstyled])[data-state='checked'] {
+  .lui-radio-card__itemControl:not([data-unstyled])[data-state='checked'] {
     background-color: var(--lui-private-radio-card-checked-control-background, transparent);
     color: var(--lui-private-radio-card-checked-control-color, inherit);
   }
 
-  .leverui-radio-card__itemIndicator.leverui-radiomark:not([data-unstyled]):is(
+  .lui-radio-card__itemIndicator.lui-radiomark:not([data-unstyled]):is(
       [data-variant='outline'],
       [data-variant='inverted']
     ):not([data-checked]) {
     --lui-private-radiomark-border: var(--lui-colors-border);
   }
 
-  .leverui-radio-card__itemControl:not([data-unstyled])[data-disabled] {
+  .lui-radio-card__itemControl:not([data-unstyled])[data-disabled] {
     background-color: var(--lui-private-radio-card-disabled-control-background);
   }
 }

@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-button:not([data-unstyled]) {
+  .lui-button:not([data-unstyled]) {
     display: inline-flex;
     appearance: none;
     align-items: center;
@@ -21,17 +21,17 @@
     transition-duration: var(--lui-durations-moderate);
   }
 
-  .leverui-button:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
+  .lui-button:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
     outline: 2px solid var(--lui-colors-color-palette-focus-ring);
     outline-offset: 2px;
   }
 
-  .leverui-button:not([data-unstyled]):is(:disabled, [data-disabled], [aria-disabled='true']) {
+  .lui-button:not([data-unstyled]):is(:disabled, [data-disabled], [aria-disabled='true']) {
     opacity: 0.5;
     cursor: var(--lui-cursor-disabled);
   }
 
-  .leverui-button:not([data-unstyled]) :is(svg, [data-leverui-icon]) {
+  .lui-button:not([data-unstyled]) :is(svg, [data-lui-icon]) {
     flex-shrink: 0;
   }
 }

@@ -71,8 +71,8 @@ async function verifiesSkipNavCss({ page }: { page: Page }): Promise<void> {
   await expect(page.locator('a[href="#unstyled-main"]')).toHaveCSS('position', 'static');
   await expect(page.locator('a[href="#native-style-main"]')).toHaveCSS('top', '12px');
   await expect(page.locator('a[href="#unstyled-native-main"]')).toHaveCSS('position', 'relative');
-  await expect(defaultLink).toHaveClass(/leverui-skip-nav/);
-  await expect(page.locator('#default-main')).toHaveClass(/leverui-skip-nav-content/);
+  await expect(defaultLink).toHaveClass(/lui-skip-nav/);
+  await expect(page.locator('#default-main')).toHaveClass(/lui-skip-nav-content/);
 }
 
 test('Skip Nav defaults and consumer overrides work without scripts', verifiesSkipNavCss);

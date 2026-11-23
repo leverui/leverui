@@ -1,6 +1,6 @@
 @layer leverui.recipes {
-  .leverui-bar-chart:not([data-unstyled]) {
-    .leverui-bar-chart__legend {
+  .lui-bar-chart:not([data-unstyled]) {
+    .lui-bar-chart__legend {
       position: absolute;
       bottom: 3px;
       left: 0;
@@ -13,7 +13,7 @@
       color: var(--lui-bar-chart-legend-color, var(--lui-colors-fg-muted));
     }
 
-    .leverui-bar-chart__legend[data-placement='top-right'] {
+    .lui-bar-chart__legend[data-placement='top-right'] {
       top: 5px;
       right: 5px;
       bottom: auto;
@@ -24,20 +24,20 @@
       gap: var(--lui-bar-chart-side-legend-gap, 8px);
     }
 
-    .leverui-bar-chart__legend-item {
+    .lui-bar-chart__legend-item {
       display: inline-flex;
       align-items: center;
       gap: var(--lui-bar-chart-legend-item-gap, 4px);
     }
 
-    .leverui-bar-chart__legend-swatch {
+    .lui-bar-chart__legend-swatch {
       width: var(--lui-bar-chart-legend-swatch-size, 8px);
       height: var(--lui-bar-chart-legend-swatch-size, 8px);
       border-radius: var(--lui-bar-chart-legend-swatch-radius, 2px);
       background: var(--lui-private-bar-chart-swatch);
     }
 
-    .leverui-bar-chart__tooltip {
+    .lui-bar-chart__tooltip {
       position: absolute;
       top: 5px;
       right: 5px;

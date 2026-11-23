@@ -15,7 +15,7 @@ export function RadioCardComposition(props: RadioCardStoryProps = {}): JSX.Eleme
   return (
     <RadioCard.Root
       defaultValue="next"
-      class="leverui-radio-card-composition"
+      class="lui-radio-card-composition"
       data-testid={props.testId}
     >
       <RadioCard.Label>How well do you know SolidJS?</RadioCard.Label>

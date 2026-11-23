@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-command__item:not([data-unstyled]) {
+  .lui-command__item:not([data-unstyled]) {
     position: relative;
     user-select: none;
     display: flex;
@@ -21,7 +21,7 @@
     line-height: var(--lui-private-command-result-line-height, 1.25rem);
   }
 
-  .leverui-command__item:not([data-unstyled]) svg {
+  .lui-command__item:not([data-unstyled]) svg {
     width: var(
       --lui-command-indicator-size,
       var(--lui-private-command-indicator-size, var(--lui-sizes-4))
@@ -34,7 +34,7 @@
     color: var(--lui-colors-fg-muted);
   }
 
-  .leverui-command__itemText:not([data-unstyled]) {
+  .lui-command__itemText:not([data-unstyled]) {
     flex: 1;
     min-width: 0;
     overflow: hidden;
@@ -42,13 +42,13 @@
     white-space: nowrap;
   }
 
-  .leverui-command__itemText:not([data-unstyled]) mark {
+  .lui-command__itemText:not([data-unstyled]) mark {
     background: transparent;
     color: inherit;
     font-weight: var(--lui-font-weights-semibold);
   }
 
-  .leverui-command__itemCommand:not([data-unstyled]) {
+  .lui-command__itemCommand:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -69,8 +69,7 @@
     white-space: nowrap;
   }
 
-  .leverui-command__itemCommand:not([data-unstyled])
-    ~ .leverui-command__itemCommand:not([data-unstyled]) {
+  .lui-command__itemCommand:not([data-unstyled]) ~ .lui-command__itemCommand:not([data-unstyled]) {
     margin-inline-start: calc(
       var(--lui-spacing-1) - var(--lui-command-item-gap, var(--lui-private-command-item-gap))
     );

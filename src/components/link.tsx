@@ -58,7 +58,7 @@ function LinkRoot(props: LinkRootProps): JSX.Element {
       'data-variant-lg': variants().lg,
       'data-variant-xl': variants().xl,
       'data-variant-2xl': variants()['2xl'],
-      'data-leverui-color-palette': local.colorPalette,
+      'data-lui-color-palette': local.colorPalette,
       'data-unstyled': local.unstyled ? '' : undefined,
       ref: attachNode,
     }),

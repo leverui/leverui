@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-list__root:not([data-unstyled]) {
+    .lui-list__root:not([data-unstyled]) {
       &[data-variant-sm='marker'] {
         --lui-private-list-item-display: list-item;
         --lui-private-list-variant-align: normal;
@@ -25,7 +25,7 @@
     }
   }
   @media (min-width: 768px) {
-    .leverui-list__root:not([data-unstyled]) {
+    .lui-list__root:not([data-unstyled]) {
       &[data-variant-md='marker'] {
         --lui-private-list-item-display: list-item;
         --lui-private-list-variant-align: normal;
@@ -50,7 +50,7 @@
     }
   }
   @media (min-width: 1024px) {
-    .leverui-list__root:not([data-unstyled]) {
+    .lui-list__root:not([data-unstyled]) {
       &[data-variant-lg='marker'] {
         --lui-private-list-item-display: list-item;
         --lui-private-list-variant-align: normal;
@@ -75,7 +75,7 @@
     }
   }
   @media (min-width: 1280px) {
-    .leverui-list__root:not([data-unstyled]) {
+    .lui-list__root:not([data-unstyled]) {
       &[data-variant-xl='marker'] {
         --lui-private-list-item-display: list-item;
         --lui-private-list-variant-align: normal;
@@ -100,7 +100,7 @@
     }
   }
   @media (min-width: 1536px) {
-    .leverui-list__root:not([data-unstyled]) {
+    .lui-list__root:not([data-unstyled]) {
       &[data-variant-2xl='marker'] {
         --lui-private-list-item-display: list-item;
         --lui-private-list-variant-align: normal;

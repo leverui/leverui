@@ -58,7 +58,7 @@ function verifiesQuoteChildComposition(): void {
   const quote = screen.getByTestId('child-quote');
   expect(quote.tagName).toBe('Q');
   expect(quote.getAttribute('cite')).toBe('https://example.com/child-source');
-  expect(quote.className).toContain('leverui-quote');
+  expect(quote.className).toContain('lui-quote');
   expect(parentElement).toBe(quote);
   expect(childElement).toBe(quote);
   fireEvent.click(quote);

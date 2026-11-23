@@ -87,8 +87,8 @@ export function EditableName() {
 
 Import the Lever UI stylesheet before your own CSS.
 
-Classes: `.leverui-editable__root`, `.leverui-editable__preview`,
-`.leverui-editable__input`, `.leverui-editable__textarea`. The textarea also has
+Classes: `.lui-editable__root`, `.lui-editable__preview`,
+`.lui-editable__input`, `.lui-editable__textarea`. The textarea also has
 the input class.
 
 Attributes: `data-size` on the root, `data-size-*` for sizes set per screen

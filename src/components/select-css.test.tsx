@@ -49,11 +49,11 @@ function verifiesSelectAppearanceHooks(): void {
   );
   const root = screen.getByTestId('root');
   const trigger = screen.getByTestId('trigger');
-  expect(root).toHaveClass('leverui-select__root', 'consumer-select');
+  expect(root).toHaveClass('lui-select__root', 'consumer-select');
   expect(root).toHaveAttribute('data-size', 'xs');
-  expect(trigger).toHaveClass('leverui-select__trigger', 'consumer-trigger');
+  expect(trigger).toHaveClass('lui-select__trigger', 'consumer-trigger');
   expect(trigger).toHaveAttribute('data-variant', 'outline');
-  expect(trigger).toHaveAttribute('data-leverui-color-palette', 'red');
+  expect(trigger).toHaveAttribute('data-lui-color-palette', 'red');
   expect(root).toHaveStyle({ width: '280px' });
   setLarge(true);
   flush();
@@ -63,7 +63,7 @@ function verifiesSelectAppearanceHooks(): void {
   expect(root).toHaveAttribute('data-size', 'sm');
   expect(trigger).toHaveAttribute('data-size-md', 'lg');
   expect(trigger).toHaveAttribute('data-variant', 'ghost');
-  expect(trigger).toHaveAttribute('data-leverui-color-palette', 'blue');
+  expect(trigger).toHaveAttribute('data-lui-color-palette', 'blue');
   expect(trigger).toHaveAttribute('data-unstyled', '');
 }
 

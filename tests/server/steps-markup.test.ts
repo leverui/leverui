@@ -61,8 +61,8 @@ function renderServerSteps(): string {
 function verifiesServerMarkup(): void {
   const markup = renderServerSteps();
   expect(markup).toContain('aria-label="Setup progress"');
-  expect(markup).toContain('leverui-steps__root');
-  expect(markup).toContain('leverui-steps__indicator');
+  expect(markup).toContain('lui-steps__root');
+  expect(markup).toContain('lui-steps__indicator');
   expect(markup).toContain('Setup details');
 }
 

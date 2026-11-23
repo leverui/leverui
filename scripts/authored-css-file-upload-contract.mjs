@@ -3,7 +3,7 @@ export const fileUploadContracts = [
   {
     family: 'file-upload',
     required: [
-      '.leverui-file-upload__root:not([data-unstyled])',
+      '.lui-file-upload__root:not([data-unstyled])',
       ...[
         'label',
         'dropzone',
@@ -17,7 +17,7 @@ export const fileUploadContracts = [
         'itemPreview',
       ].map(
         /** Keep every styled public part in the bundled stylesheet. */
-        (slot) => `.leverui-file-upload__${slot}:not([data-unstyled])`,
+        (slot) => `.lui-file-upload__${slot}:not([data-unstyled])`,
       ),
       '[data-dragging]',
       ':focus-visible',

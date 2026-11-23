@@ -2,12 +2,12 @@ export const checkboxCardContracts = [
   {
     family: 'checkbox-card',
     required: [
-      '.leverui-checkbox-card:not([data-unstyled])',
-      '.leverui-checkbox-card__control',
-      '.leverui-checkbox-card__content',
-      '.leverui-checkbox-card__label',
-      '.leverui-checkbox-card__description',
-      '.leverui-checkbox-card__addon',
+      '.lui-checkbox-card:not([data-unstyled])',
+      '.lui-checkbox-card__control',
+      '.lui-checkbox-card__content',
+      '.lui-checkbox-card__label',
+      '.lui-checkbox-card__description',
+      '.lui-checkbox-card__addon',
       '--lui-checkbox-card-radius',
       '--lui-checkbox-card-control-padding',
       '--lui-checkbox-card-control-gap',

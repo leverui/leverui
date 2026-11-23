@@ -93,7 +93,7 @@ async function verifiesResponsiveButtonCss({ page }: { page: Page }): Promise<vo
   const markup = renderToString(renderResponsiveButton);
   expect(markup).toContain('data-size-sm="xs"');
   expect(markup).toContain('data-size-2xl="2xl"');
-  expect(markup).not.toContain('data-leverui-private-style-runtime');
+  expect(markup).not.toContain('data-lui-private-style-runtime');
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(`<style>${defaultCss}</style>${markup}`);
   const button = page.locator('#responsive-button');
@@ -117,7 +117,7 @@ async function verifiesResponsiveVariantCss({ page }: { page: Page }): Promise<v
   const markup = renderToString(renderResponsiveVariantButton);
   expect(markup).toContain('data-variant-sm="outline"');
   expect(markup).toContain('data-variant-2xl="plain"');
-  expect(markup).not.toContain('data-leverui-private-style-runtime');
+  expect(markup).not.toContain('data-lui-private-style-runtime');
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(`<style>${defaultCss}</style>${markup}`);
   const button = page.locator('#responsive-variant-button');

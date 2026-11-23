@@ -38,12 +38,12 @@ function renderServerClipboard(): string {
 /** Verify server markup retains values, hooks, and accessible labels. */
 function verifiesServerMarkup(): void {
   const markup = renderServerClipboard();
-  expect(markup).toContain('leverui-clipboard__root');
-  expect(markup).toContain('leverui-clipboard__label');
-  expect(markup).toContain('leverui-clipboard__control');
-  expect(markup).toContain('leverui-clipboard__input');
-  expect(markup).toContain('leverui-clipboard__trigger');
-  expect(markup).toContain('leverui-clipboard__valueText');
+  expect(markup).toContain('lui-clipboard__root');
+  expect(markup).toContain('lui-clipboard__label');
+  expect(markup).toContain('lui-clipboard__control');
+  expect(markup).toContain('lui-clipboard__input');
+  expect(markup).toContain('lui-clipboard__trigger');
+  expect(markup).toContain('lui-clipboard__valueText');
   expect(markup).toContain('Server copy value');
   expect(markup).not.toMatch(/\s(?:recipe|unstyled|timeout|copied)=/);
 }

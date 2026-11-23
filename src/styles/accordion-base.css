@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-accordion__root:not([data-unstyled]) {
+  .lui-accordion__root:not([data-unstyled]) {
     width: 100%;
     --lui-private-accordion-radius: var(--lui-radii-l2);
     border-style: solid;
@@ -9,7 +9,7 @@
     overflow: var(--lui-private-accordion-root-overflow, visible);
   }
 
-  .leverui-accordion__root:not([data-unstyled]) .leverui-accordion__item:not([data-unstyled]) {
+  .lui-accordion__root:not([data-unstyled]) .lui-accordion__item:not([data-unstyled]) {
     overflow-anchor: none;
     border-style: solid;
     border-bottom-width: var(--lui-private-accordion-item-border-bottom-width, 0);
@@ -17,19 +17,18 @@
     border-radius: var(--lui-private-accordion-item-radius, 0);
   }
 
-  .leverui-accordion__root:not([data-unstyled])
-    .leverui-accordion__item:not([data-unstyled])
-    + .leverui-accordion__item:not([data-unstyled]) {
+  .lui-accordion__root:not([data-unstyled])
+    .lui-accordion__item:not([data-unstyled])
+    + .lui-accordion__item:not([data-unstyled]) {
     border-top-width: var(--lui-private-accordion-item-border-top-width, 0);
   }
 
-  .leverui-accordion__root:not([data-unstyled])
-    .leverui-accordion__item:not([data-unstyled])[data-state='open'] {
+  .lui-accordion__root:not([data-unstyled])
+    .lui-accordion__item:not([data-unstyled])[data-state='open'] {
     background: var(--lui-private-accordion-open-background, transparent);
   }
 
-  .leverui-accordion__root:not([data-unstyled])
-    .leverui-accordion__itemTrigger:not([data-unstyled]) {
+  .lui-accordion__root:not([data-unstyled]) .lui-accordion__itemTrigger:not([data-unstyled]) {
     display: flex;
     align-items: center;
     text-align: start;
@@ -44,28 +43,24 @@
     line-height: var(--lui-private-accordion-line-height);
   }
 
-  .leverui-accordion__root:not([data-unstyled])
-    .leverui-accordion__itemContent:not([data-unstyled]) {
+  .lui-accordion__root:not([data-unstyled]) .lui-accordion__itemContent:not([data-unstyled]) {
     overflow: hidden;
     border-radius: var(--lui-private-accordion-radius);
     padding-inline: var(--lui-private-accordion-content-padding-x, 0);
   }
 
-  .leverui-accordion__root:not([data-unstyled]) .leverui-accordion__itemBody:not([data-unstyled]) {
+  .lui-accordion__root:not([data-unstyled]) .lui-accordion__itemBody:not([data-unstyled]) {
     padding-top: var(--lui-private-accordion-padding-y);
     padding-bottom: calc(var(--lui-private-accordion-padding-y) * 2);
   }
 
-  .leverui-accordion__root:not([data-unstyled])
-    .leverui-accordion__itemIndicator:not([data-unstyled]) {
+  .lui-accordion__root:not([data-unstyled]) .lui-accordion__itemIndicator:not([data-unstyled]) {
     transition: rotate 0.2s;
     transform-origin: center;
     color: var(--lui-colors-fg-subtle);
   }
 
-  .leverui-accordion__root:not([data-unstyled])
-    .leverui-accordion__itemIndicator:not([data-unstyled])
-    svg {
+  .lui-accordion__root:not([data-unstyled]) .lui-accordion__itemIndicator:not([data-unstyled]) svg {
     display: block;
     width: 1.2em;
     height: 1.2em;

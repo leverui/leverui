@@ -50,7 +50,7 @@ function verifiesMixedChild(): void {
 
   const button = screen.getByTestId('owned-mix');
   expect(button).toBe(received);
-  expect(button.classList.contains('leverui-color-swatch')).toBe(true);
+  expect(button.classList.contains('lui-color-swatch')).toBe(true);
   expect(button.classList.contains('owned-mix')).toBe(true);
   expect(button.getAttribute('data-value')).toBe('transparent');
   expect(button.querySelectorAll('[data-mix-cell]')).toHaveLength(2);

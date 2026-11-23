@@ -1,18 +1,18 @@
 @layer leverui.recipes {
-  .leverui-tabs__root:not([data-unstyled]) {
+  .lui-tabs__root:not([data-unstyled]) {
     &[data-variant='line'] {
-      .leverui-tabs__list:not([data-unstyled]) {
+      .lui-tabs__list:not([data-unstyled]) {
         --lui-private-tabs-variant-display: flex;
         border-color: var(--lui-colors-border);
         border-bottom-width: 1px;
       }
 
-      &[data-orientation='vertical'] .leverui-tabs__list:not([data-unstyled]) {
+      &[data-orientation='vertical'] .lui-tabs__list:not([data-unstyled]) {
         border-bottom-width: 0;
         border-inline-end-width: 1px;
       }
 
-      .leverui-tabs__trigger:not([data-unstyled]) {
+      .lui-tabs__trigger:not([data-unstyled]) {
         color: var(--lui-colors-fg-muted);
 
         &[data-selected] {
@@ -25,7 +25,7 @@
       }
 
       &:not([data-orientation='vertical'])
-        .leverui-tabs__trigger:not([data-unstyled])[data-selected]::before {
+        .lui-tabs__trigger:not([data-unstyled])[data-selected]::before {
         content: '';
         position: absolute;
         bottom: -1px;
@@ -35,7 +35,7 @@
       }
 
       &[data-orientation='vertical']
-        .leverui-tabs__trigger:not([data-unstyled])[data-selected]::before {
+        .lui-tabs__trigger:not([data-unstyled])[data-selected]::before {
         content: '';
         position: absolute;
         inset-inline-end: -1px;

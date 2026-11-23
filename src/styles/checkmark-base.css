@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-checkmark:not([data-unstyled]) {
+  .lui-checkmark:not([data-unstyled]) {
     --lui-private-checkmark-base-background: transparent;
     --lui-private-checkmark-active-background: transparent;
     --lui-private-checkmark-base-border: transparent;

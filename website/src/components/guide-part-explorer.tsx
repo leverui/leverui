@@ -8,7 +8,7 @@ const activeAttribute = 'data-guide-explorer-active';
 
 /** Resolve the CSS selector that identifies one public part. */
 function partSelector(config: GuideExplorerConfig, slug: string, part: string): string {
-  return config.selectors?.[part] ?? `.leverui-${slug}__${part}`;
+  return config.selectors?.[part] ?? `.lui-${slug}__${part}`;
 }
 
 /** Show a copyable CSS hook for the selected public part. */

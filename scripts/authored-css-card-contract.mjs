@@ -4,7 +4,7 @@ export const cardContract = {
   required: [
     ...['root', 'header', 'body', 'footer', 'title', 'description'].map(
       /** Keep each public Card part backed by a stable CSS hook. */
-      (part) => `.leverui-card__${part}`,
+      (part) => `.lui-card__${part}`,
     ),
     ...['sm', 'md', 'lg'].map(
       /** Require every authored Card root size. */

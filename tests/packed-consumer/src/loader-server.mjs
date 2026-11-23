@@ -15,5 +15,5 @@ function renderInstalledLoader() {
 }
 
 const markup = renderInstalledLoader();
-assert.match(markup, /leverui-loader/);
-assert.match(markup, /leverui-loader-overlay/);
+assert.match(markup, /lui-loader/);
+assert.match(markup, /lui-loader-overlay/);

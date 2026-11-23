@@ -151,7 +151,7 @@ sets the text direction and locale for the date inputs inside it.
 
 Load the Lever UI stylesheet before your own CSS. `size` and `variant` are
 responsive. Each part has a class, such as
-`.leverui-date-input__segmentGroup`. Style the classes or set
+`.lui-date-input__segmentGroup`. Style the classes or set
 `--lui-date-input-root-gap`, `--lui-date-input-border-color`,
 `--lui-date-input-focus-color`, `--lui-date-input-error-color`, and
 `--lui-date-input-segment-focus-background`.

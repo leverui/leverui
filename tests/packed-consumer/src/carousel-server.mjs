@@ -34,6 +34,6 @@ function renderCarousel() {
 
 const markup = renderToString(renderCarousel);
 assert.match(markup, /aria-roledescription="carousel"/);
-assert.match(markup, /leverui-carousel__itemGroup/);
+assert.match(markup, /lui-carousel__itemGroup/);
 assert.match(markup, /First/);
 assert.match(markup, /1 \/ 2/);

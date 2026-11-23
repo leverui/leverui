@@ -30,7 +30,7 @@ function verifiesNativeAddon(): void {
   expect(addon).toBe(received);
   expect(addon.tagName).toBe('DIV');
   expect(addon.textContent).toBe('https://');
-  expect(addon.className).toContain('leverui-input-addon');
+  expect(addon.className).toContain('lui-input-addon');
   expect(addon.hasAttribute('size')).toBe(false);
   expect(addon.hasAttribute('variant')).toBe(false);
   expect(addon).toHaveAttribute('data-size', 'lg');
@@ -68,7 +68,7 @@ function verifiesReactiveStyles(): void {
   expect(screen.getByTestId('reactive-addon')).toBe(addon);
   expect(addon.className).toBe(firstClass);
   expect(addon).toHaveAttribute('data-variant', 'flushed');
-  expect(screen.getByTestId('unstyled-addon').className).toContain('leverui-input-addon');
+  expect(screen.getByTestId('unstyled-addon').className).toContain('lui-input-addon');
 }
 
 test('Input Addon updates CSS variants without replacing the node', verifiesReactiveStyles);
@@ -106,7 +106,7 @@ function verifiesSelectedElement(): void {
   expect(screen.getByTestId('section-addon')).toBe(section);
   expect(section?.tagName).toBe('SECTION');
   expect(screen.getByTestId('child-addon').tagName).toBe('STRONG');
-  expect(screen.getByTestId('child-addon').className).toContain('leverui-input-addon');
+  expect(screen.getByTestId('child-addon').className).toContain('lui-input-addon');
 }
 
 test('Input Addon supports selected native elements and Solid children', verifiesSelectedElement);

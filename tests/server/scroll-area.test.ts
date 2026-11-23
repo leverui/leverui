@@ -43,7 +43,7 @@ function verifiesServerScrollArea(): void {
   expect(markup).toContain('data-scroll-area-viewport');
   expect(markup).toContain('data-scroll-area-content');
   expect(markup).toContain('Server scroll content');
-  expect(markup).toContain('leverui-scroll-area__root');
+  expect(markup).toContain('lui-scroll-area__root');
   expect(markup).toContain('data-size="md"');
   expect(markup).toContain('data-variant="hover"');
 }

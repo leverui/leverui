@@ -50,7 +50,7 @@ function verifiesServerStat(): void {
   expect(markup).toContain('<svg');
   expect(markup).toContain('stat__valueText');
   expect(markup).toContain('data-size="lg"');
-  expect(markup).not.toContain('data-leverui-private-style-runtime');
+  expect(markup).not.toContain('data-lui-private-style-runtime');
   expect(markup).not.toMatch(/<dl[^>]*\s(?:size|recipe|css|unstyled)=/);
 }
 

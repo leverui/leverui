@@ -15,9 +15,9 @@ const defaultCss = await readFile(new URL('../../dist/styles.css', import.meta.u
 /** Verify authored radial presentation, local overrides, and reactive geometry. */
 async function verifiesRadialCss({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=internal-charts-radial-css--basic');
-  const radial = page.locator('.leverui-radial-chart');
-  const bar = page.locator('.leverui-radial-bar-chart');
-  const sector = radial.locator('.leverui-radial-chart__sector').first();
+  const radial = page.locator('.lui-radial-chart');
+  const bar = page.locator('.lui-radial-bar-chart');
+  const sector = radial.locator('.lui-radial-chart__sector').first();
   await expect(radial).toBeVisible({ timeout: 30_000 });
   await expect(bar).toBeVisible();
   await expect(radial).toHaveAttribute('id', 'radial-native-root');
@@ -27,17 +27,14 @@ async function verifiesRadialCss({ page }: { page: Page }): Promise<void> {
   await expect(bar).toHaveAttribute('data-consumer', 'rings');
   await expect(radial).toHaveAttribute('data-chart-shape', 'donut');
   await expect(sector).toHaveCSS('stroke', 'rgb(37, 99, 235)');
-  await expect(radial.locator('.leverui-radial-chart__label').first()).toHaveCSS(
-    'font-size',
-    '14px',
-  );
-  await expect(radial.locator('.leverui-radial-chart__centerTitle')).toHaveCSS('font-size', '28px');
-  await expect(radial.locator('.leverui-radial-chart__legend')).toHaveCSS('gap', '18px');
-  await expect(bar.locator('.leverui-radial-bar-chart__track').first()).toHaveCSS(
+  await expect(radial.locator('.lui-radial-chart__label').first()).toHaveCSS('font-size', '14px');
+  await expect(radial.locator('.lui-radial-chart__centerTitle')).toHaveCSS('font-size', '28px');
+  await expect(radial.locator('.lui-radial-chart__legend')).toHaveCSS('gap', '18px');
+  await expect(bar.locator('.lui-radial-bar-chart__track').first()).toHaveCSS(
     'fill',
     'rgb(225, 231, 236)',
   );
-  await expect(bar.locator('.leverui-radial-bar-chart__legend')).toHaveCSS('gap', '20px');
+  await expect(bar.locator('.lui-radial-bar-chart__legend')).toHaveCSS('gap', '20px');
   await radial.evaluate(
     /** Mark the chart root before its reactive choice changes. */
     (element) => element.setAttribute('data-original-node', 'true'),
@@ -47,11 +44,11 @@ async function verifiesRadialCss({ page }: { page: Page }): Promise<void> {
     (element) => element.setAttribute('data-original-node', 'true'),
   );
   await page.getByTestId('radial-point-labels').click();
-  await expect(radial.locator('.leverui-radial-chart__labels')).toHaveAttribute(
+  await expect(radial.locator('.lui-radial-chart__labels')).toHaveAttribute(
     'data-placement',
     'point',
   );
-  await expect(radial.locator('.leverui-radial-chart__labelLine').first()).toHaveCSS(
+  await expect(radial.locator('.lui-radial-chart__labelLine').first()).toHaveCSS(
     'visibility',
     'visible',
   );
@@ -67,7 +64,7 @@ async function verifiesRadialCss({ page }: { page: Page }): Promise<void> {
   await sector.dispatchEvent('click');
   await expect(radial).toHaveAttribute('data-clicked', 'true');
   await bar.focus();
-  await expect(bar.locator('.leverui-chart-tooltip')).toBeVisible();
+  await expect(bar.locator('.lui-chart-tooltip')).toBeVisible();
   await bar.press('ArrowRight');
   await expect(bar).toHaveAttribute('data-key', 'ArrowRight');
   await bar.evaluate(
@@ -77,7 +74,7 @@ async function verifiesRadialCss({ page }: { page: Page }): Promise<void> {
   await bar.dispatchEvent('pointerdown');
   await bar.dispatchEvent('pointerleave');
   await bar.focus();
-  await expect(bar.locator('.leverui-chart-tooltip')).toBeVisible();
+  await expect(bar.locator('.lui-chart-tooltip')).toBeVisible();
 }
 
 test('radial charts use authored CSS with reactive native values', verifiesRadialCss);
@@ -85,14 +82,14 @@ test('radial charts use authored CSS with reactive native values', verifiesRadia
 /** Keep consumer keyboard semantics when radial tooltip navigation is disabled. */
 async function verifiesPassiveRadialKeys({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=internal-charts-radial-css--passive');
-  const bar = page.locator('.leverui-radial-bar-chart');
+  const bar = page.locator('.lui-radial-bar-chart');
   await expect(bar).toHaveAttribute('aria-label', 'Passive rings');
   await expect(bar).toHaveAttribute('role', 'region');
   await expect(bar).toHaveAttribute('tabindex', '0');
   await bar.focus();
   await bar.press('ArrowRight');
   await expect(bar).toHaveAttribute('data-prevented', 'false');
-  await expect(bar.locator('.leverui-chart-tooltip')).toHaveCount(0);
+  await expect(bar.locator('.lui-chart-tooltip')).toHaveCount(0);
 }
 
 test('passive radial bars preserve native keyboard behavior', verifiesPassiveRadialKeys);
@@ -100,26 +97,26 @@ test('passive radial bars preserve native keyboard behavior', verifiesPassiveRad
 /** Keep a CSS-scaled SVG and its HTML tooltip in the same display coordinate space. */
 async function verifiesResponsiveRadialTooltip({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=internal-charts-radial-css--responsive');
-  const radial = page.locator('.leverui-radial-chart');
+  const radial = page.locator('.lui-radial-chart');
   const svg = radial.locator('svg');
   await expect(radial).toHaveCSS('width', '150px');
   await expect(svg).toHaveCSS('width', '150px');
   const box = await svg.boundingBox();
   expect(box).not.toBeNull();
   await radial
-    .locator('.leverui-radial-chart__sector')
+    .locator('.lui-radial-chart__sector')
     .first()
     .dispatchEvent('pointermove', {
       clientX: (box?.x ?? 0) + 20,
       clientY: (box?.y ?? 0) + 20,
     });
-  await expect(radial.locator('.leverui-chart-tooltip')).toHaveCSS('left', '0px');
+  await expect(radial.locator('.lui-chart-tooltip')).toHaveCSS('left', '0px');
   await page.getByTestId('radial-widen').dispatchEvent('click');
   await expect(radial).toHaveCSS('width', '300px');
-  await expect(radial.locator('.leverui-chart-tooltip')).toHaveCSS('left', '50px');
+  await expect(radial.locator('.lui-chart-tooltip')).toHaveCSS('left', '50px');
   await page.getByTestId('radial-grow').dispatchEvent('click');
   await expect(svg).toHaveAttribute('width', '500');
-  await expect(radial.locator('.leverui-chart-tooltip')).toHaveCSS('left', '50px');
+  await expect(radial.locator('.lui-chart-tooltip')).toHaveCSS('left', '50px');
 }
 
 test('responsive radial tooltip follows displayed SVG width', verifiesResponsiveRadialTooltip);
@@ -150,30 +147,27 @@ async function verifiesStaticRadialCss({ browser }: { browser: Browser }): Promi
   const context = await browser.newContext({ javaScriptEnabled: false });
   try {
     const page = await context.newPage();
-    const consumerCss = `.leverui-radial-chart { --lui-radial-chart-sector-stroke: rgb(37, 99, 235); }
-      .leverui-radial-bar-chart { --lui-radial-bar-track-color: rgb(225, 231, 236); }`;
+    const consumerCss = `.lui-radial-chart { --lui-radial-chart-sector-stroke: rgb(37, 99, 235); }
+      .lui-radial-bar-chart { --lui-radial-bar-track-color: rgb(225, 231, 236); }`;
     await page.setContent(
       `<style>${defaultCss}</style><style>${consumerCss}</style><div style="width:140px">${staticRadialMarkup()}</div>`,
     );
-    const radial = page.locator('.leverui-radial-chart');
-    const bar = page.locator('.leverui-radial-bar-chart');
+    const radial = page.locator('.lui-radial-chart');
+    const bar = page.locator('.lui-radial-bar-chart');
     await expect(radial).toHaveCSS('width', '140px');
     await expect(radial.locator('svg')).toHaveCSS('width', '140px');
     await expect(bar).toHaveCSS('width', '140px');
     await expect(bar.locator('svg')).toHaveCSS('width', '140px');
-    await expect(radial.locator('.leverui-radial-chart__sector')).toHaveCSS(
+    await expect(radial.locator('.lui-radial-chart__sector')).toHaveCSS(
       'stroke',
       'rgb(37, 99, 235)',
     );
-    await expect(radial.locator('.leverui-radial-chart__labelLine')).toHaveCSS(
-      'visibility',
-      'visible',
-    );
-    await expect(bar.locator('.leverui-radial-bar-chart__track')).toHaveCSS(
+    await expect(radial.locator('.lui-radial-chart__labelLine')).toHaveCSS('visibility', 'visible');
+    await expect(bar.locator('.lui-radial-bar-chart__track')).toHaveCSS(
       'fill',
       'rgb(225, 231, 236)',
     );
-    await expect(bar.locator('.leverui-radial-bar-chart__label')).toHaveCSS('font-size', '12px');
+    await expect(bar.locator('.lui-radial-bar-chart__label')).toHaveCSS('font-size', '12px');
   } finally {
     await context.close();
   }

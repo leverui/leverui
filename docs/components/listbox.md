@@ -162,7 +162,7 @@ class name.
   --lui-listbox-selected-background: #fef08a;
 }
 
-.my-listbox .leverui-listbox__item {
+.my-listbox .lui-listbox__item {
   border-radius: 0.75rem;
 }
 ```

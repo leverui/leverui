@@ -49,7 +49,7 @@ async function verifiesResponsiveCardCss({ page }: { page: Page }): Promise<void
     () => [renderCard('complete-card'), renderCard('sparse-card', true)],
   );
   expect(markup).toContain('data-variant-2xl="subtle"');
-  expect(markup).not.toContain('data-leverui-private-style-runtime');
+  expect(markup).not.toContain('data-lui-private-style-runtime');
   await page.setContent(`<style>${defaultCss}</style>${markup}`);
   const complete = page.locator('#complete-card');
   const sparse = page.locator('#sparse-card');

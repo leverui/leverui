@@ -53,10 +53,10 @@ async function verifiesFieldsetComposition(): Promise<void> {
   const legend = screen.getByText('Account details');
   expect(receivedRoot).toBe(group);
   expect(group.tagName).toBe('FIELDSET');
-  expect(group.className).toContain('leverui-fieldset__root');
+  expect(group.className).toContain('lui-fieldset__root');
   expect(group.getAttribute('aria-labelledby')).toBe(legend.id);
   expect(screen.getByText('Complete both fields').tagName).toBe('SPAN');
-  expect(group.querySelector('.leverui-fieldset__content')).not.toBeNull();
+  expect(group.querySelector('.lui-fieldset__content')).not.toBeNull();
   await waitFor(
     /** Let the primitive observe the mounted Fieldset helper text. */
     () => expect(group.getAttribute('aria-describedby')).toContain('helper-text'),

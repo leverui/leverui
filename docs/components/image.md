@@ -63,6 +63,6 @@ Also accepts every standard `img` attribute.
 ## Customize with CSS
 
 Import `@leverui/components/styles.css` once, before your own CSS. Set
-`--lui-image-fit` and `--lui-image-position`, or style `.leverui-image`.
+`--lui-image-fit` and `--lui-image-position`, or style `.lui-image`.
 
 No CSS objects or general style props.

@@ -3,11 +3,11 @@ export const progressContracts = [
   {
     family: 'progress',
     required: [
-      '.leverui-progress__root',
-      '.leverui-progress__track',
-      '.leverui-progress__range',
-      '.leverui-progress__label',
-      '.leverui-progress__valueText',
+      '.lui-progress__root',
+      '.lui-progress__track',
+      '.lui-progress__range',
+      '.lui-progress__label',
+      '.lui-progress__valueText',
       "[data-size='xs']",
       "[data-size='xl']",
       "[data-shape='square']",

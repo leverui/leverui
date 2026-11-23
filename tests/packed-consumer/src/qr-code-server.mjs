@@ -34,5 +34,5 @@ assert.match(markup, /<svg[^>]*width="96"/);
 assert.match(markup, /<svg[^>]*height="96"/);
 assert.doesNotMatch(markup, /htmlWidth|htmlHeight|\sas="section"/);
 assert.match(markup, /<path[^>]*d="/);
-assert.match(markup, /leverui-qr-code__root/);
+assert.match(markup, /lui-qr-code__root/);
 assert.doesNotMatch(markup, /<div[^>]*\ssize=/);

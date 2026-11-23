@@ -39,7 +39,7 @@ prop on a swatch wins.
 
 ## Customize with CSS
 
-Classes: `.leverui-color-swatch`, and `.leverui-color-swatch__mix-grid` for the
+Classes: `.lui-color-swatch`, and `.lui-color-swatch__mix-grid` for the
 mix grid.
 
 Attributes: `data-size`, `data-shape`, plus the usual attributes for each

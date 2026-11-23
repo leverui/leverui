@@ -13,7 +13,7 @@ const { Box } = (await import(serverEntry)) as ServerExports;
 const defaultCss = await readFile(new URL('../../dist/styles.css', import.meta.url), 'utf8');
 const consumerCss = `
   :root { --mode-fg: var(--lui-colors-blue-500); }
-  :root[data-leverui-color-mode='dark'] { --mode-fg: var(--lui-colors-red-500); }
+  :root[data-lui-color-mode='dark'] { --mode-fg: var(--lui-colors-red-500); }
   .mode-box { background-color: var(--lui-colors-bg); color: var(--mode-fg); }
 `;
 
@@ -28,17 +28,17 @@ function renderModeExample() {
 
 /** Restore the documented light fallback when no root mode is set. */
 function clearRootMode(): void {
-  document.documentElement.removeAttribute('data-leverui-color-mode');
+  document.documentElement.removeAttribute('data-lui-color-mode');
 }
 
 /** Select dark mode without mounting a JavaScript provider. */
 function setDarkMode(): void {
-  document.documentElement.setAttribute('data-leverui-color-mode', 'dark');
+  document.documentElement.setAttribute('data-lui-color-mode', 'dark');
 }
 
 /** Select explicit light mode without mounting a JavaScript provider. */
 function setLightMode(): void {
-  document.documentElement.setAttribute('data-leverui-color-mode', 'light');
+  document.documentElement.setAttribute('data-lui-color-mode', 'light');
 }
 
 /** Check semantic tokens and consumer CSS across root mode changes. */

@@ -15,7 +15,7 @@ async function verifiesColorSwatchStories({ page }: { page: Page }): Promise<voi
   test.setTimeout(120_000);
   for (const [story, count] of Object.entries(counts)) {
     await page.goto(`/iframe.html?id=components-color-swatch--${story}`);
-    await expect(page.locator('#storybook-root .leverui-color-swatch')).toHaveCount(count, {
+    await expect(page.locator('#storybook-root .lui-color-swatch')).toHaveCount(count, {
       timeout: 45_000,
     });
   }
@@ -24,10 +24,7 @@ async function verifiesColorSwatchStories({ page }: { page: Page }): Promise<voi
 /** Verify the fully transparent value survives rendering. */
 async function verifiesTransparentSwatch({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-color-swatch--with-transparent');
-  await expect(page.locator('.leverui-color-swatch')).toHaveAttribute(
-    'data-value',
-    'rgba(0, 0, 0, 0)',
-  );
+  await expect(page.locator('.lui-color-swatch')).toHaveAttribute('data-value', 'rgba(0, 0, 0, 0)');
 }
 
 test('all seven Color Swatch examples render', verifiesColorSwatchStories);

@@ -47,7 +47,7 @@ async function verifiesDisabledResize({ page }: { page: Page }): Promise<void> {
   const first = page.getByTestId('splitter-disabled-a');
   const trigger = page.getByTestId('splitter-disabled-trigger');
   await expect(trigger).toHaveAttribute('data-disabled', '', { timeout: 30_000 });
-  await expect(trigger.locator('.leverui-splitter__resizeTriggerIndicator')).toHaveCSS(
+  await expect(trigger.locator('.lui-splitter__resizeTriggerIndicator')).toHaveCSS(
     'visibility',
     'hidden',
   );

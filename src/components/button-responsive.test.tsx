@@ -27,14 +27,14 @@ function verifiesResponsiveSizeUpdates(): void {
   const button = screen.getByTestId('responsive-button');
   expect(button.getAttribute('data-size')).toBe('sm');
   expect(button.getAttribute('data-size-md')).toBe('xl');
-  expect(button.hasAttribute('data-leverui-private-style-runtime')).toBe(false);
+  expect(button.hasAttribute('data-lui-private-style-runtime')).toBe(false);
 
   setLarge(true);
   flush();
   expect(screen.getByTestId('responsive-button')).toBe(button);
   expect(button.getAttribute('data-size')).toBe('lg');
   expect(button.getAttribute('data-size-md')).toBe('2xl');
-  expect(button.hasAttribute('data-leverui-private-style-runtime')).toBe(false);
+  expect(button.hasAttribute('data-lui-private-style-runtime')).toBe(false);
 }
 
 it('updates responsive Button choices on the native CSS path', verifiesResponsiveSizeUpdates);
@@ -64,7 +64,7 @@ function verifiesResponsiveProviderDefaults(): void {
   flush();
   expect(screen.getByTestId('inherited-responsive-button')).toBe(button);
   expect(button.getAttribute('data-size-sm')).toBe('2xl');
-  expect(button.hasAttribute('data-leverui-private-style-runtime')).toBe(false);
+  expect(button.hasAttribute('data-lui-private-style-runtime')).toBe(false);
 }
 
 it(
@@ -95,14 +95,14 @@ function verifiesResponsiveVariantUpdates(): void {
   const button = screen.getByTestId('responsive-variant-button');
   expect(button.getAttribute('data-variant')).toBe('surface');
   expect(button.getAttribute('data-variant-md')).toBe('solid');
-  expect(button.hasAttribute('data-leverui-private-style-runtime')).toBe(false);
+  expect(button.hasAttribute('data-lui-private-style-runtime')).toBe(false);
 
   setOutlined(true);
   flush();
   expect(screen.getByTestId('responsive-variant-button')).toBe(button);
   expect(button.getAttribute('data-variant')).toBe('outline');
   expect(button.getAttribute('data-variant-md')).toBe('ghost');
-  expect(button.hasAttribute('data-leverui-private-style-runtime')).toBe(false);
+  expect(button.hasAttribute('data-lui-private-style-runtime')).toBe(false);
 }
 
 it('updates responsive Button variants on the native CSS path', verifiesResponsiveVariantUpdates);

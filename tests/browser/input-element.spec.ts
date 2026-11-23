@@ -7,7 +7,7 @@ async function verifiesElementComposition({ page }: { page: Page }): Promise<voi
   const element = page.getByTestId('input-element');
   const container = page.getByTestId('input-element-container');
   await expect(input).toBeVisible({ timeout: 30_000 });
-  await expect(element).toHaveClass(/leverui-input-element/);
+  await expect(element).toHaveClass(/lui-input-element/);
   await expect(element).toHaveText('https://');
   await expect(element).toHaveCSS('position', 'absolute');
   await expect(element).toHaveCSS('pointer-events', 'none');
@@ -30,7 +30,7 @@ async function verifiesElementComposition({ page }: { page: Page }): Promise<voi
   expect(Math.abs(endBox.y - inputBox.y)).toBeLessThan(2);
   await page.mouse.click(endBox.x + endBox.width / 2, endBox.y + endBox.height / 2);
   await expect(input).toBeFocused();
-  await page.addStyleTag({ content: '.leverui-input-element { color: rgb(10, 80, 170); }' });
+  await page.addStyleTag({ content: '.lui-input-element { color: rgb(10, 80, 170); }' });
   await expect(element).toHaveCSS('color', 'rgb(10, 80, 170)');
 }
 
@@ -42,7 +42,7 @@ async function verifiesUnstyledElement({ page }: { page: Page }): Promise<void> 
   const plain = page.getByTestId('input-element-unstyled');
   await expect(plain).toBeVisible({ timeout: 30_000 });
   await expect(plain).toHaveAttribute('title', 'Plain element');
-  await expect(plain).toHaveClass(/leverui-input-element/);
+  await expect(plain).toHaveClass(/lui-input-element/);
   await expect(plain).toHaveCSS('position', 'static');
   await expect(plain).toHaveCSS('padding-left', '0px');
 }

@@ -39,7 +39,7 @@ See [portal and theme scoping](portal.md).
 
 `Dialog.ActionTrigger` is a button that does something, then closes the dialog.
 No default styles. Style it with `class`, `style`, or
-`.leverui-dialog__actionTrigger`.
+`.lui-dialog__actionTrigger`.
 
 ### Shared defaults
 
@@ -97,8 +97,8 @@ inside it. A prop on a dialog wins. `size` can be responsive.
 ## Customize with CSS
 
 Load the [package stylesheet](../getting-started.md) first, then your CSS. Each
-part has a stable class, such as `.leverui-dialog__content` or
-`.leverui-dialog__header`, and takes `class` and `style`. `unstyled` turns off
+part has a stable class, such as `.lui-dialog__content` or
+`.lui-dialog__header`, and takes `class` and `style`. `unstyled` turns off
 the default styles and keeps the part classes.
 
 ```tsx

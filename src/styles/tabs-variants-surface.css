@@ -1,6 +1,6 @@
 @layer leverui.recipes {
-  .leverui-tabs__root:not([data-unstyled]) {
-    &[data-variant='subtle'] .leverui-tabs__trigger:not([data-unstyled]) {
+  .lui-tabs__root:not([data-unstyled]) {
+    &[data-variant='subtle'] .lui-tabs__trigger:not([data-unstyled]) {
       border-radius: var(--lui-tabs-trigger-radius);
       color: var(--lui-colors-fg-muted);
 
@@ -11,14 +11,14 @@
     }
 
     &[data-variant='enclosed'] {
-      .leverui-tabs__list:not([data-unstyled]) {
+      .lui-tabs__list:not([data-unstyled]) {
         background: var(--lui-colors-bg-muted);
         padding: var(--lui-spacing-1);
         border-radius: var(--lui-radii-l3);
         min-height: calc(var(--lui-private-tabs-height) - 4px);
       }
 
-      .leverui-tabs__trigger:not([data-unstyled]) {
+      .lui-tabs__trigger:not([data-unstyled]) {
         justify-content: center;
         color: var(--lui-colors-fg-muted);
         border-radius: var(--lui-tabs-trigger-radius);
@@ -31,7 +31,7 @@
       }
     }
 
-    &[data-variant='plain'] .leverui-tabs__trigger:not([data-unstyled]) {
+    &[data-variant='plain'] .lui-tabs__trigger:not([data-unstyled]) {
       color: var(--lui-colors-fg-muted);
       border-radius: var(--lui-tabs-trigger-radius);
 

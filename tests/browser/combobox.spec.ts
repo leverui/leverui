@@ -10,7 +10,7 @@ async function verifiesComboboxBrowser({ page }: { page: Page }): Promise<void> 
   await expect(input).toHaveAttribute('required', '');
   await expect(input).toHaveAttribute('aria-describedby', /helper-text/);
   await expect(input).toHaveCSS('min-height', '36px');
-  await expect(root).toHaveClass(/leverui-combobox__root/);
+  await expect(root).toHaveClass(/lui-combobox__root/);
   await trigger.click();
   await expect(page.getByTestId('open-state')).toHaveText('open');
   await page.evaluate(

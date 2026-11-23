@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-tabs__root:not([data-unstyled]) {
+  .lui-tabs__root:not([data-unstyled]) {
     --lui-tabs-trigger-radius: var(--lui-radii-l2);
     --lui-tabs-indicator-shadow: var(--lui-shadows-xs);
     --lui-tabs-indicator-bg: var(--lui-colors-bg);
@@ -10,7 +10,7 @@
       display: flex;
     }
 
-    .leverui-tabs__list:not([data-unstyled]) {
+    .lui-tabs__list:not([data-unstyled]) {
       display: var(
         --lui-private-tabs-fitted-display,
         var(--lui-private-tabs-variant-display, inline-flex)
@@ -21,11 +21,11 @@
       flex-direction: row;
     }
 
-    &[data-orientation='vertical'] .leverui-tabs__list:not([data-unstyled]) {
+    &[data-orientation='vertical'] .lui-tabs__list:not([data-unstyled]) {
       flex-direction: column;
     }
 
-    .leverui-tabs__trigger:not([data-unstyled]) {
+    .lui-tabs__trigger:not([data-unstyled]) {
       outline: 0;
       min-width: var(--lui-private-tabs-height);
       height: var(--lui-private-tabs-height);
@@ -47,24 +47,24 @@
       }
     }
 
-    .leverui-tabs__content:not([data-unstyled]) {
+    .lui-tabs__content:not([data-unstyled]) {
       &:is(:focus-visible, [data-focus-visible]) {
         outline: 2px solid var(--lui-colors-color-palette-focus-ring);
         outline-offset: -2px;
       }
     }
 
-    &:not([data-orientation='vertical']) .leverui-tabs__content:not([data-unstyled]) {
+    &:not([data-orientation='vertical']) .lui-tabs__content:not([data-unstyled]) {
       width: 100%;
       padding-top: var(--lui-private-tabs-content-padding);
     }
 
-    &[data-orientation='vertical'] .leverui-tabs__content:not([data-unstyled]) {
+    &[data-orientation='vertical'] .lui-tabs__content:not([data-unstyled]) {
       height: 100%;
       padding-inline-start: var(--lui-private-tabs-content-padding);
     }
 
-    .leverui-tabs__indicator:not([data-unstyled]) {
+    .lui-tabs__indicator:not([data-unstyled]) {
       width: var(--width);
       height: var(--height);
       border-radius: var(--lui-tabs-trigger-radius);

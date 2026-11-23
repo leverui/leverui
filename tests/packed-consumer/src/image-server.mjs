@@ -25,7 +25,7 @@ assert.match(markup, /<img/);
 assert.match(markup, /alt="Installed server image"/);
 assert.match(markup, /width="200"/);
 assert.match(markup, /height="100"/);
-assert.match(markup, /leverui-image/);
+assert.match(markup, /lui-image/);
 assert.match(markup, /data-fit-base="contain"/);
 assert.match(markup, /--lui-private-image-align-base:left top/);
 assert.doesNotMatch(markup, /\s(?:fit|align|htmlWidth|htmlHeight)=/);

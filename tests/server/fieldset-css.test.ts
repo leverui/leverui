@@ -32,10 +32,10 @@ function verifiesServerCss(): void {
   const markup = renderFieldset();
   expect(markup).toContain('data-size="sm"');
   expect(markup).toContain('data-size-md="lg"');
-  expect(markup).toContain('leverui-fieldset__root');
-  expect(markup).toContain('leverui-fieldset__legend');
-  expect(markup).toContain('leverui-fieldset__helperText');
-  expect(markup).toContain('leverui-fieldset__content');
+  expect(markup).toContain('lui-fieldset__root');
+  expect(markup).toContain('lui-fieldset__legend');
+  expect(markup).toContain('lui-fieldset__helperText');
+  expect(markup).toContain('lui-fieldset__content');
   expect(markup).toContain('aria-labelledby="fieldset::css-only-fieldset::legend"');
   expect(markup).not.toMatch(/\s(?:css|recipe|unstyled)=/);
 }

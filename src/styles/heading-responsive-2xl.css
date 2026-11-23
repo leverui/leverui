@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 1536px) {
-    .leverui-heading:not([data-unstyled]) {
+    .lui-heading:not([data-unstyled]) {
       &[data-size-2xl='xs'] {
         font-size: var(--lui-font-sizes-xs);
         line-height: 1rem;

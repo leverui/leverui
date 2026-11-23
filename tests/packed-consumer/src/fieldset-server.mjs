@@ -27,10 +27,10 @@ function renderInstalledFieldset() {
 
 const markup = renderInstalledFieldset();
 assert.match(markup, /<fieldset[^>]*disabled/);
-assert.match(markup, /leverui-fieldset__root/);
-assert.match(markup, /leverui-fieldset__legend/);
-assert.match(markup, /leverui-fieldset__content/);
-assert.match(markup, /leverui-fieldset__errorText/);
+assert.match(markup, /lui-fieldset__root/);
+assert.match(markup, /lui-fieldset__legend/);
+assert.match(markup, /lui-fieldset__content/);
+assert.match(markup, /lui-fieldset__errorText/);
 assert.match(markup, /aria-labelledby="fieldset::packed-server-group::legend"/);
 assert.match(markup, /Server error/);
 assert.doesNotMatch(markup, /\s(?:recipe|unstyled|size)=/);

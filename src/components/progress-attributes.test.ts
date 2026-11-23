@@ -31,7 +31,7 @@ function verifiesResponsiveChoices(): void {
     'data-striped': 'true',
     'data-striped-md': 'false',
     'data-animated': 'true',
-    'data-leverui-color-palette': 'teal',
+    'data-lui-color-palette': 'teal',
     'data-unstyled': '',
   });
 }

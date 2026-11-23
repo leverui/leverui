@@ -71,7 +71,7 @@ settings. Edge fades must not hide item text that assistive technology needs.
 
 ## Customize with CSS
 
-Each part has a stable `.leverui-marquee__*` class. `class` and `style` work on
+Each part has a stable `.lui-marquee__*` class. `class` and `style` work on
 the root, viewport, content, item, and edge. `unstyled` on the root or a part
 turns off its default styles. Behavior stays the same.
 
@@ -88,7 +88,7 @@ turns off its default styles. Behavior stays the same.
   --lui-marquee-duration: 30s;
 }
 
-.featured-marquee .leverui-marquee__item {
+.featured-marquee .lui-marquee__item {
   padding-inline: 1rem;
 }
 ```

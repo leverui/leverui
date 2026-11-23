@@ -159,7 +159,7 @@ function GroupContractExample(): JSX.Element {
           </Button>
           <Button
             variant="outline"
-            data-leverui-group-skip={skipMiddle() ? '' : undefined}
+            data-lui-group-skip={skipMiddle() ? '' : undefined}
             data-testid="group-reactive-middle"
           >
             Middle

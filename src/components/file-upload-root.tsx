@@ -66,7 +66,7 @@ function renderFileUploadRoot(input: RootInput): JSX.Element {
         );
       },
       /** Bind semantic palette variables for dropzone interaction states. */
-      get 'data-leverui-color-palette'() {
+      get 'data-lui-color-palette'() {
         return local.colorPalette;
       },
       /** Suppress authored presentation without changing the file machine. */

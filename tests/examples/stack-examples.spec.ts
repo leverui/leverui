@@ -17,7 +17,7 @@ async function verifiesStackLayouts({ page }: { page: Page }): Promise<void> {
   await page.setViewportSize({ width: 1280, height: 720 });
   for (const layout of layouts) {
     await page.goto(`/iframe.html?id=layout-stack--${layout.id}`);
-    const stack = page.locator('#storybook-root .leverui-stack');
+    const stack = page.locator('#storybook-root .lui-stack');
     await expect(stack).toBeVisible();
     await expect(stack.locator(':scope > :not(style)')).toHaveCount(layout.count);
     await expect(stack).toHaveCSS('display', 'flex');
@@ -26,7 +26,7 @@ async function verifiesStackLayouts({ page }: { page: Page }): Promise<void> {
     await expect(stack).toHaveCSS('gap', layout.gap);
   }
   await page.goto('/iframe.html?id=layout-stack--custom-separator');
-  await expect(page.locator('#storybook-root .leverui-stack [role="separator"]').first()).toHaveCSS(
+  await expect(page.locator('#storybook-root .lui-stack [role="separator"]').first()).toHaveCSS(
     'border-color',
     'rgb(239, 68, 68)',
   );
@@ -36,14 +36,11 @@ async function verifiesStackLayouts({ page }: { page: Page }): Promise<void> {
 async function verifiesResponsiveStack({ page }: { page: Page }): Promise<void> {
   await page.setViewportSize({ width: 400, height: 720 });
   await page.goto('/iframe.html?id=layout-stack--responsive-direction');
-  await expect(page.locator('#storybook-root .leverui-stack')).toHaveCSS(
-    'flex-direction',
-    'column',
-  );
+  await expect(page.locator('#storybook-root .lui-stack')).toHaveCSS('flex-direction', 'column');
 
   await page.goto('/iframe.html?id=layout-stack--responsive-separator');
-  const stack = page.locator('#storybook-root .leverui-stack');
-  const separator = stack.locator('.leverui-stack-separator').first();
+  const stack = page.locator('#storybook-root .lui-stack');
+  const separator = stack.locator('.lui-stack-separator').first();
   await expect(stack).toHaveCSS('flex-direction', 'column');
   await expect(separator).toHaveCSS('border-color', 'rgb(34, 197, 94)');
 

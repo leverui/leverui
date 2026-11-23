@@ -27,7 +27,7 @@ async function verifiesQuoteHydration({ page }: { page: Page }): Promise<void> {
   );
   expect(markup).toContain('<q');
   expect(markup).toContain('cite="https://example.com/hydrated"');
-  expect(markup).toContain('leverui-quote');
+  expect(markup).toContain('lui-quote');
   await page.goto('/iframe.html?id=setup-hydration-host--ready');
   await page.setContent(
     `${generateHydrationScript()}<style>${defaultCss}</style><style>.plain-quote{font-weight:400}</style><div id="quote-hydration-root">${markup}</div>`,

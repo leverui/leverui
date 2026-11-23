@@ -30,7 +30,7 @@ async function verifiesSquare({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=layout-square--contract');
   const token = page.getByTestId('square-token');
   await expect(token).toBeVisible({ timeout: 30_000 });
-  await expect(token).toHaveClass(/leverui-square/);
+  await expect(token).toHaveClass(/lui-square/);
   await expect(token).toHaveCSS('display', 'flex');
   await expect(token).toHaveCSS('align-items', 'center');
   await expect(token).toHaveCSS('justify-content', 'center');
@@ -124,7 +124,7 @@ function renderServerSquare(): JSX.Element {
 async function verifiesServerSquare({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderServerSquare);
   expect(markup).toContain('Server square');
-  expect(markup).toMatch(/leverui-square/);
+  expect(markup).toMatch(/lui-square/);
   expect(markup).not.toMatch(/<div[^>]*\s(?:size|css)=/);
   await page.setViewportSize({ width: 600, height: 700 });
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');

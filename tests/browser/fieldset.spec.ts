@@ -12,7 +12,7 @@ async function verifiesFieldsetBrowser({ page }: { page: Page }): Promise<void> 
   await expect(root).toHaveAttribute('aria-labelledby', /fieldset::profile-group::legend/);
   await expect(root).toHaveAttribute('aria-describedby', /helper-text/);
   await expect(page.getByText('Check your profile')).toHaveCount(0);
-  await expect(page.getByTestId('fieldset-content')).toHaveClass(/leverui-fieldset__content/);
+  await expect(page.getByTestId('fieldset-content')).toHaveClass(/lui-fieldset__content/);
   await expect(legend).toHaveCSS('font-size', '14px');
   await page.getByTestId('fieldset-toggle').click();
   await expect(root).toHaveAttribute('disabled', '');
@@ -45,7 +45,7 @@ async function verifiesFieldsetOverrides({ page }: { page: Page }): Promise<void
       --lui-fieldset-content-gap: 23px;
       --lui-fieldset-legend-size: 19px;
     }
-    .leverui-fieldset__helperText { color: rgb(31, 62, 93); }`,
+    .lui-fieldset__helperText { color: rgb(31, 62, 93); }`,
   });
   await expect(helper).toHaveCSS('margin-top', '31px');
   await expect(content).toHaveCSS('gap', '23px');

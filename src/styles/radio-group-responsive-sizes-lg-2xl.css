@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 1024px) {
-    .leverui-radio-group__root:not([data-unstyled]) {
+    .lui-radio-group__root:not([data-unstyled]) {
       &[data-size-lg='xs'] {
         --lui-private-radio-group-item-gap: var(--lui-spacing-1\.5);
         --lui-private-radio-group-font-size: var(--lui-font-sizes-xs);
@@ -24,7 +24,7 @@
     }
   }
   @media (min-width: 1280px) {
-    .leverui-radio-group__root:not([data-unstyled]) {
+    .lui-radio-group__root:not([data-unstyled]) {
       &[data-size-xl='xs'] {
         --lui-private-radio-group-item-gap: var(--lui-spacing-1\.5);
         --lui-private-radio-group-font-size: var(--lui-font-sizes-xs);
@@ -48,7 +48,7 @@
     }
   }
   @media (min-width: 1536px) {
-    .leverui-radio-group__root:not([data-unstyled]) {
+    .lui-radio-group__root:not([data-unstyled]) {
       &[data-size-2xl='xs'] {
         --lui-private-radio-group-item-gap: var(--lui-spacing-1\.5);
         --lui-private-radio-group-font-size: var(--lui-font-sizes-xs);

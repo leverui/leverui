@@ -44,7 +44,7 @@ Set `--lui-card-padding` in your own class.
   --lui-card-padding: var(--lui-spacing-10);
 }
 
-.card-xl .leverui-card__title {
+.card-xl .lui-card__title {
   font-size: var(--lui-font-sizes-2xl);
 }
 ```
@@ -82,7 +82,7 @@ See the [theme guide](../theme-guide.md).
 `Card.Title` renders an `h3` and `Card.Description` a `p`. Pass `as` to change
 the tag.
 
-Classes: `.leverui-card__root`, `__header`, `__body`, `__footer`, `__title`,
+Classes: `.lui-card__root`, `__header`, `__body`, `__footer`, `__title`,
 `__description`.
 
 ## Explorer

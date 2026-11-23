@@ -49,7 +49,7 @@ function ColorSwatchMixRoot(props: MixRuntimeProps): JSX.Element {
 
   return (
     <ColorSwatchRoot {...native} value="transparent" data-mix="">
-      <span class="leverui-color-swatch__mix-grid">
+      <span class="lui-color-swatch__mix-grid">
         <For each={items()}>
           {
             /** Render one color and mark the final cell in a three-color mix. */

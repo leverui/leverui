@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-alert__root:not([data-unstyled], [data-leverui-color-palette]) {
+    .lui-alert__root:not([data-unstyled], [data-lui-color-palette]) {
       &[data-status-sm='info'] {
         --lui-colors-color-palette-50: var(--lui-colors-blue-50);
         --lui-colors-color-palette-100: var(--lui-colors-blue-100);

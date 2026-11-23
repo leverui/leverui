@@ -1,9 +1,9 @@
 @layer leverui.recipes {
-  .leverui-tabs__root:not([data-unstyled]) {
+  .lui-tabs__root:not([data-unstyled]) {
     &[data-fitted='true'] {
       --lui-private-tabs-fitted-display: flex;
 
-      .leverui-tabs__trigger:not([data-unstyled]) {
+      .lui-tabs__trigger:not([data-unstyled]) {
         flex: 1;
         text-align: center;
         justify-content: center;
@@ -12,11 +12,11 @@
   }
 
   @media (min-width: 480px) {
-    .leverui-tabs__root:not([data-unstyled]) {
+    .lui-tabs__root:not([data-unstyled]) {
       &[data-fitted-sm='true'] {
         --lui-private-tabs-fitted-display: flex;
 
-        .leverui-tabs__trigger:not([data-unstyled]) {
+        .lui-tabs__trigger:not([data-unstyled]) {
           flex: 1;
           text-align: center;
           justify-content: center;
@@ -26,31 +26,31 @@
       &[data-fitted-sm='false'] {
         --lui-private-tabs-fitted-display: initial;
 
-        .leverui-tabs__trigger:not([data-unstyled]) {
+        .lui-tabs__trigger:not([data-unstyled]) {
           flex: revert-layer;
           text-align: revert-layer;
           justify-content: revert-layer;
         }
       }
 
-      &[data-justify-sm='start'] .leverui-tabs__list:not([data-unstyled]) {
+      &[data-justify-sm='start'] .lui-tabs__list:not([data-unstyled]) {
         justify-content: flex-start;
       }
-      &[data-justify-sm='center'] .leverui-tabs__list:not([data-unstyled]) {
+      &[data-justify-sm='center'] .lui-tabs__list:not([data-unstyled]) {
         justify-content: center;
       }
-      &[data-justify-sm='end'] .leverui-tabs__list:not([data-unstyled]) {
+      &[data-justify-sm='end'] .lui-tabs__list:not([data-unstyled]) {
         justify-content: flex-end;
       }
     }
   }
 
   @media (min-width: 768px) {
-    .leverui-tabs__root:not([data-unstyled]) {
+    .lui-tabs__root:not([data-unstyled]) {
       &[data-fitted-md='true'] {
         --lui-private-tabs-fitted-display: flex;
 
-        .leverui-tabs__trigger:not([data-unstyled]) {
+        .lui-tabs__trigger:not([data-unstyled]) {
           flex: 1;
           text-align: center;
           justify-content: center;
@@ -60,31 +60,31 @@
       &[data-fitted-md='false'] {
         --lui-private-tabs-fitted-display: initial;
 
-        .leverui-tabs__trigger:not([data-unstyled]) {
+        .lui-tabs__trigger:not([data-unstyled]) {
           flex: revert-layer;
           text-align: revert-layer;
           justify-content: revert-layer;
         }
       }
 
-      &[data-justify-md='start'] .leverui-tabs__list:not([data-unstyled]) {
+      &[data-justify-md='start'] .lui-tabs__list:not([data-unstyled]) {
         justify-content: flex-start;
       }
-      &[data-justify-md='center'] .leverui-tabs__list:not([data-unstyled]) {
+      &[data-justify-md='center'] .lui-tabs__list:not([data-unstyled]) {
         justify-content: center;
       }
-      &[data-justify-md='end'] .leverui-tabs__list:not([data-unstyled]) {
+      &[data-justify-md='end'] .lui-tabs__list:not([data-unstyled]) {
         justify-content: flex-end;
       }
     }
   }
 
   @media (min-width: 1024px) {
-    .leverui-tabs__root:not([data-unstyled]) {
+    .lui-tabs__root:not([data-unstyled]) {
       &[data-fitted-lg='true'] {
         --lui-private-tabs-fitted-display: flex;
 
-        .leverui-tabs__trigger:not([data-unstyled]) {
+        .lui-tabs__trigger:not([data-unstyled]) {
           flex: 1;
           text-align: center;
           justify-content: center;
@@ -94,31 +94,31 @@
       &[data-fitted-lg='false'] {
         --lui-private-tabs-fitted-display: initial;
 
-        .leverui-tabs__trigger:not([data-unstyled]) {
+        .lui-tabs__trigger:not([data-unstyled]) {
           flex: revert-layer;
           text-align: revert-layer;
           justify-content: revert-layer;
         }
       }
 
-      &[data-justify-lg='start'] .leverui-tabs__list:not([data-unstyled]) {
+      &[data-justify-lg='start'] .lui-tabs__list:not([data-unstyled]) {
         justify-content: flex-start;
       }
-      &[data-justify-lg='center'] .leverui-tabs__list:not([data-unstyled]) {
+      &[data-justify-lg='center'] .lui-tabs__list:not([data-unstyled]) {
         justify-content: center;
       }
-      &[data-justify-lg='end'] .leverui-tabs__list:not([data-unstyled]) {
+      &[data-justify-lg='end'] .lui-tabs__list:not([data-unstyled]) {
         justify-content: flex-end;
       }
     }
   }
 
   @media (min-width: 1280px) {
-    .leverui-tabs__root:not([data-unstyled]) {
+    .lui-tabs__root:not([data-unstyled]) {
       &[data-fitted-xl='true'] {
         --lui-private-tabs-fitted-display: flex;
 
-        .leverui-tabs__trigger:not([data-unstyled]) {
+        .lui-tabs__trigger:not([data-unstyled]) {
           flex: 1;
           text-align: center;
           justify-content: center;
@@ -128,31 +128,31 @@
       &[data-fitted-xl='false'] {
         --lui-private-tabs-fitted-display: initial;
 
-        .leverui-tabs__trigger:not([data-unstyled]) {
+        .lui-tabs__trigger:not([data-unstyled]) {
           flex: revert-layer;
           text-align: revert-layer;
           justify-content: revert-layer;
         }
       }
 
-      &[data-justify-xl='start'] .leverui-tabs__list:not([data-unstyled]) {
+      &[data-justify-xl='start'] .lui-tabs__list:not([data-unstyled]) {
         justify-content: flex-start;
       }
-      &[data-justify-xl='center'] .leverui-tabs__list:not([data-unstyled]) {
+      &[data-justify-xl='center'] .lui-tabs__list:not([data-unstyled]) {
         justify-content: center;
       }
-      &[data-justify-xl='end'] .leverui-tabs__list:not([data-unstyled]) {
+      &[data-justify-xl='end'] .lui-tabs__list:not([data-unstyled]) {
         justify-content: flex-end;
       }
     }
   }
 
   @media (min-width: 1536px) {
-    .leverui-tabs__root:not([data-unstyled]) {
+    .lui-tabs__root:not([data-unstyled]) {
       &[data-fitted-2xl='true'] {
         --lui-private-tabs-fitted-display: flex;
 
-        .leverui-tabs__trigger:not([data-unstyled]) {
+        .lui-tabs__trigger:not([data-unstyled]) {
           flex: 1;
           text-align: center;
           justify-content: center;
@@ -162,20 +162,20 @@
       &[data-fitted-2xl='false'] {
         --lui-private-tabs-fitted-display: initial;
 
-        .leverui-tabs__trigger:not([data-unstyled]) {
+        .lui-tabs__trigger:not([data-unstyled]) {
           flex: revert-layer;
           text-align: revert-layer;
           justify-content: revert-layer;
         }
       }
 
-      &[data-justify-2xl='start'] .leverui-tabs__list:not([data-unstyled]) {
+      &[data-justify-2xl='start'] .lui-tabs__list:not([data-unstyled]) {
         justify-content: flex-start;
       }
-      &[data-justify-2xl='center'] .leverui-tabs__list:not([data-unstyled]) {
+      &[data-justify-2xl='center'] .lui-tabs__list:not([data-unstyled]) {
         justify-content: center;
       }
-      &[data-justify-2xl='end'] .leverui-tabs__list:not([data-unstyled]) {
+      &[data-justify-2xl='end'] .lui-tabs__list:not([data-unstyled]) {
         justify-content: flex-end;
       }
     }

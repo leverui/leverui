@@ -23,12 +23,12 @@ function verifiesQrCodeParts(): void {
   const frame = screen.getByTestId('frame');
   const path = frame.querySelector('path');
   expect(root.hasAttribute('data-qr-code-root')).toBe(true);
-  expect(root.className).toContain('leverui-qr-code__root');
+  expect(root.className).toContain('lui-qr-code__root');
   expect(root.hasAttribute('size')).toBe(false);
   expect(frame.tagName.toLowerCase()).toBe('svg');
   expect(frame.getAttribute('aria-label')).toBe('Lever UI website');
   expect(path?.getAttribute('d')).toBeTruthy();
-  expect(path?.getAttribute('class')).toContain('leverui-qr-code__pattern');
+  expect(path?.getAttribute('class')).toContain('lui-qr-code__pattern');
   expect(screen.getByTestId('overlay').textContent).toBe('UI');
   expect(screen.getByTestId('save').tagName).toBe('BUTTON');
 }

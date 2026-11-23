@@ -17,7 +17,7 @@ test('Radio Card attached Group guide selects a described card', verifiesComposi
 async function verifiesAddon({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-radio-card-guide-composition--addon');
   const root = page.getByTestId('guide-radio-card-addon');
-  await expect(root.locator('.leverui-radio-card__itemAddon')).toHaveCount(3);
+  await expect(root.locator('.lui-radio-card__itemAddon')).toHaveCount(3);
   await expect(root.getByText('Some addon text')).toHaveCount(3);
   await expect(root.getByRole('radio')).toHaveCount(3);
 }

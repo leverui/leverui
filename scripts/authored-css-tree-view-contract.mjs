@@ -3,7 +3,7 @@ export const treeViewContracts = [
   {
     family: 'tree-view',
     required: [
-      '.leverui-tree-view__root:not([data-unstyled])',
+      '.lui-tree-view__root:not([data-unstyled])',
       ...[
         'branch',
         'branchContent',
@@ -19,7 +19,7 @@ export const treeViewContracts = [
         'nodeCheckbox',
       ].map(
         /** Keep each public compound part present in authored CSS. */
-        (part) => `.leverui-tree-view__${part}`,
+        (part) => `.lui-tree-view__${part}`,
       ),
       '--lui-tree-indent-size',
       '--lui-tree-indentation',

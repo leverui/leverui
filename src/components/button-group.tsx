@@ -31,7 +31,7 @@ function ButtonGroupRoot(props: ButtonGroupProps<'div'>): JSX.Element {
 
   return (
     <ButtonPropsProvider value={readButtonDefaults}>
-      <Group {...group} class={['leverui-button-group', button.class, button.className]} />
+      <Group {...group} class={['lui-button-group', button.class, button.className]} />
     </ButtonPropsProvider>
   );
 }

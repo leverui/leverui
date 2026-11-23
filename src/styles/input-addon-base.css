@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-input-addon:not([data-unstyled]) {
+  .lui-input-addon:not([data-unstyled]) {
     flex: 0 0 auto;
     width: auto;
     display: flex;

@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-hoverCard__content:not([data-unstyled]) {
+  .lui-hoverCard__content:not([data-unstyled]) {
     --lui-hover-card-background: var(--lui-colors-bg-panel);
     --lui-hover-card-max-width: var(--lui-sizes-80);
     --lui-hover-card-z-index: var(--lui-z-index-popover);
@@ -19,20 +19,20 @@
     padding: var(--lui-hover-card-padding);
   }
 
-  .leverui-hoverCard__arrow:not([data-unstyled]) {
+  .lui-hoverCard__arrow:not([data-unstyled]) {
     --lui-hover-card-arrow-size: var(--lui-sizes-3);
     --arrow-size: var(--lui-hover-card-arrow-size);
     --arrow-background: var(--lui-hover-card-background);
   }
 
-  .leverui-hoverCard__arrowTip:not([data-unstyled]) {
+  .lui-hoverCard__arrowTip:not([data-unstyled]) {
     border-top-width: 0.5px;
     border-left-width: 0.5px;
   }
 
   /* Zag 2 sets no z-index and isolates the positioner, so the content's z-index
      cannot escape it. Stack the positioner itself, offset by its layer index. */
-  .leverui-hoverCard__positioner {
+  .lui-hoverCard__positioner {
     z-index: calc(
       var(--lui-hover-card-z-index, var(--lui-z-index-popover)) + var(--layer-index, 0)
     );

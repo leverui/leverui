@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-radio-card__item:not([data-unstyled]) {
+  .lui-radio-card__item:not([data-unstyled]) {
     &[data-align='start'] {
       --lui-private-radio-card-align: flex-start;
       --lui-private-radio-card-text-align: start;

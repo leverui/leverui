@@ -137,7 +137,7 @@ Styles ship for `size="sm" | "md"` and `variant="subtle" | "solid"`. Both take
 one value, an array with a value per breakpoint, or an object keyed by
 breakpoint name.
 
-Each part has a `leverui-menu__<part>` class, a part attribute (such as
+Each part has a `lui-menu__<part>` class, a part attribute (such as
 `data-menu-content`), and size and variant attributes. Menus in a portal and
 nested menus keep them.
 

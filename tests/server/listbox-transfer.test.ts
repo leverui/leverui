@@ -73,7 +73,7 @@ function verifiesServerTransfer(): void {
   expect(markup).toContain('Selected characters');
   expect(markup).toContain('Wren');
   expect(markup).toContain('No items available');
-  expect(markup).toContain('leverui-listbox__content');
+  expect(markup).toContain('lui-listbox__content');
 }
 
 test('published Listbox renders both transfer columns on the server', verifiesServerTransfer);

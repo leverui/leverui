@@ -1,17 +1,17 @@
 @layer leverui.recipes {
-  .leverui-number-input__input {
+  .lui-number-input__input {
     --lui-private-input-group-field-height: var(--lui-private-input-height, var(--lui-sizes-10));
   }
 
-  .leverui-input-group:not([data-unstyled]) {
+  .lui-input-group:not([data-unstyled]) {
     &[data-group-start] {
       > :is(
-        .leverui-input,
-        .leverui-number-input__input,
-        .leverui-input-group__field,
-        .leverui-native-select__field
+        .lui-input,
+        .lui-number-input__input,
+        .lui-input-group__field,
+        .lui-native-select__field
       ),
-      > .leverui-native-select__root > .leverui-native-select__field {
+      > .lui-native-select__root > .lui-native-select__field {
         padding-inline-start: calc(
           var(
               --lui-private-input-group-field-height,
@@ -24,12 +24,12 @@
 
     &[data-group-end] {
       > :is(
-        .leverui-input,
-        .leverui-number-input__input,
-        .leverui-input-group__field,
-        .leverui-native-select__field
+        .lui-input,
+        .lui-number-input__input,
+        .lui-input-group__field,
+        .lui-native-select__field
       ),
-      > .leverui-native-select__root > .leverui-native-select__field {
+      > .lui-native-select__root > .lui-native-select__field {
         padding-inline-end: calc(
           var(
               --lui-private-input-group-field-height,
@@ -43,12 +43,12 @@
     @media (min-width: 480px) {
       &[data-group-start-sm] {
         > :is(
-          .leverui-input,
-          .leverui-number-input__input,
-          .leverui-input-group__field,
-          .leverui-native-select__field
+          .lui-input,
+          .lui-number-input__input,
+          .lui-input-group__field,
+          .lui-native-select__field
         ),
-        > .leverui-native-select__root > .leverui-native-select__field {
+        > .lui-native-select__root > .lui-native-select__field {
           padding-inline-start: calc(
             var(
                 --lui-private-input-group-field-height,
@@ -61,12 +61,12 @@
 
       &[data-group-end-sm] {
         > :is(
-          .leverui-input,
-          .leverui-number-input__input,
-          .leverui-input-group__field,
-          .leverui-native-select__field
+          .lui-input,
+          .lui-number-input__input,
+          .lui-input-group__field,
+          .lui-native-select__field
         ),
-        > .leverui-native-select__root > .leverui-native-select__field {
+        > .lui-native-select__root > .lui-native-select__field {
           padding-inline-end: calc(
             var(
                 --lui-private-input-group-field-height,
@@ -80,12 +80,12 @@
     @media (min-width: 768px) {
       &[data-group-start-md] {
         > :is(
-          .leverui-input,
-          .leverui-number-input__input,
-          .leverui-input-group__field,
-          .leverui-native-select__field
+          .lui-input,
+          .lui-number-input__input,
+          .lui-input-group__field,
+          .lui-native-select__field
         ),
-        > .leverui-native-select__root > .leverui-native-select__field {
+        > .lui-native-select__root > .lui-native-select__field {
           padding-inline-start: calc(
             var(
                 --lui-private-input-group-field-height,
@@ -98,12 +98,12 @@
 
       &[data-group-end-md] {
         > :is(
-          .leverui-input,
-          .leverui-number-input__input,
-          .leverui-input-group__field,
-          .leverui-native-select__field
+          .lui-input,
+          .lui-number-input__input,
+          .lui-input-group__field,
+          .lui-native-select__field
         ),
-        > .leverui-native-select__root > .leverui-native-select__field {
+        > .lui-native-select__root > .lui-native-select__field {
           padding-inline-end: calc(
             var(
                 --lui-private-input-group-field-height,

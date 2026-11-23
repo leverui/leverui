@@ -124,7 +124,7 @@ prop on a root wins.
 
 ## Customize with CSS
 
-Classes: `.leverui-code-block__root`, plus `__header`, `__title`, `__control`,
+Classes: `.lui-code-block__root`, plus `__header`, `__title`, `__control`,
 `__content`, `__code`, `__codeText`, `__overlay`, and `__footer`.
 
 Set variables on `:root`, a theme wrapper, or one code block.

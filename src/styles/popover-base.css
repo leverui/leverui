@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-popover__content:not([data-unstyled]) {
+  .lui-popover__content:not([data-unstyled]) {
     --lui-popover-background: var(--lui-colors-bg-panel);
     --lui-popover-size: var(--lui-sizes-xs);
     --lui-popover-mobile-size: calc(100dvw - 1rem);
@@ -21,42 +21,42 @@
   }
 
   @media (min-width: 480px) {
-    .leverui-popover__content:not([data-unstyled]) {
+    .lui-popover__content:not([data-unstyled]) {
       width: var(--lui-popover-size);
     }
   }
 
-  .leverui-popover__header:not([data-unstyled]) {
+  .lui-popover__header:not([data-unstyled]) {
     padding-inline: var(--lui-popover-padding);
     padding-top: var(--lui-popover-padding);
   }
 
-  .leverui-popover__body:not([data-unstyled]) {
+  .lui-popover__body:not([data-unstyled]) {
     padding: var(--lui-popover-padding);
     flex: 1;
   }
 
-  .leverui-popover__footer:not([data-unstyled]) {
+  .lui-popover__footer:not([data-unstyled]) {
     display: flex;
     align-items: center;
     padding-inline: var(--lui-popover-padding);
     padding-bottom: var(--lui-popover-padding);
   }
 
-  .leverui-popover__arrow:not([data-unstyled]) {
+  .lui-popover__arrow:not([data-unstyled]) {
     --lui-popover-arrow-size: var(--lui-sizes-3);
     --arrow-size: var(--lui-popover-arrow-size);
     --arrow-background: var(--lui-popover-background);
   }
 
-  .leverui-popover__arrowTip:not([data-unstyled]) {
+  .lui-popover__arrowTip:not([data-unstyled]) {
     border-top-width: 1px;
     border-left-width: 1px;
   }
 
   /* Zag 2 sets no z-index and isolates the positioner, so the content's z-index
      cannot escape it. Stack the positioner itself, offset by its layer index. */
-  .leverui-popover__positioner {
+  .lui-popover__positioner {
     z-index: calc(var(--lui-popover-z-index, var(--lui-z-index-popover)) + var(--layer-index, 0));
   }
 }

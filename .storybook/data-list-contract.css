@@ -2,7 +2,7 @@
   --lui-colors-fg-muted: rgb(102, 51, 153);
 }
 
-.data-list-divided > .leverui-data-list__item + .leverui-data-list__item {
+.data-list-divided > .lui-data-list__item + .lui-data-list__item {
   border-top: 1px solid var(--lui-colors-border);
 }
 
@@ -10,19 +10,19 @@
   display: flex;
 }
 
-@scope (.leverui-data-list__root[data-size='sm']) to (.leverui-data-list__root) {
+@scope (.lui-data-list__root[data-size='sm']) to (.lui-data-list__root) {
   .data-list-slot-probe {
     gap: var(--lui-spacing-3);
   }
 }
 
-@scope (.leverui-data-list__root[data-size='md']) to (.leverui-data-list__root) {
+@scope (.lui-data-list__root[data-size='md']) to (.lui-data-list__root) {
   .data-list-slot-probe {
     gap: var(--lui-spacing-4);
   }
 }
 
-@scope (.leverui-data-list__root[data-size='lg']) to (.leverui-data-list__root) {
+@scope (.lui-data-list__root[data-size='lg']) to (.lui-data-list__root) {
   .data-list-slot-probe {
     gap: var(--lui-spacing-5);
   }

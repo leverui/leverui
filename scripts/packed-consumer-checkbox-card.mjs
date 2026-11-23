@@ -7,7 +7,7 @@ export async function verifyPackedCheckboxCard(page) {
   const control = page.locator('[data-testid="packed-card-control"]');
   await root.waitFor();
   assert.equal(await input.isChecked(), false);
-  assert.match(await root.getAttribute('class'), /leverui-checkbox-card/);
+  assert.match(await root.getAttribute('class'), /lui-checkbox-card/);
   assert.equal(
     await control.evaluate(
       /** Read the published card recipe from computed browser styles. */

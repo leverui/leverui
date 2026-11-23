@@ -8,7 +8,7 @@ async function verifiesHoverCardCss({ page }: { page: Page }): Promise<void> {
   const arrow = page.getByTestId('hover-css-arrow');
   const unstyled = page.getByTestId('hover-css-unstyled');
   await expect(content).toBeVisible({ timeout: 30_000 });
-  await expect(content).toHaveClass(/leverui-hoverCard__content/);
+  await expect(content).toHaveClass(/lui-hoverCard__content/);
   await expect(content).toHaveAttribute('data-size', 'xs');
   await expect(content).toHaveAttribute('data-size-md', 'lg');
   await expect(content).toHaveCSS('padding-top', '12px');

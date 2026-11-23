@@ -85,8 +85,8 @@ function renderServerListbox(): string {
 function verifiesServerListbox(): void {
   const markup = renderServerListbox();
   expect(markup).toContain('data-listbox-');
-  expect(markup).toContain('leverui-listbox__root');
-  expect(markup).toContain('leverui-listbox__content');
+  expect(markup).toContain('lui-listbox__root');
+  expect(markup).toContain('lui-listbox__content');
   expect(markup).toContain('role="listbox"');
   expect(markup).toContain('role="option"');
   expect(markup).toContain('aria-selected="true"');

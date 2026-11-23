@@ -14,11 +14,11 @@ const { Box, Theme } = (await import(serverEntry)) as ServerExports;
 const defaultCss = await readFile(new URL('../../dist/styles.css', import.meta.url), 'utf8');
 const sampleCss = `
   :root { --sample-mode-color: var(--lui-colors-blue-500); --sample-border-width: 2px; }
-  [data-leverui-color-mode='dark'] {
+  [data-lui-color-mode='dark'] {
     --sample-mode-color: var(--lui-colors-red-500);
     --sample-border-width: 4px;
   }
-  [data-leverui-color-mode='light'] {
+  [data-lui-color-mode='light'] {
     --sample-mode-color: var(--lui-colors-blue-500);
     --sample-border-width: 2px;
   }
@@ -96,14 +96,11 @@ async function verifiesNestedScopes({ page }: { page: Page }): Promise<void> {
     await expect(page.getByTestId(id)).toHaveCSS('border-top-width', '2px');
   }
 
-  await expect(page.locator('#dark-scope')).toHaveAttribute('data-leverui-color-mode', 'dark');
-  await expect(page.locator('#dark-scope')).toHaveClass(/leverui-theme/);
+  await expect(page.locator('#dark-scope')).toHaveAttribute('data-lui-color-mode', 'dark');
+  await expect(page.locator('#dark-scope')).toHaveClass(/lui-theme/);
   await expect(page.locator('#dark-scope')).toHaveCSS('background-color', 'rgb(9, 9, 11)');
   await expect(page.locator('#inner-dark-scope')).toHaveCSS('background-color', 'rgba(0, 0, 0, 0)');
-  await expect(page.locator('#inherited-scope')).not.toHaveAttribute(
-    'data-leverui-color-mode',
-    'dark',
-  );
+  await expect(page.locator('#inherited-scope')).not.toHaveAttribute('data-lui-color-mode', 'dark');
 }
 
 test('nested Theme scopes use the nearest explicit mode', verifiesNestedScopes);

@@ -1,11 +1,11 @@
 /** Shared DOM names for Group and ButtonGroup indexing and layout. */
 export const groupAttributes = {
-  skip: 'data-leverui-group-skip',
-  autoSkip: 'data-leverui-group-auto-skip',
-  item: 'data-leverui-group-item',
-  first: 'data-leverui-group-first',
-  last: 'data-leverui-group-last',
-  between: 'data-leverui-group-between',
+  skip: 'data-lui-group-skip',
+  autoSkip: 'data-lui-group-auto-skip',
+  item: 'data-lui-group-item',
+  first: 'data-lui-group-first',
+  last: 'data-lui-group-last',
+  between: 'data-lui-group-between',
 } as const;
 
 /** Public group variables that consumers may override on a child. */

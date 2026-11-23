@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-native-select__root:not([data-unstyled]) {
+  .lui-native-select__root:not([data-unstyled]) {
     height: fit-content;
     display: flex;
     width: 100%;
@@ -19,8 +19,7 @@
     --lui-private-native-select-focus-width: var(--focus-ring-width, 1px);
   }
 
-  .leverui-native-select__root:not([data-unstyled])
-    .leverui-native-select__field:not([data-unstyled]) {
+  .lui-native-select__root:not([data-unstyled]) .lui-native-select__field:not([data-unstyled]) {
     width: 100%;
     min-width: 0;
     outline: 0;
@@ -39,8 +38,8 @@
     --lui-private-native-select-error-color: var(--lui-colors-border-error);
   }
 
-  .leverui-native-select__root:not([data-unstyled])
-    .leverui-native-select__field:not([data-unstyled])
+  .lui-native-select__root:not([data-unstyled])
+    .lui-native-select__field:not([data-unstyled])
     > :is(option, optgroup) {
     background: var(--lui-colors-bg);
   }

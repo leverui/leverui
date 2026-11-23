@@ -71,7 +71,7 @@ function CardRootComponent(props: CardRootRuntimeProps): JSX.Element {
       'data-variant-xl': variants()?.xl,
       'data-variant-2xl': variants()?.['2xl'],
       'data-unstyled': local.unstyled ? '' : undefined,
-      class: composeRecipeClassNames('card__root', 'leverui-card', local.class, local.className),
+      class: composeRecipeClassNames('card__root', 'lui-card', local.class, local.className),
       ref: attachNode,
     }),
   );

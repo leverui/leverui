@@ -117,7 +117,7 @@ function TextareaRoot(props: TextareaRootProps): JSX.Element {
           ...fieldAttributes,
           ...textareaAttributes(choices()),
           class: composeRecipeClassNames('textarea', undefined, local.class, local.className),
-          'data-leverui-color-palette': readTextareaPalette(local.colorPalette),
+          'data-lui-color-palette': readTextareaPalette(local.colorPalette),
           'data-unstyled': local.unstyled ? '' : undefined,
           'data-autoresize': local.autoresize ? '' : undefined,
           ref: attachControl,

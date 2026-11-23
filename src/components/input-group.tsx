@@ -39,7 +39,7 @@ export type InputGroupProps<As extends NativeElementTag = 'div'> = GroupPropsWit
 
 /** Exclude adornments from Group's joined-edge and stacking calculations. */
 function skipInputElement(child: GroupItemElement): boolean {
-  return child.classList.contains('leverui-input-element');
+  return child.classList.contains('lui-input-element');
 }
 
 /** Compose group-owned adornments and addons around one native Solid field. */
@@ -78,12 +78,12 @@ function InputGroupRoot(props: InputGroupProps<'div'>): JSX.Element {
       {...rootOffsets().attributes}
       attached={Boolean(local.startAddon || local.endAddon)}
       skip={skipInputElement}
-      class={['leverui-input-group', local.class, local.className]}
+      class={['lui-input-group', local.class, local.className]}
       style={mergeInputGroupStyle(local.style, rootOffsets().variables)}
     >
       {local.startAddon && <InputAddon {...local.startAddonProps}>{local.startAddon}</InputAddon>}
       {local.startElement && (
-        <InputElement {...local.startElementProps} data-leverui-input-group-start-element="">
+        <InputElement {...local.startElementProps} data-lui-input-group-start-element="">
           {local.startElement}
         </InputElement>
       )}

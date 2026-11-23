@@ -9,7 +9,7 @@
     line-height: 1.5;
   }
   /* The demo pages set the text color on html, so components inherit it from the page. */
-  :where([class^='leverui-'], [class*=' leverui-']) {
+  :where([class^='lui-'], [class*=' lui-']) {
     color: inherit;
   }
   *::-webkit-input-placeholder {

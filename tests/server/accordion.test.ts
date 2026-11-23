@@ -65,8 +65,8 @@ function renderServerAccordion(): string {
 function verifiesServerAccordion(): void {
   const markup = renderServerAccordion();
   expect(markup.match(/data-accordion-[a-z-]+=/g)?.length).toBeGreaterThan(1);
-  expect(markup).toContain('leverui-accordion__root');
-  expect(markup).toContain('leverui-accordion__itemBody');
+  expect(markup).toContain('lui-accordion__root');
+  expect(markup).toContain('lui-accordion__itemBody');
   expect(markup).toContain('aria-expanded="true"');
   expect(markup).toContain('role="region"');
   expect(markup).toContain('First panel');

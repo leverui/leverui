@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-scroll-area__root:not([data-unstyled]) {
+  .lui-scroll-area__root:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -13,7 +13,7 @@
     );
   }
 
-  .leverui-scroll-area__viewport:not([data-unstyled]) {
+  .lui-scroll-area__viewport:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -23,7 +23,7 @@
     scrollbar-width: none;
   }
 
-  .leverui-scroll-area__viewport:not([data-unstyled])::-webkit-scrollbar {
+  .lui-scroll-area__viewport:not([data-unstyled])::-webkit-scrollbar {
     display: none;
   }
 
@@ -31,19 +31,19 @@
    * A viewport rendered on another component through asChild can lose the viewport class. Its
    * native scrollbar still hides, so only the Scrollbar part shows.
    */
-  .leverui-scroll-area__root:not([data-unstyled]) [data-scroll-area-viewport] {
+  .lui-scroll-area__root:not([data-unstyled]) [data-scroll-area-viewport] {
     scrollbar-width: none;
   }
 
-  .leverui-scroll-area__root:not([data-unstyled]) [data-scroll-area-viewport]::-webkit-scrollbar {
+  .lui-scroll-area__root:not([data-unstyled]) [data-scroll-area-viewport]::-webkit-scrollbar {
     display: none;
   }
 
-  .leverui-scroll-area__content:not([data-unstyled]) {
+  .lui-scroll-area__content:not([data-unstyled]) {
     min-width: 100%;
   }
 
-  .leverui-scroll-area__scrollbar:not([data-unstyled]) {
+  .lui-scroll-area__scrollbar:not([data-unstyled]) {
     display: flex;
     user-select: none;
     touch-action: none;
@@ -64,18 +64,18 @@
     );
   }
 
-  .leverui-scroll-area__scrollbar:not([data-unstyled])::before {
+  .lui-scroll-area__scrollbar:not([data-unstyled])::before {
     content: '';
     position: absolute;
   }
 
-  .leverui-scroll-area__thumb:not([data-unstyled]) {
+  .lui-scroll-area__thumb:not([data-unstyled]) {
     border-radius: inherit;
     background: var(--lui-scroll-area-thumb-color, var(--lui-private-scroll-area-thumb-bg));
     transition: background-color var(--lui-durations-moderate);
   }
 
-  .leverui-scroll-area__corner:not([data-unstyled]) {
+  .lui-scroll-area__corner:not([data-unstyled]) {
     background: var(--lui-scroll-area-corner-color, var(--lui-colors-bg-muted));
     margin: var(--lui-private-scroll-area-margin);
     opacity: 0;

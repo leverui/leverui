@@ -55,7 +55,7 @@ async function verifiesStickyCss({ page }: { page: Page }): Promise<void> {
       /** Read the stable class without depending on server HTML whitespace. */
       (element) => [...element.classList],
     ),
-  ).toEqual(['leverui-sticky']);
+  ).toEqual(['lui-sticky']);
 }
 
 test('Sticky defaults and unstyled composition work without scripts', verifiesStickyCss);

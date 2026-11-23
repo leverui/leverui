@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-checkbox-card:not([data-unstyled]) {
+  .lui-checkbox-card:not([data-unstyled]) {
     &[data-size='sm'] {
       --lui-private-checkbox-card-font-size: var(--lui-font-sizes-sm);
       --lui-private-checkbox-card-line-height: 1.25rem;

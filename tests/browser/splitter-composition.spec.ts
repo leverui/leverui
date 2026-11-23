@@ -10,10 +10,10 @@ async function verifiesComposition({ page }: { page: Page }): Promise<void> {
   await expect(trigger).toHaveAttribute('role', 'separator', { timeout: 30_000 });
   await expect(trigger).toHaveAttribute('aria-valuenow', '30');
   await expect(trigger).toHaveAttribute('aria-label', 'Resize');
-  await expect(root).toHaveClass(/leverui-splitter__root/);
-  await expect(trigger).toHaveClass(/leverui-splitter__resizeTrigger/);
-  await expect(separator).toHaveClass(/leverui-splitter__resizeTriggerSeparator/);
-  await expect(indicator).toHaveClass(/leverui-splitter__resizeTriggerIndicator/);
+  await expect(root).toHaveClass(/lui-splitter__root/);
+  await expect(trigger).toHaveClass(/lui-splitter__resizeTrigger/);
+  await expect(separator).toHaveClass(/lui-splitter__resizeTriggerSeparator/);
+  await expect(indicator).toHaveClass(/lui-splitter__resizeTriggerIndicator/);
   await expect(trigger).toHaveCSS('min-width', '8px');
   await page.addStyleTag({
     content: `
@@ -29,9 +29,10 @@ async function verifiesComposition({ page }: { page: Page }): Promise<void> {
   const unstyledTrigger = page.getByTestId('splitter-unstyled-trigger');
   await expect(unstyledRoot).toHaveAttribute('data-unstyled', '');
   await expect(unstyledTrigger).toHaveAttribute('data-unstyled', '');
-  await expect(
-    unstyledTrigger.locator('.leverui-splitter__resizeTriggerIndicator'),
-  ).toHaveAttribute('data-unstyled', '');
+  await expect(unstyledTrigger.locator('.lui-splitter__resizeTriggerIndicator')).toHaveAttribute(
+    'data-unstyled',
+    '',
+  );
   await trigger.focus();
   await page.keyboard.press('ArrowRight');
   await expect(trigger).toHaveAttribute('aria-valuenow', '31');
@@ -42,7 +43,7 @@ async function verifiesComposition({ page }: { page: Page }): Promise<void> {
   const childRoot = page.getByTestId('splitter-child-root');
   const childTrigger = page.getByTestId('splitter-child-trigger');
   await expect(childRoot).toHaveAttribute('data-orientation', 'horizontal');
-  await expect(childRoot).toHaveClass(/leverui-splitter__root/);
+  await expect(childRoot).toHaveClass(/lui-splitter__root/);
   await expect(page.getByTestId('splitter-child-root-ref')).toHaveText('DIV');
   await childRoot.evaluate(
     /** Mark the caller-owned node before keyboard resizing. */

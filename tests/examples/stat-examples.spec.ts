@@ -16,7 +16,7 @@ const counts = {
 async function verifiesStatStories({ page }: { page: Page }): Promise<void> {
   for (const [story, count] of Object.entries(counts)) {
     await page.goto(`/iframe.html?id=components-stat--${story}`);
-    await expect(page.locator('#storybook-root dl.leverui-stat__root')).toHaveCount(count);
+    await expect(page.locator('#storybook-root dl.lui-stat__root')).toHaveCount(count);
   }
 }
 
@@ -31,7 +31,7 @@ async function verifiesStatComposition({ page }: { page: Page }): Promise<void> 
   await page.getByRole('button', { name: 'info' }).click();
   await expect(page.getByRole('dialog', { name: 'Each visitor is counted once' })).toBeVisible();
   await page.goto('/iframe.html?id=components-stat--progress-bar');
-  await expect(page.locator('#storybook-root .leverui-progress__track')).toHaveCount(1);
+  await expect(page.locator('#storybook-root .lui-progress__track')).toHaveCount(1);
 }
 
 test('all nine Stat examples render', verifiesStatStories);

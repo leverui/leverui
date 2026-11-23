@@ -2,7 +2,7 @@ import { expect, test, type Page } from '@playwright/test';
 
 /** Set a dark document mode while nested Theme scopes keep their own modes. */
 function setDarkColorMode(): void {
-  document.documentElement.setAttribute('data-leverui-color-mode', 'dark');
+  document.documentElement.setAttribute('data-lui-color-mode', 'dark');
 }
 
 /** Verify visible defaults and all three authored treatments. */

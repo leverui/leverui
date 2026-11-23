@@ -44,8 +44,8 @@ function renderPackedDatePicker() {
 }
 
 const markup = renderPackedDatePicker();
-assert.match(markup, /leverui-date-picker__root/);
-assert.match(markup, /leverui-date-picker__input/);
+assert.match(markup, /lui-date-picker__root/);
+assert.match(markup, /lui-date-picker__input/);
 assert.match(markup, /Packed calendar/);
 assert.match(markup, /03\/14\/2026/);
 assert.match(markup, /<div[^>]*data-date-picker-range-text/);

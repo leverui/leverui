@@ -4,7 +4,7 @@ export const emptyStateContracts = [
     required: [
       ...['root', 'content', 'indicator', 'title', 'description'].map(
         /** Require authored rules for every public Empty State part. */
-        (part) => `.leverui-empty-state__${part}:not([data-unstyled]`,
+        (part) => `.lui-empty-state__${part}:not([data-unstyled]`,
       ),
       ...['sm', 'md', 'lg'].map(
         /** Require each finite base size. */

@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 1024px) {
-    .leverui-switch__root:not([data-unstyled]) {
+    .lui-switch__root:not([data-unstyled]) {
       &[data-size-lg='xs'] {
         --lui-private-switch-width: var(--lui-sizes-6);
         --lui-private-switch-height: var(--lui-sizes-3);
@@ -25,7 +25,7 @@
   }
 
   @media (min-width: 1280px) {
-    .leverui-switch__root:not([data-unstyled]) {
+    .lui-switch__root:not([data-unstyled]) {
       &[data-size-xl='xs'] {
         --lui-private-switch-width: var(--lui-sizes-6);
         --lui-private-switch-height: var(--lui-sizes-3);
@@ -50,7 +50,7 @@
   }
 
   @media (min-width: 1536px) {
-    .leverui-switch__root:not([data-unstyled]) {
+    .lui-switch__root:not([data-unstyled]) {
       &[data-size-2xl='xs'] {
         --lui-private-switch-width: var(--lui-sizes-6);
         --lui-private-switch-height: var(--lui-sizes-3);

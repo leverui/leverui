@@ -140,7 +140,7 @@ async function verifiesCheckboxHydration({ page }: { page: Page }): Promise<void
   await expect(alphaInput).toBeChecked();
   await expect(betaInput).toBeDisabled();
   await expect(externalInput).toBeChecked();
-  await expect(mixedRoot.locator('.leverui-checkbox__indicator')).toHaveAttribute(
+  await expect(mixedRoot.locator('.lui-checkbox__indicator')).toHaveAttribute(
     'data-state',
     'indeterminate',
   );
@@ -152,14 +152,12 @@ async function verifiesCheckboxHydration({ page }: { page: Page }): Promise<void
     'data-server-element',
     'true',
   );
-  await expect(page.getByTestId('hydrated-checked-mark')).toHaveClass(
-    /leverui-checkbox__indicator/,
-  );
-  await expect(page.getByTestId('hydrated-mixed-mark')).toHaveClass(/leverui-checkbox__indicator/);
+  await expect(page.getByTestId('hydrated-checked-mark')).toHaveClass(/lui-checkbox__indicator/);
+  await expect(page.getByTestId('hydrated-mixed-mark')).toHaveClass(/lui-checkbox__indicator/);
   await updatesRoot.getByText('Hydrated updates').click();
   await expect(updatesInput).not.toBeChecked();
   await expect(page.getByTestId('hydrated-checked-mark')).toHaveCount(0);
-  await expect(updatesRoot.locator('.leverui-checkbox__indicator')).toHaveAttribute(
+  await expect(updatesRoot.locator('.lui-checkbox__indicator')).toHaveAttribute(
     'data-state',
     'unchecked',
   );

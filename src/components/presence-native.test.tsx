@@ -33,7 +33,7 @@ function verifiesNativePresence(): void {
   );
   const node = screen.getByTestId('presence');
   expect(node.tagName).toBe('SECTION');
-  expect(node.classList.contains('leverui-presence')).toBe(true);
+  expect(node.classList.contains('lui-presence')).toBe(true);
   expect(node.classList.contains('custom-presence')).toBe(true);
   expect(node.getAttribute('data-state')).toBe('closed');
   setPresent(true);

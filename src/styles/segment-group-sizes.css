@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-segment-group__root:not([data-unstyled]) {
+  .lui-segment-group__root:not([data-unstyled]) {
     &[data-size='xs'] {
       --lui-private-segment-font-size: var(--lui-font-sizes-xs);
       --lui-private-segment-line-height: 1rem;

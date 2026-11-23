@@ -36,9 +36,9 @@ function verifiesServerFileUpload(): void {
   expect(markup).toContain('type="file"');
   expect(markup).toContain('name="documents"');
   expect(markup).toContain('required');
-  expect(markup).toContain('leverui-file-upload__root');
-  expect(markup).toContain('leverui-file-upload__dropzone');
-  expect(markup).toContain('leverui-file-upload__hiddenInput');
+  expect(markup).toContain('lui-file-upload__root');
+  expect(markup).toContain('lui-file-upload__dropzone');
+  expect(markup).toContain('lui-file-upload__hiddenInput');
   expect(markup).toContain('Upload documents');
   expect(markup).toContain('Select file(s)');
   expect(markup).not.toMatch(/\s(?:recipe|unstyled|maxFiles)=/);

@@ -3,10 +3,10 @@ export const ratingGroupContracts = [
   {
     family: 'rating-group',
     required: [
-      '.leverui-rating-group__root:not([data-unstyled])',
-      '.leverui-rating-group__control:not([data-unstyled])',
-      '.leverui-rating-group__item:not([data-unstyled])',
-      '.leverui-rating-group__itemIndicator:not([data-unstyled])',
+      '.lui-rating-group__root:not([data-unstyled])',
+      '.lui-rating-group__control:not([data-unstyled])',
+      '.lui-rating-group__item:not([data-unstyled])',
+      '.lui-rating-group__itemIndicator:not([data-unstyled])',
       '--lui-rating-group-item-font-size',
       '--lui-rating-group-item-line-height',
       '--lui-rating-group-background-color',

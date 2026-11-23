@@ -5,7 +5,7 @@ async function verifiesBasicPicker({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-datepicker--basic');
   const input = page.getByTestId('date-picker-input');
   await expect(input).toBeVisible({ timeout: 30_000 });
-  await expect(input).toHaveClass(/leverui-date-picker__input/);
+  await expect(input).toHaveClass(/lui-date-picker__input/);
   await page.getByRole('button', { name: 'Open calendar' }).click();
   await expect(page.getByTestId('date-picker-content')).toBeVisible();
   await expect(page.getByTestId('date-picker-days')).toBeVisible();

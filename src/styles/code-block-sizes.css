@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-code-block__root:not([data-unstyled])[data-size='sm'] {
+  .lui-code-block__root:not([data-unstyled])[data-size='sm'] {
     --lui-private-code-block-padding: var(--lui-spacing-4);
     --lui-private-code-block-radius: var(--lui-radii-md);
     --lui-private-code-block-header-height: var(--lui-sizes-8);
@@ -7,7 +7,7 @@
     --lui-private-code-block-title-line-height: 1rem;
     --lui-private-code-block-code-font-size: var(--lui-font-sizes-xs);
   }
-  .leverui-code-block__root:not([data-unstyled])[data-size='md'] {
+  .lui-code-block__root:not([data-unstyled])[data-size='md'] {
     --lui-private-code-block-padding: var(--lui-spacing-4);
     --lui-private-code-block-radius: var(--lui-radii-lg);
     --lui-private-code-block-header-height: var(--lui-sizes-10);
@@ -15,7 +15,7 @@
     --lui-private-code-block-title-line-height: 1rem;
     --lui-private-code-block-code-font-size: var(--lui-font-sizes-sm);
   }
-  .leverui-code-block__root:not([data-unstyled])[data-size='lg'] {
+  .lui-code-block__root:not([data-unstyled])[data-size='lg'] {
     --lui-private-code-block-padding: var(--lui-spacing-5);
     --lui-private-code-block-radius: var(--lui-radii-xl);
     --lui-private-code-block-header-height: var(--lui-sizes-12);
@@ -24,7 +24,7 @@
     --lui-private-code-block-code-font-size: var(--lui-font-sizes-sm);
   }
   @media (min-width: 480px) {
-    .leverui-code-block__root:not([data-unstyled])[data-size-sm='sm'] {
+    .lui-code-block__root:not([data-unstyled])[data-size-sm='sm'] {
       --lui-private-code-block-padding: var(--lui-spacing-4);
       --lui-private-code-block-radius: var(--lui-radii-md);
       --lui-private-code-block-header-height: var(--lui-sizes-8);
@@ -32,7 +32,7 @@
       --lui-private-code-block-title-line-height: 1rem;
       --lui-private-code-block-code-font-size: var(--lui-font-sizes-xs);
     }
-    .leverui-code-block__root:not([data-unstyled])[data-size-sm='md'] {
+    .lui-code-block__root:not([data-unstyled])[data-size-sm='md'] {
       --lui-private-code-block-padding: var(--lui-spacing-4);
       --lui-private-code-block-radius: var(--lui-radii-lg);
       --lui-private-code-block-header-height: var(--lui-sizes-10);
@@ -40,7 +40,7 @@
       --lui-private-code-block-title-line-height: 1rem;
       --lui-private-code-block-code-font-size: var(--lui-font-sizes-sm);
     }
-    .leverui-code-block__root:not([data-unstyled])[data-size-sm='lg'] {
+    .lui-code-block__root:not([data-unstyled])[data-size-sm='lg'] {
       --lui-private-code-block-padding: var(--lui-spacing-5);
       --lui-private-code-block-radius: var(--lui-radii-xl);
       --lui-private-code-block-header-height: var(--lui-sizes-12);
@@ -50,7 +50,7 @@
     }
   }
   @media (min-width: 768px) {
-    .leverui-code-block__root:not([data-unstyled])[data-size-md='sm'] {
+    .lui-code-block__root:not([data-unstyled])[data-size-md='sm'] {
       --lui-private-code-block-padding: var(--lui-spacing-4);
       --lui-private-code-block-radius: var(--lui-radii-md);
       --lui-private-code-block-header-height: var(--lui-sizes-8);
@@ -58,7 +58,7 @@
       --lui-private-code-block-title-line-height: 1rem;
       --lui-private-code-block-code-font-size: var(--lui-font-sizes-xs);
     }
-    .leverui-code-block__root:not([data-unstyled])[data-size-md='md'] {
+    .lui-code-block__root:not([data-unstyled])[data-size-md='md'] {
       --lui-private-code-block-padding: var(--lui-spacing-4);
       --lui-private-code-block-radius: var(--lui-radii-lg);
       --lui-private-code-block-header-height: var(--lui-sizes-10);
@@ -66,7 +66,7 @@
       --lui-private-code-block-title-line-height: 1rem;
       --lui-private-code-block-code-font-size: var(--lui-font-sizes-sm);
     }
-    .leverui-code-block__root:not([data-unstyled])[data-size-md='lg'] {
+    .lui-code-block__root:not([data-unstyled])[data-size-md='lg'] {
       --lui-private-code-block-padding: var(--lui-spacing-5);
       --lui-private-code-block-radius: var(--lui-radii-xl);
       --lui-private-code-block-header-height: var(--lui-sizes-12);
@@ -76,7 +76,7 @@
     }
   }
   @media (min-width: 1024px) {
-    .leverui-code-block__root:not([data-unstyled])[data-size-lg='sm'] {
+    .lui-code-block__root:not([data-unstyled])[data-size-lg='sm'] {
       --lui-private-code-block-padding: var(--lui-spacing-4);
       --lui-private-code-block-radius: var(--lui-radii-md);
       --lui-private-code-block-header-height: var(--lui-sizes-8);
@@ -84,7 +84,7 @@
       --lui-private-code-block-title-line-height: 1rem;
       --lui-private-code-block-code-font-size: var(--lui-font-sizes-xs);
     }
-    .leverui-code-block__root:not([data-unstyled])[data-size-lg='md'] {
+    .lui-code-block__root:not([data-unstyled])[data-size-lg='md'] {
       --lui-private-code-block-padding: var(--lui-spacing-4);
       --lui-private-code-block-radius: var(--lui-radii-lg);
       --lui-private-code-block-header-height: var(--lui-sizes-10);
@@ -92,7 +92,7 @@
       --lui-private-code-block-title-line-height: 1rem;
       --lui-private-code-block-code-font-size: var(--lui-font-sizes-sm);
     }
-    .leverui-code-block__root:not([data-unstyled])[data-size-lg='lg'] {
+    .lui-code-block__root:not([data-unstyled])[data-size-lg='lg'] {
       --lui-private-code-block-padding: var(--lui-spacing-5);
       --lui-private-code-block-radius: var(--lui-radii-xl);
       --lui-private-code-block-header-height: var(--lui-sizes-12);
@@ -102,7 +102,7 @@
     }
   }
   @media (min-width: 1280px) {
-    .leverui-code-block__root:not([data-unstyled])[data-size-xl='sm'] {
+    .lui-code-block__root:not([data-unstyled])[data-size-xl='sm'] {
       --lui-private-code-block-padding: var(--lui-spacing-4);
       --lui-private-code-block-radius: var(--lui-radii-md);
       --lui-private-code-block-header-height: var(--lui-sizes-8);
@@ -110,7 +110,7 @@
       --lui-private-code-block-title-line-height: 1rem;
       --lui-private-code-block-code-font-size: var(--lui-font-sizes-xs);
     }
-    .leverui-code-block__root:not([data-unstyled])[data-size-xl='md'] {
+    .lui-code-block__root:not([data-unstyled])[data-size-xl='md'] {
       --lui-private-code-block-padding: var(--lui-spacing-4);
       --lui-private-code-block-radius: var(--lui-radii-lg);
       --lui-private-code-block-header-height: var(--lui-sizes-10);
@@ -118,7 +118,7 @@
       --lui-private-code-block-title-line-height: 1rem;
       --lui-private-code-block-code-font-size: var(--lui-font-sizes-sm);
     }
-    .leverui-code-block__root:not([data-unstyled])[data-size-xl='lg'] {
+    .lui-code-block__root:not([data-unstyled])[data-size-xl='lg'] {
       --lui-private-code-block-padding: var(--lui-spacing-5);
       --lui-private-code-block-radius: var(--lui-radii-xl);
       --lui-private-code-block-header-height: var(--lui-sizes-12);
@@ -128,7 +128,7 @@
     }
   }
   @media (min-width: 1536px) {
-    .leverui-code-block__root:not([data-unstyled])[data-size-2xl='sm'] {
+    .lui-code-block__root:not([data-unstyled])[data-size-2xl='sm'] {
       --lui-private-code-block-padding: var(--lui-spacing-4);
       --lui-private-code-block-radius: var(--lui-radii-md);
       --lui-private-code-block-header-height: var(--lui-sizes-8);
@@ -136,7 +136,7 @@
       --lui-private-code-block-title-line-height: 1rem;
       --lui-private-code-block-code-font-size: var(--lui-font-sizes-xs);
     }
-    .leverui-code-block__root:not([data-unstyled])[data-size-2xl='md'] {
+    .lui-code-block__root:not([data-unstyled])[data-size-2xl='md'] {
       --lui-private-code-block-padding: var(--lui-spacing-4);
       --lui-private-code-block-radius: var(--lui-radii-lg);
       --lui-private-code-block-header-height: var(--lui-sizes-10);
@@ -144,7 +144,7 @@
       --lui-private-code-block-title-line-height: 1rem;
       --lui-private-code-block-code-font-size: var(--lui-font-sizes-sm);
     }
-    .leverui-code-block__root:not([data-unstyled])[data-size-2xl='lg'] {
+    .lui-code-block__root:not([data-unstyled])[data-size-2xl='lg'] {
       --lui-private-code-block-padding: var(--lui-spacing-5);
       --lui-private-code-block-radius: var(--lui-radii-xl);
       --lui-private-code-block-header-height: var(--lui-sizes-12);

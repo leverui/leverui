@@ -35,7 +35,7 @@ function renderTextarea(): string {
 /** Verify authored CSS responds at each supported breakpoint without scripts. */
 async function verifiesResponsiveTextarea({ page }: { page: Page }): Promise<void> {
   const markup = renderTextarea();
-  expect(markup).toContain('leverui-textarea');
+  expect(markup).toContain('lui-textarea');
   expect(markup).not.toContain('style=""');
   expect(markup).not.toMatch(/\s(?:size|variant|colorPalette)=/);
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
@@ -101,8 +101,8 @@ async function verifiesFocusPalette({ page }: { page: Page }): Promise<void> {
   );
   const blue = page.locator('#blue-textarea');
   const red = page.locator('#red-textarea');
-  await expect(blue).toHaveAttribute('data-leverui-color-palette', 'blue');
-  await expect(red).toHaveAttribute('data-leverui-color-palette', 'red');
+  await expect(blue).toHaveAttribute('data-lui-color-palette', 'blue');
+  await expect(red).toHaveAttribute('data-lui-color-palette', 'red');
   const blueRing = await blue.evaluate(
     /** Read the authored focus ring color on the blue control. */
     (element) => getComputedStyle(element).outlineColor,

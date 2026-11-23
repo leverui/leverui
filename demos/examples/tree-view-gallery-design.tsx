@@ -67,7 +67,7 @@ export function TreeViewCustomIcon(): JSX.Element {
       size="sm"
       defaultExpandedValue={['ROOT']}
     >
-      <TreeView.Label class="leverui-visually-hidden">Tree</TreeView.Label>
+      <TreeView.Label class="lui-visually-hidden">Tree</TreeView.Label>
       <TreeView.Tree>
         <TreeView.Node<DesignNode>
           render={

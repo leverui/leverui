@@ -58,7 +58,7 @@ theme. `size` is never passed as a native `size` attribute. Responsive: pass an
 object keyed by breakpoint or an array.
 
 Import `@leverui/components/styles.css` once. Restyle with `class` or `style`,
-target `.leverui-icon`, or set `--lui-icon-size` on a named size. No
+target `.lui-icon`, or set `--lui-icon-size` on a named size. No
 `!important` needed. The SVG `color` attribute takes a CSS color, not a token
 name such as `red.500`. Use `var(--lui-colors-red-500)` in CSS.
 

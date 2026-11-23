@@ -8,9 +8,19 @@ follows [Semantic Versioning](https://semver.org/). Prereleases are numbered
 
 ### Changed
 
-- **Breaking:** CSS variables start with `--lui-` instead of `--leverui-`.
-  Rename them in your own CSS: `--leverui-colors-bg` becomes `--lui-colors-bg`.
-  Class names, `data-leverui-*` attributes, and layer names keep `leverui`.
+- **Breaking:** CSS variables, classes, and data attributes use the short
+  `lui` prefix instead of `leverui`. Rename them in your own CSS and code:
+
+  | Before                | After             |
+  | --------------------- | ----------------- |
+  | `--leverui-colors-bg` | `--lui-colors-bg` |
+  | `.leverui-button`     | `.lui-button`     |
+  | `data-leverui-theme`  | `data-lui-theme`  |
+
+  The default SkipNav target id is now `lui-skip-nav`. Layer names such as
+  `leverui.recipes`, the `leverui-color-mode` storage key, and the package name
+  are unchanged.
+
 - `@leverui/components/styles.css` ships without whitespace or comments, which
   makes it about 16% smaller. Rules and values are unchanged.
 

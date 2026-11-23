@@ -118,8 +118,8 @@ Variables, for a whole theme or one root:
 `--lui-empty-state-gap`, `--lui-empty-state-indicator-size`,
 `--lui-empty-state-title-size`.
 
-Classes: `.leverui-empty-state__*`, one per part. Example:
-`.my-empty-state .leverui-empty-state__title { color: navy; }`.
+Classes: `.lui-empty-state__*`, one per part. Example:
+`.my-empty-state .lui-empty-state__title { color: navy; }`.
 
 Every part takes `class`, `style`, `unstyled`, HTML attributes, refs, `as`, and
 `asChild`.

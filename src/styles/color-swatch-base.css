@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-color-swatch:not([data-unstyled]) {
+  .lui-color-swatch:not([data-unstyled]) {
     --lui-swatch-color: var(--lui-private-swatch-value, transparent);
     --lui-private-swatch-checker-size: var(--lui-swatch-checker-size, 8px);
     --lui-private-swatch-checker-bg: var(--lui-swatch-checker-bg, var(--lui-colors-bg));
@@ -24,20 +24,20 @@
         0% 50% / var(--lui-private-swatch-checker-size) var(--lui-private-swatch-checker-size);
   }
 
-  .leverui-color-swatch[data-mix] {
+  .lui-color-swatch[data-mix] {
     overflow: hidden;
   }
 
-  .leverui-color-swatch__mix-grid {
+  .lui-color-swatch__mix-grid {
     display: grid;
     grid-template-columns: repeat(2, var(--lui-swatch-size, var(--lui-sizes-5)));
   }
 
-  .leverui-color-swatch[data-mix-cell] {
+  .lui-color-swatch[data-mix-cell] {
     box-shadow: none;
   }
 
-  .leverui-color-swatch[data-mix-last] {
+  .lui-color-swatch[data-mix-last] {
     grid-column: span 2 / span 2;
     width: unset;
   }

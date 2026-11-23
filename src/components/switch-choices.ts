@@ -44,7 +44,7 @@ export function switchAttributes(appearance: SwitchAppearance): {
   'data-variant-lg': SwitchVariant | undefined;
   'data-variant-xl': SwitchVariant | undefined;
   'data-variant-2xl': SwitchVariant | undefined;
-  'data-leverui-color-palette': string | undefined;
+  'data-lui-color-palette': string | undefined;
   'data-unstyled': string | undefined;
 } {
   const palette = appearance.colorPalette;
@@ -66,7 +66,7 @@ export function switchAttributes(appearance: SwitchAppearance): {
     'data-variant-lg': variant.lg,
     'data-variant-xl': variant.xl,
     'data-variant-2xl': variant['2xl'],
-    'data-leverui-color-palette': palette?.trim(),
+    'data-lui-color-palette': palette?.trim(),
     'data-unstyled': appearance.unstyled ? '' : undefined,
   };
 }

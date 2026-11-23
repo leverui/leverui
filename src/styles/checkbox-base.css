@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-checkbox:not([data-unstyled]) {
+  .lui-checkbox:not([data-unstyled]) {
     --lui-private-checkbox-gap: var(--lui-spacing-2\.5);
     --lui-private-checkbox-label-font-size: var(--lui-font-sizes-sm);
     --lui-private-checkbox-label-line-height: 1.25rem;
@@ -10,14 +10,14 @@
     position: relative;
   }
 
-  .leverui-checkbox__label:not([data-unstyled]) {
+  .lui-checkbox__label:not([data-unstyled]) {
     font-weight: var(--lui-font-weights-medium);
     user-select: none;
     font-size: var(--lui-private-checkbox-label-font-size);
     line-height: var(--lui-private-checkbox-label-line-height);
   }
 
-  .leverui-checkbox__label:not([data-unstyled])[data-disabled] {
+  .lui-checkbox__label:not([data-unstyled])[data-disabled] {
     opacity: 0.5;
   }
 }

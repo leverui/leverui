@@ -36,7 +36,7 @@ async function verifiesRatingGroupHydration({ page }: { page: Page }): Promise<v
   // Zag 2 names an item holding a half value by that value.
   const primaryThird = primary.getByRole('radio', { name: '2.5 stars' });
   const externalFourth = external.getByRole('radio', { name: '4 stars' });
-  const halfIndicator = primaryThird.locator('.leverui-rating-group__itemIndicator');
+  const halfIndicator = primaryThird.locator('.lui-rating-group__itemIndicator');
   await expect(primaryThird).toHaveAttribute('aria-checked', 'true');
   await expect(halfIndicator).toHaveAttribute('data-half', '');
   await expect(halfIndicator.locator('svg')).toHaveCount(2);

@@ -1,15 +1,15 @@
 @layer leverui.recipes {
-  .leverui-combobox__label:not([data-unstyled])[data-disabled],
-  .leverui-combobox__input:not([data-unstyled]):is([data-disabled], :disabled) {
+  .lui-combobox__label:not([data-unstyled])[data-disabled],
+  .lui-combobox__input:not([data-unstyled]):is([data-disabled], :disabled) {
     opacity: 0.5;
     cursor: not-allowed;
   }
 
-  .leverui-combobox__input:not([data-unstyled]):is(:placeholder-shown, [data-placeholder-shown]) {
+  .lui-combobox__input:not([data-unstyled]):is(:placeholder-shown, [data-placeholder-shown]) {
     color: var(--lui-colors-fg-muted);
   }
 
-  .leverui-combobox__input:not([data-unstyled])[data-invalid] {
+  .lui-combobox__input:not([data-unstyled])[data-invalid] {
     --lui-private-combobox-focus-color: var(
       --lui-combobox-error-color,
       var(--lui-colors-border-error)
@@ -17,7 +17,7 @@
     border-color: var(--lui-private-combobox-focus-color);
   }
 
-  .leverui-combobox__input:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
+  .lui-combobox__input:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
     outline-width: var(--lui-private-combobox-focus-outline-width, 1px);
     outline-style: var(--focus-ring-style, solid);
     outline-color: var(
@@ -32,27 +32,27 @@
     box-shadow: var(--lui-private-combobox-focus-shadow, none);
   }
 
-  .leverui-combobox__clearTrigger:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
+  .lui-combobox__clearTrigger:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
     outline: var(--focus-ring-width, 2px) var(--focus-ring-style, solid)
       var(--lui-combobox-focus-color, var(--lui-colors-color-palette-focus-ring));
     outline-offset: 0;
     border-color: var(--lui-combobox-focus-color, var(--lui-colors-color-palette-focus-ring));
   }
 
-  .leverui-combobox__control[data-disabled] .leverui-combobox__indicatorGroup:not([data-unstyled]) {
+  .lui-combobox__control[data-disabled] .lui-combobox__indicatorGroup:not([data-unstyled]) {
     opacity: 0.5;
   }
 
-  .leverui-combobox__item:not([data-unstyled])[data-highlighted] {
+  .lui-combobox__item:not([data-unstyled])[data-highlighted] {
     background: color-mix(in srgb, var(--lui-colors-bg-emphasized) 60%, transparent);
   }
 
-  .leverui-combobox__item:not([data-unstyled])[data-disabled] {
+  .lui-combobox__item:not([data-unstyled])[data-disabled] {
     pointer-events: none;
     opacity: 0.5;
   }
 
-  .leverui-combobox__content:not([data-unstyled])[data-state='open'] {
+  .lui-combobox__content:not([data-unstyled])[data-state='open'] {
     animation-name: var(
       --lui-combobox-content-open-animation,
       var(--lui-private-combobox-open-animation, none)
@@ -61,7 +61,7 @@
     transform-origin: var(--transform-origin);
   }
 
-  .leverui-combobox__content:not([data-unstyled])[data-state='closed'] {
+  .lui-combobox__content:not([data-unstyled])[data-state='closed'] {
     animation-name: var(
       --lui-combobox-content-closed-animation,
       var(--lui-private-combobox-closed-animation, none)
@@ -70,27 +70,27 @@
     transform-origin: var(--transform-origin);
   }
 
-  .leverui-combobox__content:not([data-unstyled])[data-placement^='top'] {
+  .lui-combobox__content:not([data-unstyled])[data-placement^='top'] {
     --lui-private-combobox-open-animation: slide-from-bottom, fade-in;
     --lui-private-combobox-closed-animation: slide-to-bottom, fade-out;
   }
 
-  .leverui-combobox__content:not([data-unstyled])[data-placement^='bottom'] {
+  .lui-combobox__content:not([data-unstyled])[data-placement^='bottom'] {
     --lui-private-combobox-open-animation: slide-from-top, fade-in;
     --lui-private-combobox-closed-animation: slide-to-top, fade-out;
   }
 
-  .leverui-combobox__content:not([data-unstyled])[data-placement^='left'] {
+  .lui-combobox__content:not([data-unstyled])[data-placement^='left'] {
     --lui-private-combobox-open-animation: slide-from-right, fade-in;
     --lui-private-combobox-closed-animation: slide-to-right, fade-out;
   }
 
-  .leverui-combobox__content:not([data-unstyled])[data-placement^='right'] {
+  .lui-combobox__content:not([data-unstyled])[data-placement^='right'] {
     --lui-private-combobox-open-animation: slide-from-left, fade-in;
     --lui-private-combobox-closed-animation: slide-to-left, fade-out;
   }
 
-  .leverui-combobox__content:not([data-unstyled])[data-empty]:not(
+  .lui-combobox__content:not([data-unstyled])[data-empty]:not(
       :has([data-combobox-empty]:not(:empty))
     ) {
     opacity: 0;

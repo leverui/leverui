@@ -42,9 +42,9 @@ function renderPanel() {
 const markup = renderToString(renderPanel);
 assert.match(markup, /role="dialog"/);
 assert.match(markup, /aria-labelledby="[^"]+"/);
-assert.match(markup, /<h2\b[^>]*leverui-floating-panel__title/);
-assert.match(markup, /leverui-floating-panel__content/);
-assert.match(markup, /leverui-floating-panel__header/);
-assert.match(markup, /leverui-floating-panel__body/);
+assert.match(markup, /<h2\b[^>]*lui-floating-panel__title/);
+assert.match(markup, /lui-floating-panel__content/);
+assert.match(markup, /lui-floating-panel__header/);
+assert.match(markup, /lui-floating-panel__body/);
 assert.match(markup, /Installed panel/);
 assert.match(markup, /Server body/);

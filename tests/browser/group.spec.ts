@@ -18,7 +18,7 @@ async function verifiesGroup({ page }: { page: Page }): Promise<void> {
   await expect(basic).toHaveCSS('gap', '8px');
   await expect(basic).toHaveCSS('align-items', 'center');
   await expect(basic).toHaveCSS('justify-content', 'flex-start');
-  await expect(basic).toHaveClass(/leverui-group/);
+  await expect(basic).toHaveClass(/lui-group/);
   const firstBox = await requiredBox(page.getByTestId('group-default-first'));
   const lastBox = await requiredBox(page.getByTestId('group-default-last'));
   expect(Math.abs(lastBox.x - firstBox.x - firstBox.width - 8)).toBeLessThan(1.5);
@@ -32,10 +32,10 @@ async function verifiesGroup({ page }: { page: Page }): Promise<void> {
   await expect(middle).toHaveCSS('border-radius', '0px');
   await expect(last).toHaveCSS('border-top-left-radius', '0px');
   await expect(first).toHaveCSS('margin-inline-end', '-1px');
-  await expect(first).toHaveAttribute('data-leverui-group-first', '');
-  await expect(middle).toHaveAttribute('data-leverui-group-between', '');
-  await expect(last).toHaveAttribute('data-leverui-group-last', '');
-  await expect(first).toHaveAttribute('data-leverui-group-item', '');
+  await expect(first).toHaveAttribute('data-lui-group-first', '');
+  await expect(middle).toHaveAttribute('data-lui-group-between', '');
+  await expect(last).toHaveAttribute('data-lui-group-last', '');
+  await expect(first).toHaveAttribute('data-lui-group-item', '');
   await expect(first).toHaveCSS('--lui-group-count', '3');
   await expect(middle).toHaveCSS('--lui-group-index', '1');
 
@@ -57,15 +57,10 @@ async function verifiesGroup({ page }: { page: Page }): Promise<void> {
   await expect(page.getByTestId('group-stack-last')).toHaveCSS('z-index', '1');
   await expect(page.getByTestId('group-stack-last-first')).toHaveCSS('z-index', '0');
   await expect(page.getByTestId('group-stack-last-last')).toHaveCSS('z-index', '1');
-  await expect(page.getByTestId('group-separator')).toHaveAttribute(
-    'data-leverui-group-auto-skip',
-    '',
-  );
+  await expect(page.getByTestId('group-separator')).toHaveAttribute('data-lui-group-auto-skip', '');
   await expect(page.getByTestId('group-skipped-first')).toHaveCSS('--lui-group-count', '2');
   await expect(page.getByTestId('group-skipped-last')).toHaveCSS('--lui-group-index', '1');
-  await expect(page.getByTestId('group-single-item')).not.toHaveAttribute(
-    'data-leverui-group-item',
-  );
+  await expect(page.getByTestId('group-single-item')).not.toHaveAttribute('data-lui-group-item');
 
   const responsive = page.getByTestId('group-responsive');
   const detached = page.getByTestId('group-responsive-detach');
@@ -78,7 +73,7 @@ async function verifiesGroup({ page }: { page: Page }): Promise<void> {
   await expect(attachedLater).toHaveCSS('gap', '8px');
   await expect(responsive).toHaveAttribute('data-orientation-md', 'vertical');
   await expect(responsive).toHaveAttribute('data-grow-md', 'true');
-  await expect(responsive).not.toHaveAttribute('data-leverui-private-style-runtime');
+  await expect(responsive).not.toHaveAttribute('data-lui-private-style-runtime');
   await expect(responsive).toHaveCSS('display', 'inline-flex');
   await expect(responsive).toHaveCSS('flex-direction', 'row');
   await expect(page.getByTestId('group-aliases')).toHaveCSS('align-items', 'flex-start');
@@ -137,7 +132,7 @@ async function verifiesGroup({ page }: { page: Page }): Promise<void> {
     'border-bottom-left-radius',
     '0px',
   );
-  await page.addStyleTag({ content: '.leverui-group[data-testid="group-default"] { gap: 13px; }' });
+  await page.addStyleTag({ content: '.lui-group[data-testid="group-default"] { gap: 13px; }' });
   await expect(basic).toHaveCSS('gap', '13px');
 }
 

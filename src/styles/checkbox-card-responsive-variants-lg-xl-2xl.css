@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 1024px) {
-    .leverui-checkbox-card:not([data-unstyled]) {
+    .lui-checkbox-card:not([data-unstyled]) {
       &[data-variant-lg='surface'] {
         --lui-private-checkbox-card-border-width: 1px;
         --lui-private-checkbox-card-border-color: var(--lui-colors-border);
@@ -59,7 +59,7 @@
     }
   }
   @media (min-width: 1280px) {
-    .leverui-checkbox-card:not([data-unstyled]) {
+    .lui-checkbox-card:not([data-unstyled]) {
       &[data-variant-xl='surface'] {
         --lui-private-checkbox-card-border-width: 1px;
         --lui-private-checkbox-card-border-color: var(--lui-colors-border);
@@ -118,7 +118,7 @@
     }
   }
   @media (min-width: 1536px) {
-    .leverui-checkbox-card:not([data-unstyled]) {
+    .lui-checkbox-card:not([data-unstyled]) {
       &[data-variant-2xl='surface'] {
         --lui-private-checkbox-card-border-width: 1px;
         --lui-private-checkbox-card-border-color: var(--lui-colors-border);

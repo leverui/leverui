@@ -42,16 +42,13 @@ async function verifiesAvatarBrowserContract({ page }: { page: Page }): Promise<
   await expect(image).toBeVisible();
   await expect(page.getByTestId('avatar-status')).toHaveText('loaded');
   await expect(image).toHaveAttribute('alt', 'Grace Hopper');
-  await expect(image).toHaveClass(/leverui-avatar__image/);
+  await expect(image).toHaveClass(/lui-avatar__image/);
   await expect(image).toHaveCSS('object-fit', 'cover');
-  await page.addStyleTag({ content: '.leverui-avatar__image { object-fit: contain; }' });
+  await page.addStyleTag({ content: '.lui-avatar__image { object-fit: contain; }' });
   await expect(image).toHaveCSS('object-fit', 'contain');
   const group = page.getByTestId('avatar-group');
   await expect(group).toHaveCSS('gap', '0px');
-  await expect(page.getByTestId('avatar-group-first')).toHaveAttribute(
-    'data-leverui-group-item',
-    '',
-  );
+  await expect(page.getByTestId('avatar-group-first')).toHaveAttribute('data-lui-group-item', '');
   await expect(page.getByTestId('avatar-group-last')).toHaveCSS('width', '32px');
 }
 
@@ -73,7 +70,7 @@ async function verifiesServerAvatar({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderServerAvatar);
   expect(markup).toContain('GH');
   expect(markup).toContain('data-avatar-');
-  expect(markup).toContain('leverui-avatar__root');
+  expect(markup).toContain('lui-avatar__root');
   expect(markup).toContain('data-size="lg"');
   expect(markup).toContain('data-variant="outline"');
   expect(markup).not.toMatch(/<div[^>]*\s(?:size|variant|recipe)=/);

@@ -28,9 +28,9 @@ async function verifiesDefaultSwitch(): Promise<void> {
   );
   const input = screen.getByRole('checkbox', { name: 'Notifications' });
   expect(input).toBeChecked();
-  expect(input.closest('[data-switch-root]')).toHaveClass('leverui-switch__root');
-  expect(document.querySelector('.leverui-switch__control')).not.toBeNull();
-  expect(document.querySelector('.leverui-switch__thumb')).not.toBeNull();
+  expect(input.closest('[data-switch-root]')).toHaveClass('lui-switch__root');
+  expect(document.querySelector('.lui-switch__control')).not.toBeNull();
+  expect(document.querySelector('.lui-switch__thumb')).not.toBeNull();
   expect(
     new FormData(screen.getByTestId('switch-form') as HTMLFormElement).get('notifications'),
   ).toBe('yes');
@@ -79,8 +79,8 @@ async function verifiesControlledIndicators(): Promise<void> {
     () => <ControlledSwitch />,
   );
   const input = screen.getByRole('checkbox', { name: 'Sync' });
-  expect(screen.getByText('Track off')).toHaveClass('leverui-switch__indicator');
-  expect(screen.getByText('Thumb off')).toHaveClass('leverui-switch__thumbIndicator');
+  expect(screen.getByText('Track off')).toHaveClass('lui-switch__indicator');
+  expect(screen.getByText('Thumb off')).toHaveClass('lui-switch__thumbIndicator');
   fireEvent.click(input);
   await waitFor(
     /** Wait for the controlled signal to update both indicator branches. */

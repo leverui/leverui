@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-steps__root:not([data-unstyled])[data-size='xs'] {
+  .lui-steps__root:not([data-unstyled])[data-size='xs'] {
     --lui-private-steps-root-gap: var(--lui-spacing-2\.5);
     --lui-private-steps-size: var(--lui-sizes-6);
     --lui-private-steps-icon-size: var(--lui-sizes-3\.5);
@@ -9,7 +9,7 @@
     --lui-private-steps-title-line-height: 1.25rem;
   }
 
-  .leverui-steps__root:not([data-unstyled])[data-size='sm'] {
+  .lui-steps__root:not([data-unstyled])[data-size='sm'] {
     --lui-private-steps-root-gap: var(--lui-spacing-3);
     --lui-private-steps-size: var(--lui-sizes-8);
     --lui-private-steps-icon-size: var(--lui-sizes-4);
@@ -19,7 +19,7 @@
     --lui-private-steps-title-line-height: 1.25rem;
   }
 
-  .leverui-steps__root:not([data-unstyled])[data-size='md'] {
+  .lui-steps__root:not([data-unstyled])[data-size='md'] {
     --lui-private-steps-root-gap: var(--lui-spacing-4);
     --lui-private-steps-size: var(--lui-sizes-10);
     --lui-private-steps-icon-size: var(--lui-sizes-4);
@@ -29,7 +29,7 @@
     --lui-private-steps-title-line-height: 1.25rem;
   }
 
-  .leverui-steps__root:not([data-unstyled])[data-size='lg'] {
+  .lui-steps__root:not([data-unstyled])[data-size='lg'] {
     --lui-private-steps-root-gap: var(--lui-spacing-6);
     --lui-private-steps-size: var(--lui-sizes-11);
     --lui-private-steps-icon-size: var(--lui-sizes-5);

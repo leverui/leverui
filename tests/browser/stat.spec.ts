@@ -7,7 +7,7 @@ async function verifiesStatParts({ page }: { page: Page }): Promise<void> {
   await expect(root).toBeVisible({ timeout: 15_000 });
   await expect(root).toHaveJSProperty('tagName', 'DL');
   await expect(root).toHaveAttribute('data-size', 'md');
-  await expect(root).not.toHaveAttribute('data-leverui-private-style-runtime');
+  await expect(root).not.toHaveAttribute('data-lui-private-style-runtime');
   await expect(root).toHaveAttribute('data-ref-tag', 'dl');
   await expect(page.getByTestId('stat-label')).toHaveJSProperty('tagName', 'DT');
   await expect(page.getByTestId('stat-value')).toHaveJSProperty('tagName', 'DD');
@@ -82,8 +82,7 @@ test('Stat group and provider propagate reactive size variants', verifiesStatVar
 async function verifiesStatCustomStyles({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=content-stat--contract');
   await page.addStyleTag({
-    content:
-      '.leverui-stat__root { gap: 19px; } .leverui-stat__label { color: rgb(102, 51, 153); }',
+    content: '.lui-stat__root { gap: 19px; } .lui-stat__label { color: rgb(102, 51, 153); }',
   });
   await expect(page.getByTestId('stat-default')).toHaveCSS('gap', '19px');
   await expect(page.getByTestId('stat-label')).toHaveCSS('color', 'rgb(102, 51, 153)');

@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 1024px) {
-    .leverui-textarea:not([data-unstyled])[data-variant-lg='outline'] {
+    .lui-textarea:not([data-unstyled])[data-variant-lg='outline'] {
       --lui-private-textarea-background: transparent;
       --lui-private-textarea-border-width: 1px;
       --lui-private-textarea-border-color: var(--lui-colors-border);
@@ -10,7 +10,7 @@
       --lui-private-textarea-focus-shadow: none;
     }
 
-    .leverui-textarea:not([data-unstyled])[data-variant-lg='subtle'] {
+    .lui-textarea:not([data-unstyled])[data-variant-lg='subtle'] {
       --lui-private-textarea-background: var(--lui-colors-bg-muted);
       --lui-private-textarea-border-width: 1px;
       --lui-private-textarea-border-color: transparent;
@@ -20,7 +20,7 @@
       --lui-private-textarea-focus-shadow: none;
     }
 
-    .leverui-textarea:not([data-unstyled])[data-variant-lg='flushed'] {
+    .lui-textarea:not([data-unstyled])[data-variant-lg='flushed'] {
       --lui-private-textarea-background: transparent;
       --lui-private-textarea-border-width: 0 0 1px;
       --lui-private-textarea-border-color: var(--lui-colors-border);
@@ -32,7 +32,7 @@
   }
 
   @media (min-width: 1280px) {
-    .leverui-textarea:not([data-unstyled])[data-variant-xl='outline'] {
+    .lui-textarea:not([data-unstyled])[data-variant-xl='outline'] {
       --lui-private-textarea-background: transparent;
       --lui-private-textarea-border-width: 1px;
       --lui-private-textarea-border-color: var(--lui-colors-border);
@@ -42,7 +42,7 @@
       --lui-private-textarea-focus-shadow: none;
     }
 
-    .leverui-textarea:not([data-unstyled])[data-variant-xl='subtle'] {
+    .lui-textarea:not([data-unstyled])[data-variant-xl='subtle'] {
       --lui-private-textarea-background: var(--lui-colors-bg-muted);
       --lui-private-textarea-border-width: 1px;
       --lui-private-textarea-border-color: transparent;
@@ -52,7 +52,7 @@
       --lui-private-textarea-focus-shadow: none;
     }
 
-    .leverui-textarea:not([data-unstyled])[data-variant-xl='flushed'] {
+    .lui-textarea:not([data-unstyled])[data-variant-xl='flushed'] {
       --lui-private-textarea-background: transparent;
       --lui-private-textarea-border-width: 0 0 1px;
       --lui-private-textarea-border-color: var(--lui-colors-border);
@@ -64,7 +64,7 @@
   }
 
   @media (min-width: 1536px) {
-    .leverui-textarea:not([data-unstyled])[data-variant-2xl='outline'] {
+    .lui-textarea:not([data-unstyled])[data-variant-2xl='outline'] {
       --lui-private-textarea-background: transparent;
       --lui-private-textarea-border-width: 1px;
       --lui-private-textarea-border-color: var(--lui-colors-border);
@@ -74,7 +74,7 @@
       --lui-private-textarea-focus-shadow: none;
     }
 
-    .leverui-textarea:not([data-unstyled])[data-variant-2xl='subtle'] {
+    .lui-textarea:not([data-unstyled])[data-variant-2xl='subtle'] {
       --lui-private-textarea-background: var(--lui-colors-bg-muted);
       --lui-private-textarea-border-width: 1px;
       --lui-private-textarea-border-color: transparent;
@@ -84,7 +84,7 @@
       --lui-private-textarea-focus-shadow: none;
     }
 
-    .leverui-textarea:not([data-unstyled])[data-variant-2xl='flushed'] {
+    .lui-textarea:not([data-unstyled])[data-variant-2xl='flushed'] {
       --lui-private-textarea-background: transparent;
       --lui-private-textarea-border-width: 0 0 1px;
       --lui-private-textarea-border-color: var(--lui-colors-border);

@@ -78,7 +78,7 @@ function SpinnerRoot(props: SpinnerRootProps): JSX.Element {
       'data-size-lg': sizes().lg,
       'data-size-xl': sizes().xl,
       'data-size-2xl': sizes()['2xl'],
-      'data-leverui-color-palette': local.colorPalette,
+      'data-lui-color-palette': local.colorPalette,
       'data-unstyled': local.unstyled ? '' : undefined,
       ref: attachNode,
     }),

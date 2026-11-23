@@ -35,5 +35,5 @@ export function AbsoluteCenterUsage() {
 | `asChild`  | —        | Render callback                        | Render your own element.       |
 | `unstyled` | `false`  | Boolean                                | Turn off the default position. |
 
-Style with `class`, `style`, `.leverui-absolute-center`, or the `data-axis`
+Style with `class`, `style`, `.lui-absolute-center`, or the `data-axis`
 attribute. No `css` prop.

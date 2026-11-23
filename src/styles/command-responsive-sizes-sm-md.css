@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-command__root:not([data-unstyled])[data-size-sm='sm'] {
+    .lui-command__root:not([data-unstyled])[data-size-sm='sm'] {
       --lui-private-command-control-padding-x: var(--lui-spacing-3);
       --lui-private-command-input-height: var(--lui-sizes-10);
       --lui-private-command-indicator-size: var(--lui-sizes-4);
@@ -15,7 +15,7 @@
       --lui-private-command-result-line-height: 1.25rem;
     }
 
-    .leverui-command__root:not([data-unstyled])[data-size-sm='md'] {
+    .lui-command__root:not([data-unstyled])[data-size-sm='md'] {
       --lui-private-command-control-padding-x: var(--lui-spacing-4);
       --lui-private-command-input-height: var(--lui-sizes-12);
       --lui-private-command-indicator-size: var(--lui-sizes-4);
@@ -30,7 +30,7 @@
       --lui-private-command-result-line-height: 1.25rem;
     }
 
-    .leverui-command__root:not([data-unstyled])[data-size-sm='lg'] {
+    .lui-command__root:not([data-unstyled])[data-size-sm='lg'] {
       --lui-private-command-control-padding-x: var(--lui-spacing-5);
       --lui-private-command-input-height: var(--lui-sizes-14);
       --lui-private-command-indicator-size: var(--lui-sizes-5);
@@ -47,7 +47,7 @@
   }
 
   @media (min-width: 768px) {
-    .leverui-command__root:not([data-unstyled])[data-size-md='sm'] {
+    .lui-command__root:not([data-unstyled])[data-size-md='sm'] {
       --lui-private-command-control-padding-x: var(--lui-spacing-3);
       --lui-private-command-input-height: var(--lui-sizes-10);
       --lui-private-command-indicator-size: var(--lui-sizes-4);
@@ -62,7 +62,7 @@
       --lui-private-command-result-line-height: 1.25rem;
     }
 
-    .leverui-command__root:not([data-unstyled])[data-size-md='md'] {
+    .lui-command__root:not([data-unstyled])[data-size-md='md'] {
       --lui-private-command-control-padding-x: var(--lui-spacing-4);
       --lui-private-command-input-height: var(--lui-sizes-12);
       --lui-private-command-indicator-size: var(--lui-sizes-4);
@@ -77,7 +77,7 @@
       --lui-private-command-result-line-height: 1.25rem;
     }
 
-    .leverui-command__root:not([data-unstyled])[data-size-md='lg'] {
+    .lui-command__root:not([data-unstyled])[data-size-md='lg'] {
       --lui-private-command-control-padding-x: var(--lui-spacing-5);
       --lui-private-command-input-height: var(--lui-sizes-14);
       --lui-private-command-indicator-size: var(--lui-sizes-5);

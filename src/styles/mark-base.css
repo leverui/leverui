@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-mark:not([data-unstyled], [data-leverui-private-style-runtime]) {
+  .lui-mark:not([data-unstyled], [data-lui-private-style-runtime]) {
     background-color: var(--lui-private-mark-background, transparent);
     color: var(--lui-private-mark-color, inherit);
     white-space: nowrap;

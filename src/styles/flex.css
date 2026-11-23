@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-flex {
+  .lui-flex {
     --lui-private-flex-align-base: initial;
     --lui-private-flex-align-sm: initial;
     --lui-private-flex-align-md: initial;

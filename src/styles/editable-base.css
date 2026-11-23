@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-editable__root:not([data-unstyled]) {
+  .lui-editable__root:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
     position: relative;
@@ -9,27 +9,27 @@
     line-height: var(--lui-private-editable-line-height);
   }
 
-  .leverui-editable__root[data-size='sm'] {
+  .lui-editable__root[data-size='sm'] {
     --lui-private-editable-font-size: var(--lui-font-sizes-sm);
     --lui-private-editable-line-height: 1.25rem;
     --lui-private-editable-control-height: var(--lui-sizes-8);
   }
 
-  .leverui-editable__root[data-size='md'] {
+  .lui-editable__root[data-size='md'] {
     --lui-private-editable-font-size: var(--lui-font-sizes-sm);
     --lui-private-editable-line-height: 1.25rem;
     --lui-private-editable-control-height: var(--lui-sizes-9);
   }
 
-  .leverui-editable__root[data-size='lg'] {
+  .lui-editable__root[data-size='lg'] {
     --lui-private-editable-font-size: var(--lui-font-sizes-md);
     --lui-private-editable-line-height: 1.5rem;
     --lui-private-editable-control-height: var(--lui-sizes-10);
   }
 
-  .leverui-editable__preview:not([data-unstyled]),
-  .leverui-editable__input:not([data-unstyled]),
-  .leverui-editable__textarea:not([data-unstyled]) {
+  .lui-editable__preview:not([data-unstyled]),
+  .lui-editable__input:not([data-unstyled]),
+  .lui-editable__textarea:not([data-unstyled]) {
     font-size: inherit;
     font-weight: inherit;
     text-align: inherit;
@@ -40,7 +40,7 @@
     min-height: var(--lui-editable-control-height, var(--lui-private-editable-control-height));
   }
 
-  .leverui-editable__preview:not([data-unstyled]) {
+  .lui-editable__preview:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
     cursor: text;
@@ -48,34 +48,34 @@
     transition-duration: var(--lui-durations-moderate);
   }
 
-  .leverui-editable__preview:not([data-unstyled]):hover {
+  .lui-editable__preview:not([data-unstyled]):hover {
     background: var(--lui-colors-bg-muted);
   }
 
-  .leverui-editable__preview:not([data-unstyled])[data-disabled] {
+  .lui-editable__preview:not([data-unstyled])[data-disabled] {
     user-select: none;
   }
 
-  .leverui-editable__input:not([data-unstyled]),
-  .leverui-editable__textarea:not([data-unstyled]) {
+  .lui-editable__input:not([data-unstyled]),
+  .lui-editable__textarea:not([data-unstyled]) {
     outline: 0;
     width: 100%;
     transition-property: background-color, color, border-color, box-shadow;
     transition-duration: var(--lui-durations-fast);
   }
 
-  .leverui-editable__input:not([data-unstyled])::placeholder,
-  .leverui-editable__textarea:not([data-unstyled])::placeholder {
+  .lui-editable__input:not([data-unstyled])::placeholder,
+  .lui-editable__textarea:not([data-unstyled])::placeholder {
     opacity: 0.6;
   }
 
-  .leverui-editable__input:not([data-unstyled]):is(:focus-visible, [data-focus-visible]),
-  .leverui-editable__textarea:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
+  .lui-editable__input:not([data-unstyled]):is(:focus-visible, [data-focus-visible]),
+  .lui-editable__textarea:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
     outline: 2px solid var(--lui-editable-focus-color, var(--lui-colors-color-palette-focus-ring));
     outline-offset: -2px;
   }
 
-  .leverui-editable__control:not([data-unstyled]) {
+  .lui-editable__control:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
     gap: var(--lui-editable-gap, var(--lui-spacing-1\.5));

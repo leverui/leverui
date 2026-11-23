@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-native-select__root:not([data-unstyled])[data-size-sm='xs'] {
+    .lui-native-select__root:not([data-unstyled])[data-size-sm='xs'] {
       --lui-private-native-select-height: var(--lui-sizes-8);
       --lui-private-native-select-font-size: var(--lui-font-sizes-xs);
       --lui-private-native-select-line-height: 1rem;
@@ -10,7 +10,7 @@
       --lui-private-native-select-indicator-inset-end: var(--lui-spacing-1\.5);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-size-sm='sm'] {
+    .lui-native-select__root:not([data-unstyled])[data-size-sm='sm'] {
       --lui-private-native-select-height: var(--lui-sizes-9);
       --lui-private-native-select-font-size: var(--lui-font-sizes-sm);
       --lui-private-native-select-line-height: 1.25rem;
@@ -20,7 +20,7 @@
       --lui-private-native-select-indicator-inset-end: var(--lui-spacing-2);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-size-sm='md'] {
+    .lui-native-select__root:not([data-unstyled])[data-size-sm='md'] {
       --lui-private-native-select-height: var(--lui-sizes-10);
       --lui-private-native-select-font-size: var(--lui-font-sizes-sm);
       --lui-private-native-select-line-height: 1.25rem;
@@ -30,7 +30,7 @@
       --lui-private-native-select-indicator-inset-end: var(--lui-spacing-2);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-size-sm='lg'] {
+    .lui-native-select__root:not([data-unstyled])[data-size-sm='lg'] {
       --lui-private-native-select-height: var(--lui-sizes-11);
       --lui-private-native-select-font-size: var(--lui-font-sizes-md);
       --lui-private-native-select-line-height: 1.5rem;
@@ -40,7 +40,7 @@
       --lui-private-native-select-indicator-inset-end: var(--lui-spacing-3);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-size-sm='xl'] {
+    .lui-native-select__root:not([data-unstyled])[data-size-sm='xl'] {
       --lui-private-native-select-height: var(--lui-sizes-12);
       --lui-private-native-select-font-size: var(--lui-font-sizes-md);
       --lui-private-native-select-line-height: 1.5rem;
@@ -51,7 +51,7 @@
     }
   }
   @media (min-width: 768px) {
-    .leverui-native-select__root:not([data-unstyled])[data-size-md='xs'] {
+    .lui-native-select__root:not([data-unstyled])[data-size-md='xs'] {
       --lui-private-native-select-height: var(--lui-sizes-8);
       --lui-private-native-select-font-size: var(--lui-font-sizes-xs);
       --lui-private-native-select-line-height: 1rem;
@@ -61,7 +61,7 @@
       --lui-private-native-select-indicator-inset-end: var(--lui-spacing-1\.5);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-size-md='sm'] {
+    .lui-native-select__root:not([data-unstyled])[data-size-md='sm'] {
       --lui-private-native-select-height: var(--lui-sizes-9);
       --lui-private-native-select-font-size: var(--lui-font-sizes-sm);
       --lui-private-native-select-line-height: 1.25rem;
@@ -71,7 +71,7 @@
       --lui-private-native-select-indicator-inset-end: var(--lui-spacing-2);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-size-md='md'] {
+    .lui-native-select__root:not([data-unstyled])[data-size-md='md'] {
       --lui-private-native-select-height: var(--lui-sizes-10);
       --lui-private-native-select-font-size: var(--lui-font-sizes-sm);
       --lui-private-native-select-line-height: 1.25rem;
@@ -81,7 +81,7 @@
       --lui-private-native-select-indicator-inset-end: var(--lui-spacing-2);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-size-md='lg'] {
+    .lui-native-select__root:not([data-unstyled])[data-size-md='lg'] {
       --lui-private-native-select-height: var(--lui-sizes-11);
       --lui-private-native-select-font-size: var(--lui-font-sizes-md);
       --lui-private-native-select-line-height: 1.5rem;
@@ -91,7 +91,7 @@
       --lui-private-native-select-indicator-inset-end: var(--lui-spacing-3);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-size-md='xl'] {
+    .lui-native-select__root:not([data-unstyled])[data-size-md='xl'] {
       --lui-private-native-select-height: var(--lui-sizes-12);
       --lui-private-native-select-font-size: var(--lui-font-sizes-md);
       --lui-private-native-select-line-height: 1.5rem;

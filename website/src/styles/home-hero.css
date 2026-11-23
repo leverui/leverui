@@ -9,7 +9,7 @@
   --hero-plane: color-mix(in srgb, var(--site-accent) 9%, transparent);
   --hero-plane-strong: color-mix(in srgb, var(--site-accent) 15%, transparent);
 }
-html[data-leverui-color-mode='dark'] .hero-band {
+html[data-lui-color-mode='dark'] .hero-band {
   --hero-plane: color-mix(in srgb, var(--site-accent) 14%, transparent);
   --hero-plane-strong: color-mix(in srgb, var(--site-accent) 24%, transparent);
 }
@@ -88,7 +88,7 @@ html[data-leverui-color-mode='dark'] .hero-band {
   display: flex;
   gap: 12px;
 }
-.hero-actions .leverui-button {
+.hero-actions .lui-button {
   min-width: 150px;
   justify-content: center;
 }

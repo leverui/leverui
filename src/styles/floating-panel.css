@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-floating-panel__positioner[data-leverui-floating-panel-css] {
+  .lui-floating-panel__positioner[data-lui-floating-panel-css] {
     --lui-private-floating-panel-z-index: var(--lui-z-index-popover);
     z-index: calc(var(--lui-private-floating-panel-z-index) + var(--layer-index, 0));
 
@@ -12,7 +12,7 @@
     }
   }
 
-  .leverui-floating-panel__content[data-leverui-floating-panel-css] {
+  .lui-floating-panel__content[data-lui-floating-panel-css] {
     display: flex;
     flex-direction: column;
     background: var(--lui-colors-bg-panel);
@@ -28,7 +28,7 @@
     }
   }
 
-  .leverui-floating-panel__dragTrigger[data-leverui-floating-panel-css] {
+  .lui-floating-panel__dragTrigger[data-lui-floating-panel-css] {
     flex: 1;
     display: flex;
     align-items: center;
@@ -36,7 +36,7 @@
     min-width: 0;
   }
 
-  .leverui-floating-panel__header[data-leverui-floating-panel-css] {
+  .lui-floating-panel__header[data-lui-floating-panel-css] {
     display: flex;
     align-items: center;
     gap: var(--lui-spacing-2);
@@ -47,7 +47,7 @@
     flex: none;
   }
 
-  .leverui-floating-panel__title[data-leverui-floating-panel-css] {
+  .lui-floating-panel__title[data-lui-floating-panel-css] {
     font-weight: var(--lui-font-weights-semibold);
     font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
@@ -57,7 +57,7 @@
     white-space: nowrap;
   }
 
-  .leverui-floating-panel__body[data-leverui-floating-panel-css] {
+  .lui-floating-panel__body[data-lui-floating-panel-css] {
     flex: 1;
     overflow: auto;
     padding: var(--lui-spacing-3);
@@ -65,7 +65,7 @@
     line-height: 1.25rem;
   }
 
-  .leverui-floating-panel__resizeTrigger[data-leverui-floating-panel-css] {
+  .lui-floating-panel__resizeTrigger[data-lui-floating-panel-css] {
     z-index: 1;
     --lui-private-floating-panel-handle-size: var(--lui-sizes-2\.5);
 

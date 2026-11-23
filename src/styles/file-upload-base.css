@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-file-upload__root:not([data-unstyled]) {
+  .lui-file-upload__root:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -7,14 +7,13 @@
     gap: var(--lui-spacing-4);
   }
 
-  .leverui-file-upload__root:not([data-unstyled]) .leverui-file-upload__label:not([data-unstyled]) {
+  .lui-file-upload__root:not([data-unstyled]) .lui-file-upload__label:not([data-unstyled]) {
     font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
     font-weight: var(--lui-font-weights-medium);
   }
 
-  .leverui-file-upload__root:not([data-unstyled])
-    .leverui-file-upload__dropzone:not([data-unstyled]) {
+  .lui-file-upload__root:not([data-unstyled]) .lui-file-upload__dropzone:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,8 +45,8 @@
     }
   }
 
-  .leverui-file-upload__root:not([data-unstyled])
-    .leverui-file-upload__dropzoneContent:not([data-unstyled]) {
+  .lui-file-upload__root:not([data-unstyled])
+    .lui-file-upload__dropzoneContent:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     align-items: center;

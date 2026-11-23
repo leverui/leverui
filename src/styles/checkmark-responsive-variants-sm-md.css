@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-checkmark:not([data-unstyled]) {
+    .lui-checkmark:not([data-unstyled]) {
       &[data-variant-sm='solid'] {
         --lui-private-checkmark-base-background: transparent;
         --lui-private-checkmark-active-background: var(--lui-colors-color-palette-solid);
@@ -51,7 +51,7 @@
     }
   }
   @media (min-width: 768px) {
-    .leverui-checkmark:not([data-unstyled]) {
+    .lui-checkmark:not([data-unstyled]) {
       &[data-variant-md='solid'] {
         --lui-private-checkmark-base-background: transparent;
         --lui-private-checkmark-active-background: var(--lui-colors-color-palette-solid);

@@ -29,7 +29,7 @@ function verifiesNativeCode(): void {
   expect(code.tagName).toBe('CODE');
   expect(code.textContent).toBe('npm run build');
   expect(code.getAttribute('title')).toBe('Inline snippet');
-  expect(code.className).toContain('leverui-code');
+  expect(code.className).toContain('lui-code');
   expect(code.getAttribute('data-size')).toBe('sm');
   expect(code.getAttribute('data-variant')).toBe('subtle');
   expect(code.hasAttribute('size')).toBe(false);
@@ -108,7 +108,7 @@ function verifiesCodeComposition(): void {
   expect(screen.getByTestId('selected-code')).toBe(selected);
   expect(selected?.tagName).toBe('SPAN');
   expect(screen.getByTestId('child-code').tagName).toBe('STRONG');
-  expect(screen.getByTestId('child-code').className).toContain('leverui-code');
+  expect(screen.getByTestId('child-code').className).toContain('lui-code');
 }
 
 it('supports selected native elements and Solid child rendering', verifiesCodeComposition);

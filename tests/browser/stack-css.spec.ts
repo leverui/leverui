@@ -82,7 +82,7 @@ async function verifiesStackCss({ page }: { page: Page }): Promise<void> {
   await page.setContent(`<style>${defaultCss}</style>${markup}`);
   const plain = page.locator('#plain-stack');
   const separated = page.locator('#separator-stack');
-  const line = separated.locator('.leverui-stack-separator');
+  const line = separated.locator('.lui-stack-separator');
   await expect(plain).toHaveCSS('display', 'flex');
   await expect(plain).toHaveCSS('flex-direction', 'column');
   await expect(plain).toHaveCSS('gap', '8px');
@@ -97,11 +97,11 @@ async function verifiesStackCss({ page }: { page: Page }): Promise<void> {
   await expect(line).toHaveCSS('margin-left', '24px');
   await expect(line).toHaveCSS('border-inline-start-width', '1px');
   const unstyled = page.locator('#unstyled-stack');
-  await expect(unstyled).toHaveClass(/leverui-stack/);
+  await expect(unstyled).toHaveClass(/lui-stack/);
   await expect(unstyled).toHaveAttribute('data-unstyled', '');
   await expect(unstyled).toHaveCSS('display', 'block');
   const unstyledSeparator = page.locator('#unstyled-separator');
-  await expect(unstyledSeparator).toHaveClass(/leverui-stack-separator/);
+  await expect(unstyledSeparator).toHaveClass(/lui-stack-separator/);
   await expect(unstyledSeparator).toHaveAttribute('data-unstyled', '');
   await expect(unstyledSeparator).toHaveCSS('align-self', 'auto');
   await page.addStyleTag({
@@ -110,7 +110,7 @@ async function verifiesStackCss({ page }: { page: Page }): Promise<void> {
   });
   await expect(plain).toHaveCSS('gap', '20px');
   const consumerLine = page.locator('#consumer-separator-stack .consumer-separator');
-  await expect(consumerLine).toHaveClass(/leverui-stack-separator/);
+  await expect(consumerLine).toHaveClass(/lui-stack-separator/);
   await expect(consumerLine).toHaveCSS('border-top-color', 'rgb(30, 50, 70)');
   await expect(consumerLine).toHaveCSS('border-top-width', '3px');
   await expect(unstyled).toHaveCSS('display', 'flex');
@@ -140,9 +140,9 @@ async function verifiesStyledStack({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(`<style>${defaultCss}</style>${markup}`);
   const stack = page.locator('#mixed-stack');
-  const line = stack.locator('.leverui-stack-separator');
+  const line = stack.locator('.lui-stack-separator');
   await expect(stack).toHaveCSS('flex-direction', 'row');
-  await expect(line).toHaveClass(/leverui-stack-separator/);
+  await expect(line).toHaveClass(/lui-stack-separator/);
   await expect(line).toHaveCSS('margin-left', '8px');
   await expect(line).toHaveCSS('border-inline-start-width', '1px');
 }

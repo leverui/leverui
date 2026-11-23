@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 1280px) {
-    .leverui-progress__root:not([data-unstyled]) {
+    .lui-progress__root:not([data-unstyled]) {
       &[data-variant-xl='outline'] {
         --lui-private-progress-track-color: var(--lui-colors-bg-muted);
         --lui-private-progress-range-color: var(--lui-colors-color-palette-solid);
@@ -31,7 +31,7 @@
   }
 
   @media (min-width: 1536px) {
-    .leverui-progress__root:not([data-unstyled]) {
+    .lui-progress__root:not([data-unstyled]) {
       &[data-variant-2xl='outline'] {
         --lui-private-progress-track-color: var(--lui-colors-bg-muted);
         --lui-private-progress-range-color: var(--lui-colors-color-palette-solid);

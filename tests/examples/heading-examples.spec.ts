@@ -14,7 +14,7 @@ const storyIds = [
 async function verifiesHeadingStories({ page }: { page: Page }): Promise<void> {
   for (const id of storyIds) {
     await page.goto(`/iframe.html?id=typography-heading--${id}`);
-    await expect(page.locator('#storybook-root .leverui-heading').first()).toHaveText(/\S/);
+    await expect(page.locator('#storybook-root .lui-heading').first()).toHaveText(/\S/);
   }
 }
 

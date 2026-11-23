@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-prose:not([data-unstyled]) {
+  .lui-prose:not([data-unstyled]) {
     & :where(ol, ul):not(.not-prose, .not-prose *) {
       margin-block: 1em;
       padding-inline-start: 1.5em;

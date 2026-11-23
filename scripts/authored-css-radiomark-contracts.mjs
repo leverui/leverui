@@ -5,8 +5,8 @@ export const radiomarkContracts = [
   {
     family: 'radiomark',
     required: [
-      '.leverui-radiomark:not([data-unstyled])',
-      '.leverui-radiomark__dot',
+      '.lui-radiomark:not([data-unstyled])',
+      '.lui-radiomark__dot',
       ...sizes.map(
         /** Require every finite mark size. */
         (size) => `[data-size='${size}']`,

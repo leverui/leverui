@@ -69,7 +69,7 @@ test('Clipboard child input selects and copies through its native label', verifi
 async function verifiesLinkTrigger({ page }: { page: Page }): Promise<void> {
   await openInteractiveClipboard(page);
   const trigger = page.getByTestId('clipboard-child-trigger');
-  await expect(trigger).toHaveClass(/leverui-link/);
+  await expect(trigger).toHaveClass(/lui-link/);
   await expect(trigger.getByText('Ready')).toBeVisible();
   await expect(trigger).toContainText('https://leverui.com/docs');
   await trigger.focus();

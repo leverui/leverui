@@ -30,7 +30,7 @@ function verifiesButtonContent(): void {
   expect(button.textContent).toBe('Save');
   expect(button.hasAttribute('disabled')).toBe(false);
   expect(button.querySelector('[aria-hidden="true"]')).toBeNull();
-  expect([...button.classList]).toEqual(['leverui-button']);
+  expect([...button.classList]).toEqual(['lui-button']);
 
   setLoading(true);
   flush();

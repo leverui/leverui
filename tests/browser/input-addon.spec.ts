@@ -6,7 +6,7 @@ async function verifiesInputAddonBrowser({ page }: { page: Page }): Promise<void
   const addon = page.getByTestId('input-addon-prefix');
   const input = page.getByRole('textbox', { name: 'Website' });
   await expect(input).toBeVisible({ timeout: 30_000 });
-  await expect(addon).toHaveClass(/leverui-input-addon/);
+  await expect(addon).toHaveClass(/lui-input-addon/);
   await expect(addon).toHaveText('https://');
   await expect(addon).toHaveCSS('display', 'flex');
   await expect(addon).toHaveCSS('height', '36px');
@@ -16,7 +16,7 @@ async function verifiesInputAddonBrowser({ page }: { page: Page }): Promise<void
   await expect(addon).toHaveCSS('height', '44px');
   await expect(input).toHaveCSS('height', '44px');
   await expect(input).toHaveValue('example.com');
-  await page.addStyleTag({ content: '.leverui-input-addon { border-radius: 9px; }' });
+  await page.addStyleTag({ content: '.lui-input-addon { border-radius: 9px; }' });
   await expect(addon).toHaveCSS('border-top-left-radius', '9px');
 }
 
@@ -31,7 +31,7 @@ async function verifiesUnstyledAddon({ page }: { page: Page }): Promise<void> {
   await expect(styled).toHaveCSS('border-top-width', '1px');
   await expect(styled).toHaveCSS('padding-left', '12px');
   await expect(plain).toHaveAttribute('title', 'Plain prefix');
-  await expect(plain).toHaveClass(/leverui-input-addon/);
+  await expect(plain).toHaveClass(/lui-input-addon/);
   await expect(plain).toHaveCSS('border-top-width', '0px');
   await expect(plain).toHaveCSS('padding-left', '0px');
   await expect(plain).toHaveCSS('background-color', 'rgba(0, 0, 0, 0)');

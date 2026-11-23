@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-progress-circle__root:not([data-unstyled]) {
+  .lui-progress-circle__root:not([data-unstyled]) {
     &[data-size='xs'] {
       --lui-private-progress-circle-size: 24px;
       --lui-private-progress-circle-thickness: 4px;

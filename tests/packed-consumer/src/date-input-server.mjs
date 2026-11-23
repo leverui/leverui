@@ -37,7 +37,7 @@ function renderPackedDateInput() {
 }
 
 const markup = renderPackedDateInput();
-assert.match(markup, /leverui-date-input__root/);
-assert.match(markup, /leverui-date-input__segmentGroup/);
+assert.match(markup, /lui-date-input__root/);
+assert.match(markup, /lui-date-input__segmentGroup/);
 assert.match(markup, /Packed date/);
 assert.match(markup, /3\/14\/2026/);

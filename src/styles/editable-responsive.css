@@ -1,16 +1,16 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-editable__root[data-size-sm='sm'] {
+    .lui-editable__root[data-size-sm='sm'] {
       --lui-private-editable-font-size: var(--lui-font-sizes-sm);
       --lui-private-editable-line-height: 1.25rem;
       --lui-private-editable-control-height: var(--lui-sizes-8);
     }
-    .leverui-editable__root[data-size-sm='md'] {
+    .lui-editable__root[data-size-sm='md'] {
       --lui-private-editable-font-size: var(--lui-font-sizes-sm);
       --lui-private-editable-line-height: 1.25rem;
       --lui-private-editable-control-height: var(--lui-sizes-9);
     }
-    .leverui-editable__root[data-size-sm='lg'] {
+    .lui-editable__root[data-size-sm='lg'] {
       --lui-private-editable-font-size: var(--lui-font-sizes-md);
       --lui-private-editable-line-height: 1.5rem;
       --lui-private-editable-control-height: var(--lui-sizes-10);
@@ -18,17 +18,17 @@
   }
 
   @media (min-width: 768px) {
-    .leverui-editable__root[data-size-md='sm'] {
+    .lui-editable__root[data-size-md='sm'] {
       --lui-private-editable-font-size: var(--lui-font-sizes-sm);
       --lui-private-editable-line-height: 1.25rem;
       --lui-private-editable-control-height: var(--lui-sizes-8);
     }
-    .leverui-editable__root[data-size-md='md'] {
+    .lui-editable__root[data-size-md='md'] {
       --lui-private-editable-font-size: var(--lui-font-sizes-sm);
       --lui-private-editable-line-height: 1.25rem;
       --lui-private-editable-control-height: var(--lui-sizes-9);
     }
-    .leverui-editable__root[data-size-md='lg'] {
+    .lui-editable__root[data-size-md='lg'] {
       --lui-private-editable-font-size: var(--lui-font-sizes-md);
       --lui-private-editable-line-height: 1.5rem;
       --lui-private-editable-control-height: var(--lui-sizes-10);
@@ -36,17 +36,17 @@
   }
 
   @media (min-width: 1024px) {
-    .leverui-editable__root[data-size-lg='sm'] {
+    .lui-editable__root[data-size-lg='sm'] {
       --lui-private-editable-font-size: var(--lui-font-sizes-sm);
       --lui-private-editable-line-height: 1.25rem;
       --lui-private-editable-control-height: var(--lui-sizes-8);
     }
-    .leverui-editable__root[data-size-lg='md'] {
+    .lui-editable__root[data-size-lg='md'] {
       --lui-private-editable-font-size: var(--lui-font-sizes-sm);
       --lui-private-editable-line-height: 1.25rem;
       --lui-private-editable-control-height: var(--lui-sizes-9);
     }
-    .leverui-editable__root[data-size-lg='lg'] {
+    .lui-editable__root[data-size-lg='lg'] {
       --lui-private-editable-font-size: var(--lui-font-sizes-md);
       --lui-private-editable-line-height: 1.5rem;
       --lui-private-editable-control-height: var(--lui-sizes-10);
@@ -54,17 +54,17 @@
   }
 
   @media (min-width: 1280px) {
-    .leverui-editable__root[data-size-xl='sm'] {
+    .lui-editable__root[data-size-xl='sm'] {
       --lui-private-editable-font-size: var(--lui-font-sizes-sm);
       --lui-private-editable-line-height: 1.25rem;
       --lui-private-editable-control-height: var(--lui-sizes-8);
     }
-    .leverui-editable__root[data-size-xl='md'] {
+    .lui-editable__root[data-size-xl='md'] {
       --lui-private-editable-font-size: var(--lui-font-sizes-sm);
       --lui-private-editable-line-height: 1.25rem;
       --lui-private-editable-control-height: var(--lui-sizes-9);
     }
-    .leverui-editable__root[data-size-xl='lg'] {
+    .lui-editable__root[data-size-xl='lg'] {
       --lui-private-editable-font-size: var(--lui-font-sizes-md);
       --lui-private-editable-line-height: 1.5rem;
       --lui-private-editable-control-height: var(--lui-sizes-10);
@@ -72,17 +72,17 @@
   }
 
   @media (min-width: 1536px) {
-    .leverui-editable__root[data-size-2xl='sm'] {
+    .lui-editable__root[data-size-2xl='sm'] {
       --lui-private-editable-font-size: var(--lui-font-sizes-sm);
       --lui-private-editable-line-height: 1.25rem;
       --lui-private-editable-control-height: var(--lui-sizes-8);
     }
-    .leverui-editable__root[data-size-2xl='md'] {
+    .lui-editable__root[data-size-2xl='md'] {
       --lui-private-editable-font-size: var(--lui-font-sizes-sm);
       --lui-private-editable-line-height: 1.25rem;
       --lui-private-editable-control-height: var(--lui-sizes-9);
     }
-    .leverui-editable__root[data-size-2xl='lg'] {
+    .lui-editable__root[data-size-2xl='lg'] {
       --lui-private-editable-font-size: var(--lui-font-sizes-md);
       --lui-private-editable-line-height: 1.5rem;
       --lui-private-editable-control-height: var(--lui-sizes-10);

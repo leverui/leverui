@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-timeline__root:not([data-unstyled]) {
+  .lui-timeline__root:not([data-unstyled]) {
     --lui-private-timeline-indicator-bg: var(--lui-colors-color-palette-solid);
     --lui-private-timeline-indicator-color: var(--lui-colors-color-palette-contrast);
     --lui-private-timeline-indicator-border-width: 0;

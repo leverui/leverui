@@ -3,7 +3,7 @@ export const inputAddonContracts = [
   {
     family: 'input-addon',
     required: [
-      '.leverui-input-addon',
+      '.lui-input-addon',
       "[data-size='2xs']",
       "[data-size='xs']",
       "[data-size='sm']",

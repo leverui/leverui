@@ -31,9 +31,9 @@ export const colorPickerContracts = [
     required: [
       ...styledParts.map(
         /** Require an authored default for each styled part. */
-        (part) => `.leverui-color-picker__${part}[data-leverui-color-picker-css]`,
+        (part) => `.lui-color-picker__${part}[data-lui-color-picker-css]`,
       ),
-      '.leverui-color-picker__swatch.leverui-color-swatch[data-leverui-color-picker-css]',
+      '.lui-color-picker__swatch.lui-color-swatch[data-lui-color-picker-css]',
       ...sizes.map(
         /** Require each scalar size rule. */
         (size) => `[data-size='${size}']`,

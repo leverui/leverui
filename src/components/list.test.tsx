@@ -47,8 +47,8 @@ function verifiesNativeParts(): void {
   expect(screen.getByTestId('ordered-item')).toBe(item);
   expect(item?.tagName).toBe('LI');
   expect(screen.getByTestId('indicator').tagName).toBe('SPAN');
-  expect(orderedNode.className).toContain('leverui-list__root');
-  expect(item?.className).toContain('leverui-list__item');
+  expect(orderedNode.className).toContain('lui-list__root');
+  expect(item?.className).toContain('lui-list__item');
   expect(orderedNode.hasAttribute('variant')).toBe(false);
   expect(orderedNode.hasAttribute('align')).toBe(false);
 }

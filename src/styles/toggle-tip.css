@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   /* The compact help surface that ToggleTip and InfoTip render. */
-  .leverui-popover__content.leverui-toggle-tip:not([data-unstyled]) {
+  .lui-popover__content.lui-toggle-tip:not([data-unstyled]) {
     width: auto;
     padding-inline: var(--lui-spacing-2);
     padding-block: var(--lui-spacing-1);

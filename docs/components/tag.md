@@ -79,9 +79,9 @@ tag wins.
 
 ## Customize with CSS
 
-Import `@leverui/components/styles.css`, then style `.leverui-tag__root`,
-`.leverui-tag__label`, `.leverui-tag__startElement`,
-`.leverui-tag__endElement`, and `.leverui-tag__closeTrigger`. The class names
+Import `@leverui/components/styles.css`, then style `.lui-tag__root`,
+`.lui-tag__label`, `.lui-tag__startElement`,
+`.lui-tag__endElement`, and `.lui-tag__closeTrigger`. The class names
 do not change.
 
 The root has attributes for its size, variant, and palette. Responsive values
@@ -90,13 +90,13 @@ add `data-size-sm` through `data-size-2xl` and `data-variant-sm` through
 a single Tag.
 
 ```css
-.leverui-tag__label {
+.lui-tag__label {
   letter-spacing: 0.01em;
 }
 ```
 
 A part's class gives your own element that part's default styles.
-`<span class="leverui-tag__label">Custom</span>` inside `Tag.Root` follows the
+`<span class="lui-tag__label">Custom</span>` inside `Tag.Root` follows the
 root's current size.
 
 ## Explorer

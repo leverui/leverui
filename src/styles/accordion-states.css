@@ -1,29 +1,29 @@
 @layer leverui.recipes {
-  .leverui-accordion__root:not([data-unstyled])
-    .leverui-accordion__itemTrigger:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
+  .lui-accordion__root:not([data-unstyled])
+    .lui-accordion__itemTrigger:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
     outline: 2px solid var(--lui-colors-color-palette-focus-ring);
   }
 
-  .leverui-accordion__root:not([data-unstyled])
-    .leverui-accordion__itemTrigger:not([data-unstyled]):is(:disabled, [data-disabled]) {
+  .lui-accordion__root:not([data-unstyled])
+    .lui-accordion__itemTrigger:not([data-unstyled]):is(:disabled, [data-disabled]) {
     opacity: 0.5;
     cursor: not-allowed;
   }
 
-  .leverui-accordion__root:not([data-unstyled])
-    .leverui-accordion__itemContent:not([data-unstyled])[data-state='open'] {
+  .lui-accordion__root:not([data-unstyled])
+    .lui-accordion__itemContent:not([data-unstyled])[data-state='open'] {
     animation-name: expand-height, fade-in;
     animation-duration: var(--lui-durations-moderate);
   }
 
-  .leverui-accordion__root:not([data-unstyled])
-    .leverui-accordion__itemContent:not([data-unstyled])[data-state='closed'] {
+  .lui-accordion__root:not([data-unstyled])
+    .lui-accordion__itemContent:not([data-unstyled])[data-state='closed'] {
     animation-name: collapse-height, fade-out;
     animation-duration: var(--lui-durations-moderate);
   }
 
-  .leverui-accordion__root:not([data-unstyled])
-    .leverui-accordion__itemIndicator:not([data-unstyled])[data-state='open'] {
+  .lui-accordion__root:not([data-unstyled])
+    .lui-accordion__itemIndicator:not([data-unstyled])[data-state='open'] {
     rotate: 180deg;
   }
 }

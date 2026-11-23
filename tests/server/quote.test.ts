@@ -37,7 +37,7 @@ function verifiesServerQuote(): void {
   expect(markup).toContain('cite="https://example.com/source"');
   expect(markup).toMatch(/<a[^>]*id="server-quote-link"/);
   expect(markup).toContain('href="#source"');
-  expect(markup).toContain('leverui-quote');
+  expect(markup).toContain('lui-quote');
   expect(markup).not.toMatch(/<(?:q|a)[^>]*\s(?:as|unstyled|css)=/);
 }
 

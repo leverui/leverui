@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-scroll-area__root:not([data-unstyled]) {
+    .lui-scroll-area__root:not([data-unstyled]) {
       &[data-size-sm='xs'] {
         --lui-private-scroll-area-size: var(--lui-sizes-1);
       }
@@ -16,7 +16,7 @@
     }
   }
   @media (min-width: 768px) {
-    .leverui-scroll-area__root:not([data-unstyled]) {
+    .lui-scroll-area__root:not([data-unstyled]) {
       &[data-size-md='xs'] {
         --lui-private-scroll-area-size: var(--lui-sizes-1);
       }
@@ -32,7 +32,7 @@
     }
   }
   @media (min-width: 1024px) {
-    .leverui-scroll-area__root:not([data-unstyled]) {
+    .lui-scroll-area__root:not([data-unstyled]) {
       &[data-size-lg='xs'] {
         --lui-private-scroll-area-size: var(--lui-sizes-1);
       }
@@ -48,7 +48,7 @@
     }
   }
   @media (min-width: 1280px) {
-    .leverui-scroll-area__root:not([data-unstyled]) {
+    .lui-scroll-area__root:not([data-unstyled]) {
       &[data-size-xl='xs'] {
         --lui-private-scroll-area-size: var(--lui-sizes-1);
       }
@@ -64,7 +64,7 @@
     }
   }
   @media (min-width: 1536px) {
-    .leverui-scroll-area__root:not([data-unstyled]) {
+    .lui-scroll-area__root:not([data-unstyled]) {
       &[data-size-2xl='xs'] {
         --lui-private-scroll-area-size: var(--lui-sizes-1);
       }

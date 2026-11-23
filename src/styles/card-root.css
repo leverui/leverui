@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-card__root:not([data-unstyled]) {
+  .lui-card__root:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -17,39 +17,39 @@
     --lui-private-card-title-line-height: initial;
   }
 
-  .leverui-card__root:not([data-unstyled])[data-size='md'] {
+  .lui-card__root:not([data-unstyled])[data-size='md'] {
     --lui-card-padding: var(--lui-spacing-6);
     --lui-private-card-title-size: var(--lui-font-sizes-lg);
     --lui-private-card-title-line-height: 1.75rem;
   }
 
-  .leverui-card__root:not([data-unstyled])[data-size='sm'] {
+  .lui-card__root:not([data-unstyled])[data-size='sm'] {
     --lui-card-padding: var(--lui-spacing-4);
     --lui-private-card-title-size: var(--lui-font-sizes-md);
     --lui-private-card-title-line-height: 1.5rem;
   }
 
-  .leverui-card__root:not([data-unstyled])[data-size='lg'] {
+  .lui-card__root:not([data-unstyled])[data-size='lg'] {
     --lui-card-padding: var(--lui-spacing-7);
     --lui-private-card-title-size: var(--lui-font-sizes-xl);
     --lui-private-card-title-line-height: 1.875rem;
   }
 
-  .leverui-card__root:not([data-unstyled])[data-variant='outline'] {
+  .lui-card__root:not([data-unstyled])[data-variant='outline'] {
     --lui-private-card-background: var(--lui-colors-bg-panel);
     --lui-private-card-border-width: 1px;
     --lui-private-card-border-color: var(--lui-colors-border);
     --lui-private-card-shadow: none;
   }
 
-  .leverui-card__root:not([data-unstyled])[data-variant='elevated'] {
+  .lui-card__root:not([data-unstyled])[data-variant='elevated'] {
     --lui-private-card-background: var(--lui-colors-bg-panel);
     --lui-private-card-border-width: 0;
     --lui-private-card-border-color: var(--lui-colors-border);
     --lui-private-card-shadow: var(--lui-shadows-md);
   }
 
-  .leverui-card__root:not([data-unstyled])[data-variant='subtle'] {
+  .lui-card__root:not([data-unstyled])[data-variant='subtle'] {
     --lui-private-card-background: var(--lui-colors-bg-muted);
     --lui-private-card-border-width: 0;
     --lui-private-card-border-color: var(--lui-colors-border);

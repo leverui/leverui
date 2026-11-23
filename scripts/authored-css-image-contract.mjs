@@ -2,7 +2,7 @@
 export const imageLayoutContract = {
   family: 'image',
   required: [
-    '.leverui-image:not([data-unstyled])',
+    '.lui-image:not([data-unstyled])',
     '--lui-image-fit',
     '--lui-image-position',
     ...['base', 'sm', 'md', 'lg', 'xl', '2xl'].flatMap(

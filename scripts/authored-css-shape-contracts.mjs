@@ -2,8 +2,8 @@ export const shapeContracts = [
   {
     family: 'square',
     required: [
-      ':is(.leverui-square, .leverui-circle)',
-      ':is(.leverui-square, .leverui-circle):not([data-unstyled])',
+      ':is(.lui-square, .lui-circle)',
+      ':is(.lui-square, .lui-circle):not([data-unstyled])',
       '--lui-square-size',
       ...['base', 'sm', 'md', 'lg', 'xl', '2xl'].flatMap(
         /** Require both dimensions at every ordinary breakpoint. */
@@ -16,6 +16,6 @@ export const shapeContracts = [
   },
   {
     family: 'circle',
-    required: ['.leverui-circle:not([data-unstyled])', '--lui-circle-radius'],
+    required: ['.lui-circle:not([data-unstyled])', '--lui-circle-radius'],
   },
 ];

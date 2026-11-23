@@ -42,8 +42,8 @@ async function verifiesEyeDropperCallbacks({ page }: { page: Page }): Promise<vo
   await expect(input).toHaveValue('#00FF00');
   await expect(page.getByTestId('color-picker-eye-clicks')).toHaveText('1');
   await expect(page.getByTestId('color-picker-eye-ends')).toHaveText('1');
-  await expect(direct).toHaveClass(/leverui-color-picker__eyeDropperTrigger/);
-  await expect(direct).toHaveClass(/leverui-button/);
+  await expect(direct).toHaveClass(/lui-color-picker__eyeDropperTrigger/);
+  await expect(direct).toHaveClass(/lui-button/);
   await expect(direct).toHaveCSS('border-top-width', '1px');
   await expect(direct).toHaveCSS(
     'min-height',
@@ -58,14 +58,14 @@ async function verifiesEyeDropperCallbacks({ page }: { page: Page }): Promise<vo
   await expect(page.getByTestId('color-picker-eye-ends')).toHaveText('2');
   await expect(loading).toBeDisabled();
   await expect(loading).toHaveAttribute('data-loading', '');
-  await expect(loading.locator('.leverui-spinner')).toBeVisible();
+  await expect(loading.locator('.lui-spinner')).toBeVisible();
   expect(
     await page.evaluate(
       /** Ensure the loading button has not invoked the browser API. */
       () => (window as Window & { eyeDropperOpens?: number }).eyeDropperOpens,
     ),
   ).toBe(2);
-  await expect(custom).toHaveClass(/leverui-color-picker__eyeDropperTrigger/);
+  await expect(custom).toHaveClass(/lui-color-picker__eyeDropperTrigger/);
   await custom.click();
   await expect(input).toHaveValue('#FF00FF');
   await expect(page.getByTestId('color-picker-eye-clicks')).toHaveText('3');

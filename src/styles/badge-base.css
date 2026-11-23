@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-badge:not([data-unstyled], [data-leverui-private-style-runtime]) {
+  .lui-badge:not([data-unstyled], [data-lui-private-style-runtime]) {
     display: inline-flex;
     align-items: center;
     border-radius: var(--lui-radii-l2);

@@ -100,7 +100,7 @@ Import your CSS after `styles.css`.
   --lui-colors-bg-muted: #f4f0fa;
 }
 
-.account-form .leverui-input {
+.account-form .lui-input {
   border-radius: 0.5rem;
 }
 ```

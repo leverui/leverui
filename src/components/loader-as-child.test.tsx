@@ -37,12 +37,12 @@ function verifiesForwardedContent(): void {
   expect(link.tagName).toBe('A');
   expect(link.getAttribute('href')).toBe('/status');
   expect(link.getAttribute('data-parent')).toBe('loader');
-  expect(link.className).toContain('leverui-loader');
+  expect(link.className).toContain('lui-loader');
   expect(link.textContent).toBe('Loading');
-  expect(link.querySelector('.leverui-spinner')).not.toBeNull();
+  expect(link.querySelector('.lui-spinner')).not.toBeNull();
   expect(overlay.tagName).toBe('SECTION');
   expect(overlay.getAttribute('data-parent')).toBe('overlay');
-  expect(overlay.className).toContain('leverui-loader-overlay');
+  expect(overlay.className).toContain('lui-loader-overlay');
   expect(overlay.textContent).toBe('Overlay content');
 }
 
@@ -68,7 +68,7 @@ function verifiesChildOverride(): void {
     ),
   );
   expect(screen.getByTestId('override-link').textContent).toBe('Status');
-  expect(screen.getByTestId('override-link').querySelector('.leverui-spinner')).toBeNull();
+  expect(screen.getByTestId('override-link').querySelector('.lui-spinner')).toBeNull();
 }
 
 it('allows explicit child content to replace Loader content', verifiesChildOverride);

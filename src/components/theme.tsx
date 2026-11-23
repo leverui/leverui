@@ -54,11 +54,11 @@ export function Theme(props: ThemeProps): JSX.Element {
     /** Keep native props, scope attributes, and consumer classes reactive. */
     () => ({
       ...rest,
-      class: cx('leverui-theme', local.class, local.className),
-      'data-leverui-theme': '',
-      'data-leverui-color-mode': local.appearance,
-      'data-leverui-color-palette': local.colorPalette ?? 'gray',
-      'data-leverui-no-background': local.hasBackground === false ? '' : undefined,
+      class: cx('lui-theme', local.class, local.className),
+      'data-lui-theme': '',
+      'data-lui-color-mode': local.appearance,
+      'data-lui-color-palette': local.colorPalette ?? 'gray',
+      'data-lui-no-background': local.hasBackground === false ? '' : undefined,
       style: mergeThemeStyle(local.style, local.appearance),
     }),
   );

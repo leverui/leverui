@@ -61,29 +61,29 @@ export function ChartTooltipCard(props: ChartTooltipCardProps): JSX.Element {
     <div
       ref={element}
       role="tooltip"
-      class="leverui-chart-tooltip"
+      class="lui-chart-tooltip"
       style={{
         left: `${position().x}px`,
         top: `${position().y}px`,
       }}
     >
       <Show when={props.label}>
-        <p class="leverui-chart-tooltip__label">{props.label}</p>
+        <p class="lui-chart-tooltip__label">{props.label}</p>
       </Show>
       <div>
         <For each={props.items}>
           {/** Pair each swatch and muted name with its formatted value. */}
           {(item) => (
-            <div class="leverui-chart-tooltip__item">
+            <div class="lui-chart-tooltip__item">
               <span
-                class="leverui-chart-tooltip__swatch"
+                class="lui-chart-tooltip__swatch"
                 style={{
                   '--lui-private-chart-tooltip-swatch': chartColor(item.color, item.color),
                 }}
               />
-              <div class="leverui-chart-tooltip__values">
-                <span class="leverui-chart-tooltip__name">{item.name}</span>
-                <span class="leverui-chart-tooltip__value">{item.value?.toLocaleString()}</span>
+              <div class="lui-chart-tooltip__values">
+                <span class="lui-chart-tooltip__name">{item.name}</span>
+                <span class="lui-chart-tooltip__value">{item.value?.toLocaleString()}</span>
               </div>
             </div>
           )}

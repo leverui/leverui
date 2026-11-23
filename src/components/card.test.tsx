@@ -32,7 +32,7 @@ function verifiesCardParts(): void {
   const card = screen.getByTestId('card-root');
   expect(card).toBe(root);
   expect(card.tagName).toBe('DIV');
-  expect(card.className).toContain('leverui-card');
+  expect(card.className).toContain('lui-card');
   expect(card.hasAttribute('variant')).toBe(false);
   expect(card.hasAttribute('size')).toBe(false);
   expect(screen.getByTestId('card-header').tagName).toBe('DIV');
@@ -103,7 +103,7 @@ function verifiesConsumerCardClass(): void {
   expect(card).toHaveAttribute('data-variant', 'subtle');
   expect(card).toHaveClass('consumer-card');
   expect(screen.getByText('Custom')).toHaveClass('consumer-card-body');
-  expect(card).not.toHaveAttribute('data-leverui-private-style-runtime');
+  expect(card).not.toHaveAttribute('data-lui-private-style-runtime');
 }
 
 it('preserves native attributes with consumer Card classes', verifiesConsumerCardClass);
@@ -136,7 +136,7 @@ function verifiesResponsiveCardChoices(): void {
   expect(card).toHaveAttribute('data-size-md', 'lg');
   expect(card).toHaveAttribute('data-variant', 'outline');
   expect(card).toHaveAttribute('data-variant-md', 'subtle');
-  expect(card).not.toHaveAttribute('data-leverui-private-style-runtime');
+  expect(card).not.toHaveAttribute('data-lui-private-style-runtime');
 
   setAlternate(true);
   flush();

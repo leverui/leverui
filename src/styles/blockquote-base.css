@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-blockquote__root:not([data-unstyled]) {
+  .lui-blockquote__root:not([data-unstyled]) {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -43,14 +43,14 @@
     }
   }
 
-  @scope (.leverui-blockquote__root:not([data-unstyled])) to (.leverui-blockquote__root) {
-    .leverui-blockquote__caption:not([data-unstyled]) {
+  @scope (.lui-blockquote__root:not([data-unstyled])) to (.lui-blockquote__root) {
+    .lui-blockquote__caption:not([data-unstyled]) {
       font-size: var(--lui-font-sizes-sm);
       line-height: 1.25rem;
       color: var(--lui-colors-fg-muted);
     }
 
-    .leverui-blockquote__icon:not([data-unstyled]) {
+    .lui-blockquote__icon:not([data-unstyled]) {
       width: var(--lui-sizes-5);
       height: var(--lui-sizes-5);
       color: var(--lui-private-blockquote-icon-color, var(--lui-colors-color-palette-solid));

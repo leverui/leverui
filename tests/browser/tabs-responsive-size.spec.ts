@@ -15,7 +15,7 @@ async function readSize(root: Locator): Promise<Record<string, string>> {
   return root.evaluate(
     /** Sample the native trigger rather than authored CSS declarations. */
     (element) => {
-      const trigger = element.querySelector('.leverui-tabs__trigger');
+      const trigger = element.querySelector('.lui-tabs__trigger');
       if (!trigger) throw new Error('Tabs trigger is missing.');
       const style = getComputedStyle(trigger);
       return {

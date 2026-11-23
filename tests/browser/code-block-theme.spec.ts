@@ -10,7 +10,7 @@ async function verifiesCodeBlockThemeExtension({ page }: { page: Page }): Promis
   await expect(page.getByTestId('theme-custom-code')).toHaveCSS('overflow-x', 'auto');
 
   const unstyled = page.getByTestId('theme-unstyled-root');
-  await expect(unstyled).toHaveClass(/leverui-code-block__root/);
+  await expect(unstyled).toHaveClass(/lui-code-block__root/);
   await expect(unstyled).toHaveAttribute('data-unstyled', '');
   await expect(unstyled).toHaveCSS('border-top-width', '0px');
   await expect(unstyled).toHaveCSS('border-radius', '0px');

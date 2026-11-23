@@ -49,7 +49,7 @@ export function PasswordInput(props: PasswordInputProps): JSX.Element {
       tabindex={-1}
       disabled={inputProps.disabled}
       onPointerDown={toggleVisible}
-      class="leverui-button leverui-icon-button leverui-password-input__visibility-trigger"
+      class="lui-button lui-icon-button lui-password-input__visibility-trigger"
       data-size="sm"
       data-variant="ghost"
       data-unstyled={inputProps.unstyled ? '' : undefined}
@@ -63,7 +63,7 @@ export function PasswordInput(props: PasswordInputProps): JSX.Element {
   return (
     <InputGroup
       {...local.rootProps}
-      class={['leverui-password-input', local.rootProps?.class, local.rootProps?.className]}
+      class={['lui-password-input', local.rootProps?.class, local.rootProps?.className]}
       data-visible={isVisible() ? '' : undefined}
       data-disabled={inputProps.disabled ? '' : undefined}
       data-unstyled={inputProps.unstyled ? '' : undefined}

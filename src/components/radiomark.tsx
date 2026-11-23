@@ -50,14 +50,14 @@ function RadiomarkRoot(props: RadiomarkRootProps): JSX.Element {
       'data-checked': local.checked ? '' : undefined,
       'data-disabled': local.disabled ? '' : undefined,
       'data-unstyled': local.unstyled ? '' : undefined,
-      'data-leverui-color-palette': readRadiomarkPalette(local.colorPalette),
+      'data-lui-color-palette': readRadiomarkPalette(local.colorPalette),
       class: composeRecipeClassNames('radiomark', undefined, local.class, local.className),
       ref: attachNode,
     }),
   );
   const dot = createMemo(
     /** Keep the mark decorative and ignore caller-provided children. */
-    () => (local.checked ? <span class="dot leverui-radiomark__dot" /> : null),
+    () => (local.checked ? <span class="dot lui-radiomark__dot" /> : null),
   );
 
   return (

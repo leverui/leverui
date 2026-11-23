@@ -33,10 +33,10 @@ export function CartesianReferences(props: CartesianReferencesProps): JSX.Elemen
     return chartColor(value, 'var(--lui-colors-red-solid)');
   }
   return (
-    <g class="leverui-cartesian-chart__references" aria-hidden="true">
+    <g class="lui-cartesian-chart__references" aria-hidden="true">
       <Show when={props.area && indexOf(props.area.x1) >= 0 && indexOf(props.area.x2) >= 0}>
         <rect
-          class="leverui-cartesian-chart__referenceArea"
+          class="lui-cartesian-chart__referenceArea"
           x={Math.min(x(props.area?.x1 ?? ''), x(props.area?.x2 ?? ''))}
           y={props.plot.top}
           width={Math.abs(x(props.area?.x2 ?? '') - x(props.area?.x1 ?? ''))}
@@ -45,7 +45,7 @@ export function CartesianReferences(props: CartesianReferencesProps): JSX.Elemen
         />
         <Show when={props.area?.label}>
           <text
-            class="leverui-cartesian-chart__referenceLabel"
+            class="lui-cartesian-chart__referenceLabel"
             x={(x(props.area?.x1 ?? '') + x(props.area?.x2 ?? '')) / 2}
             y={props.plot.top + 18}
             text-anchor="middle"
@@ -59,7 +59,7 @@ export function CartesianReferences(props: CartesianReferencesProps): JSX.Elemen
         {(line) => (
           <Show when={indexOf(line.x) >= 0}>
             <line
-              class="leverui-cartesian-chart__referenceLine"
+              class="lui-cartesian-chart__referenceLine"
               x1={x(line.x)}
               x2={x(line.x)}
               y1={props.plot.top}
@@ -68,7 +68,7 @@ export function CartesianReferences(props: CartesianReferencesProps): JSX.Elemen
             />
             <Show when={line.label}>
               <text
-                class="leverui-cartesian-chart__referenceLabel"
+                class="lui-cartesian-chart__referenceLabel"
                 x={x(line.x) + 5}
                 y={props.plot.top + 16}
               >
@@ -80,7 +80,7 @@ export function CartesianReferences(props: CartesianReferencesProps): JSX.Elemen
       </For>
       <Show when={props.value && Number.isFinite(props.value.y)}>
         <line
-          class="leverui-cartesian-chart__referenceValue"
+          class="lui-cartesian-chart__referenceValue"
           x1={props.plot.left}
           x2={props.plot.width - props.plot.right}
           y1={chartY(props.plot, props.value?.y ?? 0)}
@@ -90,7 +90,7 @@ export function CartesianReferences(props: CartesianReferencesProps): JSX.Elemen
         />
         <Show when={props.value?.label}>
           <text
-            class="leverui-cartesian-chart__referenceValueLabel"
+            class="lui-cartesian-chart__referenceValueLabel"
             x={props.plot.width - props.plot.right}
             y={chartY(props.plot, props.value?.y ?? 0) - 10}
             text-anchor="end"
@@ -102,7 +102,7 @@ export function CartesianReferences(props: CartesianReferencesProps): JSX.Elemen
       </Show>
       <Show when={props.point && indexOf(props.point.x) >= 0 && Number.isFinite(props.point.y)}>
         <circle
-          class="leverui-cartesian-chart__referencePoint"
+          class="lui-cartesian-chart__referencePoint"
           cx={x(props.point?.x ?? '')}
           cy={chartY(props.plot, props.point?.y ?? 0)}
           r={props.point?.radius ?? 6}

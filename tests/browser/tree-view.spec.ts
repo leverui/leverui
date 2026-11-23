@@ -10,8 +10,8 @@ async function verifiesTreeContract({ page }: { page: Page }): Promise<void> {
   // The primitive puts the row role and expansion state on the branch control itself.
   const branchItem = branch;
   await expect(tree).toBeVisible({ timeout: 30_000 });
-  await expect(root).toHaveClass(/leverui-tree-view__root/);
-  await expect(tree).toHaveClass(/leverui-tree-view__tree/);
+  await expect(root).toHaveClass(/lui-tree-view__root/);
+  await expect(tree).toHaveClass(/lui-tree-view__tree/);
   await expect(branch).toHaveAttribute('data-state', 'open');
   await expect(branchItem).toHaveAttribute('role', 'row');
   await expect(branchItem).toHaveAttribute('aria-expanded', 'true');
@@ -47,7 +47,7 @@ async function verifiesProviderTree({ page }: { page: Page }): Promise<void> {
   const root = page.getByTestId('tree-provider');
   const app = page.getByTestId('tree-item-src/app');
   await expect(root).toBeVisible({ timeout: 30_000 });
-  await expect(root).toHaveClass(/leverui-tree-view__root/);
+  await expect(root).toHaveClass(/lui-tree-view__root/);
   await expect(app).toBeVisible();
   await app.click();
   await expect(page.getByTestId('tree-provider-selection')).toHaveText('src/app');
@@ -66,11 +66,11 @@ async function verifiesCssOverrides({ page }: { page: Page }): Promise<void> {
   );
   await page.addStyleTag({
     content:
-      '[data-testid="tree-root"] { --lui-tree-padding-inline: 2rem; --lui-tree-indentation: 3rem; } .leverui-tree-view__itemText { color: rgb(12, 34, 56); }',
+      '[data-testid="tree-root"] { --lui-tree-padding-inline: 2rem; --lui-tree-indentation: 3rem; } .lui-tree-view__itemText { color: rgb(12, 34, 56); }',
   });
   await expect(app).not.toHaveCSS('padding-inline-start', originalPadding);
   await expect(page.getByTestId('tree-root')).toHaveCSS('--lui-tree-indentation', '3rem');
-  await expect(app.locator('.leverui-tree-view__itemText')).toHaveCSS('color', 'rgb(12, 34, 56)');
+  await expect(app.locator('.lui-tree-view__itemText')).toHaveCSS('color', 'rgb(12, 34, 56)');
 }
 
 test('Tree View accepts consumer CSS variable overrides', verifiesCssOverrides);

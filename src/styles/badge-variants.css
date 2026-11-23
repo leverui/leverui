@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  :is(.leverui-badge, .leverui-code):not([data-unstyled], [data-leverui-private-style-runtime]) {
+  :is(.lui-badge, .lui-code):not([data-unstyled], [data-lui-private-style-runtime]) {
     &[data-variant='solid'] {
       background-color: var(--lui-colors-color-palette-solid);
       color: var(--lui-colors-color-palette-contrast);

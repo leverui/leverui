@@ -39,8 +39,8 @@ async function verifiesThemeContract({ page }: { page: Page }): Promise<void> {
   const theme = page.locator('#theme-contract');
   await expect(theme).toHaveJSProperty('tagName', 'SECTION');
   await expect(theme).toHaveAttribute('aria-label', 'Dark section');
-  await expect(theme).toHaveAttribute('data-leverui-color-mode', 'dark');
-  await expect(theme).toHaveClass(/leverui-theme/);
+  await expect(theme).toHaveAttribute('data-lui-color-mode', 'dark');
+  await expect(theme).toHaveClass(/lui-theme/);
   await expect(theme).toHaveClass(/consumer-theme/);
   await expect(theme).toHaveCSS('color-scheme', 'dark');
   await expect(theme).toHaveCSS('border-top-width', '3px');

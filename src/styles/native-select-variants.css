@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-native-select__root:not([data-unstyled])[data-variant='outline'] {
+  .lui-native-select__root:not([data-unstyled])[data-variant='outline'] {
     --lui-private-native-select-background: transparent;
     --lui-private-native-select-border-width: 1px;
     --lui-private-native-select-border-color: var(--lui-colors-border);
@@ -7,7 +7,7 @@
     --lui-private-native-select-focus-width: var(--focus-ring-width, 1px);
   }
 
-  .leverui-native-select__root:not([data-unstyled])[data-variant='subtle'] {
+  .lui-native-select__root:not([data-unstyled])[data-variant='subtle'] {
     --lui-private-native-select-background: var(--lui-colors-bg-muted);
     --lui-private-native-select-border-width: 1px;
     --lui-private-native-select-border-color: transparent;
@@ -15,7 +15,7 @@
     --lui-private-native-select-focus-width: var(--focus-ring-width, 1px);
   }
 
-  .leverui-native-select__root:not([data-unstyled])[data-variant='plain'] {
+  .lui-native-select__root:not([data-unstyled])[data-variant='plain'] {
     --lui-private-native-select-background: transparent;
     --lui-private-native-select-border-width: 0;
     --lui-private-native-select-border-color: var(--lui-colors-border);
@@ -23,7 +23,7 @@
     --lui-private-native-select-focus-width: 2px;
   }
 
-  .leverui-native-select__root:not([data-unstyled])[data-variant='ghost'] {
+  .lui-native-select__root:not([data-unstyled])[data-variant='ghost'] {
     --lui-private-native-select-background: transparent;
     --lui-private-native-select-border-width: 0;
     --lui-private-native-select-border-color: var(--lui-colors-border);

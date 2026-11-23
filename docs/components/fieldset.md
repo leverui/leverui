@@ -42,7 +42,7 @@ Own the state: create it with `useFieldset` and pass it to
 ## Customize with CSS
 
 Load the [package stylesheet](../getting-started.md) first. Classes:
-`.leverui-fieldset__root`, `__legend`, `__content`, `__helperText`,
+`.lui-fieldset__root`, `__legend`, `__content`, `__helperText`,
 `__errorText`. Root variables: `--lui-fieldset-space-y`,
 `--lui-fieldset-content-gap`, `--lui-fieldset-legend-size`.
 

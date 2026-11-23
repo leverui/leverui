@@ -35,7 +35,7 @@ async function verifiesRadioCardHydration({ page }: { page: Page }): Promise<voi
   const primaryIcon = page.getByTestId('Hydrated primary-solid-custom-indicator');
   await expect(primarySolid).toBeChecked();
   await expect(externalReact).toBeChecked();
-  await expect(primaryIcon).toHaveClass(/leverui-radio-card__itemIndicator/);
+  await expect(primaryIcon).toHaveClass(/lui-radio-card__itemIndicator/);
   await expect(primaryIcon).toHaveAttribute('aria-hidden', 'true');
   // Zag 2 gives roots no `id`; the scoped part attribute keeps the server ID.
   const originalIds = [
@@ -71,7 +71,7 @@ async function verifiesRadioCardHydration({ page }: { page: Page }): Promise<voi
   await expect(primary.getByRole('radio', { name: 'React' })).toBeChecked();
   await expect(primaryIcon).toHaveCount(0);
   await primary.getByText('Solid', { exact: true }).click();
-  await expect(primaryIcon).toHaveClass(/leverui-radio-card__itemIndicator/);
+  await expect(primaryIcon).toHaveClass(/lui-radio-card__itemIndicator/);
   await external.getByText('Solid', { exact: true }).click();
   await expect(external.getByRole('radio', { name: 'Solid' })).toBeChecked();
   await expect(page.getByTestId('Hydrated external-solid-custom-indicator')).toHaveAttribute(

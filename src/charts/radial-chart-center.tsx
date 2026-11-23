@@ -11,16 +11,16 @@ export interface RadialChartCenterProps {
 export function RadialChartCenter(props: RadialChartCenterProps): JSX.Element {
   return (
     <text
-      class="leverui-radial-chart__center"
+      class="lui-radial-chart__center"
       x={props.center}
       y={props.center}
       text-anchor="middle"
       dominant-baseline="middle"
     >
-      <tspan class="leverui-radial-chart__centerTitle" x={props.center} y={props.center}>
+      <tspan class="lui-radial-chart__centerTitle" x={props.center} y={props.center}>
         {props.title}
       </tspan>
-      <tspan class="leverui-radial-chart__centerDescription" x={props.center} y={props.center + 24}>
+      <tspan class="lui-radial-chart__centerDescription" x={props.center} y={props.center + 24}>
         {props.description}
       </tspan>
     </text>

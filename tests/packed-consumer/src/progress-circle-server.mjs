@@ -43,7 +43,7 @@ assert.match(markup, /role="progressbar"/);
 assert.match(markup, /aria-labelledby="packed-server-circle-label"/);
 assert.match(markup, /aria-valuenow="30"/);
 assert.match(markup, /aria-valuemax="60"/);
-assert.match(markup, /leverui-progress-circle__circleRange/);
+assert.match(markup, /lui-progress-circle__circleRange/);
 assert.match(markup, /Uploading/);
 assert.doesNotMatch(markup, /\s(?:size|recipe|unstyled)=/);
 console.log('Packed Progress Circle server rendering passed.');

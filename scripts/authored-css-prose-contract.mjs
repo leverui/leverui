@@ -2,7 +2,7 @@
 export const proseContentContract = {
   family: 'prose',
   required: [
-    '.leverui-prose:not([data-unstyled])',
+    '.lui-prose:not([data-unstyled])',
     "[data-size='lg']",
     '--lui-prose-color',
     '--lui-prose-max-width',

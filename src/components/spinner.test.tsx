@@ -128,7 +128,7 @@ function verifiesSpinnerComposition(): void {
   );
   expect(screen.getByTestId('div-spinner')).toBe(selected);
   expect(screen.getByTestId('icon-spinner').textContent).toBe('◌');
-  expect(screen.getByTestId('custom-spinner').className).toContain('leverui-spinner custom-ring');
+  expect(screen.getByTestId('custom-spinner').className).toContain('lui-spinner custom-ring');
 }
 
 it('supports polymorphic, child, and class-customized rendering', verifiesSpinnerComposition);

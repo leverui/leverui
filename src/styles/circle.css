@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-circle:not([data-unstyled]) {
+  .lui-circle:not([data-unstyled]) {
     border-radius: var(--lui-circle-radius, 9999px);
   }
 }

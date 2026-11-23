@@ -38,7 +38,7 @@ function verifiesClosedToggleTip(): void {
   expect(markup).toMatch(/aria-controls="([^"]+)"[\s\S]*id="\1"/);
   expect(markup).toMatch(/role="dialog" hidden data-state="closed"/);
   expect(markup).toContain('Drafts sync every minute.');
-  expect(markup).toContain('class="leverui-popover__content leverui-toggle-tip"');
+  expect(markup).toContain('class="lui-popover__content lui-toggle-tip"');
   // The tip is named by its aria-label and has no title or description to point at.
   expect(markup).not.toContain('aria-labelledby');
   expect(markup).not.toContain('aria-describedby');

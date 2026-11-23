@@ -26,7 +26,7 @@ async function verifiesTextareaHydration({ page }: { page: Page }): Promise<void
   await page.goto('/iframe.html?id=setup-hydration-host--ready&viewMode=story');
   await expect(page.getByTestId('hydration-host')).toBeVisible();
   await page.setContent(
-    `${generateHydrationScript()}<style data-leverui-default>${defaultCss}</style><div id="textarea-hydration-root">${markup}</div>`,
+    `${generateHydrationScript()}<style data-lui-default>${defaultCss}</style><div id="textarea-hydration-root">${markup}</div>`,
   );
   const notes = page.getByTestId('hydrated-textarea');
   const selected = page.getByTestId('hydrated-selected-input');
@@ -48,7 +48,7 @@ async function verifiesTextareaHydration({ page }: { page: Page }): Promise<void
   await expect(selected).toHaveValue('Selected draft');
   await notes.fill('Typed before hydration');
   await expect(notes).toHaveCSS('border-style', 'solid');
-  await expect(page.locator('style[data-leverui-default]')).toHaveCount(1);
+  await expect(page.locator('style[data-lui-default]')).toHaveCount(1);
   const errors: string[] = [];
 
   /** Capture browser exceptions across the hydration boundary. */
@@ -68,7 +68,7 @@ async function verifiesTextareaHydration({ page }: { page: Page }): Promise<void
     await expect(page.locator(`[id="${describedBy}"]`)).toHaveCount(1);
   }
   await expect(notes).toHaveCSS('border-style', 'solid');
-  await expect(page.locator('style[data-leverui-default]')).toHaveCount(1);
+  await expect(page.locator('style[data-lui-default]')).toHaveCount(1);
   await expect(notes).toHaveValue('Typed before hydration');
   await expect(selected).toHaveValue('Selected draft');
   await selected.fill('Changed after hydration');

@@ -27,7 +27,7 @@ async function verifiesReactiveAppearance({ page }: { page: Page }): Promise<voi
   await page.goto('/iframe.html?id=components-tags-input--contract');
   const root = page.getByTestId('tags-input-root');
   const control = page.getByTestId('tags-input-control');
-  await expect(root).toHaveClass(/leverui-tags-input__root/, { timeout: 30_000 });
+  await expect(root).toHaveClass(/lui-tags-input__root/, { timeout: 30_000 });
   const before = await control.evaluate(
     /** Read the initial control height before the recipe change. */
     (element) => getComputedStyle(element).minHeight,

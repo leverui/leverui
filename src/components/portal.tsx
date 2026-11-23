@@ -60,7 +60,7 @@ export function Portal(props: PortalProps): JSX.Element {
     if (destination instanceof Element) return destination;
     const container = environment().getDocument().createElement('div');
     container.style.display = 'contents';
-    container.setAttribute('data-leverui-portal-container', '');
+    container.setAttribute('data-lui-portal-container', '');
     return container;
   });
 

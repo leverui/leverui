@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-field__root:not([data-unstyled]) {
+  .lui-field__root:not([data-unstyled]) {
     display: flex;
     width: 100%;
     position: relative;
@@ -9,21 +9,21 @@
     justify-content: var(--lui-private-field-justify);
   }
 
-  .leverui-field__root[data-orientation='vertical'] {
+  .lui-field__root[data-orientation='vertical'] {
     --lui-private-field-direction: column;
     --lui-private-field-align: flex-start;
     --lui-private-field-justify: normal;
     --lui-private-field-label-flex: 0 1 auto;
   }
 
-  .leverui-field__root[data-orientation='horizontal'] {
+  .lui-field__root[data-orientation='horizontal'] {
     --lui-private-field-direction: row;
     --lui-private-field-align: center;
     --lui-private-field-justify: space-between;
     --lui-private-field-label-flex: 0 0 var(--lui-field-label-width, 80px);
   }
 
-  .leverui-field__label:not([data-unstyled]) {
+  .lui-field__label:not([data-unstyled]) {
     display: flex;
     align-items: center;
     text-align: start;
@@ -35,11 +35,11 @@
     flex: var(--lui-private-field-label-flex, 0 1 auto);
   }
 
-  .leverui-field__label:not([data-unstyled])[data-disabled] {
+  .lui-field__label:not([data-unstyled])[data-disabled] {
     opacity: 0.5;
   }
 
-  .leverui-field__errorText:not([data-unstyled]) {
+  .lui-field__errorText:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
     font-weight: var(--lui-font-weights-medium);
@@ -49,13 +49,13 @@
     line-height: 1rem;
   }
 
-  .leverui-field__helperText:not([data-unstyled]) {
+  .lui-field__helperText:not([data-unstyled]) {
     color: var(--lui-colors-fg-muted);
     font-size: var(--lui-font-sizes-xs);
     line-height: 1rem;
   }
 
-  .leverui-field__requiredIndicator:not([data-unstyled]) {
+  .lui-field__requiredIndicator:not([data-unstyled]) {
     color: var(--lui-colors-fg-error);
     line-height: 1;
   }

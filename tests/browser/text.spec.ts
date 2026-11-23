@@ -115,7 +115,7 @@ async function verifiesTextHydration({ page }: { page: Page }): Promise<void> {
   await page.setViewportSize({ width: 600, height: 700 });
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(
-    `${generateHydrationScript()}<style data-leverui-default>${defaultCss}</style><style>${responsiveTextCss}</style><div id="text-hydration-root">${markup}</div>`,
+    `${generateHydrationScript()}<style data-lui-default>${defaultCss}</style><style>${responsiveTextCss}</style><div id="text-hydration-root">${markup}</div>`,
   );
   const text = page.locator('#hydrated-text');
   const root = page.locator('#text-hydration-root');

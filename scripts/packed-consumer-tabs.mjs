@@ -45,9 +45,9 @@ export async function verifyPackedTabs(page) {
     ),
     'SECTION',
   );
-  await expect(familyRoot).toHaveClass(/leverui-tabs__root/);
+  await expect(familyRoot).toHaveClass(/lui-tabs__root/);
   await expect(familyFirst).toHaveAttribute('role', 'tab');
-  await expect(page.getByTestId('packed-family-group')).toHaveClass(/leverui-tabs__contentGroup/);
+  await expect(page.getByTestId('packed-family-group')).toHaveClass(/lui-tabs__contentGroup/);
   await expect(page.getByTestId('packed-family-probe')).toHaveText('one');
   await familySecond.click();
   await expect(familySecond).toHaveAttribute('aria-selected', 'true');

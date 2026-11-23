@@ -65,7 +65,7 @@ function renderIcon(getProps: GetIndicatorProps): JSX.Element {
 /** Style a consumer-owned list item through the public part class. */
 function ListClassProbe(props: { testId: string }): JSX.Element {
   return (
-    <li class="leverui-list__item" data-testid={props.testId}>
+    <li class="lui-list__item" data-testid={props.testId}>
       Custom item
     </li>
   );

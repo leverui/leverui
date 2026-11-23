@@ -16,7 +16,7 @@ const palettes = [
 
 /** Read a checked Switch's resolved track color from the browser. */
 function trackColor(element: HTMLElement): string {
-  const control = element.querySelector('.leverui-switch__control');
+  const control = element.querySelector('.lui-switch__control');
   if (!control) throw new Error('Switch guide control was not rendered.');
   return getComputedStyle(control).backgroundColor;
 }
@@ -77,14 +77,14 @@ async function verifiesIconMode({ page }: { page: Page }): Promise<void> {
   const icon = page.locator('[data-icon="check"]');
   const mode = page.getByTestId('switch-guide-icon-mode');
   const toggle = page.getByRole('button', { name: 'Toggle icon mode' });
-  await expect(icon).toHaveClass(/leverui-icon/, { timeout: 30_000 });
+  await expect(icon).toHaveClass(/lui-icon/, { timeout: 30_000 });
   await expect(mode).toHaveText('styled');
   await toggle.click();
-  await expect(icon).not.toHaveAttribute('class', /leverui-icon/);
+  await expect(icon).not.toHaveAttribute('class', /lui-icon/);
   await expect(icon.locator('path')).toHaveCount(1);
   await expect(mode).toHaveText('raw');
   await toggle.click();
-  await expect(icon).toHaveClass(/leverui-icon/);
+  await expect(icon).toHaveClass(/lui-icon/);
   await expect(mode).toHaveText('styled');
 }
 

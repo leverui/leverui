@@ -1,12 +1,12 @@
 @layer leverui.recipes {
-  .leverui-button:not([data-unstyled]) {
+  .lui-button:not([data-unstyled]) {
     background-color: var(--lui-private-button-bg, transparent);
     color: var(--lui-private-button-fg, inherit);
     border-color: var(--lui-private-button-border, transparent);
     box-shadow: var(--lui-private-button-shadow, none);
   }
 
-  .leverui-button:not([data-unstyled]):is(
+  .lui-button:not([data-unstyled]):is(
       :hover,
       [data-hover],
       [aria-expanded='true'],
@@ -16,7 +16,7 @@
     background-color: var(--lui-private-button-hover-bg, var(--lui-private-button-bg, transparent));
   }
 
-  .leverui-button:not([data-unstyled]):is([data-variant='solid'], :not([data-variant])) {
+  .lui-button:not([data-unstyled]):is([data-variant='solid'], :not([data-variant])) {
     --lui-private-button-bg: var(--lui-colors-color-palette-solid);
     --lui-private-button-fg: var(--lui-colors-color-palette-contrast);
     --lui-private-button-border: transparent;
@@ -28,7 +28,7 @@
     );
   }
 
-  .leverui-button:not([data-unstyled])[data-variant='subtle'] {
+  .lui-button:not([data-unstyled])[data-variant='subtle'] {
     --lui-private-button-bg: var(--lui-colors-color-palette-subtle);
     --lui-private-button-fg: var(--lui-colors-color-palette-fg);
     --lui-private-button-border: transparent;
@@ -36,7 +36,7 @@
     --lui-private-button-hover-bg: var(--lui-colors-color-palette-muted);
   }
 
-  .leverui-button:not([data-unstyled])[data-variant='surface'] {
+  .lui-button:not([data-unstyled])[data-variant='surface'] {
     --lui-private-button-bg: var(--lui-colors-color-palette-subtle);
     --lui-private-button-fg: var(--lui-colors-color-palette-fg);
     --lui-private-button-border: transparent;
@@ -44,7 +44,7 @@
     --lui-private-button-hover-bg: var(--lui-colors-color-palette-muted);
   }
 
-  .leverui-button:not([data-unstyled])[data-variant='outline'] {
+  .lui-button:not([data-unstyled])[data-variant='outline'] {
     --lui-private-button-bg: transparent;
     --lui-private-button-fg: var(--lui-colors-color-palette-fg);
     --lui-private-button-border: var(--lui-colors-color-palette-border);
@@ -52,7 +52,7 @@
     --lui-private-button-hover-bg: var(--lui-colors-color-palette-subtle);
   }
 
-  .leverui-button:not([data-unstyled])[data-variant='ghost'] {
+  .lui-button:not([data-unstyled])[data-variant='ghost'] {
     --lui-private-button-bg: transparent;
     --lui-private-button-fg: var(--lui-colors-color-palette-fg);
     --lui-private-button-border: transparent;
@@ -60,7 +60,7 @@
     --lui-private-button-hover-bg: var(--lui-colors-color-palette-subtle);
   }
 
-  .leverui-button:not([data-unstyled])[data-variant='plain'] {
+  .lui-button:not([data-unstyled])[data-variant='plain'] {
     --lui-private-button-bg: transparent;
     --lui-private-button-fg: var(--lui-colors-color-palette-fg);
     --lui-private-button-border: transparent;

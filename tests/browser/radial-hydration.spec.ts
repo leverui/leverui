@@ -33,8 +33,8 @@ async function verifiesPublishedRadialHydration({ page }: { page: Page }): Promi
     `${generateHydrationScript()}<style>${defaultCss}</style><div id="radial-hydration-root">${markup}</div>`,
   );
   const root = page.locator('#radial-hydration-root');
-  const radial = root.locator('.leverui-radial-chart');
-  const bars = root.locator('.leverui-radial-bar-chart');
+  const radial = root.locator('.lui-radial-chart');
+  const bars = root.locator('.lui-radial-bar-chart');
   const radialSvg = radial.locator('svg');
   const barSvg = bars.locator('svg');
   await expect(radialSvg).toHaveAttribute('width', '200');

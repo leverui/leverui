@@ -53,7 +53,7 @@ export function useCheckboxNativeRoot(
     () => ({
       ...native,
       ...checkmarkAttributes(choices()),
-      'data-leverui-color-palette': readCheckmarkPalette(local.colorPalette),
+      'data-lui-color-palette': readCheckmarkPalette(local.colorPalette),
       'data-unstyled': local.unstyled ? '' : undefined,
       class: composeRecipeClassNames('checkbox', undefined, local.class, local.className),
       ref: local.ref,

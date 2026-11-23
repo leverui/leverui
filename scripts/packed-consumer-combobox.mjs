@@ -5,7 +5,7 @@ export async function verifyPackedCombobox(page) {
   const root = page.getByTestId('packed-combobox-root');
   const input = page.getByTestId('packed-combobox-input');
   await root.waitFor();
-  assert.match(await root.getAttribute('class'), /leverui-combobox__root/);
+  assert.match(await root.getAttribute('class'), /lui-combobox__root/);
   assert.equal(
     await input.evaluate(
       /** Read the published small-size recipe. */

@@ -16,10 +16,10 @@ export async function verifyPackedGroup(page) {
     ),
     'row',
   );
-  assert.equal(await first.getAttribute('data-leverui-group-first'), '');
-  assert.equal(await last.getAttribute('data-leverui-group-last'), '');
+  assert.equal(await first.getAttribute('data-lui-group-first'), '');
+  assert.equal(await last.getAttribute('data-lui-group-last'), '');
   assert.equal(
-    await page.locator('#packed-group-separator').getAttribute('data-leverui-group-auto-skip'),
+    await page.locator('#packed-group-separator').getAttribute('data-lui-group-auto-skip'),
     '',
   );
   assert.equal(

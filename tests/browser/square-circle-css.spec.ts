@@ -97,7 +97,7 @@ async function verifiesAuthoredShapes({ page }: { page: Page }): Promise<void> {
       /** Compare the two public class hooks without depending on SSR whitespace. */
       (element) => [...element.classList],
     ),
-  ).toEqual(['leverui-square', 'consumer-square']);
+  ).toEqual(['lui-square', 'consumer-square']);
   await page.setViewportSize({ width: 900, height: 700 });
   await expect(square).toHaveCSS('width', '48px');
   await expect(square).toHaveCSS('height', '48px');

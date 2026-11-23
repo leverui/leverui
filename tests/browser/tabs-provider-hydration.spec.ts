@@ -50,7 +50,7 @@ async function verifiesProviderHydration({ page }: { page: Page }): Promise<void
   await expect(one).toHaveAttribute('aria-selected', 'true');
   await expect(one).toHaveAttribute('aria-controls', panelId);
   await expect(panel).toHaveAttribute('aria-labelledby', triggerId);
-  await expect(group).toHaveClass(/leverui-tabs__contentGroup/);
+  await expect(group).toHaveClass(/lui-tabs__contentGroup/);
   await expect(panel).toBeVisible();
   await root.evaluate(markServerNode);
   await one.evaluate(markServerNode);

@@ -2,13 +2,13 @@
  * The site's colors come from Lever UI's own semantic tokens. The brand accent is the library's cyan palette,
  * which matches the logo's blues.
  */
-html[data-leverui-color-mode='light'] {
+html[data-lui-color-mode='light'] {
   color-scheme: light;
 }
-html[data-leverui-color-mode='dark'] {
+html[data-lui-color-mode='dark'] {
   color-scheme: dark;
 }
-html[data-leverui-color-mode] {
+html[data-lui-color-mode] {
   --site-canvas: var(--lui-colors-bg);
   --site-panel: var(--lui-colors-bg-panel);
   --site-panel-alt: var(--lui-colors-bg-muted);

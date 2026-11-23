@@ -33,9 +33,9 @@ function renderInstalledPinInput() {
 
 const markup = renderInstalledPinInput();
 assert.match(markup, /data-pin-input-/);
-assert.match(markup, /leverui-pin-input__root/);
-assert.match(markup, /leverui-pin-input__input/);
-assert.match(markup, /leverui-input/);
+assert.match(markup, /lui-pin-input__root/);
+assert.match(markup, /lui-pin-input__input/);
+assert.match(markup, /lui-input/);
 assert.match(markup, /data-size="md"/);
 assert.match(markup, /data-variant="outline"/);
 assert.match(markup, /<input[^>]*data-pin-input-input[^>]*type="password"/);

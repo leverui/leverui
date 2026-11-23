@@ -34,8 +34,8 @@ async function verifyHydration(page: Page, kind: 'area' | 'line'): Promise<void>
   await page.setContent(
     `${generateHydrationScript()}<style>${defaultCss}</style><div id="cartesian-hydration-root">${markup}</div>`,
   );
-  const root = page.locator('.leverui-cartesian-chart__root');
-  const svg = root.locator('.leverui-cartesian-chart__svg');
+  const root = page.locator('.lui-cartesian-chart__root');
+  const svg = root.locator('.lui-cartesian-chart__svg');
   await root.evaluate(markServerNode);
   await svg.evaluate(markServerNode);
   await expect(root).toHaveCSS('min-width', '280px');

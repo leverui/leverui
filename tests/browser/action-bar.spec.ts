@@ -117,7 +117,7 @@ async function verifiesPortalScope({ page }: { page: Page }): Promise<void> {
   const bridge = page.getByTestId('action-bar-portal-theme');
   const content = page.getByTestId('action-bar-scoped-content');
   await expect(content).toBeVisible({ timeout: 30_000 });
-  await expect(bridge).toHaveAttribute('data-leverui-color-mode', 'dark');
+  await expect(bridge).toHaveAttribute('data-lui-color-mode', 'dark');
   await expect(page.getByTestId('action-bar-scoped-positioner')).toHaveAttribute(
     'data-caller-ref',
     'attached',
@@ -140,7 +140,7 @@ async function verifiesPortalScope({ page }: { page: Page }): Promise<void> {
     (element) => getComputedStyle(element).backgroundColor,
   );
   await page.getByRole('button', { name: 'Toggle scope' }).click();
-  await expect(bridge).toHaveAttribute('data-leverui-color-mode', 'light');
+  await expect(bridge).toHaveAttribute('data-lui-color-mode', 'light');
   const lightBackground = await content.evaluate(
     /** Read the light scoped content color after updating the theme bridge. */
     (element) => getComputedStyle(element).backgroundColor,

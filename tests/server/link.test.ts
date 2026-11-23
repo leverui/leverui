@@ -54,10 +54,10 @@ function verifiesServerLinks(): void {
   expect(markup).toMatch(/<a[^>]*id="server-link"/);
   expect(markup).toContain('href="/about"');
   expect(markup).toContain('title="Shared destination"');
-  expect(markup).toContain('leverui-link');
+  expect(markup).toContain('lui-link');
   expect(markup).toMatch(/<article[^>]*id="server-box"/);
   expect(markup).toMatch(/<a[^>]*id="server-overlay"/);
-  expect(markup).toContain('leverui-linkbox__overlay');
+  expect(markup).toContain('lui-linkbox__overlay');
   expect(markup).not.toMatch(/<a[^>]*\s(?:variant|as|unstyled)=/);
 }
 

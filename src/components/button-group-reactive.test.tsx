@@ -78,10 +78,10 @@ function verifiesGroupPaletteUpdate(): void {
     () => <Example />,
   );
   const button = screen.getByTestId('palette-group-button');
-  expect(button.getAttribute('data-leverui-color-palette')).toBe('blue');
+  expect(button.getAttribute('data-lui-color-palette')).toBe('blue');
   setPalette('teal');
   flush();
-  expect(button.getAttribute('data-leverui-color-palette')).toBe('teal');
+  expect(button.getAttribute('data-lui-color-palette')).toBe('teal');
 }
 
 it('updates inherited ButtonGroup palettes', verifiesGroupPaletteUpdate);

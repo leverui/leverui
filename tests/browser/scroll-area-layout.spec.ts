@@ -119,11 +119,11 @@ async function verifiesUnstyled({ page }: { page: Page }): Promise<void> {
   await expect(viewport).toHaveAttribute('data-unstyled', '');
   await expect(scrollbar).toHaveAttribute('data-unstyled', '');
   await expect(root).toHaveClass(/custom-scroll-area/);
-  await expect(scrollbar).toHaveClass(/leverui-scroll-area__scrollbar/);
+  await expect(scrollbar).toHaveClass(/lui-scroll-area__scrollbar/);
   await expect(root).toHaveCSS('display', 'block');
   await page.addStyleTag({
     content:
-      '.custom-scroll-area .leverui-scroll-area__scrollbar { background: rgb(255, 0, 0); width: 14px; }',
+      '.custom-scroll-area .lui-scroll-area__scrollbar { background: rgb(255, 0, 0); width: 14px; }',
   });
   await expect(scrollbar).toHaveCSS('background-color', 'rgb(255, 0, 0)');
   await expect(scrollbar).toHaveCSS('width', '14px');

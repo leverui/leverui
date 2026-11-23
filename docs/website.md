@@ -93,7 +93,7 @@ hero artwork. Website accents and component examples use the logo's blue
 palette, with site tokens and public blue component-token overrides defined in
 `website/src/styles/site-theme-tokens.css`.
 
-The header switch sets `data-leverui-color-mode` on the root element, so the
+The header switch sets `data-lui-color-mode` on the root element, so the
 website and Lever UI components change together. A visitor's choice is saved
 under `leverui-site-color-mode`. Before hydration, the entry script applies
 that choice, or the system preference when there is no saved choice. The

@@ -1,34 +1,34 @@
 @layer leverui.recipes {
   @media (min-width: 768px) {
-    .leverui-button:not([data-unstyled])[data-variant-md='solid'] {
+    .lui-button:not([data-unstyled])[data-variant-md='solid'] {
       --lui-private-button-bg: var(--lui-colors-color-palette-solid);
       --lui-private-button-fg: var(--lui-colors-color-palette-contrast);
       --lui-private-button-border: transparent;
     }
 
-    .leverui-button:not([data-unstyled])[data-variant-md='subtle'] {
+    .lui-button:not([data-unstyled])[data-variant-md='subtle'] {
       --lui-private-button-bg: var(--lui-colors-color-palette-subtle);
       --lui-private-button-fg: var(--lui-colors-color-palette-fg);
       --lui-private-button-border: transparent;
     }
 
-    .leverui-button:not([data-unstyled])[data-variant-md='surface'] {
+    .lui-button:not([data-unstyled])[data-variant-md='surface'] {
       --lui-private-button-bg: var(--lui-colors-color-palette-subtle);
       --lui-private-button-fg: var(--lui-colors-color-palette-fg);
       --lui-private-button-shadow: 0 0 0 1px var(--lui-colors-color-palette-muted);
     }
 
-    .leverui-button:not([data-unstyled])[data-variant-md='outline'] {
+    .lui-button:not([data-unstyled])[data-variant-md='outline'] {
       --lui-private-button-fg: var(--lui-colors-color-palette-fg);
       --lui-private-button-border: var(--lui-colors-color-palette-border);
     }
 
-    .leverui-button:not([data-unstyled])[data-variant-md='ghost'] {
+    .lui-button:not([data-unstyled])[data-variant-md='ghost'] {
       --lui-private-button-bg: transparent;
       --lui-private-button-fg: var(--lui-colors-color-palette-fg);
     }
 
-    .leverui-button:not([data-unstyled])[data-variant-md='plain'] {
+    .lui-button:not([data-unstyled])[data-variant-md='plain'] {
       --lui-private-button-fg: var(--lui-colors-color-palette-fg);
     }
   }

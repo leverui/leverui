@@ -30,7 +30,7 @@ function verifiesResponsiveSize(): void {
   flush();
   expect(screen.getByTestId('responsive-icon')).toBe(icon);
   expect(icon.getAttribute('data-size')).toBe('sm');
-  expect(screen.getByTestId('unstyled-icon').getAttribute('class')).toContain('leverui-icon');
+  expect(screen.getByTestId('unstyled-icon').getAttribute('class')).toContain('lui-icon');
   expect(screen.getByTestId('unstyled-icon').hasAttribute('data-unstyled')).toBe(true);
   expect(screen.getByTestId('unstyled-icon').hasAttribute('width')).toBe(false);
   expect(screen.getByTestId('unstyled-icon').hasAttribute('height')).toBe(false);

@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  :is(.leverui-badge, .leverui-code):not([data-unstyled], [data-leverui-private-style-runtime]) {
+  :is(.lui-badge, .lui-code):not([data-unstyled], [data-lui-private-style-runtime]) {
     &[data-size='xs'] {
       --lui-private-badge-font-size: var(--lui-font-sizes-2xs);
       --lui-private-badge-line-height: 0.75rem;

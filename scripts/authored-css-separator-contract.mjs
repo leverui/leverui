@@ -1,7 +1,7 @@
 export const separatorContentContract = {
   family: 'separator',
   required: [
-    '.leverui-separator:not([data-unstyled])',
+    '.lui-separator:not([data-unstyled])',
     '--lui-separator-color',
     '--lui-separator-thickness',
     '--lui-private-separator-thickness',

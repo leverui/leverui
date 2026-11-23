@@ -27,13 +27,13 @@ async function verifiesHeadingHydration({ page }: { page: Page }): Promise<void>
     () => renderHeadingHydrationTree(server),
   );
   expect(markup).toContain('<h2');
-  expect(markup).toContain('leverui-heading');
+  expect(markup).toContain('lui-heading');
   expect(markup).toContain('Hydrated heading');
   expect(markup).not.toMatch(/<h2[^>]*\ssize=/);
   await page.setViewportSize({ width: 600, height: 800 });
   await page.goto('/iframe.html?id=setup-hydration-host--ready');
   await page.setContent(
-    `${generateHydrationScript()}<style>${defaultCss}</style><style>.leverui-heading{font-weight:300}</style><div id="heading-hydration-root">${markup}</div>`,
+    `${generateHydrationScript()}<style>${defaultCss}</style><style>.lui-heading{font-weight:300}</style><div id="heading-hydration-root">${markup}</div>`,
   );
   const heading = page.locator('#hydrated-heading');
   await expect(heading).toHaveCSS('font-size', '14px');

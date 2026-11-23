@@ -29,14 +29,14 @@
   --lui-scroll-area-thumb-color: var(--site-nav-thumb);
   --lui-scroll-area-thumb-hover-color: var(--site-nav-thumb-hover);
 }
-.guide-sidebar-scroll-area .leverui-scroll-area__scrollbar {
+.guide-sidebar-scroll-area .lui-scroll-area__scrollbar {
   opacity: 0;
   transition: opacity 150ms 300ms;
 }
 /* Show the scrollbar while the pointer is anywhere over the sidebar, or while it scrolls. */
-.guide-sidebar:hover .guide-sidebar-scroll-area .leverui-scroll-area__scrollbar,
+.guide-sidebar:hover .guide-sidebar-scroll-area .lui-scroll-area__scrollbar,
 .guide-sidebar-scroll-area
-  .leverui-scroll-area__scrollbar:is([data-scrolling], :hover, :active, :focus-within) {
+  .lui-scroll-area__scrollbar:is([data-scrolling], :hover, :active, :focus-within) {
   opacity: 1;
   transition-delay: 0ms;
 }
@@ -160,7 +160,7 @@
 .guide-markdown li::marker {
   color: var(--lui-colors-fg-subtle);
 }
-.guide-markdown a:not([class*='leverui-']) {
+.guide-markdown a:not([class*='lui-']) {
   color: var(--lui-colors-fg);
   font-weight: var(--lui-font-weights-medium);
   text-decoration: underline;

@@ -1,13 +1,13 @@
 @layer leverui.recipes {
-  .leverui-timeline__root:not([data-unstyled]) {
+  .lui-timeline__root:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     width: 100%;
     --lui-private-timeline-thickness: 1px;
   }
 
-  @scope (.leverui-timeline__root:not([data-unstyled])) to (.leverui-timeline__root) {
-    .leverui-timeline__item:not([data-unstyled]) {
+  @scope (.lui-timeline__root:not([data-unstyled])) to (.lui-timeline__root) {
+    .lui-timeline__item:not([data-unstyled]) {
       display: flex;
       position: relative;
       align-items: flex-start;
@@ -23,7 +23,7 @@
       }
     }
 
-    .leverui-timeline__separator:not([data-unstyled]) {
+    .lui-timeline__separator:not([data-unstyled]) {
       display: var(--lui-private-timeline-separator-display);
       position: absolute;
       border-inline-start-width: var(
@@ -40,7 +40,7 @@
       border-color: var(--lui-timeline-line-color, var(--lui-colors-border));
     }
 
-    .leverui-timeline__indicator:not([data-unstyled]) {
+    .lui-timeline__indicator:not([data-unstyled]) {
       outline: 2px solid var(--lui-colors-bg);
       position: relative;
       flex-shrink: 0;
@@ -61,12 +61,12 @@
       border-color: var(--lui-private-timeline-indicator-border-color, transparent);
     }
 
-    .leverui-timeline__connector:not([data-unstyled]) {
+    .lui-timeline__connector:not([data-unstyled]) {
       align-self: stretch;
       position: relative;
     }
 
-    .leverui-timeline__content:not([data-unstyled]) {
+    .lui-timeline__content:not([data-unstyled]) {
       padding-bottom: var(--lui-timeline-content-gap, var(--lui-private-timeline-content-gap));
       display: flex;
       flex-direction: column;
@@ -74,7 +74,7 @@
       gap: var(--lui-spacing-2);
     }
 
-    .leverui-timeline__title:not([data-unstyled]) {
+    .lui-timeline__title:not([data-unstyled]) {
       display: flex;
       font-weight: var(--lui-font-weights-medium);
       flex-wrap: wrap;
@@ -85,7 +85,7 @@
       margin-top: var(--lui-private-timeline-title-margin-top);
     }
 
-    .leverui-timeline__description:not([data-unstyled]) {
+    .lui-timeline__description:not([data-unstyled]) {
       color: var(--lui-colors-fg-muted);
       font-size: var(--lui-font-sizes-xs);
       line-height: 1rem;

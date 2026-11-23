@@ -54,8 +54,8 @@ function verifiesNativeParts(): void {
   expect(screen.getByTestId('label')).toBe(label);
   expect(label?.tagName).toBe('DT');
   expect(screen.getByTestId('value').tagName).toBe('DD');
-  expect(list.className).toContain('leverui-data-list__root');
-  expect(label?.className).toContain('leverui-data-list__itemLabel');
+  expect(list.className).toContain('lui-data-list__root');
+  expect(label?.className).toContain('lui-data-list__itemLabel');
   expect(list.hasAttribute('size')).toBe(false);
   expect(list.hasAttribute('orientation')).toBe(false);
   expect(list.hasAttribute('variant')).toBe(false);
@@ -169,9 +169,9 @@ function verifiesCallerOwnedParts(): void {
     ),
   );
   expect(screen.getByTestId('owned-root').tagName).toBe('DL');
-  expect(screen.getByTestId('owned-root').className).toContain('leverui-data-list__root');
+  expect(screen.getByTestId('owned-root').className).toContain('lui-data-list__root');
   expect(screen.getByTestId('owned-term').tagName).toBe('DT');
-  expect(screen.getByTestId('owned-term').className).toContain('leverui-data-list__itemLabel');
+  expect(screen.getByTestId('owned-term').className).toContain('lui-data-list__itemLabel');
   expect(screen.getByTestId('owned-term').textContent).toBe('Status');
 }
 

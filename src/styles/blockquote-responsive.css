@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-blockquote__root:not([data-unstyled]) {
+    .lui-blockquote__root:not([data-unstyled]) {
       &[data-justify-sm='start'] {
         --lui-private-blockquote-align: flex-start;
         --lui-private-blockquote-text-align: start;
@@ -16,7 +16,7 @@
     }
   }
   @media (min-width: 768px) {
-    .leverui-blockquote__root:not([data-unstyled]) {
+    .lui-blockquote__root:not([data-unstyled]) {
       &[data-justify-md='start'] {
         --lui-private-blockquote-align: flex-start;
         --lui-private-blockquote-text-align: start;
@@ -32,7 +32,7 @@
     }
   }
   @media (min-width: 1024px) {
-    .leverui-blockquote__root:not([data-unstyled]) {
+    .lui-blockquote__root:not([data-unstyled]) {
       &[data-justify-lg='start'] {
         --lui-private-blockquote-align: flex-start;
         --lui-private-blockquote-text-align: start;
@@ -48,7 +48,7 @@
     }
   }
   @media (min-width: 1280px) {
-    .leverui-blockquote__root:not([data-unstyled]) {
+    .lui-blockquote__root:not([data-unstyled]) {
       &[data-justify-xl='start'] {
         --lui-private-blockquote-align: flex-start;
         --lui-private-blockquote-text-align: start;
@@ -64,7 +64,7 @@
     }
   }
   @media (min-width: 1536px) {
-    .leverui-blockquote__root:not([data-unstyled]) {
+    .lui-blockquote__root:not([data-unstyled]) {
       &[data-justify-2xl='start'] {
         --lui-private-blockquote-align: flex-start;
         --lui-private-blockquote-text-align: start;

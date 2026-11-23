@@ -124,7 +124,7 @@ Each row takes focus when `tooltip` is on.
   --lui-bar-list-size: 3rem;
 }
 
-.traffic-list .leverui-bar-list__fill {
+.traffic-list .lui-bar-list__fill {
   border-radius: 0.75rem;
 }
 ```
@@ -139,7 +139,7 @@ Each row takes focus when `tooltip` is on.
 
 ### Classes
 
-Parts, each prefixed with `.leverui-bar-list__`: `root`, `title`, `content`,
+Parts, each prefixed with `.lui-bar-list__`: `root`, `title`, `content`,
 `label`, `labelHeading`, `bar`, `row`, `fill`, `rowLabel`, `value`, `valueRow`,
 `tooltip`.
 

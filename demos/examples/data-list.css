@@ -2,10 +2,10 @@
   max-width: var(--lui-sizes-md);
 }
 
-.data-list-separated > .leverui-data-list__item {
+.data-list-separated > .lui-data-list__item {
   padding-top: var(--lui-spacing-4);
 }
 
-.data-list-separated > .leverui-data-list__item + .leverui-data-list__item {
+.data-list-separated > .lui-data-list__item + .lui-data-list__item {
   border-top: 1px solid var(--lui-colors-border);
 }

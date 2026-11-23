@@ -131,7 +131,7 @@ your own parts.
 
 ## Customize with CSS
 
-Override the `--lui-*` theme tokens, or target the `.leverui-switch__*`
+Override the `--lui-*` theme tokens, or target the `.lui-switch__*`
 classes for one-off styling. `class` and `style` work on the root and on every
 part.
 

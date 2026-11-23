@@ -25,7 +25,7 @@ function verifiesServerCode(): void {
   );
 
   expect(markup).toMatch(/<code[^>]*id="server-code"/);
-  expect(markup).toContain('leverui-code');
+  expect(markup).toContain('lui-code');
   expect(markup).toContain('npm run build');
   expect(markup).not.toMatch(/\s(?:size|variant|colorPalette)=/);
 }

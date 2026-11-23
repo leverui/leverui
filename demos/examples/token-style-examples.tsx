@@ -108,7 +108,7 @@ export function TokensLayerStyle(): JSX.Element {
                     (layerStyle) => (
                       <Center
                         class="token-style-layer"
-                        data-leverui-color-palette="teal"
+                        data-lui-color-palette="teal"
                         data-layer-style={layerStyle}
                       >
                         {layerStyle}

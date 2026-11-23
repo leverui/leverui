@@ -1,40 +1,40 @@
-html[data-leverui-color-mode='light'] .playground-hero p {
+html[data-lui-color-mode='light'] .playground-hero p {
   color: var(--site-muted);
 }
-html[data-leverui-color-mode='light'] .playground-controls {
+html[data-lui-color-mode='light'] .playground-controls {
   border-color: var(--site-border);
   background: var(--site-panel);
   color: var(--site-fg);
 }
-html[data-leverui-color-mode='light'] .playground-controls > p {
+html[data-lui-color-mode='light'] .playground-controls > p {
   color: var(--site-muted);
 }
-html[data-leverui-color-mode='light'] :is(.playground-controls legend, .playground-radius-input) {
+html[data-lui-color-mode='light'] :is(.playground-controls legend, .playground-radius-input) {
   color: var(--site-fg);
 }
-html[data-leverui-color-mode='light'] .playground-swatches button {
+html[data-lui-color-mode='light'] .playground-swatches button {
   border-color: var(--site-panel);
 }
-html[data-leverui-color-mode='light'] .playground-swatches button[aria-pressed='true'] {
+html[data-lui-color-mode='light'] .playground-swatches button[aria-pressed='true'] {
   box-shadow: 0 0 0 3px var(--site-accent);
 }
-html[data-leverui-color-mode='light'] .playground-color-input {
+html[data-lui-color-mode='light'] .playground-color-input {
   color: var(--site-muted);
 }
-html[data-leverui-color-mode='light'] .playground-color-input code {
+html[data-lui-color-mode='light'] .playground-color-input code {
   color: var(--site-fg);
 }
-html[data-leverui-color-mode='light'] .playground-radius-input strong {
+html[data-lui-color-mode='light'] .playground-radius-input strong {
   color: var(--site-fg);
 }
-html[data-leverui-color-mode='light'] .playground-radius-input input {
+html[data-lui-color-mode='light'] .playground-radius-input input {
   accent-color: var(--site-accent);
 }
-html[data-leverui-color-mode='light'] .playground-css-heading button {
+html[data-lui-color-mode='light'] .playground-css-heading button {
   border-color: var(--site-border-strong);
   background: var(--site-highlight-bg);
   color: var(--site-highlight-fg);
 }
-html[data-leverui-color-mode='light'] .playground-controls > a {
+html[data-lui-color-mode='light'] .playground-controls > a {
   color: var(--site-fg);
 }

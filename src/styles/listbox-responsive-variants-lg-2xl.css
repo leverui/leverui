@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 1024px) {
-    .leverui-listbox__content:not([data-unstyled]):is(
+    .lui-listbox__content:not([data-unstyled]):is(
         [data-variant-lg='subtle'],
         [data-variant-lg='solid']
       ) {
@@ -8,12 +8,12 @@
       --lui-private-listbox-border-width: 1px;
       --lui-private-listbox-radius: var(--lui-radii-l2);
     }
-    .leverui-listbox__content:not([data-unstyled])[data-variant-lg='plain'] {
+    .lui-listbox__content:not([data-unstyled])[data-variant-lg='plain'] {
       --lui-private-listbox-background: transparent;
       --lui-private-listbox-border-width: 0;
       --lui-private-listbox-radius: 0;
     }
-    .leverui-listbox__item:not([data-unstyled])[data-variant-lg='subtle'] {
+    .lui-listbox__item:not([data-unstyled])[data-variant-lg='subtle'] {
       --lui-private-listbox-selected-background: var(--lui-colors-bg-muted);
       --lui-private-listbox-selected-color: inherit;
       --lui-private-listbox-hover-background: color-mix(
@@ -22,19 +22,19 @@
         transparent
       );
     }
-    .leverui-listbox__item:not([data-unstyled])[data-variant-lg='solid'] {
+    .lui-listbox__item:not([data-unstyled])[data-variant-lg='solid'] {
       --lui-private-listbox-selected-background: var(--lui-colors-color-palette-solid);
       --lui-private-listbox-selected-color: var(--lui-colors-color-palette-contrast);
       --lui-private-listbox-hover-background: initial;
     }
-    .leverui-listbox__item:not([data-unstyled])[data-variant-lg='plain'] {
+    .lui-listbox__item:not([data-unstyled])[data-variant-lg='plain'] {
       --lui-private-listbox-selected-background: transparent;
       --lui-private-listbox-selected-color: inherit;
       --lui-private-listbox-hover-background: initial;
     }
   }
   @media (min-width: 1280px) {
-    .leverui-listbox__content:not([data-unstyled]):is(
+    .lui-listbox__content:not([data-unstyled]):is(
         [data-variant-xl='subtle'],
         [data-variant-xl='solid']
       ) {
@@ -42,12 +42,12 @@
       --lui-private-listbox-border-width: 1px;
       --lui-private-listbox-radius: var(--lui-radii-l2);
     }
-    .leverui-listbox__content:not([data-unstyled])[data-variant-xl='plain'] {
+    .lui-listbox__content:not([data-unstyled])[data-variant-xl='plain'] {
       --lui-private-listbox-background: transparent;
       --lui-private-listbox-border-width: 0;
       --lui-private-listbox-radius: 0;
     }
-    .leverui-listbox__item:not([data-unstyled])[data-variant-xl='subtle'] {
+    .lui-listbox__item:not([data-unstyled])[data-variant-xl='subtle'] {
       --lui-private-listbox-selected-background: var(--lui-colors-bg-muted);
       --lui-private-listbox-selected-color: inherit;
       --lui-private-listbox-hover-background: color-mix(
@@ -56,19 +56,19 @@
         transparent
       );
     }
-    .leverui-listbox__item:not([data-unstyled])[data-variant-xl='solid'] {
+    .lui-listbox__item:not([data-unstyled])[data-variant-xl='solid'] {
       --lui-private-listbox-selected-background: var(--lui-colors-color-palette-solid);
       --lui-private-listbox-selected-color: var(--lui-colors-color-palette-contrast);
       --lui-private-listbox-hover-background: initial;
     }
-    .leverui-listbox__item:not([data-unstyled])[data-variant-xl='plain'] {
+    .lui-listbox__item:not([data-unstyled])[data-variant-xl='plain'] {
       --lui-private-listbox-selected-background: transparent;
       --lui-private-listbox-selected-color: inherit;
       --lui-private-listbox-hover-background: initial;
     }
   }
   @media (min-width: 1536px) {
-    .leverui-listbox__content:not([data-unstyled]):is(
+    .lui-listbox__content:not([data-unstyled]):is(
         [data-variant-2xl='subtle'],
         [data-variant-2xl='solid']
       ) {
@@ -76,12 +76,12 @@
       --lui-private-listbox-border-width: 1px;
       --lui-private-listbox-radius: var(--lui-radii-l2);
     }
-    .leverui-listbox__content:not([data-unstyled])[data-variant-2xl='plain'] {
+    .lui-listbox__content:not([data-unstyled])[data-variant-2xl='plain'] {
       --lui-private-listbox-background: transparent;
       --lui-private-listbox-border-width: 0;
       --lui-private-listbox-radius: 0;
     }
-    .leverui-listbox__item:not([data-unstyled])[data-variant-2xl='subtle'] {
+    .lui-listbox__item:not([data-unstyled])[data-variant-2xl='subtle'] {
       --lui-private-listbox-selected-background: var(--lui-colors-bg-muted);
       --lui-private-listbox-selected-color: inherit;
       --lui-private-listbox-hover-background: color-mix(
@@ -90,12 +90,12 @@
         transparent
       );
     }
-    .leverui-listbox__item:not([data-unstyled])[data-variant-2xl='solid'] {
+    .lui-listbox__item:not([data-unstyled])[data-variant-2xl='solid'] {
       --lui-private-listbox-selected-background: var(--lui-colors-color-palette-solid);
       --lui-private-listbox-selected-color: var(--lui-colors-color-palette-contrast);
       --lui-private-listbox-hover-background: initial;
     }
-    .leverui-listbox__item:not([data-unstyled])[data-variant-2xl='plain'] {
+    .lui-listbox__item:not([data-unstyled])[data-variant-2xl='plain'] {
       --lui-private-listbox-selected-background: transparent;
       --lui-private-listbox-selected-color: inherit;
       --lui-private-listbox-hover-background: initial;

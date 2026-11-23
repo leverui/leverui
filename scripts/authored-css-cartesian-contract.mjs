@@ -24,7 +24,7 @@ export const cartesianContracts = [
     required: [
       ...parts.map(
         /** Keep fixed Cartesian presentation in authored CSS. */
-        (part) => `.leverui-cartesian-chart__${part}`,
+        (part) => `.lui-cartesian-chart__${part}`,
       ),
       '--lui-cartesian-chart-min-width',
       '--lui-cartesian-chart-legend-gap',
@@ -33,6 +33,6 @@ export const cartesianContracts = [
       "[data-position='right']",
     ],
   },
-  { family: 'area-chart', required: ['.leverui-area-chart .leverui-cartesian-chart__area'] },
-  { family: 'line-chart', required: ['.leverui-line-chart .leverui-cartesian-chart__line'] },
+  { family: 'area-chart', required: ['.lui-area-chart .lui-cartesian-chart__area'] },
+  { family: 'line-chart', required: ['.lui-line-chart .lui-cartesian-chart__line'] },
 ];

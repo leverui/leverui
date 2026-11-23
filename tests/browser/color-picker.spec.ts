@@ -7,12 +7,12 @@ async function verifiesBasicPicker({ page }: { page: Page }): Promise<void> {
   const trigger = page.getByTestId('color-picker-trigger');
   await expect(input).toBeVisible({ timeout: 30_000 });
   await expect(input).toHaveValue('#EB5E41');
-  await expect(trigger).toHaveClass(/leverui-color-picker__trigger/);
+  await expect(trigger).toHaveClass(/lui-color-picker__trigger/);
   await expect(page.getByTestId('color-picker-hidden')).toHaveAttribute('tabindex', '-1');
   await trigger.focus();
   await page.keyboard.press('Enter');
   await expect(page.getByTestId('color-picker-content')).toBeVisible();
-  await expect(page.getByTestId('color-picker-area')).toHaveClass(/leverui-color-picker__area/);
+  await expect(page.getByTestId('color-picker-area')).toHaveClass(/lui-color-picker__area/);
   await expect(page.getByRole('slider')).toHaveCount(3);
   await page.keyboard.press('Escape');
   await expect(page.getByTestId('color-picker-content')).toBeHidden();

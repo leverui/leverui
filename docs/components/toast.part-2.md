@@ -47,7 +47,7 @@
 
 ## Customize with CSS
 
-Override the `.leverui-toast__*` classes and the public `--lui-*`
+Override the `.lui-toast__*` classes and the public `--lui-*`
 variables. `--lui-toast-trigger-bg` and `--lui-toast-border-color`
 restyle the action. For one toast, use `class` and `style`. `unstyled` turns
 off the default styles. Transitions stop under reduced motion.

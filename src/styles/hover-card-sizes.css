@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-hoverCard__content:not([data-unstyled]) {
+  .lui-hoverCard__content:not([data-unstyled]) {
     &[data-size='xs'] {
       --lui-hover-card-padding: var(--lui-spacing-3);
     }
@@ -15,7 +15,7 @@
   }
 
   @media (min-width: 480px) {
-    .leverui-hoverCard__content:not([data-unstyled]) {
+    .lui-hoverCard__content:not([data-unstyled]) {
       &[data-size-sm='xs'] {
         --lui-hover-card-padding: var(--lui-spacing-3);
       }
@@ -31,7 +31,7 @@
     }
   }
   @media (min-width: 768px) {
-    .leverui-hoverCard__content:not([data-unstyled]) {
+    .lui-hoverCard__content:not([data-unstyled]) {
       &[data-size-md='xs'] {
         --lui-hover-card-padding: var(--lui-spacing-3);
       }
@@ -47,7 +47,7 @@
     }
   }
   @media (min-width: 1024px) {
-    .leverui-hoverCard__content:not([data-unstyled]) {
+    .lui-hoverCard__content:not([data-unstyled]) {
       &[data-size-lg='xs'] {
         --lui-hover-card-padding: var(--lui-spacing-3);
       }
@@ -63,7 +63,7 @@
     }
   }
   @media (min-width: 1280px) {
-    .leverui-hoverCard__content:not([data-unstyled]) {
+    .lui-hoverCard__content:not([data-unstyled]) {
       &[data-size-xl='xs'] {
         --lui-hover-card-padding: var(--lui-spacing-3);
       }
@@ -79,7 +79,7 @@
     }
   }
   @media (min-width: 1536px) {
-    .leverui-hoverCard__content:not([data-unstyled]) {
+    .lui-hoverCard__content:not([data-unstyled]) {
       &[data-size-2xl='xs'] {
         --lui-hover-card-padding: var(--lui-spacing-3);
       }

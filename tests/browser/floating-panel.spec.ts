@@ -12,7 +12,7 @@ async function verifiesPanelContract({ page }: { page: Page }): Promise<void> {
   await expect(content).toBeVisible();
   await expect(page.getByTestId('floating-open')).toHaveText('true');
   await expect(content).toHaveAttribute('role', 'dialog');
-  await expect(content).toHaveClass(/leverui-floating-panel__content/);
+  await expect(content).toHaveClass(/lui-floating-panel__content/);
   await expect(content).toHaveCSS('display', 'flex');
   await expect(page.getByRole('heading', { name: 'Floating panel' })).toBeVisible();
   await expect(page.getByTestId('floating-resize')).toHaveCount(3);

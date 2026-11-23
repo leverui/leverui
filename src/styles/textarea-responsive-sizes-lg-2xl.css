@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 1024px) {
-    .leverui-textarea:not([data-unstyled])[data-size-lg='xs'] {
+    .lui-textarea:not([data-unstyled])[data-size-lg='xs'] {
       --lui-private-textarea-font-size: var(--lui-font-sizes-xs);
       --lui-private-textarea-line-height: 1rem;
       --lui-private-textarea-size-padding-inline: var(--lui-spacing-2);
@@ -8,7 +8,7 @@
       --lui-private-textarea-scroll-padding: var(--lui-spacing-1\.5);
     }
 
-    .leverui-textarea:not([data-unstyled])[data-size-lg='sm'] {
+    .lui-textarea:not([data-unstyled])[data-size-lg='sm'] {
       --lui-private-textarea-font-size: var(--lui-font-sizes-sm);
       --lui-private-textarea-line-height: 1.25rem;
       --lui-private-textarea-size-padding-inline: var(--lui-spacing-2\.5);
@@ -16,7 +16,7 @@
       --lui-private-textarea-scroll-padding: var(--lui-spacing-2);
     }
 
-    .leverui-textarea:not([data-unstyled])[data-size-lg='md'] {
+    .lui-textarea:not([data-unstyled])[data-size-lg='md'] {
       --lui-private-textarea-font-size: var(--lui-font-sizes-sm);
       --lui-private-textarea-line-height: 1.25rem;
       --lui-private-textarea-size-padding-inline: var(--lui-spacing-3);
@@ -24,7 +24,7 @@
       --lui-private-textarea-scroll-padding: var(--lui-spacing-2);
     }
 
-    .leverui-textarea:not([data-unstyled])[data-size-lg='lg'] {
+    .lui-textarea:not([data-unstyled])[data-size-lg='lg'] {
       --lui-private-textarea-font-size: var(--lui-font-sizes-md);
       --lui-private-textarea-line-height: 1.5rem;
       --lui-private-textarea-size-padding-inline: var(--lui-spacing-4);
@@ -32,7 +32,7 @@
       --lui-private-textarea-scroll-padding: var(--lui-spacing-3);
     }
 
-    .leverui-textarea:not([data-unstyled])[data-size-lg='xl'] {
+    .lui-textarea:not([data-unstyled])[data-size-lg='xl'] {
       --lui-private-textarea-font-size: var(--lui-font-sizes-md);
       --lui-private-textarea-line-height: 1.5rem;
       --lui-private-textarea-size-padding-inline: var(--lui-spacing-4\.5);
@@ -42,7 +42,7 @@
   }
 
   @media (min-width: 1280px) {
-    .leverui-textarea:not([data-unstyled])[data-size-xl='xs'] {
+    .lui-textarea:not([data-unstyled])[data-size-xl='xs'] {
       --lui-private-textarea-font-size: var(--lui-font-sizes-xs);
       --lui-private-textarea-line-height: 1rem;
       --lui-private-textarea-size-padding-inline: var(--lui-spacing-2);
@@ -50,7 +50,7 @@
       --lui-private-textarea-scroll-padding: var(--lui-spacing-1\.5);
     }
 
-    .leverui-textarea:not([data-unstyled])[data-size-xl='sm'] {
+    .lui-textarea:not([data-unstyled])[data-size-xl='sm'] {
       --lui-private-textarea-font-size: var(--lui-font-sizes-sm);
       --lui-private-textarea-line-height: 1.25rem;
       --lui-private-textarea-size-padding-inline: var(--lui-spacing-2\.5);
@@ -58,7 +58,7 @@
       --lui-private-textarea-scroll-padding: var(--lui-spacing-2);
     }
 
-    .leverui-textarea:not([data-unstyled])[data-size-xl='md'] {
+    .lui-textarea:not([data-unstyled])[data-size-xl='md'] {
       --lui-private-textarea-font-size: var(--lui-font-sizes-sm);
       --lui-private-textarea-line-height: 1.25rem;
       --lui-private-textarea-size-padding-inline: var(--lui-spacing-3);
@@ -66,7 +66,7 @@
       --lui-private-textarea-scroll-padding: var(--lui-spacing-2);
     }
 
-    .leverui-textarea:not([data-unstyled])[data-size-xl='lg'] {
+    .lui-textarea:not([data-unstyled])[data-size-xl='lg'] {
       --lui-private-textarea-font-size: var(--lui-font-sizes-md);
       --lui-private-textarea-line-height: 1.5rem;
       --lui-private-textarea-size-padding-inline: var(--lui-spacing-4);
@@ -74,7 +74,7 @@
       --lui-private-textarea-scroll-padding: var(--lui-spacing-3);
     }
 
-    .leverui-textarea:not([data-unstyled])[data-size-xl='xl'] {
+    .lui-textarea:not([data-unstyled])[data-size-xl='xl'] {
       --lui-private-textarea-font-size: var(--lui-font-sizes-md);
       --lui-private-textarea-line-height: 1.5rem;
       --lui-private-textarea-size-padding-inline: var(--lui-spacing-4\.5);
@@ -84,7 +84,7 @@
   }
 
   @media (min-width: 1536px) {
-    .leverui-textarea:not([data-unstyled])[data-size-2xl='xs'] {
+    .lui-textarea:not([data-unstyled])[data-size-2xl='xs'] {
       --lui-private-textarea-font-size: var(--lui-font-sizes-xs);
       --lui-private-textarea-line-height: 1rem;
       --lui-private-textarea-size-padding-inline: var(--lui-spacing-2);
@@ -92,7 +92,7 @@
       --lui-private-textarea-scroll-padding: var(--lui-spacing-1\.5);
     }
 
-    .leverui-textarea:not([data-unstyled])[data-size-2xl='sm'] {
+    .lui-textarea:not([data-unstyled])[data-size-2xl='sm'] {
       --lui-private-textarea-font-size: var(--lui-font-sizes-sm);
       --lui-private-textarea-line-height: 1.25rem;
       --lui-private-textarea-size-padding-inline: var(--lui-spacing-2\.5);
@@ -100,7 +100,7 @@
       --lui-private-textarea-scroll-padding: var(--lui-spacing-2);
     }
 
-    .leverui-textarea:not([data-unstyled])[data-size-2xl='md'] {
+    .lui-textarea:not([data-unstyled])[data-size-2xl='md'] {
       --lui-private-textarea-font-size: var(--lui-font-sizes-sm);
       --lui-private-textarea-line-height: 1.25rem;
       --lui-private-textarea-size-padding-inline: var(--lui-spacing-3);
@@ -108,7 +108,7 @@
       --lui-private-textarea-scroll-padding: var(--lui-spacing-2);
     }
 
-    .leverui-textarea:not([data-unstyled])[data-size-2xl='lg'] {
+    .lui-textarea:not([data-unstyled])[data-size-2xl='lg'] {
       --lui-private-textarea-font-size: var(--lui-font-sizes-md);
       --lui-private-textarea-line-height: 1.5rem;
       --lui-private-textarea-size-padding-inline: var(--lui-spacing-4);
@@ -116,7 +116,7 @@
       --lui-private-textarea-scroll-padding: var(--lui-spacing-3);
     }
 
-    .leverui-textarea:not([data-unstyled])[data-size-2xl='xl'] {
+    .lui-textarea:not([data-unstyled])[data-size-2xl='xl'] {
       --lui-private-textarea-font-size: var(--lui-font-sizes-md);
       --lui-private-textarea-line-height: 1.5rem;
       --lui-private-textarea-size-padding-inline: var(--lui-spacing-4\.5);

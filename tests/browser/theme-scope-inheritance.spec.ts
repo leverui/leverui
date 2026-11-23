@@ -15,7 +15,7 @@ const defaultCss = await readFile(new URL('../../dist/styles.css', import.meta.u
 
 /** Select dark mode on the document used by the browser test. */
 function setDarkMode(): void {
-  document.documentElement.setAttribute('data-leverui-color-mode', 'dark');
+  document.documentElement.setAttribute('data-lui-color-mode', 'dark');
 }
 
 /** Render matching semantic colors at the root and in an inherited scope. */
@@ -36,7 +36,7 @@ function renderInheritedColors() {
 async function verifiesSemanticInheritance({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderInheritedColors);
   const override = `
-    html[data-leverui-color-mode='dark'] { --lui-colors-bg: rgb(60, 70, 80); }
+    html[data-lui-color-mode='dark'] { --lui-colors-bg: rgb(60, 70, 80); }
     .semantic-background { background-color: var(--lui-colors-bg); }
   `;
 
@@ -46,10 +46,7 @@ async function verifiesSemanticInheritance({ page }: { page: Page }): Promise<vo
 
   await expect(page.locator('#root-bg')).toHaveCSS('background-color', 'rgb(60, 70, 80)');
   await expect(page.locator('#inherited-bg')).toHaveCSS('background-color', 'rgb(60, 70, 80)');
-  await expect(page.locator('#inherited-theme')).not.toHaveAttribute(
-    'data-leverui-color-mode',
-    'dark',
-  );
+  await expect(page.locator('#inherited-theme')).not.toHaveAttribute('data-lui-color-mode', 'dark');
 }
 
 test('appearance-free Theme inherits root semantic overrides', verifiesSemanticInheritance);

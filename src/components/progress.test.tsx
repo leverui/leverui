@@ -29,7 +29,7 @@ function verifiesProgressParts(): void {
   const track = screen.getByTestId('track');
   const range = screen.getByTestId('range');
   expect(root.hasAttribute('data-progress-root')).toBe(true);
-  expect(root.className).toContain('leverui-progress__root');
+  expect(root.className).toContain('lui-progress__root');
   expect(root.hasAttribute('size')).toBe(false);
   expect(track.getAttribute('role')).toBe('progressbar');
   expect(screen.getByRole('progressbar', { name: 'Loading files' })).toBe(track);

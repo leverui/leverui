@@ -53,8 +53,8 @@ function renderServerSelect(): string {
 function verifiesServerSelect(): void {
   const markup = renderServerSelect();
   expect(markup).toContain('data-select-');
-  expect(markup).toContain('leverui-select__root');
-  expect(markup).toContain('leverui-select__trigger');
+  expect(markup).toContain('lui-select__root');
+  expect(markup).toContain('lui-select__trigger');
   expect(markup).toContain('role="combobox"');
   expect(markup).toContain('name="framework"');
   expect(markup).toContain('Solid');

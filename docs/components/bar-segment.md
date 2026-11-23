@@ -122,7 +122,7 @@ and value.
   --lui-bar-segment-bar-gap: 0.5rem;
 }
 
-.traffic-mix .leverui-bar-segment__segment {
+.traffic-mix .lui-bar-segment__segment {
   border-radius: 0.75rem;
 }
 ```
@@ -143,7 +143,7 @@ the gap variable for that part.
 
 ### Classes
 
-Parts, each prefixed with `.leverui-bar-segment__`: `root`, `content`, `value`,
+Parts, each prefixed with `.lui-bar-segment__`: `root`, `content`, `value`,
 `valueItem`, `bar`, `segment`, `reference`, `referenceLine`, `referenceLabel`,
 `label`, `labelItem`, `legend`, `legendItem`, `legendSwatch`, `legendText`,
 `legendPercent`, `tooltip`, `tooltipSwatch`.

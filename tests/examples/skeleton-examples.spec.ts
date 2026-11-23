@@ -15,7 +15,7 @@ const counts = {
 async function verifiesSkeletonStories({ page }: { page: Page }): Promise<void> {
   for (const [story, count] of Object.entries(counts)) {
     await page.goto(`/iframe.html?id=components-skeleton--${story}`);
-    await expect(page.locator('#storybook-root .leverui-skeleton')).toHaveCount(count);
+    await expect(page.locator('#storybook-root .lui-skeleton')).toHaveCount(count);
   }
 }
 
@@ -30,22 +30,22 @@ async function verifiesLoadedTransition({ page }: { page: Page }): Promise<void>
 /** Keep a composed child's loading paint while allowing CSS theme overrides. */
 async function verifiesComposedSurface({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-skeleton--with-children');
-  await expect(page.locator('#storybook-root .leverui-skeleton').first()).toHaveCSS(
+  await expect(page.locator('#storybook-root .lui-skeleton').first()).toHaveCSS(
     'color',
     'rgba(0, 0, 0, 0)',
   );
-  await expect(page.locator('#storybook-root .leverui-skeleton').first()).toHaveCSS(
+  await expect(page.locator('#storybook-root .lui-skeleton').first()).toHaveCSS(
     'background-color',
     'rgb(228, 228, 231)',
   );
-  await expect(page.locator('#storybook-root .leverui-skeleton').last()).toHaveCSS(
+  await expect(page.locator('#storybook-root .lui-skeleton').last()).toHaveCSS(
     'background-color',
     'rgba(0, 0, 0, 0)',
   );
   await page.addStyleTag({
-    content: '.leverui-skeleton { --lui-skeleton-bg: rgb(10, 20, 30); }',
+    content: '.lui-skeleton { --lui-skeleton-bg: rgb(10, 20, 30); }',
   });
-  await expect(page.locator('#storybook-root .leverui-skeleton').first()).toHaveCSS(
+  await expect(page.locator('#storybook-root .lui-skeleton').first()).toHaveCSS(
     'background-color',
     'rgb(10, 20, 30)',
   );
@@ -54,7 +54,7 @@ async function verifiesComposedSurface({ page }: { page: Page }): Promise<void> 
 /** Keep the configured shine gradient on a loading placeholder. */
 async function verifiesShineSurface({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-skeleton--start-end-color');
-  await expect(page.locator('#storybook-root .leverui-skeleton')).toHaveCSS(
+  await expect(page.locator('#storybook-root .lui-skeleton')).toHaveCSS(
     'background-image',
     /linear-gradient/,
   );

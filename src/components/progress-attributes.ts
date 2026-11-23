@@ -8,10 +8,7 @@ import {
 type Choice = 'size' | 'variant' | 'shape' | 'striped' | 'animated';
 type Breakpoint = 'sm' | 'md' | 'lg' | 'xl' | '2xl';
 type Attribute =
-  | `data-${Choice}`
-  | `data-${Choice}-${Breakpoint}`
-  | 'data-leverui-color-palette'
-  | 'data-unstyled';
+  `data-${Choice}` | `data-${Choice}-${Breakpoint}` | 'data-lui-color-palette' | 'data-unstyled';
 export type ProgressAttributes = Partial<Record<Attribute, string | undefined>>;
 
 /** Reflect one finite choice at the six supported CSS breakpoints. */
@@ -38,7 +35,7 @@ export function progressAttributes(appearance: ProgressAppearance): ProgressAttr
     ...choiceAttributes('shape', choices.shape),
     ...choiceAttributes('striped', choices.striped),
     ...choiceAttributes('animated', choices.animated),
-    'data-leverui-color-palette': readProgressPalette(appearance.colorPalette),
+    'data-lui-color-palette': readProgressPalette(appearance.colorPalette),
     'data-unstyled': appearance.unstyled ? '' : undefined,
   };
 }

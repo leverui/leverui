@@ -49,7 +49,7 @@ export function useDrawerAuthoredStyles(props: DrawerAppearance): DialogAuthored
     const authored = usesAuthoredCss();
     const bare = Boolean(props.unstyled || unstyled);
     return {
-      'data-leverui-drawer-css': authored && !bare ? '' : undefined,
+      'data-lui-drawer-css': authored && !bare ? '' : undefined,
       'data-size': authored ? size().base : undefined,
       'data-size-sm': authored ? size().sm : undefined,
       'data-size-lg': authored ? size().lg : undefined,

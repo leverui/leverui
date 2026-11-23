@@ -35,7 +35,7 @@ async function verifiesProviderSteps({ page }: { page: Page }): Promise<void> {
   await expect(page.getByText('First panel')).toBeVisible();
   await page.getByTestId('steps-provider-next').click();
   await expect(page.getByText('Second panel')).toBeVisible();
-  await expect(root.locator('.leverui-steps__description')).toHaveText('First task');
+  await expect(root.locator('.lui-steps__description')).toHaveText('First task');
 }
 
 test('Steps provider retains machine state and vertical appearance', verifiesProviderSteps);

@@ -37,11 +37,11 @@ function verifiesCodeBlockCssHooks(): void {
   );
   const root = screen.getByTestId('root');
   const code = screen.getByTestId('code');
-  expect(root).toHaveClass('leverui-code-block__root', 'consumer-block');
+  expect(root).toHaveClass('lui-code-block__root', 'consumer-block');
   expect(root).toHaveAttribute('data-size', 'md');
   expect(root).not.toHaveAttribute('data-size-md');
   expect(root.style.getPropertyValue('--lui-code-block-radius')).toBe('17px');
-  expect(code).toHaveClass('leverui-code-block__codeText', 'consumer-code');
+  expect(code).toHaveClass('lui-code-block__codeText', 'consumer-code');
   expect(code).not.toHaveAttribute('data-has-focused');
   setLarge(true);
   flush();

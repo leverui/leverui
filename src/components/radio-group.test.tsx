@@ -50,7 +50,7 @@ async function verifiesFormSelection(): Promise<void> {
   expect(new FormData(screen.getByTestId('preferences') as HTMLFormElement).get('framework')).toBe(
     'solid',
   );
-  const marks = document.querySelectorAll('.leverui-radio-group__itemControl');
+  const marks = document.querySelectorAll('.lui-radio-group__itemControl');
   expect(marks).toHaveLength(2);
   expect(marks[1]?.querySelector('.dot')).not.toBeNull();
   expect(marks[0]?.querySelector('.dot')).toBeNull();
@@ -148,7 +148,7 @@ async function verifiesRootProvider(): Promise<void> {
     () =>
       expect((screen.getByRole('radio', { name: 'Solid' }) as HTMLInputElement).checked).toBe(true),
   );
-  expect(document.querySelector('.leverui-radio-group__root')).not.toBeNull();
+  expect(document.querySelector('.lui-radio-group__root')).not.toBeNull();
 }
 
 it('styles a caller-owned radio machine', verifiesRootProvider);

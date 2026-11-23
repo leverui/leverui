@@ -25,7 +25,7 @@ function verifiesServerSparkline(): void {
   const markup = renderServerSparkline();
   expect(markup).toContain('aria-label="Server chart"');
   expect(markup).toContain('viewBox="0 0 112 48"');
-  expect(markup).toContain('leverui-sparkline');
+  expect(markup).toContain('lui-sparkline');
   expect(markup).not.toContain('width="100%"');
   expect(markup).toContain('--lui-sparkline-width:100%');
   expect(markup).not.toContain('display:block');
@@ -45,7 +45,7 @@ function verifiesNativeSparklineProps(): void {
         style: '--lui-sparkline-color:rgb(1, 2, 3)',
       }),
   );
-  expect(markup).toContain('class="leverui-sparkline consumer-chart"');
+  expect(markup).toContain('class="lui-sparkline consumer-chart"');
   expect(markup).toContain('--lui-sparkline-color:rgb(1, 2, 3)');
 }
 

@@ -31,7 +31,7 @@ async function verifiesWrapLayout({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=layout-wrap--contract');
   const wrap = page.getByTestId('wrap-default');
   await expect(wrap).toBeVisible({ timeout: 30_000 });
-  await expect(wrap).toHaveClass(/leverui-wrap/);
+  await expect(wrap).toHaveClass(/lui-wrap/);
   await expect(wrap).toHaveCSS('display', 'flex');
   await expect(wrap).toHaveCSS('flex-wrap', 'wrap');
   await expect(wrap).toHaveCSS('gap', '8px');
@@ -54,7 +54,7 @@ async function verifiesWrapLayout({ page }: { page: Page }): Promise<void> {
   await expect(responsive).toHaveCSS('flex-direction', 'row-reverse');
 
   const item = page.getByTestId('wrap-item-default');
-  await expect(item).toHaveClass(/leverui-wrap__listitem/);
+  await expect(item).toHaveClass(/lui-wrap__listitem/);
   await expect(item).toHaveCSS('display', 'flex');
   await expect(item).toHaveCSS('align-items', 'flex-start');
   await expect(page.getByTestId('wrap-item-css')).toHaveCSS('align-items', 'center');
@@ -103,15 +103,15 @@ async function verifiesWrapNativeBehavior({ page }: { page: Page }): Promise<voi
   await page.keyboard.press('Enter');
   await expect(page).toHaveURL(/#wrap-target$/);
   await page.addStyleTag({
-    content: '.leverui-wrap[data-testid="wrap-default"] { --lui-wrap-gap: 13px; }',
+    content: '.lui-wrap[data-testid="wrap-default"] { --lui-wrap-gap: 13px; }',
   });
   await expect(page.getByTestId('wrap-default')).toHaveCSS('gap', '13px');
   await page.addStyleTag({
     content:
-      '.leverui-wrap__listitem[data-testid="wrap-item-default"] { --lui-wrap-item-align: center; }',
+      '.lui-wrap__listitem[data-testid="wrap-item-default"] { --lui-wrap-item-align: center; }',
   });
   await expect(page.getByTestId('wrap-item-default')).toHaveCSS('align-items', 'center');
-  await page.addStyleTag({ content: '.leverui-wrap[data-testid="wrap-default"] { gap: 24px; }' });
+  await page.addStyleTag({ content: '.lui-wrap[data-testid="wrap-default"] { gap: 24px; }' });
   await expect(page.getByTestId('wrap-default')).toHaveCSS('gap', '24px');
   for (const name of ['align', 'justify', 'direction', 'css', 'unstyled', 'asChild']) {
     await expect(section).not.toHaveAttribute(name);
@@ -137,7 +137,7 @@ async function verifiesServerWrap({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderServerWrap);
   expect(markup).toContain('title="Server wrap"');
   expect(markup).toContain('Server item');
-  expect(markup).toMatch(/leverui-wrap__listitem/);
+  expect(markup).toMatch(/lui-wrap__listitem/);
   expect(markup).not.toMatch(/\s(?:align|justify|direction|css|unstyled|asChild)=/);
   await page.setViewportSize({ width: 600, height: 700 });
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');

@@ -4,7 +4,7 @@ import { expect, test, type Page } from '@playwright/test';
 async function verifiesButtonTrigger({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-datepicker-trigger-guide--button-trigger');
   const trigger = page.getByTestId('date-picker-button-trigger');
-  await expect(trigger).toHaveClass(/leverui-button/, { timeout: 30_000 });
+  await expect(trigger).toHaveClass(/lui-button/, { timeout: 30_000 });
   await expect(trigger).toHaveAttribute('data-trigger-ref', 'BUTTON');
   await trigger.click();
   const content = page.getByTestId('date-picker-trigger-content');

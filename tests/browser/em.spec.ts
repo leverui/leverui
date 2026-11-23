@@ -21,7 +21,7 @@ async function verifiesEmContract({ page }: { page: Page }): Promise<void> {
   await expect(strong).toHaveAttribute('data-ref-tag', 'strong');
   await expect(strong).toHaveCSS('font-style', 'italic');
   const unstyled = page.getByTestId('unstyled-em');
-  await expect(unstyled).toHaveClass(/leverui-em/);
+  await expect(unstyled).toHaveClass(/lui-em/);
   await expect(unstyled).toHaveAttribute('data-unstyled', '');
   await expect(unstyled).toHaveCSS('font-style', 'italic');
   await expect(page.getByTestId('unstyled-span-em')).toHaveCSS('font-style', 'normal');

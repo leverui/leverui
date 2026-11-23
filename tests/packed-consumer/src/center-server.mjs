@@ -19,7 +19,7 @@ function renderInstalledCenter() {
 const markup = renderInstalledCenter();
 assert.match(markup, /id="packed-server-flex-center"/);
 assert.match(markup, /Installed server center/);
-assert.match(markup, /leverui-center/);
+assert.match(markup, /lui-center/);
 assert.match(markup, /data-inline="true"/);
 assert.doesNotMatch(markup, /\sinline=/);
 console.log('Packed Center server rendering passed.');

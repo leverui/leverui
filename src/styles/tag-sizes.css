@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-tag__root:not([data-unstyled]) {
+  .lui-tag__root:not([data-unstyled]) {
     padding-inline: var(--lui-private-tag-padding);
     min-height: var(--lui-private-tag-min-height);
     gap: var(--lui-private-tag-gap);

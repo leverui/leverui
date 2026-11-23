@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-menu__content[data-leverui-menu-css] {
+    .lui-menu__content[data-lui-menu-css] {
       &[data-size-sm='sm'] {
         --lui-private-menu-item-gap: var(--lui-spacing-1);
         --lui-private-menu-item-padding-block: var(--lui-spacing-1);
@@ -22,7 +22,7 @@
   }
 
   @media (min-width: 768px) {
-    .leverui-menu__content[data-leverui-menu-css] {
+    .lui-menu__content[data-lui-menu-css] {
       &[data-size-md='sm'] {
         --lui-private-menu-item-gap: var(--lui-spacing-1);
         --lui-private-menu-item-padding-block: var(--lui-spacing-1);
@@ -44,7 +44,7 @@
   }
 
   @media (min-width: 1024px) {
-    .leverui-menu__content[data-leverui-menu-css] {
+    .lui-menu__content[data-lui-menu-css] {
       &[data-size-lg='sm'] {
         --lui-private-menu-item-gap: var(--lui-spacing-1);
         --lui-private-menu-item-padding-block: var(--lui-spacing-1);
@@ -66,7 +66,7 @@
   }
 
   @media (min-width: 1280px) {
-    .leverui-menu__content[data-leverui-menu-css] {
+    .lui-menu__content[data-lui-menu-css] {
       &[data-size-xl='sm'] {
         --lui-private-menu-item-gap: var(--lui-spacing-1);
         --lui-private-menu-item-padding-block: var(--lui-spacing-1);
@@ -88,7 +88,7 @@
   }
 
   @media (min-width: 1536px) {
-    .leverui-menu__content[data-leverui-menu-css] {
+    .lui-menu__content[data-lui-menu-css] {
       &[data-size-2xl='sm'] {
         --lui-private-menu-item-gap: var(--lui-spacing-1);
         --lui-private-menu-item-padding-block: var(--lui-spacing-1);

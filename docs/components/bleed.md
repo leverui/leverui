@@ -49,4 +49,4 @@ export function BleedUsage() {
 | `unstyled`    | Boolean                           | Turn off the default styles. The spacing you set still applies. |
 
 Match the parent's padding to reach its edge. Start and end props follow the
-text direction. Style with `.leverui-bleed`, or pass `class` and `style`.
+text direction. Style with `.lui-bleed`, or pass `class` and `style`.

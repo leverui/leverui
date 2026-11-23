@@ -123,8 +123,8 @@ variable, so a prop wins over a variable set in CSS.
 
 ### Classes
 
-Root: `.leverui-sparkline`.
+Root: `.lui-sparkline`.
 
-Parts, each prefixed with `.leverui-sparkline__`: `area`, `line`, `bar`,
+Parts, each prefixed with `.lui-sparkline__`: `area`, `line`, `bar`,
 `reference-line`, `reference-label`, `active-guide`, `active-point`,
 `gradient-start`, `gradient-end`.

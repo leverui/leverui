@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-textarea:not([data-unstyled])[data-variant-sm='outline'] {
+    .lui-textarea:not([data-unstyled])[data-variant-sm='outline'] {
       --lui-private-textarea-background: transparent;
       --lui-private-textarea-border-width: 1px;
       --lui-private-textarea-border-color: var(--lui-colors-border);
@@ -10,7 +10,7 @@
       --lui-private-textarea-focus-shadow: none;
     }
 
-    .leverui-textarea:not([data-unstyled])[data-variant-sm='subtle'] {
+    .lui-textarea:not([data-unstyled])[data-variant-sm='subtle'] {
       --lui-private-textarea-background: var(--lui-colors-bg-muted);
       --lui-private-textarea-border-width: 1px;
       --lui-private-textarea-border-color: transparent;
@@ -20,7 +20,7 @@
       --lui-private-textarea-focus-shadow: none;
     }
 
-    .leverui-textarea:not([data-unstyled])[data-variant-sm='flushed'] {
+    .lui-textarea:not([data-unstyled])[data-variant-sm='flushed'] {
       --lui-private-textarea-background: transparent;
       --lui-private-textarea-border-width: 0 0 1px;
       --lui-private-textarea-border-color: var(--lui-colors-border);
@@ -32,7 +32,7 @@
   }
 
   @media (min-width: 768px) {
-    .leverui-textarea:not([data-unstyled])[data-variant-md='outline'] {
+    .lui-textarea:not([data-unstyled])[data-variant-md='outline'] {
       --lui-private-textarea-background: transparent;
       --lui-private-textarea-border-width: 1px;
       --lui-private-textarea-border-color: var(--lui-colors-border);
@@ -42,7 +42,7 @@
       --lui-private-textarea-focus-shadow: none;
     }
 
-    .leverui-textarea:not([data-unstyled])[data-variant-md='subtle'] {
+    .lui-textarea:not([data-unstyled])[data-variant-md='subtle'] {
       --lui-private-textarea-background: var(--lui-colors-bg-muted);
       --lui-private-textarea-border-width: 1px;
       --lui-private-textarea-border-color: transparent;
@@ -52,7 +52,7 @@
       --lui-private-textarea-focus-shadow: none;
     }
 
-    .leverui-textarea:not([data-unstyled])[data-variant-md='flushed'] {
+    .lui-textarea:not([data-unstyled])[data-variant-md='flushed'] {
       --lui-private-textarea-background: transparent;
       --lui-private-textarea-border-width: 0 0 1px;
       --lui-private-textarea-border-color: var(--lui-colors-border);

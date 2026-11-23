@@ -112,12 +112,12 @@ Load your stylesheet after `@leverui/components/styles.css`.
   --lui-radio-group-item-gap: 0.75rem;
 }
 
-.leverui-radio-group__itemControl {
+.lui-radio-group__itemControl {
   border-radius: 0.5rem;
 }
 ```
 
-The root and every visible part have a `.leverui-radio-group__*` class. The
-control also has `.leverui-radiomark` and shares its state CSS. `class` and
+The root and every visible part have a `.lui-radio-group__*` class. The
+control also has `.lui-radiomark` and shares its state CSS. `class` and
 `style` work on the root and every part. `unstyled` turns off the default
 styles and keeps the part hooks.

@@ -29,7 +29,7 @@ async function verifiesFileUploadComposition(): Promise<void> {
 
   const root = screen.getByTestId('upload-root');
   const input = screen.getByTestId('upload-input') as HTMLInputElement;
-  expect(root.className).toContain('leverui-file-upload__root');
+  expect(root.className).toContain('lui-file-upload__root');
   expect(root.hasAttribute('data-file-upload-root')).toBe(true);
   expect(input.type).toBe('file');
   expect(screen.getByText('Attachments').tagName).toBe('LABEL');
@@ -39,7 +39,7 @@ async function verifiesFileUploadComposition(): Promise<void> {
   );
   expect(screen.getByTestId('file-text').textContent).toBe('notes.txt');
   expect(screen.getAllByText('notes.txt')).toHaveLength(2);
-  expect(root.querySelector('.leverui-file-upload__itemPreview svg')).not.toBeNull();
+  expect(root.querySelector('.lui-file-upload__itemPreview svg')).not.toBeNull();
   const remove = root.querySelector<HTMLButtonElement>('[data-file-upload-item-delete-trigger]');
   expect(remove).not.toBeNull();
   if (!remove) throw new Error('File Upload item has no delete trigger.');

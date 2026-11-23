@@ -25,7 +25,7 @@ async function verifiesEveryAvatarExample({ page }: { page: Page }): Promise<voi
   for (const id of exampleIds) {
     await page.goto(`/iframe.html?id=components-avatar--${id}`);
     await expect(
-      page.locator('[class*="leverui-avatar__root"]').first(),
+      page.locator('[class*="lui-avatar__root"]').first(),
       `Avatar example ${id} should render`,
     ).toBeVisible({ timeout: 45_000 });
   }

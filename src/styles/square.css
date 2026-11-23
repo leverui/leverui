@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  :is(.leverui-square, .leverui-circle) {
+  :is(.lui-square, .lui-circle) {
     width: var(--lui-private-square-size-base, var(--lui-square-size, auto));
     height: var(--lui-private-square-size-base, var(--lui-square-size, auto));
 
@@ -29,7 +29,7 @@
     }
   }
 
-  :is(.leverui-square, .leverui-circle):not([data-unstyled]) {
+  :is(.lui-square, .lui-circle):not([data-unstyled]) {
     display: flex;
     align-items: center;
     justify-content: center;

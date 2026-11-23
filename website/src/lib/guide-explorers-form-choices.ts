@@ -6,7 +6,7 @@ export const formChoiceGuideExplorers: Readonly<Record<string, GuideExplorerConf
   checkbox: {
     name: 'Checkbox',
     parts: ['root', 'label', 'control', 'indicator', 'group'],
-    selectors: { root: '.leverui-checkbox', group: '.leverui-checkbox-group' },
+    selectors: { root: '.lui-checkbox', group: '.lui-checkbox-group' },
     Demo: lazyExport(
       /** Load the maintained preview only on the Checkbox guide. */
       () => import('../../../demos/examples/checkbox-standard'),
@@ -17,7 +17,7 @@ export const formChoiceGuideExplorers: Readonly<Record<string, GuideExplorerConf
     name: 'Checkbox Card',
     parts: ['root', 'control', 'label', 'description', 'addon', 'indicator', 'content'],
     selectors: {
-      root: '.leverui-checkbox-card',
+      root: '.lui-checkbox-card',
       indicator: '[data-part="indicator"]',
     },
     Demo: lazyExport(

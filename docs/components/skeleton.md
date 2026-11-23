@@ -77,8 +77,8 @@ HTML attributes, a `ref`, `class`, and `style`.
 
 Import `@leverui/components/styles.css` before your own stylesheet.
 
-Classes: `.leverui-skeleton`, `.leverui-skeleton-text` (text wrapper),
-`.leverui-skeleton-text__line` (each line).
+Classes: `.lui-skeleton`, `.lui-skeleton-text` (text wrapper),
+`.lui-skeleton-text__line` (each line).
 
 Root attributes: `data-loading`, `data-variant`, plus one per breakpoint, such
 as `data-variant-md`.
@@ -95,7 +95,7 @@ as `data-variant-md`.
 | `--lui-skeleton-last-line-width` | Width of the final loading line          |
 
 ```css
-.leverui-skeleton[data-brand-placeholder] {
+.lui-skeleton[data-brand-placeholder] {
   --lui-skeleton-start-color: #f3c9d7;
   --lui-skeleton-end-color: #d95f91;
 }

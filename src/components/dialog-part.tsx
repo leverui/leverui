@@ -103,7 +103,7 @@ export function renderDialogPart<PrimitiveProps extends object>(
     () => authored.partAttributes(local.unstyled),
     {
       /** Suppress only the first authored entrance animation. */
-      get 'data-leverui-private-skip-initial-animation'() {
+      get 'data-lui-private-skip-initial-animation'() {
         return authored.usesAuthoredCss() &&
           suppressInitialAnimation() &&
           (slot === 'content' || slot === 'backdrop')

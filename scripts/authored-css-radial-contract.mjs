@@ -18,10 +18,10 @@ export const radialContracts = [
   {
     family: 'radial-chart',
     required: [
-      '.leverui-radial-chart',
+      '.lui-radial-chart',
       ...radialParts.map(
         /** Keep every styled radial part in the shipped stylesheet. */
-        (part) => `.leverui-radial-chart__${part}`,
+        (part) => `.lui-radial-chart__${part}`,
       ),
       '--lui-radial-chart-sector-stroke',
       '--lui-radial-chart-label-font-size',
@@ -32,10 +32,10 @@ export const radialContracts = [
   {
     family: 'radial-bar-chart',
     required: [
-      '.leverui-radial-bar-chart',
+      '.lui-radial-bar-chart',
       ...radialBarParts.map(
         /** Keep every styled radial bar part in the shipped stylesheet. */
-        (part) => `.leverui-radial-bar-chart__${part}`,
+        (part) => `.lui-radial-bar-chart__${part}`,
       ),
       '--lui-radial-bar-track-color',
       '--lui-radial-bar-label-font-size',

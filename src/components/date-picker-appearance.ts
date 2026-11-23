@@ -40,7 +40,7 @@ type OutsideDaysAttribute = 'data-hide-outside-days' | `data-hide-outside-days-$
 export type DatePickerAppearanceAttributes = Partial<
   Record<SizeAttribute, DatePickerSize | undefined> &
     Record<VariantAttribute, DatePickerVariant | undefined> & {
-      'data-leverui-color-palette': string | undefined;
+      'data-lui-color-palette': string | undefined;
     } & Record<OutsideDaysAttribute, 'true' | 'false' | undefined>
 >;
 
@@ -113,6 +113,6 @@ export function datePickerAppearanceAttributes(
     'data-hide-outside-days-lg': booleanAttribute(hideOutsideDays.lg),
     'data-hide-outside-days-xl': booleanAttribute(hideOutsideDays.xl),
     'data-hide-outside-days-2xl': booleanAttribute(hideOutsideDays['2xl']),
-    'data-leverui-color-palette': state.colorPalette(),
+    'data-lui-color-palette': state.colorPalette(),
   };
 }

@@ -1,20 +1,20 @@
 @layer leverui.recipes {
-  .leverui-number-input__root:not([data-unstyled])
-    :is(.leverui-number-input__incrementTrigger, .leverui-number-input__decrementTrigger):not(
+  .lui-number-input__root:not([data-unstyled])
+    :is(.lui-number-input__incrementTrigger, .lui-number-input__decrementTrigger):not(
       [data-unstyled]
     ):is(:disabled, [disabled], [data-disabled], [aria-disabled='true']) {
     opacity: 0.5;
   }
 
-  .leverui-number-input__root:not([data-unstyled])
-    :is(.leverui-number-input__incrementTrigger, .leverui-number-input__decrementTrigger):not(
+  .lui-number-input__root:not([data-unstyled])
+    :is(.lui-number-input__incrementTrigger, .lui-number-input__decrementTrigger):not(
       [data-unstyled]
     ):hover {
     background: var(--lui-colors-bg-muted);
   }
 
-  .leverui-number-input__root:not([data-unstyled])
-    :is(.leverui-number-input__incrementTrigger, .leverui-number-input__decrementTrigger):not(
+  .lui-number-input__root:not([data-unstyled])
+    :is(.lui-number-input__incrementTrigger, .lui-number-input__decrementTrigger):not(
       [data-unstyled]
     ):active {
     background: var(--lui-colors-bg-emphasized);

@@ -27,8 +27,8 @@ async function verifiesBarChartHydration({ page }: { page: Page }): Promise<void
   await page.setContent(
     `${generateHydrationScript()}<style>${defaultCss}</style><div id="bar-chart-hydration-root">${markup}</div>`,
   );
-  const root = page.locator('#bar-chart-hydration-root .leverui-bar-chart');
-  const svg = root.locator('.leverui-bar-chart__svg');
+  const root = page.locator('#bar-chart-hydration-root .lui-bar-chart');
+  const svg = root.locator('.lui-bar-chart__svg');
   await expect(svg).toHaveAttribute('viewBox', '0 0 700 384');
   await root.evaluate(
     /** Mark the server root before Solid attaches its browser owner. */
@@ -63,10 +63,10 @@ async function verifiesStaticBarChartCss({ browser }: { browser: Browser }): Pro
       () => renderBarChartHydrationTree(components),
     );
     await page.setContent(`<style>${defaultCss}</style>${markup}`);
-    const root = page.locator('.leverui-bar-chart');
+    const root = page.locator('.lui-bar-chart');
     await expect(root).toHaveCSS('position', 'relative');
-    await expect(root.locator('.leverui-bar-chart__axes')).toHaveCSS('font-size', '12px');
-    await expect(root.locator('.leverui-bar-chart__legend')).toHaveCSS('gap', '12px');
+    await expect(root.locator('.lui-bar-chart__axes')).toHaveCSS('font-size', '12px');
+    await expect(root.locator('.lui-bar-chart__legend')).toHaveCSS('gap', '12px');
   } finally {
     await context.close();
   }

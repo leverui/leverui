@@ -16,7 +16,7 @@ async function verifiesFloatOffsets({ page }: { page: Page }): Promise<void> {
     await expect(surface).toHaveCSS('height', '80px');
     await expect(surface).toHaveCSS('background-color', 'rgb(228, 228, 231)');
     await expect(surface).not.toHaveAttribute('style');
-    const marker = page.locator('#storybook-root .leverui-float');
+    const marker = page.locator('#storybook-root .lui-float');
     await expect(marker).toBeVisible();
     const bounds = await marker.boundingBox();
     expect([bounds?.x, bounds?.y, bounds?.width, bounds?.height]).toEqual([x, y, 20, 20]);
@@ -27,7 +27,7 @@ async function verifiesFloatOffsets({ page }: { page: Page }): Promise<void> {
 async function verifiesFloatPlacements({ page }: { page: Page }): Promise<void> {
   await page.setViewportSize({ width: 1280, height: 720 });
   await page.goto('/iframe.html?id=components-float--placements');
-  const markers = page.locator('#storybook-root .leverui-float');
+  const markers = page.locator('#storybook-root .lui-float');
   await expect(markers).toHaveCount(9);
   for (const [index, [x, y]] of [
     [70, 70],
@@ -54,7 +54,7 @@ async function verifiesFloatAvatar({ page }: { page: Page }): Promise<void> {
   await page.setViewportSize({ width: 1280, height: 720 });
   await page.goto('/iframe.html?id=components-float--avatar');
   const image = page.locator('#storybook-root img');
-  const badge = page.locator('#storybook-root .leverui-float');
+  const badge = page.locator('#storybook-root .lui-float');
   await expect(image).toBeVisible();
   await expect(badge).toContainText('New');
   await expect(page.locator('#storybook-root .float-example-avatar-host')).toHaveCSS(

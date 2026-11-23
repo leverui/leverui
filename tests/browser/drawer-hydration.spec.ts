@@ -41,7 +41,7 @@ async function verifiesDrawerHydration({ page }: { page: Page }): Promise<void> 
   const serverId = await trigger.getAttribute('id');
   if (!serverId) throw new Error('Published Drawer trigger has no ID.');
   await expect(trigger).not.toHaveAttribute('aria-controls');
-  await expect(trigger).toHaveAttribute('data-leverui-drawer-css', '');
+  await expect(trigger).toHaveAttribute('data-lui-drawer-css', '');
   await trigger.evaluate(markServerTrigger);
   const errors: string[] = [];
 
@@ -60,7 +60,7 @@ async function verifiesDrawerHydration({ page }: { page: Page }): Promise<void> 
   await trigger.click();
   const content = page.getByTestId('hydrated-drawer-content');
   await expect(content).toBeVisible();
-  await expect(content).toHaveAttribute('data-leverui-drawer-css', '');
+  await expect(content).toHaveAttribute('data-lui-drawer-css', '');
   await expect(content).toHaveAttribute('aria-labelledby', /.+/);
   await expect(content).toHaveAttribute('aria-describedby', /.+/);
   await expect(page.locator('#hydrated-drawer-backdrop')).toBeVisible();
@@ -102,7 +102,7 @@ async function verifiesInitiallyOpenDrawerHydration({ page }: { page: Page }): P
   await expect(trigger).toHaveAttribute('aria-controls', contentId);
   await expect(content).toHaveAttribute('aria-labelledby', titleId);
   await expect(content).toHaveAttribute('aria-describedby', descriptionId);
-  await expect(content).toHaveAttribute('data-leverui-drawer-css', '');
+  await expect(content).toHaveAttribute('data-lui-drawer-css', '');
   await expect(content).toHaveCSS('background-color', 'rgb(12, 34, 56)');
   const errors: string[] = [];
 

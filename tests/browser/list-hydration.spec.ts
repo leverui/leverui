@@ -43,7 +43,7 @@ async function verifiesListHydration({ page }: { page: Page }): Promise<void> {
   await expect(page.locator('#hydrated-list-item')).toHaveCSS('display', 'list-item');
   const icon = page.locator('#hydrated-list-svg');
   await expect(icon).toHaveJSProperty('tagName', 'svg');
-  await expect(icon).toHaveClass(/leverui-list__indicator/);
+  await expect(icon).toHaveClass(/lui-list__indicator/);
   const serverIconColor = await icon.evaluate(
     /** Capture the server-rendered SVG color before hydration. */
     (element) => getComputedStyle(element).color,

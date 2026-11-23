@@ -25,8 +25,8 @@ function verifiesNumberInputComposition(): void {
   const root = screen.getByTestId('number-root');
   const input = screen.getByTestId('number-input') as HTMLInputElement;
   const control = screen.getByTestId('number-control');
-  expect(root.className).toContain('leverui-number-input__root');
-  expect(input.className).toContain('leverui-number-input__input');
+  expect(root.className).toContain('lui-number-input__root');
+  expect(input.className).toContain('lui-number-input__input');
   // Zag 2 renders a text field described as a number field, not a spinbutton.
   expect(input.getAttribute('type')).toBe('text');
   expect(input.getAttribute('aria-roledescription')).toBe('number field');
@@ -65,7 +65,7 @@ function verifiesReactiveNumberInput(): void {
     () => <Example />,
   );
   const input = screen.getByTestId('controlled-number-input') as HTMLInputElement;
-  const root = input.closest('.leverui-number-input__root');
+  const root = input.closest('.lui-number-input__root');
   if (!root) throw new Error('Controlled Number Input has no root.');
   expect(input.value).toBe('2');
   setValue(5);
@@ -181,7 +181,7 @@ function verifiesGroupedNumberInput(): void {
   );
   const grouped = screen.getByRole('textbox', { name: 'Grouped number' });
   const explicit = screen.getByRole('textbox', { name: 'Explicit number' });
-  const group = grouped.closest('.leverui-input-group');
+  const group = grouped.closest('.lui-input-group');
   if (!(group instanceof HTMLElement))
     throw new Error('Grouped Number Input has no Input Group root.');
   expect(group.hasAttribute('data-group-start')).toBe(true);

@@ -19,7 +19,7 @@ export const menuContracts = [
     required: [
       ...parts.map(
         /** Require a default authored rule for every styled public part. */
-        (part) => `.leverui-menu__${part}[data-leverui-menu-css]`,
+        (part) => `.lui-menu__${part}[data-lui-menu-css]`,
       ),
       "[data-size='sm']",
       "[data-variant='solid']",

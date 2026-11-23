@@ -15,12 +15,12 @@ export function CartesianLegend(props: {
   const entries = () =>
     props.stacked || props.reverse ? [...props.series].reverse() : props.series;
   return (
-    <div class="leverui-cartesian-chart__legend" data-placement={props.placement}>
+    <div class="lui-cartesian-chart__legend" data-placement={props.placement}>
       <For each={entries()}>
         {/** Pair one series label with its resolved color. */}
         {(series) => (
           <span
-            class="leverui-cartesian-chart__legendItem"
+            class="lui-cartesian-chart__legendItem"
             role={props.onHover ? 'button' : undefined}
             tabindex={props.onHover ? '0' : undefined}
             onMouseEnter={
@@ -53,7 +53,7 @@ export function CartesianLegend(props: {
             }
           >
             <span
-              class="leverui-cartesian-chart__legendSwatch"
+              class="lui-cartesian-chart__legendSwatch"
               style={{
                 '--lui-private-cartesian-color': chartColor(series.color, series.color),
               }}

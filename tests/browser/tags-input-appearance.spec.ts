@@ -14,12 +14,12 @@ async function verifiesTagsInputAppearance({ page }: { page: Page }): Promise<vo
     for (const variant of ['outline', 'subtle', 'flushed']) {
       const root = page.getByTestId(`tags-input-matrix-${size}-${variant}`);
       await expect(root).toBeVisible({ timeout: 30_000 });
-      const actual = await root.locator('.leverui-tags-input__control').evaluate(
+      const actual = await root.locator('.lui-tags-input__control').evaluate(
         /** Read the resolved control height from the active recipe. */
         (element) => getComputedStyle(element).minHeight,
       );
       expect(actual).toBe(minHeight);
-      await expect(root.locator('.leverui-tags-input__itemText')).toHaveText('Solid');
+      await expect(root.locator('.lui-tags-input__itemText')).toHaveText('Solid');
     }
   }
   const override = await page.getByTestId('tags-input-css-override-control').evaluate(
@@ -36,36 +36,36 @@ async function verifiesReferenceStates({ page }: { page: Page }): Promise<void> 
   await page.goto('/iframe.html?id=components-tags-input-appearance--matrix');
   const outline = page
     .getByTestId('tags-input-matrix-md-outline')
-    .locator('.leverui-tags-input__control');
+    .locator('.lui-tags-input__control');
   const subtle = page
     .getByTestId('tags-input-matrix-md-subtle')
-    .locator('.leverui-tags-input__control');
+    .locator('.lui-tags-input__control');
   const flushed = page
     .getByTestId('tags-input-matrix-md-flushed')
-    .locator('.leverui-tags-input__control');
+    .locator('.lui-tags-input__control');
   await expect(outline).toHaveCSS('border-top-width', '1px', { timeout: 30_000 });
   await expect(subtle).toHaveCSS('border-top-color', 'rgba(0, 0, 0, 0)');
   await expect(flushed).toHaveCSS('border-top-width', '0px');
   await expect(flushed).toHaveCSS('border-bottom-width', '1px');
   await expect(
-    page.getByTestId('tags-input-matrix-md-outline').locator('.leverui-tags-input__itemPreview'),
+    page.getByTestId('tags-input-matrix-md-outline').locator('.lui-tags-input__itemPreview'),
   ).toHaveCSS('height', '28px');
   const outlineItemColor = await page
     .getByTestId('tags-input-matrix-md-outline')
-    .locator('.leverui-tags-input__itemPreview')
+    .locator('.lui-tags-input__itemPreview')
     .evaluate(
       /** Read the actual palette fill selected by the outline recipe. */
       (element) => getComputedStyle(element).backgroundColor,
     );
   const subtleItemColor = await page
     .getByTestId('tags-input-matrix-md-subtle')
-    .locator('.leverui-tags-input__itemPreview')
+    .locator('.lui-tags-input__itemPreview')
     .evaluate(
       /** Read the distinct item fill selected by the subtle recipe. */
       (element) => getComputedStyle(element).backgroundColor,
     );
   expect(outlineItemColor).not.toBe(subtleItemColor);
-  await outline.locator('.leverui-tags-input__input').focus();
+  await outline.locator('.lui-tags-input__input').focus();
   await expect(outline).toHaveCSS('outline-style', 'solid');
   await expect(outline).toHaveCSS('outline-width', '1px');
 

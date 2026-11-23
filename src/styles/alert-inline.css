@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-alert__root:not([data-unstyled]) {
+  .lui-alert__root:not([data-unstyled]) {
     &[data-inline='false'] {
       --lui-private-alert-content-display: flex;
       --lui-private-alert-content-direction: column;

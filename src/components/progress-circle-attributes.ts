@@ -12,7 +12,7 @@ export function progressCircleAttributes(appearance: ProgressCircleAppearance): 
   'data-size-lg': string | undefined;
   'data-size-xl': string | undefined;
   'data-size-2xl': string | undefined;
-  'data-leverui-color-palette': string | undefined;
+  'data-lui-color-palette': string | undefined;
   'data-unstyled': string | undefined;
 } {
   const sizes = readProgressCircleSizes(appearance.size);
@@ -23,7 +23,7 @@ export function progressCircleAttributes(appearance: ProgressCircleAppearance): 
     'data-size-lg': sizes.lg,
     'data-size-xl': sizes.xl,
     'data-size-2xl': sizes['2xl'],
-    'data-leverui-color-palette': readProgressCirclePalette(appearance.colorPalette),
+    'data-lui-color-palette': readProgressCirclePalette(appearance.colorPalette),
     'data-unstyled': appearance.unstyled ? '' : undefined,
   };
 }

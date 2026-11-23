@@ -38,8 +38,8 @@ async function verifiesCommandHydration({ page }: { page: Page }): Promise<void>
   const option = page.getByTestId('hydrated-command-open');
   await input.evaluate(markServerNode);
   await option.evaluate(markServerNode);
-  await expect(input).toHaveClass(/leverui-command__input/);
-  await expect(option).toHaveClass(/leverui-command__item/);
+  await expect(input).toHaveClass(/lui-command__input/);
+  await expect(option).toHaveClass(/lui-command__item/);
   const errors: string[] = [];
   /** Record client errors while Solid attaches the machine. */
   function recordError(error: Error): void {
@@ -51,8 +51,8 @@ async function verifiesCommandHydration({ page }: { page: Page }): Promise<void>
   expect(errors).toEqual([]);
   await expect(input).toHaveAttribute('data-server-node', 'true');
   await expect(option).toHaveAttribute('data-server-node', 'true');
-  await expect(page.locator('.leverui-command__root')).toHaveAttribute('data-size', 'sm');
-  await expect(page.locator('.leverui-command__root')).toHaveCSS('width', '280px');
+  await expect(page.locator('.lui-command__root')).toHaveAttribute('data-size', 'sm');
+  await expect(page.locator('.lui-command__root')).toHaveCSS('width', '280px');
   await input.fill('open');
   await expect(option).toBeVisible();
   await input.press('ArrowDown');

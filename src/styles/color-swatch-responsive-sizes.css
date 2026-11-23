@@ -1,146 +1,146 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-color-swatch:not([data-unstyled])[data-size-sm='2xs'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-sm='2xs'] {
       --lui-swatch-size: var(--lui-sizes-3\.5);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-sm='xs'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-sm='xs'] {
       --lui-swatch-size: var(--lui-sizes-4);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-sm='sm'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-sm='sm'] {
       --lui-swatch-size: var(--lui-sizes-4\.5);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-sm='md'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-sm='md'] {
       --lui-swatch-size: var(--lui-sizes-5);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-sm='lg'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-sm='lg'] {
       --lui-swatch-size: var(--lui-sizes-6);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-sm='xl'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-sm='xl'] {
       --lui-swatch-size: var(--lui-sizes-7);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-sm='2xl'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-sm='2xl'] {
       --lui-swatch-size: var(--lui-sizes-8);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-sm='inherit'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-sm='inherit'] {
       --lui-swatch-size: inherit;
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-sm='full'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-sm='full'] {
       --lui-swatch-size: 100%;
     }
   }
   @media (min-width: 768px) {
-    .leverui-color-swatch:not([data-unstyled])[data-size-md='2xs'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-md='2xs'] {
       --lui-swatch-size: var(--lui-sizes-3\.5);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-md='xs'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-md='xs'] {
       --lui-swatch-size: var(--lui-sizes-4);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-md='sm'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-md='sm'] {
       --lui-swatch-size: var(--lui-sizes-4\.5);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-md='md'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-md='md'] {
       --lui-swatch-size: var(--lui-sizes-5);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-md='lg'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-md='lg'] {
       --lui-swatch-size: var(--lui-sizes-6);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-md='xl'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-md='xl'] {
       --lui-swatch-size: var(--lui-sizes-7);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-md='2xl'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-md='2xl'] {
       --lui-swatch-size: var(--lui-sizes-8);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-md='inherit'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-md='inherit'] {
       --lui-swatch-size: inherit;
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-md='full'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-md='full'] {
       --lui-swatch-size: 100%;
     }
   }
   @media (min-width: 1024px) {
-    .leverui-color-swatch:not([data-unstyled])[data-size-lg='2xs'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-lg='2xs'] {
       --lui-swatch-size: var(--lui-sizes-3\.5);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-lg='xs'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-lg='xs'] {
       --lui-swatch-size: var(--lui-sizes-4);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-lg='sm'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-lg='sm'] {
       --lui-swatch-size: var(--lui-sizes-4\.5);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-lg='md'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-lg='md'] {
       --lui-swatch-size: var(--lui-sizes-5);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-lg='lg'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-lg='lg'] {
       --lui-swatch-size: var(--lui-sizes-6);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-lg='xl'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-lg='xl'] {
       --lui-swatch-size: var(--lui-sizes-7);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-lg='2xl'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-lg='2xl'] {
       --lui-swatch-size: var(--lui-sizes-8);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-lg='inherit'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-lg='inherit'] {
       --lui-swatch-size: inherit;
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-lg='full'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-lg='full'] {
       --lui-swatch-size: 100%;
     }
   }
   @media (min-width: 1280px) {
-    .leverui-color-swatch:not([data-unstyled])[data-size-xl='2xs'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-xl='2xs'] {
       --lui-swatch-size: var(--lui-sizes-3\.5);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-xl='xs'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-xl='xs'] {
       --lui-swatch-size: var(--lui-sizes-4);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-xl='sm'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-xl='sm'] {
       --lui-swatch-size: var(--lui-sizes-4\.5);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-xl='md'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-xl='md'] {
       --lui-swatch-size: var(--lui-sizes-5);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-xl='lg'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-xl='lg'] {
       --lui-swatch-size: var(--lui-sizes-6);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-xl='xl'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-xl='xl'] {
       --lui-swatch-size: var(--lui-sizes-7);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-xl='2xl'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-xl='2xl'] {
       --lui-swatch-size: var(--lui-sizes-8);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-xl='inherit'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-xl='inherit'] {
       --lui-swatch-size: inherit;
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-xl='full'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-xl='full'] {
       --lui-swatch-size: 100%;
     }
   }
   @media (min-width: 1536px) {
-    .leverui-color-swatch:not([data-unstyled])[data-size-2xl='2xs'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-2xl='2xs'] {
       --lui-swatch-size: var(--lui-sizes-3\.5);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-2xl='xs'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-2xl='xs'] {
       --lui-swatch-size: var(--lui-sizes-4);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-2xl='sm'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-2xl='sm'] {
       --lui-swatch-size: var(--lui-sizes-4\.5);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-2xl='md'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-2xl='md'] {
       --lui-swatch-size: var(--lui-sizes-5);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-2xl='lg'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-2xl='lg'] {
       --lui-swatch-size: var(--lui-sizes-6);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-2xl='xl'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-2xl='xl'] {
       --lui-swatch-size: var(--lui-sizes-7);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-2xl='2xl'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-2xl='2xl'] {
       --lui-swatch-size: var(--lui-sizes-8);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-2xl='inherit'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-2xl='inherit'] {
       --lui-swatch-size: inherit;
     }
-    .leverui-color-swatch:not([data-unstyled])[data-size-2xl='full'] {
+    .lui-color-swatch:not([data-unstyled])[data-size-2xl='full'] {
       --lui-swatch-size: 100%;
     }
   }

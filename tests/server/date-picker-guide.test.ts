@@ -87,7 +87,7 @@ function verifiesMonthRange(): void {
   const markup = renderMonthRange();
   expect(markup).toContain('03/2026');
   expect(markup).toContain('05/2026');
-  expect(markup).toContain('leverui-date-picker__input');
+  expect(markup).toContain('lui-date-picker__input');
 }
 
 test('published DatePicker renders month range inputs on the server', verifiesMonthRange);
@@ -96,7 +96,7 @@ test('published DatePicker renders month range inputs on the server', verifiesMo
 function verifiesJalaliCalendar(): void {
   const markup = renderJalaliCalendar();
   expect(markup).toMatch(/۱۴۰۴|1404/);
-  expect(markup).toContain('leverui-date-picker__table');
+  expect(markup).toContain('lui-date-picker__table');
   expect(markup).not.toContain('data-calendar="gregory"');
 }
 

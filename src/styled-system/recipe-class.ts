@@ -2,7 +2,7 @@ import { classValueTokens, type ClassValue } from '../utils/class-value';
 
 /** Return the stable public class hook for a Lever UI recipe. */
 export function recipeClassName(name: string): string {
-  return `leverui-${name}`;
+  return `lui-${name}`;
 }
 
 /** Split a class string, array, or toggle object into nonempty class tokens. */

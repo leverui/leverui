@@ -148,7 +148,7 @@ so the rating logic and the CSS use the same direction.
 
 ## Customize with CSS
 
-Classes: `.leverui-rating-group__root`, `__label`, `__control`, `__item`,
+Classes: `.lui-rating-group__root`, `__label`, `__control`, `__item`,
 `__itemIndicator`. The root has `data-size`, a `data-size-*` attribute for each
 breakpoint, and attributes for selection, hover, disabled, and focus. The
 indicator has `data-highlighted`, `data-checked`, and `data-half`.

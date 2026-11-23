@@ -107,7 +107,7 @@ export function DatePickerInputGroup(): JSX.Element {
           }
           endElementProps={{ style: { 'pointer-events': 'all' } }}
         >
-          <DatePicker.Input class="leverui-input-group__field" />
+          <DatePicker.Input class="lui-input-group__field" />
         </InputGroup>
       </DatePicker.Control>
       <Portal>

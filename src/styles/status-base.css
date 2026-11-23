@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-status__root:not([data-unstyled]) {
+  .lui-status__root:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
     gap: var(--lui-spacing-2);
@@ -22,8 +22,8 @@
     }
   }
 
-  @scope (.leverui-status__root:not([data-unstyled])) to (.leverui-status__root) {
-    .leverui-status__indicator:not([data-unstyled]) {
+  @scope (.lui-status__root:not([data-unstyled])) to (.lui-status__root) {
+    .lui-status__indicator:not([data-unstyled]) {
       width: 0.64em;
       height: 0.64em;
       flex-shrink: 0;

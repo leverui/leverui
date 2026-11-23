@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 1024px) {
-    .leverui-checkmark:not([data-unstyled]) {
+    .lui-checkmark:not([data-unstyled]) {
       &[data-size-lg='xs'] {
         --lui-private-checkmark-size: var(--lui-sizes-3);
         --lui-private-checkmark-padding: 0;
@@ -20,7 +20,7 @@
     }
   }
   @media (min-width: 1280px) {
-    .leverui-checkmark:not([data-unstyled]) {
+    .lui-checkmark:not([data-unstyled]) {
       &[data-size-xl='xs'] {
         --lui-private-checkmark-size: var(--lui-sizes-3);
         --lui-private-checkmark-padding: 0;
@@ -40,7 +40,7 @@
     }
   }
   @media (min-width: 1536px) {
-    .leverui-checkmark:not([data-unstyled]) {
+    .lui-checkmark:not([data-unstyled]) {
       &[data-size-2xl='xs'] {
         --lui-private-checkmark-size: var(--lui-sizes-3);
         --lui-private-checkmark-padding: 0;

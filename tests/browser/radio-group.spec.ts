@@ -29,9 +29,9 @@ async function verifiesRadioGroupCssChoices({ page }: { page: Page }): Promise<v
   await page.goto('/iframe.html?id=components-radio-group--contract');
   const root = page.getByTestId('radio-group-root');
   const solid = page.getByRole('radio', { name: 'Solid' });
-  await expect(root).toHaveClass(/leverui-radio-group__root/, { timeout: 30_000 });
+  await expect(root).toHaveClass(/lui-radio-group__root/, { timeout: 30_000 });
   await page.getByText('Solid', { exact: true }).click();
-  const mark = page.locator('.leverui-radio-group__itemControl').nth(1);
+  const mark = page.locator('.lui-radio-group__itemControl').nth(1);
   const outlineBackground = await mark.evaluate(
     /** Read the initial selected indicator color. */
     (element) => getComputedStyle(element).backgroundColor,
@@ -70,7 +70,7 @@ async function verifiesRadioGroupConsumerCss({ page }: { page: Page }): Promise<
   await expect(page.locator('.consumer-radio-group-item').first()).toHaveCSS('gap', '17px');
   await expect(page.locator('.consumer-radio-group-control').first()).toHaveCSS('width', '26px');
   await expect(page.locator('.consumer-radio-group-control').first()).toHaveClass(
-    /leverui-radio-group__itemIndicator/,
+    /lui-radio-group__itemIndicator/,
   );
   await expect(page.locator('.consumer-radio-group-text').first()).toHaveCSS(
     'letter-spacing',

@@ -51,7 +51,7 @@ function renderConsumerCards(): JSX.Element {
 /** Verify consumer CSS reproduces the former custom Card recipe without scripts. */
 async function verifiesConsumerCardCss({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderConsumerCards);
-  expect(markup).not.toContain('data-leverui-private-style-runtime');
+  expect(markup).not.toContain('data-lui-private-style-runtime');
   await page.setContent(`<style>${defaultCss}</style><style>${consumerCss}</style>${markup}`);
   await expect(page.locator('#packed-custom-card')).toHaveCSS(
     'background-image',

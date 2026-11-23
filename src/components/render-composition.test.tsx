@@ -63,11 +63,11 @@ async function verifiesRenderedAccordion(): Promise<void> {
   const item = screen.getByTestId('rendered-item');
   const trigger = screen.getByTestId('rendered-trigger');
   expect(item.tagName).toBe('ARTICLE');
-  expect(item).toHaveClass('leverui-accordion__item');
+  expect(item).toHaveClass('lui-accordion__item');
   expect(item).toHaveAttribute('data-expanded', 'no');
   expect(trigger.tagName).toBe('BUTTON');
   expect(trigger).toHaveClass('caller-trigger');
-  expect(trigger).toHaveClass('leverui-accordion__itemTrigger');
+  expect(trigger).toHaveClass('lui-accordion__itemTrigger');
   expect(trigger).toHaveAttribute('aria-expanded', 'false');
   expect(trigger).not.toHaveAttribute('render');
   // Zag's Accordion acts on a click once its trigger has focus, as in a browser.
@@ -80,7 +80,7 @@ async function verifiesRenderedAccordion(): Promise<void> {
   expect(item).toHaveAttribute('data-expanded', 'yes');
   const body = screen.getByTestId('rendered-body');
   expect(body.tagName).toBe('SECTION');
-  expect(body).toHaveClass('leverui-accordion__itemBody');
+  expect(body).toHaveClass('lui-accordion__itemBody');
   expect(body).toHaveTextContent('Panel');
 }
 
@@ -131,7 +131,7 @@ function verifiesRenderedTreeRow(): void {
   const row = screen.getByTestId('rendered-row');
   expect(row.tagName).toBe('LI');
   expect(row).toHaveAttribute('role', 'row');
-  expect(row).toHaveClass('leverui-tree-view__item');
+  expect(row).toHaveClass('lui-tree-view__item');
   expect(row.querySelector('[role="gridcell"]')).toHaveTextContent('README.md');
 }
 
@@ -160,7 +160,7 @@ async function verifiesRenderedFieldRoot(): Promise<void> {
   );
   const root = screen.getByTestId('rendered-field');
   expect(root.tagName).toBe('SECTION');
-  expect(root).toHaveClass('leverui-field__root');
+  expect(root).toHaveClass('lui-field__root');
   expect(rootElement).toBe(root);
   const input = screen.getByRole('textbox', { name: 'Name' });
   const helper = screen.getByText('Your full name');

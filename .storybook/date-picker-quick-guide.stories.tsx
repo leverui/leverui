@@ -139,7 +139,7 @@ export const FieldIntegration: Story = { render: FieldPicker };
 /** Mark the Date Picker input for Input Group's authored CSS padding. */
 function GroupedDateInput(): JSX.Element {
   return (
-    <DatePicker.Input class="leverui-input-group__field" data-testid="date-picker-grouped-input" />
+    <DatePicker.Input class="lui-input-group__field" data-testid="date-picker-grouped-input" />
   );
 }
 

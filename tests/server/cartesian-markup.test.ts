@@ -40,11 +40,11 @@ function verifiesCartesianMarkup(): void {
   for (const kind of ['area', 'line'] as const) {
     const markup = renderCartesian(kind);
     expect(markup).toContain(`id="server-${kind}-chart"`);
-    expect(markup).toContain(`leverui-${kind}-chart`);
-    expect(markup).toContain('leverui-cartesian-chart__root');
-    expect(markup).toContain('leverui-cartesian-chart__svg');
-    expect(markup).toContain('leverui-cartesian-chart__axes');
-    expect(markup).toContain('leverui-cartesian-chart__legend');
+    expect(markup).toContain(`lui-${kind}-chart`);
+    expect(markup).toContain('lui-cartesian-chart__root');
+    expect(markup).toContain('lui-cartesian-chart__svg');
+    expect(markup).toContain('lui-cartesian-chart__axes');
+    expect(markup).toContain('lui-cartesian-chart__legend');
     expect(markup).toContain('consumer-chart');
     expect(markup).toContain('width:420px');
     expect(markup).not.toMatch(/plotMargin|gridHorizontal/);

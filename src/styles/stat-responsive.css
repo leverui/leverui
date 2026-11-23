@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-stat__root:not([data-unstyled]) {
+    .lui-stat__root:not([data-unstyled]) {
       &[data-size-sm='sm'] {
         --lui-private-stat-value-font-size: var(--lui-font-sizes-xl);
         --lui-private-stat-value-line-height: 1.875rem;
@@ -16,7 +16,7 @@
     }
   }
   @media (min-width: 768px) {
-    .leverui-stat__root:not([data-unstyled]) {
+    .lui-stat__root:not([data-unstyled]) {
       &[data-size-md='sm'] {
         --lui-private-stat-value-font-size: var(--lui-font-sizes-xl);
         --lui-private-stat-value-line-height: 1.875rem;
@@ -32,7 +32,7 @@
     }
   }
   @media (min-width: 1024px) {
-    .leverui-stat__root:not([data-unstyled]) {
+    .lui-stat__root:not([data-unstyled]) {
       &[data-size-lg='sm'] {
         --lui-private-stat-value-font-size: var(--lui-font-sizes-xl);
         --lui-private-stat-value-line-height: 1.875rem;
@@ -48,7 +48,7 @@
     }
   }
   @media (min-width: 1280px) {
-    .leverui-stat__root:not([data-unstyled]) {
+    .lui-stat__root:not([data-unstyled]) {
       &[data-size-xl='sm'] {
         --lui-private-stat-value-font-size: var(--lui-font-sizes-xl);
         --lui-private-stat-value-line-height: 1.875rem;
@@ -64,7 +64,7 @@
     }
   }
   @media (min-width: 1536px) {
-    .leverui-stat__root:not([data-unstyled]) {
+    .lui-stat__root:not([data-unstyled]) {
       &[data-size-2xl='sm'] {
         --lui-private-stat-value-font-size: var(--lui-font-sizes-xl);
         --lui-private-stat-value-line-height: 1.875rem;

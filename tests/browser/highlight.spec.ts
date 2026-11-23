@@ -8,7 +8,7 @@ async function verifiesHighlightContract({ page }: { page: Page }): Promise<void
   await expect(basic).toHaveText('With Highlight, you can spotlight words.');
   const basicMark = basic.locator('mark');
   await expect(basicMark).toHaveText('spotlight');
-  await expect(basicMark).toHaveClass(/leverui-mark/);
+  await expect(basicMark).toHaveClass(/lui-mark/);
   await expect(basicMark).toHaveCSS('white-space', 'nowrap');
   await expect(basicMark).toHaveCSS('padding-left', '2px');
   await expect(basicMark).not.toHaveAttribute('styles');
@@ -38,7 +38,7 @@ async function verifiesHighlightContract({ page }: { page: Page }): Promise<void
   const live = page.getByTestId('highlight-live');
   await expect(live.locator('mark')).toHaveText('great');
   await expect(live.locator('mark')).toHaveCSS('font-weight', '400');
-  await page.addStyleTag({ content: '.leverui-mark{background-color:rgb(1, 2, 3)}' });
+  await page.addStyleTag({ content: '.lui-mark{background-color:rgb(1, 2, 3)}' });
   await expect(basicMark).toHaveCSS('background-color', 'rgb(1, 2, 3)');
   await providerMarks.first().evaluate(
     /** Mark the provider-styled node before its variant changes. */

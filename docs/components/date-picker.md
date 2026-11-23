@@ -187,7 +187,7 @@ read the state of the nearest date picker.
 Import `@leverui/components/styles.css` for the default look. `size`,
 `variant`, and `hideOutsideDays` take a value per screen size.
 
-Classes: `.leverui-date-picker__<slot>` on the root and each part. Attributes:
+Classes: `.lui-date-picker__<slot>` on the root and each part. Attributes:
 `data-size`, `data-variant`, and the supported breakpoint attributes. Content
 rendered in a portal gets the same values.
 

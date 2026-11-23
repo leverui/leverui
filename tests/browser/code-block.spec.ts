@@ -7,11 +7,11 @@ async function verifiesCodeBlockParts({ page }: { page: Page }): Promise<void> {
   const root = page.getByTestId('code-block-root');
   const code = page.getByTestId('code-block-code');
   await expect(root).toHaveJSProperty('tagName', 'DIV');
-  await expect(root).toHaveClass(/(?:^|\s)leverui-code-block__root(?:\s|$)/);
+  await expect(root).toHaveClass(/(?:^|\s)lui-code-block__root(?:\s|$)/);
   await expect(root).toHaveAttribute('data-has-line-numbers', '');
   await expect(root).toHaveAttribute('data-has-focused', '');
   await expect(root).toHaveAttribute('data-has-diff', '');
-  await expect(root).toHaveAttribute('data-leverui-color-mode', 'dark');
+  await expect(root).toHaveAttribute('data-lui-color-mode', 'dark');
   expect(
     await root.evaluate(
       /** Read a consumer stylesheet override of the public highlight token. */

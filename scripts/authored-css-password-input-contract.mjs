@@ -3,11 +3,11 @@ export const passwordInputContracts = [
   {
     family: 'password-input',
     required: [
-      '.leverui-password-input:not([data-unstyled])',
-      '.leverui-password-input__visibility-trigger',
-      '.leverui-password-strength-meter__track',
-      '.leverui-password-strength-meter__segment',
-      '.leverui-password-strength-meter__label',
+      '.lui-password-input:not([data-unstyled])',
+      '.lui-password-input__visibility-trigger',
+      '.lui-password-strength-meter__track',
+      '.lui-password-strength-meter__segment',
+      '.lui-password-strength-meter__label',
       "[data-strength-level='low']",
       "[data-strength-level='medium']",
       "[data-strength-level='high']",

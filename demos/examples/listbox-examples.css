@@ -177,7 +177,7 @@
   width: 374px;
 }
 /* The options live inside List, so the grid lays out the list. */
-.example-listbox-emoji-grid > .leverui-listbox__list {
+.example-listbox-emoji-grid > .lui-listbox__list {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: var(--lui-spacing-1);

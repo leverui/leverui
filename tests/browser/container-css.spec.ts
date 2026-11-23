@@ -38,7 +38,7 @@ async function verifiesContainerCss({ page }: { page: Page }): Promise<void> {
   await page.setContent(`<style>${defaultCss}</style>${markup}`);
   const plain = page.locator('#plain-container');
   const responsive = page.locator('#responsive-container');
-  await expect(plain).not.toHaveAttribute('data-leverui-private-style-runtime', '');
+  await expect(plain).not.toHaveAttribute('data-lui-private-style-runtime', '');
   await expect(plain).toHaveCSS('position', 'relative');
   await expect(plain).toHaveCSS('max-width', '1440px');
   await expect(plain).toHaveCSS('padding-left', '16px');

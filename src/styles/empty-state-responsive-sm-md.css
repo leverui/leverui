@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-empty-state__root:not([data-unstyled]) {
+    .lui-empty-state__root:not([data-unstyled]) {
       &[data-size-sm='sm'] {
         --lui-private-empty-state-padding-inline: var(--lui-spacing-4);
         --lui-private-empty-state-padding-block: var(--lui-spacing-6);
@@ -34,7 +34,7 @@
     }
   }
   @media (min-width: 768px) {
-    .leverui-empty-state__root:not([data-unstyled]) {
+    .lui-empty-state__root:not([data-unstyled]) {
       &[data-size-md='sm'] {
         --lui-private-empty-state-padding-inline: var(--lui-spacing-4);
         --lui-private-empty-state-padding-block: var(--lui-spacing-6);

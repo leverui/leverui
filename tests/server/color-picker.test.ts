@@ -40,13 +40,13 @@ function renderServerColorPicker(): string {
 /** Verify server markup contains accessible, styled compound parts. */
 function verifiesServerMarkup(): void {
   const markup = renderServerColorPicker();
-  expect(markup).toContain('leverui-color-picker__root');
-  expect(markup).toContain('leverui-color-picker__label');
-  expect(markup).toContain('leverui-color-picker__control');
-  expect(markup).toContain('leverui-color-picker__channelInput');
-  expect(markup).toContain('leverui-color-picker__trigger');
-  expect(markup).toContain('leverui-color-picker__swatch');
-  expect(markup).toContain('data-leverui-color-picker-css');
+  expect(markup).toContain('lui-color-picker__root');
+  expect(markup).toContain('lui-color-picker__label');
+  expect(markup).toContain('lui-color-picker__control');
+  expect(markup).toContain('lui-color-picker__channelInput');
+  expect(markup).toContain('lui-color-picker__trigger');
+  expect(markup).toContain('lui-color-picker__swatch');
+  expect(markup).toContain('data-lui-color-picker-css');
   expect(markup).toContain('tabIndex="-1"');
   expect(markup).not.toMatch(/\s(?:recipe|unstyled|onValueChange)=/);
 }

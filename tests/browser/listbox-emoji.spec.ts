@@ -23,7 +23,7 @@ async function verifiesEmojiGrid({ page }: { page: Page }): Promise<void> {
   await expect(options.nth(9)).toHaveAttribute('data-highlighted');
 
   const filter = page.getByRole('textbox', { name: 'Filter emojis' });
-  await expect(filter).toHaveClass(/leverui-input/);
+  await expect(filter).toHaveClass(/lui-input/);
   await filter.fill('GRINNING FACE');
   await expect(options).toHaveCount(4);
   await expect(grid.getByRole('option', { name: 'grinning face', exact: true })).toBeVisible();

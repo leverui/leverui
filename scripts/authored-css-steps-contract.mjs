@@ -3,12 +3,12 @@ export const stepsContracts = [
   {
     family: 'steps',
     required: [
-      '.leverui-steps__root:not([data-unstyled])',
+      '.lui-steps__root:not([data-unstyled])',
       ...['list', 'item', 'trigger', 'title', 'description', 'separator', 'indicator'].map(
         /** Keep each styled public part in the default bundle. */
-        (part) => `.leverui-steps__${part}:not([data-unstyled])`,
+        (part) => `.lui-steps__${part}:not([data-unstyled])`,
       ),
-      ':is(.leverui-steps__content, .leverui-steps__completedContent):not([data-unstyled])',
+      ':is(.lui-steps__content, .lui-steps__completedContent):not([data-unstyled])',
       ...['xs', 'sm', 'md', 'lg'].map(
         /** Keep each size in the base stylesheet. */
         (size) => `[data-size='${size}']`,

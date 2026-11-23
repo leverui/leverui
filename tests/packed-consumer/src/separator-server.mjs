@@ -20,7 +20,7 @@ const markup = renderPackedSeparator();
 assert.match(markup, /<span[^>]*id="packed-server-separator"/);
 assert.match(markup, /role="separator"/);
 assert.match(markup, /aria-orientation="vertical"/);
-assert.match(markup, /leverui-separator/);
+assert.match(markup, /lui-separator/);
 assert.match(markup, /data-orientation="vertical"/);
 assert.doesNotMatch(markup, /--separator-thickness/);
 assert.doesNotMatch(markup, /<span[^>]*\s(?:orientation|variant|size|css|unstyled)=/);

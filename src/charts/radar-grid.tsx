@@ -35,7 +35,7 @@ export function RadarGrid(props: RadarGridProps): JSX.Element {
   }
 
   return (
-    <g class="leverui-radar-chart__grid" data-radar-grid="" data-grid={props.grid}>
+    <g class="lui-radar-chart__grid" data-radar-grid="" data-grid={props.grid}>
       <For each={[1, 2, 3, 4]}>
         {/** Draw each value level with the selected grid shape. */}
         {(level) => {
@@ -53,10 +53,10 @@ export function RadarGrid(props: RadarGridProps): JSX.Element {
           return (
             <Show
               when={props.grid === 'circle'}
-              fallback={<path class="leverui-radar-chart__ring" d={ringPath()} />}
+              fallback={<path class="lui-radar-chart__ring" d={ringPath()} />}
             >
               <circle
-                class="leverui-radar-chart__ring"
+                class="lui-radar-chart__ring"
                 cx={props.centerX}
                 cy={props.centerY}
                 r={ringRadius()}
@@ -75,7 +75,7 @@ export function RadarGrid(props: RadarGridProps): JSX.Element {
             <>
               <Show when={props.grid !== 'filled'}>
                 <line
-                  class="leverui-radar-chart__spoke"
+                  class="lui-radar-chart__spoke"
                   x1={props.centerX}
                   y1={props.centerY}
                   x2={end().x}
@@ -84,7 +84,7 @@ export function RadarGrid(props: RadarGridProps): JSX.Element {
               </Show>
               <Show when={props.angleLabels}>
                 <text
-                  class="leverui-radar-chart__angle-label"
+                  class="lui-radar-chart__angle-label"
                   x={labelPoint(index()).x}
                   y={labelPoint(index()).y}
                   text-anchor={labelAnchor(labelPoint(index()).x)}
@@ -103,7 +103,7 @@ export function RadarGrid(props: RadarGridProps): JSX.Element {
           {/** Mark the same four intervals used by the grid rings. */}
           {(level) => (
             <text
-              class="leverui-radar-chart__radius-label"
+              class="lui-radar-chart__radius-label"
               x={props.centerX + (props.radius * level) / 4}
               y={props.centerY}
               transform={`rotate(90 ${props.centerX + (props.radius * level) / 4} ${props.centerY})`}

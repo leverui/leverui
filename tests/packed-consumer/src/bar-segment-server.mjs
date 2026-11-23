@@ -27,8 +27,8 @@ function renderBarSegment() {
 }
 
 const markup = renderBarSegment();
-assert.match(markup, /leverui-bar-segment__root/);
-assert.match(markup, /leverui-bar-segment__segment/);
+assert.match(markup, /lui-bar-segment__root/);
+assert.match(markup, /lui-bar-segment__segment/);
 assert.match(markup, /--lui-bar-segment-size:3rem/);
 assert.match(markup, /--lui-private-bar-segment-flex/);
 console.log('Packed Bar Segment server rendering passed.');

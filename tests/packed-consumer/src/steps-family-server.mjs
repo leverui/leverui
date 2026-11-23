@@ -119,8 +119,8 @@ function verifyServerRelationships(markup) {
 }
 
 const markup = renderInstalledSteps();
-assert.match(markup, /leverui-steps__root/);
-assert.match(markup, /leverui-steps__indicator/);
+assert.match(markup, /lui-steps__root/);
+assert.match(markup, /lui-steps__indicator/);
 assert.match(markup, /data-orientation="vertical"/);
 assert.match(markup, /First installed panel/);
 assert.match(markup, /step-0:ready/);

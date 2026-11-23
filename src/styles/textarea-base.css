@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-textarea:not([data-unstyled]) {
+  .lui-textarea:not([data-unstyled]) {
     width: 100%;
     min-width: 0;
     outline: 0;
@@ -20,7 +20,7 @@
     --lui-private-textarea-error-color: var(--lui-colors-border-error);
   }
 
-  .leverui-textarea[data-autoresize] {
+  .lui-textarea[data-autoresize] {
     resize: none;
   }
 }

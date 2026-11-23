@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-input-element:not([data-unstyled]) {
+  .lui-input-element:not([data-unstyled]) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,12 +11,12 @@
     padding-inline: var(--lui-spacing-3);
   }
 
-  .leverui-input-element:not([data-unstyled])[data-placement='start'] {
+  .lui-input-element:not([data-unstyled])[data-placement='start'] {
     inset-inline-start: 0;
     inset-inline-end: auto;
   }
 
-  .leverui-input-element:not([data-unstyled])[data-placement='end'] {
+  .lui-input-element:not([data-unstyled])[data-placement='end'] {
     inset-inline-start: auto;
     inset-inline-end: 0;
   }

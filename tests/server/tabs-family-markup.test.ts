@@ -58,8 +58,8 @@ function renderServerTabs(): string {
 /** Confirm grouped selected content retains the primitive state and Lever UI classes. */
 function verifiesServerMarkup(): void {
   const markup = renderServerTabs();
-  expect(markup).toContain('leverui-tabs__root');
-  expect(markup).toContain('leverui-tabs__contentGroup');
+  expect(markup).toContain('lui-tabs__root');
+  expect(markup).toContain('lui-tabs__contentGroup');
   expect(markup).toContain('aria-selected="true"');
   expect(markup).toContain('First panel');
 }

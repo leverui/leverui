@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-slider__root:not([data-unstyled]) {
+  .lui-slider__root:not([data-unstyled]) {
     --lui-slider-range-color: var(--lui-colors-color-palette-solid);
     --lui-slider-track-color: color-mix(in srgb, var(--lui-colors-bg-emphasized) 72%, transparent);
     --lui-slider-thumb-color: var(--lui-colors-bg);
@@ -17,7 +17,7 @@
       --lui-private-slider-disabled-track-color: var(--lui-colors-bg-muted);
     }
 
-    .leverui-slider__track:not([data-unstyled]) {
+    .lui-slider__track:not([data-unstyled]) {
       box-shadow: var(--lui-private-slider-track-shadow);
 
       &[data-disabled] {
@@ -25,7 +25,7 @@
       }
     }
 
-    .leverui-slider__thumb:not([data-unstyled]) {
+    .lui-slider__thumb:not([data-unstyled]) {
       border: var(--lui-private-slider-thumb-border-width) solid
         var(--lui-slider-thumb-border-color);
 

@@ -2,8 +2,8 @@ export const statusContracts = [
   {
     family: 'status',
     required: [
-      '.leverui-status__root:not([data-unstyled]',
-      '.leverui-status__indicator:not([data-unstyled]',
+      '.lui-status__root:not([data-unstyled]',
+      '.lui-status__indicator:not([data-unstyled]',
       ...['sm', 'md', 'lg'].map(
         /** Require every base Status text size. */
         (size) => `[data-size='${size}']`,

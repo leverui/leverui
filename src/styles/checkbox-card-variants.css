@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-checkbox-card:not([data-unstyled]) {
+  .lui-checkbox-card:not([data-unstyled]) {
     border-width: var(--lui-private-checkbox-card-border-width, 0);
     border-color: var(--lui-private-checkbox-card-border-color, currentColor);
     background-color: var(--lui-private-checkbox-card-background, transparent);
@@ -55,7 +55,7 @@
     }
   }
 
-  .leverui-checkbox-card__control:not([data-unstyled])[data-state='checked'] {
+  .lui-checkbox-card__control:not([data-unstyled])[data-state='checked'] {
     background-color: var(--lui-private-checkbox-card-checked-control-background, transparent);
     color: var(--lui-private-checkbox-card-checked-control-color, inherit);
   }

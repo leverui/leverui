@@ -32,12 +32,12 @@ const stylesheet = readFileSync(
 );
 assert.match(markup, /id="packed-server-grid"/);
 assert.match(markup, /Installed server grid/);
-assert.match(markup, /class="leverui-grid\b/);
-assert.match(markup, /class="leverui-grid-item\b/);
+assert.match(markup, /class="lui-grid\b/);
+assert.match(markup, /class="lui-grid-item\b/);
 assert.match(markup, /--lui-private-grid-template-columns-base:40px 40px/);
 assert.match(markup, /gap:var\(--lui-spacing-4\)/);
 assert.match(markup, /--lui-private-grid-item-column-base:span 2\/span 2/);
-assert.match(stylesheet, /\.leverui-grid\s*\{[^}]*display: grid;/);
+assert.match(stylesheet, /\.lui-grid\s*\{[^}]*display: grid;/);
 assert.match(stylesheet, /grid-template-columns: var\(--lui-private-grid-template-columns-base/);
 assert.doesNotMatch(markup, /\s(?:templateColumns|colSpan|css|gap)=/);
 console.log('Packed Grid server rendering passed.');

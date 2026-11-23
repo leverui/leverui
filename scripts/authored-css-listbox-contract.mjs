@@ -20,7 +20,7 @@ export const listboxContracts = [
     required: [
       ...styledParts.map(
         /** Require an authored rule for each styled public part. */
-        (part) => `.leverui-listbox__${part}:not([data-unstyled])`,
+        (part) => `.lui-listbox__${part}:not([data-unstyled])`,
       ),
       ...variants.map(
         /** Require each scalar treatment rule. */

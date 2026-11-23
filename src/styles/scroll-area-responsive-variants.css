@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-scroll-area__root:not([data-unstyled]) {
+    .lui-scroll-area__root:not([data-unstyled]) {
       &[data-variant-sm='hover'] {
         --lui-private-scroll-area-opacity: 0;
       }
@@ -10,7 +10,7 @@
     }
   }
   @media (min-width: 768px) {
-    .leverui-scroll-area__root:not([data-unstyled]) {
+    .lui-scroll-area__root:not([data-unstyled]) {
       &[data-variant-md='hover'] {
         --lui-private-scroll-area-opacity: 0;
       }
@@ -20,7 +20,7 @@
     }
   }
   @media (min-width: 1024px) {
-    .leverui-scroll-area__root:not([data-unstyled]) {
+    .lui-scroll-area__root:not([data-unstyled]) {
       &[data-variant-lg='hover'] {
         --lui-private-scroll-area-opacity: 0;
       }
@@ -30,7 +30,7 @@
     }
   }
   @media (min-width: 1280px) {
-    .leverui-scroll-area__root:not([data-unstyled]) {
+    .lui-scroll-area__root:not([data-unstyled]) {
       &[data-variant-xl='hover'] {
         --lui-private-scroll-area-opacity: 0;
       }
@@ -40,7 +40,7 @@
     }
   }
   @media (min-width: 1536px) {
-    .leverui-scroll-area__root:not([data-unstyled]) {
+    .lui-scroll-area__root:not([data-unstyled]) {
       &[data-variant-2xl='hover'] {
         --lui-private-scroll-area-opacity: 0;
       }

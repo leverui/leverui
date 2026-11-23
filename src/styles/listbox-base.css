@@ -1,12 +1,12 @@
 @layer leverui.recipes {
-  .leverui-listbox__root:not([data-unstyled]) {
+  .lui-listbox__root:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     gap: var(--lui-listbox-root-gap, var(--lui-spacing-1\.5));
     width: 100%;
   }
 
-  .leverui-listbox__content:not([data-unstyled]) {
+  .lui-listbox__content:not([data-unstyled]) {
     display: flex;
     max-height: var(--lui-listbox-content-max-height, var(--lui-sizes-96));
     padding: var(--lui-listbox-content-padding, var(--lui-spacing-1));
@@ -27,17 +27,17 @@
     border-radius: var(--lui-private-listbox-radius, 0);
   }
 
-  .leverui-listbox__content:not([data-unstyled])[data-orientation='horizontal'] {
+  .lui-listbox__content:not([data-unstyled])[data-orientation='horizontal'] {
     flex-direction: row;
   }
 
-  .leverui-listbox__content:not([data-unstyled])[data-orientation='vertical'] {
+  .lui-listbox__content:not([data-unstyled])[data-orientation='vertical'] {
     flex-direction: column;
   }
 
   /* The primitive puts the listbox role and its items on List, not Content, and Zag 2
      scrolls the highlighted option within List, so List is the scroll container. */
-  .leverui-listbox__list:not([data-unstyled]) {
+  .lui-listbox__list:not([data-unstyled]) {
     display: flex;
     flex: 1 1 auto;
     gap: var(--lui-listbox-content-gap, var(--lui-spacing-1));
@@ -47,17 +47,17 @@
     scroll-padding: var(--lui-spacing-1);
   }
 
-  .leverui-listbox__list:not([data-unstyled])[data-orientation='horizontal'] {
+  .lui-listbox__list:not([data-unstyled])[data-orientation='horizontal'] {
     flex-direction: row;
     overflow-x: auto;
   }
 
-  .leverui-listbox__list:not([data-unstyled])[data-orientation='vertical'] {
+  .lui-listbox__list:not([data-unstyled])[data-orientation='vertical'] {
     flex-direction: column;
     overflow-y: auto;
   }
 
-  .leverui-listbox__item:not([data-unstyled]) {
+  .lui-listbox__item:not([data-unstyled]) {
     position: relative;
     user-select: none;
     display: flex;
@@ -72,12 +72,12 @@
     padding-inline: var(--lui-private-listbox-item-padding-x, var(--lui-spacing-2));
   }
 
-  .leverui-listbox__item:not([data-unstyled])[data-highlighted] {
+  .lui-listbox__item:not([data-unstyled])[data-highlighted] {
     outline: 2px solid;
     outline-color: var(--lui-listbox-highlight-outline-color, var(--lui-colors-border-emphasized));
   }
 
-  .leverui-listbox__item:not([data-unstyled]):is(
+  .lui-listbox__item:not([data-unstyled]):is(
       :disabled,
       [disabled],
       [data-disabled],
@@ -87,7 +87,7 @@
     opacity: 0.5;
   }
 
-  .leverui-listbox__item:not([data-unstyled]):is([data-selected], [aria-selected='true']) {
+  .lui-listbox__item:not([data-unstyled]):is([data-selected], [aria-selected='true']) {
     background: var(
       --lui-listbox-selected-background,
       var(--lui-private-listbox-selected-background)
@@ -96,7 +96,7 @@
   }
 
   @media (hover: hover) {
-    .leverui-listbox__item:not([data-unstyled]):is(:hover, [data-hover]):not(
+    .lui-listbox__item:not([data-unstyled]):is(:hover, [data-hover]):not(
         :disabled,
         [data-disabled],
         [data-selected],
@@ -107,37 +107,37 @@
   }
 
   /* The primitive keeps Empty mounted as a status region; pad it only while it shows a message. */
-  .leverui-listbox__empty:not([data-unstyled]):not(:empty) {
+  .lui-listbox__empty:not([data-unstyled]):not(:empty) {
     padding-block: var(--lui-private-listbox-item-padding-y, var(--lui-spacing-1\.5));
     padding-inline: var(--lui-private-listbox-item-padding-x, var(--lui-spacing-2));
   }
 
-  .leverui-listbox__itemText:not([data-unstyled]) {
+  .lui-listbox__itemText:not([data-unstyled]) {
     flex: 1;
   }
 
-  .leverui-listbox__itemGroup:not([data-unstyled]) {
+  .lui-listbox__itemGroup:not([data-unstyled]) {
     margin-top: var(--lui-spacing-1\.5);
   }
 
-  .leverui-listbox__itemGroup:not([data-unstyled]):first-of-type {
+  .lui-listbox__itemGroup:not([data-unstyled]):first-of-type {
     margin-top: 0;
   }
 
-  .leverui-listbox__itemGroupLabel:not([data-unstyled]) {
+  .lui-listbox__itemGroupLabel:not([data-unstyled]) {
     padding-block: var(--lui-spacing-1\.5);
     padding-inline: var(--lui-spacing-2);
     font-weight: var(--lui-font-weights-medium);
   }
 
-  .leverui-listbox__label:not([data-unstyled]) {
+  .lui-listbox__label:not([data-unstyled]) {
     font-weight: var(--lui-font-weights-medium);
     user-select: none;
     font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
   }
 
-  .leverui-listbox__label:not([data-unstyled]):is(
+  .lui-listbox__label:not([data-unstyled]):is(
       :disabled,
       [disabled],
       [data-disabled],
@@ -147,7 +147,7 @@
     cursor: var(--lui-cursor-disabled);
   }
 
-  .leverui-listbox__valueText:not([data-unstyled]) {
+  .lui-listbox__valueText:not([data-unstyled]) {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -156,13 +156,13 @@
     max-width: 80%;
   }
 
-  .leverui-listbox__itemIndicator:not([data-unstyled]) {
+  .lui-listbox__itemIndicator:not([data-unstyled]) {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .leverui-listbox__itemIndicator:not([data-unstyled]) :where(svg) {
+  .lui-listbox__itemIndicator:not([data-unstyled]) :where(svg) {
     width: var(--lui-sizes-4);
     height: var(--lui-sizes-4);
   }

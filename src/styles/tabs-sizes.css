@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-tabs__root:not([data-unstyled]) {
+  .lui-tabs__root:not([data-unstyled]) {
     --lui-private-tabs-height: var(--lui-sizes-10);
     --lui-private-tabs-content-padding: var(--lui-spacing-4);
     --lui-private-tabs-trigger-padding-block: var(--lui-spacing-2);
@@ -7,7 +7,7 @@
     --lui-private-tabs-trigger-font-size: var(--lui-font-sizes-sm);
     --lui-private-tabs-trigger-line-height: 1.25rem;
 
-    .leverui-tabs__trigger:not([data-unstyled]) {
+    .lui-tabs__trigger:not([data-unstyled]) {
       padding-block: var(--lui-private-tabs-trigger-padding-block);
       padding-inline: var(--lui-private-tabs-trigger-padding-inline);
       font-size: var(--lui-private-tabs-trigger-font-size);
@@ -31,15 +31,15 @@
       --lui-private-tabs-trigger-line-height: 1.5rem;
     }
 
-    &[data-justify='start'] .leverui-tabs__list:not([data-unstyled]) {
+    &[data-justify='start'] .lui-tabs__list:not([data-unstyled]) {
       justify-content: flex-start;
     }
 
-    &[data-justify='center'] .leverui-tabs__list:not([data-unstyled]) {
+    &[data-justify='center'] .lui-tabs__list:not([data-unstyled]) {
       justify-content: center;
     }
 
-    &[data-justify='end'] .leverui-tabs__list:not([data-unstyled]) {
+    &[data-justify='end'] .lui-tabs__list:not([data-unstyled]) {
       justify-content: flex-end;
     }
   }

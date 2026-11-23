@@ -27,7 +27,7 @@ function verifiesServerSwatches(): void {
   expect(markup).toMatch(/<span[^>]*id="server-swatch"/);
   expect(markup).toContain('data-value="red"');
   expect(markup).toContain('data-value="transparent"');
-  expect(markup).toContain('leverui-color-swatch');
+  expect(markup).toContain('lui-color-swatch');
   expect(markup).not.toMatch(/\s(?:items|size|shape)=/);
 }
 

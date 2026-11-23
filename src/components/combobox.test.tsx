@@ -62,7 +62,7 @@ async function verifiesComboboxSelection(): Promise<void> {
 
   const input = screen.getByRole('combobox', { name: 'Framework' }) as HTMLInputElement;
   const trigger = screen.getByTestId('trigger');
-  expect(input.className).toContain('leverui-combobox__input');
+  expect(input.className).toContain('lui-combobox__input');
   expect(trigger.querySelector('svg[aria-hidden="true"]')).not.toBeNull();
   expect(
     screen.getByTestId('clear-trigger').querySelector('svg[aria-hidden="true"]'),

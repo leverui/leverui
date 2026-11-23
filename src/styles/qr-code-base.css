@@ -1,21 +1,21 @@
 @layer leverui.recipes {
-  .leverui-qr-code__root:not([data-unstyled]) {
+  .lui-qr-code__root:not([data-unstyled]) {
     position: relative;
     width: fit-content;
     --lui-qr-code-size: var(--lui-private-qr-code-size);
     --lui-qr-code-overlay-size: calc(var(--lui-qr-code-size) / 3);
   }
 
-  .leverui-qr-code__frame:not([data-unstyled]) {
+  .lui-qr-code__frame:not([data-unstyled]) {
     width: var(--lui-qr-code-size);
     height: var(--lui-qr-code-size);
   }
 
-  .leverui-qr-code__frame:not([data-unstyled], [fill]) {
+  .lui-qr-code__frame:not([data-unstyled], [fill]) {
     fill: currentColor;
   }
 
-  .leverui-qr-code__overlay:not([data-unstyled]) {
+  .lui-qr-code__overlay:not([data-unstyled]) {
     display: flex;
     align-items: center;
     justify-content: center;

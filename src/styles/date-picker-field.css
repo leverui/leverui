@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-date-picker__root:not([data-unstyled]) {
+  .lui-date-picker__root:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     gap: var(--lui-date-picker-root-gap, var(--lui-spacing-1\.5));
@@ -12,17 +12,17 @@
     --lui-private-date-picker-select-height: var(--lui-sizes-10);
   }
 
-  .leverui-date-picker__root:not([data-unstyled]):is([data-disabled], [aria-disabled='true']) {
+  .lui-date-picker__root:not([data-unstyled]):is([data-disabled], [aria-disabled='true']) {
     opacity: 0.5;
   }
 
-  .leverui-date-picker__label:not([data-unstyled]) {
+  .lui-date-picker__label:not([data-unstyled]) {
     font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
     font-weight: var(--lui-font-weights-medium);
   }
 
-  .leverui-date-picker__control:not([data-unstyled]) {
+  .lui-date-picker__control:not([data-unstyled]) {
     display: flex;
     align-items: center;
     gap: var(--lui-spacing-2);
@@ -30,7 +30,7 @@
     position: relative;
   }
 
-  .leverui-date-picker__indicatorGroup:not([data-unstyled]) {
+  .lui-date-picker__indicatorGroup:not([data-unstyled]) {
     position: absolute;
     inset-inline-end: var(
       --lui-date-picker-indicators-offset,
@@ -44,7 +44,7 @@
     gap: var(--lui-spacing-1);
   }
 
-  .leverui-date-picker__input:not([data-unstyled]) {
+  .lui-date-picker__input:not([data-unstyled]) {
     flex: 1;
     min-width: 0;
     height: var(
@@ -91,8 +91,8 @@
     );
   }
 
-  .leverui-date-picker__trigger:not([data-unstyled]),
-  .leverui-date-picker__clearTrigger:not([data-unstyled]) {
+  .lui-date-picker__trigger:not([data-unstyled]),
+  .lui-date-picker__clearTrigger:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -103,13 +103,13 @@
     outline: none;
   }
 
-  .leverui-date-picker__clearTrigger:not([data-unstyled]) {
+  .lui-date-picker__clearTrigger:not([data-unstyled]) {
     flex-shrink: 0;
     font-size: var(--lui-font-sizes-xs);
     line-height: 1rem;
   }
 
-  :is(.leverui-date-picker__trigger, .leverui-date-picker__clearTrigger):not([data-unstyled]) svg {
+  :is(.lui-date-picker__trigger, .lui-date-picker__clearTrigger):not([data-unstyled]) svg {
     width: var(--lui-sizes-4);
     height: var(--lui-sizes-4);
   }

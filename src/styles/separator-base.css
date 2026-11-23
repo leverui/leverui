@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-separator:not([data-unstyled]) {
+  .lui-separator:not([data-unstyled]) {
     --lui-private-separator-thickness: 1px;
     display: block;
     border: 0;
@@ -8,30 +8,30 @@
     border-top-width: var(--lui-separator-thickness, var(--lui-private-separator-thickness));
   }
 
-  .leverui-separator:not([data-unstyled])[data-size='xs'] {
+  .lui-separator:not([data-unstyled])[data-size='xs'] {
     --lui-private-separator-thickness: 0.5px;
   }
-  .leverui-separator:not([data-unstyled])[data-size='sm'] {
+  .lui-separator:not([data-unstyled])[data-size='sm'] {
     --lui-private-separator-thickness: 1px;
   }
-  .leverui-separator:not([data-unstyled])[data-size='md'] {
+  .lui-separator:not([data-unstyled])[data-size='md'] {
     --lui-private-separator-thickness: 2px;
   }
-  .leverui-separator:not([data-unstyled])[data-size='lg'] {
+  .lui-separator:not([data-unstyled])[data-size='lg'] {
     --lui-private-separator-thickness: 3px;
   }
 
-  .leverui-separator:not([data-unstyled])[data-variant='solid'] {
+  .lui-separator:not([data-unstyled])[data-variant='solid'] {
     border-style: solid;
   }
-  .leverui-separator:not([data-unstyled])[data-variant='dashed'] {
+  .lui-separator:not([data-unstyled])[data-variant='dashed'] {
     border-style: dashed;
   }
-  .leverui-separator:not([data-unstyled])[data-variant='dotted'] {
+  .lui-separator:not([data-unstyled])[data-variant='dotted'] {
     border-style: dotted;
   }
 
-  .leverui-separator:not([data-unstyled])[data-orientation='vertical'] {
+  .lui-separator:not([data-unstyled])[data-orientation='vertical'] {
     border-top-width: 0;
     border-inline-start-width: var(
       --lui-separator-thickness,

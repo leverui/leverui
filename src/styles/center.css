@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-center:not([data-unstyled]) {
+  .lui-center:not([data-unstyled]) {
     display: flex;
     align-items: var(--lui-center-align, center);
     justify-content: var(--lui-center-justify, center);

@@ -4,12 +4,12 @@
    * another palette sits in between. Declaring the aliases again on those scopes makes them pick
    * up the scope's colors, not the colors of the mode outside it.
    */
-  [data-leverui-color-palette='gray'],
-  [data-leverui-color-palette='gray']
-    :where([data-leverui-theme][data-leverui-color-mode]):not(
-      [data-leverui-color-palette],
-      [data-leverui-color-palette='gray']
-        [data-leverui-color-palette]:not([data-leverui-color-palette='gray'])
+  [data-lui-color-palette='gray'],
+  [data-lui-color-palette='gray']
+    :where([data-lui-theme][data-lui-color-mode]):not(
+      [data-lui-color-palette],
+      [data-lui-color-palette='gray']
+        [data-lui-color-palette]:not([data-lui-color-palette='gray'])
         *
     ) {
     --lui-colors-color-palette-50: var(--lui-colors-gray-50);
@@ -32,13 +32,11 @@
     --lui-colors-color-palette-focus-ring: var(--lui-colors-gray-focus-ring);
     --lui-colors-color-palette-border: var(--lui-colors-gray-border);
   }
-  [data-leverui-color-palette='red'],
-  [data-leverui-color-palette='red']
-    :where([data-leverui-theme][data-leverui-color-mode]):not(
-      [data-leverui-color-palette],
-      [data-leverui-color-palette='red']
-        [data-leverui-color-palette]:not([data-leverui-color-palette='red'])
-        *
+  [data-lui-color-palette='red'],
+  [data-lui-color-palette='red']
+    :where([data-lui-theme][data-lui-color-mode]):not(
+      [data-lui-color-palette],
+      [data-lui-color-palette='red'] [data-lui-color-palette]:not([data-lui-color-palette='red']) *
     ) {
     --lui-colors-color-palette-50: var(--lui-colors-red-50);
     --lui-colors-color-palette-100: var(--lui-colors-red-100);
@@ -60,12 +58,12 @@
     --lui-colors-color-palette-focus-ring: var(--lui-colors-red-focus-ring);
     --lui-colors-color-palette-border: var(--lui-colors-red-border);
   }
-  [data-leverui-color-palette='orange'],
-  [data-leverui-color-palette='orange']
-    :where([data-leverui-theme][data-leverui-color-mode]):not(
-      [data-leverui-color-palette],
-      [data-leverui-color-palette='orange']
-        [data-leverui-color-palette]:not([data-leverui-color-palette='orange'])
+  [data-lui-color-palette='orange'],
+  [data-lui-color-palette='orange']
+    :where([data-lui-theme][data-lui-color-mode]):not(
+      [data-lui-color-palette],
+      [data-lui-color-palette='orange']
+        [data-lui-color-palette]:not([data-lui-color-palette='orange'])
         *
     ) {
     --lui-colors-color-palette-50: var(--lui-colors-orange-50);
@@ -88,12 +86,12 @@
     --lui-colors-color-palette-focus-ring: var(--lui-colors-orange-focus-ring);
     --lui-colors-color-palette-border: var(--lui-colors-orange-border);
   }
-  [data-leverui-color-palette='green'],
-  [data-leverui-color-palette='green']
-    :where([data-leverui-theme][data-leverui-color-mode]):not(
-      [data-leverui-color-palette],
-      [data-leverui-color-palette='green']
-        [data-leverui-color-palette]:not([data-leverui-color-palette='green'])
+  [data-lui-color-palette='green'],
+  [data-lui-color-palette='green']
+    :where([data-lui-theme][data-lui-color-mode]):not(
+      [data-lui-color-palette],
+      [data-lui-color-palette='green']
+        [data-lui-color-palette]:not([data-lui-color-palette='green'])
         *
     ) {
     --lui-colors-color-palette-50: var(--lui-colors-green-50);
@@ -116,12 +114,12 @@
     --lui-colors-color-palette-focus-ring: var(--lui-colors-green-focus-ring);
     --lui-colors-color-palette-border: var(--lui-colors-green-border);
   }
-  [data-leverui-color-palette='blue'],
-  [data-leverui-color-palette='blue']
-    :where([data-leverui-theme][data-leverui-color-mode]):not(
-      [data-leverui-color-palette],
-      [data-leverui-color-palette='blue']
-        [data-leverui-color-palette]:not([data-leverui-color-palette='blue'])
+  [data-lui-color-palette='blue'],
+  [data-lui-color-palette='blue']
+    :where([data-lui-theme][data-lui-color-mode]):not(
+      [data-lui-color-palette],
+      [data-lui-color-palette='blue']
+        [data-lui-color-palette]:not([data-lui-color-palette='blue'])
         *
     ) {
     --lui-colors-color-palette-50: var(--lui-colors-blue-50);

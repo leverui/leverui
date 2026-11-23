@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-checkbox-card:not([data-unstyled]) {
+    .lui-checkbox-card:not([data-unstyled]) {
       &[data-align-sm='start'] {
         --lui-private-checkbox-card-align: flex-start;
         --lui-private-checkbox-card-text-align: start;
@@ -31,7 +31,7 @@
     }
   }
   @media (min-width: 768px) {
-    .leverui-checkbox-card:not([data-unstyled]) {
+    .lui-checkbox-card:not([data-unstyled]) {
       &[data-align-md='start'] {
         --lui-private-checkbox-card-align: flex-start;
         --lui-private-checkbox-card-text-align: start;

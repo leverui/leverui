@@ -24,11 +24,11 @@ export async function verifyPackedList(page) {
   assert.equal(await childRoot.getAttribute('title'), 'Packed owned tasks');
   assert.equal(await childRoot.getAttribute('data-packed-root-ref'), 'received');
   assert.match((await childRoot.getAttribute('class')) ?? '', /packed-child-root/);
-  assert.match((await childRoot.getAttribute('class')) ?? '', /leverui-list__root/);
+  assert.match((await childRoot.getAttribute('class')) ?? '', /lui-list__root/);
   assert.equal(await childItem.textContent(), 'Owned item');
   assert.equal(await childItem.getAttribute('data-packed-item-ref'), 'received');
   assert.match((await childItem.getAttribute('class')) ?? '', /packed-child-item/);
-  assert.match((await childItem.getAttribute('class')) ?? '', /leverui-list__item/);
+  assert.match((await childItem.getAttribute('class')) ?? '', /lui-list__item/);
   assert.equal(await childItem.evaluate(computedDisplay), 'list-item');
   assert.equal(
     await page.locator('#packed-list-ordered').evaluate(
@@ -52,7 +52,7 @@ export async function verifyPackedList(page) {
   assert.equal(await indicator.getAttribute('data-packed-ref'), 'received');
   assert.equal(await indicator.getAttribute('data-packed-child-ref'), 'received');
   assert.match((await indicator.getAttribute('class')) ?? '', /packed-list-icon/);
-  assert.match((await indicator.getAttribute('class')) ?? '', /leverui-list__indicator/);
+  assert.match((await indicator.getAttribute('class')) ?? '', /lui-list__indicator/);
   await indicator.click();
   assert.equal(await indicator.getAttribute('data-packed-clicked'), 'true');
   for (const id of ['packed-list-bare-icon', 'packed-list-class-icon']) {

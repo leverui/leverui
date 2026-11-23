@@ -48,8 +48,8 @@ items and nested lists.
 }
 ```
 
-Classes: `.leverui-list__root`, `.leverui-list__item`, and
-`.leverui-list__indicator`. Put one on your own element inside a `List.Root`
+Classes: `.lui-list__root`, `.lui-list__item`, and
+`.lui-list__indicator`. Put one on your own element inside a `List.Root`
 and it picks up the list's variant. The root has `data-variant` and
 `data-align`, plus one per screen size you set, such as `data-variant-md`.
 

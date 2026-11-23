@@ -8,8 +8,8 @@ async function readLayout(root: Locator): Promise<Record<string, string>> {
   return root.evaluate(
     /** Read visible part styles after the current media query settles. */
     (element) => {
-      const list = element.querySelector('.leverui-tabs__list');
-      const trigger = element.querySelector('.leverui-tabs__trigger');
+      const list = element.querySelector('.lui-tabs__list');
+      const trigger = element.querySelector('.lui-tabs__trigger');
       if (!list || !trigger) throw new Error('Tabs layout parts are missing.');
       const listStyle = getComputedStyle(list);
       const triggerStyle = getComputedStyle(trigger);

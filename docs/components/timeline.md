@@ -70,17 +70,17 @@ wins. The part classes also work on plain HTML elements inside a Timeline root.
 
 Import `@leverui/components/styles.css` first.
 
-- `.leverui-timeline__root`
-- `.leverui-timeline__item`
-- `.leverui-timeline__connector`
-- `.leverui-timeline__separator`
-- `.leverui-timeline__indicator`
-- `.leverui-timeline__content`
-- `.leverui-timeline__title`
-- `.leverui-timeline__description`
+- `.lui-timeline__root`
+- `.lui-timeline__item`
+- `.lui-timeline__connector`
+- `.lui-timeline__separator`
+- `.lui-timeline__indicator`
+- `.lui-timeline__content`
+- `.lui-timeline__title`
+- `.lui-timeline__description`
 
 ```css
-.leverui-timeline__title {
+.lui-timeline__title {
   letter-spacing: 0.01em;
 }
 ```

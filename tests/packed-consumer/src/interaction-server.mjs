@@ -51,7 +51,7 @@ function verifyInput() {
   const markup = renderInstalled(renderInput);
   const input = requiredElement(markup, 'input', 'aria-label', 'Packed name');
   assert.equal(requiredAttribute(input, 'value'), 'draft');
-  assert.match(input, /leverui-input/);
+  assert.match(input, /lui-input/);
 }
 
 /** Create the visible and native Checkbox parts under one primitive root. */

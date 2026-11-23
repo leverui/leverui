@@ -10,10 +10,7 @@ async function verifiesHalfSelection({ page }: { page: Page }): Promise<void> {
   await fourth.hover({ position: { x: 2, y: 2 } });
   await fourth.hover({ position: { x: 4, y: 4 } });
   await fourth.click({ position: { x: 4, y: 4 } });
-  await expect(fourth.locator('.leverui-rating-group__itemIndicator')).toHaveAttribute(
-    'data-half',
-    '',
-  );
+  await expect(fourth.locator('.lui-rating-group__itemIndicator')).toHaveAttribute('data-half', '');
   await expect(input).toHaveValue('3.5');
   // Zag 2 names an item holding a half value by that value.
   await expect(fourth).toHaveAccessibleName('3.5 stars');

@@ -1,56 +1,56 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-color-swatch:not([data-unstyled])[data-shape-sm='square'] {
+    .lui-color-swatch:not([data-unstyled])[data-shape-sm='square'] {
       --lui-swatch-radius: 0px;
     }
-    .leverui-color-swatch:not([data-unstyled])[data-shape-sm='circle'] {
+    .lui-color-swatch:not([data-unstyled])[data-shape-sm='circle'] {
       --lui-swatch-radius: var(--lui-radii-full);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-shape-sm='rounded'] {
+    .lui-color-swatch:not([data-unstyled])[data-shape-sm='rounded'] {
       --lui-swatch-radius: var(--lui-radii-l1);
     }
   }
   @media (min-width: 768px) {
-    .leverui-color-swatch:not([data-unstyled])[data-shape-md='square'] {
+    .lui-color-swatch:not([data-unstyled])[data-shape-md='square'] {
       --lui-swatch-radius: 0px;
     }
-    .leverui-color-swatch:not([data-unstyled])[data-shape-md='circle'] {
+    .lui-color-swatch:not([data-unstyled])[data-shape-md='circle'] {
       --lui-swatch-radius: var(--lui-radii-full);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-shape-md='rounded'] {
+    .lui-color-swatch:not([data-unstyled])[data-shape-md='rounded'] {
       --lui-swatch-radius: var(--lui-radii-l1);
     }
   }
   @media (min-width: 1024px) {
-    .leverui-color-swatch:not([data-unstyled])[data-shape-lg='square'] {
+    .lui-color-swatch:not([data-unstyled])[data-shape-lg='square'] {
       --lui-swatch-radius: 0px;
     }
-    .leverui-color-swatch:not([data-unstyled])[data-shape-lg='circle'] {
+    .lui-color-swatch:not([data-unstyled])[data-shape-lg='circle'] {
       --lui-swatch-radius: var(--lui-radii-full);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-shape-lg='rounded'] {
+    .lui-color-swatch:not([data-unstyled])[data-shape-lg='rounded'] {
       --lui-swatch-radius: var(--lui-radii-l1);
     }
   }
   @media (min-width: 1280px) {
-    .leverui-color-swatch:not([data-unstyled])[data-shape-xl='square'] {
+    .lui-color-swatch:not([data-unstyled])[data-shape-xl='square'] {
       --lui-swatch-radius: 0px;
     }
-    .leverui-color-swatch:not([data-unstyled])[data-shape-xl='circle'] {
+    .lui-color-swatch:not([data-unstyled])[data-shape-xl='circle'] {
       --lui-swatch-radius: var(--lui-radii-full);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-shape-xl='rounded'] {
+    .lui-color-swatch:not([data-unstyled])[data-shape-xl='rounded'] {
       --lui-swatch-radius: var(--lui-radii-l1);
     }
   }
   @media (min-width: 1536px) {
-    .leverui-color-swatch:not([data-unstyled])[data-shape-2xl='square'] {
+    .lui-color-swatch:not([data-unstyled])[data-shape-2xl='square'] {
       --lui-swatch-radius: 0px;
     }
-    .leverui-color-swatch:not([data-unstyled])[data-shape-2xl='circle'] {
+    .lui-color-swatch:not([data-unstyled])[data-shape-2xl='circle'] {
       --lui-swatch-radius: var(--lui-radii-full);
     }
-    .leverui-color-swatch:not([data-unstyled])[data-shape-2xl='rounded'] {
+    .lui-color-swatch:not([data-unstyled])[data-shape-2xl='rounded'] {
       --lui-swatch-radius: var(--lui-radii-l1);
     }
   }

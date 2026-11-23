@@ -14,7 +14,7 @@ test('Command sizes apply distinct CSS dimensions', async ({ page }) => {
     await page.getByRole('button', { name: `Search... (size=${size})` }).click();
     const dialog = page.getByRole('dialog', { name: 'Command palette' });
     const input = dialog.getByRole('combobox');
-    const control = dialog.locator('.leverui-command__control');
+    const control = dialog.locator('.lui-command__control');
     await expect(dialog.getByRole('option')).toHaveCount(4);
     await expect(input).toHaveCSS('height', measurements[size].inputHeight);
     await expect(control).toHaveCSS('padding-left', measurements[size].controlPadding);
@@ -34,7 +34,7 @@ test('Command honors a root-scope CSS variable', async ({ page }) => {
   await page.getByRole('button', { name: 'Search... (size=md)' }).click();
   const control = page
     .getByRole('dialog', { name: 'Command palette' })
-    .locator('.leverui-command__control');
+    .locator('.lui-command__control');
   await expect(control).toHaveCSS('padding-left', '37px');
   await expect(control).toHaveCSS('padding-right', '37px');
 });

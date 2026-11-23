@@ -174,7 +174,7 @@ async function verifiesNativeBleedCss({ page }: { page: Page }): Promise<void> {
       /** Read the class hook without depending on HTML whitespace. */
       (element) => [...element.classList],
     ),
-  ).toEqual(['leverui-bleed']);
+  ).toEqual(['lui-bleed']);
 }
 
 test('Bleed preserves logical layout, responsive spacing, and reactive styles', verifiesBleed);

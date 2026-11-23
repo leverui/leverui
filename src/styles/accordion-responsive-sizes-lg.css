@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 1024px) {
-    .leverui-accordion__root:not([data-unstyled]) {
+    .lui-accordion__root:not([data-unstyled]) {
       &[data-size-lg='sm'] {
         --lui-private-accordion-padding-x: var(--lui-spacing-3);
         --lui-private-accordion-padding-y: var(--lui-spacing-2);

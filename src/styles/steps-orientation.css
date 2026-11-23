@@ -1,25 +1,25 @@
 @layer leverui.recipes {
-  .leverui-steps__root:not([data-unstyled])[data-orientation='horizontal']
-    .leverui-steps__separator:not([data-unstyled]) {
+  .lui-steps__root:not([data-unstyled])[data-orientation='horizontal']
+    .lui-steps__separator:not([data-unstyled]) {
     width: 100%;
     height: var(--lui-private-steps-thickness);
     margin-inline: var(--lui-private-steps-gutter);
   }
 
-  .leverui-steps__root:not([data-unstyled])[data-orientation='vertical'] {
+  .lui-steps__root:not([data-unstyled])[data-orientation='vertical'] {
     flex-direction: row;
     height: 100%;
 
-    .leverui-steps__list:not([data-unstyled]) {
+    .lui-steps__list:not([data-unstyled]) {
       flex-direction: column;
       align-items: flex-start;
     }
 
-    .leverui-steps__item:not([data-unstyled]) {
+    .lui-steps__item:not([data-unstyled]) {
       align-items: flex-start;
     }
 
-    .leverui-steps__separator:not([data-unstyled]) {
+    .lui-steps__separator:not([data-unstyled]) {
       position: absolute;
       top: calc(var(--lui-private-steps-size) + var(--lui-private-steps-gutter));
       inset-inline-start: calc(var(--lui-private-steps-size) / 2 - 1px);

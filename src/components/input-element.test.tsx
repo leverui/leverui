@@ -30,7 +30,7 @@ function verifiesNativeElement(): void {
   expect(element).toBe(received);
   expect(element.tagName).toBe('DIV');
   expect(element.textContent).toBe('https://');
-  expect(element.className).toContain('leverui-input-element');
+  expect(element.className).toContain('lui-input-element');
   expect(element.hasAttribute('placement')).toBe(false);
 }
 
@@ -66,7 +66,7 @@ function verifiesReactivePlacement(): void {
   expect(screen.getByTestId('reactive-element')).toBe(element);
   expect(element.className).toBe(firstClass);
   expect(element.getAttribute('data-placement')).toBe('end');
-  expect(screen.getByTestId('unstyled-element').className).toContain('leverui-input-element');
+  expect(screen.getByTestId('unstyled-element').className).toContain('lui-input-element');
 }
 
 test('Input Element responds to placement changes', verifiesReactivePlacement);
@@ -104,7 +104,7 @@ function verifiesSelectedElement(): void {
   expect(screen.getByTestId('span-element')).toBe(span);
   expect(span?.tagName).toBe('SPAN');
   expect(screen.getByTestId('child-element').tagName).toBe('STRONG');
-  expect(screen.getByTestId('child-element').className).toContain('leverui-input-element');
+  expect(screen.getByTestId('child-element').className).toContain('lui-input-element');
 }
 
 test('Input Element supports selected tags and child rendering', verifiesSelectedElement);

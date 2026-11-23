@@ -42,9 +42,9 @@ function renderMenu() {
 }
 
 const markup = renderToString(renderMenu);
-assert.match(markup, /leverui-menu__content/);
+assert.match(markup, /lui-menu__content/);
 assert.match(markup, /role="menu"/);
-assert.match(markup, /leverui-menu__arrowTip/);
+assert.match(markup, /lui-menu__arrowTip/);
 assert.match(markup, /role="menuitem"/);
 assert.match(markup, /<kbd\b/);
 assert.match(markup, /<hr\b/);

@@ -7,7 +7,7 @@ import './bar-chart-groups.css';
 function legendTick(row: BarDatum, index: number, x: number, y: number): JSX.Element {
   return (
     <text
-      class="leverui-bar-chart__tick"
+      class="lui-bar-chart__tick"
       data-mobile-hidden={[0, 2, 3].includes(index) ? '' : undefined}
       x={x}
       y={y}

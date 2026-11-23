@@ -48,9 +48,9 @@ function renderServerDatePicker(): string {
 /** Check server markup without depending on client-only portal behavior. */
 function verifiesServerMarkup(): void {
   const markup = renderServerDatePicker();
-  expect(markup).toContain('leverui-date-picker__root');
-  expect(markup).toContain('leverui-date-picker__label');
-  expect(markup).toContain('leverui-date-picker__input');
+  expect(markup).toContain('lui-date-picker__root');
+  expect(markup).toContain('lui-date-picker__label');
+  expect(markup).toContain('lui-date-picker__input');
   expect(markup).toContain('aria-label="March 2026"');
   expect(markup).toContain('2026');
   expect(markup).not.toMatch(/\s(?:recipe|unstyled|onValueChange)=/);

@@ -8,7 +8,7 @@ async function verifiesFileUploadBrowser({ page }: { page: Page }): Promise<void
   const dropzone = page.getByTestId('file-upload-dropzone');
   const fileText = page.getByTestId('file-upload-text');
   await expect(input).toHaveAttribute('type', 'file', { timeout: 30_000 });
-  await expect(root).toHaveClass(/leverui-file-upload__root/);
+  await expect(root).toHaveClass(/lui-file-upload__root/);
   await expect(root).toHaveCSS('display', 'flex');
   await expect(dropzone).toHaveCSS('border-style', 'dashed');
   await expect(fileText).toHaveAttribute('data-placeholder', '');

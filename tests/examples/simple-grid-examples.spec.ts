@@ -10,7 +10,7 @@ const layouts = [
 
 /** Count the browser-resolved grid tracks. */
 async function countTracks(page: Page): Promise<number> {
-  return page.locator('#storybook-root .leverui-simple-grid').evaluate(
+  return page.locator('#storybook-root .lui-simple-grid').evaluate(
     /** Count each rendered CSS grid column. */
     (element) => getComputedStyle(element).gridTemplateColumns.split(' ').length,
   );
@@ -22,7 +22,7 @@ async function verifiesSimpleGridLayouts({ page }: { page: Page }): Promise<void
   await page.setViewportSize({ width: 1280, height: 720 });
   for (const layout of layouts) {
     await page.goto(`/iframe.html?id=layout-simplegrid--${layout.id}`);
-    const grid = page.locator('#storybook-root .leverui-simple-grid');
+    const grid = page.locator('#storybook-root .lui-simple-grid');
     await expect(grid).toBeVisible();
     await expect(grid.locator(':scope > :not(style)')).toHaveCount(layout.count);
     await expect(grid).toHaveCSS('display', 'grid');
@@ -39,7 +39,7 @@ async function verifiesResponsiveSimpleGrid({ page }: { page: Page }): Promise<v
   expect(await countTracks(page)).toBe(2);
 
   await page.goto('/iframe.html?id=layout-simplegrid--col-span');
-  const grid = page.locator('#storybook-root .leverui-simple-grid');
+  const grid = page.locator('#storybook-root .lui-simple-grid');
   await expect(grid).toHaveCSS('gap', '24px');
   expect(await countTracks(page)).toBe(2);
   await expect(grid.locator(':scope > :not(style)').first()).toHaveCSS(

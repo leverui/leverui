@@ -4,7 +4,7 @@ export const tagContracts = [
     required: [
       ...['root', 'label', 'startElement', 'endElement', 'closeTrigger'].map(
         /** Require every public Tag part hook. */
-        (part) => `.leverui-tag__${part}:not([data-unstyled]`,
+        (part) => `.lui-tag__${part}:not([data-unstyled]`,
       ),
       ...['sm', 'md', 'lg', 'xl'].map(
         /** Require every base Tag size. */

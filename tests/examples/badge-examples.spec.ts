@@ -17,7 +17,7 @@ async function verifiesEveryBadgeExample({ page }: { page: Page }): Promise<void
   for (const id of exampleIds) {
     await page.goto(`/iframe.html?id=components-badge--${id}`);
     await expect(
-      page.locator('.leverui-badge').first(),
+      page.locator('.lui-badge').first(),
       `Badge example ${id} should render`,
     ).toBeVisible({ timeout: 45_000 });
   }
@@ -28,11 +28,11 @@ async function verifiesBadgeTables({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-badge--size-matrix');
   await expect(page.locator('#storybook-root tbody tr')).toHaveCount(10);
   await expect(page.locator('#storybook-root thead th')).toHaveCount(5);
-  await expect(page.locator('#storybook-root .leverui-badge')).toHaveCount(40);
+  await expect(page.locator('#storybook-root .lui-badge')).toHaveCount(40);
   await page.goto('/iframe.html?id=components-badge--variant-matrix');
   await expect(page.locator('#storybook-root tbody tr')).toHaveCount(10);
   await expect(page.locator('#storybook-root thead th')).toHaveCount(6);
-  await expect(page.locator('#storybook-root .leverui-badge')).toHaveCount(50);
+  await expect(page.locator('#storybook-root .lui-badge')).toHaveCount(50);
 }
 
 /** Verify the attached status pair preserves both labels. */
@@ -45,7 +45,7 @@ async function verifiesAttachedGroup({ page }: { page: Page }): Promise<void> {
 /** Keep both icon badges as single icon compositions. */
 async function verifiesIconBadges({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-badge--icon');
-  const badges = page.locator('#storybook-root .leverui-badge');
+  const badges = page.locator('#storybook-root .lui-badge');
   await expect(badges).toHaveCount(2);
   await expect(badges.locator('svg.lucide')).toHaveCount(2);
 }

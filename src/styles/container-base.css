@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-container:not([data-unstyled]) {
+  .lui-container:not([data-unstyled]) {
     position: relative;
     width: 100%;
     max-width: var(--lui-container-max-width, var(--lui-sizes-8xl));

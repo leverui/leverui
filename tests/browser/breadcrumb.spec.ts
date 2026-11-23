@@ -13,7 +13,7 @@ async function verifiesBreadcrumbSemantics({ page }: { page: Page }): Promise<vo
   await expect(root).toHaveAttribute('aria-label', 'breadcrumb');
   await expect(root).toHaveAttribute('data-size', 'sm');
   await expect(root).toHaveAttribute('data-variant', 'plain');
-  await expect(root).not.toHaveAttribute('data-leverui-private-style-runtime');
+  await expect(root).not.toHaveAttribute('data-lui-private-style-runtime');
   await expect(list).toHaveJSProperty('tagName', 'OL');
   await expect(current).toHaveJSProperty('tagName', 'SPAN');
   await expect(current).toHaveAttribute('role', 'link');
@@ -71,7 +71,7 @@ async function verifiesBreadcrumbRecipe({ page }: { page: Page }): Promise<void>
   );
   await expect(variant).toHaveCSS('text-decoration-line', 'underline');
   await page.addStyleTag({
-    content: '.leverui-breadcrumb__link[data-testid="breadcrumb-home-link"]{color:rgb(10, 20, 30)}',
+    content: '.lui-breadcrumb__link[data-testid="breadcrumb-home-link"]{color:rgb(10, 20, 30)}',
   });
   await expect(page.getByTestId('breadcrumb-home-link')).toHaveCSS('color', 'rgb(10, 20, 30)');
 }

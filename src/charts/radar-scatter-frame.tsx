@@ -66,7 +66,7 @@ export function RadarScatterFrame(props: RadarScatterFrameProps): JSX.Element {
           untrack(() => props.ref)?.(element);
         }
       }
-      class={[`leverui-${props.kind}-chart`, split()[0].class, split()[0].className]}
+      class={[`lui-${props.kind}-chart`, split()[0].class, split()[0].className]}
       role={props.interactive ? 'group' : split()[0].role}
       tabindex={props.interactive ? '0' : split()[0].tabindex}
       aria-label={props.interactive ? props.keyboardLabel : split()[0]['aria-label']}

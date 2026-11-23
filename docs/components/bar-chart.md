@@ -256,7 +256,7 @@ Your own `onFocus`, `onBlur`, and `onKeyDown` handlers still run.
   --lui-bar-chart-tooltip-background: #f0faf8;
 }
 
-.downloads-bars .leverui-bar-chart__grid-line {
+.downloads-bars .lui-bar-chart__grid-line {
   stroke: #a6c9c0;
 }
 ```
@@ -298,9 +298,9 @@ Grid variables are in [Cartesian Grid](cartesian-grid.md).
 
 ### Classes
 
-Root: `.leverui-bar-chart`.
+Root: `.lui-bar-chart`.
 
-Parts, each prefixed with `.leverui-bar-chart__`: `svg`, `axes`, `grid-line`,
+Parts, each prefixed with `.lui-bar-chart__`: `svg`, `axes`, `grid-line`,
 `axis-line`, `tick`, `axis-label`, `references`, `reference-area`,
 `reference-label`, `reference-line`, `marks`, `mark`, `bar`, `wick`,
 `bar-label`, `legend`, `legend-item`, `legend-swatch`, `tooltip`,

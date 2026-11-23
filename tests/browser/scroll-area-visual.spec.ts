@@ -94,7 +94,7 @@ async function verifiesScrollbarVariable({ page }: { page: Page }): Promise<void
   await page.goto('/iframe.html?id=components-scroll-area-layout--basic');
   const scrollbar = page.getByTestId('scrollbar');
   await page.addStyleTag({
-    content: '.leverui-scroll-area__root { --lui-scroll-area-scrollbar-size: 14px; }',
+    content: '.lui-scroll-area__root { --lui-scroll-area-scrollbar-size: 14px; }',
   });
   await expect(scrollbar).toHaveCSS('width', '14px');
 }

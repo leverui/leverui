@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-drawer__header[data-leverui-drawer-css] {
+  .lui-drawer__header[data-lui-drawer-css] {
     display: flex;
     align-items: center;
     gap: var(--lui-spacing-2);
@@ -9,14 +9,14 @@
     padding-bottom: var(--lui-spacing-4);
   }
 
-  .leverui-drawer__body[data-leverui-drawer-css] {
+  .lui-drawer__body[data-lui-drawer-css] {
     flex: 1;
     overflow: auto;
     padding-inline: var(--lui-spacing-6);
     padding-block: var(--lui-spacing-2);
   }
 
-  .leverui-drawer__footer[data-leverui-drawer-css] {
+  .lui-drawer__footer[data-lui-drawer-css] {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -26,18 +26,18 @@
     padding-bottom: var(--lui-spacing-4);
   }
 
-  .leverui-drawer__title[data-leverui-drawer-css] {
+  .lui-drawer__title[data-lui-drawer-css] {
     flex: 1;
     font-size: var(--lui-font-sizes-lg);
     line-height: 1.75rem;
     font-weight: var(--lui-font-weights-semibold);
   }
 
-  .leverui-drawer__description[data-leverui-drawer-css] {
+  .lui-drawer__description[data-lui-drawer-css] {
     color: var(--lui-colors-fg-muted);
   }
 
-  .leverui-drawer__closeTrigger[data-leverui-drawer-css] {
+  .lui-drawer__closeTrigger[data-lui-drawer-css] {
     position: absolute;
     top: var(--lui-spacing-3);
     inset-inline-end: var(--lui-spacing-2);

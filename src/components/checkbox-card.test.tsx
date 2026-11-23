@@ -34,10 +34,10 @@ async function verifiesCardParts(): Promise<void> {
   const input = screen.getByRole('checkbox', { name: 'Pro plan' }) as HTMLInputElement;
   expect(input.checked).toBe(true);
   expect(input.name).toBe('plan');
-  expect(root.className).toContain('leverui-checkbox-card');
-  expect(screen.getByTestId('control').className).toContain('leverui-checkbox-card__control');
-  expect(screen.getByTestId('content').className).toContain('leverui-checkbox-card__content');
-  expect(screen.getByTestId('addon').className).toContain('leverui-checkbox-card__addon');
+  expect(root.className).toContain('lui-checkbox-card');
+  expect(screen.getByTestId('control').className).toContain('lui-checkbox-card__control');
+  expect(screen.getByTestId('content').className).toContain('lui-checkbox-card__content');
+  expect(screen.getByTestId('addon').className).toContain('lui-checkbox-card__addon');
   expect(screen.getByTestId('indicator').getAttribute('data-state')).toBe('checked');
   expect(screen.getByTestId('indicator').hasAttribute('aria-hidden')).toBe(false);
   expect(screen.getByTestId('description').getAttribute('data-state')).toBe('checked');
@@ -136,7 +136,7 @@ async function verifiesCardProvider(): Promise<void> {
   expect(input.disabled).toBe(false);
   expect(input.name).toBe('external');
   expect(root.getAttribute('data-size')).toBe('sm');
-  expect(control.className).toContain('leverui-checkbox-card__control');
+  expect(control.className).toContain('lui-checkbox-card__control');
   setLarge(true);
   flush();
   setInheritedChecked(true);

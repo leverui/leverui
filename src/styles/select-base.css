@@ -1,16 +1,16 @@
 @layer leverui.recipes {
-  .leverui-select__root:not([data-unstyled]) {
+  .lui-select__root:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     gap: var(--lui-select-root-gap, var(--lui-spacing-1\.5));
     width: 100%;
   }
 
-  .leverui-select__control:not([data-unstyled]) {
+  .lui-select__control:not([data-unstyled]) {
     position: relative;
   }
 
-  .leverui-select__trigger:not([data-unstyled]) {
+  .lui-select__trigger:not([data-unstyled]) {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,7 +33,7 @@
     line-height: var(--lui-private-select-line-height);
   }
 
-  .leverui-select__valueText:not([data-unstyled]) {
+  .lui-select__valueText:not([data-unstyled]) {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
@@ -41,7 +41,7 @@
     max-width: 80%;
   }
 
-  .leverui-select__indicatorGroup:not([data-unstyled]) {
+  .lui-select__indicatorGroup:not([data-unstyled]) {
     display: flex;
     align-items: center;
     gap: var(--lui-spacing-1);
@@ -55,19 +55,19 @@
     pointer-events: none;
   }
 
-  .leverui-select__indicator:not([data-unstyled]) {
+  .lui-select__indicator:not([data-unstyled]) {
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--lui-select-indicator-color, var(--lui-colors-fg-muted));
   }
 
-  .leverui-select__indicator:not([data-unstyled]) :is(svg, img) {
+  .lui-select__indicator:not([data-unstyled]) :is(svg, img) {
     width: var(--lui-private-select-indicator-size);
     height: var(--lui-private-select-indicator-size);
   }
 
-  .leverui-select__content:not([data-unstyled]) {
+  .lui-select__content:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     gap: var(--lui-private-select-content-gap, 0);
@@ -84,7 +84,7 @@
   }
 
   /* Zag 2 scrolls the highlighted option within List, so List is the scroll container. */
-  .leverui-select__list:not([data-unstyled]) {
+  .lui-select__list:not([data-unstyled]) {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
@@ -94,7 +94,7 @@
     outline: 0;
   }
 
-  .leverui-select__item:not([data-unstyled]) {
+  .lui-select__item:not([data-unstyled]) {
     position: relative;
     user-select: none;
     display: flex;
@@ -108,37 +108,37 @@
     padding-inline: var(--lui-private-select-item-padding-x);
   }
 
-  .leverui-select__item:not([data-unstyled]) :is(svg, img) {
+  .lui-select__item:not([data-unstyled]) :is(svg, img) {
     width: var(--lui-sizes-4);
     height: var(--lui-sizes-4);
   }
 
-  .leverui-select__itemText:not([data-unstyled]) {
+  .lui-select__itemText:not([data-unstyled]) {
     flex: 1;
   }
 
-  .leverui-select__itemGroup:not([data-unstyled]) {
+  .lui-select__itemGroup:not([data-unstyled]) {
     margin-top: var(--lui-private-select-item-group-margin, 0);
   }
 
-  .leverui-select__itemGroup:not([data-unstyled]):first-child {
+  .lui-select__itemGroup:not([data-unstyled]):first-child {
     margin-top: 0;
   }
 
-  .leverui-select__itemGroupLabel:not([data-unstyled]) {
+  .lui-select__itemGroupLabel:not([data-unstyled]) {
     padding-block: var(--lui-private-select-item-padding-y);
     padding-inline: var(--lui-private-select-item-padding-x);
     font-weight: var(--lui-font-weights-medium);
   }
 
-  .leverui-select__label:not([data-unstyled]) {
+  .lui-select__label:not([data-unstyled]) {
     font-weight: var(--lui-font-weights-medium);
     user-select: none;
     font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
   }
 
-  .leverui-select__clearTrigger:not([data-unstyled]) {
+  .lui-select__clearTrigger:not([data-unstyled]) {
     color: var(--lui-colors-fg-muted);
     display: flex;
     align-items: center;
@@ -152,7 +152,7 @@
 
   /* Zag 2 sets no z-index and isolates the positioner, so the content's z-index
      cannot escape it. Stack the positioner itself, offset by its layer index. */
-  .leverui-select__positioner {
+  .lui-select__positioner {
     z-index: calc(var(--lui-select-z-index, var(--lui-z-index-popover)) + var(--layer-index, 0));
   }
 }

@@ -16,8 +16,8 @@ async function verifiesLinkRecipe({ page }: { page: Page }): Promise<void> {
   const underline = page.getByTestId('link-underline');
   await expect(plain).toHaveJSProperty('tagName', 'A');
   await expect(plain).toHaveAttribute('href', '#plain');
-  await expect(plain).toHaveClass(/leverui-link/);
-  await expect(plain).not.toHaveAttribute('data-leverui-private-style-runtime');
+  await expect(plain).toHaveClass(/lui-link/);
+  await expect(plain).not.toHaveAttribute('data-lui-private-style-runtime');
   await expect(plain).toHaveCSS('display', 'inline-flex');
   await expect(plain).toHaveCSS('text-decoration-line', 'none');
   await expect(underline).toHaveCSS('text-decoration-line', 'underline');
@@ -33,7 +33,7 @@ async function verifiesLinkRecipe({ page }: { page: Page }): Promise<void> {
   await expect(page.getByTestId('link-current')).toHaveCSS('font-weight', '700');
   await expect(page.getByTestId('link-external')).toHaveAttribute('rel', 'noopener noreferrer');
   await expect(page.getByTestId('link-router')).toHaveAttribute('href', '#route');
-  await expect(page.getByTestId('link-router')).toHaveClass(/leverui-link/);
+  await expect(page.getByTestId('link-router')).toHaveClass(/lui-link/);
 }
 
 /** Verify reactivity, local styles, and the stretched overlay's click behavior. */
@@ -56,10 +56,10 @@ async function verifiesLinkComposition({ page }: { page: Page }): Promise<void> 
   const box = page.getByTestId('link-box');
   await expect(box).toHaveJSProperty('tagName', 'ARTICLE');
   await expect(box).toHaveCSS('position', 'relative');
-  await expect(box).not.toHaveAttribute('data-leverui-private-style-runtime');
+  await expect(box).not.toHaveAttribute('data-lui-private-style-runtime');
   await expect(page.getByTestId('link-overlay')).toHaveCSS('position', 'static');
   await expect(page.getByTestId('link-overlay')).not.toHaveAttribute(
-    'data-leverui-private-style-runtime',
+    'data-lui-private-style-runtime',
   );
   await expect(page.getByTestId('link-inner')).toHaveCSS('position', 'relative');
   await expect(page.getByTestId('link-unstyled-box')).toHaveCSS('position', 'static');
@@ -115,8 +115,7 @@ async function verifiesLinkCssScopes({ page }: { page: Page }): Promise<void> {
   await expect(page.getByTestId('link-nested-light')).toHaveCSS('color', light);
 
   await page.addStyleTag({
-    content:
-      '.leverui-link[data-testid="link-plain"]{color:rgb(1, 2, 3);text-decoration:underline}',
+    content: '.lui-link[data-testid="link-plain"]{color:rgb(1, 2, 3);text-decoration:underline}',
   });
   await expect(page.getByTestId('link-plain')).toHaveCSS('color', 'rgb(1, 2, 3)');
   await expect(page.getByTestId('link-plain')).toHaveCSS('text-decoration-line', 'underline');

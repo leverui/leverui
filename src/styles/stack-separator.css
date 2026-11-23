@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-stack-separator:not([data-unstyled]) {
+  .lui-stack-separator:not([data-unstyled]) {
     border-width: 0;
     align-self: stretch;
     border-color: inherit;
@@ -11,7 +11,7 @@
     border-top-width: var(--lui-private-stack-border-top, 0);
   }
 
-  .leverui-stack:not([data-unstyled]) {
+  .lui-stack:not([data-unstyled]) {
     &[data-direction-base='column'],
     &[data-direction-base='column-reverse'] {
       --lui-private-stack-margin-inline: 0;

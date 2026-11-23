@@ -6,7 +6,7 @@ export async function verifyPackedListbox(page) {
   const content = page.getByRole('listbox');
   const solid = page.getByTestId('packed-listbox-solid');
   await root.waitFor();
-  assert.match(await root.getAttribute('class'), /leverui-listbox__root/);
+  assert.match(await root.getAttribute('class'), /lui-listbox__root/);
   assert.equal(
     await content.evaluate(
       /** Read the published solid-variant border. */

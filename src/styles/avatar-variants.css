@@ -1,17 +1,17 @@
 @layer leverui.recipes {
-  .leverui-avatar__root:not([data-unstyled])[data-variant='solid'] {
+  .lui-avatar__root:not([data-unstyled])[data-variant='solid'] {
     --lui-private-avatar-background: var(--lui-colors-color-palette-solid);
     --lui-private-avatar-foreground: var(--lui-colors-color-palette-contrast);
     --lui-private-avatar-border-width: 0;
     --lui-private-avatar-border-color: var(--lui-colors-border);
   }
-  .leverui-avatar__root:not([data-unstyled])[data-variant='subtle'] {
+  .lui-avatar__root:not([data-unstyled])[data-variant='subtle'] {
     --lui-private-avatar-background: var(--lui-colors-color-palette-muted);
     --lui-private-avatar-foreground: var(--lui-colors-color-palette-fg);
     --lui-private-avatar-border-width: 0;
     --lui-private-avatar-border-color: var(--lui-colors-border);
   }
-  .leverui-avatar__root:not([data-unstyled])[data-variant='outline'] {
+  .lui-avatar__root:not([data-unstyled])[data-variant='outline'] {
     --lui-private-avatar-background: transparent;
     --lui-private-avatar-foreground: var(--lui-colors-color-palette-fg);
     --lui-private-avatar-border-width: 1px;

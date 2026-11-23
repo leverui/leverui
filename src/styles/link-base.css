@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-link:not([data-unstyled]) {
+  .lui-link:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
     gap: var(--lui-spacing-1\.5);

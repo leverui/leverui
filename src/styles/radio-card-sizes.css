@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-radio-card__item:not([data-unstyled]) {
+  .lui-radio-card__item:not([data-unstyled]) {
     &[data-size='sm'] {
       --lui-private-radio-card-font-size: var(--lui-font-sizes-sm);
       --lui-private-radio-card-line-height: 1.25rem;

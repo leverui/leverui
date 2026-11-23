@@ -29,9 +29,9 @@ function renderEditable(): string {
 /** Verify CSS hooks and size selectors render without a presentation style tag. */
 function verifiesServerCss(): void {
   const markup = renderEditable();
-  expect(markup).toContain('leverui-editable__root');
-  expect(markup).toContain('leverui-editable__preview');
-  expect(markup).toContain('leverui-editable__input');
+  expect(markup).toContain('lui-editable__root');
+  expect(markup).toContain('lui-editable__preview');
+  expect(markup).toContain('lui-editable__input');
   expect(markup).toContain('data-size="sm"');
   expect(markup).toContain('data-size-md="lg"');
   expect(markup).not.toMatch(/\s(?:css|recipe|unstyled)=/);

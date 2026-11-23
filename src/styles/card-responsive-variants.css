@@ -1,85 +1,85 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-card__root:not([data-unstyled])[data-variant-sm='elevated'] {
+    .lui-card__root:not([data-unstyled])[data-variant-sm='elevated'] {
       --lui-private-card-background: var(--lui-colors-bg-panel);
       --lui-private-card-shadow: var(--lui-shadows-md);
     }
 
-    .leverui-card__root:not([data-unstyled])[data-variant-sm='outline'] {
+    .lui-card__root:not([data-unstyled])[data-variant-sm='outline'] {
       --lui-private-card-background: var(--lui-colors-bg-panel);
       --lui-private-card-border-width: 1px;
       --lui-private-card-border-color: var(--lui-colors-border);
     }
 
-    .leverui-card__root:not([data-unstyled])[data-variant-sm='subtle'] {
+    .lui-card__root:not([data-unstyled])[data-variant-sm='subtle'] {
       --lui-private-card-background: var(--lui-colors-bg-muted);
     }
   }
 
   @media (min-width: 768px) {
-    .leverui-card__root:not([data-unstyled])[data-variant-md='elevated'] {
+    .lui-card__root:not([data-unstyled])[data-variant-md='elevated'] {
       --lui-private-card-background: var(--lui-colors-bg-panel);
       --lui-private-card-shadow: var(--lui-shadows-md);
     }
 
-    .leverui-card__root:not([data-unstyled])[data-variant-md='outline'] {
+    .lui-card__root:not([data-unstyled])[data-variant-md='outline'] {
       --lui-private-card-background: var(--lui-colors-bg-panel);
       --lui-private-card-border-width: 1px;
       --lui-private-card-border-color: var(--lui-colors-border);
     }
 
-    .leverui-card__root:not([data-unstyled])[data-variant-md='subtle'] {
+    .lui-card__root:not([data-unstyled])[data-variant-md='subtle'] {
       --lui-private-card-background: var(--lui-colors-bg-muted);
     }
   }
 
   @media (min-width: 1024px) {
-    .leverui-card__root:not([data-unstyled])[data-variant-lg='elevated'] {
+    .lui-card__root:not([data-unstyled])[data-variant-lg='elevated'] {
       --lui-private-card-background: var(--lui-colors-bg-panel);
       --lui-private-card-shadow: var(--lui-shadows-md);
     }
 
-    .leverui-card__root:not([data-unstyled])[data-variant-lg='outline'] {
+    .lui-card__root:not([data-unstyled])[data-variant-lg='outline'] {
       --lui-private-card-background: var(--lui-colors-bg-panel);
       --lui-private-card-border-width: 1px;
       --lui-private-card-border-color: var(--lui-colors-border);
     }
 
-    .leverui-card__root:not([data-unstyled])[data-variant-lg='subtle'] {
+    .lui-card__root:not([data-unstyled])[data-variant-lg='subtle'] {
       --lui-private-card-background: var(--lui-colors-bg-muted);
     }
   }
 
   @media (min-width: 1280px) {
-    .leverui-card__root:not([data-unstyled])[data-variant-xl='elevated'] {
+    .lui-card__root:not([data-unstyled])[data-variant-xl='elevated'] {
       --lui-private-card-background: var(--lui-colors-bg-panel);
       --lui-private-card-shadow: var(--lui-shadows-md);
     }
 
-    .leverui-card__root:not([data-unstyled])[data-variant-xl='outline'] {
+    .lui-card__root:not([data-unstyled])[data-variant-xl='outline'] {
       --lui-private-card-background: var(--lui-colors-bg-panel);
       --lui-private-card-border-width: 1px;
       --lui-private-card-border-color: var(--lui-colors-border);
     }
 
-    .leverui-card__root:not([data-unstyled])[data-variant-xl='subtle'] {
+    .lui-card__root:not([data-unstyled])[data-variant-xl='subtle'] {
       --lui-private-card-background: var(--lui-colors-bg-muted);
     }
   }
 
   @media (min-width: 1536px) {
-    .leverui-card__root:not([data-unstyled])[data-variant-2xl='elevated'] {
+    .lui-card__root:not([data-unstyled])[data-variant-2xl='elevated'] {
       --lui-private-card-background: var(--lui-colors-bg-panel);
       --lui-private-card-shadow: var(--lui-shadows-md);
     }
 
-    .leverui-card__root:not([data-unstyled])[data-variant-2xl='outline'] {
+    .lui-card__root:not([data-unstyled])[data-variant-2xl='outline'] {
       --lui-private-card-background: var(--lui-colors-bg-panel);
       --lui-private-card-border-width: 1px;
       --lui-private-card-border-color: var(--lui-colors-border);
     }
 
-    .leverui-card__root:not([data-unstyled])[data-variant-2xl='subtle'] {
+    .lui-card__root:not([data-unstyled])[data-variant-2xl='subtle'] {
       --lui-private-card-background: var(--lui-colors-bg-muted);
     }
   }

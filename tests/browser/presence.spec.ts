@@ -16,7 +16,7 @@ async function verifiesPresenceContract({ page }: { page: Page }): Promise<void>
   await expect(fade).toHaveCount(1);
   await expect(fade).toBeHidden();
   await expect(fade).toHaveAttribute('data-presence-root');
-  await expect(fade).toHaveClass(/leverui-presence/);
+  await expect(fade).toHaveClass(/lui-presence/);
   await expect(fade).toHaveAttribute('data-ref-tag', 'section');
   await expect(fade).toHaveAttribute('aria-label', 'Fade example');
   await expect(fade).toHaveCSS('padding-top', '16px');
@@ -33,7 +33,7 @@ async function verifiesPresenceContract({ page }: { page: Page }): Promise<void>
   await expect(fade).toHaveAttribute('data-state', 'open');
   await expect(fade).toHaveCSS('animation-name', 'fade-in');
   await page.addStyleTag({
-    content: '.leverui-presence.presence-contract-fade { padding: 20px; }',
+    content: '.lui-presence.presence-contract-fade { padding: 20px; }',
   });
   await expect(fade).toHaveCSS('padding-top', '20px');
   await expect(scale).toHaveCSS('animation-name', 'scale-in, fade-in');
@@ -78,7 +78,7 @@ async function verifiesPresenceAsChild({ page }: { page: Page }): Promise<void> 
   await expect(page.getByTestId('presence-child-toggle')).toHaveAttribute('aria-expanded', 'true');
   await expect(child).toBeVisible();
   await expect(child).toHaveAttribute('data-presence-root');
-  await expect(child).toHaveClass(/leverui-presence/);
+  await expect(child).toHaveClass(/lui-presence/);
   await expect(child).toHaveAttribute('data-state', 'open');
   await expect(child).toHaveAttribute('data-parent-ref-tag', 'section');
   await expect(child).toHaveAttribute('data-child-ref-tag', 'section');

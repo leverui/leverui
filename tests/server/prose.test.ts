@@ -32,7 +32,7 @@ function renderProse(): string {
 function verifiesNativeProse(): void {
   const markup = renderProse();
   expect(markup).toMatch(/<div[^>]*id="article"/);
-  expect(markup).toMatch(/class="leverui-prose article-copy\s*"/);
+  expect(markup).toMatch(/class="lui-prose article-copy\s*"/);
   expect(markup).toContain('data-size="lg"');
   expect(markup).toContain('<h2>Heading</h2><p>Body</p>');
   expect(markup).toMatch(/<article[^>]*id="plain-article"/);

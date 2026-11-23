@@ -1,66 +1,66 @@
 @layer leverui.recipes {
   /* Slide away from the trigger and fade, by placement (slide-fade). */
-  .leverui-color-picker__content[data-leverui-color-picker-css] {
+  .lui-color-picker__content[data-lui-color-picker-css] {
     transform-origin: var(--transform-origin);
   }
 
-  .leverui-color-picker__content[data-leverui-color-picker-css][data-state='open'] {
+  .lui-color-picker__content[data-lui-color-picker-css][data-state='open'] {
     animation-duration: var(--lui-durations-fast);
   }
 
-  .leverui-color-picker__content[data-leverui-color-picker-css][data-state='closed'] {
+  .lui-color-picker__content[data-lui-color-picker-css][data-state='closed'] {
     animation-duration: var(--lui-durations-faster);
   }
 
-  .leverui-color-picker__content[data-leverui-color-picker-css][data-state='open'][data-placement^='top'] {
+  .lui-color-picker__content[data-lui-color-picker-css][data-state='open'][data-placement^='top'] {
     animation-name: slide-from-bottom, fade-in;
   }
 
-  .leverui-color-picker__content[data-leverui-color-picker-css][data-state='open'][data-placement^='bottom'] {
+  .lui-color-picker__content[data-lui-color-picker-css][data-state='open'][data-placement^='bottom'] {
     animation-name: slide-from-top, fade-in;
   }
 
-  .leverui-color-picker__content[data-leverui-color-picker-css][data-state='open'][data-placement^='left'] {
+  .lui-color-picker__content[data-lui-color-picker-css][data-state='open'][data-placement^='left'] {
     animation-name: slide-from-right, fade-in;
   }
 
-  .leverui-color-picker__content[data-leverui-color-picker-css][data-state='open'][data-placement^='right'] {
+  .lui-color-picker__content[data-lui-color-picker-css][data-state='open'][data-placement^='right'] {
     animation-name: slide-from-left, fade-in;
   }
 
-  .leverui-color-picker__content[data-leverui-color-picker-css][data-state='closed'][data-placement^='top'] {
+  .lui-color-picker__content[data-lui-color-picker-css][data-state='closed'][data-placement^='top'] {
     animation-name: slide-to-bottom, fade-out;
   }
 
-  .leverui-color-picker__content[data-leverui-color-picker-css][data-state='closed'][data-placement^='bottom'] {
+  .lui-color-picker__content[data-lui-color-picker-css][data-state='closed'][data-placement^='bottom'] {
     animation-name: slide-to-top, fade-out;
   }
 
-  .leverui-color-picker__content[data-leverui-color-picker-css][data-state='closed'][data-placement^='left'] {
+  .lui-color-picker__content[data-lui-color-picker-css][data-state='closed'][data-placement^='left'] {
     animation-name: slide-to-right, fade-out;
   }
 
-  .leverui-color-picker__content[data-leverui-color-picker-css][data-state='closed'][data-placement^='right'] {
+  .lui-color-picker__content[data-lui-color-picker-css][data-state='closed'][data-placement^='right'] {
     animation-name: slide-to-left, fade-out;
   }
 
-  .leverui-color-picker__areaThumb[data-leverui-color-picker-css]:focus-visible {
+  .lui-color-picker__areaThumb[data-lui-color-picker-css]:focus-visible {
     outline: 2px solid white;
     outline-offset: 2px;
   }
 
-  .leverui-color-picker__channelSliderThumb[data-leverui-color-picker-css]:focus-visible {
+  .lui-color-picker__channelSliderThumb[data-lui-color-picker-css]:focus-visible {
     outline: 2px solid var(--lui-colors-color-palette-focus-ring);
     outline-offset: 1px;
   }
 
-  .leverui-color-picker__formatSelect[data-leverui-color-picker-css]:focus-visible {
+  .lui-color-picker__formatSelect[data-lui-color-picker-css]:focus-visible {
     outline: 1px solid var(--lui-colors-color-palette-focus-ring);
     outline-offset: -1px;
   }
 
-  .leverui-color-picker__channelInput[data-leverui-color-picker-css]::-webkit-inner-spin-button,
-  .leverui-color-picker__channelInput[data-leverui-color-picker-css]::-webkit-outer-spin-button {
+  .lui-color-picker__channelInput[data-lui-color-picker-css]::-webkit-inner-spin-button,
+  .lui-color-picker__channelInput[data-lui-color-picker-css]::-webkit-outer-spin-button {
     margin: 0;
     -webkit-appearance: none;
   }

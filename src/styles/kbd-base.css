@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-kbd:not([data-unstyled]) {
+  .lui-kbd:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
     justify-content: center;

@@ -79,7 +79,7 @@ export function RadioGroupItemIndicator<As extends ComponentIntrinsicElement = '
     get children() {
       return (
         <Show when={item().checked}>
-          <span class="dot leverui-radiomark__dot" />
+          <span class="dot lui-radiomark__dot" />
         </Show>
       );
     },

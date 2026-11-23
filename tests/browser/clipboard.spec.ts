@@ -11,13 +11,13 @@ async function verifiesCopyAndReset({ page }: { page: Page }): Promise<void> {
   const indicator = page.getByTestId('clipboard-indicator');
   const copyText = page.getByTestId('clipboard-copy-text');
   await expect(root).toBeVisible({ timeout: 30_000 });
-  await expect(root).toHaveClass(/leverui-clipboard__root/);
+  await expect(root).toHaveClass(/lui-clipboard__root/);
   await expect(input).toHaveValue('https://leverui.com');
   await expect(input).toHaveAttribute('readonly');
   await expect(page.getByTestId('clipboard-value')).toHaveText('https://leverui.com');
   await expect(trigger).toHaveAttribute('type', 'button');
   await expect(copyText).toHaveText('Copy');
-  await expect(copyText).toHaveClass(/leverui-clipboard__copyText/);
+  await expect(copyText).toHaveClass(/lui-clipboard__copyText/);
   await expect(indicator.locator('rect')).toHaveCount(1);
   await trigger.focus();
   await page.keyboard.press('Enter');
@@ -81,7 +81,7 @@ async function verifiesConsumerOverride({ page }: { page: Page }): Promise<void>
   const icon = page.getByTestId('clipboard-indicator').locator('svg');
   await expect(icon).toBeVisible({ timeout: 30_000 });
   await page.addStyleTag({
-    content: '.leverui-clipboard__indicator svg { width: 28px; height: 28px; }',
+    content: '.lui-clipboard__indicator svg { width: 28px; height: 28px; }',
   });
   await expect(icon).toHaveCSS('width', '28px');
   await expect(icon).toHaveCSS('height', '28px');

@@ -329,7 +329,7 @@ on the [Colors](../colors.md) page.
 ## Palette aliases
 
 These point at whichever palette is in use. Set the palette with
-`colorPalette` on a component, or `data-leverui-color-palette` on any
+`colorPalette` on a component, or `data-lui-color-palette` on any
 element. Gray is the default.
 
 | Variable                                | Means                                         |

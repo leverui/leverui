@@ -1,35 +1,32 @@
 @layer leverui.recipes {
-  .leverui-segment-group__item:not([data-unstyled])::before {
+  .lui-segment-group__item:not([data-unstyled])::before {
     content: '';
     position: absolute;
     background: var(--lui-colors-border);
     transition: opacity 200ms;
   }
 
-  .leverui-segment-group__root[data-orientation='horizontal']
-    .leverui-segment-group__item:not([data-unstyled])::before {
+  .lui-segment-group__root[data-orientation='horizontal']
+    .lui-segment-group__item:not([data-unstyled])::before {
     inset-inline-start: 0;
     inset-block: var(--lui-spacing-1\.5);
     width: 1px;
   }
 
-  .leverui-segment-group__root[data-orientation='vertical']
-    .leverui-segment-group__item:not([data-unstyled])::before {
+  .lui-segment-group__root[data-orientation='vertical']
+    .lui-segment-group__item:not([data-unstyled])::before {
     inset-block-start: 0;
     inset-inline: var(--lui-spacing-1\.5);
     height: 1px;
   }
 
-  .leverui-segment-group__item:not([data-unstyled]):is(
-      :first-of-type,
-      [data-state='checked']
-    )::before,
-  .leverui-segment-group__item:not([data-unstyled])[data-state='checked']
-    + .leverui-segment-group__item:not([data-unstyled])::before {
+  .lui-segment-group__item:not([data-unstyled]):is(:first-of-type, [data-state='checked'])::before,
+  .lui-segment-group__item:not([data-unstyled])[data-state='checked']
+    + .lui-segment-group__item:not([data-unstyled])::before {
     opacity: 0;
   }
 
-  .leverui-segment-group__item:not([data-unstyled])[data-state='checked'][data-ssr] {
+  .lui-segment-group__item:not([data-unstyled])[data-state='checked'][data-ssr] {
     box-shadow: var(--lui-shadows-sm);
     background: var(--lui-colors-bg);
   }

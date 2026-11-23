@@ -1,12 +1,10 @@
 @layer leverui.recipes {
-  .leverui-date-picker__table:not([data-unstyled]) {
+  .lui-date-picker__table:not([data-unstyled]) {
     border-collapse: separate;
     border-spacing: 0;
   }
 
-  :is(.leverui-date-picker__tableHeader, .leverui-date-picker__weekNumberHeaderCell):not(
-    [data-unstyled]
-  ) {
+  :is(.lui-date-picker__tableHeader, .lui-date-picker__weekNumberHeaderCell):not([data-unstyled]) {
     width: var(
       --lui-date-picker-cell-size,
       var(--lui-private-date-picker-cell-size, var(--lui-sizes-10))
@@ -21,20 +19,20 @@
   }
 
   /* Centered like the header, so each day stays under its weekday when the calendar is wider. */
-  :is(.leverui-date-picker__tableCell, .leverui-date-picker__weekNumberCell):not([data-unstyled]) {
+  :is(.lui-date-picker__tableCell, .lui-date-picker__weekNumberCell):not([data-unstyled]) {
     padding-block: var(--lui-spacing-0\.5);
     text-align: center;
   }
 
-  :is(.leverui-date-picker__tableHeader, .leverui-date-picker__tableCell):not([data-unstyled])
+  :is(.lui-date-picker__tableHeader, .lui-date-picker__tableCell):not([data-unstyled])
     [data-type='week-number'],
-  :is(.leverui-date-picker__weekNumberCell, .leverui-date-picker__weekNumberHeaderCell):not(
+  :is(.lui-date-picker__weekNumberCell, .lui-date-picker__weekNumberHeaderCell):not(
     [data-unstyled]
   ) {
     color: var(--lui-colors-fg-subtle);
   }
 
-  :is(.leverui-date-picker__tableCellTrigger, .leverui-date-picker__weekNumberCellText):not(
+  :is(.lui-date-picker__tableCellTrigger, .lui-date-picker__weekNumberCellText):not(
     [data-unstyled]
   ) {
     display: inline-flex;
@@ -56,7 +54,7 @@
   }
 
   :is([data-view='month'], [data-view='year'])
-    .leverui-date-picker__tableCellTrigger:not([data-unstyled]) {
+    .lui-date-picker__tableCellTrigger:not([data-unstyled]) {
     width: calc(
       var(
           --lui-date-picker-cell-size,

@@ -5,7 +5,7 @@ import { Timeline, type TimelineRootBaseProps } from '../src/components/timeline
 /** Render a consumer-owned element with the public title part hook. */
 function TimelineTitleProbe(): JSX.Element {
   return (
-    <span class="leverui-timeline__title" data-testid="timeline-style-probe">
+    <span class="lui-timeline__title" data-testid="timeline-style-probe">
       Custom title
     </span>
   );

@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-avatar__root:not([data-unstyled]) {
+  .lui-avatar__root:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -19,14 +19,14 @@
     border-color: var(--lui-private-avatar-border-color);
   }
 
-  .leverui-avatar__image:not([data-unstyled]) {
+  .lui-avatar__image:not([data-unstyled]) {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: var(--lui-private-avatar-radius);
   }
 
-  .leverui-avatar__fallback:not([data-unstyled]) {
+  .lui-avatar__fallback:not([data-unstyled]) {
     line-height: 1;
     text-transform: uppercase;
     font-weight: var(--lui-font-weights-medium);

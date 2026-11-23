@@ -38,7 +38,7 @@ test('Tags Input clear action keeps its inset', verifiesTagsExample);
 /** Keep the loading surface stretched over the QR pattern. */
 async function verifiesQrExample({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-qrcode--with-spinner');
-  const overlay = page.locator('#storybook-root .leverui-absolute-center');
+  const overlay = page.locator('#storybook-root .lui-absolute-center');
   await expect(overlay).toBeVisible();
   const parent = await overlay.locator('xpath=..').boundingBox();
   const child = await overlay.boundingBox();

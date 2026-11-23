@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-skeleton:not([data-unstyled]) {
+  .lui-skeleton:not([data-unstyled]) {
     --lui-private-skeleton-pulse-background: var(
       --lui-skeleton-bg,
       var(--lui-colors-bg-emphasized)
@@ -18,7 +18,7 @@
     --lui-private-animate-to: -200%;
   }
 
-  .leverui-skeleton.leverui-skeleton:not([data-unstyled])[data-loading] {
+  .lui-skeleton.lui-skeleton:not([data-unstyled])[data-loading] {
     border-radius: var(--lui-radii-l2);
     box-shadow: none;
     background-clip: padding-box;
@@ -32,37 +32,37 @@
     animation: var(--lui-private-skeleton-animation);
   }
 
-  .leverui-skeleton.leverui-circle:not([data-unstyled])[data-loading] {
+  .lui-skeleton.lui-circle:not([data-unstyled])[data-loading] {
     border-radius: var(--lui-circle-radius, 9999px);
   }
 
-  .leverui-skeleton:not([data-unstyled])[data-loading] *,
-  .leverui-skeleton:not([data-unstyled])[data-loading]::before,
-  .leverui-skeleton:not([data-unstyled])[data-loading]::after {
+  .lui-skeleton:not([data-unstyled])[data-loading] *,
+  .lui-skeleton:not([data-unstyled])[data-loading]::before,
+  .lui-skeleton:not([data-unstyled])[data-loading]::after {
     visibility: hidden;
   }
 
-  .leverui-skeleton:not([data-unstyled]):not([data-loading]) {
+  .lui-skeleton:not([data-unstyled]):not([data-loading]) {
     background: unset;
     animation: fade-in var(--lui-skeleton-fade-duration, 0.1s) ease-out;
   }
 
-  .leverui-skeleton-text:not([data-unstyled]) {
+  .lui-skeleton-text:not([data-unstyled]) {
     width: var(--lui-skeleton-text-width, 100%);
   }
 
-  .leverui-skeleton-text__line:not([data-unstyled])[data-loading] {
+  .lui-skeleton-text__line:not([data-unstyled])[data-loading] {
     height: var(--lui-skeleton-line-height, var(--lui-sizes-4));
     max-width: 100%;
   }
 
-  .leverui-skeleton-text__line:not([data-unstyled])[data-loading][data-last-line] {
+  .lui-skeleton-text__line:not([data-unstyled])[data-loading][data-last-line] {
     max-width: var(--lui-skeleton-last-line-width, 80%);
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .leverui-skeleton.leverui-skeleton:not([data-unstyled])[data-loading],
-    .leverui-skeleton:not([data-unstyled]):not([data-loading]) {
+    .lui-skeleton.lui-skeleton:not([data-unstyled])[data-loading],
+    .lui-skeleton:not([data-unstyled]):not([data-loading]) {
       animation: none;
     }
   }

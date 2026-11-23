@@ -113,7 +113,7 @@ largest. For a single SVG, `Circle` also accepts `--size` and `--thickness`.
 
 Arc colors: `--lui-progress-circle-track-color` and
 `--lui-progress-circle-range-color`. Classes:
-`.leverui-progress-circle__*`.
+`.lui-progress-circle__*`.
 
 `unstyled` turns off the default styles but keeps the SVG semantics. `size` can
 come from a signal and is responsive, as an object or an array. `class` and

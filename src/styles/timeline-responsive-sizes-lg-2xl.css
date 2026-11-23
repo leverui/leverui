@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 1024px) {
-    .leverui-timeline__root:not([data-unstyled]) {
+    .lui-timeline__root:not([data-unstyled]) {
       &[data-size-lg='sm'] {
         --lui-private-timeline-indicator-size: var(--lui-sizes-4);
         --lui-private-timeline-font-size: var(--lui-font-sizes-2xs);
@@ -32,7 +32,7 @@
     }
   }
   @media (min-width: 1280px) {
-    .leverui-timeline__root:not([data-unstyled]) {
+    .lui-timeline__root:not([data-unstyled]) {
       &[data-size-xl='sm'] {
         --lui-private-timeline-indicator-size: var(--lui-sizes-4);
         --lui-private-timeline-font-size: var(--lui-font-sizes-2xs);
@@ -64,7 +64,7 @@
     }
   }
   @media (min-width: 1536px) {
-    .leverui-timeline__root:not([data-unstyled]) {
+    .lui-timeline__root:not([data-unstyled]) {
       &[data-size-2xl='sm'] {
         --lui-private-timeline-indicator-size: var(--lui-sizes-4);
         --lui-private-timeline-font-size: var(--lui-font-sizes-2xs);

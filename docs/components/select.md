@@ -144,7 +144,7 @@ attributes, plus attributes for interaction states. The trigger fills its width
 by default. Pass `positioning` to place the popup differently.
 
 Set the `--lui-select-*` variables on `:root`, on an element that wraps a
-themed area, or on one component. Or style the `.leverui-select__*` classes.
+themed area, or on one component. Or style the `.lui-select__*` classes.
 Every part takes `class` and `style`. `unstyled` turns off the default styles
 but keeps the behavior.
 

@@ -20,7 +20,7 @@ function renderInstalledSquare() {
 const markup = renderInstalledSquare();
 assert.match(markup, /id="packed-server-square"/);
 assert.match(markup, /Installed server square/);
-assert.match(markup, /leverui-square/);
+assert.match(markup, /lui-square/);
 assert.match(markup, /--lui-private-square-size-base:/);
 assert.doesNotMatch(markup, /display:flex/);
 assert.match(markup, /position:fixed/);

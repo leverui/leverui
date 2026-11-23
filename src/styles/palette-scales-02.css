@@ -1,10 +1,10 @@
 @layer leverui.tokens {
-  [data-leverui-color-palette='yellow'],
-  [data-leverui-color-palette='yellow']
-    :where([data-leverui-theme][data-leverui-color-mode]):not(
-      [data-leverui-color-palette],
-      [data-leverui-color-palette='yellow']
-        [data-leverui-color-palette]:not([data-leverui-color-palette='yellow'])
+  [data-lui-color-palette='yellow'],
+  [data-lui-color-palette='yellow']
+    :where([data-lui-theme][data-lui-color-mode]):not(
+      [data-lui-color-palette],
+      [data-lui-color-palette='yellow']
+        [data-lui-color-palette]:not([data-lui-color-palette='yellow'])
         *
     ) {
     --lui-colors-color-palette-50: var(--lui-colors-yellow-50);
@@ -27,12 +27,12 @@
     --lui-colors-color-palette-focus-ring: var(--lui-colors-yellow-focus-ring);
     --lui-colors-color-palette-border: var(--lui-colors-yellow-border);
   }
-  [data-leverui-color-palette='teal'],
-  [data-leverui-color-palette='teal']
-    :where([data-leverui-theme][data-leverui-color-mode]):not(
-      [data-leverui-color-palette],
-      [data-leverui-color-palette='teal']
-        [data-leverui-color-palette]:not([data-leverui-color-palette='teal'])
+  [data-lui-color-palette='teal'],
+  [data-lui-color-palette='teal']
+    :where([data-lui-theme][data-lui-color-mode]):not(
+      [data-lui-color-palette],
+      [data-lui-color-palette='teal']
+        [data-lui-color-palette]:not([data-lui-color-palette='teal'])
         *
     ) {
     --lui-colors-color-palette-50: var(--lui-colors-teal-50);
@@ -55,12 +55,12 @@
     --lui-colors-color-palette-focus-ring: var(--lui-colors-teal-focus-ring);
     --lui-colors-color-palette-border: var(--lui-colors-teal-border);
   }
-  [data-leverui-color-palette='purple'],
-  [data-leverui-color-palette='purple']
-    :where([data-leverui-theme][data-leverui-color-mode]):not(
-      [data-leverui-color-palette],
-      [data-leverui-color-palette='purple']
-        [data-leverui-color-palette]:not([data-leverui-color-palette='purple'])
+  [data-lui-color-palette='purple'],
+  [data-lui-color-palette='purple']
+    :where([data-lui-theme][data-lui-color-mode]):not(
+      [data-lui-color-palette],
+      [data-lui-color-palette='purple']
+        [data-lui-color-palette]:not([data-lui-color-palette='purple'])
         *
     ) {
     --lui-colors-color-palette-50: var(--lui-colors-purple-50);
@@ -83,12 +83,12 @@
     --lui-colors-color-palette-focus-ring: var(--lui-colors-purple-focus-ring);
     --lui-colors-color-palette-border: var(--lui-colors-purple-border);
   }
-  [data-leverui-color-palette='pink'],
-  [data-leverui-color-palette='pink']
-    :where([data-leverui-theme][data-leverui-color-mode]):not(
-      [data-leverui-color-palette],
-      [data-leverui-color-palette='pink']
-        [data-leverui-color-palette]:not([data-leverui-color-palette='pink'])
+  [data-lui-color-palette='pink'],
+  [data-lui-color-palette='pink']
+    :where([data-lui-theme][data-lui-color-mode]):not(
+      [data-lui-color-palette],
+      [data-lui-color-palette='pink']
+        [data-lui-color-palette]:not([data-lui-color-palette='pink'])
         *
     ) {
     --lui-colors-color-palette-50: var(--lui-colors-pink-50);
@@ -111,12 +111,12 @@
     --lui-colors-color-palette-focus-ring: var(--lui-colors-pink-focus-ring);
     --lui-colors-color-palette-border: var(--lui-colors-pink-border);
   }
-  [data-leverui-color-palette='cyan'],
-  [data-leverui-color-palette='cyan']
-    :where([data-leverui-theme][data-leverui-color-mode]):not(
-      [data-leverui-color-palette],
-      [data-leverui-color-palette='cyan']
-        [data-leverui-color-palette]:not([data-leverui-color-palette='cyan'])
+  [data-lui-color-palette='cyan'],
+  [data-lui-color-palette='cyan']
+    :where([data-lui-theme][data-lui-color-mode]):not(
+      [data-lui-color-palette],
+      [data-lui-color-palette='cyan']
+        [data-lui-color-palette]:not([data-lui-color-palette='cyan'])
         *
     ) {
     --lui-colors-color-palette-50: var(--lui-colors-cyan-50);

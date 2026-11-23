@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-command__clearTrigger:not([data-unstyled]) {
+  .lui-command__clearTrigger:not([data-unstyled]) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,26 +11,26 @@
     cursor: pointer;
   }
 
-  .leverui-command__clearTrigger:not([data-unstyled]) svg {
+  .lui-command__clearTrigger:not([data-unstyled]) svg {
     width: var(--lui-sizes-3\.5);
     height: var(--lui-sizes-3\.5);
   }
 
-  .leverui-command__clearTrigger:not([data-unstyled]):is(:hover, [data-hover]) {
+  .lui-command__clearTrigger:not([data-unstyled]):is(:hover, [data-hover]) {
     background: var(--lui-colors-bg-muted);
     color: var(--lui-colors-fg);
   }
 
-  .leverui-command__clearTrigger:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
+  .lui-command__clearTrigger:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
     outline: 2px solid var(--lui-command-focus-color, var(--lui-colors-color-palette-focus-ring));
     outline-offset: -2px;
   }
 
-  .leverui-command__item:not([data-unstyled])[data-highlighted] {
+  .lui-command__item:not([data-unstyled])[data-highlighted] {
     background: color-mix(in srgb, var(--lui-colors-bg-emphasized) 60%, transparent);
   }
 
-  .leverui-command__item:not([data-unstyled])[data-disabled] {
+  .lui-command__item:not([data-unstyled])[data-disabled] {
     opacity: 0.5;
     cursor: not-allowed;
   }

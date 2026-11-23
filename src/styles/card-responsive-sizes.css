@@ -1,18 +1,18 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-card__root:not([data-unstyled])[data-size-sm='sm'] {
+    .lui-card__root:not([data-unstyled])[data-size-sm='sm'] {
       --lui-card-padding: var(--lui-spacing-4);
       --lui-private-card-title-size: var(--lui-font-sizes-md);
       --lui-private-card-title-line-height: 1.5rem;
     }
 
-    .leverui-card__root:not([data-unstyled])[data-size-sm='md'] {
+    .lui-card__root:not([data-unstyled])[data-size-sm='md'] {
       --lui-card-padding: var(--lui-spacing-6);
       --lui-private-card-title-size: var(--lui-font-sizes-lg);
       --lui-private-card-title-line-height: 1.75rem;
     }
 
-    .leverui-card__root:not([data-unstyled])[data-size-sm='lg'] {
+    .lui-card__root:not([data-unstyled])[data-size-sm='lg'] {
       --lui-card-padding: var(--lui-spacing-7);
       --lui-private-card-title-size: var(--lui-font-sizes-xl);
       --lui-private-card-title-line-height: 1.875rem;
@@ -20,19 +20,19 @@
   }
 
   @media (min-width: 768px) {
-    .leverui-card__root:not([data-unstyled])[data-size-md='sm'] {
+    .lui-card__root:not([data-unstyled])[data-size-md='sm'] {
       --lui-card-padding: var(--lui-spacing-4);
       --lui-private-card-title-size: var(--lui-font-sizes-md);
       --lui-private-card-title-line-height: 1.5rem;
     }
 
-    .leverui-card__root:not([data-unstyled])[data-size-md='md'] {
+    .lui-card__root:not([data-unstyled])[data-size-md='md'] {
       --lui-card-padding: var(--lui-spacing-6);
       --lui-private-card-title-size: var(--lui-font-sizes-lg);
       --lui-private-card-title-line-height: 1.75rem;
     }
 
-    .leverui-card__root:not([data-unstyled])[data-size-md='lg'] {
+    .lui-card__root:not([data-unstyled])[data-size-md='lg'] {
       --lui-card-padding: var(--lui-spacing-7);
       --lui-private-card-title-size: var(--lui-font-sizes-xl);
       --lui-private-card-title-line-height: 1.875rem;
@@ -40,19 +40,19 @@
   }
 
   @media (min-width: 1024px) {
-    .leverui-card__root:not([data-unstyled])[data-size-lg='sm'] {
+    .lui-card__root:not([data-unstyled])[data-size-lg='sm'] {
       --lui-card-padding: var(--lui-spacing-4);
       --lui-private-card-title-size: var(--lui-font-sizes-md);
       --lui-private-card-title-line-height: 1.5rem;
     }
 
-    .leverui-card__root:not([data-unstyled])[data-size-lg='md'] {
+    .lui-card__root:not([data-unstyled])[data-size-lg='md'] {
       --lui-card-padding: var(--lui-spacing-6);
       --lui-private-card-title-size: var(--lui-font-sizes-lg);
       --lui-private-card-title-line-height: 1.75rem;
     }
 
-    .leverui-card__root:not([data-unstyled])[data-size-lg='lg'] {
+    .lui-card__root:not([data-unstyled])[data-size-lg='lg'] {
       --lui-card-padding: var(--lui-spacing-7);
       --lui-private-card-title-size: var(--lui-font-sizes-xl);
       --lui-private-card-title-line-height: 1.875rem;
@@ -60,19 +60,19 @@
   }
 
   @media (min-width: 1280px) {
-    .leverui-card__root:not([data-unstyled])[data-size-xl='sm'] {
+    .lui-card__root:not([data-unstyled])[data-size-xl='sm'] {
       --lui-card-padding: var(--lui-spacing-4);
       --lui-private-card-title-size: var(--lui-font-sizes-md);
       --lui-private-card-title-line-height: 1.5rem;
     }
 
-    .leverui-card__root:not([data-unstyled])[data-size-xl='md'] {
+    .lui-card__root:not([data-unstyled])[data-size-xl='md'] {
       --lui-card-padding: var(--lui-spacing-6);
       --lui-private-card-title-size: var(--lui-font-sizes-lg);
       --lui-private-card-title-line-height: 1.75rem;
     }
 
-    .leverui-card__root:not([data-unstyled])[data-size-xl='lg'] {
+    .lui-card__root:not([data-unstyled])[data-size-xl='lg'] {
       --lui-card-padding: var(--lui-spacing-7);
       --lui-private-card-title-size: var(--lui-font-sizes-xl);
       --lui-private-card-title-line-height: 1.875rem;
@@ -80,19 +80,19 @@
   }
 
   @media (min-width: 1536px) {
-    .leverui-card__root:not([data-unstyled])[data-size-2xl='sm'] {
+    .lui-card__root:not([data-unstyled])[data-size-2xl='sm'] {
       --lui-card-padding: var(--lui-spacing-4);
       --lui-private-card-title-size: var(--lui-font-sizes-md);
       --lui-private-card-title-line-height: 1.5rem;
     }
 
-    .leverui-card__root:not([data-unstyled])[data-size-2xl='md'] {
+    .lui-card__root:not([data-unstyled])[data-size-2xl='md'] {
       --lui-card-padding: var(--lui-spacing-6);
       --lui-private-card-title-size: var(--lui-font-sizes-lg);
       --lui-private-card-title-line-height: 1.75rem;
     }
 
-    .leverui-card__root:not([data-unstyled])[data-size-2xl='lg'] {
+    .lui-card__root:not([data-unstyled])[data-size-2xl='lg'] {
       --lui-card-padding: var(--lui-spacing-7);
       --lui-private-card-title-size: var(--lui-font-sizes-xl);
       --lui-private-card-title-line-height: 1.875rem;

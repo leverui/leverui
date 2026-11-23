@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 1024px) {
-    .leverui-number-input__root:not([data-unstyled])[data-size-lg='xs'] {
+    .lui-number-input__root:not([data-unstyled])[data-size-lg='xs'] {
       --lui-private-number-input-stepper-width: var(
         --lui-number-input-stepper-width,
         var(--lui-sizes-4)
@@ -8,7 +8,7 @@
       --lui-private-number-input-stepper-font-size: var(--lui-font-sizes-2xs);
     }
 
-    .leverui-number-input__root:not([data-unstyled])[data-size-lg='sm'] {
+    .lui-number-input__root:not([data-unstyled])[data-size-lg='sm'] {
       --lui-private-number-input-stepper-width: var(
         --lui-number-input-stepper-width,
         var(--lui-sizes-5)
@@ -16,7 +16,7 @@
       --lui-private-number-input-stepper-font-size: var(--lui-font-sizes-xs);
     }
 
-    .leverui-number-input__root:not([data-unstyled])[data-size-lg='md'] {
+    .lui-number-input__root:not([data-unstyled])[data-size-lg='md'] {
       --lui-private-number-input-stepper-width: var(
         --lui-number-input-stepper-width,
         var(--lui-sizes-6)
@@ -24,7 +24,7 @@
       --lui-private-number-input-stepper-font-size: var(--lui-font-sizes-sm);
     }
 
-    .leverui-number-input__root:not([data-unstyled])[data-size-lg='lg'] {
+    .lui-number-input__root:not([data-unstyled])[data-size-lg='lg'] {
       --lui-private-number-input-stepper-width: var(
         --lui-number-input-stepper-width,
         var(--lui-sizes-6)
@@ -34,7 +34,7 @@
   }
 
   @media (min-width: 1280px) {
-    .leverui-number-input__root:not([data-unstyled])[data-size-xl='xs'] {
+    .lui-number-input__root:not([data-unstyled])[data-size-xl='xs'] {
       --lui-private-number-input-stepper-width: var(
         --lui-number-input-stepper-width,
         var(--lui-sizes-4)
@@ -42,7 +42,7 @@
       --lui-private-number-input-stepper-font-size: var(--lui-font-sizes-2xs);
     }
 
-    .leverui-number-input__root:not([data-unstyled])[data-size-xl='sm'] {
+    .lui-number-input__root:not([data-unstyled])[data-size-xl='sm'] {
       --lui-private-number-input-stepper-width: var(
         --lui-number-input-stepper-width,
         var(--lui-sizes-5)
@@ -50,7 +50,7 @@
       --lui-private-number-input-stepper-font-size: var(--lui-font-sizes-xs);
     }
 
-    .leverui-number-input__root:not([data-unstyled])[data-size-xl='md'] {
+    .lui-number-input__root:not([data-unstyled])[data-size-xl='md'] {
       --lui-private-number-input-stepper-width: var(
         --lui-number-input-stepper-width,
         var(--lui-sizes-6)
@@ -58,7 +58,7 @@
       --lui-private-number-input-stepper-font-size: var(--lui-font-sizes-sm);
     }
 
-    .leverui-number-input__root:not([data-unstyled])[data-size-xl='lg'] {
+    .lui-number-input__root:not([data-unstyled])[data-size-xl='lg'] {
       --lui-private-number-input-stepper-width: var(
         --lui-number-input-stepper-width,
         var(--lui-sizes-6)
@@ -68,7 +68,7 @@
   }
 
   @media (min-width: 1536px) {
-    .leverui-number-input__root:not([data-unstyled])[data-size-2xl='xs'] {
+    .lui-number-input__root:not([data-unstyled])[data-size-2xl='xs'] {
       --lui-private-number-input-stepper-width: var(
         --lui-number-input-stepper-width,
         var(--lui-sizes-4)
@@ -76,7 +76,7 @@
       --lui-private-number-input-stepper-font-size: var(--lui-font-sizes-2xs);
     }
 
-    .leverui-number-input__root:not([data-unstyled])[data-size-2xl='sm'] {
+    .lui-number-input__root:not([data-unstyled])[data-size-2xl='sm'] {
       --lui-private-number-input-stepper-width: var(
         --lui-number-input-stepper-width,
         var(--lui-sizes-5)
@@ -84,7 +84,7 @@
       --lui-private-number-input-stepper-font-size: var(--lui-font-sizes-xs);
     }
 
-    .leverui-number-input__root:not([data-unstyled])[data-size-2xl='md'] {
+    .lui-number-input__root:not([data-unstyled])[data-size-2xl='md'] {
       --lui-private-number-input-stepper-width: var(
         --lui-number-input-stepper-width,
         var(--lui-sizes-6)
@@ -92,7 +92,7 @@
       --lui-private-number-input-stepper-font-size: var(--lui-font-sizes-sm);
     }
 
-    .leverui-number-input__root:not([data-unstyled])[data-size-2xl='lg'] {
+    .lui-number-input__root:not([data-unstyled])[data-size-2xl='lg'] {
       --lui-private-number-input-stepper-width: var(
         --lui-number-input-stepper-width,
         var(--lui-sizes-6)

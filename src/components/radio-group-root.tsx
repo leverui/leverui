@@ -72,13 +72,13 @@ function renderRadioGroupRoot(
         return composeRecipeClassNames(
           'radio-group__root',
           undefined,
-          'leverui-radio-group',
+          'lui-radio-group',
           local.class,
           local.className,
         );
       },
       /** Keep the selected semantic palette on the root scope. */
-      get 'data-leverui-color-palette'() {
+      get 'data-lui-color-palette'() {
         return readRadiomarkPalette(local.colorPalette);
       },
       /** Suppress authored presentation without changing selection. */

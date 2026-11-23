@@ -14,8 +14,8 @@ async function verifiesStrongContract({ page }: { page: Page }): Promise<void> {
   await expect(page.getByTestId('strong-inline-row')).toContainText('Before important after');
   await expect(page.getByTestId('strong-css-override')).toHaveCSS('font-weight', '400');
   const hookTarget = page.getByTestId('strong-class-override');
-  await expect(hookTarget).toHaveClass(/leverui-strong/);
-  await page.addStyleTag({ content: '.strong-hook-scope .leverui-strong{font-weight:300}' });
+  await expect(hookTarget).toHaveClass(/lui-strong/);
+  await page.addStyleTag({ content: '.strong-hook-scope .lui-strong{font-weight:300}' });
   await expect(hookTarget).toHaveCSS('font-weight', '300');
 
   const selected = page.getByTestId('strong-selected');
@@ -25,7 +25,7 @@ async function verifiesStrongContract({ page }: { page: Page }): Promise<void> {
   await expect(selected).toHaveCSS('font-weight', '600');
   await expect(page.getByTestId('strong-child')).toHaveAttribute('href', '#strong-child-target');
   await expect(page.getByTestId('strong-child')).toHaveCSS('font-weight', '600');
-  await expect(page.getByTestId('strong-unstyled')).toHaveClass(/leverui-strong/);
+  await expect(page.getByTestId('strong-unstyled')).toHaveClass(/lui-strong/);
   await expect(page.getByTestId('strong-unstyled')).toHaveCSS('font-weight', '700');
 }
 

@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-input:not([data-unstyled])[data-variant='outline'] {
+  .lui-input:not([data-unstyled])[data-variant='outline'] {
     --lui-private-input-background: transparent;
     --lui-private-input-border-width: 1px;
     --lui-private-input-border-color: var(--lui-colors-border);
@@ -9,7 +9,7 @@
     --lui-private-input-focus-shadow: none;
   }
 
-  .leverui-input:not([data-unstyled])[data-variant='subtle'] {
+  .lui-input:not([data-unstyled])[data-variant='subtle'] {
     --lui-private-input-background: var(--lui-colors-bg-muted);
     --lui-private-input-border-width: 1px;
     --lui-private-input-border-color: transparent;
@@ -19,7 +19,7 @@
     --lui-private-input-focus-shadow: none;
   }
 
-  .leverui-input:not([data-unstyled])[data-variant='flushed'] {
+  .lui-input:not([data-unstyled])[data-variant='flushed'] {
     --lui-private-input-background: transparent;
     --lui-private-input-border-width: 0 0 1px;
     --lui-private-input-border-color: var(--lui-colors-border);

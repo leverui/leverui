@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 1024px) {
-    .leverui-progress-circle__root:not([data-unstyled]) {
+    .lui-progress-circle__root:not([data-unstyled]) {
       &[data-size-lg='xs'] {
         --lui-private-progress-circle-size: 24px;
         --lui-private-progress-circle-thickness: 4px;
@@ -35,7 +35,7 @@
   }
 
   @media (min-width: 1280px) {
-    .leverui-progress-circle__root:not([data-unstyled]) {
+    .lui-progress-circle__root:not([data-unstyled]) {
       &[data-size-xl='xs'] {
         --lui-private-progress-circle-size: 24px;
         --lui-private-progress-circle-thickness: 4px;
@@ -70,7 +70,7 @@
   }
 
   @media (min-width: 1536px) {
-    .leverui-progress-circle__root:not([data-unstyled]) {
+    .lui-progress-circle__root:not([data-unstyled]) {
       &[data-size-2xl='xs'] {
         --lui-private-progress-circle-size: 24px;
         --lui-private-progress-circle-thickness: 4px;

@@ -1,91 +1,91 @@
 @layer leverui.recipes {
-  .leverui-select__trigger:not([data-unstyled]):is([data-placeholder-shown], [data-placeholder]) {
+  .lui-select__trigger:not([data-unstyled]):is([data-placeholder-shown], [data-placeholder]) {
     color: color-mix(in srgb, var(--lui-colors-fg-muted) 80%, transparent);
   }
 
-  .leverui-select__trigger:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
+  .lui-select__trigger:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
     outline: var(--focus-ring-width, 1px) var(--focus-ring-style, solid)
       var(--lui-select-focus-ring-color, var(--lui-colors-color-palette-focus-ring));
     outline-offset: 0;
     border-color: var(--lui-select-focus-ring-color, var(--lui-colors-color-palette-focus-ring));
   }
 
-  .leverui-select__clearTrigger:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
+  .lui-select__clearTrigger:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
     outline: var(--focus-ring-width, 2px) var(--focus-ring-style, solid)
       var(--lui-select-focus-ring-color, var(--lui-colors-color-palette-focus-ring));
     outline-offset: 0;
     border-color: var(--lui-select-focus-ring-color, var(--lui-colors-color-palette-focus-ring));
   }
 
-  .leverui-select__trigger:not([data-unstyled])[data-disabled],
-  .leverui-select__label:not([data-unstyled])[data-disabled] {
+  .lui-select__trigger:not([data-unstyled])[data-disabled],
+  .lui-select__label:not([data-unstyled])[data-disabled] {
     opacity: 0.5;
     cursor: not-allowed;
   }
 
-  .leverui-select__trigger:not([data-unstyled])[data-invalid] {
+  .lui-select__trigger:not([data-unstyled])[data-invalid] {
     border-color: var(--lui-colors-border-error);
   }
 
-  .leverui-select__indicator:not([data-unstyled])[data-disabled] {
+  .lui-select__indicator:not([data-unstyled])[data-disabled] {
     color: var(--lui-colors-fg-subtle);
   }
 
-  .leverui-select__indicator:not([data-unstyled])[data-invalid] {
+  .lui-select__indicator:not([data-unstyled])[data-invalid] {
     color: var(--lui-colors-fg-error);
   }
 
-  .leverui-select__item:not([data-unstyled])[data-highlighted] {
+  .lui-select__item:not([data-unstyled])[data-highlighted] {
     background: color-mix(in srgb, var(--lui-colors-bg-emphasized) 60%, transparent);
   }
 
-  .leverui-select__item:not([data-unstyled])[data-disabled] {
+  .lui-select__item:not([data-unstyled])[data-disabled] {
     pointer-events: none;
     opacity: 0.5;
   }
 
   /* Slide away from the trigger and fade, by placement (slide-fade). */
-  .leverui-select__content:not([data-unstyled]) {
+  .lui-select__content:not([data-unstyled]) {
     transform-origin: var(--transform-origin);
   }
 
-  .leverui-select__content:not([data-unstyled])[data-state='open'] {
+  .lui-select__content:not([data-unstyled])[data-state='open'] {
     animation-duration: var(--lui-durations-fast);
   }
 
-  .leverui-select__content:not([data-unstyled])[data-state='closed'] {
+  .lui-select__content:not([data-unstyled])[data-state='closed'] {
     animation-duration: var(--lui-durations-fastest);
   }
 
-  .leverui-select__content:not([data-unstyled])[data-state='open'][data-placement^='top'] {
+  .lui-select__content:not([data-unstyled])[data-state='open'][data-placement^='top'] {
     animation-name: slide-from-bottom, fade-in;
   }
 
-  .leverui-select__content:not([data-unstyled])[data-state='open'][data-placement^='bottom'] {
+  .lui-select__content:not([data-unstyled])[data-state='open'][data-placement^='bottom'] {
     animation-name: slide-from-top, fade-in;
   }
 
-  .leverui-select__content:not([data-unstyled])[data-state='open'][data-placement^='left'] {
+  .lui-select__content:not([data-unstyled])[data-state='open'][data-placement^='left'] {
     animation-name: slide-from-right, fade-in;
   }
 
-  .leverui-select__content:not([data-unstyled])[data-state='open'][data-placement^='right'] {
+  .lui-select__content:not([data-unstyled])[data-state='open'][data-placement^='right'] {
     animation-name: slide-from-left, fade-in;
   }
 
-  .leverui-select__content:not([data-unstyled])[data-state='closed'][data-placement^='top'] {
+  .lui-select__content:not([data-unstyled])[data-state='closed'][data-placement^='top'] {
     animation-name: slide-to-bottom, fade-out;
   }
 
-  .leverui-select__content:not([data-unstyled])[data-state='closed'][data-placement^='bottom'] {
+  .lui-select__content:not([data-unstyled])[data-state='closed'][data-placement^='bottom'] {
     animation-name: slide-to-top, fade-out;
   }
 
-  .leverui-select__content:not([data-unstyled])[data-state='closed'][data-placement^='left'] {
+  .lui-select__content:not([data-unstyled])[data-state='closed'][data-placement^='left'] {
     animation-name: slide-to-right, fade-out;
   }
 
-  .leverui-select__content:not([data-unstyled])[data-state='closed'][data-placement^='right'] {
+  .lui-select__content:not([data-unstyled])[data-state='closed'][data-placement^='right'] {
     animation-name: slide-to-left, fade-out;
   }
 }

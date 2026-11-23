@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-radio-card__item:not([data-unstyled]) {
+    .lui-radio-card__item:not([data-unstyled]) {
       &[data-size-sm='sm'] {
         --lui-private-radio-card-font-size: var(--lui-font-sizes-sm);
         --lui-private-radio-card-line-height: 1.25rem;
@@ -28,7 +28,7 @@
     }
   }
   @media (min-width: 768px) {
-    .leverui-radio-card__item:not([data-unstyled]) {
+    .lui-radio-card__item:not([data-unstyled]) {
       &[data-size-md='sm'] {
         --lui-private-radio-card-font-size: var(--lui-font-sizes-sm);
         --lui-private-radio-card-line-height: 1.25rem;

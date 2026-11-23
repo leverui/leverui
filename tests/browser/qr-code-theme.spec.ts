@@ -52,7 +52,7 @@ async function verifiesQrScopes({ page }: { page: Page }): Promise<void> {
   expect(darkBg).not.toBe(lightBg);
   await page.evaluate(
     /** Change the document mode without replacing either nested Theme. */
-    () => document.documentElement.setAttribute('data-leverui-color-mode', 'dark'),
+    () => document.documentElement.setAttribute('data-lui-color-mode', 'dark'),
   );
   await expect(dark).toHaveCSS('background-color', darkBg);
   await expect(light).toHaveCSS('background-color', lightBg);

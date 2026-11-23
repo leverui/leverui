@@ -45,7 +45,7 @@ currently emitted by the stylesheet.
 
 ## Color modes and nested scopes
 
-The root color mode uses `data-leverui-color-mode="light"` or `"dark"` on
+The root color mode uses `data-lui-color-mode="light"` or `"dark"` on
 `html`. Light is the default when no mode is specified. When the initial mode
 is known on the server, render that attribute in server HTML so the first
 paint and hydration agree.
@@ -91,7 +91,7 @@ The stylesheet uses named layers in this order:
 
 The stylesheet has no page-wide rules. It does not reset, color, or set fonts on
 `html`, `body`, or your own elements. The `reset` layer applies only to elements
-with a `leverui-` class. Layout and typography primitives such as `Box`, `Text`,
+with a `lui-` class. Layout and typography primitives such as `Box`, `Text`,
 and `Stack` inherit font, color, and line height from their surroundings. Every
 other component sets the theme font, text color, and line height on its
 outermost element, and the parts inside it inherit them. Your page keeps its own

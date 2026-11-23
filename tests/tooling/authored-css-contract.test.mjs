@@ -36,11 +36,11 @@ function rejectsMissingPart() {
   const broken = new Map(sources);
   const css = broken.get('dialog-layout.css');
   assert.ok(css);
-  broken.set('dialog-layout.css', css.replace('.leverui-dialog__title', '.missing-dialog-title'));
+  broken.set('dialog-layout.css', css.replace('.lui-dialog__title', '.missing-dialog-title'));
   assert.throws(
     /** Check the altered Dialog source. */
     () => verifyAuthoredCssContract(broken),
-    /Missing authored dialog CSS selector: \.leverui-dialog__title/,
+    /Missing authored dialog CSS selector: \.lui-dialog__title/,
   );
 }
 

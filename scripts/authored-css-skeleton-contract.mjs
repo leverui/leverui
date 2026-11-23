@@ -1,11 +1,11 @@
 export const skeletonContentContract = {
   family: 'skeleton',
   required: [
-    '.leverui-skeleton:not([data-unstyled])',
-    '.leverui-skeleton.leverui-skeleton:not([data-unstyled])[data-loading]',
-    '.leverui-skeleton.leverui-circle:not([data-unstyled])[data-loading]',
-    '.leverui-skeleton-text:not([data-unstyled])',
-    '.leverui-skeleton-text__line:not([data-unstyled])[data-loading]',
+    '.lui-skeleton:not([data-unstyled])',
+    '.lui-skeleton.lui-skeleton:not([data-unstyled])[data-loading]',
+    '.lui-skeleton.lui-circle:not([data-unstyled])[data-loading]',
+    '.lui-skeleton-text:not([data-unstyled])',
+    '.lui-skeleton-text__line:not([data-unstyled])[data-loading]',
     '[data-last-line]',
     ...['shine', 'none'].map(
       /** Require every public scalar motion treatment. */

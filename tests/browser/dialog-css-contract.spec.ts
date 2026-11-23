@@ -25,8 +25,8 @@ async function openDialog(page: Page): Promise<void> {
   const content = page.getByTestId('dialog-css-content');
   await expect(content).toBeVisible();
   await expect(content).toHaveAttribute('role', 'dialog');
-  await expect(content).toHaveAttribute('data-leverui-dialog-css', '');
-  await expect(content).toHaveClass(/\bleverui-dialog__content\b/);
+  await expect(content).toHaveAttribute('data-lui-dialog-css', '');
+  await expect(content).toHaveClass(/\blui-dialog__content\b/);
   // Zag 2 starts its dismissable layer, which handles Escape, as it moves initial focus.
   await expect(content.getByRole('button', { name: 'Close' })).toBeFocused();
 }
@@ -91,7 +91,7 @@ async function verifiesUnstyledAndNativeProps({ page }: { page: Page }): Promise
   const content = page.getByTestId('dialog-css-content');
   await expect(content).toBeVisible();
   await expect(content).toHaveAttribute('data-unstyled', '');
-  await expect(content).not.toHaveAttribute('data-leverui-dialog-css');
+  await expect(content).not.toHaveAttribute('data-lui-dialog-css');
   await expect(content).toHaveClass(/\bconsumer-dialog\b/);
   await expect(content).toHaveCSS('border-color', 'rgb(40, 50, 60)');
   await expect(content).toHaveCSS('background-color', 'rgba(0, 0, 0, 0)');

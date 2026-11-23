@@ -12,7 +12,7 @@ const sizes = [
 
 /** Select a document color mode for the mapped semantic palette. */
 function setColorMode(mode: 'light' | 'dark'): void {
-  document.documentElement.setAttribute('data-leverui-color-mode', mode);
+  document.documentElement.setAttribute('data-lui-color-mode', mode);
 }
 
 /** Measure how far a group's second Avatar is offset from its first. */
@@ -115,7 +115,7 @@ async function verifiesAvatarCssOverride({ page }: { page: Page }): Promise<void
   await expect(page.getByTestId('avatar-bordered-last')).toHaveCSS('margin-inline-start', '0px');
   const unstyled = page.getByTestId('avatar-unstyled');
   await expect(unstyled).toHaveAttribute('data-unstyled', '');
-  await expect(unstyled.locator('.leverui-avatar__fallback')).toHaveAttribute('data-unstyled', '');
+  await expect(unstyled.locator('.lui-avatar__fallback')).toHaveAttribute('data-unstyled', '');
   await page.addStyleTag({ content: '.consumer-avatar { width: 73px; display: flex; }' });
   await expect(unstyled).toHaveCSS('width', '73px');
 }

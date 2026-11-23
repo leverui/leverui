@@ -18,7 +18,7 @@ function verifiesServerCard(): void {
   expect(markup).toContain('<h3');
   expect(markup).toContain('A card');
   expect(markup).toContain('Card details');
-  expect(markup).toContain('leverui-card');
+  expect(markup).toContain('lui-card');
   expect(markup).not.toContain(' size="sm"');
   expect(markup).not.toContain(' variant="outline"');
 }

@@ -8,7 +8,7 @@ async function verifiesRadioCardSelection({ page }: { page: Page }): Promise<voi
   const vue = page.getByRole('radio', { name: /Vue/ });
   await expect(react).toBeChecked({ timeout: 30_000 });
   await expect(vue).toBeDisabled();
-  const control = page.locator('.leverui-radio-card__itemControl').first();
+  const control = page.locator('.lui-radio-card__itemControl').first();
   await expect(control).toHaveAttribute('aria-hidden', 'false');
   expect(await control.ariaSnapshot()).toContain('Choose React for this project.');
   await page.getByText('Solid', { exact: true }).click();
@@ -32,9 +32,9 @@ async function verifiesRadioCardTreatment({ page }: { page: Page }): Promise<voi
   await page.goto('/iframe.html?id=components-radio-card--contract');
   const root = page.getByTestId('radio-card-root');
   const solid = page.getByRole('radio', { name: /Solid/ });
-  await expect(root).toHaveClass(/leverui-radio-card__root/, { timeout: 30_000 });
+  await expect(root).toHaveClass(/lui-radio-card__root/, { timeout: 30_000 });
   await page.getByText('Solid', { exact: true }).click();
-  const item = page.locator('.leverui-radio-card__item').nth(1);
+  const item = page.locator('.lui-radio-card__item').nth(1);
   const outlineBackground = await item.evaluate(
     /** Capture the selected card's outline background. */
     (element) => getComputedStyle(element).backgroundColor,
@@ -112,7 +112,7 @@ async function verifiesResponsiveOrientation({ page }: { page: Page }): Promise<
   await page.goto('/iframe.html?id=components-radio-card-responsive--contract');
   const root = page.getByTestId('responsive-radio-card-root');
   const control = page.getByTestId('responsive-radio-card-control');
-  const indicator = root.locator('.leverui-radio-card__itemIndicator');
+  const indicator = root.locator('.lui-radio-card__itemIndicator');
   await expect(root).toHaveAttribute('aria-orientation', 'horizontal', { timeout: 30_000 });
   await expect(control).toHaveCSS('flex-direction', 'row');
   await expect(control).toHaveCSS('padding-top', '12px');

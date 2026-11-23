@@ -10,7 +10,7 @@ export function BarLegend(props: {
   placement: 'bottom' | 'top-right';
 }): JSX.Element {
   return (
-    <div class="leverui-bar-chart__legend" data-bar-legend="" data-placement={props.placement}>
+    <div class="lui-bar-chart__legend" data-bar-legend="" data-placement={props.placement}>
       <For
         each={props.series.slice().sort(
           /** Sort legend labels alphabetically. */
@@ -19,9 +19,9 @@ export function BarLegend(props: {
       >
         {/** Pair one colored square with its visible series name. */}
         {(series) => (
-          <span class="leverui-bar-chart__legend-item">
+          <span class="lui-bar-chart__legend-item">
             <span
-              class="leverui-bar-chart__legend-swatch"
+              class="lui-bar-chart__legend-swatch"
               style={{
                 '--lui-private-bar-chart-swatch': chartColor(series.color, series.color),
               }}
@@ -42,14 +42,14 @@ export function BarTooltip(props: {
   labelFormatter?: ((row: BarDatum) => string) | undefined;
 }): JSX.Element {
   return (
-    <div class="leverui-bar-chart__tooltip" role="tooltip">
-      <div class="leverui-bar-chart__tooltip-label">
+    <div class="lui-bar-chart__tooltip" role="tooltip">
+      <div class="lui-bar-chart__tooltip-label">
         {props.labelFormatter?.(props.row) ?? String(props.row[props.xKey] ?? '')}
       </div>
       <For each={props.series}>
         {/** Show each source value for the selected category. */}
         {(series) => (
-          <div class="leverui-bar-chart__tooltip-item">
+          <div class="lui-bar-chart__tooltip-item">
             {series.name}: {barValue(props.row, series.name)}
           </div>
         )}

@@ -52,7 +52,7 @@ export function FileUploadItems<As extends FileUploadIntrinsicElement = 'li'>(
                 {local.showSize ? (
                   <FileUploadItemContent>{readContent()}</FileUploadItemContent>
                 ) : (
-                  <FileUploadItemName class="leverui-file-upload__item-name-fill" />
+                  <FileUploadItemName class="lui-file-upload__item-name-fill" />
                 )}
                 {local.clearable && <FileUploadItemDeleteTrigger />}
               </>

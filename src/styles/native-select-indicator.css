@@ -1,6 +1,5 @@
 @layer leverui.recipes {
-  .leverui-native-select__root:not([data-unstyled])
-    .leverui-native-select__indicator:not([data-unstyled]) {
+  .lui-native-select__root:not([data-unstyled]) .lui-native-select__indicator:not([data-unstyled]) {
     position: absolute;
     display: inline-flex;
     align-items: center;
@@ -14,20 +13,20 @@
     inset-inline-end: var(--lui-private-native-select-indicator-inset-end);
   }
 
-  .leverui-native-select__root:not([data-unstyled])
-    .leverui-native-select__indicator:not([data-unstyled])
+  .lui-native-select__root:not([data-unstyled])
+    .lui-native-select__indicator:not([data-unstyled])
     > svg {
     width: 1em;
     height: 1em;
   }
 
-  .leverui-native-select__root:not([data-unstyled])
-    .leverui-native-select__indicator:not([data-unstyled])[data-disabled] {
+  .lui-native-select__root:not([data-unstyled])
+    .lui-native-select__indicator:not([data-unstyled])[data-disabled] {
     opacity: 0.5;
   }
 
-  .leverui-native-select__root:not([data-unstyled])
-    .leverui-native-select__indicator:not([data-unstyled])[data-invalid] {
+  .lui-native-select__root:not([data-unstyled])
+    .lui-native-select__indicator:not([data-unstyled])[data-invalid] {
     color: var(--lui-colors-fg-error);
   }
 }

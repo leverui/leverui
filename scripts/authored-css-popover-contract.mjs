@@ -3,12 +3,12 @@ export const popoverContracts = [
   {
     family: 'popover',
     required: [
-      '.leverui-popover__content:not([data-unstyled])',
-      '.leverui-popover__header:not([data-unstyled])',
-      '.leverui-popover__body:not([data-unstyled])',
-      '.leverui-popover__footer:not([data-unstyled])',
-      '.leverui-popover__arrow:not([data-unstyled])',
-      '.leverui-popover__arrowTip:not([data-unstyled])',
+      '.lui-popover__content:not([data-unstyled])',
+      '.lui-popover__header:not([data-unstyled])',
+      '.lui-popover__body:not([data-unstyled])',
+      '.lui-popover__footer:not([data-unstyled])',
+      '.lui-popover__arrow:not([data-unstyled])',
+      '.lui-popover__arrowTip:not([data-unstyled])',
       "[data-size='xs']",
       "[data-size='lg']",
       "[data-size-sm='sm']",

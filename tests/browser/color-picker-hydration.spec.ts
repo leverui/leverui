@@ -30,7 +30,7 @@ async function verifiesColorPickerHydration({ page }: { page: Page }): Promise<v
     `${generateHydrationScript()}<style>${defaultCss}</style><div id="color-picker-hydration-root">${markup}</div>`,
   );
   const host = page.locator('#color-picker-hydration-root');
-  const root = host.locator('.leverui-color-picker__root');
+  const root = host.locator('.lui-color-picker__root');
   const input = host.getByRole('textbox', { name: 'hex' });
   const hidden = host.locator('input[name="hydrated-color"]');
   const trigger = host.getByRole('button', { name: 'Hydrated color' });

@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-checkmark:not([data-unstyled]) {
+  .lui-checkmark:not([data-unstyled]) {
     &[data-variant='solid'] {
       --lui-private-checkmark-base-border: var(--lui-colors-border-emphasized);
       --lui-private-checkmark-active-background: var(--lui-colors-color-palette-solid);

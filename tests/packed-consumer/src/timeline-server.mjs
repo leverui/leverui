@@ -51,7 +51,7 @@ function renderPackedTimeline() {
 const markup = renderPackedTimeline();
 assert.match(markup, /<div[^>]*id="packed-server-timeline"[^>]*role="list"/);
 assert.match(markup, /<div[^>]*role="listitem"/);
-assert.match(markup, /leverui-timeline__indicator/);
+assert.match(markup, /lui-timeline__indicator/);
 assert.match(markup, /Installed event/);
 assert.doesNotMatch(markup, /<div[^>]*\s(?:size|variant|showLastSeparator)=/);
-assert.doesNotMatch(markup, /data-leverui-private-style-runtime/);
+assert.doesNotMatch(markup, /data-lui-private-style-runtime/);

@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-drawer__content[data-leverui-drawer-css] {
+  .lui-drawer__content[data-lui-drawer-css] {
     &[data-size='xs'] {
       --lui-private-drawer-size-max-width: var(--lui-sizes-xs);
       --lui-private-drawer-height: auto;
@@ -36,7 +36,7 @@
     }
   }
 
-  .leverui-drawer__positioner[data-leverui-drawer-css] {
+  .lui-drawer__positioner[data-lui-drawer-css] {
     &[data-placement='start'] {
       justify-content: flex-start;
       align-items: stretch;

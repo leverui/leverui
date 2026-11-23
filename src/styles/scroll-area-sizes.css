@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-scroll-area__root:not([data-unstyled]) {
+  .lui-scroll-area__root:not([data-unstyled]) {
     &[data-size='xs'] {
       --lui-private-scroll-area-size: var(--lui-sizes-1);
     }

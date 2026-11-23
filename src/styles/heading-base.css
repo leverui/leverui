@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-heading:not([data-unstyled]) {
+  .lui-heading:not([data-unstyled]) {
     font-family: var(--lui-fonts-heading);
     font-weight: var(--lui-font-weights-semibold);
   }

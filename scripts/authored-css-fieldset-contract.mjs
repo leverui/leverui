@@ -3,11 +3,11 @@ export const fieldsetContracts = [
   {
     family: 'fieldset',
     required: [
-      '.leverui-fieldset__root:not([data-unstyled])',
-      '.leverui-fieldset__legend:not([data-unstyled])',
-      '.leverui-fieldset__helperText:not([data-unstyled])',
-      '.leverui-fieldset__errorText:not([data-unstyled])',
-      '.leverui-fieldset__content:not([data-unstyled])',
+      '.lui-fieldset__root:not([data-unstyled])',
+      '.lui-fieldset__legend:not([data-unstyled])',
+      '.lui-fieldset__helperText:not([data-unstyled])',
+      '.lui-fieldset__errorText:not([data-unstyled])',
+      '.lui-fieldset__content:not([data-unstyled])',
       '--lui-fieldset-space-y',
       '--lui-fieldset-content-gap',
       '--lui-fieldset-legend-size',

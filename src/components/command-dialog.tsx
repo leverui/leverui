@@ -106,10 +106,10 @@ export function CommandDialogContent(props: CommandDialogContentProps): JSX.Elem
       {/* Omit erases Dialog's polymorphic union; the remaining props still enter its native part. */}
       <CommandDialogSurface {...(surface as DialogContentProps)}>
         <CommandDialogTitleIdContext value={titleId}>
-          <Dialog.Title class="leverui-command-dialog__accessible-label">
+          <Dialog.Title class="lui-command-dialog__accessible-label">
             {local.title ?? 'Command palette'}
           </Dialog.Title>
-          <Dialog.Description class="leverui-command-dialog__accessible-label">
+          <Dialog.Description class="lui-command-dialog__accessible-label">
             {local.description ?? 'Search for a command to run'}
           </Dialog.Description>
           {local.children}

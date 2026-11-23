@@ -35,8 +35,8 @@ function renderServerRatingGroup(): string {
 function verifiesServerRatingGroup(): void {
   const markup = renderServerRatingGroup();
   expect(markup).toContain('data-rating-group-');
-  expect(markup).toContain('leverui-rating-group__root');
-  expect(markup).toContain('leverui-rating-group__itemIndicator');
+  expect(markup).toContain('lui-rating-group__root');
+  expect(markup).toContain('lui-rating-group__itemIndicator');
   expect(markup).toContain('role="radiogroup"');
   expect(markup).toMatch(/\sdata\-half(?:=""|(?=[\s/>]))/);
   expect(markup).toContain('type="text"');

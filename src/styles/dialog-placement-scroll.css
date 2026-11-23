@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-dialog__positioner[data-leverui-dialog-css] {
+  .lui-dialog__positioner[data-lui-dialog-css] {
     &[data-placement='center'] {
       align-items: center;
     }
@@ -22,7 +22,7 @@
     }
   }
 
-  .leverui-dialog__content[data-leverui-dialog-css] {
+  .lui-dialog__content[data-lui-dialog-css] {
     &[data-placement='center'] {
       --lui-private-dialog-base-margin: auto;
       margin-inline: auto;
@@ -39,7 +39,7 @@
     }
   }
 
-  .leverui-dialog__body[data-leverui-dialog-css][data-scroll-behavior='inside'] {
+  .lui-dialog__body[data-lui-dialog-css][data-scroll-behavior='inside'] {
     overflow: auto;
   }
 }

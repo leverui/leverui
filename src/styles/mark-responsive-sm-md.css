@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-mark:not([data-unstyled], [data-leverui-private-style-runtime]) {
+    .lui-mark:not([data-unstyled], [data-lui-private-style-runtime]) {
       &[data-variant-sm='subtle'] {
         --lui-private-mark-background: var(--lui-colors-color-palette-subtle);
         --lui-private-mark-color: inherit;
@@ -24,7 +24,7 @@
     }
   }
   @media (min-width: 768px) {
-    .leverui-mark:not([data-unstyled], [data-leverui-private-style-runtime]) {
+    .lui-mark:not([data-unstyled], [data-lui-private-style-runtime]) {
       &[data-variant-md='subtle'] {
         --lui-private-mark-background: var(--lui-colors-color-palette-subtle);
         --lui-private-mark-color: inherit;

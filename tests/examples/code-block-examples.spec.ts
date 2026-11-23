@@ -39,7 +39,7 @@ async function verifiesCodeBlockStories({ page }: { page: Page }): Promise<void>
 /** Expand and collapse the long code block. */
 async function verifiesMaxLines({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-codeblock--max-lines');
-  const content = page.locator('.leverui-code-block__content');
+  const content = page.locator('.lui-code-block__content');
   const expand = page.getByRole('button', { name: 'Expand code block' }).first();
   await expect(expand).toBeVisible();
   await expand.click();
@@ -78,11 +78,11 @@ async function verifiesThemeSwitcher({ page }: { page: Page }): Promise<void> {
   const preview = page.frameLocator('#storybook-preview-iframe');
   const code = preview.locator('#storybook-root pre code');
   await expect(code).toContainText('<h1>Hello, world!</h1>', { timeout: 45_000 });
-  await expect(preview.locator('html')).toHaveAttribute('data-leverui-color-mode', 'light');
+  await expect(preview.locator('html')).toHaveAttribute('data-lui-color-mode', 'light');
   const lightMarkup = await code.innerHTML();
   await page.getByRole('button', { name: 'Gallery color mode Light' }).click();
   await page.getByRole('option', { name: 'Dark' }).click();
-  await expect(preview.locator('html')).toHaveAttribute('data-leverui-color-mode', 'dark');
+  await expect(preview.locator('html')).toHaveAttribute('data-lui-color-mode', 'dark');
   await expect(code).not.toHaveJSProperty('innerHTML', lightMarkup);
 }
 

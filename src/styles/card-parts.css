@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-card__header:not([data-unstyled]) {
+  .lui-card__header:not([data-unstyled]) {
     padding-inline: var(--lui-card-padding);
     padding-top: var(--lui-card-padding);
     display: flex;
@@ -7,14 +7,14 @@
     gap: var(--lui-spacing-1\.5);
   }
 
-  .leverui-card__body:not([data-unstyled]) {
+  .lui-card__body:not([data-unstyled]) {
     padding: var(--lui-card-padding);
     flex: 1;
     display: flex;
     flex-direction: column;
   }
 
-  .leverui-card__footer:not([data-unstyled]) {
+  .lui-card__footer:not([data-unstyled]) {
     display: flex;
     align-items: center;
     gap: var(--lui-spacing-2);
@@ -22,13 +22,13 @@
     padding-bottom: var(--lui-card-padding);
   }
 
-  .leverui-card__title:not([data-unstyled]) {
+  .lui-card__title:not([data-unstyled]) {
     font-weight: var(--lui-font-weights-semibold);
     font-size: var(--lui-private-card-title-size, inherit);
     line-height: var(--lui-private-card-title-line-height, inherit);
   }
 
-  .leverui-card__description:not([data-unstyled]) {
+  .lui-card__description:not([data-unstyled]) {
     color: var(--lui-colors-fg-muted);
     font-size: var(--lui-font-sizes-sm);
   }

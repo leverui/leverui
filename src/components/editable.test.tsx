@@ -31,11 +31,11 @@ async function verifiesEditableComposition(): Promise<void> {
   const root = screen.getByTestId('editable-root');
   const preview = screen.getByTestId('editable-preview');
   const input = screen.getByTestId('editable-input') as HTMLInputElement;
-  expect(root.className).toContain('leverui-editable__root');
+  expect(root.className).toContain('lui-editable__root');
   expect(root.hasAttribute('data-editable-root')).toBe(true);
   expect(preview.textContent).toBe('First name');
   expect(input.type).toBe('text');
-  expect(input.className).toContain('leverui-editable__input');
+  expect(input.className).toContain('lui-editable__input');
   fireEvent.click(screen.getByText('Edit'));
   await waitFor(
     /** Wait for the primitive to enter edit mode before replacing the draft. */
@@ -119,7 +119,7 @@ function verifiesCallerOwnedEditable(): void {
   expect(screen.getByTestId('editable-value').textContent).toBe('Original');
   const textarea = screen.getByTestId('editable-textarea') as HTMLTextAreaElement;
   expect(textarea.tagName).toBe('TEXTAREA');
-  expect(textarea.className).toContain('leverui-editable__input');
+  expect(textarea.className).toContain('lui-editable__input');
 }
 
 it('supports a caller-owned Editable and styled textarea', verifiesCallerOwnedEditable);

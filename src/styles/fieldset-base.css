@@ -1,60 +1,60 @@
 @layer leverui.recipes {
-  .leverui-fieldset__root:not([data-unstyled]) {
+  .lui-fieldset__root:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
-  .leverui-fieldset__root:not([data-unstyled]) > * + * {
+  .lui-fieldset__root:not([data-unstyled]) > * + * {
     margin-block-start: var(--lui-fieldset-space-y, var(--lui-private-fieldset-space-y));
   }
 
-  .leverui-fieldset__root[data-size='sm'] {
+  .lui-fieldset__root[data-size='sm'] {
     --lui-private-fieldset-space-y: var(--lui-spacing-2);
     --lui-private-fieldset-content-gap: var(--lui-spacing-1\.5);
     --lui-private-fieldset-legend-size: var(--lui-font-sizes-sm);
     --lui-private-fieldset-legend-line-height: 1.25rem;
   }
 
-  .leverui-fieldset__root[data-size='md'] {
+  .lui-fieldset__root[data-size='md'] {
     --lui-private-fieldset-space-y: var(--lui-spacing-4);
     --lui-private-fieldset-content-gap: var(--lui-spacing-4);
     --lui-private-fieldset-legend-size: var(--lui-font-sizes-sm);
     --lui-private-fieldset-legend-line-height: 1.25rem;
   }
 
-  .leverui-fieldset__root[data-size='lg'] {
+  .lui-fieldset__root[data-size='lg'] {
     --lui-private-fieldset-space-y: var(--lui-spacing-6);
     --lui-private-fieldset-content-gap: var(--lui-spacing-4);
     --lui-private-fieldset-legend-size: var(--lui-font-sizes-md);
     --lui-private-fieldset-legend-line-height: 1.5rem;
   }
 
-  .leverui-fieldset__content:not([data-unstyled]) {
+  .lui-fieldset__content:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: var(--lui-fieldset-content-gap, var(--lui-private-fieldset-content-gap));
   }
 
-  .leverui-fieldset__legend:not([data-unstyled]) {
+  .lui-fieldset__legend:not([data-unstyled]) {
     color: var(--lui-colors-fg);
     font-weight: var(--lui-font-weights-medium);
     font-size: var(--lui-fieldset-legend-size, var(--lui-private-fieldset-legend-size));
     line-height: var(--lui-private-fieldset-legend-line-height);
   }
 
-  .leverui-fieldset__legend:not([data-unstyled])[data-disabled] {
+  .lui-fieldset__legend:not([data-unstyled])[data-disabled] {
     opacity: 0.5;
   }
 
-  .leverui-fieldset__helperText:not([data-unstyled]) {
+  .lui-fieldset__helperText:not([data-unstyled]) {
     color: var(--lui-colors-fg-muted);
     font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
   }
 
-  .leverui-fieldset__errorText:not([data-unstyled]) {
+  .lui-fieldset__errorText:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
     color: var(--lui-colors-fg-error);

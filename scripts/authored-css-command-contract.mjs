@@ -26,7 +26,7 @@ export const commandContracts = [
     required: [
       ...parts.map(
         /** Require authored presentation for every public part. */
-        (part) => `.leverui-command__${part}:not([data-unstyled])`,
+        (part) => `.lui-command__${part}:not([data-unstyled])`,
       ),
       ...sizes.map(
         /** Require each scalar size. */

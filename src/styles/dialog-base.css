@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-dialog__backdrop[data-leverui-dialog-css] {
+  .lui-dialog__backdrop[data-lui-dialog-css] {
     background: var(--lui-colors-black-alpha-500);
     position: fixed;
     left: 0;
@@ -20,7 +20,7 @@
     }
   }
 
-  .leverui-dialog__positioner[data-leverui-dialog-css] {
+  .lui-dialog__positioner[data-lui-dialog-css] {
     display: flex;
     width: 100dvw;
     height: 100dvh;
@@ -33,7 +33,7 @@
     overscroll-behavior-y: none;
   }
 
-  .leverui-dialog__content[data-leverui-dialog-css] {
+  .lui-dialog__content[data-lui-dialog-css] {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -57,8 +57,8 @@
     }
   }
 
-  .leverui-dialog__content[data-leverui-private-skip-initial-animation],
-  .leverui-dialog__backdrop[data-leverui-private-skip-initial-animation] {
+  .lui-dialog__content[data-lui-private-skip-initial-animation],
+  .lui-dialog__backdrop[data-lui-private-skip-initial-animation] {
     animation-name: none;
   }
 }

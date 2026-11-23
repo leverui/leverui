@@ -14,7 +14,7 @@ const storyIds = [
 async function verifiesDataListExamples({ page }: { page: Page }): Promise<void> {
   for (const id of storyIds) {
     await page.goto(`/iframe.html?id=components-data-list--${id}`);
-    await expect(page.locator('#storybook-root .leverui-data-list__itemValue').first()).toHaveText(
+    await expect(page.locator('#storybook-root .lui-data-list__itemValue').first()).toHaveText(
       /\S/,
     );
   }
@@ -23,7 +23,7 @@ async function verifiesDataListExamples({ page }: { page: Page }): Promise<void>
 /** Keep the three sizes and popover explanations usable. */
 async function verifiesDataListDetails({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-data-list--size-matrix');
-  await expect(page.locator('#storybook-root tbody .leverui-data-list__root')).toHaveCount(3);
+  await expect(page.locator('#storybook-root tbody .lui-data-list__root')).toHaveCount(3);
   await expect(page.locator('#storybook-root thead td').first()).toHaveCSS('padding-right', '32px');
   await expect(page.locator('#storybook-root thead td').nth(1)).toHaveCSS('font-size', '14px');
   await page.goto('/iframe.html?id=components-data-list--info');

@@ -22,7 +22,7 @@ export async function verifyPackedSteps(page) {
   const secondId = await requiredId(second, 'second trigger');
   const firstPanelId = await requiredId(firstPanel, 'first panel');
   const secondPanelId = await requiredId(secondPanel, 'second panel');
-  await expect(root).toHaveClass(/leverui-steps__root/);
+  await expect(root).toHaveClass(/lui-steps__root/);
   await expect(root).toHaveAttribute('data-orientation', 'vertical');
   await expect(root).toHaveCSS('flex-direction', 'row');
   await expect(root.locator('[data-steps-list]')).toHaveCSS('flex-direction', 'column');

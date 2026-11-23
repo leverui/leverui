@@ -34,7 +34,7 @@ async function verifiesImageContract({ page }: { page: Page }): Promise<void> {
   await expect(image).toHaveAttribute('width', '200');
   await expect(image).toHaveAttribute('height', '100');
   await expect(image).not.toHaveAttribute('htmlWidth');
-  await expect(image).toHaveClass(/leverui-image/);
+  await expect(image).toHaveClass(/lui-image/);
   await expect(image).toHaveClass(/consumer-image/);
   await expect(image).toHaveClass(/named-image/);
   await expect(image).toHaveAttribute('data-image-ref', 'img');
@@ -67,7 +67,7 @@ async function verifiesImageContract({ page }: { page: Page }): Promise<void> {
   await expect(child).toHaveAttribute('alt', 'Child image');
   await expect(child).toHaveAttribute('data-parent-image-ref', 'img');
   await expect(child).toHaveAttribute('data-child-image-ref', 'img');
-  await expect(child).toHaveClass(/leverui-image/);
+  await expect(child).toHaveClass(/lui-image/);
   await expect(child).toHaveClass(/child-image/);
   await expect(child).toHaveCSS('object-fit', 'contain');
   await expect(child).toHaveCSS('width', '90px');
@@ -119,7 +119,7 @@ async function verifiesServerImage({ page }: { page: Page }): Promise<void> {
   expect(markup).toContain('alt="Server image"');
   expect(markup).toContain('width="200"');
   expect(markup).toContain('height="100"');
-  expect(markup).toContain('leverui-image');
+  expect(markup).toContain('lui-image');
   expect(markup).not.toMatch(/<img[^>]*\s(?:fit|align|htmlWidth|htmlHeight)=/);
   await page.setViewportSize({ width: 600, height: 700 });
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');

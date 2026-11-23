@@ -5,7 +5,7 @@ export async function verifyPackedCode(page) {
   const code = page.locator('#packed-code-solid');
   assert.equal(await code.textContent(), 'npm run build');
   assert.equal(await code.getAttribute('title'), 'Build command');
-  assert.match((await code.getAttribute('class')) ?? '', /leverui-code/);
+  assert.match((await code.getAttribute('class')) ?? '', /lui-code/);
   assert.equal(await code.getAttribute('variant'), null);
   assert.equal(
     await code.evaluate(

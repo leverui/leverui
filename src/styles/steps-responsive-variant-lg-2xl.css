@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 1024px) {
-    .leverui-steps__root:not([data-unstyled])[data-variant-lg='solid'] {
+    .lui-steps__root:not([data-unstyled])[data-variant-lg='solid'] {
       --lui-private-steps-incomplete-bg: transparent;
       --lui-private-steps-incomplete-border-width: var(--lui-private-steps-thickness);
       --lui-private-steps-current-bg: var(--lui-colors-color-palette-muted);
@@ -13,7 +13,7 @@
       --lui-private-steps-complete-separator-bg: var(--lui-colors-color-palette-solid);
     }
 
-    .leverui-steps__root:not([data-unstyled])[data-variant-lg='subtle'] {
+    .lui-steps__root:not([data-unstyled])[data-variant-lg='subtle'] {
       --lui-private-steps-incomplete-bg: var(--lui-colors-bg-muted);
       --lui-private-steps-incomplete-border-width: 0px;
       --lui-private-steps-current-bg: var(--lui-colors-color-palette-muted);
@@ -28,7 +28,7 @@
   }
 
   @media (min-width: 1280px) {
-    .leverui-steps__root:not([data-unstyled])[data-variant-xl='solid'] {
+    .lui-steps__root:not([data-unstyled])[data-variant-xl='solid'] {
       --lui-private-steps-incomplete-bg: transparent;
       --lui-private-steps-incomplete-border-width: var(--lui-private-steps-thickness);
       --lui-private-steps-current-bg: var(--lui-colors-color-palette-muted);
@@ -41,7 +41,7 @@
       --lui-private-steps-complete-separator-bg: var(--lui-colors-color-palette-solid);
     }
 
-    .leverui-steps__root:not([data-unstyled])[data-variant-xl='subtle'] {
+    .lui-steps__root:not([data-unstyled])[data-variant-xl='subtle'] {
       --lui-private-steps-incomplete-bg: var(--lui-colors-bg-muted);
       --lui-private-steps-incomplete-border-width: 0px;
       --lui-private-steps-current-bg: var(--lui-colors-color-palette-muted);
@@ -56,7 +56,7 @@
   }
 
   @media (min-width: 1536px) {
-    .leverui-steps__root:not([data-unstyled])[data-variant-2xl='solid'] {
+    .lui-steps__root:not([data-unstyled])[data-variant-2xl='solid'] {
       --lui-private-steps-incomplete-bg: transparent;
       --lui-private-steps-incomplete-border-width: var(--lui-private-steps-thickness);
       --lui-private-steps-current-bg: var(--lui-colors-color-palette-muted);
@@ -69,7 +69,7 @@
       --lui-private-steps-complete-separator-bg: var(--lui-colors-color-palette-solid);
     }
 
-    .leverui-steps__root:not([data-unstyled])[data-variant-2xl='subtle'] {
+    .lui-steps__root:not([data-unstyled])[data-variant-2xl='subtle'] {
       --lui-private-steps-incomplete-bg: var(--lui-colors-bg-muted);
       --lui-private-steps-incomplete-border-width: 0px;
       --lui-private-steps-current-bg: var(--lui-colors-color-palette-muted);

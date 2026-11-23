@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-grid {
+  .lui-grid {
     --lui-private-grid-template-columns-base: initial;
     --lui-private-grid-template-columns-sm: initial;
     --lui-private-grid-template-columns-md: initial;

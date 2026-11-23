@@ -53,7 +53,7 @@ function verifiesPropsProvider(): void {
   );
   const root = screen.getByRole('radiogroup', { name: 'Framework' });
   const react = screen.getByRole('radio', { name: 'React' }) as HTMLInputElement;
-  const indicator = root.querySelector('.leverui-radio-group__itemControl');
+  const indicator = root.querySelector('.lui-radio-group__itemControl');
   expect(react.checked).toBe(true);
   expect(react.name).toBe('framework');
   expect(indicator).not.toBeNull();
@@ -153,8 +153,8 @@ function verifiesUnstyledGroup(): void {
   for (const part of ['root', 'label', 'item', 'indicator', 'text']) {
     expect(screen.getByTestId(part).hasAttribute('data-unstyled')).toBe(true);
   }
-  expect(screen.getByTestId('indicator').className).toContain('leverui-radiomark');
-  expect(screen.getByTestId('indicator').className).toContain('leverui-radio-group__itemIndicator');
+  expect(screen.getByTestId('indicator').className).toContain('lui-radiomark');
+  expect(screen.getByTestId('indicator').className).toContain('lui-radio-group__itemIndicator');
 }
 
 it('keeps unstyled radio semantics without inserted presentation CSS', verifiesUnstyledGroup);

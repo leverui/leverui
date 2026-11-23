@@ -1,6 +1,6 @@
 @layer leverui.recipes {
-  .leverui-visually-hidden:not([data-unstyled]),
-  .leverui-command-dialog__accessible-label {
+  .lui-visually-hidden:not([data-unstyled]),
+  .lui-command-dialog__accessible-label {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;

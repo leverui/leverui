@@ -56,10 +56,10 @@ function verifiesServerTag(): void {
   expect(markup).toMatch(/<button[^>]*type="button"/);
   expect(markup).toMatch(/<button[^>]*aria-label="Close"/);
   expect(markup).toContain('aria-hidden="true"');
-  expect(markup).toContain('leverui-tag__closeTrigger');
+  expect(markup).toContain('lui-tag__closeTrigger');
   expect(markup).toContain('data-size="sm"');
   expect(markup).toContain('data-variant="solid"');
-  expect(markup).not.toContain('data-leverui-private-style-runtime');
+  expect(markup).not.toContain('data-lui-private-style-runtime');
   expect(markup).not.toContain('--lui-private-tag-element-size');
   expect(markup).not.toMatch(/--tag-(?:avatar-size|element-size|element-offset)/);
   expect(markup).not.toMatch(/<div[^>]*\s(?:size|variant|recipe|css|unstyled)=/);

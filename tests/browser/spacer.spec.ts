@@ -30,7 +30,7 @@ async function verifiesSpacer({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=layout-spacer--contract');
   const spacer = page.getByTestId('spacer-row-fill');
   await expect(spacer).toBeVisible({ timeout: 30_000 });
-  await expect(spacer).toHaveClass(/leverui-spacer/);
+  await expect(spacer).toHaveClass(/lui-spacer/);
   await expect(spacer).toHaveCSS('flex-grow', '1');
   await expect(spacer).toHaveCSS('justify-self', 'stretch');
   await expect(spacer).toHaveCSS('align-self', 'stretch');
@@ -82,7 +82,7 @@ async function verifiesSpacer({ page }: { page: Page }): Promise<void> {
   await page.setViewportSize({ width: 900, height: 700 });
   await expect(page.getByTestId('spacer-responsive')).toHaveCSS('flex-grow', '2');
   await page.addStyleTag({
-    content: '.leverui-spacer[data-testid="spacer-row-fill"] { flex: 2; }',
+    content: '.lui-spacer[data-testid="spacer-row-fill"] { flex: 2; }',
   });
   await expect(spacer).toHaveCSS('flex-grow', '2');
   for (const name of ['css', 'unstyled', 'as', 'asChild']) {
@@ -103,7 +103,7 @@ function renderServerSpacer(): JSX.Element {
 async function verifiesServerSpacer({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderServerSpacer);
   expect(markup).toContain('title="Server space"');
-  expect(markup).toContain('leverui-spacer');
+  expect(markup).toContain('lui-spacer');
   expect(markup).not.toMatch(/<div[^>]*\s(?:css|unstyled|asChild)=/);
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(

@@ -4,7 +4,7 @@
   border-width: 0;
 }
 
-.packed-custom-card .leverui-card__title {
+.packed-custom-card .lui-card__title {
   font-size: var(--lui-font-sizes-2xl);
   line-height: 2rem;
 }

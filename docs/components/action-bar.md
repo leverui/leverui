@@ -59,4 +59,4 @@ Custom layouts: `ActionBar.RootProvider`, `ActionBar.PropsProvider`,
 `ActionBar.Context`, `useActionBarContext`.
 
 Styling: pass `class`, set variables such as `--lui-action-bar-offset`, or
-target the stable `leverui-action-bar__*` classes.
+target the stable `lui-action-bar__*` classes.

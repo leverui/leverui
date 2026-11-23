@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-checkbox:not([data-unstyled]) {
+    .lui-checkbox:not([data-unstyled]) {
       &[data-size-sm='xs'] {
         --lui-private-checkbox-gap: var(--lui-spacing-1\.5);
         --lui-private-checkbox-label-font-size: var(--lui-font-sizes-xs);
@@ -24,7 +24,7 @@
     }
   }
   @media (min-width: 768px) {
-    .leverui-checkbox:not([data-unstyled]) {
+    .lui-checkbox:not([data-unstyled]) {
       &[data-size-md='xs'] {
         --lui-private-checkbox-gap: var(--lui-spacing-1\.5);
         --lui-private-checkbox-label-font-size: var(--lui-font-sizes-xs);

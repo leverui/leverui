@@ -3,11 +3,11 @@ export const alertContracts = [
   {
     family: 'alert',
     required: [
-      '.leverui-alert__root',
-      '.leverui-alert__title',
-      '.leverui-alert__description',
-      '.leverui-alert__indicator',
-      '.leverui-alert__content',
+      '.lui-alert__root',
+      '.lui-alert__title',
+      '.lui-alert__description',
+      '.lui-alert__indicator',
+      '.lui-alert__content',
       "[data-inline='true']",
       ...['sm', 'md', 'lg'].map(
         /** Identify one authored Alert size selector. */

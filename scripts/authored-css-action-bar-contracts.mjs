@@ -5,7 +5,7 @@ export const actionBarContracts = [
     required: [
       ...['positioner', 'content', 'separator', 'selectionTrigger'].map(
         /** Identify one styled public part. */
-        (part) => `.leverui-action-bar__${part}`,
+        (part) => `.lui-action-bar__${part}`,
       ),
       ...['bottom', 'bottom-start', 'bottom-end'].map(
         /** Identify a base placement. */

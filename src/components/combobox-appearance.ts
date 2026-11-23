@@ -33,7 +33,7 @@ type VariantAttribute = 'data-variant' | `data-variant-${Breakpoint}`;
 export type ComboboxAppearanceAttributes = Partial<
   Record<SizeAttribute, ComboboxSize | undefined> &
     Record<VariantAttribute, ComboboxVariant | undefined> & {
-      'data-leverui-color-palette': string | undefined;
+      'data-lui-color-palette': string | undefined;
     }
 >;
 
@@ -88,6 +88,6 @@ export function comboboxAppearanceAttributes(
     'data-variant-lg': variant.lg,
     'data-variant-xl': variant.xl,
     'data-variant-2xl': variant['2xl'],
-    'data-leverui-color-palette': state.colorPalette(),
+    'data-lui-color-palette': state.colorPalette(),
   };
 }

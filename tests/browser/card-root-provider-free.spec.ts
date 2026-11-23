@@ -49,7 +49,7 @@ async function verifiesCardRootCss({ page }: { page: Page }): Promise<void> {
         ),
     )
     .join('');
-  expect(html).not.toContain('data-leverui-private-style-runtime');
+  expect(html).not.toContain('data-lui-private-style-runtime');
   await page.setContent(`<style>${defaultCss}</style>${html}`);
   await expect(page.locator('#small-outline')).toHaveCSS('display', 'flex');
   await expect(page.locator('#small-outline')).toHaveCSS('border-top-width', '1px');
@@ -88,7 +88,7 @@ function renderCompleteCard(): JSX.Element {
 /** Verify a complete server-rendered Card uses no presentation runtime. */
 async function verifiesCompleteCardCss({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderCompleteCard);
-  expect(markup).not.toContain('data-leverui-private-style-runtime');
+  expect(markup).not.toContain('data-lui-private-style-runtime');
   await page.setContent(`<style>${defaultCss}</style>${markup}`);
   await expect(page.locator('#card-header')).toHaveCSS('padding-top', '24px');
   await expect(page.locator('#card-header')).toHaveCSS('gap', '6px');
@@ -128,7 +128,7 @@ async function verifiesResponsiveCardCss({ page }: { page: Page }): Promise<void
   const markup = renderToString(renderResponsiveCard);
   expect(markup).toContain('data-size-2xl="lg"');
   expect(markup).toContain('data-variant-2xl="subtle"');
-  expect(markup).not.toContain('data-leverui-private-style-runtime');
+  expect(markup).not.toContain('data-lui-private-style-runtime');
   await page.setContent(`<style>${defaultCss}</style>${markup}`);
   const card = page.locator('#responsive-card');
   for (const [width, padding, background] of [
@@ -181,7 +181,7 @@ function renderNestedCards(): JSX.Element {
 /** Confirm nested Card typography follows the closest root without scripts. */
 async function verifiesNestedCardCss({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderNestedCards);
-  expect(markup).not.toContain('data-leverui-private-style-runtime');
+  expect(markup).not.toContain('data-lui-private-style-runtime');
   await page.setContent(`<style>${defaultCss}</style>${markup}`);
   await expect(page.locator('#outer-title')).toHaveCSS('font-size', '16px');
   await expect(page.locator('#inner-title')).toHaveCSS('font-size', '18px');

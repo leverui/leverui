@@ -53,13 +53,13 @@ function renderDrawer() {
 
 const markup = renderToString(renderDrawer);
 assert.match(markup, /role="dialog"/);
-assert.match(markup, /<div\b[^>]*leverui-drawer__content/);
-assert.match(markup, /<div\b[^>]*leverui-drawer__description/);
-assert.doesNotMatch(markup, /<(?:section|p)\b[^>]*leverui-drawer__(?:content|description)/);
+assert.match(markup, /<div\b[^>]*lui-drawer__content/);
+assert.match(markup, /<div\b[^>]*lui-drawer__description/);
+assert.doesNotMatch(markup, /<(?:section|p)\b[^>]*lui-drawer__(?:content|description)/);
 assert.match(markup, /aria-labelledby="[^"]+"/);
 assert.match(markup, /aria-describedby="[^"]+"/);
-assert.match(markup, /leverui-drawer__header/);
-assert.match(markup, /leverui-drawer__body/);
-assert.match(markup, /leverui-drawer__footer/);
+assert.match(markup, /lui-drawer__header/);
+assert.match(markup, /lui-drawer__body/);
+assert.match(markup, /lui-drawer__footer/);
 assert.match(markup, /Installed Drawer/);
 assert.match(markup, /Server actions/);

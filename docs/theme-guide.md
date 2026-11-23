@@ -74,7 +74,7 @@ add your own class with CSS for its states and breakpoints.
 ### Part classes and attributes
 
 Every part has a class named after its component and part, such as
-`.leverui-popover__trigger`. Style parts with these classes.
+`.lui-popover__trigger`. Style parts with these classes.
 
 Every part also has a `data-` attribute with the same name, such as
 `data-popover-trigger`. Its value is an id that ties the part to its component.
@@ -82,7 +82,7 @@ Only parts that another part points to, such as a trigger and its content, get
 an `id`. Pass `id` to a part when you need one.
 
 ```css
-.leverui-popover__trigger[data-state='open'] {
+.lui-popover__trigger[data-state='open'] {
   background: var(--lui-colors-bg-muted);
 }
 ```
@@ -91,11 +91,11 @@ an `id`. Pass `id` to a part when you need one.
 
 A popup's `z-index` goes on the element that positions it, not on its content.
 For Popover, Menu, Select, Combobox, HoverCard, Tooltip, DatePicker, and
-ColorPicker, set it on `.leverui-<component>__positioner`. For toasts, set it
-on `.leverui-toast__toaster`.
+ColorPicker, set it on `.lui-<component>__positioner`. For toasts, set it
+on `.lui-toast__toaster`.
 
 ```css
-.leverui-menu__positioner {
+.lui-menu__positioner {
   z-index: 50;
 }
 ```

@@ -24,7 +24,7 @@ async function verifiesSegmentSelection({ page }: { page: Page }): Promise<void>
   await expect
     .poll(
       /** Wait for the measured indicator to align with the first item. */
-      () => indicatorOffset(indicator, page.locator('.leverui-segment-group__item').first()),
+      () => indicatorOffset(indicator, page.locator('.lui-segment-group__item').first()),
     )
     .toBeLessThan(2);
   await page.getByText('Solid', { exact: true }).click();
@@ -32,7 +32,7 @@ async function verifiesSegmentSelection({ page }: { page: Page }): Promise<void>
   await expect
     .poll(
       /** Follow the machine's indicator after selecting the second item. */
-      () => indicatorOffset(indicator, page.locator('.leverui-segment-group__item').nth(1)),
+      () => indicatorOffset(indicator, page.locator('.lui-segment-group__item').nth(1)),
     )
     .toBeLessThan(2);
   await expect(page.getByTestId('segment-group-selected')).toHaveText('Solid');
@@ -54,7 +54,7 @@ async function verifiesSegmentSize({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-segment-group--contract');
   const root = page.getByTestId('segment-group-root');
   const react = page.getByRole('radio', { name: 'React' });
-  const item = page.locator('.leverui-segment-group__item').first();
+  const item = page.locator('.lui-segment-group__item').first();
   await expect(root).toHaveAttribute('data-orientation', 'horizontal', { timeout: 30_000 });
   expect(
     await root.evaluate(
@@ -99,7 +99,7 @@ test('Segment Group changes CSS size without remounting', verifiesSegmentSize);
 async function verifiesPolymorphicItems({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-segment-group--polymorphic');
   const root = page.getByRole('radiogroup', { name: 'Polymorphic' });
-  const items = root.locator('.leverui-segment-group__item');
+  const items = root.locator('.lui-segment-group__item');
   await expect(items).toHaveCount(2, { timeout: 30_000 });
   await expect(items.first()).toHaveJSProperty('tagName', 'DIV');
   await expect(items.first()).not.toHaveAttribute('for');
@@ -107,14 +107,14 @@ async function verifiesPolymorphicItems({ page }: { page: Page }): Promise<void>
   await expect(root.getByRole('radio', { name: 'Solid' })).toBeChecked();
   const direct = page.getByRole('radiogroup', { name: 'Direct item' });
   await direct
-    .locator('.leverui-segment-group__item')
+    .locator('.lui-segment-group__item')
     .nth(1)
     .click({ position: { x: 2, y: 16 } });
   await expect(direct.getByRole('radio', { name: 'Solid' })).toBeChecked();
   const child = page.getByRole('radiogroup', { name: 'Child item' });
-  await expect(child.locator('.leverui-segment-group__item').first()).not.toHaveAttribute('for');
+  await expect(child.locator('.lui-segment-group__item').first()).not.toHaveAttribute('for');
   await child
-    .locator('.leverui-segment-group__item')
+    .locator('.lui-segment-group__item')
     .nth(1)
     .click({ position: { x: 2, y: 16 } });
   await expect(child.getByRole('radio', { name: 'Solid' })).toBeChecked();

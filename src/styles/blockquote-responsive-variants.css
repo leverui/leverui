@@ -1,18 +1,18 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-blockquote__root:not([data-unstyled])[data-variant-sm='subtle'] {
+    .lui-blockquote__root:not([data-unstyled])[data-variant-sm='subtle'] {
       --lui-private-blockquote-border-width: 4px;
       --lui-private-blockquote-border-style: solid;
       --lui-private-blockquote-border-color: var(--lui-colors-color-palette-muted);
       --lui-private-blockquote-icon-color: var(--lui-colors-color-palette-fg);
     }
-    .leverui-blockquote__root:not([data-unstyled])[data-variant-sm='solid'] {
+    .lui-blockquote__root:not([data-unstyled])[data-variant-sm='solid'] {
       --lui-private-blockquote-border-width: 4px;
       --lui-private-blockquote-border-style: solid;
       --lui-private-blockquote-border-color: var(--lui-colors-color-palette-solid);
       --lui-private-blockquote-icon-color: var(--lui-colors-color-palette-solid);
     }
-    .leverui-blockquote__root:not([data-unstyled])[data-variant-sm='plain'] {
+    .lui-blockquote__root:not([data-unstyled])[data-variant-sm='plain'] {
       --lui-private-blockquote-border-width: 0px;
       --lui-private-blockquote-border-style: none;
       --lui-private-blockquote-border-color: currentColor;
@@ -20,19 +20,19 @@
     }
   }
   @media (min-width: 768px) {
-    .leverui-blockquote__root:not([data-unstyled])[data-variant-md='subtle'] {
+    .lui-blockquote__root:not([data-unstyled])[data-variant-md='subtle'] {
       --lui-private-blockquote-border-width: 4px;
       --lui-private-blockquote-border-style: solid;
       --lui-private-blockquote-border-color: var(--lui-colors-color-palette-muted);
       --lui-private-blockquote-icon-color: var(--lui-colors-color-palette-fg);
     }
-    .leverui-blockquote__root:not([data-unstyled])[data-variant-md='solid'] {
+    .lui-blockquote__root:not([data-unstyled])[data-variant-md='solid'] {
       --lui-private-blockquote-border-width: 4px;
       --lui-private-blockquote-border-style: solid;
       --lui-private-blockquote-border-color: var(--lui-colors-color-palette-solid);
       --lui-private-blockquote-icon-color: var(--lui-colors-color-palette-solid);
     }
-    .leverui-blockquote__root:not([data-unstyled])[data-variant-md='plain'] {
+    .lui-blockquote__root:not([data-unstyled])[data-variant-md='plain'] {
       --lui-private-blockquote-border-width: 0px;
       --lui-private-blockquote-border-style: none;
       --lui-private-blockquote-border-color: currentColor;
@@ -40,19 +40,19 @@
     }
   }
   @media (min-width: 1024px) {
-    .leverui-blockquote__root:not([data-unstyled])[data-variant-lg='subtle'] {
+    .lui-blockquote__root:not([data-unstyled])[data-variant-lg='subtle'] {
       --lui-private-blockquote-border-width: 4px;
       --lui-private-blockquote-border-style: solid;
       --lui-private-blockquote-border-color: var(--lui-colors-color-palette-muted);
       --lui-private-blockquote-icon-color: var(--lui-colors-color-palette-fg);
     }
-    .leverui-blockquote__root:not([data-unstyled])[data-variant-lg='solid'] {
+    .lui-blockquote__root:not([data-unstyled])[data-variant-lg='solid'] {
       --lui-private-blockquote-border-width: 4px;
       --lui-private-blockquote-border-style: solid;
       --lui-private-blockquote-border-color: var(--lui-colors-color-palette-solid);
       --lui-private-blockquote-icon-color: var(--lui-colors-color-palette-solid);
     }
-    .leverui-blockquote__root:not([data-unstyled])[data-variant-lg='plain'] {
+    .lui-blockquote__root:not([data-unstyled])[data-variant-lg='plain'] {
       --lui-private-blockquote-border-width: 0px;
       --lui-private-blockquote-border-style: none;
       --lui-private-blockquote-border-color: currentColor;
@@ -60,19 +60,19 @@
     }
   }
   @media (min-width: 1280px) {
-    .leverui-blockquote__root:not([data-unstyled])[data-variant-xl='subtle'] {
+    .lui-blockquote__root:not([data-unstyled])[data-variant-xl='subtle'] {
       --lui-private-blockquote-border-width: 4px;
       --lui-private-blockquote-border-style: solid;
       --lui-private-blockquote-border-color: var(--lui-colors-color-palette-muted);
       --lui-private-blockquote-icon-color: var(--lui-colors-color-palette-fg);
     }
-    .leverui-blockquote__root:not([data-unstyled])[data-variant-xl='solid'] {
+    .lui-blockquote__root:not([data-unstyled])[data-variant-xl='solid'] {
       --lui-private-blockquote-border-width: 4px;
       --lui-private-blockquote-border-style: solid;
       --lui-private-blockquote-border-color: var(--lui-colors-color-palette-solid);
       --lui-private-blockquote-icon-color: var(--lui-colors-color-palette-solid);
     }
-    .leverui-blockquote__root:not([data-unstyled])[data-variant-xl='plain'] {
+    .lui-blockquote__root:not([data-unstyled])[data-variant-xl='plain'] {
       --lui-private-blockquote-border-width: 0px;
       --lui-private-blockquote-border-style: none;
       --lui-private-blockquote-border-color: currentColor;
@@ -80,19 +80,19 @@
     }
   }
   @media (min-width: 1536px) {
-    .leverui-blockquote__root:not([data-unstyled])[data-variant-2xl='subtle'] {
+    .lui-blockquote__root:not([data-unstyled])[data-variant-2xl='subtle'] {
       --lui-private-blockquote-border-width: 4px;
       --lui-private-blockquote-border-style: solid;
       --lui-private-blockquote-border-color: var(--lui-colors-color-palette-muted);
       --lui-private-blockquote-icon-color: var(--lui-colors-color-palette-fg);
     }
-    .leverui-blockquote__root:not([data-unstyled])[data-variant-2xl='solid'] {
+    .lui-blockquote__root:not([data-unstyled])[data-variant-2xl='solid'] {
       --lui-private-blockquote-border-width: 4px;
       --lui-private-blockquote-border-style: solid;
       --lui-private-blockquote-border-color: var(--lui-colors-color-palette-solid);
       --lui-private-blockquote-icon-color: var(--lui-colors-color-palette-solid);
     }
-    .leverui-blockquote__root:not([data-unstyled])[data-variant-2xl='plain'] {
+    .lui-blockquote__root:not([data-unstyled])[data-variant-2xl='plain'] {
       --lui-private-blockquote-border-width: 0px;
       --lui-private-blockquote-border-style: none;
       --lui-private-blockquote-border-color: currentColor;

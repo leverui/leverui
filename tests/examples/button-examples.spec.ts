@@ -55,7 +55,7 @@ async function verifiesButtonGeometry({ page }: { page: Page }): Promise<void> {
   await expect(page.getByRole('link', { name: 'Button' })).toHaveAttribute('data-disabled');
 
   await page.goto('/iframe.html?id=components-button--icon-composition');
-  const icons = page.locator('#storybook-root button > span.leverui-icon');
+  const icons = page.locator('#storybook-root button > span.lui-icon');
   await expect(icons).toHaveCount(2);
   await expect(page.locator('#storybook-root button svg svg')).toHaveCount(0);
   for (const icon of await icons.all()) {

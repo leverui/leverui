@@ -45,17 +45,17 @@ function renderNested(
 /** Keep Drawer classes and authored CSS when it is nested inside Dialog. */
 function verifiesDrawerInsideDialog(): void {
   const markup = renderNested(server.DialogRoot, server.DrawerRoot, server.DrawerTrigger);
-  expect(markup).toContain('leverui-drawer__trigger');
-  expect(markup).toContain('data-leverui-drawer-css');
-  expect(markup).not.toContain('leverui-dialog__trigger');
+  expect(markup).toContain('lui-drawer__trigger');
+  expect(markup).toContain('data-lui-drawer-css');
+  expect(markup).not.toContain('lui-dialog__trigger');
 }
 
 /** Keep Dialog's part hooks when it is nested inside Drawer. */
 function verifiesDialogInsideDrawer(): void {
   const markup = renderNested(server.DrawerRoot, server.DialogRoot, server.DialogTrigger);
-  expect(markup).toContain('leverui-dialog__trigger');
-  expect(markup).toContain('data-leverui-dialog-css');
-  expect(markup).not.toContain('leverui-drawer__trigger');
+  expect(markup).toContain('lui-dialog__trigger');
+  expect(markup).toContain('data-lui-dialog-css');
+  expect(markup).not.toContain('lui-drawer__trigger');
 }
 
 test('Drawer shadows an outer Dialog presentation context', verifiesDrawerInsideDialog);

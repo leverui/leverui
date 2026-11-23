@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 1024px) {
-    .leverui-date-input__root:not([data-unstyled])[data-variant-lg='outline'] {
+    .lui-date-input__root:not([data-unstyled])[data-variant-lg='outline'] {
       --lui-private-date-input-background: transparent;
       --lui-private-date-input-border-width: 1px;
       --lui-private-date-input-border-color: var(--lui-colors-border);
@@ -10,13 +10,13 @@
       --lui-private-date-input-segment-focus-background: var(--lui-colors-color-palette-emphasized);
       --lui-private-date-input-segment-focus-color: var(--lui-colors-fg);
     }
-    .leverui-date-input__segmentGroup:not([data-unstyled])[data-variant-lg='outline']:is(
+    .lui-date-input__segmentGroup:not([data-unstyled])[data-variant-lg='outline']:is(
         :focus,
         [data-focus]
       ) {
       box-shadow: none;
     }
-    .leverui-date-input__root:not([data-unstyled])[data-variant-lg='subtle'] {
+    .lui-date-input__root:not([data-unstyled])[data-variant-lg='subtle'] {
       --lui-private-date-input-background: var(--lui-colors-bg-muted);
       --lui-private-date-input-border-width: 1px;
       --lui-private-date-input-border-color: transparent;
@@ -26,13 +26,13 @@
       --lui-private-date-input-segment-focus-background: var(--lui-colors-color-palette-subtle);
       --lui-private-date-input-segment-focus-color: var(--lui-colors-color-palette-fg);
     }
-    .leverui-date-input__segmentGroup:not([data-unstyled])[data-variant-lg='subtle']:is(
+    .lui-date-input__segmentGroup:not([data-unstyled])[data-variant-lg='subtle']:is(
         :focus,
         [data-focus]
       ) {
       box-shadow: none;
     }
-    .leverui-date-input__root:not([data-unstyled])[data-variant-lg='flushed'] {
+    .lui-date-input__root:not([data-unstyled])[data-variant-lg='flushed'] {
       --lui-private-date-input-background: transparent;
       --lui-private-date-input-border-width: 0 0 1px;
       --lui-private-date-input-border-color: var(--lui-colors-border);
@@ -42,7 +42,7 @@
       --lui-private-date-input-segment-focus-background: var(--lui-colors-color-palette-subtle);
       --lui-private-date-input-segment-focus-color: var(--lui-colors-color-palette-fg);
     }
-    .leverui-date-input__segmentGroup:not([data-unstyled])[data-variant-lg='flushed']:is(
+    .lui-date-input__segmentGroup:not([data-unstyled])[data-variant-lg='flushed']:is(
         :focus,
         [data-focus]
       ) {
@@ -50,7 +50,7 @@
     }
   }
   @media (min-width: 1280px) {
-    .leverui-date-input__root:not([data-unstyled])[data-variant-xl='outline'] {
+    .lui-date-input__root:not([data-unstyled])[data-variant-xl='outline'] {
       --lui-private-date-input-background: transparent;
       --lui-private-date-input-border-width: 1px;
       --lui-private-date-input-border-color: var(--lui-colors-border);
@@ -60,13 +60,13 @@
       --lui-private-date-input-segment-focus-background: var(--lui-colors-color-palette-emphasized);
       --lui-private-date-input-segment-focus-color: var(--lui-colors-fg);
     }
-    .leverui-date-input__segmentGroup:not([data-unstyled])[data-variant-xl='outline']:is(
+    .lui-date-input__segmentGroup:not([data-unstyled])[data-variant-xl='outline']:is(
         :focus,
         [data-focus]
       ) {
       box-shadow: none;
     }
-    .leverui-date-input__root:not([data-unstyled])[data-variant-xl='subtle'] {
+    .lui-date-input__root:not([data-unstyled])[data-variant-xl='subtle'] {
       --lui-private-date-input-background: var(--lui-colors-bg-muted);
       --lui-private-date-input-border-width: 1px;
       --lui-private-date-input-border-color: transparent;
@@ -76,13 +76,13 @@
       --lui-private-date-input-segment-focus-background: var(--lui-colors-color-palette-subtle);
       --lui-private-date-input-segment-focus-color: var(--lui-colors-color-palette-fg);
     }
-    .leverui-date-input__segmentGroup:not([data-unstyled])[data-variant-xl='subtle']:is(
+    .lui-date-input__segmentGroup:not([data-unstyled])[data-variant-xl='subtle']:is(
         :focus,
         [data-focus]
       ) {
       box-shadow: none;
     }
-    .leverui-date-input__root:not([data-unstyled])[data-variant-xl='flushed'] {
+    .lui-date-input__root:not([data-unstyled])[data-variant-xl='flushed'] {
       --lui-private-date-input-background: transparent;
       --lui-private-date-input-border-width: 0 0 1px;
       --lui-private-date-input-border-color: var(--lui-colors-border);
@@ -92,7 +92,7 @@
       --lui-private-date-input-segment-focus-background: var(--lui-colors-color-palette-subtle);
       --lui-private-date-input-segment-focus-color: var(--lui-colors-color-palette-fg);
     }
-    .leverui-date-input__segmentGroup:not([data-unstyled])[data-variant-xl='flushed']:is(
+    .lui-date-input__segmentGroup:not([data-unstyled])[data-variant-xl='flushed']:is(
         :focus,
         [data-focus]
       ) {
@@ -100,7 +100,7 @@
     }
   }
   @media (min-width: 1536px) {
-    .leverui-date-input__root:not([data-unstyled])[data-variant-2xl='outline'] {
+    .lui-date-input__root:not([data-unstyled])[data-variant-2xl='outline'] {
       --lui-private-date-input-background: transparent;
       --lui-private-date-input-border-width: 1px;
       --lui-private-date-input-border-color: var(--lui-colors-border);
@@ -110,13 +110,13 @@
       --lui-private-date-input-segment-focus-background: var(--lui-colors-color-palette-emphasized);
       --lui-private-date-input-segment-focus-color: var(--lui-colors-fg);
     }
-    .leverui-date-input__segmentGroup:not([data-unstyled])[data-variant-2xl='outline']:is(
+    .lui-date-input__segmentGroup:not([data-unstyled])[data-variant-2xl='outline']:is(
         :focus,
         [data-focus]
       ) {
       box-shadow: none;
     }
-    .leverui-date-input__root:not([data-unstyled])[data-variant-2xl='subtle'] {
+    .lui-date-input__root:not([data-unstyled])[data-variant-2xl='subtle'] {
       --lui-private-date-input-background: var(--lui-colors-bg-muted);
       --lui-private-date-input-border-width: 1px;
       --lui-private-date-input-border-color: transparent;
@@ -126,13 +126,13 @@
       --lui-private-date-input-segment-focus-background: var(--lui-colors-color-palette-subtle);
       --lui-private-date-input-segment-focus-color: var(--lui-colors-color-palette-fg);
     }
-    .leverui-date-input__segmentGroup:not([data-unstyled])[data-variant-2xl='subtle']:is(
+    .lui-date-input__segmentGroup:not([data-unstyled])[data-variant-2xl='subtle']:is(
         :focus,
         [data-focus]
       ) {
       box-shadow: none;
     }
-    .leverui-date-input__root:not([data-unstyled])[data-variant-2xl='flushed'] {
+    .lui-date-input__root:not([data-unstyled])[data-variant-2xl='flushed'] {
       --lui-private-date-input-background: transparent;
       --lui-private-date-input-border-width: 0 0 1px;
       --lui-private-date-input-border-color: var(--lui-colors-border);
@@ -142,7 +142,7 @@
       --lui-private-date-input-segment-focus-background: var(--lui-colors-color-palette-subtle);
       --lui-private-date-input-segment-focus-color: var(--lui-colors-color-palette-fg);
     }
-    .leverui-date-input__segmentGroup:not([data-unstyled])[data-variant-2xl='flushed']:is(
+    .lui-date-input__segmentGroup:not([data-unstyled])[data-variant-2xl='flushed']:is(
         :focus,
         [data-focus]
       ) {

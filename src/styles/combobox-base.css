@@ -1,25 +1,25 @@
 @layer leverui.recipes {
-  .leverui-combobox__root:not([data-unstyled]) {
+  .lui-combobox__root:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     gap: var(--lui-combobox-root-gap, var(--lui-spacing-1\.5));
     width: 100%;
   }
 
-  .leverui-combobox__label:not([data-unstyled]) {
+  .lui-combobox__label:not([data-unstyled]) {
     font-weight: var(--lui-font-weights-medium);
     user-select: none;
     font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
   }
 
-  .leverui-combobox__control:not([data-unstyled]) {
+  .lui-combobox__control:not([data-unstyled]) {
     position: relative;
     --lui-private-combobox-input-padding-end: var(--lui-private-combobox-input-padding-x);
     --lui-private-combobox-padding-factor: 1;
   }
 
-  .leverui-combobox__control:not([data-unstyled]):has(
+  .lui-combobox__control:not([data-unstyled]):has(
       [data-combobox-trigger],
       [data-combobox-clear-trigger]
     ) {
@@ -28,13 +28,13 @@
     );
   }
 
-  .leverui-combobox__control:not([data-unstyled]):has([data-combobox-trigger]):has(
+  .lui-combobox__control:not([data-unstyled]):has([data-combobox-trigger]):has(
       [data-combobox-clear-trigger]:not([hidden])
     ) {
     --lui-private-combobox-padding-factor: 1.5;
   }
 
-  .leverui-combobox__input:not([data-unstyled]) {
+  .lui-combobox__input:not([data-unstyled]) {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -66,7 +66,7 @@
     line-height: var(--lui-private-combobox-line-height);
   }
 
-  .leverui-combobox__trigger:not([data-unstyled]) {
+  .lui-combobox__trigger:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -76,13 +76,13 @@
     padding-block: var(--lui-private-combobox-trigger-padding-y, 0);
   }
 
-  .leverui-combobox__clearTrigger:not([data-unstyled]) {
+  .lui-combobox__clearTrigger:not([data-unstyled]) {
     color: var(--lui-colors-fg-muted);
     pointer-events: auto;
     border-radius: var(--lui-radii-l1);
   }
 
-  .leverui-combobox__indicatorGroup:not([data-unstyled]) {
+  .lui-combobox__indicatorGroup:not([data-unstyled]) {
     --lui-private-combobox-indicator-padding-x: var(--lui-private-combobox-input-padding-x);
     display: flex;
     align-items: center;
@@ -97,13 +97,13 @@
     );
   }
 
-  .leverui-combobox__indicatorGroup:not([data-unstyled]) :where(svg),
-  .leverui-combobox__item:not([data-unstyled]) :where(svg) {
+  .lui-combobox__indicatorGroup:not([data-unstyled]) :where(svg),
+  .lui-combobox__item:not([data-unstyled]) :where(svg) {
     width: var(--lui-private-combobox-indicator-size);
     height: var(--lui-private-combobox-indicator-size);
   }
 
-  .leverui-combobox__content:not([data-unstyled]) {
+  .lui-combobox__content:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     padding: var(--lui-private-combobox-content-padding);
@@ -119,7 +119,7 @@
   }
 
   /* Zag 2 scrolls the highlighted option within List, so List is the scroll container. */
-  .leverui-combobox__list:not([data-unstyled]) {
+  .lui-combobox__list:not([data-unstyled]) {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
@@ -128,7 +128,7 @@
     outline: 0;
   }
 
-  .leverui-combobox__item:not([data-unstyled]) {
+  .lui-combobox__item:not([data-unstyled]) {
     position: relative;
     user-select: none;
     display: flex;
@@ -143,30 +143,30 @@
   }
 
   /* The primitive keeps Empty mounted as a status region; pad it only while it shows a message. */
-  .leverui-combobox__empty:not([data-unstyled]):not(:empty) {
+  .lui-combobox__empty:not([data-unstyled]):not(:empty) {
     padding-block: var(--lui-private-combobox-item-padding-y);
     padding-inline: var(--lui-private-combobox-item-padding-x);
   }
 
-  .leverui-combobox__itemText:not([data-unstyled]) {
+  .lui-combobox__itemText:not([data-unstyled]) {
     flex: 1;
   }
 
-  .leverui-combobox__itemIndicator:not([data-unstyled]) {
+  .lui-combobox__itemIndicator:not([data-unstyled]) {
     display: var(--lui-private-combobox-item-indicator-display, block);
     align-items: center;
     justify-content: center;
   }
 
-  .leverui-combobox__itemGroup:not([data-unstyled]) {
+  .lui-combobox__itemGroup:not([data-unstyled]) {
     padding-bottom: var(--lui-private-combobox-item-padding-y);
   }
 
-  .leverui-combobox__itemGroup:not([data-unstyled]):last-of-type {
+  .lui-combobox__itemGroup:not([data-unstyled]):last-of-type {
     padding-bottom: 0;
   }
 
-  .leverui-combobox__itemGroupLabel:not([data-unstyled]) {
+  .lui-combobox__itemGroupLabel:not([data-unstyled]) {
     font-weight: var(--lui-font-weights-medium);
     padding-block: var(--lui-private-combobox-item-padding-y);
     padding-inline: var(--lui-private-combobox-item-padding-x);
@@ -174,7 +174,7 @@
 
   /* Zag 2 sets no z-index and isolates the positioner, so the content's z-index
      cannot escape it. Stack the positioner itself, offset by its layer index. */
-  .leverui-combobox__positioner {
+  .lui-combobox__positioner {
     z-index: calc(var(--lui-combobox-z-index, var(--lui-z-index-popover)) + var(--layer-index, 0));
   }
 }

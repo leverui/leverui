@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-dialog__content[data-leverui-dialog-css] {
+  .lui-dialog__content[data-lui-dialog-css] {
     --lui-private-dialog-size-max-width: var(--lui-sizes-lg);
     --lui-private-dialog-size-height: auto;
     --lui-private-dialog-size-min-height: auto;
@@ -39,7 +39,7 @@
     }
   }
 
-  .leverui-dialog__positioner[data-leverui-dialog-css] {
+  .lui-dialog__positioner[data-lui-dialog-css] {
     padding: var(--lui-private-dialog-positioner-padding, 0);
 
     &[data-size='cover'] {

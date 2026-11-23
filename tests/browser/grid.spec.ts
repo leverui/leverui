@@ -29,7 +29,7 @@ async function verifiesGrid({ page }: { page: Page }): Promise<void> {
   await expect(grid).toHaveCSS('display', 'grid');
   await expect(grid).toHaveCSS('grid-template-columns', '40px 40px 40px');
   await expect(grid).toHaveCSS('gap', '16px');
-  await expect(grid).toHaveClass(/leverui-grid/);
+  await expect(grid).toHaveClass(/lui-grid/);
   const first = await requiredBox(page.getByTestId('grid-basic-first'));
   const spanning = await requiredBox(page.getByTestId('grid-basic-spanning'));
   expect(Math.abs(spanning.x - first.x - first.width - 16)).toBeLessThan(1.5);
@@ -107,7 +107,7 @@ async function verifiesGrid({ page }: { page: Page }): Promise<void> {
   await expect(responsive).toHaveCSS('grid-template-columns', '40px 40px 40px');
   await expect(span).toHaveCSS('grid-column', 'span 3 / span 3');
   await expect(page.getByTestId('grid-array-span')).toHaveCSS('grid-column', 'span 2 / span 2');
-  await page.addStyleTag({ content: '.leverui-grid[data-testid="grid-basic"] { gap: 21px; }' });
+  await page.addStyleTag({ content: '.lui-grid[data-testid="grid-basic"] { gap: 21px; }' });
   await expect(grid).toHaveCSS('gap', '21px');
 }
 

@@ -36,7 +36,7 @@ async function verifiesContainer({ page }: { page: Page }): Promise<void> {
   await expect(root).toHaveCSS('padding-left', '16px');
   await expect(root).toHaveCSS('padding-right', '16px');
   expectNear((await requiredBox(root)).width, (await requiredBox(story)).width);
-  await expect(root).toHaveClass(/leverui-container/);
+  await expect(root).toHaveClass(/lui-container/);
 
   const centered = page.getByTestId('container-centered');
   await expect(centered).toHaveCSS('display', 'flex');
@@ -114,7 +114,7 @@ function renderServerContainer(): JSX.Element {
 async function verifiesServerContainer({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderServerContainer);
   expect(markup).toContain('Server container');
-  expect(markup).not.toContain('data-leverui-private-style-runtime');
+  expect(markup).not.toContain('data-lui-private-style-runtime');
   expect(markup).not.toMatch(/<div[^>]*\s(?:fluid|centerContent)=/);
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setViewportSize({ width: 1700, height: 800 });

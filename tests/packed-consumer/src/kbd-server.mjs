@@ -35,5 +35,5 @@ const markup = renderPackedKbd();
 assert.match(markup, /<kbd[^>]*id="packed-server-kbd-first"[^>]*><span[^>]*>Esc<\/span><\/kbd>/);
 assert.match(markup, /<kbd[^>]*id="packed-server-kbd-second"[^>]*><span[^>]*>Esc<\/span><\/kbd>/);
 assert.match(markup, /<span[^>]*id="packed-server-kbd-local"[^>]*>Tab<\/span>/);
-assert.match(markup, /leverui-kbd/);
+assert.match(markup, /lui-kbd/);
 assert.doesNotMatch(markup, /\s(?:size|variant|as)=/);

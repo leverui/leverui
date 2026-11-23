@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-action-bar__positioner:not([data-unstyled]) {
+  .lui-action-bar__positioner:not([data-unstyled]) {
     &[data-placement='bottom'] {
       --lui-private-action-bar-justify: center;
       --lui-private-action-bar-start-padding: 0;

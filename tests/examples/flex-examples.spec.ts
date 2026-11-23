@@ -17,7 +17,7 @@ async function verifiesFlexLayouts({ page }: { page: Page }): Promise<void> {
   await page.setViewportSize({ width: 1280, height: 720 });
   for (const layout of layouts) {
     await page.goto(`/iframe.html?id=layout-flex--${layout.id}`);
-    const flex = page.locator('#storybook-root > div > .leverui-flex');
+    const flex = page.locator('#storybook-root > div > .lui-flex');
     await expect(flex).toBeVisible();
     await expect(flex.locator(':scope > :not(style)')).toHaveCount(layout.count);
     await expect(flex).toHaveCSS('display', 'flex');
@@ -31,25 +31,25 @@ async function verifiesFlexLayouts({ page }: { page: Page }): Promise<void> {
 async function verifiesFlexVariants({ page }: { page: Page }): Promise<void> {
   await page.setViewportSize({ width: 1280, height: 720 });
   await page.goto('/iframe.html?id=layout-flex--auto-margin');
-  await expect(page.locator('#storybook-root > div > .leverui-flex')).toHaveCSS(
+  await expect(page.locator('#storybook-root > div > .lui-flex')).toHaveCSS(
     'justify-content',
     'space-between',
   );
 
   await page.goto('/iframe.html?id=layout-flex--justify');
-  const rows = page.locator('#storybook-root > div > .leverui-flex > .leverui-flex');
+  const rows = page.locator('#storybook-root > div > .lui-flex > .lui-flex');
   await expect(rows).toHaveCount(4);
   for (const [index, value] of ['flex-start', 'center', 'flex-end', 'space-between'].entries()) {
     await expect(rows.nth(index)).toHaveCSS('justify-content', value);
   }
 
   await page.goto('/iframe.html?id=layout-flex--order');
-  const ordered = page.locator('#storybook-root > div > .leverui-flex > :not(style)');
+  const ordered = page.locator('#storybook-root > div > .lui-flex > :not(style)');
   await expect(ordered.nth(1)).toHaveCSS('order', '3');
   await expect(ordered.nth(2)).toHaveCSS('order', '2');
 
   await page.goto('/iframe.html?id=layout-flex--wrap');
-  const wrapped = page.locator('#storybook-root > div > .leverui-flex');
+  const wrapped = page.locator('#storybook-root > div > .lui-flex');
   await expect(wrapped).toHaveCSS('flex-wrap', 'wrap');
   await expect(wrapped).toHaveCSS('width', '500px');
 

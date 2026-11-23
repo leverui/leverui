@@ -1,24 +1,24 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-tags-input__root:not([data-unstyled])[data-size-sm='xs'] {
+    .lui-tags-input__root:not([data-unstyled])[data-size-sm='xs'] {
       --lui-private-tags-input-height: var(--lui-sizes-8);
       --lui-private-tags-input-item-height: var(--lui-sizes-6);
       --lui-private-tags-input-font-size: var(--lui-font-sizes-xs);
       --lui-private-tags-input-line-height: 1rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-sm='sm'] {
+    .lui-tags-input__root:not([data-unstyled])[data-size-sm='sm'] {
       --lui-private-tags-input-height: var(--lui-sizes-9);
       --lui-private-tags-input-item-height: var(--lui-sizes-6);
       --lui-private-tags-input-font-size: var(--lui-font-sizes-sm);
       --lui-private-tags-input-line-height: 1.25rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-sm='md'] {
+    .lui-tags-input__root:not([data-unstyled])[data-size-sm='md'] {
       --lui-private-tags-input-height: var(--lui-sizes-10);
       --lui-private-tags-input-item-height: var(--lui-sizes-7);
       --lui-private-tags-input-font-size: var(--lui-font-sizes-sm);
       --lui-private-tags-input-line-height: 1.25rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-sm='lg'] {
+    .lui-tags-input__root:not([data-unstyled])[data-size-sm='lg'] {
       --lui-private-tags-input-height: var(--lui-sizes-11);
       --lui-private-tags-input-item-height: var(--lui-sizes-8);
       --lui-private-tags-input-font-size: var(--lui-font-sizes-md);
@@ -26,25 +26,25 @@
     }
   }
   @media (min-width: 768px) {
-    .leverui-tags-input__root:not([data-unstyled])[data-size-md='xs'] {
+    .lui-tags-input__root:not([data-unstyled])[data-size-md='xs'] {
       --lui-private-tags-input-height: var(--lui-sizes-8);
       --lui-private-tags-input-item-height: var(--lui-sizes-6);
       --lui-private-tags-input-font-size: var(--lui-font-sizes-xs);
       --lui-private-tags-input-line-height: 1rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-md='sm'] {
+    .lui-tags-input__root:not([data-unstyled])[data-size-md='sm'] {
       --lui-private-tags-input-height: var(--lui-sizes-9);
       --lui-private-tags-input-item-height: var(--lui-sizes-6);
       --lui-private-tags-input-font-size: var(--lui-font-sizes-sm);
       --lui-private-tags-input-line-height: 1.25rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-md='md'] {
+    .lui-tags-input__root:not([data-unstyled])[data-size-md='md'] {
       --lui-private-tags-input-height: var(--lui-sizes-10);
       --lui-private-tags-input-item-height: var(--lui-sizes-7);
       --lui-private-tags-input-font-size: var(--lui-font-sizes-sm);
       --lui-private-tags-input-line-height: 1.25rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-md='lg'] {
+    .lui-tags-input__root:not([data-unstyled])[data-size-md='lg'] {
       --lui-private-tags-input-height: var(--lui-sizes-11);
       --lui-private-tags-input-item-height: var(--lui-sizes-8);
       --lui-private-tags-input-font-size: var(--lui-font-sizes-md);
@@ -52,25 +52,25 @@
     }
   }
   @media (min-width: 1024px) {
-    .leverui-tags-input__root:not([data-unstyled])[data-size-lg='xs'] {
+    .lui-tags-input__root:not([data-unstyled])[data-size-lg='xs'] {
       --lui-private-tags-input-height: var(--lui-sizes-8);
       --lui-private-tags-input-item-height: var(--lui-sizes-6);
       --lui-private-tags-input-font-size: var(--lui-font-sizes-xs);
       --lui-private-tags-input-line-height: 1rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-lg='sm'] {
+    .lui-tags-input__root:not([data-unstyled])[data-size-lg='sm'] {
       --lui-private-tags-input-height: var(--lui-sizes-9);
       --lui-private-tags-input-item-height: var(--lui-sizes-6);
       --lui-private-tags-input-font-size: var(--lui-font-sizes-sm);
       --lui-private-tags-input-line-height: 1.25rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-lg='md'] {
+    .lui-tags-input__root:not([data-unstyled])[data-size-lg='md'] {
       --lui-private-tags-input-height: var(--lui-sizes-10);
       --lui-private-tags-input-item-height: var(--lui-sizes-7);
       --lui-private-tags-input-font-size: var(--lui-font-sizes-sm);
       --lui-private-tags-input-line-height: 1.25rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-lg='lg'] {
+    .lui-tags-input__root:not([data-unstyled])[data-size-lg='lg'] {
       --lui-private-tags-input-height: var(--lui-sizes-11);
       --lui-private-tags-input-item-height: var(--lui-sizes-8);
       --lui-private-tags-input-font-size: var(--lui-font-sizes-md);
@@ -78,25 +78,25 @@
     }
   }
   @media (min-width: 1280px) {
-    .leverui-tags-input__root:not([data-unstyled])[data-size-xl='xs'] {
+    .lui-tags-input__root:not([data-unstyled])[data-size-xl='xs'] {
       --lui-private-tags-input-height: var(--lui-sizes-8);
       --lui-private-tags-input-item-height: var(--lui-sizes-6);
       --lui-private-tags-input-font-size: var(--lui-font-sizes-xs);
       --lui-private-tags-input-line-height: 1rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-xl='sm'] {
+    .lui-tags-input__root:not([data-unstyled])[data-size-xl='sm'] {
       --lui-private-tags-input-height: var(--lui-sizes-9);
       --lui-private-tags-input-item-height: var(--lui-sizes-6);
       --lui-private-tags-input-font-size: var(--lui-font-sizes-sm);
       --lui-private-tags-input-line-height: 1.25rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-xl='md'] {
+    .lui-tags-input__root:not([data-unstyled])[data-size-xl='md'] {
       --lui-private-tags-input-height: var(--lui-sizes-10);
       --lui-private-tags-input-item-height: var(--lui-sizes-7);
       --lui-private-tags-input-font-size: var(--lui-font-sizes-sm);
       --lui-private-tags-input-line-height: 1.25rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-xl='lg'] {
+    .lui-tags-input__root:not([data-unstyled])[data-size-xl='lg'] {
       --lui-private-tags-input-height: var(--lui-sizes-11);
       --lui-private-tags-input-item-height: var(--lui-sizes-8);
       --lui-private-tags-input-font-size: var(--lui-font-sizes-md);
@@ -104,25 +104,25 @@
     }
   }
   @media (min-width: 1536px) {
-    .leverui-tags-input__root:not([data-unstyled])[data-size-2xl='xs'] {
+    .lui-tags-input__root:not([data-unstyled])[data-size-2xl='xs'] {
       --lui-private-tags-input-height: var(--lui-sizes-8);
       --lui-private-tags-input-item-height: var(--lui-sizes-6);
       --lui-private-tags-input-font-size: var(--lui-font-sizes-xs);
       --lui-private-tags-input-line-height: 1rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-2xl='sm'] {
+    .lui-tags-input__root:not([data-unstyled])[data-size-2xl='sm'] {
       --lui-private-tags-input-height: var(--lui-sizes-9);
       --lui-private-tags-input-item-height: var(--lui-sizes-6);
       --lui-private-tags-input-font-size: var(--lui-font-sizes-sm);
       --lui-private-tags-input-line-height: 1.25rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-2xl='md'] {
+    .lui-tags-input__root:not([data-unstyled])[data-size-2xl='md'] {
       --lui-private-tags-input-height: var(--lui-sizes-10);
       --lui-private-tags-input-item-height: var(--lui-sizes-7);
       --lui-private-tags-input-font-size: var(--lui-font-sizes-sm);
       --lui-private-tags-input-line-height: 1.25rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-2xl='lg'] {
+    .lui-tags-input__root:not([data-unstyled])[data-size-2xl='lg'] {
       --lui-private-tags-input-height: var(--lui-sizes-11);
       --lui-private-tags-input-item-height: var(--lui-sizes-8);
       --lui-private-tags-input-font-size: var(--lui-font-sizes-md);

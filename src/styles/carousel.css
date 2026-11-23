@@ -1,56 +1,56 @@
 @layer leverui.recipes {
-  .leverui-carousel__root:not([data-unstyled]) {
+  .lui-carousel__root:not([data-unstyled]) {
     position: relative;
     display: flex;
     gap: var(--lui-spacing-2);
   }
 
-  .leverui-carousel__root:not([data-unstyled])[data-orientation='horizontal'] {
+  .lui-carousel__root:not([data-unstyled])[data-orientation='horizontal'] {
     flex-direction: column;
   }
 
-  .leverui-carousel__root:not([data-unstyled])[data-orientation='vertical'] {
+  .lui-carousel__root:not([data-unstyled])[data-orientation='vertical'] {
     flex-direction: row;
   }
 
-  .leverui-carousel__item:not([data-unstyled])[data-orientation='horizontal'] {
+  .lui-carousel__item:not([data-unstyled])[data-orientation='horizontal'] {
     width: 100%;
   }
 
-  .leverui-carousel__item:not([data-unstyled])[data-orientation='vertical'] {
+  .lui-carousel__item:not([data-unstyled])[data-orientation='vertical'] {
     height: 100%;
   }
 
-  .leverui-carousel__control:not([data-unstyled]) {
+  .lui-carousel__control:not([data-unstyled]) {
     display: flex;
     align-items: center;
   }
 
-  .leverui-carousel__control:not([data-unstyled])[data-orientation='horizontal'] {
+  .lui-carousel__control:not([data-unstyled])[data-orientation='horizontal'] {
     flex-direction: row;
     width: 100%;
   }
 
-  .leverui-carousel__control:not([data-unstyled])[data-orientation='vertical'] {
+  .lui-carousel__control:not([data-unstyled])[data-orientation='vertical'] {
     flex-direction: column;
     height: 100%;
   }
 
-  .leverui-carousel__indicatorGroup:not([data-unstyled]) {
+  .lui-carousel__indicatorGroup:not([data-unstyled]) {
     display: flex;
     justify-content: center;
     gap: var(--lui-spacing-3);
   }
 
-  .leverui-carousel__indicatorGroup:not([data-unstyled])[data-orientation='horizontal'] {
+  .lui-carousel__indicatorGroup:not([data-unstyled])[data-orientation='horizontal'] {
     flex-direction: row;
   }
 
-  .leverui-carousel__indicatorGroup:not([data-unstyled])[data-orientation='vertical'] {
+  .lui-carousel__indicatorGroup:not([data-unstyled])[data-orientation='vertical'] {
     flex-direction: column;
   }
 
-  .leverui-carousel__indicator:not([data-unstyled]) {
+  .lui-carousel__indicator:not([data-unstyled]) {
     width: var(--lui-sizes-2\.5);
     height: var(--lui-sizes-2\.5);
     border-radius: var(--lui-radii-full);
@@ -58,7 +58,7 @@
     cursor: pointer;
   }
 
-  .leverui-carousel__indicator:not([data-unstyled])[data-current] {
+  .lui-carousel__indicator:not([data-unstyled])[data-current] {
     background: var(--lui-colors-color-palette-solid, var(--lui-colors-gray-solid));
   }
 }

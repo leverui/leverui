@@ -48,7 +48,7 @@ export function ToggleTip(props: ToggleTipProps): JSX.Element {
           <PopoverContent
             aria-label="Additional information"
             {...local.contentProps}
-            class={['leverui-toggle-tip', local.contentProps?.class]}
+            class={['lui-toggle-tip', local.contentProps?.class]}
           >
             {local.showArrow && (
               <PopoverArrow>

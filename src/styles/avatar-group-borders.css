@@ -1,14 +1,14 @@
 @layer leverui.recipes {
-  .leverui-avatar__root:not([data-unstyled])[data-leverui-group-item] {
+  .lui-avatar__root:not([data-unstyled])[data-lui-group-item] {
     border-width: var(--lui-private-avatar-group-border-width, 2px);
     border-color: var(--lui-colors-bg);
   }
 
-  .leverui-avatar__root:not([data-unstyled])[data-borderless='true'] {
+  .lui-avatar__root:not([data-unstyled])[data-borderless='true'] {
     --lui-private-avatar-group-border-width: 0px;
   }
 
-  .leverui-avatar__root:not([data-unstyled])[data-borderless='false'] {
+  .lui-avatar__root:not([data-unstyled])[data-borderless='false'] {
     --lui-private-avatar-group-border-width: 2px;
   }
 }

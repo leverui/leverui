@@ -1,14 +1,14 @@
 @layer leverui.recipes {
-  .leverui-rating-group__root:not([data-unstyled]) {
+  .lui-rating-group__root:not([data-unstyled]) {
     display: inline-flex;
   }
 
-  .leverui-rating-group__control:not([data-unstyled]) {
+  .lui-rating-group__control:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
   }
 
-  .leverui-rating-group__item:not([data-unstyled]) {
+  .lui-rating-group__item:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +23,7 @@
     );
   }
 
-  .leverui-rating-group__itemIndicator:not([data-unstyled]) {
+  .lui-rating-group__itemIndicator:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -33,11 +33,11 @@
     --lui-private-rating-group-clip-path: inset(0 50% 0 0);
   }
 
-  .leverui-rating-group__root:dir(rtl) .leverui-rating-group__itemIndicator:not([data-unstyled]) {
+  .lui-rating-group__root:dir(rtl) .lui-rating-group__itemIndicator:not([data-unstyled]) {
     --lui-private-rating-group-clip-path: inset(0 0 0 50%);
   }
 
-  .leverui-rating-group__itemIndicator:not([data-unstyled]) svg {
+  .lui-rating-group__itemIndicator:not([data-unstyled]) svg {
     stroke: currentColor;
     width: 100%;
     height: 100%;
@@ -48,21 +48,21 @@
     top: 0;
   }
 
-  .leverui-rating-group__itemIndicator:not([data-unstyled]) [data-bg] {
+  .lui-rating-group__itemIndicator:not([data-unstyled]) [data-bg] {
     color: var(--lui-rating-group-background-color, var(--lui-colors-bg-emphasized));
   }
 
-  .leverui-rating-group__itemIndicator:not([data-unstyled]) [data-fg] {
+  .lui-rating-group__itemIndicator:not([data-unstyled]) [data-fg] {
     color: transparent;
   }
 
-  .leverui-rating-group__itemIndicator:not([data-unstyled])[data-highlighted]:not([data-half])
+  .lui-rating-group__itemIndicator:not([data-unstyled])[data-highlighted]:not([data-half])
     [data-fg],
-  .leverui-rating-group__itemIndicator:not([data-unstyled])[data-half] [data-fg] {
+  .lui-rating-group__itemIndicator:not([data-unstyled])[data-half] [data-fg] {
     color: var(--lui-rating-group-foreground-color, var(--lui-colors-color-palette-solid));
   }
 
-  .leverui-rating-group__itemIndicator:not([data-unstyled])[data-half] [data-fg] {
+  .lui-rating-group__itemIndicator:not([data-unstyled])[data-half] [data-fg] {
     clip-path: var(--lui-private-rating-group-clip-path);
   }
 }

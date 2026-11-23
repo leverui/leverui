@@ -1,90 +1,87 @@
 @layer leverui.reset {
-  /* Tag-specific resets, applied only to elements with a leverui- class. */
-  :where(hr):where([class^='leverui-'], [class*=' leverui-']) {
+  /* Tag-specific resets, applied only to elements with a lui- class. */
+  :where(hr):where([class^='lui-'], [class*=' lui-']) {
     height: 0px;
     color: inherit;
     border-top-width: 1px;
   }
   :where(img, svg, video, canvas, audio, iframe, embed, object):where(
-    [class^='leverui-'],
-    [class*=' leverui-']
+    [class^='lui-'],
+    [class*=' lui-']
   ) {
     display: block;
     vertical-align: middle;
   }
-  :where(img, video):where([class^='leverui-'], [class*=' leverui-']) {
+  :where(img, video):where([class^='lui-'], [class*=' lui-']) {
     max-width: 100%;
     height: auto;
   }
-  :where(img):where([class^='leverui-'], [class*=' leverui-']) {
+  :where(img):where([class^='lui-'], [class*=' lui-']) {
     border-style: none;
   }
-  :where(iframe):where([class^='leverui-'], [class*=' leverui-']) {
+  :where(iframe):where([class^='lui-'], [class*=' lui-']) {
     border: none;
   }
-  :where(summary):where([class^='leverui-'], [class*=' leverui-']) {
+  :where(summary):where([class^='lui-'], [class*=' lui-']) {
     display: list-item;
   }
-  :where(small):where([class^='leverui-'], [class*=' leverui-']) {
+  :where(small):where([class^='lui-'], [class*=' lui-']) {
     font-size: 80%;
   }
-  :where(sub, sup):where([class^='leverui-'], [class*=' leverui-']) {
+  :where(sub, sup):where([class^='lui-'], [class*=' lui-']) {
     font-size: 75%;
     line-height: 0;
     position: relative;
     vertical-align: baseline;
   }
-  :where(sub):where([class^='leverui-'], [class*=' leverui-']) {
+  :where(sub):where([class^='lui-'], [class*=' lui-']) {
     bottom: -0.25em;
   }
-  :where(sup):where([class^='leverui-'], [class*=' leverui-']) {
+  :where(sup):where([class^='lui-'], [class*=' lui-']) {
     top: -0.5em;
   }
-  :where(abbr[title]):where([class^='leverui-'], [class*=' leverui-']) {
+  :where(abbr[title]):where([class^='lui-'], [class*=' lui-']) {
     text-decoration: underline dotted;
   }
-  :where(b, strong):where([class^='leverui-'], [class*=' leverui-']) {
+  :where(b, strong):where([class^='lui-'], [class*=' lui-']) {
     font-weight: bolder;
   }
-  :where(i, em):where([class^='leverui-'], [class*=' leverui-']) {
+  :where(i, em):where([class^='lui-'], [class*=' lui-']) {
     font-style: italic;
   }
-  :where(ol, ul):where([class^='leverui-'], [class*=' leverui-']) {
+  :where(ol, ul):where([class^='lui-'], [class*=' lui-']) {
     list-style: none;
   }
   :where(button, [type='button'], [type='reset'], [type='submit']):where(
-    [class^='leverui-'],
-    [class*=' leverui-']
+    [class^='lui-'],
+    [class*=' lui-']
   ) {
     -webkit-appearance: button;
     background-color: transparent;
     background-image: none;
   }
-  :where(button, input, optgroup, select, textarea):where(
-    [class^='leverui-'],
-    [class*=' leverui-']
-  ) {
+  :where(button, input, optgroup, select, textarea):where([class^='lui-'], [class*=' lui-']) {
     color: inherit;
   }
-  :where(button, select):where([class^='leverui-'], [class*=' leverui-']) {
+  :where(button, select):where([class^='lui-'], [class*=' lui-']) {
     text-transform: none;
   }
-  :where(table):where([class^='leverui-'], [class*=' leverui-']) {
+  :where(table):where([class^='lui-'], [class*=' lui-']) {
     text-indent: 0px;
     border-color: inherit;
     border-collapse: collapse;
   }
-  :where(textarea):where([class^='leverui-'], [class*=' leverui-']) {
+  :where(textarea):where([class^='lui-'], [class*=' lui-']) {
     resize: vertical;
   }
-  :where(dialog):where([class^='leverui-'], [class*=' leverui-']) {
+  :where(dialog):where([class^='lui-'], [class*=' lui-']) {
     padding: 0px;
   }
-  :where(a):where([class^='leverui-'], [class*=' leverui-']) {
+  :where(a):where([class^='lui-'], [class*=' lui-']) {
     color: inherit;
     text-decoration: inherit;
   }
-  :where(code, kbd, samp, pre):where([class^='leverui-'], [class*=' leverui-']) {
+  :where(code, kbd, samp, pre):where([class^='lui-'], [class*=' lui-']) {
     font-family: var(
       --global-font-mono,
       ui-monospace,
@@ -96,7 +93,7 @@
       'Courier New'
     );
   }
-  :where(input):where([class^='leverui-'], [class*=' leverui-']):where(
+  :where(input):where([class^='lui-'], [class*=' lui-']):where(
       [type='text'],
       [type='email'],
       [type='search'],
@@ -105,36 +102,30 @@
     -webkit-appearance: none;
     -moz-appearance: none;
   }
-  :where(input[type='search']):where([class^='leverui-'], [class*=' leverui-']) {
+  :where(input[type='search']):where([class^='lui-'], [class*=' lui-']) {
     -webkit-appearance: textfield;
     outline-offset: -2px;
   }
-  :where(input[type='number']):where([class^='leverui-'], [class*=' leverui-']) {
+  :where(input[type='number']):where([class^='lui-'], [class*=' lui-']) {
     -moz-appearance: textfield;
   }
-  :where([class^='leverui-'], [class*=' leverui-'])::-webkit-search-decoration,
-  :where([class^='leverui-'], [class*=' leverui-'])::-webkit-search-cancel-button {
+  :where([class^='lui-'], [class*=' lui-'])::-webkit-search-decoration,
+  :where([class^='lui-'], [class*=' lui-'])::-webkit-search-cancel-button {
     -webkit-appearance: none;
   }
-  :where([class^='leverui-'], [class*=' leverui-'])::-webkit-file-upload-button {
+  :where([class^='lui-'], [class*=' lui-'])::-webkit-file-upload-button {
     -webkit-appearance: button;
     font: inherit;
   }
-  :where(input[type='number']):where(
-      [class^='leverui-'],
-      [class*=' leverui-']
-    )::-webkit-inner-spin-button,
-  :where(input[type='number']):where(
-      [class^='leverui-'],
-      [class*=' leverui-']
-    )::-webkit-outer-spin-button {
+  :where(input[type='number']):where([class^='lui-'], [class*=' lui-'])::-webkit-inner-spin-button,
+  :where(input[type='number']):where([class^='lui-'], [class*=' lui-'])::-webkit-outer-spin-button {
     height: auto;
   }
-  :where([class^='leverui-'], [class*=' leverui-'])::placeholder {
+  :where([class^='lui-'], [class*=' lui-'])::placeholder {
     opacity: unset;
     user-select: none;
   }
-  :where([class^='leverui-'], [class*=' leverui-'])[hidden]:where(:not([hidden='until-found'])) {
+  :where([class^='lui-'], [class*=' lui-'])[hidden]:where(:not([hidden='until-found'])) {
     display: none !important;
   }
 }

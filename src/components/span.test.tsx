@@ -55,7 +55,7 @@ function verifiesSpanChildComposition(): void {
   const link = screen.getByTestId('child-span');
   expect(link.tagName).toBe('A');
   expect(link.getAttribute('href')).toBe('#destination');
-  expect(link.className).toContain('leverui-span');
+  expect(link.className).toContain('lui-span');
   expect(link.className).toContain('parent-link');
   expect(link.getAttribute('style')).toContain('color: red');
   expect(parentElement).toBe(link);

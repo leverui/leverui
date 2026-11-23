@@ -7,7 +7,7 @@ async function verifiesResponsiveGroup({ page }: { page: Page }): Promise<void> 
   const root = page.getByTestId('radio-group-responsive');
   const train = root.getByRole('radio', { name: 'Train' });
   const bus = root.getByRole('radio', { name: 'Bus' });
-  const indicator = root.locator('.leverui-radio-group__itemControl').first();
+  const indicator = root.locator('.lui-radio-group__itemControl').first();
   await expect(root).toHaveAttribute('aria-orientation', 'horizontal', { timeout: 45_000 });
   await expect(root).toHaveCSS('flex-direction', 'row');
   await expect(root).toHaveAttribute('data-size-md', 'lg');

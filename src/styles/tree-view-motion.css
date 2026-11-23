@@ -1,76 +1,75 @@
 @layer leverui.recipes {
-  .leverui-tree-view__root:not([data-unstyled]) {
+  .lui-tree-view__root:not([data-unstyled]) {
     --lui-private-tree-open-animation: none;
     --lui-private-tree-closed-animation: none;
   }
 
-  .leverui-tree-view__root:not([data-unstyled])[data-animate-content='true'] {
+  .lui-tree-view__root:not([data-unstyled])[data-animate-content='true'] {
     --lui-private-tree-open-animation: expand-height, fade-in;
     --lui-private-tree-closed-animation: collapse-height, fade-out;
   }
 
   @media (min-width: 480px) {
-    .leverui-tree-view__root:not([data-unstyled])[data-animate-content-sm='true'] {
+    .lui-tree-view__root:not([data-unstyled])[data-animate-content-sm='true'] {
       --lui-private-tree-open-animation: expand-height, fade-in;
       --lui-private-tree-closed-animation: collapse-height, fade-out;
     }
 
-    .leverui-tree-view__root:not([data-unstyled])[data-animate-content-sm='false'] {
+    .lui-tree-view__root:not([data-unstyled])[data-animate-content-sm='false'] {
       --lui-private-tree-open-animation: none;
       --lui-private-tree-closed-animation: none;
     }
   }
 
   @media (min-width: 768px) {
-    .leverui-tree-view__root:not([data-unstyled])[data-animate-content-md='true'] {
+    .lui-tree-view__root:not([data-unstyled])[data-animate-content-md='true'] {
       --lui-private-tree-open-animation: expand-height, fade-in;
       --lui-private-tree-closed-animation: collapse-height, fade-out;
     }
 
-    .leverui-tree-view__root:not([data-unstyled])[data-animate-content-md='false'] {
+    .lui-tree-view__root:not([data-unstyled])[data-animate-content-md='false'] {
       --lui-private-tree-open-animation: none;
       --lui-private-tree-closed-animation: none;
     }
   }
 
   @media (min-width: 1024px) {
-    .leverui-tree-view__root:not([data-unstyled])[data-animate-content-lg='true'] {
+    .lui-tree-view__root:not([data-unstyled])[data-animate-content-lg='true'] {
       --lui-private-tree-open-animation: expand-height, fade-in;
       --lui-private-tree-closed-animation: collapse-height, fade-out;
     }
 
-    .leverui-tree-view__root:not([data-unstyled])[data-animate-content-lg='false'] {
+    .lui-tree-view__root:not([data-unstyled])[data-animate-content-lg='false'] {
       --lui-private-tree-open-animation: none;
       --lui-private-tree-closed-animation: none;
     }
   }
 
   @media (min-width: 1280px) {
-    .leverui-tree-view__root:not([data-unstyled])[data-animate-content-xl='true'] {
+    .lui-tree-view__root:not([data-unstyled])[data-animate-content-xl='true'] {
       --lui-private-tree-open-animation: expand-height, fade-in;
       --lui-private-tree-closed-animation: collapse-height, fade-out;
     }
 
-    .leverui-tree-view__root:not([data-unstyled])[data-animate-content-xl='false'] {
+    .lui-tree-view__root:not([data-unstyled])[data-animate-content-xl='false'] {
       --lui-private-tree-open-animation: none;
       --lui-private-tree-closed-animation: none;
     }
   }
 
   @media (min-width: 1536px) {
-    .leverui-tree-view__root:not([data-unstyled])[data-animate-content-2xl='true'] {
+    .lui-tree-view__root:not([data-unstyled])[data-animate-content-2xl='true'] {
       --lui-private-tree-open-animation: expand-height, fade-in;
       --lui-private-tree-closed-animation: collapse-height, fade-out;
     }
 
-    .leverui-tree-view__root:not([data-unstyled])[data-animate-content-2xl='false'] {
+    .lui-tree-view__root:not([data-unstyled])[data-animate-content-2xl='false'] {
       --lui-private-tree-open-animation: none;
       --lui-private-tree-closed-animation: none;
     }
   }
 
-  .leverui-tree-view__root:not([data-unstyled])
-    .leverui-tree-view__branchContent:not([data-unstyled]) {
+  .lui-tree-view__root:not([data-unstyled]) .lui-tree-view__branchContent:not([data-unstyled]) {
     &[data-state='open'] {
       animation-name: var(--lui-private-tree-open-animation);
       animation-duration: var(--lui-durations-moderate, 200ms);
@@ -83,8 +82,8 @@
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .leverui-tree-view__root:not([data-unstyled])
-      .leverui-tree-view__branchContent:not([data-unstyled]):is(
+    .lui-tree-view__root:not([data-unstyled])
+      .lui-tree-view__branchContent:not([data-unstyled]):is(
         [data-state='open'],
         [data-state='closed']
       ) {

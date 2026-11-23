@@ -1,16 +1,16 @@
 @layer leverui.recipes {
-  .leverui-code-block__root:not([data-unstyled])
-    .leverui-code-block__content:not([data-unstyled])[data-expanded] {
+  .lui-code-block__root:not([data-unstyled])
+    .lui-code-block__content:not([data-unstyled])[data-expanded] {
     max-height: unset;
   }
 
-  .leverui-code-block__root:not([data-unstyled])
-    .leverui-code-block__overlay:not([data-unstyled])[data-expanded] {
+  .lui-code-block__root:not([data-unstyled])
+    .lui-code-block__overlay:not([data-unstyled])[data-expanded] {
     display: none;
   }
 
-  .leverui-code-block__root:not([data-unstyled])
-    .leverui-code-block__codeText:not([data-unstyled])[data-has-focused]
+  .lui-code-block__root:not([data-unstyled])
+    .lui-code-block__codeText:not([data-unstyled])[data-has-focused]
     [data-line]:not([data-focused]) {
     transition:
       opacity var(--lui-durations-moderate) ease-in-out,
@@ -24,14 +24,14 @@
     );
   }
 
-  .leverui-code-block__root:not([data-unstyled])
-    .leverui-code-block__codeText:not([data-unstyled])[data-has-focused]:hover {
+  .lui-code-block__root:not([data-unstyled])
+    .lui-code-block__codeText:not([data-unstyled])[data-has-focused]:hover {
     --lui-private-code-block-hover-opacity: 1;
     --lui-private-code-block-hover-blur: 0px;
   }
 
-  .leverui-code-block__root:not([data-unstyled])
-    .leverui-code-block__codeText:not([data-unstyled])[data-has-line-numbers][data-plaintext] {
+  .lui-code-block__root:not([data-unstyled])
+    .lui-code-block__codeText:not([data-unstyled])[data-has-line-numbers][data-plaintext] {
     padding-inline-start: calc(
       var(--lui-code-block-line-number-width, var(--lui-sizes-3)) +
         var(--lui-code-block-line-number-margin, var(--lui-spacing-4)) +
@@ -39,8 +39,8 @@
     );
   }
 
-  .leverui-code-block__root:not([data-unstyled])
-    .leverui-code-block__codeText:not([data-unstyled])
+  .lui-code-block__root:not([data-unstyled])
+    .lui-code-block__codeText:not([data-unstyled])
     [data-line] {
     position: relative;
     padding-inline-end: var(--lui-code-block-padding, var(--lui-private-code-block-padding));
@@ -54,15 +54,15 @@
     );
   }
 
-  .leverui-code-block__root:not([data-unstyled])
-    .leverui-code-block__codeText:not([data-unstyled])
+  .lui-code-block__root:not([data-unstyled])
+    .lui-code-block__codeText:not([data-unstyled])
     [data-line]:is([data-highlight], [data-diff]) {
     display: inline-block;
     width: 100%;
   }
 
-  .leverui-code-block__root:not([data-unstyled])
-    .leverui-code-block__codeText:not([data-unstyled])
+  .lui-code-block__root:not([data-unstyled])
+    .lui-code-block__codeText:not([data-unstyled])
     [data-line]:is([data-highlight], [data-diff])::after {
     content: '';
     display: block;
@@ -78,8 +78,8 @@
     border-inline-start: 2px solid var(--lui-private-code-block-highlight-border);
   }
 
-  .leverui-code-block__root:not([data-unstyled])
-    .leverui-code-block__codeText:not([data-unstyled])
+  .lui-code-block__root:not([data-unstyled])
+    .lui-code-block__codeText:not([data-unstyled])
     [data-diff='added'] {
     --lui-private-code-block-highlight-bg: var(
       --lui-code-block-highlight-added-bg,
@@ -91,8 +91,8 @@
     );
   }
 
-  .leverui-code-block__root:not([data-unstyled])
-    .leverui-code-block__codeText:not([data-unstyled])
+  .lui-code-block__root:not([data-unstyled])
+    .lui-code-block__codeText:not([data-unstyled])
     [data-diff='removed'] {
     --lui-private-code-block-highlight-bg: var(
       --lui-code-block-highlight-removed-bg,
@@ -104,17 +104,17 @@
     );
   }
 
-  .leverui-code-block__root:not([data-unstyled])
-    .leverui-code-block__codeText:not([data-unstyled])[data-word-wrap]:is([data-plaintext]),
-  .leverui-code-block__root:not([data-unstyled])
-    .leverui-code-block__codeText:not([data-unstyled])[data-word-wrap]
+  .lui-code-block__root:not([data-unstyled])
+    .lui-code-block__codeText:not([data-unstyled])[data-word-wrap]:is([data-plaintext]),
+  .lui-code-block__root:not([data-unstyled])
+    .lui-code-block__codeText:not([data-unstyled])[data-word-wrap]
     [data-line] {
     white-space: pre-wrap;
     word-break: break-all;
   }
 
-  .leverui-code-block__root:not([data-unstyled])
-    .leverui-code-block__codeText:not([data-unstyled])[data-has-line-numbers]
+  .lui-code-block__root:not([data-unstyled])
+    .lui-code-block__codeText:not([data-unstyled])[data-has-line-numbers]
     [data-line]::before {
     content: counter(line);
     counter-increment: line;
@@ -127,13 +127,13 @@
     opacity: 0.4;
   }
 
-  .leverui-code-block__root:not([data-unstyled])
-    .leverui-code-block__codeText:not([data-unstyled])[data-has-line-numbers]
+  .lui-code-block__root:not([data-unstyled])
+    .lui-code-block__codeText:not([data-unstyled])[data-has-line-numbers]
     [data-diff='added']::before {
     content: '+';
   }
-  .leverui-code-block__root:not([data-unstyled])
-    .leverui-code-block__codeText:not([data-unstyled])[data-has-line-numbers]
+  .lui-code-block__root:not([data-unstyled])
+    .lui-code-block__codeText:not([data-unstyled])[data-has-line-numbers]
     [data-diff='removed']::before {
     content: '-';
   }

@@ -5,7 +5,7 @@ export async function verifyPackedToggle(page) {
   const root = page.getByRole('button', { name: 'Packed Bold', exact: true });
   await root.waitFor();
   assert.equal(await root.getAttribute('data-testid'), 'packed-toggle-root');
-  assert.match(await root.getAttribute('class'), /leverui-toggle__root/);
+  assert.match(await root.getAttribute('class'), /lui-toggle__root/);
   assert.equal(
     await root.evaluate(
       /** Read the consumer stylesheet after the library's runtime rules. */

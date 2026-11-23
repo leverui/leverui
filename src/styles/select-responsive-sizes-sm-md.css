@@ -1,7 +1,7 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-select__root:not([data-unstyled])[data-size-sm='xs'],
-    .leverui-select__content:not([data-unstyled])[data-size-sm='xs'] {
+    .lui-select__root:not([data-unstyled])[data-size-sm='xs'],
+    .lui-select__content:not([data-unstyled])[data-size-sm='xs'] {
       --lui-private-select-trigger-height: var(--lui-sizes-8);
       --lui-private-select-content-gap: var(--lui-spacing-1);
       --lui-private-select-trigger-padding-x: var(--lui-spacing-2);
@@ -15,8 +15,8 @@
       --lui-private-select-item-group-margin: 0;
       --lui-private-select-indicator-size: var(--lui-sizes-3\.5);
     }
-    .leverui-select__root:not([data-unstyled])[data-size-sm='sm'],
-    .leverui-select__content:not([data-unstyled])[data-size-sm='sm'] {
+    .lui-select__root:not([data-unstyled])[data-size-sm='sm'],
+    .lui-select__content:not([data-unstyled])[data-size-sm='sm'] {
       --lui-private-select-trigger-height: var(--lui-sizes-9);
       --lui-private-select-content-gap: 0;
       --lui-private-select-trigger-padding-x: var(--lui-spacing-2\.5);
@@ -30,8 +30,8 @@
       --lui-private-select-item-group-margin: var(--lui-spacing-1);
       --lui-private-select-indicator-size: var(--lui-sizes-4);
     }
-    .leverui-select__root:not([data-unstyled])[data-size-sm='md'],
-    .leverui-select__content:not([data-unstyled])[data-size-sm='md'] {
+    .lui-select__root:not([data-unstyled])[data-size-sm='md'],
+    .lui-select__content:not([data-unstyled])[data-size-sm='md'] {
       --lui-private-select-trigger-height: var(--lui-sizes-10);
       --lui-private-select-content-gap: 0;
       --lui-private-select-trigger-padding-x: var(--lui-spacing-3);
@@ -45,8 +45,8 @@
       --lui-private-select-item-group-margin: var(--lui-spacing-1\.5);
       --lui-private-select-indicator-size: var(--lui-sizes-4);
     }
-    .leverui-select__root:not([data-unstyled])[data-size-sm='lg'],
-    .leverui-select__content:not([data-unstyled])[data-size-sm='lg'] {
+    .lui-select__root:not([data-unstyled])[data-size-sm='lg'],
+    .lui-select__content:not([data-unstyled])[data-size-sm='lg'] {
       --lui-private-select-trigger-height: var(--lui-sizes-12);
       --lui-private-select-content-gap: 0;
       --lui-private-select-trigger-padding-x: var(--lui-spacing-4);
@@ -62,8 +62,8 @@
     }
   }
   @media (min-width: 768px) {
-    .leverui-select__root:not([data-unstyled])[data-size-md='xs'],
-    .leverui-select__content:not([data-unstyled])[data-size-md='xs'] {
+    .lui-select__root:not([data-unstyled])[data-size-md='xs'],
+    .lui-select__content:not([data-unstyled])[data-size-md='xs'] {
       --lui-private-select-trigger-height: var(--lui-sizes-8);
       --lui-private-select-content-gap: var(--lui-spacing-1);
       --lui-private-select-trigger-padding-x: var(--lui-spacing-2);
@@ -77,8 +77,8 @@
       --lui-private-select-item-group-margin: 0;
       --lui-private-select-indicator-size: var(--lui-sizes-3\.5);
     }
-    .leverui-select__root:not([data-unstyled])[data-size-md='sm'],
-    .leverui-select__content:not([data-unstyled])[data-size-md='sm'] {
+    .lui-select__root:not([data-unstyled])[data-size-md='sm'],
+    .lui-select__content:not([data-unstyled])[data-size-md='sm'] {
       --lui-private-select-trigger-height: var(--lui-sizes-9);
       --lui-private-select-content-gap: 0;
       --lui-private-select-trigger-padding-x: var(--lui-spacing-2\.5);
@@ -92,8 +92,8 @@
       --lui-private-select-item-group-margin: var(--lui-spacing-1);
       --lui-private-select-indicator-size: var(--lui-sizes-4);
     }
-    .leverui-select__root:not([data-unstyled])[data-size-md='md'],
-    .leverui-select__content:not([data-unstyled])[data-size-md='md'] {
+    .lui-select__root:not([data-unstyled])[data-size-md='md'],
+    .lui-select__content:not([data-unstyled])[data-size-md='md'] {
       --lui-private-select-trigger-height: var(--lui-sizes-10);
       --lui-private-select-content-gap: 0;
       --lui-private-select-trigger-padding-x: var(--lui-spacing-3);
@@ -107,8 +107,8 @@
       --lui-private-select-item-group-margin: var(--lui-spacing-1\.5);
       --lui-private-select-indicator-size: var(--lui-sizes-4);
     }
-    .leverui-select__root:not([data-unstyled])[data-size-md='lg'],
-    .leverui-select__content:not([data-unstyled])[data-size-md='lg'] {
+    .lui-select__root:not([data-unstyled])[data-size-md='lg'],
+    .lui-select__content:not([data-unstyled])[data-size-md='lg'] {
       --lui-private-select-trigger-height: var(--lui-sizes-12);
       --lui-private-select-content-gap: 0;
       --lui-private-select-trigger-padding-x: var(--lui-spacing-4);

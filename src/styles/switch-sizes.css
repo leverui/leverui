@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-switch__root:not([data-unstyled]) {
+  .lui-switch__root:not([data-unstyled]) {
     --lui-private-switch-width: var(--lui-sizes-10);
     --lui-private-switch-height: var(--lui-sizes-5);
     --lui-private-switch-indicator-font-size: var(--lui-font-sizes-sm);

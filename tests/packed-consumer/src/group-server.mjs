@@ -25,7 +25,7 @@ function renderInstalledGroup() {
 
 const markup = renderInstalledGroup();
 assert.match(markup, /id="packed-server-group"/);
-assert.match(markup, /leverui-group/);
+assert.match(markup, /lui-group/);
 assert.match(markup, /First/);
 assert.match(markup, /Last/);
 assert.match(markup, /data-orientation="vertical"/);

@@ -30,17 +30,17 @@ export interface DefaultToasterProps {
 function DefaultToaster(props: DefaultToasterProps): JSX.Element {
   return (
     <Portal>
-      <ToasterRegion toaster={toaster} class={['leverui-toaster-default', props.class]}>
+      <ToasterRegion toaster={toaster} class={['lui-toaster-default', props.class]}>
         {
           /** Compose one notification from its store item. */
           (item) => (
-            <ToastRoot class="leverui-toaster-default__toast">
+            <ToastRoot class="lui-toaster-default__toast">
               {item().type === 'loading' ? (
-                <Spinner size="sm" class="leverui-toaster-default__spinner" />
+                <Spinner size="sm" class="lui-toaster-default__spinner" />
               ) : (
                 <ToastIndicator />
               )}
-              <ToastContent class="leverui-toaster-default__text">
+              <ToastContent class="lui-toaster-default__text">
                 <Stack gap="1">
                   {item().title && <ToastTitle>{item().title}</ToastTitle>}
                   {item().description && <ToastDescription>{item().description}</ToastDescription>}

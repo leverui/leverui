@@ -13,7 +13,7 @@ async function verifiesQrCodeContract({ page }: { page: Page }): Promise<void> {
   await expect(frame).toHaveCSS('width', '80px');
   await expect(frame).toHaveCSS('height', '80px');
   await expect(path).toHaveAttribute('d', /.+/);
-  await expect(path).toHaveClass(/leverui-qr-code__pattern/);
+  await expect(path).toHaveClass(/lui-qr-code__pattern/);
   const overlay = page.getByTestId('qr-overlay');
   await expect(overlay).toHaveCSS('display', 'flex');
   const overlayWidth = await overlay.evaluate(

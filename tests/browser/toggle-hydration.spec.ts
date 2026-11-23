@@ -25,7 +25,7 @@ async function verifiesToggleHydration({ page }: { page: Page }): Promise<void> 
   );
   const root = page.getByRole('button', { name: 'Hydrated Bold' });
   const styled = page.getByRole('button', { name: 'Hydrated Styled Bold' });
-  const indicator = page.locator('#toggle-hydration-root .leverui-toggle__indicator');
+  const indicator = page.locator('#toggle-hydration-root .lui-toggle__indicator');
   await expect(root).toHaveAttribute('aria-pressed', 'false');
   await expect(styled).toHaveAttribute('aria-pressed', 'false');
   await expect(indicator).toHaveText(['Off', 'Styled off']);

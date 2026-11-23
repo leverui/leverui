@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-rating-group__root:not([data-unstyled]) {
+  .lui-rating-group__root:not([data-unstyled]) {
     &[data-size='xs'] {
       --lui-private-rating-group-item-font-size: var(--lui-font-sizes-sm);
       --lui-private-rating-group-item-line-height: 1.25rem;

@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-toast__root:not([data-unstyled]) {
+  .lui-toast__root:not([data-unstyled]) {
     --lui-toast-trigger-bg: var(--lui-colors-bg-muted);
     width: 100%;
     display: flex;
@@ -37,13 +37,13 @@
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .leverui-toast__root:not([data-unstyled]) {
+    .lui-toast__root:not([data-unstyled]) {
       transition: none;
     }
   }
 
   /* Zag 2 no longer sets an inline z-index on the toast group. */
-  .leverui-toast__toaster {
+  .lui-toast__toaster {
     z-index: var(--lui-z-index-toast);
   }
 }

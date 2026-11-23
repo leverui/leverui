@@ -17,7 +17,7 @@
   outline: 0;
 }
 .example-listbox-popover-options,
-.example-listbox-popover-options > .leverui-listbox__list {
+.example-listbox-popover-options > .lui-listbox__list {
   gap: 0;
 }
 .example-listbox-popover-options {

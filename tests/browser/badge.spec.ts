@@ -8,7 +8,7 @@ async function verifiesBadgeContract({ page }: { page: Page }): Promise<void> {
   await expect(badge).toHaveText('Active');
   await expect(badge).toHaveAttribute('title', 'Current status');
   await expect(badge).toHaveAttribute('data-ref-tag', 'span');
-  await expect(badge).toHaveClass(/leverui-badge/);
+  await expect(badge).toHaveClass(/lui-badge/);
   await expect(badge).not.toHaveAttribute('role');
   await expect(badge).not.toHaveAttribute('size');
   await expect(badge).not.toHaveAttribute('variant');
@@ -27,7 +27,7 @@ async function verifiesBadgeContract({ page }: { page: Page }): Promise<void> {
   await expect(page.getByTestId('badge-section')).toHaveJSProperty('tagName', 'SECTION');
   await expect(page.getByTestId('badge-section')).toHaveAttribute('data-ref-tag', 'section');
   await expect(page.getByTestId('badge-child')).toHaveJSProperty('tagName', 'STRONG');
-  await expect(page.getByTestId('badge-child')).toHaveClass(/leverui-badge/);
+  await expect(page.getByTestId('badge-child')).toHaveClass(/lui-badge/);
   await expect(page.getByTestId('badge-unstyled')).toHaveCSS('display', 'inline');
   await expect(page.getByTestId('badge-custom')).toHaveCSS('border-top-width', '4px');
 }

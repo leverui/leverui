@@ -1,9 +1,9 @@
-.leverui-radio-card-composition {
+.lui-radio-card-composition {
   max-width: var(--lui-sizes-sm);
   --lui-radio-card-root-gap: var(--lui-spacing-4);
 }
 
-.leverui-radio-card-composition .leverui-radio-card__item {
+.lui-radio-card-composition .lui-radio-card__item {
   width: 100%;
 }
 
@@ -12,34 +12,34 @@
   border-width: 0;
 }
 
-.leverui-radio-card-explorer-item {
+.lui-radio-card-explorer-item {
   flex: 1;
 }
 
-.leverui-radio-card-explorer-description {
+.lui-radio-card-explorer-description {
   font-size: var(--lui-font-sizes-sm);
   color: var(--lui-colors-gray-600);
 }
 
-.leverui-radio-card-explorer-indicator {
+.lui-radio-card-explorer-indicator {
   color: var(--lui-colors-green-500);
   border-width: 0;
 }
 
-.leverui-radio-card-explorer-addon {
+.lui-radio-card-explorer-addon {
   font-size: var(--lui-font-sizes-xs);
   color: var(--lui-colors-gray-500);
 }
 
-.leverui-radio-card-payment-wide {
+.lui-radio-card-payment-wide {
   max-width: var(--lui-sizes-lg);
 }
 
-.leverui-radio-card-payment-compact {
+.lui-radio-card-payment-compact {
   max-width: 400px;
 }
 
-.leverui-radio-card-payment-offset {
+.lui-radio-card-payment-offset {
   margin-inline-start: calc(-1 * var(--lui-spacing-4));
 }
 .radio-card-centered-icon,

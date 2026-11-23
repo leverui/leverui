@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-image {
+  .lui-image {
     --lui-private-image-align-base: initial;
     --lui-private-image-align-sm: initial;
     --lui-private-image-align-md: initial;
@@ -8,7 +8,7 @@
     --lui-private-image-align-2xl: initial;
   }
 
-  .leverui-image:not([data-unstyled]) {
+  .lui-image:not([data-unstyled]) {
     object-fit: var(--lui-image-fit, cover);
     object-position: var(--lui-private-image-align-base, var(--lui-image-position, 50% 50%));
 

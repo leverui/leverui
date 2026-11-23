@@ -33,7 +33,7 @@ function DefaultIndicator(props: IndicatorBranchProps): JSX.Element {
       'aria-hidden': 'true',
       children: (
         <Show when={props.item().checked}>
-          <span class="dot leverui-radiomark__dot" />
+          <span class="dot lui-radiomark__dot" />
         </Show>
       ),
     },

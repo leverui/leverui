@@ -19,7 +19,7 @@ function verifiesServerList(): void {
   expect(markup).toMatch(/<span[^>]*id="hydrated-list-indicator"/);
   expect(markup).toMatch(/<svg[^>]*id="hydrated-list-svg"/);
   expect(markup).toMatch(/<ol[^>]*id="hydrated-nested-list"/);
-  expect(markup).toContain('leverui-list__item');
+  expect(markup).toContain('lui-list__item');
   expect(markup).not.toMatch(/\s(?:variant|align|as)=/);
 }
 

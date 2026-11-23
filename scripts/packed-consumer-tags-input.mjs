@@ -6,7 +6,7 @@ export async function verifyPackedTagsInput(page) {
   const control = page.getByTestId('packed-tags-input-control');
   const input = page.getByPlaceholder('Add framework');
   await root.waitFor();
-  assert.match(await root.getAttribute('class'), /leverui-tags-input__root/);
+  assert.match(await root.getAttribute('class'), /lui-tags-input__root/);
   assert.equal(
     await control.evaluate(
       /** Read the consumer's stylesheet after the packaged default CSS. */

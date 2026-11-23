@@ -117,13 +117,11 @@ function verifiesGroupPositions(): void {
 
   const first = screen.getByTestId('first-group-button');
   const last = screen.getByTestId('last-group-button');
-  expect(first.hasAttribute('data-leverui-group-first')).toBe(true);
+  expect(first.hasAttribute('data-lui-group-first')).toBe(true);
   expect(first.style.getPropertyValue('--lui-group-count')).toBe('2');
   expect(first.style.getPropertyValue('--lui-group-index')).toBe('0');
-  expect(screen.getByTestId('group-separator').hasAttribute('data-leverui-group-auto-skip')).toBe(
-    true,
-  );
-  expect(last.hasAttribute('data-leverui-group-last')).toBe(true);
+  expect(screen.getByTestId('group-separator').hasAttribute('data-lui-group-auto-skip')).toBe(true);
+  expect(last.hasAttribute('data-lui-group-last')).toBe(true);
   expect(last.style.getPropertyValue('--lui-group-index')).toBe('1');
 }
 
@@ -139,10 +137,7 @@ async function verifiesReactiveSkipMarker(): Promise<void> {
       <>
         <ButtonGroup attached>
           <Button data-testid="first-reactive-group">First</Button>
-          <Button
-            data-testid="middle-reactive-group"
-            data-leverui-group-skip={skip() ? '' : undefined}
-          >
+          <Button data-testid="middle-reactive-group" data-lui-group-skip={skip() ? '' : undefined}>
             Middle
           </Button>
           <Button data-testid="last-reactive-group">Last</Button>

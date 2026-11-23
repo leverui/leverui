@@ -67,7 +67,7 @@ export function renderMenuPart<Slot extends MenuPartSlot>(
     () => menuAppearanceAttributes(appearance),
     {
       /** Keep authored defaults off parts opted out by the root or caller. */
-      get 'data-leverui-menu-css'() {
+      get 'data-lui-menu-css'() {
         return appearance.unstyled() || local.unstyled ? undefined : '';
       },
       /** Expose the unstyled choice to consumer CSS. */

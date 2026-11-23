@@ -27,7 +27,7 @@ function verifiesRadialChartHooks(): void {
       />
     ),
   );
-  const root = view.container.querySelector('.leverui-radial-chart');
+  const root = view.container.querySelector('.lui-radial-chart');
   if (!(root instanceof HTMLDivElement)) throw new Error('Radial chart root did not mount.');
   expect(rootRef).toBe(root);
   expect(root.classList.contains('consumer-radial')).toBe(true);
@@ -35,17 +35,17 @@ function verifiesRadialChartHooks(): void {
   expect(root.dataset.labelPlacement).toBe('inside');
   expect(root.style.getPropertyValue('--lui-private-radial-chart-size')).toBe('200px');
   expect(root.style.outlineWidth).toBe('2px');
-  expect(root.querySelector('.leverui-radial-chart__sector')).not.toBeNull();
-  expect(root.querySelector('.leverui-radial-chart__legendSwatch')).not.toBeNull();
-  expect(root.querySelector('.leverui-radial-chart__centerTitle')).not.toBeNull();
+  expect(root.querySelector('.lui-radial-chart__sector')).not.toBeNull();
+  expect(root.querySelector('.lui-radial-chart__legendSwatch')).not.toBeNull();
+  expect(root.querySelector('.lui-radial-chart__centerTitle')).not.toBeNull();
   setSize(240);
   flush();
   setPlacement('point');
   flush();
-  expect(view.container.querySelector('.leverui-radial-chart')).toBe(root);
+  expect(view.container.querySelector('.lui-radial-chart')).toBe(root);
   expect(root.style.getPropertyValue('--lui-private-radial-chart-size')).toBe('240px');
   expect(root.querySelector('svg')?.getAttribute('width')).toBe('240');
-  expect(root.querySelector('.leverui-radial-chart__labels')?.getAttribute('data-placement')).toBe(
+  expect(root.querySelector('.lui-radial-chart__labels')?.getAttribute('data-placement')).toBe(
     'point',
   );
 }
@@ -65,13 +65,13 @@ function verifiesRadialBarHooks(): void {
       />
     ),
   );
-  const root = view.container.querySelector('.leverui-radial-bar-chart');
+  const root = view.container.querySelector('.lui-radial-bar-chart');
   if (!(root instanceof HTMLDivElement)) throw new Error('Radial bar root did not mount.');
   const svg = root.querySelector('svg');
   expect(root.classList.contains('consumer-radial-bar')).toBe(true);
-  expect(root.querySelector('.leverui-radial-bar-chart__track')?.hasAttribute('fill')).toBe(false);
-  expect(root.querySelector('.leverui-radial-bar-chart__label')).not.toBeNull();
-  expect(root.querySelector('.leverui-radial-bar-chart__legendSwatch')).not.toBeNull();
+  expect(root.querySelector('.lui-radial-bar-chart__track')?.hasAttribute('fill')).toBe(false);
+  expect(root.querySelector('.lui-radial-bar-chart__label')).not.toBeNull();
+  expect(root.querySelector('.lui-radial-bar-chart__legendSwatch')).not.toBeNull();
   setSize(360);
   flush();
   expect(root.querySelector('svg')).toBe(svg);

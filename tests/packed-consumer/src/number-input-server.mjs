@@ -26,7 +26,7 @@ function renderInstalledNumberInput() {
 
 const markup = renderInstalledNumberInput();
 assert.match(markup, /data-number-input-/);
-assert.match(markup, /leverui-number-input__root/);
+assert.match(markup, /lui-number-input__root/);
 // Zag 2 renders a text field described as a number field, not a spinbutton.
 assert.match(markup, /aria-roledescription="number field"/);
 assert.match(markup, /name="quantity"/);

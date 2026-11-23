@@ -4,7 +4,7 @@ import { expect, test, type Page } from '@playwright/test';
 async function verifiesConsumerCss({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-segment-group--css-contract');
   const root = page.getByTestId('segment-css-root');
-  const item = root.locator('.leverui-segment-group__item').first();
+  const item = root.locator('.lui-segment-group__item').first();
   const indicator = page.getByTestId('segment-css-indicator');
   await expect(root).toHaveAttribute('data-size', 'md');
   await expect(item).toHaveCSS('height', '40px');
@@ -22,7 +22,7 @@ test('Segment Group accepts consumer CSS variables', verifiesConsumerCss);
 async function verifiesUnstyled({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-segment-group--css-contract');
   const root = page.getByTestId('segment-unstyled-root');
-  const item = root.locator('.leverui-segment-group__item').first();
+  const item = root.locator('.lui-segment-group__item').first();
   const indicator = page.getByTestId('segment-unstyled-indicator');
   await expect(root).toHaveAttribute('data-unstyled', '');
   await expect(item).toHaveAttribute('data-unstyled', '');

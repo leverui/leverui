@@ -19,7 +19,7 @@ export const dialogContracts = [
     required: [
       ...parts.map(
         /** Require one default CSS rule per styled public part. */
-        (part) => `.leverui-dialog__${part}[data-leverui-dialog-css]`,
+        (part) => `.lui-dialog__${part}[data-lui-dialog-css]`,
       ),
       ...sizes.map(
         /** Require each scalar size in the default stylesheet. */

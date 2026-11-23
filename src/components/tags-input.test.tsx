@@ -48,8 +48,8 @@ async function verifiesTagEditing(): Promise<void> {
     () => <DefaultTagsInput />,
   );
   const input = screen.getByPlaceholderText('Add framework');
-  expect(screen.getByText('Solid')).toHaveClass('leverui-tags-input__itemText');
-  expect(input.closest('[data-tags-input-root]')).toHaveClass('leverui-tags-input__root');
+  expect(screen.getByText('Solid')).toHaveClass('lui-tags-input__itemText');
+  expect(input.closest('[data-tags-input-root]')).toHaveClass('lui-tags-input__root');
 
   fireEvent.click(screen.getByRole('button', { name: 'Add SolidJS' }));
   await waitFor(
@@ -57,7 +57,7 @@ async function verifiesTagEditing(): Promise<void> {
     () => expect(screen.getByText('SolidJS')).toBeInTheDocument(),
   );
   const form = screen.getByTestId('tags-form') as HTMLFormElement;
-  expect(form.querySelector('.leverui-tags-input__hiddenInput')).toBeInTheDocument();
+  expect(form.querySelector('.lui-tags-input__hiddenInput')).toBeInTheDocument();
   expect(new FormData(form).get('frameworks')).toContain('SolidJS');
 
   fireEvent.click(screen.getByRole('button', { name: 'Delete tag SolidJS' }));
@@ -135,7 +135,7 @@ async function verifiesEditableDefaults(): Promise<void> {
     /** Create the provider before its descendant machine. */
     () => <EditableTagsInput />,
   );
-  const editor = document.querySelector('.leverui-tags-input__itemInput');
+  const editor = document.querySelector('.lui-tags-input__itemInput');
   expect(editor).toHaveAttribute('hidden');
   fireEvent.dblClick(screen.getByText('Solid'));
   await waitFor(

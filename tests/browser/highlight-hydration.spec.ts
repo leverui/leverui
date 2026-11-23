@@ -26,11 +26,11 @@ async function verifiesHighlightHydration({ page }: { page: Page }): Promise<voi
     /** Use the published server components for the initial tree. */
     () => renderHighlightHydrationTree(server),
   );
-  expect(markup).toContain('leverui-mark');
+  expect(markup).toContain('lui-mark');
   expect(markup.match(/<mark\b/g)).toHaveLength(1);
   await page.goto('/iframe.html?id=setup-hydration-host--ready');
   await page.setContent(
-    `${generateHydrationScript()}<style>${defaultCss}</style><style>.leverui-mark{outline:2px solid rgb(1, 2, 3)}</style><div id="highlight-hydration-root">${markup}</div>`,
+    `${generateHydrationScript()}<style>${defaultCss}</style><style>.lui-mark{outline:2px solid rgb(1, 2, 3)}</style><div id="highlight-hydration-root">${markup}</div>`,
   );
   const root = page.locator('#highlight-hydration-root');
   const mark = root.locator('mark');

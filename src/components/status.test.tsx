@@ -28,9 +28,9 @@ function verifiesStatusParts(): void {
   expect(root.textContent).toContain('Processing');
   expect(indicator.tagName).toBe('DIV');
   expect(indicator.textContent).toBe('Custom dot');
-  expect(indicator.className).toContain('leverui-status__indicator');
+  expect(indicator.className).toContain('lui-status__indicator');
   expect(root.getAttribute('data-size')).toBe('md');
-  expect(root.hasAttribute('data-leverui-private-style-runtime')).toBe(false);
+  expect(root.hasAttribute('data-lui-private-style-runtime')).toBe(false);
 }
 
 it('renders Status as native div parts with consumer content', verifiesStatusParts);
@@ -90,12 +90,12 @@ function verifiesOwnedStatusParts(): void {
   const owned = screen.getByTestId('owned-status');
   expect(owned).toBe(root);
   expect(owned.tagName).toBe('SPAN');
-  expect(owned.className).toContain('leverui-status__root');
+  expect(owned.className).toContain('lui-status__root');
   expect(owned.className).toContain('owned-status');
-  expect(owned.getAttribute('data-leverui-color-palette')).toBe('green');
+  expect(owned.getAttribute('data-lui-color-palette')).toBe('green');
   const indicator = screen.getByTestId('owned-indicator');
   expect(indicator.tagName).toBe('SPAN');
-  expect(indicator.className).toContain('leverui-status__indicator');
+  expect(indicator.className).toContain('lui-status__indicator');
 }
 
 it('supports caller-owned Status parts without a styling provider', verifiesOwnedStatusParts);

@@ -19,7 +19,7 @@ function TagsInputAppearanceExample(): JSX.Element {
   return (
     <>
       <style>
-        {'.tags-input-consumer .leverui-tags-input__control { background: rgb(1, 99, 222); }'}
+        {'.tags-input-consumer .lui-tags-input__control { background: rgb(1, 99, 222); }'}
       </style>
       <div style={{ display: 'grid', gap: '16px', padding: '24px' }}>
         <For each={matrix}>

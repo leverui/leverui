@@ -2,10 +2,10 @@ export const radioGroupContracts = [
   {
     family: 'radio-group',
     required: [
-      '.leverui-radio-group__root:not([data-unstyled])',
-      '.leverui-radio-group__item:not([data-unstyled])',
-      '.leverui-radio-group__label:not([data-unstyled])',
-      '.leverui-radio-group__itemControl:not([data-unstyled])',
+      '.lui-radio-group__root:not([data-unstyled])',
+      '.lui-radio-group__item:not([data-unstyled])',
+      '.lui-radio-group__label:not([data-unstyled])',
+      '.lui-radio-group__itemControl:not([data-unstyled])',
       '--lui-radio-group-item-gap',
       '--lui-radio-group-item-font-size',
       "[data-size='xs']",

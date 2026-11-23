@@ -35,7 +35,7 @@ function verifiesPresenceServerOutput(): void {
   const lazy = renderPresence({ present: false, lazyMount: true });
   expect(open).toContain('Server presence');
   expect(open).toContain('data-state="open"');
-  expect(open).toContain('leverui-presence');
+  expect(open).toContain('lui-presence');
   expect(closed).toContain('Server presence');
   expect(closed).toMatch(/<div[^>]*\shidden(?:\s|=|>)/);
   expect(lazy).not.toContain('Server presence');

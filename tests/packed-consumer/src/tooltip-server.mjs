@@ -34,7 +34,7 @@ function renderTooltip() {
 }
 
 const markup = renderToString(renderTooltip);
-assert.match(markup, /leverui-tooltip__content/);
+assert.match(markup, /lui-tooltip__content/);
 assert.match(markup, /role="tooltip"/);
-assert.match(markup, /leverui-tooltip__arrowTip/);
+assert.match(markup, /lui-tooltip__arrowTip/);
 assert.match(markup, /<div\b[^>]*role="tooltip"/);

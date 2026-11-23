@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-slider__root:not([data-unstyled]) {
+  .lui-slider__root:not([data-unstyled]) {
     --lui-slider-thumb-size: var(--lui-sizes-5);
     --lui-slider-track-size: var(--lui-sizes-2);
     --lui-slider-marker-size: var(--lui-sizes-1);

@@ -12,7 +12,7 @@ import {
 afterEach(
   /** Reset the document and storage between tests. */
   () => {
-    document.documentElement.removeAttribute('data-leverui-color-mode');
+    document.documentElement.removeAttribute('data-lui-color-mode');
     document.documentElement.className = '';
     localStorage.clear();
   },
@@ -31,12 +31,12 @@ async function verifiesColorModeControls(): Promise<void> {
     },
   );
   controls?.setColorMode('dark');
-  expect(document.documentElement.getAttribute('data-leverui-color-mode')).toBe('dark');
+  expect(document.documentElement.getAttribute('data-lui-color-mode')).toBe('dark');
   expect(document.documentElement.classList.contains('dark')).toBe(true);
   expect(localStorage.getItem(colorModeStorageKey)).toBe('dark');
   expect(await screen.findByText('dark copy')).toBeTruthy();
   controls?.toggleColorMode();
-  expect(document.documentElement.getAttribute('data-leverui-color-mode')).toBe('light');
+  expect(document.documentElement.getAttribute('data-lui-color-mode')).toBe('light');
   expect(await screen.findByText('light copy')).toBeTruthy();
 }
 
@@ -48,7 +48,7 @@ async function verifiesColorModeButton(): Promise<void> {
   );
   const button = await screen.findByRole('button', { name: 'Toggle color mode' });
   fireEvent.click(button);
-  expect(document.documentElement.getAttribute('data-leverui-color-mode')).toBe('dark');
+  expect(document.documentElement.getAttribute('data-lui-color-mode')).toBe('dark');
 }
 
 /** Scope a fixed mode without adding a layout box. */
@@ -64,9 +64,9 @@ function verifiesForcedModes(): void {
   );
   const light = screen.getByTestId('light');
   const dark = screen.getByTestId('dark');
-  expect(light.getAttribute('data-leverui-color-mode')).toBe('light');
-  expect(dark.getAttribute('data-leverui-color-mode')).toBe('dark');
-  expect(light.classList.contains('leverui-color-mode-scope')).toBe(true);
+  expect(light.getAttribute('data-lui-color-mode')).toBe('light');
+  expect(dark.getAttribute('data-lui-color-mode')).toBe('dark');
+  expect(light.classList.contains('lui-color-mode-scope')).toBe(true);
 }
 
 it('applies, remembers, and reports the color mode', verifiesColorModeControls);

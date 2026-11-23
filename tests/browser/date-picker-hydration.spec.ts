@@ -30,8 +30,8 @@ async function verifiesDatePickerHydration({ page }: { page: Page }): Promise<vo
     `${generateHydrationScript()}<style>${defaultCss}</style><div id="date-picker-hydration-root">${markup}</div>`,
   );
   const host = page.locator('#date-picker-hydration-root');
-  const root = host.locator('.leverui-date-picker__root');
-  const table = host.locator('.leverui-date-picker__table');
+  const root = host.locator('.lui-date-picker__root');
+  const table = host.locator('.lui-date-picker__table');
   const input = host.locator('input[data-date-picker-input]');
   const day = host.locator('[data-date-picker-table-cell-trigger][data-value="2026-03-15"]');
   await expect(table).toBeVisible();

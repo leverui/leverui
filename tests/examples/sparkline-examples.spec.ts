@@ -92,9 +92,9 @@ test('Sparkline interaction follows and resets the weekly value', checksInteract
 /** Prove authored defaults and inherited public variables style the SVG. */
 async function checksAuthoredCss({ page }: { page: Page }): Promise<void> {
   await openStory(page, 'basic');
-  const chart = page.locator('#storybook-root .leverui-sparkline');
-  const line = chart.locator('.leverui-sparkline__line');
-  const area = chart.locator('.leverui-sparkline__area');
+  const chart = page.locator('#storybook-root .lui-sparkline');
+  const line = chart.locator('.lui-sparkline__line');
+  const area = chart.locator('.lui-sparkline__area');
   await expect(chart).toHaveCSS('display', 'block');
   await expect(chart).toHaveCSS('width', '112px');
   await expect(chart).toHaveCSS('height', '48px');

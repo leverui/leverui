@@ -5,7 +5,7 @@ export async function verifyPackedEditable(page) {
   const root = page.getByTestId('packed-editable-root');
   const preview = page.getByTestId('packed-editable-preview');
   const input = page.getByTestId('packed-editable-input');
-  await expect(root).toHaveClass(/leverui-editable__root/);
+  await expect(root).toHaveClass(/lui-editable__root/);
   await expect(input).toHaveJSProperty('type', 'text');
   await preview.hover();
   await expect(preview).toHaveCSS('background-color', 'rgb(30, 40, 90)');

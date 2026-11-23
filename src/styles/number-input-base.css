@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-number-input__root:not([data-unstyled]) {
+  .lui-number-input__root:not([data-unstyled]) {
     position: relative;
     z-index: 0;
     isolation: isolate;
@@ -10,13 +10,11 @@
     --lui-private-number-input-stepper-font-size: var(--lui-font-sizes-sm);
   }
 
-  .leverui-number-input__root:not([data-unstyled])
-    .leverui-number-input__input:not([data-unstyled]) {
+  .lui-number-input__root:not([data-unstyled]) .lui-number-input__input:not([data-unstyled]) {
     vertical-align: top;
   }
 
-  .leverui-number-input__root:not([data-unstyled])
-    .leverui-number-input__control:not([data-unstyled]) {
+  .lui-number-input__root:not([data-unstyled]) .lui-number-input__control:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -30,12 +28,12 @@
     border-inline-start: 1px solid var(--lui-colors-border);
   }
 
-  .leverui-number-input__control:not([data-unstyled]) > * + * {
+  .lui-number-input__control:not([data-unstyled]) > * + * {
     border-top: 1px solid var(--lui-colors-border);
   }
 
-  .leverui-number-input__root:not([data-unstyled])
-    :is(.leverui-number-input__incrementTrigger, .leverui-number-input__decrementTrigger):not(
+  .lui-number-input__root:not([data-unstyled])
+    :is(.lui-number-input__incrementTrigger, .lui-number-input__decrementTrigger):not(
       [data-unstyled]
     ) {
     display: flex;
@@ -52,8 +50,8 @@
     );
   }
 
-  .leverui-number-input__root:not([data-unstyled])
-    :is(.leverui-number-input__incrementTrigger, .leverui-number-input__decrementTrigger):not(
+  .lui-number-input__root:not([data-unstyled])
+    :is(.lui-number-input__incrementTrigger, .lui-number-input__decrementTrigger):not(
       [data-unstyled]
     )
     svg {
@@ -61,15 +59,15 @@
     height: 1em;
   }
 
-  .leverui-number-input__incrementTrigger:not([data-unstyled]) {
+  .lui-number-input__incrementTrigger:not([data-unstyled]) {
     border-start-end-radius: var(--lui-private-number-input-stepper-radius);
   }
 
-  .leverui-number-input__decrementTrigger:not([data-unstyled]) {
+  .lui-number-input__decrementTrigger:not([data-unstyled]) {
     border-end-end-radius: var(--lui-private-number-input-stepper-radius);
   }
 
-  .leverui-number-input__valueText:not([data-unstyled]) {
+  .lui-number-input__valueText:not([data-unstyled]) {
     font-weight: var(--lui-font-weights-medium);
     font-feature-settings: 'pnum';
     font-variant-numeric: proportional-nums;

@@ -94,7 +94,7 @@ function renderPinInputPartImpl(slot: PinInputPartSlot, props: RuntimePartProps)
         return composeRecipeClassNames(
           `pin-input__${slot}`,
           undefined,
-          slot === 'input' ? 'leverui-input' : undefined,
+          slot === 'input' ? 'lui-input' : undefined,
           local.class,
           local.className,
         );

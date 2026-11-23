@@ -35,7 +35,7 @@ async function verifiesUncontrolledCheckbox(): Promise<void> {
   expect(input.checked).toBe(true);
   expect(input.name).toBe('updates');
   expect(screen.getByTestId('control').getAttribute('data-state')).toBe('checked');
-  expect(screen.getByTestId('root').className).toContain('leverui-checkbox');
+  expect(screen.getByTestId('root').className).toContain('lui-checkbox');
   fireEvent.click(input);
   await waitFor(
     /** Wait for the primitive's machine to update the native checked state. */
@@ -180,7 +180,7 @@ function verifiesPresentationDefaults(): void {
   const mark = screen.getByTestId('custom-mark');
   expect(mark.tagName.toLowerCase()).toBe('svg');
   expect(mark.getAttribute('data-state')).toBe('checked');
-  expect(mark.classList.contains('leverui-checkbox__indicator')).toBe(true);
+  expect(mark.classList.contains('lui-checkbox__indicator')).toBe(true);
   expect(indicatorRef).toBe(mark);
   expect(childRef).toBe(mark);
   expect(control.getAttribute('data-size')).toBe('sm');

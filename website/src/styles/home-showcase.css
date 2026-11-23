@@ -31,7 +31,7 @@
 .home-showcase-column > :last-child {
   flex: 1;
 }
-.home-showcase .leverui-card__root {
+.home-showcase .lui-card__root {
   box-shadow: var(--lui-shadows-sm);
 }
 .home-showcase-filters {
@@ -64,7 +64,7 @@
   text-align: end;
 }
 /* An answer reads a step smaller than its question. */
-.home-showcase .leverui-accordion__itemBody {
+.home-showcase .lui-accordion__itemBody {
   font-size: var(--lui-font-sizes-sm);
   line-height: 1.25rem;
 }
@@ -83,7 +83,7 @@
   gap: 6px;
 }
 /* A pill-shaped text box reads as a search field, so it gets the same corner as inputs. */
-.home-showcase-comment.leverui-textarea {
+.home-showcase-comment.lui-textarea {
   border-radius: 12px;
   resize: none;
 }
@@ -101,14 +101,14 @@
   color: var(--lui-colors-green-solid);
   font-size: 32px;
 }
-.home-showcase-thanks .leverui-button {
+.home-showcase-thanks .lui-button {
   margin-top: 8px;
 }
 .home-showcase-end {
   text-align: end;
 }
 /* The inline calendar fills the card. */
-.home-showcase .leverui-date-picker__root {
+.home-showcase .lui-date-picker__root {
   width: 100%;
 }
 .home-showcase-month {
@@ -137,7 +137,7 @@
 .home-showcase-code {
   justify-self: center;
 }
-.home-showcase-code .leverui-pin-input__control {
+.home-showcase-code .lui-pin-input__control {
   justify-content: center;
 }
 .home-showcase-times {

@@ -66,7 +66,7 @@ function verifiesResponsiveJoinedLayout(): void {
   );
 
   for (const id of ['joined-group', 'reset-group']) {
-    expect(screen.getByTestId(id).hasAttribute('data-leverui-private-style-runtime')).toBe(false);
+    expect(screen.getByTestId(id).hasAttribute('data-lui-private-style-runtime')).toBe(false);
   }
   expect(screen.getByTestId('joined-group').getAttribute('data-joined-base')).toBe('horizontal');
   expect(screen.getByTestId('joined-group').getAttribute('data-joined-md')).toBe('none');

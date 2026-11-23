@@ -35,7 +35,7 @@ async function verifiesSticky({ page }: { page: Page }): Promise<void> {
   const scroll = page.getByTestId('sticky-default-scroll');
   const sticky = page.getByTestId('sticky-default');
   await expect(sticky).toBeVisible({ timeout: 30_000 });
-  await expect(sticky).toHaveClass(/leverui-sticky/);
+  await expect(sticky).toHaveClass(/lui-sticky/);
   await expect(sticky).toHaveCSS('position', 'sticky');
   await expect(sticky).toHaveCSS('top', '0px');
   const scrollBox = await requiredBox(scroll);
@@ -97,7 +97,7 @@ async function verifiesSticky({ page }: { page: Page }): Promise<void> {
   await page.setViewportSize({ width: 900, height: 700 });
   await expect(responsive).toHaveCSS('top', '32px');
   await page.addStyleTag({
-    content: '.leverui-sticky[data-testid="sticky-default"] { top: 24px; }',
+    content: '.lui-sticky[data-testid="sticky-default"] { top: 24px; }',
   });
   await expect(sticky).toHaveCSS('top', '24px');
   for (const name of ['css', 'unstyled', 'asChild']) {
@@ -120,7 +120,7 @@ async function verifiesServerSticky({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderServerSticky);
   expect(markup).toContain('title="Server sticky"');
   expect(markup).toContain('Server sticky content');
-  expect(markup).toMatch(/leverui-sticky/);
+  expect(markup).toMatch(/lui-sticky/);
   expect(markup).not.toMatch(/\s(?:css|unstyled|asChild)=/);
   await page.setViewportSize({ width: 600, height: 700 });
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');

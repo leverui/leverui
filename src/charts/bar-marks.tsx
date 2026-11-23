@@ -44,7 +44,7 @@ export function BarMarks(props: {
   }
 
   return (
-    <g class="leverui-bar-chart__marks" data-bar-marks="">
+    <g class="lui-bar-chart__marks" data-bar-marks="">
       <For each={bars()}>
         {/** Draw a single labeled bar with optional rounded upper corners. */}
         {(rect) => {
@@ -56,10 +56,10 @@ export function BarMarks(props: {
             props.onBarEnter(rect);
           }
           return (
-            <g class="leverui-bar-chart__mark">
+            <g class="lui-bar-chart__mark">
               {rect.series.wickKey && <BarWick rect={rect} plot={props.plot} />}
               <path
-                class="leverui-bar-chart__bar"
+                class="lui-bar-chart__bar"
                 data-bar-series={rect.series.name}
                 data-bar-category={String(rect.row[props.chart.xKey] ?? '')}
                 d={barPath(rect, rect.series.radius ?? 0)}
@@ -71,7 +71,7 @@ export function BarMarks(props: {
               />
               {rect.series.label && (
                 <text
-                  class="leverui-bar-chart__bar-label"
+                  class="lui-bar-chart__bar-label"
                   x={rect.x + rect.width / 2}
                   y={
                     rect.value < 0
@@ -107,7 +107,7 @@ function BarWick(props: { rect: BarRect; plot: CartesianPlot }): JSX.Element {
   /** Center the error stem on its candlestick body. */
   const center = () => props.rect.x + props.rect.width / 2;
   return (
-    <g class="leverui-bar-chart__wick" data-bar-wick="">
+    <g class="lui-bar-chart__wick" data-bar-wick="">
       <line x1={center()} x2={center()} y1={point(0)} y2={point(1)} />
       <line x1={center() - 2} x2={center() + 2} y1={point(0)} y2={point(0)} />
       <line x1={center() - 2} x2={center() + 2} y1={point(1)} y2={point(1)} />

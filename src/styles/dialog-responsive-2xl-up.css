@@ -1,31 +1,31 @@
 @layer leverui.recipes {
   @media (min-width: 1536px) {
-    .leverui-dialog__content[data-leverui-dialog-css][data-size-2xl='xs'] {
+    .lui-dialog__content[data-lui-dialog-css][data-size-2xl='xs'] {
       --lui-private-dialog-size-max-width: var(--lui-sizes-sm);
     }
-    .leverui-dialog__content[data-leverui-dialog-css][data-size-2xl='sm'] {
+    .lui-dialog__content[data-lui-dialog-css][data-size-2xl='sm'] {
       --lui-private-dialog-size-max-width: var(--lui-sizes-md);
     }
-    .leverui-dialog__content[data-leverui-dialog-css][data-size-2xl='md'] {
+    .lui-dialog__content[data-lui-dialog-css][data-size-2xl='md'] {
       --lui-private-dialog-size-max-width: var(--lui-sizes-lg);
     }
-    .leverui-dialog__content[data-leverui-dialog-css][data-size-2xl='lg'] {
+    .lui-dialog__content[data-lui-dialog-css][data-size-2xl='lg'] {
       --lui-private-dialog-size-max-width: var(--lui-sizes-2xl);
     }
-    .leverui-dialog__content[data-leverui-dialog-css][data-size-2xl='xl'] {
+    .lui-dialog__content[data-lui-dialog-css][data-size-2xl='xl'] {
       --lui-private-dialog-size-max-width: var(--lui-sizes-4xl);
     }
-    .leverui-dialog__content[data-leverui-dialog-css][data-size-2xl='cover'] {
+    .lui-dialog__content[data-lui-dialog-css][data-size-2xl='cover'] {
       --lui-private-dialog-size-height: 100%;
       --lui-private-dialog-size-margin: 0;
     }
-    .leverui-dialog__content[data-leverui-dialog-css][data-size-2xl='full'] {
+    .lui-dialog__content[data-lui-dialog-css][data-size-2xl='full'] {
       --lui-private-dialog-size-max-width: 100dvw;
       --lui-private-dialog-size-min-height: 100dvh;
       --lui-private-dialog-size-radius: 0;
       --lui-private-dialog-size-margin: 0;
     }
-    .leverui-dialog__positioner[data-leverui-dialog-css][data-size-2xl='cover'] {
+    .lui-dialog__positioner[data-lui-dialog-css][data-size-2xl='cover'] {
       --lui-private-dialog-positioner-padding: var(--lui-spacing-10);
     }
   }

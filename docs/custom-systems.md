@@ -50,12 +50,12 @@ states in your stylesheet.
 ```
 
 ```css
-.brand-action.leverui-button {
+.brand-action.lui-button {
   background-color: var(--lui-colors-purple-solid);
   color: var(--lui-colors-purple-contrast);
 }
 
-.brand-action.leverui-button:is(:hover, [data-hover]) {
+.brand-action.lui-button:is(:hover, [data-hover]) {
   background-color: color-mix(in srgb, var(--lui-colors-purple-solid) 90%, transparent);
 }
 ```

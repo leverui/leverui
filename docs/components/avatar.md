@@ -91,15 +91,15 @@ the group to change the overlap.
 
 Give the root or a part a `class`. Load your CSS after the Lever UI stylesheet.
 
-Classes: `.leverui-avatar__root`, `.leverui-avatar__image`,
-`.leverui-avatar__fallback`, `.leverui-avatar__icon`, `.leverui-avatar-group`.
+Classes: `.lui-avatar__root`, `.lui-avatar__image`,
+`.lui-avatar__fallback`, `.lui-avatar__icon`, `.lui-avatar-group`.
 
 ```css
 .profile-avatar {
   --lui-colors-color-palette-muted: #dbeafe;
 }
 
-.profile-avatar .leverui-avatar__fallback {
+.profile-avatar .lui-avatar__fallback {
   letter-spacing: 0.04em;
 }
 ```

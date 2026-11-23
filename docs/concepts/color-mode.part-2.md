@@ -96,4 +96,4 @@ export function ForcedDarkPage(props: ParentProps): JSX.Element {
 ### Do I need a theme library?
 
 No. `ColorModeScript` is all you need. Any other tool also works if it sets
-`data-leverui-color-mode` on the `html` element before the page paints.
+`data-lui-color-mode` on the `html` element before the page paints.

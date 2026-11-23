@@ -59,7 +59,7 @@ function verifiesServerEmojiGrid(): void {
   expect(html).toContain('aria-label="grinning face"');
   expect(html).toContain('aria-selected="true"');
   expect(html).toContain('😀');
-  expect(html).toContain('leverui-listbox__item');
+  expect(html).toContain('lui-listbox__item');
 }
 
 test('published server entry renders a selected emoji grid option', verifiesServerEmojiGrid);

@@ -1,8 +1,5 @@
 @layer leverui.recipes {
-  :is(.leverui-group, .leverui-button-group):not(
-    [data-unstyled],
-    [data-leverui-private-style-runtime]
-  ) {
+  :is(.lui-group, .lui-button-group):not([data-unstyled], [data-lui-private-style-runtime]) {
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
@@ -32,12 +29,10 @@
     }
 
     &:has(
-      > :nth-child(
-        2 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
-      )
+      > :nth-child(2 of :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]))
     ) {
       &[data-stacking='first-on-top']
-        > :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip]) {
+        > :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]) {
         z-index: calc(
           var(--lui-group-count, sibling-count()) -
             var(--lui-group-index, calc(sibling-index() - 1))
@@ -45,13 +40,11 @@
       }
 
       &[data-stacking='last-on-top']
-        > :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip]) {
+        > :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]) {
         z-index: var(--lui-group-index, calc(sibling-index() - 1));
       }
 
-      > :not(style):not([data-leverui-group-skip]):not(
-          [data-leverui-group-auto-skip]
-        ):focus-visible {
+      > :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]):focus-visible {
         z-index: 1;
       }
     }

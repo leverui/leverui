@@ -62,13 +62,13 @@ so the dividers follow.
 
 ## Customize with CSS
 
-Classes: `.leverui-stack` on the root, `.leverui-stack-separator` on the
+Classes: `.lui-stack` on the root, `.lui-stack-separator` on the
 separator. Style them in CSS loaded after the Lever UI stylesheet, or add your
 own class or `style`. `unstyled` turns off the default layout rules but keeps
 the root class and the HTML semantics.
 
 ```css
-.article-actions .leverui-stack-separator {
+.article-actions .lui-stack-separator {
   border-color: currentColor;
 }
 ```

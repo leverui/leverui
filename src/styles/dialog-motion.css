@@ -1,7 +1,5 @@
 @layer leverui.recipes {
-  .leverui-dialog__content[data-leverui-dialog-css]:not(
-      [data-leverui-private-skip-initial-animation]
-    ) {
+  .lui-dialog__content[data-lui-dialog-css]:not([data-lui-private-skip-initial-animation]) {
     &[data-motion-preset='scale'] {
       &[data-state='open'] {
         animation-name: scale-in, fade-in;

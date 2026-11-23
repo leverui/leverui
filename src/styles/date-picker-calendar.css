@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-date-picker__content:not([data-unstyled]) {
+  .lui-date-picker__content:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     gap: var(--lui-spacing-3);
@@ -21,13 +21,13 @@
     --lui-private-date-picker-select-height: var(--lui-sizes-10);
   }
 
-  .leverui-date-picker__view:not([data-unstyled]) {
+  .lui-date-picker__view:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     gap: var(--lui-spacing-3);
   }
 
-  .leverui-date-picker__viewControl:not([data-unstyled]) {
+  .lui-date-picker__viewControl:not([data-unstyled]) {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,7 +38,7 @@
     );
   }
 
-  .leverui-date-picker__viewTrigger:not([data-unstyled]) {
+  .lui-date-picker__viewTrigger:not([data-unstyled]) {
     display: inline-flex;
     flex: 1;
     align-items: center;
@@ -52,13 +52,13 @@
     border-radius: var(--lui-radii-l2);
   }
 
-  .leverui-date-picker__rangeText:not([data-unstyled]) {
+  .lui-date-picker__rangeText:not([data-unstyled]) {
     font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
     font-weight: var(--lui-font-weights-semibold);
   }
 
-  :is(.leverui-date-picker__prevTrigger, .leverui-date-picker__nextTrigger):not([data-unstyled]) {
+  :is(.lui-date-picker__prevTrigger, .lui-date-picker__nextTrigger):not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -74,13 +74,12 @@
     color: var(--lui-colors-fg);
   }
 
-  :is(.leverui-date-picker__prevTrigger, .leverui-date-picker__nextTrigger):not([data-unstyled])
-    svg {
+  :is(.lui-date-picker__prevTrigger, .lui-date-picker__nextTrigger):not([data-unstyled]) svg {
     width: var(--lui-sizes-4);
     height: var(--lui-sizes-4);
   }
 
-  :is(.leverui-date-picker__monthSelect, .leverui-date-picker__yearSelect):not([data-unstyled]) {
+  :is(.lui-date-picker__monthSelect, .lui-date-picker__yearSelect):not([data-unstyled]) {
     height: var(
       --lui-date-picker-select-height,
       var(--lui-private-date-picker-select-height, var(--lui-sizes-10))
@@ -103,7 +102,7 @@
 
   /* Zag 2 sets no z-index and isolates the positioner, so the content's z-index
      cannot escape it. Stack the positioner itself, offset by its layer index. */
-  .leverui-date-picker__positioner {
+  .lui-date-picker__positioner {
     z-index: calc(
       var(--lui-date-picker-z-index, var(--lui-z-index-popover)) + var(--layer-index, 0)
     );

@@ -1,31 +1,25 @@
 @layer leverui.recipes {
   @media (width < 480px) {
-    .leverui-group:not([data-unstyled])[data-joined-base='vertical']:has(
-        > :nth-child(
-          2 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
-        )
+    .lui-group:not([data-unstyled])[data-joined-base='vertical']:has(
+        > :nth-child(2 of :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]))
       ) {
-      > :nth-child(
-        1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
-      ) {
+      > :nth-child(1 of :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip])) {
         border-end-start-radius: 0;
         border-end-end-radius: 0;
         margin-bottom: -1px;
       }
-      > :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip]):not(
-          :nth-child(
-            1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
-          )
+      > :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]):not(
+          :nth-child(1 of :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]))
         ):not(
           :nth-last-child(
-            1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
+            1 of :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip])
           )
         ) {
         border-radius: 0;
         margin-bottom: -1px;
       }
       > :nth-last-child(
-        1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
+        1 of :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip])
       ) {
         border-start-start-radius: 0;
         border-start-end-radius: 0;
@@ -33,32 +27,26 @@
     }
   }
   @media (480px <= width < 768px) {
-    .leverui-group:not([data-unstyled])[data-joined-sm='vertical']:has(
-        > :nth-child(
-          2 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
-        )
+    .lui-group:not([data-unstyled])[data-joined-sm='vertical']:has(
+        > :nth-child(2 of :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]))
       ) {
-      > :nth-child(
-        1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
-      ) {
+      > :nth-child(1 of :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip])) {
         border-end-start-radius: 0;
         border-end-end-radius: 0;
         margin-bottom: -1px;
       }
-      > :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip]):not(
-          :nth-child(
-            1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
-          )
+      > :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]):not(
+          :nth-child(1 of :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]))
         ):not(
           :nth-last-child(
-            1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
+            1 of :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip])
           )
         ) {
         border-radius: 0;
         margin-bottom: -1px;
       }
       > :nth-last-child(
-        1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
+        1 of :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip])
       ) {
         border-start-start-radius: 0;
         border-start-end-radius: 0;
@@ -66,32 +54,26 @@
     }
   }
   @media (768px <= width < 1024px) {
-    .leverui-group:not([data-unstyled])[data-joined-md='vertical']:has(
-        > :nth-child(
-          2 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
-        )
+    .lui-group:not([data-unstyled])[data-joined-md='vertical']:has(
+        > :nth-child(2 of :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]))
       ) {
-      > :nth-child(
-        1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
-      ) {
+      > :nth-child(1 of :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip])) {
         border-end-start-radius: 0;
         border-end-end-radius: 0;
         margin-bottom: -1px;
       }
-      > :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip]):not(
-          :nth-child(
-            1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
-          )
+      > :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]):not(
+          :nth-child(1 of :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]))
         ):not(
           :nth-last-child(
-            1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
+            1 of :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip])
           )
         ) {
         border-radius: 0;
         margin-bottom: -1px;
       }
       > :nth-last-child(
-        1 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
+        1 of :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip])
       ) {
         border-start-start-radius: 0;
         border-start-end-radius: 0;

@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-drawer__backdrop[data-leverui-drawer-css] {
+  .lui-drawer__backdrop[data-lui-drawer-css] {
     &[data-state='open'] {
       animation-name: fade-in;
       animation-duration: var(--lui-durations-slow);
@@ -10,7 +10,7 @@
     }
   }
 
-  .leverui-drawer__content[data-leverui-drawer-css] {
+  .lui-drawer__content[data-lui-drawer-css] {
     --lui-private-drawer-start-open: slide-from-left-full, fade-in;
     --lui-private-drawer-start-closed: slide-to-left-full, fade-out;
     --lui-private-drawer-end-open: slide-from-right-full, fade-in;
@@ -43,15 +43,15 @@
     }
   }
 
-  :dir(rtl) .leverui-drawer__content[data-leverui-drawer-css] {
+  :dir(rtl) .lui-drawer__content[data-lui-drawer-css] {
     --lui-private-drawer-start-open: slide-from-right-full, fade-in;
     --lui-private-drawer-start-closed: slide-to-right-full, fade-out;
     --lui-private-drawer-end-open: slide-from-left-full, fade-in;
     --lui-private-drawer-end-closed: slide-to-left-full, fade-out;
   }
 
-  .leverui-drawer__content[data-leverui-private-skip-initial-animation],
-  .leverui-drawer__backdrop[data-leverui-private-skip-initial-animation] {
+  .lui-drawer__content[data-lui-private-skip-initial-animation],
+  .lui-drawer__backdrop[data-lui-private-skip-initial-animation] {
     animation-name: none !important;
   }
 }

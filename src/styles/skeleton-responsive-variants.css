@@ -1,17 +1,17 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-skeleton:not([data-unstyled])[data-variant-sm='pulse'] {
+    .lui-skeleton:not([data-unstyled])[data-variant-sm='pulse'] {
       --lui-private-skeleton-background: var(--lui-private-skeleton-pulse-background);
       --lui-private-skeleton-background-size: auto;
       --lui-private-skeleton-animation: pulse var(--lui-skeleton-duration, 1.2s);
     }
-    .leverui-skeleton:not([data-unstyled])[data-variant-sm='shine'] {
+    .lui-skeleton:not([data-unstyled])[data-variant-sm='shine'] {
       --lui-private-skeleton-background: var(--lui-private-skeleton-shine-background);
       --lui-private-skeleton-background-size: 400% 100%;
       --lui-private-skeleton-animation: bg-position var(--lui-skeleton-duration, 5s) ease-in-out
         infinite;
     }
-    .leverui-skeleton:not([data-unstyled])[data-variant-sm='none'] {
+    .lui-skeleton:not([data-unstyled])[data-variant-sm='none'] {
       --lui-private-skeleton-background: none;
       --lui-private-skeleton-background-size: auto;
       --lui-private-skeleton-animation: none;
@@ -19,18 +19,18 @@
   }
 
   @media (min-width: 768px) {
-    .leverui-skeleton:not([data-unstyled])[data-variant-md='pulse'] {
+    .lui-skeleton:not([data-unstyled])[data-variant-md='pulse'] {
       --lui-private-skeleton-background: var(--lui-private-skeleton-pulse-background);
       --lui-private-skeleton-background-size: auto;
       --lui-private-skeleton-animation: pulse var(--lui-skeleton-duration, 1.2s);
     }
-    .leverui-skeleton:not([data-unstyled])[data-variant-md='shine'] {
+    .lui-skeleton:not([data-unstyled])[data-variant-md='shine'] {
       --lui-private-skeleton-background: var(--lui-private-skeleton-shine-background);
       --lui-private-skeleton-background-size: 400% 100%;
       --lui-private-skeleton-animation: bg-position var(--lui-skeleton-duration, 5s) ease-in-out
         infinite;
     }
-    .leverui-skeleton:not([data-unstyled])[data-variant-md='none'] {
+    .lui-skeleton:not([data-unstyled])[data-variant-md='none'] {
       --lui-private-skeleton-background: none;
       --lui-private-skeleton-background-size: auto;
       --lui-private-skeleton-animation: none;
@@ -38,18 +38,18 @@
   }
 
   @media (min-width: 1024px) {
-    .leverui-skeleton:not([data-unstyled])[data-variant-lg='pulse'] {
+    .lui-skeleton:not([data-unstyled])[data-variant-lg='pulse'] {
       --lui-private-skeleton-background: var(--lui-private-skeleton-pulse-background);
       --lui-private-skeleton-background-size: auto;
       --lui-private-skeleton-animation: pulse var(--lui-skeleton-duration, 1.2s);
     }
-    .leverui-skeleton:not([data-unstyled])[data-variant-lg='shine'] {
+    .lui-skeleton:not([data-unstyled])[data-variant-lg='shine'] {
       --lui-private-skeleton-background: var(--lui-private-skeleton-shine-background);
       --lui-private-skeleton-background-size: 400% 100%;
       --lui-private-skeleton-animation: bg-position var(--lui-skeleton-duration, 5s) ease-in-out
         infinite;
     }
-    .leverui-skeleton:not([data-unstyled])[data-variant-lg='none'] {
+    .lui-skeleton:not([data-unstyled])[data-variant-lg='none'] {
       --lui-private-skeleton-background: none;
       --lui-private-skeleton-background-size: auto;
       --lui-private-skeleton-animation: none;
@@ -57,18 +57,18 @@
   }
 
   @media (min-width: 1280px) {
-    .leverui-skeleton:not([data-unstyled])[data-variant-xl='pulse'] {
+    .lui-skeleton:not([data-unstyled])[data-variant-xl='pulse'] {
       --lui-private-skeleton-background: var(--lui-private-skeleton-pulse-background);
       --lui-private-skeleton-background-size: auto;
       --lui-private-skeleton-animation: pulse var(--lui-skeleton-duration, 1.2s);
     }
-    .leverui-skeleton:not([data-unstyled])[data-variant-xl='shine'] {
+    .lui-skeleton:not([data-unstyled])[data-variant-xl='shine'] {
       --lui-private-skeleton-background: var(--lui-private-skeleton-shine-background);
       --lui-private-skeleton-background-size: 400% 100%;
       --lui-private-skeleton-animation: bg-position var(--lui-skeleton-duration, 5s) ease-in-out
         infinite;
     }
-    .leverui-skeleton:not([data-unstyled])[data-variant-xl='none'] {
+    .lui-skeleton:not([data-unstyled])[data-variant-xl='none'] {
       --lui-private-skeleton-background: none;
       --lui-private-skeleton-background-size: auto;
       --lui-private-skeleton-animation: none;
@@ -76,18 +76,18 @@
   }
 
   @media (min-width: 1536px) {
-    .leverui-skeleton:not([data-unstyled])[data-variant-2xl='pulse'] {
+    .lui-skeleton:not([data-unstyled])[data-variant-2xl='pulse'] {
       --lui-private-skeleton-background: var(--lui-private-skeleton-pulse-background);
       --lui-private-skeleton-background-size: auto;
       --lui-private-skeleton-animation: pulse var(--lui-skeleton-duration, 1.2s);
     }
-    .leverui-skeleton:not([data-unstyled])[data-variant-2xl='shine'] {
+    .lui-skeleton:not([data-unstyled])[data-variant-2xl='shine'] {
       --lui-private-skeleton-background: var(--lui-private-skeleton-shine-background);
       --lui-private-skeleton-background-size: 400% 100%;
       --lui-private-skeleton-animation: bg-position var(--lui-skeleton-duration, 5s) ease-in-out
         infinite;
     }
-    .leverui-skeleton:not([data-unstyled])[data-variant-2xl='none'] {
+    .lui-skeleton:not([data-unstyled])[data-variant-2xl='none'] {
       --lui-private-skeleton-background: none;
       --lui-private-skeleton-background-size: auto;
       --lui-private-skeleton-animation: none;

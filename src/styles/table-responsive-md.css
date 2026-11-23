@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 768px) {
-    .leverui-table__root:not([data-unstyled]) {
+    .lui-table__root:not([data-unstyled]) {
       &[data-size-md='sm'] {
         --lui-private-table-font-size: var(--lui-font-sizes-sm);
         --lui-private-table-line-height: 1.25rem;

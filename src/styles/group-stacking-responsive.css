@@ -1,12 +1,10 @@
 @layer leverui.recipes {
-  .leverui-group:not([data-unstyled]):has(
-      > :nth-child(
-        2 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
-      )
+  .lui-group:not([data-unstyled]):has(
+      > :nth-child(2 of :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]))
     ) {
     @media (min-width: 480px) {
       &[data-stacking-sm='first-on-top']
-        > :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip]):not(
+        > :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]):not(
           :focus-visible
         ) {
         z-index: calc(
@@ -15,7 +13,7 @@
         );
       }
       &[data-stacking-sm='last-on-top']
-        > :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip]):not(
+        > :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]):not(
           :focus-visible
         ) {
         z-index: var(--lui-group-index, calc(sibling-index() - 1));
@@ -24,7 +22,7 @@
 
     @media (min-width: 768px) {
       &[data-stacking-md='first-on-top']
-        > :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip]):not(
+        > :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]):not(
           :focus-visible
         ) {
         z-index: calc(
@@ -33,7 +31,7 @@
         );
       }
       &[data-stacking-md='last-on-top']
-        > :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip]):not(
+        > :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]):not(
           :focus-visible
         ) {
         z-index: var(--lui-group-index, calc(sibling-index() - 1));
@@ -42,7 +40,7 @@
 
     @media (min-width: 1024px) {
       &[data-stacking-lg='first-on-top']
-        > :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip]):not(
+        > :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]):not(
           :focus-visible
         ) {
         z-index: calc(
@@ -51,7 +49,7 @@
         );
       }
       &[data-stacking-lg='last-on-top']
-        > :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip]):not(
+        > :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]):not(
           :focus-visible
         ) {
         z-index: var(--lui-group-index, calc(sibling-index() - 1));
@@ -60,7 +58,7 @@
 
     @media (min-width: 1280px) {
       &[data-stacking-xl='first-on-top']
-        > :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip]):not(
+        > :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]):not(
           :focus-visible
         ) {
         z-index: calc(
@@ -69,7 +67,7 @@
         );
       }
       &[data-stacking-xl='last-on-top']
-        > :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip]):not(
+        > :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]):not(
           :focus-visible
         ) {
         z-index: var(--lui-group-index, calc(sibling-index() - 1));
@@ -78,7 +76,7 @@
 
     @media (min-width: 1536px) {
       &[data-stacking-2xl='first-on-top']
-        > :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip]):not(
+        > :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]):not(
           :focus-visible
         ) {
         z-index: calc(
@@ -87,7 +85,7 @@
         );
       }
       &[data-stacking-2xl='last-on-top']
-        > :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip]):not(
+        > :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]):not(
           :focus-visible
         ) {
         z-index: var(--lui-group-index, calc(sibling-index() - 1));

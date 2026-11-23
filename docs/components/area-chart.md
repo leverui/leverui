@@ -162,7 +162,7 @@ The chart takes focus when the tooltip is on.
   --lui-cartesian-chart-tooltip-bg: #f0faf8;
 }
 
-.traffic-area .leverui-cartesian-chart__gridLine {
+.traffic-area .lui-cartesian-chart__gridLine {
   stroke: #a6c9c0;
 }
 ```
@@ -180,9 +180,9 @@ Grid variables are in [Cartesian Grid](cartesian-grid.md).
 
 ### Classes
 
-Root: `.leverui-area-chart` and `.leverui-cartesian-chart__root`.
+Root: `.lui-area-chart` and `.lui-cartesian-chart__root`.
 
-Parts, each prefixed with `.leverui-cartesian-chart__`: `svg`, `axes`,
+Parts, each prefixed with `.lui-cartesian-chart__`: `svg`, `axes`,
 `rightAxis`, `axisLine`, `axisTitle`, `gridLine`, `cursor`, `series`, `area`,
 `line`, `dot`, `pointLabel`, `referenceLine`, `referenceArea`,
 `referenceValue`, `referenceValueLabel`, `referencePoint`, `referenceLabel`,

@@ -10,8 +10,8 @@ async function verifiesPinInputCss({ page }: { page: Page }): Promise<void> {
   const second = page.getByTestId('pin-css-input-1');
   const label = page.getByTestId('pin-css-label');
   await expect(root).toBeVisible({ timeout: 30_000 });
-  await expect(first).toHaveClass(/leverui-input/);
-  await expect(first).toHaveClass(/leverui-pin-input__input/);
+  await expect(first).toHaveClass(/lui-input/);
+  await expect(first).toHaveClass(/lui-pin-input__input/);
   await expect(root).toHaveAttribute('data-size-md', 'lg');
   await expect(root).toHaveAttribute('data-variant-md', 'subtle');
   await expect(root).toHaveAttribute('data-attached-md', 'false');

@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-textarea:not([data-unstyled]):is(
+  .lui-textarea:not([data-unstyled]):is(
       :disabled,
       [disabled],
       [data-disabled],
@@ -9,7 +9,7 @@
     cursor: var(--lui-cursor-disabled);
   }
 
-  .leverui-textarea:not([data-unstyled]):is(
+  .lui-textarea:not([data-unstyled]):is(
       [data-invalid],
       [aria-invalid='true'],
       [data-state='invalid']
@@ -18,7 +18,7 @@
     --lui-private-textarea-border-color: var(--lui-private-textarea-error-color);
   }
 
-  .leverui-textarea:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
+  .lui-textarea:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
     outline-offset: 0;
     outline-width: var(--lui-private-textarea-focus-outline-width, 1px);
     outline-color: var(--lui-private-textarea-focus-color);

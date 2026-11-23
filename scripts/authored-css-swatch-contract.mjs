@@ -6,11 +6,11 @@ const breakpoints = ['sm', 'md', 'lg', 'xl', '2xl'];
 export const colorSwatchContentContract = {
   family: 'color-swatch',
   required: [
-    '.leverui-color-swatch:not([data-unstyled])',
-    '.leverui-color-swatch[data-mix]',
-    '.leverui-color-swatch__mix-grid',
-    '.leverui-color-swatch[data-mix-cell]',
-    '.leverui-color-swatch[data-mix-last]',
+    '.lui-color-swatch:not([data-unstyled])',
+    '.lui-color-swatch[data-mix]',
+    '.lui-color-swatch__mix-grid',
+    '.lui-color-swatch[data-mix-cell]',
+    '.lui-color-swatch[data-mix-last]',
     ...sizes.map(
       /** Require each scalar size choice. */
       (size) => `[data-size='${size}']`,

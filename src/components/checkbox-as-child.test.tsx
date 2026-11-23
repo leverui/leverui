@@ -68,7 +68,7 @@ async function verifiesChildRenderedRoots(): Promise<void> {
   expect(groupRef).toBe(group);
   expect(root.tagName).toBe('LABEL');
   expect(rootRef).toBe(root);
-  expect(root.className).toContain('leverui-checkbox');
+  expect(root.className).toContain('lui-checkbox');
   expect(input.checked).toBe(true);
   fireEvent.click(input);
   await waitFor(

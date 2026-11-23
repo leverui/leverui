@@ -55,7 +55,7 @@ export function ComboboxColorPickerExample(): JSX.Element {
       onValueChange={changeValue}
       onInputValueChange={changeInput}
     >
-      <Combobox.Label class="leverui-visually-hidden">Select color</Combobox.Label>
+      <Combobox.Label class="lui-visually-hidden">Select color</Combobox.Label>
       <Stack direction="row" align="center" gap="3">
         <Combobox.Control>
           <Combobox.Input placeholder="Color" />

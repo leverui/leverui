@@ -47,67 +47,67 @@
   --lui-colors-fg-error: rgb(128, 40, 120);
 }
 
-.packed-field .leverui-input {
+.packed-field .lui-input {
   border-radius: 13px;
 }
 
-.packed-field .leverui-input-addon {
+.packed-field .lui-input-addon {
   border-radius: 15px;
 }
 
-.packed-field .leverui-input-element {
+.packed-field .lui-input-element {
   color: rgb(10, 80, 170);
 }
 
-.packed-field .leverui-input-group {
+.packed-field .lui-input-group {
   outline: 2px solid rgb(10, 80, 170);
 }
 
-.packed-native-select .leverui-native-select__field {
+.packed-native-select .lui-native-select__field {
   border-radius: 11px;
 }
 
-.packed-number-input .leverui-number-input__input {
+.packed-number-input .lui-number-input__input {
   border-radius: 12px;
 }
 
-.packed-pin-input .leverui-pin-input__input {
+.packed-pin-input .lui-pin-input__input {
   border-radius: 12px;
 }
 
-.packed-textarea .leverui-textarea {
+.packed-textarea .lui-textarea {
   border-radius: 14px;
 }
 
-.packed-checkbox-card .leverui-checkbox-card__control {
+.packed-checkbox-card .lui-checkbox-card__control {
   border-radius: 17px;
 }
 
-.packed-combobox .leverui-combobox__input {
+.packed-combobox .lui-combobox__input {
   border-radius: 19px;
 }
 
-.packed-accordion .leverui-accordion__itemTrigger {
+.packed-accordion .lui-accordion__itemTrigger {
   border-radius: 17px;
 }
 
-.packed-action-bar .leverui-action-bar__content {
+.packed-action-bar .lui-action-bar__content {
   border-radius: 19px;
 }
 
-.packed-collapsible .leverui-collapsible__content {
+.packed-collapsible .lui-collapsible__content {
   border-radius: 23px;
 }
 
-.packed-listbox .leverui-listbox__item {
+.packed-listbox .lui-listbox__item {
   border-radius: 21px;
 }
 
-.packed-radio-card .leverui-radio-card__itemControl {
+.packed-radio-card .lui-radio-card__itemControl {
   border-radius: 23px;
 }
 
-.packed-radio-group .leverui-radio-group__itemControl {
+.packed-radio-group .lui-radio-group__itemControl {
   border-radius: 29px;
 }
 
@@ -123,27 +123,27 @@
   --lui-colors-bg-muted: rgb(30, 40, 90);
 }
 
-:where(.packed-link-css) .leverui-linkbox {
+:where(.packed-link-css) .lui-linkbox {
   position: static;
 }
 
-:where(.packed-link-css) .leverui-linkbox__overlay {
+:where(.packed-link-css) .lui-linkbox__overlay {
   position: relative;
 }
 
-:where(.packed-list-css) .leverui-list__item {
+:where(.packed-list-css) .lui-list__item {
   color: rgb(9, 8, 7);
 }
 
-:where(.packed-qr-css) .leverui-qr-code__frame {
+:where(.packed-qr-css) .lui-qr-code__frame {
   fill: rgb(9, 8, 7);
 }
 
-:where(.packed-quote-css) .leverui-quote {
+:where(.packed-quote-css) .lui-quote {
   font-weight: 400;
 }
 
-:where(.packed-separator-css) .leverui-separator {
+:where(.packed-separator-css) .lui-separator {
   border-top-color: rgb(1, 2, 3);
 }
 
@@ -155,18 +155,18 @@
   font-weight: 700;
 }
 
-.packed-strong-css .leverui-strong {
+.packed-strong-css .lui-strong {
   font-weight: 300;
 }
 
-.packed-table-css .leverui-table__cell {
+.packed-table-css .lui-table__cell {
   color: rgb(1, 2, 3);
 }
 
-.packed-tag-css .leverui-tag__label {
+.packed-tag-css .lui-tag__label {
   color: rgb(1, 2, 3);
 }
 
-.packed-timeline-css .leverui-timeline__title {
+.packed-timeline-css .lui-timeline__title {
   color: rgb(1, 2, 3);
 }

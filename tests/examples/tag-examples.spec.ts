@@ -18,7 +18,7 @@ const counts = {
 async function verifiesTagStories({ page }: { page: Page }): Promise<void> {
   for (const [story, count] of Object.entries(counts)) {
     await page.goto(`/iframe.html?id=components-tag--${story}`);
-    await expect(page.locator('#storybook-root .leverui-tag__root')).toHaveCount(count);
+    await expect(page.locator('#storybook-root .lui-tag__root')).toHaveCount(count);
   }
 }
 
@@ -29,7 +29,7 @@ async function verifiesTagParts({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-tag--close');
   await expect(page.locator('#storybook-root button')).toHaveCount(2);
   await page.goto('/iframe.html?id=components-tag--overflow');
-  await expect(page.locator('#storybook-root .leverui-tag__root')).toHaveCSS('max-width', '200px');
+  await expect(page.locator('#storybook-root .lui-tag__root')).toHaveCSS('max-width', '200px');
 }
 
 /** Keep every palette row and all compositions in the Tag tables. */
@@ -44,14 +44,14 @@ async function verifiesTagMatrices({ page }: { page: Page }): Promise<void> {
     'surface',
   ]);
   await expect(
-    page.locator('#storybook-root tbody tr:first-child td:nth-child(2) .leverui-tag__root'),
+    page.locator('#storybook-root tbody tr:first-child td:nth-child(2) .lui-tag__root'),
   ).toHaveCount(5);
-  await expect(page.locator('#storybook-root .leverui-tag__root')).toHaveCount(200);
+  await expect(page.locator('#storybook-root .lui-tag__root')).toHaveCount(200);
 
   await page.goto('/iframe.html?id=components-tag--size-matrix');
   await expect(page.locator('#storybook-root tbody tr')).toHaveCount(10);
   await expect(page.locator('#storybook-root thead th')).toHaveText(['', 'sm', 'md', 'lg', 'xl']);
-  await expect(page.locator('#storybook-root .leverui-tag__root')).toHaveCount(40);
+  await expect(page.locator('#storybook-root .lui-tag__root')).toHaveCount(40);
 }
 
 test('all Tag examples render', verifiesTagStories);

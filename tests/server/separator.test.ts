@@ -45,7 +45,7 @@ function verifiesServerSeparator(): void {
   expect(markup).toContain('role="presentation"');
   expect(markup).toMatch(/<div[^>]*id="server-selected-separator"/);
   expect(markup).toContain('aria-orientation="vertical"');
-  expect(markup).toContain('leverui-separator');
+  expect(markup).toContain('lui-separator');
   expect(markup).toContain('data-size="sm"');
   expect(markup).not.toMatch(/<(?:span|div)[^>]*\s(?:size|variant|orientation|unstyled|css)=/);
 }

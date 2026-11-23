@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  [data-leverui-color-picker-css][data-size='2xs'] {
+  [data-lui-color-picker-css][data-size='2xs'] {
     --lui-private-color-picker-swatch-size: var(--lui-sizes-4\.5);
     --lui-private-color-picker-trigger-height: var(--lui-sizes-7);
     --lui-private-color-picker-area-thumb-size: var(--lui-sizes-3);
@@ -7,7 +7,7 @@
     --lui-private-color-picker-slider-thumb-size: var(--lui-sizes-3);
   }
 
-  [data-leverui-color-picker-css][data-size='xs'] {
+  [data-lui-color-picker-css][data-size='xs'] {
     --lui-private-color-picker-swatch-size: var(--lui-sizes-5);
     --lui-private-color-picker-trigger-height: var(--lui-sizes-8);
     --lui-private-color-picker-area-thumb-size: var(--lui-sizes-3\.5);
@@ -15,7 +15,7 @@
     --lui-private-color-picker-slider-thumb-size: var(--lui-sizes-3\.5);
   }
 
-  [data-leverui-color-picker-css][data-size='sm'] {
+  [data-lui-color-picker-css][data-size='sm'] {
     --lui-private-color-picker-swatch-size: var(--lui-sizes-6);
     --lui-private-color-picker-trigger-height: var(--lui-sizes-9);
     --lui-private-color-picker-area-thumb-size: var(--lui-sizes-3\.5);
@@ -23,7 +23,7 @@
     --lui-private-color-picker-slider-thumb-size: var(--lui-sizes-3\.5);
   }
 
-  [data-leverui-color-picker-css][data-size='md'] {
+  [data-lui-color-picker-css][data-size='md'] {
     --lui-private-color-picker-swatch-size: var(--lui-sizes-7);
     --lui-private-color-picker-trigger-height: var(--lui-sizes-10);
     --lui-private-color-picker-area-thumb-size: var(--lui-sizes-3\.5);
@@ -31,7 +31,7 @@
     --lui-private-color-picker-slider-thumb-size: var(--lui-sizes-3\.5);
   }
 
-  [data-leverui-color-picker-css][data-size='lg'] {
+  [data-lui-color-picker-css][data-size='lg'] {
     --lui-private-color-picker-swatch-size: var(--lui-sizes-7);
     --lui-private-color-picker-trigger-height: var(--lui-sizes-11);
     --lui-private-color-picker-area-thumb-size: var(--lui-sizes-3\.5);
@@ -39,7 +39,7 @@
     --lui-private-color-picker-slider-thumb-size: var(--lui-sizes-3\.5);
   }
 
-  [data-leverui-color-picker-css][data-size='xl'] {
+  [data-lui-color-picker-css][data-size='xl'] {
     --lui-private-color-picker-swatch-size: var(--lui-sizes-8);
     --lui-private-color-picker-trigger-height: var(--lui-sizes-12);
     --lui-private-color-picker-area-thumb-size: var(--lui-sizes-3\.5);
@@ -47,7 +47,7 @@
     --lui-private-color-picker-slider-thumb-size: var(--lui-sizes-3\.5);
   }
 
-  [data-leverui-color-picker-css][data-size='2xl'] {
+  [data-lui-color-picker-css][data-size='2xl'] {
     --lui-private-color-picker-swatch-size: var(--lui-sizes-10);
     --lui-private-color-picker-trigger-height: var(--lui-sizes-16);
     --lui-private-color-picker-area-thumb-size: var(--lui-sizes-3\.5);

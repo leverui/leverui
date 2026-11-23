@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 768px) {
-    .leverui-accordion__root:not([data-unstyled]) {
+    .lui-accordion__root:not([data-unstyled]) {
       &[data-variant-md='outline'] {
         --lui-private-accordion-root-border-width: 0;
         --lui-private-accordion-root-radius: 0;

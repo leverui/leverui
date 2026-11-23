@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-data-list__root:not([data-unstyled]) {
+    .lui-data-list__root:not([data-unstyled]) {
       &[data-orientation-sm='horizontal'] {
         --lui-private-data-list-item-display: inline-flex;
         --lui-private-data-list-item-direction: row;
@@ -43,7 +43,7 @@
     }
   }
   @media (min-width: 768px) {
-    .leverui-data-list__root:not([data-unstyled]) {
+    .lui-data-list__root:not([data-unstyled]) {
       &[data-orientation-md='horizontal'] {
         --lui-private-data-list-item-display: inline-flex;
         --lui-private-data-list-item-direction: row;

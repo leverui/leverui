@@ -7,14 +7,14 @@ test('Command dialog searches, selects, closes, and resets', async ({ page }) =>
   await trigger.click();
 
   const dialog = page.getByRole('dialog', { name: 'Command palette' });
-  await expect(dialog).toHaveClass(/leverui-command-dialog__content/);
+  await expect(dialog).toHaveClass(/lui-command-dialog__content/);
   await expect(dialog).toHaveCSS('overflow', 'hidden');
-  const accessibleLabels = dialog.locator('.leverui-command-dialog__accessible-label');
+  const accessibleLabels = dialog.locator('.lui-command-dialog__accessible-label');
   await expect(accessibleLabels).toHaveCount(2);
   await expect(accessibleLabels.first()).toHaveCSS('position', 'absolute');
   await expect(accessibleLabels.first()).toHaveCSS('clip', 'rect(0px, 0px, 0px, 0px)');
   await page.addStyleTag({
-    content: '.leverui-command-dialog__content { overflow: visible; }',
+    content: '.lui-command-dialog__content { overflow: visible; }',
   });
   await expect(dialog).toHaveCSS('overflow', 'visible');
   const input = dialog.getByRole('combobox', { name: 'Command palette' });

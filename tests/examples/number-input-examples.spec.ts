@@ -75,7 +75,7 @@ async function verifiesDisplay({ page }: { page: Page }): Promise<void> {
   await page.getByRole('button', { name: 'increment value' }).click();
   await expect(page.getByText('4', { exact: true })).toBeVisible();
   await openStory(page, 'element');
-  await expect(page.locator('.leverui-input-group svg.lucide')).toBeVisible();
+  await expect(page.locator('.lui-input-group svg.lucide')).toBeVisible();
   await expect(numberFields(page)).toHaveCSS('padding-left', '40px');
   await openStory(page, 'scrubber');
   await expect(page.locator('[data-number-input-scrubber]')).toBeVisible();

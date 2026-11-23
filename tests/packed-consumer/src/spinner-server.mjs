@@ -24,6 +24,6 @@ function renderInstalledSpinner() {
 
 const markup = renderInstalledSpinner();
 assert.match(markup, /<span[^>]*id="packed-server-spinner"/);
-assert.match(markup, /leverui-spinner/);
+assert.match(markup, /lui-spinner/);
 assert.match(markup, /provider-spinner/);
 assert.match(markup, /data-size="lg"/);

@@ -81,8 +81,8 @@ function LoaderRoot(props: RuntimeProps): JSX.Element {
     if (!currentIndicator) return local.children;
     return (
       <>
-        <div class="leverui-loader__indicator">{currentIndicator}</div>
-        <span class="leverui-loader__content">{local.children}</span>
+        <div class="lui-loader__indicator">{currentIndicator}</div>
+        <span class="lui-loader__content">{local.children}</span>
       </>
     );
   }
@@ -96,7 +96,7 @@ function LoaderRoot(props: RuntimeProps): JSX.Element {
     /** Keep native props and the public class reactive. */
     () => ({
       ...native,
-      class: cx('leverui-loader', local.class, local.className),
+      class: cx('lui-loader', local.class, local.className),
       'data-unstyled': local.unstyled ? '' : undefined,
       ref: attachNode,
     }),

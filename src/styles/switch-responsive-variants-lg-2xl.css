@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 1024px) {
-    .leverui-switch__root:not([data-unstyled]) {
+    .lui-switch__root:not([data-unstyled]) {
       &[data-variant-lg='solid'] {
         --lui-private-switch-control-height: var(--lui-private-switch-height);
         --lui-private-switch-control-bg: var(--lui-colors-bg-emphasized);
@@ -35,7 +35,7 @@
   }
 
   @media (min-width: 1280px) {
-    .leverui-switch__root:not([data-unstyled]) {
+    .lui-switch__root:not([data-unstyled]) {
       &[data-variant-xl='solid'] {
         --lui-private-switch-control-height: var(--lui-private-switch-height);
         --lui-private-switch-control-bg: var(--lui-colors-bg-emphasized);
@@ -70,7 +70,7 @@
   }
 
   @media (min-width: 1536px) {
-    .leverui-switch__root:not([data-unstyled]) {
+    .lui-switch__root:not([data-unstyled]) {
       &[data-variant-2xl='solid'] {
         --lui-private-switch-control-height: var(--lui-private-switch-height);
         --lui-private-switch-control-bg: var(--lui-colors-bg-emphasized);

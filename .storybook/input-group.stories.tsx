@@ -6,11 +6,7 @@ import { Input, InputGroup } from '../src';
 /** Supply one CSS height variable for a consumer-owned input. */
 function CustomField(): JSX.Element {
   return (
-    <input
-      class="leverui-input-group__field"
-      aria-label="Custom username"
-      style={{ height: '40px' }}
-    />
+    <input class="lui-input-group__field" aria-label="Custom username" style={{ height: '40px' }} />
   );
 }
 

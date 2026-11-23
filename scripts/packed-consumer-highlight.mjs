@@ -5,7 +5,7 @@ export async function verifyPackedHighlight(page) {
   const standalone = page.locator('#packed-mark');
   assert.equal(await standalone.textContent(), 'Standalone');
   assert.equal(await standalone.getAttribute('title'), 'Standalone mark');
-  assert.match((await standalone.getAttribute('class')) ?? '', /leverui-mark/);
+  assert.match((await standalone.getAttribute('class')) ?? '', /lui-mark/);
   assert.equal(
     await standalone.evaluate(
       /** Read the installed text variant's font weight. */

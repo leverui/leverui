@@ -54,7 +54,7 @@ function TableRootComponent(props: TableRootRuntimeProps): JSX.Element {
       'data-striped': local.striped ? '' : undefined,
       'data-show-column-border': local.showColumnBorder ? '' : undefined,
       'data-native': local.native ? '' : undefined,
-      'data-leverui-color-palette': readTablePalette(local.colorPalette),
+      'data-lui-color-palette': readTablePalette(local.colorPalette),
       'data-unstyled': local.unstyled ? '' : undefined,
       class: composeRecipeClassNames('table__root', undefined, local.class, local.className),
       ref: attachNode,

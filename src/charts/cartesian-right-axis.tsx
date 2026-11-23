@@ -21,7 +21,7 @@ export function CartesianRightAxis(props: {
     },
   );
   return (
-    <g class="leverui-cartesian-chart__rightAxis" data-chart-right-axis aria-hidden="true">
+    <g class="lui-cartesian-chart__rightAxis" data-chart-right-axis aria-hidden="true">
       <For each={ticks()}>
         {/** Position the alternate value label outside the plot. */}
         {(tick) => (
@@ -35,7 +35,7 @@ export function CartesianRightAxis(props: {
         )}
       </For>
       <text
-        class="leverui-cartesian-chart__axisTitle"
+        class="lui-cartesian-chart__axisTitle"
         transform={`translate(${props.plot.width - 15} ${props.plot.height / 2}) rotate(90)`}
         text-anchor="middle"
       >

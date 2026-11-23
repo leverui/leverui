@@ -26,7 +26,7 @@ function renderInstalledStack() {
 
 const markup = renderInstalledStack();
 assert.match(markup, /id="packed-server-stack"/);
-assert.match(markup, /First packed item[\s\S]*leverui-stack-separator[\s\S]*Second packed item/);
+assert.match(markup, /First packed item[\s\S]*lui-stack-separator[\s\S]*Second packed item/);
 assert.match(markup, /data-direction-md="row"/);
 assert.match(markup, /--lui-private-stack-gap-base:8px/);
 assert.match(markup, /\sdata-has-separator(?:=""|(?=[\s/>]))/);

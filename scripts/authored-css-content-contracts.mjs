@@ -10,26 +10,22 @@ export const contentContracts = [
   proseContentContract,
   {
     family: 'em',
-    required: ['.leverui-em:not([data-unstyled])'],
+    required: ['.lui-em:not([data-unstyled])'],
   },
   {
     family: 'strong',
-    required: ['.leverui-strong:not([data-unstyled])', '--lui-font-weights-semibold'],
+    required: ['.lui-strong:not([data-unstyled])', '--lui-font-weights-semibold'],
   },
   {
     family: 'quote',
-    required: [
-      '.leverui-quote:not([data-unstyled])',
-      '--lui-font-weights-bold',
-      'line-height: 1.2',
-    ],
+    required: ['.lui-quote:not([data-unstyled])', '--lui-font-weights-bold', 'line-height: 1.2'],
   },
   {
     family: 'blockquote',
     required: [
-      '.leverui-blockquote__root:not([data-unstyled])',
-      '.leverui-blockquote__caption:not([data-unstyled])',
-      '.leverui-blockquote__icon:not([data-unstyled])',
+      '.lui-blockquote__root:not([data-unstyled])',
+      '.lui-blockquote__caption:not([data-unstyled])',
+      '.lui-blockquote__icon:not([data-unstyled])',
       ...['subtle', 'solid', 'plain'].map(
         /** Require each finite Blockquote treatment. */
         (variant) => `[data-variant='${variant}']`,
@@ -62,7 +58,7 @@ export const contentContracts = [
   {
     family: 'badge',
     required: [
-      '.leverui-badge:not([data-unstyled], [data-leverui-private-style-runtime])',
+      '.lui-badge:not([data-unstyled], [data-lui-private-style-runtime])',
       ...['xs', 'sm', 'md', 'lg'].map(
         /** Require each default Badge size selector. */
         (size) => `[data-size='${size}']`,
@@ -86,8 +82,8 @@ export const contentContracts = [
   {
     family: 'code',
     required: [
-      '.leverui-code:not([data-unstyled], [data-leverui-private-style-runtime])',
-      ':is(.leverui-badge, .leverui-code):not([data-unstyled], [data-leverui-private-style-runtime])',
+      '.lui-code:not([data-unstyled], [data-lui-private-style-runtime])',
+      ':is(.lui-badge, .lui-code):not([data-unstyled], [data-lui-private-style-runtime])',
       ...['xs', 'sm', 'md', 'lg'].map(
         /** Require each Badge-derived Code size selector. */
         (size) => `[data-size='${size}']`,
@@ -111,7 +107,7 @@ export const contentContracts = [
   {
     family: 'mark',
     required: [
-      '.leverui-mark:not([data-unstyled], [data-leverui-private-style-runtime])',
+      '.lui-mark:not([data-unstyled], [data-lui-private-style-runtime])',
       ...['subtle', 'solid', 'text', 'plain'].map(
         /** Require each finite Mark treatment. */
         (variant) => `[data-variant='${variant}']`,
@@ -132,7 +128,7 @@ export const contentContracts = [
   {
     family: 'kbd',
     required: [
-      '.leverui-kbd:not([data-unstyled])',
+      '.lui-kbd:not([data-unstyled])',
       ...['sm', 'md', 'lg'].map(
         /** Require each finite Kbd size. */
         (size) => `[data-size='${size}']`,
@@ -165,9 +161,9 @@ export const contentContracts = [
   {
     family: 'link',
     required: [
-      '.leverui-link:not([data-unstyled])',
-      '.leverui-linkbox:not([data-unstyled])',
-      '.leverui-linkbox__overlay:not([data-unstyled])',
+      '.lui-link:not([data-unstyled])',
+      '.lui-linkbox:not([data-unstyled])',
+      '.lui-linkbox__overlay:not([data-unstyled])',
       ...['plain', 'underline'].map(
         /** Require both public Link treatments. */
         (variant) => `[data-variant='${variant}']`,
@@ -181,7 +177,7 @@ export const contentContracts = [
           ),
       ),
       ':focus-visible',
-      'a[href]:not(.leverui-linkbox__overlay)',
+      'a[href]:not(.lui-linkbox__overlay)',
       '&::before',
       '--lui-colors-color-palette-fg',
       '--lui-colors-color-palette-focus-ring',

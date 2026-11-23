@@ -98,9 +98,9 @@ async function verifiesCheckedRoot(): Promise<void> {
     () => expect(screen.getByTestId('custom-mark').tagName.toLowerCase()).toBe('svg'),
   );
   const icon = screen.getByTestId('custom-mark');
-  expect(icon.classList.contains('leverui-radio-card__itemIndicator')).toBe(true);
+  expect(icon.classList.contains('lui-radio-card__itemIndicator')).toBe(true);
   expect(icon.getAttribute('aria-hidden')).toBe('true');
-  expect(icon.parentElement?.classList.contains('leverui-radio-card__itemControl')).toBe(true);
+  expect(icon.parentElement?.classList.contains('lui-radio-card__itemControl')).toBe(true);
   expect(iconElement).toBe(icon);
   expect(childIconElement).toBe(icon);
   expect(screen.getByTestId('react-indicator').querySelector('.dot')).toBeNull();

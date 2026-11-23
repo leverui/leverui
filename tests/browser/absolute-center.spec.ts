@@ -94,7 +94,7 @@ async function verifiesAbsoluteCenter({ page }: { page: Page }): Promise<void> {
   await page.setViewportSize({ width: 900, height: 700 });
   await expect(page.getByTestId('both-center')).toHaveCSS('width', '80px');
   expectNear((await placement(page, 'both-parent', 'both-center')).centerX, 0);
-  await page.addStyleTag({ content: '.leverui-absolute-center.overlay-link { background: red; }' });
+  await page.addStyleTag({ content: '.lui-absolute-center.overlay-link { background: red; }' });
   await expect(link).toHaveCSS('background-color', 'rgb(255, 0, 0)');
 }
 

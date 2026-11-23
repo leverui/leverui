@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
-    .leverui-timeline__root:not([data-unstyled]) {
+    .lui-timeline__root:not([data-unstyled]) {
       &[data-variant-sm='subtle'] {
         --lui-private-timeline-indicator-bg: var(--lui-colors-color-palette-muted);
         --lui-private-timeline-indicator-color: inherit;
@@ -28,7 +28,7 @@
     }
   }
   @media (min-width: 768px) {
-    .leverui-timeline__root:not([data-unstyled]) {
+    .lui-timeline__root:not([data-unstyled]) {
       &[data-variant-md='subtle'] {
         --lui-private-timeline-indicator-bg: var(--lui-colors-color-palette-muted);
         --lui-private-timeline-indicator-color: inherit;

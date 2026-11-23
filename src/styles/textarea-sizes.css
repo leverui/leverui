@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-textarea:not([data-unstyled]) {
+  .lui-textarea:not([data-unstyled]) {
     --lui-private-textarea-font-size: var(--lui-font-sizes-sm);
     --lui-private-textarea-line-height: 1.25rem;
     --lui-private-textarea-size-padding-inline: var(--lui-spacing-3);
@@ -7,7 +7,7 @@
     --lui-private-textarea-scroll-padding: var(--lui-spacing-2);
   }
 
-  .leverui-textarea:not([data-unstyled])[data-size='xs'] {
+  .lui-textarea:not([data-unstyled])[data-size='xs'] {
     --lui-private-textarea-font-size: var(--lui-font-sizes-xs);
     --lui-private-textarea-line-height: 1rem;
     --lui-private-textarea-size-padding-inline: var(--lui-spacing-2);
@@ -15,7 +15,7 @@
     --lui-private-textarea-scroll-padding: var(--lui-spacing-1\.5);
   }
 
-  .leverui-textarea:not([data-unstyled])[data-size='sm'] {
+  .lui-textarea:not([data-unstyled])[data-size='sm'] {
     --lui-private-textarea-font-size: var(--lui-font-sizes-sm);
     --lui-private-textarea-line-height: 1.25rem;
     --lui-private-textarea-size-padding-inline: var(--lui-spacing-2\.5);
@@ -23,7 +23,7 @@
     --lui-private-textarea-scroll-padding: var(--lui-spacing-2);
   }
 
-  .leverui-textarea:not([data-unstyled])[data-size='lg'] {
+  .lui-textarea:not([data-unstyled])[data-size='lg'] {
     --lui-private-textarea-font-size: var(--lui-font-sizes-md);
     --lui-private-textarea-line-height: 1.5rem;
     --lui-private-textarea-size-padding-inline: var(--lui-spacing-4);
@@ -31,7 +31,7 @@
     --lui-private-textarea-scroll-padding: var(--lui-spacing-3);
   }
 
-  .leverui-textarea:not([data-unstyled])[data-size='xl'] {
+  .lui-textarea:not([data-unstyled])[data-size='xl'] {
     --lui-private-textarea-font-size: var(--lui-font-sizes-md);
     --lui-private-textarea-line-height: 1.5rem;
     --lui-private-textarea-size-padding-inline: var(--lui-spacing-4\.5);

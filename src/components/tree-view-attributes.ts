@@ -40,6 +40,6 @@ export function treeViewAttributes(props: TreeViewAppearance): Record<string, st
     'data-animate-content-lg': booleanAttribute(motion.lg),
     'data-animate-content-xl': booleanAttribute(motion.xl),
     'data-animate-content-2xl': booleanAttribute(motion['2xl']),
-    'data-leverui-color-palette': props.colorPalette,
+    'data-lui-color-palette': props.colorPalette,
   };
 }

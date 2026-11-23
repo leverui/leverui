@@ -36,9 +36,9 @@ function renderServerGroup(): string {
 function verifiesServerGroup(): void {
   const markup = renderServerGroup();
   expect(markup).toContain('id="server-input-group"');
-  expect(markup).toContain('leverui-input-group');
-  expect(markup).toContain('leverui-input-element');
-  expect(markup).toContain('leverui-input-addon');
+  expect(markup).toContain('lui-input-group');
+  expect(markup).toContain('lui-input-element');
+  expect(markup).toContain('lui-input-addon');
   expect(markup).toContain('value="example"');
   expect(markup).not.toMatch(/<div[^>]*\sstartElement=/);
 }
@@ -97,7 +97,7 @@ function renderCustomField(): JSX.Element {
   return createComponent(Dynamic, {
     component: 'input',
     'aria-label': 'Custom server field',
-    class: 'leverui-input-group__field',
+    class: 'lui-input-group__field',
     style: { height: '40px', '--lui-input-group-field-height': '40px' },
   });
 }
@@ -106,7 +106,7 @@ function renderCustomField(): JSX.Element {
 function verifiesCustomField(): void {
   const markup = renderServerChildren(renderCustomField, '@');
   expect(markup).toContain('aria-label="Custom server field"');
-  expect(markup).toContain('leverui-input-group__field');
+  expect(markup).toContain('lui-input-group__field');
   expect(markup).toContain('--lui-input-group-field-height:40px');
   expect(markup).toContain('--lui-private-input-group-start-offset:0px');
 }

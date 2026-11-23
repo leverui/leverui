@@ -21,7 +21,7 @@ function renderInstalledBleed() {
 const markup = renderInstalledBleed();
 assert.match(markup, /id="packed-server-bleed"/);
 assert.match(markup, /Installed server bleed/);
-assert.match(markup, /leverui-bleed/);
+assert.match(markup, /lui-bleed/);
 assert.match(markup, /position:fixed/);
 assert.match(markup, /--lui-private-bleed-inline-start-base:/);
 assert.match(markup, /--lui-private-bleed-block-end-base:/);

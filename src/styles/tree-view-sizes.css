@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-tree-view__root:not([data-unstyled])[data-size='xs'] {
+  .lui-tree-view__root:not([data-unstyled])[data-size='xs'] {
     --lui-private-tree-default-icon-size: var(--lui-spacing-3);
     --lui-private-tree-default-padding-inline: var(--lui-spacing-2);
     --lui-private-tree-default-padding-block: var(--lui-spacing-1);
@@ -7,7 +7,7 @@
     --lui-private-tree-default-line-height: 1rem;
   }
 
-  .leverui-tree-view__root:not([data-unstyled])[data-size='sm'] {
+  .lui-tree-view__root:not([data-unstyled])[data-size='sm'] {
     --lui-private-tree-default-icon-size: var(--lui-spacing-3);
     --lui-private-tree-default-padding-inline: var(--lui-spacing-3);
     --lui-private-tree-default-padding-block: var(--lui-spacing-1);

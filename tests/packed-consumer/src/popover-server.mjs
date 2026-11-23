@@ -42,8 +42,8 @@ function renderPopover() {
 }
 
 const markup = renderToString(renderPopover);
-assert.match(markup, /leverui-popover__content/);
+assert.match(markup, /lui-popover__content/);
 assert.match(markup, /role="dialog"/);
-assert.match(markup, /leverui-popover__arrowTip/);
+assert.match(markup, /lui-popover__arrowTip/);
 assert.match(markup, /<h2\b/);
 assert.match(markup, /data-popover-close-trigger/);

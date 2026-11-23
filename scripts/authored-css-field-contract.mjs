@@ -3,11 +3,11 @@ export const fieldContracts = [
   {
     family: 'field',
     required: [
-      '.leverui-field__root:not([data-unstyled])',
-      '.leverui-field__label:not([data-unstyled])',
-      '.leverui-field__helperText:not([data-unstyled])',
-      '.leverui-field__errorText:not([data-unstyled])',
-      '.leverui-field__requiredIndicator:not([data-unstyled])',
+      '.lui-field__root:not([data-unstyled])',
+      '.lui-field__label:not([data-unstyled])',
+      '.lui-field__helperText:not([data-unstyled])',
+      '.lui-field__errorText:not([data-unstyled])',
+      '.lui-field__requiredIndicator:not([data-unstyled])',
       '--lui-field-label-width',
       "[data-orientation='vertical']",
       "[data-orientation='horizontal']",

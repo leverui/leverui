@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-aspect-ratio:not([data-unstyled]) {
+  .lui-aspect-ratio:not([data-unstyled]) {
     position: relative;
     display: block;
 

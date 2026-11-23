@@ -18,8 +18,8 @@ function renderSparkline() {
 }
 
 const markup = renderSparkline();
-assert.match(markup, /leverui-sparkline/);
-assert.match(markup, /leverui-sparkline__area/);
+assert.match(markup, /lui-sparkline/);
+assert.match(markup, /lui-sparkline__area/);
 assert.match(markup, /--lui-sparkline-color/);
 assert.match(markup, /aria-label="Traffic"/);
 console.log('Packed Sparkline server rendering passed.');

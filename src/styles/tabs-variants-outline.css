@@ -1,6 +1,6 @@
 @layer leverui.recipes {
-  .leverui-tabs__root:not([data-unstyled])[data-variant='outline'] {
-    .leverui-tabs__list:not([data-unstyled]) {
+  .lui-tabs__root:not([data-unstyled])[data-variant='outline'] {
+    .lui-tabs__list:not([data-unstyled]) {
       --lui-private-line-thickness: 1px;
       --lui-private-line-offset: calc(var(--lui-private-line-thickness) * -1);
       border-color: var(--lui-colors-border);
@@ -15,7 +15,7 @@
       }
     }
 
-    &[data-orientation='vertical'] .leverui-tabs__list:not([data-unstyled])::before {
+    &[data-orientation='vertical'] .lui-tabs__list:not([data-unstyled])::before {
       bottom: auto;
       inset-inline: var(--lui-private-line-offset);
       height: calc(100% - var(--lui-private-line-thickness) * 2);
@@ -24,7 +24,7 @@
       border-inline-end: var(--lui-private-line-thickness) solid var(--lui-colors-border);
     }
 
-    .leverui-tabs__trigger:not([data-unstyled]) {
+    .lui-tabs__trigger:not([data-unstyled]) {
       color: var(--lui-colors-fg-muted);
       border: 1px solid transparent;
 
@@ -34,7 +34,7 @@
       }
     }
 
-    &:not([data-orientation='vertical']) .leverui-tabs__trigger:not([data-unstyled]) {
+    &:not([data-orientation='vertical']) .lui-tabs__trigger:not([data-unstyled]) {
       border-start-start-radius: var(--lui-tabs-trigger-radius);
       border-start-end-radius: var(--lui-tabs-trigger-radius);
       margin-bottom: var(--lui-private-line-offset);
@@ -49,7 +49,7 @@
       }
     }
 
-    &[data-orientation='vertical'] .leverui-tabs__trigger:not([data-unstyled]) {
+    &[data-orientation='vertical'] .lui-tabs__trigger:not([data-unstyled]) {
       border-start-start-radius: var(--lui-tabs-trigger-radius);
       border-end-start-radius: var(--lui-tabs-trigger-radius);
       margin-inline-end: var(--lui-private-line-offset);

@@ -99,7 +99,7 @@ and the indicator's size.
 
 ```tsx
 <Status.Root colorPalette="blue">
-  <div class="leverui-status__indicator" />
+  <div class="lui-status__indicator" />
   Processing
 </Status.Root>
 ```
@@ -118,15 +118,15 @@ Also takes `class`, `style`, standard HTML attributes, and a callback `ref`.
 
 ## Customize with CSS
 
-Import `@leverui/components/styles.css`, then style `.leverui-status__root` and
-`.leverui-status__indicator`. These class names will not change.
+Import `@leverui/components/styles.css`, then style `.lui-status__root` and
+`.lui-status__indicator`. These class names will not change.
 
 Root attributes: `data-size`, `data-size-sm` through `data-size-2xl` for sizes
-set per screen size, and `data-leverui-color-palette`. Override the
+set per screen size, and `data-lui-color-palette`. Override the
 `--lui-*` variables for a whole theme or for one Status root.
 
 ```css
-.leverui-status__indicator {
+.lui-status__indicator {
   box-shadow: 0 0 0 2px currentColor;
 }
 ```

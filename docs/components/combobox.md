@@ -164,7 +164,7 @@ Content moved by a portal gets the same size and variant attributes. Each part
 has a stable class.
 
 ```css
-.leverui-combobox__input {
+.lui-combobox__input {
   border-radius: 0.75rem;
 }
 ```

@@ -6,7 +6,7 @@ export async function verifyPackedFileUpload(page) {
   const input = page.getByTestId('packed-file-upload-input');
   const dropzone = page.getByTestId('packed-file-upload-dropzone');
   const text = page.getByTestId('packed-file-upload-text');
-  await expect(root).toHaveClass(/leverui-file-upload__root/);
+  await expect(root).toHaveClass(/lui-file-upload__root/);
   await expect(input).toHaveAttribute('type', 'file');
   await expect(dropzone).toHaveCSS('background-color', 'rgb(30, 40, 90)');
   await input.setInputFiles({

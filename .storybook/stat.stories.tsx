@@ -8,7 +8,7 @@ import { StatPropsProvider, type StatRootBaseProps } from '../src/components/sta
 /** Use the public Stat part class on a custom native value. */
 function StatValueProbe(props: { id: string }): JSX.Element {
   return (
-    <dd class="leverui-stat__valueText" data-testid={props.id}>
+    <dd class="lui-stat__valueText" data-testid={props.id}>
       Custom value
     </dd>
   );

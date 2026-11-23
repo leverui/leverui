@@ -10,7 +10,7 @@ async function verifiesBoxGallery({ page }: { page: Page }): Promise<void> {
   }
 
   await page.goto('/iframe.html?id=layout-box--as-prop');
-  const section = page.locator('#storybook-root section.leverui-box');
+  const section = page.locator('#storybook-root section.lui-box');
   await expect(section).toContainText('This Box renders as a section element.');
   await expect(section.getByRole('heading', { name: 'Shipping' })).toBeVisible();
 
@@ -35,13 +35,13 @@ async function verifiesStoryInsets({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=layout-box--basic');
   const layout = page.locator('#storybook-root > .example-layout-inset');
   await expect(layout).toHaveCSS('padding', '16px');
-  await expect(layout).toHaveClass('leverui-box example-layout-inset');
-  await expect(page.locator('.box-example-panel')).toHaveClass('leverui-box box-example-panel');
+  await expect(layout).toHaveClass('lui-box example-layout-inset');
+  await expect(page.locator('.box-example-panel')).toHaveClass('lui-box box-example-panel');
 
   await page.goto('/iframe.html?id=components-button--basic');
   const component = page.locator('#storybook-root > .example-component-inset');
   await expect(component).toHaveCSS('padding', '40px');
-  await expect(component).toHaveClass('leverui-box example-component-inset');
+  await expect(component).toHaveClass('lui-box example-component-inset');
 }
 
 test('shared Storybook insets render through native Box and CSS', verifiesStoryInsets);

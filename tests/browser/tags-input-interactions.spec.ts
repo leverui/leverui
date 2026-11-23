@@ -16,10 +16,10 @@ async function verifiesFormReset({ page }: { page: Page }): Promise<void> {
   await expect(input).toBeVisible({ timeout: 30_000 });
   await input.fill('React');
   await input.press('Enter');
-  await expect(page.locator('.leverui-tags-input__itemText')).toHaveText(['Solid', 'React']);
+  await expect(page.locator('.lui-tags-input__itemText')).toHaveText(['Solid', 'React']);
   expect(await readResetFormValue(page)).toContain('React');
   await page.getByRole('button', { name: 'Reset tags' }).click();
-  await expect(page.locator('.leverui-tags-input__itemText')).toHaveText(['Solid']);
+  await expect(page.locator('.lui-tags-input__itemText')).toHaveText(['Solid']);
   expect(await readResetFormValue(page)).toBe('Solid');
 }
 
@@ -28,13 +28,13 @@ test('native form reset restores the initial visible and submitted tags', verifi
 /** Keep equal strings distinct through indexed deletion and inline editing. */
 async function verifiesDuplicatesAndEditing({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-tags-input-interactions--duplicates');
-  const items = page.locator('.leverui-tags-input__item');
+  const items = page.locator('.lui-tags-input__item');
   await expect(items).toHaveCount(2, { timeout: 30_000 });
   await items.nth(1).getByRole('button', { name: 'Delete tag Echo' }).click();
   await expect(items).toHaveCount(1);
-  await expect(items.first().locator('.leverui-tags-input__itemText')).toHaveText('Echo');
-  await items.first().locator('.leverui-tags-input__itemPreview').dblclick();
-  const editor = items.first().locator('.leverui-tags-input__itemInput');
+  await expect(items.first().locator('.lui-tags-input__itemText')).toHaveText('Echo');
+  await items.first().locator('.lui-tags-input__itemPreview').dblclick();
+  const editor = items.first().locator('.lui-tags-input__itemInput');
   await expect(editor).toBeVisible();
   await page.evaluate(
     /** Let the machine's queued editor focus action finish before typing. */
@@ -46,11 +46,11 @@ async function verifiesDuplicatesAndEditing({ page }: { page: Page }): Promise<v
   await expect(editor).toBeFocused();
   await editor.fill('Updated');
   await editor.press('Enter');
-  await expect(items.first().locator('.leverui-tags-input__itemText')).toHaveText('Updated');
+  await expect(items.first().locator('.lui-tags-input__itemText')).toHaveText('Updated');
   const input = page.getByPlaceholder('Add duplicate tag');
   await input.focus();
   await input.press('ArrowLeft');
-  await expect(items.first().locator('.leverui-tags-input__itemPreview')).toHaveAttribute(
+  await expect(items.first().locator('.lui-tags-input__itemPreview')).toHaveAttribute(
     'data-highlighted',
     '',
   );
@@ -67,7 +67,7 @@ test(
 async function verifiesDocumentedOptions({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-tags-input-interactions--options');
   const input = page.getByPlaceholder('Add limited tag');
-  const values = page.locator('.leverui-tags-input__itemText');
+  const values = page.locator('.lui-tags-input__itemText');
   const machineState = page.getByTestId('options-machine-state');
   await expect(input).toBeVisible({ timeout: 30_000 });
   await input.fill('ab');
@@ -108,7 +108,7 @@ async function verifiesPaste({ page }: { page: Page }): Promise<void> {
       field.dispatchEvent(new InputEvent('input', { bubbles: true, inputType: 'insertFromPaste' }));
     },
   );
-  await expect(page.locator('.leverui-tags-input__itemText')).toHaveText([
+  await expect(page.locator('.lui-tags-input__itemText')).toHaveText([
     'React',
     'Solid',
     'TypeScript',
@@ -122,19 +122,19 @@ async function verifiesReactiveProvider({ page }: { page: Page }): Promise<void>
   await page.goto('/iframe.html?id=components-tags-input-interactions--provider');
   const root = page.getByTestId('tags-provider-root');
   const control = page.getByTestId('tags-provider-control');
-  const item = root.locator('.leverui-tags-input__item');
+  const item = root.locator('.lui-tags-input__item');
   await expect(control).toHaveCSS('min-height', '36px', { timeout: 30_000 });
   await root.evaluate(
     /** Identify the first root DOM node before provider defaults change. */
     (element) => element.setAttribute('data-original-root', 'true'),
   );
-  await item.locator('.leverui-tags-input__itemPreview').dblclick();
-  await expect(item.locator('.leverui-tags-input__itemInput')).toBeHidden();
+  await item.locator('.lui-tags-input__itemPreview').dblclick();
+  await expect(item.locator('.lui-tags-input__itemInput')).toBeHidden();
   await page.getByRole('button', { name: 'Enable editing' }).click();
   await expect(root).toHaveAttribute('data-original-root', 'true');
   await expect(control).toHaveCSS('min-height', '44px');
-  await item.locator('.leverui-tags-input__itemPreview').dblclick();
-  await expect(item.locator('.leverui-tags-input__itemInput')).toBeVisible();
+  await item.locator('.lui-tags-input__itemPreview').dblclick();
+  await expect(item.locator('.lui-tags-input__itemInput')).toBeVisible();
 }
 
 test(

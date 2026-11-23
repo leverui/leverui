@@ -3,10 +3,10 @@ export const toastContracts = [
   {
     family: 'toast',
     required: [
-      '.leverui-toast__root:not([data-unstyled])',
+      '.lui-toast__root:not([data-unstyled])',
       ...['title', 'description', 'indicator', 'actionTrigger', 'closeTrigger'].map(
         /** Keep every styled public part in the default stylesheet. */
-        (part) => `.leverui-toast__${part}:not([data-unstyled])`,
+        (part) => `.lui-toast__${part}:not([data-unstyled])`,
       ),
       ...['warning', 'success', 'error'].map(
         /** Require each saturated status treatment. */

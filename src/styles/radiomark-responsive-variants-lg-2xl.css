@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 1024px) {
-    .leverui-radiomark:not([data-unstyled]) {
+    .lui-radiomark:not([data-unstyled]) {
       &[data-variant-lg='solid'] {
         --lui-private-radiomark-unfilled-background: transparent;
         --lui-private-radiomark-border: var(--lui-colors-border-emphasized);
@@ -40,7 +40,7 @@
     }
   }
   @media (min-width: 1280px) {
-    .leverui-radiomark:not([data-unstyled]) {
+    .lui-radiomark:not([data-unstyled]) {
       &[data-variant-xl='solid'] {
         --lui-private-radiomark-unfilled-background: transparent;
         --lui-private-radiomark-border: var(--lui-colors-border-emphasized);
@@ -80,7 +80,7 @@
     }
   }
   @media (min-width: 1536px) {
-    .leverui-radiomark:not([data-unstyled]) {
+    .lui-radiomark:not([data-unstyled]) {
       &[data-variant-2xl='solid'] {
         --lui-private-radiomark-unfilled-background: transparent;
         --lui-private-radiomark-border: var(--lui-colors-border-emphasized);

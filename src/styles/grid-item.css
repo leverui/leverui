@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-grid-item {
+  .lui-grid-item {
     &[data-grid-item-area-base] {
       grid-area: var(--lui-private-grid-item-area-base);
     }

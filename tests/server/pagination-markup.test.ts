@@ -49,9 +49,9 @@ function renderServerPagination(unstyled = false): string {
 function verifiesServerMarkup(): void {
   const markup = renderServerPagination();
   expect(markup).toMatch(/<nav\b[^>]*aria-label="Article pages"/);
-  expect(markup).toContain('leverui-pagination__root');
-  expect(markup).toContain('leverui-pagination__item');
-  expect(markup).toContain('leverui-pagination__page-text');
+  expect(markup).toContain('lui-pagination__root');
+  expect(markup).toContain('lui-pagination__item');
+  expect(markup).toContain('lui-pagination__page-text');
   expect(markup).toContain('aria-current="page"');
   expect(markup).toContain('11 - 20 of 50');
 }
@@ -62,7 +62,7 @@ test('published Pagination renders semantic server markup', verifiesServerMarkup
 function verifiesUnstyledServerMarkup(): void {
   const markup = renderServerPagination(true);
   expect(markup.match(/\sdata-unstyled(?:=""|(?=[\s/>]))/g)?.length).toBeGreaterThan(2);
-  expect(markup).toContain('leverui-pagination__page-text');
+  expect(markup).toContain('lui-pagination__page-text');
 }
 
 test(

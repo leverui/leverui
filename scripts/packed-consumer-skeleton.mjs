@@ -7,7 +7,7 @@ export async function verifyPackedSkeleton(page) {
   const inherited = page.locator('#packed-skeleton-inherited');
   assert.equal(await skeleton.getAttribute('data-skeleton-ref'), 'div');
   assert.equal(await skeleton.locator('#packed-skeleton-content').count(), 1);
-  assert.equal(await text.locator('.leverui-skeleton').count(), 3);
+  assert.equal(await text.locator('.lui-skeleton').count(), 3);
   assert.equal(await text.locator('[data-packed-text-child]').count(), 3);
   assert.equal(await page.locator('#packed-skeleton-circle').count(), 1);
   assert.equal(await page.locator('#packed-skeleton-owned').count(), 1);
@@ -31,7 +31,7 @@ export async function verifyPackedSkeleton(page) {
   );
   await page.locator('#packed-skeleton-toggle').click();
   assert.equal(await skeleton.getAttribute('data-original-node'), 'true');
-  assert.equal(await text.locator('.leverui-skeleton').count(), 1);
+  assert.equal(await text.locator('.lui-skeleton').count(), 1);
   assert.equal(await text.locator('[data-packed-text-child]').count(), 1);
   assert.equal(await text.textContent(), 'Finished text');
   assert.equal(

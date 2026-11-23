@@ -16,7 +16,7 @@ async function verifiesSizes({ page }: { page: Page }): Promise<void> {
     await expect(root).toHaveCSS('gap', size.gap);
     await expect(indicator).toHaveCSS('width', size.indicator);
     await expect(indicator).toHaveCSS('height', size.indicator);
-    await expect(root.locator('.leverui-steps__title')).toHaveCSS('font-size', size.title);
+    await expect(root.locator('.lui-steps__title')).toHaveCSS('font-size', size.title);
   }
 }
 

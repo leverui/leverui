@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-drawer__backdrop[data-leverui-drawer-css] {
+  .lui-drawer__backdrop[data-lui-drawer-css] {
     --lui-drawer-z-index: var(--lui-z-index-popover);
     position: fixed;
     inset-inline-start: 0;
@@ -10,7 +10,7 @@
     z-index: calc(var(--lui-drawer-z-index) + var(--layer-index, 0) - 1);
   }
 
-  .leverui-drawer__positioner[data-leverui-drawer-css] {
+  .lui-drawer__positioner[data-lui-drawer-css] {
     --lui-drawer-z-index: var(--lui-z-index-popover);
     --lui-private-drawer-contained-padding: 0;
     position: fixed;
@@ -24,7 +24,7 @@
     overscroll-behavior-y: none;
   }
 
-  .leverui-drawer__content[data-leverui-drawer-css] {
+  .lui-drawer__content[data-lui-drawer-css] {
     --lui-drawer-z-index: var(--lui-z-index-popover);
     --lui-drawer-background: var(--lui-colors-bg-panel);
     --lui-private-drawer-size-max-width: var(--lui-sizes-xs);

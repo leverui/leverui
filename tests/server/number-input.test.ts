@@ -38,9 +38,9 @@ function renderServerNumberInput(): string {
 function verifiesServerNumberInput(): void {
   const markup = renderServerNumberInput();
   expect(markup).toContain('data-number-input-');
-  expect(markup).toContain('leverui-number-input__root');
-  expect(markup).toContain('leverui-number-input__input');
-  expect(markup).toContain('leverui-input');
+  expect(markup).toContain('lui-number-input__root');
+  expect(markup).toContain('lui-number-input__input');
+  expect(markup).toContain('lui-input');
   expect(markup).toContain('data-size="md"');
   // Zag 2 renders a text field described as a number field, not a spinbutton.
   expect(markup).toContain('aria-roledescription="number field"');

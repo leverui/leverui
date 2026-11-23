@@ -1,8 +1,6 @@
 @layer leverui.recipes {
   @media (min-width: 1280px) {
-    :is(.leverui-date-picker__root, .leverui-date-picker__content):not(
-        [data-unstyled]
-      )[data-size-xl='xs'] {
+    :is(.lui-date-picker__root, .lui-date-picker__content):not([data-unstyled])[data-size-xl='xs'] {
       --lui-private-date-picker-input-height: var(--lui-sizes-8);
       --lui-private-date-picker-input-padding: var(--lui-spacing-2);
       --lui-private-date-picker-indicators-offset: var(--lui-spacing-2);
@@ -11,9 +9,7 @@
       --lui-private-date-picker-select-height: var(--lui-sizes-8);
     }
 
-    :is(.leverui-date-picker__root, .leverui-date-picker__content):not(
-        [data-unstyled]
-      )[data-size-xl='sm'] {
+    :is(.lui-date-picker__root, .lui-date-picker__content):not([data-unstyled])[data-size-xl='sm'] {
       --lui-private-date-picker-input-height: var(--lui-sizes-9);
       --lui-private-date-picker-input-padding: var(--lui-spacing-2\.5);
       --lui-private-date-picker-indicators-offset: var(--lui-spacing-2\.5);
@@ -22,9 +18,7 @@
       --lui-private-date-picker-select-height: var(--lui-sizes-9);
     }
 
-    :is(.leverui-date-picker__root, .leverui-date-picker__content):not(
-        [data-unstyled]
-      )[data-size-xl='md'] {
+    :is(.lui-date-picker__root, .lui-date-picker__content):not([data-unstyled])[data-size-xl='md'] {
       --lui-private-date-picker-input-height: var(--lui-sizes-10);
       --lui-private-date-picker-input-padding: var(--lui-spacing-3);
       --lui-private-date-picker-indicators-offset: var(--lui-spacing-3);
@@ -33,9 +27,7 @@
       --lui-private-date-picker-select-height: var(--lui-sizes-10);
     }
 
-    :is(.leverui-date-picker__root, .leverui-date-picker__content):not(
-        [data-unstyled]
-      )[data-size-xl='lg'] {
+    :is(.lui-date-picker__root, .lui-date-picker__content):not([data-unstyled])[data-size-xl='lg'] {
       --lui-private-date-picker-input-height: var(--lui-sizes-11);
       --lui-private-date-picker-input-padding: var(--lui-spacing-4);
       --lui-private-date-picker-indicators-offset: var(--lui-spacing-3);
@@ -44,9 +36,7 @@
       --lui-private-date-picker-select-height: var(--lui-sizes-10);
     }
 
-    :is(.leverui-date-picker__root, .leverui-date-picker__content):not(
-        [data-unstyled]
-      )[data-size-xl='xl'] {
+    :is(.lui-date-picker__root, .lui-date-picker__content):not([data-unstyled])[data-size-xl='xl'] {
       --lui-private-date-picker-input-height: var(--lui-sizes-12);
       --lui-private-date-picker-input-padding: var(--lui-spacing-4\.5);
       --lui-private-date-picker-indicators-offset: var(--lui-spacing-3);
@@ -55,7 +45,7 @@
       --lui-private-date-picker-select-height: var(--lui-sizes-10);
     }
 
-    .leverui-date-picker__input:not([data-unstyled])[data-variant-xl='outline'] {
+    .lui-date-picker__input:not([data-unstyled])[data-variant-xl='outline'] {
       --lui-private-date-picker-input-background: transparent;
       --lui-private-date-picker-border-width: 1px;
       --lui-private-date-picker-border-color: var(--lui-colors-border);
@@ -67,7 +57,7 @@
       );
     }
 
-    .leverui-date-picker__input:not([data-unstyled])[data-variant-xl='subtle'] {
+    .lui-date-picker__input:not([data-unstyled])[data-variant-xl='subtle'] {
       --lui-private-date-picker-input-background: var(--lui-colors-bg-muted);
       --lui-private-date-picker-border-width: 1px;
       --lui-private-date-picker-border-color: transparent;
@@ -79,7 +69,7 @@
       );
     }
 
-    .leverui-date-picker__input:not([data-unstyled])[data-variant-xl='flushed'] {
+    .lui-date-picker__input:not([data-unstyled])[data-variant-xl='flushed'] {
       --lui-private-date-picker-input-background: transparent;
       --lui-private-date-picker-border-width: 0 0 1px;
       --lui-private-date-picker-border-color: var(--lui-colors-border);
@@ -88,7 +78,7 @@
       --lui-private-date-picker-variant-padding: 0;
     }
 
-    .leverui-date-picker__indicatorGroup:not([data-unstyled])[data-variant-xl='flushed'] {
+    .lui-date-picker__indicatorGroup:not([data-unstyled])[data-variant-xl='flushed'] {
       inset-inline-end: 0;
     }
   }

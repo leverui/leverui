@@ -22,6 +22,6 @@ const markup = renderInstalledRadiomark();
 assert.match(markup, /<span[^>]*id="packed-server-radiomark"/);
 assert.match(markup, /\sdata-checked(?:=""|(?=[\s/>]))/);
 assert.match(markup, /\sdata-disabled(?:=""|(?=[\s/>]))/);
-assert.match(markup, /<span[^>]*class="dot leverui-radiomark__dot"[^>]*><\/span>/);
+assert.match(markup, /<span[^>]*class="dot lui-radiomark__dot"[^>]*><\/span>/);
 assert.doesNotMatch(markup, /<span[^>]*\s(?:checked|disabled|size|variant)=/);
 console.log('Packed Radiomark server rendering passed.');

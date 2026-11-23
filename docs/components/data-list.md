@@ -97,8 +97,8 @@ work, such as `orientation={{ base: 'vertical', md: 'horizontal' }}`.
 
 Import `@leverui/components/styles.css` once.
 
-Classes: `.leverui-data-list__root`, `.leverui-data-list__item`,
-`.leverui-data-list__itemLabel`, `.leverui-data-list__itemValue`.
+Classes: `.lui-data-list__root`, `.lui-data-list__item`,
+`.lui-data-list__itemLabel`, `.lui-data-list__itemValue`.
 
 Root attributes: `data-size`, `data-orientation`, `data-variant`, plus one per
 breakpoint you set, such as `data-orientation-md`. Unlayered CSS can target
@@ -107,7 +107,7 @@ these and use semantic variables such as `--lui-colors-fg-muted`.
 A line between items:
 
 ```css
-.my-data-list > .leverui-data-list__item + .leverui-data-list__item {
+.my-data-list > .lui-data-list__item + .lui-data-list__item {
   border-top: 1px solid var(--lui-colors-border);
 }
 ```

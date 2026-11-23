@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-native-select__root:not([data-unstyled])[data-size='xs'] {
+  .lui-native-select__root:not([data-unstyled])[data-size='xs'] {
     --lui-private-native-select-height: var(--lui-sizes-8);
     --lui-private-native-select-font-size: var(--lui-font-sizes-xs);
     --lui-private-native-select-line-height: 1rem;
@@ -9,7 +9,7 @@
     --lui-private-native-select-indicator-inset-end: var(--lui-spacing-1\.5);
   }
 
-  .leverui-native-select__root:not([data-unstyled])[data-size='sm'] {
+  .lui-native-select__root:not([data-unstyled])[data-size='sm'] {
     --lui-private-native-select-height: var(--lui-sizes-9);
     --lui-private-native-select-font-size: var(--lui-font-sizes-sm);
     --lui-private-native-select-line-height: 1.25rem;
@@ -19,7 +19,7 @@
     --lui-private-native-select-indicator-inset-end: var(--lui-spacing-2);
   }
 
-  .leverui-native-select__root:not([data-unstyled])[data-size='md'] {
+  .lui-native-select__root:not([data-unstyled])[data-size='md'] {
     --lui-private-native-select-height: var(--lui-sizes-10);
     --lui-private-native-select-font-size: var(--lui-font-sizes-sm);
     --lui-private-native-select-line-height: 1.25rem;
@@ -29,7 +29,7 @@
     --lui-private-native-select-indicator-inset-end: var(--lui-spacing-2);
   }
 
-  .leverui-native-select__root:not([data-unstyled])[data-size='lg'] {
+  .lui-native-select__root:not([data-unstyled])[data-size='lg'] {
     --lui-private-native-select-height: var(--lui-sizes-11);
     --lui-private-native-select-font-size: var(--lui-font-sizes-md);
     --lui-private-native-select-line-height: 1.5rem;
@@ -39,7 +39,7 @@
     --lui-private-native-select-indicator-inset-end: var(--lui-spacing-3);
   }
 
-  .leverui-native-select__root:not([data-unstyled])[data-size='xl'] {
+  .lui-native-select__root:not([data-unstyled])[data-size='xl'] {
     --lui-private-native-select-height: var(--lui-sizes-12);
     --lui-private-native-select-font-size: var(--lui-font-sizes-md);
     --lui-private-native-select-line-height: 1.5rem;

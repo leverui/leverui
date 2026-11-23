@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-stack:not([data-unstyled]) {
+  .lui-stack:not([data-unstyled]) {
     --lui-private-stack-direction-base: initial;
     --lui-private-stack-direction-sm: initial;
     --lui-private-stack-direction-md: initial;

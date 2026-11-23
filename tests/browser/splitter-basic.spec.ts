@@ -12,9 +12,9 @@ async function verifiesBasicSplitter({ page }: { page: Page }): Promise<void> {
   await expect(root).toHaveCSS('display', 'flex');
   await expect(trigger).toHaveAttribute('aria-label', 'Resize');
   await expect(trigger).toHaveAttribute('role', 'separator');
-  await expect(trigger).toHaveClass(/leverui-splitter__resizeTrigger/);
-  await expect(trigger.locator('.leverui-splitter__resizeTriggerSeparator')).toHaveCount(1);
-  const indicator = trigger.locator('.leverui-splitter__resizeTriggerIndicator');
+  await expect(trigger).toHaveClass(/lui-splitter__resizeTrigger/);
+  await expect(trigger.locator('.lui-splitter__resizeTriggerSeparator')).toHaveCount(1);
+  const indicator = trigger.locator('.lui-splitter__resizeTriggerIndicator');
   await expect(indicator).toHaveCount(1);
   const baseColor = await indicator.evaluate(
     /** Read the default handle color before focus and dragging. */

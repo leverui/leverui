@@ -1,14 +1,14 @@
 @layer leverui.recipes {
-  .leverui-linkbox:not([data-unstyled]) {
+  .lui-linkbox:not([data-unstyled]) {
     position: relative;
 
-    & :is(a[href]:not(.leverui-linkbox__overlay), abbr[title]) {
+    & :is(a[href]:not(.lui-linkbox__overlay), abbr[title]) {
       position: relative;
       z-index: 1;
     }
   }
 
-  .leverui-linkbox__overlay:not([data-unstyled]) {
+  .lui-linkbox__overlay:not([data-unstyled]) {
     position: static;
 
     &::before {

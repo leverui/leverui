@@ -103,7 +103,7 @@ function verifiesServerTable(): void {
   expect(markup).toMatch(/<caption[^>]*>Inventory caption<\/caption>/);
   expect(markup).toMatch(/<thead[^>]*>.*<tr[^>]*>.*<th[^>]*>Product<\/th>/s);
   expect(markup).toMatch(/<tbody[^>]*>.*<tr[^>]*>.*<td[^>]*>Notebook<\/td>/s);
-  expect(markup).toContain('leverui-table__cell');
+  expect(markup).toContain('lui-table__cell');
   expect(markup).not.toMatch(/<table[^>]*\s(?:size|variant|native|recipe|css|unstyled)=/);
 }
 

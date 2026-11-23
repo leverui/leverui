@@ -1,46 +1,46 @@
 @layer leverui.recipes {
-  .leverui-bar-list__root {
+  .lui-bar-list__root {
     min-width: 0;
   }
 
-  .leverui-bar-list__content {
+  .lui-bar-list__content {
     display: flex;
     align-items: flex-end;
     gap: 1rem;
   }
 
-  .leverui-bar-list__title {
+  .lui-bar-list__title {
     margin-bottom: 1rem;
     font-size: 1rem;
     font-weight: 500;
   }
 
-  .leverui-bar-list__label {
+  .lui-bar-list__label {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
   }
 
-  .leverui-bar-list__labelHeading {
+  .lui-bar-list__labelHeading {
     color: var(--lui-colors-fg-muted);
     font-size: 0.75rem;
     line-height: 1rem;
     font-weight: 500;
   }
 
-  .leverui-bar-list__bar,
-  .leverui-bar-list__value {
+  .lui-bar-list__bar,
+  .lui-bar-list__value {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
   }
 
-  .leverui-bar-list__bar {
+  .lui-bar-list__bar {
     flex: 1;
     min-width: 0;
   }
 
-  .leverui-bar-list__row {
+  .lui-bar-list__row {
     position: relative;
     display: flex;
     align-items: center;
@@ -48,11 +48,11 @@
     min-height: var(--lui-bar-list-size, 2.5rem);
   }
 
-  .leverui-bar-list__row[data-hovered] {
+  .lui-bar-list__row[data-hovered] {
     background: var(--lui-colors-bg-subtle);
   }
 
-  .leverui-bar-list__fill {
+  .lui-bar-list__fill {
     position: absolute;
     inset: 0 auto 0 0;
     width: var(--lui-private-bar-list-width);
@@ -60,7 +60,7 @@
     border-radius: 0.25rem;
   }
 
-  .leverui-bar-list__rowLabel {
+  .lui-bar-list__rowLabel {
     position: relative;
     padding: 0 0.625rem;
     font-size: 0.875rem;
@@ -68,7 +68,7 @@
     overflow-wrap: anywhere;
   }
 
-  .leverui-bar-list__valueRow {
+  .lui-bar-list__valueRow {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -79,7 +79,7 @@
     white-space: nowrap;
   }
 
-  .leverui-bar-list__tooltip {
+  .lui-bar-list__tooltip {
     position: absolute;
     z-index: 1;
     top: 50%;

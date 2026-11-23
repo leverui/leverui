@@ -32,7 +32,7 @@ function verifiesServerToaster(): void {
   // The primitive layer cannot render its region on the server; Lever renders a
   // static region with the same attributes and mounts the primitive's after hydration.
   expect(markup).toContain('data-toast-group');
-  expect(markup).toContain('leverui-toast__toaster');
+  expect(markup).toContain('lui-toast__toaster');
   expect(markup).toContain('role="region"');
   expect(markup).toContain('aria-live="polite"');
   expect(markup).toContain('Updates');

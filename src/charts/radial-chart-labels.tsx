@@ -16,7 +16,7 @@ export interface RadialChartLabelsProps {
 /** Render percentage or name labels at the requested radial positions. */
 export function RadialChartLabels(props: RadialChartLabelsProps): JSX.Element {
   return (
-    <g class="leverui-radial-chart__labels" data-placement={props.placement} aria-hidden="true">
+    <g class="lui-radial-chart__labels" data-placement={props.placement} aria-hidden="true">
       <For each={props.sectors}>
         {/** Position a label relative to its sector midpoint. */}
         {(sector) => {
@@ -37,14 +37,14 @@ export function RadialChartLabels(props: RadialChartLabelsProps): JSX.Element {
           return (
             <>
               <line
-                class="leverui-radial-chart__labelLine"
+                class="lui-radial-chart__labelLine"
                 x1={radialPoint(props.center, props.outerRadius, sector.midAngle).x}
                 y1={radialPoint(props.center, props.outerRadius, sector.midAngle).y}
                 x2={radialPoint(props.center, props.outerRadius + 20, sector.midAngle).x}
                 y2={radialPoint(props.center, props.outerRadius + 20, sector.midAngle).y}
               />
               <text
-                class="leverui-radial-chart__label"
+                class="lui-radial-chart__label"
                 x={point().x}
                 y={point().y}
                 dominant-baseline={outside() ? undefined : 'middle'}

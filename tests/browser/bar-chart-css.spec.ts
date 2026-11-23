@@ -3,11 +3,11 @@ import { expect, test, type Page } from '@playwright/test';
 /** Verify fixed paint comes from authored CSS and inherited public variables. */
 async function verifiesBarChartCss({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=internal-bar-chart-css-contract--contract');
-  const root = page.locator('[data-testid="bar-chart-contract"] .leverui-bar-chart');
-  const svg = root.locator('.leverui-bar-chart__svg');
-  const axes = root.locator('.leverui-bar-chart__axes');
-  const grid = axes.locator('.leverui-bar-chart__grid-line').first();
-  const legend = root.locator('.leverui-bar-chart__legend');
+  const root = page.locator('[data-testid="bar-chart-contract"] .lui-bar-chart');
+  const svg = root.locator('.lui-bar-chart__svg');
+  const axes = root.locator('.lui-bar-chart__axes');
+  const grid = axes.locator('.lui-bar-chart__grid-line').first();
+  const legend = root.locator('.lui-bar-chart__legend');
   await expect(svg).toBeVisible();
   await expect(root).toHaveClass(/consumer-bars-alias/);
   await expect(root).toHaveAttribute('id', 'bar-chart-native');

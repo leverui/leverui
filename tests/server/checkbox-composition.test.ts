@@ -63,8 +63,8 @@ function verifiesServerComposition(): void {
   expect(markup).toContain('aria-label="Topics"');
   expect(markup).toContain('name="topics"');
   expect(markup).toContain('name="external"');
-  expect(markup).toContain('leverui-checkbox-group');
-  expect(markup).toContain('leverui-checkbox__control');
+  expect(markup).toContain('lui-checkbox-group');
+  expect(markup).toContain('lui-checkbox__control');
   expect(markup).toContain('data-state="checked"');
   expect(markup).not.toMatch(/\s(?:defaultValue|defaultChecked|maxSelectedValues)=/);
 }

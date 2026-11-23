@@ -18,7 +18,7 @@ async function verifiesEveryBlockquoteExample({ page }: { page: Page }): Promise
   for (const id of exampleIds) {
     await page.goto(`/iframe.html?id=components-blockquote--${id}`);
     await expect(
-      page.locator('[class*="leverui-blockquote__content"]').first(),
+      page.locator('[class*="lui-blockquote__content"]').first(),
       `Blockquote example ${id} should render`,
     ).toBeVisible({ timeout: 45_000 });
   }
@@ -44,7 +44,7 @@ async function verifiesAvatarComposition({ page }: { page: Page }): Promise<void
 /** Verify the three justification settings and their quote captions. */
 async function verifiesJustification({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-blockquote--justify');
-  await expect(page.locator('[class*="leverui-blockquote__root"]')).toHaveCount(3);
+  await expect(page.locator('[class*="lui-blockquote__root"]')).toHaveCount(3);
   await expect(page.getByText('Wren Ashford')).toHaveCount(3);
 }
 

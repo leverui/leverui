@@ -181,7 +181,7 @@ The chart takes focus when the tooltip is on.
   --lui-cartesian-chart-legend-gap: 1rem;
 }
 
-.sales-line .leverui-cartesian-chart__pointLabel {
+.sales-line .lui-cartesian-chart__pointLabel {
   font-size: 0.875rem;
 }
 ```
@@ -199,9 +199,9 @@ Grid variables are in [Cartesian Grid](cartesian-grid.md).
 
 ### Classes
 
-Root: `.leverui-line-chart` and `.leverui-cartesian-chart__root`.
+Root: `.lui-line-chart` and `.lui-cartesian-chart__root`.
 
-Parts, each prefixed with `.leverui-cartesian-chart__`: `svg`, `axes`,
+Parts, each prefixed with `.lui-cartesian-chart__`: `svg`, `axes`,
 `rightAxis`, `axisLine`, `axisTitle`, `gridLine`, `series`, `line`, `dot`,
 `pointLabel`, `referenceLine`, `referenceValue`, `referenceValueLabel`,
 `referencePoint`, `referenceLabel`, `cursor`, `legend`, `legendItem`,

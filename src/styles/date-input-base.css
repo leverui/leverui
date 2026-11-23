@@ -1,12 +1,12 @@
 @layer leverui.recipes {
-  .leverui-date-input__root:not([data-unstyled]) {
+  .lui-date-input__root:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     gap: var(--lui-date-input-root-gap, var(--lui-spacing-1\.5));
     width: 100%;
   }
 
-  .leverui-date-input__root:not([data-unstyled]):is(
+  .lui-date-input__root:not([data-unstyled]):is(
       :disabled,
       [disabled],
       [data-disabled],
@@ -15,19 +15,19 @@
     opacity: 0.5;
   }
 
-  .leverui-date-input__label:not([data-unstyled]) {
+  .lui-date-input__label:not([data-unstyled]) {
     font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
     font-weight: var(--lui-font-weights-medium);
   }
 
-  .leverui-date-input__control:not([data-unstyled]) {
+  .lui-date-input__control:not([data-unstyled]) {
     display: flex;
     align-items: center;
     width: 100%;
   }
 
-  .leverui-date-input__segmentGroup:not([data-unstyled]) {
+  .lui-date-input__segmentGroup:not([data-unstyled]) {
     flex: 1;
     outline: 0;
     position: relative;
@@ -63,7 +63,7 @@
     );
   }
 
-  .leverui-date-input__segmentGroup:not([data-unstyled]):is(
+  .lui-date-input__segmentGroup:not([data-unstyled]):is(
       [data-invalid],
       [aria-invalid='true'],
       [data-state='invalid']
@@ -72,25 +72,22 @@
     border-color: var(--lui-private-date-input-error-color);
   }
 
-  .leverui-date-input__segment:not([data-unstyled]) {
+  .lui-date-input__segment:not([data-unstyled]) {
     border-radius: var(--lui-radii-l1);
     padding-inline: var(--lui-spacing-0\.5);
     outline: none;
   }
 
-  .leverui-date-input__segment:not([data-unstyled]):is(
-      :placeholder-shown,
-      [data-placeholder-shown]
-    ),
-  .leverui-date-input__segment:not([data-unstyled])[data-type='literal'] {
+  .lui-date-input__segment:not([data-unstyled]):is(:placeholder-shown, [data-placeholder-shown]),
+  .lui-date-input__segment:not([data-unstyled])[data-type='literal'] {
     color: var(--lui-colors-fg-subtle);
   }
 
-  .leverui-date-input__segment:not([data-unstyled])[data-type='literal'] {
+  .lui-date-input__segment:not([data-unstyled])[data-type='literal'] {
     padding-inline: 0;
   }
 
-  .leverui-date-input__segment:not([data-unstyled]):is(:focus, [data-focus]) {
+  .lui-date-input__segment:not([data-unstyled]):is(:focus, [data-focus]) {
     background: var(
       --lui-date-input-segment-focus-background,
       var(--lui-private-date-input-segment-focus-background)

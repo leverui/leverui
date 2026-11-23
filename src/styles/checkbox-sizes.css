@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-checkbox:not([data-unstyled]) {
+  .lui-checkbox:not([data-unstyled]) {
     &[data-size='xs'] {
       --lui-private-checkbox-gap: var(--lui-spacing-1\.5);
       --lui-private-checkbox-label-font-size: var(--lui-font-sizes-xs);

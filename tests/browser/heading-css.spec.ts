@@ -101,7 +101,7 @@ async function verifiesHeadingCss({ page }: { page: Page }): Promise<void> {
   await expect(page.locator('#unstyled-heading')).not.toHaveCSS('font-size', '18px');
   const responsive = page.locator('#responsive-heading');
   await expect(responsive).toHaveAttribute('data-size-md', '2xl');
-  await expect(responsive).not.toHaveAttribute('data-leverui-private-style-runtime');
+  await expect(responsive).not.toHaveAttribute('data-lui-private-style-runtime');
   const arrayHeading = page.locator('#array-heading');
   await expect(arrayHeading).toHaveAttribute('data-size-md', '2xl');
   const noBaseHeading = page.locator('#no-base-heading');

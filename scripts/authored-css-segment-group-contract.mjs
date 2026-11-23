@@ -3,11 +3,11 @@ export const segmentGroupContracts = [
   {
     family: 'segment-group',
     required: [
-      '.leverui-segment-group__root:not([data-unstyled])',
-      '.leverui-segment-group__item:not([data-unstyled])',
-      '.leverui-segment-group__indicator:not([data-unstyled])',
-      '.leverui-segment-group__item-hit-area',
-      '.leverui-segment-group__item-hit-target',
+      '.lui-segment-group__root:not([data-unstyled])',
+      '.lui-segment-group__item:not([data-unstyled])',
+      '.lui-segment-group__indicator:not([data-unstyled])',
+      '.lui-segment-group__item-hit-area',
+      '.lui-segment-group__item-hit-target',
       '--lui-segment-group-radius',
       '--lui-segment-group-background',
       '--lui-segment-group-indicator-background',

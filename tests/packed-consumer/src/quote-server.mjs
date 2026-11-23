@@ -19,6 +19,6 @@ function renderPackedQuote() {
 const markup = renderPackedQuote();
 assert.match(markup, /<q[^>]*id="packed-server-quote"/);
 assert.match(markup, /cite="https:\/\/example.com\/packed-server"/);
-assert.match(markup, /leverui-quote/);
+assert.match(markup, /lui-quote/);
 assert.doesNotMatch(markup, /<q[^>]*\sstyle=/);
 assert.doesNotMatch(markup, /<q[^>]*\s(?:as|css|unstyled)=/);

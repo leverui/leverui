@@ -1,11 +1,11 @@
 @layer leverui.recipes {
-  .leverui-wrap:not([data-unstyled]) {
+  .lui-wrap:not([data-unstyled]) {
     display: flex;
     flex-wrap: wrap;
     gap: var(--lui-wrap-gap, 0.5rem);
   }
 
-  .leverui-wrap {
+  .lui-wrap {
     &[data-wrap-align-base] {
       align-items: var(--lui-private-wrap-align-base);
     }

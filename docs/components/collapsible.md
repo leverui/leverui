@@ -124,8 +124,8 @@ are for building your own compositions.
 
 ## Customize with CSS
 
-Classes: `leverui-collapsible__root`, `leverui-collapsible__trigger`,
-`leverui-collapsible__content`, `leverui-collapsible__indicator`. State is on
+Classes: `lui-collapsible__root`, `lui-collapsible__trigger`,
+`lui-collapsible__content`, `lui-collapsible__indicator`. State is on
 the `data-state` attributes. `unstyled` keeps the behavior and the
 accessibility features.
 

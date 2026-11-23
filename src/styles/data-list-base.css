@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-data-list__root:not([data-unstyled]) {
+  .lui-data-list__root:not([data-unstyled]) {
     --lui-private-data-list-root-gap: var(--lui-spacing-4);
     --lui-private-data-list-item-display: flex;
     --lui-private-data-list-item-direction: column;
@@ -57,8 +57,8 @@
     }
   }
 
-  @scope (.leverui-data-list__root:not([data-unstyled])) to (.leverui-data-list__root) {
-    .leverui-data-list__item:not([data-unstyled]) {
+  @scope (.lui-data-list__root:not([data-unstyled])) to (.lui-data-list__root) {
+    .lui-data-list__item:not([data-unstyled]) {
       display: var(--lui-private-data-list-item-display);
       flex-direction: var(--lui-private-data-list-item-direction);
       gap: var(--lui-private-data-list-item-gap);
@@ -67,7 +67,7 @@
       line-height: var(--lui-private-data-list-item-line-height);
     }
 
-    .leverui-data-list__itemLabel:not([data-unstyled]) {
+    .lui-data-list__itemLabel:not([data-unstyled]) {
       display: flex;
       align-items: center;
       gap: var(--lui-spacing-1);
@@ -76,7 +76,7 @@
       font-weight: var(--lui-private-data-list-label-weight);
     }
 
-    .leverui-data-list__itemValue:not([data-unstyled]) {
+    .lui-data-list__itemValue:not([data-unstyled]) {
       display: flex;
       min-width: 0;
       flex: 1;

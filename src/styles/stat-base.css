@@ -1,12 +1,12 @@
 @layer leverui.recipes {
-  .leverui-stat__group:not([data-unstyled]) {
+  .lui-stat__group:not([data-unstyled]) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
   }
 
-  .leverui-stat__root:not([data-unstyled]) {
+  .lui-stat__root:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     gap: var(--lui-spacing-1);
@@ -29,8 +29,8 @@
     }
   }
 
-  @scope (.leverui-stat__root:not([data-unstyled])) to (.leverui-stat__root) {
-    .leverui-stat__label:not([data-unstyled]) {
+  @scope (.lui-stat__root:not([data-unstyled])) to (.lui-stat__root) {
+    .lui-stat__label:not([data-unstyled]) {
       display: inline-flex;
       gap: var(--lui-spacing-1\.5);
       align-items: center;
@@ -39,13 +39,13 @@
       line-height: 1.25rem;
     }
 
-    .leverui-stat__helpText:not([data-unstyled]) {
+    .lui-stat__helpText:not([data-unstyled]) {
       color: var(--lui-colors-fg-muted);
       font-size: var(--lui-font-sizes-xs);
       line-height: 1rem;
     }
 
-    .leverui-stat__valueUnit:not([data-unstyled]) {
+    .lui-stat__valueUnit:not([data-unstyled]) {
       color: var(--lui-colors-fg-muted);
       font-size: var(--lui-font-sizes-xs);
       line-height: 1rem;
@@ -53,7 +53,7 @@
       letter-spacing: initial;
     }
 
-    .leverui-stat__valueText:not([data-unstyled]) {
+    .lui-stat__valueText:not([data-unstyled]) {
       vertical-align: baseline;
       font-weight: var(--lui-font-weights-semibold);
       letter-spacing: var(--lui-letter-spacings-tight);
@@ -65,7 +65,7 @@
       line-height: var(--lui-private-stat-value-line-height);
     }
 
-    .leverui-stat__indicator:not([data-unstyled]) {
+    .lui-stat__indicator:not([data-unstyled]) {
       display: inline-flex;
       align-items: center;
       justify-content: center;

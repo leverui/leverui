@@ -27,8 +27,8 @@ function verifiesComposedOverlay(): void {
   const link = screen.getByTestId('composed');
   expect(link.tagName).toBe('A');
   expect(link.getAttribute('href')).toBe('#composed');
-  expect(link.className).toContain('leverui-link');
-  expect(link.className).toContain('leverui-linkbox__overlay');
+  expect(link.className).toContain('lui-link');
+  expect(link.className).toContain('lui-linkbox__overlay');
   expect(link.hasAttribute('variant')).toBe(false);
 }
 

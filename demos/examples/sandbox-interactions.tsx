@@ -63,7 +63,7 @@ export function SandboxColorPalette(): JSX.Element {
       <For each={['blue', 'green', 'red']}>
         {/** Scope each row's semantic color tokens to one palette. */}
         {(color) => (
-          <Box data-leverui-color-palette={color}>
+          <Box data-lui-color-palette={color}>
             <Box
               style={{
                 background: 'var(--lui-colors-color-palette-muted)',

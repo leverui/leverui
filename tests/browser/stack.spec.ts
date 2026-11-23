@@ -18,11 +18,11 @@ async function verifiesStackLayout({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=layout-stack--contract');
   const basic = page.getByTestId('stack-basic');
   await expect(basic).toBeVisible({ timeout: 30_000 });
-  await expect(basic).toHaveClass(/leverui-stack/);
+  await expect(basic).toHaveClass(/lui-stack/);
   await expect(basic).toHaveCSS('display', 'flex');
   await expect(basic).toHaveCSS('flex-direction', 'column');
   await expect(basic).toHaveCSS('gap', '8px');
-  await expect(page.getByTestId('stack-basic-one')).toHaveClass('leverui-box stack-story-item');
+  await expect(page.getByTestId('stack-basic-one')).toHaveClass('lui-box stack-story-item');
   await expect(page.getByTestId('stack-basic-one')).toHaveCSS('width', '20px');
   await expect(page.getByTestId('stack-basic-one')).toHaveCSS('height', '20px');
   const first = await requiredBox(page.getByTestId('stack-basic-one'));
@@ -35,7 +35,7 @@ async function verifiesStackLayout({ page }: { page: Page }): Promise<void> {
   await expect(page.getByTestId('stack-vertical')).toHaveCSS('align-items', 'flex-end');
 
   const responsive = page.getByTestId('stack-responsive');
-  const lines = responsive.locator('.leverui-stack-separator');
+  const lines = responsive.locator('.lui-stack-separator');
   await expect(lines).toHaveCount(2);
   await expect(responsive).toHaveCSS('flex-direction', 'column');
   await expect(responsive).toHaveCSS('gap', 'normal');
@@ -44,7 +44,7 @@ async function verifiesStackLayout({ page }: { page: Page }): Promise<void> {
   await expect(lines.first()).toHaveCSS('border-inline-start-width', '0px');
   await expect(page.getByTestId('stack-custom-line')).toHaveCSS('border-color', 'rgb(239, 68, 68)');
   const nativeLine = page.getByTestId('stack-native-line');
-  await expect(nativeLine).toHaveClass(/leverui-stack-separator/);
+  await expect(nativeLine).toHaveClass(/lui-stack-separator/);
   await expect(nativeLine).toHaveCSS('margin-top', '8px');
   await expect(nativeLine).toHaveCSS('border-top-width', '1px');
 
@@ -72,7 +72,7 @@ async function verifiesReactiveStack({ page }: { page: Page }): Promise<void> {
   const stack = page.getByTestId('stack-reactive');
   const first = page.getByTestId('stack-reactive-one');
   const second = page.getByTestId('stack-reactive-two');
-  const lines = stack.locator('.leverui-stack-separator');
+  const lines = stack.locator('.lui-stack-separator');
   await expect(lines).toHaveCount(1, { timeout: 30_000 });
   await expect(stack).toHaveCSS('flex-direction', 'column');
   await first.evaluate(

@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-checkmark:not([data-unstyled]) {
+  .lui-checkmark:not([data-unstyled]) {
     &[data-size='xs'] {
       --lui-private-checkmark-size: var(--lui-sizes-3);
       --lui-private-checkmark-padding: 0;

@@ -37,12 +37,12 @@ Score it yourself and pass the result.
 
 Import `styles.css` once, before your own CSS.
 
-`PasswordInput`: `.leverui-password-input` on the group,
-`.leverui-password-input__visibility-trigger` on the button, plus the
+`PasswordInput`: `.lui-password-input` on the group,
+`.lui-password-input__visibility-trigger` on the button, plus the
 `data-visible` and `data-disabled` attributes. The button is a native
 `type="button"` with the classes of a small ghost Button.
 
-`PasswordStrengthMeter`: `.leverui-password-strength-meter` on the root, and
+`PasswordStrengthMeter`: `.lui-password-strength-meter` on the root, and
 `__track`, `__segment`, and `__label` on the parts. The root has
 `data-strength-level="low" | "medium" | "high"`. Selected segments have
 `data-selected`.

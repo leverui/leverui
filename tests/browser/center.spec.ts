@@ -90,7 +90,7 @@ async function verifiesCenter({ page }: { page: Page }): Promise<void> {
   await expect(conditionalOnly).toHaveCSS('display', 'inline-flex');
   await expect(openBaseArray).toHaveCSS('display', 'inline-flex');
   await page.addStyleTag({
-    content: '.leverui-center[data-testid="center-default"] { gap: 17px; }',
+    content: '.lui-center[data-testid="center-default"] { gap: 17px; }',
   });
   await expect(root).toHaveCSS('gap', '17px');
 }

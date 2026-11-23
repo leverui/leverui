@@ -3,8 +3,8 @@ export const toggleContracts = [
   {
     family: 'toggle',
     required: [
-      '.leverui-toggle__root',
-      '.leverui-toggle__indicator',
+      '.lui-toggle__root',
+      '.lui-toggle__indicator',
       ':empty',
       '--lui-toggle-empty-indicator-display',
     ],

@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  .leverui-steps__root:not([data-unstyled]) {
+  .lui-steps__root:not([data-unstyled]) {
     --lui-private-steps-gutter: var(--lui-spacing-3);
     --lui-private-steps-thickness: 2px;
     display: flex;
@@ -8,7 +8,7 @@
     gap: var(--lui-private-steps-root-gap);
   }
 
-  .leverui-steps__root:not([data-unstyled]) .leverui-steps__list:not([data-unstyled]) {
+  .lui-steps__root:not([data-unstyled]) .lui-steps__list:not([data-unstyled]) {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -17,7 +17,7 @@
     line-height: var(--lui-private-steps-list-line-height);
   }
 
-  .leverui-steps__root:not([data-unstyled]) .leverui-steps__item:not([data-unstyled]) {
+  .lui-steps__root:not([data-unstyled]) .lui-steps__item:not([data-unstyled]) {
     position: relative;
     display: flex;
     align-items: center;
@@ -27,13 +27,13 @@
     &:last-of-type {
       flex: initial;
 
-      .leverui-steps__separator {
+      .lui-steps__separator {
         display: none;
       }
     }
   }
 
-  .leverui-steps__root:not([data-unstyled]) .leverui-steps__trigger:not([data-unstyled]) {
+  .lui-steps__root:not([data-unstyled]) .lui-steps__trigger:not([data-unstyled]) {
     display: flex;
     align-items: center;
     gap: var(--lui-spacing-3);
@@ -46,31 +46,31 @@
     }
   }
 
-  .leverui-steps__root:not([data-unstyled])
-    :is(.leverui-steps__content, .leverui-steps__completedContent):not([data-unstyled]) {
+  .lui-steps__root:not([data-unstyled])
+    :is(.lui-steps__content, .lui-steps__completedContent):not([data-unstyled]) {
     &:focus-visible {
       outline: 2px solid var(--lui-colors-color-palette-focus-ring);
       outline-offset: 2px;
     }
   }
 
-  .leverui-steps__root:not([data-unstyled]) .leverui-steps__title:not([data-unstyled]) {
+  .lui-steps__root:not([data-unstyled]) .lui-steps__title:not([data-unstyled]) {
     color: var(--lui-colors-fg);
     font-size: var(--lui-private-steps-title-font-size);
     line-height: var(--lui-private-steps-title-line-height);
     font-weight: var(--lui-font-weights-medium);
   }
 
-  .leverui-steps__root:not([data-unstyled]) .leverui-steps__description:not([data-unstyled]) {
+  .lui-steps__root:not([data-unstyled]) .lui-steps__description:not([data-unstyled]) {
     color: var(--lui-colors-fg-muted);
   }
 
-  .leverui-steps__root:not([data-unstyled]) .leverui-steps__separator:not([data-unstyled]) {
+  .lui-steps__root:not([data-unstyled]) .lui-steps__separator:not([data-unstyled]) {
     flex: 1;
     background: var(--lui-colors-border);
   }
 
-  .leverui-steps__root:not([data-unstyled]) .leverui-steps__indicator:not([data-unstyled]) {
+  .lui-steps__root:not([data-unstyled]) .lui-steps__indicator:not([data-unstyled]) {
     display: flex;
     align-items: center;
     justify-content: center;

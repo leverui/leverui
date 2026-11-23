@@ -7,7 +7,7 @@ import { StatusPropsProvider } from '../src/components/status-props';
 
 /** Apply the public indicator class to a custom native part. */
 function StatusIndicatorProbe(props: { id: string }): JSX.Element {
-  return <div class="leverui-status__indicator" data-testid={props.id} />;
+  return <div class="lui-status__indicator" data-testid={props.id} />;
 }
 
 /** Exercise native parts, palettes, sizes, and reactive provider defaults. */
