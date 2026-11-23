@@ -2,90 +2,84 @@
   @media (min-width: 1024px) {
     .leverui-timeline__root:not([data-unstyled]) {
       &[data-variant-lg='subtle'] {
-        --leverui-private-timeline-indicator-bg: var(--leverui-colors-color-palette-muted);
-        --leverui-private-timeline-indicator-color: inherit;
-        --leverui-private-timeline-indicator-border-width: 0;
-        --leverui-private-timeline-indicator-border-color: var(--leverui-colors-border);
+        --lui-private-timeline-indicator-bg: var(--lui-colors-color-palette-muted);
+        --lui-private-timeline-indicator-color: inherit;
+        --lui-private-timeline-indicator-border-width: 0;
+        --lui-private-timeline-indicator-border-color: var(--lui-colors-border);
       }
       &[data-variant-lg='solid'] {
-        --leverui-private-timeline-indicator-bg: var(--leverui-colors-color-palette-solid);
-        --leverui-private-timeline-indicator-color: var(--leverui-colors-color-palette-contrast);
-        --leverui-private-timeline-indicator-border-width: 0;
-        --leverui-private-timeline-indicator-border-color: var(--leverui-colors-border);
+        --lui-private-timeline-indicator-bg: var(--lui-colors-color-palette-solid);
+        --lui-private-timeline-indicator-color: var(--lui-colors-color-palette-contrast);
+        --lui-private-timeline-indicator-border-width: 0;
+        --lui-private-timeline-indicator-border-color: var(--lui-colors-border);
       }
       &[data-variant-lg='outline'] {
-        --leverui-private-timeline-indicator-bg: var(--bg-currentcolor);
-        --leverui-private-timeline-indicator-color: inherit;
-        --leverui-private-timeline-indicator-border-width: 1px;
-        --leverui-private-timeline-indicator-border-color: var(
-          --leverui-colors-color-palette-muted
-        );
+        --lui-private-timeline-indicator-bg: var(--bg-currentcolor);
+        --lui-private-timeline-indicator-color: inherit;
+        --lui-private-timeline-indicator-border-width: 1px;
+        --lui-private-timeline-indicator-border-color: var(--lui-colors-color-palette-muted);
       }
       &[data-variant-lg='plain'] {
-        --leverui-private-timeline-indicator-bg: transparent;
-        --leverui-private-timeline-indicator-color: inherit;
-        --leverui-private-timeline-indicator-border-width: 0;
-        --leverui-private-timeline-indicator-border-color: var(--leverui-colors-border);
+        --lui-private-timeline-indicator-bg: transparent;
+        --lui-private-timeline-indicator-color: inherit;
+        --lui-private-timeline-indicator-border-width: 0;
+        --lui-private-timeline-indicator-border-color: var(--lui-colors-border);
       }
     }
   }
   @media (min-width: 1280px) {
     .leverui-timeline__root:not([data-unstyled]) {
       &[data-variant-xl='subtle'] {
-        --leverui-private-timeline-indicator-bg: var(--leverui-colors-color-palette-muted);
-        --leverui-private-timeline-indicator-color: inherit;
-        --leverui-private-timeline-indicator-border-width: 0;
-        --leverui-private-timeline-indicator-border-color: var(--leverui-colors-border);
+        --lui-private-timeline-indicator-bg: var(--lui-colors-color-palette-muted);
+        --lui-private-timeline-indicator-color: inherit;
+        --lui-private-timeline-indicator-border-width: 0;
+        --lui-private-timeline-indicator-border-color: var(--lui-colors-border);
       }
       &[data-variant-xl='solid'] {
-        --leverui-private-timeline-indicator-bg: var(--leverui-colors-color-palette-solid);
-        --leverui-private-timeline-indicator-color: var(--leverui-colors-color-palette-contrast);
-        --leverui-private-timeline-indicator-border-width: 0;
-        --leverui-private-timeline-indicator-border-color: var(--leverui-colors-border);
+        --lui-private-timeline-indicator-bg: var(--lui-colors-color-palette-solid);
+        --lui-private-timeline-indicator-color: var(--lui-colors-color-palette-contrast);
+        --lui-private-timeline-indicator-border-width: 0;
+        --lui-private-timeline-indicator-border-color: var(--lui-colors-border);
       }
       &[data-variant-xl='outline'] {
-        --leverui-private-timeline-indicator-bg: var(--bg-currentcolor);
-        --leverui-private-timeline-indicator-color: inherit;
-        --leverui-private-timeline-indicator-border-width: 1px;
-        --leverui-private-timeline-indicator-border-color: var(
-          --leverui-colors-color-palette-muted
-        );
+        --lui-private-timeline-indicator-bg: var(--bg-currentcolor);
+        --lui-private-timeline-indicator-color: inherit;
+        --lui-private-timeline-indicator-border-width: 1px;
+        --lui-private-timeline-indicator-border-color: var(--lui-colors-color-palette-muted);
       }
       &[data-variant-xl='plain'] {
-        --leverui-private-timeline-indicator-bg: transparent;
-        --leverui-private-timeline-indicator-color: inherit;
-        --leverui-private-timeline-indicator-border-width: 0;
-        --leverui-private-timeline-indicator-border-color: var(--leverui-colors-border);
+        --lui-private-timeline-indicator-bg: transparent;
+        --lui-private-timeline-indicator-color: inherit;
+        --lui-private-timeline-indicator-border-width: 0;
+        --lui-private-timeline-indicator-border-color: var(--lui-colors-border);
       }
     }
   }
   @media (min-width: 1536px) {
     .leverui-timeline__root:not([data-unstyled]) {
       &[data-variant-2xl='subtle'] {
-        --leverui-private-timeline-indicator-bg: var(--leverui-colors-color-palette-muted);
-        --leverui-private-timeline-indicator-color: inherit;
-        --leverui-private-timeline-indicator-border-width: 0;
-        --leverui-private-timeline-indicator-border-color: var(--leverui-colors-border);
+        --lui-private-timeline-indicator-bg: var(--lui-colors-color-palette-muted);
+        --lui-private-timeline-indicator-color: inherit;
+        --lui-private-timeline-indicator-border-width: 0;
+        --lui-private-timeline-indicator-border-color: var(--lui-colors-border);
       }
       &[data-variant-2xl='solid'] {
-        --leverui-private-timeline-indicator-bg: var(--leverui-colors-color-palette-solid);
-        --leverui-private-timeline-indicator-color: var(--leverui-colors-color-palette-contrast);
-        --leverui-private-timeline-indicator-border-width: 0;
-        --leverui-private-timeline-indicator-border-color: var(--leverui-colors-border);
+        --lui-private-timeline-indicator-bg: var(--lui-colors-color-palette-solid);
+        --lui-private-timeline-indicator-color: var(--lui-colors-color-palette-contrast);
+        --lui-private-timeline-indicator-border-width: 0;
+        --lui-private-timeline-indicator-border-color: var(--lui-colors-border);
       }
       &[data-variant-2xl='outline'] {
-        --leverui-private-timeline-indicator-bg: var(--bg-currentcolor);
-        --leverui-private-timeline-indicator-color: inherit;
-        --leverui-private-timeline-indicator-border-width: 1px;
-        --leverui-private-timeline-indicator-border-color: var(
-          --leverui-colors-color-palette-muted
-        );
+        --lui-private-timeline-indicator-bg: var(--bg-currentcolor);
+        --lui-private-timeline-indicator-color: inherit;
+        --lui-private-timeline-indicator-border-width: 1px;
+        --lui-private-timeline-indicator-border-color: var(--lui-colors-color-palette-muted);
       }
       &[data-variant-2xl='plain'] {
-        --leverui-private-timeline-indicator-bg: transparent;
-        --leverui-private-timeline-indicator-color: inherit;
-        --leverui-private-timeline-indicator-border-width: 0;
-        --leverui-private-timeline-indicator-border-color: var(--leverui-colors-border);
+        --lui-private-timeline-indicator-bg: transparent;
+        --lui-private-timeline-indicator-color: inherit;
+        --lui-private-timeline-indicator-border-width: 0;
+        --lui-private-timeline-indicator-border-color: var(--lui-colors-border);
       }
     }
   }

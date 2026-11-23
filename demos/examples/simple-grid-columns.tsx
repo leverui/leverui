@@ -128,7 +128,7 @@ export function SimpleGridWithRowAndColGap(): JSX.Element {
   return (
     <SimpleGrid
       columns={2}
-      style={{ 'column-gap': 'var(--leverui-spacing-2)', 'row-gap': 'var(--leverui-spacing-4)' }}
+      style={{ 'column-gap': 'var(--lui-spacing-2)', 'row-gap': 'var(--lui-spacing-4)' }}
     >
       <Box
         class="example-decorative-box"

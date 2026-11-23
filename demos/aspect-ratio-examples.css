@@ -1,9 +1,9 @@
 .aspect-ratio-example-basic {
-  background: var(--leverui-colors-bg-muted);
+  background: var(--lui-colors-bg-muted);
 }
 
 .aspect-ratio-example-basic-label {
-  font-size: var(--leverui-font-sizes-xl);
+  font-size: var(--lui-font-sizes-xl);
 }
 
 .aspect-ratio-example-image {

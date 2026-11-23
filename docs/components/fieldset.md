@@ -43,13 +43,13 @@ Own the state: create it with `useFieldset` and pass it to
 
 Load the [package stylesheet](../getting-started.md) first. Classes:
 `.leverui-fieldset__root`, `__legend`, `__content`, `__helperText`,
-`__errorText`. Root variables: `--leverui-fieldset-space-y`,
-`--leverui-fieldset-content-gap`, `--leverui-fieldset-legend-size`.
+`__errorText`. Root variables: `--lui-fieldset-space-y`,
+`--lui-fieldset-content-gap`, `--lui-fieldset-legend-size`.
 
 ```css
 .account-form {
-  --leverui-colors-fg-error: #a02fd0;
-  --leverui-fieldset-content-gap: 1.5rem;
+  --lui-colors-fg-error: #a02fd0;
+  --lui-fieldset-content-gap: 1.5rem;
 }
 ```
 

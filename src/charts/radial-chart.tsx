@@ -90,7 +90,7 @@ export function RadialChart(props: RadialChartProps): JSX.Element {
       data-label-placement={props.label}
       data-legend={props.legend ? '' : undefined}
       data-detached={props.detached ? '' : undefined}
-      style={chartRootStyle('--leverui-private-radial-chart-size', props.size, props.style)}
+      style={chartRootStyle('--lui-private-radial-chart-size', props.size, props.style)}
     >
       <svg
         ref={svgRef}
@@ -145,8 +145,8 @@ export function RadialChart(props: RadialChartProps): JSX.Element {
                   d={path()}
                   fill={fill()}
                   style={{
-                    '--leverui-private-radial-sector-stroke': props.stroke,
-                    '--leverui-private-radial-sector-stroke-width': props.strokeWidth,
+                    '--lui-private-radial-sector-stroke': props.stroke,
+                    '--lui-private-radial-sector-stroke-width': props.strokeWidth,
                   }}
                   tabindex="0"
                   aria-label={`${sector.datum.name}: ${sector.datum.value}`}

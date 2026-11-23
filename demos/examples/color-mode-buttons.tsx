@@ -19,9 +19,7 @@ export function ColorModeValueFallback(): JSX.Element {
 
   return (
     <ClientOnly
-      fallback={
-        <Skeleton style={{ width: 'var(--leverui-sizes-8)', height: 'var(--leverui-sizes-8)' }} />
-      }
+      fallback={<Skeleton style={{ width: 'var(--lui-sizes-8)', height: 'var(--lui-sizes-8)' }} />}
     >
       <IconButton
         onClick={toggleColorMode}

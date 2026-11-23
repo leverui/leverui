@@ -62,8 +62,8 @@ function NodeCheckmark(): JSX.Element {
         indeterminate={node().checked === 'indeterminate'}
         style={{
           background: node().checked
-            ? 'var(--leverui-colors-color-palette-solid)'
-            : 'var(--leverui-colors-bg)',
+            ? 'var(--lui-colors-color-palette-solid)'
+            : 'var(--lui-colors-bg)',
         }}
       />
     </TreeView.NodeCheckbox>
@@ -75,7 +75,7 @@ export function TreeViewCheckboxTree(): JSX.Element {
   return (
     <TreeView.Root
       collection={collection}
-      style={{ 'max-width': 'var(--leverui-sizes-sm)' }}
+      style={{ 'max-width': 'var(--lui-sizes-sm)' }}
       defaultCheckedValue={[]}
     >
       <TreeView.Label>Project files</TreeView.Label>

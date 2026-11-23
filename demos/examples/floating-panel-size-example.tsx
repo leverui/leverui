@@ -88,7 +88,7 @@ export function FloatingPanelSize(): JSX.Element {
                 <Text
                   textStyle="sm"
                   style={{
-                    color: 'var(--leverui-colors-fg-muted)',
+                    color: 'var(--lui-colors-fg-muted)',
                   }}
                 >
                   {Number(size().width.toFixed(2))} x {Number(size().height.toFixed(2))}px

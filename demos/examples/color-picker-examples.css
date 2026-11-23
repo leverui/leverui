@@ -11,26 +11,26 @@
 }
 
 .color-picker-example-channel-input {
-  height: var(--leverui-sizes-7);
+  height: var(--lui-sizes-7);
   padding-inline: 0;
-  font-size: var(--leverui-font-sizes-xs);
+  font-size: var(--lui-font-sizes-xs);
   text-align: center;
 }
 
 .color-picker-example-swatch-compact {
-  --leverui-color-picker-swatch-size: var(--leverui-sizes-4\.5);
+  --lui-color-picker-swatch-size: var(--lui-sizes-4\.5);
 }
 
 .color-picker-example-swatch-large {
-  --leverui-color-picker-swatch-size: var(--leverui-sizes-6);
+  --lui-color-picker-swatch-size: var(--lui-sizes-6);
 }
 
 .color-picker-example-swatch-short {
-  height: var(--leverui-sizes-2);
+  height: var(--lui-sizes-2);
 }
 
 .color-picker-example-trigger-round {
-  border-radius: var(--leverui-radii-full);
+  border-radius: var(--lui-radii-full);
 }
 
 .color-picker-example-radius-inherit {
@@ -38,7 +38,7 @@
 }
 
 .color-picker-example-trigger-padded {
-  padding-inline: var(--leverui-spacing-2);
+  padding-inline: var(--lui-spacing-2);
 }
 
 .color-picker-example-value-wide {
@@ -52,18 +52,18 @@
 }
 
 .color-picker-example-swatch-indicator {
-  width: var(--leverui-sizes-3);
-  height: var(--leverui-sizes-3);
+  width: var(--lui-sizes-3);
+  height: var(--lui-sizes-3);
   background: white;
 }
 
 .color-picker-example-trigger-large {
-  font-size: var(--leverui-font-sizes-lg);
+  font-size: var(--lui-font-sizes-lg);
   line-height: 1.75rem;
 }
 
 .color-picker-example-adornment {
-  padding-inline: var(--leverui-spacing-1);
+  padding-inline: var(--lui-spacing-1);
 }
 
 .color-picker-example-adornment-interactive {

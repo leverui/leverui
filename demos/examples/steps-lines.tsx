@@ -37,7 +37,7 @@ export function StepsLines(): JSX.Element {
           /** Match each card's content to its line heading. */
           (item, index) => (
             <Steps.Content value={`step-${index()}`}>
-              <Center style={{ 'min-height': 'var(--leverui-sizes-20)', 'border-width': '1px' }}>
+              <Center style={{ 'min-height': 'var(--lui-sizes-20)', 'border-width': '1px' }}>
                 {item.title} - {item.description}
               </Center>
             </Steps.Content>
@@ -45,11 +45,11 @@ export function StepsLines(): JSX.Element {
         }
       </For>
       <Steps.CompletedContent>
-        <Center style={{ 'min-height': 'var(--leverui-sizes-20)', 'border-width': '1px' }}>
+        <Center style={{ 'min-height': 'var(--lui-sizes-20)', 'border-width': '1px' }}>
           Complete - Thank you!
         </Center>
       </Steps.CompletedContent>
-      <HStack style={{ 'margin-top': 'var(--leverui-spacing-5)' }}>
+      <HStack style={{ 'margin-top': 'var(--lui-spacing-5)' }}>
         <Steps.PrevTrigger
           asChild={
             /** Forward the previous-step action to the outlined button. */

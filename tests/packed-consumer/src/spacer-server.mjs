@@ -20,6 +20,6 @@ const markup = renderInstalledSpacer();
 assert.match(markup, /id="packed-server-spacer"/);
 assert.match(markup, /title="Installed spacer"/);
 assert.match(markup, /leverui-spacer/);
-assert.match(markup, /--leverui-private-spacer-flex-base:2/);
+assert.match(markup, /--lui-private-spacer-flex-base:2/);
 assert.doesNotMatch(markup, /\s(?:css|unstyled|asChild)=/);
 console.log('Packed Spacer server rendering passed.');

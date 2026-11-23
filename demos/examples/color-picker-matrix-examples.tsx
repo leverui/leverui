@@ -8,7 +8,7 @@ const swatches = ['red', 'blue', 'green'];
 /** Present the full seven-size picker range. */
 export function ColorPickerSizes(): JSX.Element {
   return (
-    <Stack gap="8" style={{ 'max-width': 'var(--leverui-sizes-sm)' }}>
+    <Stack gap="8" style={{ 'max-width': 'var(--lui-sizes-sm)' }}>
       <For each={['2xs', 'xs', 'sm', 'md', 'lg', 'xl', '2xl'] as const}>
         {
           /** Render the same color controls at each supported size. */

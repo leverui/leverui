@@ -1,31 +1,27 @@
 @layer leverui.recipes {
   .leverui-color-swatch:not([data-unstyled]) {
-    --leverui-swatch-color: var(--leverui-private-swatch-value, transparent);
-    --leverui-private-swatch-checker-size: var(--leverui-swatch-checker-size, 8px);
-    --leverui-private-swatch-checker-bg: var(--leverui-swatch-checker-bg, var(--leverui-colors-bg));
-    --leverui-private-swatch-checker-fg: var(
-      --leverui-swatch-checker-fg,
-      var(--leverui-colors-bg-emphasized)
-    );
+    --lui-swatch-color: var(--lui-private-swatch-value, transparent);
+    --lui-private-swatch-checker-size: var(--lui-swatch-checker-size, 8px);
+    --lui-private-swatch-checker-bg: var(--lui-swatch-checker-bg, var(--lui-colors-bg));
+    --lui-private-swatch-checker-fg: var(--lui-swatch-checker-fg, var(--lui-colors-bg-emphasized));
 
     display: inline-flex;
     flex-shrink: 0;
     align-items: center;
     justify-content: center;
-    width: var(--leverui-swatch-size, var(--leverui-sizes-5));
-    height: var(--leverui-swatch-size, var(--leverui-sizes-5));
-    border-radius: var(--leverui-swatch-radius, var(--leverui-radii-l1));
+    width: var(--lui-swatch-size, var(--lui-sizes-5));
+    height: var(--lui-swatch-size, var(--lui-sizes-5));
+    border-radius: var(--lui-swatch-radius, var(--lui-radii-l1));
     box-shadow: inset 0 0 0 1px rgb(0 0 0 / 10%);
     background:
-      linear-gradient(var(--leverui-swatch-color), var(--leverui-swatch-color)),
+      linear-gradient(var(--lui-swatch-color), var(--lui-swatch-color)),
       repeating-conic-gradient(
-          var(--leverui-private-swatch-checker-fg) 0%,
-          var(--leverui-private-swatch-checker-fg) 25%,
-          var(--leverui-private-swatch-checker-bg) 0%,
-          var(--leverui-private-swatch-checker-bg) 50%
+          var(--lui-private-swatch-checker-fg) 0%,
+          var(--lui-private-swatch-checker-fg) 25%,
+          var(--lui-private-swatch-checker-bg) 0%,
+          var(--lui-private-swatch-checker-bg) 50%
         )
-        0% 50% / var(--leverui-private-swatch-checker-size)
-        var(--leverui-private-swatch-checker-size);
+        0% 50% / var(--lui-private-swatch-checker-size) var(--lui-private-swatch-checker-size);
   }
 
   .leverui-color-swatch[data-mix] {
@@ -34,7 +30,7 @@
 
   .leverui-color-swatch__mix-grid {
     display: grid;
-    grid-template-columns: repeat(2, var(--leverui-swatch-size, var(--leverui-sizes-5)));
+    grid-template-columns: repeat(2, var(--lui-swatch-size, var(--lui-sizes-5)));
   }
 
   .leverui-color-swatch[data-mix-cell] {

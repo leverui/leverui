@@ -4,21 +4,21 @@
 
 .default-hydrated-box,
 .shared-padding {
-  padding: var(--leverui-spacing-4);
+  padding: var(--lui-spacing-4);
 }
 
 .default-hydrated-box {
-  background: var(--leverui-colors-blue-500);
+  background: var(--lui-colors-blue-500);
 }
 
 .scoped-hydration-box {
-  background: var(--leverui-colors-bg);
+  background: var(--lui-colors-bg);
 }
 
 #hydrated-scope > .scoped-hydration-box {
-  color: var(--leverui-colors-red-500);
+  color: var(--lui-colors-red-500);
 }
 
 #hydrated-inner-scope > .scoped-hydration-box {
-  color: var(--leverui-colors-blue-500);
+  color: var(--lui-colors-blue-500);
 }

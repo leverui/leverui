@@ -98,7 +98,7 @@ export const RemoveIndentation: Story = {
   name: 'RemoveIndentation',
   render: TreeViewRemoveIndentation,
   parameters: guide(
-    'Set the css variable `--leverui-tree-indentation` to `0px` to remove the indentation of the tree view.',
+    'Set the css variable `--lui-tree-indentation` to `0px` to remove the indentation of the tree view.',
   ),
 };
 export const LazyLoad: Story = {

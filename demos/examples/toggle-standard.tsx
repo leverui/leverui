@@ -47,7 +47,7 @@ export function ToggleControlled(): JSX.Element {
           )
         }
       />
-      <Code size="sm" style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>
+      <Code size="sm" style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>
         Pressed: {pressed() ? 'true' : 'false'}
       </Code>
     </Stack>

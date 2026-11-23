@@ -114,9 +114,9 @@ picture.
 Import `@leverui/components/styles.css` before your own CSS.
 
 Variables, for a whole theme or one root:
-`--leverui-empty-state-padding-inline`, `--leverui-empty-state-padding-block`,
-`--leverui-empty-state-gap`, `--leverui-empty-state-indicator-size`,
-`--leverui-empty-state-title-size`.
+`--lui-empty-state-padding-inline`, `--lui-empty-state-padding-block`,
+`--lui-empty-state-gap`, `--lui-empty-state-indicator-size`,
+`--lui-empty-state-title-size`.
 
 Classes: `.leverui-empty-state__*`, one per part. Example:
 `.my-empty-state .leverui-empty-state__title { color: navy; }`.

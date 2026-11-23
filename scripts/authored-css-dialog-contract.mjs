@@ -47,7 +47,7 @@ export const dialogContracts = [
         /** Require each motion preset with an authored animation. */
         (preset) => `[data-motion-preset='${preset}']`,
       ),
-      '--leverui-private-dialog-size-max-width',
+      '--lui-private-dialog-size-max-width',
     ],
   },
 ];

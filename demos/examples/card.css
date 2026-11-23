@@ -3,12 +3,12 @@
 }
 
 .card-example-product {
-  max-width: var(--leverui-sizes-sm);
+  max-width: var(--lui-sizes-sm);
   overflow: hidden;
 }
 
 .card-example-horizontal {
-  max-width: var(--leverui-sizes-xl);
+  max-width: var(--lui-sizes-xl);
   flex-direction: row;
   overflow: hidden;
 }
@@ -20,16 +20,16 @@
 
 .card-example-body-gap,
 .card-example-footer-gap {
-  gap: var(--leverui-spacing-2);
+  gap: var(--lui-spacing-2);
 }
 
 .card-example-title-top,
 .card-example-price {
-  margin-top: var(--leverui-spacing-2);
+  margin-top: var(--lui-spacing-2);
 }
 
 .card-example-title-bottom {
-  margin-bottom: var(--leverui-spacing-2);
+  margin-bottom: var(--lui-spacing-2);
 }
 
 .card-example-footer-end {
@@ -37,28 +37,28 @@
 }
 
 .card-example-price {
-  font-weight: var(--leverui-font-weights-medium);
-  letter-spacing: var(--leverui-letter-spacings-tight);
+  font-weight: var(--lui-font-weights-medium);
+  letter-spacing: var(--lui-letter-spacings-tight);
 }
 
 .card-example-badges {
-  margin-top: var(--leverui-spacing-4);
+  margin-top: var(--lui-spacing-4);
 }
 
 .card-example-inviter {
-  margin-bottom: var(--leverui-spacing-6);
+  margin-bottom: var(--lui-spacing-6);
 }
 
 .card-example-inviter-name {
-  font-weight: var(--leverui-font-weights-semibold);
+  font-weight: var(--lui-font-weights-semibold);
 }
 
 .card-example-inviter-handle {
-  color: var(--leverui-colors-fg-muted);
+  color: var(--lui-colors-fg-muted);
 }
 
 .card-example-inviter-strong {
-  color: var(--leverui-colors-fg);
+  color: var(--lui-colors-fg);
 }
 
 .card-example-action {
@@ -74,5 +74,5 @@
 }
 
 .card-example-size-body {
-  color: var(--leverui-colors-fg-muted);
+  color: var(--lui-colors-fg-muted);
 }

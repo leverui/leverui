@@ -26,9 +26,9 @@ export const cartesianContracts = [
         /** Keep fixed Cartesian presentation in authored CSS. */
         (part) => `.leverui-cartesian-chart__${part}`,
       ),
-      '--leverui-cartesian-chart-min-width',
-      '--leverui-cartesian-chart-legend-gap',
-      '--leverui-cartesian-chart-tooltip-bg',
+      '--lui-cartesian-chart-min-width',
+      '--lui-cartesian-chart-legend-gap',
+      '--lui-cartesian-chart-tooltip-bg',
       '[data-muted]',
       "[data-position='right']",
     ],

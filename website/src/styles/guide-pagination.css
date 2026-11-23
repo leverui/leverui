@@ -1,21 +1,21 @@
 /* Previous and Next: two flexible cards, 32px apart, 80px below the guide. */
 .guide-pagination {
   display: flex;
-  gap: var(--leverui-spacing-8);
-  margin-top: var(--leverui-spacing-20);
+  gap: var(--lui-spacing-8);
+  margin-top: var(--lui-spacing-20);
 }
 .guide-pagination > * {
   flex: 1;
 }
 .guide-pagination-card {
-  padding: var(--leverui-spacing-4);
-  border: 1px solid var(--leverui-colors-border);
-  border-radius: var(--leverui-radii-md);
-  color: var(--leverui-colors-fg);
+  padding: var(--lui-spacing-4);
+  border: 1px solid var(--lui-colors-border);
+  border-radius: var(--lui-radii-md);
+  color: var(--lui-colors-fg);
   text-decoration: none;
 }
 .guide-pagination-card:focus-visible {
-  outline: 2px solid var(--leverui-colors-color-palette-focus-ring);
+  outline: 2px solid var(--lui-colors-color-palette-focus-ring);
   outline-offset: -2px;
 }
 .guide-pagination-card.is-next {
@@ -23,8 +23,8 @@
 }
 .guide-pagination-label {
   margin: 0;
-  color: var(--leverui-colors-fg-muted);
+  color: var(--lui-colors-fg-muted);
 }
 .guide-pagination-title {
-  font-weight: var(--leverui-font-weights-medium);
+  font-weight: var(--lui-font-weights-medium);
 }

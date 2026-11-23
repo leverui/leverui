@@ -94,8 +94,8 @@ Set `class` or `style` on a part, or override its CSS variables.
 
 ```css
 .profile-preview {
-  --leverui-hover-card-background: #f5f8ff;
-  --leverui-hover-card-padding: 1.25rem;
+  --lui-hover-card-background: #f5f8ff;
+  --lui-hover-card-padding: 1.25rem;
 }
 ```
 

@@ -4,12 +4,12 @@
 
 [All variables](README.md)
 
-| Variable                       | Value   |
-| ------------------------------ | ------- |
-| `--leverui-durations-fast`     | `150ms` |
-| `--leverui-durations-faster`   | `100ms` |
-| `--leverui-durations-fastest`  | `50ms`  |
-| `--leverui-durations-moderate` | `200ms` |
-| `--leverui-durations-slow`     | `300ms` |
-| `--leverui-durations-slower`   | `400ms` |
-| `--leverui-durations-slowest`  | `500ms` |
+| Variable                   | Value   |
+| -------------------------- | ------- |
+| `--lui-durations-fast`     | `150ms` |
+| `--lui-durations-faster`   | `100ms` |
+| `--lui-durations-fastest`  | `50ms`  |
+| `--lui-durations-moderate` | `200ms` |
+| `--lui-durations-slow`     | `300ms` |
+| `--lui-durations-slower`   | `400ms` |
+| `--lui-durations-slowest`  | `500ms` |

@@ -1,32 +1,32 @@
 @layer leverui.recipes {
   @media (width < 1280px) {
     .leverui-dialog__content[data-leverui-dialog-css][data-size-xl-down='xs'] {
-      --leverui-private-dialog-size-max-width: var(--leverui-sizes-sm);
+      --lui-private-dialog-size-max-width: var(--lui-sizes-sm);
     }
     .leverui-dialog__content[data-leverui-dialog-css][data-size-xl-down='sm'] {
-      --leverui-private-dialog-size-max-width: var(--leverui-sizes-md);
+      --lui-private-dialog-size-max-width: var(--lui-sizes-md);
     }
     .leverui-dialog__content[data-leverui-dialog-css][data-size-xl-down='md'] {
-      --leverui-private-dialog-size-max-width: var(--leverui-sizes-lg);
+      --lui-private-dialog-size-max-width: var(--lui-sizes-lg);
     }
     .leverui-dialog__content[data-leverui-dialog-css][data-size-xl-down='lg'] {
-      --leverui-private-dialog-size-max-width: var(--leverui-sizes-2xl);
+      --lui-private-dialog-size-max-width: var(--lui-sizes-2xl);
     }
     .leverui-dialog__content[data-leverui-dialog-css][data-size-xl-down='xl'] {
-      --leverui-private-dialog-size-max-width: var(--leverui-sizes-4xl);
+      --lui-private-dialog-size-max-width: var(--lui-sizes-4xl);
     }
     .leverui-dialog__content[data-leverui-dialog-css][data-size-xl-down='cover'] {
-      --leverui-private-dialog-size-height: 100%;
-      --leverui-private-dialog-size-margin: 0;
+      --lui-private-dialog-size-height: 100%;
+      --lui-private-dialog-size-margin: 0;
     }
     .leverui-dialog__content[data-leverui-dialog-css][data-size-xl-down='full'] {
-      --leverui-private-dialog-size-max-width: 100dvw;
-      --leverui-private-dialog-size-min-height: 100dvh;
-      --leverui-private-dialog-size-radius: 0;
-      --leverui-private-dialog-size-margin: 0;
+      --lui-private-dialog-size-max-width: 100dvw;
+      --lui-private-dialog-size-min-height: 100dvh;
+      --lui-private-dialog-size-radius: 0;
+      --lui-private-dialog-size-margin: 0;
     }
     .leverui-dialog__positioner[data-leverui-dialog-css][data-size-xl-down='cover'] {
-      --leverui-private-dialog-positioner-padding: var(--leverui-spacing-10);
+      --lui-private-dialog-positioner-padding: var(--lui-spacing-10);
     }
   }
 }

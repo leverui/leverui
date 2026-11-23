@@ -30,7 +30,7 @@ function SparklineCssContract(): JSX.Element {
           width={wide() ? 160 : 112}
           color="green.solid"
           class="consumer-chart"
-          style={{ '--leverui-sparkline-line-width': '3' }}
+          style={{ '--lui-sparkline-line-width': '3' }}
           ref={markChart}
           aria-label="Reactive Sparkline"
         />

@@ -2,7 +2,7 @@
   position: relative;
   width: 160px;
   height: 60px;
-  padding: var(--leverui-spacing-2);
+  padding: var(--lui-spacing-2);
 }
 
 .loader-contract-overlay-parent {
@@ -12,5 +12,5 @@
 }
 
 .loader-contract-overlay {
-  background: color-mix(in srgb, var(--leverui-colors-bg) 80%, transparent);
+  background: color-mix(in srgb, var(--lui-colors-bg) 80%, transparent);
 }

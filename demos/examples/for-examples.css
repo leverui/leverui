@@ -1,19 +1,19 @@
 .example-for-card {
   border-width: 1px;
-  padding: var(--leverui-spacing-4);
+  padding: var(--lui-spacing-4);
 }
 
 .example-for-name {
-  font-weight: var(--leverui-font-weights-bold);
+  font-weight: var(--lui-font-weights-bold);
 }
 
 .example-for-powers {
-  color: var(--leverui-colors-fg-muted);
+  color: var(--lui-colors-fg-muted);
 }
 
 .example-for-empty {
   text-align: center;
-  font-weight: var(--leverui-font-weights-medium);
+  font-weight: var(--lui-font-weights-medium);
 }
 
 .example-for-empty-icon {
@@ -21,5 +21,5 @@
 }
 
 .example-for-row {
-  height: var(--leverui-sizes-10);
+  height: var(--lui-sizes-10);
 }

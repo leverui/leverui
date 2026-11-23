@@ -123,7 +123,7 @@ CSS overrides them. `data-size`, `data-variant`, and
 }
 
 .feedback-form .leverui-textarea[data-invalid] {
-  border-color: var(--leverui-colors-border-error);
+  border-color: var(--lui-colors-border-error);
 }
 ```
 

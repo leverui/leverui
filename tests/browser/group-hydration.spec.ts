@@ -54,12 +54,12 @@ async function verifiesGroupHydration({ page }: { page: Page }): Promise<void> {
   for (const locator of [group, first, middle, last]) {
     await expect(locator).toHaveAttribute('data-server-node', 'true');
   }
-  await expect(first).toHaveCSS('--leverui-group-count', '3');
+  await expect(first).toHaveCSS('--lui-group-count', '3');
   await page.locator('#hydrated-group-toggle').click();
   await expect(group).toHaveCSS('flex-direction', 'column');
   await expect(middle).toHaveAttribute('data-leverui-group-skip', '');
-  await expect(first).toHaveCSS('--leverui-group-count', '2');
-  await expect(last).toHaveCSS('--leverui-group-index', '1');
+  await expect(first).toHaveCSS('--lui-group-count', '2');
+  await expect(last).toHaveCSS('--lui-group-index', '1');
   await expect(last).toHaveAttribute('data-server-node', 'true');
   expect(errors).toEqual([]);
 }

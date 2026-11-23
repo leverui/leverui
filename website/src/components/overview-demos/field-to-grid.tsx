@@ -24,13 +24,13 @@ import { PopupSurface } from './shared';
 /** The plain block that layout demos arrange. */
 const block = {
   height: '24px',
-  'border-radius': 'var(--leverui-radii-sm)',
+  'border-radius': 'var(--lui-radii-sm)',
   background: 'var(--overview-tint)',
 };
-const muted = { color: 'var(--leverui-colors-fg-muted)' };
+const muted = { color: 'var(--lui-colors-fg-muted)' };
 const badge = {
-  background: 'var(--leverui-colors-cyan-solid)',
-  color: 'var(--leverui-colors-cyan-contrast)',
+  background: 'var(--lui-colors-cyan-solid)',
+  color: 'var(--lui-colors-cyan-contrast)',
 };
 
 /** A text field with its label and help text. */

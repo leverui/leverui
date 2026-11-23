@@ -43,7 +43,7 @@ async function verifiesComposedSurface({ page }: { page: Page }): Promise<void> 
     'rgba(0, 0, 0, 0)',
   );
   await page.addStyleTag({
-    content: '.leverui-skeleton { --leverui-skeleton-bg: rgb(10, 20, 30); }',
+    content: '.leverui-skeleton { --lui-skeleton-bg: rgb(10, 20, 30); }',
   });
   await expect(page.locator('#storybook-root .leverui-skeleton').first()).toHaveCSS(
     'background-color',

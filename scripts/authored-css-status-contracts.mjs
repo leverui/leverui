@@ -16,7 +16,7 @@ export const statusContracts = [
             (size) => `[data-size-${breakpoint}='${size}']`,
           ),
       ),
-      '--leverui-colors-color-palette-solid',
+      '--lui-colors-color-palette-solid',
       'forced-color-adjust: none',
     ],
   },

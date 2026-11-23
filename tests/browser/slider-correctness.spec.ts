@@ -122,7 +122,7 @@ async function verifiesConsumerCss({ page }: { page: Page }): Promise<void> {
     content:
       '.leverui-slider__thumb { border-color: rgb(1, 2, 3); }' +
       '[data-testid="slider-matrix-md-outline-horizontal"] {' +
-      '--leverui-slider-thumb-size: 31px; --leverui-slider-range-color: rgb(4, 5, 6); }',
+      '--lui-slider-thumb-size: 31px; --lui-slider-range-color: rgb(4, 5, 6); }',
   });
   const root = page.getByTestId('slider-matrix-md-outline-horizontal');
   const thumb = root.getByRole('slider');

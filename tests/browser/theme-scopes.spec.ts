@@ -13,21 +13,21 @@ const serverEntry = '../../dist/server/index.js';
 const { Box, Theme } = (await import(serverEntry)) as ServerExports;
 const defaultCss = await readFile(new URL('../../dist/styles.css', import.meta.url), 'utf8');
 const sampleCss = `
-  :root { --sample-mode-color: var(--leverui-colors-blue-500); --sample-border-width: 2px; }
+  :root { --sample-mode-color: var(--lui-colors-blue-500); --sample-border-width: 2px; }
   [data-leverui-color-mode='dark'] {
-    --sample-mode-color: var(--leverui-colors-red-500);
+    --sample-mode-color: var(--lui-colors-red-500);
     --sample-border-width: 4px;
   }
   [data-leverui-color-mode='light'] {
-    --sample-mode-color: var(--leverui-colors-blue-500);
+    --sample-mode-color: var(--lui-colors-blue-500);
     --sample-border-width: 2px;
   }
   .mode-box {
-    background-color: var(--leverui-colors-bg);
+    background-color: var(--lui-colors-bg);
     color: var(--sample-mode-color);
     border: var(--sample-border-width) solid transparent;
   }
-  .brand-box { background-color: var(--leverui-colors-blue-500); }
+  .brand-box { background-color: var(--lui-colors-blue-500); }
 `;
 
 /** Render one token-backed child that exposes both mode conditions. */
@@ -112,8 +112,8 @@ test('nested Theme scopes use the nearest explicit mode', verifiesNestedScopes);
 async function verifiesLocalOverrides({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderScopes);
   const overrides = `
-    #light-scope { --leverui-colors-white: rgb(203, 177, 90); }
-    #inherited-scope { --leverui-colors-bg: rgb(140, 160, 180); }
+    #light-scope { --lui-colors-white: rgb(203, 177, 90); }
+    #inherited-scope { --lui-colors-bg: rgb(140, 160, 180); }
   `;
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(
@@ -156,7 +156,7 @@ async function verifiesRootFoundationOverride({ page }: { page: Page }): Promise
 
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(
-    `<style>${defaultCss}</style><style>${sampleCss}</style><style>:root { --leverui-colors-blue-500: rgb(98, 84, 199); }</style>${renderToString(renderBrandExample)}`,
+    `<style>${defaultCss}</style><style>${sampleCss}</style><style>:root { --lui-colors-blue-500: rgb(98, 84, 199); }</style>${renderToString(renderBrandExample)}`,
   );
 
   for (const id of ['root-brand', 'explicit-brand', 'inherited-brand']) {

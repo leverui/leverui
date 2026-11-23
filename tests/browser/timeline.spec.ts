@@ -99,8 +99,8 @@ async function verifiesConsumerCssHooks({ page }: { page: Page }): Promise<void>
   await page.addStyleTag({
     content: `
       .consumer-timeline {
-        --leverui-timeline-indicator-size: 40px;
-        --leverui-timeline-line-color: rgb(200 10 20);
+        --lui-timeline-indicator-size: 40px;
+        --lui-timeline-line-color: rgb(200 10 20);
       }
       .consumer-timeline .leverui-timeline__title { font-size: 18px; }
     `,

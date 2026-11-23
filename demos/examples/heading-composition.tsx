@@ -6,15 +6,15 @@ import { Button, Heading, Highlight, Stack, Text } from '../../src';
 export function HeadingWithHighlight(): JSX.Element {
   return (
     <Stack>
-      <Heading size="3xl" style={{ 'letter-spacing': 'var(--leverui-letter-spacings-tight)' }}>
-        <Highlight query="everyone can use" markStyle={{ color: 'var(--leverui-colors-teal-600)' }}>
+      <Heading size="3xl" style={{ 'letter-spacing': 'var(--lui-letter-spacings-tight)' }}>
+        <Highlight query="everyone can use" markStyle={{ color: 'var(--lui-colors-teal-600)' }}>
           Build Solid apps that everyone can use
         </Highlight>
       </Heading>
       <Text
         style={{
-          'font-size': 'var(--leverui-font-sizes-md)',
-          color: 'var(--leverui-colors-fg-muted)',
+          'font-size': 'var(--lui-font-sizes-md)',
+          color: 'var(--lui-colors-fg-muted)',
         }}
       >
         Lever UI gives you ready-made components that work with a keyboard, a mouse and a screen
@@ -31,9 +31,9 @@ export function HeadingWithComposition(): JSX.Element {
       <Heading size="2xl">Invoices for small shops</Heading>
       <Text
         style={{
-          'margin-bottom': 'var(--leverui-spacing-3)',
-          'font-size': 'var(--leverui-font-sizes-md)',
-          color: 'var(--leverui-colors-fg-muted)',
+          'margin-bottom': 'var(--lui-spacing-3)',
+          'font-size': 'var(--lui-font-sizes-md)',
+          color: 'var(--lui-colors-fg-muted)',
         }}
       >
         Send an invoice in a minute and see at a glance who has paid.
@@ -51,7 +51,7 @@ export function HeadingWithGradient(): JSX.Element {
     <Heading
       style={{
         background:
-          'linear-gradient(to left, var(--leverui-colors-red-500), var(--leverui-colors-blue-500))',
+          'linear-gradient(to left, var(--lui-colors-red-500), var(--lui-colors-blue-500))',
         'background-clip': 'text',
         color: 'transparent',
       }}

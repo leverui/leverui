@@ -12,9 +12,9 @@ const serverEntry = '../../dist/server/index.js';
 const { Box } = (await import(serverEntry)) as ServerExports;
 const defaultCss = await readFile(new URL('../../dist/styles.css', import.meta.url), 'utf8');
 const consumerCss = `
-  :root { --mode-fg: var(--leverui-colors-blue-500); }
-  :root[data-leverui-color-mode='dark'] { --mode-fg: var(--leverui-colors-red-500); }
-  .mode-box { background-color: var(--leverui-colors-bg); color: var(--mode-fg); }
+  :root { --mode-fg: var(--lui-colors-blue-500); }
+  :root[data-leverui-color-mode='dark'] { --mode-fg: var(--lui-colors-red-500); }
+  .mode-box { background-color: var(--lui-colors-bg); color: var(--mode-fg); }
 `;
 
 /** Render semantic and conditional colors without client-side JavaScript. */

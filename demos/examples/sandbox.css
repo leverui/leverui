@@ -13,8 +13,8 @@
   top: 0;
   height: 90vh;
   min-height: 200px;
-  background: var(--leverui-colors-color-palette-subtle);
-  color: var(--leverui-colors-color-palette-fg);
+  background: var(--lui-colors-color-palette-subtle);
+  color: var(--lui-colors-color-palette-fg);
 }
 
 @media (min-width: 30rem) {

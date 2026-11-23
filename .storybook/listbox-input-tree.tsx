@@ -154,7 +154,7 @@ export function renderKeyboardPriorityTree(components: ListboxInputComponents): 
           <Text
             textStyle="xs"
             style={{
-              color: 'var(--leverui-colors-fg-muted)',
+              color: 'var(--lui-colors-fg-muted)',
             }}
           >
             Home and End highlight the first and last item instead of moving the text caret.

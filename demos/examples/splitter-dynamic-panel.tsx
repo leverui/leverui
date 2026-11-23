@@ -130,8 +130,8 @@ export function SplitterDynamicPanel(): JSX.Element {
             variant="ghost"
             style={{
               position: 'absolute',
-              top: 'var(--leverui-spacing-2)',
-              right: 'var(--leverui-spacing-2)',
+              top: 'var(--lui-spacing-2)',
+              right: 'var(--lui-spacing-2)',
             }}
             onClick={removeThisPanel}
             disabled={panelIds().length === 1}
@@ -153,7 +153,7 @@ export function SplitterDynamicPanel(): JSX.Element {
           gap="1"
           textStyle="sm"
           style={{
-            color: 'var(--leverui-colors-fg-muted)',
+            color: 'var(--lui-colors-fg-muted)',
           }}
         >
           <span>

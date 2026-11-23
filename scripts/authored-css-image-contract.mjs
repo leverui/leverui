@@ -3,12 +3,12 @@ export const imageLayoutContract = {
   family: 'image',
   required: [
     '.leverui-image:not([data-unstyled])',
-    '--leverui-image-fit',
-    '--leverui-image-position',
+    '--lui-image-fit',
+    '--lui-image-position',
     ...['base', 'sm', 'md', 'lg', 'xl', '2xl'].flatMap(
       /** Require all supported fit selectors and the position variable. */
       (breakpoint) => [
-        `--leverui-private-image-align-${breakpoint}`,
+        `--lui-private-image-align-${breakpoint}`,
         ...['cover', 'contain', 'fill', 'none', 'scale-down'].map(
           /** Require one selector for this fit and breakpoint. */
           (fit) => `[data-fit-${breakpoint}='${fit}']`,

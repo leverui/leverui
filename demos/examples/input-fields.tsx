@@ -53,15 +53,15 @@ export function InputFocusErrorColor(): JSX.Element {
     <Stack gap="4">
       <Field.Root>
         <Field.Label>focusColor=lime</Field.Label>
-        <Input placeholder="Focus me" style={{ '--leverui-input-focus-color': 'lime' }} />
+        <Input placeholder="Focus me" style={{ '--lui-input-focus-color': 'lime' }} />
       </Field.Root>
       <Field.Root invalid>
         <Field.Label>errorColor=green</Field.Label>
-        <Input placeholder="Email" style={{ '--leverui-input-error-color': 'green' }} />
+        <Input placeholder="Email" style={{ '--lui-input-error-color': 'green' }} />
       </Field.Root>
       <Field.Root invalid>
         <Field.Label>errorColor=blue</Field.Label>
-        <Input placeholder="Password" style={{ '--leverui-input-error-color': 'blue' }} />
+        <Input placeholder="Password" style={{ '--lui-input-error-color': 'blue' }} />
       </Field.Root>
       <Field.Root invalid>
         <Field.Label>variant=outline,focusColor=error</Field.Label>
@@ -136,7 +136,7 @@ export function InputHookForm(): JSX.Element {
 
   return (
     <form onSubmit={submit}>
-      <Stack gap="4" align="flex-start" style={{ 'max-width': 'var(--leverui-sizes-sm)' }}>
+      <Stack gap="4" align="flex-start" style={{ 'max-width': 'var(--lui-sizes-sm)' }}>
         <Field.Root>
           <Field.Label>First name</Field.Label>
           <Input name="firstName" />

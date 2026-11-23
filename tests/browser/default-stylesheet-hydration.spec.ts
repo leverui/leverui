@@ -37,7 +37,7 @@ async function hydrateInBrowser(): Promise<void> {
 /** Verify external default CSS survives hydration without duplicated styles. */
 async function verifiesDefaultHydration({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderDefaultExample);
-  expect(markup).not.toContain('--leverui-colors-blue-500:');
+  expect(markup).not.toContain('--lui-colors-blue-500:');
 
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(

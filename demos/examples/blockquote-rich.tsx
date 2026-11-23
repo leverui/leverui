@@ -17,14 +17,12 @@ export function BlockquoteWithAvatar(): JSX.Element {
       </Blockquote.Content>
       <Blockquote.Caption>
         <cite>
-          <HStack gap="3" style={{ 'margin-top': 'var(--leverui-spacing-2)' }}>
+          <HStack gap="3" style={{ 'margin-top': 'var(--lui-spacing-2)' }}>
             <Avatar.Root size="sm">
               <Avatar.Fallback name="Wren Ashford" />
               <Avatar.Image src="/demo-images/avatars/avatar-1.webp" />
             </Avatar.Root>
-            <Span style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>
-              Wren Ashford
-            </Span>
+            <Span style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>Wren Ashford</Span>
           </HStack>
         </cite>
       </Blockquote.Caption>
@@ -37,7 +35,7 @@ export function BlockquoteWithCustomIcon(): JSX.Element {
   return (
     <Blockquote.Root colorPalette="blue" class="blockquote-example-leading-icon">
       <Float placement="middle-start">
-        <Circle size="8" style={{ background: 'var(--leverui-colors-blue-600)', color: 'white' }}>
+        <Circle size="8" style={{ background: 'var(--lui-colors-blue-600)', color: 'white' }}>
           <QuoteIcon />
         </Circle>
       </Float>

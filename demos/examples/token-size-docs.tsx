@@ -53,7 +53,7 @@ const sizeGroups: SizeGroup[] = [
 /** Show token, named, fraction, breakpoint, and large size tables. */
 export function TokensSizes(): JSX.Element {
   return (
-    <Stack gap="8" style={{ 'margin-top': 'var(--leverui-spacing-8)' }}>
+    <Stack gap="8" style={{ 'margin-top': 'var(--lui-spacing-8)' }}>
       <For each={sizeGroups}>
         {
           /** Render one grouped size table. */
@@ -66,8 +66,8 @@ export function TokensSizes(): JSX.Element {
               </Flex>
               <Stack
                 style={{
-                  'padding-inline': 'var(--leverui-spacing-3)',
-                  'padding-top': 'var(--leverui-spacing-2)',
+                  'padding-inline': 'var(--lui-spacing-3)',
+                  'padding-top': 'var(--lui-spacing-2)',
                 }}
               >
                 <For each={group.tokens}>
@@ -78,25 +78,23 @@ export function TokensSizes(): JSX.Element {
                         <Text
                           style={{
                             width: '160px',
-                            'font-weight': 'var(--leverui-font-weights-medium)',
+                            'font-weight': 'var(--lui-font-weights-medium)',
                           }}
                         >
                           {token.extensions.prop}
                         </Text>
-                        <Text style={{ width: '100px', color: 'var(--leverui-colors-fg-muted)' }}>
+                        <Text style={{ width: '100px', color: 'var(--lui-colors-fg-muted)' }}>
                           {token.value}
                         </Text>
                         {group.name === 'tokenSizes' && (
                           <>
-                            <Text
-                              style={{ width: '100px', color: 'var(--leverui-colors-fg-muted)' }}
-                            >
+                            <Text style={{ width: '100px', color: 'var(--lui-colors-fg-muted)' }}>
                               {token.extensions.pixelValue}
                             </Text>
                             <Box
                               style={{
-                                background: 'var(--leverui-colors-pink-200)',
-                                height: 'var(--leverui-sizes-4)',
+                                background: 'var(--lui-colors-pink-200)',
+                                height: 'var(--lui-sizes-4)',
                                 width: `min(${token.originalValue}, 60%)`,
                               }}
                             />
@@ -135,8 +133,8 @@ export function TokensSpacing(): JSX.Element {
       </Flex>
       <Stack
         style={{
-          'padding-inline': 'var(--leverui-spacing-3)',
-          'padding-top': 'var(--leverui-spacing-2)',
+          'padding-inline': 'var(--lui-spacing-3)',
+          'padding-top': 'var(--lui-spacing-2)',
         }}
       >
         <For each={spacing}>
@@ -144,22 +142,20 @@ export function TokensSpacing(): JSX.Element {
             /** Display one spacing value and its length bar. */
             (token) => (
               <Flex class="token-doc-flex-row">
-                <Text
-                  style={{ width: '100px', 'font-weight': 'var(--leverui-font-weights-medium)' }}
-                >
+                <Text style={{ width: '100px', 'font-weight': 'var(--lui-font-weights-medium)' }}>
                   {token.extensions.prop}
                 </Text>
-                <Text style={{ width: '100px', color: 'var(--leverui-colors-fg-muted)' }}>
+                <Text style={{ width: '100px', color: 'var(--lui-colors-fg-muted)' }}>
                   {token.value}
                 </Text>
-                <Text style={{ width: '100px', color: 'var(--leverui-colors-fg-muted)' }}>
+                <Text style={{ width: '100px', color: 'var(--lui-colors-fg-muted)' }}>
                   {token.extensions.pixelValue}
                 </Text>
                 <Box style={{ flex: '1' }}>
                   <Box
                     style={{
-                      background: 'var(--leverui-colors-pink-200)',
-                      height: 'var(--leverui-sizes-4)',
+                      background: 'var(--lui-colors-pink-200)',
+                      height: 'var(--lui-sizes-4)',
                       width: token.extensions.cssVar?.ref,
                     }}
                   />

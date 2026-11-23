@@ -54,7 +54,7 @@ function GuideOption(props: { item: GuideItem }): JSX.Element {
           <Span
             textStyle="xs"
             style={{
-              color: 'var(--leverui-colors-fg-muted)',
+              color: 'var(--lui-colors-fg-muted)',
             }}
           >
             {props.item.description}

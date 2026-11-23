@@ -63,7 +63,7 @@ async function verifiesLoaderBrowserContract({ page }: { page: Page }): Promise<
   await expect(overlay).toHaveCSS('width', '200px');
   await expect(overlay).toHaveCSS('height', '100px');
   await expect(overlay).toHaveCSS('gap', '8px');
-  await page.addStyleTag({ content: ':root { --leverui-spacing-2: 12px; }' });
+  await page.addStyleTag({ content: ':root { --lui-spacing-2: 12px; }' });
   await expect(parent).toHaveCSS('padding', '12px');
 
   await page.getByTestId('loader-toggle').click();

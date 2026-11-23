@@ -9,9 +9,9 @@
     top: 50%;
     transform: translateY(-50%);
     height: 100%;
-    color: var(--leverui-colors-fg-muted);
-    font-size: var(--leverui-private-native-select-indicator-font-size);
-    inset-inline-end: var(--leverui-private-native-select-indicator-inset-end);
+    color: var(--lui-colors-fg-muted);
+    font-size: var(--lui-private-native-select-indicator-font-size);
+    inset-inline-end: var(--lui-private-native-select-indicator-inset-end);
   }
 
   .leverui-native-select__root:not([data-unstyled])
@@ -28,6 +28,6 @@
 
   .leverui-native-select__root:not([data-unstyled])
     .leverui-native-select__indicator:not([data-unstyled])[data-invalid] {
-    color: var(--leverui-colors-fg-error);
+    color: var(--lui-colors-fg-error);
   }
 }

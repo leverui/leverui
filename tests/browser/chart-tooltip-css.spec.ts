@@ -25,7 +25,7 @@ async function verifiesTooltipCss({ page }: { page: Page }): Promise<void> {
   );
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(
-    `<style>${defaultCss}</style><style>:root { --leverui-chart-tooltip-bg: rgb(12, 34, 56); --leverui-chart-tooltip-radius: 9px; }</style><div style="position: relative">${markup}</div>`,
+    `<style>${defaultCss}</style><style>:root { --lui-chart-tooltip-bg: rgb(12, 34, 56); --lui-chart-tooltip-radius: 9px; }</style><div style="position: relative">${markup}</div>`,
   );
   const tooltip = page.locator('.leverui-chart-tooltip');
   await expect(tooltip).toHaveCSS('left', '30px');

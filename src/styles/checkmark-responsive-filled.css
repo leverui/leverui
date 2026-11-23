@@ -1,42 +1,42 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
     .leverui-checkmark:not([data-unstyled])[data-filled-sm='true'] {
-      --leverui-private-checkmark-fill: var(--leverui-private-checkmark-filled-background);
+      --lui-private-checkmark-fill: var(--lui-private-checkmark-filled-background);
     }
     .leverui-checkmark:not([data-unstyled])[data-filled-sm='false'] {
-      --leverui-private-checkmark-fill: var(--leverui-private-checkmark-background);
+      --lui-private-checkmark-fill: var(--lui-private-checkmark-background);
     }
   }
   @media (min-width: 768px) {
     .leverui-checkmark:not([data-unstyled])[data-filled-md='true'] {
-      --leverui-private-checkmark-fill: var(--leverui-private-checkmark-filled-background);
+      --lui-private-checkmark-fill: var(--lui-private-checkmark-filled-background);
     }
     .leverui-checkmark:not([data-unstyled])[data-filled-md='false'] {
-      --leverui-private-checkmark-fill: var(--leverui-private-checkmark-background);
+      --lui-private-checkmark-fill: var(--lui-private-checkmark-background);
     }
   }
   @media (min-width: 1024px) {
     .leverui-checkmark:not([data-unstyled])[data-filled-lg='true'] {
-      --leverui-private-checkmark-fill: var(--leverui-private-checkmark-filled-background);
+      --lui-private-checkmark-fill: var(--lui-private-checkmark-filled-background);
     }
     .leverui-checkmark:not([data-unstyled])[data-filled-lg='false'] {
-      --leverui-private-checkmark-fill: var(--leverui-private-checkmark-background);
+      --lui-private-checkmark-fill: var(--lui-private-checkmark-background);
     }
   }
   @media (min-width: 1280px) {
     .leverui-checkmark:not([data-unstyled])[data-filled-xl='true'] {
-      --leverui-private-checkmark-fill: var(--leverui-private-checkmark-filled-background);
+      --lui-private-checkmark-fill: var(--lui-private-checkmark-filled-background);
     }
     .leverui-checkmark:not([data-unstyled])[data-filled-xl='false'] {
-      --leverui-private-checkmark-fill: var(--leverui-private-checkmark-background);
+      --lui-private-checkmark-fill: var(--lui-private-checkmark-background);
     }
   }
   @media (min-width: 1536px) {
     .leverui-checkmark:not([data-unstyled])[data-filled-2xl='true'] {
-      --leverui-private-checkmark-fill: var(--leverui-private-checkmark-filled-background);
+      --lui-private-checkmark-fill: var(--lui-private-checkmark-filled-background);
     }
     .leverui-checkmark:not([data-unstyled])[data-filled-2xl='false'] {
-      --leverui-private-checkmark-fill: var(--leverui-private-checkmark-background);
+      --lui-private-checkmark-fill: var(--lui-private-checkmark-background);
     }
   }
 }

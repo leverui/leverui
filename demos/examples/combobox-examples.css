@@ -1,16 +1,16 @@
 .example-combobox-logo {
-  width: var(--leverui-sizes-4\.5);
-  height: var(--leverui-sizes-4\.5);
+  width: var(--lui-sizes-4\.5);
+  height: var(--lui-sizes-4\.5);
 }
 
 .example-combobox-name {
-  font-weight: var(--leverui-font-weights-medium);
+  font-weight: var(--lui-font-weights-medium);
 }
 
 .example-combobox-caption {
-  margin-bottom: var(--leverui-spacing-6);
+  margin-bottom: var(--lui-spacing-6);
 }
 
 .example-combobox-link-icon {
-  font-size: var(--leverui-font-sizes-2xs);
+  font-size: var(--lui-font-sizes-2xs);
 }

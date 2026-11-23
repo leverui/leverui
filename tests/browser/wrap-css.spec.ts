@@ -14,9 +14,9 @@ const serverEntry = '../../dist/server/index.js';
 const { Wrap, WrapItem } = (await import(serverEntry)) as ServerExports;
 const defaultCss = await readFile(new URL('../../dist/styles.css', import.meta.url), 'utf8');
 const consumerCss = `
-  .responsive-item { --leverui-wrap-item-align: flex-start; }
+  .responsive-item { --lui-wrap-item-align: flex-start; }
   @media (min-width: 48rem) {
-    .responsive-item { --leverui-wrap-item-align: center; }
+    .responsive-item { --lui-wrap-item-align: center; }
   }
 `;
 

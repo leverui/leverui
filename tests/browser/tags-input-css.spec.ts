@@ -87,7 +87,7 @@ async function verifiesConsumerCss({ page }: { page: Page }): Promise<void> {
   await expect(root).toBeVisible({ timeout: 30_000 });
   await page.addStyleTag({
     content: `[data-testid='tags-css-responsive'] {
-      --leverui-colors-color-palette-subtle: rgb(10 90 150);
+      --lui-colors-color-palette-subtle: rgb(10 90 150);
     }`,
   });
   await expect(preview).toHaveCSS('background-color', 'rgb(10, 90, 150)');

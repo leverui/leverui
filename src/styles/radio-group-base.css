@@ -3,22 +3,19 @@
     display: inline-flex;
     align-items: center;
     position: relative;
-    font-weight: var(--leverui-font-weights-medium);
-    gap: var(--leverui-radio-group-item-gap, var(--leverui-private-radio-group-item-gap));
-    font-size: var(
-      --leverui-radio-group-item-font-size,
-      var(--leverui-private-radio-group-font-size)
-    );
-    line-height: var(--leverui-private-radio-group-line-height);
+    font-weight: var(--lui-font-weights-medium);
+    gap: var(--lui-radio-group-item-gap, var(--lui-private-radio-group-item-gap));
+    font-size: var(--lui-radio-group-item-font-size, var(--lui-private-radio-group-font-size));
+    line-height: var(--lui-private-radio-group-line-height);
   }
 
   .leverui-radio-group__item:not([data-unstyled])[data-disabled] {
-    cursor: var(--leverui-cursor-disabled);
+    cursor: var(--lui-cursor-disabled);
   }
 
   .leverui-radio-group__label:not([data-unstyled]) {
     user-select: none;
-    font-size: var(--leverui-font-sizes-sm);
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
   }
 
@@ -29,6 +26,6 @@
   .leverui-radio-group__itemControl:not([data-unstyled])[data-variant='outline']:not(
       [data-checked]
     ) {
-    --leverui-private-radiomark-border: var(--leverui-colors-border);
+    --lui-private-radiomark-border: var(--lui-colors-border);
   }
 }

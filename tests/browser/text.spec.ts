@@ -15,11 +15,11 @@ const { Text, TextPropsProvider } = (await import(serverEntry)) as ServerExports
 const defaultCss = await readFile(new URL('../../dist/styles.css', import.meta.url), 'utf8');
 const responsiveTextCss = `
   .text-server-responsive, .text-hydration-responsive {
-    font-size: var(--leverui-font-sizes-sm);
+    font-size: var(--lui-font-sizes-sm);
   }
   @media (min-width: 48rem) {
     .text-server-responsive, .text-hydration-responsive {
-      font-size: var(--leverui-font-sizes-lg);
+      font-size: var(--lui-font-sizes-lg);
     }
   }
 `;

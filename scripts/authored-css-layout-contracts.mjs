@@ -13,7 +13,7 @@ export const layoutContracts = [
       ),
       "[dir='ltr']",
       "[dir='rtl']",
-      '--leverui-private-absolute-center-inline-translate',
+      '--lui-private-absolute-center-inline-translate',
     ],
   },
   {
@@ -25,7 +25,7 @@ export const layoutContracts = [
       '& > :is(img, video)',
       ...['base', 'sm', 'md', 'lg', 'xl', '2xl'].map(
         /** Require native ratio values at every ordinary breakpoint. */
-        (breakpoint) => `--leverui-private-aspect-ratio-padding-${breakpoint}`,
+        (breakpoint) => `--lui-private-aspect-ratio-padding-${breakpoint}`,
       ),
     ],
   },
@@ -38,7 +38,7 @@ export const layoutContracts = [
         (edge) =>
           ['base', 'sm', 'md', 'lg', 'xl', '2xl'].map(
             /** Keep every logical Bleed edge responsive in authored CSS. */
-            (breakpoint) => `--leverui-private-bleed-${edge}-${breakpoint}`,
+            (breakpoint) => `--lui-private-bleed-${edge}-${breakpoint}`,
           ),
       ),
     ],
@@ -47,8 +47,8 @@ export const layoutContracts = [
     family: 'center',
     required: [
       '.leverui-center',
-      '--leverui-center-align',
-      '--leverui-center-justify',
+      '--lui-center-align',
+      '--lui-center-justify',
       "[data-inline='true']",
       '[data-unstyled]',
       ...['sm', 'md', 'lg', 'xl', '2xl'].flatMap(
@@ -70,7 +70,7 @@ export const layoutContracts = [
         (alias) =>
           ['base', 'sm', 'md', 'lg', 'xl', '2xl'].map(
             /** Keep the authored responsive Flex contract complete. */
-            (breakpoint) => `--leverui-private-flex-${alias}-${breakpoint}`,
+            (breakpoint) => `--lui-private-flex-${alias}-${breakpoint}`,
           ),
       ),
     ],
@@ -94,7 +94,7 @@ export const layoutContracts = [
         (alias) =>
           ['base', 'sm', 'md', 'lg', 'xl', '2xl'].map(
             /** Keep the native Grid CSS variable contract complete. */
-            (breakpoint) => `--leverui-private-grid-${alias}-${breakpoint}`,
+            (breakpoint) => `--lui-private-grid-${alias}-${breakpoint}`,
           ),
       ),
     ],
@@ -110,7 +110,7 @@ export const layoutContracts = [
             /** Keep each conditional selector and variable complete. */
             (breakpoint) => [
               `[data-grid-item-${alias}-${breakpoint}]`,
-              `--leverui-private-grid-item-${alias}-${breakpoint}`,
+              `--lui-private-grid-item-${alias}-${breakpoint}`,
             ],
           ),
       ),
@@ -125,8 +125,8 @@ export const layoutContracts = [
       ...['base', 'sm', 'md', 'lg', 'xl', '2xl'].flatMap(
         /** Require layout and both separator axes at each breakpoint. */
         (breakpoint) => [
-          `--leverui-private-stack-gap-${breakpoint}`,
-          `--leverui-private-stack-render-gap-${breakpoint}`,
+          `--lui-private-stack-gap-${breakpoint}`,
+          `--lui-private-stack-render-gap-${breakpoint}`,
           `[data-direction-${breakpoint}='column']`,
           `[data-direction-${breakpoint}='row']`,
         ],
@@ -137,25 +137,25 @@ export const layoutContracts = [
     family: 'spacer',
     required: [
       '.leverui-spacer:not([data-unstyled])',
-      '--leverui-spacer-flex',
+      '--lui-spacer-flex',
       ...['base', 'sm', 'md', 'lg', 'xl', '2xl'].flatMap(
         /** Require each responsive native flex selection. */
         (breakpoint) => [
           `[data-spacer-flex-${breakpoint}]`,
-          `--leverui-private-spacer-flex-${breakpoint}`,
+          `--lui-private-spacer-flex-${breakpoint}`,
         ],
       ),
     ],
   },
   {
     family: 'sticky',
-    required: ['.leverui-sticky:not([data-unstyled])', 'position: sticky', '--leverui-sticky-top'],
+    required: ['.leverui-sticky:not([data-unstyled])', 'position: sticky', '--lui-sticky-top'],
   },
   {
     family: 'wrap',
     required: [
       '.leverui-wrap:not([data-unstyled])',
-      '--leverui-wrap-gap',
+      '--lui-wrap-gap',
       ...['align', 'justify', 'direction', 'gap', 'row-gap', 'column-gap'].flatMap(
         /** Require every Wrap alias at every ordinary breakpoint. */
         (alias) =>
@@ -163,20 +163,20 @@ export const layoutContracts = [
             /** Keep selector and variable coverage together. */
             (breakpoint) => [
               `[data-wrap-${alias}-${breakpoint}]`,
-              `--leverui-private-wrap-${alias}-${breakpoint}`,
+              `--lui-private-wrap-${alias}-${breakpoint}`,
             ],
           ),
       ),
       '.leverui-wrap__listitem:not([data-unstyled])',
-      '--leverui-wrap-item-align',
+      '--lui-wrap-item-align',
     ],
   },
   {
     family: 'container',
     required: [
       '.leverui-container:not([data-unstyled])',
-      '--leverui-container-max-width',
-      '--leverui-container-padding',
+      '--lui-container-max-width',
+      '--lui-container-padding',
       ...['base', 'sm', 'md', 'lg', 'xl', '2xl'].flatMap(
         /** Require both variant values at each supported breakpoint. */
         (breakpoint) => [

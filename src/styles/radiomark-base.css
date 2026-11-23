@@ -1,32 +1,32 @@
 @layer leverui.recipes {
   .leverui-radiomark:not([data-unstyled]) {
-    --leverui-private-radiomark-unfilled-background: transparent;
-    --leverui-private-radiomark-background: var(--leverui-private-radiomark-unfilled-background);
-    --leverui-private-radiomark-border: transparent;
-    --leverui-private-radiomark-color: var(--leverui-colors-white);
-    --leverui-private-radiomark-checked-background: transparent;
-    --leverui-private-radiomark-checked-border: transparent;
-    --leverui-private-radiomark-checked-color: var(--leverui-colors-white);
-    --leverui-private-radiomark-dot-scale: 0.4;
+    --lui-private-radiomark-unfilled-background: transparent;
+    --lui-private-radiomark-background: var(--lui-private-radiomark-unfilled-background);
+    --lui-private-radiomark-border: transparent;
+    --lui-private-radiomark-color: var(--lui-colors-white);
+    --lui-private-radiomark-checked-background: transparent;
+    --lui-private-radiomark-checked-border: transparent;
+    --lui-private-radiomark-checked-color: var(--lui-colors-white);
+    --lui-private-radiomark-dot-scale: 0.4;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
     vertical-align: top;
-    width: var(--leverui-private-radiomark-size);
-    height: var(--leverui-private-radiomark-size);
-    border: 1px solid var(--leverui-private-radiomark-border);
-    border-radius: var(--leverui-radii-full);
-    color: var(--leverui-private-radiomark-color);
-    background-color: var(--leverui-private-radiomark-background);
-    cursor: var(--leverui-cursor-radio, pointer);
+    width: var(--lui-private-radiomark-size);
+    height: var(--lui-private-radiomark-size);
+    border: 1px solid var(--lui-private-radiomark-border);
+    border-radius: var(--lui-radii-full);
+    color: var(--lui-private-radiomark-color);
+    background-color: var(--lui-private-radiomark-background);
+    cursor: var(--lui-cursor-radio, pointer);
   }
 
   .leverui-radiomark:not([data-unstyled]) > .leverui-radiomark__dot {
     width: 100%;
     height: 100%;
-    border-radius: var(--leverui-radii-full);
+    border-radius: var(--lui-radii-full);
     background-color: currentColor;
-    scale: var(--leverui-private-radiomark-dot-scale);
+    scale: var(--lui-private-radiomark-dot-scale);
   }
 }

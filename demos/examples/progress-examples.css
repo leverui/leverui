@@ -1,11 +1,11 @@
 .example-progress-sample {
-  max-width: var(--leverui-sizes-60);
+  max-width: var(--lui-sizes-60);
 }
 
 .example-progress-label-row {
-  margin-bottom: var(--leverui-spacing-1);
+  margin-bottom: var(--lui-spacing-1);
 }
 
 .example-progress-label {
-  margin-bottom: var(--leverui-spacing-2);
+  margin-bottom: var(--lui-spacing-2);
 }

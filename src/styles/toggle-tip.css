@@ -2,10 +2,10 @@
   /* The compact help surface that ToggleTip and InfoTip render. */
   .leverui-popover__content.leverui-toggle-tip:not([data-unstyled]) {
     width: auto;
-    padding-inline: var(--leverui-spacing-2);
-    padding-block: var(--leverui-spacing-1);
-    font-size: var(--leverui-font-sizes-xs);
+    padding-inline: var(--lui-spacing-2);
+    padding-block: var(--lui-spacing-1);
+    font-size: var(--lui-font-sizes-xs);
     line-height: 1rem;
-    border-radius: var(--leverui-radii-sm);
+    border-radius: var(--lui-radii-sm);
   }
 }

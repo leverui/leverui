@@ -47,7 +47,7 @@ async function verifiesChartCss({ page }: { page: Page }): Promise<void> {
   await expect(scatter).toHaveAttribute('data-native-key', 'ArrowRight');
   await page.addStyleTag({
     content:
-      ':root { --leverui-radar-chart-grid-fill: rgb(255, 0, 0); --leverui-scatter-chart-trend-stroke: rgb(0, 128, 0); }',
+      ':root { --lui-radar-chart-grid-fill: rgb(255, 0, 0); --lui-scatter-chart-trend-stroke: rgb(0, 128, 0); }',
   });
   await expect(radar.locator('.leverui-radar-chart__ring').first()).toHaveCSS(
     'fill',
@@ -58,7 +58,7 @@ async function verifiesChartCss({ page }: { page: Page }): Promise<void> {
     'rgb(0, 128, 0)',
   );
   const widthOverride = await page.addStyleTag({
-    content: ':root { --leverui-radar-chart-width: 300px; }',
+    content: ':root { --lui-radar-chart-width: 300px; }',
   });
   await expect(radar).toHaveCSS('width', '300px');
   await radar.focus();

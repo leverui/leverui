@@ -119,7 +119,7 @@ export function RadialBarChart(props: RadialBarChartProps): JSX.Element {
         /** Preserve consumer keyboard handling. */ (event) =>
           runRadialEvent(event, keyDown, props.onKeyDown)
       }
-      style={chartRootStyle('--leverui-private-radial-bar-size', props.size, props.style)}
+      style={chartRootStyle('--lui-private-radial-bar-size', props.size, props.style)}
     >
       <svg
         ref={svgRef}

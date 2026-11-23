@@ -4,7 +4,7 @@
 
 .toggle-css-instance {
   border: 5px solid #a855f7;
-  --leverui-toggle-empty-indicator-display: inline;
+  --lui-toggle-empty-indicator-display: inline;
 }
 
 .toggle-css-named .toggle-css-indicator,

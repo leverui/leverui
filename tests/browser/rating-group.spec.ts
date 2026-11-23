@@ -63,7 +63,7 @@ async function verifiesRatingCssOverride({ page }: { page: Page }): Promise<void
   await expect(root).toHaveAttribute('data-size', 'sm');
   await page.addStyleTag({
     content:
-      '.leverui-rating-group__root { --leverui-rating-group-foreground-color: rgb(1, 2, 3); --leverui-rating-group-item-font-size: 37px; }',
+      '.leverui-rating-group__root { --lui-rating-group-foreground-color: rgb(1, 2, 3); --lui-rating-group-item-font-size: 37px; }',
   });
   const foreground = selected.locator('[data-fg]');
   const color = await foreground.evaluate(

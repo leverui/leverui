@@ -49,7 +49,7 @@ to it. Style `[data-highlighted]`.
 
 ```css
 .custom-highlight[data-highlighted] {
-  background: var(--leverui-colors-blue-500);
+  background: var(--lui-colors-blue-500);
   color: white;
 }
 ```
@@ -70,7 +70,7 @@ Style `[data-state='open']` on the trigger.
 
 ```css
 .custom-trigger[data-state='open'] {
-  background: var(--leverui-colors-blue-500);
+  background: var(--lui-colors-blue-500);
   color: white;
 }
 ```
@@ -149,12 +149,12 @@ nested menus keep them.
 
 ```css
 .account-menu {
-  --leverui-menu-background: var(--leverui-colors-bg-subtle);
+  --lui-menu-background: var(--lui-colors-bg-subtle);
 }
 ```
 
-Variables: `--leverui-menu-background`, `--leverui-menu-z-index`,
-`--leverui-menu-highlight-background`, `--leverui-menu-highlight-color`.
+Variables: `--lui-menu-background`, `--lui-menu-z-index`,
+`--lui-menu-highlight-background`, `--lui-menu-highlight-color`.
 `unstyled` on `Root` or a part turns off its default styles.
 
 ## Explorer

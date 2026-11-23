@@ -20,7 +20,7 @@ async function verifiesMenuCss({ page }: { page: Page }): Promise<void> {
   await expect(item).toHaveCSS('font-size', '14px');
   await expect(item).toHaveAttribute('data-variant-md', 'solid');
   await page.addStyleTag({
-    content: '.consumer-menu { --leverui-menu-background: rgb(12, 34, 56); }',
+    content: '.consumer-menu { --lui-menu-background: rgb(12, 34, 56); }',
   });
   await expect(content).toHaveCSS('background-color', 'rgb(12, 34, 56)');
 }

@@ -1,40 +1,40 @@
 @layer leverui.recipes {
   .leverui-alert__root:not([data-unstyled]) {
-    gap: var(--leverui-private-alert-gap);
-    padding: var(--leverui-private-alert-padding);
-    font-size: var(--leverui-private-alert-font-size);
-    line-height: var(--leverui-private-alert-line-height);
+    gap: var(--lui-private-alert-gap);
+    padding: var(--lui-private-alert-padding);
+    font-size: var(--lui-private-alert-font-size);
+    line-height: var(--lui-private-alert-line-height);
 
     & .leverui-alert__indicator:not([data-unstyled]) {
-      font-size: var(--leverui-private-alert-indicator-font-size);
-      line-height: var(--leverui-private-alert-indicator-line-height);
+      font-size: var(--lui-private-alert-indicator-font-size);
+      line-height: var(--lui-private-alert-indicator-line-height);
     }
 
     &[data-size='sm'] {
-      --leverui-private-alert-gap: var(--leverui-spacing-2);
-      --leverui-private-alert-padding: var(--leverui-spacing-3);
-      --leverui-private-alert-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-alert-line-height: 1rem;
-      --leverui-private-alert-indicator-font-size: var(--leverui-font-sizes-lg);
-      --leverui-private-alert-indicator-line-height: 1.75rem;
+      --lui-private-alert-gap: var(--lui-spacing-2);
+      --lui-private-alert-padding: var(--lui-spacing-3);
+      --lui-private-alert-font-size: var(--lui-font-sizes-xs);
+      --lui-private-alert-line-height: 1rem;
+      --lui-private-alert-indicator-font-size: var(--lui-font-sizes-lg);
+      --lui-private-alert-indicator-line-height: 1.75rem;
     }
 
     &[data-size='md'] {
-      --leverui-private-alert-gap: var(--leverui-spacing-3);
-      --leverui-private-alert-padding: var(--leverui-spacing-4);
-      --leverui-private-alert-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-alert-line-height: 1.25rem;
-      --leverui-private-alert-indicator-font-size: var(--leverui-font-sizes-xl);
-      --leverui-private-alert-indicator-line-height: 1.875rem;
+      --lui-private-alert-gap: var(--lui-spacing-3);
+      --lui-private-alert-padding: var(--lui-spacing-4);
+      --lui-private-alert-font-size: var(--lui-font-sizes-sm);
+      --lui-private-alert-line-height: 1.25rem;
+      --lui-private-alert-indicator-font-size: var(--lui-font-sizes-xl);
+      --lui-private-alert-indicator-line-height: 1.875rem;
     }
 
     &[data-size='lg'] {
-      --leverui-private-alert-gap: var(--leverui-spacing-3);
-      --leverui-private-alert-padding: var(--leverui-spacing-4);
-      --leverui-private-alert-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-alert-line-height: 1.5rem;
-      --leverui-private-alert-indicator-font-size: var(--leverui-font-sizes-2xl);
-      --leverui-private-alert-indicator-line-height: 2rem;
+      --lui-private-alert-gap: var(--lui-spacing-3);
+      --lui-private-alert-padding: var(--lui-spacing-4);
+      --lui-private-alert-font-size: var(--lui-font-sizes-md);
+      --lui-private-alert-line-height: 1.5rem;
+      --lui-private-alert-indicator-font-size: var(--lui-font-sizes-2xl);
+      --lui-private-alert-indicator-line-height: 2rem;
     }
   }
 }

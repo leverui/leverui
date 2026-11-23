@@ -123,7 +123,7 @@ Import `@leverui/components/styles.css`, then style `.leverui-status__root` and
 
 Root attributes: `data-size`, `data-size-sm` through `data-size-2xl` for sizes
 set per screen size, and `data-leverui-color-palette`. Override the
-`--leverui-*` variables for a whole theme or for one Status root.
+`--lui-*` variables for a whole theme or for one Status root.
 
 ```css
 .leverui-status__indicator {

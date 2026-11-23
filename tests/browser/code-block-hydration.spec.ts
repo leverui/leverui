@@ -28,7 +28,7 @@ async function verifiesCodeBlockHydration({ page }: { page: Page }): Promise<voi
   );
   await page.goto('/iframe.html?id=setup-hydration-host--ready');
   await page.setContent(
-    `${generateHydrationScript()}<style>${defaultCss}</style><style>#hydrated-custom-code-block { --leverui-code-block-radius: 23px; }</style><div id="code-block-hydration-root">${markup}</div>`,
+    `${generateHydrationScript()}<style>${defaultCss}</style><style>#hydrated-custom-code-block { --lui-code-block-radius: 23px; }</style><div id="code-block-hydration-root">${markup}</div>`,
   );
   const code = page.locator('#hydrated-code-block-code');
   const content = page.locator('#hydrated-code-block-content');

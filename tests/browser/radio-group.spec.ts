@@ -60,7 +60,7 @@ async function verifiesRadioGroupConsumerCss({ page }: { page: Page }): Promise<
     content: `
       .consumer-radio-group { display: grid; }
       .consumer-radio-group-label { font-size: 18px; }
-      .consumer-radio-group-item { --leverui-radio-group-item-gap: 17px; }
+      .consumer-radio-group-item { --lui-radio-group-item-gap: 17px; }
       .consumer-radio-group-control { width: 26px; }
       .consumer-radio-group-text { letter-spacing: 2px; }
     `,

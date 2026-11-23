@@ -20,9 +20,9 @@ export function TimelineWithSizes(): JSX.Element {
                   </Avatar.Root>
                 </Timeline.Indicator>
               </Timeline.Connector>
-              <Timeline.Content style={{ 'font-size': 'var(--leverui-font-sizes-xs)' }}>
+              <Timeline.Content style={{ 'font-size': 'var(--lui-font-sizes-xs)' }}>
                 <Timeline.Title>
-                  <Span style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>wren</Span>{' '}
+                  <Span style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>wren</Span>{' '}
                   created a new project
                 </Timeline.Title>
               </Timeline.Content>
@@ -34,9 +34,9 @@ export function TimelineWithSizes(): JSX.Element {
                   <CheckIcon />
                 </Timeline.Indicator>
               </Timeline.Connector>
-              <Timeline.Content style={{ 'font-size': 'var(--leverui-font-sizes-xs)' }}>
+              <Timeline.Content style={{ 'font-size': 'var(--lui-font-sizes-xs)' }}>
                 <Timeline.Title style={size === 'sm' ? { 'margin-top': '-2px' } : undefined}>
-                  <Span style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>wren</Span>{' '}
+                  <Span style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>wren</Span>{' '}
                   changed status from <Badge size="sm">In progress</Badge> to{' '}
                   <Badge colorPalette="teal" size="sm">
                     Completed
@@ -70,7 +70,7 @@ export function TimelineWithVariants(): JSX.Element {
               </Timeline.Connector>
               <Timeline.Content>
                 <Timeline.Title>
-                  <Span style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>wren</Span>{' '}
+                  <Span style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>wren</Span>{' '}
                   created a new project
                 </Timeline.Title>
               </Timeline.Content>
@@ -84,7 +84,7 @@ export function TimelineWithVariants(): JSX.Element {
               </Timeline.Connector>
               <Timeline.Content>
                 <Timeline.Title>
-                  <Span style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>wren</Span>{' '}
+                  <Span style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>wren</Span>{' '}
                   changed status from <Badge>In progress</Badge> to{' '}
                   <Badge colorPalette="teal">Completed</Badge>
                 </Timeline.Title>

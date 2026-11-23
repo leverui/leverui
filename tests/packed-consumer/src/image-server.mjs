@@ -27,6 +27,6 @@ assert.match(markup, /width="200"/);
 assert.match(markup, /height="100"/);
 assert.match(markup, /leverui-image/);
 assert.match(markup, /data-fit-base="contain"/);
-assert.match(markup, /--leverui-private-image-align-base:left top/);
+assert.match(markup, /--lui-private-image-align-base:left top/);
 assert.doesNotMatch(markup, /\s(?:fit|align|htmlWidth|htmlHeight)=/);
 console.log('Packed Image server rendering passed.');

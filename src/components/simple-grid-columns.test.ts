@@ -17,10 +17,10 @@ function verifiesColumnCounts(): void {
 /** Verify public size variables and CSS length fallbacks. */
 function verifiesMinimumWidths(): void {
   expect(widthToColumns('24')).toEqual({
-    base: 'repeat(auto-fit, minmax(var(--leverui-sizes-24), 1fr))',
+    base: 'repeat(auto-fit, minmax(var(--lui-sizes-24), 1fr))',
   });
   expect(widthToColumns(111)).toEqual({
-    base: 'repeat(auto-fit, minmax(var(--leverui-sizes-111, 111px), 1fr))',
+    base: 'repeat(auto-fit, minmax(var(--lui-sizes-111, 111px), 1fr))',
   });
   expect(widthToColumns({ base: '100px', md: 'min(30vw, 16rem)' })).toEqual({
     base: 'repeat(auto-fit, minmax(100px, 1fr))',

@@ -2,61 +2,61 @@
   .leverui-sparkline:not([data-unstyled]) {
     display: block;
     overflow: visible;
-    width: var(--leverui-sparkline-width, 112px);
-    height: var(--leverui-sparkline-height, 48px);
+    width: var(--lui-sparkline-width, 112px);
+    height: var(--lui-sparkline-height, 48px);
 
     .leverui-sparkline__gradient-start {
-      stop-color: var(--leverui-sparkline-color, var(--leverui-colors-teal-solid));
+      stop-color: var(--lui-sparkline-color, var(--lui-colors-teal-solid));
       stop-opacity: 1;
     }
 
     .leverui-sparkline__gradient-end {
-      stop-color: var(--leverui-sparkline-color, var(--leverui-colors-teal-solid));
+      stop-color: var(--lui-sparkline-color, var(--lui-colors-teal-solid));
       stop-opacity: 0.01;
     }
 
     .leverui-sparkline__area {
-      fill-opacity: var(--leverui-sparkline-area-opacity, 0.2);
+      fill-opacity: var(--lui-sparkline-area-opacity, 0.2);
     }
 
     &[data-gradient] .leverui-sparkline__area {
-      fill-opacity: var(--leverui-sparkline-area-opacity, 0.6);
+      fill-opacity: var(--lui-sparkline-area-opacity, 0.6);
     }
 
     .leverui-sparkline__area:not([fill]) {
-      fill: var(--leverui-sparkline-color, var(--leverui-colors-teal-solid));
+      fill: var(--lui-sparkline-color, var(--lui-colors-teal-solid));
     }
 
     .leverui-sparkline__line {
-      stroke: var(--leverui-sparkline-color, var(--leverui-colors-teal-solid));
-      stroke-width: var(--leverui-sparkline-line-width, 2);
+      stroke: var(--lui-sparkline-color, var(--lui-colors-teal-solid));
+      stroke-width: var(--lui-sparkline-line-width, 2);
     }
 
     .leverui-sparkline__bar {
       fill: var(
-        --leverui-private-sparkline-bar-color,
-        var(--leverui-sparkline-color, var(--leverui-colors-teal-solid))
+        --lui-private-sparkline-bar-color,
+        var(--lui-sparkline-color, var(--lui-colors-teal-solid))
       );
     }
 
     .leverui-sparkline__reference-line {
-      stroke: var(--leverui-sparkline-reference-color, var(--leverui-colors-border-emphasized));
+      stroke: var(--lui-sparkline-reference-color, var(--lui-colors-border-emphasized));
       stroke-dasharray: 4 4;
     }
 
     .leverui-sparkline__reference-label {
-      fill: var(--leverui-sparkline-label-color, var(--leverui-colors-fg-muted));
+      fill: var(--lui-sparkline-label-color, var(--lui-colors-fg-muted));
       font-size: 12px;
     }
 
     .leverui-sparkline__active-guide {
-      stroke: var(--leverui-sparkline-color, var(--leverui-colors-teal-solid));
+      stroke: var(--lui-sparkline-color, var(--lui-colors-teal-solid));
       stroke-width: 1;
     }
 
     .leverui-sparkline__active-point {
-      fill: var(--leverui-sparkline-color, var(--leverui-colors-teal-solid));
-      stroke: var(--leverui-sparkline-active-point-stroke, var(--leverui-colors-bg));
+      fill: var(--lui-sparkline-color, var(--lui-colors-teal-solid));
+      stroke: var(--lui-sparkline-active-point-stroke, var(--lui-colors-bg));
       stroke-width: 2;
     }
   }

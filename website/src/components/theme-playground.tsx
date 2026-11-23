@@ -23,7 +23,7 @@ export function ThemePlayground(): JSX.Element {
   const css = createMemo(
     /** Generate a portable override for a consumer stylesheet. */
     () =>
-      `:root {\n  --leverui-colors-blue-solid: ${color()};\n  --leverui-colors-blue-contrast: ${contrast()};\n  --leverui-radii-l2: ${radius()}px;\n}`,
+      `:root {\n  --lui-colors-blue-solid: ${color()};\n  --lui-colors-blue-contrast: ${contrast()};\n  --lui-radii-l2: ${radius()}px;\n}`,
   );
 
   /** Apply a named color preset. */
@@ -111,9 +111,9 @@ export function ThemePlayground(): JSX.Element {
       <Theme
         class="playground-preview"
         style={{
-          '--leverui-colors-blue-solid': color(),
-          '--leverui-colors-blue-contrast': contrast(),
-          '--leverui-radii-l2': `${radius()}px`,
+          '--lui-colors-blue-solid': color(),
+          '--lui-colors-blue-contrast': contrast(),
+          '--lui-radii-l2': `${radius()}px`,
         }}
       >
         <div class="playground-preview-heading">

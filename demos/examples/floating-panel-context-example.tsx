@@ -88,7 +88,7 @@ export function FloatingPanelContext(): JSX.Element {
               <Text
                 textStyle="sm"
                 style={{
-                  'margin-bottom': 'var(--leverui-spacing-3)',
+                  'margin-bottom': 'var(--lui-spacing-3)',
                 }}
               >
                 Control the panel from inside the body using <code>useFloatingPanelContext</code>.

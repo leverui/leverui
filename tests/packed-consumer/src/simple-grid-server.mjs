@@ -19,9 +19,6 @@ function renderInstalledGrid() {
 const markup = renderInstalledGrid();
 assert.match(markup, /id="packed-server-simple-grid"/);
 assert.match(markup, /leverui-simple-grid/);
-assert.match(
-  markup,
-  /--leverui-private-grid-template-columns-base:repeat\(2,\s*minmax\(0,\s*1fr\)\)/,
-);
+assert.match(markup, /--lui-private-grid-template-columns-base:repeat\(2,\s*minmax\(0,\s*1fr\)\)/);
 assert.doesNotMatch(markup, /\scolumns=/);
 console.log('Packed SimpleGrid server rendering passed.');

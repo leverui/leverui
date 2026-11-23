@@ -16,7 +16,7 @@ export function IconButtonBasic(): JSX.Element {
 /** Apply the full rounding to the support button. */
 export function IconButtonRounded(): JSX.Element {
   return (
-    <IconButton aria-label="Call support" style={{ 'border-radius': 'var(--leverui-radii-full)' }}>
+    <IconButton aria-label="Call support" style={{ 'border-radius': 'var(--lui-radii-full)' }}>
       <VoicemailIcon />
     </IconButton>
   );

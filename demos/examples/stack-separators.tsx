@@ -37,9 +37,7 @@ export function StackWithCustomSeparator(): JSX.Element {
     <Stack
       separator={
         /** Give each gap an individually styled red separator. */
-        (props) => (
-          <Separator {...props} style={{ 'border-color': 'var(--leverui-colors-red-500)' }} />
-        )
+        (props) => <Separator {...props} style={{ 'border-color': 'var(--lui-colors-red-500)' }} />
       }
     >
       <Box
@@ -65,8 +63,8 @@ export function StackWithCustomSeparator(): JSX.Element {
 export function StackWithResponsiveSeparator(): JSX.Element {
   return (
     <>
-      <style>{`.stack-gallery-responsive-separator { border-color: var(--leverui-colors-green-500); }
-        @media (min-width: 48rem) { .stack-gallery-responsive-separator { border-color: var(--leverui-colors-red-200); } }`}</style>
+      <style>{`.stack-gallery-responsive-separator { border-color: var(--lui-colors-green-500); }
+        @media (min-width: 48rem) { .stack-gallery-responsive-separator { border-color: var(--lui-colors-red-200); } }`}</style>
       <Stack
         direction={['column', 'row']}
         separator={
@@ -74,7 +72,7 @@ export function StackWithResponsiveSeparator(): JSX.Element {
           (props) => <StackSeparator {...props} class="stack-gallery-responsive-separator" />
         }
         gap={4}
-        style={{ 'margin-top': 'var(--leverui-spacing-10)' }}
+        style={{ 'margin-top': 'var(--lui-spacing-10)' }}
       >
         <For each={['1', '2', '3'] as const}>
           {(label) => (

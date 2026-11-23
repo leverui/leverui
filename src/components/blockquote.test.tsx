@@ -132,7 +132,7 @@ function verifiesAuthoredChoices(): void {
           justify={{ base: 'start', md: 'end' }}
           title="Custom quote"
           class="article-quote"
-          style={{ '--leverui-colors-color-palette-solid': 'rebeccapurple' }}
+          style={{ '--lui-colors-color-palette-solid': 'rebeccapurple' }}
           data-testid="authored-quote"
         >
           <Blockquote.Content class="custom-content">Custom</Blockquote.Content>
@@ -147,9 +147,7 @@ function verifiesAuthoredChoices(): void {
   expect(quote.getAttribute('data-variant-md')).toBe('solid');
   expect(quote.getAttribute('data-justify-md')).toBe('end');
   expect(quote.classList.contains('article-quote')).toBe(true);
-  expect(quote.style.getPropertyValue('--leverui-colors-color-palette-solid')).toBe(
-    'rebeccapurple',
-  );
+  expect(quote.style.getPropertyValue('--lui-colors-color-palette-solid')).toBe('rebeccapurple');
   expect(screen.getByText('Custom').classList.contains('custom-content')).toBe(true);
   expect(quote.hasAttribute('data-leverui-private-style-runtime')).toBe(false);
 }

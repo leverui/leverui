@@ -1,20 +1,20 @@
 @layer leverui.recipes {
   .leverui-popover__content:not([data-unstyled]) {
-    --leverui-popover-background: var(--leverui-colors-bg-panel);
-    --leverui-popover-size: var(--leverui-sizes-xs);
-    --leverui-popover-mobile-size: calc(100dvw - 1rem);
-    --leverui-popover-z-index: var(--leverui-z-index-popover);
-    --leverui-popover-padding: var(--leverui-spacing-5);
+    --lui-popover-background: var(--lui-colors-bg-panel);
+    --lui-popover-size: var(--lui-sizes-xs);
+    --lui-popover-mobile-size: calc(100dvw - 1rem);
+    --lui-popover-z-index: var(--lui-z-index-popover);
+    --lui-popover-padding: var(--lui-spacing-5);
     position: relative;
     display: flex;
     flex-direction: column;
-    font-size: var(--leverui-font-sizes-sm);
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
-    background: var(--leverui-popover-background);
-    box-shadow: var(--leverui-shadows-lg);
-    width: min(var(--leverui-popover-mobile-size), var(--leverui-popover-size));
-    border-radius: var(--leverui-radii-l3);
-    z-index: calc(var(--leverui-popover-z-index) + var(--layer-index, 0));
+    background: var(--lui-popover-background);
+    box-shadow: var(--lui-shadows-lg);
+    width: min(var(--lui-popover-mobile-size), var(--lui-popover-size));
+    border-radius: var(--lui-radii-l3);
+    z-index: calc(var(--lui-popover-z-index) + var(--layer-index, 0));
     outline: 0;
     transform-origin: var(--transform-origin);
     max-height: var(--available-height);
@@ -22,31 +22,31 @@
 
   @media (min-width: 480px) {
     .leverui-popover__content:not([data-unstyled]) {
-      width: var(--leverui-popover-size);
+      width: var(--lui-popover-size);
     }
   }
 
   .leverui-popover__header:not([data-unstyled]) {
-    padding-inline: var(--leverui-popover-padding);
-    padding-top: var(--leverui-popover-padding);
+    padding-inline: var(--lui-popover-padding);
+    padding-top: var(--lui-popover-padding);
   }
 
   .leverui-popover__body:not([data-unstyled]) {
-    padding: var(--leverui-popover-padding);
+    padding: var(--lui-popover-padding);
     flex: 1;
   }
 
   .leverui-popover__footer:not([data-unstyled]) {
     display: flex;
     align-items: center;
-    padding-inline: var(--leverui-popover-padding);
-    padding-bottom: var(--leverui-popover-padding);
+    padding-inline: var(--lui-popover-padding);
+    padding-bottom: var(--lui-popover-padding);
   }
 
   .leverui-popover__arrow:not([data-unstyled]) {
-    --leverui-popover-arrow-size: var(--leverui-sizes-3);
-    --arrow-size: var(--leverui-popover-arrow-size);
-    --arrow-background: var(--leverui-popover-background);
+    --lui-popover-arrow-size: var(--lui-sizes-3);
+    --arrow-size: var(--lui-popover-arrow-size);
+    --arrow-background: var(--lui-popover-background);
   }
 
   .leverui-popover__arrowTip:not([data-unstyled]) {
@@ -57,8 +57,6 @@
   /* Zag 2 sets no z-index and isolates the positioner, so the content's z-index
      cannot escape it. Stack the positioner itself, offset by its layer index. */
   .leverui-popover__positioner {
-    z-index: calc(
-      var(--leverui-popover-z-index, var(--leverui-z-index-popover)) + var(--layer-index, 0)
-    );
+    z-index: calc(var(--lui-popover-z-index, var(--lui-z-index-popover)) + var(--layer-index, 0));
   }
 }

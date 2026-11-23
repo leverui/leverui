@@ -2,93 +2,93 @@
   @media (min-width: 1024px) {
     .leverui-radio-card__item:not([data-unstyled]) {
       &[data-align-lg='start'] {
-        --leverui-private-radio-card-align: flex-start;
-        --leverui-private-radio-card-text-align: start;
+        --lui-private-radio-card-align: flex-start;
+        --lui-private-radio-card-text-align: start;
       }
       &[data-align-lg='center'] {
-        --leverui-private-radio-card-align: center;
-        --leverui-private-radio-card-text-align: center;
+        --lui-private-radio-card-align: center;
+        --lui-private-radio-card-text-align: center;
       }
       &[data-align-lg='end'] {
-        --leverui-private-radio-card-align: flex-end;
-        --leverui-private-radio-card-text-align: end;
+        --lui-private-radio-card-align: flex-end;
+        --lui-private-radio-card-text-align: end;
       }
       &[data-justify-lg='start'] {
-        --leverui-private-radio-card-justify: flex-start;
+        --lui-private-radio-card-justify: flex-start;
       }
       &[data-justify-lg='center'] {
-        --leverui-private-radio-card-justify: center;
+        --lui-private-radio-card-justify: center;
       }
       &[data-justify-lg='end'] {
-        --leverui-private-radio-card-justify: flex-end;
+        --lui-private-radio-card-justify: flex-end;
       }
       &[data-orientation-lg='horizontal'] {
-        --leverui-private-radio-card-direction: row;
+        --lui-private-radio-card-direction: row;
       }
       &[data-orientation-lg='vertical'] {
-        --leverui-private-radio-card-direction: column;
+        --lui-private-radio-card-direction: column;
       }
     }
   }
   @media (min-width: 1280px) {
     .leverui-radio-card__item:not([data-unstyled]) {
       &[data-align-xl='start'] {
-        --leverui-private-radio-card-align: flex-start;
-        --leverui-private-radio-card-text-align: start;
+        --lui-private-radio-card-align: flex-start;
+        --lui-private-radio-card-text-align: start;
       }
       &[data-align-xl='center'] {
-        --leverui-private-radio-card-align: center;
-        --leverui-private-radio-card-text-align: center;
+        --lui-private-radio-card-align: center;
+        --lui-private-radio-card-text-align: center;
       }
       &[data-align-xl='end'] {
-        --leverui-private-radio-card-align: flex-end;
-        --leverui-private-radio-card-text-align: end;
+        --lui-private-radio-card-align: flex-end;
+        --lui-private-radio-card-text-align: end;
       }
       &[data-justify-xl='start'] {
-        --leverui-private-radio-card-justify: flex-start;
+        --lui-private-radio-card-justify: flex-start;
       }
       &[data-justify-xl='center'] {
-        --leverui-private-radio-card-justify: center;
+        --lui-private-radio-card-justify: center;
       }
       &[data-justify-xl='end'] {
-        --leverui-private-radio-card-justify: flex-end;
+        --lui-private-radio-card-justify: flex-end;
       }
       &[data-orientation-xl='horizontal'] {
-        --leverui-private-radio-card-direction: row;
+        --lui-private-radio-card-direction: row;
       }
       &[data-orientation-xl='vertical'] {
-        --leverui-private-radio-card-direction: column;
+        --lui-private-radio-card-direction: column;
       }
     }
   }
   @media (min-width: 1536px) {
     .leverui-radio-card__item:not([data-unstyled]) {
       &[data-align-2xl='start'] {
-        --leverui-private-radio-card-align: flex-start;
-        --leverui-private-radio-card-text-align: start;
+        --lui-private-radio-card-align: flex-start;
+        --lui-private-radio-card-text-align: start;
       }
       &[data-align-2xl='center'] {
-        --leverui-private-radio-card-align: center;
-        --leverui-private-radio-card-text-align: center;
+        --lui-private-radio-card-align: center;
+        --lui-private-radio-card-text-align: center;
       }
       &[data-align-2xl='end'] {
-        --leverui-private-radio-card-align: flex-end;
-        --leverui-private-radio-card-text-align: end;
+        --lui-private-radio-card-align: flex-end;
+        --lui-private-radio-card-text-align: end;
       }
       &[data-justify-2xl='start'] {
-        --leverui-private-radio-card-justify: flex-start;
+        --lui-private-radio-card-justify: flex-start;
       }
       &[data-justify-2xl='center'] {
-        --leverui-private-radio-card-justify: center;
+        --lui-private-radio-card-justify: center;
       }
       &[data-justify-2xl='end'] {
-        --leverui-private-radio-card-justify: flex-end;
+        --lui-private-radio-card-justify: flex-end;
       }
       &[data-orientation-2xl='horizontal'] {
-        --leverui-private-radio-card-direction: row;
+        --lui-private-radio-card-direction: row;
       }
       &[data-orientation-2xl='vertical'] {
-        --leverui-private-radio-card-direction: column;
+        --lui-private-radio-card-direction: column;
       }
     }
   }

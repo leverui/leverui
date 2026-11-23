@@ -100,7 +100,7 @@ async function verifiesCircleConsumerCss({ page }: { page: Page }): Promise<void
   await page.goto('/iframe.html?id=feedback-progress-circle--contract');
   await page.addStyleTag({
     content: `
-      [data-testid='circle-default-root'] { --leverui-progress-circle-size: 56px; }
+      [data-testid='circle-default-root'] { --lui-progress-circle-size: 56px; }
       .consumer-circle-range { stroke: rgb(12, 34, 56); }
     `,
   });

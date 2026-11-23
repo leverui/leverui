@@ -18,7 +18,7 @@ async function verifiesConsumerOverride({ page }: { page: Page }): Promise<void>
 
   const markup = renderToString(renderExample);
   await page.setContent(
-    `<style>${defaultCss}</style><style>:root { --leverui-colors-gray-solid: rgb(98, 84, 199); }</style>${markup}`,
+    `<style>${defaultCss}</style><style>:root { --lui-colors-gray-solid: rgb(98, 84, 199); }</style>${markup}`,
   );
 
   await expect(page.getByTestId('theme-button')).toHaveCSS('background-color', 'rgb(98, 84, 199)');

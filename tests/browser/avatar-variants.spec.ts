@@ -106,11 +106,11 @@ async function verifiesAvatarCssOverride({ page }: { page: Page }): Promise<void
   await expect(solid).toHaveCSS('background-color', 'rgb(37, 99, 235)');
   await page.addStyleTag({
     content:
-      '[data-testid="avatar-variant-solid"] { --leverui-colors-color-palette-solid: rgb(18 52 86); }',
+      '[data-testid="avatar-variant-solid"] { --lui-colors-color-palette-solid: rgb(18 52 86); }',
   });
   await expect(solid).toHaveCSS('background-color', 'rgb(18, 52, 86)');
   await page.addStyleTag({
-    content: '[data-testid="avatar-bordered-group"] { --leverui-avatar-group-overlap: 0px; }',
+    content: '[data-testid="avatar-bordered-group"] { --lui-avatar-group-overlap: 0px; }',
   });
   await expect(page.getByTestId('avatar-bordered-last')).toHaveCSS('margin-inline-start', '0px');
   const unstyled = page.getByTestId('avatar-unstyled');

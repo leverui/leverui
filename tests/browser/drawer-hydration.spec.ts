@@ -83,7 +83,7 @@ async function verifiesInitiallyOpenDrawerHydration({ page }: { page: Page }): P
   );
   await page.goto('/iframe.html?id=setup-hydration-host--ready');
   await page.setContent(
-    `${generateHydrationScript()}<style>${defaultCss}</style><style>:root{--leverui-colors-bg-panel:rgb(12,34,56)}</style><div id="drawer-hydration-root">${markup}</div>`,
+    `${generateHydrationScript()}<style>${defaultCss}</style><style>:root{--lui-colors-bg-panel:rgb(12,34,56)}</style><div id="drawer-hydration-root">${markup}</div>`,
   );
 
   const root = page.locator('#drawer-hydration-root');

@@ -2,80 +2,80 @@
   @media (min-width: 480px) {
     .leverui-radiomark:not([data-unstyled]) {
       &[data-size-sm='xs'] {
-        --leverui-private-radiomark-size: var(--leverui-sizes-3);
+        --lui-private-radiomark-size: var(--lui-sizes-3);
       }
       &[data-size-sm='sm'] {
-        --leverui-private-radiomark-size: var(--leverui-sizes-4);
+        --lui-private-radiomark-size: var(--lui-sizes-4);
       }
       &[data-size-sm='md'] {
-        --leverui-private-radiomark-size: var(--leverui-sizes-5);
+        --lui-private-radiomark-size: var(--lui-sizes-5);
       }
       &[data-size-sm='lg'] {
-        --leverui-private-radiomark-size: var(--leverui-sizes-6);
+        --lui-private-radiomark-size: var(--lui-sizes-6);
       }
     }
   }
   @media (min-width: 768px) {
     .leverui-radiomark:not([data-unstyled]) {
       &[data-size-md='xs'] {
-        --leverui-private-radiomark-size: var(--leverui-sizes-3);
+        --lui-private-radiomark-size: var(--lui-sizes-3);
       }
       &[data-size-md='sm'] {
-        --leverui-private-radiomark-size: var(--leverui-sizes-4);
+        --lui-private-radiomark-size: var(--lui-sizes-4);
       }
       &[data-size-md='md'] {
-        --leverui-private-radiomark-size: var(--leverui-sizes-5);
+        --lui-private-radiomark-size: var(--lui-sizes-5);
       }
       &[data-size-md='lg'] {
-        --leverui-private-radiomark-size: var(--leverui-sizes-6);
+        --lui-private-radiomark-size: var(--lui-sizes-6);
       }
     }
   }
   @media (min-width: 1024px) {
     .leverui-radiomark:not([data-unstyled]) {
       &[data-size-lg='xs'] {
-        --leverui-private-radiomark-size: var(--leverui-sizes-3);
+        --lui-private-radiomark-size: var(--lui-sizes-3);
       }
       &[data-size-lg='sm'] {
-        --leverui-private-radiomark-size: var(--leverui-sizes-4);
+        --lui-private-radiomark-size: var(--lui-sizes-4);
       }
       &[data-size-lg='md'] {
-        --leverui-private-radiomark-size: var(--leverui-sizes-5);
+        --lui-private-radiomark-size: var(--lui-sizes-5);
       }
       &[data-size-lg='lg'] {
-        --leverui-private-radiomark-size: var(--leverui-sizes-6);
+        --lui-private-radiomark-size: var(--lui-sizes-6);
       }
     }
   }
   @media (min-width: 1280px) {
     .leverui-radiomark:not([data-unstyled]) {
       &[data-size-xl='xs'] {
-        --leverui-private-radiomark-size: var(--leverui-sizes-3);
+        --lui-private-radiomark-size: var(--lui-sizes-3);
       }
       &[data-size-xl='sm'] {
-        --leverui-private-radiomark-size: var(--leverui-sizes-4);
+        --lui-private-radiomark-size: var(--lui-sizes-4);
       }
       &[data-size-xl='md'] {
-        --leverui-private-radiomark-size: var(--leverui-sizes-5);
+        --lui-private-radiomark-size: var(--lui-sizes-5);
       }
       &[data-size-xl='lg'] {
-        --leverui-private-radiomark-size: var(--leverui-sizes-6);
+        --lui-private-radiomark-size: var(--lui-sizes-6);
       }
     }
   }
   @media (min-width: 1536px) {
     .leverui-radiomark:not([data-unstyled]) {
       &[data-size-2xl='xs'] {
-        --leverui-private-radiomark-size: var(--leverui-sizes-3);
+        --lui-private-radiomark-size: var(--lui-sizes-3);
       }
       &[data-size-2xl='sm'] {
-        --leverui-private-radiomark-size: var(--leverui-sizes-4);
+        --lui-private-radiomark-size: var(--lui-sizes-4);
       }
       &[data-size-2xl='md'] {
-        --leverui-private-radiomark-size: var(--leverui-sizes-5);
+        --lui-private-radiomark-size: var(--lui-sizes-5);
       }
       &[data-size-2xl='lg'] {
-        --leverui-private-radiomark-size: var(--leverui-sizes-6);
+        --lui-private-radiomark-size: var(--lui-sizes-6);
       }
     }
   }

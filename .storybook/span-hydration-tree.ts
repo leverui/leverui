@@ -23,7 +23,7 @@ export function renderSpanHydrationTree({ Span }: SpanHydrationComponents): JSX.
       /** Read the current native style during client updates. */
       get style() {
         return {
-          color: alternate() ? 'var(--leverui-colors-blue-500)' : 'var(--leverui-colors-red-500)',
+          color: alternate() ? 'var(--lui-colors-blue-500)' : 'var(--lui-colors-red-500)',
         };
       },
     }),

@@ -1,90 +1,90 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
     .leverui-date-input__segmentGroup:not([data-unstyled])[data-size-sm='2xs'] {
-      --leverui-private-date-input-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-date-input-line-height: 1rem;
-      --leverui-private-date-input-padding: var(--leverui-spacing-1\.5);
-      --leverui-private-date-input-height: var(--leverui-sizes-7);
+      --lui-private-date-input-font-size: var(--lui-font-sizes-xs);
+      --lui-private-date-input-line-height: 1rem;
+      --lui-private-date-input-padding: var(--lui-spacing-1\.5);
+      --lui-private-date-input-height: var(--lui-sizes-7);
     }
     .leverui-date-input__segmentGroup:not([data-unstyled])[data-size-sm='xs'] {
-      --leverui-private-date-input-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-date-input-line-height: 1rem;
-      --leverui-private-date-input-padding: var(--leverui-spacing-1\.5);
-      --leverui-private-date-input-height: var(--leverui-sizes-8);
+      --lui-private-date-input-font-size: var(--lui-font-sizes-xs);
+      --lui-private-date-input-line-height: 1rem;
+      --lui-private-date-input-padding: var(--lui-spacing-1\.5);
+      --lui-private-date-input-height: var(--lui-sizes-8);
     }
     .leverui-date-input__segmentGroup:not([data-unstyled])[data-size-sm='sm'] {
-      --leverui-private-date-input-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-date-input-line-height: 1.25rem;
-      --leverui-private-date-input-padding: var(--leverui-spacing-2);
-      --leverui-private-date-input-height: var(--leverui-sizes-9);
+      --lui-private-date-input-font-size: var(--lui-font-sizes-sm);
+      --lui-private-date-input-line-height: 1.25rem;
+      --lui-private-date-input-padding: var(--lui-spacing-2);
+      --lui-private-date-input-height: var(--lui-sizes-9);
     }
     .leverui-date-input__segmentGroup:not([data-unstyled])[data-size-sm='md'] {
-      --leverui-private-date-input-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-date-input-line-height: 1.25rem;
-      --leverui-private-date-input-padding: var(--leverui-spacing-2\.5);
-      --leverui-private-date-input-height: var(--leverui-sizes-10);
+      --lui-private-date-input-font-size: var(--lui-font-sizes-sm);
+      --lui-private-date-input-line-height: 1.25rem;
+      --lui-private-date-input-padding: var(--lui-spacing-2\.5);
+      --lui-private-date-input-height: var(--lui-sizes-10);
     }
     .leverui-date-input__segmentGroup:not([data-unstyled])[data-size-sm='lg'] {
-      --leverui-private-date-input-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-date-input-line-height: 1.5rem;
-      --leverui-private-date-input-padding: var(--leverui-spacing-3\.5);
-      --leverui-private-date-input-height: var(--leverui-sizes-11);
+      --lui-private-date-input-font-size: var(--lui-font-sizes-md);
+      --lui-private-date-input-line-height: 1.5rem;
+      --lui-private-date-input-padding: var(--lui-spacing-3\.5);
+      --lui-private-date-input-height: var(--lui-sizes-11);
     }
     .leverui-date-input__segmentGroup:not([data-unstyled])[data-size-sm='xl'] {
-      --leverui-private-date-input-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-date-input-line-height: 1.5rem;
-      --leverui-private-date-input-padding: var(--leverui-spacing-4);
-      --leverui-private-date-input-height: var(--leverui-sizes-12);
+      --lui-private-date-input-font-size: var(--lui-font-sizes-md);
+      --lui-private-date-input-line-height: 1.5rem;
+      --lui-private-date-input-padding: var(--lui-spacing-4);
+      --lui-private-date-input-height: var(--lui-sizes-12);
     }
     .leverui-date-input__segmentGroup:not([data-unstyled])[data-size-sm='2xl'] {
-      --leverui-private-date-input-font-size: var(--leverui-font-sizes-lg);
-      --leverui-private-date-input-line-height: 1.75rem;
-      --leverui-private-date-input-padding: var(--leverui-spacing-4\.5);
-      --leverui-private-date-input-height: var(--leverui-sizes-16);
+      --lui-private-date-input-font-size: var(--lui-font-sizes-lg);
+      --lui-private-date-input-line-height: 1.75rem;
+      --lui-private-date-input-padding: var(--lui-spacing-4\.5);
+      --lui-private-date-input-height: var(--lui-sizes-16);
     }
   }
   @media (min-width: 768px) {
     .leverui-date-input__segmentGroup:not([data-unstyled])[data-size-md='2xs'] {
-      --leverui-private-date-input-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-date-input-line-height: 1rem;
-      --leverui-private-date-input-padding: var(--leverui-spacing-1\.5);
-      --leverui-private-date-input-height: var(--leverui-sizes-7);
+      --lui-private-date-input-font-size: var(--lui-font-sizes-xs);
+      --lui-private-date-input-line-height: 1rem;
+      --lui-private-date-input-padding: var(--lui-spacing-1\.5);
+      --lui-private-date-input-height: var(--lui-sizes-7);
     }
     .leverui-date-input__segmentGroup:not([data-unstyled])[data-size-md='xs'] {
-      --leverui-private-date-input-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-date-input-line-height: 1rem;
-      --leverui-private-date-input-padding: var(--leverui-spacing-1\.5);
-      --leverui-private-date-input-height: var(--leverui-sizes-8);
+      --lui-private-date-input-font-size: var(--lui-font-sizes-xs);
+      --lui-private-date-input-line-height: 1rem;
+      --lui-private-date-input-padding: var(--lui-spacing-1\.5);
+      --lui-private-date-input-height: var(--lui-sizes-8);
     }
     .leverui-date-input__segmentGroup:not([data-unstyled])[data-size-md='sm'] {
-      --leverui-private-date-input-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-date-input-line-height: 1.25rem;
-      --leverui-private-date-input-padding: var(--leverui-spacing-2);
-      --leverui-private-date-input-height: var(--leverui-sizes-9);
+      --lui-private-date-input-font-size: var(--lui-font-sizes-sm);
+      --lui-private-date-input-line-height: 1.25rem;
+      --lui-private-date-input-padding: var(--lui-spacing-2);
+      --lui-private-date-input-height: var(--lui-sizes-9);
     }
     .leverui-date-input__segmentGroup:not([data-unstyled])[data-size-md='md'] {
-      --leverui-private-date-input-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-date-input-line-height: 1.25rem;
-      --leverui-private-date-input-padding: var(--leverui-spacing-2\.5);
-      --leverui-private-date-input-height: var(--leverui-sizes-10);
+      --lui-private-date-input-font-size: var(--lui-font-sizes-sm);
+      --lui-private-date-input-line-height: 1.25rem;
+      --lui-private-date-input-padding: var(--lui-spacing-2\.5);
+      --lui-private-date-input-height: var(--lui-sizes-10);
     }
     .leverui-date-input__segmentGroup:not([data-unstyled])[data-size-md='lg'] {
-      --leverui-private-date-input-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-date-input-line-height: 1.5rem;
-      --leverui-private-date-input-padding: var(--leverui-spacing-3\.5);
-      --leverui-private-date-input-height: var(--leverui-sizes-11);
+      --lui-private-date-input-font-size: var(--lui-font-sizes-md);
+      --lui-private-date-input-line-height: 1.5rem;
+      --lui-private-date-input-padding: var(--lui-spacing-3\.5);
+      --lui-private-date-input-height: var(--lui-sizes-11);
     }
     .leverui-date-input__segmentGroup:not([data-unstyled])[data-size-md='xl'] {
-      --leverui-private-date-input-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-date-input-line-height: 1.5rem;
-      --leverui-private-date-input-padding: var(--leverui-spacing-4);
-      --leverui-private-date-input-height: var(--leverui-sizes-12);
+      --lui-private-date-input-font-size: var(--lui-font-sizes-md);
+      --lui-private-date-input-line-height: 1.5rem;
+      --lui-private-date-input-padding: var(--lui-spacing-4);
+      --lui-private-date-input-height: var(--lui-sizes-12);
     }
     .leverui-date-input__segmentGroup:not([data-unstyled])[data-size-md='2xl'] {
-      --leverui-private-date-input-font-size: var(--leverui-font-sizes-lg);
-      --leverui-private-date-input-line-height: 1.75rem;
-      --leverui-private-date-input-padding: var(--leverui-spacing-4\.5);
-      --leverui-private-date-input-height: var(--leverui-sizes-16);
+      --lui-private-date-input-font-size: var(--lui-font-sizes-lg);
+      --lui-private-date-input-line-height: 1.75rem;
+      --lui-private-date-input-padding: var(--lui-spacing-4\.5);
+      --lui-private-date-input-height: var(--lui-sizes-16);
     }
   }
 }

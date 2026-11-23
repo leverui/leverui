@@ -118,8 +118,8 @@ and value.
 
 ```css
 .traffic-mix {
-  --leverui-bar-segment-size: 3rem;
-  --leverui-bar-segment-bar-gap: 0.5rem;
+  --lui-bar-segment-size: 3rem;
+  --lui-bar-segment-bar-gap: 0.5rem;
 }
 
 .traffic-mix .leverui-bar-segment__segment {
@@ -129,14 +129,14 @@ and value.
 
 ### Variables
 
-| Variable                            | Default   | Description                                       |
-| ----------------------------------- | --------- | ------------------------------------------------- |
-| `--leverui-bar-segment-size`        | `2.5rem`  | Bar height.                                       |
-| `--leverui-bar-segment-root-gap`    | `1rem`    | Space between the content and the legend.         |
-| `--leverui-bar-segment-content-gap` | `0.25rem` | Space between the values, the bar, and the names. |
-| `--leverui-bar-segment-row-gap`     | `0.5rem`  | Space between items in the value and name rows.   |
-| `--leverui-bar-segment-bar-gap`     | `0.25rem` | Space between segments.                           |
-| `--leverui-bar-segment-legend-gap`  | `1rem`    | Space between legend items.                       |
+| Variable                        | Default   | Description                                       |
+| ------------------------------- | --------- | ------------------------------------------------- |
+| `--lui-bar-segment-size`        | `2.5rem`  | Bar height.                                       |
+| `--lui-bar-segment-root-gap`    | `1rem`    | Space between the content and the legend.         |
+| `--lui-bar-segment-content-gap` | `0.25rem` | Space between the values, the bar, and the names. |
+| `--lui-bar-segment-row-gap`     | `0.5rem`  | Space between items in the value and name rows.   |
+| `--lui-bar-segment-bar-gap`     | `0.25rem` | Space between segments.                           |
+| `--lui-bar-segment-legend-gap`  | `1rem`    | Space between legend items.                       |
 
 `barSize` sets the size variable on one chart. `gap` on `Bar` and `Legend` sets
 the gap variable for that part.

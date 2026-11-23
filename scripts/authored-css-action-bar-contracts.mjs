@@ -17,7 +17,7 @@ export const actionBarContracts = [
       ),
       "[data-state='open']",
       "[data-state='closed']",
-      '--leverui-action-bar-offset',
+      '--lui-action-bar-offset',
     ],
   },
 ];

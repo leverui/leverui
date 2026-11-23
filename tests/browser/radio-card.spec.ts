@@ -66,10 +66,10 @@ async function verifiesRadioCardConsumerCss({ page }: { page: Page }): Promise<v
   await expect(root).toHaveClass(/consumer-radio-card/, { timeout: 45_000 });
   await page.addStyleTag({
     content: `
-      .consumer-radio-card { --leverui-radio-card-root-gap: 33px; }
+      .consumer-radio-card { --lui-radio-card-root-gap: 33px; }
       .consumer-radio-card-label { letter-spacing: 2px; }
       .consumer-radio-card-item { border-radius: 13px; }
-      .consumer-radio-card-control { --leverui-radio-card-control-padding: 21px; }
+      .consumer-radio-card-control { --lui-radio-card-control-padding: 21px; }
       .consumer-radio-card-content { gap: 17px; }
       .consumer-radio-card-text { font-style: italic; }
       .consumer-radio-card-description { opacity: .3; }

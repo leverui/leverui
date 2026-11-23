@@ -1,25 +1,25 @@
 .consumer-box {
-  padding: var(--leverui-spacing-2);
+  padding: var(--lui-spacing-2);
   color: white;
-  background: var(--leverui-colors-red-500);
-  border: 1px solid var(--leverui-colors-green-500);
-  box-shadow: var(--leverui-shadows-md);
+  background: var(--lui-colors-red-500);
+  border: 1px solid var(--lui-colors-green-500);
+  box-shadow: var(--lui-shadows-md);
 }
 
 .consumer-box.active-box {
-  background: var(--leverui-colors-blue-500);
+  background: var(--lui-colors-blue-500);
 }
 
 .consumer-box:hover {
-  background: var(--leverui-colors-green-500);
+  background: var(--lui-colors-green-500);
 }
 
 .consumer-child-box {
-  padding: var(--leverui-spacing-2);
+  padding: var(--lui-spacing-2);
 }
 
 .consumer-child-box.active-box {
-  padding: var(--leverui-spacing-4);
+  padding: var(--lui-spacing-4);
 }
 
 .consumer-hide-below {
@@ -27,12 +27,12 @@
 }
 
 .consumer-conditional-box.active-box {
-  background: var(--leverui-colors-blue-500);
+  background: var(--lui-colors-blue-500);
 }
 
 @media (min-width: 48rem) {
   .consumer-box {
-    padding: var(--leverui-spacing-4);
+    padding: var(--lui-spacing-4);
   }
 
   .consumer-hide-below {

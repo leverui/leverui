@@ -1,85 +1,85 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
     .leverui-steps__root:not([data-unstyled])[data-size-sm='xs'] {
-      --leverui-private-steps-root-gap: var(--leverui-spacing-2\.5);
-      --leverui-private-steps-size: var(--leverui-sizes-6);
-      --leverui-private-steps-icon-size: var(--leverui-sizes-3\.5);
-      --leverui-private-steps-list-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-steps-list-line-height: 1rem;
-      --leverui-private-steps-title-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-steps-title-line-height: 1.25rem;
+      --lui-private-steps-root-gap: var(--lui-spacing-2\.5);
+      --lui-private-steps-size: var(--lui-sizes-6);
+      --lui-private-steps-icon-size: var(--lui-sizes-3\.5);
+      --lui-private-steps-list-font-size: var(--lui-font-sizes-xs);
+      --lui-private-steps-list-line-height: 1rem;
+      --lui-private-steps-title-font-size: var(--lui-font-sizes-sm);
+      --lui-private-steps-title-line-height: 1.25rem;
     }
 
     .leverui-steps__root:not([data-unstyled])[data-size-sm='sm'] {
-      --leverui-private-steps-root-gap: var(--leverui-spacing-3);
-      --leverui-private-steps-size: var(--leverui-sizes-8);
-      --leverui-private-steps-icon-size: var(--leverui-sizes-4);
-      --leverui-private-steps-list-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-steps-list-line-height: 1rem;
-      --leverui-private-steps-title-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-steps-title-line-height: 1.25rem;
+      --lui-private-steps-root-gap: var(--lui-spacing-3);
+      --lui-private-steps-size: var(--lui-sizes-8);
+      --lui-private-steps-icon-size: var(--lui-sizes-4);
+      --lui-private-steps-list-font-size: var(--lui-font-sizes-xs);
+      --lui-private-steps-list-line-height: 1rem;
+      --lui-private-steps-title-font-size: var(--lui-font-sizes-sm);
+      --lui-private-steps-title-line-height: 1.25rem;
     }
 
     .leverui-steps__root:not([data-unstyled])[data-size-sm='md'] {
-      --leverui-private-steps-root-gap: var(--leverui-spacing-4);
-      --leverui-private-steps-size: var(--leverui-sizes-10);
-      --leverui-private-steps-icon-size: var(--leverui-sizes-4);
-      --leverui-private-steps-list-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-steps-list-line-height: 1.25rem;
-      --leverui-private-steps-title-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-steps-title-line-height: 1.25rem;
+      --lui-private-steps-root-gap: var(--lui-spacing-4);
+      --lui-private-steps-size: var(--lui-sizes-10);
+      --lui-private-steps-icon-size: var(--lui-sizes-4);
+      --lui-private-steps-list-font-size: var(--lui-font-sizes-sm);
+      --lui-private-steps-list-line-height: 1.25rem;
+      --lui-private-steps-title-font-size: var(--lui-font-sizes-sm);
+      --lui-private-steps-title-line-height: 1.25rem;
     }
 
     .leverui-steps__root:not([data-unstyled])[data-size-sm='lg'] {
-      --leverui-private-steps-root-gap: var(--leverui-spacing-6);
-      --leverui-private-steps-size: var(--leverui-sizes-11);
-      --leverui-private-steps-icon-size: var(--leverui-sizes-5);
-      --leverui-private-steps-list-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-steps-list-line-height: 1.5rem;
-      --leverui-private-steps-title-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-steps-title-line-height: 1.5rem;
+      --lui-private-steps-root-gap: var(--lui-spacing-6);
+      --lui-private-steps-size: var(--lui-sizes-11);
+      --lui-private-steps-icon-size: var(--lui-sizes-5);
+      --lui-private-steps-list-font-size: var(--lui-font-sizes-md);
+      --lui-private-steps-list-line-height: 1.5rem;
+      --lui-private-steps-title-font-size: var(--lui-font-sizes-md);
+      --lui-private-steps-title-line-height: 1.5rem;
     }
   }
 
   @media (min-width: 768px) {
     .leverui-steps__root:not([data-unstyled])[data-size-md='xs'] {
-      --leverui-private-steps-root-gap: var(--leverui-spacing-2\.5);
-      --leverui-private-steps-size: var(--leverui-sizes-6);
-      --leverui-private-steps-icon-size: var(--leverui-sizes-3\.5);
-      --leverui-private-steps-list-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-steps-list-line-height: 1rem;
-      --leverui-private-steps-title-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-steps-title-line-height: 1.25rem;
+      --lui-private-steps-root-gap: var(--lui-spacing-2\.5);
+      --lui-private-steps-size: var(--lui-sizes-6);
+      --lui-private-steps-icon-size: var(--lui-sizes-3\.5);
+      --lui-private-steps-list-font-size: var(--lui-font-sizes-xs);
+      --lui-private-steps-list-line-height: 1rem;
+      --lui-private-steps-title-font-size: var(--lui-font-sizes-sm);
+      --lui-private-steps-title-line-height: 1.25rem;
     }
 
     .leverui-steps__root:not([data-unstyled])[data-size-md='sm'] {
-      --leverui-private-steps-root-gap: var(--leverui-spacing-3);
-      --leverui-private-steps-size: var(--leverui-sizes-8);
-      --leverui-private-steps-icon-size: var(--leverui-sizes-4);
-      --leverui-private-steps-list-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-steps-list-line-height: 1rem;
-      --leverui-private-steps-title-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-steps-title-line-height: 1.25rem;
+      --lui-private-steps-root-gap: var(--lui-spacing-3);
+      --lui-private-steps-size: var(--lui-sizes-8);
+      --lui-private-steps-icon-size: var(--lui-sizes-4);
+      --lui-private-steps-list-font-size: var(--lui-font-sizes-xs);
+      --lui-private-steps-list-line-height: 1rem;
+      --lui-private-steps-title-font-size: var(--lui-font-sizes-sm);
+      --lui-private-steps-title-line-height: 1.25rem;
     }
 
     .leverui-steps__root:not([data-unstyled])[data-size-md='md'] {
-      --leverui-private-steps-root-gap: var(--leverui-spacing-4);
-      --leverui-private-steps-size: var(--leverui-sizes-10);
-      --leverui-private-steps-icon-size: var(--leverui-sizes-4);
-      --leverui-private-steps-list-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-steps-list-line-height: 1.25rem;
-      --leverui-private-steps-title-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-steps-title-line-height: 1.25rem;
+      --lui-private-steps-root-gap: var(--lui-spacing-4);
+      --lui-private-steps-size: var(--lui-sizes-10);
+      --lui-private-steps-icon-size: var(--lui-sizes-4);
+      --lui-private-steps-list-font-size: var(--lui-font-sizes-sm);
+      --lui-private-steps-list-line-height: 1.25rem;
+      --lui-private-steps-title-font-size: var(--lui-font-sizes-sm);
+      --lui-private-steps-title-line-height: 1.25rem;
     }
 
     .leverui-steps__root:not([data-unstyled])[data-size-md='lg'] {
-      --leverui-private-steps-root-gap: var(--leverui-spacing-6);
-      --leverui-private-steps-size: var(--leverui-sizes-11);
-      --leverui-private-steps-icon-size: var(--leverui-sizes-5);
-      --leverui-private-steps-list-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-steps-list-line-height: 1.5rem;
-      --leverui-private-steps-title-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-steps-title-line-height: 1.5rem;
+      --lui-private-steps-root-gap: var(--lui-spacing-6);
+      --lui-private-steps-size: var(--lui-sizes-11);
+      --lui-private-steps-icon-size: var(--lui-sizes-5);
+      --lui-private-steps-list-font-size: var(--lui-font-sizes-md);
+      --lui-private-steps-list-line-height: 1.5rem;
+      --lui-private-steps-title-font-size: var(--lui-font-sizes-md);
+      --lui-private-steps-title-line-height: 1.5rem;
     }
   }
 }

@@ -19,7 +19,7 @@ export function PackedPresence(): JSX.Element {
       <Presence
         id="packed-presence-content"
         present={present()}
-        style={{ padding: 'var(--leverui-spacing-4)' }}
+        style={{ padding: 'var(--lui-spacing-4)' }}
       >
         Installed presence
       </Presence>

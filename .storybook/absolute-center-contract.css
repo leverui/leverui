@@ -24,7 +24,7 @@
 .absolute-center-contract .overlay-center {
   width: 80px;
   height: 40px;
-  background: var(--leverui-colors-blue-500);
+  background: var(--lui-colors-blue-500);
 }
 
 .absolute-center-contract .reactive-center {

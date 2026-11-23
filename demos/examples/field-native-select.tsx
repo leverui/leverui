@@ -21,7 +21,7 @@ export function FieldWithNativeSelect(): JSX.Element {
 /** Point the field label at the amount input instead of the first control. */
 export function FieldWithTargetControl(): JSX.Element {
   return (
-    <Field.Root target="amount" style={{ 'max-width': 'var(--leverui-sizes-sm)' }}>
+    <Field.Root target="amount" style={{ 'max-width': 'var(--lui-sizes-sm)' }}>
       <Field.Label>Price</Field.Label>
       <HStack gap="2">
         <Field.Item value="currency">

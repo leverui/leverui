@@ -1,16 +1,16 @@
 @layer leverui.recipes {
   .leverui-radiomark:not([data-unstyled]) {
     &[data-size='xs'] {
-      --leverui-private-radiomark-size: var(--leverui-sizes-3);
+      --lui-private-radiomark-size: var(--lui-sizes-3);
     }
     &[data-size='sm'] {
-      --leverui-private-radiomark-size: var(--leverui-sizes-4);
+      --lui-private-radiomark-size: var(--lui-sizes-4);
     }
     &[data-size='md'] {
-      --leverui-private-radiomark-size: var(--leverui-sizes-5);
+      --lui-private-radiomark-size: var(--lui-sizes-5);
     }
     &[data-size='lg'] {
-      --leverui-private-radiomark-size: var(--leverui-sizes-6);
+      --lui-private-radiomark-size: var(--lui-sizes-6);
     }
   }
 }

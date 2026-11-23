@@ -2,7 +2,7 @@ import { expect, test, type Page } from '@playwright/test';
 
 /** Apply a theme-level size without touching the chart instance. */
 function setRootBarSegmentSize(): void {
-  document.documentElement.style.setProperty('--leverui-bar-segment-size', '3rem');
+  document.documentElement.style.setProperty('--lui-bar-segment-size', '3rem');
 }
 
 /** Verify authored CSS, consumer hooks, native style, and reactive geometry. */
@@ -47,11 +47,11 @@ async function verifiesBarSegmentCss({ page }: { page: Page }): Promise<void> {
   await page.evaluate(setRootBarSegmentSize);
   await expect(segment.first()).toHaveCSS('height', '48px');
   await expect(segment.first()).toHaveCSS('border-radius', '9px');
-  await expect(second).toHaveCSS('--leverui-private-bar-segment-flex', '50 1 0');
+  await expect(second).toHaveCSS('--lui-private-bar-segment-flex', '50 1 0');
   await expect(root.locator('.leverui-bar-segment__legend')).toHaveCSS('font-size', '12px');
   await expect(root.locator('.leverui-bar-segment__legend')).toHaveCSS('gap', '12px');
   await page.getByTestId('segment-data-toggle').click();
-  await expect(second).toHaveCSS('--leverui-private-bar-segment-flex', '80 1 0');
+  await expect(second).toHaveCSS('--lui-private-bar-segment-flex', '80 1 0');
   await page.getByTestId('segment-size-toggle').click();
   await expect(segment.first()).toHaveCSS('height', '56px');
   await segment.first().focus();

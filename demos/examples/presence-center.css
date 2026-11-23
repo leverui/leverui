@@ -3,18 +3,18 @@
 }
 
 .presence-example-center {
-  padding: var(--leverui-spacing-10);
-  background: var(--leverui-colors-color-palette-muted);
-  color: var(--leverui-colors-color-palette-fg);
+  padding: var(--lui-spacing-10);
+  background: var(--lui-colors-color-palette-muted);
+  color: var(--lui-colors-color-palette-fg);
 }
 
 .presence-example-center-rounded {
-  border-start-start-radius: var(--leverui-radii-md);
-  border-start-end-radius: var(--leverui-radii-md);
+  border-start-start-radius: var(--lui-radii-md);
+  border-start-end-radius: var(--lui-radii-md);
 }
 
 .presence-example-motion {
-  animation-duration: var(--leverui-durations-moderate);
+  animation-duration: var(--lui-durations-moderate);
   animation-fill-mode: both;
 }
 

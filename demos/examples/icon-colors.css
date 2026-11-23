@@ -1,5 +1,5 @@
 .example-icon-pink {
-  color: var(--leverui-colors-pink-700);
+  color: var(--lui-colors-pink-700);
 }
 
 .example-icon-tomato {
@@ -7,9 +7,9 @@
 }
 
 .example-icon-red {
-  color: var(--leverui-colors-red-500);
+  color: var(--lui-colors-red-500);
 }
 
 .example-icon-blue {
-  color: var(--leverui-colors-blue-400);
+  color: var(--lui-colors-blue-400);
 }

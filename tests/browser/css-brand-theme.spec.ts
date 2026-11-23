@@ -35,7 +35,7 @@ async function verifiesBrandTheme({ page }: { page: Page }): Promise<void> {
     'rgb(122, 105, 219)',
   );
   await expect(page.getByTestId('nested-button')).toHaveCSS('background-color', 'rgb(98, 84, 199)');
-  await page.addStyleTag({ content: ':root { --leverui-spacing-4: 24px; }' });
+  await page.addStyleTag({ content: ':root { --lui-spacing-4: 24px; }' });
   await expect(page.getByTestId('theme-content')).toHaveCSS('padding', '24px');
   await expect(page.getByTestId('inherited-theme')).not.toHaveAttribute(
     'data-leverui-color-mode',

@@ -10,7 +10,7 @@ export const chartTooltipContracts = [
       '.leverui-chart-tooltip__values',
       '.leverui-chart-tooltip__name',
       '.leverui-chart-tooltip__value',
-      '--leverui-chart-tooltip-bg',
+      '--lui-chart-tooltip-bg',
     ],
   },
 ];

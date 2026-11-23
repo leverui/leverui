@@ -71,9 +71,9 @@ export function CommandRootProviderExample(): JSX.Element {
         variant="outline"
         size="sm"
         style={{
-          'min-width': 'var(--leverui-spacing-64)',
+          'min-width': 'var(--lui-spacing-64)',
           'justify-content': 'flex-start',
-          color: 'var(--leverui-colors-fg-muted)',
+          color: 'var(--lui-colors-fg-muted)',
         }}
         onClick={() => setOpen(true)}
       >
@@ -90,11 +90,11 @@ export function CommandRootProviderExample(): JSX.Element {
       <Text
         textStyle="sm"
         style={{
-          color: 'var(--leverui-colors-fg-muted)',
+          color: 'var(--lui-colors-fg-muted)',
         }}
       >
         Last search:{' '}
-        <Span style={{ color: 'var(--leverui-colors-fg)' }}>
+        <Span style={{ color: 'var(--lui-colors-fg)' }}>
           {store.combobox().inputValue || 'None'}
         </Span>
       </Text>

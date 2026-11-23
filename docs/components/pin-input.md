@@ -115,11 +115,11 @@ Load the Lever UI stylesheet first. The class names are stable.
 
 The root, label, control, and input each have a `.leverui-pin-input__*` class.
 Each visible input also has `.leverui-input`, so it gets the Input component's
-styles. Set the `--leverui-*` variables on a parent, or target a part class.
+styles. Set the `--lui-*` variables on a parent, or target a part class.
 
 ```css
 .verification-code {
-  --leverui-colors-border: rebeccapurple;
+  --lui-colors-border: rebeccapurple;
 }
 
 .verification-code .leverui-pin-input__input {

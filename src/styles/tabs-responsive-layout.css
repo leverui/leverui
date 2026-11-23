@@ -1,7 +1,7 @@
 @layer leverui.recipes {
   .leverui-tabs__root:not([data-unstyled]) {
     &[data-fitted='true'] {
-      --leverui-private-tabs-fitted-display: flex;
+      --lui-private-tabs-fitted-display: flex;
 
       .leverui-tabs__trigger:not([data-unstyled]) {
         flex: 1;
@@ -14,7 +14,7 @@
   @media (min-width: 480px) {
     .leverui-tabs__root:not([data-unstyled]) {
       &[data-fitted-sm='true'] {
-        --leverui-private-tabs-fitted-display: flex;
+        --lui-private-tabs-fitted-display: flex;
 
         .leverui-tabs__trigger:not([data-unstyled]) {
           flex: 1;
@@ -24,7 +24,7 @@
       }
 
       &[data-fitted-sm='false'] {
-        --leverui-private-tabs-fitted-display: initial;
+        --lui-private-tabs-fitted-display: initial;
 
         .leverui-tabs__trigger:not([data-unstyled]) {
           flex: revert-layer;
@@ -48,7 +48,7 @@
   @media (min-width: 768px) {
     .leverui-tabs__root:not([data-unstyled]) {
       &[data-fitted-md='true'] {
-        --leverui-private-tabs-fitted-display: flex;
+        --lui-private-tabs-fitted-display: flex;
 
         .leverui-tabs__trigger:not([data-unstyled]) {
           flex: 1;
@@ -58,7 +58,7 @@
       }
 
       &[data-fitted-md='false'] {
-        --leverui-private-tabs-fitted-display: initial;
+        --lui-private-tabs-fitted-display: initial;
 
         .leverui-tabs__trigger:not([data-unstyled]) {
           flex: revert-layer;
@@ -82,7 +82,7 @@
   @media (min-width: 1024px) {
     .leverui-tabs__root:not([data-unstyled]) {
       &[data-fitted-lg='true'] {
-        --leverui-private-tabs-fitted-display: flex;
+        --lui-private-tabs-fitted-display: flex;
 
         .leverui-tabs__trigger:not([data-unstyled]) {
           flex: 1;
@@ -92,7 +92,7 @@
       }
 
       &[data-fitted-lg='false'] {
-        --leverui-private-tabs-fitted-display: initial;
+        --lui-private-tabs-fitted-display: initial;
 
         .leverui-tabs__trigger:not([data-unstyled]) {
           flex: revert-layer;
@@ -116,7 +116,7 @@
   @media (min-width: 1280px) {
     .leverui-tabs__root:not([data-unstyled]) {
       &[data-fitted-xl='true'] {
-        --leverui-private-tabs-fitted-display: flex;
+        --lui-private-tabs-fitted-display: flex;
 
         .leverui-tabs__trigger:not([data-unstyled]) {
           flex: 1;
@@ -126,7 +126,7 @@
       }
 
       &[data-fitted-xl='false'] {
-        --leverui-private-tabs-fitted-display: initial;
+        --lui-private-tabs-fitted-display: initial;
 
         .leverui-tabs__trigger:not([data-unstyled]) {
           flex: revert-layer;
@@ -150,7 +150,7 @@
   @media (min-width: 1536px) {
     .leverui-tabs__root:not([data-unstyled]) {
       &[data-fitted-2xl='true'] {
-        --leverui-private-tabs-fitted-display: flex;
+        --lui-private-tabs-fitted-display: flex;
 
         .leverui-tabs__trigger:not([data-unstyled]) {
           flex: 1;
@@ -160,7 +160,7 @@
       }
 
       &[data-fitted-2xl='false'] {
-        --leverui-private-tabs-fitted-display: initial;
+        --lui-private-tabs-fitted-display: initial;
 
         .leverui-tabs__trigger:not([data-unstyled]) {
           flex: revert-layer;

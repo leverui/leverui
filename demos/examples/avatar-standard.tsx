@@ -26,13 +26,11 @@ export function AvatarPersona(): JSX.Element {
               <Avatar.Image src={user.avatar} />
             </Avatar.Root>
             <Stack gap="0">
-              <Text style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>
-                {user.name}
-              </Text>
+              <Text style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>{user.name}</Text>
               <Text
                 textStyle="sm"
                 style={{
-                  color: 'var(--leverui-colors-fg-muted)',
+                  color: 'var(--lui-colors-fg-muted)',
                 }}
               >
                 {user.email}

@@ -27,13 +27,13 @@ export function DrawerWithPlacement(): JSX.Element {
                   <Drawer.Content
                     style={{
                       'border-top-left-radius':
-                        placement === 'bottom' ? 'var(--leverui-radii-l3)' : undefined,
+                        placement === 'bottom' ? 'var(--lui-radii-l3)' : undefined,
                       'border-top-right-radius':
-                        placement === 'bottom' ? 'var(--leverui-radii-l3)' : undefined,
+                        placement === 'bottom' ? 'var(--lui-radii-l3)' : undefined,
                       'border-bottom-left-radius':
-                        placement === 'top' ? 'var(--leverui-radii-l3)' : undefined,
+                        placement === 'top' ? 'var(--lui-radii-l3)' : undefined,
                       'border-bottom-right-radius':
-                        placement === 'top' ? 'var(--leverui-radii-l3)' : undefined,
+                        placement === 'top' ? 'var(--lui-radii-l3)' : undefined,
                     }}
                   >
                     <Drawer.Header>
@@ -135,7 +135,7 @@ export function DrawerWithSizes(): JSX.Element {
 export function DrawerWithConditionalVariants(): JSX.Element {
   return (
     <>
-      <Text style={{ 'margin-bottom': 'var(--leverui-spacing-4)' }}>
+      <Text style={{ 'margin-bottom': 'var(--lui-spacing-4)' }}>
         Open the drawer, then make the window as narrow as a phone.
       </Text>
       <Drawer.Root placement={{ mdDown: 'bottom', md: 'end' }}>

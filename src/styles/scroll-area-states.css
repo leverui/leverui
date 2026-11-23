@@ -1,19 +1,19 @@
 @layer leverui.recipes {
   .leverui-scroll-area__scrollbar:not([data-unstyled]):is(:hover, :active) {
-    --leverui-private-scroll-area-thumb-bg: var(
-      --leverui-scroll-area-thumb-hover-color,
-      color-mix(in srgb, var(--leverui-colors-color-palette-solid) 50%, transparent)
+    --lui-private-scroll-area-thumb-bg: var(
+      --lui-scroll-area-thumb-hover-color,
+      color-mix(in srgb, var(--lui-colors-color-palette-solid) 50%, transparent)
     );
   }
 
   .leverui-scroll-area__scrollbar:not([data-unstyled]):is([data-hover], [data-scrolling]) {
     opacity: 1;
-    transition-duration: var(--leverui-durations-faster);
+    transition-duration: var(--lui-durations-faster);
     transition-delay: 0ms;
   }
 
   .leverui-scroll-area__scrollbar:not([data-unstyled])[data-orientation='vertical'] {
-    width: var(--leverui-scroll-area-scrollbar-size, var(--leverui-private-scroll-area-size));
+    width: var(--lui-scroll-area-scrollbar-size, var(--lui-private-scroll-area-size));
     flex-direction: column;
   }
 
@@ -24,13 +24,13 @@
   }
 
   .leverui-scroll-area__scrollbar:not([data-unstyled])[data-orientation='vertical']::before {
-    width: var(--leverui-private-scroll-area-click-area);
+    width: var(--lui-private-scroll-area-click-area);
     height: 100%;
-    inset-inline-start: calc(var(--leverui-private-scroll-area-margin) * -1);
+    inset-inline-start: calc(var(--lui-private-scroll-area-margin) * -1);
   }
 
   .leverui-scroll-area__scrollbar:not([data-unstyled])[data-orientation='horizontal'] {
-    height: var(--leverui-scroll-area-scrollbar-size, var(--leverui-private-scroll-area-size));
+    height: var(--lui-scroll-area-scrollbar-size, var(--lui-private-scroll-area-size));
     flex-direction: row;
   }
 
@@ -41,9 +41,9 @@
   }
 
   .leverui-scroll-area__scrollbar:not([data-unstyled])[data-orientation='horizontal']::before {
-    height: var(--leverui-private-scroll-area-click-area);
+    height: var(--lui-private-scroll-area-click-area);
     width: 100%;
-    top: calc(var(--leverui-private-scroll-area-margin) * -1);
+    top: calc(var(--lui-private-scroll-area-margin) * -1);
   }
 
   .leverui-scroll-area__scrollbar:not([data-unstyled])[data-orientation='vertical']

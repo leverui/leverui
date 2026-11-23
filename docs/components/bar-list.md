@@ -121,7 +121,7 @@ Each row takes focus when `tooltip` is on.
 
 ```css
 .traffic-list {
-  --leverui-bar-list-size: 3rem;
+  --lui-bar-list-size: 3rem;
 }
 
 .traffic-list .leverui-bar-list__fill {
@@ -131,9 +131,9 @@ Each row takes focus when `tooltip` is on.
 
 ### Variables
 
-| Variable                  | Default  | Description |
-| ------------------------- | -------- | ----------- |
-| `--leverui-bar-list-size` | `2.5rem` | Row height. |
+| Variable              | Default  | Description |
+| --------------------- | -------- | ----------- |
+| `--lui-bar-list-size` | `2.5rem` | Row height. |
 
 `barSize` sets this variable on one list.
 

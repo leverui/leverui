@@ -56,8 +56,8 @@ export function CodeBlockPlainText(): JSX.Element {
         <CodeBlock.Code class="example-code-end-padding">
           <Span
             style={{
-              color: 'var(--leverui-colors-fg-muted)',
-              'margin-inline-start': 'var(--leverui-spacing-4)',
+              color: 'var(--lui-colors-fg-muted)',
+              'margin-inline-start': 'var(--lui-spacing-4)',
               'user-select': 'none',
             }}
           >

@@ -93,7 +93,7 @@ function verifiesPublishedDialog(): void {
   expect(markup).toContain('Open server dialog');
   expect(markup).toContain('leverui-dialog__trigger');
   expect(markup).not.toContain('aria-controls=');
-  expect(defaultCss).toContain('--leverui-');
+  expect(defaultCss).toContain('--lui-');
 }
 
 test(

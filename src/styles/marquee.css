@@ -2,14 +2,14 @@
   .leverui-marquee__root:not([data-unstyled]) {
     position: relative;
     width: 100%;
-    --leverui-marquee-edge-color: var(--leverui-colors-bg);
-    --leverui-marquee-edge-size: 20%;
-    --leverui-marquee-duration: var(--leverui-private-marquee-duration);
-    --leverui-marquee-spacing: var(--leverui-private-marquee-spacing);
-    --leverui-marquee-delay: var(--leverui-private-marquee-delay);
-    --leverui-marquee-loop-count: var(--leverui-private-marquee-loop-count);
-    --marquee-spacing: var(--leverui-marquee-spacing);
-    --marquee-translate: var(--leverui-private-marquee-translate);
+    --lui-marquee-edge-color: var(--lui-colors-bg);
+    --lui-marquee-edge-size: 20%;
+    --lui-marquee-duration: var(--lui-private-marquee-duration);
+    --lui-marquee-spacing: var(--lui-private-marquee-spacing);
+    --lui-marquee-delay: var(--lui-private-marquee-delay);
+    --lui-marquee-loop-count: var(--lui-private-marquee-loop-count);
+    --marquee-spacing: var(--lui-marquee-spacing);
+    --marquee-translate: var(--lui-private-marquee-translate);
   }
 
   .leverui-marquee__root:not([data-unstyled])[data-paused],
@@ -29,9 +29,9 @@
     min-width: max-content;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-    animation-duration: var(--leverui-marquee-duration);
-    animation-delay: var(--leverui-marquee-delay);
-    animation-iteration-count: var(--leverui-marquee-loop-count);
+    animation-duration: var(--lui-marquee-duration);
+    animation-delay: var(--lui-marquee-delay);
+    animation-iteration-count: var(--lui-marquee-loop-count);
   }
 
   .leverui-marquee__content:not([data-unstyled]):is([data-side='start'], [data-side='end']) {
@@ -61,39 +61,39 @@
   }
 
   .leverui-marquee__edge:not([data-unstyled])[data-side='start'] {
-    width: var(--leverui-marquee-edge-size);
+    width: var(--lui-marquee-edge-size);
     inset-block: 0;
     inset-inline-start: 0;
-    background: linear-gradient(to right, var(--leverui-marquee-edge-color, white), transparent);
+    background: linear-gradient(to right, var(--lui-marquee-edge-color, white), transparent);
   }
 
   .leverui-marquee__edge:not([data-unstyled])[data-side='end'] {
-    width: var(--leverui-marquee-edge-size);
+    width: var(--lui-marquee-edge-size);
     inset-block: 0;
     inset-inline-end: 0;
-    background: linear-gradient(to left, var(--leverui-marquee-edge-color, white), transparent);
+    background: linear-gradient(to left, var(--lui-marquee-edge-color, white), transparent);
   }
 
   .leverui-marquee__edge:not([data-unstyled]):dir(rtl)[data-side='start'] {
-    background: linear-gradient(to left, var(--leverui-marquee-edge-color, white), transparent);
+    background: linear-gradient(to left, var(--lui-marquee-edge-color, white), transparent);
   }
 
   .leverui-marquee__edge:not([data-unstyled]):dir(rtl)[data-side='end'] {
-    background: linear-gradient(to right, var(--leverui-marquee-edge-color, white), transparent);
+    background: linear-gradient(to right, var(--lui-marquee-edge-color, white), transparent);
   }
 
   .leverui-marquee__edge:not([data-unstyled])[data-side='top'] {
-    height: var(--leverui-marquee-edge-size);
+    height: var(--lui-marquee-edge-size);
     inset-inline: 0;
     top: 0;
-    background: linear-gradient(to bottom, var(--leverui-marquee-edge-color, white), transparent);
+    background: linear-gradient(to bottom, var(--lui-marquee-edge-color, white), transparent);
   }
 
   .leverui-marquee__edge:not([data-unstyled])[data-side='bottom'] {
-    height: var(--leverui-marquee-edge-size);
+    height: var(--lui-marquee-edge-size);
     inset-inline: 0;
     bottom: 0;
-    background: linear-gradient(to top, var(--leverui-marquee-edge-color, white), transparent);
+    background: linear-gradient(to top, var(--lui-marquee-edge-color, white), transparent);
   }
 
   @media (prefers-reduced-motion: reduce) {

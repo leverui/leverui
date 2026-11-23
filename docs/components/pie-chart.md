@@ -126,8 +126,8 @@ on, a focused slice shows its tooltip.
 
 ```css
 .share-pie {
-  --leverui-radial-chart-sector-stroke: #f0faf8;
-  --leverui-radial-chart-legend-gap: 1rem;
+  --lui-radial-chart-sector-stroke: #f0faf8;
+  --lui-radial-chart-legend-gap: 1rem;
 }
 
 .share-pie .leverui-radial-chart__label {
@@ -137,34 +137,34 @@ on, a focused slice shows its tooltip.
 
 ### Variables
 
-| Variable                                              | Default               | Description                            |
-| ----------------------------------------------------- | --------------------- | -------------------------------------- |
-| `--leverui-radial-chart-sector-stroke`                | `white`               | Slice outline color.                   |
-| `--leverui-radial-chart-sector-stroke-width`          | `1`                   | Slice outline thickness.               |
-| `--leverui-radial-chart-inside-label-color`           | `white`               | Color of `inside` labels.              |
-| `--leverui-radial-chart-outside-label-color`          | Muted text color      | Color of `outside` and `point` labels. |
-| `--leverui-radial-chart-label-font-size`              | `12px`                | Label text size.                       |
-| `--leverui-radial-chart-label-line-color`             | Stronger border color | Color of the line to a `point` label.  |
-| `--leverui-radial-chart-center-color`                 | Text color            | Color of `centerTitle`.                |
-| `--leverui-radial-chart-center-title-font-size`       | `32px`                | Text size of `centerTitle`.            |
-| `--leverui-radial-chart-center-description-color`     | Muted text color      | Color of `centerDescription`.          |
-| `--leverui-radial-chart-center-description-font-size` | `12px`                | Text size of `centerDescription`.      |
-| `--leverui-radial-chart-legend-gap`                   | `12px`                | Space between legend items.            |
-| `--leverui-radial-chart-legend-font-size`             | `12px`                | Legend text size.                      |
-| `--leverui-radial-chart-legend-item-gap`              | `5px`                 | Space between a swatch and its name.   |
-| `--leverui-radial-chart-legend-swatch-size`           | `8px`                 | Swatch width and height.               |
-| `--leverui-radial-chart-legend-swatch-radius`         | `2px`                 | Swatch corner radius.                  |
+| Variable                                          | Default               | Description                            |
+| ------------------------------------------------- | --------------------- | -------------------------------------- |
+| `--lui-radial-chart-sector-stroke`                | `white`               | Slice outline color.                   |
+| `--lui-radial-chart-sector-stroke-width`          | `1`                   | Slice outline thickness.               |
+| `--lui-radial-chart-inside-label-color`           | `white`               | Color of `inside` labels.              |
+| `--lui-radial-chart-outside-label-color`          | Muted text color      | Color of `outside` and `point` labels. |
+| `--lui-radial-chart-label-font-size`              | `12px`                | Label text size.                       |
+| `--lui-radial-chart-label-line-color`             | Stronger border color | Color of the line to a `point` label.  |
+| `--lui-radial-chart-center-color`                 | Text color            | Color of `centerTitle`.                |
+| `--lui-radial-chart-center-title-font-size`       | `32px`                | Text size of `centerTitle`.            |
+| `--lui-radial-chart-center-description-color`     | Muted text color      | Color of `centerDescription`.          |
+| `--lui-radial-chart-center-description-font-size` | `12px`                | Text size of `centerDescription`.      |
+| `--lui-radial-chart-legend-gap`                   | `12px`                | Space between legend items.            |
+| `--lui-radial-chart-legend-font-size`             | `12px`                | Legend text size.                      |
+| `--lui-radial-chart-legend-item-gap`              | `5px`                 | Space between a swatch and its name.   |
+| `--lui-radial-chart-legend-swatch-size`           | `8px`                 | Swatch width and height.               |
+| `--lui-radial-chart-legend-swatch-radius`         | `2px`                 | Swatch corner radius.                  |
 
 The `stroke` and `strokeWidth` props win over the two slice variables.
 
-| Variable                            | Default       | Description               |
-| ----------------------------------- | ------------- | ------------------------- |
-| `--leverui-chart-tooltip-bg`        | Panel color   | Tooltip background.       |
-| `--leverui-chart-tooltip-padding`   | `4px 10px`    | Space inside the tooltip. |
-| `--leverui-chart-tooltip-gap`       | `4px`         | Space between rows.       |
-| `--leverui-chart-tooltip-radius`    | `4px`         | Tooltip corner radius.    |
-| `--leverui-chart-tooltip-shadow`    | Medium shadow | Tooltip shadow.           |
-| `--leverui-chart-tooltip-font-size` | `12px`        | Tooltip text size.        |
+| Variable                        | Default       | Description               |
+| ------------------------------- | ------------- | ------------------------- |
+| `--lui-chart-tooltip-bg`        | Panel color   | Tooltip background.       |
+| `--lui-chart-tooltip-padding`   | `4px 10px`    | Space inside the tooltip. |
+| `--lui-chart-tooltip-gap`       | `4px`         | Space between rows.       |
+| `--lui-chart-tooltip-radius`    | `4px`         | Tooltip corner radius.    |
+| `--lui-chart-tooltip-shadow`    | Medium shadow | Tooltip shadow.           |
+| `--lui-chart-tooltip-font-size` | `12px`        | Tooltip text size.        |
 
 ### Classes
 

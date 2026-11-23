@@ -20,7 +20,7 @@ import { HelperIcon } from './shared';
 /** The plain block that layout demos arrange. */
 const block = {
   height: '24px',
-  'border-radius': 'var(--leverui-radii-sm)',
+  'border-radius': 'var(--lui-radii-sm)',
   background: 'var(--overview-tint)',
 };
 
@@ -108,8 +108,8 @@ function SplitterDemo(): JSX.Element {
       style={{
         width: '100%',
         height: '84px',
-        border: '1px solid var(--leverui-colors-border)',
-        'border-radius': 'var(--leverui-radii-md)',
+        border: '1px solid var(--lui-colors-border)',
+        'border-radius': 'var(--lui-radii-md)',
       }}
     >
       <Splitter.Panel id="a">

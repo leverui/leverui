@@ -9,7 +9,7 @@ function createFile(name: string, color: string): File {
   return new File([new Blob([svg], { type: 'image/svg+xml' })], name, { type: 'image/svg+xml' });
 }
 
-const mutedText = { color: 'var(--leverui-colors-fg-muted)' };
+const mutedText = { color: 'var(--lui-colors-fg-muted)' };
 
 /** Render every File Upload part so the anatomy explorer can highlight each one. */
 export function FileUploadExplorerDemo(): JSX.Element {
@@ -17,7 +17,7 @@ export function FileUploadExplorerDemo(): JSX.Element {
     <VStack
       gap="8"
       style={{
-        padding: 'var(--leverui-spacing-8)',
+        padding: 'var(--lui-spacing-8)',
         'max-width': '600px',
         'margin-inline': 'auto',
         'align-items': 'stretch',
@@ -32,9 +32,9 @@ export function FileUploadExplorerDemo(): JSX.Element {
         <FileUpload.HiddenInput />
         <FileUpload.Dropzone style={{ width: '100%' }}>
           <FileUpload.DropzoneContent style={{ width: '100%' }}>
-            <VStack gap="4" style={{ padding: 'var(--leverui-spacing-8)' }}>
+            <VStack gap="4" style={{ padding: 'var(--lui-spacing-8)' }}>
               <UploadIcon style={{ 'font-size': '36px' }} />
-              <Text style={{ ...mutedText, 'font-size': 'var(--leverui-font-sizes-sm)' }}>
+              <Text style={{ ...mutedText, 'font-size': 'var(--lui-font-sizes-sm)' }}>
                 Drag and drop files here
               </Text>
               <FileUpload.Trigger
@@ -61,7 +61,7 @@ export function FileUploadExplorerDemo(): JSX.Element {
             )
           }
         />
-        <FileUpload.ItemGroup style={{ gap: 'var(--leverui-spacing-3)' }}>
+        <FileUpload.ItemGroup style={{ gap: 'var(--lui-spacing-3)' }}>
           <FileUpload.Context>
             {
               /** Follow the machine's accepted files through the part context. */
@@ -74,18 +74,18 @@ export function FileUploadExplorerDemo(): JSX.Element {
                         <HStack
                           gap="3"
                           style={{
-                            padding: 'var(--leverui-spacing-3)',
+                            padding: 'var(--lui-spacing-3)',
                             'border-width': '1px',
-                            'border-radius': 'var(--leverui-radii-md)',
+                            'border-radius': 'var(--lui-radii-md)',
                             width: '100%',
                           }}
                         >
                           <FileUpload.ItemPreview>
                             <FileUpload.ItemPreviewImage
                               style={{
-                                width: 'var(--leverui-sizes-16)',
-                                height: 'var(--leverui-sizes-16)',
-                                'border-radius': 'var(--leverui-radii-md)',
+                                width: 'var(--lui-sizes-16)',
+                                height: 'var(--lui-sizes-16)',
+                                'border-radius': 'var(--lui-radii-md)',
                               }}
                             />
                           </FileUpload.ItemPreview>

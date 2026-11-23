@@ -1,27 +1,21 @@
 @layer leverui.recipes {
   .leverui-action-bar__positioner:not([data-unstyled]) {
     &[data-placement='bottom'] {
-      --leverui-private-action-bar-justify: center;
-      --leverui-private-action-bar-start-padding: 0;
-      --leverui-private-action-bar-end-padding: 0;
+      --lui-private-action-bar-justify: center;
+      --lui-private-action-bar-start-padding: 0;
+      --lui-private-action-bar-end-padding: 0;
     }
 
     &[data-placement='bottom-start'] {
-      --leverui-private-action-bar-justify: flex-start;
-      --leverui-private-action-bar-start-padding: var(
-        --leverui-action-bar-offset,
-        var(--leverui-spacing-4)
-      );
-      --leverui-private-action-bar-end-padding: 0;
+      --lui-private-action-bar-justify: flex-start;
+      --lui-private-action-bar-start-padding: var(--lui-action-bar-offset, var(--lui-spacing-4));
+      --lui-private-action-bar-end-padding: 0;
     }
 
     &[data-placement='bottom-end'] {
-      --leverui-private-action-bar-justify: flex-end;
-      --leverui-private-action-bar-start-padding: 0;
-      --leverui-private-action-bar-end-padding: var(
-        --leverui-action-bar-offset,
-        var(--leverui-spacing-4)
-      );
+      --lui-private-action-bar-justify: flex-end;
+      --lui-private-action-bar-start-padding: 0;
+      --lui-private-action-bar-end-padding: var(--lui-action-bar-offset, var(--lui-spacing-4));
     }
   }
 }

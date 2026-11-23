@@ -77,13 +77,13 @@ function InputContractExample(): JSX.Element {
             <Input aria-label="Plain name" unstyled data-testid="unstyled-input" />
             <Input
               aria-label="Custom focus"
-              style={{ '--leverui-input-focus-color': 'lime' }}
+              style={{ '--lui-input-focus-color': 'lime' }}
               data-testid="custom-focus-input"
             />
             <Input
               aria-label="Custom error"
               aria-invalid="true"
-              style={{ '--leverui-input-error-color': 'green' }}
+              style={{ '--lui-input-error-color': 'green' }}
               data-testid="custom-error-input"
             />
           </InputPropsProvider>

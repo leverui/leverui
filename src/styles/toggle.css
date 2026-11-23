@@ -1,5 +1,5 @@
 @layer leverui.recipes {
   .leverui-toggle__root:not([data-unstyled]) .leverui-toggle__indicator:not([data-unstyled]):empty {
-    display: var(--leverui-toggle-empty-indicator-display, none);
+    display: var(--lui-toggle-empty-indicator-display, none);
   }
 }

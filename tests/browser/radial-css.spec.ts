@@ -150,8 +150,8 @@ async function verifiesStaticRadialCss({ browser }: { browser: Browser }): Promi
   const context = await browser.newContext({ javaScriptEnabled: false });
   try {
     const page = await context.newPage();
-    const consumerCss = `.leverui-radial-chart { --leverui-radial-chart-sector-stroke: rgb(37, 99, 235); }
-      .leverui-radial-bar-chart { --leverui-radial-bar-track-color: rgb(225, 231, 236); }`;
+    const consumerCss = `.leverui-radial-chart { --lui-radial-chart-sector-stroke: rgb(37, 99, 235); }
+      .leverui-radial-bar-chart { --lui-radial-bar-track-color: rgb(225, 231, 236); }`;
     await page.setContent(
       `<style>${defaultCss}</style><style>${consumerCss}</style><div style="width:140px">${staticRadialMarkup()}</div>`,
     );

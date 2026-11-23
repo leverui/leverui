@@ -78,12 +78,12 @@ function verifiesReactivePadding(): void {
   const reactive = screen.getByRole('textbox', { name: 'Reactive field' });
   const explicit = screen.getByRole('textbox', { name: 'Explicit field' });
   const group = reactive.closest('.leverui-input-group') as HTMLElement;
-  const firstOffset = group.style.getPropertyValue('--leverui-private-input-group-start-offset');
+  const firstOffset = group.style.getPropertyValue('--lui-private-input-group-start-offset');
   expect(group).toHaveAttribute('data-group-start', '');
   expect(explicit.style.paddingInlineStart).toBe('2rem');
   setOffset('4px');
   flush();
-  expect(group.style.getPropertyValue('--leverui-private-input-group-start-offset')).not.toBe(
+  expect(group.style.getPropertyValue('--lui-private-input-group-start-offset')).not.toBe(
     firstOffset,
   );
   expect(explicit.style.paddingInlineStart).toBe('2rem');

@@ -32,7 +32,7 @@ export const sparklineContracts = [
       ),
       ...variables.map(
         /** Require every documented consumer override. */
-        (name) => `--leverui-sparkline-${name}`,
+        (name) => `--lui-sparkline-${name}`,
       ),
       '[data-gradient]',
     ],

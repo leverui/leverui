@@ -2,21 +2,21 @@
   @media (min-width: 480px) {
     .leverui-menu__content[data-leverui-menu-css] {
       &[data-size-sm='sm'] {
-        --leverui-private-menu-item-gap: var(--leverui-spacing-1);
-        --leverui-private-menu-item-padding-block: var(--leverui-spacing-1);
-        --leverui-private-menu-item-padding-inline: var(--leverui-spacing-1\.5);
-        --leverui-private-menu-item-font-size: var(--leverui-font-sizes-xs);
-        --leverui-private-menu-item-line-height: 1rem;
-        --leverui-private-menu-content-padding: var(--leverui-spacing-1);
+        --lui-private-menu-item-gap: var(--lui-spacing-1);
+        --lui-private-menu-item-padding-block: var(--lui-spacing-1);
+        --lui-private-menu-item-padding-inline: var(--lui-spacing-1\.5);
+        --lui-private-menu-item-font-size: var(--lui-font-sizes-xs);
+        --lui-private-menu-item-line-height: 1rem;
+        --lui-private-menu-content-padding: var(--lui-spacing-1);
       }
 
       &[data-size-sm='md'] {
-        --leverui-private-menu-item-gap: var(--leverui-spacing-2);
-        --leverui-private-menu-item-padding-block: var(--leverui-spacing-1\.5);
-        --leverui-private-menu-item-padding-inline: var(--leverui-spacing-2);
-        --leverui-private-menu-item-font-size: var(--leverui-font-sizes-sm);
-        --leverui-private-menu-item-line-height: 1.25rem;
-        --leverui-private-menu-content-padding: var(--leverui-spacing-1\.5);
+        --lui-private-menu-item-gap: var(--lui-spacing-2);
+        --lui-private-menu-item-padding-block: var(--lui-spacing-1\.5);
+        --lui-private-menu-item-padding-inline: var(--lui-spacing-2);
+        --lui-private-menu-item-font-size: var(--lui-font-sizes-sm);
+        --lui-private-menu-item-line-height: 1.25rem;
+        --lui-private-menu-content-padding: var(--lui-spacing-1\.5);
       }
     }
   }
@@ -24,21 +24,21 @@
   @media (min-width: 768px) {
     .leverui-menu__content[data-leverui-menu-css] {
       &[data-size-md='sm'] {
-        --leverui-private-menu-item-gap: var(--leverui-spacing-1);
-        --leverui-private-menu-item-padding-block: var(--leverui-spacing-1);
-        --leverui-private-menu-item-padding-inline: var(--leverui-spacing-1\.5);
-        --leverui-private-menu-item-font-size: var(--leverui-font-sizes-xs);
-        --leverui-private-menu-item-line-height: 1rem;
-        --leverui-private-menu-content-padding: var(--leverui-spacing-1);
+        --lui-private-menu-item-gap: var(--lui-spacing-1);
+        --lui-private-menu-item-padding-block: var(--lui-spacing-1);
+        --lui-private-menu-item-padding-inline: var(--lui-spacing-1\.5);
+        --lui-private-menu-item-font-size: var(--lui-font-sizes-xs);
+        --lui-private-menu-item-line-height: 1rem;
+        --lui-private-menu-content-padding: var(--lui-spacing-1);
       }
 
       &[data-size-md='md'] {
-        --leverui-private-menu-item-gap: var(--leverui-spacing-2);
-        --leverui-private-menu-item-padding-block: var(--leverui-spacing-1\.5);
-        --leverui-private-menu-item-padding-inline: var(--leverui-spacing-2);
-        --leverui-private-menu-item-font-size: var(--leverui-font-sizes-sm);
-        --leverui-private-menu-item-line-height: 1.25rem;
-        --leverui-private-menu-content-padding: var(--leverui-spacing-1\.5);
+        --lui-private-menu-item-gap: var(--lui-spacing-2);
+        --lui-private-menu-item-padding-block: var(--lui-spacing-1\.5);
+        --lui-private-menu-item-padding-inline: var(--lui-spacing-2);
+        --lui-private-menu-item-font-size: var(--lui-font-sizes-sm);
+        --lui-private-menu-item-line-height: 1.25rem;
+        --lui-private-menu-content-padding: var(--lui-spacing-1\.5);
       }
     }
   }
@@ -46,21 +46,21 @@
   @media (min-width: 1024px) {
     .leverui-menu__content[data-leverui-menu-css] {
       &[data-size-lg='sm'] {
-        --leverui-private-menu-item-gap: var(--leverui-spacing-1);
-        --leverui-private-menu-item-padding-block: var(--leverui-spacing-1);
-        --leverui-private-menu-item-padding-inline: var(--leverui-spacing-1\.5);
-        --leverui-private-menu-item-font-size: var(--leverui-font-sizes-xs);
-        --leverui-private-menu-item-line-height: 1rem;
-        --leverui-private-menu-content-padding: var(--leverui-spacing-1);
+        --lui-private-menu-item-gap: var(--lui-spacing-1);
+        --lui-private-menu-item-padding-block: var(--lui-spacing-1);
+        --lui-private-menu-item-padding-inline: var(--lui-spacing-1\.5);
+        --lui-private-menu-item-font-size: var(--lui-font-sizes-xs);
+        --lui-private-menu-item-line-height: 1rem;
+        --lui-private-menu-content-padding: var(--lui-spacing-1);
       }
 
       &[data-size-lg='md'] {
-        --leverui-private-menu-item-gap: var(--leverui-spacing-2);
-        --leverui-private-menu-item-padding-block: var(--leverui-spacing-1\.5);
-        --leverui-private-menu-item-padding-inline: var(--leverui-spacing-2);
-        --leverui-private-menu-item-font-size: var(--leverui-font-sizes-sm);
-        --leverui-private-menu-item-line-height: 1.25rem;
-        --leverui-private-menu-content-padding: var(--leverui-spacing-1\.5);
+        --lui-private-menu-item-gap: var(--lui-spacing-2);
+        --lui-private-menu-item-padding-block: var(--lui-spacing-1\.5);
+        --lui-private-menu-item-padding-inline: var(--lui-spacing-2);
+        --lui-private-menu-item-font-size: var(--lui-font-sizes-sm);
+        --lui-private-menu-item-line-height: 1.25rem;
+        --lui-private-menu-content-padding: var(--lui-spacing-1\.5);
       }
     }
   }
@@ -68,21 +68,21 @@
   @media (min-width: 1280px) {
     .leverui-menu__content[data-leverui-menu-css] {
       &[data-size-xl='sm'] {
-        --leverui-private-menu-item-gap: var(--leverui-spacing-1);
-        --leverui-private-menu-item-padding-block: var(--leverui-spacing-1);
-        --leverui-private-menu-item-padding-inline: var(--leverui-spacing-1\.5);
-        --leverui-private-menu-item-font-size: var(--leverui-font-sizes-xs);
-        --leverui-private-menu-item-line-height: 1rem;
-        --leverui-private-menu-content-padding: var(--leverui-spacing-1);
+        --lui-private-menu-item-gap: var(--lui-spacing-1);
+        --lui-private-menu-item-padding-block: var(--lui-spacing-1);
+        --lui-private-menu-item-padding-inline: var(--lui-spacing-1\.5);
+        --lui-private-menu-item-font-size: var(--lui-font-sizes-xs);
+        --lui-private-menu-item-line-height: 1rem;
+        --lui-private-menu-content-padding: var(--lui-spacing-1);
       }
 
       &[data-size-xl='md'] {
-        --leverui-private-menu-item-gap: var(--leverui-spacing-2);
-        --leverui-private-menu-item-padding-block: var(--leverui-spacing-1\.5);
-        --leverui-private-menu-item-padding-inline: var(--leverui-spacing-2);
-        --leverui-private-menu-item-font-size: var(--leverui-font-sizes-sm);
-        --leverui-private-menu-item-line-height: 1.25rem;
-        --leverui-private-menu-content-padding: var(--leverui-spacing-1\.5);
+        --lui-private-menu-item-gap: var(--lui-spacing-2);
+        --lui-private-menu-item-padding-block: var(--lui-spacing-1\.5);
+        --lui-private-menu-item-padding-inline: var(--lui-spacing-2);
+        --lui-private-menu-item-font-size: var(--lui-font-sizes-sm);
+        --lui-private-menu-item-line-height: 1.25rem;
+        --lui-private-menu-content-padding: var(--lui-spacing-1\.5);
       }
     }
   }
@@ -90,21 +90,21 @@
   @media (min-width: 1536px) {
     .leverui-menu__content[data-leverui-menu-css] {
       &[data-size-2xl='sm'] {
-        --leverui-private-menu-item-gap: var(--leverui-spacing-1);
-        --leverui-private-menu-item-padding-block: var(--leverui-spacing-1);
-        --leverui-private-menu-item-padding-inline: var(--leverui-spacing-1\.5);
-        --leverui-private-menu-item-font-size: var(--leverui-font-sizes-xs);
-        --leverui-private-menu-item-line-height: 1rem;
-        --leverui-private-menu-content-padding: var(--leverui-spacing-1);
+        --lui-private-menu-item-gap: var(--lui-spacing-1);
+        --lui-private-menu-item-padding-block: var(--lui-spacing-1);
+        --lui-private-menu-item-padding-inline: var(--lui-spacing-1\.5);
+        --lui-private-menu-item-font-size: var(--lui-font-sizes-xs);
+        --lui-private-menu-item-line-height: 1rem;
+        --lui-private-menu-content-padding: var(--lui-spacing-1);
       }
 
       &[data-size-2xl='md'] {
-        --leverui-private-menu-item-gap: var(--leverui-spacing-2);
-        --leverui-private-menu-item-padding-block: var(--leverui-spacing-1\.5);
-        --leverui-private-menu-item-padding-inline: var(--leverui-spacing-2);
-        --leverui-private-menu-item-font-size: var(--leverui-font-sizes-sm);
-        --leverui-private-menu-item-line-height: 1.25rem;
-        --leverui-private-menu-content-padding: var(--leverui-spacing-1\.5);
+        --lui-private-menu-item-gap: var(--lui-spacing-2);
+        --lui-private-menu-item-padding-block: var(--lui-spacing-1\.5);
+        --lui-private-menu-item-padding-inline: var(--lui-spacing-2);
+        --lui-private-menu-item-font-size: var(--lui-font-sizes-sm);
+        --lui-private-menu-item-line-height: 1.25rem;
+        --lui-private-menu-content-padding: var(--lui-spacing-1\.5);
       }
     }
   }

@@ -47,8 +47,8 @@ function SubtextItem(): JSX.Element {
           <Text>Shipping details</Text>
           <Text
             style={{
-              'font-size': 'var(--leverui-font-sizes-sm)',
-              color: 'var(--leverui-colors-fg-muted)',
+              'font-size': 'var(--lui-font-sizes-sm)',
+              color: 'var(--lui-colors-fg-muted)',
             }}
           >
             Click to expand

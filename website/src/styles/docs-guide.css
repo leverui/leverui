@@ -25,9 +25,9 @@
   width: 240px;
   max-width: 100%;
   height: 100%;
-  --leverui-scroll-area-track-color: var(--site-nav-track);
-  --leverui-scroll-area-thumb-color: var(--site-nav-thumb);
-  --leverui-scroll-area-thumb-hover-color: var(--site-nav-thumb-hover);
+  --lui-scroll-area-track-color: var(--site-nav-track);
+  --lui-scroll-area-thumb-color: var(--site-nav-thumb);
+  --lui-scroll-area-thumb-hover-color: var(--site-nav-thumb-hover);
 }
 .guide-sidebar-scroll-area .leverui-scroll-area__scrollbar {
   opacity: 0;
@@ -44,9 +44,9 @@
   padding: 35px 14px 50px 0;
 }
 .guide-sidebar h2 {
-  margin: 26px 0 var(--leverui-spacing-2);
-  padding-inline-start: var(--leverui-spacing-4);
-  color: var(--leverui-colors-fg);
+  margin: 26px 0 var(--lui-spacing-2);
+  padding-inline-start: var(--lui-spacing-4);
+  color: var(--lui-colors-fg);
   font-size: 14px;
   font-weight: 600;
   line-height: 21px;
@@ -58,21 +58,20 @@
   gap: 1px;
 }
 .guide-sidebar nav a {
-  padding: var(--leverui-spacing-1\.5) var(--leverui-spacing-3) var(--leverui-spacing-1\.5)
-    var(--leverui-spacing-4);
-  border-radius: var(--leverui-radii-full);
-  color: var(--leverui-colors-fg-muted);
+  padding: var(--lui-spacing-1\.5) var(--lui-spacing-3) var(--lui-spacing-1\.5) var(--lui-spacing-4);
+  border-radius: var(--lui-radii-full);
+  color: var(--lui-colors-fg-muted);
   font-size: 14px;
   line-height: 21px;
 }
 .guide-sidebar nav a:hover {
-  background: var(--leverui-colors-gray-subtle);
-  color: var(--leverui-colors-gray-fg);
+  background: var(--lui-colors-gray-subtle);
+  color: var(--lui-colors-gray-fg);
 }
 .guide-sidebar nav a.active {
-  background: var(--leverui-colors-gray-muted);
-  color: var(--leverui-colors-fg);
-  font-weight: var(--leverui-font-weights-medium);
+  background: var(--lui-colors-gray-muted);
+  color: var(--lui-colors-fg);
+  font-weight: var(--lui-font-weights-medium);
 }
 .guide-article {
   min-width: 0;
@@ -80,7 +79,7 @@
 }
 .guide-title {
   margin: 0 0 16px;
-  color: var(--leverui-colors-fg);
+  color: var(--lui-colors-fg);
   font-size: 30px;
   font-weight: 600;
   line-height: 38px;
@@ -88,7 +87,7 @@
 }
 .guide-lead {
   margin: 0 0 18px;
-  color: var(--leverui-colors-fg-muted);
+  color: var(--lui-colors-fg-muted);
   font-size: 16px;
   line-height: 1.5;
 }
@@ -99,7 +98,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 9px;
-  color: var(--leverui-colors-fg-muted);
+  color: var(--lui-colors-fg-muted);
   font-size: 12px;
   margin-bottom: 38px;
 }
@@ -107,21 +106,21 @@
   color: var(--site-fg);
 }
 .guide-markdown {
-  color: var(--leverui-colors-fg);
+  color: var(--lui-colors-fg);
   font-size: 16px;
   line-height: 1.75;
 }
 .guide-markdown h1 {
   font-size: clamp(42px, 5vw, 62px);
   line-height: 1.15;
-  color: var(--leverui-colors-fg);
+  color: var(--lui-colors-fg);
   margin: 0 0 20px;
 }
 .guide-markdown h2 {
   font-size: 1.3rem;
   line-height: 1.4;
   letter-spacing: -0.02em;
-  color: var(--leverui-colors-fg);
+  color: var(--lui-colors-fg);
   margin: 1.6em 0 0.8em;
   scroll-margin-top: 30px;
 }
@@ -130,13 +129,13 @@
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: -0.01em;
-  color: var(--leverui-colors-fg);
+  color: var(--lui-colors-fg);
   margin: 1.5em 0 0.4em;
   scroll-margin-top: 30px;
 }
 .guide-markdown p {
   margin: 0 0 16px;
-  color: var(--leverui-colors-fg-muted);
+  color: var(--lui-colors-fg-muted);
 }
 .guide-markdown ul,
 .guide-markdown ol {
@@ -159,13 +158,13 @@
   line-height: 1.5;
 }
 .guide-markdown li::marker {
-  color: var(--leverui-colors-fg-subtle);
+  color: var(--lui-colors-fg-subtle);
 }
 .guide-markdown a:not([class*='leverui-']) {
-  color: var(--leverui-colors-fg);
-  font-weight: var(--leverui-font-weights-medium);
+  color: var(--lui-colors-fg);
+  font-weight: var(--lui-font-weights-medium);
   text-decoration: underline;
-  text-decoration-color: var(--leverui-colors-border-emphasized);
+  text-decoration-color: var(--lui-colors-border-emphasized);
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
 }
@@ -174,17 +173,17 @@
   font-size: 0.8em;
   letter-spacing: -0.01em;
   white-space: pre;
-  color: var(--leverui-colors-fg);
-  background: var(--leverui-colors-bg-muted);
-  border: 0.5px solid var(--leverui-colors-border);
+  color: var(--lui-colors-fg);
+  background: var(--lui-colors-bg-muted);
+  border: 0.5px solid var(--lui-colors-border);
   padding: 0.1em 0.4em;
-  border-radius: var(--leverui-radii-md);
+  border-radius: var(--lui-radii-md);
 }
 .guide-markdown blockquote {
   border-left: 4px solid var(--site-highlight-border);
   margin: 25px 0;
   padding: 2px 20px;
-  color: var(--leverui-colors-fg-muted);
+  color: var(--lui-colors-fg-muted);
 }
 .guide-markdown blockquote > :last-child {
   margin-bottom: 0;

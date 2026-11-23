@@ -1,45 +1,45 @@
 @layer leverui.recipes {
   .leverui-checkmark:not([data-unstyled]) {
     &[data-variant='solid'] {
-      --leverui-private-checkmark-base-border: var(--leverui-colors-border-emphasized);
-      --leverui-private-checkmark-active-background: var(--leverui-colors-color-palette-solid);
-      --leverui-private-checkmark-filled-active-background: var(
-        --leverui-private-checkmark-active-background
+      --lui-private-checkmark-base-border: var(--lui-colors-border-emphasized);
+      --lui-private-checkmark-active-background: var(--lui-colors-color-palette-solid);
+      --lui-private-checkmark-filled-active-background: var(
+        --lui-private-checkmark-active-background
       );
-      --leverui-private-checkmark-active-border: var(--leverui-colors-color-palette-solid);
-      --leverui-private-checkmark-active-color: var(--leverui-colors-color-palette-contrast);
+      --lui-private-checkmark-active-border: var(--lui-colors-color-palette-solid);
+      --lui-private-checkmark-active-color: var(--lui-colors-color-palette-contrast);
     }
     &[data-variant='outline'] {
-      --leverui-private-checkmark-base-border: var(--leverui-colors-border);
-      --leverui-private-checkmark-active-background: transparent;
-      --leverui-private-checkmark-filled-active-background: var(--leverui-colors-bg);
-      --leverui-private-checkmark-active-border: var(--leverui-colors-color-palette-solid);
-      --leverui-private-checkmark-active-color: var(--leverui-colors-color-palette-fg);
+      --lui-private-checkmark-base-border: var(--lui-colors-border);
+      --lui-private-checkmark-active-background: transparent;
+      --lui-private-checkmark-filled-active-background: var(--lui-colors-bg);
+      --lui-private-checkmark-active-border: var(--lui-colors-color-palette-solid);
+      --lui-private-checkmark-active-color: var(--lui-colors-color-palette-fg);
     }
     &[data-variant='subtle'] {
-      --leverui-private-checkmark-base-background: var(--leverui-colors-color-palette-muted);
-      --leverui-private-checkmark-active-background: var(--leverui-colors-color-palette-muted);
-      --leverui-private-checkmark-filled-active-background: var(--leverui-colors-bg);
-      --leverui-private-checkmark-base-border: var(--leverui-colors-color-palette-muted);
-      --leverui-private-checkmark-active-border: var(--leverui-colors-color-palette-muted);
-      --leverui-private-checkmark-active-color: var(--leverui-colors-color-palette-fg);
+      --lui-private-checkmark-base-background: var(--lui-colors-color-palette-muted);
+      --lui-private-checkmark-active-background: var(--lui-colors-color-palette-muted);
+      --lui-private-checkmark-filled-active-background: var(--lui-colors-bg);
+      --lui-private-checkmark-base-border: var(--lui-colors-color-palette-muted);
+      --lui-private-checkmark-active-border: var(--lui-colors-color-palette-muted);
+      --lui-private-checkmark-active-color: var(--lui-colors-color-palette-fg);
     }
     &[data-variant='plain'] {
-      --leverui-private-checkmark-base-background: transparent;
-      --leverui-private-checkmark-active-background: transparent;
-      --leverui-private-checkmark-filled-active-background: var(--leverui-colors-bg);
-      --leverui-private-checkmark-base-border: transparent;
-      --leverui-private-checkmark-active-border: transparent;
-      --leverui-private-checkmark-active-color: var(--leverui-colors-color-palette-fg);
+      --lui-private-checkmark-base-background: transparent;
+      --lui-private-checkmark-active-background: transparent;
+      --lui-private-checkmark-filled-active-background: var(--lui-colors-bg);
+      --lui-private-checkmark-base-border: transparent;
+      --lui-private-checkmark-active-border: transparent;
+      --lui-private-checkmark-active-color: var(--lui-colors-color-palette-fg);
     }
     &[data-variant='inverted'] {
-      --leverui-private-checkmark-base-background: transparent;
-      --leverui-private-checkmark-active-background: transparent;
-      --leverui-private-checkmark-filled-active-background: var(--leverui-colors-bg);
-      --leverui-private-checkmark-base-border: var(--leverui-colors-border);
-      --leverui-private-checkmark-active-border: var(--leverui-colors-color-palette-solid);
-      --leverui-private-checkmark-base-color: var(--leverui-colors-color-palette-fg);
-      --leverui-private-checkmark-active-color: var(--leverui-colors-color-palette-fg);
+      --lui-private-checkmark-base-background: transparent;
+      --lui-private-checkmark-active-background: transparent;
+      --lui-private-checkmark-filled-active-background: var(--lui-colors-bg);
+      --lui-private-checkmark-base-border: var(--lui-colors-border);
+      --lui-private-checkmark-active-border: var(--lui-colors-color-palette-solid);
+      --lui-private-checkmark-base-color: var(--lui-colors-color-palette-fg);
+      --lui-private-checkmark-active-color: var(--lui-colors-color-palette-fg);
     }
   }
 }

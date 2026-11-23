@@ -49,19 +49,19 @@ export function TextWithSizes(): JSX.Element {
 export function TextWithWeights(): JSX.Element {
   return (
     <Stack>
-      <Text style={{ 'font-weight': 'var(--leverui-font-weights-light)' }}>
+      <Text style={{ 'font-weight': 'var(--lui-font-weights-light)' }}>
         Sphinx of black quartz, judge my vow.
       </Text>
-      <Text style={{ 'font-weight': 'var(--leverui-font-weights-normal)' }}>
+      <Text style={{ 'font-weight': 'var(--lui-font-weights-normal)' }}>
         Sphinx of black quartz, judge my vow.
       </Text>
-      <Text style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>
+      <Text style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>
         Sphinx of black quartz, judge my vow.
       </Text>
-      <Text style={{ 'font-weight': 'var(--leverui-font-weights-semibold)' }}>
+      <Text style={{ 'font-weight': 'var(--lui-font-weights-semibold)' }}>
         Sphinx of black quartz, judge my vow.
       </Text>
-      <Text style={{ 'font-weight': 'var(--leverui-font-weights-bold)' }}>
+      <Text style={{ 'font-weight': 'var(--lui-font-weights-bold)' }}>
         Sphinx of black quartz, judge my vow.
       </Text>
     </Stack>

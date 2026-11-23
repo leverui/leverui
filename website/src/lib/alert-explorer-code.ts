@@ -6,6 +6,6 @@ export type AlertPart = (typeof alertParts)[number];
 export function alertExplorerCode(part: AlertPart): string {
   return `/* Target the ${part} part from your own stylesheet. */
 .my-alert .leverui-alert__${part} {
-  outline: 2px solid var(--leverui-colors-blue-500);
+  outline: 2px solid var(--lui-colors-blue-500);
 }`;
 }

@@ -113,8 +113,8 @@ Your own `onFocus`, `onBlur`, and `onKeyDown` handlers run after the chart's.
 
 ```css
 .usage-radar {
-  --leverui-radar-chart-grid-stroke: #a6c9c0;
-  --leverui-radar-chart-series-fill-opacity: 0.35;
+  --lui-radar-chart-grid-stroke: #a6c9c0;
+  --lui-radar-chart-series-fill-opacity: 0.35;
 }
 
 .usage-radar .leverui-radar-chart__angle-label {
@@ -124,44 +124,44 @@ Your own `onFocus`, `onBlur`, and `onKeyDown` handlers run after the chart's.
 
 ### Variables
 
-| Variable                                     | Default            | Description                                            |
-| -------------------------------------------- | ------------------ | ------------------------------------------------------ |
-| `--leverui-radar-chart-width`                | The `width` prop   | Displayed width.                                       |
-| `--leverui-radar-chart-max-width`            | `100%`             | Widest the chart gets.                                 |
-| `--leverui-radar-chart-margin`               | `auto`             | Margin around the chart. `auto` centers it.            |
-| `--leverui-radar-chart-grid-stroke`          | Border color       | Grid line color.                                       |
-| `--leverui-radar-chart-grid-stroke-width`    | `1px`              | Grid line thickness.                                   |
-| `--leverui-radar-chart-grid-fill`            | `teal.solid` color | Ring tint when `grid` is `filled`.                     |
-| `--leverui-radar-chart-grid-fill-opacity`    | `0.1`              | Opacity of that tint, 0 to 1.                          |
-| `--leverui-radar-chart-label-font-size`      | `12px`             | Text size of every label.                              |
-| `--leverui-radar-chart-angle-label-color`    | Muted text color   | Category name color.                                   |
-| `--leverui-radar-chart-radius-label-color`   | `#ccc`             | Scale number color.                                    |
-| `--leverui-radar-chart-point-label-color`    | Text color         | Color of the `pointLabels` values.                     |
-| `--leverui-radar-chart-series-stroke-width`  | `1px` or `2px`     | Shape outline thickness.                               |
-| `--leverui-radar-chart-series-fill-opacity`  | `0.2`              | Shape fill opacity, 0 to 1.                            |
-| `--leverui-radar-chart-legend-gap`           | `12px`             | Space between legend items.                            |
-| `--leverui-radar-chart-legend-overlap`       | `-33px`            | Legend top margin. Pulls the legend up into the chart. |
-| `--leverui-radar-chart-legend-padding`       | `5px 0`            | Space inside the legend.                               |
-| `--leverui-radar-chart-legend-color`         | Muted text color   | Legend text color.                                     |
-| `--leverui-radar-chart-legend-font-size`     | `12px`             | Legend text size.                                      |
-| `--leverui-radar-chart-legend-item-gap`      | `4px`              | Space between a swatch and its name.                   |
-| `--leverui-radar-chart-legend-swatch-size`   | `8px`              | Swatch width and height.                               |
-| `--leverui-radar-chart-legend-swatch-radius` | `2px`              | Swatch corner radius.                                  |
+| Variable                                 | Default            | Description                                            |
+| ---------------------------------------- | ------------------ | ------------------------------------------------------ |
+| `--lui-radar-chart-width`                | The `width` prop   | Displayed width.                                       |
+| `--lui-radar-chart-max-width`            | `100%`             | Widest the chart gets.                                 |
+| `--lui-radar-chart-margin`               | `auto`             | Margin around the chart. `auto` centers it.            |
+| `--lui-radar-chart-grid-stroke`          | Border color       | Grid line color.                                       |
+| `--lui-radar-chart-grid-stroke-width`    | `1px`              | Grid line thickness.                                   |
+| `--lui-radar-chart-grid-fill`            | `teal.solid` color | Ring tint when `grid` is `filled`.                     |
+| `--lui-radar-chart-grid-fill-opacity`    | `0.1`              | Opacity of that tint, 0 to 1.                          |
+| `--lui-radar-chart-label-font-size`      | `12px`             | Text size of every label.                              |
+| `--lui-radar-chart-angle-label-color`    | Muted text color   | Category name color.                                   |
+| `--lui-radar-chart-radius-label-color`   | `#ccc`             | Scale number color.                                    |
+| `--lui-radar-chart-point-label-color`    | Text color         | Color of the `pointLabels` values.                     |
+| `--lui-radar-chart-series-stroke-width`  | `1px` or `2px`     | Shape outline thickness.                               |
+| `--lui-radar-chart-series-fill-opacity`  | `0.2`              | Shape fill opacity, 0 to 1.                            |
+| `--lui-radar-chart-legend-gap`           | `12px`             | Space between legend items.                            |
+| `--lui-radar-chart-legend-overlap`       | `-33px`            | Legend top margin. Pulls the legend up into the chart. |
+| `--lui-radar-chart-legend-padding`       | `5px 0`            | Space inside the legend.                               |
+| `--lui-radar-chart-legend-color`         | Muted text color   | Legend text color.                                     |
+| `--lui-radar-chart-legend-font-size`     | `12px`             | Legend text size.                                      |
+| `--lui-radar-chart-legend-item-gap`      | `4px`              | Space between a swatch and its name.                   |
+| `--lui-radar-chart-legend-swatch-size`   | `8px`              | Swatch width and height.                               |
+| `--lui-radar-chart-legend-swatch-radius` | `2px`              | Swatch corner radius.                                  |
 
 The outline is `2px` when `linesOnly` is on or there is more than one series.
 Otherwise it is `1px`.
 
-`--leverui-radar-chart-width` changes the displayed width, not what is drawn.
+`--lui-radar-chart-width` changes the displayed width, not what is drawn.
 The `width` and `height` props still set the proportions.
 
-| Variable                            | Default       | Description               |
-| ----------------------------------- | ------------- | ------------------------- |
-| `--leverui-chart-tooltip-bg`        | Panel color   | Tooltip background.       |
-| `--leverui-chart-tooltip-padding`   | `4px 10px`    | Space inside the tooltip. |
-| `--leverui-chart-tooltip-gap`       | `4px`         | Space between rows.       |
-| `--leverui-chart-tooltip-radius`    | `4px`         | Tooltip corner radius.    |
-| `--leverui-chart-tooltip-shadow`    | Medium shadow | Tooltip shadow.           |
-| `--leverui-chart-tooltip-font-size` | `12px`        | Tooltip text size.        |
+| Variable                        | Default       | Description               |
+| ------------------------------- | ------------- | ------------------------- |
+| `--lui-chart-tooltip-bg`        | Panel color   | Tooltip background.       |
+| `--lui-chart-tooltip-padding`   | `4px 10px`    | Space inside the tooltip. |
+| `--lui-chart-tooltip-gap`       | `4px`         | Space between rows.       |
+| `--lui-chart-tooltip-radius`    | `4px`         | Tooltip corner radius.    |
+| `--lui-chart-tooltip-shadow`    | Medium shadow | Tooltip shadow.           |
+| `--lui-chart-tooltip-font-size` | `12px`        | Tooltip text size.        |
 
 ### Classes
 

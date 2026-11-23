@@ -59,7 +59,7 @@ export const Indicator: Story = {
 export const CustomIndicator: Story = {
   render: TabsCustomIndicator,
   parameters: guide(
-    'Customize the indicator appearance using CSS variables like `--leverui-tabs-indicator-bg` and `--leverui-tabs-indicator-shadow`.',
+    'Customize the indicator appearance using CSS variables like `--lui-tabs-indicator-bg` and `--lui-tabs-indicator-shadow`.',
   ),
 };
 export const Links: Story = {

@@ -10,7 +10,7 @@ async function verifiesConsumerCss({ page }: { page: Page }): Promise<void> {
   await expect(item).toHaveCSS('height', '40px');
   await page.addStyleTag({
     content:
-      '.consumer-segment { --leverui-segment-group-item-height: 48px; --leverui-segment-group-indicator-background: rgb(255, 0, 0); }',
+      '.consumer-segment { --lui-segment-group-item-height: 48px; --lui-segment-group-indicator-background: rgb(255, 0, 0); }',
   });
   await expect(item).toHaveCSS('height', '48px');
   await expect(indicator).toHaveCSS('background-color', 'rgb(255, 0, 0)');

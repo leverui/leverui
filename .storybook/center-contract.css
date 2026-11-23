@@ -1,7 +1,7 @@
 .center-contract-default {
   width: 240px;
   height: 120px;
-  background: var(--leverui-colors-blue-500);
+  background: var(--lui-colors-blue-500);
 }
 
 .center-contract-child {
@@ -10,7 +10,7 @@
 }
 
 .center-contract-inline {
-  gap: var(--leverui-spacing-4);
+  gap: var(--lui-spacing-4);
 }
 
 .center-contract-reactive,
@@ -25,5 +25,5 @@
 }
 
 .center-contract-custom {
-  --leverui-center-justify: flex-end;
+  --lui-center-justify: flex-end;
 }

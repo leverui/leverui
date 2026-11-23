@@ -10,15 +10,15 @@
           :focus-visible
         ) {
         z-index: calc(
-          var(--leverui-group-count, sibling-count()) -
-            var(--leverui-group-index, calc(sibling-index() - 1))
+          var(--lui-group-count, sibling-count()) -
+            var(--lui-group-index, calc(sibling-index() - 1))
         );
       }
       &[data-stacking-sm='last-on-top']
         > :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip]):not(
           :focus-visible
         ) {
-        z-index: var(--leverui-group-index, calc(sibling-index() - 1));
+        z-index: var(--lui-group-index, calc(sibling-index() - 1));
       }
     }
 
@@ -28,15 +28,15 @@
           :focus-visible
         ) {
         z-index: calc(
-          var(--leverui-group-count, sibling-count()) -
-            var(--leverui-group-index, calc(sibling-index() - 1))
+          var(--lui-group-count, sibling-count()) -
+            var(--lui-group-index, calc(sibling-index() - 1))
         );
       }
       &[data-stacking-md='last-on-top']
         > :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip]):not(
           :focus-visible
         ) {
-        z-index: var(--leverui-group-index, calc(sibling-index() - 1));
+        z-index: var(--lui-group-index, calc(sibling-index() - 1));
       }
     }
 
@@ -46,15 +46,15 @@
           :focus-visible
         ) {
         z-index: calc(
-          var(--leverui-group-count, sibling-count()) -
-            var(--leverui-group-index, calc(sibling-index() - 1))
+          var(--lui-group-count, sibling-count()) -
+            var(--lui-group-index, calc(sibling-index() - 1))
         );
       }
       &[data-stacking-lg='last-on-top']
         > :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip]):not(
           :focus-visible
         ) {
-        z-index: var(--leverui-group-index, calc(sibling-index() - 1));
+        z-index: var(--lui-group-index, calc(sibling-index() - 1));
       }
     }
 
@@ -64,15 +64,15 @@
           :focus-visible
         ) {
         z-index: calc(
-          var(--leverui-group-count, sibling-count()) -
-            var(--leverui-group-index, calc(sibling-index() - 1))
+          var(--lui-group-count, sibling-count()) -
+            var(--lui-group-index, calc(sibling-index() - 1))
         );
       }
       &[data-stacking-xl='last-on-top']
         > :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip]):not(
           :focus-visible
         ) {
-        z-index: var(--leverui-group-index, calc(sibling-index() - 1));
+        z-index: var(--lui-group-index, calc(sibling-index() - 1));
       }
     }
 
@@ -82,15 +82,15 @@
           :focus-visible
         ) {
         z-index: calc(
-          var(--leverui-group-count, sibling-count()) -
-            var(--leverui-group-index, calc(sibling-index() - 1))
+          var(--lui-group-count, sibling-count()) -
+            var(--lui-group-index, calc(sibling-index() - 1))
         );
       }
       &[data-stacking-2xl='last-on-top']
         > :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip]):not(
           :focus-visible
         ) {
-        z-index: var(--leverui-group-index, calc(sibling-index() - 1));
+        z-index: var(--lui-group-index, calc(sibling-index() - 1));
       }
     }
   }

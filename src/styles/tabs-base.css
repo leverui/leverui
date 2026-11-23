@@ -1,8 +1,8 @@
 @layer leverui.recipes {
   .leverui-tabs__root:not([data-unstyled]) {
-    --leverui-tabs-trigger-radius: var(--leverui-radii-l2);
-    --leverui-tabs-indicator-shadow: var(--leverui-shadows-xs);
-    --leverui-tabs-indicator-bg: var(--leverui-colors-bg);
+    --lui-tabs-trigger-radius: var(--lui-radii-l2);
+    --lui-tabs-indicator-shadow: var(--lui-shadows-xs);
+    --lui-tabs-indicator-bg: var(--lui-colors-bg);
     position: relative;
     display: block;
 
@@ -12,12 +12,12 @@
 
     .leverui-tabs__list:not([data-unstyled]) {
       display: var(
-        --leverui-private-tabs-fitted-display,
-        var(--leverui-private-tabs-variant-display, inline-flex)
+        --lui-private-tabs-fitted-display,
+        var(--lui-private-tabs-variant-display, inline-flex)
       );
       position: relative;
       isolation: isolate;
-      min-height: var(--leverui-private-tabs-height);
+      min-height: var(--lui-private-tabs-height);
       flex-direction: row;
     }
 
@@ -27,49 +27,49 @@
 
     .leverui-tabs__trigger:not([data-unstyled]) {
       outline: 0;
-      min-width: var(--leverui-private-tabs-height);
-      height: var(--leverui-private-tabs-height);
+      min-width: var(--lui-private-tabs-height);
+      height: var(--lui-private-tabs-height);
       display: flex;
       align-items: center;
-      font-weight: var(--leverui-font-weights-medium);
+      font-weight: var(--lui-font-weights-medium);
       position: relative;
-      cursor: var(--leverui-cursor-button);
-      gap: var(--leverui-spacing-2);
+      cursor: var(--lui-cursor-button);
+      gap: var(--lui-spacing-2);
 
       &:is(:focus-visible, [data-focus-visible]) {
         z-index: 1;
-        outline: 2px solid var(--leverui-colors-color-palette-focus-ring);
+        outline: 2px solid var(--lui-colors-color-palette-focus-ring);
       }
 
       &:is([data-disabled], [disabled], [aria-disabled='true']) {
-        cursor: var(--leverui-cursor-disabled);
+        cursor: var(--lui-cursor-disabled);
         opacity: 0.5;
       }
     }
 
     .leverui-tabs__content:not([data-unstyled]) {
       &:is(:focus-visible, [data-focus-visible]) {
-        outline: 2px solid var(--leverui-colors-color-palette-focus-ring);
+        outline: 2px solid var(--lui-colors-color-palette-focus-ring);
         outline-offset: -2px;
       }
     }
 
     &:not([data-orientation='vertical']) .leverui-tabs__content:not([data-unstyled]) {
       width: 100%;
-      padding-top: var(--leverui-private-tabs-content-padding);
+      padding-top: var(--lui-private-tabs-content-padding);
     }
 
     &[data-orientation='vertical'] .leverui-tabs__content:not([data-unstyled]) {
       height: 100%;
-      padding-inline-start: var(--leverui-private-tabs-content-padding);
+      padding-inline-start: var(--lui-private-tabs-content-padding);
     }
 
     .leverui-tabs__indicator:not([data-unstyled]) {
       width: var(--width);
       height: var(--height);
-      border-radius: var(--leverui-tabs-trigger-radius);
-      background: var(--leverui-tabs-indicator-bg);
-      box-shadow: var(--leverui-tabs-indicator-shadow);
+      border-radius: var(--lui-tabs-trigger-radius);
+      background: var(--lui-tabs-indicator-bg);
+      box-shadow: var(--lui-tabs-indicator-shadow);
       z-index: -1;
     }
   }

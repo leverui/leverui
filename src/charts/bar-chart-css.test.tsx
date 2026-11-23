@@ -76,11 +76,11 @@ function verifiesBarChartHooks(): void {
   expect(root.querySelector('.leverui-bar-chart__reference-line')).not.toBeNull();
   expect(root.querySelector('.leverui-bar-chart__reference-area')).toHaveAttribute(
     'style',
-    'fill: var(--leverui-colors-green-solid);',
+    'fill: var(--lui-colors-green-solid);',
   );
   expect(root.querySelector('.leverui-bar-chart__reference-line')).toHaveAttribute(
     'style',
-    'stroke: var(--leverui-colors-blue-solid);',
+    'stroke: var(--lui-colors-blue-solid);',
   );
   expect(root.querySelector('.leverui-bar-chart__legend')).not.toBeNull();
 

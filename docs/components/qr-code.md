@@ -94,10 +94,10 @@ to change the value. The hook is also `QrCode.useQrCode`. `QrCode.Context` and
 ## Customize with CSS
 
 Import `@leverui/components/styles.css` before your own stylesheet. Classes:
-`.leverui-qr-code__*`. Set `--leverui-qr-code-size` or
-`--leverui-qr-code-overlay-size` on a root to resize the code or its overlay.
+`.leverui-qr-code__*`. Set `--lui-qr-code-size` or
+`--lui-qr-code-overlay-size` on a root to resize the code or its overlay.
 Restyle a part with your own class. The SVG `fill` takes a CSS color or a
-`--leverui-*` color variable.
+`--lui-*` color variable.
 
 `unstyled` turns off the default styles of the root, frame, and overlay. The
 Pattern and DownloadTrigger have classes but no default styles.

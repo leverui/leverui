@@ -30,11 +30,11 @@ export function CarouselWithImages(): JSX.Element {
                 size="xs"
                 variant="outline"
                 style={{
-                  'border-radius': 'var(--leverui-radii-full)',
+                  'border-radius': 'var(--lui-radii-full)',
                   position: 'absolute',
                   'z-index': '1',
-                  background: 'var(--leverui-colors-bg)',
-                  'inset-inline-start': 'var(--leverui-spacing-4)',
+                  background: 'var(--lui-colors-bg)',
+                  'inset-inline-start': 'var(--lui-spacing-4)',
                 }}
               >
                 <ArrowLeftIcon class="example-carousel-arrow-icon" />
@@ -65,11 +65,11 @@ export function CarouselWithImages(): JSX.Element {
                 size="xs"
                 variant="outline"
                 style={{
-                  'border-radius': 'var(--leverui-radii-full)',
+                  'border-radius': 'var(--lui-radii-full)',
                   position: 'absolute',
                   'z-index': '1',
-                  background: 'var(--leverui-colors-bg)',
-                  'inset-inline-end': 'var(--leverui-spacing-4)',
+                  background: 'var(--lui-colors-bg)',
+                  'inset-inline-end': 'var(--lui-spacing-4)',
                 }}
               >
                 <ArrowRightIcon class="example-carousel-arrow-icon" />
@@ -77,7 +77,7 @@ export function CarouselWithImages(): JSX.Element {
             )
           }
         />
-        <Box style={{ position: 'absolute', bottom: 'var(--leverui-spacing-6)', width: '100%' }}>
+        <Box style={{ position: 'absolute', bottom: 'var(--lui-spacing-6)', width: '100%' }}>
           <Carousel.Indicators class="carousel-example-image-indicator" />
         </Box>
       </Carousel.Control>

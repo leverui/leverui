@@ -170,9 +170,9 @@ export function Sparkline(props: SparklineProps): JSX.Element {
               style={
                 props.data[index()]?.fill
                   ? {
-                      '--leverui-private-sparkline-bar-color': chartColor(
+                      '--lui-private-sparkline-bar-color': chartColor(
                         props.data[index()]?.fill,
-                        'var(--leverui-colors-teal-solid)',
+                        'var(--lui-colors-teal-solid)',
                       ),
                     }
                   : undefined

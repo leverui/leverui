@@ -18,8 +18,8 @@ assert.match(
   defaultCss,
   /@layer leverui\.reset,leverui\.base,leverui\.tokens,leverui\.recipes,leverui\.utilities;/,
 );
-assert.match(defaultCss, /--leverui-colors-bg:/);
-assert.match(defaultCss, /--leverui-spacing-4:/);
+assert.match(defaultCss, /--lui-colors-bg:/);
+assert.match(defaultCss, /--lui-spacing-4:/);
 assert.match(defaultCss, /\.leverui-box\s*\{\s*box-sizing:\s*border-box[;}]/);
 assert.doesNotMatch(defaultCss, /chakra/i);
 

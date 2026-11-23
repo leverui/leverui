@@ -1,26 +1,20 @@
 @layer leverui.recipes {
   .leverui-select__trigger:not([data-unstyled]):is([data-placeholder-shown], [data-placeholder]) {
-    color: color-mix(in srgb, var(--leverui-colors-fg-muted) 80%, transparent);
+    color: color-mix(in srgb, var(--lui-colors-fg-muted) 80%, transparent);
   }
 
   .leverui-select__trigger:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
     outline: var(--focus-ring-width, 1px) var(--focus-ring-style, solid)
-      var(--leverui-select-focus-ring-color, var(--leverui-colors-color-palette-focus-ring));
+      var(--lui-select-focus-ring-color, var(--lui-colors-color-palette-focus-ring));
     outline-offset: 0;
-    border-color: var(
-      --leverui-select-focus-ring-color,
-      var(--leverui-colors-color-palette-focus-ring)
-    );
+    border-color: var(--lui-select-focus-ring-color, var(--lui-colors-color-palette-focus-ring));
   }
 
   .leverui-select__clearTrigger:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
     outline: var(--focus-ring-width, 2px) var(--focus-ring-style, solid)
-      var(--leverui-select-focus-ring-color, var(--leverui-colors-color-palette-focus-ring));
+      var(--lui-select-focus-ring-color, var(--lui-colors-color-palette-focus-ring));
     outline-offset: 0;
-    border-color: var(
-      --leverui-select-focus-ring-color,
-      var(--leverui-colors-color-palette-focus-ring)
-    );
+    border-color: var(--lui-select-focus-ring-color, var(--lui-colors-color-palette-focus-ring));
   }
 
   .leverui-select__trigger:not([data-unstyled])[data-disabled],
@@ -30,19 +24,19 @@
   }
 
   .leverui-select__trigger:not([data-unstyled])[data-invalid] {
-    border-color: var(--leverui-colors-border-error);
+    border-color: var(--lui-colors-border-error);
   }
 
   .leverui-select__indicator:not([data-unstyled])[data-disabled] {
-    color: var(--leverui-colors-fg-subtle);
+    color: var(--lui-colors-fg-subtle);
   }
 
   .leverui-select__indicator:not([data-unstyled])[data-invalid] {
-    color: var(--leverui-colors-fg-error);
+    color: var(--lui-colors-fg-error);
   }
 
   .leverui-select__item:not([data-unstyled])[data-highlighted] {
-    background: color-mix(in srgb, var(--leverui-colors-bg-emphasized) 60%, transparent);
+    background: color-mix(in srgb, var(--lui-colors-bg-emphasized) 60%, transparent);
   }
 
   .leverui-select__item:not([data-unstyled])[data-disabled] {
@@ -56,11 +50,11 @@
   }
 
   .leverui-select__content:not([data-unstyled])[data-state='open'] {
-    animation-duration: var(--leverui-durations-fast);
+    animation-duration: var(--lui-durations-fast);
   }
 
   .leverui-select__content:not([data-unstyled])[data-state='closed'] {
-    animation-duration: var(--leverui-durations-fastest);
+    animation-duration: var(--lui-durations-fastest);
   }
 
   .leverui-select__content:not([data-unstyled])[data-state='open'][data-placement^='top'] {

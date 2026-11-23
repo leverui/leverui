@@ -48,7 +48,7 @@ export function PackedProgressCircle(): JSX.Element {
       <ProgressCirclePropsProvider value={readCircleDefaults}>
         <ProgressCircle.Root
           value={advanced() ? 75 : 25}
-          style={{ '--leverui-progress-circle-thickness': '9px' }}
+          style={{ '--lui-progress-circle-thickness': '9px' }}
           colorPalette="teal"
         >
           <ProgressCircle.Label id="packed-circle-label">Uploading</ProgressCircle.Label>

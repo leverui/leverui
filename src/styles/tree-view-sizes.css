@@ -1,17 +1,17 @@
 @layer leverui.recipes {
   .leverui-tree-view__root:not([data-unstyled])[data-size='xs'] {
-    --leverui-private-tree-default-icon-size: var(--leverui-spacing-3);
-    --leverui-private-tree-default-padding-inline: var(--leverui-spacing-2);
-    --leverui-private-tree-default-padding-block: var(--leverui-spacing-1);
-    --leverui-private-tree-default-font-size: var(--leverui-font-sizes-xs);
-    --leverui-private-tree-default-line-height: 1rem;
+    --lui-private-tree-default-icon-size: var(--lui-spacing-3);
+    --lui-private-tree-default-padding-inline: var(--lui-spacing-2);
+    --lui-private-tree-default-padding-block: var(--lui-spacing-1);
+    --lui-private-tree-default-font-size: var(--lui-font-sizes-xs);
+    --lui-private-tree-default-line-height: 1rem;
   }
 
   .leverui-tree-view__root:not([data-unstyled])[data-size='sm'] {
-    --leverui-private-tree-default-icon-size: var(--leverui-spacing-3);
-    --leverui-private-tree-default-padding-inline: var(--leverui-spacing-3);
-    --leverui-private-tree-default-padding-block: var(--leverui-spacing-1);
-    --leverui-private-tree-default-font-size: var(--leverui-font-sizes-sm);
-    --leverui-private-tree-default-line-height: 1.25rem;
+    --lui-private-tree-default-icon-size: var(--lui-spacing-3);
+    --lui-private-tree-default-padding-inline: var(--lui-spacing-3);
+    --lui-private-tree-default-padding-block: var(--lui-spacing-1);
+    --lui-private-tree-default-font-size: var(--lui-font-sizes-sm);
+    --lui-private-tree-default-line-height: 1.25rem;
   }
 }

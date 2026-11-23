@@ -10,8 +10,8 @@ export const qrCodeContracts = [
       "[data-size='full']",
       "[data-size-md='xl']",
       "[data-size-2xl='full']",
-      '--leverui-qr-code-size',
-      '--leverui-qr-code-overlay-size',
+      '--lui-qr-code-size',
+      '--lui-qr-code-overlay-size',
     ],
   },
 ];

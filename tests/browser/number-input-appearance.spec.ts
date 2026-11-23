@@ -35,7 +35,7 @@ async function verifiesNumberInputAppearance({ page }: { page: Page }): Promise<
   expect(large[2]).not.toBe(small[2]);
   await root.evaluate(
     /** Override the documented public stepper variable through native CSS. */
-    (element) => element.style.setProperty('--leverui-number-input-stepper-width', '40px'),
+    (element) => element.style.setProperty('--lui-number-input-stepper-width', '40px'),
   );
   const custom = await readGeometry(input, control);
   expect(custom[1]).toBe(40);

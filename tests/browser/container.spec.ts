@@ -96,7 +96,7 @@ async function verifiesContainer({ page }: { page: Page }): Promise<void> {
   await page.keyboard.press('Enter');
   await expect(page).toHaveURL(/#container-target$/);
 
-  await page.addStyleTag({ content: ':root { --leverui-sizes-8xl: 80rem; }' });
+  await page.addStyleTag({ content: ':root { --lui-sizes-8xl: 80rem; }' });
   expectNear((await requiredBox(root)).width, 1280);
 }
 

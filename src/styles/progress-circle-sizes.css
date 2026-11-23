@@ -1,34 +1,34 @@
 @layer leverui.recipes {
   .leverui-progress-circle__root:not([data-unstyled]) {
     &[data-size='xs'] {
-      --leverui-private-progress-circle-size: 24px;
-      --leverui-private-progress-circle-thickness: 4px;
-      --leverui-private-progress-circle-value-font-size: var(--leverui-font-sizes-2xs);
-      --leverui-private-progress-circle-value-line-height: 0.75rem;
+      --lui-private-progress-circle-size: 24px;
+      --lui-private-progress-circle-thickness: 4px;
+      --lui-private-progress-circle-value-font-size: var(--lui-font-sizes-2xs);
+      --lui-private-progress-circle-value-line-height: 0.75rem;
     }
     &[data-size='sm'] {
-      --leverui-private-progress-circle-size: 32px;
-      --leverui-private-progress-circle-thickness: 5px;
-      --leverui-private-progress-circle-value-font-size: var(--leverui-font-sizes-2xs);
-      --leverui-private-progress-circle-value-line-height: 0.75rem;
+      --lui-private-progress-circle-size: 32px;
+      --lui-private-progress-circle-thickness: 5px;
+      --lui-private-progress-circle-value-font-size: var(--lui-font-sizes-2xs);
+      --lui-private-progress-circle-value-line-height: 0.75rem;
     }
     &[data-size='md'] {
-      --leverui-private-progress-circle-size: 40px;
-      --leverui-private-progress-circle-thickness: 6px;
-      --leverui-private-progress-circle-value-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-progress-circle-value-line-height: 1rem;
+      --lui-private-progress-circle-size: 40px;
+      --lui-private-progress-circle-thickness: 6px;
+      --lui-private-progress-circle-value-font-size: var(--lui-font-sizes-xs);
+      --lui-private-progress-circle-value-line-height: 1rem;
     }
     &[data-size='lg'] {
-      --leverui-private-progress-circle-size: 48px;
-      --leverui-private-progress-circle-thickness: 7px;
-      --leverui-private-progress-circle-value-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-progress-circle-value-line-height: 1.25rem;
+      --lui-private-progress-circle-size: 48px;
+      --lui-private-progress-circle-thickness: 7px;
+      --lui-private-progress-circle-value-font-size: var(--lui-font-sizes-sm);
+      --lui-private-progress-circle-value-line-height: 1.25rem;
     }
     &[data-size='xl'] {
-      --leverui-private-progress-circle-size: 64px;
-      --leverui-private-progress-circle-thickness: 8px;
-      --leverui-private-progress-circle-value-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-progress-circle-value-line-height: 1.25rem;
+      --lui-private-progress-circle-size: 64px;
+      --lui-private-progress-circle-thickness: 8px;
+      --lui-private-progress-circle-value-font-size: var(--lui-font-sizes-sm);
+      --lui-private-progress-circle-value-line-height: 1.25rem;
     }
   }
 }

@@ -104,7 +104,7 @@ async function verifiesMatrix({ page }: { page: Page }): Promise<void> {
   await expect(content).toHaveAttribute('data-variant', 'ghost');
   await page.evaluate(
     /** Verify public tokens inherit from the document into portalled parts. */
-    () => document.documentElement.style.setProperty('--leverui-select-radius', '17px'),
+    () => document.documentElement.style.setProperty('--lui-select-radius', '17px'),
   );
   await expect(trigger).toHaveCSS('border-radius', '17px');
   await expect(content).toHaveCSS('border-radius', '17px');

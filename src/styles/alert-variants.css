@@ -1,28 +1,28 @@
 @layer leverui.recipes {
   .leverui-alert__root:not([data-unstyled]) {
-    background: var(--leverui-private-alert-background, transparent);
-    color: var(--leverui-private-alert-foreground);
-    box-shadow: var(--leverui-private-alert-shadow, none);
+    background: var(--lui-private-alert-background, transparent);
+    color: var(--lui-private-alert-foreground);
+    box-shadow: var(--lui-private-alert-shadow, none);
 
     &[data-variant='subtle'] {
-      --leverui-private-alert-background: var(--leverui-colors-color-palette-subtle);
-      --leverui-private-alert-foreground: var(--leverui-colors-color-palette-fg);
+      --lui-private-alert-background: var(--lui-colors-color-palette-subtle);
+      --lui-private-alert-foreground: var(--lui-colors-color-palette-fg);
     }
 
     &[data-variant='surface'] {
-      --leverui-private-alert-background: var(--leverui-colors-color-palette-subtle);
-      --leverui-private-alert-foreground: var(--leverui-colors-color-palette-fg);
-      --leverui-private-alert-shadow: inset 0 0 0 1px var(--leverui-colors-color-palette-muted);
+      --lui-private-alert-background: var(--lui-colors-color-palette-subtle);
+      --lui-private-alert-foreground: var(--lui-colors-color-palette-fg);
+      --lui-private-alert-shadow: inset 0 0 0 1px var(--lui-colors-color-palette-muted);
     }
 
     &[data-variant='outline'] {
-      --leverui-private-alert-foreground: var(--leverui-colors-color-palette-fg);
-      --leverui-private-alert-shadow: inset 0 0 0 1px var(--leverui-colors-color-palette-border);
+      --lui-private-alert-foreground: var(--lui-colors-color-palette-fg);
+      --lui-private-alert-shadow: inset 0 0 0 1px var(--lui-colors-color-palette-border);
     }
 
     &[data-variant='solid'] {
-      --leverui-private-alert-background: var(--leverui-colors-color-palette-solid);
-      --leverui-private-alert-foreground: var(--leverui-colors-color-palette-contrast);
+      --lui-private-alert-background: var(--lui-colors-color-palette-solid);
+      --lui-private-alert-foreground: var(--lui-colors-color-palette-contrast);
     }
   }
 }

@@ -39,7 +39,7 @@ async function verifiesSpacerCss({ page }: { page: Page }): Promise<void> {
   await expect(page.locator('#unstyled-flex-spacer')).toHaveCSS('flex-grow', '3');
   await page.setViewportSize({ width: 900, height: 700 });
   await expect(page.locator('#responsive-spacer')).toHaveCSS('flex-grow', '2');
-  await page.addStyleTag({ content: '.consumer-spacer { --leverui-spacer-flex: 2; }' });
+  await page.addStyleTag({ content: '.consumer-spacer { --lui-spacer-flex: 2; }' });
   await expect(plain).toHaveCSS('flex-grow', '2');
   await page.addStyleTag({ content: '.consumer-spacer { flex: 3; }' });
   await expect(plain).toHaveCSS('flex-grow', '3');

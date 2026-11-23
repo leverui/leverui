@@ -35,8 +35,8 @@ export const dataListContracts = [
           ),
         ],
       ),
-      '--leverui-colors-fg-muted',
-      '--leverui-font-weights-medium',
+      '--lui-colors-fg-muted',
+      '--lui-font-weights-medium',
     ],
   },
 ];

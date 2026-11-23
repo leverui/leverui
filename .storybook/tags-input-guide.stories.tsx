@@ -34,7 +34,7 @@ function StartElementExample(): JSX.Element {
         <TagsInput.Root defaultValue={['SolidJS', 'TypeScript']}>
           <TagsInput.Label>Tagged frameworks</TagsInput.Label>
           <InputGroup
-            style={{ '--leverui-group-gap': '0px' }}
+            style={{ '--lui-group-gap': '0px' }}
             startElement={
               <svg
                 data-testid="tags-start-icon"

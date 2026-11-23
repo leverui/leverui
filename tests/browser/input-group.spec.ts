@@ -38,7 +38,7 @@ async function verifiesElementComposition({ page }: { page: Page }): Promise<voi
   await page.getByTestId('input-group-end-toggle').click();
   await expect(group.locator('.leverui-input-element')).toHaveCount(1);
   await expect(input).toHaveValue('example');
-  await page.addStyleTag({ content: '.leverui-input-group { --leverui-colors-fg-muted: red; }' });
+  await page.addStyleTag({ content: '.leverui-input-group { --lui-colors-fg-muted: red; }' });
   await expect(start).toHaveCSS('color', 'rgb(255, 0, 0)');
   await page.addStyleTag({
     content:
@@ -77,7 +77,7 @@ async function verifiesCustomFieldPadding({ page }: { page: Page }): Promise<voi
   await expect(input).toBeVisible({ timeout: 30_000 });
   await expect(input).toHaveCSS('padding-inline-start', '40px');
   await page.addStyleTag({
-    content: '.leverui-input-group__field { --leverui-input-group-field-height: 48px; }',
+    content: '.leverui-input-group__field { --lui-input-group-field-height: 48px; }',
   });
   await expect(input).toHaveCSS('padding-inline-start', '48px');
   await input.fill('justin');

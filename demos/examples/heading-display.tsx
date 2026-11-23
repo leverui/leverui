@@ -38,10 +38,10 @@ export function HeadingWithAsProp(): JSX.Element {
 export function HeadingWithWeights(): JSX.Element {
   return (
     <Stack>
-      <Heading style={{ 'font-weight': 'var(--leverui-font-weights-normal)' }}>Normal</Heading>
-      <Heading style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>Medium</Heading>
-      <Heading style={{ 'font-weight': 'var(--leverui-font-weights-semibold)' }}>Semibold</Heading>
-      <Heading style={{ 'font-weight': 'var(--leverui-font-weights-bold)' }}>Bold</Heading>
+      <Heading style={{ 'font-weight': 'var(--lui-font-weights-normal)' }}>Normal</Heading>
+      <Heading style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>Medium</Heading>
+      <Heading style={{ 'font-weight': 'var(--lui-font-weights-semibold)' }}>Semibold</Heading>
+      <Heading style={{ 'font-weight': 'var(--lui-font-weights-bold)' }}>Bold</Heading>
     </Stack>
   );
 }

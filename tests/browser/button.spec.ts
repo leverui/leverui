@@ -116,7 +116,7 @@ async function verifiesServerButton({ page }: { page: Page }): Promise<void> {
   await expect(button).toHaveCSS('height', '44px');
   await expect(button).toHaveCSS('border-width', '1px');
   await page.addStyleTag({
-    content: '.consumer-button { --leverui-colors-blue-border: rgb(30, 50, 70); }',
+    content: '.consumer-button { --lui-colors-blue-border: rgb(30, 50, 70); }',
   });
   await expect(button).toHaveCSS('border-color', 'rgb(30, 50, 70)');
   await page.addStyleTag({ content: '.consumer-button { background-color: rgb(30, 50, 70); }' });

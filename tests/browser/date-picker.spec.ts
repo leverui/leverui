@@ -51,7 +51,7 @@ test('DatePicker responds to externally controlled range values', verifiesContro
 /** Verify root-scope public variables reach the field and portalled calendar. */
 async function verifiesPublicVariableOverride({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-datepicker--basic');
-  await page.addStyleTag({ content: ':root { --leverui-date-picker-radius: 17px; }' });
+  await page.addStyleTag({ content: ':root { --lui-date-picker-radius: 17px; }' });
   const input = page.getByTestId('date-picker-input');
   await expect(input).toBeVisible({ timeout: 30_000 });
   expect(await input.evaluate(readRadius)).toBe('17px');

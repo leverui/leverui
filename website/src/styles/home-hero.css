@@ -58,11 +58,11 @@ html[data-leverui-color-mode='dark'] .hero-band {
   display: inline-flex;
   align-items: center;
   padding: 6px 14px;
-  border-radius: var(--leverui-radii-full);
+  border-radius: var(--lui-radii-full);
   background: var(--site-accent-soft);
   color: var(--site-accent-bright);
   font-size: 13px;
-  font-weight: var(--leverui-font-weights-medium);
+  font-weight: var(--lui-font-weights-medium);
 }
 .hero h1 {
   margin: 24px 0 16px;

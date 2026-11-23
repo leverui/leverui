@@ -122,7 +122,7 @@ part classes: `.leverui-stat__group`, `.leverui-stat__root`,
 
 The root has `data-size`, plus `data-size-sm` through `data-size-2xl` for
 responsive sizes. Indicators have `data-type="up"` or `"down"`. Colors and
-spacing come from public `--leverui-*` variables. Override them for a whole
+spacing come from public `--lui-*` variables. Override them for a whole
 theme or one stat. To give your own element a part's default styles, put that
 part's class on it.
 

@@ -1,49 +1,49 @@
 @layer leverui.recipes {
   .leverui-dialog__content[data-leverui-dialog-css] {
-    --leverui-private-dialog-size-max-width: var(--leverui-sizes-lg);
-    --leverui-private-dialog-size-height: auto;
-    --leverui-private-dialog-size-min-height: auto;
-    --leverui-private-dialog-size-radius: var(--leverui-radii-l3);
-    --leverui-private-dialog-size-margin: var(--leverui-private-dialog-base-margin);
-    --leverui-private-dialog-margin: var(--leverui-private-dialog-size-margin);
-    max-width: var(--leverui-private-dialog-size-max-width);
-    height: var(--leverui-private-dialog-size-height);
-    min-height: var(--leverui-private-dialog-size-min-height);
-    border-radius: var(--leverui-private-dialog-size-radius);
+    --lui-private-dialog-size-max-width: var(--lui-sizes-lg);
+    --lui-private-dialog-size-height: auto;
+    --lui-private-dialog-size-min-height: auto;
+    --lui-private-dialog-size-radius: var(--lui-radii-l3);
+    --lui-private-dialog-size-margin: var(--lui-private-dialog-base-margin);
+    --lui-private-dialog-margin: var(--lui-private-dialog-size-margin);
+    max-width: var(--lui-private-dialog-size-max-width);
+    height: var(--lui-private-dialog-size-height);
+    min-height: var(--lui-private-dialog-size-min-height);
+    border-radius: var(--lui-private-dialog-size-radius);
 
     &[data-size='xs'] {
-      --leverui-private-dialog-size-max-width: var(--leverui-sizes-sm);
+      --lui-private-dialog-size-max-width: var(--lui-sizes-sm);
     }
     &[data-size='sm'] {
-      --leverui-private-dialog-size-max-width: var(--leverui-sizes-md);
+      --lui-private-dialog-size-max-width: var(--lui-sizes-md);
     }
     &[data-size='md'] {
-      --leverui-private-dialog-size-max-width: var(--leverui-sizes-lg);
+      --lui-private-dialog-size-max-width: var(--lui-sizes-lg);
     }
     &[data-size='lg'] {
-      --leverui-private-dialog-size-max-width: var(--leverui-sizes-2xl);
+      --lui-private-dialog-size-max-width: var(--lui-sizes-2xl);
     }
     &[data-size='xl'] {
-      --leverui-private-dialog-size-max-width: var(--leverui-sizes-4xl);
+      --lui-private-dialog-size-max-width: var(--lui-sizes-4xl);
     }
     &[data-size='cover'] {
-      --leverui-private-dialog-size-max-width: none;
-      --leverui-private-dialog-size-height: 100%;
-      --leverui-private-dialog-size-margin: 0;
+      --lui-private-dialog-size-max-width: none;
+      --lui-private-dialog-size-height: 100%;
+      --lui-private-dialog-size-margin: 0;
     }
     &[data-size='full'] {
-      --leverui-private-dialog-size-max-width: 100dvw;
-      --leverui-private-dialog-size-min-height: 100dvh;
-      --leverui-private-dialog-size-radius: 0;
-      --leverui-private-dialog-size-margin: 0;
+      --lui-private-dialog-size-max-width: 100dvw;
+      --lui-private-dialog-size-min-height: 100dvh;
+      --lui-private-dialog-size-radius: 0;
+      --lui-private-dialog-size-margin: 0;
     }
   }
 
   .leverui-dialog__positioner[data-leverui-dialog-css] {
-    padding: var(--leverui-private-dialog-positioner-padding, 0);
+    padding: var(--lui-private-dialog-positioner-padding, 0);
 
     &[data-size='cover'] {
-      --leverui-private-dialog-positioner-padding: var(--leverui-spacing-10);
+      --lui-private-dialog-positioner-padding: var(--lui-spacing-10);
     }
   }
 }

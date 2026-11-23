@@ -1,5 +1,5 @@
 .example-switch-row {
-  padding-inline: var(--leverui-spacing-4);
+  padding-inline: var(--lui-spacing-4);
 }
 
 .example-switch-label {
@@ -7,7 +7,7 @@
 }
 
 .example-switch-submit {
-  margin-top: var(--leverui-spacing-4);
+  margin-top: var(--lui-spacing-4);
 }
 
 .example-switch-off-icon {
@@ -15,9 +15,9 @@
 }
 
 .example-switch-moon-icon {
-  color: var(--leverui-colors-gray-400);
+  color: var(--lui-colors-gray-400);
 }
 
 .example-switch-sun-icon {
-  color: var(--leverui-colors-yellow-400);
+  color: var(--lui-colors-yellow-400);
 }

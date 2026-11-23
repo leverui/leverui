@@ -69,7 +69,7 @@ class.
 
 ```css
 .my-steps {
-  --leverui-colors-color-palette-solid: #145a80;
+  --lui-colors-color-palette-solid: #145a80;
 }
 
 .my-steps .leverui-steps__indicator {

@@ -30,7 +30,7 @@ export function CartesianReferences(props: CartesianReferencesProps): JSX.Elemen
   }
   /** Resolve the current guide color. */
   function color(value?: string): string {
-    return chartColor(value, 'var(--leverui-colors-red-solid)');
+    return chartColor(value, 'var(--lui-colors-red-solid)');
   }
   return (
     <g class="leverui-cartesian-chart__references" aria-hidden="true">

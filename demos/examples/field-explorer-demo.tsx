@@ -10,7 +10,7 @@ export function FieldExplorerDemo(): JSX.Element {
         'align-items': 'stretch',
         'max-width': '500px',
         'margin-inline': 'auto',
-        padding: 'var(--leverui-spacing-6)',
+        padding: 'var(--lui-spacing-6)',
       }}
     >
       <Field.Root required invalid>

@@ -1,11 +1,11 @@
 .highlight-orange {
   padding-inline: 2px;
-  background-color: var(--leverui-colors-orange-subtle);
-  color: var(--leverui-colors-orange-fg);
+  background-color: var(--lui-colors-orange-subtle);
+  color: var(--lui-colors-orange-fg);
 }
 
 .highlight-red {
-  color: var(--leverui-colors-red-500);
+  color: var(--lui-colors-red-500);
 }
 
 .highlight-heavy {

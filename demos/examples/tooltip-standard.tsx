@@ -50,7 +50,7 @@ export function TooltipWithCustomBg(): JSX.Element {
     <Tooltip
       showArrow
       content="You have 3 new notifications"
-      contentProps={{ style: { '--leverui-tooltip-background': 'tomato' } }}
+      contentProps={{ style: { '--lui-tooltip-background': 'tomato' } }}
     >
       {
         /** Keep the bell and count inside the small button. */
@@ -83,7 +83,7 @@ export function TooltipWithDisabled(): JSX.Element {
 /** Keep an open tooltip available for the anatomy explorer. */
 export function TooltipExplorerDemo(): JSX.Element {
   return (
-    <Stack align="center" gap="10" style={{ 'padding-block': 'var(--leverui-spacing-16)' }}>
+    <Stack align="center" gap="10" style={{ 'padding-block': 'var(--lui-spacing-16)' }}>
       <TooltipRoot open>
         <TooltipTrigger
           asChild={

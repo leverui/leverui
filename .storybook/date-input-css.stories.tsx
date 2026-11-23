@@ -25,7 +25,7 @@ function DateInputCssContract(): JSX.Element {
         variant={{ base: large() ? 'flushed' : 'outline', md: 'subtle' }}
         defaultValue={[parseDate('2026-03-14')]}
         name="css-date"
-        style={{ '--leverui-date-input-border-color': 'rgb(12, 34, 56)' }}
+        style={{ '--lui-date-input-border-color': 'rgb(12, 34, 56)' }}
         data-testid="date-input-css-root"
       >
         <DateInput.Label>Date of birth</DateInput.Label>

@@ -28,7 +28,7 @@ export const cardContracts = [
           ),
         ],
       ),
-      '--leverui-card-padding',
+      '--lui-card-padding',
     ],
   },
 ];

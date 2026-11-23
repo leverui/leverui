@@ -42,9 +42,7 @@ async function checksVariants({ page }: { page: Page }): Promise<void> {
   ]);
   await openStory(page, 'fill-with-value');
   await expect(
-    page.locator(
-      '#storybook-root linearGradient stop[stop-color="var(--leverui-colors-red-solid)"]',
-    ),
+    page.locator('#storybook-root linearGradient stop[stop-color="var(--lui-colors-red-solid)"]'),
   ).toHaveCount(2);
   await openStory(page, 'reference-area');
   await expect(page.locator('#storybook-root svg')).toContainText("Feb - June '24");

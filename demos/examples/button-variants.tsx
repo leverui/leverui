@@ -99,7 +99,7 @@ export function ButtonWithStyleOverride(): JSX.Element {
       style={{
         height: '48px',
         width: '200px',
-        border: '2px solid var(--leverui-colors-green-500)',
+        border: '2px solid var(--lui-colors-green-500)',
       }}
     >
       Button

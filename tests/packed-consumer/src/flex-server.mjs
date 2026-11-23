@@ -26,10 +26,10 @@ const stylesheet = readFileSync(
 assert.match(markup, /id="packed-server-flex"/);
 assert.match(markup, /Installed server flex/);
 assert.match(markup, /class="leverui-flex\b/);
-assert.match(markup, /--leverui-private-flex-direction-base:column/);
-assert.match(markup, /--leverui-private-flex-justify-base:space-between/);
+assert.match(markup, /--lui-private-flex-direction-base:column/);
+assert.match(markup, /--lui-private-flex-justify-base:space-between/);
 assert.match(stylesheet, /\.leverui-flex\s*\{[^}]*display: flex;/);
-assert.match(stylesheet, /flex-direction: var\(--leverui-private-flex-direction-base/);
-assert.match(stylesheet, /justify-content: var\(--leverui-private-flex-justify-base/);
+assert.match(stylesheet, /flex-direction: var\(--lui-private-flex-direction-base/);
+assert.match(stylesheet, /justify-content: var\(--lui-private-flex-justify-base/);
 assert.doesNotMatch(markup, /\s(?:direction|justify|css)=/);
 console.log('Packed Flex server rendering passed.');

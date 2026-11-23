@@ -67,8 +67,8 @@ family's [component guide](components/README.md) lists its own API and parts.
   groups, set `data-leverui-group-skip` on a child that must be excluded from
   the joined edge and stacking calculation. Example:
   `<Group skip={(element) => element.getAttribute('data-separator') === 'true'}>...</Group>`.
-- Both groups use `--leverui-group-gap` for spacing and write
-  `--leverui-group-count` and `--leverui-group-index` on included children.
+- Both groups use `--lui-group-gap` for spacing and write
+  `--lui-group-count` and `--lui-group-index` on included children.
   An inline value supplied by a child takes precedence over its generated
   count or index.
 - Before hydration, both groups use authored CSS sibling rules to preserve the
@@ -116,8 +116,8 @@ family's [component guide](components/README.md) lists its own API and parts.
   the trigger's DOM ancestry while preserving Dialog context and styles.
   Solid's native Portal omits its children from server HTML, which would lose
   initially open Dialog content.
-- The public Spinner track hook is `--leverui-spinner-track-color`. The size
-  variable is internal and uses `--leverui-private-spinner-size`.
+- The public Spinner track hook is `--lui-spinner-track-color`. The size
+  variable is internal and uses `--lui-private-spinner-size`.
 - `Loader` takes reactive Solid children. An absent `spinner` uses the default
   `Spinner`; `spinner={null}` omits it. `visible={false}` returns the original
   children without a wrapper, so a Loader ref has no element in that state.
@@ -169,7 +169,7 @@ family's [component guide](components/README.md) lists its own API and parts.
   `display: contents` so its children participate directly in flex and grid
   layout.
 - Import `@leverui/components/styles.css` once for authored defaults. Use native
-  `class` and `style`, stable part selectors, and public `--leverui-*` variables
+  `class` and `style`, stable part selectors, and public `--lui-*` variables
   for application styling.
 - Let the state machines manage focus, presence, keyboard, and portal behavior.
   Add Lever UI behavior only for a documented gap.

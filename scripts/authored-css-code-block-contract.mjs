@@ -38,8 +38,8 @@ export const codeBlockContracts = [
       '[data-word-wrap]',
       "[data-diff='added']",
       "[data-diff='removed']",
-      '--leverui-code-block-bg',
-      '--leverui-code-block-padding',
+      '--lui-code-block-bg',
+      '--lui-code-block-padding',
     ],
   },
 ];

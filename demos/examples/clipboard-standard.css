@@ -3,16 +3,16 @@
 }
 
 .clipboard-example-label {
-  font-size: var(--leverui-font-sizes-sm);
-  font-weight: var(--leverui-font-weights-medium);
+  font-size: var(--lui-font-sizes-sm);
+  font-weight: var(--lui-font-weights-medium);
 }
 
 .clipboard-example-inset-trigger {
-  margin-inline-end: calc(-1 * var(--leverui-spacing-2));
+  margin-inline-end: calc(-1 * var(--lui-spacing-2));
 }
 
 .clipboard-example-link {
-  color: var(--leverui-colors-blue-fg);
-  font-size: var(--leverui-font-sizes-sm);
+  color: var(--lui-colors-blue-fg);
+  font-size: var(--lui-font-sizes-sm);
   line-height: 1.25rem;
 }

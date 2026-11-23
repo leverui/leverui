@@ -79,7 +79,7 @@ async function verifiesNativeCardComposition({ page }: { page: Page }): Promise<
   await expect(page.locator('#selected-card')).toHaveCSS('display', 'flex');
   await expect(page.locator('#selected-body')).toHaveCSS('padding-top', '28px');
   await expect(page.locator('#owned-card')).toHaveCSS('display', 'flex');
-  await expect(page.locator('#owned-card')).toHaveCSS('--leverui-card-padding', '1rem');
+  await expect(page.locator('#owned-card')).toHaveCSS('--lui-card-padding', '1rem');
   await expect(page.locator('#owned-title')).toHaveCSS('font-weight', '600');
   await expect(page.locator('#owned-card')).toHaveClass(/owned-card/);
   await expect(page.locator('#owned-card')).toHaveClass(/custom-card/);

@@ -62,8 +62,7 @@ async function verifiesTabsCssContract({ page }: { page: Page }): Promise<void> 
   await expect(teal).toHaveAttribute('data-leverui-color-palette', 'teal');
   await teal.evaluate(
     /** Override the public palette token at the component scope. */
-    (element) =>
-      element.setAttribute('style', '--leverui-colors-color-palette-solid: rgb(3, 111, 77)'),
+    (element) => element.setAttribute('style', '--lui-colors-color-palette-solid: rgb(3, 111, 77)'),
   );
   const markerColor = await teal.locator('.leverui-tabs__trigger[data-selected]').evaluate(
     /** Read the selected marker after a consumer token override. */

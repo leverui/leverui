@@ -107,7 +107,7 @@ the default styles and keeps the part classes.
 
 ```css
 .profile-dialog {
-  --leverui-colors-bg-panel: #18242b;
+  --lui-colors-bg-panel: #18242b;
   border: 1px solid #5b8a96;
 }
 ```

@@ -84,18 +84,18 @@ export function ComboboxColorPickerExample(): JSX.Element {
                       <ColorSwatch
                         value={color.value}
                         style={{
-                          width: 'var(--leverui-sizes-6)',
-                          height: 'var(--leverui-sizes-6)',
+                          width: 'var(--lui-sizes-6)',
+                          height: 'var(--lui-sizes-6)',
                         }}
                       />
                       <HStack gap="1" style={{ flex: '1' }}>
-                        <Text style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>
+                        <Text style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>
                           {color.name}
                         </Text>
                         <Text
                           textStyle="sm"
                           style={{
-                            color: 'var(--leverui-colors-fg-muted)',
+                            color: 'var(--lui-colors-fg-muted)',
                           }}
                         >
                           {color.value}

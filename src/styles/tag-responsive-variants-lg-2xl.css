@@ -2,72 +2,72 @@
   @media (min-width: 1024px) {
     .leverui-tag__root:not([data-unstyled]) {
       &[data-variant-lg='subtle'] {
-        --leverui-private-tag-background: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-tag-color: var(--leverui-colors-color-palette-fg);
-        --leverui-private-tag-shadow: none;
+        --lui-private-tag-background: var(--lui-colors-color-palette-subtle);
+        --lui-private-tag-color: var(--lui-colors-color-palette-fg);
+        --lui-private-tag-shadow: none;
       }
       &[data-variant-lg='solid'] {
-        --leverui-private-tag-background: var(--leverui-colors-color-palette-solid);
-        --leverui-private-tag-color: var(--leverui-colors-color-palette-contrast);
-        --leverui-private-tag-shadow: none;
+        --lui-private-tag-background: var(--lui-colors-color-palette-solid);
+        --lui-private-tag-color: var(--lui-colors-color-palette-contrast);
+        --lui-private-tag-shadow: none;
       }
       &[data-variant-lg='outline'] {
-        --leverui-private-tag-background: transparent;
-        --leverui-private-tag-color: var(--leverui-colors-color-palette-fg);
-        --leverui-private-tag-shadow: inset 0 0 0 1px var(--leverui-colors-color-palette-border);
+        --lui-private-tag-background: transparent;
+        --lui-private-tag-color: var(--lui-colors-color-palette-fg);
+        --lui-private-tag-shadow: inset 0 0 0 1px var(--lui-colors-color-palette-border);
       }
       &[data-variant-lg='surface'] {
-        --leverui-private-tag-background: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-tag-color: var(--leverui-colors-color-palette-fg);
-        --leverui-private-tag-shadow: inset 0 0 0 1px var(--leverui-colors-color-palette-muted);
+        --lui-private-tag-background: var(--lui-colors-color-palette-subtle);
+        --lui-private-tag-color: var(--lui-colors-color-palette-fg);
+        --lui-private-tag-shadow: inset 0 0 0 1px var(--lui-colors-color-palette-muted);
       }
     }
   }
   @media (min-width: 1280px) {
     .leverui-tag__root:not([data-unstyled]) {
       &[data-variant-xl='subtle'] {
-        --leverui-private-tag-background: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-tag-color: var(--leverui-colors-color-palette-fg);
-        --leverui-private-tag-shadow: none;
+        --lui-private-tag-background: var(--lui-colors-color-palette-subtle);
+        --lui-private-tag-color: var(--lui-colors-color-palette-fg);
+        --lui-private-tag-shadow: none;
       }
       &[data-variant-xl='solid'] {
-        --leverui-private-tag-background: var(--leverui-colors-color-palette-solid);
-        --leverui-private-tag-color: var(--leverui-colors-color-palette-contrast);
-        --leverui-private-tag-shadow: none;
+        --lui-private-tag-background: var(--lui-colors-color-palette-solid);
+        --lui-private-tag-color: var(--lui-colors-color-palette-contrast);
+        --lui-private-tag-shadow: none;
       }
       &[data-variant-xl='outline'] {
-        --leverui-private-tag-background: transparent;
-        --leverui-private-tag-color: var(--leverui-colors-color-palette-fg);
-        --leverui-private-tag-shadow: inset 0 0 0 1px var(--leverui-colors-color-palette-border);
+        --lui-private-tag-background: transparent;
+        --lui-private-tag-color: var(--lui-colors-color-palette-fg);
+        --lui-private-tag-shadow: inset 0 0 0 1px var(--lui-colors-color-palette-border);
       }
       &[data-variant-xl='surface'] {
-        --leverui-private-tag-background: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-tag-color: var(--leverui-colors-color-palette-fg);
-        --leverui-private-tag-shadow: inset 0 0 0 1px var(--leverui-colors-color-palette-muted);
+        --lui-private-tag-background: var(--lui-colors-color-palette-subtle);
+        --lui-private-tag-color: var(--lui-colors-color-palette-fg);
+        --lui-private-tag-shadow: inset 0 0 0 1px var(--lui-colors-color-palette-muted);
       }
     }
   }
   @media (min-width: 1536px) {
     .leverui-tag__root:not([data-unstyled]) {
       &[data-variant-2xl='subtle'] {
-        --leverui-private-tag-background: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-tag-color: var(--leverui-colors-color-palette-fg);
-        --leverui-private-tag-shadow: none;
+        --lui-private-tag-background: var(--lui-colors-color-palette-subtle);
+        --lui-private-tag-color: var(--lui-colors-color-palette-fg);
+        --lui-private-tag-shadow: none;
       }
       &[data-variant-2xl='solid'] {
-        --leverui-private-tag-background: var(--leverui-colors-color-palette-solid);
-        --leverui-private-tag-color: var(--leverui-colors-color-palette-contrast);
-        --leverui-private-tag-shadow: none;
+        --lui-private-tag-background: var(--lui-colors-color-palette-solid);
+        --lui-private-tag-color: var(--lui-colors-color-palette-contrast);
+        --lui-private-tag-shadow: none;
       }
       &[data-variant-2xl='outline'] {
-        --leverui-private-tag-background: transparent;
-        --leverui-private-tag-color: var(--leverui-colors-color-palette-fg);
-        --leverui-private-tag-shadow: inset 0 0 0 1px var(--leverui-colors-color-palette-border);
+        --lui-private-tag-background: transparent;
+        --lui-private-tag-color: var(--lui-colors-color-palette-fg);
+        --lui-private-tag-shadow: inset 0 0 0 1px var(--lui-colors-color-palette-border);
       }
       &[data-variant-2xl='surface'] {
-        --leverui-private-tag-background: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-tag-color: var(--leverui-colors-color-palette-fg);
-        --leverui-private-tag-shadow: inset 0 0 0 1px var(--leverui-colors-color-palette-muted);
+        --lui-private-tag-background: var(--lui-colors-color-palette-subtle);
+        --lui-private-tag-color: var(--lui-colors-color-palette-fg);
+        --lui-private-tag-shadow: inset 0 0 0 1px var(--lui-colors-color-palette-muted);
       }
     }
   }

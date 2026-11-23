@@ -45,8 +45,8 @@ export function CartesianGradient(props: CartesianGradientProps): JSX.Element {
         >
           <stop offset="0%" stop-color={props.color} />
           <stop offset={zeroOffset()} stop-color={props.color} />
-          <stop offset={zeroOffset()} stop-color="var(--leverui-colors-red-solid)" />
-          <stop offset="100%" stop-color="var(--leverui-colors-red-solid)" />
+          <stop offset={zeroOffset()} stop-color="var(--lui-colors-red-solid)" />
+          <stop offset="100%" stop-color="var(--lui-colors-red-solid)" />
         </Show>
       </linearGradient>
     </defs>

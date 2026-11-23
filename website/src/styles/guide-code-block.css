@@ -3,7 +3,7 @@
   overflow: hidden;
   border: 0;
   border-radius: 6px;
-  background: var(--leverui-colors-gray-900);
+  background: var(--lui-colors-gray-900);
 }
 .guide-code-toolbar {
   display: flex;
@@ -11,24 +11,24 @@
   align-items: center;
   min-height: 44px;
   padding: 8px 16px;
-  border-bottom: 1px solid var(--leverui-colors-gray-800);
-  color: var(--leverui-colors-gray-300);
+  border-bottom: 1px solid var(--lui-colors-gray-800);
+  color: var(--lui-colors-gray-300);
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 12px;
   font-weight: 600;
 }
 .guide-code-toolbar button {
   padding: 5px 9px;
-  border: 1px solid var(--leverui-colors-gray-700);
+  border: 1px solid var(--lui-colors-gray-700);
   border-radius: 5px;
-  background: var(--leverui-colors-gray-800);
-  color: var(--leverui-colors-gray-200);
+  background: var(--lui-colors-gray-800);
+  color: var(--lui-colors-gray-200);
   font-size: 11px;
   cursor: pointer;
 }
 .guide-code-toolbar button:hover,
 .guide-code-toolbar button:focus-visible {
-  border-color: var(--leverui-colors-gray-400);
+  border-color: var(--lui-colors-gray-400);
 }
 .guide-code-block pre,
 .guide-markdown .guide-code-block pre {
@@ -36,8 +36,8 @@
   border: 0;
   border-radius: 0;
   padding: 2em;
-  background: var(--leverui-colors-gray-900);
-  color: var(--leverui-colors-gray-300);
+  background: var(--lui-colors-gray-900);
+  color: var(--lui-colors-gray-300);
   color-scheme: dark;
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   font-size: 0.9rem;
@@ -54,7 +54,7 @@
 .guide-markdown .guide-code-block pre code {
   padding: 0;
   background: transparent;
-  color: var(--leverui-colors-gray-300);
+  color: var(--lui-colors-gray-300);
   font: inherit;
   white-space: pre;
 }
@@ -90,10 +90,10 @@
   padding: 6px;
   border: 0;
   background: transparent;
-  color: var(--leverui-colors-gray-300);
+  color: var(--lui-colors-gray-300);
   font-size: 14px;
 }
 .is-floating-copy .guide-code-toolbar button:hover,
 .is-floating-copy .guide-code-toolbar button:focus-visible {
-  background: var(--leverui-colors-gray-800);
+  background: var(--lui-colors-gray-800);
 }

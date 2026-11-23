@@ -143,7 +143,7 @@ async function verifiesListReactivity({ page }: { page: Page }): Promise<void> {
   await page.addStyleTag({
     content:
       '.leverui-list__item[data-testid="list-default-item"]{color:rgb(10, 20, 30)}' +
-      '.leverui-list__root[data-testid="list-default"]{--leverui-list-gap:12px}',
+      '.leverui-list__root[data-testid="list-default"]{--lui-list-gap:12px}',
   });
   await expect(page.getByTestId('list-default-item')).toHaveCSS('color', 'rgb(10, 20, 30)');
   await expect(page.getByTestId('list-default')).toHaveCSS('row-gap', '12px');

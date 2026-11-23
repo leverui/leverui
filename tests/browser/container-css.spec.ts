@@ -57,9 +57,9 @@ async function verifiesContainerCss({ page }: { page: Page }): Promise<void> {
   await expect(responsive).toHaveCSS('align-items', 'center');
   await expect(responsive).toHaveCSS('max-width', '100%');
   await expect(page.locator('#unstyled-container')).toHaveCSS('position', 'static');
-  await page.addStyleTag({ content: ':root { --leverui-sizes-full: 90%; }' });
+  await page.addStyleTag({ content: ':root { --lui-sizes-full: 90%; }' });
   await expect(responsive).toHaveCSS('max-width', '90%');
-  await page.addStyleTag({ content: ':root { --leverui-sizes-8xl: 80rem; }' });
+  await page.addStyleTag({ content: ':root { --lui-sizes-8xl: 80rem; }' });
   await expect(plain).toHaveCSS('max-width', '1280px');
   await page.addStyleTag({
     content: '.consumer-container { max-width: 60rem; padding-inline: 3rem; }',

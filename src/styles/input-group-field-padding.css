@@ -1,9 +1,6 @@
 @layer leverui.recipes {
   .leverui-number-input__input {
-    --leverui-private-input-group-field-height: var(
-      --leverui-private-input-height,
-      var(--leverui-sizes-10)
-    );
+    --lui-private-input-group-field-height: var(--lui-private-input-height, var(--lui-sizes-10));
   }
 
   .leverui-input-group:not([data-unstyled]) {
@@ -17,10 +14,10 @@
       > .leverui-native-select__root > .leverui-native-select__field {
         padding-inline-start: calc(
           var(
-              --leverui-private-input-group-field-height,
-              var(--leverui-input-group-field-height, var(--leverui-sizes-10))
+              --lui-private-input-group-field-height,
+              var(--lui-input-group-field-height, var(--lui-sizes-10))
             ) -
-            var(--leverui-private-input-group-start-offset)
+            var(--lui-private-input-group-start-offset)
         );
       }
     }
@@ -35,10 +32,10 @@
       > .leverui-native-select__root > .leverui-native-select__field {
         padding-inline-end: calc(
           var(
-              --leverui-private-input-group-field-height,
-              var(--leverui-input-group-field-height, var(--leverui-sizes-10))
+              --lui-private-input-group-field-height,
+              var(--lui-input-group-field-height, var(--lui-sizes-10))
             ) -
-            var(--leverui-private-input-group-end-offset)
+            var(--lui-private-input-group-end-offset)
         );
       }
     }
@@ -54,10 +51,10 @@
         > .leverui-native-select__root > .leverui-native-select__field {
           padding-inline-start: calc(
             var(
-                --leverui-private-input-group-field-height,
-                var(--leverui-input-group-field-height, var(--leverui-sizes-10))
+                --lui-private-input-group-field-height,
+                var(--lui-input-group-field-height, var(--lui-sizes-10))
               ) -
-              var(--leverui-private-input-group-start-offset-sm)
+              var(--lui-private-input-group-start-offset-sm)
           );
         }
       }
@@ -72,10 +69,10 @@
         > .leverui-native-select__root > .leverui-native-select__field {
           padding-inline-end: calc(
             var(
-                --leverui-private-input-group-field-height,
-                var(--leverui-input-group-field-height, var(--leverui-sizes-10))
+                --lui-private-input-group-field-height,
+                var(--lui-input-group-field-height, var(--lui-sizes-10))
               ) -
-              var(--leverui-private-input-group-end-offset-sm)
+              var(--lui-private-input-group-end-offset-sm)
           );
         }
       }
@@ -91,10 +88,10 @@
         > .leverui-native-select__root > .leverui-native-select__field {
           padding-inline-start: calc(
             var(
-                --leverui-private-input-group-field-height,
-                var(--leverui-input-group-field-height, var(--leverui-sizes-10))
+                --lui-private-input-group-field-height,
+                var(--lui-input-group-field-height, var(--lui-sizes-10))
               ) -
-              var(--leverui-private-input-group-start-offset-md)
+              var(--lui-private-input-group-start-offset-md)
           );
         }
       }
@@ -109,10 +106,10 @@
         > .leverui-native-select__root > .leverui-native-select__field {
           padding-inline-end: calc(
             var(
-                --leverui-private-input-group-field-height,
-                var(--leverui-input-group-field-height, var(--leverui-sizes-10))
+                --lui-private-input-group-field-height,
+                var(--lui-input-group-field-height, var(--lui-sizes-10))
               ) -
-              var(--leverui-private-input-group-end-offset-md)
+              var(--lui-private-input-group-end-offset-md)
           );
         }
       }

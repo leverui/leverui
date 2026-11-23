@@ -12,7 +12,7 @@ export function CarouselSlidesPerPage(): JSX.Element {
       <HStack
         textStyle="sm"
         style={{
-          'margin-bottom': 'var(--leverui-spacing-4)',
+          'margin-bottom': 'var(--lui-spacing-4)',
         }}
       >
         {'slidesPerPage={2}'}
@@ -70,7 +70,7 @@ export function CarouselSlidesPerMove(): JSX.Element {
       <HStack
         textStyle="sm"
         style={{
-          'margin-bottom': 'var(--leverui-spacing-4)',
+          'margin-bottom': 'var(--lui-spacing-4)',
         }}
       >
         {'slidesPerPage={2} + slidesPerMove={1}'}
@@ -128,7 +128,7 @@ export function CarouselSpacing(): JSX.Element {
       <HStack
         textStyle="sm"
         style={{
-          'margin-bottom': 'var(--leverui-spacing-4)',
+          'margin-bottom': 'var(--lui-spacing-4)',
         }}
       >
         {"spacing='48px'"}

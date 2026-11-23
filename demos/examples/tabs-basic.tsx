@@ -29,7 +29,7 @@ export function TabsNested(): JSX.Element {
     <Tabs.Root
       defaultValue="one"
       aria-label="Custom tabs"
-      style={{ 'max-width': 'var(--leverui-sizes-xl)' }}
+      style={{ 'max-width': 'var(--lui-sizes-xl)' }}
     >
       <Tabs.List>
         <Tabs.Trigger value="one">Tab 1</Tabs.Trigger>
@@ -39,8 +39,8 @@ export function TabsNested(): JSX.Element {
         <Text
           textStyle="md"
           style={{
-            'margin-bottom': 'var(--leverui-spacing-6)',
-            'margin-top': 'var(--leverui-spacing-4)',
+            'margin-bottom': 'var(--lui-spacing-6)',
+            'margin-top': 'var(--lui-spacing-4)',
           }}
         >
           This tab has its own set of tabs.
@@ -50,13 +50,13 @@ export function TabsNested(): JSX.Element {
             <Tabs.Trigger value="one">Tab 1.1</Tabs.Trigger>
             <Tabs.Trigger value="two">Tab 1.2</Tabs.Trigger>
           </Tabs.List>
-          <Tabs.Content value="one" style={{ 'padding-block': 'var(--leverui-spacing-4)' }}>
+          <Tabs.Content value="one" style={{ 'padding-block': 'var(--lui-spacing-4)' }}>
             <Field.Root>
               <Field.Label>Tab 1.1</Field.Label>
               <Input />
             </Field.Root>
           </Tabs.Content>
-          <Tabs.Content value="two" style={{ 'padding-block': 'var(--leverui-spacing-4)' }}>
+          <Tabs.Content value="two" style={{ 'padding-block': 'var(--lui-spacing-4)' }}>
             <Field.Root>
               <Field.Label>Tab 1.2</Field.Label>
               <Input />
@@ -67,8 +67,8 @@ export function TabsNested(): JSX.Element {
       <Tabs.Content value="two">
         <Heading
           style={{
-            'margin-bottom': 'var(--leverui-spacing-6)',
-            'margin-top': 'var(--leverui-spacing-4)',
+            'margin-bottom': 'var(--lui-spacing-6)',
+            'margin-top': 'var(--lui-spacing-4)',
           }}
         >
           This is a normal tab
@@ -86,7 +86,7 @@ export function TabsFitted(): JSX.Element {
       variant="enclosed"
       fitted
       defaultValue="tab-1"
-      style={{ 'max-width': 'var(--leverui-sizes-md)' }}
+      style={{ 'max-width': 'var(--lui-sizes-md)' }}
     >
       <Tabs.List>
         <Tabs.Trigger value="tab-1">Tab 1</Tabs.Trigger>

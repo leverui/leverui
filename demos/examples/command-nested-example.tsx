@@ -96,9 +96,9 @@ export function CommandNestedExample(): JSX.Element {
                   variant="outline"
                   size="sm"
                   style={{
-                    'min-width': 'var(--leverui-spacing-64)',
+                    'min-width': 'var(--lui-spacing-64)',
                     'justify-content': 'flex-start',
-                    color: 'var(--leverui-colors-fg-muted)',
+                    color: 'var(--lui-colors-fg-muted)',
                   }}
                 >
                   <SearchIcon /> Search actions...
@@ -154,7 +154,7 @@ export function CommandNestedExample(): JSX.Element {
         <Text
           textStyle="sm"
           style={{
-            color: 'var(--leverui-colors-fg-muted)',
+            color: 'var(--lui-colors-fg-muted)',
           }}
         >
           Copied {copied()} to clipboard
@@ -165,7 +165,7 @@ export function CommandNestedExample(): JSX.Element {
           role="alert"
           textStyle="sm"
           style={{
-            color: 'var(--leverui-colors-fg-error)',
+            color: 'var(--lui-colors-fg-error)',
           }}
         >
           Could not copy to clipboard

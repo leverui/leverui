@@ -20,9 +20,9 @@ export const statContracts = [
       ),
       "[data-type='up']",
       "[data-type='down']",
-      '--leverui-colors-fg-muted',
-      '--leverui-colors-fg-success',
-      '--leverui-colors-fg-error',
+      '--lui-colors-fg-muted',
+      '--lui-colors-fg-success',
+      '--lui-colors-fg-error',
     ],
   },
 ];

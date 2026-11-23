@@ -11,7 +11,7 @@ function renderPackedSpan() {
       createComponent(Span, {
         id: 'packed-server-span',
         title: 'Installed segment',
-        style: { color: 'var(--leverui-colors-red-500)' },
+        style: { color: 'var(--lui-colors-red-500)' },
         children: 'Installed text',
       }),
   );
@@ -20,5 +20,5 @@ function renderPackedSpan() {
 const markup = renderPackedSpan();
 assert.match(markup, /<span[^>]*id="packed-server-span"/);
 assert.match(markup, /title="Installed segment"/);
-assert.match(markup, /var\(--leverui-colors-red-500\)/);
+assert.match(markup, /var\(--lui-colors-red-500\)/);
 assert.doesNotMatch(markup, /<span[^>]*\s(?:as|asChild|css|unstyled|role)=/);

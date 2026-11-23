@@ -16,15 +16,15 @@
   max-width: 88%;
   padding: 8px 12px;
   border-radius: 14px 14px 14px 4px;
-  background: var(--leverui-colors-bg-muted);
+  background: var(--lui-colors-bg-muted);
   font-size: 13px;
   line-height: 1.45;
 }
 .home-showcase-message[data-from='you'] {
   align-self: flex-end;
   border-radius: 14px 14px 4px 14px;
-  background: var(--leverui-colors-cyan-solid);
-  color: var(--leverui-colors-cyan-contrast);
+  background: var(--lui-colors-cyan-solid);
+  color: var(--lui-colors-cyan-contrast);
 }
 .home-showcase-message p {
   margin: 0;
@@ -43,16 +43,16 @@
   padding: 8px 10px;
   border: 1px solid var(--site-border);
   border-radius: 10px;
-  background: var(--leverui-colors-bg-panel);
+  background: var(--lui-colors-bg-panel);
   color: var(--site-fg);
   text-decoration: none;
 }
 .home-showcase-answer-links a:hover {
-  border-color: var(--leverui-colors-border-emphasized);
+  border-color: var(--lui-colors-border-emphasized);
 }
 .home-showcase-answer-links strong {
   font-size: 13px;
-  font-weight: var(--leverui-font-weights-medium);
+  font-weight: var(--lui-font-weights-medium);
 }
 .home-showcase-answer-links span {
   display: -webkit-box;
@@ -70,7 +70,7 @@
   gap: 4px;
   padding: 12px;
   border-radius: 14px 14px 14px 4px;
-  background: var(--leverui-colors-bg-muted);
+  background: var(--lui-colors-bg-muted);
 }
 .home-showcase-typing span {
   width: 6px;

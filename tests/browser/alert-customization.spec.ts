@@ -62,7 +62,7 @@ async function verifiesAlertThemeScopes({ page }: { page: Page }): Promise<void>
   await expect(dark).toHaveCSS('background-color', 'rgb(20, 32, 74)');
   await expect(light).toHaveCSS('background-color', 'rgb(219, 234, 254)');
   await page.addStyleTag({
-    content: '[data-testid="alert-scope-dark"] { --leverui-colors-blue-subtle: rgb(18 52 86); }',
+    content: '[data-testid="alert-scope-dark"] { --lui-colors-blue-subtle: rgb(18 52 86); }',
   });
   await expect(dark).toHaveCSS('background-color', 'rgb(18, 52, 86)');
   await expect(light).toHaveCSS('background-color', 'rgb(219, 234, 254)');

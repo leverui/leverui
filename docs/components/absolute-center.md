@@ -22,7 +22,7 @@ export function AbsoluteCenterUsage() {
 .absolute-center-usage-panel {
   position: relative;
   height: 100px;
-  background: var(--leverui-colors-bg-muted);
+  background: var(--lui-colors-bg-muted);
 }
 ```
 

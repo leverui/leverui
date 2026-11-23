@@ -42,8 +42,8 @@ export const commandContracts = [
       ),
       '[data-highlighted]',
       '[data-disabled]',
-      '--leverui-command-background',
-      '--leverui-command-radius',
+      '--lui-command-background',
+      '--lui-command-radius',
     ],
   },
 ];

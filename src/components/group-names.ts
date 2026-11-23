@@ -10,7 +10,7 @@ export const groupAttributes = {
 
 /** Public group variables that consumers may override on a child. */
 export const groupVariables = {
-  count: '--leverui-group-count',
-  index: '--leverui-group-index',
-  gap: '--leverui-group-gap',
+  count: '--lui-group-count',
+  index: '--lui-group-index',
+  gap: '--lui-group-gap',
 } as const;

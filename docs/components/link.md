@@ -49,7 +49,7 @@ Set `aria-current="page"` on the current page's link.
 
 ```css
 .nav-link[aria-current='page'] {
-  color: var(--leverui-colors-blue-500);
+  color: var(--lui-colors-blue-500);
   font-weight: bold;
 }
 ```

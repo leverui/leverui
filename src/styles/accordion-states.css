@@ -1,7 +1,7 @@
 @layer leverui.recipes {
   .leverui-accordion__root:not([data-unstyled])
     .leverui-accordion__itemTrigger:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
-    outline: 2px solid var(--leverui-colors-color-palette-focus-ring);
+    outline: 2px solid var(--lui-colors-color-palette-focus-ring);
   }
 
   .leverui-accordion__root:not([data-unstyled])
@@ -13,13 +13,13 @@
   .leverui-accordion__root:not([data-unstyled])
     .leverui-accordion__itemContent:not([data-unstyled])[data-state='open'] {
     animation-name: expand-height, fade-in;
-    animation-duration: var(--leverui-durations-moderate);
+    animation-duration: var(--lui-durations-moderate);
   }
 
   .leverui-accordion__root:not([data-unstyled])
     .leverui-accordion__itemContent:not([data-unstyled])[data-state='closed'] {
     animation-name: collapse-height, fade-out;
-    animation-duration: var(--leverui-durations-moderate);
+    animation-duration: var(--lui-durations-moderate);
   }
 
   .leverui-accordion__root:not([data-unstyled])

@@ -44,7 +44,7 @@ const seeThrough = [
 
 /** Name the CSS variable for one color. */
 function colorVariable(name: string, step: string | number): string {
-  return `--leverui-colors-${name}${step === '' ? '' : `-${step}`}`;
+  return `--lui-colors-${name}${step === '' ? '' : `-${step}`}`;
 }
 
 /** Show every Lever UI color as a swatch that copies its variable when clicked. */

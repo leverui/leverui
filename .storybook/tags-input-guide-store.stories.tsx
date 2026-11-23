@@ -13,11 +13,7 @@ function TagsInputGuideStore(): JSX.Element {
 
   return (
     <>
-      <Stack
-        align="flex-start"
-        gap="4"
-        style={{ padding: 'var(--leverui-spacing-6)', width: '360px' }}
-      >
+      <Stack align="flex-start" gap="4" style={{ padding: 'var(--lui-spacing-6)', width: '360px' }}>
         <TagsInput.RootProvider value={tags}>
           <TagsInput.Label>Tags</TagsInput.Label>
           <TagsInput.Control>

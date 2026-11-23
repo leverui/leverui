@@ -15,8 +15,8 @@ async function verifiesSkeletonAppearance({ page }: { page: Page }): Promise<voi
   await expect(circle).toHaveCSS('border-radius', '9999px');
   await expect(page.getByTestId('skeleton-hidden-child')).toHaveCSS('visibility', 'hidden');
   await expect(page.getByTestId('skeleton-loaded-child')).toHaveCSS('visibility', 'visible');
-  await expect(shine).toHaveCSS('--leverui-skeleton-start-color', '#ff0080');
-  await expect(shine).toHaveCSS('--leverui-skeleton-end-color', '#ffaa00');
+  await expect(shine).toHaveCSS('--lui-skeleton-start-color', '#ff0080');
+  await expect(shine).toHaveCSS('--lui-skeleton-end-color', '#ffaa00');
   for (const attribute of ['loading', 'variant', 'size', 'noOfLines']) {
     await expect(pulse).not.toHaveAttribute(attribute);
   }

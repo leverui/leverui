@@ -64,7 +64,7 @@ export function SelectAsyncLoading(): JSX.Element {
           {loading() && (
             <Spinner
               size="xs"
-              style={{ 'border-width': '1.5px', color: 'var(--leverui-colors-fg-muted)' }}
+              style={{ 'border-width': '1.5px', color: 'var(--lui-colors-fg-muted)' }}
             />
           )}
           <Select.Indicator />

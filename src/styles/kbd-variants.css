@@ -1,157 +1,157 @@
 @layer leverui.recipes {
   .leverui-kbd:not([data-unstyled]) {
     &[data-variant='raised'] {
-      --leverui-private-kbd-background: var(--leverui-colors-color-palette-subtle);
-      --leverui-private-kbd-border-width: 1px;
-      --leverui-private-kbd-border-bottom-width: 2px;
-      --leverui-private-kbd-border-color: var(--leverui-colors-color-palette-muted);
+      --lui-private-kbd-background: var(--lui-colors-color-palette-subtle);
+      --lui-private-kbd-border-width: 1px;
+      --lui-private-kbd-border-bottom-width: 2px;
+      --lui-private-kbd-border-color: var(--lui-colors-color-palette-muted);
     }
     &[data-variant='outline'] {
-      --leverui-private-kbd-background: transparent;
-      --leverui-private-kbd-border-width: 1px;
-      --leverui-private-kbd-border-bottom-width: 1px;
-      --leverui-private-kbd-border-color: var(--leverui-colors-border);
+      --lui-private-kbd-background: transparent;
+      --lui-private-kbd-border-width: 1px;
+      --lui-private-kbd-border-bottom-width: 1px;
+      --lui-private-kbd-border-color: var(--lui-colors-border);
     }
     &[data-variant='subtle'] {
-      --leverui-private-kbd-background: var(--leverui-colors-color-palette-muted);
-      --leverui-private-kbd-border-width: 0;
-      --leverui-private-kbd-border-bottom-width: 0;
-      --leverui-private-kbd-border-color: var(--leverui-colors-border);
+      --lui-private-kbd-background: var(--lui-colors-color-palette-muted);
+      --lui-private-kbd-border-width: 0;
+      --lui-private-kbd-border-bottom-width: 0;
+      --lui-private-kbd-border-color: var(--lui-colors-border);
     }
     &[data-variant='plain'] {
-      --leverui-private-kbd-background: transparent;
-      --leverui-private-kbd-border-width: 0;
-      --leverui-private-kbd-border-bottom-width: 0;
-      --leverui-private-kbd-border-color: var(--leverui-colors-border);
+      --lui-private-kbd-background: transparent;
+      --lui-private-kbd-border-width: 0;
+      --lui-private-kbd-border-bottom-width: 0;
+      --lui-private-kbd-border-color: var(--lui-colors-border);
     }
     @media (min-width: 480px) {
       &[data-variant-sm='raised'] {
-        --leverui-private-kbd-background: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-kbd-border-width: 1px;
-        --leverui-private-kbd-border-bottom-width: 2px;
-        --leverui-private-kbd-border-color: var(--leverui-colors-color-palette-muted);
+        --lui-private-kbd-background: var(--lui-colors-color-palette-subtle);
+        --lui-private-kbd-border-width: 1px;
+        --lui-private-kbd-border-bottom-width: 2px;
+        --lui-private-kbd-border-color: var(--lui-colors-color-palette-muted);
       }
       &[data-variant-sm='outline'] {
-        --leverui-private-kbd-background: transparent;
-        --leverui-private-kbd-border-width: 1px;
-        --leverui-private-kbd-border-bottom-width: 1px;
-        --leverui-private-kbd-border-color: var(--leverui-colors-border);
+        --lui-private-kbd-background: transparent;
+        --lui-private-kbd-border-width: 1px;
+        --lui-private-kbd-border-bottom-width: 1px;
+        --lui-private-kbd-border-color: var(--lui-colors-border);
       }
       &[data-variant-sm='subtle'] {
-        --leverui-private-kbd-background: var(--leverui-colors-color-palette-muted);
-        --leverui-private-kbd-border-width: 0;
-        --leverui-private-kbd-border-bottom-width: 0;
-        --leverui-private-kbd-border-color: var(--leverui-colors-border);
+        --lui-private-kbd-background: var(--lui-colors-color-palette-muted);
+        --lui-private-kbd-border-width: 0;
+        --lui-private-kbd-border-bottom-width: 0;
+        --lui-private-kbd-border-color: var(--lui-colors-border);
       }
       &[data-variant-sm='plain'] {
-        --leverui-private-kbd-background: transparent;
-        --leverui-private-kbd-border-width: 0;
-        --leverui-private-kbd-border-bottom-width: 0;
-        --leverui-private-kbd-border-color: var(--leverui-colors-border);
+        --lui-private-kbd-background: transparent;
+        --lui-private-kbd-border-width: 0;
+        --lui-private-kbd-border-bottom-width: 0;
+        --lui-private-kbd-border-color: var(--lui-colors-border);
       }
     }
     @media (min-width: 768px) {
       &[data-variant-md='raised'] {
-        --leverui-private-kbd-background: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-kbd-border-width: 1px;
-        --leverui-private-kbd-border-bottom-width: 2px;
-        --leverui-private-kbd-border-color: var(--leverui-colors-color-palette-muted);
+        --lui-private-kbd-background: var(--lui-colors-color-palette-subtle);
+        --lui-private-kbd-border-width: 1px;
+        --lui-private-kbd-border-bottom-width: 2px;
+        --lui-private-kbd-border-color: var(--lui-colors-color-palette-muted);
       }
       &[data-variant-md='outline'] {
-        --leverui-private-kbd-background: transparent;
-        --leverui-private-kbd-border-width: 1px;
-        --leverui-private-kbd-border-bottom-width: 1px;
-        --leverui-private-kbd-border-color: var(--leverui-colors-border);
+        --lui-private-kbd-background: transparent;
+        --lui-private-kbd-border-width: 1px;
+        --lui-private-kbd-border-bottom-width: 1px;
+        --lui-private-kbd-border-color: var(--lui-colors-border);
       }
       &[data-variant-md='subtle'] {
-        --leverui-private-kbd-background: var(--leverui-colors-color-palette-muted);
-        --leverui-private-kbd-border-width: 0;
-        --leverui-private-kbd-border-bottom-width: 0;
-        --leverui-private-kbd-border-color: var(--leverui-colors-border);
+        --lui-private-kbd-background: var(--lui-colors-color-palette-muted);
+        --lui-private-kbd-border-width: 0;
+        --lui-private-kbd-border-bottom-width: 0;
+        --lui-private-kbd-border-color: var(--lui-colors-border);
       }
       &[data-variant-md='plain'] {
-        --leverui-private-kbd-background: transparent;
-        --leverui-private-kbd-border-width: 0;
-        --leverui-private-kbd-border-bottom-width: 0;
-        --leverui-private-kbd-border-color: var(--leverui-colors-border);
+        --lui-private-kbd-background: transparent;
+        --lui-private-kbd-border-width: 0;
+        --lui-private-kbd-border-bottom-width: 0;
+        --lui-private-kbd-border-color: var(--lui-colors-border);
       }
     }
     @media (min-width: 1024px) {
       &[data-variant-lg='raised'] {
-        --leverui-private-kbd-background: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-kbd-border-width: 1px;
-        --leverui-private-kbd-border-bottom-width: 2px;
-        --leverui-private-kbd-border-color: var(--leverui-colors-color-palette-muted);
+        --lui-private-kbd-background: var(--lui-colors-color-palette-subtle);
+        --lui-private-kbd-border-width: 1px;
+        --lui-private-kbd-border-bottom-width: 2px;
+        --lui-private-kbd-border-color: var(--lui-colors-color-palette-muted);
       }
       &[data-variant-lg='outline'] {
-        --leverui-private-kbd-background: transparent;
-        --leverui-private-kbd-border-width: 1px;
-        --leverui-private-kbd-border-bottom-width: 1px;
-        --leverui-private-kbd-border-color: var(--leverui-colors-border);
+        --lui-private-kbd-background: transparent;
+        --lui-private-kbd-border-width: 1px;
+        --lui-private-kbd-border-bottom-width: 1px;
+        --lui-private-kbd-border-color: var(--lui-colors-border);
       }
       &[data-variant-lg='subtle'] {
-        --leverui-private-kbd-background: var(--leverui-colors-color-palette-muted);
-        --leverui-private-kbd-border-width: 0;
-        --leverui-private-kbd-border-bottom-width: 0;
-        --leverui-private-kbd-border-color: var(--leverui-colors-border);
+        --lui-private-kbd-background: var(--lui-colors-color-palette-muted);
+        --lui-private-kbd-border-width: 0;
+        --lui-private-kbd-border-bottom-width: 0;
+        --lui-private-kbd-border-color: var(--lui-colors-border);
       }
       &[data-variant-lg='plain'] {
-        --leverui-private-kbd-background: transparent;
-        --leverui-private-kbd-border-width: 0;
-        --leverui-private-kbd-border-bottom-width: 0;
-        --leverui-private-kbd-border-color: var(--leverui-colors-border);
+        --lui-private-kbd-background: transparent;
+        --lui-private-kbd-border-width: 0;
+        --lui-private-kbd-border-bottom-width: 0;
+        --lui-private-kbd-border-color: var(--lui-colors-border);
       }
     }
     @media (min-width: 1280px) {
       &[data-variant-xl='raised'] {
-        --leverui-private-kbd-background: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-kbd-border-width: 1px;
-        --leverui-private-kbd-border-bottom-width: 2px;
-        --leverui-private-kbd-border-color: var(--leverui-colors-color-palette-muted);
+        --lui-private-kbd-background: var(--lui-colors-color-palette-subtle);
+        --lui-private-kbd-border-width: 1px;
+        --lui-private-kbd-border-bottom-width: 2px;
+        --lui-private-kbd-border-color: var(--lui-colors-color-palette-muted);
       }
       &[data-variant-xl='outline'] {
-        --leverui-private-kbd-background: transparent;
-        --leverui-private-kbd-border-width: 1px;
-        --leverui-private-kbd-border-bottom-width: 1px;
-        --leverui-private-kbd-border-color: var(--leverui-colors-border);
+        --lui-private-kbd-background: transparent;
+        --lui-private-kbd-border-width: 1px;
+        --lui-private-kbd-border-bottom-width: 1px;
+        --lui-private-kbd-border-color: var(--lui-colors-border);
       }
       &[data-variant-xl='subtle'] {
-        --leverui-private-kbd-background: var(--leverui-colors-color-palette-muted);
-        --leverui-private-kbd-border-width: 0;
-        --leverui-private-kbd-border-bottom-width: 0;
-        --leverui-private-kbd-border-color: var(--leverui-colors-border);
+        --lui-private-kbd-background: var(--lui-colors-color-palette-muted);
+        --lui-private-kbd-border-width: 0;
+        --lui-private-kbd-border-bottom-width: 0;
+        --lui-private-kbd-border-color: var(--lui-colors-border);
       }
       &[data-variant-xl='plain'] {
-        --leverui-private-kbd-background: transparent;
-        --leverui-private-kbd-border-width: 0;
-        --leverui-private-kbd-border-bottom-width: 0;
-        --leverui-private-kbd-border-color: var(--leverui-colors-border);
+        --lui-private-kbd-background: transparent;
+        --lui-private-kbd-border-width: 0;
+        --lui-private-kbd-border-bottom-width: 0;
+        --lui-private-kbd-border-color: var(--lui-colors-border);
       }
     }
     @media (min-width: 1536px) {
       &[data-variant-2xl='raised'] {
-        --leverui-private-kbd-background: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-kbd-border-width: 1px;
-        --leverui-private-kbd-border-bottom-width: 2px;
-        --leverui-private-kbd-border-color: var(--leverui-colors-color-palette-muted);
+        --lui-private-kbd-background: var(--lui-colors-color-palette-subtle);
+        --lui-private-kbd-border-width: 1px;
+        --lui-private-kbd-border-bottom-width: 2px;
+        --lui-private-kbd-border-color: var(--lui-colors-color-palette-muted);
       }
       &[data-variant-2xl='outline'] {
-        --leverui-private-kbd-background: transparent;
-        --leverui-private-kbd-border-width: 1px;
-        --leverui-private-kbd-border-bottom-width: 1px;
-        --leverui-private-kbd-border-color: var(--leverui-colors-border);
+        --lui-private-kbd-background: transparent;
+        --lui-private-kbd-border-width: 1px;
+        --lui-private-kbd-border-bottom-width: 1px;
+        --lui-private-kbd-border-color: var(--lui-colors-border);
       }
       &[data-variant-2xl='subtle'] {
-        --leverui-private-kbd-background: var(--leverui-colors-color-palette-muted);
-        --leverui-private-kbd-border-width: 0;
-        --leverui-private-kbd-border-bottom-width: 0;
-        --leverui-private-kbd-border-color: var(--leverui-colors-border);
+        --lui-private-kbd-background: var(--lui-colors-color-palette-muted);
+        --lui-private-kbd-border-width: 0;
+        --lui-private-kbd-border-bottom-width: 0;
+        --lui-private-kbd-border-color: var(--lui-colors-border);
       }
       &[data-variant-2xl='plain'] {
-        --leverui-private-kbd-background: transparent;
-        --leverui-private-kbd-border-width: 0;
-        --leverui-private-kbd-border-bottom-width: 0;
-        --leverui-private-kbd-border-color: var(--leverui-colors-border);
+        --lui-private-kbd-background: transparent;
+        --lui-private-kbd-border-width: 0;
+        --lui-private-kbd-border-bottom-width: 0;
+        --lui-private-kbd-border-color: var(--lui-colors-border);
       }
     }
   }

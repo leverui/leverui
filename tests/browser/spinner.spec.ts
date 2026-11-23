@@ -85,7 +85,7 @@ async function verifiesServerSpinner({ page }: { page: Page }): Promise<void> {
   expect(markup).not.toMatch(/<span[^>]*\ssize=/);
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(
-    `<style>${defaultCss}</style><style>.consumer-spinner { --leverui-spinner-track-color: rgb(10, 20, 30); animation-duration: 0.8s; }</style>${markup}`,
+    `<style>${defaultCss}</style><style>.consumer-spinner { --lui-spinner-track-color: rgb(10, 20, 30); animation-duration: 0.8s; }</style>${markup}`,
   );
   const spinner = page.locator('#server-spinner');
   await expect(spinner).toHaveCSS('width', '32px');

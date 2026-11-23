@@ -16,7 +16,7 @@ export function TagWithColors(): JSX.Element {
               align="center"
               direction="row"
               gap="10"
-              style={{ 'padding-inline': 'var(--leverui-spacing-4)' }}
+              style={{ 'padding-inline': 'var(--lui-spacing-4)' }}
             >
               <Text style={{ 'min-width': '8ch' }}>{colorPalette}</Text>
               <Tag.Root size="sm" colorPalette={colorPalette}>

@@ -61,7 +61,7 @@ async function verifiesModeValues({ page }: { page: Page }): Promise<void> {
         ),
     )
     .not.toBe(initialBackground);
-  await page.addStyleTag({ content: ':root { --leverui-spacing-2: 12px; }' });
+  await page.addStyleTag({ content: ':root { --lui-spacing-2: 12px; }' });
   await expect(box).toHaveCSS('padding', '12px');
 
   await page.goto('/iframe.html?id=components-color-mode--value-fallback');

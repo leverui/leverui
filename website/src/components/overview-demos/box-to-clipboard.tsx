@@ -46,7 +46,7 @@ function BreadcrumbDemo(): JSX.Element {
 
 /** The first two weeks of a month, with one day picked. */
 function CalendarDemo(): JSX.Element {
-  const sizes = { '--leverui-date-picker-cell-size': '28px' };
+  const sizes = { '--lui-date-picker-cell-size': '28px' };
   return (
     <DatePicker.Root inline defaultValue={[DatePicker.parseDate('2026-02-11')]} style={sizes}>
       <DatePicker.View view="day">
@@ -98,9 +98,7 @@ function CarouselDemo(): JSX.Element {
 /** A round badge in the middle of a wide block. */
 function CenterDemo(): JSX.Element {
   return (
-    <Center
-      style={{ width: '100%', height: '88px', background: 'var(--leverui-colors-gray-muted)' }}
-    >
+    <Center style={{ width: '100%', height: '88px', background: 'var(--lui-colors-gray-muted)' }}>
       <Circle size="10" style={{ background: tint }}>
         <i class="bi bi-star" aria-hidden="true" />
       </Circle>

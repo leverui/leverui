@@ -72,7 +72,7 @@ const packageCss = readFileSync(
 const consumerCss = readFileSync(new URL('./consumer-system.css', import.meta.url), 'utf8');
 assert.match(packageCss, /\.leverui-button/);
 assert.match(consumerCss, /\.consumer-brand-space/);
-assert.match(consumerCss, /--leverui-colors-blue-solid/);
+assert.match(consumerCss, /--lui-colors-blue-solid/);
 
 /** Keep native button type separate from CSS appearance selection. */
 function renderNativeTypeButton() {

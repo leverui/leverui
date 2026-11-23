@@ -127,7 +127,7 @@ function CustomStylesArea(): JSX.Element {
             </For>
           </ScrollArea.Content>
         </ScrollArea.Viewport>
-        <ScrollArea.Scrollbar style={{ '--leverui-scroll-area-track-color': '#fee2e2' }}>
+        <ScrollArea.Scrollbar style={{ '--lui-scroll-area-track-color': '#fee2e2' }}>
           <ScrollArea.Thumb data-testid="custom-thumb" style={{ background: '#dc2626' }} />
         </ScrollArea.Scrollbar>
       </ScrollArea.Root>

@@ -48,11 +48,11 @@ function DemoTooltip(): JSX.Element {
             {...getProps()}
             textStyle="sm"
             style={{
-              'padding-inline': 'var(--leverui-spacing-2)',
-              'padding-block': 'var(--leverui-spacing-1)',
-              background: 'var(--leverui-colors-color-palette-subtle)',
-              color: 'var(--leverui-colors-color-palette-fg)',
-              'box-shadow': '0 0 0 1px var(--leverui-colors-color-palette-muted)',
+              'padding-inline': 'var(--lui-spacing-2)',
+              'padding-block': 'var(--lui-spacing-1)',
+              background: 'var(--lui-colors-color-palette-subtle)',
+              color: 'var(--lui-colors-color-palette-fg)',
+              'box-shadow': '0 0 0 1px var(--lui-colors-color-palette-muted)',
             }}
           >
             Hover me
@@ -66,7 +66,7 @@ function DemoTooltip(): JSX.Element {
 /** Show ten independent controlled Tooltips in a vertical stack. */
 export function TooltipControlledMultiple(): JSX.Element {
   return (
-    <Box style={{ display: 'grid', gap: 'var(--leverui-spacing-2)' }}>
+    <Box style={{ display: 'grid', gap: 'var(--lui-spacing-2)' }}>
       <Repeat count={10}>
         {() => (
           <Flex>

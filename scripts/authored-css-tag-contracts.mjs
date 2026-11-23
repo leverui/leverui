@@ -29,8 +29,8 @@ export const tagContracts = [
       ),
       ':has([data-avatar-root])',
       ':focus-visible',
-      '--leverui-colors-color-palette-focus-ring',
-      '--leverui-colors-color-palette-solid',
+      '--lui-colors-color-palette-focus-ring',
+      '--lui-colors-color-palette-solid',
     ],
   },
 ];

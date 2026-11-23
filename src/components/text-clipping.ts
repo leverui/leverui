@@ -29,7 +29,7 @@ export function textClippingStyle(
 ): JSX.CSSProperties | string | undefined {
   if (style === false) style = undefined;
   if (clamp?.kind !== 'value') return style;
-  const variable = '--leverui-private-text-line-clamp';
+  const variable = '--lui-private-text-line-clamp';
   if (typeof style === 'string') {
     const separator = style.trimEnd().endsWith(';') || style.length === 0 ? '' : ';';
     return `${style}${separator}${variable}:${clamp.value};`;

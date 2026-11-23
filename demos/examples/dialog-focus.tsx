@@ -91,7 +91,7 @@ export function DialogInitialFocus(): JSX.Element {
             <Dialog.Header>
               <Dialog.Title>Edit your name</Dialog.Title>
             </Dialog.Header>
-            <Dialog.Body style={{ 'padding-bottom': 'var(--leverui-spacing-4)' }}>
+            <Dialog.Body style={{ 'padding-bottom': 'var(--lui-spacing-4)' }}>
               <Stack gap="4">
                 <Field.Root>
                   <Field.Label>First name</Field.Label>

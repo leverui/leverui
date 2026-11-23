@@ -88,7 +88,7 @@ export function ProgressIndeterminate(): JSX.Element {
 /** Place the usage label and value beside one 40-percent range. */
 export function ProgressWithInlineLabel(): JSX.Element {
   return (
-    <Progress.Root defaultValue={40} style={{ 'max-width': 'var(--leverui-sizes-sm)' }}>
+    <Progress.Root defaultValue={40} style={{ 'max-width': 'var(--lui-sizes-sm)' }}>
       <HStack gap="5">
         <Progress.Label>Usage</Progress.Label>
         <Progress.Track style={{ flex: '1' }}>

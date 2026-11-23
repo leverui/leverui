@@ -14,7 +14,7 @@ export function TokensKeyframes(): JSX.Element {
     <TokenDoc title="theme.keyframes" mt="8">
       <SimpleGrid
         minChildWidth="160px"
-        style={{ gap: 'var(--leverui-spacing-20)', 'font-size': 'var(--leverui-font-sizes-sm)' }}
+        style={{ gap: 'var(--lui-spacing-20)', 'font-size': 'var(--lui-font-sizes-sm)' }}
       >
         <For each={names}>
           {
@@ -23,13 +23,13 @@ export function TokensKeyframes(): JSX.Element {
               <Stack>
                 <Box
                   style={{
-                    width: 'var(--leverui-sizes-12)',
-                    height: 'var(--leverui-sizes-12)',
-                    background: 'var(--leverui-colors-pink-200)',
+                    width: 'var(--lui-sizes-12)',
+                    height: 'var(--lui-sizes-12)',
+                    background: 'var(--lui-colors-pink-200)',
                     animation: `${name} 1s ease-in-out infinite alternate`,
                   }}
                 />
-                <Text style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>{name}</Text>
+                <Text style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>{name}</Text>
               </Stack>
             )
           }
@@ -54,28 +54,28 @@ export function TokensDurations(): JSX.Element {
     <TokenDoc title="theme.tokens.durations" mt="8">
       <SimpleGrid
         minChildWidth="160px"
-        style={{ gap: 'var(--leverui-spacing-20)', 'font-size': 'var(--leverui-font-sizes-sm)' }}
+        style={{ gap: 'var(--lui-spacing-20)', 'font-size': 'var(--lui-font-sizes-sm)' }}
       >
         <For each={names}>
           {
             /** Animate a line with this duration token. */
             (name) => (
               <VStack>
-                <Center style={{ height: 'var(--leverui-sizes-20)' }}>
+                <Center style={{ height: 'var(--lui-sizes-20)' }}>
                   <Box
                     style={{
-                      background: 'var(--leverui-colors-pink-200)',
-                      height: 'var(--leverui-sizes-1)',
-                      width: 'var(--leverui-sizes-20)',
+                      background: 'var(--lui-colors-pink-200)',
+                      height: 'var(--lui-sizes-1)',
+                      width: 'var(--lui-sizes-20)',
                       'animation-name': 'spin',
-                      'animation-duration': `var(--leverui-durations-${name})`,
+                      'animation-duration': `var(--lui-durations-${name})`,
                       'animation-timing-function': 'ease-in-out',
                       'animation-iteration-count': 'infinite',
                       'animation-direction': 'alternate',
                     }}
                   />
                 </Center>
-                <Text style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>{name}</Text>
+                <Text style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>{name}</Text>
               </VStack>
             )
           }

@@ -6,7 +6,7 @@ import { ButtonGroup, IconButton, Pagination } from '../../src';
 export function PaginationCompact(): JSX.Element {
   return (
     <Pagination.Root count={20} pageSize={2} defaultPage={1}>
-      <ButtonGroup size="sm" variant="ghost" style={{ gap: 'var(--leverui-spacing-4)' }}>
+      <ButtonGroup size="sm" variant="ghost" style={{ gap: 'var(--lui-spacing-4)' }}>
         <Pagination.PrevTrigger
           asChild={(getProps) => (
             <IconButton {...getProps()}>

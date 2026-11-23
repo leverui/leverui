@@ -50,7 +50,7 @@ export function SliderChangeEnd(): JSX.Element {
           <Slider.Thumbs />
         </Slider.Control>
       </Slider.Root>
-      <Stack gap="1" style={{ 'margin-top': 'var(--leverui-spacing-3)' }}>
+      <Stack gap="1" style={{ 'margin-top': 'var(--lui-spacing-3)' }}>
         <Code>
           onChange: <b>{value().join(',')}</b>
         </Code>

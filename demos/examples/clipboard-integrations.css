@@ -1,9 +1,9 @@
 .clipboard-integration-mono,
 .clipboard-integration-value {
-  font-family: var(--leverui-fonts-mono);
+  font-family: var(--lui-fonts-mono);
 }
 
 .clipboard-integration-value {
-  margin-inline-end: var(--leverui-spacing-3);
-  font-size: var(--leverui-font-sizes-sm);
+  margin-inline-end: var(--lui-spacing-3);
+  font-size: var(--lui-font-sizes-sm);
 }

@@ -19,7 +19,7 @@ async function verifiesCssContract({ page }: { page: Page }): Promise<void> {
   await expect(bareContent).not.toHaveAttribute('data-leverui-floating-panel-css');
 
   await page.addStyleTag({
-    content: '.consumer-content { --leverui-colors-bg-panel: rgb(12, 34, 56); }',
+    content: '.consumer-content { --lui-colors-bg-panel: rgb(12, 34, 56); }',
   });
   await expect(styled).toHaveCSS('background-color', 'rgb(12, 34, 56)');
 }

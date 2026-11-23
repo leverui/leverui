@@ -8,7 +8,7 @@ async function verifiesToastCssContract({ page }: { page: Page }): Promise<void>
   await expect(region).toHaveClass(/leverui-toast__toaster/);
   await page.addStyleTag({
     content: `[data-testid='toast-css-styled'] {
-      --leverui-colors-green-solid: rgb(11 22 33);
+      --lui-colors-green-solid: rgb(11 22 33);
     }
     [data-testid='toast-css-styled'] .leverui-toast__title {
       font-size: 18px;

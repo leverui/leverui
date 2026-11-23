@@ -127,8 +127,8 @@ The chart takes focus when the tooltip is on. Focus shows the first point.
 
 ```css
 .sales-scatter {
-  --leverui-scatter-chart-trend-stroke: #2f6f62;
-  --leverui-scatter-chart-legend-gap: 1rem;
+  --lui-scatter-chart-trend-stroke: #2f6f62;
+  --lui-scatter-chart-legend-gap: 1rem;
 }
 
 .sales-scatter .leverui-scatter-chart__point {
@@ -138,27 +138,27 @@ The chart takes focus when the tooltip is on. Focus shows the first point.
 
 ### Variables
 
-| Variable                                          | Default           | Description                                 |
-| ------------------------------------------------- | ----------------- | ------------------------------------------- |
-| `--leverui-scatter-chart-width`                   | `100%`            | Width of the chart's box.                   |
-| `--leverui-scatter-chart-height`                  | The `height` prop | Height of the chart's box.                  |
-| `--leverui-scatter-chart-axis-stroke`             | Border color      | Axis line and tick mark color.              |
-| `--leverui-scatter-chart-axis-stroke-width`       | `1px`             | Axis line and tick mark thickness.          |
-| `--leverui-scatter-chart-tick-color`              | Muted text color  | Axis label color.                           |
-| `--leverui-scatter-chart-tick-font-size`          | `12px`            | Axis label size.                            |
-| `--leverui-scatter-chart-cursor-stroke`           | Border color      | Guide line color at the active point.       |
-| `--leverui-scatter-chart-cursor-dasharray`        | `3 3`             | Guide line dash pattern.                    |
-| `--leverui-scatter-chart-trend-stroke`            | Solid red         | Trend line color.                           |
-| `--leverui-scatter-chart-trend-stroke-width`      | `2px`             | Trend line thickness.                       |
-| `--leverui-scatter-chart-connection-stroke`       | Border color      | Color of the line joining the points.       |
-| `--leverui-scatter-chart-connection-stroke-width` | `2px`             | Thickness of that line.                     |
-| `--leverui-scatter-chart-legend-bottom`           | `8px`             | Gap between the legend and the bottom edge. |
-| `--leverui-scatter-chart-legend-gap`              | `12px`            | Space between legend items.                 |
-| `--leverui-scatter-chart-legend-font-size`        | `12px`            | Legend text size.                           |
-| `--leverui-scatter-chart-legend-color`            | Muted text color  | Legend text color.                          |
-| `--leverui-scatter-chart-legend-swatch-size`      | `8px`             | Width and height of a legend swatch.        |
-| `--leverui-scatter-chart-legend-swatch-radius`    | `2px`             | Swatch corner radius.                       |
-| `--leverui-scatter-chart-legend-swatch-gap`       | `4px`             | Space between a swatch and its name.        |
+| Variable                                      | Default           | Description                                 |
+| --------------------------------------------- | ----------------- | ------------------------------------------- |
+| `--lui-scatter-chart-width`                   | `100%`            | Width of the chart's box.                   |
+| `--lui-scatter-chart-height`                  | The `height` prop | Height of the chart's box.                  |
+| `--lui-scatter-chart-axis-stroke`             | Border color      | Axis line and tick mark color.              |
+| `--lui-scatter-chart-axis-stroke-width`       | `1px`             | Axis line and tick mark thickness.          |
+| `--lui-scatter-chart-tick-color`              | Muted text color  | Axis label color.                           |
+| `--lui-scatter-chart-tick-font-size`          | `12px`            | Axis label size.                            |
+| `--lui-scatter-chart-cursor-stroke`           | Border color      | Guide line color at the active point.       |
+| `--lui-scatter-chart-cursor-dasharray`        | `3 3`             | Guide line dash pattern.                    |
+| `--lui-scatter-chart-trend-stroke`            | Solid red         | Trend line color.                           |
+| `--lui-scatter-chart-trend-stroke-width`      | `2px`             | Trend line thickness.                       |
+| `--lui-scatter-chart-connection-stroke`       | Border color      | Color of the line joining the points.       |
+| `--lui-scatter-chart-connection-stroke-width` | `2px`             | Thickness of that line.                     |
+| `--lui-scatter-chart-legend-bottom`           | `8px`             | Gap between the legend and the bottom edge. |
+| `--lui-scatter-chart-legend-gap`              | `12px`            | Space between legend items.                 |
+| `--lui-scatter-chart-legend-font-size`        | `12px`            | Legend text size.                           |
+| `--lui-scatter-chart-legend-color`            | Muted text color  | Legend text color.                          |
+| `--lui-scatter-chart-legend-swatch-size`      | `8px`             | Width and height of a legend swatch.        |
+| `--lui-scatter-chart-legend-swatch-radius`    | `2px`             | Swatch corner radius.                       |
+| `--lui-scatter-chart-legend-swatch-gap`       | `4px`             | Space between a swatch and its name.        |
 
 ### Classes
 

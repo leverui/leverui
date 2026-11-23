@@ -1,31 +1,31 @@
 @layer leverui.recipes {
   .leverui-radiomark:not([data-unstyled]) {
     &[data-variant='solid'] {
-      --leverui-private-radiomark-border: var(--leverui-colors-border-emphasized);
-      --leverui-private-radiomark-checked-background: var(--leverui-colors-color-palette-solid);
-      --leverui-private-radiomark-checked-border: var(--leverui-colors-color-palette-solid);
-      --leverui-private-radiomark-checked-color: var(--leverui-colors-color-palette-contrast);
+      --lui-private-radiomark-border: var(--lui-colors-border-emphasized);
+      --lui-private-radiomark-checked-background: var(--lui-colors-color-palette-solid);
+      --lui-private-radiomark-checked-border: var(--lui-colors-color-palette-solid);
+      --lui-private-radiomark-checked-color: var(--lui-colors-color-palette-contrast);
     }
     &[data-variant='subtle'] {
-      --leverui-private-radiomark-unfilled-background: var(--leverui-colors-color-palette-muted);
-      --leverui-private-radiomark-border: var(--leverui-colors-color-palette-muted);
-      --leverui-private-radiomark-color: transparent;
-      --leverui-private-radiomark-checked-background: var(--leverui-colors-color-palette-muted);
-      --leverui-private-radiomark-checked-border: var(--leverui-colors-color-palette-muted);
-      --leverui-private-radiomark-checked-color: var(--leverui-colors-color-palette-fg);
+      --lui-private-radiomark-unfilled-background: var(--lui-colors-color-palette-muted);
+      --lui-private-radiomark-border: var(--lui-colors-color-palette-muted);
+      --lui-private-radiomark-color: transparent;
+      --lui-private-radiomark-checked-background: var(--lui-colors-color-palette-muted);
+      --lui-private-radiomark-checked-border: var(--lui-colors-color-palette-muted);
+      --lui-private-radiomark-checked-color: var(--lui-colors-color-palette-fg);
     }
     &[data-variant='outline'] {
-      --leverui-private-radiomark-border: currentColor;
-      --leverui-private-radiomark-checked-border: var(--leverui-colors-color-palette-solid);
-      --leverui-private-radiomark-checked-color: var(--leverui-colors-color-palette-fg);
-      --leverui-private-radiomark-dot-scale: 0.6;
+      --lui-private-radiomark-border: currentColor;
+      --lui-private-radiomark-checked-border: var(--lui-colors-color-palette-solid);
+      --lui-private-radiomark-checked-color: var(--lui-colors-color-palette-fg);
+      --lui-private-radiomark-dot-scale: 0.6;
     }
     &[data-variant='inverted'] {
-      --leverui-private-radiomark-unfilled-background: var(--leverui-colors-bg);
-      --leverui-private-radiomark-border: currentColor;
-      --leverui-private-radiomark-checked-background: var(--leverui-colors-bg);
-      --leverui-private-radiomark-checked-border: currentColor;
-      --leverui-private-radiomark-checked-color: var(--leverui-colors-color-palette-solid);
+      --lui-private-radiomark-unfilled-background: var(--lui-colors-bg);
+      --lui-private-radiomark-border: currentColor;
+      --lui-private-radiomark-checked-background: var(--lui-colors-bg);
+      --lui-private-radiomark-checked-border: currentColor;
+      --lui-private-radiomark-checked-color: var(--lui-colors-color-palette-solid);
     }
   }
 }

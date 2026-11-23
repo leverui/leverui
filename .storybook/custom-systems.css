@@ -1,27 +1,27 @@
 .css-scope-alpha {
-  --leverui-colors-blue-600: #123456;
-  --leverui-colors-blue-solid: var(--leverui-colors-blue-600);
-  --leverui-colors-gray-900: #111111;
-  --leverui-colors-gray-solid: var(--leverui-colors-gray-900);
-  --leverui-radii-l2: 0px;
+  --lui-colors-blue-600: #123456;
+  --lui-colors-blue-solid: var(--lui-colors-blue-600);
+  --lui-colors-gray-900: #111111;
+  --lui-colors-gray-solid: var(--lui-colors-gray-900);
+  --lui-radii-l2: 0px;
 }
 
 .css-scope-beta {
-  --leverui-colors-blue-600: #a95500;
-  --leverui-colors-blue-solid: var(--leverui-colors-blue-600);
-  --leverui-colors-white: #eeeeee;
-  --leverui-colors-gray-solid: var(--leverui-colors-white);
-  --leverui-radii-l2: 16px;
+  --lui-colors-blue-600: #a95500;
+  --lui-colors-blue-solid: var(--lui-colors-blue-600);
+  --lui-colors-white: #eeeeee;
+  --lui-colors-gray-solid: var(--lui-colors-white);
+  --lui-radii-l2: 16px;
 }
 
 .css-scope-token {
-  background: var(--leverui-colors-blue-600);
+  background: var(--lui-colors-blue-600);
 }
 
 .css-scope-global {
-  color: var(--leverui-colors-blue-600);
+  color: var(--lui-colors-blue-600);
 }
 
 .css-scope-background {
-  background: var(--leverui-colors-bg);
+  background: var(--lui-colors-bg);
 }

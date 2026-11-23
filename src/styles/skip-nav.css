@@ -1,11 +1,11 @@
 @layer leverui.recipes {
   .leverui-skip-nav:not([data-unstyled]) {
     display: inline-flex;
-    background: var(--leverui-colors-bg-panel);
-    padding: var(--leverui-spacing-2\.5);
-    border-radius: var(--leverui-radii-l2);
-    font-weight: var(--leverui-font-weights-semibold);
-    font-size: var(--leverui-font-sizes-sm);
+    background: var(--lui-colors-bg-panel);
+    padding: var(--lui-spacing-2\.5);
+    border-radius: var(--lui-radii-l2);
+    font-weight: var(--lui-font-weights-semibold);
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
     user-select: none;
     border: 0;
@@ -23,9 +23,9 @@
     width: auto;
     height: auto;
     position: fixed;
-    top: var(--leverui-spacing-6);
-    inset-inline-start: var(--leverui-spacing-6);
-    outline: 2px solid var(--leverui-colors-color-palette-focus-ring);
+    top: var(--lui-spacing-6);
+    inset-inline-start: var(--lui-spacing-6);
+    outline: 2px solid var(--lui-colors-color-palette-focus-ring);
     outline-offset: 2px;
   }
 

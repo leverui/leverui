@@ -48,7 +48,7 @@ names are stable.
 ```css
 .article-emphasis {
   white-space: normal;
-  --leverui-colors-color-palette-subtle: #dceaff;
+  --lui-colors-color-palette-subtle: #dceaff;
 }
 ```
 

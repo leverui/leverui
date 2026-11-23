@@ -1,52 +1,52 @@
 @layer leverui.recipes {
   .leverui-empty-state__root:not([data-unstyled]) {
-    --leverui-private-empty-state-padding-inline: var(--leverui-spacing-8);
-    --leverui-private-empty-state-padding-block: var(--leverui-spacing-12);
-    --leverui-private-empty-state-gap: var(--leverui-spacing-6);
-    --leverui-private-empty-state-indicator-size: var(--leverui-font-sizes-4xl);
-    --leverui-private-empty-state-indicator-line-height: 2.75rem;
-    --leverui-private-empty-state-indicator-letter-spacing: -0.025em;
-    --leverui-private-empty-state-title-size: var(--leverui-font-sizes-lg);
-    --leverui-private-empty-state-title-line-height: 1.75rem;
+    --lui-private-empty-state-padding-inline: var(--lui-spacing-8);
+    --lui-private-empty-state-padding-block: var(--lui-spacing-12);
+    --lui-private-empty-state-gap: var(--lui-spacing-6);
+    --lui-private-empty-state-indicator-size: var(--lui-font-sizes-4xl);
+    --lui-private-empty-state-indicator-line-height: 2.75rem;
+    --lui-private-empty-state-indicator-letter-spacing: -0.025em;
+    --lui-private-empty-state-title-size: var(--lui-font-sizes-lg);
+    --lui-private-empty-state-title-line-height: 1.75rem;
     width: 100%;
     padding-inline: var(
-      --leverui-empty-state-padding-inline,
-      var(--leverui-private-empty-state-padding-inline)
+      --lui-empty-state-padding-inline,
+      var(--lui-private-empty-state-padding-inline)
     );
     padding-block: var(
-      --leverui-empty-state-padding-block,
-      var(--leverui-private-empty-state-padding-block)
+      --lui-empty-state-padding-block,
+      var(--lui-private-empty-state-padding-block)
     );
 
     &[data-size='sm'] {
-      --leverui-private-empty-state-padding-inline: var(--leverui-spacing-4);
-      --leverui-private-empty-state-padding-block: var(--leverui-spacing-6);
-      --leverui-private-empty-state-gap: var(--leverui-spacing-4);
-      --leverui-private-empty-state-indicator-size: var(--leverui-font-sizes-2xl);
-      --leverui-private-empty-state-indicator-line-height: 2rem;
-      --leverui-private-empty-state-indicator-letter-spacing: normal;
-      --leverui-private-empty-state-title-size: var(--leverui-font-sizes-md);
-      --leverui-private-empty-state-title-line-height: 1.5rem;
+      --lui-private-empty-state-padding-inline: var(--lui-spacing-4);
+      --lui-private-empty-state-padding-block: var(--lui-spacing-6);
+      --lui-private-empty-state-gap: var(--lui-spacing-4);
+      --lui-private-empty-state-indicator-size: var(--lui-font-sizes-2xl);
+      --lui-private-empty-state-indicator-line-height: 2rem;
+      --lui-private-empty-state-indicator-letter-spacing: normal;
+      --lui-private-empty-state-title-size: var(--lui-font-sizes-md);
+      --lui-private-empty-state-title-line-height: 1.5rem;
     }
     &[data-size='md'] {
-      --leverui-private-empty-state-padding-inline: var(--leverui-spacing-8);
-      --leverui-private-empty-state-padding-block: var(--leverui-spacing-12);
-      --leverui-private-empty-state-gap: var(--leverui-spacing-6);
-      --leverui-private-empty-state-indicator-size: var(--leverui-font-sizes-4xl);
-      --leverui-private-empty-state-indicator-line-height: 2.75rem;
-      --leverui-private-empty-state-indicator-letter-spacing: -0.025em;
-      --leverui-private-empty-state-title-size: var(--leverui-font-sizes-lg);
-      --leverui-private-empty-state-title-line-height: 1.75rem;
+      --lui-private-empty-state-padding-inline: var(--lui-spacing-8);
+      --lui-private-empty-state-padding-block: var(--lui-spacing-12);
+      --lui-private-empty-state-gap: var(--lui-spacing-6);
+      --lui-private-empty-state-indicator-size: var(--lui-font-sizes-4xl);
+      --lui-private-empty-state-indicator-line-height: 2.75rem;
+      --lui-private-empty-state-indicator-letter-spacing: -0.025em;
+      --lui-private-empty-state-title-size: var(--lui-font-sizes-lg);
+      --lui-private-empty-state-title-line-height: 1.75rem;
     }
     &[data-size='lg'] {
-      --leverui-private-empty-state-padding-inline: var(--leverui-spacing-12);
-      --leverui-private-empty-state-padding-block: var(--leverui-spacing-16);
-      --leverui-private-empty-state-gap: var(--leverui-spacing-8);
-      --leverui-private-empty-state-indicator-size: var(--leverui-font-sizes-6xl);
-      --leverui-private-empty-state-indicator-line-height: 4.5rem;
-      --leverui-private-empty-state-indicator-letter-spacing: -0.025em;
-      --leverui-private-empty-state-title-size: var(--leverui-font-sizes-xl);
-      --leverui-private-empty-state-title-line-height: 1.875rem;
+      --lui-private-empty-state-padding-inline: var(--lui-spacing-12);
+      --lui-private-empty-state-padding-block: var(--lui-spacing-16);
+      --lui-private-empty-state-gap: var(--lui-spacing-8);
+      --lui-private-empty-state-indicator-size: var(--lui-font-sizes-6xl);
+      --lui-private-empty-state-indicator-line-height: 4.5rem;
+      --lui-private-empty-state-indicator-letter-spacing: -0.025em;
+      --lui-private-empty-state-title-size: var(--lui-font-sizes-xl);
+      --lui-private-empty-state-title-line-height: 1.875rem;
     }
   }
 
@@ -56,20 +56,20 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: var(--leverui-empty-state-gap, var(--leverui-private-empty-state-gap));
+      gap: var(--lui-empty-state-gap, var(--lui-private-empty-state-gap));
     }
 
     .leverui-empty-state__indicator:not([data-unstyled]) {
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--leverui-colors-fg-subtle);
+      color: var(--lui-colors-fg-subtle);
       font-size: var(
-        --leverui-empty-state-indicator-size,
-        var(--leverui-private-empty-state-indicator-size)
+        --lui-empty-state-indicator-size,
+        var(--lui-private-empty-state-indicator-size)
       );
-      line-height: var(--leverui-private-empty-state-indicator-line-height);
-      letter-spacing: var(--leverui-private-empty-state-indicator-letter-spacing);
+      line-height: var(--lui-private-empty-state-indicator-line-height);
+      letter-spacing: var(--lui-private-empty-state-indicator-letter-spacing);
 
       & :where(svg, [data-leverui-icon]) {
         width: 1em;
@@ -78,18 +78,15 @@
     }
 
     .leverui-empty-state__title:not([data-unstyled]) {
-      font-weight: var(--leverui-font-weights-semibold);
-      font-size: var(
-        --leverui-empty-state-title-size,
-        var(--leverui-private-empty-state-title-size)
-      );
-      line-height: var(--leverui-private-empty-state-title-line-height);
+      font-weight: var(--lui-font-weights-semibold);
+      font-size: var(--lui-empty-state-title-size, var(--lui-private-empty-state-title-size));
+      line-height: var(--lui-private-empty-state-title-line-height);
     }
 
     .leverui-empty-state__description:not([data-unstyled]) {
-      font-size: var(--leverui-font-sizes-sm);
+      font-size: var(--lui-font-sizes-sm);
       line-height: 1.25rem;
-      color: var(--leverui-colors-fg-muted);
+      color: var(--lui-colors-fg-muted);
     }
   }
 }

@@ -15,7 +15,7 @@ function partSelector(config: GuideExplorerConfig, slug: string, part: string): 
 function explorerCode(config: GuideExplorerConfig, slug: string, part: string): string {
   return `/* Target the ${part} part from your own stylesheet. */
 .my-${slug} ${partSelector(config, slug, part)} {
-  outline: 2px solid var(--leverui-colors-blue-500);
+  outline: 2px solid var(--lui-colors-blue-500);
 }`;
 }
 

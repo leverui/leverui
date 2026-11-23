@@ -14,9 +14,9 @@ export const hoverCardContracts = [
       "[data-state='closed']",
       "[data-placement^='top']",
       "[data-placement^='right']",
-      '--leverui-hover-card-background',
-      '--leverui-hover-card-padding',
-      '--leverui-hover-card-arrow-size',
+      '--lui-hover-card-background',
+      '--lui-hover-card-padding',
+      '--lui-hover-card-arrow-size',
     ],
   },
 ];

@@ -1,13 +1,13 @@
 .date-input-example-narrow {
-  max-width: var(--leverui-sizes-sm);
+  max-width: var(--lui-sizes-sm);
 }
 
 .date-input-example-range {
-  gap: var(--leverui-spacing-4);
+  gap: var(--lui-spacing-4);
 }
 
 .date-input-example-clear {
-  gap: var(--leverui-spacing-2);
+  gap: var(--lui-spacing-2);
 }
 
 .date-input-example-picker-control {

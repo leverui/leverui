@@ -1,35 +1,35 @@
 @layer leverui.recipes {
   @media (min-width: 1280px) {
     .leverui-button:not([data-unstyled])[data-variant-xl='solid'] {
-      --leverui-private-button-bg: var(--leverui-colors-color-palette-solid);
-      --leverui-private-button-fg: var(--leverui-colors-color-palette-contrast);
-      --leverui-private-button-border: transparent;
+      --lui-private-button-bg: var(--lui-colors-color-palette-solid);
+      --lui-private-button-fg: var(--lui-colors-color-palette-contrast);
+      --lui-private-button-border: transparent;
     }
 
     .leverui-button:not([data-unstyled])[data-variant-xl='subtle'] {
-      --leverui-private-button-bg: var(--leverui-colors-color-palette-subtle);
-      --leverui-private-button-fg: var(--leverui-colors-color-palette-fg);
-      --leverui-private-button-border: transparent;
+      --lui-private-button-bg: var(--lui-colors-color-palette-subtle);
+      --lui-private-button-fg: var(--lui-colors-color-palette-fg);
+      --lui-private-button-border: transparent;
     }
 
     .leverui-button:not([data-unstyled])[data-variant-xl='surface'] {
-      --leverui-private-button-bg: var(--leverui-colors-color-palette-subtle);
-      --leverui-private-button-fg: var(--leverui-colors-color-palette-fg);
-      --leverui-private-button-shadow: 0 0 0 1px var(--leverui-colors-color-palette-muted);
+      --lui-private-button-bg: var(--lui-colors-color-palette-subtle);
+      --lui-private-button-fg: var(--lui-colors-color-palette-fg);
+      --lui-private-button-shadow: 0 0 0 1px var(--lui-colors-color-palette-muted);
     }
 
     .leverui-button:not([data-unstyled])[data-variant-xl='outline'] {
-      --leverui-private-button-fg: var(--leverui-colors-color-palette-fg);
-      --leverui-private-button-border: var(--leverui-colors-color-palette-border);
+      --lui-private-button-fg: var(--lui-colors-color-palette-fg);
+      --lui-private-button-border: var(--lui-colors-color-palette-border);
     }
 
     .leverui-button:not([data-unstyled])[data-variant-xl='ghost'] {
-      --leverui-private-button-bg: transparent;
-      --leverui-private-button-fg: var(--leverui-colors-color-palette-fg);
+      --lui-private-button-bg: transparent;
+      --lui-private-button-fg: var(--lui-colors-color-palette-fg);
     }
 
     .leverui-button:not([data-unstyled])[data-variant-xl='plain'] {
-      --leverui-private-button-fg: var(--leverui-colors-color-palette-fg);
+      --lui-private-button-fg: var(--lui-colors-color-palette-fg);
     }
   }
 }

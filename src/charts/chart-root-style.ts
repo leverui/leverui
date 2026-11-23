@@ -5,7 +5,7 @@ export type ChartRootStyle = JSX.HTMLAttributes<HTMLDivElement>['style'];
 
 /** Attach an open numeric chart size without replacing the caller's native style. */
 export function chartRootStyle(
-  variable: '--leverui-private-radial-chart-size' | '--leverui-private-radial-bar-size',
+  variable: '--lui-private-radial-chart-size' | '--lui-private-radial-bar-size',
   size: number | undefined,
   style: ChartRootStyle,
 ): ChartRootStyle {

@@ -130,7 +130,7 @@ export function PackedList(): JSX.Element {
         <List.Item id="packed-list-plain-item">
           <List.Indicator
             asChild={renderPackedIcon}
-            style={{ color: 'var(--leverui-colors-green-500)' }}
+            style={{ color: 'var(--lui-colors-green-500)' }}
             ref={markPackedIcon}
             onClick={recordPackedIconClick}
           />

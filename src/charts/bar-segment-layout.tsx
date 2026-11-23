@@ -31,7 +31,7 @@ export function BarSegmentRoot(props: BarSegmentRootProps): JSX.Element {
           local.barSize === undefined
             ? local.style
             : barSegmentNativeStyle(
-                { '--leverui-bar-segment-size': chartSize(local.barSize) },
+                { '--lui-bar-segment-size': chartSize(local.barSize) },
                 local.style,
               )
         }
@@ -77,7 +77,7 @@ export function BarSegmentLabel(props: BarSegmentLayoutProps): JSX.Element {
           <div
             class={barSegmentClass('labelItem')}
             style={{
-              '--leverui-private-bar-segment-percent': `${chart().getValuePercent('value', item.value)}%`,
+              '--lui-private-bar-segment-percent': `${chart().getValuePercent('value', item.value)}%`,
             }}
           >
             {item.name}
@@ -103,7 +103,7 @@ export function BarSegmentValue(props: BarSegmentLayoutProps): JSX.Element {
           <div
             class={barSegmentClass('valueItem')}
             style={{
-              '--leverui-private-bar-segment-percent': `${chart().getValuePercent('value', item.value)}%`,
+              '--lui-private-bar-segment-percent': `${chart().getValuePercent('value', item.value)}%`,
             }}
           >
             {format(item.value)}
@@ -148,7 +148,7 @@ export function BarSegmentLegend(props: BarSegmentLegendProps): JSX.Element {
         local.gap === undefined
           ? local.style
           : barSegmentNativeStyle(
-              { '--leverui-bar-segment-legend-gap': chartSize(local.gap) },
+              { '--lui-bar-segment-legend-gap': chartSize(local.gap) },
               local.style,
             )
       }
@@ -161,7 +161,7 @@ export function BarSegmentLegend(props: BarSegmentLegendProps): JSX.Element {
               aria-hidden="true"
               class={barSegmentClass('legendSwatch')}
               style={{
-                '--leverui-private-bar-segment-color': chartColor(item.color, 'currentColor'),
+                '--lui-private-bar-segment-color': chartColor(item.color, 'currentColor'),
               }}
             />
             <span class={barSegmentClass('legendText')}>

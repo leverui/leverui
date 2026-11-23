@@ -25,7 +25,7 @@
         gap: 0;
       }
       &[data-attached-sm='false'] {
-        gap: var(--leverui-group-gap, 0.5rem);
+        gap: var(--lui-group-gap, 0.5rem);
       }
     }
 
@@ -54,7 +54,7 @@
         gap: 0;
       }
       &[data-attached-md='false'] {
-        gap: var(--leverui-group-gap, 0.5rem);
+        gap: var(--lui-group-gap, 0.5rem);
       }
     }
 
@@ -83,7 +83,7 @@
         gap: 0;
       }
       &[data-attached-lg='false'] {
-        gap: var(--leverui-group-gap, 0.5rem);
+        gap: var(--lui-group-gap, 0.5rem);
       }
     }
 
@@ -112,7 +112,7 @@
         gap: 0;
       }
       &[data-attached-xl='false'] {
-        gap: var(--leverui-group-gap, 0.5rem);
+        gap: var(--lui-group-gap, 0.5rem);
       }
     }
 
@@ -141,7 +141,7 @@
         gap: 0;
       }
       &[data-attached-2xl='false'] {
-        gap: var(--leverui-group-gap, 0.5rem);
+        gap: var(--lui-group-gap, 0.5rem);
       }
     }
   }

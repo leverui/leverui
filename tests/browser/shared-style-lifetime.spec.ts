@@ -33,7 +33,7 @@ async function verifiesSharedRuleLifetime({ page }: { page: Page }): Promise<voi
   const markup = renderToString(renderServerExample);
   await page.goto('/iframe.html?id=setup-hydration-host--ready');
   await page.setContent(
-    `${generateHydrationScript()}<style>${defaultCss}</style><style>.shared-padding { padding: var(--leverui-spacing-4); }</style><div id="hydration-root">${markup}</div>`,
+    `${generateHydrationScript()}<style>${defaultCss}</style><style>.shared-padding { padding: var(--lui-spacing-4); }</style><div id="hydration-root">${markup}</div>`,
   );
 
   const second = page.locator('#second-shared');

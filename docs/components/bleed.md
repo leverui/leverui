@@ -22,15 +22,15 @@ export function BleedUsage() {
 ```css
 /* bleed-usage.css */
 .bleed-usage-card {
-  padding: var(--leverui-spacing-10);
+  padding: var(--lui-spacing-10);
   border-width: 1px;
 }
 
 .bleed-usage-surface {
   display: grid;
   place-items: center;
-  min-height: var(--leverui-sizes-20);
-  background: var(--leverui-colors-bg-emphasized);
+  min-height: var(--lui-sizes-20);
+  background: var(--lui-colors-bg-emphasized);
 }
 ```
 

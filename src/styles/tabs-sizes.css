@@ -1,34 +1,34 @@
 @layer leverui.recipes {
   .leverui-tabs__root:not([data-unstyled]) {
-    --leverui-private-tabs-height: var(--leverui-sizes-10);
-    --leverui-private-tabs-content-padding: var(--leverui-spacing-4);
-    --leverui-private-tabs-trigger-padding-block: var(--leverui-spacing-2);
-    --leverui-private-tabs-trigger-padding-inline: var(--leverui-spacing-4);
-    --leverui-private-tabs-trigger-font-size: var(--leverui-font-sizes-sm);
-    --leverui-private-tabs-trigger-line-height: 1.25rem;
+    --lui-private-tabs-height: var(--lui-sizes-10);
+    --lui-private-tabs-content-padding: var(--lui-spacing-4);
+    --lui-private-tabs-trigger-padding-block: var(--lui-spacing-2);
+    --lui-private-tabs-trigger-padding-inline: var(--lui-spacing-4);
+    --lui-private-tabs-trigger-font-size: var(--lui-font-sizes-sm);
+    --lui-private-tabs-trigger-line-height: 1.25rem;
 
     .leverui-tabs__trigger:not([data-unstyled]) {
-      padding-block: var(--leverui-private-tabs-trigger-padding-block);
-      padding-inline: var(--leverui-private-tabs-trigger-padding-inline);
-      font-size: var(--leverui-private-tabs-trigger-font-size);
-      line-height: var(--leverui-private-tabs-trigger-line-height);
+      padding-block: var(--lui-private-tabs-trigger-padding-block);
+      padding-inline: var(--lui-private-tabs-trigger-padding-inline);
+      font-size: var(--lui-private-tabs-trigger-font-size);
+      line-height: var(--lui-private-tabs-trigger-line-height);
     }
 
     &[data-size='sm'] {
-      --leverui-private-tabs-height: var(--leverui-sizes-9);
-      --leverui-private-tabs-content-padding: var(--leverui-spacing-3);
+      --lui-private-tabs-height: var(--lui-sizes-9);
+      --lui-private-tabs-content-padding: var(--lui-spacing-3);
 
-      --leverui-private-tabs-trigger-padding-block: var(--leverui-spacing-1);
-      --leverui-private-tabs-trigger-padding-inline: var(--leverui-spacing-3);
+      --lui-private-tabs-trigger-padding-block: var(--lui-spacing-1);
+      --lui-private-tabs-trigger-padding-inline: var(--lui-spacing-3);
     }
 
     &[data-size='lg'] {
-      --leverui-private-tabs-height: var(--leverui-sizes-11);
-      --leverui-private-tabs-content-padding: var(--leverui-spacing-4\.5);
+      --lui-private-tabs-height: var(--lui-sizes-11);
+      --lui-private-tabs-content-padding: var(--lui-spacing-4\.5);
 
-      --leverui-private-tabs-trigger-padding-inline: var(--leverui-spacing-4\.5);
-      --leverui-private-tabs-trigger-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-tabs-trigger-line-height: 1.5rem;
+      --lui-private-tabs-trigger-padding-inline: var(--lui-spacing-4\.5);
+      --lui-private-tabs-trigger-font-size: var(--lui-font-sizes-md);
+      --lui-private-tabs-trigger-line-height: 1.5rem;
     }
 
     &[data-justify='start'] .leverui-tabs__list:not([data-unstyled]) {

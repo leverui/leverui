@@ -100,14 +100,14 @@ function ListContract(): JSX.Element {
       <List.Root
         variant="plain"
         align="center"
-        style={{ '--leverui-list-gap': 'var(--leverui-spacing-2)' }}
+        style={{ '--lui-list-gap': 'var(--lui-spacing-2)' }}
         data-testid="list-icon"
       >
         <List.Item data-testid="list-icon-item">
           <List.Indicator
             asChild={renderIcon}
             style={{
-              color: plain() ? 'var(--leverui-colors-blue-500)' : 'var(--leverui-colors-green-500)',
+              color: plain() ? 'var(--lui-colors-blue-500)' : 'var(--lui-colors-green-500)',
             }}
             ref={markIcon}
           />
@@ -134,7 +134,7 @@ function ListContract(): JSX.Element {
         <List.Item>
           Parent item
           <List.Root
-            style={{ 'padding-inline-start': 'var(--leverui-spacing-5)' }}
+            style={{ 'padding-inline-start': 'var(--lui-spacing-5)' }}
             variant="marker"
             data-testid="list-nested-inner"
           >

@@ -100,7 +100,7 @@ async function verifiesFields({ page }: { page: Page }): Promise<void> {
   await openInputStory(page, 'focus-error-color');
   await expect(page.locator('input')).toHaveCount(6);
   await expect(page.getByPlaceholder('Focus me').first()).toHaveCSS(
-    '--leverui-input-focus-color',
+    '--lui-input-focus-color',
     'lime',
   );
 }

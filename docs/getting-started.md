@@ -47,7 +47,7 @@ import '@leverui/components/styles.css';
 import './theme.css';
 ```
 
-Override `--leverui-*` variables in `theme.css` to change colors, radius, and
+Override `--lui-*` variables in `theme.css` to change colors, radius, and
 more. See [Customize with CSS](theme-guide.md).
 
 Using Tailwind? See [Tailwind CSS](tailwind.md) for the layer order.

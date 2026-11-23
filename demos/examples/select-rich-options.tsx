@@ -31,7 +31,7 @@ export function SelectItemDescription(): JSX.Element {
                         <Span
                           textStyle="xs"
                           style={{
-                            color: 'var(--leverui-colors-fg-muted)',
+                            color: 'var(--lui-colors-fg-muted)',
                           }}
                         >
                           {item.description}

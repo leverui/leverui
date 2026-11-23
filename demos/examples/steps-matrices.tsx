@@ -36,8 +36,8 @@ export function StepsSizes(): JSX.Element {
               <td style={cellStyle}>
                 <Span
                   style={{
-                    'font-size': 'var(--leverui-font-sizes-sm)',
-                    color: 'var(--leverui-colors-fg-muted)',
+                    'font-size': 'var(--lui-font-sizes-sm)',
+                    color: 'var(--lui-colors-fg-muted)',
                     'min-width': '8ch',
                   }}
                 >
@@ -76,8 +76,8 @@ export function StepsVariants(): JSX.Element {
               <td style={cellStyle}>
                 <Span
                   style={{
-                    'font-size': 'var(--leverui-font-sizes-sm)',
-                    color: 'var(--leverui-colors-fg-muted)',
+                    'font-size': 'var(--lui-font-sizes-sm)',
+                    color: 'var(--lui-colors-fg-muted)',
                     'min-width': '8ch',
                   }}
                 >

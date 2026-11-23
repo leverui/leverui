@@ -16,7 +16,7 @@ export function SparklineStock(): JSX.Element {
           <Box
             textStyle="sm"
             style={{
-              'font-weight': 'var(--leverui-font-weights-semibold)',
+              'font-weight': 'var(--lui-font-weights-semibold)',
             }}
           >
             AMZN
@@ -24,7 +24,7 @@ export function SparklineStock(): JSX.Element {
           <Box
             textStyle="xs"
             style={{
-              color: 'var(--leverui-colors-fg-muted)',
+              color: 'var(--lui-colors-fg-muted)',
             }}
           >
             Amazon Inc.
@@ -38,7 +38,7 @@ export function SparklineStock(): JSX.Element {
           aria-label="Amazon stock prices"
         />
         <Stat.Root size="sm" style={{ 'align-items': 'flex-end' }}>
-          <Box style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>
+          <Box style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>
             <FormatNumber value={closing} style="currency" currency="USD" />
           </Box>
           <Badge colorPalette={trend > 0 ? 'green' : 'red'} style={{ gap: '0' }}>

@@ -57,12 +57,10 @@ function verifiesBarSegmentMarkup(): void {
   expect(markup).toContain('aria-label="Server segments"');
   expect(markup).toContain('id="server-segment-content"');
   expect(markup).toContain('aria-label="Bars"');
-  expect(markup).toContain('--leverui-private-bar-segment-flex:60 1 0');
+  expect(markup).toContain('--lui-private-bar-segment-flex:60 1 0');
   expect(markup).not.toMatch(/style="[^"]*(?:display|font-size|border-radius):/);
-  expect(renderBarSegment('3rem')).toContain('--leverui-bar-segment-size:3rem');
-  expect(renderBarSegment('12')).toContain(
-    '--leverui-bar-segment-size:var(--leverui-spacing-12, 3rem)',
-  );
+  expect(renderBarSegment('3rem')).toContain('--lui-bar-segment-size:3rem');
+  expect(renderBarSegment('12')).toContain('--lui-bar-segment-size:var(--lui-spacing-12, 3rem)');
 }
 
 test('Bar Segment server output uses authored presentation', verifiesBarSegmentMarkup);

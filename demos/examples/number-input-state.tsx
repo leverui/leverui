@@ -49,7 +49,7 @@ export function NumberInputHookForm(): JSX.Element {
         </NumberInput.Root>
         <Field.ErrorText>{error()}</Field.ErrorText>
       </Field.Root>
-      <Button size="sm" type="submit" style={{ 'margin-top': 'var(--leverui-spacing-4)' }}>
+      <Button size="sm" type="submit" style={{ 'margin-top': 'var(--lui-spacing-4)' }}>
         Submit
       </Button>
     </form>

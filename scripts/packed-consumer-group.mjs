@@ -25,7 +25,7 @@ export async function verifyPackedGroup(page) {
   assert.equal(
     await first.evaluate(
       /** Read the installed group count variable. */
-      (element) => getComputedStyle(element).getPropertyValue('--leverui-group-count').trim(),
+      (element) => getComputedStyle(element).getPropertyValue('--lui-group-count').trim(),
     ),
     '2',
   );

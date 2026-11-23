@@ -13,28 +13,28 @@
     }
 
     &[data-size='xs'] {
-      width: var(--leverui-icon-size, var(--leverui-sizes-3));
-      height: var(--leverui-icon-size, var(--leverui-sizes-3));
+      width: var(--lui-icon-size, var(--lui-sizes-3));
+      height: var(--lui-icon-size, var(--lui-sizes-3));
     }
     &[data-size='sm'] {
-      width: var(--leverui-icon-size, var(--leverui-sizes-4));
-      height: var(--leverui-icon-size, var(--leverui-sizes-4));
+      width: var(--lui-icon-size, var(--lui-sizes-4));
+      height: var(--lui-icon-size, var(--lui-sizes-4));
     }
     &[data-size='md'] {
-      width: var(--leverui-icon-size, var(--leverui-sizes-5));
-      height: var(--leverui-icon-size, var(--leverui-sizes-5));
+      width: var(--lui-icon-size, var(--lui-sizes-5));
+      height: var(--lui-icon-size, var(--lui-sizes-5));
     }
     &[data-size='lg'] {
-      width: var(--leverui-icon-size, var(--leverui-sizes-6));
-      height: var(--leverui-icon-size, var(--leverui-sizes-6));
+      width: var(--lui-icon-size, var(--lui-sizes-6));
+      height: var(--lui-icon-size, var(--lui-sizes-6));
     }
     &[data-size='xl'] {
-      width: var(--leverui-icon-size, var(--leverui-sizes-7));
-      height: var(--leverui-icon-size, var(--leverui-sizes-7));
+      width: var(--lui-icon-size, var(--lui-sizes-7));
+      height: var(--lui-icon-size, var(--lui-sizes-7));
     }
     &[data-size='2xl'] {
-      width: var(--leverui-icon-size, var(--leverui-sizes-8));
-      height: var(--leverui-icon-size, var(--leverui-sizes-8));
+      width: var(--lui-icon-size, var(--lui-sizes-8));
+      height: var(--lui-icon-size, var(--lui-sizes-8));
     }
   }
 }

@@ -20,7 +20,7 @@ const headerCellStyle = {
   ...matrixCellStyle,
   'font-size': '14px',
   'line-height': '21px',
-  color: 'var(--leverui-colors-fg-muted)',
+  color: 'var(--lui-colors-fg-muted)',
 } as const;
 
 /** Show three labeled inputs inside the Popover form. */
@@ -94,12 +94,10 @@ export function PopoverSizes(): JSX.Element {
                   <Popover.Content>
                     <Popover.Arrow />
                     <Popover.Body>
-                      <Popover.Title
-                        style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}
-                      >
+                      <Popover.Title style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>
                         Lanternwright Notes
                       </Popover.Title>
-                      <Text style={{ 'margin-block': 'var(--leverui-spacing-4)' }}>
+                      <Text style={{ 'margin-block': 'var(--lui-spacing-4)' }}>
                         The Lanternwright Chronicles is a fantasy novel series about an apprentice
                         lamplighter in a city that rearranges itself every night.
                       </Text>
@@ -153,7 +151,7 @@ export function PopoverSizeMatrix(): JSX.Element {
                         <Popover.Body>
                           <Textarea size={size} placeholder="Type your comment here" />
                         </Popover.Body>
-                        <Popover.Footer style={{ gap: 'var(--leverui-spacing-2)' }}>
+                        <Popover.Footer style={{ gap: 'var(--lui-spacing-2)' }}>
                           <Button size={size} variant="solid">
                             Submit
                           </Button>

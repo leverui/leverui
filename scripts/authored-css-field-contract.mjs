@@ -8,7 +8,7 @@ export const fieldContracts = [
       '.leverui-field__helperText:not([data-unstyled])',
       '.leverui-field__errorText:not([data-unstyled])',
       '.leverui-field__requiredIndicator:not([data-unstyled])',
-      '--leverui-field-label-width',
+      '--lui-field-label-width',
       "[data-orientation='vertical']",
       "[data-orientation='horizontal']",
       "[data-orientation-sm='vertical']",

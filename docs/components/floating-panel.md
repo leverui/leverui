@@ -127,10 +127,10 @@ panel, a selector for every panel, or `style` for a single value.
 ```css
 @layer leverui.recipes {
   .notes-panel[data-leverui-floating-panel-css] {
-    border: 1px solid var(--leverui-colors-border);
+    border: 1px solid var(--lui-colors-border);
   }
 }
 ```
 
-`--leverui-colors-bg-panel` sets the content's default background. `unstyled`
+`--lui-colors-bg-panel` sets the content's default background. `unstyled`
 on a part or on `Root` turns off its Lever UI styles.

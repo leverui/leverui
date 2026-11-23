@@ -1,14 +1,14 @@
 @layer leverui.recipes {
   .leverui-card__header:not([data-unstyled]) {
-    padding-inline: var(--leverui-card-padding);
-    padding-top: var(--leverui-card-padding);
+    padding-inline: var(--lui-card-padding);
+    padding-top: var(--lui-card-padding);
     display: flex;
     flex-direction: column;
-    gap: var(--leverui-spacing-1\.5);
+    gap: var(--lui-spacing-1\.5);
   }
 
   .leverui-card__body:not([data-unstyled]) {
-    padding: var(--leverui-card-padding);
+    padding: var(--lui-card-padding);
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -17,19 +17,19 @@
   .leverui-card__footer:not([data-unstyled]) {
     display: flex;
     align-items: center;
-    gap: var(--leverui-spacing-2);
-    padding-inline: var(--leverui-card-padding);
-    padding-bottom: var(--leverui-card-padding);
+    gap: var(--lui-spacing-2);
+    padding-inline: var(--lui-card-padding);
+    padding-bottom: var(--lui-card-padding);
   }
 
   .leverui-card__title:not([data-unstyled]) {
-    font-weight: var(--leverui-font-weights-semibold);
-    font-size: var(--leverui-private-card-title-size, inherit);
-    line-height: var(--leverui-private-card-title-line-height, inherit);
+    font-weight: var(--lui-font-weights-semibold);
+    font-size: var(--lui-private-card-title-size, inherit);
+    line-height: var(--lui-private-card-title-line-height, inherit);
   }
 
   .leverui-card__description:not([data-unstyled]) {
-    color: var(--leverui-colors-fg-muted);
-    font-size: var(--leverui-font-sizes-sm);
+    color: var(--lui-colors-fg-muted);
+    font-size: var(--lui-font-sizes-sm);
   }
 }

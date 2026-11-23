@@ -29,7 +29,7 @@ function IconTrigger(): JSX.Element {
     <IconButton
       {...select().getTriggerProps()}
       aria-label="Select shape"
-      style={{ 'padding-inline': 'var(--leverui-spacing-2)' }}
+      style={{ 'padding-inline': 'var(--lui-spacing-2)' }}
       variant="outline"
       size="sm"
     >
@@ -54,7 +54,7 @@ export function SelectIconButton(): JSX.Element {
       </Select.Control>
       <Portal>
         <Select.Positioner>
-          <Select.Content style={{ 'min-width': 'var(--leverui-sizes-32)' }}>
+          <Select.Content style={{ 'min-width': 'var(--lui-sizes-32)' }}>
             <Select.List>
               <For each={shapeItems}>
                 {

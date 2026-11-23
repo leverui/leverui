@@ -104,7 +104,7 @@ export const Form: Story = {
 export const CustomBg: Story = {
   render: PopoverCustomBg,
   parameters: guide(
-    'Use the `--leverui-popover-background` CSS variable to change the background color of the popover content and its arrow.',
+    'Use the `--lui-popover-background` CSS variable to change the background color of the popover content and its arrow.',
   ),
 };
 export const OpenFromDialog: Story = {

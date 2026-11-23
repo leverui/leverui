@@ -25,7 +25,7 @@ async function checksVariants({ page }: { page: Page }): Promise<void> {
   await openStory(page, 'bar-color');
   await expect(page.locator('#storybook-root [data-bar-series]').first()).toHaveAttribute(
     'fill',
-    'var(--leverui-colors-red-solid)',
+    'var(--lui-colors-red-solid)',
   );
   await openStory(page, 'multiple');
   await expect(page.locator('#storybook-root [data-bar-series]')).toHaveCount(16);
@@ -40,7 +40,7 @@ async function checksVariants({ page }: { page: Page }): Promise<void> {
   await expect(page.locator('#storybook-root [data-bar-series]')).toHaveCount(7);
   await expect(page.locator('#storybook-root [data-bar-category="Page B"]')).toHaveAttribute(
     'fill',
-    'var(--leverui-colors-red-solid)',
+    'var(--lui-colors-red-solid)',
   );
   await expect(page.locator('#storybook-root [data-bar-marks]')).toContainText('-300');
   await openStory(page, 'bar-label');
@@ -60,7 +60,7 @@ async function checksVariants({ page }: { page: Page }): Promise<void> {
   await expect(page.locator('#storybook-root [data-bar-wick]')).toHaveCount(10);
   await expect(page.locator('#storybook-root [data-bar-category="2024-01-01"]')).toHaveAttribute(
     'fill',
-    'var(--leverui-colors-red-solid)',
+    'var(--lui-colors-red-solid)',
   );
   await openStory(page, 'avatar-ticks');
   await expect(page.locator('#storybook-root [data-bar-axes] img')).toHaveCount(4);
@@ -154,7 +154,7 @@ async function checksVariantPresentation({ page }: { page: Page }): Promise<void
   expect(Number(await firstWick.locator('line').first().getAttribute('y1'))).toBeCloseTo(52.7, 1);
   await openStory(page, 'no-gap');
   const seamless = page.locator('#storybook-root [data-bar-series]').first();
-  await expect(seamless).toHaveAttribute('stroke', 'var(--leverui-colors-bg)');
+  await expect(seamless).toHaveAttribute('stroke', 'var(--lui-colors-bg)');
   expect(
     await seamless.evaluate(
       /** Match the first sales bar height at the gallery viewport. */

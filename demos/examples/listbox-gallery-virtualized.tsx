@@ -66,7 +66,7 @@ export function ListboxVirtualized(): JSX.Element {
     <Listbox.Root
       collection={collection}
       scrollToIndexFn={scrollToIndexFn}
-      style={{ 'max-width': 'var(--leverui-sizes-sm)' }}
+      style={{ 'max-width': 'var(--lui-sizes-sm)' }}
     >
       <Listbox.Label>Select country ({countries.length} items)</Listbox.Label>
       <Listbox.Content class="example-listbox-virtual-content">

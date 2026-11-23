@@ -112,6 +112,6 @@ Every part has a fixed `.leverui-drawer__*` class. To style one drawer, use
 
 ```css
 .settings-drawer {
-  --leverui-drawer-background: #f7f9ff;
+  --lui-drawer-background: #f7f9ff;
 }
 ```

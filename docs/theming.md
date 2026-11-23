@@ -17,26 +17,26 @@ See the [consumer theme guide](theme-guide.md) for a complete example.
 
 ## Public variable contract
 
-Foundation tokens use `--leverui-*` names. A token such as
-`--leverui-colors-blue-500` can be overridden at the root; semantic roles such
-as `--leverui-colors-bg` describe how components use those values. Import your
+Foundation tokens use `--lui-*` names. A token such as
+`--lui-colors-blue-500` can be overridden at the root; semantic roles such
+as `--lui-colors-bg` describe how components use those values. Import your
 CSS after the package stylesheet:
 
 ```css
 :root {
-  --leverui-colors-blue-500: #6254c7;
-  --leverui-fonts-body: 'Inter', sans-serif;
-  --leverui-radii-md: 0.75rem;
+  --lui-colors-blue-500: #6254c7;
+  --lui-fonts-body: 'Inter', sans-serif;
+  --lui-radii-md: 0.75rem;
 }
 ```
 
 The [generated variable reference](theme-variables/README.md) lists values
 directly from the authored stylesheet, including mode defaults and source
 files. Public variables are customization hooks. Names beginning
-`--leverui-private-*` are implementation details.
+`--lui-private-*` are implementation details.
 
-Palette roles such as `--leverui-colors-blue-solid`,
-`--leverui-colors-blue-contrast`, and `--leverui-colors-blue-focus-ring` can
+Palette roles such as `--lui-colors-blue-solid`,
+`--lui-colors-blue-contrast`, and `--lui-colors-blue-focus-ring` can
 be changed independently. A component's `colorPalette` choice selects the
 corresponding palette through authored CSS. An enclosing `Theme` can set
 `colorPalette` for descendants that inherit that choice. The
@@ -63,9 +63,9 @@ import { Button, Theme } from '@leverui/components';
 
 ```css
 .editor-panel {
-  --leverui-colors-bg: #10111a;
-  --leverui-colors-fg: #f7f7fb;
-  --leverui-colors-blue-solid: #6e9bff;
+  --lui-colors-bg: #10111a;
+  --lui-colors-fg: #f7f7fb;
+  --lui-colors-blue-solid: #6e9bff;
 }
 ```
 

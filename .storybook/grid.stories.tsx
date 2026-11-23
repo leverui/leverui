@@ -35,7 +35,7 @@ function GridContractExample(): JSX.Element {
 
   return (
     <>
-      <style>{`.grid-contract-basic { gap: var(--leverui-spacing-4); }
+      <style>{`.grid-contract-basic { gap: var(--lui-spacing-4); }
         .grid-contract-item { height: 20px; }
         .grid-contract-override { grid-template-columns: 50px 50px; }
         .grid-contract-item-override { grid-column: 1 / 2; }`}</style>

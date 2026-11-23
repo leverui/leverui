@@ -24,7 +24,7 @@ async function verifiesFieldsetBrowser({ page }: { page: Page }): Promise<void> 
   const error = page.getByText('Check your profile');
   await expect(error).toBeVisible();
   await page.addStyleTag({
-    content: '[data-testid="fieldset-contract"] { --leverui-colors-fg-error: rgb(90, 30, 170); }',
+    content: '[data-testid="fieldset-contract"] { --lui-colors-fg-error: rgb(90, 30, 170); }',
   });
   await expect(error).toHaveCSS('color', 'rgb(90, 30, 170)');
 }
@@ -41,9 +41,9 @@ async function verifiesFieldsetOverrides({ page }: { page: Page }): Promise<void
   await expect(root).toBeVisible({ timeout: 30_000 });
   await page.addStyleTag({
     content: `[data-testid='fieldset-root'] {
-      --leverui-fieldset-space-y: 31px;
-      --leverui-fieldset-content-gap: 23px;
-      --leverui-fieldset-legend-size: 19px;
+      --lui-fieldset-space-y: 31px;
+      --lui-fieldset-content-gap: 23px;
+      --lui-fieldset-legend-size: 19px;
     }
     .leverui-fieldset__helperText { color: rgb(31, 62, 93); }`,
   });

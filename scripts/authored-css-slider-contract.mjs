@@ -21,9 +21,9 @@ export const sliderContracts = [
       "[data-orientation='vertical']",
       '[data-disabled]',
       "[data-state='under-value']",
-      '--leverui-slider-thumb-size',
-      '--leverui-slider-track-size',
-      '--leverui-slider-range-color',
+      '--lui-slider-thumb-size',
+      '--lui-slider-track-size',
+      '--lui-slider-range-color',
     ],
   },
 ];

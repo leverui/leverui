@@ -31,7 +31,7 @@ export type NativeSvgSizeAccepted = ExpectTrue<
 export function typedQrCode(): JSX.Element {
   return (
     <QrCode.Root value="https://example.com" size={{ base: 'sm', md: 'xl' }}>
-      <QrCode.Frame fill="var(--leverui-colors-blue-500)" htmlWidth={96} htmlHeight={96} />
+      <QrCode.Frame fill="var(--lui-colors-blue-500)" htmlWidth={96} htmlHeight={96} />
       <QrCode.DownloadTrigger fileName="qr.png" mimeType="image/png">
         Download
       </QrCode.DownloadTrigger>

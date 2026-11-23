@@ -70,13 +70,13 @@ function SelectAllHeader(props: Pick<ListboxGuideComponents, 'Checkmark' | 'Flex
       data-testid="listbox-select-all"
       align="center"
       style={{
-        'padding-inline': 'var(--leverui-spacing-3)',
-        gap: 'var(--leverui-spacing-2)',
+        'padding-inline': 'var(--lui-spacing-3)',
+        gap: 'var(--lui-spacing-2)',
         cursor: 'pointer',
-        border: '1px solid var(--leverui-colors-border)',
-        'min-height': 'var(--leverui-sizes-10)',
-        'border-start-start-radius': 'var(--leverui-radii-l2)',
-        'border-start-end-radius': 'var(--leverui-radii-l2)',
+        border: '1px solid var(--lui-colors-border)',
+        'min-height': 'var(--lui-sizes-10)',
+        'border-start-start-radius': 'var(--lui-radii-l2)',
+        'border-start-end-radius': 'var(--lui-radii-l2)',
         'margin-bottom': '-1px',
       }}
     >

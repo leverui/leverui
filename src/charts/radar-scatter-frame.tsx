@@ -75,8 +75,8 @@ export function RadarScatterFrame(props: RadarScatterFrameProps): JSX.Element {
       onKeyDown={keyDown}
       style={radarScatterRootStyle(
         props.kind === 'radar'
-          ? '--leverui-private-radar-chart-width'
-          : '--leverui-private-scatter-chart-height',
+          ? '--lui-private-radar-chart-width'
+          : '--lui-private-scatter-chart-height',
         props.dimension,
         split()[0].style,
       )}

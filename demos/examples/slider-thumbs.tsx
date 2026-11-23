@@ -70,7 +70,7 @@ export function SliderCollisionBehavior(): JSX.Element {
 export function SliderPreventOverlap(): JSX.Element {
   return (
     <Slider.Root
-      style={{ 'max-width': 'var(--leverui-sizes-md)' }}
+      style={{ 'max-width': 'var(--lui-sizes-md)' }}
       defaultValue={[20, 60]}
       minStepsBetweenThumbs={8}
     >

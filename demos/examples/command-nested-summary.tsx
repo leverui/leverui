@@ -41,7 +41,7 @@ export function NestedSummary(props: { issue: Issue }): JSX.Element {
         <DataList.ItemValue>
           <HStack gap="1.5" wrap="wrap">
             <Show when={props.issue.labels.length === 0}>
-              <Text style={{ color: 'var(--leverui-colors-fg-muted)' }}>None</Text>
+              <Text style={{ color: 'var(--lui-colors-fg-muted)' }}>None</Text>
             </Show>
             <For each={props.issue.labels}>
               {
@@ -73,18 +73,18 @@ export function NestedShortcuts(props: { keysOf: (hotkey: string) => string[] })
       gap="2"
       textStyle="sm"
       style={{
-        padding: 'var(--leverui-spacing-4)',
+        padding: 'var(--lui-spacing-4)',
         'border-width': '1px',
-        'border-radius': 'var(--leverui-radii-l3)',
-        background: 'var(--leverui-colors-bg-subtle)',
-        'min-width': 'var(--leverui-sizes-64)',
+        'border-radius': 'var(--lui-radii-l3)',
+        background: 'var(--lui-colors-bg-subtle)',
+        'min-width': 'var(--lui-sizes-64)',
       }}
     >
-      <Text style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>Shortcuts</Text>
+      <Text style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>Shortcuts</Text>
       <For each={shortcuts}>
         {(item) => (
           <HStack gap="3">
-            <HStack gap="0.5" style={{ 'min-width': 'var(--leverui-sizes-16)' }}>
+            <HStack gap="0.5" style={{ 'min-width': 'var(--lui-sizes-16)' }}>
               <For each={props.keysOf(item.hotkey)}>
                 {(key) => (
                   <Kbd size="sm" variant="subtle">
@@ -96,7 +96,7 @@ export function NestedShortcuts(props: { keysOf: (hotkey: string) => string[] })
             <Text
               textStyle="xs"
               style={{
-                color: 'var(--leverui-colors-fg-muted)',
+                color: 'var(--lui-colors-fg-muted)',
               }}
             >
               {item.label}

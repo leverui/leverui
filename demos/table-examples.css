@@ -1,28 +1,28 @@
 .table-example-overflow {
   max-width: 36rem;
-  border: 1px solid var(--leverui-colors-border);
+  border: 1px solid var(--lui-colors-border);
 }
 
 .table-example-sticky-header {
   height: 160px;
-  border: 1px solid var(--leverui-colors-border);
-  border-radius: var(--leverui-radii-md);
+  border: 1px solid var(--lui-colors-border);
+  border-radius: var(--lui-radii-md);
 }
 
 .table-example-sticky-frame {
   max-width: 42rem;
-  border: 1px solid var(--leverui-colors-border);
-  border-radius: var(--leverui-radii-md);
+  border: 1px solid var(--lui-colors-border);
+  border-radius: var(--lui-radii-md);
 }
 
 .table-example-muted-row {
-  background: var(--leverui-colors-bg-subtle);
+  background: var(--lui-colors-bg-subtle);
 }
 
 .table-example-sticky-column [data-sticky] {
   position: sticky;
   z-index: 1;
-  background: var(--leverui-colors-bg);
+  background: var(--lui-colors-bg);
 }
 
 .table-example-sticky-column [data-sticky]::after {
@@ -47,7 +47,7 @@
 }
 
 .table-example-sticky-both thead tr {
-  box-shadow: 0 1px 0 var(--leverui-colors-border);
+  box-shadow: 0 1px 0 var(--lui-colors-border);
 }
 
 .table-example-sticky-both thead tr:has(th[data-sticky]) {
@@ -55,9 +55,9 @@
 }
 
 .table-example-selection-checkbox {
-  margin-top: var(--leverui-spacing-0\.5);
+  margin-top: var(--lui-spacing-0\.5);
 }
 
 .table-example-page:is([data-selected], [aria-current='page']) {
-  border: 1px solid var(--leverui-colors-border);
+  border: 1px solid var(--lui-colors-border);
 }

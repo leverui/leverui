@@ -1,7 +1,7 @@
 .accordion-example__expanded-trigger {
-  padding-inline: var(--leverui-spacing-3);
+  padding-inline: var(--lui-spacing-3);
 }
 
 .accordion-example__expanded-trigger[data-state='open'] {
-  background: var(--leverui-colors-gray-subtle);
+  background: var(--lui-colors-gray-subtle);
 }

@@ -11,10 +11,10 @@
         > .leverui-native-select__root > .leverui-native-select__field {
           padding-inline-start: calc(
             var(
-                --leverui-private-input-group-field-height,
-                var(--leverui-input-group-field-height, var(--leverui-sizes-10))
+                --lui-private-input-group-field-height,
+                var(--lui-input-group-field-height, var(--lui-sizes-10))
               ) -
-              var(--leverui-private-input-group-start-offset-lg)
+              var(--lui-private-input-group-start-offset-lg)
           );
         }
       }
@@ -29,10 +29,10 @@
         > .leverui-native-select__root > .leverui-native-select__field {
           padding-inline-end: calc(
             var(
-                --leverui-private-input-group-field-height,
-                var(--leverui-input-group-field-height, var(--leverui-sizes-10))
+                --lui-private-input-group-field-height,
+                var(--lui-input-group-field-height, var(--lui-sizes-10))
               ) -
-              var(--leverui-private-input-group-end-offset-lg)
+              var(--lui-private-input-group-end-offset-lg)
           );
         }
       }
@@ -48,10 +48,10 @@
         > .leverui-native-select__root > .leverui-native-select__field {
           padding-inline-start: calc(
             var(
-                --leverui-private-input-group-field-height,
-                var(--leverui-input-group-field-height, var(--leverui-sizes-10))
+                --lui-private-input-group-field-height,
+                var(--lui-input-group-field-height, var(--lui-sizes-10))
               ) -
-              var(--leverui-private-input-group-start-offset-xl)
+              var(--lui-private-input-group-start-offset-xl)
           );
         }
       }
@@ -66,10 +66,10 @@
         > .leverui-native-select__root > .leverui-native-select__field {
           padding-inline-end: calc(
             var(
-                --leverui-private-input-group-field-height,
-                var(--leverui-input-group-field-height, var(--leverui-sizes-10))
+                --lui-private-input-group-field-height,
+                var(--lui-input-group-field-height, var(--lui-sizes-10))
               ) -
-              var(--leverui-private-input-group-end-offset-xl)
+              var(--lui-private-input-group-end-offset-xl)
           );
         }
       }
@@ -85,10 +85,10 @@
         > .leverui-native-select__root > .leverui-native-select__field {
           padding-inline-start: calc(
             var(
-                --leverui-private-input-group-field-height,
-                var(--leverui-input-group-field-height, var(--leverui-sizes-10))
+                --lui-private-input-group-field-height,
+                var(--lui-input-group-field-height, var(--lui-sizes-10))
               ) -
-              var(--leverui-private-input-group-start-offset-2xl)
+              var(--lui-private-input-group-start-offset-2xl)
           );
         }
       }
@@ -103,10 +103,10 @@
         > .leverui-native-select__root > .leverui-native-select__field {
           padding-inline-end: calc(
             var(
-                --leverui-private-input-group-field-height,
-                var(--leverui-input-group-field-height, var(--leverui-sizes-10))
+                --lui-private-input-group-field-height,
+                var(--lui-input-group-field-height, var(--lui-sizes-10))
               ) -
-              var(--leverui-private-input-group-end-offset-2xl)
+              var(--lui-private-input-group-end-offset-2xl)
           );
         }
       }

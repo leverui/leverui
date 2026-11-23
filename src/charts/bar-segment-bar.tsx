@@ -31,7 +31,7 @@ export function BarSegmentTooltip(props: BarSegmentTooltipProps): JSX.Element {
           aria-hidden="true"
           class={barSegmentClass('tooltipSwatch')}
           style={{
-            '--leverui-private-bar-segment-color': chartColor(local.payload.color, 'currentColor'),
+            '--lui-private-bar-segment-color': chartColor(local.payload.color, 'currentColor'),
           }}
         />
         <span>{local.payload.name}</span>
@@ -60,7 +60,7 @@ export function BarSegmentBar(props: BarSegmentBarProps): JSX.Element {
         local.gap === undefined
           ? local.style
           : barSegmentNativeStyle(
-              { '--leverui-bar-segment-bar-gap': chartSize(local.gap) },
+              { '--lui-bar-segment-bar-gap': chartSize(local.gap) },
               local.style,
             )
       }
@@ -87,8 +87,8 @@ export function BarSegmentBar(props: BarSegmentBarProps): JSX.Element {
               aria-describedby={local.tooltip === true ? `${tooltipPrefix}-${index()}` : undefined}
               class={barSegmentClass('segment')}
               style={{
-                '--leverui-private-bar-segment-flex': `${Math.max(0, item.value)} 1 0`,
-                '--leverui-private-bar-segment-color': chartColor(item.color, 'currentColor'),
+                '--lui-private-bar-segment-flex': `${Math.max(0, item.value)} 1 0`,
+                '--lui-private-bar-segment-color': chartColor(item.color, 'currentColor'),
               }}
             >
               <Show when={local.tooltip}>

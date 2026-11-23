@@ -1,15 +1,15 @@
 @layer leverui.recipes {
   .leverui-alert__root:not([data-unstyled]) {
     &[data-inline='false'] {
-      --leverui-private-alert-content-display: flex;
-      --leverui-private-alert-content-direction: column;
-      --leverui-private-alert-content-align: normal;
+      --lui-private-alert-content-display: flex;
+      --lui-private-alert-content-direction: column;
+      --lui-private-alert-content-align: normal;
     }
 
     &[data-inline='true'] {
-      --leverui-private-alert-content-display: inline-flex;
-      --leverui-private-alert-content-direction: row;
-      --leverui-private-alert-content-align: center;
+      --lui-private-alert-content-display: inline-flex;
+      --lui-private-alert-content-direction: row;
+      --lui-private-alert-content-align: center;
     }
   }
 }

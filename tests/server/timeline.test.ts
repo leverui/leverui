@@ -82,7 +82,7 @@ function verifiesServerTimeline(): void {
   expect(markup).toContain('data-variant="outline"');
   expect(markup).toContain('data-show-last-separator="true"');
   expect(markup).not.toContain('data-leverui-private-style-runtime');
-  expect(markup).not.toContain('--leverui-private-timeline-indicator-size');
+  expect(markup).not.toContain('--lui-private-timeline-indicator-size');
   expect(markup).not.toMatch(/--timeline-(?:indicator-size|content-gap|separator-display)/);
   expect(markup).not.toMatch(/<div[^>]*\s(?:size|variant|showLastSeparator|recipe|css|unstyled)=/);
 }

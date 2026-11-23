@@ -28,10 +28,7 @@ export function BarListRoot(props: BarListRootProps): JSX.Element {
         style={
           local.barSize === undefined
             ? local.style
-            : barListNativeStyle(
-                { '--leverui-bar-list-size': chartSize(local.barSize) },
-                local.style,
-              )
+            : barListNativeStyle({ '--lui-bar-list-size': chartSize(local.barSize) }, local.style)
         }
       >
         {local.children}

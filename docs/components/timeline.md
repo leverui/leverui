@@ -89,12 +89,12 @@ The root has `data-size`, `data-variant`, and `data-show-last-separator`, plus
 one per screen size you set, such as `data-size-md`. `class` and `style` work
 on each part.
 
-Set `--leverui-timeline-indicator-size` on the root to resize the markers. The
+Set `--lui-timeline-indicator-size` on the root to resize the markers. The
 connector line stays centered. Other variables:
-`--leverui-timeline-indicator-bg`, `--leverui-timeline-indicator-color`,
-`--leverui-timeline-line-color`, `--leverui-timeline-line-width`,
-`--leverui-timeline-item-gap`, `--leverui-timeline-content-gap`,
-`--leverui-timeline-title-font-size`.
+`--lui-timeline-indicator-bg`, `--lui-timeline-indicator-color`,
+`--lui-timeline-line-color`, `--lui-timeline-line-width`,
+`--lui-timeline-item-gap`, `--lui-timeline-content-gap`,
+`--lui-timeline-title-font-size`.
 
 ## Explorer
 

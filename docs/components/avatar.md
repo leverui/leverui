@@ -84,7 +84,7 @@ Group them with `AvatarGroup` from `@leverui/components`.
 Make the image `alt` and the fallback name match the person or thing shown.
 Leave `alt` empty only when text next to the avatar already names it.
 
-`AvatarGroup` overlaps its avatars. Set `--leverui-avatar-group-overlap` on
+`AvatarGroup` overlaps its avatars. Set `--lui-avatar-group-overlap` on
 the group to change the overlap.
 
 ## Customize with CSS
@@ -96,7 +96,7 @@ Classes: `.leverui-avatar__root`, `.leverui-avatar__image`,
 
 ```css
 .profile-avatar {
-  --leverui-colors-color-palette-muted: #dbeafe;
+  --lui-colors-color-palette-muted: #dbeafe;
 }
 
 .profile-avatar .leverui-avatar__fallback {

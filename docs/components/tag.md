@@ -86,7 +86,7 @@ do not change.
 
 The root has attributes for its size, variant, and palette. Responsive values
 add `data-size-sm` through `data-size-2xl` and `data-variant-sm` through
-`data-variant-2xl`. Override the `--leverui-*` variables on a theme scope or on
+`data-variant-2xl`. Override the `--lui-*` variables on a theme scope or on
 a single Tag.
 
 ```css

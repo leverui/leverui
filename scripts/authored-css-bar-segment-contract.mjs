@@ -30,7 +30,7 @@ export const barSegmentContracts = [
       ),
       ...['size', 'root-gap', 'content-gap', 'row-gap', 'legend-gap', 'bar-gap'].map(
         /** Require each documented consumer variable. */
-        (name) => `--leverui-bar-segment-${name}`,
+        (name) => `--lui-bar-segment-${name}`,
       ),
       "[data-text-style='xs']",
       '[data-has-label]',

@@ -120,7 +120,7 @@ function MarqueeDemo(): JSX.Element {
     <Marquee.Root
       paused
       spacing="1.5rem"
-      style={{ width: '100%', '--leverui-marquee-edge-color': 'var(--leverui-colors-bg-subtle)' }}
+      style={{ width: '100%', '--lui-marquee-edge-color': 'var(--lui-colors-bg-subtle)' }}
     >
       <Marquee.Viewport>
         <Marquee.Content>

@@ -12,8 +12,8 @@ export function AvatarWithBadge(): JSX.Element {
         <Circle
           size="8px"
           style={{
-            background: 'var(--leverui-colors-green-500)',
-            outline: '0.2em solid var(--leverui-colors-bg)',
+            background: 'var(--lui-colors-green-500)',
+            outline: '0.2em solid var(--lui-colors-bg)',
           }}
         />
       </Float>

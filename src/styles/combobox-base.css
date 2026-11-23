@@ -2,36 +2,36 @@
   .leverui-combobox__root:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
-    gap: var(--leverui-combobox-root-gap, var(--leverui-spacing-1\.5));
+    gap: var(--lui-combobox-root-gap, var(--lui-spacing-1\.5));
     width: 100%;
   }
 
   .leverui-combobox__label:not([data-unstyled]) {
-    font-weight: var(--leverui-font-weights-medium);
+    font-weight: var(--lui-font-weights-medium);
     user-select: none;
-    font-size: var(--leverui-font-sizes-sm);
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
   }
 
   .leverui-combobox__control:not([data-unstyled]) {
     position: relative;
-    --leverui-private-combobox-input-padding-end: var(--leverui-private-combobox-input-padding-x);
-    --leverui-private-combobox-padding-factor: 1;
+    --lui-private-combobox-input-padding-end: var(--lui-private-combobox-input-padding-x);
+    --lui-private-combobox-padding-factor: 1;
   }
 
   .leverui-combobox__control:not([data-unstyled]):has(
       [data-combobox-trigger],
       [data-combobox-clear-trigger]
     ) {
-    --leverui-private-combobox-input-padding-end: calc(
-      var(--leverui-private-combobox-input-height) * var(--leverui-private-combobox-padding-factor)
+    --lui-private-combobox-input-padding-end: calc(
+      var(--lui-private-combobox-input-height) * var(--lui-private-combobox-padding-factor)
     );
   }
 
   .leverui-combobox__control:not([data-unstyled]):has([data-combobox-trigger]):has(
       [data-combobox-clear-trigger]:not([hidden])
     ) {
-    --leverui-private-combobox-padding-factor: 1.5;
+    --lui-private-combobox-padding-factor: 1.5;
   }
 
   .leverui-combobox__input:not([data-unstyled]) {
@@ -39,85 +39,83 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    min-height: var(--leverui-combobox-input-height, var(--leverui-private-combobox-input-height));
+    min-height: var(--lui-combobox-input-height, var(--lui-private-combobox-input-height));
     padding-inline-start: var(
-      --leverui-combobox-input-padding-x,
-      var(--leverui-private-combobox-variant-padding-x)
+      --lui-combobox-input-padding-x,
+      var(--lui-private-combobox-variant-padding-x)
     );
     padding-inline-end: var(
-      --leverui-combobox-input-padding-end,
-      var(--leverui-private-combobox-variant-padding-end)
+      --lui-combobox-input-padding-end,
+      var(--lui-private-combobox-variant-padding-end)
     );
     border-radius: var(
-      --leverui-combobox-radius,
-      var(--leverui-private-combobox-variant-radius, var(--leverui-radii-l2))
+      --lui-combobox-radius,
+      var(--lui-private-combobox-variant-radius, var(--lui-radii-l2))
     );
     border-style: solid;
-    border-width: var(--leverui-private-combobox-border-width, 0);
-    border-color: var(--leverui-private-combobox-border-color, transparent);
+    border-width: var(--lui-private-combobox-border-width, 0);
+    border-color: var(--lui-private-combobox-border-color, transparent);
     background: var(
-      --leverui-combobox-input-background,
-      var(--leverui-private-combobox-input-background, var(--leverui-colors-bg-panel))
+      --lui-combobox-input-background,
+      var(--lui-private-combobox-input-background, var(--lui-colors-bg-panel))
     );
     outline: 0;
     user-select: none;
     text-align: start;
-    font-size: var(--leverui-private-combobox-font-size);
-    line-height: var(--leverui-private-combobox-line-height);
+    font-size: var(--lui-private-combobox-font-size);
+    line-height: var(--lui-private-combobox-line-height);
   }
 
   .leverui-combobox__trigger:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: var(--leverui-private-combobox-font-size);
-    line-height: var(--leverui-private-combobox-line-height);
-    gap: var(--leverui-private-combobox-trigger-gap);
-    padding-block: var(--leverui-private-combobox-trigger-padding-y, 0);
+    font-size: var(--lui-private-combobox-font-size);
+    line-height: var(--lui-private-combobox-line-height);
+    gap: var(--lui-private-combobox-trigger-gap);
+    padding-block: var(--lui-private-combobox-trigger-padding-y, 0);
   }
 
   .leverui-combobox__clearTrigger:not([data-unstyled]) {
-    color: var(--leverui-colors-fg-muted);
+    color: var(--lui-colors-fg-muted);
     pointer-events: auto;
-    border-radius: var(--leverui-radii-l1);
+    border-radius: var(--lui-radii-l1);
   }
 
   .leverui-combobox__indicatorGroup:not([data-unstyled]) {
-    --leverui-private-combobox-indicator-padding-x: var(--leverui-private-combobox-input-padding-x);
+    --lui-private-combobox-indicator-padding-x: var(--lui-private-combobox-input-padding-x);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: var(--leverui-spacing-1);
+    gap: var(--lui-spacing-1);
     position: absolute;
     inset-inline-end: 0;
     inset-block: 0;
     padding-inline: var(
-      --leverui-combobox-indicator-padding-x,
-      var(--leverui-private-combobox-variant-indicator-padding-x)
+      --lui-combobox-indicator-padding-x,
+      var(--lui-private-combobox-variant-indicator-padding-x)
     );
   }
 
   .leverui-combobox__indicatorGroup:not([data-unstyled]) :where(svg),
   .leverui-combobox__item:not([data-unstyled]) :where(svg) {
-    width: var(--leverui-private-combobox-indicator-size);
-    height: var(--leverui-private-combobox-indicator-size);
+    width: var(--lui-private-combobox-indicator-size);
+    height: var(--lui-private-combobox-indicator-size);
   }
 
   .leverui-combobox__content:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
-    padding: var(--leverui-private-combobox-content-padding);
-    font-size: var(--leverui-private-combobox-font-size);
-    line-height: var(--leverui-private-combobox-line-height);
-    background: var(--leverui-combobox-content-background, var(--leverui-colors-bg-panel));
-    z-index: calc(
-      var(--leverui-combobox-z-index, var(--leverui-z-index-popover)) + var(--layer-index, 0)
-    );
-    border-radius: var(--leverui-combobox-radius, var(--leverui-radii-l2));
+    padding: var(--lui-private-combobox-content-padding);
+    font-size: var(--lui-private-combobox-font-size);
+    line-height: var(--lui-private-combobox-line-height);
+    background: var(--lui-combobox-content-background, var(--lui-colors-bg-panel));
+    z-index: calc(var(--lui-combobox-z-index, var(--lui-z-index-popover)) + var(--layer-index, 0));
+    border-radius: var(--lui-combobox-radius, var(--lui-radii-l2));
     outline: 0;
-    max-height: var(--leverui-combobox-content-max-height, var(--leverui-sizes-96));
+    max-height: var(--lui-combobox-content-max-height, var(--lui-sizes-96));
     overflow: hidden;
-    box-shadow: var(--leverui-combobox-content-shadow, var(--leverui-shadows-md));
+    box-shadow: var(--lui-combobox-content-shadow, var(--lui-shadows-md));
   }
 
   /* Zag 2 scrolls the highlighted option within List, so List is the scroll container. */
@@ -135,19 +133,19 @@
     user-select: none;
     display: flex;
     align-items: center;
-    gap: var(--leverui-spacing-2);
-    padding-block: var(--leverui-private-combobox-item-padding-y);
-    padding-inline: var(--leverui-private-combobox-item-padding-x);
+    gap: var(--lui-spacing-2);
+    padding-block: var(--lui-private-combobox-item-padding-y);
+    padding-inline: var(--lui-private-combobox-item-padding-x);
     justify-content: space-between;
     flex: 1;
     text-align: start;
-    border-radius: var(--leverui-radii-l1);
+    border-radius: var(--lui-radii-l1);
   }
 
   /* The primitive keeps Empty mounted as a status region; pad it only while it shows a message. */
   .leverui-combobox__empty:not([data-unstyled]):not(:empty) {
-    padding-block: var(--leverui-private-combobox-item-padding-y);
-    padding-inline: var(--leverui-private-combobox-item-padding-x);
+    padding-block: var(--lui-private-combobox-item-padding-y);
+    padding-inline: var(--lui-private-combobox-item-padding-x);
   }
 
   .leverui-combobox__itemText:not([data-unstyled]) {
@@ -155,13 +153,13 @@
   }
 
   .leverui-combobox__itemIndicator:not([data-unstyled]) {
-    display: var(--leverui-private-combobox-item-indicator-display, block);
+    display: var(--lui-private-combobox-item-indicator-display, block);
     align-items: center;
     justify-content: center;
   }
 
   .leverui-combobox__itemGroup:not([data-unstyled]) {
-    padding-bottom: var(--leverui-private-combobox-item-padding-y);
+    padding-bottom: var(--lui-private-combobox-item-padding-y);
   }
 
   .leverui-combobox__itemGroup:not([data-unstyled]):last-of-type {
@@ -169,16 +167,14 @@
   }
 
   .leverui-combobox__itemGroupLabel:not([data-unstyled]) {
-    font-weight: var(--leverui-font-weights-medium);
-    padding-block: var(--leverui-private-combobox-item-padding-y);
-    padding-inline: var(--leverui-private-combobox-item-padding-x);
+    font-weight: var(--lui-font-weights-medium);
+    padding-block: var(--lui-private-combobox-item-padding-y);
+    padding-inline: var(--lui-private-combobox-item-padding-x);
   }
 
   /* Zag 2 sets no z-index and isolates the positioner, so the content's z-index
      cannot escape it. Stack the positioner itself, offset by its layer index. */
   .leverui-combobox__positioner {
-    z-index: calc(
-      var(--leverui-combobox-z-index, var(--leverui-z-index-popover)) + var(--layer-index, 0)
-    );
+    z-index: calc(var(--lui-combobox-z-index, var(--lui-z-index-popover)) + var(--layer-index, 0));
   }
 }

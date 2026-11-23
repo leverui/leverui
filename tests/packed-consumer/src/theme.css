@@ -3,15 +3,15 @@
 @import './consumer-system.css';
 
 :root {
-  --leverui-colors-bg: rgb(242, 239, 255);
+  --lui-colors-bg: rgb(242, 239, 255);
 }
 
 .brand-scope {
-  --leverui-colors-blue-solid: rgb(98, 84, 199);
+  --lui-colors-blue-solid: rgb(98, 84, 199);
 }
 
 .packed-highlight-red {
-  color: var(--leverui-colors-red-500);
+  color: var(--lui-colors-red-500);
 }
 
 .packed-code-custom {
@@ -20,7 +20,7 @@
 }
 
 .packed-code-block {
-  --leverui-code-block-radius: 12px;
+  --lui-code-block-radius: 12px;
 }
 
 .packed-kbd-custom {
@@ -30,7 +30,7 @@
 
 .packed-spinner-custom {
   border-width: 5px;
-  --leverui-spinner-track-color: rgb(9, 22, 54);
+  --lui-spinner-track-color: rgb(9, 22, 54);
 }
 
 .packed-loader-overlay {
@@ -44,7 +44,7 @@
 }
 
 .packed-field {
-  --leverui-colors-fg-error: rgb(128, 40, 120);
+  --lui-colors-fg-error: rgb(128, 40, 120);
 }
 
 .packed-field .leverui-input {
@@ -112,15 +112,15 @@
 }
 
 .packed-fieldset {
-  --leverui-colors-fg-error: rgb(90, 30, 170);
+  --lui-colors-fg-error: rgb(90, 30, 170);
 }
 
 .packed-file-upload {
-  --leverui-colors-bg: rgb(30, 40, 90);
+  --lui-colors-bg: rgb(30, 40, 90);
 }
 
 .packed-editable {
-  --leverui-colors-bg-muted: rgb(30, 40, 90);
+  --lui-colors-bg-muted: rgb(30, 40, 90);
 }
 
 :where(.packed-link-css) .leverui-linkbox {

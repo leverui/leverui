@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   .leverui-input-group:not([data-unstyled]) {
-    width: var(--leverui-input-group-width, 100%);
+    width: var(--lui-input-group-width, 100%);
   }
 
   .leverui-input-group > [data-leverui-input-group-start-element] {

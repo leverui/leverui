@@ -18,8 +18,8 @@ function InputElementContractExample(): JSX.Element {
         <Input
           aria-label="Website"
           style={{
-            'padding-inline-start': 'var(--leverui-spacing-10)',
-            'padding-inline-end': 'var(--leverui-spacing-10)',
+            'padding-inline-start': 'var(--lui-spacing-10)',
+            'padding-inline-end': 'var(--lui-spacing-10)',
           }}
           placeholder="example.com"
         />

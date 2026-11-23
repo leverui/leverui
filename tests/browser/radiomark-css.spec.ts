@@ -114,8 +114,8 @@ async function verifiesConsumerCss({ page }: { page: Page }): Promise<void> {
     `<style>${defaultCss}</style><style>
       .consumer-mark { color: rgb(12, 34, 56); }
       .consumer-palette {
-        --leverui-colors-color-palette-solid: rgb(12, 34, 56);
-        --leverui-radii-full: 7px;
+        --lui-colors-color-palette-solid: rgb(12, 34, 56);
+        --lui-radii-full: 7px;
       }
       .leverui-radiomark__dot { scale: 0.8; }
     </style>${blue}${red}${custom}${plain}`,

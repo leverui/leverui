@@ -53,7 +53,7 @@
   line-height: 1.35;
 }
 .home-example-person strong {
-  font-weight: var(--leverui-font-weights-medium);
+  font-weight: var(--lui-font-weights-medium);
 }
 .home-example-person span {
   overflow: hidden;
@@ -72,5 +72,5 @@
 }
 /* Lift the cards off the tinted planes behind them. */
 .home-examples .leverui-card__root {
-  box-shadow: var(--leverui-shadows-sm);
+  box-shadow: var(--lui-shadows-sm);
 }

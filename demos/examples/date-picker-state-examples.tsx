@@ -127,21 +127,21 @@ function MultipleDateValues(): JSX.Element {
 /** Put multiple chosen dates in a wrapped tag field. */
 export function DatePickerMultipleSelection(): JSX.Element {
   return (
-    <DatePicker.Root selectionMode="multiple" style={{ 'max-width': 'var(--leverui-sizes-sm)' }}>
+    <DatePicker.Root selectionMode="multiple" style={{ 'max-width': 'var(--lui-sizes-sm)' }}>
       <DatePicker.Label>Meeting dates</DatePicker.Label>
       <DatePicker.Control>
         <Wrap
           gap="2"
           style={{
             'border-width': '1px',
-            'min-height': 'var(--leverui-sizes-10)',
+            'min-height': 'var(--lui-sizes-10)',
             'align-items': 'center',
             width: '100%',
-            'border-radius': 'var(--leverui-radii-l2)',
-            'font-size': 'var(--leverui-font-sizes-sm)',
-            'padding-block': 'var(--leverui-spacing-1\\.5)',
-            'padding-inline-start': 'var(--leverui-spacing-2\\.5)',
-            'padding-inline-end': 'var(--leverui-spacing-8)',
+            'border-radius': 'var(--lui-radii-l2)',
+            'font-size': 'var(--lui-font-sizes-sm)',
+            'padding-block': 'var(--lui-spacing-1\\.5)',
+            'padding-inline-start': 'var(--lui-spacing-2\\.5)',
+            'padding-inline-end': 'var(--lui-spacing-8)',
           }}
         >
           <MultipleDateValues />

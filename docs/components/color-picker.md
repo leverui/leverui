@@ -188,15 +188,15 @@ Give its icon button an accessible name, such as `aria-label`.
 Part classes: `.leverui-color-picker__<slot>`. `Sliders` uses
 `.leverui-color-picker__sliders`. Variables:
 
-- `--leverui-color-picker-root-gap`
-- `--leverui-color-picker-trigger-height` and
-  `--leverui-color-picker-focus-color`
-- `--leverui-color-picker-content-width`,
-  `--leverui-color-picker-content-background`, and
-  `--leverui-color-picker-z-index`
-- `--leverui-color-picker-area-height`, `--leverui-color-picker-thumb-size`, and
-  `--leverui-color-picker-slider-height`
-- `--leverui-color-picker-swatch-size`
+- `--lui-color-picker-root-gap`
+- `--lui-color-picker-trigger-height` and
+  `--lui-color-picker-focus-color`
+- `--lui-color-picker-content-width`,
+  `--lui-color-picker-content-background`, and
+  `--lui-color-picker-z-index`
+- `--lui-color-picker-area-height`, `--lui-color-picker-thumb-size`, and
+  `--lui-color-picker-slider-height`
+- `--lui-color-picker-swatch-size`
 
 Inline styles set the live gradients, thumb positions, and swatch colors. A
 `style` you pass is merged with them.

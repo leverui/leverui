@@ -20,10 +20,10 @@ async function verifiesCodeBlockThemeExtension({ page }: { page: Page }): Promis
   await expect(page.getByTestId('theme-unstyled-code')).toHaveJSProperty('tagName', 'PRE');
   await expect(unstyled.locator('code')).toHaveText('Unstyled source');
 
-  await page.addStyleTag({ content: ':root { --leverui-code-block-radius: 27px; }' });
+  await page.addStyleTag({ content: ':root { --lui-code-block-radius: 27px; }' });
   await expect(page.getByTestId('theme-css-root')).toHaveCSS('border-radius', '27px');
   await page.addStyleTag({
-    content: '[data-testid="theme-css-root"] { --leverui-code-block-radius: 23px; }',
+    content: '[data-testid="theme-css-root"] { --lui-code-block-radius: 23px; }',
   });
   await expect(page.getByTestId('theme-css-root')).toHaveCSS('border-radius', '23px');
   await expect(page.getByTestId('theme-instance-css-root')).toHaveCSS('border-top-width', '5px');

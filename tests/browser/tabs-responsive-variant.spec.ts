@@ -113,7 +113,7 @@ async function verifiesConsumerOverrides({ page }: { page: Page }): Promise<void
   await expect(root).toBeVisible({ timeout: 30_000 });
   await page.addStyleTag({
     content: `[data-testid='tabs-variant-authored'] {
-      --leverui-colors-color-palette-subtle: rgb(10 90 150);
+      --lui-colors-color-palette-subtle: rgb(10 90 150);
     }`,
   });
   await expect(trigger).toHaveCSS('background-color', 'rgb(10, 90, 150)');

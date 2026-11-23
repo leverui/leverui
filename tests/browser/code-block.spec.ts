@@ -16,7 +16,7 @@ async function verifiesCodeBlockParts({ page }: { page: Page }): Promise<void> {
     await root.evaluate(
       /** Read a consumer stylesheet override of the public highlight token. */
       (element) =>
-        getComputedStyle(element).getPropertyValue('--leverui-code-block-highlight-bg').trim(),
+        getComputedStyle(element).getPropertyValue('--lui-code-block-highlight-bg').trim(),
     ),
   ).toBe('rgb(10 20 30)');
   await expect(page.getByTestId('code-block-header')).toHaveJSProperty('tagName', 'HEADER');

@@ -2,72 +2,72 @@
   @media (min-width: 1024px) {
     .leverui-mark:not([data-unstyled], [data-leverui-private-style-runtime]) {
       &[data-variant-lg='subtle'] {
-        --leverui-private-mark-background: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-mark-color: inherit;
-        --leverui-private-mark-font-weight: inherit;
+        --lui-private-mark-background: var(--lui-colors-color-palette-subtle);
+        --lui-private-mark-color: inherit;
+        --lui-private-mark-font-weight: inherit;
       }
       &[data-variant-lg='solid'] {
-        --leverui-private-mark-background: var(--leverui-colors-color-palette-solid);
-        --leverui-private-mark-color: var(--leverui-colors-color-palette-contrast);
-        --leverui-private-mark-font-weight: inherit;
+        --lui-private-mark-background: var(--lui-colors-color-palette-solid);
+        --lui-private-mark-color: var(--lui-colors-color-palette-contrast);
+        --lui-private-mark-font-weight: inherit;
       }
       &[data-variant-lg='text'] {
-        --leverui-private-mark-background: transparent;
-        --leverui-private-mark-color: inherit;
-        --leverui-private-mark-font-weight: var(--leverui-font-weights-medium);
+        --lui-private-mark-background: transparent;
+        --lui-private-mark-color: inherit;
+        --lui-private-mark-font-weight: var(--lui-font-weights-medium);
       }
       &[data-variant-lg='plain'] {
-        --leverui-private-mark-background: transparent;
-        --leverui-private-mark-color: inherit;
-        --leverui-private-mark-font-weight: inherit;
+        --lui-private-mark-background: transparent;
+        --lui-private-mark-color: inherit;
+        --lui-private-mark-font-weight: inherit;
       }
     }
   }
   @media (min-width: 1280px) {
     .leverui-mark:not([data-unstyled], [data-leverui-private-style-runtime]) {
       &[data-variant-xl='subtle'] {
-        --leverui-private-mark-background: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-mark-color: inherit;
-        --leverui-private-mark-font-weight: inherit;
+        --lui-private-mark-background: var(--lui-colors-color-palette-subtle);
+        --lui-private-mark-color: inherit;
+        --lui-private-mark-font-weight: inherit;
       }
       &[data-variant-xl='solid'] {
-        --leverui-private-mark-background: var(--leverui-colors-color-palette-solid);
-        --leverui-private-mark-color: var(--leverui-colors-color-palette-contrast);
-        --leverui-private-mark-font-weight: inherit;
+        --lui-private-mark-background: var(--lui-colors-color-palette-solid);
+        --lui-private-mark-color: var(--lui-colors-color-palette-contrast);
+        --lui-private-mark-font-weight: inherit;
       }
       &[data-variant-xl='text'] {
-        --leverui-private-mark-background: transparent;
-        --leverui-private-mark-color: inherit;
-        --leverui-private-mark-font-weight: var(--leverui-font-weights-medium);
+        --lui-private-mark-background: transparent;
+        --lui-private-mark-color: inherit;
+        --lui-private-mark-font-weight: var(--lui-font-weights-medium);
       }
       &[data-variant-xl='plain'] {
-        --leverui-private-mark-background: transparent;
-        --leverui-private-mark-color: inherit;
-        --leverui-private-mark-font-weight: inherit;
+        --lui-private-mark-background: transparent;
+        --lui-private-mark-color: inherit;
+        --lui-private-mark-font-weight: inherit;
       }
     }
   }
   @media (min-width: 1536px) {
     .leverui-mark:not([data-unstyled], [data-leverui-private-style-runtime]) {
       &[data-variant-2xl='subtle'] {
-        --leverui-private-mark-background: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-mark-color: inherit;
-        --leverui-private-mark-font-weight: inherit;
+        --lui-private-mark-background: var(--lui-colors-color-palette-subtle);
+        --lui-private-mark-color: inherit;
+        --lui-private-mark-font-weight: inherit;
       }
       &[data-variant-2xl='solid'] {
-        --leverui-private-mark-background: var(--leverui-colors-color-palette-solid);
-        --leverui-private-mark-color: var(--leverui-colors-color-palette-contrast);
-        --leverui-private-mark-font-weight: inherit;
+        --lui-private-mark-background: var(--lui-colors-color-palette-solid);
+        --lui-private-mark-color: var(--lui-colors-color-palette-contrast);
+        --lui-private-mark-font-weight: inherit;
       }
       &[data-variant-2xl='text'] {
-        --leverui-private-mark-background: transparent;
-        --leverui-private-mark-color: inherit;
-        --leverui-private-mark-font-weight: var(--leverui-font-weights-medium);
+        --lui-private-mark-background: transparent;
+        --lui-private-mark-color: inherit;
+        --lui-private-mark-font-weight: var(--lui-font-weights-medium);
       }
       &[data-variant-2xl='plain'] {
-        --leverui-private-mark-background: transparent;
-        --leverui-private-mark-color: inherit;
-        --leverui-private-mark-font-weight: inherit;
+        --lui-private-mark-background: transparent;
+        --lui-private-mark-color: inherit;
+        --lui-private-mark-font-weight: inherit;
       }
     }
   }

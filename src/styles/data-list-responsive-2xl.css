@@ -2,43 +2,43 @@
   @media (min-width: 1536px) {
     .leverui-data-list__root:not([data-unstyled]) {
       &[data-orientation-2xl='horizontal'] {
-        --leverui-private-data-list-item-display: inline-flex;
-        --leverui-private-data-list-item-direction: row;
-        --leverui-private-data-list-item-gap: var(--leverui-spacing-4);
-        --leverui-private-data-list-item-align: center;
-        --leverui-private-data-list-label-min-width: 120px;
+        --lui-private-data-list-item-display: inline-flex;
+        --lui-private-data-list-item-direction: row;
+        --lui-private-data-list-item-gap: var(--lui-spacing-4);
+        --lui-private-data-list-item-align: center;
+        --lui-private-data-list-label-min-width: 120px;
       }
       &[data-orientation-2xl='vertical'] {
-        --leverui-private-data-list-item-display: flex;
-        --leverui-private-data-list-item-direction: column;
-        --leverui-private-data-list-item-gap: var(--leverui-spacing-1);
-        --leverui-private-data-list-item-align: normal;
-        --leverui-private-data-list-label-min-width: auto;
+        --lui-private-data-list-item-display: flex;
+        --lui-private-data-list-item-direction: column;
+        --lui-private-data-list-item-gap: var(--lui-spacing-1);
+        --lui-private-data-list-item-align: normal;
+        --lui-private-data-list-label-min-width: auto;
       }
       &[data-size-2xl='sm'] {
-        --leverui-private-data-list-root-gap: var(--leverui-spacing-3);
-        --leverui-private-data-list-item-font-size: var(--leverui-font-sizes-xs);
-        --leverui-private-data-list-item-line-height: 1rem;
+        --lui-private-data-list-root-gap: var(--lui-spacing-3);
+        --lui-private-data-list-item-font-size: var(--lui-font-sizes-xs);
+        --lui-private-data-list-item-line-height: 1rem;
       }
       &[data-size-2xl='md'] {
-        --leverui-private-data-list-root-gap: var(--leverui-spacing-4);
-        --leverui-private-data-list-item-font-size: var(--leverui-font-sizes-sm);
-        --leverui-private-data-list-item-line-height: 1.25rem;
+        --lui-private-data-list-root-gap: var(--lui-spacing-4);
+        --lui-private-data-list-item-font-size: var(--lui-font-sizes-sm);
+        --lui-private-data-list-item-line-height: 1.25rem;
       }
       &[data-size-2xl='lg'] {
-        --leverui-private-data-list-root-gap: var(--leverui-spacing-5);
-        --leverui-private-data-list-item-font-size: var(--leverui-font-sizes-md);
-        --leverui-private-data-list-item-line-height: 1.5rem;
+        --lui-private-data-list-root-gap: var(--lui-spacing-5);
+        --lui-private-data-list-item-font-size: var(--lui-font-sizes-md);
+        --lui-private-data-list-item-line-height: 1.5rem;
       }
       &[data-variant-2xl='subtle'] {
-        --leverui-private-data-list-label-color: var(--leverui-colors-fg-muted);
-        --leverui-private-data-list-label-weight: inherit;
-        --leverui-private-data-list-value-color: inherit;
+        --lui-private-data-list-label-color: var(--lui-colors-fg-muted);
+        --lui-private-data-list-label-weight: inherit;
+        --lui-private-data-list-value-color: inherit;
       }
       &[data-variant-2xl='bold'] {
-        --leverui-private-data-list-label-color: inherit;
-        --leverui-private-data-list-label-weight: var(--leverui-font-weights-medium);
-        --leverui-private-data-list-value-color: var(--leverui-colors-fg-muted);
+        --lui-private-data-list-label-color: inherit;
+        --lui-private-data-list-label-weight: var(--lui-font-weights-medium);
+        --lui-private-data-list-value-color: var(--lui-colors-fg-muted);
       }
     }
   }

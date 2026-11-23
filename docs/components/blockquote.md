@@ -76,7 +76,7 @@ Stable classes: `.leverui-blockquote__root`, `__content`, `__caption`,
 
 ```css
 .article-quote {
-  --leverui-colors-color-palette-solid: rebeccapurple;
+  --lui-colors-color-palette-solid: rebeccapurple;
 }
 
 .article-quote .leverui-blockquote__caption {

@@ -157,7 +157,7 @@ breaks.
 
 ## Customize with CSS
 
-Import `@leverui/components/styles.css`, then set `--leverui-combobox-*`
+Import `@leverui/components/styles.css`, then set `--lui-combobox-*`
 variables on `:root`, a theme wrapper, or a single Combobox. The root and its
 parts have `data-size`, `data-variant`, and interaction state attributes.
 Content moved by a portal gets the same size and variant attributes. Each part

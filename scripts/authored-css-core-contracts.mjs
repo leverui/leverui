@@ -45,7 +45,7 @@ export const coreContracts = [
       '[data-truncate]',
       "[data-line-clamp='value']",
       "[data-line-clamp='none']",
-      '--leverui-private-text-line-clamp',
+      '--lui-private-text-line-clamp',
     ],
   },
   {
@@ -70,8 +70,8 @@ export const coreContracts = [
         ],
       ),
       '[data-autoresize]',
-      '--leverui-private-textarea-font-size',
-      '--leverui-private-textarea-focus-color',
+      '--lui-private-textarea-font-size',
+      '--lui-private-textarea-focus-color',
     ],
   },
   {
@@ -86,8 +86,8 @@ export const coreContracts = [
         /** Require an authored responsive size selector at each breakpoint. */
         (breakpoint) => `[data-size-${breakpoint}='xl']`,
       ),
-      '--leverui-spinner-track-color',
-      'animation: var(--leverui-animations-spin)',
+      '--lui-spinner-track-color',
+      'animation: var(--lui-animations-spin)',
       'border-bottom-color:',
     ],
   },

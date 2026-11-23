@@ -1,9 +1,9 @@
 @layer leverui.recipes {
   .leverui-radar-chart {
     position: relative;
-    width: var(--leverui-radar-chart-width, var(--leverui-private-radar-chart-width, 384px));
-    max-width: var(--leverui-radar-chart-max-width, 100%);
-    margin: var(--leverui-radar-chart-margin, auto);
+    width: var(--lui-radar-chart-width, var(--lui-private-radar-chart-width, 384px));
+    max-width: var(--lui-radar-chart-max-width, 100%);
+    margin: var(--lui-radar-chart-margin, auto);
   }
 
   .leverui-radar-chart__svg {
@@ -14,64 +14,64 @@
 
   .leverui-radar-chart__grid {
     fill: none;
-    stroke: var(--leverui-radar-chart-grid-stroke, var(--leverui-colors-border));
-    stroke-width: var(--leverui-radar-chart-grid-stroke-width, 1px);
+    stroke: var(--lui-radar-chart-grid-stroke, var(--lui-colors-border));
+    stroke-width: var(--lui-radar-chart-grid-stroke-width, 1px);
   }
 
   .leverui-radar-chart__grid[data-grid='filled'] .leverui-radar-chart__ring {
-    fill: var(--leverui-radar-chart-grid-fill, var(--leverui-colors-teal-solid));
-    fill-opacity: var(--leverui-radar-chart-grid-fill-opacity, 0.1);
+    fill: var(--lui-radar-chart-grid-fill, var(--lui-colors-teal-solid));
+    fill-opacity: var(--lui-radar-chart-grid-fill-opacity, 0.1);
     stroke: none;
   }
 
   .leverui-radar-chart__angle-label,
   .leverui-radar-chart__radius-label,
   .leverui-radar-chart__point-label {
-    font-size: var(--leverui-radar-chart-label-font-size, 12px);
+    font-size: var(--lui-radar-chart-label-font-size, 12px);
     stroke: none;
   }
 
   .leverui-radar-chart__angle-label {
-    fill: var(--leverui-radar-chart-angle-label-color, var(--leverui-colors-fg-muted));
+    fill: var(--lui-radar-chart-angle-label-color, var(--lui-colors-fg-muted));
   }
 
   .leverui-radar-chart__radius-label {
-    fill: var(--leverui-radar-chart-radius-label-color, #ccc);
+    fill: var(--lui-radar-chart-radius-label-color, #ccc);
   }
 
   .leverui-radar-chart__shape {
-    stroke-width: var(--leverui-radar-chart-series-stroke-width, 1px);
-    fill-opacity: var(--leverui-radar-chart-series-fill-opacity, 0.2);
+    stroke-width: var(--lui-radar-chart-series-stroke-width, 1px);
+    fill-opacity: var(--lui-radar-chart-series-fill-opacity, 0.2);
   }
 
   .leverui-radar-chart__shape[data-stroke-width='2'] {
-    stroke-width: var(--leverui-radar-chart-series-stroke-width, 2px);
+    stroke-width: var(--lui-radar-chart-series-stroke-width, 2px);
   }
 
   .leverui-radar-chart__point-label {
-    fill: var(--leverui-radar-chart-point-label-color, var(--leverui-colors-fg));
+    fill: var(--lui-radar-chart-point-label-color, var(--lui-colors-fg));
     pointer-events: none;
   }
 
   .leverui-radar-chart__legend {
     display: flex;
     justify-content: center;
-    gap: var(--leverui-radar-chart-legend-gap, 12px);
-    margin-top: var(--leverui-radar-chart-legend-overlap, -33px);
-    padding: var(--leverui-radar-chart-legend-padding, 5px 0);
-    color: var(--leverui-radar-chart-legend-color, var(--leverui-colors-fg-muted));
-    font-size: var(--leverui-radar-chart-legend-font-size, 12px);
+    gap: var(--lui-radar-chart-legend-gap, 12px);
+    margin-top: var(--lui-radar-chart-legend-overlap, -33px);
+    padding: var(--lui-radar-chart-legend-padding, 5px 0);
+    color: var(--lui-radar-chart-legend-color, var(--lui-colors-fg-muted));
+    font-size: var(--lui-radar-chart-legend-font-size, 12px);
   }
 
   .leverui-radar-chart__legend-item {
     display: inline-flex;
     align-items: center;
-    gap: var(--leverui-radar-chart-legend-item-gap, 4px);
+    gap: var(--lui-radar-chart-legend-item-gap, 4px);
   }
 
   .leverui-radar-chart__legend-swatch {
-    width: var(--leverui-radar-chart-legend-swatch-size, 8px);
-    height: var(--leverui-radar-chart-legend-swatch-size, 8px);
-    border-radius: var(--leverui-radar-chart-legend-swatch-radius, 2px);
+    width: var(--lui-radar-chart-legend-swatch-size, 8px);
+    height: var(--lui-radar-chart-legend-swatch-size, 8px);
+    border-radius: var(--lui-radar-chart-legend-swatch-radius, 2px);
   }
 }

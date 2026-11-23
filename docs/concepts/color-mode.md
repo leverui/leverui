@@ -130,8 +130,8 @@ const value = createColorModeValue('<light-mode-value>', '<dark-mode-value>');
 
 <!-- example: color-mode/Value -->
 
-For colors, prefer CSS. Lever UI's variables, such as `--leverui-colors-bg` and
-`--leverui-colors-fg`, already change with the mode. For your own colors, use a
+For colors, prefer CSS. Lever UI's variables, such as `--lui-colors-bg` and
+`--lui-colors-fg`, already change with the mode. For your own colors, use a
 selector.
 
 ```css

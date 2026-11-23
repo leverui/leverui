@@ -30,7 +30,7 @@ test('Command sizes apply distinct CSS dimensions', async ({ page }) => {
 /** A theme-level public variable must override Command's private size defaults. */
 test('Command honors a root-scope CSS variable', async ({ page }) => {
   await page.goto('/iframe.html?id=components-command--sizes');
-  await page.addStyleTag({ content: ':root { --leverui-command-control-padding-x: 37px; }' });
+  await page.addStyleTag({ content: ':root { --lui-command-control-padding-x: 37px; }' });
   await page.getByRole('button', { name: 'Search... (size=md)' }).click();
   const control = page
     .getByRole('dialog', { name: 'Command palette' })

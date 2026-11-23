@@ -24,13 +24,13 @@
 
   .leverui-dialog__content[data-leverui-dialog-css] {
     &[data-placement='center'] {
-      --leverui-private-dialog-base-margin: auto;
+      --lui-private-dialog-base-margin: auto;
       margin-inline: auto;
     }
 
     &[data-placement='top'],
     &[data-placement='bottom'] {
-      --leverui-private-dialog-base-margin: var(--leverui-spacing-16);
+      --lui-private-dialog-base-margin: var(--lui-spacing-16);
       margin-inline: auto;
     }
 

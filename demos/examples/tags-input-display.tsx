@@ -72,7 +72,7 @@ export function TagsInputSizes(): JSX.Element {
               <Span
                 textStyle="xs"
                 style={{
-                  color: 'var(--leverui-colors-fg-muted)',
+                  color: 'var(--lui-colors-fg-muted)',
                   'margin-inline-start': 'auto',
                 }}
               >
@@ -107,7 +107,7 @@ export function TagsInputVariants(): JSX.Element {
               <Span
                 textStyle="xs"
                 style={{
-                  color: 'var(--leverui-colors-fg-muted)',
+                  color: 'var(--lui-colors-fg-muted)',
                   'margin-inline-start': 'auto',
                 }}
               >
@@ -133,7 +133,7 @@ export function TagsInputLongTags(): JSX.Element {
       <Span
         textStyle="xs"
         style={{
-          color: 'var(--leverui-colors-fg-muted)',
+          color: 'var(--lui-colors-fg-muted)',
           'margin-inline-start': 'auto',
         }}
       >

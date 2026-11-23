@@ -14,13 +14,13 @@ export const contentContracts = [
   },
   {
     family: 'strong',
-    required: ['.leverui-strong:not([data-unstyled])', '--leverui-font-weights-semibold'],
+    required: ['.leverui-strong:not([data-unstyled])', '--lui-font-weights-semibold'],
   },
   {
     family: 'quote',
     required: [
       '.leverui-quote:not([data-unstyled])',
-      '--leverui-font-weights-bold',
+      '--lui-font-weights-bold',
       'line-height: 1.2',
     ],
   },
@@ -54,9 +54,9 @@ export const contentContracts = [
             (justify) => `[data-justify-${breakpoint}='${justify}']`,
           ),
       ),
-      '--leverui-colors-color-palette-muted',
-      '--leverui-colors-color-palette-solid',
-      '--leverui-colors-color-palette-fg',
+      '--lui-colors-color-palette-muted',
+      '--lui-colors-color-palette-solid',
+      '--lui-colors-color-palette-fg',
     ],
   },
   {
@@ -79,8 +79,8 @@ export const contentContracts = [
         /** Require each public Badge variant. */
         (variant) => `[data-variant='${variant}']`,
       ),
-      '--leverui-colors-color-palette-solid',
-      '--leverui-colors-color-palette-fg',
+      '--lui-colors-color-palette-solid',
+      '--lui-colors-color-palette-fg',
     ],
   },
   {
@@ -104,8 +104,8 @@ export const contentContracts = [
         /** Require every Badge-derived Code treatment. */
         (variant) => `[data-variant='${variant}']`,
       ),
-      '--leverui-colors-color-palette-solid',
-      '--leverui-colors-color-palette-fg',
+      '--lui-colors-color-palette-solid',
+      '--lui-colors-color-palette-fg',
     ],
   },
   {
@@ -124,9 +124,9 @@ export const contentContracts = [
             (variant) => `[data-variant-${breakpoint}='${variant}']`,
           ),
       ),
-      '--leverui-colors-color-palette-solid',
-      '--leverui-colors-color-palette-contrast',
-      '--leverui-colors-color-palette-subtle',
+      '--lui-colors-color-palette-solid',
+      '--lui-colors-color-palette-contrast',
+      '--lui-colors-color-palette-subtle',
     ],
   },
   {
@@ -157,9 +157,9 @@ export const contentContracts = [
             (variant) => `[data-variant-${breakpoint}='${variant}']`,
           ),
       ),
-      '--leverui-colors-color-palette-subtle',
-      '--leverui-colors-color-palette-muted',
-      '--leverui-colors-color-palette-fg',
+      '--lui-colors-color-palette-subtle',
+      '--lui-colors-color-palette-muted',
+      '--lui-colors-color-palette-fg',
     ],
   },
   {
@@ -183,8 +183,8 @@ export const contentContracts = [
       ':focus-visible',
       'a[href]:not(.leverui-linkbox__overlay)',
       '&::before',
-      '--leverui-colors-color-palette-fg',
-      '--leverui-colors-color-palette-focus-ring',
+      '--lui-colors-color-palette-fg',
+      '--lui-colors-color-palette-focus-ring',
     ],
   },
 ];

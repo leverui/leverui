@@ -17,8 +17,8 @@ import { Prose } from '@leverui/components';
 
 Import `@leverui/components/styles.css` once in your app. `class="not-prose"`
 leaves an element and its children out of the text styles. Target
-`.leverui-prose`, or set `--leverui-prose-color`, `--leverui-prose-max-width`,
-`--leverui-prose-font-size`, and `--leverui-prose-line-height` on the
+`.leverui-prose`, or set `--lui-prose-color`, `--lui-prose-max-width`,
+`--lui-prose-font-size`, and `--lui-prose-line-height` on the
 component. `unstyled` turns off the default text styles.
 
 ## Trusted content

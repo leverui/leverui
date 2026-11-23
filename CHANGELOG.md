@@ -8,6 +8,9 @@ follows [Semantic Versioning](https://semver.org/). Prereleases are numbered
 
 ### Changed
 
+- **Breaking:** CSS variables start with `--lui-` instead of `--leverui-`.
+  Rename them in your own CSS: `--leverui-colors-bg` becomes `--lui-colors-bg`.
+  Class names, `data-leverui-*` attributes, and layer names keep `leverui`.
 - `@leverui/components/styles.css` ships without whitespace or comments, which
   makes it about 16% smaller. Rules and values are unchanged.
 

@@ -18,7 +18,7 @@ export function marqueeRootStyle(machine: UseMarqueeReturn, nativeProps: object)
   const defaults: Record<string, string | number | undefined> = {};
   for (const name of machineVariables) {
     defaults[name] = undefined;
-    defaults[name.replace('--marquee-', '--leverui-private-marquee-')] = machineStyle[name];
+    defaults[name.replace('--marquee-', '--lui-private-marquee-')] = machineStyle[name];
   }
   const callerStyle = (nativeProps as { style?: RootStyle }).style;
   return mergeProps({ style: defaults }, { style: callerStyle }).style as RootStyle;

@@ -2,80 +2,80 @@
   @media (min-width: 480px) {
     .leverui-status__root:not([data-unstyled]) {
       &[data-size-sm='sm'] {
-        --leverui-private-status-font-size: var(--leverui-font-sizes-xs);
-        --leverui-private-status-line-height: 1rem;
+        --lui-private-status-font-size: var(--lui-font-sizes-xs);
+        --lui-private-status-line-height: 1rem;
       }
       &[data-size-sm='md'] {
-        --leverui-private-status-font-size: var(--leverui-font-sizes-sm);
-        --leverui-private-status-line-height: 1.25rem;
+        --lui-private-status-font-size: var(--lui-font-sizes-sm);
+        --lui-private-status-line-height: 1.25rem;
       }
       &[data-size-sm='lg'] {
-        --leverui-private-status-font-size: var(--leverui-font-sizes-md);
-        --leverui-private-status-line-height: 1.5rem;
+        --lui-private-status-font-size: var(--lui-font-sizes-md);
+        --lui-private-status-line-height: 1.5rem;
       }
     }
   }
   @media (min-width: 768px) {
     .leverui-status__root:not([data-unstyled]) {
       &[data-size-md='sm'] {
-        --leverui-private-status-font-size: var(--leverui-font-sizes-xs);
-        --leverui-private-status-line-height: 1rem;
+        --lui-private-status-font-size: var(--lui-font-sizes-xs);
+        --lui-private-status-line-height: 1rem;
       }
       &[data-size-md='md'] {
-        --leverui-private-status-font-size: var(--leverui-font-sizes-sm);
-        --leverui-private-status-line-height: 1.25rem;
+        --lui-private-status-font-size: var(--lui-font-sizes-sm);
+        --lui-private-status-line-height: 1.25rem;
       }
       &[data-size-md='lg'] {
-        --leverui-private-status-font-size: var(--leverui-font-sizes-md);
-        --leverui-private-status-line-height: 1.5rem;
+        --lui-private-status-font-size: var(--lui-font-sizes-md);
+        --lui-private-status-line-height: 1.5rem;
       }
     }
   }
   @media (min-width: 1024px) {
     .leverui-status__root:not([data-unstyled]) {
       &[data-size-lg='sm'] {
-        --leverui-private-status-font-size: var(--leverui-font-sizes-xs);
-        --leverui-private-status-line-height: 1rem;
+        --lui-private-status-font-size: var(--lui-font-sizes-xs);
+        --lui-private-status-line-height: 1rem;
       }
       &[data-size-lg='md'] {
-        --leverui-private-status-font-size: var(--leverui-font-sizes-sm);
-        --leverui-private-status-line-height: 1.25rem;
+        --lui-private-status-font-size: var(--lui-font-sizes-sm);
+        --lui-private-status-line-height: 1.25rem;
       }
       &[data-size-lg='lg'] {
-        --leverui-private-status-font-size: var(--leverui-font-sizes-md);
-        --leverui-private-status-line-height: 1.5rem;
+        --lui-private-status-font-size: var(--lui-font-sizes-md);
+        --lui-private-status-line-height: 1.5rem;
       }
     }
   }
   @media (min-width: 1280px) {
     .leverui-status__root:not([data-unstyled]) {
       &[data-size-xl='sm'] {
-        --leverui-private-status-font-size: var(--leverui-font-sizes-xs);
-        --leverui-private-status-line-height: 1rem;
+        --lui-private-status-font-size: var(--lui-font-sizes-xs);
+        --lui-private-status-line-height: 1rem;
       }
       &[data-size-xl='md'] {
-        --leverui-private-status-font-size: var(--leverui-font-sizes-sm);
-        --leverui-private-status-line-height: 1.25rem;
+        --lui-private-status-font-size: var(--lui-font-sizes-sm);
+        --lui-private-status-line-height: 1.25rem;
       }
       &[data-size-xl='lg'] {
-        --leverui-private-status-font-size: var(--leverui-font-sizes-md);
-        --leverui-private-status-line-height: 1.5rem;
+        --lui-private-status-font-size: var(--lui-font-sizes-md);
+        --lui-private-status-line-height: 1.5rem;
       }
     }
   }
   @media (min-width: 1536px) {
     .leverui-status__root:not([data-unstyled]) {
       &[data-size-2xl='sm'] {
-        --leverui-private-status-font-size: var(--leverui-font-sizes-xs);
-        --leverui-private-status-line-height: 1rem;
+        --lui-private-status-font-size: var(--lui-font-sizes-xs);
+        --lui-private-status-line-height: 1rem;
       }
       &[data-size-2xl='md'] {
-        --leverui-private-status-font-size: var(--leverui-font-sizes-sm);
-        --leverui-private-status-line-height: 1.25rem;
+        --lui-private-status-font-size: var(--lui-font-sizes-sm);
+        --lui-private-status-line-height: 1.25rem;
       }
       &[data-size-2xl='lg'] {
-        --leverui-private-status-font-size: var(--leverui-font-sizes-md);
-        --leverui-private-status-line-height: 1.5rem;
+        --lui-private-status-font-size: var(--lui-font-sizes-md);
+        --lui-private-status-line-height: 1.5rem;
       }
     }
   }

@@ -18,7 +18,7 @@ function renderServerSpans(): string {
       createComponent(server.Span, {
         id: 'server-span',
         title: 'Server segment',
-        style: { color: 'var(--leverui-colors-red-500)' },
+        style: { color: 'var(--lui-colors-red-500)' },
         children: 'Inline server text',
       } satisfies SpanProps),
       createComponent(server.Span, {
@@ -39,7 +39,7 @@ function verifiesServerSpan(): void {
   expect(markup).toContain('Inline server text');
   expect(markup).toMatch(/<a[^>]*id="server-span-link"/);
   expect(markup).toContain('href="#destination"');
-  expect(markup).toContain('var(--leverui-colors-red-500)');
+  expect(markup).toContain('var(--lui-colors-red-500)');
   expect(markup).not.toMatch(/<(?:span|a)[^>]*\s(?:as|asChild|css|unstyled|role)=/);
 }
 

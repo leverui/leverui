@@ -115,22 +115,20 @@ export function RadioCardExplorerDemo(): JSX.Element {
                 <RadioCard.ItemHiddenInput />
                 <RadioCard.ItemControl>
                   <RadioCard.ItemContent>
-                    <RadioCard.ItemText
-                      style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}
-                    >
+                    <RadioCard.ItemText style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>
                       {item.title}
                     </RadioCard.ItemText>
                     <RadioCard.ItemDescription
                       style={{
-                        'font-size': 'var(--leverui-font-sizes-sm)',
-                        color: 'var(--leverui-colors-gray-600)',
+                        'font-size': 'var(--lui-font-sizes-sm)',
+                        color: 'var(--lui-colors-gray-600)',
                       }}
                     >
                       {item.description}
                     </RadioCard.ItemDescription>
                   </RadioCard.ItemContent>
                   <RadioCard.ItemIndicator
-                    style={{ color: 'var(--leverui-colors-green-500)', 'border-width': '0' }}
+                    style={{ color: 'var(--lui-colors-green-500)', 'border-width': '0' }}
                     checked={
                       /** Render the selected check inside an Icon that takes the indicator attributes. */
                       (getProps) => (
@@ -143,8 +141,8 @@ export function RadioCardExplorerDemo(): JSX.Element {
                 </RadioCard.ItemControl>
                 <RadioCard.ItemAddon
                   style={{
-                    'font-size': 'var(--leverui-font-sizes-xs)',
-                    color: 'var(--leverui-colors-gray-500)',
+                    'font-size': 'var(--lui-font-sizes-xs)',
+                    color: 'var(--lui-colors-gray-500)',
                   }}
                 >
                   {item.addon}

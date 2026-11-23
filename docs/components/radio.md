@@ -109,7 +109,7 @@ Load your stylesheet after `@leverui/components/styles.css`.
 .my-radio-group {
   display: flex;
   gap: 1rem;
-  --leverui-radio-group-item-gap: 0.75rem;
+  --lui-radio-group-item-gap: 0.75rem;
 }
 
 .leverui-radio-group__itemControl {

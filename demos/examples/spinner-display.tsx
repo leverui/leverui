@@ -129,7 +129,7 @@ export function SpinnerWithOverlay(): JSX.Element {
         style={{
           position: 'absolute',
           inset: '0',
-          background: 'color-mix(in srgb, var(--leverui-colors-bg) 80%, transparent)',
+          background: 'color-mix(in srgb, var(--lui-colors-bg) 80%, transparent)',
         }}
       >
         <Center style={{ height: '100%' }}>

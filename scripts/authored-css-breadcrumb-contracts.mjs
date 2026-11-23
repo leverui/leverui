@@ -29,9 +29,9 @@ export const breadcrumbContracts = [
       ),
       ':focus-visible',
       ':dir(rtl)',
-      '--leverui-colors-color-palette-fg',
-      '--leverui-colors-color-palette-muted',
-      '--leverui-colors-color-palette-focus-ring',
+      '--lui-colors-color-palette-fg',
+      '--lui-colors-color-palette-muted',
+      '--lui-colors-color-palette-focus-ring',
     ],
   },
 ];

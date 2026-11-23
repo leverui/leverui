@@ -1,45 +1,42 @@
 @layer leverui.recipes {
   .leverui-tree-view__root:not([data-unstyled])
     :is(.leverui-tree-view__branchControl, .leverui-tree-view__item):not([data-unstyled]) {
-    --leverui-private-tree-depth: calc(var(--depth) - 1);
-    --leverui-private-tree-offset: calc(
-      var(--leverui-tree-padding-inline, var(--leverui-private-tree-default-padding-inline)) +
-        var(--leverui-tree-indentation, var(--leverui-private-tree-indentation)) *
-        var(--leverui-private-tree-depth)
+    --lui-private-tree-depth: calc(var(--depth) - 1);
+    --lui-private-tree-offset: calc(
+      var(--lui-tree-padding-inline, var(--lui-private-tree-default-padding-inline)) +
+        var(--lui-tree-indentation, var(--lui-private-tree-indentation)) *
+        var(--lui-private-tree-depth)
     );
     display: flex;
     align-items: center;
-    gap: var(--leverui-tree-item-gap, var(--leverui-spacing-2));
+    gap: var(--lui-tree-item-gap, var(--lui-spacing-2));
     position: relative;
-    padding-block: var(
-      --leverui-tree-padding-block,
-      var(--leverui-private-tree-default-padding-block)
-    );
-    padding-inline-start: var(--leverui-private-tree-offset);
+    padding-block: var(--lui-tree-padding-block, var(--lui-private-tree-default-padding-block));
+    padding-inline-start: var(--lui-private-tree-offset);
     padding-inline-end: var(
-      --leverui-tree-padding-inline,
-      var(--leverui-private-tree-default-padding-inline)
+      --lui-tree-padding-inline,
+      var(--lui-private-tree-default-padding-inline)
     );
-    border-radius: var(--leverui-radii-l2);
+    border-radius: var(--lui-radii-l2);
     user-select: none;
 
     &:is(:hover, :focus-visible, [data-focus-visible]) {
-      background: var(--leverui-colors-bg-muted);
+      background: var(--lui-colors-bg-muted);
     }
 
     &:is(:focus-visible, [data-focus-visible]) {
-      outline: 2px solid var(--leverui-colors-border-emphasized);
+      outline: 2px solid var(--lui-colors-border-emphasized);
       outline-offset: -2px;
     }
 
     &:is([data-disabled], [aria-disabled='true']) {
       opacity: 0.5;
-      cursor: var(--leverui-cursor-disabled, not-allowed);
+      cursor: var(--lui-cursor-disabled, not-allowed);
     }
 
     &[data-selected] {
-      background: var(--leverui-private-tree-selected-bg);
-      color: var(--leverui-private-tree-selected-fg);
+      background: var(--lui-private-tree-selected-bg);
+      color: var(--lui-private-tree-selected-fg);
     }
   }
 

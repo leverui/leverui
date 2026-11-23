@@ -5,54 +5,54 @@
     position: relative;
     min-width: 0;
     overflow-wrap: break-word;
-    border-radius: var(--leverui-radii-l3);
-    color: var(--leverui-colors-fg);
+    border-radius: var(--lui-radii-l3);
+    color: var(--lui-colors-fg);
     text-align: start;
-    background-color: var(--leverui-private-card-background, transparent);
+    background-color: var(--lui-private-card-background, transparent);
     border-style: solid;
-    border-width: var(--leverui-private-card-border-width, 0);
-    border-color: var(--leverui-private-card-border-color, var(--leverui-colors-border));
-    box-shadow: var(--leverui-private-card-shadow, none);
-    --leverui-private-card-title-size: initial;
-    --leverui-private-card-title-line-height: initial;
+    border-width: var(--lui-private-card-border-width, 0);
+    border-color: var(--lui-private-card-border-color, var(--lui-colors-border));
+    box-shadow: var(--lui-private-card-shadow, none);
+    --lui-private-card-title-size: initial;
+    --lui-private-card-title-line-height: initial;
   }
 
   .leverui-card__root:not([data-unstyled])[data-size='md'] {
-    --leverui-card-padding: var(--leverui-spacing-6);
-    --leverui-private-card-title-size: var(--leverui-font-sizes-lg);
-    --leverui-private-card-title-line-height: 1.75rem;
+    --lui-card-padding: var(--lui-spacing-6);
+    --lui-private-card-title-size: var(--lui-font-sizes-lg);
+    --lui-private-card-title-line-height: 1.75rem;
   }
 
   .leverui-card__root:not([data-unstyled])[data-size='sm'] {
-    --leverui-card-padding: var(--leverui-spacing-4);
-    --leverui-private-card-title-size: var(--leverui-font-sizes-md);
-    --leverui-private-card-title-line-height: 1.5rem;
+    --lui-card-padding: var(--lui-spacing-4);
+    --lui-private-card-title-size: var(--lui-font-sizes-md);
+    --lui-private-card-title-line-height: 1.5rem;
   }
 
   .leverui-card__root:not([data-unstyled])[data-size='lg'] {
-    --leverui-card-padding: var(--leverui-spacing-7);
-    --leverui-private-card-title-size: var(--leverui-font-sizes-xl);
-    --leverui-private-card-title-line-height: 1.875rem;
+    --lui-card-padding: var(--lui-spacing-7);
+    --lui-private-card-title-size: var(--lui-font-sizes-xl);
+    --lui-private-card-title-line-height: 1.875rem;
   }
 
   .leverui-card__root:not([data-unstyled])[data-variant='outline'] {
-    --leverui-private-card-background: var(--leverui-colors-bg-panel);
-    --leverui-private-card-border-width: 1px;
-    --leverui-private-card-border-color: var(--leverui-colors-border);
-    --leverui-private-card-shadow: none;
+    --lui-private-card-background: var(--lui-colors-bg-panel);
+    --lui-private-card-border-width: 1px;
+    --lui-private-card-border-color: var(--lui-colors-border);
+    --lui-private-card-shadow: none;
   }
 
   .leverui-card__root:not([data-unstyled])[data-variant='elevated'] {
-    --leverui-private-card-background: var(--leverui-colors-bg-panel);
-    --leverui-private-card-border-width: 0;
-    --leverui-private-card-border-color: var(--leverui-colors-border);
-    --leverui-private-card-shadow: var(--leverui-shadows-md);
+    --lui-private-card-background: var(--lui-colors-bg-panel);
+    --lui-private-card-border-width: 0;
+    --lui-private-card-border-color: var(--lui-colors-border);
+    --lui-private-card-shadow: var(--lui-shadows-md);
   }
 
   .leverui-card__root:not([data-unstyled])[data-variant='subtle'] {
-    --leverui-private-card-background: var(--leverui-colors-bg-muted);
-    --leverui-private-card-border-width: 0;
-    --leverui-private-card-border-color: var(--leverui-colors-border);
-    --leverui-private-card-shadow: none;
+    --lui-private-card-background: var(--lui-colors-bg-muted);
+    --lui-private-card-border-width: 0;
+    --lui-private-card-border-color: var(--lui-colors-border);
+    --lui-private-card-shadow: none;
   }
 }

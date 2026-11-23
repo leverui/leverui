@@ -50,16 +50,12 @@ export function SparklineInteraction(): JSX.Element {
     setActiveIndex(index);
   }
   return (
-    <HStack
-      align="flex-end"
-      gap="0"
-      style={{ 'max-width': 'var(--leverui-sizes-sm)', width: '100%' }}
-    >
-      <Box style={{ flex: '1', 'font-weight': 'var(--leverui-font-weights-medium)' }}>
+    <HStack align="flex-end" gap="0" style={{ 'max-width': 'var(--lui-sizes-sm)', width: '100%' }}>
+      <Box style={{ flex: '1', 'font-weight': 'var(--lui-font-weights-medium)' }}>
         <HStack
           textStyle="sm"
           style={{
-            color: 'var(--leverui-colors-fg-muted)',
+            color: 'var(--lui-colors-fg-muted)',
           }}
         >
           <DownloadIcon /> Weekly downloads
@@ -67,7 +63,7 @@ export function SparklineInteraction(): JSX.Element {
         <Text
           textStyle="xl"
           style={{
-            'margin-top': 'var(--leverui-spacing-2)',
+            'margin-top': 'var(--lui-spacing-2)',
           }}
         >
           <FormatNumber value={value()} />

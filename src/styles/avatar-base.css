@@ -7,30 +7,30 @@
     vertical-align: top;
     flex-shrink: 0;
     user-select: none;
-    font-weight: var(--leverui-font-weights-medium);
-    background: var(--leverui-private-avatar-background);
-    color: var(--leverui-private-avatar-foreground);
-    width: var(--leverui-private-avatar-size);
-    height: var(--leverui-private-avatar-size);
-    font-size: var(--leverui-private-avatar-font-size);
-    border-radius: var(--leverui-private-avatar-radius);
+    font-weight: var(--lui-font-weights-medium);
+    background: var(--lui-private-avatar-background);
+    color: var(--lui-private-avatar-foreground);
+    width: var(--lui-private-avatar-size);
+    height: var(--lui-private-avatar-size);
+    font-size: var(--lui-private-avatar-font-size);
+    border-radius: var(--lui-private-avatar-radius);
     border-style: solid;
-    border-width: var(--leverui-private-avatar-border-width);
-    border-color: var(--leverui-private-avatar-border-color);
+    border-width: var(--lui-private-avatar-border-width);
+    border-color: var(--lui-private-avatar-border-color);
   }
 
   .leverui-avatar__image:not([data-unstyled]) {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: var(--leverui-private-avatar-radius);
+    border-radius: var(--lui-private-avatar-radius);
   }
 
   .leverui-avatar__fallback:not([data-unstyled]) {
     line-height: 1;
     text-transform: uppercase;
-    font-weight: var(--leverui-font-weights-medium);
-    font-size: var(--leverui-private-avatar-font-size);
-    border-radius: var(--leverui-private-avatar-radius);
+    font-weight: var(--lui-font-weights-medium);
+    font-size: var(--lui-private-avatar-font-size);
+    border-radius: var(--lui-private-avatar-radius);
   }
 }

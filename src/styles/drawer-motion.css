@@ -2,52 +2,52 @@
   .leverui-drawer__backdrop[data-leverui-drawer-css] {
     &[data-state='open'] {
       animation-name: fade-in;
-      animation-duration: var(--leverui-durations-slow);
+      animation-duration: var(--lui-durations-slow);
     }
     &[data-state='closed'] {
       animation-name: fade-out;
-      animation-duration: var(--leverui-durations-moderate);
+      animation-duration: var(--lui-durations-moderate);
     }
   }
 
   .leverui-drawer__content[data-leverui-drawer-css] {
-    --leverui-private-drawer-start-open: slide-from-left-full, fade-in;
-    --leverui-private-drawer-start-closed: slide-to-left-full, fade-out;
-    --leverui-private-drawer-end-open: slide-from-right-full, fade-in;
-    --leverui-private-drawer-end-closed: slide-to-right-full, fade-out;
-    animation-timing-function: var(--leverui-easings-ease-in-smooth);
+    --lui-private-drawer-start-open: slide-from-left-full, fade-in;
+    --lui-private-drawer-start-closed: slide-to-left-full, fade-out;
+    --lui-private-drawer-end-open: slide-from-right-full, fade-in;
+    --lui-private-drawer-end-closed: slide-to-right-full, fade-out;
+    animation-timing-function: var(--lui-easings-ease-in-smooth);
 
     &[data-placement='start'] {
-      --leverui-private-drawer-open-animation: var(--leverui-private-drawer-start-open);
-      --leverui-private-drawer-closed-animation: var(--leverui-private-drawer-start-closed);
+      --lui-private-drawer-open-animation: var(--lui-private-drawer-start-open);
+      --lui-private-drawer-closed-animation: var(--lui-private-drawer-start-closed);
     }
     &[data-placement='end'] {
-      --leverui-private-drawer-open-animation: var(--leverui-private-drawer-end-open);
-      --leverui-private-drawer-closed-animation: var(--leverui-private-drawer-end-closed);
+      --lui-private-drawer-open-animation: var(--lui-private-drawer-end-open);
+      --lui-private-drawer-closed-animation: var(--lui-private-drawer-end-closed);
     }
     &[data-placement='top'] {
-      --leverui-private-drawer-open-animation: slide-from-top-full, fade-in;
-      --leverui-private-drawer-closed-animation: slide-to-top-full, fade-out;
+      --lui-private-drawer-open-animation: slide-from-top-full, fade-in;
+      --lui-private-drawer-closed-animation: slide-to-top-full, fade-out;
     }
     &[data-placement='bottom'] {
-      --leverui-private-drawer-open-animation: slide-from-bottom-full, fade-in;
-      --leverui-private-drawer-closed-animation: slide-to-bottom-full, fade-out;
+      --lui-private-drawer-open-animation: slide-from-bottom-full, fade-in;
+      --lui-private-drawer-closed-animation: slide-to-bottom-full, fade-out;
     }
     &[data-state='open'] {
-      animation-name: var(--leverui-private-drawer-open-animation);
-      animation-duration: var(--leverui-durations-slowest);
+      animation-name: var(--lui-private-drawer-open-animation);
+      animation-duration: var(--lui-durations-slowest);
     }
     &[data-state='closed'] {
-      animation-name: var(--leverui-private-drawer-closed-animation);
-      animation-duration: var(--leverui-durations-slower);
+      animation-name: var(--lui-private-drawer-closed-animation);
+      animation-duration: var(--lui-durations-slower);
     }
   }
 
   :dir(rtl) .leverui-drawer__content[data-leverui-drawer-css] {
-    --leverui-private-drawer-start-open: slide-from-right-full, fade-in;
-    --leverui-private-drawer-start-closed: slide-to-right-full, fade-out;
-    --leverui-private-drawer-end-open: slide-from-left-full, fade-in;
-    --leverui-private-drawer-end-closed: slide-to-left-full, fade-out;
+    --lui-private-drawer-start-open: slide-from-right-full, fade-in;
+    --lui-private-drawer-start-closed: slide-to-right-full, fade-out;
+    --lui-private-drawer-end-open: slide-from-left-full, fade-in;
+    --lui-private-drawer-end-closed: slide-to-left-full, fade-out;
   }
 
   .leverui-drawer__content[data-leverui-private-skip-initial-animation],

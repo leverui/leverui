@@ -12,7 +12,7 @@ export const splitterContracts = [
       '[data-focus]',
       '[data-dragging]',
       '[data-disabled]',
-      '--leverui-splitter-thumb-size',
+      '--lui-splitter-thumb-size',
     ],
   },
 ];

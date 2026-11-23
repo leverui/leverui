@@ -8,8 +8,8 @@ const variants = ['outline', 'subtle'] as const;
 const cellStyle = { 'padding-right': '32px', 'padding-bottom': '32px' } as const;
 const headingStyle = {
   ...cellStyle,
-  'font-size': 'var(--leverui-font-sizes-sm)',
-  color: 'var(--leverui-colors-fg-muted)',
+  'font-size': 'var(--lui-font-sizes-sm)',
+  color: 'var(--lui-colors-fg-muted)',
   'font-weight': 'normal',
   'text-align': 'left',
 } as const;
@@ -37,8 +37,8 @@ export function ProgressSizeTable(): JSX.Element {
               <th scope="row" style={headingStyle}>
                 <Span
                   style={{
-                    'font-size': 'var(--leverui-font-sizes-sm)',
-                    color: 'var(--leverui-colors-fg-muted)',
+                    'font-size': 'var(--lui-font-sizes-sm)',
+                    color: 'var(--lui-colors-fg-muted)',
                     'min-width': '8ch',
                   }}
                 >
@@ -92,8 +92,8 @@ export function ProgressVariantTable(): JSX.Element {
               <th scope="row" style={headingStyle}>
                 <Span
                   style={{
-                    'font-size': 'var(--leverui-font-sizes-sm)',
-                    color: 'var(--leverui-colors-fg-muted)',
+                    'font-size': 'var(--lui-font-sizes-sm)',
+                    color: 'var(--lui-colors-fg-muted)',
                     'min-width': '8ch',
                   }}
                 >
@@ -147,7 +147,7 @@ export function ProgressWithColors(): JSX.Element {
             align="center"
             direction="row"
             gap="10"
-            style={{ 'padding-inline': 'var(--leverui-spacing-4)' }}
+            style={{ 'padding-inline': 'var(--lui-spacing-4)' }}
           >
             <Text style={{ 'min-width': '8ch' }}>{colorPalette}</Text>
             <Progress.Root

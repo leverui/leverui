@@ -1,7 +1,7 @@
 @layer leverui.recipes {
   .leverui-progress__root:not([data-unstyled]) {
     position: relative;
-    font-size: var(--leverui-font-sizes-sm);
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
   }
 
@@ -9,18 +9,18 @@
     position: relative;
     overflow: hidden;
     height: var(
-      --leverui-progress-track-height,
-      var(--leverui-private-progress-track-height, var(--leverui-sizes-2\.5))
+      --lui-progress-track-height,
+      var(--lui-private-progress-track-height, var(--lui-sizes-2\.5))
     );
     border-radius: var(
-      --leverui-progress-track-radius,
-      var(--leverui-private-progress-track-radius, var(--leverui-radii-l1))
+      --lui-progress-track-radius,
+      var(--lui-private-progress-track-radius, var(--lui-radii-l1))
     );
     background-color: var(
-      --leverui-progress-track-color,
-      var(--leverui-private-progress-track-color, var(--leverui-colors-bg-muted))
+      --lui-progress-track-color,
+      var(--lui-private-progress-track-color, var(--lui-colors-bg-muted))
     );
-    box-shadow: var(--leverui-private-progress-track-shadow, var(--leverui-shadows-inset));
+    box-shadow: var(--lui-private-progress-track-shadow, var(--lui-shadows-inset));
   }
 
   .leverui-progress__range:not([data-unstyled]) {
@@ -29,20 +29,19 @@
     justify-content: center;
     height: 100%;
     background-color: var(
-      --leverui-progress-range-color,
-      var(--leverui-private-progress-range-color, var(--leverui-colors-color-palette-solid))
+      --lui-progress-range-color,
+      var(--lui-private-progress-range-color, var(--lui-colors-color-palette-solid))
     );
-    background-image: var(--leverui-private-progress-stripes, none);
-    background-size: var(--leverui-progress-stripe-size, 1rem)
-      var(--leverui-progress-stripe-size, 1rem);
+    background-image: var(--lui-private-progress-stripes, none);
+    background-size: var(--lui-progress-stripe-size, 1rem) var(--lui-progress-stripe-size, 1rem);
     transition-property: width, height;
-    transition-duration: var(--leverui-durations-slow);
-    animation: var(--leverui-private-progress-animation, none);
+    transition-duration: var(--lui-durations-slow);
+    animation: var(--lui-private-progress-animation, none);
   }
 
   .leverui-progress__range:not([data-unstyled])[data-state='indeterminate'] {
-    --leverui-private-animate-from-x: -40%;
-    --leverui-private-animate-to-x: 100%;
+    --lui-private-animate-from-x: -40%;
+    --lui-private-animate-to-x: 100%;
     position: absolute;
     min-width: 50%;
     will-change: left;
@@ -50,8 +49,8 @@
       to right,
       transparent 0%,
       var(
-          --leverui-progress-range-color,
-          var(--leverui-private-progress-range-color, var(--leverui-colors-color-palette-solid))
+          --lui-progress-range-color,
+          var(--lui-private-progress-range-color, var(--lui-colors-color-palette-solid))
         )
         50%,
       transparent 100%
@@ -62,14 +61,14 @@
   .leverui-progress__label:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
-    gap: var(--leverui-spacing-1);
-    font-weight: var(--leverui-font-weights-medium);
+    gap: var(--lui-spacing-1);
+    font-weight: var(--lui-font-weights-medium);
   }
 
   .leverui-progress__valueText:not([data-unstyled]) {
-    font-size: var(--leverui-font-sizes-xs);
+    font-size: var(--lui-font-sizes-xs);
     line-height: 1;
-    font-weight: var(--leverui-font-weights-medium);
+    font-weight: var(--lui-font-weights-medium);
   }
 }
 

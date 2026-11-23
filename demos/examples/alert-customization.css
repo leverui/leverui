@@ -1,13 +1,13 @@
 .alert-example-foreground {
-  color: var(--leverui-colors-fg);
+  color: var(--lui-colors-fg);
 }
 
 .alert-example-accent {
   align-items: center;
-  border-inline-start: 3px solid var(--leverui-colors-color-palette-solid);
+  border-inline-start: 3px solid var(--lui-colors-color-palette-solid);
 }
 
 .alert-example-title-small {
-  font-size: var(--leverui-font-sizes-sm);
+  font-size: var(--lui-font-sizes-sm);
   line-height: 1.25rem;
 }

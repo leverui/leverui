@@ -103,12 +103,12 @@ async function verifiesWrapNativeBehavior({ page }: { page: Page }): Promise<voi
   await page.keyboard.press('Enter');
   await expect(page).toHaveURL(/#wrap-target$/);
   await page.addStyleTag({
-    content: '.leverui-wrap[data-testid="wrap-default"] { --leverui-wrap-gap: 13px; }',
+    content: '.leverui-wrap[data-testid="wrap-default"] { --lui-wrap-gap: 13px; }',
   });
   await expect(page.getByTestId('wrap-default')).toHaveCSS('gap', '13px');
   await page.addStyleTag({
     content:
-      '.leverui-wrap__listitem[data-testid="wrap-item-default"] { --leverui-wrap-item-align: center; }',
+      '.leverui-wrap__listitem[data-testid="wrap-item-default"] { --lui-wrap-item-align: center; }',
   });
   await expect(page.getByTestId('wrap-item-default')).toHaveCSS('align-items', 'center');
   await page.addStyleTag({ content: '.leverui-wrap[data-testid="wrap-default"] { gap: 24px; }' });

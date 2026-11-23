@@ -40,8 +40,8 @@ export const timelineContracts = [
       ),
       `[data-show-last-separator='true']`,
       `[data-show-last-separator='false']`,
-      '--leverui-colors-color-palette-solid',
-      '--leverui-colors-border',
+      '--lui-colors-color-palette-solid',
+      '--lui-colors-border',
     ],
   },
 ];

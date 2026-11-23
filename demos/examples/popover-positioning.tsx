@@ -64,7 +64,7 @@ export function PopoverSameWidth(): JSX.Element {
               {...getProps()}
               size="sm"
               variant="outline"
-              style={{ 'min-width': 'var(--leverui-sizes-xs)' }}
+              style={{ 'min-width': 'var(--lui-sizes-xs)' }}
             >
               Click me
             </Button>

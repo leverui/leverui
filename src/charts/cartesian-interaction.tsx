@@ -88,7 +88,7 @@ export function CartesianTooltip(props: CartesianInteractionProps): JSX.Element 
                   <span
                     class="leverui-cartesian-chart__tooltipSwatch"
                     style={{
-                      '--leverui-private-cartesian-color': chartColor(series.color, series.color),
+                      '--lui-private-cartesian-color': chartColor(series.color, series.color),
                     }}
                   />
                   <span>

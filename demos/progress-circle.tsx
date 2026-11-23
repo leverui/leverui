@@ -49,7 +49,7 @@ export const ValueText: Story = {
 export const CustomThickness: Story = {
   render: ProgressCircleWithThickness,
   parameters: guide(
-    'Pass the `--leverui-progress-circle-thickness` css variable to the `ProgressCircle.Circle` component to change the thickness of the ring.',
+    'Pass the `--lui-progress-circle-thickness` css variable to the `ProgressCircle.Circle` component to change the thickness of the ring.',
   ),
 };
 export const Indeterminate: Story = {

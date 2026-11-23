@@ -126,8 +126,8 @@ positioned against the tags control. Pass the shared label ID to
 ## Customize with CSS
 
 The root and every public part have stable `.leverui-tags-input__*` classes.
-Override those or the `--leverui-*` theme tokens. `class` and `style` also
-work. `--leverui-private-tags-input-*` variables are for internal sizing.
+Override those or the `--lui-*` theme tokens. `class` and `style` also
+work. `--lui-private-tags-input-*` variables are for internal sizing.
 
 ```css
 .email-tags .leverui-tags-input__control {
@@ -135,7 +135,7 @@ work. `--leverui-private-tags-input-*` variables are for internal sizing.
 }
 
 .email-tags {
-  --leverui-colors-color-palette-subtle: #e0f2fe;
+  --lui-colors-color-palette-subtle: #e0f2fe;
 }
 ```
 

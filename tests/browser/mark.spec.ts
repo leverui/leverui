@@ -42,7 +42,7 @@ async function verifiesMarkVariants({ page }: { page: Page }): Promise<void> {
   await page.setViewportSize({ width: 900, height: 800 });
   await expect(responsive).toHaveCSS('background-color', solidBackground);
   await page.addStyleTag({
-    content: '[data-testid="mark-solid"] { --leverui-colors-color-palette-solid: rgb(18 52 86); }',
+    content: '[data-testid="mark-solid"] { --lui-colors-color-palette-solid: rgb(18 52 86); }',
   });
   await expect(solid).toHaveCSS('background-color', 'rgb(18, 52, 86)');
 }

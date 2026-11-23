@@ -1,16 +1,16 @@
 @layer leverui.recipes {
   .leverui-scroll-area__root:not([data-unstyled]) {
     &[data-size='xs'] {
-      --leverui-private-scroll-area-size: var(--leverui-sizes-1);
+      --lui-private-scroll-area-size: var(--lui-sizes-1);
     }
     &[data-size='sm'] {
-      --leverui-private-scroll-area-size: var(--leverui-sizes-1\.5);
+      --lui-private-scroll-area-size: var(--lui-sizes-1\.5);
     }
     &[data-size='md'] {
-      --leverui-private-scroll-area-size: var(--leverui-sizes-2);
+      --lui-private-scroll-area-size: var(--lui-sizes-2);
     }
     &[data-size='lg'] {
-      --leverui-private-scroll-area-size: var(--leverui-sizes-3);
+      --lui-private-scroll-area-size: var(--lui-sizes-3);
     }
   }
 }

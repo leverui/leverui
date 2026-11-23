@@ -27,7 +27,7 @@ async function verifiesFileUploadBrowser({ page }: { page: Page }): Promise<void
   await expect(input).toBeDisabled();
   await expect(page.getByTestId('file-upload-trigger')).toBeDisabled();
   await page.addStyleTag({
-    content: '[data-testid="file-upload-contract"] { --leverui-colors-bg: rgb(30, 40, 90); }',
+    content: '[data-testid="file-upload-contract"] { --lui-colors-bg: rgb(30, 40, 90); }',
   });
   await expect(dropzone).toHaveCSS('background-color', 'rgb(30, 40, 90)');
 }

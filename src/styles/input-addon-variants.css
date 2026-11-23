@@ -1,25 +1,25 @@
 @layer leverui.recipes {
   .leverui-input-addon:not([data-unstyled])[data-variant='outline'] {
-    --leverui-private-input-addon-border-width: 1px;
-    --leverui-private-input-addon-border-color: var(--leverui-colors-border);
-    --leverui-private-input-addon-background: var(--leverui-colors-bg-muted);
-    --leverui-private-input-addon-radius: var(--leverui-radii-l2);
-    --leverui-private-input-addon-padding: var(--leverui-private-input-addon-size-padding);
+    --lui-private-input-addon-border-width: 1px;
+    --lui-private-input-addon-border-color: var(--lui-colors-border);
+    --lui-private-input-addon-background: var(--lui-colors-bg-muted);
+    --lui-private-input-addon-radius: var(--lui-radii-l2);
+    --lui-private-input-addon-padding: var(--lui-private-input-addon-size-padding);
   }
 
   .leverui-input-addon:not([data-unstyled])[data-variant='subtle'] {
-    --leverui-private-input-addon-border-width: 1px;
-    --leverui-private-input-addon-border-color: transparent;
-    --leverui-private-input-addon-background: var(--leverui-colors-bg-emphasized);
-    --leverui-private-input-addon-radius: var(--leverui-radii-l2);
-    --leverui-private-input-addon-padding: var(--leverui-private-input-addon-size-padding);
+    --lui-private-input-addon-border-width: 1px;
+    --lui-private-input-addon-border-color: transparent;
+    --lui-private-input-addon-background: var(--lui-colors-bg-emphasized);
+    --lui-private-input-addon-radius: var(--lui-radii-l2);
+    --lui-private-input-addon-padding: var(--lui-private-input-addon-size-padding);
   }
 
   .leverui-input-addon:not([data-unstyled])[data-variant='flushed'] {
-    --leverui-private-input-addon-border-width: 0 0 1px;
-    --leverui-private-input-addon-border-color: inherit;
-    --leverui-private-input-addon-background: transparent;
-    --leverui-private-input-addon-radius: 0;
-    --leverui-private-input-addon-padding: 0;
+    --lui-private-input-addon-border-width: 0 0 1px;
+    --lui-private-input-addon-border-color: inherit;
+    --lui-private-input-addon-background: transparent;
+    --lui-private-input-addon-radius: 0;
+    --lui-private-input-addon-padding: 0;
   }
 }

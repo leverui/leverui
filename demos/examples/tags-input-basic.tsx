@@ -14,7 +14,7 @@ export function TagsInputBasic(): JSX.Element {
       <Span
         textStyle="xs"
         style={{
-          color: 'var(--leverui-colors-fg-muted)',
+          color: 'var(--lui-colors-fg-muted)',
           'margin-inline-start': 'auto',
         }}
       >
@@ -58,7 +58,7 @@ export function TagsInputEditable(): JSX.Element {
       <Span
         textStyle="xs"
         style={{
-          color: 'var(--leverui-colors-fg-muted)',
+          color: 'var(--lui-colors-fg-muted)',
           'margin-inline-start': 'auto',
         }}
       >
@@ -72,7 +72,7 @@ export function TagsInputEditable(): JSX.Element {
 /** Show the compact Explorer tag composition. */
 export function TagsInputExplorer(): JSX.Element {
   return (
-    <Stack gap="4" style={{ 'max-width': '400px', padding: 'var(--leverui-spacing-4)' }}>
+    <Stack gap="4" style={{ 'max-width': '400px', padding: 'var(--lui-spacing-4)' }}>
       <TagsInput.Root defaultValue={['SolidJS', 'Lever UI']}>
         <TagsInput.Label>Add tags</TagsInput.Label>
         <TagsInput.Control>

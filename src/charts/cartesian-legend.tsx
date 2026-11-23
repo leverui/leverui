@@ -55,7 +55,7 @@ export function CartesianLegend(props: {
             <span
               class="leverui-cartesian-chart__legendSwatch"
               style={{
-                '--leverui-private-cartesian-color': chartColor(series.color, series.color),
+                '--lui-private-cartesian-color': chartColor(series.color, series.color),
               }}
             />
             {series.label ?? series.name}

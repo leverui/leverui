@@ -145,7 +145,7 @@ export function CartesianSeriesLayer(props: CartesianSeriesLayerProps): JSX.Elem
                           point.index === props.activeIndex
                             ? series.activeDotStroke
                             : series.dotStroke,
-                          'var(--leverui-colors-bg)',
+                          'var(--lui-colors-bg)',
                         )}
                         stroke-width={series.dotStrokeWidth ?? 1}
                       />

@@ -36,8 +36,8 @@ async function verifiesGroup({ page }: { page: Page }): Promise<void> {
   await expect(middle).toHaveAttribute('data-leverui-group-between', '');
   await expect(last).toHaveAttribute('data-leverui-group-last', '');
   await expect(first).toHaveAttribute('data-leverui-group-item', '');
-  await expect(first).toHaveCSS('--leverui-group-count', '3');
-  await expect(middle).toHaveCSS('--leverui-group-index', '1');
+  await expect(first).toHaveCSS('--lui-group-count', '3');
+  await expect(middle).toHaveCSS('--lui-group-index', '1');
 
   const vertical = page.getByTestId('group-vertical');
   await expect(vertical).toHaveCSS('flex-direction', 'column');
@@ -61,8 +61,8 @@ async function verifiesGroup({ page }: { page: Page }): Promise<void> {
     'data-leverui-group-auto-skip',
     '',
   );
-  await expect(page.getByTestId('group-skipped-first')).toHaveCSS('--leverui-group-count', '2');
-  await expect(page.getByTestId('group-skipped-last')).toHaveCSS('--leverui-group-index', '1');
+  await expect(page.getByTestId('group-skipped-first')).toHaveCSS('--lui-group-count', '2');
+  await expect(page.getByTestId('group-skipped-last')).toHaveCSS('--lui-group-index', '1');
   await expect(page.getByTestId('group-single-item')).not.toHaveAttribute(
     'data-leverui-group-item',
   );
@@ -106,10 +106,10 @@ async function verifiesGroup({ page }: { page: Page }): Promise<void> {
   await expect(reactive).toHaveCSS('flex-direction', 'column');
   await expect(reactiveFirst).toHaveAttribute('data-original-node', 'true');
   await page.getByTestId('group-toggle-skip').click();
-  await expect(reactiveFirst).toHaveCSS('--leverui-group-count', '2');
-  await expect(reactiveLast).toHaveCSS('--leverui-group-index', '1');
+  await expect(reactiveFirst).toHaveCSS('--lui-group-count', '2');
+  await expect(reactiveLast).toHaveCSS('--lui-group-index', '1');
   await page.getByTestId('group-toggle-skip').click();
-  await expect(reactiveFirst).toHaveCSS('--leverui-group-count', '3');
+  await expect(reactiveFirst).toHaveCSS('--lui-group-count', '3');
 
   const link = page.getByRole('link', { name: 'Group link' });
   await expect(link).toHaveCSS('display', 'inline-flex');

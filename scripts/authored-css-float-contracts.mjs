@@ -5,8 +5,8 @@ export const floatContracts = [
     family: 'float',
     required: [
       '.leverui-float',
-      '--leverui-float-offset-x',
-      '--leverui-float-offset-y',
+      '--lui-float-offset-x',
+      '--lui-float-offset-y',
       ...breakpoints.flatMap(
         /** Require every axis position at each authored breakpoint. */
         (breakpoint) => [

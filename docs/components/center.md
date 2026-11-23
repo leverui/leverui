@@ -44,4 +44,4 @@ export function CenterUsage() {
 Same props as `Square`. Adds `border-radius: 9999px`.
 
 All three accept `class` and `style`. Set sizes, spacing, and colors in your
-own CSS or with `--leverui-*` variables.
+own CSS or with `--lui-*` variables.

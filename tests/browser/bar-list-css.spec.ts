@@ -2,7 +2,7 @@ import { expect, test, type Page } from '@playwright/test';
 
 /** Apply a theme-level size without touching the chart instance. */
 function setRootBarListSize(): void {
-  document.documentElement.style.setProperty('--leverui-bar-list-size', '44px');
+  document.documentElement.style.setProperty('--lui-bar-list-size', '44px');
 }
 
 /** Verify authored layout, native overrides, focus tooltip, and live size. */
@@ -44,9 +44,9 @@ async function verifiesBarListCss({ page }: { page: Page }): Promise<void> {
   await expect(fill).toHaveCSS('border-radius', '9px');
   await expect(fill).toHaveCSS('background-color', 'rgb(204, 251, 241)');
   const secondFill = root.locator('.leverui-bar-list__fill').nth(1);
-  await expect(secondFill).toHaveCSS('--leverui-private-bar-list-width', '50%');
+  await expect(secondFill).toHaveCSS('--lui-private-bar-list-width', '50%');
   await page.getByTestId('bar-list-data-toggle').click();
-  await expect(secondFill).toHaveCSS('--leverui-private-bar-list-width', '80%');
+  await expect(secondFill).toHaveCSS('--lui-private-bar-list-width', '80%');
   await rows.first().focus();
   await root.locator('#bar-list-native-bar').hover();
   await expect(root.locator('#bar-list-native-bar')).toHaveAttribute('data-entered', 'true');
@@ -57,7 +57,7 @@ async function verifiesBarListCss({ page }: { page: Page }): Promise<void> {
   await expect(rows.first()).toHaveCSS('min-height', '48px');
   await page.evaluate(
     /** A theme spacing override must update an existing numeric-token instance. */
-    () => document.documentElement.style.setProperty('--leverui-spacing-12', '52px'),
+    () => document.documentElement.style.setProperty('--lui-spacing-12', '52px'),
   );
   await expect(rows.first()).toHaveCSS('min-height', '52px');
 }

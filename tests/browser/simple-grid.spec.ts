@@ -77,7 +77,7 @@ async function verifiesSimpleGrid({ page }: { page: Page }): Promise<void> {
   expect(await trackCount(page, 'simple-grid-array')).toBe(3);
   expect(await trackCount(page, 'simple-grid-auto-responsive')).toBe(2);
   expect(await trackCount(page, 'simple-grid-skipped-width')).toBe(2);
-  await page.addStyleTag({ content: ':root { --leverui-sizes-24: 140px; }' });
+  await page.addStyleTag({ content: ':root { --lui-sizes-24: 140px; }' });
   expect(await trackCount(page, 'simple-grid-token')).toBe(1);
   await page.addStyleTag({
     content: '.leverui-simple-grid[data-testid="simple-grid-basic"] { gap: 20px; }',

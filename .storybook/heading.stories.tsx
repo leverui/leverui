@@ -59,14 +59,14 @@ function HeadingContractExample(): JSX.Element {
       <HeadingPropsProvider
         value={{
           size: large() ? '3xl' : 'sm',
-          style: { color: `var(--leverui-colors-${large() ? 'blue' : 'red'}-500)` },
+          style: { color: `var(--lui-colors-${large() ? 'blue' : 'red'}-500)` },
           class: 'provider-heading',
         }}
       >
         <Heading data-testid="heading-inherited">Inherited heading</Heading>
         <Heading
           size="md"
-          style={{ color: 'var(--leverui-colors-green-500)' }}
+          style={{ color: 'var(--lui-colors-green-500)' }}
           data-testid="heading-fixed"
         >
           Fixed heading
@@ -98,7 +98,7 @@ function HeadingContractExample(): JSX.Element {
 /** Show that application-owned CSS variables customize a heading. */
 function HeadingCustomSystemExample(): JSX.Element {
   return (
-    <div style="--leverui-fonts-heading: Georgia, serif; --leverui-font-weights-semibold: 400">
+    <div style="--lui-fonts-heading: Georgia, serif; --lui-font-weights-semibold: 400">
       <Heading
         style={{ 'font-size': '2rem', 'line-height': '2.5rem' }}
         data-testid="heading-custom-system"

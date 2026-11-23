@@ -17,7 +17,7 @@ async function verifiesComposition({ page }: { page: Page }): Promise<void> {
   await expect(trigger).toHaveCSS('min-width', '8px');
   await page.addStyleTag({
     content: `
-      [data-testid="splitter-composed-root"] { --leverui-splitter-thumb-size: 16px; }
+      [data-testid="splitter-composed-root"] { --lui-splitter-thumb-size: 16px; }
       [data-testid="splitter-composed-indicator"] { background: rgb(80, 20, 140); }
       [data-testid="splitter-composed-separator"] { background: rgb(20, 80, 140); }
     `,

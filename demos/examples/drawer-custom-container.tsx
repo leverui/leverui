@@ -13,11 +13,11 @@ export function DrawerWithCustomContainer(): JSX.Element {
         style={{
           position: 'relative',
           overflow: 'hidden',
-          padding: 'var(--leverui-spacing-8)',
+          padding: 'var(--lui-spacing-8)',
           'min-height': '400px',
           outline: '2px solid gray',
-          background: 'var(--leverui-colors-color-palette-subtle)',
-          color: 'var(--leverui-colors-color-palette-fg)',
+          background: 'var(--lui-colors-color-palette-subtle)',
+          color: 'var(--lui-colors-color-palette-fg)',
         }}
       >
         <Text>Render drawer here</Text>
@@ -29,7 +29,7 @@ export function DrawerWithCustomContainer(): JSX.Element {
                 {...getProps()}
                 variant="outline"
                 size="sm"
-                style={{ background: 'var(--leverui-colors-bg)' }}
+                style={{ background: 'var(--lui-colors-bg)' }}
               >
                 Open drawer
               </Button>

@@ -2,7 +2,7 @@
   .leverui-select__root:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
-    gap: var(--leverui-select-root-gap, var(--leverui-spacing-1\.5));
+    gap: var(--lui-select-root-gap, var(--lui-spacing-1\.5));
     width: 100%;
   }
 
@@ -15,22 +15,22 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    min-height: var(--leverui-select-trigger-height, var(--leverui-private-select-trigger-height));
+    min-height: var(--lui-select-trigger-height, var(--lui-private-select-trigger-height));
     padding-inline: var(
-      --leverui-select-trigger-padding-x,
-      var(--leverui-private-select-trigger-padding-x)
+      --lui-select-trigger-padding-x,
+      var(--lui-private-select-trigger-padding-x)
     );
-    padding-block: var(--leverui-private-select-trigger-padding-y, 0);
-    gap: var(--leverui-private-select-trigger-gap);
-    border-radius: var(--leverui-select-radius, var(--leverui-radii-l2));
+    padding-block: var(--lui-private-select-trigger-padding-y, 0);
+    gap: var(--lui-private-select-trigger-gap);
+    border-radius: var(--lui-select-radius, var(--lui-radii-l2));
     border-style: solid;
-    border-width: var(--leverui-private-select-border-width);
-    border-color: var(--leverui-private-select-border-color);
-    background: var(--leverui-select-trigger-background, var(--leverui-private-select-background));
+    border-width: var(--lui-private-select-border-width);
+    border-color: var(--lui-private-select-border-color);
+    background: var(--lui-select-trigger-background, var(--lui-private-select-background));
     user-select: none;
     text-align: start;
-    font-size: var(--leverui-private-select-font-size);
-    line-height: var(--leverui-private-select-line-height);
+    font-size: var(--lui-private-select-font-size);
+    line-height: var(--lui-private-select-line-height);
   }
 
   .leverui-select__valueText:not([data-unstyled]) {
@@ -44,13 +44,13 @@
   .leverui-select__indicatorGroup:not([data-unstyled]) {
     display: flex;
     align-items: center;
-    gap: var(--leverui-spacing-1);
+    gap: var(--lui-spacing-1);
     position: absolute;
     inset-inline-end: 0;
     inset-block: 0;
     padding-inline: var(
-      --leverui-select-trigger-padding-x,
-      var(--leverui-private-select-trigger-padding-x)
+      --lui-select-trigger-padding-x,
+      var(--lui-private-select-trigger-padding-x)
     );
     pointer-events: none;
   }
@@ -59,30 +59,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--leverui-select-indicator-color, var(--leverui-colors-fg-muted));
+    color: var(--lui-select-indicator-color, var(--lui-colors-fg-muted));
   }
 
   .leverui-select__indicator:not([data-unstyled]) :is(svg, img) {
-    width: var(--leverui-private-select-indicator-size);
-    height: var(--leverui-private-select-indicator-size);
+    width: var(--lui-private-select-indicator-size);
+    height: var(--lui-private-select-indicator-size);
   }
 
   .leverui-select__content:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
-    gap: var(--leverui-private-select-content-gap, 0);
-    padding: var(--leverui-private-select-content-padding);
-    font-size: var(--leverui-private-select-font-size);
-    line-height: var(--leverui-private-select-line-height);
-    background: var(--leverui-select-content-background, var(--leverui-colors-bg-panel));
-    z-index: calc(
-      var(--leverui-select-z-index, var(--leverui-z-index-popover)) + var(--layer-index, 0)
-    );
-    border-radius: var(--leverui-select-radius, var(--leverui-radii-l2));
+    gap: var(--lui-private-select-content-gap, 0);
+    padding: var(--lui-private-select-content-padding);
+    font-size: var(--lui-private-select-font-size);
+    line-height: var(--lui-private-select-line-height);
+    background: var(--lui-select-content-background, var(--lui-colors-bg-panel));
+    z-index: calc(var(--lui-select-z-index, var(--lui-z-index-popover)) + var(--layer-index, 0));
+    border-radius: var(--lui-select-radius, var(--lui-radii-l2));
     outline: 0;
-    max-height: var(--leverui-select-content-max-height, var(--leverui-sizes-96));
+    max-height: var(--lui-select-content-max-height, var(--lui-sizes-96));
     overflow: hidden;
-    box-shadow: var(--leverui-select-content-shadow, var(--leverui-shadows-md));
+    box-shadow: var(--lui-select-content-shadow, var(--lui-shadows-md));
   }
 
   /* Zag 2 scrolls the highlighted option within List, so List is the scroll container. */
@@ -90,7 +88,7 @@
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
-    gap: var(--leverui-private-select-content-gap, 0);
+    gap: var(--lui-private-select-content-gap, 0);
     min-height: 0;
     overflow-y: auto;
     outline: 0;
@@ -101,18 +99,18 @@
     user-select: none;
     display: flex;
     align-items: center;
-    gap: var(--leverui-spacing-2);
+    gap: var(--lui-spacing-2);
     justify-content: space-between;
     flex: 1;
     text-align: start;
-    border-radius: var(--leverui-radii-l1);
-    padding-block: var(--leverui-private-select-item-padding-y);
-    padding-inline: var(--leverui-private-select-item-padding-x);
+    border-radius: var(--lui-radii-l1);
+    padding-block: var(--lui-private-select-item-padding-y);
+    padding-inline: var(--lui-private-select-item-padding-x);
   }
 
   .leverui-select__item:not([data-unstyled]) :is(svg, img) {
-    width: var(--leverui-sizes-4);
-    height: var(--leverui-sizes-4);
+    width: var(--lui-sizes-4);
+    height: var(--lui-sizes-4);
   }
 
   .leverui-select__itemText:not([data-unstyled]) {
@@ -120,7 +118,7 @@
   }
 
   .leverui-select__itemGroup:not([data-unstyled]) {
-    margin-top: var(--leverui-private-select-item-group-margin, 0);
+    margin-top: var(--lui-private-select-item-group-margin, 0);
   }
 
   .leverui-select__itemGroup:not([data-unstyled]):first-child {
@@ -128,35 +126,33 @@
   }
 
   .leverui-select__itemGroupLabel:not([data-unstyled]) {
-    padding-block: var(--leverui-private-select-item-padding-y);
-    padding-inline: var(--leverui-private-select-item-padding-x);
-    font-weight: var(--leverui-font-weights-medium);
+    padding-block: var(--lui-private-select-item-padding-y);
+    padding-inline: var(--lui-private-select-item-padding-x);
+    font-weight: var(--lui-font-weights-medium);
   }
 
   .leverui-select__label:not([data-unstyled]) {
-    font-weight: var(--leverui-font-weights-medium);
+    font-weight: var(--lui-font-weights-medium);
     user-select: none;
-    font-size: var(--leverui-font-sizes-sm);
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
   }
 
   .leverui-select__clearTrigger:not([data-unstyled]) {
-    color: var(--leverui-colors-fg-muted);
+    color: var(--lui-colors-fg-muted);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    width: var(--leverui-sizes-5);
-    height: var(--leverui-sizes-5);
+    width: var(--lui-sizes-5);
+    height: var(--lui-sizes-5);
     pointer-events: auto;
-    border-radius: var(--leverui-radii-l1);
+    border-radius: var(--lui-radii-l1);
   }
 
   /* Zag 2 sets no z-index and isolates the positioner, so the content's z-index
      cannot escape it. Stack the positioner itself, offset by its layer index. */
   .leverui-select__positioner {
-    z-index: calc(
-      var(--leverui-select-z-index, var(--leverui-z-index-popover)) + var(--layer-index, 0)
-    );
+    z-index: calc(var(--lui-select-z-index, var(--lui-z-index-popover)) + var(--layer-index, 0));
   }
 }

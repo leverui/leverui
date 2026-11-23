@@ -161,7 +161,7 @@ async function verifiesPlainBoxCss({ page }: { page: Page }): Promise<void> {
   expect(markup).toMatch(/class="leverui-box consumer-plain-box\b/);
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(
-    `<style>${defaultCss}</style><style>.consumer-plain-box{--leverui-colors-bg-panel:rgb(12,34,56);background:var(--leverui-colors-bg-panel);padding:12px}</style>${markup}`,
+    `<style>${defaultCss}</style><style>.consumer-plain-box{--lui-colors-bg-panel:rgb(12,34,56);background:var(--lui-colors-bg-panel);padding:12px}</style>${markup}`,
   );
   const box = page.locator('#plain-server-box');
   await expect(box).toHaveJSProperty('tagName', 'ARTICLE');

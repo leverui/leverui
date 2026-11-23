@@ -1,57 +1,57 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
     .leverui-steps__root:not([data-unstyled])[data-variant-sm='solid'] {
-      --leverui-private-steps-incomplete-bg: transparent;
-      --leverui-private-steps-incomplete-border-width: var(--leverui-private-steps-thickness);
-      --leverui-private-steps-current-bg: var(--leverui-colors-color-palette-muted);
-      --leverui-private-steps-current-border-width: var(--leverui-private-steps-thickness);
-      --leverui-private-steps-current-border-color: var(--leverui-colors-color-palette-solid);
-      --leverui-private-steps-current-color: var(--leverui-colors-color-palette-fg);
-      --leverui-private-steps-complete-bg: var(--leverui-colors-color-palette-solid);
-      --leverui-private-steps-complete-border-color: var(--leverui-colors-color-palette-solid);
-      --leverui-private-steps-complete-color: var(--leverui-colors-color-palette-contrast);
-      --leverui-private-steps-complete-separator-bg: var(--leverui-colors-color-palette-solid);
+      --lui-private-steps-incomplete-bg: transparent;
+      --lui-private-steps-incomplete-border-width: var(--lui-private-steps-thickness);
+      --lui-private-steps-current-bg: var(--lui-colors-color-palette-muted);
+      --lui-private-steps-current-border-width: var(--lui-private-steps-thickness);
+      --lui-private-steps-current-border-color: var(--lui-colors-color-palette-solid);
+      --lui-private-steps-current-color: var(--lui-colors-color-palette-fg);
+      --lui-private-steps-complete-bg: var(--lui-colors-color-palette-solid);
+      --lui-private-steps-complete-border-color: var(--lui-colors-color-palette-solid);
+      --lui-private-steps-complete-color: var(--lui-colors-color-palette-contrast);
+      --lui-private-steps-complete-separator-bg: var(--lui-colors-color-palette-solid);
     }
 
     .leverui-steps__root:not([data-unstyled])[data-variant-sm='subtle'] {
-      --leverui-private-steps-incomplete-bg: var(--leverui-colors-bg-muted);
-      --leverui-private-steps-incomplete-border-width: 0px;
-      --leverui-private-steps-current-bg: var(--leverui-colors-color-palette-muted);
-      --leverui-private-steps-current-border-width: 0px;
-      --leverui-private-steps-current-border-color: currentColor;
-      --leverui-private-steps-current-color: var(--leverui-colors-color-palette-fg);
-      --leverui-private-steps-complete-bg: var(--leverui-colors-color-palette-emphasized);
-      --leverui-private-steps-complete-border-color: currentColor;
-      --leverui-private-steps-complete-color: var(--leverui-colors-color-palette-fg);
-      --leverui-private-steps-complete-separator-bg: var(--leverui-colors-color-palette-emphasized);
+      --lui-private-steps-incomplete-bg: var(--lui-colors-bg-muted);
+      --lui-private-steps-incomplete-border-width: 0px;
+      --lui-private-steps-current-bg: var(--lui-colors-color-palette-muted);
+      --lui-private-steps-current-border-width: 0px;
+      --lui-private-steps-current-border-color: currentColor;
+      --lui-private-steps-current-color: var(--lui-colors-color-palette-fg);
+      --lui-private-steps-complete-bg: var(--lui-colors-color-palette-emphasized);
+      --lui-private-steps-complete-border-color: currentColor;
+      --lui-private-steps-complete-color: var(--lui-colors-color-palette-fg);
+      --lui-private-steps-complete-separator-bg: var(--lui-colors-color-palette-emphasized);
     }
   }
 
   @media (min-width: 768px) {
     .leverui-steps__root:not([data-unstyled])[data-variant-md='solid'] {
-      --leverui-private-steps-incomplete-bg: transparent;
-      --leverui-private-steps-incomplete-border-width: var(--leverui-private-steps-thickness);
-      --leverui-private-steps-current-bg: var(--leverui-colors-color-palette-muted);
-      --leverui-private-steps-current-border-width: var(--leverui-private-steps-thickness);
-      --leverui-private-steps-current-border-color: var(--leverui-colors-color-palette-solid);
-      --leverui-private-steps-current-color: var(--leverui-colors-color-palette-fg);
-      --leverui-private-steps-complete-bg: var(--leverui-colors-color-palette-solid);
-      --leverui-private-steps-complete-border-color: var(--leverui-colors-color-palette-solid);
-      --leverui-private-steps-complete-color: var(--leverui-colors-color-palette-contrast);
-      --leverui-private-steps-complete-separator-bg: var(--leverui-colors-color-palette-solid);
+      --lui-private-steps-incomplete-bg: transparent;
+      --lui-private-steps-incomplete-border-width: var(--lui-private-steps-thickness);
+      --lui-private-steps-current-bg: var(--lui-colors-color-palette-muted);
+      --lui-private-steps-current-border-width: var(--lui-private-steps-thickness);
+      --lui-private-steps-current-border-color: var(--lui-colors-color-palette-solid);
+      --lui-private-steps-current-color: var(--lui-colors-color-palette-fg);
+      --lui-private-steps-complete-bg: var(--lui-colors-color-palette-solid);
+      --lui-private-steps-complete-border-color: var(--lui-colors-color-palette-solid);
+      --lui-private-steps-complete-color: var(--lui-colors-color-palette-contrast);
+      --lui-private-steps-complete-separator-bg: var(--lui-colors-color-palette-solid);
     }
 
     .leverui-steps__root:not([data-unstyled])[data-variant-md='subtle'] {
-      --leverui-private-steps-incomplete-bg: var(--leverui-colors-bg-muted);
-      --leverui-private-steps-incomplete-border-width: 0px;
-      --leverui-private-steps-current-bg: var(--leverui-colors-color-palette-muted);
-      --leverui-private-steps-current-border-width: 0px;
-      --leverui-private-steps-current-border-color: currentColor;
-      --leverui-private-steps-current-color: var(--leverui-colors-color-palette-fg);
-      --leverui-private-steps-complete-bg: var(--leverui-colors-color-palette-emphasized);
-      --leverui-private-steps-complete-border-color: currentColor;
-      --leverui-private-steps-complete-color: var(--leverui-colors-color-palette-fg);
-      --leverui-private-steps-complete-separator-bg: var(--leverui-colors-color-palette-emphasized);
+      --lui-private-steps-incomplete-bg: var(--lui-colors-bg-muted);
+      --lui-private-steps-incomplete-border-width: 0px;
+      --lui-private-steps-current-bg: var(--lui-colors-color-palette-muted);
+      --lui-private-steps-current-border-width: 0px;
+      --lui-private-steps-current-border-color: currentColor;
+      --lui-private-steps-current-color: var(--lui-colors-color-palette-fg);
+      --lui-private-steps-complete-bg: var(--lui-colors-color-palette-emphasized);
+      --lui-private-steps-complete-border-color: currentColor;
+      --lui-private-steps-complete-color: var(--lui-colors-color-palette-fg);
+      --lui-private-steps-complete-separator-bg: var(--lui-colors-color-palette-emphasized);
     }
   }
 }

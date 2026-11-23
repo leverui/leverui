@@ -1,11 +1,11 @@
 @layer leverui.recipes {
   .leverui-avatar__root:not([data-unstyled])[data-shape='square'] {
-    --leverui-private-avatar-radius: 0px;
+    --lui-private-avatar-radius: 0px;
   }
   .leverui-avatar__root:not([data-unstyled])[data-shape='rounded'] {
-    --leverui-private-avatar-radius: var(--leverui-radii-l3);
+    --lui-private-avatar-radius: var(--lui-radii-l3);
   }
   .leverui-avatar__root:not([data-unstyled])[data-shape='full'] {
-    --leverui-private-avatar-radius: var(--leverui-radii-full);
+    --lui-private-avatar-radius: var(--lui-radii-full);
   }
 }

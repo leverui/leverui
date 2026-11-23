@@ -127,7 +127,7 @@ test('all eighteen Typography examples render', verifiesTypographyStories);
 /** Keep the gallery font active in public Storybook examples. */
 async function verifiesGalleryFonts({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=typography-heading--basic');
-  await expect(page.locator('html')).toHaveCSS('--leverui-fonts-heading', /Wix Madefor Text/);
+  await expect(page.locator('html')).toHaveCSS('--lui-fonts-heading', /Wix Madefor Text/);
 }
 
 test('Typography gallery keeps its font', verifiesGalleryFonts);

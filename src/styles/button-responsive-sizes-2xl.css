@@ -1,101 +1,101 @@
 @layer leverui.recipes {
   @media (min-width: 1536px) {
     .leverui-button:not([data-unstyled])[data-size-2xl='2xs'] {
-      height: var(--leverui-sizes-6);
-      min-width: var(--leverui-sizes-6);
-      font-size: var(--leverui-font-sizes-xs);
+      height: var(--lui-sizes-6);
+      min-width: var(--lui-sizes-6);
+      font-size: var(--lui-font-sizes-xs);
       line-height: 1rem;
-      padding-inline: var(--leverui-spacing-2);
-      gap: var(--leverui-spacing-1);
+      padding-inline: var(--lui-spacing-2);
+      gap: var(--lui-spacing-1);
     }
 
     .leverui-button:not([data-unstyled])[data-size-2xl='2xs'] :is(svg, [data-leverui-icon]) {
-      width: var(--leverui-sizes-3\.5);
-      height: var(--leverui-sizes-3\.5);
+      width: var(--lui-sizes-3\.5);
+      height: var(--lui-sizes-3\.5);
     }
 
     .leverui-button:not([data-unstyled])[data-size-2xl='xs'] {
-      height: var(--leverui-sizes-8);
-      min-width: var(--leverui-sizes-8);
-      font-size: var(--leverui-font-sizes-xs);
+      height: var(--lui-sizes-8);
+      min-width: var(--lui-sizes-8);
+      font-size: var(--lui-font-sizes-xs);
       line-height: 1rem;
-      padding-inline: var(--leverui-spacing-2\.5);
-      gap: var(--leverui-spacing-1);
+      padding-inline: var(--lui-spacing-2\.5);
+      gap: var(--lui-spacing-1);
     }
 
     .leverui-button:not([data-unstyled])[data-size-2xl='xs'] :is(svg, [data-leverui-icon]) {
-      width: var(--leverui-sizes-4);
-      height: var(--leverui-sizes-4);
+      width: var(--lui-sizes-4);
+      height: var(--lui-sizes-4);
     }
 
     .leverui-button:not([data-unstyled])[data-size-2xl='sm'] {
-      height: var(--leverui-sizes-9);
-      min-width: var(--leverui-sizes-9);
-      font-size: var(--leverui-font-sizes-sm);
+      height: var(--lui-sizes-9);
+      min-width: var(--lui-sizes-9);
+      font-size: var(--lui-font-sizes-sm);
       line-height: 1.25rem;
-      padding-inline: var(--leverui-spacing-3\.5);
-      gap: var(--leverui-spacing-2);
+      padding-inline: var(--lui-spacing-3\.5);
+      gap: var(--lui-spacing-2);
     }
 
     .leverui-button:not([data-unstyled])[data-size-2xl='sm'] :is(svg, [data-leverui-icon]) {
-      width: var(--leverui-sizes-4);
-      height: var(--leverui-sizes-4);
+      width: var(--lui-sizes-4);
+      height: var(--lui-sizes-4);
     }
 
     .leverui-button:not([data-unstyled])[data-size-2xl='md'] {
-      height: var(--leverui-sizes-10);
-      min-width: var(--leverui-sizes-10);
-      font-size: var(--leverui-font-sizes-sm);
+      height: var(--lui-sizes-10);
+      min-width: var(--lui-sizes-10);
+      font-size: var(--lui-font-sizes-sm);
       line-height: 1.25rem;
-      padding-inline: var(--leverui-spacing-4);
-      gap: var(--leverui-spacing-2);
+      padding-inline: var(--lui-spacing-4);
+      gap: var(--lui-spacing-2);
     }
 
     .leverui-button:not([data-unstyled])[data-size-2xl='md'] :is(svg, [data-leverui-icon]) {
-      width: var(--leverui-sizes-5);
-      height: var(--leverui-sizes-5);
+      width: var(--lui-sizes-5);
+      height: var(--lui-sizes-5);
     }
 
     .leverui-button:not([data-unstyled])[data-size-2xl='lg'] {
-      height: var(--leverui-sizes-11);
-      min-width: var(--leverui-sizes-11);
-      font-size: var(--leverui-font-sizes-md);
+      height: var(--lui-sizes-11);
+      min-width: var(--lui-sizes-11);
+      font-size: var(--lui-font-sizes-md);
       line-height: 1.5rem;
-      padding-inline: var(--leverui-spacing-5);
-      gap: var(--leverui-spacing-3);
+      padding-inline: var(--lui-spacing-5);
+      gap: var(--lui-spacing-3);
     }
 
     .leverui-button:not([data-unstyled])[data-size-2xl='lg'] :is(svg, [data-leverui-icon]) {
-      width: var(--leverui-sizes-5);
-      height: var(--leverui-sizes-5);
+      width: var(--lui-sizes-5);
+      height: var(--lui-sizes-5);
     }
 
     .leverui-button:not([data-unstyled])[data-size-2xl='xl'] {
-      height: var(--leverui-sizes-12);
-      min-width: var(--leverui-sizes-12);
-      font-size: var(--leverui-font-sizes-md);
+      height: var(--lui-sizes-12);
+      min-width: var(--lui-sizes-12);
+      font-size: var(--lui-font-sizes-md);
       line-height: 1.5rem;
-      padding-inline: var(--leverui-spacing-5);
-      gap: var(--leverui-spacing-2\.5);
+      padding-inline: var(--lui-spacing-5);
+      gap: var(--lui-spacing-2\.5);
     }
 
     .leverui-button:not([data-unstyled])[data-size-2xl='xl'] :is(svg, [data-leverui-icon]) {
-      width: var(--leverui-sizes-5);
-      height: var(--leverui-sizes-5);
+      width: var(--lui-sizes-5);
+      height: var(--lui-sizes-5);
     }
 
     .leverui-button:not([data-unstyled])[data-size-2xl='2xl'] {
-      height: var(--leverui-sizes-16);
-      min-width: var(--leverui-sizes-16);
-      font-size: var(--leverui-font-sizes-lg);
+      height: var(--lui-sizes-16);
+      min-width: var(--lui-sizes-16);
+      font-size: var(--lui-font-sizes-lg);
       line-height: 1.75rem;
-      padding-inline: var(--leverui-spacing-7);
-      gap: var(--leverui-spacing-3);
+      padding-inline: var(--lui-spacing-7);
+      gap: var(--lui-spacing-3);
     }
 
     .leverui-button:not([data-unstyled])[data-size-2xl='2xl'] :is(svg, [data-leverui-icon]) {
-      width: var(--leverui-sizes-6);
-      height: var(--leverui-sizes-6);
+      width: var(--lui-sizes-6);
+      height: var(--lui-sizes-6);
     }
   }
 }

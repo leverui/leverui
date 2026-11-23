@@ -21,7 +21,7 @@ export function TokensAspectRatio(): JSX.Element {
     <TokenDoc title="theme.tokens.aspectRatios" mt="8">
       <SimpleGrid
         minChildWidth="160px"
-        style={{ gap: 'var(--leverui-spacing-8)', 'font-size': 'var(--leverui-font-sizes-sm)' }}
+        style={{ gap: 'var(--lui-spacing-8)', 'font-size': 'var(--lui-font-sizes-sm)' }}
       >
         <For each={ratios}>
           {
@@ -31,15 +31,15 @@ export function TokensAspectRatio(): JSX.Element {
                 <Center
                   style={{
                     'aspect-ratio': String(token.value),
-                    width: 'var(--leverui-sizes-40)',
-                    background: 'var(--leverui-colors-bg-subtle)',
-                    color: 'var(--leverui-colors-fg-muted)',
+                    width: 'var(--lui-sizes-40)',
+                    background: 'var(--lui-colors-bg-subtle)',
+                    color: 'var(--lui-colors-fg-muted)',
                     'border-width': '1px',
                   }}
                 >
                   <VStack gap="0">
                     <Text>{token.extensions.prop}</Text>
-                    <Text style={{ color: 'var(--leverui-colors-fg-subtle)' }}>{token.value}</Text>
+                    <Text style={{ color: 'var(--lui-colors-fg-subtle)' }}>{token.value}</Text>
                   </VStack>
                 </Center>
               </Stack>
@@ -56,7 +56,7 @@ export function TokensRadius(): JSX.Element {
   const names = tokenDocEntries('radii').map((token) => token.extensions.prop);
   return (
     <TokenDoc title="theme.tokens.radii" mt="8">
-      <SimpleGrid minChildWidth="120px" style={{ gap: 'var(--leverui-spacing-4)' }}>
+      <SimpleGrid minChildWidth="120px" style={{ gap: 'var(--lui-spacing-4)' }}>
         <For each={names}>
           {
             /** Render the shape and label for one radius. */
@@ -65,9 +65,9 @@ export function TokensRadius(): JSX.Element {
                 <Square
                   size="20"
                   style={{
-                    'border-radius': `var(--leverui-radii-${radius})`,
-                    background: 'var(--leverui-colors-bg-subtle)',
-                    color: 'var(--leverui-colors-fg-muted)',
+                    'border-radius': `var(--lui-radii-${radius})`,
+                    background: 'var(--lui-colors-bg-subtle)',
+                    color: 'var(--lui-colors-fg-muted)',
                     'border-width': '1px',
                   }}
                 />
@@ -75,8 +75,8 @@ export function TokensRadius(): JSX.Element {
                 <Box
                   as="pre"
                   style={{
-                    color: 'var(--leverui-colors-fg-subtle)',
-                    'font-size': 'var(--leverui-font-sizes-xs)',
+                    color: 'var(--lui-colors-fg-subtle)',
+                    'font-size': 'var(--lui-font-sizes-xs)',
                   }}
                 >
                   {tokens.getByName(`radii.${radius}`)?.originalValue}
@@ -115,8 +115,8 @@ export function TokensBreakpoints(): JSX.Element {
                 <Box style={{ 'min-width': '200px' }}>
                   <Box
                     style={{
-                      'border-radius': 'var(--leverui-radii-sm)',
-                      height: 'var(--leverui-sizes-12)',
+                      'border-radius': 'var(--lui-radii-sm)',
+                      height: 'var(--lui-sizes-12)',
                       'border-inline-width': '4px',
                       'border-top-width': '4px',
                       'border-bottom-width': '12px',
@@ -127,15 +127,15 @@ export function TokensBreakpoints(): JSX.Element {
                 <Box style={{ 'min-width': '80px' }}>
                   <Text
                     style={{
-                      'padding-block': 'var(--leverui-spacing-2)',
-                      'font-weight': 'var(--leverui-font-weights-medium)',
+                      'padding-block': 'var(--lui-spacing-2)',
+                      'font-weight': 'var(--lui-font-weights-medium)',
                     }}
                   >
                     {name}
                   </Text>
                 </Box>
                 <Text
-                  style={{ 'padding-block': 'var(--leverui-spacing-2)', opacity: '0.6' }}
+                  style={{ 'padding-block': 'var(--lui-spacing-2)', opacity: '0.6' }}
                 >{`@media screen (min-width >= ${breakpoints[name]})`}</Text>
               </HStack>
             )
@@ -153,7 +153,7 @@ export function TokensEasings(): JSX.Element {
     <TokenDoc title="theme.tokens.easings" mt="8">
       <SimpleGrid
         columns={2}
-        style={{ gap: 'var(--leverui-spacing-8)', 'font-size': 'var(--leverui-font-sizes-sm)' }}
+        style={{ gap: 'var(--lui-spacing-8)', 'font-size': 'var(--lui-font-sizes-sm)' }}
       >
         <For each={easings}>
           {
@@ -164,7 +164,7 @@ export function TokensEasings(): JSX.Element {
                   style={{
                     width: '200px',
                     height: '200px',
-                    background: 'var(--leverui-colors-pink-200)',
+                    background: 'var(--lui-colors-pink-200)',
                     'animation-name': 'slide-to-right-full',
                     'animation-timing-function': easingValue(token.value),
                     'animation-duration': '1s',
@@ -172,7 +172,7 @@ export function TokensEasings(): JSX.Element {
                     'animation-direction': 'alternate',
                   }}
                 />
-                <Text style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>
+                <Text style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>
                   {token.name}
                 </Text>
               </Stack>

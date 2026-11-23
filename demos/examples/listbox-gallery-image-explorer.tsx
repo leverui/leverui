@@ -30,7 +30,7 @@ export function ListboxImageExplorer(): JSX.Element {
         value={[selectedImage()]}
         onValueChange={changeValue}
         variant="solid"
-        style={{ 'max-width': 'var(--leverui-sizes-2xs)' }}
+        style={{ 'max-width': 'var(--lui-sizes-2xs)' }}
       >
         <VisuallyHidden>
           <Listbox.Label>Explore images</Listbox.Label>

@@ -8,13 +8,13 @@ import '@leverui/components/styles.css';
 import './theme.css';
 ```
 
-Set `--leverui-*` variables on `:root` in `theme.css` to change the whole app.
+Set `--lui-*` variables on `:root` in `theme.css` to change the whole app.
 
 ```css
 :root {
-  --leverui-colors-blue-500: #6254c7;
-  --leverui-fonts-body: 'Inter', sans-serif;
-  --leverui-radii-md: 0.75rem;
+  --lui-colors-blue-500: #6254c7;
+  --lui-fonts-body: 'Inter', sans-serif;
+  --lui-radii-md: 0.75rem;
 }
 ```
 
@@ -33,13 +33,13 @@ import { Button, Theme } from '@leverui/components';
 
 ```css
 .marketing-panel {
-  --leverui-colors-bg: #f5f0ff;
-  --leverui-colors-fg: #281c42;
-  --leverui-colors-blue-solid: #6254c7;
-  --leverui-colors-blue-contrast: #fff;
-  --leverui-colors-blue-subtle: #e9e1ff;
-  --leverui-colors-blue-fg: #43328c;
-  --leverui-radii-l2: 12px;
+  --lui-colors-bg: #f5f0ff;
+  --lui-colors-fg: #281c42;
+  --lui-colors-blue-solid: #6254c7;
+  --lui-colors-blue-contrast: #fff;
+  --lui-colors-blue-subtle: #e9e1ff;
+  --lui-colors-blue-fg: #43328c;
+  --lui-radii-l2: 12px;
 }
 ```
 
@@ -47,7 +47,7 @@ import { Button, Theme } from '@leverui/components';
   `Theme` without `appearance` inherits the surrounding mode.
 - The overrides are fixed colors. They do not adapt to the mode.
 - To change a section's background, set a semantic variable such as
-  `--leverui-colors-bg`. Changing a scale color does not replace it.
+  `--lui-colors-bg`. Changing a scale color does not replace it.
 - `blue-solid` and `blue-subtle` restyle the Button variants.
 
 ## Component CSS hooks
@@ -60,13 +60,13 @@ import { Box } from '@leverui/components';
 
 ```css
 .outlined-panel {
-  box-shadow: 0 0 0 1px var(--leverui-colors-red-500);
+  box-shadow: 0 0 0 1px var(--lui-colors-red-500);
 }
 ```
 
-Set `--leverui-tabs-indicator-bg`, `--leverui-tabs-indicator-shadow`, and
-`--leverui-tabs-trigger-radius` on the Tabs root to restyle its indicator.
-`--leverui-private-*` variables are not public.
+Set `--lui-tabs-indicator-bg`, `--lui-tabs-indicator-shadow`, and
+`--lui-tabs-trigger-radius` on the Tabs root to restyle its indicator.
+`--lui-private-*` variables are not public.
 
 Check root and nested overrides in light and dark modes. For a new variant,
 add your own class with CSS for its states and breakpoints.
@@ -83,7 +83,7 @@ an `id`. Pass `id` to a part when you need one.
 
 ```css
 .leverui-popover__trigger[data-state='open'] {
-  background: var(--leverui-colors-bg-muted);
+  background: var(--lui-colors-bg-muted);
 }
 ```
 

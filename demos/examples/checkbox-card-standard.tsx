@@ -136,7 +136,7 @@ export function CheckboxCardExplorerDemo(): JSX.Element {
         <CheckboxCard.Indicator />
       </CheckboxCard.Control>
       <CheckboxCard.Content>
-        <Text style={{ 'font-size': 'var(--leverui-font-sizes-sm)' }}>
+        <Text style={{ 'font-size': 'var(--lui-font-sizes-sm)' }}>
           It renders pages on the server and lets you add API routes in the same project.
         </Text>
         <Button size="sm" variant="outline">

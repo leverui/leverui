@@ -8,9 +8,9 @@ export function TabsIndicator(): JSX.Element {
     <Tabs.Root defaultValue="members" variant="plain">
       <Tabs.List
         style={{
-          background: 'var(--leverui-colors-bg-muted)',
-          'border-radius': 'var(--leverui-radii-l3)',
-          padding: 'var(--leverui-spacing-1)',
+          background: 'var(--lui-colors-bg-muted)',
+          'border-radius': 'var(--lui-radii-l3)',
+          padding: 'var(--lui-spacing-1)',
         }}
       >
         <Tabs.Trigger value="members">
@@ -25,7 +25,7 @@ export function TabsIndicator(): JSX.Element {
           <SquareCheckIcon />
           Settings
         </Tabs.Trigger>
-        <Tabs.Indicator style={{ 'border-radius': 'var(--leverui-radii-l2)' }} />
+        <Tabs.Indicator style={{ 'border-radius': 'var(--lui-radii-l2)' }} />
       </Tabs.List>
       <Tabs.Content value="members">Invite people and choose their roles.</Tabs.Content>
       <Tabs.Content value="projects">See each project and who is working on it.</Tabs.Content>
@@ -41,9 +41,9 @@ export function TabsCustomIndicator(): JSX.Element {
       defaultValue="members"
       variant="plain"
       style={{
-        '--leverui-tabs-indicator-bg': 'var(--leverui-colors-gray-subtle)',
-        '--leverui-tabs-indicator-shadow': 'var(--leverui-shadows-xs)',
-        '--leverui-tabs-trigger-radius': 'var(--leverui-radii-full)',
+        '--lui-tabs-indicator-bg': 'var(--lui-colors-gray-subtle)',
+        '--lui-tabs-indicator-shadow': 'var(--lui-shadows-xs)',
+        '--lui-tabs-trigger-radius': 'var(--lui-radii-full)',
       }}
     >
       <Tabs.List>

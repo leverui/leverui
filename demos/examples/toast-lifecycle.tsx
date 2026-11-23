@@ -33,7 +33,7 @@ export function ToastLifecycle(): JSX.Element {
       <Stack
         role="log"
         style={{
-          padding: 'var(--leverui-spacing-2)',
+          padding: 'var(--lui-spacing-2)',
           width: '100%',
           'border-width': '1px',
           'min-height': '100px',
@@ -47,11 +47,11 @@ export function ToastLifecycle(): JSX.Element {
                 as="pre"
                 textStyle="sm"
                 style={{
-                  'font-family': 'var(--leverui-fonts-mono)',
+                  'font-family': 'var(--lui-fonts-mono)',
                 }}
               >
                 {new Date(time).toLocaleTimeString()}{' '}
-                <Text style={{ 'font-weight': 'var(--leverui-font-weights-bold)' }}>{status}</Text>
+                <Text style={{ 'font-weight': 'var(--lui-font-weights-bold)' }}>{status}</Text>
               </HStack>
             )
           }

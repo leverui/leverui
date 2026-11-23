@@ -28,9 +28,9 @@ export const listContracts = [
           ),
         ],
       ),
-      '--leverui-colors-fg-subtle',
-      '--leverui-list-gap',
-      '--leverui-spacing-2',
+      '--lui-colors-fg-subtle',
+      '--lui-list-gap',
+      '--lui-spacing-2',
     ],
   },
 ];

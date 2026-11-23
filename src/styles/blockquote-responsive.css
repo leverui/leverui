@@ -2,80 +2,80 @@
   @media (min-width: 480px) {
     .leverui-blockquote__root:not([data-unstyled]) {
       &[data-justify-sm='start'] {
-        --leverui-private-blockquote-align: flex-start;
-        --leverui-private-blockquote-text-align: start;
+        --lui-private-blockquote-align: flex-start;
+        --lui-private-blockquote-text-align: start;
       }
       &[data-justify-sm='center'] {
-        --leverui-private-blockquote-align: center;
-        --leverui-private-blockquote-text-align: center;
+        --lui-private-blockquote-align: center;
+        --lui-private-blockquote-text-align: center;
       }
       &[data-justify-sm='end'] {
-        --leverui-private-blockquote-align: flex-end;
-        --leverui-private-blockquote-text-align: end;
+        --lui-private-blockquote-align: flex-end;
+        --lui-private-blockquote-text-align: end;
       }
     }
   }
   @media (min-width: 768px) {
     .leverui-blockquote__root:not([data-unstyled]) {
       &[data-justify-md='start'] {
-        --leverui-private-blockquote-align: flex-start;
-        --leverui-private-blockquote-text-align: start;
+        --lui-private-blockquote-align: flex-start;
+        --lui-private-blockquote-text-align: start;
       }
       &[data-justify-md='center'] {
-        --leverui-private-blockquote-align: center;
-        --leverui-private-blockquote-text-align: center;
+        --lui-private-blockquote-align: center;
+        --lui-private-blockquote-text-align: center;
       }
       &[data-justify-md='end'] {
-        --leverui-private-blockquote-align: flex-end;
-        --leverui-private-blockquote-text-align: end;
+        --lui-private-blockquote-align: flex-end;
+        --lui-private-blockquote-text-align: end;
       }
     }
   }
   @media (min-width: 1024px) {
     .leverui-blockquote__root:not([data-unstyled]) {
       &[data-justify-lg='start'] {
-        --leverui-private-blockquote-align: flex-start;
-        --leverui-private-blockquote-text-align: start;
+        --lui-private-blockquote-align: flex-start;
+        --lui-private-blockquote-text-align: start;
       }
       &[data-justify-lg='center'] {
-        --leverui-private-blockquote-align: center;
-        --leverui-private-blockquote-text-align: center;
+        --lui-private-blockquote-align: center;
+        --lui-private-blockquote-text-align: center;
       }
       &[data-justify-lg='end'] {
-        --leverui-private-blockquote-align: flex-end;
-        --leverui-private-blockquote-text-align: end;
+        --lui-private-blockquote-align: flex-end;
+        --lui-private-blockquote-text-align: end;
       }
     }
   }
   @media (min-width: 1280px) {
     .leverui-blockquote__root:not([data-unstyled]) {
       &[data-justify-xl='start'] {
-        --leverui-private-blockquote-align: flex-start;
-        --leverui-private-blockquote-text-align: start;
+        --lui-private-blockquote-align: flex-start;
+        --lui-private-blockquote-text-align: start;
       }
       &[data-justify-xl='center'] {
-        --leverui-private-blockquote-align: center;
-        --leverui-private-blockquote-text-align: center;
+        --lui-private-blockquote-align: center;
+        --lui-private-blockquote-text-align: center;
       }
       &[data-justify-xl='end'] {
-        --leverui-private-blockquote-align: flex-end;
-        --leverui-private-blockquote-text-align: end;
+        --lui-private-blockquote-align: flex-end;
+        --lui-private-blockquote-text-align: end;
       }
     }
   }
   @media (min-width: 1536px) {
     .leverui-blockquote__root:not([data-unstyled]) {
       &[data-justify-2xl='start'] {
-        --leverui-private-blockquote-align: flex-start;
-        --leverui-private-blockquote-text-align: start;
+        --lui-private-blockquote-align: flex-start;
+        --lui-private-blockquote-text-align: start;
       }
       &[data-justify-2xl='center'] {
-        --leverui-private-blockquote-align: center;
-        --leverui-private-blockquote-text-align: center;
+        --lui-private-blockquote-align: center;
+        --lui-private-blockquote-text-align: center;
       }
       &[data-justify-2xl='end'] {
-        --leverui-private-blockquote-align: flex-end;
-        --leverui-private-blockquote-text-align: end;
+        --lui-private-blockquote-align: flex-end;
+        --lui-private-blockquote-text-align: end;
       }
     }
   }

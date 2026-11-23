@@ -7,8 +7,8 @@ below to copy its variable.
 
 ```css
 .promo {
-  background: var(--leverui-colors-blue-subtle);
-  color: var(--leverui-colors-blue-fg);
+  background: var(--lui-colors-blue-subtle);
+  color: var(--lui-colors-blue-fg);
 }
 ```
 

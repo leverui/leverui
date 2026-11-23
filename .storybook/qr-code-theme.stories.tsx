@@ -21,7 +21,7 @@ function QrCodeThemeExample(): JSX.Element {
       <QrCode.Root value="Responsive QR" size={{ base: '2xs', md: 'xl' }}>
         <QrCode.Frame data-testid="qr-responsive-frame" />
       </QrCode.Root>
-      <QrCode.Root value="Custom CSS" style={{ '--leverui-qr-code-size': '173px' }}>
+      <QrCode.Root value="Custom CSS" style={{ '--lui-qr-code-size': '173px' }}>
         <QrCode.Frame data-testid="qr-custom-frame" />
       </QrCode.Root>
       <QrCode.Root value="Unstyled QR" unstyled data-testid="qr-unstyled-root">

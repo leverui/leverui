@@ -67,7 +67,7 @@ function renderExplorerButton(
 /** Show every QR Code part, including a logo overlay, in the anatomy explorer. */
 export function QrCodeExplorerDemo(): JSX.Element {
   return (
-    <Stack gap="6" align="center" style={{ 'max-width': 'var(--leverui-sizes-sm)' }}>
+    <Stack gap="6" align="center" style={{ 'max-width': 'var(--lui-sizes-sm)' }}>
       <QrCode.Root value={value}>
         <QrCode.Frame>
           <QrCode.Pattern />

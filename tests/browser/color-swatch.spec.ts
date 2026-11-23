@@ -54,14 +54,14 @@ async function verifiesMixedSwatches({ page }: { page: Page }): Promise<void> {
     'column-gap',
     '3px',
   );
-  await page.addStyleTag({ content: '#mix-three { --leverui-swatch-color: rebeccapurple; }' });
+  await page.addStyleTag({ content: '#mix-three { --lui-swatch-color: rebeccapurple; }' });
   const firstColor = await page
     .getByTestId('mix-three')
     .locator('[data-mix-cell]')
     .first()
     .evaluate(
       /** Keep a mix cell's own value ahead of an outer swatch override. */
-      (element) => getComputedStyle(element).getPropertyValue('--leverui-swatch-color').trim(),
+      (element) => getComputedStyle(element).getPropertyValue('--lui-swatch-color').trim(),
     );
   expect(firstColor).toBe('red');
 }
@@ -100,12 +100,9 @@ async function verifiesReactiveSwatch({ page }: { page: Page }): Promise<void> {
     'rgb(55, 66, 77)',
   );
   await expect(page.getByTestId('swatch-unstyled')).toHaveCSS('display', 'inline');
+  await expect(page.locator('#swatch-css-override')).toHaveCSS('--lui-swatch-checker-size', '4px');
   await expect(page.locator('#swatch-css-override')).toHaveCSS(
-    '--leverui-swatch-checker-size',
-    '4px',
-  );
-  await expect(page.locator('#swatch-css-override')).toHaveCSS(
-    '--leverui-swatch-color',
+    '--lui-swatch-color',
     'rgb(102, 51, 153)',
   );
   await expect(page.locator('#swatch-css-override')).toHaveCSS(

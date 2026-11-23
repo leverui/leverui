@@ -1,23 +1,23 @@
 @layer leverui.recipes {
   .leverui-toast__root:not([data-unstyled]) {
     &:is([data-type='warning'], [data-type='success'], [data-type='error']) {
-      --leverui-toast-trigger-bg: color-mix(in srgb, white 10%, transparent);
-      --leverui-toast-border-color: color-mix(in srgb, white 40%, transparent);
+      --lui-toast-trigger-bg: color-mix(in srgb, white 10%, transparent);
+      --lui-toast-border-color: color-mix(in srgb, white 40%, transparent);
     }
 
     &[data-type='warning'] {
-      background: var(--leverui-colors-orange-solid);
-      color: var(--leverui-colors-orange-contrast);
+      background: var(--lui-colors-orange-solid);
+      color: var(--lui-colors-orange-contrast);
     }
 
     &[data-type='success'] {
-      background: var(--leverui-colors-green-solid);
-      color: var(--leverui-colors-green-contrast);
+      background: var(--lui-colors-green-solid);
+      color: var(--lui-colors-green-contrast);
     }
 
     &[data-type='error'] {
-      background: var(--leverui-colors-red-solid);
-      color: var(--leverui-colors-red-contrast);
+      background: var(--lui-colors-red-solid);
+      color: var(--lui-colors-red-contrast);
     }
   }
 }

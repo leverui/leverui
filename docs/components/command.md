@@ -175,7 +175,7 @@ Renders a `div`. Accepts `as` and `asChild`.
 
 ## Customize with CSS
 
-Set `--leverui-command-*` variables or style the `.leverui-command__*` part
+Set `--lui-command-*` variables or style the `.leverui-command__*` part
 classes. `Command.DialogContent` has the class
 `.leverui-command-dialog__content`. Its hidden title and description use
 `.leverui-command-dialog__accessible-label` and name the dialog, input, and

@@ -37,31 +37,31 @@ function ColorGridItem(props: { token: TokenDocEntry; variant: ColorVariant }): 
       <Center
         style={{
           'border-width': '1px',
-          'border-radius': 'var(--leverui-radii-lg)',
+          'border-radius': 'var(--lui-radii-lg)',
           width: '100%',
-          height: 'var(--leverui-sizes-20)',
+          height: 'var(--lui-sizes-20)',
           background:
-            background() === 'bg.inverted' ? 'var(--leverui-colors-bg-inverted)' : background(),
+            background() === 'bg.inverted' ? 'var(--lui-colors-bg-inverted)' : background(),
           color: props.variant === 'text' ? value() : undefined,
           'border-color': props.variant === 'border' ? value() : undefined,
         }}
       >
         {props.variant === 'text' && (
-          <Text style={{ 'font-size': 'var(--leverui-font-sizes-lg)' }}>Ag</Text>
+          <Text style={{ 'font-size': 'var(--lui-font-sizes-lg)' }}>Ag</Text>
         )}
       </Center>
       <Text textStyle="xs">{props.token.name.replace('colors.', '')}</Text>
       {conditions() ? (
-        <Stack style={{ 'margin-top': 'var(--leverui-spacing-1)' }}>
+        <Stack style={{ 'margin-top': 'var(--lui-spacing-1)' }}>
           <For each={Object.entries(conditions() ?? {})}>
             {
               /** Label one color alias's condition and referenced value. */
               ([name, token]) => (
                 <Text
                   style={{
-                    'font-size': 'var(--leverui-font-sizes-xs)',
-                    'margin-top': 'calc(-1 * var(--leverui-spacing-1))',
-                    color: 'var(--leverui-colors-fg-muted)',
+                    'font-size': 'var(--lui-font-sizes-xs)',
+                    'margin-top': 'calc(-1 * var(--lui-spacing-1))',
+                    color: 'var(--lui-colors-fg-muted)',
                   }}
                 >
                   {name.replace('_', '')}: {String(token).replace('colors.', '')}
@@ -73,9 +73,9 @@ function ColorGridItem(props: { token: TokenDocEntry; variant: ColorVariant }): 
       ) : (
         <Text
           style={{
-            'font-size': 'var(--leverui-font-sizes-xs)',
-            'margin-top': 'calc(-1 * var(--leverui-spacing-1))',
-            color: 'var(--leverui-colors-fg-muted)',
+            'font-size': 'var(--lui-font-sizes-xs)',
+            'margin-top': 'calc(-1 * var(--lui-spacing-1))',
+            color: 'var(--lui-colors-fg-muted)',
           }}
         >
           {props.token.originalValue}
@@ -88,7 +88,7 @@ function ColorGridItem(props: { token: TokenDocEntry; variant: ColorVariant }): 
 /** Lay out a color family as default-sized swatch cards. */
 function ColorGrid(props: { tokens: TokenDocEntry[]; variant?: ColorVariant }): JSX.Element {
   return (
-    <SimpleGrid minChildWidth="120px" style={{ gap: 'var(--leverui-spacing-4)' }}>
+    <SimpleGrid minChildWidth="120px" style={{ gap: 'var(--lui-spacing-4)' }}>
       <For each={props.tokens}>
         {
           /** Render one swatch from the selected color family. */
@@ -102,7 +102,7 @@ function ColorGrid(props: { tokens: TokenDocEntry[]; variant?: ColorVariant }): 
 /** Display the ten raw color palettes without semantic aliases. */
 export function TokensColors(): JSX.Element {
   return (
-    <Stack gap="8" style={{ 'margin-block': 'var(--leverui-spacing-8)' }}>
+    <Stack gap="8" style={{ 'margin-block': 'var(--lui-spacing-8)' }}>
       <For each={palettes}>
         {
           /** Place a raw palette in its own framed section. */
@@ -126,7 +126,7 @@ export function TokensColors(): JSX.Element {
 /** Display background, border, text, and palette semantic colors. */
 export function TokensSemanticColors(): JSX.Element {
   return (
-    <Stack gap="8" style={{ 'margin-block': 'var(--leverui-spacing-8)' }}>
+    <Stack gap="8" style={{ 'margin-block': 'var(--lui-spacing-8)' }}>
       <TokenDoc title="background">
         <ColorGrid
           tokens={colors.filter(

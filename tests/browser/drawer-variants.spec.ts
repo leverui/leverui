@@ -12,7 +12,7 @@ async function verifiesDrawerVariants({ page }: { page: Page }): Promise<void> {
   await expect(content).toHaveAttribute('data-size', 'xs');
   await expect(positioner).toHaveAttribute('data-placement', 'end');
   await page.addStyleTag({
-    content: '.leverui-drawer__content { --leverui-drawer-background: rgb(240, 248, 255); }',
+    content: '.leverui-drawer__content { --lui-drawer-background: rgb(240, 248, 255); }',
   });
   await expect(content).toHaveCSS('background-color', 'rgb(240, 248, 255)');
   const id = await content.getAttribute('id');

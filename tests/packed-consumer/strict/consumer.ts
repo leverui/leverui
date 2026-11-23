@@ -2,7 +2,7 @@ import type { BoxProps, ButtonProps } from '@leverui/components';
 
 export const box: BoxProps = {
   class: 'consumer-brand-space',
-  style: { padding: '37px', 'border-color': 'var(--leverui-colors-blue-500)' },
+  style: { padding: '37px', 'border-color': 'var(--lui-colors-blue-500)' },
   children: 'Strict',
 };
 

@@ -45,6 +45,6 @@ mix grid.
 Attributes: `data-size`, `data-shape`, plus the usual attributes for each
 breakpoint.
 
-Variables: `--leverui-swatch-color`, `--leverui-swatch-size`,
-`--leverui-swatch-radius`. Checkerboard: `--leverui-swatch-checker-size`,
-`--leverui-swatch-checker-bg`, `--leverui-swatch-checker-fg`.
+Variables: `--lui-swatch-color`, `--lui-swatch-size`,
+`--lui-swatch-radius`. Checkerboard: `--lui-swatch-checker-size`,
+`--lui-swatch-checker-bg`, `--lui-swatch-checker-fg`.

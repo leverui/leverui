@@ -35,9 +35,9 @@ export function ComboboxWithCustomAnimation(): JSX.Element {
         <Combobox.Positioner>
           <Combobox.Content
             style={{
-              '--leverui-combobox-content-open-animation': 'scale-in, fade-in',
-              '--leverui-combobox-content-closed-animation': 'scale-out, fade-out',
-              '--leverui-combobox-content-closed-duration': 'var(--leverui-durations-fast)',
+              '--lui-combobox-content-open-animation': 'scale-in, fade-in',
+              '--lui-combobox-content-closed-animation': 'scale-out, fade-out',
+              '--lui-combobox-content-closed-duration': 'var(--lui-durations-fast)',
             }}
           >
             <Combobox.Empty>No items found</Combobox.Empty>

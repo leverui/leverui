@@ -1,9 +1,9 @@
 @layer leverui.recipes {
   .leverui-theme {
-    color: var(--leverui-colors-fg);
+    color: var(--lui-colors-fg);
   }
 
   .leverui-theme:not([data-leverui-no-background]) {
-    background-color: var(--leverui-colors-bg);
+    background-color: var(--lui-colors-bg);
   }
 }

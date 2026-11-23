@@ -146,7 +146,7 @@ async function verifiesFloat({ page }: { page: Page }): Promise<void> {
   });
   await expect(root).toHaveCSS('color', 'rgb(255, 0, 0)');
   await page.addStyleTag({
-    content: '.leverui-float[data-testid="float-default"] { --leverui-float-offset-x: 8px; }',
+    content: '.leverui-float[data-testid="float-default"] { --lui-float-offset-x: 8px; }',
   });
   expectNear((await placement(page, 'float-default-parent', 'float-default')).x, 182);
 }

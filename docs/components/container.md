@@ -28,8 +28,8 @@ export function ContainerUsage() {
 | `unstyled`      | `false` | Boolean               | Turn off the default layout styles.       |
 
 Change the width or side padding with `class` or `style`. Variables include
-`--leverui-container-max-width`, `--leverui-container-fluid-max-width`, and
-`--leverui-container-padding`.
+`--lui-container-max-width`, `--lui-container-fluid-max-width`, and
+`--lui-container-padding`.
 
 `ContainerPropsProvider` sets default props for the containers inside it. A
 prop on a `Container` wins.

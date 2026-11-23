@@ -14,10 +14,10 @@ public APIs. The full spellings below are the only product names to use.
 | Repository and asset paths                                | `leverui`  |
 | CSS variables, classes, and data attributes               | `leverui`  |
 
-Use `leverui` for every CSS hook. Public variables use the `--leverui-*`
+Use `leverui` for every CSS hook. Public variables use the `--lui-*`
 prefix.
 
-For example, use `--leverui-colors-bg`, `.leverui-button`,
+For example, use `--lui-colors-bg`, `.leverui-button`,
 `data-leverui-color-mode`, and `@leverui/components`. Do not shorten any of these
 to the standalone word. This rule applies to private implementation details
 as well as exported names and text emitted by code. Prose may use `Lever UI`

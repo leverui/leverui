@@ -1,5 +1,5 @@
 .consumer-shape-token {
-  background: var(--leverui-colors-blue-700);
+  background: var(--lui-colors-blue-700);
   color: white;
 }
 
@@ -15,5 +15,5 @@
 }
 
 .consumer-circle-radius {
-  --leverui-circle-radius: 8px;
+  --lui-circle-radius: 8px;
 }

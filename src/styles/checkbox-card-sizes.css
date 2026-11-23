@@ -1,28 +1,28 @@
 @layer leverui.recipes {
   .leverui-checkbox-card:not([data-unstyled]) {
     &[data-size='sm'] {
-      --leverui-private-checkbox-card-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-checkbox-card-line-height: 1.25rem;
-      --leverui-private-checkbox-card-control-padding: var(--leverui-spacing-3);
-      --leverui-private-checkbox-card-control-gap: var(--leverui-spacing-1\.5);
-      --leverui-private-checkbox-card-addon-padding-x: var(--leverui-spacing-3);
-      --leverui-private-checkbox-card-addon-padding-y: var(--leverui-spacing-1\.5);
+      --lui-private-checkbox-card-font-size: var(--lui-font-sizes-sm);
+      --lui-private-checkbox-card-line-height: 1.25rem;
+      --lui-private-checkbox-card-control-padding: var(--lui-spacing-3);
+      --lui-private-checkbox-card-control-gap: var(--lui-spacing-1\.5);
+      --lui-private-checkbox-card-addon-padding-x: var(--lui-spacing-3);
+      --lui-private-checkbox-card-addon-padding-y: var(--lui-spacing-1\.5);
     }
     &[data-size='md'] {
-      --leverui-private-checkbox-card-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-checkbox-card-line-height: 1.25rem;
-      --leverui-private-checkbox-card-control-padding: var(--leverui-spacing-4);
-      --leverui-private-checkbox-card-control-gap: var(--leverui-spacing-2\.5);
-      --leverui-private-checkbox-card-addon-padding-x: var(--leverui-spacing-4);
-      --leverui-private-checkbox-card-addon-padding-y: var(--leverui-spacing-2);
+      --lui-private-checkbox-card-font-size: var(--lui-font-sizes-sm);
+      --lui-private-checkbox-card-line-height: 1.25rem;
+      --lui-private-checkbox-card-control-padding: var(--lui-spacing-4);
+      --lui-private-checkbox-card-control-gap: var(--lui-spacing-2\.5);
+      --lui-private-checkbox-card-addon-padding-x: var(--lui-spacing-4);
+      --lui-private-checkbox-card-addon-padding-y: var(--lui-spacing-2);
     }
     &[data-size='lg'] {
-      --leverui-private-checkbox-card-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-checkbox-card-line-height: 1.5rem;
-      --leverui-private-checkbox-card-control-padding: var(--leverui-spacing-4);
-      --leverui-private-checkbox-card-control-gap: var(--leverui-spacing-3\.5);
-      --leverui-private-checkbox-card-addon-padding-x: var(--leverui-spacing-4);
-      --leverui-private-checkbox-card-addon-padding-y: var(--leverui-spacing-2);
+      --lui-private-checkbox-card-font-size: var(--lui-font-sizes-md);
+      --lui-private-checkbox-card-line-height: 1.5rem;
+      --lui-private-checkbox-card-control-padding: var(--lui-spacing-4);
+      --lui-private-checkbox-card-control-gap: var(--lui-spacing-3\.5);
+      --lui-private-checkbox-card-addon-padding-x: var(--lui-spacing-4);
+      --lui-private-checkbox-card-addon-padding-y: var(--lui-spacing-2);
     }
   }
 }

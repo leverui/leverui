@@ -23,7 +23,7 @@ export function BarLegend(props: {
             <span
               class="leverui-bar-chart__legend-swatch"
               style={{
-                '--leverui-private-bar-chart-swatch': chartColor(series.color, series.color),
+                '--lui-private-bar-chart-swatch': chartColor(series.color, series.color),
               }}
             />
             {series.name}

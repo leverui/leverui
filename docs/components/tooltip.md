@@ -76,8 +76,8 @@ CSS variables.
 
 ```css
 .account-tooltip {
-  --leverui-tooltip-background: #20304a;
-  --leverui-tooltip-foreground: white;
+  --lui-tooltip-background: #20304a;
+  --lui-tooltip-foreground: white;
 }
 ```
 

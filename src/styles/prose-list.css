@@ -16,7 +16,7 @@
       list-style-type: disc;
     }
     & :where(ol > li, ul > li):not(.not-prose, .not-prose *)::marker {
-      color: var(--leverui-colors-fg-muted);
+      color: var(--lui-colors-fg-muted);
     }
     & > :where(ul, ol) > li p:not(.not-prose, .not-prose *) {
       margin-block: 0.5em;

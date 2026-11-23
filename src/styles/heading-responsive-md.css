@@ -2,50 +2,50 @@
   @media (min-width: 768px) {
     .leverui-heading:not([data-unstyled]) {
       &[data-size-md='xs'] {
-        font-size: var(--leverui-font-sizes-xs);
+        font-size: var(--lui-font-sizes-xs);
         line-height: 1rem;
       }
       &[data-size-md='sm'] {
-        font-size: var(--leverui-font-sizes-sm);
+        font-size: var(--lui-font-sizes-sm);
         line-height: 1.25rem;
       }
       &[data-size-md='md'] {
-        font-size: var(--leverui-font-sizes-md);
+        font-size: var(--lui-font-sizes-md);
         line-height: 1.5rem;
       }
       &[data-size-md='lg'] {
-        font-size: var(--leverui-font-sizes-lg);
+        font-size: var(--lui-font-sizes-lg);
         line-height: 1.75rem;
       }
       &[data-size-md='xl'] {
-        font-size: var(--leverui-font-sizes-xl);
+        font-size: var(--lui-font-sizes-xl);
         line-height: 1.875rem;
       }
       &[data-size-md='2xl'] {
-        font-size: var(--leverui-font-sizes-2xl);
+        font-size: var(--lui-font-sizes-2xl);
         line-height: 2rem;
       }
       &[data-size-md='3xl'] {
-        font-size: var(--leverui-font-sizes-3xl);
+        font-size: var(--lui-font-sizes-3xl);
         line-height: 2.375rem;
       }
       &[data-size-md='4xl'] {
-        font-size: var(--leverui-font-sizes-4xl);
+        font-size: var(--lui-font-sizes-4xl);
         line-height: 2.75rem;
         letter-spacing: -0.025em;
       }
       &[data-size-md='5xl'] {
-        font-size: var(--leverui-font-sizes-5xl);
+        font-size: var(--lui-font-sizes-5xl);
         line-height: 3.75rem;
         letter-spacing: -0.025em;
       }
       &[data-size-md='6xl'] {
-        font-size: var(--leverui-font-sizes-6xl);
+        font-size: var(--lui-font-sizes-6xl);
         line-height: 4.5rem;
         letter-spacing: -0.025em;
       }
       &[data-size-md='7xl'] {
-        font-size: var(--leverui-font-sizes-7xl);
+        font-size: var(--lui-font-sizes-7xl);
         line-height: 5.75rem;
         letter-spacing: -0.025em;
       }

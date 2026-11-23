@@ -165,8 +165,8 @@ function SliderGuideExample(): JSX.Element {
                     <Slider.MarkerIndicator />
                     <Slider.MarkerLabel
                       style={{
-                        color: `var(--leverui-colors-${mark.color.replace('.', '-')})`,
-                        'font-weight': 'var(--leverui-font-weights-medium)',
+                        color: `var(--lui-colors-${mark.color.replace('.', '-')})`,
+                        'font-weight': 'var(--lui-font-weights-medium)',
                       }}
                     >
                       {mark.label}

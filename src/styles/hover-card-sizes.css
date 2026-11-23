@@ -1,96 +1,96 @@
 @layer leverui.recipes {
   .leverui-hoverCard__content:not([data-unstyled]) {
     &[data-size='xs'] {
-      --leverui-hover-card-padding: var(--leverui-spacing-3);
+      --lui-hover-card-padding: var(--lui-spacing-3);
     }
     &[data-size='sm'] {
-      --leverui-hover-card-padding: var(--leverui-spacing-4);
+      --lui-hover-card-padding: var(--lui-spacing-4);
     }
     &[data-size='md'] {
-      --leverui-hover-card-padding: var(--leverui-spacing-5);
+      --lui-hover-card-padding: var(--lui-spacing-5);
     }
     &[data-size='lg'] {
-      --leverui-hover-card-padding: var(--leverui-spacing-6);
+      --lui-hover-card-padding: var(--lui-spacing-6);
     }
   }
 
   @media (min-width: 480px) {
     .leverui-hoverCard__content:not([data-unstyled]) {
       &[data-size-sm='xs'] {
-        --leverui-hover-card-padding: var(--leverui-spacing-3);
+        --lui-hover-card-padding: var(--lui-spacing-3);
       }
       &[data-size-sm='sm'] {
-        --leverui-hover-card-padding: var(--leverui-spacing-4);
+        --lui-hover-card-padding: var(--lui-spacing-4);
       }
       &[data-size-sm='md'] {
-        --leverui-hover-card-padding: var(--leverui-spacing-5);
+        --lui-hover-card-padding: var(--lui-spacing-5);
       }
       &[data-size-sm='lg'] {
-        --leverui-hover-card-padding: var(--leverui-spacing-6);
+        --lui-hover-card-padding: var(--lui-spacing-6);
       }
     }
   }
   @media (min-width: 768px) {
     .leverui-hoverCard__content:not([data-unstyled]) {
       &[data-size-md='xs'] {
-        --leverui-hover-card-padding: var(--leverui-spacing-3);
+        --lui-hover-card-padding: var(--lui-spacing-3);
       }
       &[data-size-md='sm'] {
-        --leverui-hover-card-padding: var(--leverui-spacing-4);
+        --lui-hover-card-padding: var(--lui-spacing-4);
       }
       &[data-size-md='md'] {
-        --leverui-hover-card-padding: var(--leverui-spacing-5);
+        --lui-hover-card-padding: var(--lui-spacing-5);
       }
       &[data-size-md='lg'] {
-        --leverui-hover-card-padding: var(--leverui-spacing-6);
+        --lui-hover-card-padding: var(--lui-spacing-6);
       }
     }
   }
   @media (min-width: 1024px) {
     .leverui-hoverCard__content:not([data-unstyled]) {
       &[data-size-lg='xs'] {
-        --leverui-hover-card-padding: var(--leverui-spacing-3);
+        --lui-hover-card-padding: var(--lui-spacing-3);
       }
       &[data-size-lg='sm'] {
-        --leverui-hover-card-padding: var(--leverui-spacing-4);
+        --lui-hover-card-padding: var(--lui-spacing-4);
       }
       &[data-size-lg='md'] {
-        --leverui-hover-card-padding: var(--leverui-spacing-5);
+        --lui-hover-card-padding: var(--lui-spacing-5);
       }
       &[data-size-lg='lg'] {
-        --leverui-hover-card-padding: var(--leverui-spacing-6);
+        --lui-hover-card-padding: var(--lui-spacing-6);
       }
     }
   }
   @media (min-width: 1280px) {
     .leverui-hoverCard__content:not([data-unstyled]) {
       &[data-size-xl='xs'] {
-        --leverui-hover-card-padding: var(--leverui-spacing-3);
+        --lui-hover-card-padding: var(--lui-spacing-3);
       }
       &[data-size-xl='sm'] {
-        --leverui-hover-card-padding: var(--leverui-spacing-4);
+        --lui-hover-card-padding: var(--lui-spacing-4);
       }
       &[data-size-xl='md'] {
-        --leverui-hover-card-padding: var(--leverui-spacing-5);
+        --lui-hover-card-padding: var(--lui-spacing-5);
       }
       &[data-size-xl='lg'] {
-        --leverui-hover-card-padding: var(--leverui-spacing-6);
+        --lui-hover-card-padding: var(--lui-spacing-6);
       }
     }
   }
   @media (min-width: 1536px) {
     .leverui-hoverCard__content:not([data-unstyled]) {
       &[data-size-2xl='xs'] {
-        --leverui-hover-card-padding: var(--leverui-spacing-3);
+        --lui-hover-card-padding: var(--lui-spacing-3);
       }
       &[data-size-2xl='sm'] {
-        --leverui-hover-card-padding: var(--leverui-spacing-4);
+        --lui-hover-card-padding: var(--lui-spacing-4);
       }
       &[data-size-2xl='md'] {
-        --leverui-hover-card-padding: var(--leverui-spacing-5);
+        --lui-hover-card-padding: var(--lui-spacing-5);
       }
       &[data-size-2xl='lg'] {
-        --leverui-hover-card-padding: var(--leverui-spacing-6);
+        --lui-hover-card-padding: var(--lui-spacing-6);
       }
     }
   }

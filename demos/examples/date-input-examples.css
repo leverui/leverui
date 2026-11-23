@@ -1,14 +1,14 @@
 .example-date-input {
-  max-width: var(--leverui-sizes-sm);
+  max-width: var(--lui-sizes-sm);
 }
 
 .example-date-input-range-control {
-  gap: var(--leverui-spacing-4);
+  gap: var(--lui-spacing-4);
 }
 .example-date-input-range-icon {
-  color: var(--leverui-colors-fg-subtle);
-  font-size: var(--leverui-sizes-4);
+  color: var(--lui-colors-fg-subtle);
+  font-size: var(--lui-sizes-4);
 }
 .example-date-input-clear-control {
-  gap: var(--leverui-spacing-2);
+  gap: var(--lui-spacing-2);
 }

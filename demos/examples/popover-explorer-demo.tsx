@@ -22,7 +22,7 @@ export function PopoverExplorerDemo(): JSX.Element {
           <Popover.Content>
             <Popover.Arrow />
             <Popover.Header>
-              <Popover.Title style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>
+              <Popover.Title style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>
                 Lanternwright Notes
               </Popover.Title>
               <Popover.Description>
@@ -31,7 +31,7 @@ export function PopoverExplorerDemo(): JSX.Element {
               </Popover.Description>
             </Popover.Header>
             <Popover.Body>
-              <Text style={{ 'margin-bottom': 'var(--leverui-spacing-3)' }}>
+              <Text style={{ 'margin-bottom': 'var(--lui-spacing-3)' }}>
                 Enter your favorite character below:
               </Text>
               <Input placeholder="Your favorite character" size="sm" />
@@ -40,7 +40,7 @@ export function PopoverExplorerDemo(): JSX.Element {
               <Flex
                 style={{
                   width: '100%',
-                  gap: 'var(--leverui-spacing-2)',
+                  gap: 'var(--lui-spacing-2)',
                   'justify-content': 'flex-end',
                 }}
               >

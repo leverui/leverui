@@ -118,7 +118,7 @@ Classes: `.leverui-breadcrumb__root`, `__list`, `__item`, `__link`,
 
 ```css
 .site-trail .leverui-breadcrumb__link {
-  color: var(--leverui-colors-blue-fg);
+  color: var(--lui-colors-blue-fg);
 }
 ```
 

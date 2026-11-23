@@ -150,12 +150,12 @@ Each part has a fixed class, such as `.leverui-tree-view__item` or
 
 ```css
 .project-tree {
-  --leverui-tree-indent-size: 1.5rem;
-  --leverui-tree-indentation: 2rem;
-  --leverui-tree-icon-size: 1rem;
-  --leverui-tree-padding-inline: 0.75rem;
-  --leverui-tree-padding-block: 0.4rem;
-  --leverui-tree-item-gap: 0.5rem;
+  --lui-tree-indent-size: 1.5rem;
+  --lui-tree-indentation: 2rem;
+  --lui-tree-icon-size: 1rem;
+  --lui-tree-padding-inline: 0.75rem;
+  --lui-tree-padding-block: 0.4rem;
+  --lui-tree-item-gap: 0.5rem;
 }
 
 .project-tree .leverui-tree-view__item[data-selected] {

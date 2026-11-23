@@ -24,7 +24,7 @@ CSS variables for common ratios: `square`, `landscape`, `portrait`, `wide`,
 
 ```css
 .square-preview {
-  aspect-ratio: var(--leverui-aspect-ratios-square);
+  aspect-ratio: var(--lui-aspect-ratios-square);
 }
 ```
 

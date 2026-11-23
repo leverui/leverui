@@ -5,11 +5,11 @@
   }
 
   .leverui-color-picker__content[data-leverui-color-picker-css][data-state='open'] {
-    animation-duration: var(--leverui-durations-fast);
+    animation-duration: var(--lui-durations-fast);
   }
 
   .leverui-color-picker__content[data-leverui-color-picker-css][data-state='closed'] {
-    animation-duration: var(--leverui-durations-faster);
+    animation-duration: var(--lui-durations-faster);
   }
 
   .leverui-color-picker__content[data-leverui-color-picker-css][data-state='open'][data-placement^='top'] {
@@ -50,12 +50,12 @@
   }
 
   .leverui-color-picker__channelSliderThumb[data-leverui-color-picker-css]:focus-visible {
-    outline: 2px solid var(--leverui-colors-color-palette-focus-ring);
+    outline: 2px solid var(--lui-colors-color-palette-focus-ring);
     outline-offset: 1px;
   }
 
   .leverui-color-picker__formatSelect[data-leverui-color-picker-css]:focus-visible {
-    outline: 1px solid var(--leverui-colors-color-palette-focus-ring);
+    outline: 1px solid var(--lui-colors-color-palette-focus-ring);
     outline-offset: -1px;
   }
 

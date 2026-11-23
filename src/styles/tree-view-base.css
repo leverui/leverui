@@ -1,36 +1,36 @@
 @layer leverui.recipes {
   .leverui-tree-view__root:not([data-unstyled]) {
-    --leverui-private-tree-default-indent-size: var(--leverui-spacing-4);
-    --leverui-private-tree-default-icon-size: var(--leverui-spacing-4);
-    --leverui-private-tree-default-padding-inline: var(--leverui-spacing-3);
-    --leverui-private-tree-default-padding-block: calc(var(--leverui-spacing-1) * 1.5);
-    --leverui-private-tree-default-font-size: var(--leverui-font-sizes-sm);
-    --leverui-private-tree-default-line-height: 1.25rem;
-    --leverui-private-tree-indentation: calc(
-      var(--leverui-tree-indent-size, var(--leverui-private-tree-default-indent-size)) +
-        var(--leverui-tree-icon-size, var(--leverui-private-tree-default-icon-size)) * 0.5
+    --lui-private-tree-default-indent-size: var(--lui-spacing-4);
+    --lui-private-tree-default-icon-size: var(--lui-spacing-4);
+    --lui-private-tree-default-padding-inline: var(--lui-spacing-3);
+    --lui-private-tree-default-padding-block: calc(var(--lui-spacing-1) * 1.5);
+    --lui-private-tree-default-font-size: var(--lui-font-sizes-sm);
+    --lui-private-tree-default-line-height: 1.25rem;
+    --lui-private-tree-indentation: calc(
+      var(--lui-tree-indent-size, var(--lui-private-tree-default-indent-size)) +
+        var(--lui-tree-icon-size, var(--lui-private-tree-default-icon-size)) * 0.5
     );
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: var(--leverui-spacing-2);
+    gap: var(--lui-spacing-2);
   }
 
   .leverui-tree-view__root:not([data-unstyled]) .leverui-tree-view__tree:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
-    font-size: var(--leverui-tree-font-size, var(--leverui-private-tree-default-font-size));
-    line-height: var(--leverui-tree-line-height, var(--leverui-private-tree-default-line-height));
+    font-size: var(--lui-tree-font-size, var(--lui-private-tree-default-font-size));
+    line-height: var(--lui-tree-line-height, var(--lui-private-tree-default-line-height));
   }
 
   .leverui-tree-view__root:not([data-unstyled]) .leverui-tree-view__tree:not([data-unstyled]) svg {
-    width: var(--leverui-tree-icon-size, var(--leverui-private-tree-default-icon-size));
-    height: var(--leverui-tree-icon-size, var(--leverui-private-tree-default-icon-size));
+    width: var(--lui-tree-icon-size, var(--lui-private-tree-default-icon-size));
+    height: var(--lui-tree-icon-size, var(--lui-private-tree-default-icon-size));
   }
 
   .leverui-tree-view__root:not([data-unstyled]) .leverui-tree-view__label:not([data-unstyled]) {
-    font-weight: var(--leverui-font-weights-medium);
-    font-size: var(--leverui-font-sizes-sm);
+    font-weight: var(--lui-font-weights-medium);
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
   }
 
@@ -41,26 +41,26 @@
 
   .leverui-tree-view__root:not([data-unstyled])
     .leverui-tree-view__branchIndentGuide:not([data-unstyled]) {
-    --leverui-private-tree-depth: calc(var(--depth) - 1);
-    --leverui-private-tree-offset: calc(
-      var(--leverui-tree-padding-inline, var(--leverui-private-tree-default-padding-inline)) +
-        var(--leverui-tree-indentation, var(--leverui-private-tree-indentation)) *
-        var(--leverui-private-tree-depth)
+    --lui-private-tree-depth: calc(var(--depth) - 1);
+    --lui-private-tree-offset: calc(
+      var(--lui-tree-padding-inline, var(--lui-private-tree-default-padding-inline)) +
+        var(--lui-tree-indentation, var(--lui-private-tree-indentation)) *
+        var(--lui-private-tree-depth)
     );
     position: absolute;
     inset-inline-start: calc(
-      var(--leverui-private-tree-offset) +
-        var(--leverui-tree-icon-size, var(--leverui-private-tree-default-icon-size)) * 0.5
+      var(--lui-private-tree-offset) +
+        var(--lui-tree-icon-size, var(--lui-private-tree-default-icon-size)) * 0.5
     );
     z-index: 1;
     width: 1px;
     height: 100%;
-    background: var(--leverui-colors-border);
+    background: var(--lui-colors-border);
   }
 
   .leverui-tree-view__root:not([data-unstyled])
     .leverui-tree-view__branchIndicator:not([data-unstyled]) {
-    color: var(--leverui-colors-fg-muted);
+    color: var(--lui-colors-fg-muted);
     transform-origin: center;
     transition: transform 200ms ease;
 

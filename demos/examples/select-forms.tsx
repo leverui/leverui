@@ -23,7 +23,7 @@ export function SelectNativeForm(): JSX.Element {
 
   return (
     <form onSubmit={submit}>
-      <Stack gap="4" align="flex-start" style={{ 'max-width': 'var(--leverui-sizes-sm)' }}>
+      <Stack gap="4" align="flex-start" style={{ 'max-width': 'var(--lui-sizes-sm)' }}>
         <Select.Root collection={departments} size="sm" name="department">
           <Select.HiddenSelect />
           <Select.Label>Select department</Select.Label>

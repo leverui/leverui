@@ -78,14 +78,14 @@ export function ListboxExplorerDemo(): JSX.Element {
                               style={{
                                 display: 'flex',
                                 'align-items': 'center',
-                                gap: 'var(--leverui-spacing-3)',
+                                gap: 'var(--lui-spacing-3)',
                                 flex: '1',
                               }}
                             >
                               <Show when={item.icon}>
                                 <Box
                                   style={{
-                                    color: 'var(--leverui-colors-fg-muted)',
+                                    color: 'var(--lui-colors-fg-muted)',
                                     'flex-shrink': '0',
                                   }}
                                 >

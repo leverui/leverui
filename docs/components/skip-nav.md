@@ -44,7 +44,7 @@ router handles the hash link and the browser does not move focus.
 ## Customize with CSS
 
 `.leverui-skip-nav` styles the link and `.leverui-skip-nav-content` its target.
-`--leverui-colors-bg-panel` sets the background of the focused link. `unstyled`
+`--lui-colors-bg-panel` sets the background of the focused link. `unstyled`
 on the link turns off its default styles.
 
 For one-off changes, use `class` or `style`. Neither part supports object CSS,

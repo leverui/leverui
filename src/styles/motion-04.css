@@ -1,10 +1,10 @@
 @layer leverui.base {
   @-webkit-keyframes slide-from-bottom {
     0% {
-      -webkit-translate: 0 var(--leverui-private-slide-from-bottom-distance, 0.5rem);
-      -moz-translate: 0 var(--leverui-private-slide-from-bottom-distance, 0.5rem);
-      -ms-translate: 0 var(--leverui-private-slide-from-bottom-distance, 0.5rem);
-      translate: 0 var(--leverui-private-slide-from-bottom-distance, 0.5rem);
+      -webkit-translate: 0 var(--lui-private-slide-from-bottom-distance, 0.5rem);
+      -moz-translate: 0 var(--lui-private-slide-from-bottom-distance, 0.5rem);
+      -ms-translate: 0 var(--lui-private-slide-from-bottom-distance, 0.5rem);
+      translate: 0 var(--lui-private-slide-from-bottom-distance, 0.5rem);
     }
     to {
       -webkit-translate: 0;
@@ -15,10 +15,10 @@
   }
   @keyframes slide-from-bottom {
     0% {
-      -webkit-translate: 0 var(--leverui-private-slide-from-bottom-distance, 0.5rem);
-      -moz-translate: 0 var(--leverui-private-slide-from-bottom-distance, 0.5rem);
-      -ms-translate: 0 var(--leverui-private-slide-from-bottom-distance, 0.5rem);
-      translate: 0 var(--leverui-private-slide-from-bottom-distance, 0.5rem);
+      -webkit-translate: 0 var(--lui-private-slide-from-bottom-distance, 0.5rem);
+      -moz-translate: 0 var(--lui-private-slide-from-bottom-distance, 0.5rem);
+      -ms-translate: 0 var(--lui-private-slide-from-bottom-distance, 0.5rem);
+      translate: 0 var(--lui-private-slide-from-bottom-distance, 0.5rem);
     }
     to {
       -webkit-translate: 0;
@@ -29,10 +29,10 @@
   }
   @-webkit-keyframes slide-from-left {
     0% {
-      -webkit-translate: calc(var(--leverui-private-slide-from-left-distance, 0.5rem) * -1) 0;
-      -moz-translate: calc(var(--leverui-private-slide-from-left-distance, 0.5rem) * -1) 0;
-      -ms-translate: calc(var(--leverui-private-slide-from-left-distance, 0.5rem) * -1) 0;
-      translate: calc(var(--leverui-private-slide-from-left-distance, 0.5rem) * -1) 0;
+      -webkit-translate: calc(var(--lui-private-slide-from-left-distance, 0.5rem) * -1) 0;
+      -moz-translate: calc(var(--lui-private-slide-from-left-distance, 0.5rem) * -1) 0;
+      -ms-translate: calc(var(--lui-private-slide-from-left-distance, 0.5rem) * -1) 0;
+      translate: calc(var(--lui-private-slide-from-left-distance, 0.5rem) * -1) 0;
     }
     to {
       -webkit-translate: 0;
@@ -43,10 +43,10 @@
   }
   @keyframes slide-from-left {
     0% {
-      -webkit-translate: calc(var(--leverui-private-slide-from-left-distance, 0.5rem) * -1) 0;
-      -moz-translate: calc(var(--leverui-private-slide-from-left-distance, 0.5rem) * -1) 0;
-      -ms-translate: calc(var(--leverui-private-slide-from-left-distance, 0.5rem) * -1) 0;
-      translate: calc(var(--leverui-private-slide-from-left-distance, 0.5rem) * -1) 0;
+      -webkit-translate: calc(var(--lui-private-slide-from-left-distance, 0.5rem) * -1) 0;
+      -moz-translate: calc(var(--lui-private-slide-from-left-distance, 0.5rem) * -1) 0;
+      -ms-translate: calc(var(--lui-private-slide-from-left-distance, 0.5rem) * -1) 0;
+      translate: calc(var(--lui-private-slide-from-left-distance, 0.5rem) * -1) 0;
     }
     to {
       -webkit-translate: 0;
@@ -57,10 +57,10 @@
   }
   @-webkit-keyframes slide-from-right {
     0% {
-      -webkit-translate: var(--leverui-private-slide-from-right-distance, 0.5rem) 0;
-      -moz-translate: var(--leverui-private-slide-from-right-distance, 0.5rem) 0;
-      -ms-translate: var(--leverui-private-slide-from-right-distance, 0.5rem) 0;
-      translate: var(--leverui-private-slide-from-right-distance, 0.5rem) 0;
+      -webkit-translate: var(--lui-private-slide-from-right-distance, 0.5rem) 0;
+      -moz-translate: var(--lui-private-slide-from-right-distance, 0.5rem) 0;
+      -ms-translate: var(--lui-private-slide-from-right-distance, 0.5rem) 0;
+      translate: var(--lui-private-slide-from-right-distance, 0.5rem) 0;
     }
     to {
       -webkit-translate: 0;
@@ -71,10 +71,10 @@
   }
   @keyframes slide-from-right {
     0% {
-      -webkit-translate: var(--leverui-private-slide-from-right-distance, 0.5rem) 0;
-      -moz-translate: var(--leverui-private-slide-from-right-distance, 0.5rem) 0;
-      -ms-translate: var(--leverui-private-slide-from-right-distance, 0.5rem) 0;
-      translate: var(--leverui-private-slide-from-right-distance, 0.5rem) 0;
+      -webkit-translate: var(--lui-private-slide-from-right-distance, 0.5rem) 0;
+      -moz-translate: var(--lui-private-slide-from-right-distance, 0.5rem) 0;
+      -ms-translate: var(--lui-private-slide-from-right-distance, 0.5rem) 0;
+      translate: var(--lui-private-slide-from-right-distance, 0.5rem) 0;
     }
     to {
       -webkit-translate: 0;
@@ -91,10 +91,10 @@
       translate: 0;
     }
     to {
-      -webkit-translate: 0 calc(var(--leverui-private-slide-to-top-distance, 0.5rem) * -1);
-      -moz-translate: 0 calc(var(--leverui-private-slide-to-top-distance, 0.5rem) * -1);
-      -ms-translate: 0 calc(var(--leverui-private-slide-to-top-distance, 0.5rem) * -1);
-      translate: 0 calc(var(--leverui-private-slide-to-top-distance, 0.5rem) * -1);
+      -webkit-translate: 0 calc(var(--lui-private-slide-to-top-distance, 0.5rem) * -1);
+      -moz-translate: 0 calc(var(--lui-private-slide-to-top-distance, 0.5rem) * -1);
+      -ms-translate: 0 calc(var(--lui-private-slide-to-top-distance, 0.5rem) * -1);
+      translate: 0 calc(var(--lui-private-slide-to-top-distance, 0.5rem) * -1);
     }
   }
   @keyframes slide-to-top {
@@ -105,10 +105,10 @@
       translate: 0;
     }
     to {
-      -webkit-translate: 0 calc(var(--leverui-private-slide-to-top-distance, 0.5rem) * -1);
-      -moz-translate: 0 calc(var(--leverui-private-slide-to-top-distance, 0.5rem) * -1);
-      -ms-translate: 0 calc(var(--leverui-private-slide-to-top-distance, 0.5rem) * -1);
-      translate: 0 calc(var(--leverui-private-slide-to-top-distance, 0.5rem) * -1);
+      -webkit-translate: 0 calc(var(--lui-private-slide-to-top-distance, 0.5rem) * -1);
+      -moz-translate: 0 calc(var(--lui-private-slide-to-top-distance, 0.5rem) * -1);
+      -ms-translate: 0 calc(var(--lui-private-slide-to-top-distance, 0.5rem) * -1);
+      translate: 0 calc(var(--lui-private-slide-to-top-distance, 0.5rem) * -1);
     }
   }
   @-webkit-keyframes slide-to-bottom {
@@ -119,10 +119,10 @@
       translate: 0;
     }
     to {
-      -webkit-translate: 0 var(--leverui-private-slide-to-bottom-distance, 0.5rem);
-      -moz-translate: 0 var(--leverui-private-slide-to-bottom-distance, 0.5rem);
-      -ms-translate: 0 var(--leverui-private-slide-to-bottom-distance, 0.5rem);
-      translate: 0 var(--leverui-private-slide-to-bottom-distance, 0.5rem);
+      -webkit-translate: 0 var(--lui-private-slide-to-bottom-distance, 0.5rem);
+      -moz-translate: 0 var(--lui-private-slide-to-bottom-distance, 0.5rem);
+      -ms-translate: 0 var(--lui-private-slide-to-bottom-distance, 0.5rem);
+      translate: 0 var(--lui-private-slide-to-bottom-distance, 0.5rem);
     }
   }
 }

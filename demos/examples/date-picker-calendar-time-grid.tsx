@@ -48,7 +48,7 @@ export function DatePickerCalendarTimeGrid(): JSX.Element {
       direction={{ base: 'column', md: 'row' }}
       style={{
         'border-width': '1px',
-        'border-radius': 'var(--leverui-radii-xl)',
+        'border-radius': 'var(--lui-radii-xl)',
         overflow: 'hidden',
         width: 'fit-content',
       }}
@@ -57,14 +57,14 @@ export function DatePickerCalendarTimeGrid(): JSX.Element {
         <Stack
           gap="0"
           style={{
-            'padding-inline': 'var(--leverui-spacing-5)',
-            'padding-block': 'var(--leverui-spacing-5)',
+            'padding-inline': 'var(--lui-spacing-5)',
+            'padding-block': 'var(--lui-spacing-5)',
           }}
         >
           <Text
             textStyle="lg"
             style={{
-              'font-weight': 'var(--leverui-font-weights-semibold)',
+              'font-weight': 'var(--lui-font-weights-semibold)',
             }}
           >
             Select a date
@@ -72,7 +72,7 @@ export function DatePickerCalendarTimeGrid(): JSX.Element {
           <Text
             textStyle="sm"
             style={{
-              color: 'var(--leverui-colors-fg-muted)',
+              color: 'var(--lui-colors-fg-muted)',
             }}
           >
             Pick a day for your meeting
@@ -91,8 +91,8 @@ export function DatePickerCalendarTimeGrid(): JSX.Element {
           <DatePicker.Content
             unstyled
             style={{
-              'padding-inline': 'var(--leverui-spacing-3)',
-              'padding-bottom': 'var(--leverui-spacing-4)',
+              'padding-inline': 'var(--lui-spacing-3)',
+              'padding-bottom': 'var(--lui-spacing-4)',
             }}
           >
             <DatePicker.View view="day">
@@ -100,8 +100,8 @@ export function DatePickerCalendarTimeGrid(): JSX.Element {
                 <DatePicker.PrevTrigger />
                 <DatePicker.RangeText
                   style={{
-                    'font-weight': 'var(--leverui-font-weights-medium)',
-                    'font-size': 'var(--leverui-font-sizes-sm)',
+                    'font-weight': 'var(--lui-font-weights-medium)',
+                    'font-size': 'var(--lui-font-sizes-sm)',
                   }}
                 />
                 <DatePicker.NextTrigger />
@@ -113,9 +113,9 @@ export function DatePickerCalendarTimeGrid(): JSX.Element {
         <HStack
           textStyle="xs"
           style={{
-            'padding-inline': 'var(--leverui-spacing-5)',
-            'padding-bottom': 'var(--leverui-spacing-4)',
-            color: 'var(--leverui-colors-fg-muted)',
+            'padding-inline': 'var(--lui-spacing-5)',
+            'padding-bottom': 'var(--lui-spacing-4)',
+            color: 'var(--lui-colors-fg-muted)',
           }}
         >
           <GlobeIcon />
@@ -129,15 +129,15 @@ export function DatePickerCalendarTimeGrid(): JSX.Element {
             <Center
               style={{
                 height: '100%',
-                padding: 'var(--leverui-spacing-10) var(--leverui-spacing-8)',
-                color: 'var(--leverui-colors-fg-muted)',
+                padding: 'var(--lui-spacing-10) var(--lui-spacing-8)',
+                color: 'var(--lui-colors-fg-muted)',
               }}
             >
               <Stack align="center" gap="1" style={{ 'text-align': 'center' }}>
                 <Text
                   textStyle="sm"
                   style={{
-                    'font-weight': 'var(--leverui-font-weights-medium)',
+                    'font-weight': 'var(--lui-font-weights-medium)',
                   }}
                 >
                   Select a date
@@ -154,12 +154,12 @@ export function DatePickerCalendarTimeGrid(): JSX.Element {
                 <Stack
                   gap="0"
                   style={{
-                    'padding-inline': 'var(--leverui-spacing-5)',
-                    'padding-top': 'var(--leverui-spacing-5)',
-                    'padding-bottom': 'var(--leverui-spacing-3)',
+                    'padding-inline': 'var(--lui-spacing-5)',
+                    'padding-top': 'var(--lui-spacing-5)',
+                    'padding-bottom': 'var(--lui-spacing-3)',
                   }}
                 >
-                  <Text style={{ 'font-weight': 'var(--leverui-font-weights-semibold)' }}>
+                  <Text style={{ 'font-weight': 'var(--lui-font-weights-semibold)' }}>
                     {isToday(activeDate(), timeZone)
                       ? 'Today'
                       : formatWeekday(activeDate().toDate(timeZone))}
@@ -167,7 +167,7 @@ export function DatePickerCalendarTimeGrid(): JSX.Element {
                   <Text
                     textStyle="sm"
                     style={{
-                      color: 'var(--leverui-colors-fg-muted)',
+                      color: 'var(--lui-colors-fg-muted)',
                     }}
                   >
                     {formatMonthDay(activeDate().toDate(timeZone))}

@@ -24,7 +24,7 @@ async function verifiesSeparatorGallery({ page }: { page: Page }): Promise<void>
 
   await page.goto('/iframe.html?id=components-separator--sizes');
   const sizes = page.locator('#storybook-root .leverui-separator');
-  await expectCustomPropertyLength(sizes.first(), '--leverui-private-separator-thickness', '0.5px');
+  await expectCustomPropertyLength(sizes.first(), '--lui-private-separator-thickness', '0.5px');
   for (const [index, thickness] of ['1px', '2px', '3px'].entries()) {
     await expect(sizes.nth(index + 1)).toHaveCSS('border-top-width', thickness);
   }

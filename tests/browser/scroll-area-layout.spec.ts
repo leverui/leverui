@@ -45,14 +45,14 @@ async function verifiesVariants({ page }: { page: Page }): Promise<void> {
   await expect(scrollbar).toHaveCSS('opacity', '0');
   const before = await root.evaluate(
     /** Read the configured scrollbar thickness from the native root. */
-    (element) => getComputedStyle(element).getPropertyValue('--leverui-private-scroll-area-size'),
+    (element) => getComputedStyle(element).getPropertyValue('--lui-private-scroll-area-size'),
   );
   await page.getByRole('button', { name: 'Always visible' }).click();
   await expect(scrollbar).toHaveCSS('opacity', '1');
   await page.getByRole('button', { name: 'Large scrollbar' }).click();
   const after = await root.evaluate(
     /** Read the larger CSS size after the reactive update. */
-    (element) => getComputedStyle(element).getPropertyValue('--leverui-private-scroll-area-size'),
+    (element) => getComputedStyle(element).getPropertyValue('--lui-private-scroll-area-size'),
   );
   expect(after).not.toBe(before);
   expect((await readExtent(page, 'variant-viewport')).y).toBeGreaterThan(0);

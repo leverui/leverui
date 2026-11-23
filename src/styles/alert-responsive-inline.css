@@ -2,70 +2,70 @@
   @media (min-width: 480px) {
     .leverui-alert__root:not([data-unstyled]) {
       &[data-inline-sm='false'] {
-        --leverui-private-alert-content-display: flex;
-        --leverui-private-alert-content-direction: column;
-        --leverui-private-alert-content-align: normal;
+        --lui-private-alert-content-display: flex;
+        --lui-private-alert-content-direction: column;
+        --lui-private-alert-content-align: normal;
       }
       &[data-inline-sm='true'] {
-        --leverui-private-alert-content-display: inline-flex;
-        --leverui-private-alert-content-direction: row;
-        --leverui-private-alert-content-align: center;
+        --lui-private-alert-content-display: inline-flex;
+        --lui-private-alert-content-direction: row;
+        --lui-private-alert-content-align: center;
       }
     }
   }
   @media (min-width: 768px) {
     .leverui-alert__root:not([data-unstyled]) {
       &[data-inline-md='false'] {
-        --leverui-private-alert-content-display: flex;
-        --leverui-private-alert-content-direction: column;
-        --leverui-private-alert-content-align: normal;
+        --lui-private-alert-content-display: flex;
+        --lui-private-alert-content-direction: column;
+        --lui-private-alert-content-align: normal;
       }
       &[data-inline-md='true'] {
-        --leverui-private-alert-content-display: inline-flex;
-        --leverui-private-alert-content-direction: row;
-        --leverui-private-alert-content-align: center;
+        --lui-private-alert-content-display: inline-flex;
+        --lui-private-alert-content-direction: row;
+        --lui-private-alert-content-align: center;
       }
     }
   }
   @media (min-width: 1024px) {
     .leverui-alert__root:not([data-unstyled]) {
       &[data-inline-lg='false'] {
-        --leverui-private-alert-content-display: flex;
-        --leverui-private-alert-content-direction: column;
-        --leverui-private-alert-content-align: normal;
+        --lui-private-alert-content-display: flex;
+        --lui-private-alert-content-direction: column;
+        --lui-private-alert-content-align: normal;
       }
       &[data-inline-lg='true'] {
-        --leverui-private-alert-content-display: inline-flex;
-        --leverui-private-alert-content-direction: row;
-        --leverui-private-alert-content-align: center;
+        --lui-private-alert-content-display: inline-flex;
+        --lui-private-alert-content-direction: row;
+        --lui-private-alert-content-align: center;
       }
     }
   }
   @media (min-width: 1280px) {
     .leverui-alert__root:not([data-unstyled]) {
       &[data-inline-xl='false'] {
-        --leverui-private-alert-content-display: flex;
-        --leverui-private-alert-content-direction: column;
-        --leverui-private-alert-content-align: normal;
+        --lui-private-alert-content-display: flex;
+        --lui-private-alert-content-direction: column;
+        --lui-private-alert-content-align: normal;
       }
       &[data-inline-xl='true'] {
-        --leverui-private-alert-content-display: inline-flex;
-        --leverui-private-alert-content-direction: row;
-        --leverui-private-alert-content-align: center;
+        --lui-private-alert-content-display: inline-flex;
+        --lui-private-alert-content-direction: row;
+        --lui-private-alert-content-align: center;
       }
     }
   }
   @media (min-width: 1536px) {
     .leverui-alert__root:not([data-unstyled]) {
       &[data-inline-2xl='false'] {
-        --leverui-private-alert-content-display: flex;
-        --leverui-private-alert-content-direction: column;
-        --leverui-private-alert-content-align: normal;
+        --lui-private-alert-content-display: flex;
+        --lui-private-alert-content-direction: column;
+        --lui-private-alert-content-align: normal;
       }
       &[data-inline-2xl='true'] {
-        --leverui-private-alert-content-display: inline-flex;
-        --leverui-private-alert-content-direction: row;
-        --leverui-private-alert-content-align: center;
+        --lui-private-alert-content-display: inline-flex;
+        --lui-private-alert-content-direction: row;
+        --lui-private-alert-content-align: center;
       }
     }
   }

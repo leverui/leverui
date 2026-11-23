@@ -1,24 +1,24 @@
 @layer leverui.recipes {
   .leverui-checkbox:not([data-unstyled]) {
     &[data-size='xs'] {
-      --leverui-private-checkbox-gap: var(--leverui-spacing-1\.5);
-      --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-checkbox-label-line-height: 1rem;
+      --lui-private-checkbox-gap: var(--lui-spacing-1\.5);
+      --lui-private-checkbox-label-font-size: var(--lui-font-sizes-xs);
+      --lui-private-checkbox-label-line-height: 1rem;
     }
     &[data-size='sm'] {
-      --leverui-private-checkbox-gap: var(--leverui-spacing-2);
-      --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-checkbox-label-line-height: 1.25rem;
+      --lui-private-checkbox-gap: var(--lui-spacing-2);
+      --lui-private-checkbox-label-font-size: var(--lui-font-sizes-sm);
+      --lui-private-checkbox-label-line-height: 1.25rem;
     }
     &[data-size='md'] {
-      --leverui-private-checkbox-gap: var(--leverui-spacing-2\.5);
-      --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-checkbox-label-line-height: 1.25rem;
+      --lui-private-checkbox-gap: var(--lui-spacing-2\.5);
+      --lui-private-checkbox-label-font-size: var(--lui-font-sizes-sm);
+      --lui-private-checkbox-label-line-height: 1.25rem;
     }
     &[data-size='lg'] {
-      --leverui-private-checkbox-gap: var(--leverui-spacing-3);
-      --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-checkbox-label-line-height: 1.5rem;
+      --lui-private-checkbox-gap: var(--lui-spacing-3);
+      --lui-private-checkbox-label-font-size: var(--lui-font-sizes-md);
+      --lui-private-checkbox-label-line-height: 1.5rem;
     }
   }
 }

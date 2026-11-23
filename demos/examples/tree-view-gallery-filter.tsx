@@ -96,7 +96,7 @@ export function TreeViewFilter(): JSX.Element {
                 const label = (
                   <Highlight
                     query={[query()]}
-                    markStyle={{ 'background-color': 'var(--leverui-colors-gray-emphasized)' }}
+                    markStyle={{ 'background-color': 'var(--lui-colors-gray-emphasized)' }}
                   >
                     {node.name}
                   </Highlight>

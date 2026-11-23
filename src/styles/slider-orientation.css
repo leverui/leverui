@@ -5,15 +5,15 @@
     .leverui-slider__control:not([data-unstyled]) {
       flex-direction: column;
       height: 100%;
-      min-width: var(--leverui-slider-thumb-size);
+      min-width: var(--lui-slider-thumb-size);
 
       &:has(.leverui-slider__markerLabel) {
-        margin-inline-end: var(--leverui-spacing-4);
+        margin-inline-end: var(--lui-spacing-4);
       }
     }
 
     .leverui-slider__track:not([data-unstyled]) {
-      width: var(--leverui-slider-track-size);
+      width: var(--lui-slider-track-size);
     }
 
     .leverui-slider__thumb:not([data-unstyled]) {
@@ -22,8 +22,8 @@
     }
 
     .leverui-slider__markerGroup:not([data-unstyled]) {
-      inset-inline-start: var(--leverui-private-slider-marker-center);
-      inset-block: var(--leverui-private-slider-marker-inset);
+      inset-inline-start: var(--lui-private-slider-marker-center);
+      inset-block: var(--lui-private-slider-marker-inset);
     }
 
     .leverui-slider__marker:not([data-unstyled]) {
@@ -35,15 +35,15 @@
     .leverui-slider__control:not([data-unstyled]) {
       flex-direction: row;
       width: 100%;
-      min-height: var(--leverui-slider-thumb-size);
+      min-height: var(--lui-slider-thumb-size);
 
       &:has(.leverui-slider__markerLabel) {
-        margin-bottom: var(--leverui-spacing-4);
+        margin-bottom: var(--lui-spacing-4);
       }
     }
 
     .leverui-slider__track:not([data-unstyled]) {
-      height: var(--leverui-slider-track-size);
+      height: var(--lui-slider-track-size);
     }
 
     .leverui-slider__thumb:not([data-unstyled]) {
@@ -52,8 +52,8 @@
     }
 
     .leverui-slider__markerGroup:not([data-unstyled]) {
-      top: var(--leverui-private-slider-marker-center);
-      inset-inline: var(--leverui-private-slider-marker-inset);
+      top: var(--lui-private-slider-marker-center);
+      inset-inline: var(--lui-private-slider-marker-inset);
     }
 
     .leverui-slider__marker:not([data-unstyled]) {

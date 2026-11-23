@@ -8,21 +8,21 @@
     [data-unstyled]
   ) {
     width: var(
-      --leverui-date-picker-cell-size,
-      var(--leverui-private-date-picker-cell-size, var(--leverui-sizes-10))
+      --lui-date-picker-cell-size,
+      var(--lui-private-date-picker-cell-size, var(--lui-sizes-10))
     );
-    padding-block: var(--leverui-spacing-2);
-    font-size: var(--leverui-font-sizes-xs);
+    padding-block: var(--lui-spacing-2);
+    font-size: var(--lui-font-sizes-xs);
     line-height: 1rem;
-    font-weight: var(--leverui-font-weights-medium);
-    color: var(--leverui-colors-fg-muted);
+    font-weight: var(--lui-font-weights-medium);
+    color: var(--lui-colors-fg-muted);
     text-align: center;
     text-transform: uppercase;
   }
 
   /* Centered like the header, so each day stays under its weekday when the calendar is wider. */
   :is(.leverui-date-picker__tableCell, .leverui-date-picker__weekNumberCell):not([data-unstyled]) {
-    padding-block: var(--leverui-spacing-0\.5);
+    padding-block: var(--lui-spacing-0\.5);
     text-align: center;
   }
 
@@ -31,7 +31,7 @@
   :is(.leverui-date-picker__weekNumberCell, .leverui-date-picker__weekNumberHeaderCell):not(
     [data-unstyled]
   ) {
-    color: var(--leverui-colors-fg-subtle);
+    color: var(--lui-colors-fg-subtle);
   }
 
   :is(.leverui-date-picker__tableCellTrigger, .leverui-date-picker__weekNumberCellText):not(
@@ -41,16 +41,16 @@
     align-items: center;
     justify-content: center;
     min-width: var(
-      --leverui-date-picker-cell-size,
-      var(--leverui-private-date-picker-cell-size, var(--leverui-sizes-10))
+      --lui-date-picker-cell-size,
+      var(--lui-private-date-picker-cell-size, var(--lui-sizes-10))
     );
     min-height: var(
-      --leverui-date-picker-cell-size,
-      var(--leverui-private-date-picker-cell-size, var(--leverui-sizes-10))
+      --lui-date-picker-cell-size,
+      var(--lui-private-date-picker-cell-size, var(--lui-sizes-10))
     );
-    font-size: var(--leverui-font-sizes-sm);
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
-    border-radius: var(--leverui-radii-l2);
+    border-radius: var(--lui-radii-l2);
     cursor: default;
     position: relative;
   }
@@ -59,8 +59,8 @@
     .leverui-date-picker__tableCellTrigger:not([data-unstyled]) {
     width: calc(
       var(
-          --leverui-date-picker-cell-size,
-          var(--leverui-private-date-picker-cell-size, var(--leverui-sizes-10))
+          --lui-date-picker-cell-size,
+          var(--lui-private-date-picker-cell-size, var(--lui-sizes-10))
         ) *
         1.75
     );

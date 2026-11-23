@@ -78,7 +78,7 @@ export function ChartTooltipCard(props: ChartTooltipCardProps): JSX.Element {
               <span
                 class="leverui-chart-tooltip__swatch"
                 style={{
-                  '--leverui-private-chart-tooltip-swatch': chartColor(item.color, item.color),
+                  '--lui-private-chart-tooltip-swatch': chartColor(item.color, item.color),
                 }}
               />
               <div class="leverui-chart-tooltip__values">

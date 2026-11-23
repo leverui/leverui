@@ -2,38 +2,38 @@
   @media (min-width: 768px) {
     .leverui-table__root:not([data-unstyled]) {
       &[data-size-md='sm'] {
-        --leverui-private-table-font-size: var(--leverui-font-sizes-sm);
-        --leverui-private-table-line-height: 1.25rem;
-        --leverui-private-table-padding-inline: var(--leverui-spacing-2);
-        --leverui-private-table-padding-block: var(--leverui-spacing-2);
+        --lui-private-table-font-size: var(--lui-font-sizes-sm);
+        --lui-private-table-line-height: 1.25rem;
+        --lui-private-table-padding-inline: var(--lui-spacing-2);
+        --lui-private-table-padding-block: var(--lui-spacing-2);
       }
       &[data-size-md='md'] {
-        --leverui-private-table-font-size: var(--leverui-font-sizes-sm);
-        --leverui-private-table-line-height: 1.25rem;
-        --leverui-private-table-padding-inline: var(--leverui-spacing-3);
-        --leverui-private-table-padding-block: var(--leverui-spacing-3);
+        --lui-private-table-font-size: var(--lui-font-sizes-sm);
+        --lui-private-table-line-height: 1.25rem;
+        --lui-private-table-padding-inline: var(--lui-spacing-3);
+        --lui-private-table-padding-block: var(--lui-spacing-3);
       }
       &[data-size-md='lg'] {
-        --leverui-private-table-font-size: var(--leverui-font-sizes-md);
-        --leverui-private-table-line-height: 1.5rem;
-        --leverui-private-table-padding-inline: var(--leverui-spacing-4);
-        --leverui-private-table-padding-block: var(--leverui-spacing-3);
+        --lui-private-table-font-size: var(--lui-font-sizes-md);
+        --lui-private-table-line-height: 1.5rem;
+        --lui-private-table-padding-inline: var(--lui-spacing-4);
+        --lui-private-table-padding-block: var(--lui-spacing-3);
       }
       &[data-variant-md='line'] {
-        --leverui-private-table-header-background: transparent;
-        --leverui-private-table-row-background: var(--leverui-colors-bg);
-        --leverui-private-table-root-shadow: none;
-        --leverui-private-table-footer-border: 0;
-        --leverui-private-table-row-border: 0;
-        --leverui-private-table-cell-border: 1px;
+        --lui-private-table-header-background: transparent;
+        --lui-private-table-row-background: var(--lui-colors-bg);
+        --lui-private-table-root-shadow: none;
+        --lui-private-table-footer-border: 0;
+        --lui-private-table-row-border: 0;
+        --lui-private-table-cell-border: 1px;
       }
       &[data-variant-md='outline'] {
-        --leverui-private-table-header-background: var(--leverui-colors-bg-muted);
-        --leverui-private-table-row-background: transparent;
-        --leverui-private-table-root-shadow: 0 0 0 1px var(--leverui-colors-border);
-        --leverui-private-table-footer-border: 1px;
-        --leverui-private-table-row-border: 1px;
-        --leverui-private-table-cell-border: 0;
+        --lui-private-table-header-background: var(--lui-colors-bg-muted);
+        --lui-private-table-row-background: transparent;
+        --lui-private-table-root-shadow: 0 0 0 1px var(--lui-colors-border);
+        --lui-private-table-footer-border: 1px;
+        --lui-private-table-row-border: 1px;
+        --lui-private-table-cell-border: 0;
       }
     }
   }

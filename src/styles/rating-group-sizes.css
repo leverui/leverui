@@ -1,20 +1,20 @@
 @layer leverui.recipes {
   .leverui-rating-group__root:not([data-unstyled]) {
     &[data-size='xs'] {
-      --leverui-private-rating-group-item-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-rating-group-item-line-height: 1.25rem;
+      --lui-private-rating-group-item-font-size: var(--lui-font-sizes-sm);
+      --lui-private-rating-group-item-line-height: 1.25rem;
     }
     &[data-size='sm'] {
-      --leverui-private-rating-group-item-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-rating-group-item-line-height: 1.5rem;
+      --lui-private-rating-group-item-font-size: var(--lui-font-sizes-md);
+      --lui-private-rating-group-item-line-height: 1.5rem;
     }
     &[data-size='md'] {
-      --leverui-private-rating-group-item-font-size: var(--leverui-font-sizes-xl);
-      --leverui-private-rating-group-item-line-height: 1.875rem;
+      --lui-private-rating-group-item-font-size: var(--lui-font-sizes-xl);
+      --lui-private-rating-group-item-line-height: 1.875rem;
     }
     &[data-size='lg'] {
-      --leverui-private-rating-group-item-font-size: var(--leverui-font-sizes-2xl);
-      --leverui-private-rating-group-item-line-height: 2rem;
+      --lui-private-rating-group-item-font-size: var(--lui-font-sizes-2xl);
+      --lui-private-rating-group-item-line-height: 2rem;
     }
   }
 }

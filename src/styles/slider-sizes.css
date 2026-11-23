@@ -1,25 +1,25 @@
 @layer leverui.recipes {
   .leverui-slider__root:not([data-unstyled]) {
-    --leverui-slider-thumb-size: var(--leverui-sizes-5);
-    --leverui-slider-track-size: var(--leverui-sizes-2);
-    --leverui-slider-marker-size: var(--leverui-sizes-1);
-    --leverui-private-slider-marker-center: 8px;
-    --leverui-private-slider-marker-inset: 4px;
+    --lui-slider-thumb-size: var(--lui-sizes-5);
+    --lui-slider-track-size: var(--lui-sizes-2);
+    --lui-slider-marker-size: var(--lui-sizes-1);
+    --lui-private-slider-marker-center: 8px;
+    --lui-private-slider-marker-inset: 4px;
 
     &[data-size='sm'] {
-      --leverui-slider-thumb-size: var(--leverui-sizes-4);
-      --leverui-slider-track-size: var(--leverui-sizes-1\.5);
-      --leverui-slider-marker-size: var(--leverui-sizes-1);
-      --leverui-private-slider-marker-center: 6px;
-      --leverui-private-slider-marker-inset: 3px;
+      --lui-slider-thumb-size: var(--lui-sizes-4);
+      --lui-slider-track-size: var(--lui-sizes-1\.5);
+      --lui-slider-marker-size: var(--lui-sizes-1);
+      --lui-private-slider-marker-center: 6px;
+      --lui-private-slider-marker-inset: 3px;
     }
 
     &[data-size='lg'] {
-      --leverui-slider-thumb-size: var(--leverui-sizes-6);
-      --leverui-slider-track-size: var(--leverui-sizes-2\.5);
-      --leverui-slider-marker-size: var(--leverui-sizes-1\.5);
-      --leverui-private-slider-marker-center: 9px;
-      --leverui-private-slider-marker-inset: 5px;
+      --lui-slider-thumb-size: var(--lui-sizes-6);
+      --lui-slider-track-size: var(--lui-sizes-2\.5);
+      --lui-slider-marker-size: var(--lui-sizes-1\.5);
+      --lui-private-slider-marker-center: 9px;
+      --lui-private-slider-marker-inset: 5px;
     }
   }
 }

@@ -12,8 +12,8 @@ export const marqueeContracts = [
       "[data-side='bottom']",
       ':dir(rtl)',
       'prefers-reduced-motion: reduce',
-      '--leverui-marquee-duration',
-      '--leverui-marquee-edge-color',
+      '--lui-marquee-duration',
+      '--lui-marquee-edge-color',
     ],
   },
 ];

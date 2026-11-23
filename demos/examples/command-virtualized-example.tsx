@@ -44,9 +44,9 @@ export function CommandVirtualizedExample(): JSX.Element {
                 variant="outline"
                 size="sm"
                 style={{
-                  'min-width': 'var(--leverui-spacing-64)',
+                  'min-width': 'var(--lui-spacing-64)',
                   'justify-content': 'flex-start',
-                  color: 'var(--leverui-colors-fg-muted)',
+                  color: 'var(--lui-colors-fg-muted)',
                 }}
               >
                 <SearchIcon /> Search documents...
@@ -103,7 +103,7 @@ export function CommandVirtualizedExample(): JSX.Element {
                                 <Span
                                   textStyle="xs"
                                   style={{
-                                    color: 'var(--leverui-colors-fg-subtle)',
+                                    color: 'var(--lui-colors-fg-subtle)',
                                   }}
                                 >
                                   {item().folder}

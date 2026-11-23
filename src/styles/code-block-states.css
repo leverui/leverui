@@ -13,29 +13,29 @@
     .leverui-code-block__codeText:not([data-unstyled])[data-has-focused]
     [data-line]:not([data-focused]) {
     transition:
-      opacity var(--leverui-durations-moderate) ease-in-out,
-      filter var(--leverui-durations-moderate) ease-in-out;
+      opacity var(--lui-durations-moderate) ease-in-out,
+      filter var(--lui-durations-moderate) ease-in-out;
     opacity: var(
-      --leverui-private-code-block-hover-opacity,
-      var(--leverui-code-block-obscured-opacity, 0.5)
+      --lui-private-code-block-hover-opacity,
+      var(--lui-code-block-obscured-opacity, 0.5)
     );
     filter: blur(
-      var(--leverui-private-code-block-hover-blur, var(--leverui-code-block-obscured-blur, 1px))
+      var(--lui-private-code-block-hover-blur, var(--lui-code-block-obscured-blur, 1px))
     );
   }
 
   .leverui-code-block__root:not([data-unstyled])
     .leverui-code-block__codeText:not([data-unstyled])[data-has-focused]:hover {
-    --leverui-private-code-block-hover-opacity: 1;
-    --leverui-private-code-block-hover-blur: 0px;
+    --lui-private-code-block-hover-opacity: 1;
+    --lui-private-code-block-hover-blur: 0px;
   }
 
   .leverui-code-block__root:not([data-unstyled])
     .leverui-code-block__codeText:not([data-unstyled])[data-has-line-numbers][data-plaintext] {
     padding-inline-start: calc(
-      var(--leverui-code-block-line-number-width, var(--leverui-sizes-3)) +
-        var(--leverui-code-block-line-number-margin, var(--leverui-spacing-4)) +
-        var(--leverui-code-block-padding, var(--leverui-private-code-block-padding))
+      var(--lui-code-block-line-number-width, var(--lui-sizes-3)) +
+        var(--lui-code-block-line-number-margin, var(--lui-spacing-4)) +
+        var(--lui-code-block-padding, var(--lui-private-code-block-padding))
     );
   }
 
@@ -43,17 +43,14 @@
     .leverui-code-block__codeText:not([data-unstyled])
     [data-line] {
     position: relative;
-    padding-inline-end: var(
-      --leverui-code-block-padding,
-      var(--leverui-private-code-block-padding)
+    padding-inline-end: var(--lui-code-block-padding, var(--lui-private-code-block-padding));
+    --lui-private-code-block-highlight-bg: var(
+      --lui-code-block-highlight-bg,
+      color-mix(in srgb, var(--lui-colors-teal-focus-ring) 20%, transparent)
     );
-    --leverui-private-code-block-highlight-bg: var(
-      --leverui-code-block-highlight-bg,
-      color-mix(in srgb, var(--leverui-colors-teal-focus-ring) 20%, transparent)
-    );
-    --leverui-private-code-block-highlight-border: var(
-      --leverui-code-block-highlight-border,
-      var(--leverui-colors-teal-focus-ring)
+    --lui-private-code-block-highlight-border: var(
+      --lui-code-block-highlight-border,
+      var(--lui-colors-teal-focus-ring)
     );
   }
 
@@ -72,40 +69,38 @@
     position: absolute;
     top: 0;
     inset-inline-start: calc(
-      var(--leverui-code-block-padding, var(--leverui-private-code-block-padding)) * -1
+      var(--lui-code-block-padding, var(--lui-private-code-block-padding)) * -1
     );
     inset-inline-end: 0;
-    width: calc(
-      100% + var(--leverui-code-block-padding, var(--leverui-private-code-block-padding)) * 2
-    );
+    width: calc(100% + var(--lui-code-block-padding, var(--lui-private-code-block-padding)) * 2);
     height: 100%;
-    background: var(--leverui-private-code-block-highlight-bg);
-    border-inline-start: 2px solid var(--leverui-private-code-block-highlight-border);
+    background: var(--lui-private-code-block-highlight-bg);
+    border-inline-start: 2px solid var(--lui-private-code-block-highlight-border);
   }
 
   .leverui-code-block__root:not([data-unstyled])
     .leverui-code-block__codeText:not([data-unstyled])
     [data-diff='added'] {
-    --leverui-private-code-block-highlight-bg: var(
-      --leverui-code-block-highlight-added-bg,
-      color-mix(in srgb, var(--leverui-colors-green-focus-ring) 20%, transparent)
+    --lui-private-code-block-highlight-bg: var(
+      --lui-code-block-highlight-added-bg,
+      color-mix(in srgb, var(--lui-colors-green-focus-ring) 20%, transparent)
     );
-    --leverui-private-code-block-highlight-border: var(
-      --leverui-code-block-highlight-added-border,
-      var(--leverui-colors-green-focus-ring)
+    --lui-private-code-block-highlight-border: var(
+      --lui-code-block-highlight-added-border,
+      var(--lui-colors-green-focus-ring)
     );
   }
 
   .leverui-code-block__root:not([data-unstyled])
     .leverui-code-block__codeText:not([data-unstyled])
     [data-diff='removed'] {
-    --leverui-private-code-block-highlight-bg: var(
-      --leverui-code-block-highlight-removed-bg,
-      color-mix(in srgb, var(--leverui-colors-red-focus-ring) 20%, transparent)
+    --lui-private-code-block-highlight-bg: var(
+      --lui-code-block-highlight-removed-bg,
+      color-mix(in srgb, var(--lui-colors-red-focus-ring) 20%, transparent)
     );
-    --leverui-private-code-block-highlight-border: var(
-      --leverui-code-block-highlight-removed-border,
-      var(--leverui-colors-red-focus-ring)
+    --lui-private-code-block-highlight-border: var(
+      --lui-code-block-highlight-removed-border,
+      var(--lui-colors-red-focus-ring)
     );
   }
 
@@ -124,8 +119,8 @@
     content: counter(line);
     counter-increment: line;
     display: inline-block;
-    width: var(--leverui-code-block-line-number-width, var(--leverui-sizes-3));
-    margin-inline-end: var(--leverui-code-block-line-number-margin, var(--leverui-spacing-4));
+    width: var(--lui-code-block-line-number-width, var(--lui-sizes-3));
+    margin-inline-end: var(--lui-code-block-line-number-margin, var(--lui-spacing-4));
     text-align: end;
     user-select: none;
     white-space: nowrap;

@@ -5,7 +5,7 @@ import { Box, Center, HStack, Span, Splitter, useBreakpointValue } from '../../s
 export function SplitterCollapsible(): JSX.Element {
   return (
     <Box>
-      <Box style={{ 'margin-bottom': 'var(--leverui-spacing-4)' }}>
+      <Box style={{ 'margin-bottom': 'var(--lui-spacing-4)' }}>
         <HStack gap="2" textStyle="sm">
           <Span>Drag the handle to collapse or expand panel A</Span>
         </HStack>
@@ -43,7 +43,7 @@ export function SplitterKeyboardResize(): JSX.Element {
         wrap="wrap"
         textStyle="sm"
         style={{
-          'margin-bottom': 'var(--leverui-spacing-4)',
+          'margin-bottom': 'var(--lui-spacing-4)',
         }}
       >
         <Span>Focus the resize handle and use arrow keys</Span>

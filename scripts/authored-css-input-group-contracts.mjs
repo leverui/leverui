@@ -10,7 +10,7 @@ export const inputGroupContracts = [
       '.leverui-input',
       '.leverui-number-input__input',
       '.leverui-native-select__field',
-      '--leverui-input-group-field-height',
+      '--lui-input-group-field-height',
       ...['', '-sm', '-md', '-lg', '-xl', '-2xl'].flatMap(
         /** Require both logical sides of every supported responsive offset. */
         (suffix) => [`[data-group-start${suffix}]`, `[data-group-end${suffix}]`],

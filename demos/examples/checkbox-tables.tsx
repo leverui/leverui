@@ -8,8 +8,8 @@ const variants = ['solid', 'outline', 'subtle'] as const;
 const cellStyle = { 'padding-right': '32px', 'padding-bottom': '32px' } as const;
 const headingStyle = {
   ...cellStyle,
-  'font-size': 'var(--leverui-font-sizes-sm)',
-  color: 'var(--leverui-colors-fg-muted)',
+  'font-size': 'var(--lui-font-sizes-sm)',
+  color: 'var(--lui-colors-fg-muted)',
   'font-weight': 'normal',
   'text-align': 'left',
 } as const;
@@ -37,8 +37,8 @@ export function CheckboxSizeTable(): JSX.Element {
               <th scope="row" style={headingStyle}>
                 <Span
                   style={{
-                    'font-size': 'var(--leverui-font-sizes-sm)',
-                    color: 'var(--leverui-colors-fg-muted)',
+                    'font-size': 'var(--lui-font-sizes-sm)',
+                    color: 'var(--lui-colors-fg-muted)',
                     'min-width': '8ch',
                   }}
                 >
@@ -94,8 +94,8 @@ export function CheckboxVariantTable(): JSX.Element {
               <th scope="row" style={headingStyle}>
                 <Span
                   style={{
-                    'font-size': 'var(--leverui-font-sizes-sm)',
-                    color: 'var(--leverui-colors-fg-muted)',
+                    'font-size': 'var(--lui-font-sizes-sm)',
+                    color: 'var(--lui-colors-fg-muted)',
                     'min-width': '8ch',
                   }}
                 >

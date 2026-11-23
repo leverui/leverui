@@ -1,9 +1,9 @@
 .loader-example-overlay {
-  background: color-mix(in srgb, var(--leverui-colors-bg) 80%, transparent);
-  border-radius: var(--leverui-radii-l3);
+  background: color-mix(in srgb, var(--lui-colors-bg) 80%, transparent);
+  border-radius: var(--lui-radii-l3);
 }
 
 .loader-example-text {
-  font-size: var(--leverui-font-sizes-sm);
-  font-weight: var(--leverui-font-weights-medium);
+  font-size: var(--lui-font-sizes-sm);
+  font-weight: var(--lui-font-weights-medium);
 }

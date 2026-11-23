@@ -35,8 +35,8 @@ export function ProgressComposition(): JSX.Element {
             <Square
               size="10"
               style={{
-                'border-radius': 'var(--leverui-radii-sm)',
-                background: 'var(--leverui-colors-bg-muted)',
+                'border-radius': 'var(--lui-radii-sm)',
+                background: 'var(--lui-colors-bg-muted)',
               }}
             >
               <data.icon />
@@ -46,10 +46,10 @@ export function ProgressComposition(): JSX.Element {
                 <Progress.Label>{data.label}</Progress.Label>
                 <Progress.ValueText style={{ color: 'inherit' }}>
                   {data.value}{' '}
-                  <Span style={{ color: 'var(--leverui-colors-fg-muted)' }}>/ {data.max}</Span>
+                  <Span style={{ color: 'var(--lui-colors-fg-muted)' }}>/ {data.max}</Span>
                 </Progress.ValueText>
               </HStack>
-              <Progress.Track style={{ 'margin-top': 'var(--leverui-spacing-2)' }}>
+              <Progress.Track style={{ 'margin-top': 'var(--lui-spacing-2)' }}>
                 <Progress.Range />
               </Progress.Track>
             </Progress.Root>

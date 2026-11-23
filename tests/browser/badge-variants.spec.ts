@@ -74,7 +74,7 @@ async function verifiesBadgeCssOverride({ page }: { page: Page }): Promise<void>
   await expect(badge).toHaveCSS('background-color', 'rgb(37, 99, 235)');
   await page.addStyleTag({
     content:
-      '[data-testid="badge-css-override"] { --leverui-colors-color-palette-solid: rgb(18 52 86); }',
+      '[data-testid="badge-css-override"] { --lui-colors-color-palette-solid: rgb(18 52 86); }',
   });
   await expect(badge).toHaveCSS('background-color', 'rgb(18, 52, 86)');
 }
@@ -98,7 +98,7 @@ async function verifiesBadgeThemeScopes({ page }: { page: Page }): Promise<void>
   await expect(dark).toHaveCSS('background-color', 'rgb(20, 32, 74)');
   await expect(light).toHaveCSS('background-color', 'rgb(219, 234, 254)');
   await page.addStyleTag({
-    content: '[data-testid="badge-dark-scope"] { --leverui-colors-blue-subtle: rgb(18 52 86); }',
+    content: '[data-testid="badge-dark-scope"] { --lui-colors-blue-subtle: rgb(18 52 86); }',
   });
   await expect(dark).toHaveCSS('background-color', 'rgb(18, 52, 86)');
   await expect(light).toHaveCSS('background-color', 'rgb(219, 234, 254)');

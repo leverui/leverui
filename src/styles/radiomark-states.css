@@ -1,37 +1,37 @@
 @layer leverui.recipes {
   .leverui-radiomark:not([data-unstyled])[data-checked] {
-    --leverui-private-radiomark-background: var(--leverui-private-radiomark-checked-background);
-    --leverui-private-radiomark-border: var(--leverui-private-radiomark-checked-border);
-    --leverui-private-radiomark-color: var(--leverui-private-radiomark-checked-color);
+    --lui-private-radiomark-background: var(--lui-private-radiomark-checked-background);
+    --lui-private-radiomark-border: var(--lui-private-radiomark-checked-border);
+    --lui-private-radiomark-color: var(--lui-private-radiomark-checked-color);
   }
 
   .leverui-radiomark:not([data-unstyled])[data-filled] {
-    --leverui-private-radiomark-background: var(--leverui-colors-bg);
+    --lui-private-radiomark-background: var(--lui-colors-bg);
   }
 
   .leverui-radiomark:not([data-unstyled]):is([data-invalid], [aria-invalid='true']):not(
       [data-leverui-color-palette]
     ) {
-    --leverui-colors-color-palette-solid: var(--leverui-colors-red-solid);
-    --leverui-colors-color-palette-contrast: var(--leverui-colors-red-contrast);
-    --leverui-colors-color-palette-fg: var(--leverui-colors-red-fg);
-    --leverui-colors-color-palette-muted: var(--leverui-colors-red-muted);
-    --leverui-colors-color-palette-focus-ring: var(--leverui-colors-red-focus-ring);
+    --lui-colors-color-palette-solid: var(--lui-colors-red-solid);
+    --lui-colors-color-palette-contrast: var(--lui-colors-red-contrast);
+    --lui-colors-color-palette-fg: var(--lui-colors-red-fg);
+    --lui-colors-color-palette-muted: var(--lui-colors-red-muted);
+    --lui-colors-color-palette-focus-ring: var(--lui-colors-red-focus-ring);
   }
 
   .leverui-radiomark:not([data-unstyled]):is([data-invalid], [aria-invalid='true']):not(
       [data-checked]
     ) {
-    --leverui-private-radiomark-border: var(--leverui-colors-red-500);
+    --lui-private-radiomark-border: var(--lui-colors-red-500);
   }
 
   .leverui-radiomark:not([data-unstyled])[data-disabled] {
     opacity: 0.5;
-    cursor: var(--leverui-cursor-disabled);
+    cursor: var(--lui-cursor-disabled);
   }
 
   .leverui-radiomark:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
-    outline: 2px solid var(--leverui-colors-color-palette-focus-ring);
+    outline: 2px solid var(--lui-colors-color-palette-focus-ring);
     outline-offset: 2px;
   }
 }

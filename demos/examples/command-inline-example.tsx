@@ -60,7 +60,7 @@ export function CommandInlineExample(): JSX.Element {
         'max-width': '24rem',
         'border-width': '1px',
         'border-style': 'solid',
-        'box-shadow': 'var(--leverui-shadows-xs)',
+        'box-shadow': 'var(--lui-shadows-xs)',
       }}
     >
       <Command.Label>Search commands</Command.Label>

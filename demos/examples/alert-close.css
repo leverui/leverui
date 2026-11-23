@@ -1,5 +1,5 @@
 .example-alert-close {
   position: relative;
-  top: calc(-1 * var(--leverui-spacing-2));
-  inset-inline-end: calc(-1 * var(--leverui-spacing-2));
+  top: calc(-1 * var(--lui-spacing-2));
+  inset-inline-end: calc(-1 * var(--lui-spacing-2));
 }

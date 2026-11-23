@@ -123,7 +123,7 @@ test('Stack layout and separators use authored CSS before hydration', verifiesSt
 function renderStyledStack(): JSX.Element {
   return createComponent<StackProps>(Stack, {
     id: 'mixed-stack',
-    style: { padding: 'var(--leverui-spacing-4)' },
+    style: { padding: 'var(--lui-spacing-4)' },
     direction: 'row',
     gap: '8px',
     separator: StackSeparator,

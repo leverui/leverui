@@ -2,11 +2,11 @@
   .leverui-code:not([data-unstyled], [data-leverui-private-style-runtime]) {
     display: inline-flex;
     align-items: center;
-    border-radius: var(--leverui-radii-l2);
-    font-family: var(--leverui-fonts-mono);
-    font-size: var(--leverui-private-badge-font-size);
-    line-height: var(--leverui-private-badge-line-height);
-    padding-inline: var(--leverui-private-badge-padding);
-    min-height: var(--leverui-private-badge-min-height);
+    border-radius: var(--lui-radii-l2);
+    font-family: var(--lui-fonts-mono);
+    font-size: var(--lui-private-badge-font-size);
+    line-height: var(--lui-private-badge-line-height);
+    padding-inline: var(--lui-private-badge-padding);
+    min-height: var(--lui-private-badge-min-height);
   }
 }

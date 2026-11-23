@@ -128,8 +128,8 @@ Every part has a `.leverui-file-upload__*` class, including the hidden input.
 
 ```css
 .my-upload {
-  --leverui-colors-bg: #eef4ff;
-  --leverui-colors-fg-muted: #435276;
+  --lui-colors-bg: #eef4ff;
+  --lui-colors-fg-muted: #435276;
 }
 
 .my-upload .leverui-file-upload__dropzone {

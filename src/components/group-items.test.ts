@@ -7,33 +7,33 @@ function verifiesConsumerGroupVariables(): void {
   const group = document.createElement('div');
   const first = document.createElement('button');
   const last = document.createElement('button');
-  first.style.setProperty('--leverui-group-count', '50');
-  first.style.setProperty('--leverui-group-index', '40');
+  first.style.setProperty('--lui-group-count', '50');
+  first.style.setProperty('--lui-group-index', '40');
   group.append(first, last);
   const { sync } = createGroupItemSync();
 
   sync(group);
-  expect(first.style.getPropertyValue('--leverui-group-count')).toBe('50');
-  expect(first.style.getPropertyValue('--leverui-group-index')).toBe('40');
-  expect(last.style.getPropertyValue('--leverui-group-index')).toBe('1');
+  expect(first.style.getPropertyValue('--lui-group-count')).toBe('50');
+  expect(first.style.getPropertyValue('--lui-group-index')).toBe('40');
+  expect(last.style.getPropertyValue('--lui-group-index')).toBe('1');
 
-  last.style.setProperty('--leverui-group-index', '99');
+  last.style.setProperty('--lui-group-index', '99');
   sync(group);
-  expect(last.style.getPropertyValue('--leverui-group-index')).toBe('99');
+  expect(last.style.getPropertyValue('--lui-group-index')).toBe('99');
 
   last.setAttribute('data-leverui-group-skip', '');
   flush();
   sync(group);
-  expect(last.style.getPropertyValue('--leverui-group-count')).toBe('');
-  expect(last.style.getPropertyValue('--leverui-group-index')).toBe('99');
-  expect(first.style.getPropertyValue('--leverui-group-count')).toBe('50');
+  expect(last.style.getPropertyValue('--lui-group-count')).toBe('');
+  expect(last.style.getPropertyValue('--lui-group-index')).toBe('99');
+  expect(first.style.getPropertyValue('--lui-group-count')).toBe('50');
 
   last.removeAttribute('data-leverui-group-skip');
   sync(group);
-  expect(last.style.getPropertyValue('--leverui-group-index')).toBe('99');
-  last.style.removeProperty('--leverui-group-index');
+  expect(last.style.getPropertyValue('--lui-group-index')).toBe('99');
+  last.style.removeProperty('--lui-group-index');
   sync(group);
-  expect(last.style.getPropertyValue('--leverui-group-index')).toBe('1');
+  expect(last.style.getPropertyValue('--lui-group-index')).toBe('1');
 }
 
 it(
@@ -58,8 +58,8 @@ function verifiesSvgGroupItems(): void {
   );
   expect(first.hasAttribute('data-leverui-group-first')).toBe(true);
   expect(last.hasAttribute('data-leverui-group-last')).toBe(true);
-  expect(first.style.getPropertyValue('--leverui-group-count')).toBe('2');
-  expect(last.style.getPropertyValue('--leverui-group-index')).toBe('1');
+  expect(first.style.getPropertyValue('--lui-group-count')).toBe('2');
+  expect(last.style.getPropertyValue('--lui-group-index')).toBe('1');
 
   first.setAttribute('data-leverui-group-skip', '');
   flush();
@@ -78,7 +78,7 @@ function verifiesMovedChildOwnership(): void {
   const destinationFirst = document.createElement('button');
   first.setAttribute('data-leverui-group-first', 'authored');
   flush();
-  moved.style.setProperty('--leverui-group-index', '40');
+  moved.style.setProperty('--lui-group-index', '40');
   source.append(first, moved);
   destination.append(destinationFirst);
   const sourceItems = createGroupItemSync();
@@ -86,21 +86,21 @@ function verifiesMovedChildOwnership(): void {
 
   sourceItems.sync(source);
   expect(first.getAttribute('data-leverui-group-first')).toBe('');
-  expect(moved.style.getPropertyValue('--leverui-group-count')).toBe('2');
+  expect(moved.style.getPropertyValue('--lui-group-count')).toBe('2');
   destination.append(moved);
   sourceItems.sync(source);
   sourceItems.dispose();
   expect(first.getAttribute('data-leverui-group-first')).toBe('authored');
   expect(moved.hasAttribute('data-leverui-group-item')).toBe(false);
-  expect(moved.style.getPropertyValue('--leverui-group-count')).toBe('');
-  expect(moved.style.getPropertyValue('--leverui-group-index')).toBe('40');
+  expect(moved.style.getPropertyValue('--lui-group-count')).toBe('');
+  expect(moved.style.getPropertyValue('--lui-group-index')).toBe('40');
 
-  moved.style.removeProperty('--leverui-group-index');
+  moved.style.removeProperty('--lui-group-index');
   destinationItems.sync(destination);
-  expect(moved.style.getPropertyValue('--leverui-group-index')).toBe('1');
+  expect(moved.style.getPropertyValue('--lui-group-index')).toBe('1');
   destinationItems.dispose();
   expect(moved.hasAttribute('data-leverui-group-item')).toBe(false);
-  expect(moved.style.getPropertyValue('--leverui-group-index')).toBe('');
+  expect(moved.style.getPropertyValue('--lui-group-index')).toBe('');
 }
 
 it('restores only owned child state after a move and disposal', verifiesMovedChildOwnership);

@@ -7,7 +7,7 @@ import { Skeleton, SkeletonCircle, SkeletonText } from '@leverui/components';
 ```
 
 ```tsx
-<Stack gap="6" style={{ 'max-width': 'var(--leverui-sizes-xs)' }}>
+<Stack gap="6" style={{ 'max-width': 'var(--lui-sizes-xs)' }}>
   <HStack style={{ width: '100%' }}>
     <SkeletonCircle size="10" />
     <SkeletonText noOfLines={2} />
@@ -55,7 +55,7 @@ stops under reduced motion. Pass an object for a different variant per
 breakpoint.
 
 ```tsx
-<Skeleton variant="shine" style={{ width: '100%', height: 'var(--leverui-sizes-5)' }} />
+<Skeleton variant="shine" style={{ width: '100%', height: 'var(--lui-sizes-5)' }} />
 <Skeleton variant={{ base: 'pulse', md: 'shine' }} />
 ```
 
@@ -83,21 +83,21 @@ Classes: `.leverui-skeleton`, `.leverui-skeleton-text` (text wrapper),
 Root attributes: `data-loading`, `data-variant`, plus one per breakpoint, such
 as `data-variant-md`.
 
-| Variable                             | Purpose                                  |
-| ------------------------------------ | ---------------------------------------- |
-| `--leverui-skeleton-bg`              | Pulse placeholder background             |
-| `--leverui-skeleton-start-color`     | Shine gradient start color               |
-| `--leverui-skeleton-end-color`       | Shine gradient end color                 |
-| `--leverui-skeleton-duration`        | Pulse or shine animation duration        |
-| `--leverui-skeleton-fade-duration`   | Fade duration when loading becomes false |
-| `--leverui-skeleton-text-width`      | Width of the text stack                  |
-| `--leverui-skeleton-line-height`     | Height of each loading text line         |
-| `--leverui-skeleton-last-line-width` | Width of the final loading line          |
+| Variable                         | Purpose                                  |
+| -------------------------------- | ---------------------------------------- |
+| `--lui-skeleton-bg`              | Pulse placeholder background             |
+| `--lui-skeleton-start-color`     | Shine gradient start color               |
+| `--lui-skeleton-end-color`       | Shine gradient end color                 |
+| `--lui-skeleton-duration`        | Pulse or shine animation duration        |
+| `--lui-skeleton-fade-duration`   | Fade duration when loading becomes false |
+| `--lui-skeleton-text-width`      | Width of the text stack                  |
+| `--lui-skeleton-line-height`     | Height of each loading text line         |
+| `--lui-skeleton-last-line-width` | Width of the final loading line          |
 
 ```css
 .leverui-skeleton[data-brand-placeholder] {
-  --leverui-skeleton-start-color: #f3c9d7;
-  --leverui-skeleton-end-color: #d95f91;
+  --lui-skeleton-start-color: #f3c9d7;
+  --lui-skeleton-end-color: #d95f91;
 }
 ```
 

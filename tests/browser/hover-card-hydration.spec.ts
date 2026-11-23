@@ -35,7 +35,7 @@ async function loadServerMarkup(page: Page, initialOpen: boolean): Promise<void>
   );
   await page.goto('/iframe.html?id=setup-hydration-host--ready');
   await page.setContent(
-    `${generateHydrationScript()}<style>${defaultCss}</style><style>:root{--leverui-colors-bg-panel:rgb(12,34,56)}</style><div id="hover-hydration-root">${markup}</div>`,
+    `${generateHydrationScript()}<style>${defaultCss}</style><style>:root{--lui-colors-bg-panel:rgb(12,34,56)}</style><div id="hover-hydration-root">${markup}</div>`,
   );
 }
 

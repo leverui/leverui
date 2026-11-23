@@ -96,9 +96,9 @@ export function renderDescriptionTree(
                         <Listbox.ItemText>{framework.label}</Listbox.ItemText>
                         <Text
                           style={{
-                            'font-size': 'var(--leverui-font-sizes-xs)',
-                            color: 'var(--leverui-colors-fg-muted)',
-                            'margin-top': 'var(--leverui-spacing-1)',
+                            'font-size': 'var(--lui-font-sizes-xs)',
+                            color: 'var(--lui-colors-fg-muted)',
+                            'margin-top': 'var(--lui-spacing-1)',
                           }}
                         >
                           {framework.description}
@@ -144,13 +144,11 @@ export function renderIconTree(
                         style={{
                           display: 'flex',
                           'align-items': 'center',
-                          gap: 'var(--leverui-spacing-3)',
+                          gap: 'var(--lui-spacing-3)',
                           flex: '1',
                         }}
                       >
-                        <Box
-                          style={{ color: 'var(--leverui-colors-fg-muted)', 'flex-shrink': '0' }}
-                        >
+                        <Box style={{ color: 'var(--lui-colors-fg-muted)', 'flex-shrink': '0' }}>
                           <FrameworkIcon kind={framework.icon} />
                         </Box>
                         <Listbox.ItemText>{framework.label}</Listbox.ItemText>

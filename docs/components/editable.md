@@ -94,9 +94,9 @@ the input class.
 Attributes: `data-size` on the root, `data-size-*` for sizes set per screen
 size, and editing-state attributes on the parts.
 
-Variables: `--leverui-editable-gap`, `--leverui-editable-padding-block`,
-`--leverui-editable-padding-inline`, `--leverui-editable-control-height`,
-`--leverui-editable-font-size`, `--leverui-editable-focus-color`.
+Variables: `--lui-editable-gap`, `--lui-editable-padding-block`,
+`--lui-editable-padding-inline`, `--lui-editable-control-height`,
+`--lui-editable-font-size`, `--lui-editable-focus-color`.
 
 The root and every part accept `unstyled`, `class`, `style`, native HTML
 attributes, refs, `as`, and `asChild`. Prop types follow the tag you pick:

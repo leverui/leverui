@@ -101,8 +101,7 @@ async function checksAuthoredCss({ page }: { page: Page }): Promise<void> {
   await expect(line).toHaveCSS('stroke-width', '2px');
   await expect(area).toHaveCSS('fill-opacity', '0.2');
   await page.addStyleTag({
-    content:
-      ':root { --leverui-sparkline-color: rgb(12 91 138); --leverui-sparkline-line-width: 4; }',
+    content: ':root { --lui-sparkline-color: rgb(12 91 138); --lui-sparkline-line-width: 4; }',
   });
   await expect(line).toHaveCSS('stroke', 'rgb(12, 91, 138)');
   await expect(line).toHaveCSS('stroke-width', '4px');

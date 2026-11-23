@@ -4,132 +4,132 @@
     border-color: currentColor;
     border-style: solid;
     border-width: 2px;
-    border-radius: var(--leverui-radii-full);
-    width: var(--leverui-private-spinner-size);
-    height: var(--leverui-private-spinner-size);
-    animation: var(--leverui-animations-spin);
-    animation-duration: var(--leverui-durations-slowest);
-    border-bottom-color: var(--leverui-spinner-track-color, transparent);
-    border-inline-start-color: var(--leverui-spinner-track-color, transparent);
+    border-radius: var(--lui-radii-full);
+    width: var(--lui-private-spinner-size);
+    height: var(--lui-private-spinner-size);
+    animation: var(--lui-animations-spin);
+    animation-duration: var(--lui-durations-slowest);
+    border-bottom-color: var(--lui-spinner-track-color, transparent);
+    border-inline-start-color: var(--lui-spinner-track-color, transparent);
   }
 
   .leverui-spinner[data-size='inherit'] {
-    --leverui-private-spinner-size: 1em;
+    --lui-private-spinner-size: 1em;
   }
   .leverui-spinner[data-size='xs'] {
-    --leverui-private-spinner-size: var(--leverui-sizes-3);
+    --lui-private-spinner-size: var(--lui-sizes-3);
   }
   .leverui-spinner[data-size='sm'] {
-    --leverui-private-spinner-size: var(--leverui-sizes-4);
+    --lui-private-spinner-size: var(--lui-sizes-4);
   }
   .leverui-spinner[data-size='md'] {
-    --leverui-private-spinner-size: var(--leverui-sizes-5);
+    --lui-private-spinner-size: var(--lui-sizes-5);
   }
   .leverui-spinner[data-size='lg'] {
-    --leverui-private-spinner-size: var(--leverui-sizes-8);
+    --lui-private-spinner-size: var(--lui-sizes-8);
   }
   .leverui-spinner[data-size='xl'] {
-    --leverui-private-spinner-size: var(--leverui-sizes-10);
+    --lui-private-spinner-size: var(--lui-sizes-10);
   }
 
   @media (min-width: 480px) {
     .leverui-spinner[data-size-sm='inherit'] {
-      --leverui-private-spinner-size: 1em;
+      --lui-private-spinner-size: 1em;
     }
     .leverui-spinner[data-size-sm='xs'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-3);
+      --lui-private-spinner-size: var(--lui-sizes-3);
     }
     .leverui-spinner[data-size-sm='sm'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-4);
+      --lui-private-spinner-size: var(--lui-sizes-4);
     }
     .leverui-spinner[data-size-sm='md'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-5);
+      --lui-private-spinner-size: var(--lui-sizes-5);
     }
     .leverui-spinner[data-size-sm='lg'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-8);
+      --lui-private-spinner-size: var(--lui-sizes-8);
     }
     .leverui-spinner[data-size-sm='xl'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-10);
+      --lui-private-spinner-size: var(--lui-sizes-10);
     }
   }
   @media (min-width: 768px) {
     .leverui-spinner[data-size-md='inherit'] {
-      --leverui-private-spinner-size: 1em;
+      --lui-private-spinner-size: 1em;
     }
     .leverui-spinner[data-size-md='xs'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-3);
+      --lui-private-spinner-size: var(--lui-sizes-3);
     }
     .leverui-spinner[data-size-md='sm'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-4);
+      --lui-private-spinner-size: var(--lui-sizes-4);
     }
     .leverui-spinner[data-size-md='md'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-5);
+      --lui-private-spinner-size: var(--lui-sizes-5);
     }
     .leverui-spinner[data-size-md='lg'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-8);
+      --lui-private-spinner-size: var(--lui-sizes-8);
     }
     .leverui-spinner[data-size-md='xl'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-10);
+      --lui-private-spinner-size: var(--lui-sizes-10);
     }
   }
   @media (min-width: 1024px) {
     .leverui-spinner[data-size-lg='inherit'] {
-      --leverui-private-spinner-size: 1em;
+      --lui-private-spinner-size: 1em;
     }
     .leverui-spinner[data-size-lg='xs'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-3);
+      --lui-private-spinner-size: var(--lui-sizes-3);
     }
     .leverui-spinner[data-size-lg='sm'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-4);
+      --lui-private-spinner-size: var(--lui-sizes-4);
     }
     .leverui-spinner[data-size-lg='md'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-5);
+      --lui-private-spinner-size: var(--lui-sizes-5);
     }
     .leverui-spinner[data-size-lg='lg'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-8);
+      --lui-private-spinner-size: var(--lui-sizes-8);
     }
     .leverui-spinner[data-size-lg='xl'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-10);
+      --lui-private-spinner-size: var(--lui-sizes-10);
     }
   }
   @media (min-width: 1280px) {
     .leverui-spinner[data-size-xl='inherit'] {
-      --leverui-private-spinner-size: 1em;
+      --lui-private-spinner-size: 1em;
     }
     .leverui-spinner[data-size-xl='xs'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-3);
+      --lui-private-spinner-size: var(--lui-sizes-3);
     }
     .leverui-spinner[data-size-xl='sm'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-4);
+      --lui-private-spinner-size: var(--lui-sizes-4);
     }
     .leverui-spinner[data-size-xl='md'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-5);
+      --lui-private-spinner-size: var(--lui-sizes-5);
     }
     .leverui-spinner[data-size-xl='lg'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-8);
+      --lui-private-spinner-size: var(--lui-sizes-8);
     }
     .leverui-spinner[data-size-xl='xl'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-10);
+      --lui-private-spinner-size: var(--lui-sizes-10);
     }
   }
   @media (min-width: 1536px) {
     .leverui-spinner[data-size-2xl='inherit'] {
-      --leverui-private-spinner-size: 1em;
+      --lui-private-spinner-size: 1em;
     }
     .leverui-spinner[data-size-2xl='xs'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-3);
+      --lui-private-spinner-size: var(--lui-sizes-3);
     }
     .leverui-spinner[data-size-2xl='sm'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-4);
+      --lui-private-spinner-size: var(--lui-sizes-4);
     }
     .leverui-spinner[data-size-2xl='md'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-5);
+      --lui-private-spinner-size: var(--lui-sizes-5);
     }
     .leverui-spinner[data-size-2xl='lg'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-8);
+      --lui-private-spinner-size: var(--lui-sizes-8);
     }
     .leverui-spinner[data-size-2xl='xl'] {
-      --leverui-private-spinner-size: var(--leverui-sizes-10);
+      --lui-private-spinner-size: var(--lui-sizes-10);
     }
   }
 }

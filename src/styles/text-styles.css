@@ -1,60 +1,60 @@
 @layer leverui.utilities {
   /* Named typography presets selected by the textStyle prop. */
   [data-text-style='2xs'] {
-    font-size: var(--leverui-font-sizes-2xs);
+    font-size: var(--lui-font-sizes-2xs);
     line-height: 0.75rem;
   }
   [data-text-style='xs'] {
-    font-size: var(--leverui-font-sizes-xs);
+    font-size: var(--lui-font-sizes-xs);
     line-height: 1rem;
   }
   [data-text-style='sm'] {
-    font-size: var(--leverui-font-sizes-sm);
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
   }
   [data-text-style='md'] {
-    font-size: var(--leverui-font-sizes-md);
+    font-size: var(--lui-font-sizes-md);
     line-height: 1.5rem;
   }
   [data-text-style='lg'] {
-    font-size: var(--leverui-font-sizes-lg);
+    font-size: var(--lui-font-sizes-lg);
     line-height: 1.75rem;
   }
   [data-text-style='xl'] {
-    font-size: var(--leverui-font-sizes-xl);
+    font-size: var(--lui-font-sizes-xl);
     line-height: 1.875rem;
   }
   [data-text-style='2xl'] {
-    font-size: var(--leverui-font-sizes-2xl);
+    font-size: var(--lui-font-sizes-2xl);
     line-height: 2rem;
   }
   [data-text-style='3xl'] {
-    font-size: var(--leverui-font-sizes-3xl);
+    font-size: var(--lui-font-sizes-3xl);
     line-height: 2.375rem;
   }
   [data-text-style='4xl'] {
-    font-size: var(--leverui-font-sizes-4xl);
+    font-size: var(--lui-font-sizes-4xl);
     line-height: 2.75rem;
     letter-spacing: -0.025em;
   }
   [data-text-style='5xl'] {
-    font-size: var(--leverui-font-sizes-5xl);
+    font-size: var(--lui-font-sizes-5xl);
     line-height: 3.75rem;
     letter-spacing: -0.025em;
   }
   [data-text-style='6xl'] {
-    font-size: var(--leverui-font-sizes-6xl);
+    font-size: var(--lui-font-sizes-6xl);
     line-height: 4.5rem;
     letter-spacing: -0.025em;
   }
   [data-text-style='7xl'] {
-    font-size: var(--leverui-font-sizes-7xl);
+    font-size: var(--lui-font-sizes-7xl);
     line-height: 5.75rem;
     letter-spacing: -0.025em;
   }
   [data-text-style='label'] {
-    font-size: var(--leverui-font-sizes-sm);
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
-    font-weight: var(--leverui-font-weights-medium);
+    font-weight: var(--lui-font-weights-medium);
   }
 }

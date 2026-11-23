@@ -1,24 +1,24 @@
 @layer leverui.recipes {
   .leverui-radio-group__root:not([data-unstyled]) {
     &[data-size='xs'] {
-      --leverui-private-radio-group-item-gap: var(--leverui-spacing-1\.5);
-      --leverui-private-radio-group-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-radio-group-line-height: 1rem;
+      --lui-private-radio-group-item-gap: var(--lui-spacing-1\.5);
+      --lui-private-radio-group-font-size: var(--lui-font-sizes-xs);
+      --lui-private-radio-group-line-height: 1rem;
     }
     &[data-size='sm'] {
-      --leverui-private-radio-group-item-gap: var(--leverui-spacing-2);
-      --leverui-private-radio-group-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-radio-group-line-height: 1.25rem;
+      --lui-private-radio-group-item-gap: var(--lui-spacing-2);
+      --lui-private-radio-group-font-size: var(--lui-font-sizes-sm);
+      --lui-private-radio-group-line-height: 1.25rem;
     }
     &[data-size='md'] {
-      --leverui-private-radio-group-item-gap: var(--leverui-spacing-2\.5);
-      --leverui-private-radio-group-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-radio-group-line-height: 1.25rem;
+      --lui-private-radio-group-item-gap: var(--lui-spacing-2\.5);
+      --lui-private-radio-group-font-size: var(--lui-font-sizes-sm);
+      --lui-private-radio-group-line-height: 1.25rem;
     }
     &[data-size='lg'] {
-      --leverui-private-radio-group-item-gap: var(--leverui-spacing-3);
-      --leverui-private-radio-group-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-radio-group-line-height: 1.5rem;
+      --lui-private-radio-group-item-gap: var(--lui-spacing-3);
+      --lui-private-radio-group-font-size: var(--lui-font-sizes-md);
+      --lui-private-radio-group-line-height: 1.5rem;
     }
   }
 }

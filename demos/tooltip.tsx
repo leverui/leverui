@@ -60,7 +60,7 @@ export const Delay: Story = {
 export const CustomBg: Story = {
   render: TooltipWithCustomBg,
   parameters: guide(
-    'Use the `--leverui-tooltip-background` CSS variable to change the background color of the tooltip.',
+    'Use the `--lui-tooltip-background` CSS variable to change the background color of the tooltip.',
   ),
 };
 export const Controlled: Story = {

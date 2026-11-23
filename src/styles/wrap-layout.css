@@ -2,131 +2,131 @@
   .leverui-wrap:not([data-unstyled]) {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--leverui-wrap-gap, 0.5rem);
+    gap: var(--lui-wrap-gap, 0.5rem);
   }
 
   .leverui-wrap {
     &[data-wrap-align-base] {
-      align-items: var(--leverui-private-wrap-align-base);
+      align-items: var(--lui-private-wrap-align-base);
     }
     &[data-wrap-justify-base] {
-      justify-content: var(--leverui-private-wrap-justify-base);
+      justify-content: var(--lui-private-wrap-justify-base);
     }
     &[data-wrap-direction-base] {
-      flex-direction: var(--leverui-private-wrap-direction-base);
+      flex-direction: var(--lui-private-wrap-direction-base);
     }
     &[data-wrap-gap-base] {
-      gap: var(--leverui-private-wrap-gap-base);
+      gap: var(--lui-private-wrap-gap-base);
     }
     &[data-wrap-row-gap-base] {
-      row-gap: var(--leverui-private-wrap-row-gap-base);
+      row-gap: var(--lui-private-wrap-row-gap-base);
     }
     &[data-wrap-column-gap-base] {
-      column-gap: var(--leverui-private-wrap-column-gap-base);
+      column-gap: var(--lui-private-wrap-column-gap-base);
     }
 
     @media (min-width: 480px) {
       &[data-wrap-align-sm] {
-        align-items: var(--leverui-private-wrap-align-sm);
+        align-items: var(--lui-private-wrap-align-sm);
       }
       &[data-wrap-justify-sm] {
-        justify-content: var(--leverui-private-wrap-justify-sm);
+        justify-content: var(--lui-private-wrap-justify-sm);
       }
       &[data-wrap-direction-sm] {
-        flex-direction: var(--leverui-private-wrap-direction-sm);
+        flex-direction: var(--lui-private-wrap-direction-sm);
       }
       &[data-wrap-gap-sm] {
-        gap: var(--leverui-private-wrap-gap-sm);
+        gap: var(--lui-private-wrap-gap-sm);
       }
       &[data-wrap-row-gap-sm] {
-        row-gap: var(--leverui-private-wrap-row-gap-sm);
+        row-gap: var(--lui-private-wrap-row-gap-sm);
       }
       &[data-wrap-column-gap-sm] {
-        column-gap: var(--leverui-private-wrap-column-gap-sm);
+        column-gap: var(--lui-private-wrap-column-gap-sm);
       }
     }
 
     @media (min-width: 768px) {
       &[data-wrap-align-md] {
-        align-items: var(--leverui-private-wrap-align-md);
+        align-items: var(--lui-private-wrap-align-md);
       }
       &[data-wrap-justify-md] {
-        justify-content: var(--leverui-private-wrap-justify-md);
+        justify-content: var(--lui-private-wrap-justify-md);
       }
       &[data-wrap-direction-md] {
-        flex-direction: var(--leverui-private-wrap-direction-md);
+        flex-direction: var(--lui-private-wrap-direction-md);
       }
       &[data-wrap-gap-md] {
-        gap: var(--leverui-private-wrap-gap-md);
+        gap: var(--lui-private-wrap-gap-md);
       }
       &[data-wrap-row-gap-md] {
-        row-gap: var(--leverui-private-wrap-row-gap-md);
+        row-gap: var(--lui-private-wrap-row-gap-md);
       }
       &[data-wrap-column-gap-md] {
-        column-gap: var(--leverui-private-wrap-column-gap-md);
+        column-gap: var(--lui-private-wrap-column-gap-md);
       }
     }
 
     @media (min-width: 1024px) {
       &[data-wrap-align-lg] {
-        align-items: var(--leverui-private-wrap-align-lg);
+        align-items: var(--lui-private-wrap-align-lg);
       }
       &[data-wrap-justify-lg] {
-        justify-content: var(--leverui-private-wrap-justify-lg);
+        justify-content: var(--lui-private-wrap-justify-lg);
       }
       &[data-wrap-direction-lg] {
-        flex-direction: var(--leverui-private-wrap-direction-lg);
+        flex-direction: var(--lui-private-wrap-direction-lg);
       }
       &[data-wrap-gap-lg] {
-        gap: var(--leverui-private-wrap-gap-lg);
+        gap: var(--lui-private-wrap-gap-lg);
       }
       &[data-wrap-row-gap-lg] {
-        row-gap: var(--leverui-private-wrap-row-gap-lg);
+        row-gap: var(--lui-private-wrap-row-gap-lg);
       }
       &[data-wrap-column-gap-lg] {
-        column-gap: var(--leverui-private-wrap-column-gap-lg);
+        column-gap: var(--lui-private-wrap-column-gap-lg);
       }
     }
 
     @media (min-width: 1280px) {
       &[data-wrap-align-xl] {
-        align-items: var(--leverui-private-wrap-align-xl);
+        align-items: var(--lui-private-wrap-align-xl);
       }
       &[data-wrap-justify-xl] {
-        justify-content: var(--leverui-private-wrap-justify-xl);
+        justify-content: var(--lui-private-wrap-justify-xl);
       }
       &[data-wrap-direction-xl] {
-        flex-direction: var(--leverui-private-wrap-direction-xl);
+        flex-direction: var(--lui-private-wrap-direction-xl);
       }
       &[data-wrap-gap-xl] {
-        gap: var(--leverui-private-wrap-gap-xl);
+        gap: var(--lui-private-wrap-gap-xl);
       }
       &[data-wrap-row-gap-xl] {
-        row-gap: var(--leverui-private-wrap-row-gap-xl);
+        row-gap: var(--lui-private-wrap-row-gap-xl);
       }
       &[data-wrap-column-gap-xl] {
-        column-gap: var(--leverui-private-wrap-column-gap-xl);
+        column-gap: var(--lui-private-wrap-column-gap-xl);
       }
     }
 
     @media (min-width: 1536px) {
       &[data-wrap-align-2xl] {
-        align-items: var(--leverui-private-wrap-align-2xl);
+        align-items: var(--lui-private-wrap-align-2xl);
       }
       &[data-wrap-justify-2xl] {
-        justify-content: var(--leverui-private-wrap-justify-2xl);
+        justify-content: var(--lui-private-wrap-justify-2xl);
       }
       &[data-wrap-direction-2xl] {
-        flex-direction: var(--leverui-private-wrap-direction-2xl);
+        flex-direction: var(--lui-private-wrap-direction-2xl);
       }
       &[data-wrap-gap-2xl] {
-        gap: var(--leverui-private-wrap-gap-2xl);
+        gap: var(--lui-private-wrap-gap-2xl);
       }
       &[data-wrap-row-gap-2xl] {
-        row-gap: var(--leverui-private-wrap-row-gap-2xl);
+        row-gap: var(--lui-private-wrap-row-gap-2xl);
       }
       &[data-wrap-column-gap-2xl] {
-        column-gap: var(--leverui-private-wrap-column-gap-2xl);
+        column-gap: var(--lui-private-wrap-column-gap-2xl);
       }
     }
   }

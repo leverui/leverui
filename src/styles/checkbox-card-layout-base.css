@@ -1,31 +1,31 @@
 @layer leverui.recipes {
   .leverui-checkbox-card:not([data-unstyled]) {
     &[data-align='start'] {
-      --leverui-private-checkbox-card-align: flex-start;
-      --leverui-private-checkbox-card-text-align: start;
+      --lui-private-checkbox-card-align: flex-start;
+      --lui-private-checkbox-card-text-align: start;
     }
     &[data-align='center'] {
-      --leverui-private-checkbox-card-align: center;
-      --leverui-private-checkbox-card-text-align: center;
+      --lui-private-checkbox-card-align: center;
+      --lui-private-checkbox-card-text-align: center;
     }
     &[data-align='end'] {
-      --leverui-private-checkbox-card-align: flex-end;
-      --leverui-private-checkbox-card-text-align: end;
+      --lui-private-checkbox-card-align: flex-end;
+      --lui-private-checkbox-card-text-align: end;
     }
     &[data-justify='start'] {
-      --leverui-private-checkbox-card-justify: flex-start;
+      --lui-private-checkbox-card-justify: flex-start;
     }
     &[data-justify='center'] {
-      --leverui-private-checkbox-card-justify: center;
+      --lui-private-checkbox-card-justify: center;
     }
     &[data-justify='end'] {
-      --leverui-private-checkbox-card-justify: flex-end;
+      --lui-private-checkbox-card-justify: flex-end;
     }
     &[data-orientation='horizontal'] {
-      --leverui-private-checkbox-card-direction: row;
+      --lui-private-checkbox-card-direction: row;
     }
     &[data-orientation='vertical'] {
-      --leverui-private-checkbox-card-direction: column;
+      --lui-private-checkbox-card-direction: column;
     }
   }
 }

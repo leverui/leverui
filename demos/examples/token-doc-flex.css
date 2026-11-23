@@ -1,12 +1,12 @@
 .token-doc-flex-header {
-  font-size: var(--leverui-font-sizes-sm);
-  font-weight: var(--leverui-font-weights-medium);
-  padding-block: var(--leverui-spacing-1);
-  padding-inline: var(--leverui-spacing-3);
+  font-size: var(--lui-font-sizes-sm);
+  font-weight: var(--lui-font-weights-medium);
+  padding-block: var(--lui-spacing-1);
+  padding-inline: var(--lui-spacing-3);
   border-bottom-width: 1px;
 }
 
 .token-doc-flex-row {
-  font-size: var(--leverui-font-sizes-sm);
-  padding-block: var(--leverui-spacing-1);
+  font-size: var(--lui-font-sizes-sm);
+  padding-block: var(--lui-spacing-1);
 }

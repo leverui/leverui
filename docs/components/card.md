@@ -37,15 +37,15 @@ stylesheet.
 
 ### Adding new sizes
 
-Set `--leverui-card-padding` in your own class.
+Set `--lui-card-padding` in your own class.
 
 ```css
 .card-xl {
-  --leverui-card-padding: var(--leverui-spacing-10);
+  --lui-card-padding: var(--lui-spacing-10);
 }
 
 .card-xl .leverui-card__title {
-  font-size: var(--leverui-font-sizes-2xl);
+  font-size: var(--lui-font-sizes-2xl);
 }
 ```
 
@@ -64,7 +64,7 @@ card wins.
 
 ### Updating the theme
 
-Set `--leverui-*` variables on `:root` for every card, or on a class for some.
+Set `--lui-*` variables on `:root` for every card, or on a class for some.
 See the [theme guide](../theme-guide.md).
 
 ## Props

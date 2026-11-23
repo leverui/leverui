@@ -10,7 +10,7 @@ export function code(value) {
 
 /** The part of a variable after its category prefix, such as `blue-500`. */
 export function suffix(entry, prefix) {
-  return entry.variable.slice(`--leverui-${prefix}-`.length).replaceAll('\\', '');
+  return entry.variable.slice(`--lui-${prefix}-`.length).replaceAll('\\', '');
 }
 
 /** Order names with numbers by value, so `2` comes before `10`. */

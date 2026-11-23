@@ -57,17 +57,17 @@ function checksFormattingAndHighlight(): void {
 
 /** Resolve token names to CSS variables and leave raw CSS values alone. */
 function checksTokens(): void {
-  expect(chartColorToken('blue.500')).toBe('var(--leverui-colors-blue-500)');
-  expect(chartColorToken('fg.muted')).toBe('var(--leverui-colors-fg-muted)');
+  expect(chartColorToken('blue.500')).toBe('var(--lui-colors-blue-500)');
+  expect(chartColorToken('fg.muted')).toBe('var(--lui-colors-fg-muted)');
   expect(chartColorToken('colorPalette.focusRing')).toBe(
-    'var(--leverui-colors-color-palette-focus-ring)',
+    'var(--lui-colors-color-palette-focus-ring)',
   );
-  expect(chartColorToken('fg')).toBe('var(--leverui-colors-fg)');
+  expect(chartColorToken('fg')).toBe('var(--lui-colors-fg)');
   expect(chartColorToken('#ff0000')).toBe('#ff0000');
-  expect(chartSizeToken('4')).toBe('var(--leverui-sizes-4)');
-  expect(chartSizeToken('sm')).toBe('var(--leverui-sizes-sm)');
+  expect(chartSizeToken('4')).toBe('var(--lui-sizes-4)');
+  expect(chartSizeToken('sm')).toBe('var(--lui-sizes-sm)');
   expect(chartSizeToken('20px')).toBe('20px');
-  expect(chartSpacingToken('1.5')).toBe('var(--leverui-spacing-1\\.5)');
+  expect(chartSpacingToken('1.5')).toBe('var(--lui-spacing-1\\.5)');
   expect(chartSpacingToken('2rem')).toBe('2rem');
 }
 

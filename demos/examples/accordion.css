@@ -1,19 +1,19 @@
 .accordion-example__context-trigger {
-  padding-inline: var(--leverui-spacing-3);
+  padding-inline: var(--lui-spacing-3);
 }
 
 .accordion-example__context-trigger[data-state='open'] {
-  background: var(--leverui-colors-gray-subtle);
+  background: var(--lui-colors-gray-subtle);
 }
 
 .accordion-example__responsive-trigger {
-  padding-inline: var(--leverui-spacing-2);
-  font-size: var(--leverui-font-sizes-sm);
+  padding-inline: var(--lui-spacing-2);
+  font-size: var(--lui-font-sizes-sm);
 }
 
 @media (min-width: 768px) {
   .accordion-example__responsive-trigger {
-    padding-inline: var(--leverui-spacing-8);
-    font-size: var(--leverui-font-sizes-xl);
+    padding-inline: var(--lui-spacing-8);
+    font-size: var(--lui-font-sizes-xl);
   }
 }

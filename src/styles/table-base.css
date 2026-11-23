@@ -5,54 +5,54 @@
     text-align: start;
     vertical-align: top;
     font-variant-numeric: lining-nums tabular-nums;
-    font-size: var(--leverui-private-table-font-size);
-    line-height: var(--leverui-private-table-line-height);
-    --leverui-private-table-font-size: var(--leverui-font-sizes-sm);
-    --leverui-private-table-line-height: 1.25rem;
-    --leverui-private-table-padding-inline: var(--leverui-spacing-3);
-    --leverui-private-table-padding-block: var(--leverui-spacing-3);
-    --leverui-private-table-header-background: transparent;
-    --leverui-private-table-row-background: var(--leverui-colors-bg);
-    --leverui-private-table-root-shadow: none;
-    --leverui-private-table-footer-border: 0;
-    --leverui-private-table-row-border: 0;
-    --leverui-private-table-cell-border: 1px;
+    font-size: var(--lui-private-table-font-size);
+    line-height: var(--lui-private-table-line-height);
+    --lui-private-table-font-size: var(--lui-font-sizes-sm);
+    --lui-private-table-line-height: 1.25rem;
+    --lui-private-table-padding-inline: var(--lui-spacing-3);
+    --lui-private-table-padding-block: var(--lui-spacing-3);
+    --lui-private-table-header-background: transparent;
+    --lui-private-table-row-background: var(--lui-colors-bg);
+    --lui-private-table-root-shadow: none;
+    --lui-private-table-footer-border: 0;
+    --lui-private-table-row-border: 0;
+    --lui-private-table-cell-border: 1px;
 
     &[data-size='sm'] {
-      --leverui-private-table-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-table-line-height: 1.25rem;
-      --leverui-private-table-padding-inline: var(--leverui-spacing-2);
-      --leverui-private-table-padding-block: var(--leverui-spacing-2);
+      --lui-private-table-font-size: var(--lui-font-sizes-sm);
+      --lui-private-table-line-height: 1.25rem;
+      --lui-private-table-padding-inline: var(--lui-spacing-2);
+      --lui-private-table-padding-block: var(--lui-spacing-2);
     }
     &[data-size='md'] {
-      --leverui-private-table-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-table-line-height: 1.25rem;
-      --leverui-private-table-padding-inline: var(--leverui-spacing-3);
-      --leverui-private-table-padding-block: var(--leverui-spacing-3);
+      --lui-private-table-font-size: var(--lui-font-sizes-sm);
+      --lui-private-table-line-height: 1.25rem;
+      --lui-private-table-padding-inline: var(--lui-spacing-3);
+      --lui-private-table-padding-block: var(--lui-spacing-3);
     }
     &[data-size='lg'] {
-      --leverui-private-table-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-table-line-height: 1.5rem;
-      --leverui-private-table-padding-inline: var(--leverui-spacing-4);
-      --leverui-private-table-padding-block: var(--leverui-spacing-3);
+      --lui-private-table-font-size: var(--lui-font-sizes-md);
+      --lui-private-table-line-height: 1.5rem;
+      --lui-private-table-padding-inline: var(--lui-spacing-4);
+      --lui-private-table-padding-block: var(--lui-spacing-3);
     }
     &[data-variant='line'] {
-      --leverui-private-table-header-background: transparent;
-      --leverui-private-table-row-background: var(--leverui-colors-bg);
-      --leverui-private-table-root-shadow: none;
-      --leverui-private-table-footer-border: 0;
-      --leverui-private-table-row-border: 0;
-      --leverui-private-table-cell-border: 1px;
+      --lui-private-table-header-background: transparent;
+      --lui-private-table-row-background: var(--lui-colors-bg);
+      --lui-private-table-root-shadow: none;
+      --lui-private-table-footer-border: 0;
+      --lui-private-table-row-border: 0;
+      --lui-private-table-cell-border: 1px;
     }
     &[data-variant='outline'] {
-      --leverui-private-table-header-background: var(--leverui-colors-bg-muted);
-      --leverui-private-table-row-background: transparent;
-      --leverui-private-table-root-shadow: 0 0 0 1px var(--leverui-colors-border);
-      --leverui-private-table-footer-border: 1px;
-      --leverui-private-table-row-border: 1px;
-      --leverui-private-table-cell-border: 0;
+      --lui-private-table-header-background: var(--lui-colors-bg-muted);
+      --lui-private-table-row-background: transparent;
+      --lui-private-table-root-shadow: 0 0 0 1px var(--lui-colors-border);
+      --lui-private-table-footer-border: 1px;
+      --lui-private-table-row-border: 1px;
+      --lui-private-table-cell-border: 0;
     }
-    box-shadow: var(--leverui-private-table-root-shadow);
+    box-shadow: var(--lui-private-table-root-shadow);
   }
 
   .leverui-table__scrollArea:not([data-unstyled]) {
@@ -65,25 +65,24 @@
 
   @scope (.leverui-table__root:not([data-unstyled])) to (.leverui-table__root) {
     :is(.leverui-table__header, :scope[data-native] thead):not([data-unstyled]) {
-      background-color: var(--leverui-private-table-header-background);
+      background-color: var(--lui-private-table-header-background);
     }
     :is(.leverui-table__row, :scope[data-native] tr):not([data-unstyled]) {
-      background-color: var(--leverui-private-table-row-background);
+      background-color: var(--lui-private-table-row-background);
     }
     :is(.leverui-table__cell, :scope[data-native] td):not([data-unstyled]),
     :is(.leverui-table__columnHeader, :scope[data-native] thead th):not([data-unstyled]) {
-      padding: var(--leverui-private-table-padding-block)
-        var(--leverui-private-table-padding-inline);
+      padding: var(--lui-private-table-padding-block) var(--lui-private-table-padding-inline);
       text-align: start;
     }
     :is(.leverui-table__columnHeader, :scope[data-native] thead th):not([data-unstyled]) {
-      color: var(--leverui-colors-fg);
-      font-weight: var(--leverui-font-weights-medium);
+      color: var(--lui-colors-fg);
+      font-weight: var(--lui-font-weights-medium);
     }
     :is(.leverui-table__caption, :scope[data-native] caption):not([data-unstyled]) {
-      font-size: var(--leverui-font-sizes-xs);
+      font-size: var(--lui-font-sizes-xs);
       line-height: 1rem;
-      font-weight: var(--leverui-font-weights-medium);
+      font-weight: var(--lui-font-weights-medium);
     }
     .leverui-table__caption:not([data-unstyled]) {
       caption-side: bottom;
@@ -92,7 +91,7 @@
       }
     }
     :is(.leverui-table__footer, :scope[data-native] tfoot):not([data-unstyled]) {
-      font-weight: var(--leverui-font-weights-medium);
+      font-weight: var(--lui-font-weights-medium);
     }
   }
 }

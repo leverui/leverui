@@ -2,44 +2,44 @@
   .leverui-drawer__header[data-leverui-drawer-css] {
     display: flex;
     align-items: center;
-    gap: var(--leverui-spacing-2);
+    gap: var(--lui-spacing-2);
     flex: 0;
-    padding-inline: var(--leverui-spacing-6);
-    padding-top: var(--leverui-spacing-6);
-    padding-bottom: var(--leverui-spacing-4);
+    padding-inline: var(--lui-spacing-6);
+    padding-top: var(--lui-spacing-6);
+    padding-bottom: var(--lui-spacing-4);
   }
 
   .leverui-drawer__body[data-leverui-drawer-css] {
     flex: 1;
     overflow: auto;
-    padding-inline: var(--leverui-spacing-6);
-    padding-block: var(--leverui-spacing-2);
+    padding-inline: var(--lui-spacing-6);
+    padding-block: var(--lui-spacing-2);
   }
 
   .leverui-drawer__footer[data-leverui-drawer-css] {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: var(--leverui-spacing-3);
-    padding-inline: var(--leverui-spacing-6);
-    padding-top: var(--leverui-spacing-2);
-    padding-bottom: var(--leverui-spacing-4);
+    gap: var(--lui-spacing-3);
+    padding-inline: var(--lui-spacing-6);
+    padding-top: var(--lui-spacing-2);
+    padding-bottom: var(--lui-spacing-4);
   }
 
   .leverui-drawer__title[data-leverui-drawer-css] {
     flex: 1;
-    font-size: var(--leverui-font-sizes-lg);
+    font-size: var(--lui-font-sizes-lg);
     line-height: 1.75rem;
-    font-weight: var(--leverui-font-weights-semibold);
+    font-weight: var(--lui-font-weights-semibold);
   }
 
   .leverui-drawer__description[data-leverui-drawer-css] {
-    color: var(--leverui-colors-fg-muted);
+    color: var(--lui-colors-fg-muted);
   }
 
   .leverui-drawer__closeTrigger[data-leverui-drawer-css] {
     position: absolute;
-    top: var(--leverui-spacing-3);
-    inset-inline-end: var(--leverui-spacing-2);
+    top: var(--lui-spacing-3);
+    inset-inline-end: var(--lui-spacing-2);
   }
 }

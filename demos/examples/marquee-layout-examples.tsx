@@ -108,7 +108,7 @@ export function MarqueeNewsTicker(): JSX.Element {
   return (
     <div class="example-marquee-ticker">
       <div class="example-marquee-ticker-label">LATEST NEWS</div>
-      <Marquee.Root style={{ '--leverui-marquee-duration': '40s' }}>
+      <Marquee.Root style={{ '--lui-marquee-duration': '40s' }}>
         <Marquee.Viewport>
           <Marquee.Content class="example-marquee-ticker-content">
             <For each={news}>

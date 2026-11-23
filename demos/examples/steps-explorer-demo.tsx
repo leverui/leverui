@@ -23,7 +23,7 @@ const onboardingSteps = [
 /** Lay out an onboarding flow that renders every Steps part the Explorer can highlight. */
 export function StepsExplorerDemo(): JSX.Element {
   return (
-    <Stack gap="8" style={{ 'max-width': 'var(--leverui-sizes-md)' }}>
+    <Stack gap="8" style={{ 'max-width': 'var(--lui-sizes-md)' }}>
       <Heading size="md">Onboarding steps</Heading>
       <Steps.Root
         defaultValue="step-1"
@@ -32,7 +32,7 @@ export function StepsExplorerDemo(): JSX.Element {
         orientation="vertical"
       >
         <Stack gap="8">
-          <Steps.List style={{ gap: 'var(--leverui-spacing-6)' }}>
+          <Steps.List style={{ gap: 'var(--lui-spacing-6)' }}>
             <For each={onboardingSteps}>
               {
                 /** Render one step with its description under the indicator. */
@@ -41,9 +41,7 @@ export function StepsExplorerDemo(): JSX.Element {
                     <Steps.Item value={`step-${index()}`}>
                       <Steps.Trigger style={{ 'align-items': 'flex-start' }}>
                         <Steps.Indicator />
-                        <Steps.Title
-                          style={{ 'font-weight': 'var(--leverui-font-weights-semibold)' }}
-                        >
+                        <Steps.Title style={{ 'font-weight': 'var(--lui-font-weights-semibold)' }}>
                           {step.title}
                         </Steps.Title>
                       </Steps.Trigger>
@@ -51,12 +49,12 @@ export function StepsExplorerDemo(): JSX.Element {
                     </Steps.Item>
                     <Box
                       style={{
-                        'padding-inline-start': 'var(--leverui-spacing-10)',
-                        'margin-top': 'var(--leverui-spacing-2)',
+                        'padding-inline-start': 'var(--lui-spacing-10)',
+                        'margin-top': 'var(--lui-spacing-2)',
                       }}
                     >
                       <Steps.Content value={`step-${index()}`}>
-                        <Steps.Description style={{ color: 'var(--leverui-colors-gray-500)' }}>
+                        <Steps.Description style={{ color: 'var(--lui-colors-gray-500)' }}>
                           {step.description}
                         </Steps.Description>
                       </Steps.Content>
@@ -69,9 +67,9 @@ export function StepsExplorerDemo(): JSX.Element {
           <Steps.CompletedContent>
             <Text
               style={{
-                'margin-top': 'var(--leverui-spacing-2)',
-                'font-weight': 'var(--leverui-font-weights-medium)',
-                color: 'var(--leverui-colors-green-600)',
+                'margin-top': 'var(--lui-spacing-2)',
+                'font-weight': 'var(--lui-font-weights-medium)',
+                color: 'var(--lui-colors-green-600)',
               }}
             >
               ✅ All steps are complete! You're ready to go.

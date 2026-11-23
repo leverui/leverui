@@ -71,7 +71,7 @@ Classes: `.leverui-table__root`, `__header`, `__body`, `__row`,
 `__columnHeader`, `__cell`, `__footer`, `__caption`, `__columnGroup`,
 `__column`, and `__scrollArea`. The root also has attributes for size, variant,
 stripes, hover, sticky header, column borders, palette, native mode, and
-`unstyled`. Override these, or the `--leverui-*` tokens, in your own CSS. Add a
+`unstyled`. Override these, or the `--lui-*` tokens, in your own CSS. Add a
 part's class to your own HTML element to give it that part's look.
 
 ```tsx

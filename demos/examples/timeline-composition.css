@@ -1,36 +1,36 @@
 .timeline-composition-root {
-  max-width: var(--leverui-sizes-md);
+  max-width: var(--lui-sizes-md);
 }
 
 .timeline-composition-small-icon {
-  font-size: var(--leverui-font-sizes-xs);
+  font-size: var(--lui-font-sizes-xs);
 }
 
 .timeline-composition-muted {
-  color: var(--leverui-colors-fg-muted);
+  color: var(--lui-colors-fg-muted);
 }
 
 .timeline-composition-emphasis {
-  font-weight: var(--leverui-font-weights-medium);
+  font-weight: var(--lui-font-weights-medium);
 }
 
 .timeline-composition-accent-indicator {
-  background-color: var(--leverui-colors-teal-solid);
-  color: var(--leverui-colors-teal-contrast);
+  background-color: var(--lui-colors-teal-solid);
+  color: var(--lui-colors-teal-contrast);
 }
 
 .timeline-composition-content,
 .timeline-composition-input-content {
-  gap: var(--leverui-spacing-4);
+  gap: var(--lui-spacing-4);
 }
 
 .timeline-composition-card-body {
-  font-size: var(--leverui-font-sizes-sm);
-  line-height: var(--leverui-line-heights-tall);
+  font-size: var(--lui-font-sizes-sm);
+  line-height: var(--lui-line-heights-tall);
 }
 
 .timeline-composition-reaction {
-  border-radius: var(--leverui-radii-md);
+  border-radius: var(--lui-radii-md);
 }
 
 .timeline-composition-input-content {

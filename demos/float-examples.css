@@ -2,7 +2,7 @@
   position: relative;
   width: 80px;
   height: 80px;
-  background: var(--leverui-colors-bg-emphasized);
+  background: var(--lui-colors-bg-emphasized);
 }
 
 .float-example-avatar-host {
@@ -11,6 +11,6 @@
 }
 
 .float-example-count {
-  background: var(--leverui-colors-red-600);
+  background: var(--lui-colors-red-600);
   color: white;
 }

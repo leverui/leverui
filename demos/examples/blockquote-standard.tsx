@@ -82,9 +82,9 @@ export function BlockquoteWithVariants(): JSX.Element {
 /** Show every public Blockquote part for the guide's anatomy explorer. */
 export function BlockquoteExplorerDemo(): JSX.Element {
   return (
-    <Box style={{ 'max-width': '400px', padding: 'var(--leverui-spacing-4)' }}>
+    <Box style={{ 'max-width': '400px', padding: 'var(--lui-spacing-4)' }}>
       <Blockquote.Root>
-        <Flex style={{ 'align-items': 'flex-start', gap: 'var(--leverui-spacing-2)' }}>
+        <Flex style={{ 'align-items': 'flex-start', gap: 'var(--lui-spacing-2)' }}>
           <Blockquote.Icon />
           <Box style={{ flex: '1' }}>
             <Blockquote.Content>
@@ -95,8 +95,8 @@ export function BlockquoteExplorerDemo(): JSX.Element {
             <Flex
               style={{
                 'align-items': 'center',
-                gap: 'var(--leverui-spacing-2)',
-                'margin-top': 'var(--leverui-spacing-2)',
+                gap: 'var(--lui-spacing-2)',
+                'margin-top': 'var(--lui-spacing-2)',
               }}
             >
               <Blockquote.Caption>— Wren Ashford</Blockquote.Caption>
@@ -116,7 +116,7 @@ export function BlockquoteWithJustify(): JSX.Element {
         {
           /** Label one justification and render the matching quote. */
           (justify) => (
-            <HStack style={{ 'max-width': 'var(--leverui-sizes-xl)' }}>
+            <HStack style={{ 'max-width': 'var(--lui-sizes-xl)' }}>
               <Text class="example-blockquote-justify-label">{justify}</Text>
               <Blockquote.Root variant="plain" justify={justify}>
                 <Blockquote.Content cite="Wren Ashford">

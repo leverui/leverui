@@ -3,47 +3,47 @@ import { For } from 'solid-js';
 import { HStack, Stack, Stat } from '../../src';
 
 const cardStyle = {
-  'border-radius': 'var(--leverui-radii-md)',
+  'border-radius': 'var(--lui-radii-md)',
   width: '100%',
-  padding: 'var(--leverui-spacing-4)',
+  padding: 'var(--lui-spacing-4)',
   'border-width': '1px',
 } as const;
 const labelStyle = {
-  'font-size': 'var(--leverui-font-sizes-sm)',
-  color: 'var(--leverui-colors-gray-600)',
-  'margin-bottom': 'var(--leverui-spacing-1)',
+  'font-size': 'var(--lui-font-sizes-sm)',
+  color: 'var(--lui-colors-gray-600)',
+  'margin-bottom': 'var(--lui-spacing-1)',
 } as const;
 const valueStyle = {
-  'font-size': 'var(--leverui-font-sizes-2xl)',
-  'font-weight': 'var(--leverui-font-weights-bold)',
+  'font-size': 'var(--lui-font-sizes-2xl)',
+  'font-weight': 'var(--lui-font-weights-bold)',
   'line-height': '1',
 } as const;
 const unitStyle = {
-  'margin-inline-start': 'var(--leverui-spacing-1)',
-  'font-size': 'var(--leverui-font-sizes-lg)',
-  color: 'var(--leverui-colors-gray-500)',
+  'margin-inline-start': 'var(--lui-spacing-1)',
+  'font-size': 'var(--lui-font-sizes-lg)',
+  color: 'var(--lui-colors-gray-500)',
   'line-height': '1',
 } as const;
 const helpStyle = {
-  'font-size': 'var(--leverui-font-sizes-sm)',
-  color: 'var(--leverui-colors-gray-500)',
-  'margin-top': 'var(--leverui-spacing-2)',
+  'font-size': 'var(--lui-font-sizes-sm)',
+  color: 'var(--lui-colors-gray-500)',
+  'margin-top': 'var(--lui-spacing-2)',
 } as const;
 
 /** Render the indicator trend matching one statistic's direction. */
 function Trend(props: { up: boolean }): JSX.Element {
   const style = {
-    'font-size': 'var(--leverui-font-sizes-sm)',
+    'font-size': 'var(--lui-font-sizes-sm)',
     'line-height': '1',
   } as const;
   return (
     <>
       {props.up ? (
-        <Stat.UpIndicator as="span" style={{ ...style, color: 'var(--leverui-colors-green-500)' }}>
+        <Stat.UpIndicator as="span" style={{ ...style, color: 'var(--lui-colors-green-500)' }}>
           ▲ 12%
         </Stat.UpIndicator>
       ) : (
-        <Stat.DownIndicator as="span" style={{ ...style, color: 'var(--leverui-colors-red-500)' }}>
+        <Stat.DownIndicator as="span" style={{ ...style, color: 'var(--lui-colors-red-500)' }}>
           ▼ 8%
         </Stat.DownIndicator>
       )}
@@ -59,7 +59,7 @@ const cards = [
 /** Show every Stat part in the Explorer's two comparison cards. */
 export function StatExplorerDemo(): JSX.Element {
   return (
-    <Stack gap="6" align="stretch" style={{ 'max-width': 'var(--leverui-sizes-sm)' }}>
+    <Stack gap="6" align="stretch" style={{ 'max-width': 'var(--lui-sizes-sm)' }}>
       <For each={cards}>
         {
           /** Render one statistic card with its unit and trend. */

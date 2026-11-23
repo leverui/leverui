@@ -6,7 +6,7 @@ import './sandbox.css';
 export function SandboxSelfClosing(): JSX.Element {
   return (
     <Box
-      style={{ 'border-radius': 'var(--leverui-radii-full)', overflow: 'hidden' }}
+      style={{ 'border-radius': 'var(--lui-radii-full)', overflow: 'hidden' }}
       asChild={
         /** Merge the wrapper's radius and overflow onto the native image. */
         (getProps) => (

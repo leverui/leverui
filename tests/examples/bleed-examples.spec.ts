@@ -58,7 +58,7 @@ async function verifiesBleedCardCss({ page }: { page: Page }): Promise<void> {
   await expect(pattern).toHaveCSS('height', '80px');
   await expect(pattern).toHaveCSS('background-image', /data:image\/svg\+xml/);
   await expect(pattern).not.toHaveAttribute('style');
-  await page.addStyleTag({ content: '.bleed-gallery-card { --leverui-spacing-10: 48px; }' });
+  await page.addStyleTag({ content: '.bleed-gallery-card { --lui-spacing-10: 48px; }' });
   await expect(card).toHaveCSS('padding-left', '48px');
 }
 

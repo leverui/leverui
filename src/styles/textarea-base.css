@@ -6,18 +6,18 @@
     position: relative;
     appearance: none;
     text-align: start;
-    font-size: var(--leverui-private-textarea-font-size);
-    line-height: var(--leverui-private-textarea-line-height);
-    padding-inline: var(--leverui-private-textarea-padding-inline);
-    padding-block: var(--leverui-private-textarea-padding-block);
-    scroll-padding-bottom: var(--leverui-private-textarea-scroll-padding);
-    border-radius: var(--leverui-private-textarea-radius, var(--leverui-radii-l2));
+    font-size: var(--lui-private-textarea-font-size);
+    line-height: var(--lui-private-textarea-line-height);
+    padding-inline: var(--lui-private-textarea-padding-inline);
+    padding-block: var(--lui-private-textarea-padding-block);
+    scroll-padding-bottom: var(--lui-private-textarea-scroll-padding);
+    border-radius: var(--lui-private-textarea-radius, var(--lui-radii-l2));
     border-style: solid;
-    border-width: var(--leverui-private-textarea-border-width, 1px);
-    border-color: var(--leverui-private-textarea-border-color, var(--leverui-colors-border));
-    background: var(--leverui-private-textarea-background, transparent);
-    --leverui-private-textarea-focus-color: var(--leverui-colors-color-palette-focus-ring);
-    --leverui-private-textarea-error-color: var(--leverui-colors-border-error);
+    border-width: var(--lui-private-textarea-border-width, 1px);
+    border-color: var(--lui-private-textarea-border-color, var(--lui-colors-border));
+    background: var(--lui-private-textarea-background, transparent);
+    --lui-private-textarea-focus-color: var(--lui-colors-color-palette-focus-ring);
+    --lui-private-textarea-error-color: var(--lui-colors-border-error);
   }
 
   .leverui-textarea[data-autoresize] {

@@ -20,9 +20,9 @@ export const barListContracts = [
         (part) => `.leverui-bar-list__${part}`,
       ),
       '.leverui-bar-list__row[data-hovered]',
-      '--leverui-bar-list-size',
-      '--leverui-private-bar-list-width',
-      '--leverui-private-bar-list-color',
+      '--lui-bar-list-size',
+      '--lui-private-bar-list-width',
+      '--lui-private-bar-list-color',
     ],
   },
 ];

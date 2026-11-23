@@ -1,12 +1,12 @@
 .pin-input-separated-control {
   align-items: center;
-  gap: var(--leverui-spacing-3);
+  gap: var(--lui-spacing-3);
 }
 
 .example-pin-input-separator {
-  color: var(--leverui-colors-fg-subtle);
+  color: var(--lui-colors-fg-subtle);
 }
 
 .example-pin-input-code {
-  font-family: var(--leverui-fonts-mono);
+  font-family: var(--lui-fonts-mono);
 }

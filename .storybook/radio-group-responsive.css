@@ -1,7 +1,7 @@
 .radio-group-responsive {
   display: flex;
   flex-direction: row;
-  gap: var(--leverui-spacing-3);
+  gap: var(--lui-spacing-3);
 }
 
 @media (min-width: 48rem) {

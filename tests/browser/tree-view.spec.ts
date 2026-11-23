@@ -66,10 +66,10 @@ async function verifiesCssOverrides({ page }: { page: Page }): Promise<void> {
   );
   await page.addStyleTag({
     content:
-      '[data-testid="tree-root"] { --leverui-tree-padding-inline: 2rem; --leverui-tree-indentation: 3rem; } .leverui-tree-view__itemText { color: rgb(12, 34, 56); }',
+      '[data-testid="tree-root"] { --lui-tree-padding-inline: 2rem; --lui-tree-indentation: 3rem; } .leverui-tree-view__itemText { color: rgb(12, 34, 56); }',
   });
   await expect(app).not.toHaveCSS('padding-inline-start', originalPadding);
-  await expect(page.getByTestId('tree-root')).toHaveCSS('--leverui-tree-indentation', '3rem');
+  await expect(page.getByTestId('tree-root')).toHaveCSS('--lui-tree-indentation', '3rem');
   await expect(app.locator('.leverui-tree-view__itemText')).toHaveCSS('color', 'rgb(12, 34, 56)');
 }
 

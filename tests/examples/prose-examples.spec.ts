@@ -68,7 +68,7 @@ async function verifiesProseCssContract({ page }: { page: Page }): Promise<void>
   await expect(prose).toHaveCSS('max-width', /px$/);
   expect(await prose.getAttribute('class')).not.toMatch(/\bcss-/);
   await page.addStyleTag({
-    content: '.leverui-prose { --leverui-prose-color: rgb(12, 34, 56); }',
+    content: '.leverui-prose { --lui-prose-color: rgb(12, 34, 56); }',
   });
   await expect(prose).toHaveCSS('color', 'rgb(12, 34, 56)');
   await prose.evaluate(

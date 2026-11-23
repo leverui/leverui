@@ -185,10 +185,10 @@ function verifiesGroupedNumberInput(): void {
   if (!(group instanceof HTMLElement))
     throw new Error('Grouped Number Input has no Input Group root.');
   expect(group.hasAttribute('data-group-start')).toBe(true);
-  expect(group.style.getPropertyValue('--leverui-private-input-group-start-offset')).toBe('0px');
+  expect(group.style.getPropertyValue('--lui-private-input-group-start-offset')).toBe('0px');
   setOffset('4px');
   flush();
-  expect(group.style.getPropertyValue('--leverui-private-input-group-start-offset')).toBe('4px');
+  expect(group.style.getPropertyValue('--lui-private-input-group-start-offset')).toBe('4px');
   expect(explicit.style.paddingInlineStart).toBe('8px');
   setAdorned(false);
   flush();

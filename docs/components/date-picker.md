@@ -191,7 +191,7 @@ Classes: `.leverui-date-picker__<slot>` on the root and each part. Attributes:
 `data-size`, `data-variant`, and the supported breakpoint attributes. Content
 rendered in a portal gets the same values.
 
-Variables: set `--leverui-date-picker-*` on `:root`, on a theme wrapper, or on
+Variables: set `--lui-date-picker-*` on `:root`, on a theme wrapper, or on
 a single picker. Parts accept `class`, `style`, `unstyled`, `as`, and
 `asChild`.
 

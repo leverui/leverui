@@ -23,17 +23,17 @@ Set these on the chart or any element that contains it.
 
 ```css
 .sales-chart {
-  --leverui-chart-grid-color: #ccc;
-  --leverui-chart-grid-dasharray: 3 3;
-  --leverui-chart-grid-opacity: 0.5;
+  --lui-chart-grid-color: #ccc;
+  --lui-chart-grid-dasharray: 3 3;
+  --lui-chart-grid-opacity: 0.5;
 }
 ```
 
-| Variable                         | Default      | Description                          |
-| -------------------------------- | ------------ | ------------------------------------ |
-| `--leverui-chart-grid-color`     | Border color | Line color, such as `#ddd` or `red`. |
-| `--leverui-chart-grid-dasharray` | `none`       | Dash pattern, such as `5 5`.         |
-| `--leverui-chart-grid-opacity`   | `1`          | Line opacity, 0 to 1.                |
+| Variable                     | Default      | Description                          |
+| ---------------------------- | ------------ | ------------------------------------ |
+| `--lui-chart-grid-color`     | Border color | Line color, such as `#ddd` or `red`. |
+| `--lui-chart-grid-dasharray` | `none`       | Dash pattern, such as `5 5`.         |
+| `--lui-chart-grid-opacity`   | `1`          | Line opacity, 0 to 1.                |
 
 `gridDashed` draws `3 3` dashes without CSS.
 

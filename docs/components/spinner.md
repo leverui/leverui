@@ -15,14 +15,14 @@ import { Spinner } from '@leverui/components';
 Import `@leverui/components/styles.css` once in your app.
 
 `size` is responsive. `colorPalette` sets the
-`--leverui-colors-color-palette-*` variables on the spinner, for use in a class
+`--lui-colors-color-palette-*` variables on the spinner, for use in a class
 or in `style`. Change the color and speed in your own class. Set
-`--leverui-spinner-track-color` for the track.
+`--lui-spinner-track-color` for the track.
 
 ```css
 .loading-indicator {
-  color: var(--leverui-colors-blue-500);
-  --leverui-spinner-track-color: transparent;
+  color: var(--lui-colors-blue-500);
+  --lui-spinner-track-color: transparent;
   animation-duration: 800ms;
 }
 ```

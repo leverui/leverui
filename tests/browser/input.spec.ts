@@ -131,7 +131,7 @@ async function verifiesInputCssContract({ page }: { page: Page }): Promise<void>
   await expect(plain).toHaveClass(/leverui-input/);
   const focusColor = page.getByTestId('custom-focus-input');
   const errorColor = page.getByTestId('custom-error-input');
-  await expect(focusColor).toHaveCSS('--leverui-private-input-focus-color', 'lime');
+  await expect(focusColor).toHaveCSS('--lui-private-input-focus-color', 'lime');
   await expect(errorColor).toHaveCSS('border-top-color', 'rgb(0, 128, 0)');
   await page.addStyleTag({ content: '.leverui-input { border-radius: 9px; }' });
   await expect(input).toHaveCSS('border-top-left-radius', '9px');

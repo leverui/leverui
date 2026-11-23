@@ -3,16 +3,16 @@
 }
 
 .container-contract-sized {
-  --leverui-container-max-width: var(--leverui-sizes-sm);
-  padding-inline: var(--leverui-spacing-2);
+  --lui-container-max-width: var(--lui-sizes-sm);
+  padding-inline: var(--lui-spacing-2);
 }
 
 .container-contract-custom {
-  --leverui-container-max-width: 500px;
+  --lui-container-max-width: 500px;
 }
 
 @media (min-width: 48rem) {
   .container-contract-sized {
-    --leverui-container-max-width: var(--leverui-sizes-lg);
+    --lui-container-max-width: var(--lui-sizes-lg);
   }
 }

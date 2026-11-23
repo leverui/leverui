@@ -14,7 +14,7 @@ export function ActionBarPlacement(): JSX.Element {
   return (
     <VStack gap="6" align="flex-start">
       <VStack gap="3" align="flex-start">
-        <Text style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>Placement:</Text>
+        <Text style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>Placement:</Text>
         <SegmentGroup.Root
           size="sm"
           value={placement()}

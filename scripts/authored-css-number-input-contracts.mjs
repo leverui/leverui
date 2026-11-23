@@ -9,8 +9,8 @@ export const numberInputContracts = [
       '.leverui-number-input__incrementTrigger',
       '.leverui-number-input__decrementTrigger',
       '.leverui-number-input__valueText',
-      '--leverui-number-input-stepper-width',
-      '--leverui-number-input-stepper-radius',
+      '--lui-number-input-stepper-width',
+      '--lui-number-input-stepper-radius',
       ...['', '-sm', '-md', '-lg', '-xl', '-2xl'].flatMap(
         /** Require all four authored stepper sizes at each breakpoint. */
         (suffix) =>

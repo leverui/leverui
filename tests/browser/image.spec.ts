@@ -93,7 +93,7 @@ async function verifiesImageContract({ page }: { page: Page }): Promise<void> {
   await expect(responsiveFit).toHaveCSS('object-fit', 'contain');
   await expect(responsiveFit).toHaveCSS('object-position', '100% 100%');
   await page.addStyleTag({
-    content: '.consumer-image { --leverui-image-fit: contain; }',
+    content: '.consumer-image { --lui-image-fit: contain; }',
   });
   await expect(image).toHaveCSS('object-fit', 'contain');
 }

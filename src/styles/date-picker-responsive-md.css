@@ -3,90 +3,89 @@
     :is(.leverui-date-picker__root, .leverui-date-picker__content):not(
         [data-unstyled]
       )[data-size-md='xs'] {
-      --leverui-private-date-picker-input-height: var(--leverui-sizes-8);
-      --leverui-private-date-picker-input-padding: var(--leverui-spacing-2);
-      --leverui-private-date-picker-indicators-offset: var(--leverui-spacing-2);
-      --leverui-private-date-picker-cell-size: var(--leverui-sizes-8);
-      --leverui-private-date-picker-nav-size: var(--leverui-sizes-7);
-      --leverui-private-date-picker-select-height: var(--leverui-sizes-8);
+      --lui-private-date-picker-input-height: var(--lui-sizes-8);
+      --lui-private-date-picker-input-padding: var(--lui-spacing-2);
+      --lui-private-date-picker-indicators-offset: var(--lui-spacing-2);
+      --lui-private-date-picker-cell-size: var(--lui-sizes-8);
+      --lui-private-date-picker-nav-size: var(--lui-sizes-7);
+      --lui-private-date-picker-select-height: var(--lui-sizes-8);
     }
 
     :is(.leverui-date-picker__root, .leverui-date-picker__content):not(
         [data-unstyled]
       )[data-size-md='sm'] {
-      --leverui-private-date-picker-input-height: var(--leverui-sizes-9);
-      --leverui-private-date-picker-input-padding: var(--leverui-spacing-2\.5);
-      --leverui-private-date-picker-indicators-offset: var(--leverui-spacing-2\.5);
-      --leverui-private-date-picker-cell-size: var(--leverui-sizes-9);
-      --leverui-private-date-picker-nav-size: var(--leverui-sizes-8);
-      --leverui-private-date-picker-select-height: var(--leverui-sizes-9);
+      --lui-private-date-picker-input-height: var(--lui-sizes-9);
+      --lui-private-date-picker-input-padding: var(--lui-spacing-2\.5);
+      --lui-private-date-picker-indicators-offset: var(--lui-spacing-2\.5);
+      --lui-private-date-picker-cell-size: var(--lui-sizes-9);
+      --lui-private-date-picker-nav-size: var(--lui-sizes-8);
+      --lui-private-date-picker-select-height: var(--lui-sizes-9);
     }
 
     :is(.leverui-date-picker__root, .leverui-date-picker__content):not(
         [data-unstyled]
       )[data-size-md='md'] {
-      --leverui-private-date-picker-input-height: var(--leverui-sizes-10);
-      --leverui-private-date-picker-input-padding: var(--leverui-spacing-3);
-      --leverui-private-date-picker-indicators-offset: var(--leverui-spacing-3);
-      --leverui-private-date-picker-cell-size: var(--leverui-sizes-10);
-      --leverui-private-date-picker-nav-size: var(--leverui-sizes-8);
-      --leverui-private-date-picker-select-height: var(--leverui-sizes-10);
+      --lui-private-date-picker-input-height: var(--lui-sizes-10);
+      --lui-private-date-picker-input-padding: var(--lui-spacing-3);
+      --lui-private-date-picker-indicators-offset: var(--lui-spacing-3);
+      --lui-private-date-picker-cell-size: var(--lui-sizes-10);
+      --lui-private-date-picker-nav-size: var(--lui-sizes-8);
+      --lui-private-date-picker-select-height: var(--lui-sizes-10);
     }
 
     :is(.leverui-date-picker__root, .leverui-date-picker__content):not(
         [data-unstyled]
       )[data-size-md='lg'] {
-      --leverui-private-date-picker-input-height: var(--leverui-sizes-11);
-      --leverui-private-date-picker-input-padding: var(--leverui-spacing-4);
-      --leverui-private-date-picker-indicators-offset: var(--leverui-spacing-3);
-      --leverui-private-date-picker-cell-size: var(--leverui-sizes-10);
-      --leverui-private-date-picker-nav-size: var(--leverui-sizes-9);
-      --leverui-private-date-picker-select-height: var(--leverui-sizes-10);
+      --lui-private-date-picker-input-height: var(--lui-sizes-11);
+      --lui-private-date-picker-input-padding: var(--lui-spacing-4);
+      --lui-private-date-picker-indicators-offset: var(--lui-spacing-3);
+      --lui-private-date-picker-cell-size: var(--lui-sizes-10);
+      --lui-private-date-picker-nav-size: var(--lui-sizes-9);
+      --lui-private-date-picker-select-height: var(--lui-sizes-10);
     }
 
     :is(.leverui-date-picker__root, .leverui-date-picker__content):not(
         [data-unstyled]
       )[data-size-md='xl'] {
-      --leverui-private-date-picker-input-height: var(--leverui-sizes-12);
-      --leverui-private-date-picker-input-padding: var(--leverui-spacing-4\.5);
-      --leverui-private-date-picker-indicators-offset: var(--leverui-spacing-3);
-      --leverui-private-date-picker-cell-size: var(--leverui-sizes-10);
-      --leverui-private-date-picker-nav-size: var(--leverui-sizes-9);
-      --leverui-private-date-picker-select-height: var(--leverui-sizes-10);
+      --lui-private-date-picker-input-height: var(--lui-sizes-12);
+      --lui-private-date-picker-input-padding: var(--lui-spacing-4\.5);
+      --lui-private-date-picker-indicators-offset: var(--lui-spacing-3);
+      --lui-private-date-picker-cell-size: var(--lui-sizes-10);
+      --lui-private-date-picker-nav-size: var(--lui-sizes-9);
+      --lui-private-date-picker-select-height: var(--lui-sizes-10);
     }
 
     .leverui-date-picker__input:not([data-unstyled])[data-variant-md='outline'] {
-      --leverui-private-date-picker-input-background: transparent;
-      --leverui-private-date-picker-border-width: 1px;
-      --leverui-private-date-picker-border-color: var(--leverui-colors-border);
-      --leverui-private-date-picker-radius: var(--leverui-radii-l2);
-      --leverui-private-date-picker-focus-shadow: none;
-      --leverui-private-date-picker-variant-padding: var(
-        --leverui-date-picker-input-padding,
-        var(--leverui-private-date-picker-input-padding, var(--leverui-spacing-3))
+      --lui-private-date-picker-input-background: transparent;
+      --lui-private-date-picker-border-width: 1px;
+      --lui-private-date-picker-border-color: var(--lui-colors-border);
+      --lui-private-date-picker-radius: var(--lui-radii-l2);
+      --lui-private-date-picker-focus-shadow: none;
+      --lui-private-date-picker-variant-padding: var(
+        --lui-date-picker-input-padding,
+        var(--lui-private-date-picker-input-padding, var(--lui-spacing-3))
       );
     }
 
     .leverui-date-picker__input:not([data-unstyled])[data-variant-md='subtle'] {
-      --leverui-private-date-picker-input-background: var(--leverui-colors-bg-muted);
-      --leverui-private-date-picker-border-width: 1px;
-      --leverui-private-date-picker-border-color: transparent;
-      --leverui-private-date-picker-radius: var(--leverui-radii-l2);
-      --leverui-private-date-picker-focus-shadow: none;
-      --leverui-private-date-picker-variant-padding: var(
-        --leverui-date-picker-input-padding,
-        var(--leverui-private-date-picker-input-padding, var(--leverui-spacing-3))
+      --lui-private-date-picker-input-background: var(--lui-colors-bg-muted);
+      --lui-private-date-picker-border-width: 1px;
+      --lui-private-date-picker-border-color: transparent;
+      --lui-private-date-picker-radius: var(--lui-radii-l2);
+      --lui-private-date-picker-focus-shadow: none;
+      --lui-private-date-picker-variant-padding: var(
+        --lui-date-picker-input-padding,
+        var(--lui-private-date-picker-input-padding, var(--lui-spacing-3))
       );
     }
 
     .leverui-date-picker__input:not([data-unstyled])[data-variant-md='flushed'] {
-      --leverui-private-date-picker-input-background: transparent;
-      --leverui-private-date-picker-border-width: 0 0 1px;
-      --leverui-private-date-picker-border-color: var(--leverui-colors-border);
-      --leverui-private-date-picker-radius: 0;
-      --leverui-private-date-picker-focus-shadow: 0 1px 0 0
-        var(--leverui-private-date-picker-focus-color);
-      --leverui-private-date-picker-variant-padding: 0;
+      --lui-private-date-picker-input-background: transparent;
+      --lui-private-date-picker-border-width: 0 0 1px;
+      --lui-private-date-picker-border-color: var(--lui-colors-border);
+      --lui-private-date-picker-radius: 0;
+      --lui-private-date-picker-focus-shadow: 0 1px 0 0 var(--lui-private-date-picker-focus-color);
+      --lui-private-date-picker-variant-padding: 0;
     }
 
     .leverui-date-picker__indicatorGroup:not([data-unstyled])[data-variant-md='flushed'] {

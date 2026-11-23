@@ -36,8 +36,8 @@ function renderInheritedColors() {
 async function verifiesSemanticInheritance({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderInheritedColors);
   const override = `
-    html[data-leverui-color-mode='dark'] { --leverui-colors-bg: rgb(60, 70, 80); }
-    .semantic-background { background-color: var(--leverui-colors-bg); }
+    html[data-leverui-color-mode='dark'] { --lui-colors-bg: rgb(60, 70, 80); }
+    .semantic-background { background-color: var(--lui-colors-bg); }
   `;
 
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');

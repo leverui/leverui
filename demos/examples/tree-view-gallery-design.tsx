@@ -63,7 +63,7 @@ export function TreeViewCustomIcon(): JSX.Element {
   return (
     <TreeView.Root
       collection={designCollection}
-      style={{ 'max-width': 'var(--leverui-sizes-sm)' }}
+      style={{ 'max-width': 'var(--lui-sizes-sm)' }}
       size="sm"
       defaultExpandedValue={['ROOT']}
     >
@@ -76,9 +76,7 @@ export function TreeViewCustomIcon(): JSX.Element {
               nodeState().isBranch ? (
                 <TreeView.BranchControl>
                   <Dynamic component={layerIcons[node.type]} />
-                  <TreeView.BranchText
-                    style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}
-                  >
+                  <TreeView.BranchText style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>
                     {node.name}
                   </TreeView.BranchText>
                 </TreeView.BranchControl>

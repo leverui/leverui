@@ -2,8 +2,8 @@
   .leverui-tabs__root:not([data-unstyled]) {
     &[data-variant='line'] {
       .leverui-tabs__list:not([data-unstyled]) {
-        --leverui-private-tabs-variant-display: flex;
-        border-color: var(--leverui-colors-border);
+        --lui-private-tabs-variant-display: flex;
+        border-color: var(--lui-colors-border);
         border-bottom-width: 1px;
       }
 
@@ -13,10 +13,10 @@
       }
 
       .leverui-tabs__trigger:not([data-unstyled]) {
-        color: var(--leverui-colors-fg-muted);
+        color: var(--lui-colors-fg-muted);
 
         &[data-selected] {
-          color: var(--leverui-colors-fg);
+          color: var(--lui-colors-fg);
         }
 
         &[data-disabled]:active {
@@ -31,7 +31,7 @@
         bottom: -1px;
         inset-inline: 0;
         height: 2px;
-        background: var(--leverui-colors-color-palette-solid);
+        background: var(--lui-colors-color-palette-solid);
       }
 
       &[data-orientation='vertical']
@@ -41,7 +41,7 @@
         inset-inline-end: -1px;
         inset-block: 0;
         width: 2px;
-        background: var(--leverui-colors-color-palette-solid);
+        background: var(--lui-colors-color-palette-solid);
       }
     }
   }

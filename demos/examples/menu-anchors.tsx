@@ -22,9 +22,9 @@ export function MenuAnchorRect(): JSX.Element {
       <div
         ref={anchor}
         style={{
-          background: 'var(--leverui-colors-bg-subtle)',
-          padding: 'var(--leverui-spacing-4)',
-          'margin-top': 'var(--leverui-spacing-4)',
+          background: 'var(--lui-colors-bg-subtle)',
+          padding: 'var(--lui-spacing-4)',
+          'margin-top': 'var(--lui-spacing-4)',
         }}
       >
         Anchor
@@ -74,11 +74,11 @@ export function MenuContextTrigger(): JSX.Element {
       <Menu.ContextTrigger style={{ width: '100%' }}>
         <Center
           style={{
-            height: 'var(--leverui-sizes-40)',
+            height: 'var(--lui-sizes-40)',
             'user-select': 'none',
-            border: '2px dashed var(--leverui-colors-border)',
-            'border-radius': 'var(--leverui-radii-lg)',
-            padding: 'var(--leverui-spacing-4)',
+            border: '2px dashed var(--lui-colors-border)',
+            'border-radius': 'var(--lui-radii-lg)',
+            padding: 'var(--lui-spacing-4)',
           }}
         >
           Right click here

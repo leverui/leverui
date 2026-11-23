@@ -143,14 +143,14 @@ both responsive. The root and its parts have `data-size` and `data-variant`
 attributes, plus attributes for interaction states. The trigger fills its width
 by default. Pass `positioning` to place the popup differently.
 
-Set the `--leverui-select-*` variables on `:root`, on an element that wraps a
+Set the `--lui-select-*` variables on `:root`, on an element that wraps a
 themed area, or on one component. Or style the `.leverui-select__*` classes.
 Every part takes `class` and `style`. `unstyled` turns off the default styles
 but keeps the behavior.
 
 Neutral colors by default. To color a trigger with a palette, set `colorPalette`
-on `Root`, then use `--leverui-colors-color-palette-muted`,
-`--leverui-colors-color-palette-subtle`, and `--leverui-colors-color-palette-fg`
+on `Root`, then use `--lui-colors-color-palette-muted`,
+`--lui-colors-color-palette-subtle`, and `--lui-colors-color-palette-fg`
 in your own CSS or in the `style` of `Trigger`.
 
 ## Explorer

@@ -14,9 +14,9 @@ export const progressCircleContracts = [
       "[data-size-2xl='xl']",
       "[data-state='indeterminate']",
       'prefers-reduced-motion',
-      '--leverui-progress-circle-size',
-      '--leverui-progress-circle-thickness',
-      '--leverui-progress-circle-range-color',
+      '--lui-progress-circle-size',
+      '--lui-progress-circle-thickness',
+      '--lui-progress-circle-range-color',
     ],
   },
 ];

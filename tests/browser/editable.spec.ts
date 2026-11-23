@@ -22,10 +22,10 @@ async function verifiesEditableBrowser({ page }: { page: Page }): Promise<void> 
   await expect(preview).toHaveText('Updated name');
   await page.addStyleTag({
     content: `[data-testid="editable-contract"] {
-      --leverui-colors-bg-muted: rgb(30, 40, 90);
-      --leverui-editable-gap: 11px;
-      --leverui-editable-padding-inline: 13px;
-      --leverui-editable-control-height: 48px;
+      --lui-colors-bg-muted: rgb(30, 40, 90);
+      --lui-editable-gap: 11px;
+      --lui-editable-padding-inline: 13px;
+      --lui-editable-control-height: 48px;
     }`,
   });
   await preview.hover();

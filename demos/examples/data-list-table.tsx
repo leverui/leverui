@@ -12,7 +12,7 @@ const tableStyle = {
 const headerStyle = {
   'font-size': '14px',
   'line-height': '21px',
-  color: 'var(--leverui-colors-fg-muted)',
+  color: 'var(--lui-colors-fg-muted)',
 } as const;
 const cellStyle = { 'padding-right': '32px', 'padding-bottom': '32px' } as const;
 

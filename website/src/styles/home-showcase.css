@@ -32,7 +32,7 @@
   flex: 1;
 }
 .home-showcase .leverui-card__root {
-  box-shadow: var(--leverui-shadows-sm);
+  box-shadow: var(--lui-shadows-sm);
 }
 .home-showcase-filters {
   display: grid;
@@ -65,7 +65,7 @@
 }
 /* An answer reads a step smaller than its question. */
 .home-showcase .leverui-accordion__itemBody {
-  font-size: var(--leverui-font-sizes-sm);
+  font-size: var(--lui-font-sizes-sm);
   line-height: 1.25rem;
 }
 .home-showcase-feedback {
@@ -75,7 +75,7 @@
 .home-showcase-rating-word {
   color: var(--site-muted);
   font-size: 14px;
-  font-weight: var(--leverui-font-weights-medium);
+  font-weight: var(--lui-font-weights-medium);
 }
 .home-showcase-chips {
   display: flex;
@@ -98,7 +98,7 @@
   text-align: center;
 }
 .home-showcase-thanks-icon {
-  color: var(--leverui-colors-green-solid);
+  color: var(--lui-colors-green-solid);
   font-size: 32px;
 }
 .home-showcase-thanks .leverui-button {
@@ -113,7 +113,7 @@
 }
 .home-showcase-month {
   font-size: 14px;
-  font-weight: var(--leverui-font-weights-medium);
+  font-weight: var(--lui-font-weights-medium);
 }
 /* The confirmation sits over the hidden booking form, which keeps the card's height. */
 .home-showcase-booking {

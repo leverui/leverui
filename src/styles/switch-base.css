@@ -1,24 +1,24 @@
 @layer leverui.recipes {
   .leverui-switch__root:not([data-unstyled]) {
     display: inline-flex;
-    gap: var(--leverui-spacing-2\.5);
+    gap: var(--lui-spacing-2\.5);
     align-items: center;
     position: relative;
     vertical-align: middle;
-    --leverui-private-switch-diff: calc(
-      var(--leverui-private-switch-width) - var(--leverui-private-switch-height)
+    --lui-private-switch-diff: calc(
+      var(--lui-private-switch-width) - var(--lui-private-switch-height)
     );
-    --leverui-private-switch-x: var(--leverui-private-switch-diff);
+    --lui-private-switch-x: var(--lui-private-switch-diff);
 
     &[dir='rtl'] {
-      --leverui-private-switch-x: calc(var(--leverui-private-switch-diff) * -1);
+      --lui-private-switch-x: calc(var(--lui-private-switch-diff) * -1);
     }
 
     .leverui-switch__label:not([data-unstyled]) {
       line-height: 1;
       user-select: none;
-      font-size: var(--leverui-font-sizes-sm);
-      font-weight: var(--leverui-font-weights-medium);
+      font-size: var(--lui-font-sizes-sm);
+      font-weight: var(--lui-font-weights-medium);
 
       &:is([data-disabled], [disabled], [aria-disabled='true']) {
         opacity: 0.5;
@@ -30,22 +30,22 @@
       gap: 0.5rem;
       flex-shrink: 0;
       justify-content: flex-start;
-      cursor: var(--leverui-cursor-switch);
-      border-radius: var(--leverui-radii-full);
+      cursor: var(--lui-cursor-switch);
+      border-radius: var(--lui-radii-full);
       position: relative;
-      width: var(--leverui-private-switch-width);
-      height: var(--leverui-private-switch-height);
+      width: var(--lui-private-switch-width);
+      height: var(--lui-private-switch-height);
       transition-property: background, background-color, background-image, background-position;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      transition-duration: var(--leverui-durations-fast);
+      transition-duration: var(--lui-durations-fast);
 
       &:is([data-disabled], [disabled], [aria-disabled='true']) {
         opacity: 0.5;
-        cursor: var(--leverui-cursor-disabled);
+        cursor: var(--lui-cursor-disabled);
       }
 
       &:is([data-invalid], [aria-invalid='true'], [data-state='invalid']) {
-        outline: 2px solid var(--leverui-colors-border-error);
+        outline: 2px solid var(--lui-colors-border-error);
         outline-offset: 2px;
       }
     }
@@ -56,26 +56,26 @@
       justify-content: center;
       flex-shrink: 0;
       transition-property: translate;
-      transition-duration: var(--leverui-durations-fast);
+      transition-duration: var(--lui-durations-fast);
       border-radius: inherit;
 
       &:is([data-checked], [aria-checked='true'], [data-state='checked']) {
-        translate: var(--leverui-private-switch-x) 0;
+        translate: var(--lui-private-switch-x) 0;
       }
     }
 
     .leverui-switch__indicator:not([data-unstyled]) {
       position: absolute;
-      height: var(--leverui-private-switch-height);
-      width: var(--leverui-private-switch-height);
-      font-size: var(--leverui-private-switch-indicator-font-size);
-      font-weight: var(--leverui-font-weights-medium);
+      height: var(--lui-private-switch-height);
+      width: var(--lui-private-switch-height);
+      font-size: var(--lui-private-switch-indicator-font-size);
+      font-weight: var(--lui-font-weights-medium);
       flex-shrink: 0;
       user-select: none;
       display: grid;
       place-content: center;
       transition: inset-inline-start 0.12s ease;
-      inset-inline-start: calc(var(--leverui-private-switch-x) - 2px);
+      inset-inline-start: calc(var(--lui-private-switch-x) - 2px);
 
       &[data-checked] {
         inset-inline-start: 2px;

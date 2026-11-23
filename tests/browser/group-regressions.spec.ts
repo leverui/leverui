@@ -26,13 +26,13 @@ async function verifiesSvgAndReactiveSkip({ page }: { page: Page }): Promise<voi
   const svgLast = page.getByTestId('svg-last');
   await expect(svgFirst).toHaveAttribute('data-leverui-group-first', '');
   await expect(svgLast).toHaveAttribute('data-leverui-group-last', '');
-  await expect(svgFirst).toHaveCSS('--leverui-group-count', '2');
-  await expect(svgLast).toHaveCSS('--leverui-group-index', '1');
+  await expect(svgFirst).toHaveCSS('--lui-group-count', '2');
+  await expect(svgLast).toHaveCSS('--lui-group-index', '1');
 
   const separator = page.getByTestId('reactive-separator');
   const last = page.getByTestId('reactive-skip-last');
   await expect(separator).toHaveAttribute('data-leverui-group-item', '');
-  await expect(last).toHaveCSS('--leverui-group-index', '2');
+  await expect(last).toHaveCSS('--lui-group-index', '2');
   await separator.evaluate(
     /** Mark the original node before the Solid signal changes its attribute. */
     (element) => element.setAttribute('data-original-node', 'true'),
@@ -42,11 +42,11 @@ async function verifiesSvgAndReactiveSkip({ page }: { page: Page }): Promise<voi
   await expect(separator).toHaveAttribute('data-leverui-group-auto-skip', '');
   await expect(separator).not.toHaveAttribute('data-leverui-group-item');
   await expect(separator).toHaveAttribute('data-original-node', 'true');
-  await expect(last).toHaveCSS('--leverui-group-index', '1');
+  await expect(last).toHaveCSS('--lui-group-index', '1');
 
   await page.getByTestId('toggle-separator').click();
   await expect(separator).toHaveAttribute('data-leverui-group-item', '');
-  await expect(last).toHaveCSS('--leverui-group-index', '2');
+  await expect(last).toHaveCSS('--lui-group-index', '2');
 }
 
 test('Group focuses only eligible items', verifiesFocusSelection);
@@ -59,10 +59,10 @@ async function verifiesMathChildren({ page }: { page: Page }): Promise<void> {
   const skipped = page.getByTestId('math-skipped');
   const last = page.getByTestId('math-last');
   await expect(first).toHaveAttribute('data-leverui-group-first', '');
-  await expect(first).toHaveCSS('--leverui-group-count', '2');
+  await expect(first).toHaveCSS('--lui-group-count', '2');
   await expect(skipped).toHaveAttribute('data-leverui-group-auto-skip', '');
   await expect(skipped).not.toHaveAttribute('data-leverui-group-item');
-  await expect(last).toHaveCSS('--leverui-group-index', '1');
+  await expect(last).toHaveCSS('--lui-group-index', '1');
 }
 
 /** Verify a new native root is observed after the polymorphic tag changes. */
@@ -72,7 +72,7 @@ async function verifiesRootRebinding({ page }: { page: Page }): Promise<void> {
   const first = page.getByTestId('changing-first');
   const last = page.getByTestId('changing-last');
   await expect(root).toHaveJSProperty('tagName', 'DIV');
-  await expect(first).toHaveCSS('--leverui-group-count', '2');
+  await expect(first).toHaveCSS('--lui-group-count', '2');
   await page.getByTestId('toggle-root').click();
   await expect(root).toHaveJSProperty('tagName', 'SECTION');
   await expect(first).toHaveAttribute('data-leverui-group-first', '');
@@ -110,7 +110,7 @@ async function verifiesMovedChildCleanup({ page }: { page: Page }): Promise<void
       () =>
         child.evaluate(
           /** Read the generated count without inheriting a parent value. */
-          (element) => (element as HTMLElement).style.getPropertyValue('--leverui-group-count'),
+          (element) => (element as HTMLElement).style.getPropertyValue('--lui-group-count'),
         ),
     )
     .toBe('');
@@ -124,8 +124,8 @@ async function verifiesMovedChildCleanup({ page }: { page: Page }): Promise<void
     },
   );
   await expect(child).toHaveAttribute('data-leverui-group-last', '');
-  await expect(child).toHaveCSS('--leverui-group-count', '2');
-  await expect(child).toHaveCSS('--leverui-group-index', '1');
+  await expect(child).toHaveCSS('--lui-group-count', '2');
+  await expect(child).toHaveCSS('--lui-group-index', '1');
 }
 
 /** Verify grouped Buttons keep their full label when the Group is too narrow for them. */

@@ -1,8 +1,8 @@
 .highlight-example-yellow {
-  background-color: var(--leverui-colors-yellow-emphasized);
+  background-color: var(--lui-colors-yellow-emphasized);
   font-weight: 500;
 }
 
 .highlight-example-gray {
-  background-color: var(--leverui-colors-gray-emphasized);
+  background-color: var(--lui-colors-gray-emphasized);
 }

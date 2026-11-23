@@ -13,7 +13,7 @@ export function RadialBarLegend(props: { data: readonly RadialBarDatum[] }): JSX
           <span class="leverui-radial-bar-chart__legendItem">
             <span
               class="leverui-radial-bar-chart__legendSwatch"
-              style={{ '--leverui-private-radial-bar-color': chartColor(datum.color, datum.color) }}
+              style={{ '--lui-private-radial-bar-color': chartColor(datum.color, datum.color) }}
             />
             {datum.name}
           </span>

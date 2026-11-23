@@ -68,10 +68,10 @@ function TooltipDemo(): JSX.Element {
       <Box
         textStyle="xs"
         style={{
-          padding: 'var(--leverui-spacing-1) var(--leverui-spacing-2\\.5)',
-          'border-radius': 'var(--leverui-radii-l2)',
-          background: 'var(--leverui-colors-bg-inverted)',
-          color: 'var(--leverui-colors-fg-inverted)',
+          padding: 'var(--lui-spacing-1) var(--lui-spacing-2\\.5)',
+          'border-radius': 'var(--lui-radii-l2)',
+          background: 'var(--lui-colors-bg-inverted)',
+          color: 'var(--lui-colors-fg-inverted)',
         }}
       >
         Download file
@@ -130,7 +130,7 @@ function WrapDemo(): JSX.Element {
             style={{
               width,
               height: '24px',
-              'border-radius': 'var(--leverui-radii-sm)',
+              'border-radius': 'var(--lui-radii-sm)',
               background: 'var(--overview-tint)',
             }}
           />

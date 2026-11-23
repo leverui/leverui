@@ -23,9 +23,9 @@ export const radialContracts = [
         /** Keep every styled radial part in the shipped stylesheet. */
         (part) => `.leverui-radial-chart__${part}`,
       ),
-      '--leverui-radial-chart-sector-stroke',
-      '--leverui-radial-chart-label-font-size',
-      '--leverui-radial-chart-legend-gap',
+      '--lui-radial-chart-sector-stroke',
+      '--lui-radial-chart-label-font-size',
+      '--lui-radial-chart-legend-gap',
       "[data-placement='point']",
     ],
   },
@@ -37,9 +37,9 @@ export const radialContracts = [
         /** Keep every styled radial bar part in the shipped stylesheet. */
         (part) => `.leverui-radial-bar-chart__${part}`,
       ),
-      '--leverui-radial-bar-track-color',
-      '--leverui-radial-bar-label-font-size',
-      '--leverui-radial-bar-legend-gap',
+      '--lui-radial-bar-track-color',
+      '--lui-radial-bar-label-font-size',
+      '--lui-radial-bar-legend-gap',
     ],
   },
 ];

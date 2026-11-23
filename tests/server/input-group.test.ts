@@ -98,7 +98,7 @@ function renderCustomField(): JSX.Element {
     component: 'input',
     'aria-label': 'Custom server field',
     class: 'leverui-input-group__field',
-    style: { height: '40px', '--leverui-input-group-field-height': '40px' },
+    style: { height: '40px', '--lui-input-group-field-height': '40px' },
   });
 }
 
@@ -107,8 +107,8 @@ function verifiesCustomField(): void {
   const markup = renderServerChildren(renderCustomField, '@');
   expect(markup).toContain('aria-label="Custom server field"');
   expect(markup).toContain('leverui-input-group__field');
-  expect(markup).toContain('--leverui-input-group-field-height:40px');
-  expect(markup).toContain('--leverui-private-input-group-start-offset:0px');
+  expect(markup).toContain('--lui-input-group-field-height:40px');
+  expect(markup).toContain('--lui-private-input-group-start-offset:0px');
 }
 
 test('published Input Group renders custom field padding', verifiesCustomField);

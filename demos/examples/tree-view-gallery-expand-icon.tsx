@@ -55,7 +55,7 @@ const collection = createTreeCollection<TreeNode>({
 /** Show plus and minus icons without leaf icons. */
 export function TreeViewExpandIcon(): JSX.Element {
   return (
-    <TreeView.Root collection={collection} style={{ 'max-width': 'var(--leverui-sizes-sm)' }}>
+    <TreeView.Root collection={collection} style={{ 'max-width': 'var(--lui-sizes-sm)' }}>
       <TreeView.Label>Project files</TreeView.Label>
       <TreeView.Tree>
         <TreeView.Node<TreeNode>
@@ -82,7 +82,7 @@ export function TreeViewExpandedStyling(): JSX.Element {
   return (
     <TreeView.Root
       collection={collection}
-      style={{ 'max-width': 'var(--leverui-sizes-sm)' }}
+      style={{ 'max-width': 'var(--lui-sizes-sm)' }}
       variant="solid"
       colorPalette="teal"
       defaultExpandedValue={['node_modules']}

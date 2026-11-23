@@ -59,7 +59,7 @@ async function verifiesFlex({ page }: { page: Page }): Promise<void> {
   await expect(responsive).toHaveCSS('flex-direction', 'row');
   await expect(page.getByTestId('flex-token-basis')).toHaveCSS('flex-basis', '40px');
   await page.addStyleTag({
-    content: '.leverui-flex[data-testid="flex-token-basis"] { --leverui-sizes-10: 52px; }',
+    content: '.leverui-flex[data-testid="flex-token-basis"] { --lui-sizes-10: 52px; }',
   });
   await expect(page.getByTestId('flex-token-basis')).toHaveCSS('flex-basis', '52px');
   const wrapFirst = await requiredBox(page.getByTestId('flex-wrap-first'));

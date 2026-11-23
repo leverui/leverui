@@ -23,11 +23,11 @@ async function readMarqueeCss(page: Page, prefix: string): Promise<ResolvedMarqu
       const rootCss = getComputedStyle(root);
       const contentCss = getComputedStyle(content);
       return {
-        duration: rootCss.getPropertyValue('--leverui-marquee-duration').trim(),
-        delay: rootCss.getPropertyValue('--leverui-marquee-delay').trim(),
-        loopCount: rootCss.getPropertyValue('--leverui-marquee-loop-count').trim(),
-        edgeColor: rootCss.getPropertyValue('--leverui-marquee-edge-color').trim(),
-        edgeSize: rootCss.getPropertyValue('--leverui-marquee-edge-size').trim(),
+        duration: rootCss.getPropertyValue('--lui-marquee-duration').trim(),
+        delay: rootCss.getPropertyValue('--lui-marquee-delay').trim(),
+        loopCount: rootCss.getPropertyValue('--lui-marquee-loop-count').trim(),
+        edgeColor: rootCss.getPropertyValue('--lui-marquee-edge-color').trim(),
+        edgeSize: rootCss.getPropertyValue('--lui-marquee-edge-size').trim(),
         animationDuration: contentCss.animationDuration,
         animationDelay: contentCss.animationDelay,
         animationIterationCount: contentCss.animationIterationCount,

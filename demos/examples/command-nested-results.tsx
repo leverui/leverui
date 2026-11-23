@@ -43,9 +43,9 @@ export function NestedBreadcrumbs(props: {
       gap="1"
       textStyle="xs"
       style={{
-        'padding-inline': 'var(--leverui-spacing-4)',
-        'padding-top': 'var(--leverui-spacing-3)',
-        color: 'var(--leverui-colors-fg-muted)',
+        'padding-inline': 'var(--lui-spacing-4)',
+        'padding-top': 'var(--lui-spacing-3)',
+        color: 'var(--lui-colors-fg-muted)',
       }}
     >
       <Badge
@@ -53,14 +53,14 @@ export function NestedBreadcrumbs(props: {
         type="button"
         size="sm"
         variant="surface"
-        style={{ cursor: 'pointer', 'font-family': 'var(--leverui-fonts-mono)' }}
+        style={{ cursor: 'pointer', 'font-family': 'var(--lui-fonts-mono)' }}
         onClick={() => props.command().setPage(null)}
         onMouseDown={(event: MouseEvent) => event.preventDefault()}
       >
         ENG-142
       </Badge>
       <Show when={props.command().pages.length === 0}>
-        <Text truncate style={{ 'margin-inline-start': 'var(--leverui-spacing-1)' }}>
+        <Text truncate style={{ 'margin-inline-start': 'var(--lui-spacing-1)' }}>
           Fix login redirect loop on Safari
         </Text>
       </Show>
@@ -107,7 +107,7 @@ export function NestedResults(props: {
                   <Show when={props.command().getPath(item).length > 0}>
                     <HStack
                       gap="1"
-                      style={{ color: 'var(--leverui-colors-fg-muted)', 'flex-shrink': '0' }}
+                      style={{ color: 'var(--lui-colors-fg-muted)', 'flex-shrink': '0' }}
                     >
                       <For each={props.command().getPath(item)}>
                         {(parent) => (
@@ -126,16 +126,14 @@ export function NestedResults(props: {
                       [props.issue[item.field]].flat().includes(item.option ?? '')
                     }
                   >
-                    <Box
-                      style={{ color: 'var(--leverui-colors-fg)', 'margin-inline-start': 'auto' }}
-                    >
+                    <Box style={{ color: 'var(--lui-colors-fg)', 'margin-inline-start': 'auto' }}>
                       <CheckIcon />
                     </Box>
                   </Show>
                   <Show when={props.command().isPage(item) && !item.hotkey}>
                     <Box
                       style={{
-                        color: 'var(--leverui-colors-fg-subtle)',
+                        color: 'var(--lui-colors-fg-subtle)',
                         'margin-inline-start': 'auto',
                       }}
                     >

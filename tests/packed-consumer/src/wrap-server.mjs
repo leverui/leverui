@@ -31,6 +31,6 @@ assert.match(markup, /Server wrap item/);
 assert.match(markup, /class="leverui-wrap[\s"]/);
 assert.match(markup, /leverui-wrap__listitem/);
 assert.match(markup, /\sdata-wrap-gap-base(?:=""|(?=[\s/>]))/);
-assert.match(markup, /--leverui-private-wrap-gap-base:var\(--leverui-spacing-4\)/);
+assert.match(markup, /--lui-private-wrap-gap-base:var\(--lui-spacing-4\)/);
 assert.doesNotMatch(markup, /\s(?:justify|align|direction|css|unstyled|asChild)=/);
 console.log('Packed Wrap server rendering passed.');

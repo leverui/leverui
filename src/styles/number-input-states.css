@@ -10,13 +10,13 @@
     :is(.leverui-number-input__incrementTrigger, .leverui-number-input__decrementTrigger):not(
       [data-unstyled]
     ):hover {
-    background: var(--leverui-colors-bg-muted);
+    background: var(--lui-colors-bg-muted);
   }
 
   .leverui-number-input__root:not([data-unstyled])
     :is(.leverui-number-input__incrementTrigger, .leverui-number-input__decrementTrigger):not(
       [data-unstyled]
     ):active {
-    background: var(--leverui-colors-bg-emphasized);
+    background: var(--lui-colors-bg-emphasized);
   }
 }

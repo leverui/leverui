@@ -1,31 +1,31 @@
 @layer leverui.base {
   * {
-    --ring-inset: var(--leverui-private-empty,);
+    --ring-inset: var(--lui-private-empty,);
     --ring-offset-width: 0px;
     --ring-offset-color: #fff;
     --ring-color: rgba(66, 153, 225, 0.6);
     --ring-offset-shadow: 0 0 #0000;
     --ring-shadow: 0 0 #0000;
-    --brightness: var(--leverui-private-empty,);
-    --contrast: var(--leverui-private-empty,);
-    --grayscale: var(--leverui-private-empty,);
-    --hue-rotate: var(--leverui-private-empty,);
-    --invert: var(--leverui-private-empty,);
-    --saturate: var(--leverui-private-empty,);
-    --sepia: var(--leverui-private-empty,);
-    --drop-shadow: var(--leverui-private-empty,);
-    --backdrop-blur: var(--leverui-private-empty,);
-    --backdrop-brightness: var(--leverui-private-empty,);
-    --backdrop-contrast: var(--leverui-private-empty,);
-    --backdrop-grayscale: var(--leverui-private-empty,);
-    --backdrop-hue-rotate: var(--leverui-private-empty,);
-    --backdrop-invert: var(--leverui-private-empty,);
-    --backdrop-opacity: var(--leverui-private-empty,);
-    --backdrop-saturate: var(--leverui-private-empty,);
-    --backdrop-sepia: var(--leverui-private-empty,);
-    --global-font-mono: var(--leverui-fonts-mono);
-    --global-font-body: var(--leverui-fonts-body);
-    --global-color-border: var(--leverui-colors-border);
+    --brightness: var(--lui-private-empty,);
+    --contrast: var(--lui-private-empty,);
+    --grayscale: var(--lui-private-empty,);
+    --hue-rotate: var(--lui-private-empty,);
+    --invert: var(--lui-private-empty,);
+    --saturate: var(--lui-private-empty,);
+    --sepia: var(--lui-private-empty,);
+    --drop-shadow: var(--lui-private-empty,);
+    --backdrop-blur: var(--lui-private-empty,);
+    --backdrop-brightness: var(--lui-private-empty,);
+    --backdrop-contrast: var(--lui-private-empty,);
+    --backdrop-grayscale: var(--lui-private-empty,);
+    --backdrop-hue-rotate: var(--lui-private-empty,);
+    --backdrop-invert: var(--lui-private-empty,);
+    --backdrop-opacity: var(--lui-private-empty,);
+    --backdrop-saturate: var(--lui-private-empty,);
+    --backdrop-sepia: var(--lui-private-empty,);
+    --global-font-mono: var(--lui-fonts-mono);
+    --global-font-body: var(--lui-fonts-body);
+    --global-color-border: var(--lui-colors-border);
   }
   /*
    * These aliases resolve where they are declared, so a nested light or dark scope declares them
@@ -33,30 +33,30 @@
    */
   html,
   :where([data-leverui-theme][data-leverui-color-mode]) {
-    --bg-currentcolor: var(--leverui-colors-bg);
-    --leverui-colors-color-palette-50: var(--leverui-colors-gray-50);
-    --leverui-colors-color-palette-100: var(--leverui-colors-gray-100);
-    --leverui-colors-color-palette-200: var(--leverui-colors-gray-200);
-    --leverui-colors-color-palette-300: var(--leverui-colors-gray-300);
-    --leverui-colors-color-palette-400: var(--leverui-colors-gray-400);
-    --leverui-colors-color-palette-500: var(--leverui-colors-gray-500);
-    --leverui-colors-color-palette-600: var(--leverui-colors-gray-600);
-    --leverui-colors-color-palette-700: var(--leverui-colors-gray-700);
-    --leverui-colors-color-palette-800: var(--leverui-colors-gray-800);
-    --leverui-colors-color-palette-900: var(--leverui-colors-gray-900);
-    --leverui-colors-color-palette-950: var(--leverui-colors-gray-950);
-    --leverui-colors-color-palette-contrast: var(--leverui-colors-gray-contrast);
-    --leverui-colors-color-palette-fg: var(--leverui-colors-gray-fg);
-    --leverui-colors-color-palette-subtle: var(--leverui-colors-gray-subtle);
-    --leverui-colors-color-palette-muted: var(--leverui-colors-gray-muted);
-    --leverui-colors-color-palette-emphasized: var(--leverui-colors-gray-emphasized);
-    --leverui-colors-color-palette-solid: var(--leverui-colors-gray-solid);
-    --leverui-colors-color-palette-focus-ring: var(--leverui-colors-gray-focus-ring);
-    --leverui-colors-color-palette-border: var(--leverui-colors-gray-border);
+    --bg-currentcolor: var(--lui-colors-bg);
+    --lui-colors-color-palette-50: var(--lui-colors-gray-50);
+    --lui-colors-color-palette-100: var(--lui-colors-gray-100);
+    --lui-colors-color-palette-200: var(--lui-colors-gray-200);
+    --lui-colors-color-palette-300: var(--lui-colors-gray-300);
+    --lui-colors-color-palette-400: var(--lui-colors-gray-400);
+    --lui-colors-color-palette-500: var(--lui-colors-gray-500);
+    --lui-colors-color-palette-600: var(--lui-colors-gray-600);
+    --lui-colors-color-palette-700: var(--lui-colors-gray-700);
+    --lui-colors-color-palette-800: var(--lui-colors-gray-800);
+    --lui-colors-color-palette-900: var(--lui-colors-gray-900);
+    --lui-colors-color-palette-950: var(--lui-colors-gray-950);
+    --lui-colors-color-palette-contrast: var(--lui-colors-gray-contrast);
+    --lui-colors-color-palette-fg: var(--lui-colors-gray-fg);
+    --lui-colors-color-palette-subtle: var(--lui-colors-gray-subtle);
+    --lui-colors-color-palette-muted: var(--lui-colors-gray-muted);
+    --lui-colors-color-palette-emphasized: var(--lui-colors-gray-emphasized);
+    --lui-colors-color-palette-solid: var(--lui-colors-gray-solid);
+    --lui-colors-color-palette-focus-ring: var(--lui-colors-gray-focus-ring);
+    --lui-colors-color-palette-border: var(--lui-colors-gray-border);
   }
   :where([class^='leverui-'], [class*=' leverui-'])::placeholder,
   :where([class^='leverui-'], [class*=' leverui-'])[data-placeholder] {
-    --mix-color: color-mix(in srgb, var(--leverui-colors-fg-muted) 80%, transparent);
-    color: var(--mix-color, var(--leverui-colors-fg-muted));
+    --mix-color: color-mix(in srgb, var(--lui-colors-fg-muted) 80%, transparent);
+    color: var(--mix-color, var(--lui-colors-fg-muted));
   }
 }

@@ -1,7 +1,7 @@
 import { type JSX } from '@solidjs/web';
 import { FormatByte, HStack, LocaleProvider, Stack, Text } from '../../src';
 
-const mediumWeight: JSX.CSSProperties = { 'font-weight': 'var(--leverui-font-weights-medium)' };
+const mediumWeight: JSX.CSSProperties = { 'font-weight': 'var(--lui-font-weights-medium)' };
 
 /** Format the file size in the default unit. */
 export function FormatByteBasic(): JSX.Element {

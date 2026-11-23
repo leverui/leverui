@@ -2,23 +2,23 @@
   .leverui-status__root:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
-    gap: var(--leverui-spacing-2);
-    --leverui-private-status-font-size: var(--leverui-font-sizes-sm);
-    --leverui-private-status-line-height: 1.25rem;
-    font-size: var(--leverui-private-status-font-size);
-    line-height: var(--leverui-private-status-line-height);
+    gap: var(--lui-spacing-2);
+    --lui-private-status-font-size: var(--lui-font-sizes-sm);
+    --lui-private-status-line-height: 1.25rem;
+    font-size: var(--lui-private-status-font-size);
+    line-height: var(--lui-private-status-line-height);
 
     &[data-size='sm'] {
-      --leverui-private-status-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-status-line-height: 1rem;
+      --lui-private-status-font-size: var(--lui-font-sizes-xs);
+      --lui-private-status-line-height: 1rem;
     }
     &[data-size='md'] {
-      --leverui-private-status-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-status-line-height: 1.25rem;
+      --lui-private-status-font-size: var(--lui-font-sizes-sm);
+      --lui-private-status-line-height: 1.25rem;
     }
     &[data-size='lg'] {
-      --leverui-private-status-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-status-line-height: 1.5rem;
+      --lui-private-status-font-size: var(--lui-font-sizes-md);
+      --lui-private-status-line-height: 1.5rem;
     }
   }
 
@@ -27,9 +27,9 @@
       width: 0.64em;
       height: 0.64em;
       flex-shrink: 0;
-      border-radius: var(--leverui-radii-full);
+      border-radius: var(--lui-radii-full);
       forced-color-adjust: none;
-      background-color: var(--leverui-colors-color-palette-solid);
+      background-color: var(--lui-colors-color-palette-solid);
     }
   }
 }

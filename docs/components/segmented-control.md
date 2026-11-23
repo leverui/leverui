@@ -96,10 +96,10 @@ group shows its value, but its inputs are disabled, so it is not submitted.
 
 Import the library CSS once. Customize with `class` and `style`, the
 `.leverui-segment-group__*` part classes, and public variables such as
-`--leverui-segment-group-background`,
-`--leverui-segment-group-indicator-background`,
-`--leverui-segment-group-indicator-shadow`,
-`--leverui-segment-group-item-height`,
-`--leverui-segment-group-item-line-height`, and
-`--leverui-segment-group-radius`. Plain CSS that is not inside a cascade layer
+`--lui-segment-group-background`,
+`--lui-segment-group-indicator-background`,
+`--lui-segment-group-indicator-shadow`,
+`--lui-segment-group-item-height`,
+`--lui-segment-group-item-line-height`, and
+`--lui-segment-group-radius`. Plain CSS that is not inside a cascade layer
 overrides the defaults.

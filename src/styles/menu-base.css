@@ -1,61 +1,61 @@
 @layer leverui.recipes {
   .leverui-menu__content[data-leverui-menu-css] {
-    --leverui-menu-background: var(--leverui-colors-bg-panel);
-    --leverui-menu-z-index: var(--leverui-z-index-popover);
-    --leverui-private-menu-item-gap: var(--leverui-spacing-2);
-    --leverui-private-menu-item-padding-block: var(--leverui-spacing-1\.5);
-    --leverui-private-menu-item-padding-inline: var(--leverui-spacing-2);
-    --leverui-private-menu-item-font-size: var(--leverui-font-sizes-sm);
-    --leverui-private-menu-item-line-height: 1.25rem;
-    --leverui-private-menu-content-padding: var(--leverui-spacing-1\.5);
+    --lui-menu-background: var(--lui-colors-bg-panel);
+    --lui-menu-z-index: var(--lui-z-index-popover);
+    --lui-private-menu-item-gap: var(--lui-spacing-2);
+    --lui-private-menu-item-padding-block: var(--lui-spacing-1\.5);
+    --lui-private-menu-item-padding-inline: var(--lui-spacing-2);
+    --lui-private-menu-item-font-size: var(--lui-font-sizes-sm);
+    --lui-private-menu-item-line-height: 1.25rem;
+    --lui-private-menu-content-padding: var(--lui-spacing-1\.5);
     outline: 0;
-    background: var(--leverui-menu-background);
-    box-shadow: var(--leverui-shadows-lg);
-    color: var(--leverui-colors-fg);
+    background: var(--lui-menu-background);
+    box-shadow: var(--lui-shadows-lg);
+    color: var(--lui-colors-fg);
     max-height: var(--available-height);
-    z-index: calc(var(--leverui-menu-z-index) + var(--layer-index, 0));
-    border-radius: var(--leverui-radii-l2);
+    z-index: calc(var(--lui-menu-z-index) + var(--layer-index, 0));
+    border-radius: var(--lui-radii-l2);
     overflow: hidden auto;
     min-width: 8rem;
-    padding: var(--leverui-private-menu-content-padding);
-    scroll-padding: var(--leverui-private-menu-content-padding);
+    padding: var(--lui-private-menu-content-padding);
+    scroll-padding: var(--lui-private-menu-content-padding);
 
     &[data-size='sm'] {
-      --leverui-private-menu-item-gap: var(--leverui-spacing-1);
-      --leverui-private-menu-item-padding-block: var(--leverui-spacing-1);
-      --leverui-private-menu-item-padding-inline: var(--leverui-spacing-1\.5);
-      --leverui-private-menu-item-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-menu-item-line-height: 1rem;
-      --leverui-private-menu-content-padding: var(--leverui-spacing-1);
+      --lui-private-menu-item-gap: var(--lui-spacing-1);
+      --lui-private-menu-item-padding-block: var(--lui-spacing-1);
+      --lui-private-menu-item-padding-inline: var(--lui-spacing-1\.5);
+      --lui-private-menu-item-font-size: var(--lui-font-sizes-xs);
+      --lui-private-menu-item-line-height: 1rem;
+      --lui-private-menu-content-padding: var(--lui-spacing-1);
     }
   }
 
   .leverui-menu__item[data-leverui-menu-css] {
     text-decoration: none;
-    color: var(--leverui-colors-fg);
+    color: var(--lui-colors-fg);
     user-select: none;
-    border-radius: var(--leverui-radii-l1);
+    border-radius: var(--lui-radii-l1);
     width: 100%;
     display: flex;
-    cursor: var(--leverui-cursor-menuitem);
+    cursor: var(--lui-cursor-menuitem);
     align-items: center;
     text-align: start;
     position: relative;
     flex: 0 0 auto;
     outline: 0;
-    gap: var(--leverui-private-menu-item-gap, var(--leverui-spacing-2));
-    font-size: var(--leverui-private-menu-item-font-size, var(--leverui-font-sizes-sm));
-    line-height: var(--leverui-private-menu-item-line-height, 1.25rem);
-    padding-block: var(--leverui-private-menu-item-padding-block, var(--leverui-spacing-1\.5));
-    padding-inline: var(--leverui-private-menu-item-padding-inline, var(--leverui-spacing-2));
+    gap: var(--lui-private-menu-item-gap, var(--lui-spacing-2));
+    font-size: var(--lui-private-menu-item-font-size, var(--lui-font-sizes-sm));
+    line-height: var(--lui-private-menu-item-line-height, 1.25rem);
+    padding-block: var(--lui-private-menu-item-padding-block, var(--lui-spacing-1\.5));
+    padding-inline: var(--lui-private-menu-item-padding-inline, var(--lui-spacing-2));
 
     &[data-disabled] {
       opacity: 0.5;
-      cursor: var(--leverui-cursor-disabled);
+      cursor: var(--lui-cursor-disabled);
     }
 
     &[data-type] {
-      padding-inline-start: var(--leverui-spacing-8);
+      padding-inline-start: var(--lui-spacing-8);
     }
   }
 
@@ -65,16 +65,16 @@
 
   .leverui-menu__itemIndicator[data-leverui-menu-css] {
     position: absolute;
-    inset-inline-start: var(--leverui-spacing-2);
+    inset-inline-start: var(--lui-spacing-2);
     transform: translateY(-50%);
     top: 50%;
   }
 
   .leverui-menu__itemGroupLabel[data-leverui-menu-css] {
-    padding-inline: var(--leverui-spacing-2);
-    padding-block: var(--leverui-spacing-1\.5);
-    font-weight: var(--leverui-font-weights-semibold);
-    font-size: var(--leverui-font-sizes-sm);
+    padding-inline: var(--lui-spacing-2);
+    padding-block: var(--lui-spacing-1\.5);
+    font-weight: var(--lui-font-weights-semibold);
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
   }
 
@@ -87,24 +87,24 @@
 
   .leverui-menu__itemCommand[data-leverui-menu-css] {
     opacity: 0.6;
-    font-size: var(--leverui-font-sizes-xs);
+    font-size: var(--lui-font-sizes-xs);
     line-height: 1rem;
     margin-inline-start: auto;
-    padding-inline-start: var(--leverui-spacing-4);
-    letter-spacing: var(--leverui-letter-spacings-widest);
+    padding-inline-start: var(--lui-spacing-4);
+    letter-spacing: var(--lui-letter-spacings-widest);
     font-family: inherit;
   }
 
   .leverui-menu__separator[data-leverui-menu-css] {
     height: 1px;
-    background: var(--leverui-colors-bg-muted);
-    margin-block: var(--leverui-spacing-1);
-    margin-inline: calc(var(--leverui-spacing-1) * -1);
+    background: var(--lui-colors-bg-muted);
+    margin-block: var(--lui-spacing-1);
+    margin-inline: calc(var(--lui-spacing-1) * -1);
   }
 
   .leverui-menu__arrow[data-leverui-menu-css] {
-    --arrow-size: var(--leverui-sizes-3);
-    --arrow-background: var(--leverui-menu-background, var(--leverui-colors-bg-panel));
+    --arrow-size: var(--lui-sizes-3);
+    --arrow-background: var(--lui-menu-background, var(--lui-colors-bg-panel));
   }
 
   .leverui-menu__arrowTip[data-leverui-menu-css] {
@@ -115,8 +115,6 @@
   /* Zag 2 sets no z-index and isolates the positioner, so the content's z-index
      cannot escape it. Stack the positioner itself, offset by its layer index. */
   .leverui-menu__positioner {
-    z-index: calc(
-      var(--leverui-menu-z-index, var(--leverui-z-index-popover)) + var(--layer-index, 0)
-    );
+    z-index: calc(var(--lui-menu-z-index, var(--lui-z-index-popover)) + var(--layer-index, 0));
   }
 }

@@ -3,10 +3,10 @@
 }
 
 .strong-story-reactive {
-  color: var(--leverui-colors-red-500);
+  color: var(--lui-colors-red-500);
 }
 
 .strong-story-reactive.strong-story-plain {
-  color: var(--leverui-colors-blue-500);
+  color: var(--lui-colors-blue-500);
   font-weight: 400;
 }

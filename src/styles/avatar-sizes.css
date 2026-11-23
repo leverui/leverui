@@ -1,34 +1,34 @@
 @layer leverui.recipes {
   .leverui-avatar__root:not([data-unstyled])[data-size='full'] {
-    --leverui-private-avatar-size: 100%;
-    --leverui-private-avatar-font-size: 100%;
+    --lui-private-avatar-size: 100%;
+    --lui-private-avatar-font-size: 100%;
   }
   .leverui-avatar__root:not([data-unstyled])[data-size='2xs'] {
-    --leverui-private-avatar-size: var(--leverui-sizes-6);
-    --leverui-private-avatar-font-size: var(--leverui-font-sizes-2xs);
+    --lui-private-avatar-size: var(--lui-sizes-6);
+    --lui-private-avatar-font-size: var(--lui-font-sizes-2xs);
   }
   .leverui-avatar__root:not([data-unstyled])[data-size='xs'] {
-    --leverui-private-avatar-size: var(--leverui-sizes-8);
-    --leverui-private-avatar-font-size: var(--leverui-font-sizes-xs);
+    --lui-private-avatar-size: var(--lui-sizes-8);
+    --lui-private-avatar-font-size: var(--lui-font-sizes-xs);
   }
   .leverui-avatar__root:not([data-unstyled])[data-size='sm'] {
-    --leverui-private-avatar-size: var(--leverui-sizes-9);
-    --leverui-private-avatar-font-size: var(--leverui-font-sizes-sm);
+    --lui-private-avatar-size: var(--lui-sizes-9);
+    --lui-private-avatar-font-size: var(--lui-font-sizes-sm);
   }
   .leverui-avatar__root:not([data-unstyled])[data-size='md'] {
-    --leverui-private-avatar-size: var(--leverui-sizes-10);
-    --leverui-private-avatar-font-size: var(--leverui-font-sizes-md);
+    --lui-private-avatar-size: var(--lui-sizes-10);
+    --lui-private-avatar-font-size: var(--lui-font-sizes-md);
   }
   .leverui-avatar__root:not([data-unstyled])[data-size='lg'] {
-    --leverui-private-avatar-size: var(--leverui-sizes-11);
-    --leverui-private-avatar-font-size: var(--leverui-font-sizes-md);
+    --lui-private-avatar-size: var(--lui-sizes-11);
+    --lui-private-avatar-font-size: var(--lui-font-sizes-md);
   }
   .leverui-avatar__root:not([data-unstyled])[data-size='xl'] {
-    --leverui-private-avatar-size: var(--leverui-sizes-12);
-    --leverui-private-avatar-font-size: var(--leverui-font-sizes-lg);
+    --lui-private-avatar-size: var(--lui-sizes-12);
+    --lui-private-avatar-font-size: var(--lui-font-sizes-lg);
   }
   .leverui-avatar__root:not([data-unstyled])[data-size='2xl'] {
-    --leverui-private-avatar-size: var(--leverui-sizes-16);
-    --leverui-private-avatar-font-size: var(--leverui-font-sizes-xl);
+    --lui-private-avatar-size: var(--lui-sizes-16);
+    --lui-private-avatar-font-size: var(--lui-font-sizes-xl);
   }
 }

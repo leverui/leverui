@@ -63,7 +63,7 @@ async function verifiesScopesAndOverrides({ page }: { page: Page }): Promise<voi
 
   await page.addStyleTag({
     content:
-      '[data-testid="blockquote-css-override"] { --leverui-colors-color-palette-muted: rgb(12 34 56); --leverui-colors-color-palette-fg: rgb(65 43 21); }',
+      '[data-testid="blockquote-css-override"] { --lui-colors-color-palette-muted: rgb(12 34 56); --lui-colors-color-palette-fg: rgb(65 43 21); }',
   });
   await expect(page.getByTestId('blockquote-css-override')).toHaveCSS(
     'border-left-color',

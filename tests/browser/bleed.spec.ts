@@ -163,7 +163,7 @@ async function verifiesNativeBleedCss({ page }: { page: Page }): Promise<void> {
   );
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(
-    `<style>${defaultCss}</style><style>#native-bleed { --leverui-spacing-2: 13px; }</style>${markup}`,
+    `<style>${defaultCss}</style><style>#native-bleed { --lui-spacing-2: 13px; }</style>${markup}`,
   );
   const outer = page.locator('#native-bleed');
   await expect(outer).toHaveCSS('margin-inline-start', '-13px');

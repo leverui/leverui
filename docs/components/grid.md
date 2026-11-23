@@ -17,7 +17,7 @@ export function GridUsage() {
 
 ```css
 .grid-usage {
-  gap: var(--leverui-spacing-4);
+  gap: var(--lui-spacing-4);
 }
 ```
 

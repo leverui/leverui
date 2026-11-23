@@ -167,8 +167,8 @@ gets the `Input` size, variant, focus, disabled, and invalid styles.
 
 Root `size` and `variant` are responsive.
 
-Stepper buttons: set `--leverui-number-input-stepper-width` or
-`--leverui-number-input-stepper-radius` on the root.
+Stepper buttons: set `--lui-number-input-stepper-width` or
+`--lui-number-input-stepper-radius` on the root.
 
 ## Explorer
 

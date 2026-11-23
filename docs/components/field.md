@@ -96,13 +96,13 @@ Load the [package stylesheet](../getting-started.md) first. Classes:
 `__requiredIndicator`. Or add your own class to a part and style it after the
 Lever UI stylesheet.
 
-`--leverui-field-label-width` sets the label column width in a horizontal
+`--lui-field-label-width` sets the label column width in a horizontal
 field. Default: `80px`.
 
 ```css
 .account-form {
-  --leverui-colors-fg-error: #a02fd0;
-  --leverui-field-label-width: 96px;
+  --lui-colors-fg-error: #a02fd0;
+  --lui-field-label-width: 96px;
 }
 
 .account-form .leverui-field__label {

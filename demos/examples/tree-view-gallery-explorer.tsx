@@ -70,14 +70,14 @@ export function TreeViewExplorerDemo(): JSX.Element {
   return (
     <TreeView.Root
       collection={collection}
-      style={{ 'max-width': 'var(--leverui-sizes-sm)' }}
+      style={{ 'max-width': 'var(--lui-sizes-sm)' }}
       defaultExpandedValue={['node_modules', 'node_modules/@types', 'src']}
       defaultCheckedValue={[]}
     >
       <TreeView.Label
         style={{
-          'margin-bottom': 'var(--leverui-spacing-2)',
-          'font-weight': 'var(--leverui-font-weights-medium)',
+          'margin-bottom': 'var(--lui-spacing-2)',
+          'font-weight': 'var(--lui-font-weights-medium)',
         }}
       >
         Project explorer

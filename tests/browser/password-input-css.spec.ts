@@ -15,7 +15,7 @@ async function verifiesPasswordCss({ page }: { page: Page }): Promise<void> {
   await expect(segment).toHaveAttribute('data-selected', '');
   await page.addStyleTag({
     content:
-      '.consumer-password-demo { --leverui-password-strength-segment-height: 9px; --leverui-password-strength-selected-background: rgb(0, 0, 255); } .consumer-password-demo .leverui-password-input { margin-left: 3px; } .consumer-password-demo .leverui-password-input__visibility-trigger { border-radius: 2px; } .consumer-password-demo .leverui-password-strength-meter { margin-top: 7px; } .consumer-password-demo .leverui-password-strength-meter__track { gap: 3px; } .consumer-password-demo .leverui-password-strength-meter__label { letter-spacing: 1px; }',
+      '.consumer-password-demo { --lui-password-strength-segment-height: 9px; --lui-password-strength-selected-background: rgb(0, 0, 255); } .consumer-password-demo .leverui-password-input { margin-left: 3px; } .consumer-password-demo .leverui-password-input__visibility-trigger { border-radius: 2px; } .consumer-password-demo .leverui-password-strength-meter { margin-top: 7px; } .consumer-password-demo .leverui-password-strength-meter__track { gap: 3px; } .consumer-password-demo .leverui-password-strength-meter__label { letter-spacing: 1px; }',
   });
   await expect(root).toHaveCSS('margin-left', '3px');
   await expect(trigger).toHaveCSS('border-top-left-radius', '2px');

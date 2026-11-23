@@ -37,7 +37,7 @@ export function Demo() {
 
 ## Customization
 
-Style with plain CSS and the `--leverui-*` variables. Load your CSS after
+Style with plain CSS and the `--lui-*` variables. Load your CSS after
 `@leverui/components/styles.css`.
 
 ### Adding a new variant
@@ -49,8 +49,8 @@ built-in variants.
 .action-pill.leverui-button {
   border-radius: 9999px;
   padding-inline: 1.5rem;
-  background: var(--leverui-colors-blue-solid);
-  color: var(--leverui-colors-blue-contrast);
+  background: var(--lui-colors-blue-solid);
+  color: var(--lui-colors-blue-contrast);
 }
 ```
 

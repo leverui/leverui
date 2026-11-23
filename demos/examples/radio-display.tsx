@@ -17,7 +17,7 @@ export function RadioWithColors(): JSX.Element {
         {
           /** Render one palette row. */
           (palette) => (
-            <HStack gap="10" style={{ 'padding-inline': 'var(--leverui-spacing-4)' }}>
+            <HStack gap="10" style={{ 'padding-inline': 'var(--lui-spacing-4)' }}>
               <Text style={{ 'min-width': '8ch' }}>{palette}</Text>
               <RadioGroup.Root colorPalette={palette} defaultValue="react">
                 <For each={frameworks}>
@@ -26,9 +26,7 @@ export function RadioWithColors(): JSX.Element {
                     (item, index) => (
                       <RadioGroup.Item
                         value={item.value}
-                        style={
-                          index() > 0 ? { 'margin-inline-start': 'var(--leverui-spacing-8)' } : {}
-                        }
+                        style={index() > 0 ? { 'margin-inline-start': 'var(--lui-spacing-8)' } : {}}
                       >
                         <RadioGroup.ItemHiddenInput />
                         <RadioGroup.ItemIndicator />

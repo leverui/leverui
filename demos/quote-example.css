@@ -1,9 +1,9 @@
 .quote-story-reactive {
-  color: var(--leverui-colors-red-500);
+  color: var(--lui-colors-red-500);
 }
 
 .quote-story-reactive.quote-story-plain {
-  color: var(--leverui-colors-blue-500);
+  color: var(--lui-colors-blue-500);
   font-weight: 400;
   line-height: 2;
 }

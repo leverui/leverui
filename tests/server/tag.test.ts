@@ -60,7 +60,7 @@ function verifiesServerTag(): void {
   expect(markup).toContain('data-size="sm"');
   expect(markup).toContain('data-variant="solid"');
   expect(markup).not.toContain('data-leverui-private-style-runtime');
-  expect(markup).not.toContain('--leverui-private-tag-element-size');
+  expect(markup).not.toContain('--lui-private-tag-element-size');
   expect(markup).not.toMatch(/--tag-(?:avatar-size|element-size|element-offset)/);
   expect(markup).not.toMatch(/<div[^>]*\s(?:size|variant|recipe|css|unstyled)=/);
 }

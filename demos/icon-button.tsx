@@ -35,7 +35,7 @@ export const Rounded: Story = {
   parameters: {
     guide: {
       description:
-        'Set the `border-radius` style to `var(--leverui-radii-full)` to make the button fully rounded',
+        'Set the `border-radius` style to `var(--lui-radii-full)` to make the button fully rounded',
     },
   },
 };

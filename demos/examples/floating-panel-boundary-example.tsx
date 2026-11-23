@@ -13,18 +13,18 @@ export function FloatingPanelBoundary(): JSX.Element {
         position: 'relative',
         'border-width': '2px',
         'border-style': 'dashed',
-        'border-color': 'var(--leverui-colors-border-emphasized)',
-        'border-radius': 'var(--leverui-radii-l2)',
+        'border-color': 'var(--lui-colors-border-emphasized)',
+        'border-radius': 'var(--lui-radii-l2)',
         width: '100%',
         height: '400px',
-        padding: 'var(--leverui-spacing-4)',
+        padding: 'var(--lui-spacing-4)',
       }}
     >
       <Text
         textStyle="xs"
         style={{
-          color: 'var(--leverui-colors-fg-muted)',
-          'margin-bottom': 'var(--leverui-spacing-2)',
+          color: 'var(--lui-colors-fg-muted)',
+          'margin-bottom': 'var(--lui-spacing-2)',
         }}
       >
         Drag boundary

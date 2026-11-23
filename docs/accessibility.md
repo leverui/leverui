@@ -75,7 +75,7 @@ function EmailField(): JSX.Element {
 
 ## Check appearance and interaction together
 
-- After overriding `--leverui-*` colors, check text and control contrast, focus
+- After overriding `--lui-*` colors, check text and control contrast, focus
   indicators, disabled states, and light and dark scopes. See the
   [theme guide](theme-guide.md).
 - Respect reduced-motion preferences in motion you add.

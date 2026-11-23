@@ -28,7 +28,7 @@ export function StackBasic(): JSX.Element {
 /** Stack three patterned surfaces in a horizontal row. */
 export function StackHorizontal(): JSX.Element {
   return (
-    <Stack direction="row" style={{ height: 'var(--leverui-sizes-20)' }}>
+    <Stack direction="row" style={{ height: 'var(--lui-sizes-20)' }}>
       <Box
         class="example-decorative-box"
         data-decorative-width="100%"

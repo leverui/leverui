@@ -12,7 +12,7 @@ export function TextareaWithForm(): JSX.Element {
 
   return (
     <form onSubmit={submitForm}>
-      <Stack gap="4" style={{ 'max-width': 'var(--leverui-sizes-sm)' }}>
+      <Stack gap="4" style={{ 'max-width': 'var(--lui-sizes-sm)' }}>
         <Field.Root>
           <Field.Label>Issue details</Field.Label>
           <Textarea placeholder="Type your message here..." />
@@ -21,7 +21,7 @@ export function TextareaWithForm(): JSX.Element {
           </Field.HelperText>
         </Field.Root>
         <Button
-          style={{ 'align-self': 'flex-start', 'margin-top': 'var(--leverui-spacing-3)' }}
+          style={{ 'align-self': 'flex-start', 'margin-top': 'var(--lui-spacing-3)' }}
           variant="solid"
           type="submit"
         >
@@ -62,7 +62,7 @@ export function TextareaWithHookForm(): JSX.Element {
 
   return (
     <form onSubmit={submitForm}>
-      <Stack gap="4" align="flex-start" style={{ 'max-width': 'var(--leverui-sizes-sm)' }}>
+      <Stack gap="4" align="flex-start" style={{ 'max-width': 'var(--lui-sizes-sm)' }}>
         <Field.Root invalid={usernameError()}>
           <Field.Label>Username</Field.Label>
           <Input name="username" placeholder="@username" onInput={updateUsername} />

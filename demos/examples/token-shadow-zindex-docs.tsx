@@ -9,7 +9,7 @@ import './token-doc-flex.css';
 export function TokensShadows(): JSX.Element {
   return (
     <TokenDoc title="theme.semanticTokens.shadows" my="8">
-      <SimpleGrid minChildWidth="240px" style={{ gap: 'var(--leverui-spacing-4)' }}>
+      <SimpleGrid minChildWidth="240px" style={{ gap: 'var(--lui-spacing-4)' }}>
         <For each={['xs', 'sm', 'md', 'lg', 'xl', '2xl', 'inner', 'inset']}>
           {
             /** Show one shadow on a default-sized surface. */
@@ -17,11 +17,11 @@ export function TokensShadows(): JSX.Element {
               <VStack style={{ flex: '1' }}>
                 <Center
                   style={{
-                    'box-shadow': `var(--leverui-shadows-${shadow})`,
+                    'box-shadow': `var(--lui-shadows-${shadow})`,
                     width: '100%',
-                    height: 'var(--leverui-sizes-20)',
-                    color: 'var(--leverui-colors-fg-muted)',
-                    'border-radius': 'var(--leverui-radii-md)',
+                    height: 'var(--lui-sizes-20)',
+                    color: 'var(--lui-colors-fg-muted)',
+                    'border-radius': 'var(--lui-radii-md)',
                   }}
                 />
                 <Box>{shadow}</Box>
@@ -49,8 +49,8 @@ export function TokensZIndex(): JSX.Element {
       </Flex>
       <Stack
         style={{
-          'padding-inline': 'var(--leverui-spacing-3)',
-          'padding-top': 'var(--leverui-spacing-2)',
+          'padding-inline': 'var(--lui-spacing-3)',
+          'padding-top': 'var(--lui-spacing-2)',
         }}
       >
         <For each={values}>
@@ -58,12 +58,10 @@ export function TokensZIndex(): JSX.Element {
             /** List a token's name and numeric layer value. */
             (token) => (
               <Flex class="token-doc-flex-row">
-                <Text
-                  style={{ width: '100px', 'font-weight': 'var(--leverui-font-weights-medium)' }}
-                >
+                <Text style={{ width: '100px', 'font-weight': 'var(--lui-font-weights-medium)' }}>
                   {token.extensions.prop}
                 </Text>
-                <Text style={{ width: '100px', color: 'var(--leverui-colors-fg-muted)' }}>
+                <Text style={{ width: '100px', color: 'var(--lui-colors-fg-muted)' }}>
                   {token.originalValue}
                 </Text>
               </Flex>

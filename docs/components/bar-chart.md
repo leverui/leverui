@@ -158,7 +158,7 @@ Other attributes and event handlers go to the root element.
 | `wickKey`          | `string`                                 | Row field that holds a candlestick's `[high, low]` wick pair.          |
 
 `stroke` takes a CSS color, not a color token. A stroke in the background
-color, such as `var(--leverui-colors-bg)`, draws a thin gap between bars that
+color, such as `var(--lui-colors-bg)`, draws a thin gap between bars that
 touch.
 
 Color precedence: `colorKey`, then `colorByDirection`, then `colorBySign`, then
@@ -252,8 +252,8 @@ Your own `onFocus`, `onBlur`, and `onKeyDown` handlers still run.
 
 ```css
 .downloads-bars {
-  --leverui-bar-chart-legend-gap: 1rem;
-  --leverui-bar-chart-tooltip-background: #f0faf8;
+  --lui-bar-chart-legend-gap: 1rem;
+  --lui-bar-chart-tooltip-background: #f0faf8;
 }
 
 .downloads-bars .leverui-bar-chart__grid-line {
@@ -263,36 +263,36 @@ Your own `onFocus`, `onBlur`, and `onKeyDown` handlers still run.
 
 ### Variables
 
-| Variable                                        | Default            | Description                                 |
-| ----------------------------------------------- | ------------------ | ------------------------------------------- |
-| `--leverui-bar-chart-min-width`                 | `280px`            | Narrowest the chart gets.                   |
-| `--leverui-bar-chart-axis-font-size`            | `12px`             | Axis label and title text size.             |
-| `--leverui-bar-chart-axis-color`                | Muted text color   | Axis label and title color.                 |
-| `--leverui-bar-chart-axis-line-color`           | Border color       | Axis line color.                            |
-| `--leverui-bar-chart-grid-color`                | Muted border color | Grid line color.                            |
-| `--leverui-bar-chart-label-font-size`           | `12px`             | Value label text size.                      |
-| `--leverui-bar-chart-label-weight`              | `600`              | Value label weight.                         |
-| `--leverui-bar-chart-label-color`               | Text color         | Value label color.                          |
-| `--leverui-bar-chart-wick-color`                | Text color         | Candlestick wick color.                     |
-| `--leverui-bar-chart-wick-width`                | `1.5`              | Candlestick wick thickness.                 |
-| `--leverui-bar-chart-reference-fill`            | Muted red          | Reference area fill.                        |
-| `--leverui-bar-chart-reference-opacity`         | `0.4`              | Reference area opacity, 0 to 1.             |
-| `--leverui-bar-chart-reference-label-color`     | Red text color     | Reference area label color.                 |
-| `--leverui-bar-chart-reference-label-font-size` | `12px`             | Reference area label text size.             |
-| `--leverui-bar-chart-reference-line-color`      | Red text color     | Reference line color.                       |
-| `--leverui-bar-chart-legend-gap`                | `12px`             | Space between items in a bottom legend.     |
-| `--leverui-bar-chart-side-legend-gap`           | `8px`              | Space between items in a top-right legend.  |
-| `--leverui-bar-chart-legend-item-gap`           | `4px`              | Space between a legend swatch and its name. |
-| `--leverui-bar-chart-legend-font-size`          | `12px`             | Legend text size.                           |
-| `--leverui-bar-chart-legend-color`              | Muted text color   | Legend text color.                          |
-| `--leverui-bar-chart-legend-swatch-size`        | `8px`              | Legend swatch width and height.             |
-| `--leverui-bar-chart-legend-swatch-radius`      | `2px`              | Legend swatch corner radius.                |
-| `--leverui-bar-chart-tooltip-padding`           | `8px 10px`         | Space inside the tooltip.                   |
-| `--leverui-bar-chart-tooltip-background`        | Panel color        | Tooltip background.                         |
-| `--leverui-bar-chart-tooltip-border`            | Border color       | Tooltip border color.                       |
-| `--leverui-bar-chart-tooltip-radius`            | `6px`              | Tooltip corner radius.                      |
-| `--leverui-bar-chart-tooltip-shadow`            | Small shadow       | Tooltip shadow.                             |
-| `--leverui-bar-chart-tooltip-font-size`         | `12px`             | Tooltip text size.                          |
+| Variable                                    | Default            | Description                                 |
+| ------------------------------------------- | ------------------ | ------------------------------------------- |
+| `--lui-bar-chart-min-width`                 | `280px`            | Narrowest the chart gets.                   |
+| `--lui-bar-chart-axis-font-size`            | `12px`             | Axis label and title text size.             |
+| `--lui-bar-chart-axis-color`                | Muted text color   | Axis label and title color.                 |
+| `--lui-bar-chart-axis-line-color`           | Border color       | Axis line color.                            |
+| `--lui-bar-chart-grid-color`                | Muted border color | Grid line color.                            |
+| `--lui-bar-chart-label-font-size`           | `12px`             | Value label text size.                      |
+| `--lui-bar-chart-label-weight`              | `600`              | Value label weight.                         |
+| `--lui-bar-chart-label-color`               | Text color         | Value label color.                          |
+| `--lui-bar-chart-wick-color`                | Text color         | Candlestick wick color.                     |
+| `--lui-bar-chart-wick-width`                | `1.5`              | Candlestick wick thickness.                 |
+| `--lui-bar-chart-reference-fill`            | Muted red          | Reference area fill.                        |
+| `--lui-bar-chart-reference-opacity`         | `0.4`              | Reference area opacity, 0 to 1.             |
+| `--lui-bar-chart-reference-label-color`     | Red text color     | Reference area label color.                 |
+| `--lui-bar-chart-reference-label-font-size` | `12px`             | Reference area label text size.             |
+| `--lui-bar-chart-reference-line-color`      | Red text color     | Reference line color.                       |
+| `--lui-bar-chart-legend-gap`                | `12px`             | Space between items in a bottom legend.     |
+| `--lui-bar-chart-side-legend-gap`           | `8px`              | Space between items in a top-right legend.  |
+| `--lui-bar-chart-legend-item-gap`           | `4px`              | Space between a legend swatch and its name. |
+| `--lui-bar-chart-legend-font-size`          | `12px`             | Legend text size.                           |
+| `--lui-bar-chart-legend-color`              | Muted text color   | Legend text color.                          |
+| `--lui-bar-chart-legend-swatch-size`        | `8px`              | Legend swatch width and height.             |
+| `--lui-bar-chart-legend-swatch-radius`      | `2px`              | Legend swatch corner radius.                |
+| `--lui-bar-chart-tooltip-padding`           | `8px 10px`         | Space inside the tooltip.                   |
+| `--lui-bar-chart-tooltip-background`        | Panel color        | Tooltip background.                         |
+| `--lui-bar-chart-tooltip-border`            | Border color       | Tooltip border color.                       |
+| `--lui-bar-chart-tooltip-radius`            | `6px`              | Tooltip corner radius.                      |
+| `--lui-bar-chart-tooltip-shadow`            | Small shadow       | Tooltip shadow.                             |
+| `--lui-bar-chart-tooltip-font-size`         | `12px`             | Tooltip text size.                          |
 
 Grid variables are in [Cartesian Grid](cartesian-grid.md).
 

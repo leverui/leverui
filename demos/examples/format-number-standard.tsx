@@ -1,7 +1,7 @@
 import { type JSX } from '@solidjs/web';
 import { FormatNumber, HStack, LocaleProvider, Text } from '../../src';
 
-const mediumWeight: JSX.CSSProperties = { 'font-weight': 'var(--leverui-font-weights-medium)' };
+const mediumWeight: JSX.CSSProperties = { 'font-weight': 'var(--lui-font-weights-medium)' };
 
 /** Format the number with the default locale. */
 export function FormatNumberBasic(): JSX.Element {

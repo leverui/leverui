@@ -3,28 +3,28 @@
     display: inline-flex;
     align-items: center;
     position: relative;
-    gap: var(--leverui-editable-gap, var(--leverui-spacing-1\.5));
+    gap: var(--lui-editable-gap, var(--lui-spacing-1\.5));
     width: 100%;
-    font-size: var(--leverui-editable-font-size, var(--leverui-private-editable-font-size));
-    line-height: var(--leverui-private-editable-line-height);
+    font-size: var(--lui-editable-font-size, var(--lui-private-editable-font-size));
+    line-height: var(--lui-private-editable-line-height);
   }
 
   .leverui-editable__root[data-size='sm'] {
-    --leverui-private-editable-font-size: var(--leverui-font-sizes-sm);
-    --leverui-private-editable-line-height: 1.25rem;
-    --leverui-private-editable-control-height: var(--leverui-sizes-8);
+    --lui-private-editable-font-size: var(--lui-font-sizes-sm);
+    --lui-private-editable-line-height: 1.25rem;
+    --lui-private-editable-control-height: var(--lui-sizes-8);
   }
 
   .leverui-editable__root[data-size='md'] {
-    --leverui-private-editable-font-size: var(--leverui-font-sizes-sm);
-    --leverui-private-editable-line-height: 1.25rem;
-    --leverui-private-editable-control-height: var(--leverui-sizes-9);
+    --lui-private-editable-font-size: var(--lui-font-sizes-sm);
+    --lui-private-editable-line-height: 1.25rem;
+    --lui-private-editable-control-height: var(--lui-sizes-9);
   }
 
   .leverui-editable__root[data-size='lg'] {
-    --leverui-private-editable-font-size: var(--leverui-font-sizes-md);
-    --leverui-private-editable-line-height: 1.5rem;
-    --leverui-private-editable-control-height: var(--leverui-sizes-10);
+    --lui-private-editable-font-size: var(--lui-font-sizes-md);
+    --lui-private-editable-line-height: 1.5rem;
+    --lui-private-editable-control-height: var(--lui-sizes-10);
   }
 
   .leverui-editable__preview:not([data-unstyled]),
@@ -34,13 +34,10 @@
     font-weight: inherit;
     text-align: inherit;
     background: transparent;
-    border-radius: var(--leverui-radii-l2);
-    padding-block: var(--leverui-editable-padding-block, var(--leverui-spacing-1));
-    padding-inline: var(--leverui-editable-padding-inline, var(--leverui-spacing-1));
-    min-height: var(
-      --leverui-editable-control-height,
-      var(--leverui-private-editable-control-height)
-    );
+    border-radius: var(--lui-radii-l2);
+    padding-block: var(--lui-editable-padding-block, var(--lui-spacing-1));
+    padding-inline: var(--lui-editable-padding-inline, var(--lui-spacing-1));
+    min-height: var(--lui-editable-control-height, var(--lui-private-editable-control-height));
   }
 
   .leverui-editable__preview:not([data-unstyled]) {
@@ -48,11 +45,11 @@
     align-items: center;
     cursor: text;
     transition-property: background-color, color, border-color, box-shadow;
-    transition-duration: var(--leverui-durations-moderate);
+    transition-duration: var(--lui-durations-moderate);
   }
 
   .leverui-editable__preview:not([data-unstyled]):hover {
-    background: var(--leverui-colors-bg-muted);
+    background: var(--lui-colors-bg-muted);
   }
 
   .leverui-editable__preview:not([data-unstyled])[data-disabled] {
@@ -64,7 +61,7 @@
     outline: 0;
     width: 100%;
     transition-property: background-color, color, border-color, box-shadow;
-    transition-duration: var(--leverui-durations-fast);
+    transition-duration: var(--lui-durations-fast);
   }
 
   .leverui-editable__input:not([data-unstyled])::placeholder,
@@ -74,14 +71,13 @@
 
   .leverui-editable__input:not([data-unstyled]):is(:focus-visible, [data-focus-visible]),
   .leverui-editable__textarea:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
-    outline: 2px solid
-      var(--leverui-editable-focus-color, var(--leverui-colors-color-palette-focus-ring));
+    outline: 2px solid var(--lui-editable-focus-color, var(--lui-colors-color-palette-focus-ring));
     outline-offset: -2px;
   }
 
   .leverui-editable__control:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
-    gap: var(--leverui-editable-gap, var(--leverui-spacing-1\.5));
+    gap: var(--lui-editable-gap, var(--lui-spacing-1\.5));
   }
 }

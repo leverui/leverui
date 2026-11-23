@@ -19,7 +19,7 @@ export function RadialChartLegend(props: RadialChartLegendProps): JSX.Element {
             <span
               class="leverui-radial-chart__legendSwatch"
               style={{
-                '--leverui-private-radial-legend-color': chartColor(item.color, item.color),
+                '--lui-private-radial-legend-color': chartColor(item.color, item.color),
               }}
             />
             {item.name}

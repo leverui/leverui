@@ -96,10 +96,10 @@ function PopoverListboxContent(props: { gallery?: boolean | undefined }): JSX.El
                   <Listbox.Input
                     aria-label="Search frameworks"
                     style={{
-                      'min-height': 'var(--leverui-sizes-10)',
-                      'padding-inline': 'var(--leverui-spacing-3)',
-                      'border-top-left-radius': 'var(--leverui-radii-l2)',
-                      'border-top-right-radius': 'var(--leverui-radii-l2)',
+                      'min-height': 'var(--lui-sizes-10)',
+                      'padding-inline': 'var(--lui-spacing-3)',
+                      'border-top-left-radius': 'var(--lui-radii-l2)',
+                      'border-top-right-radius': 'var(--lui-radii-l2)',
                       background: 'transparent',
                       outline: '0',
                     }}

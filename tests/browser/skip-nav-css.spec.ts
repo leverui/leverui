@@ -58,7 +58,7 @@ async function verifiesSkipNavCss({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   const markup = renderSkipNavExamples();
   expect(markup).not.toMatch(/style="[^"]*outline/);
-  const consumerCss = String.raw`:root { --leverui-spacing-2\.5: 1.5rem; } .consumer-skip { top: 18px; } .consumer-destination { outline: 1px solid red; }`;
+  const consumerCss = String.raw`:root { --lui-spacing-2\.5: 1.5rem; } .consumer-skip { top: 18px; } .consumer-destination { outline: 1px solid red; }`;
   await page.setContent(`<style>${defaultCss}</style><style>${consumerCss}</style>${markup}`);
   const defaultLink = page.locator('a[href="#default-main"]');
   await expect(defaultLink).toHaveCSS('position', 'absolute');

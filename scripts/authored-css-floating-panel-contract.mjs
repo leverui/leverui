@@ -26,8 +26,8 @@ export const floatingPanelContracts = [
       "[data-placement='nw']",
       "[data-placement='se']",
       "[data-placement='sw']",
-      '--leverui-colors-bg-panel',
-      '--leverui-colors-bg-subtle',
+      '--lui-colors-bg-panel',
+      '--lui-colors-bg-subtle',
     ],
   },
 ];

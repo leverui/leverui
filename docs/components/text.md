@@ -84,8 +84,8 @@ Class: `.leverui-text`.
 
 ```css
 .supporting-copy {
-  color: var(--leverui-colors-fg-muted);
-  font-size: var(--leverui-font-sizes-sm);
+  color: var(--lui-colors-fg-muted);
+  font-size: var(--lui-font-sizes-sm);
 }
 ```
 

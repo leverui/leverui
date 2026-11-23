@@ -33,7 +33,7 @@ function verifiesRadialChartHooks(): void {
   expect(root.classList.contains('consumer-radial')).toBe(true);
   expect(root.dataset.chartShape).toBe('donut');
   expect(root.dataset.labelPlacement).toBe('inside');
-  expect(root.style.getPropertyValue('--leverui-private-radial-chart-size')).toBe('200px');
+  expect(root.style.getPropertyValue('--lui-private-radial-chart-size')).toBe('200px');
   expect(root.style.outlineWidth).toBe('2px');
   expect(root.querySelector('.leverui-radial-chart__sector')).not.toBeNull();
   expect(root.querySelector('.leverui-radial-chart__legendSwatch')).not.toBeNull();
@@ -43,7 +43,7 @@ function verifiesRadialChartHooks(): void {
   setPlacement('point');
   flush();
   expect(view.container.querySelector('.leverui-radial-chart')).toBe(root);
-  expect(root.style.getPropertyValue('--leverui-private-radial-chart-size')).toBe('240px');
+  expect(root.style.getPropertyValue('--lui-private-radial-chart-size')).toBe('240px');
   expect(root.querySelector('svg')?.getAttribute('width')).toBe('240');
   expect(root.querySelector('.leverui-radial-chart__labels')?.getAttribute('data-placement')).toBe(
     'point',
@@ -75,7 +75,7 @@ function verifiesRadialBarHooks(): void {
   setSize(360);
   flush();
   expect(root.querySelector('svg')).toBe(svg);
-  expect(root.style.getPropertyValue('--leverui-private-radial-bar-size')).toBe('360px');
+  expect(root.style.getPropertyValue('--lui-private-radial-bar-size')).toBe('360px');
   expect(svg?.getAttribute('width')).toBe('360');
 }
 

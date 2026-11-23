@@ -8,9 +8,9 @@ export const tooltipContracts = [
       '.leverui-tooltip__arrowTip:not([data-unstyled])',
       "[data-state='open']",
       "[data-state='closed']",
-      '--leverui-tooltip-background',
-      '--leverui-tooltip-foreground',
-      '--leverui-tooltip-arrow-size',
+      '--lui-tooltip-background',
+      '--lui-tooltip-foreground',
+      '--lui-tooltip-arrow-size',
     ],
   },
 ];

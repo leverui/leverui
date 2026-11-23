@@ -14,7 +14,7 @@ function verifiesCustomChild(): void {
       <input
         class="leverui-input-group__field"
         aria-label="Custom field"
-        style={{ height: '40px', '--leverui-input-group-field-height': '40px' }}
+        style={{ height: '40px', '--lui-input-group-field-height': '40px' }}
       />
     );
   }
@@ -31,12 +31,12 @@ function verifiesCustomChild(): void {
   );
   const input = screen.getByRole('textbox', { name: 'Custom field' });
   const group = input.closest('.leverui-input-group') as HTMLElement;
-  const firstOffset = group.style.getPropertyValue('--leverui-private-input-group-start-offset');
+  const firstOffset = group.style.getPropertyValue('--lui-private-input-group-start-offset');
   expect(input.className).toContain('leverui-input-group__field');
   setOffset('3px');
   flush();
   expect(screen.getByRole('textbox', { name: 'Custom field' })).toBe(input);
-  expect(group.style.getPropertyValue('--leverui-private-input-group-start-offset')).not.toBe(
+  expect(group.style.getPropertyValue('--lui-private-input-group-start-offset')).not.toBe(
     firstOffset,
   );
 }

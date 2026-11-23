@@ -56,9 +56,9 @@ export function CommandBasicExample(): JSX.Element {
                   variant="outline"
                   size="sm"
                   style={{
-                    'min-width': 'var(--leverui-spacing-64)',
+                    'min-width': 'var(--lui-spacing-64)',
                     'justify-content': 'flex-start',
-                    color: 'var(--leverui-colors-fg-muted)',
+                    color: 'var(--lui-colors-fg-muted)',
                   }}
                 >
                   <SearchIcon /> Search commands...
@@ -133,11 +133,11 @@ export function CommandBasicExample(): JSX.Element {
         <Text
           textStyle="sm"
           style={{
-            'margin-top': 'var(--leverui-spacing-4)',
-            color: 'var(--leverui-colors-fg-muted)',
+            'margin-top': 'var(--lui-spacing-4)',
+            color: 'var(--lui-colors-fg-muted)',
           }}
         >
-          Ran <Span style={{ color: 'var(--leverui-colors-fg)' }}>{lastCommand()}</Span>
+          Ran <Span style={{ color: 'var(--lui-colors-fg)' }}>{lastCommand()}</Span>
         </Text>
       </Show>
     </>

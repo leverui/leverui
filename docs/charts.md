@@ -65,7 +65,7 @@ Each chart's page lists its props and CSS variables.
 
 ```tsx
 <BarChart
-  style={{ '--leverui-chart-grid-color': chart.color('border.muted') }}
+  style={{ '--lui-chart-grid-color': chart.color('border.muted') }}
   data={chart.data}
   xKey="month"
   series={[{ name: 'value', color: 'teal.solid' }]}

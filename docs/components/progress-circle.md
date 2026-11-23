@@ -38,7 +38,7 @@ export function ClosedProgressCircle(props: ClosedProgressCircleProps) {
   return (
     <ProgressCircle.Root {...root}>
       <ProgressCircle.Circle
-        style={props.thickness ? { '--leverui-progress-circle-thickness': props.thickness } : {}}
+        style={props.thickness ? { '--lui-progress-circle-thickness': props.thickness } : {}}
       >
         <ProgressCircle.Track stroke={props.trackColor} />
         <ProgressCircle.Range stroke={props.color} strokeLinecap={props.cap ?? 'butt'} />
@@ -65,7 +65,7 @@ Style `[data-state='indeterminate']` for the ring while progress is unknown.
 
 ```css
 .loading-range[data-state='indeterminate'] {
-  stroke: var(--leverui-colors-purple-500);
+  stroke: var(--lui-colors-purple-500);
 }
 ```
 
@@ -107,12 +107,12 @@ only as often as is useful.
 ## Customize with CSS
 
 Import `@leverui/components/styles.css` before your own stylesheet. Set
-`--leverui-progress-circle-size` or `--leverui-progress-circle-thickness` on a
+`--lui-progress-circle-size` or `--lui-progress-circle-thickness` on a
 Circle root. Default thickness: 4, 5, 6, 7, or 8 pixels, smallest size to
 largest. For a single SVG, `Circle` also accepts `--size` and `--thickness`.
 
-Arc colors: `--leverui-progress-circle-track-color` and
-`--leverui-progress-circle-range-color`. Classes:
+Arc colors: `--lui-progress-circle-track-color` and
+`--lui-progress-circle-range-color`. Classes:
 `.leverui-progress-circle__*`.
 
 `unstyled` turns off the default styles but keeps the SVG semantics. `size` can

@@ -102,13 +102,13 @@ Classes: `.leverui-data-list__root`, `.leverui-data-list__item`,
 
 Root attributes: `data-size`, `data-orientation`, `data-variant`, plus one per
 breakpoint you set, such as `data-orientation-md`. Unlayered CSS can target
-these and use semantic variables such as `--leverui-colors-fg-muted`.
+these and use semantic variables such as `--lui-colors-fg-muted`.
 
 A line between items:
 
 ```css
 .my-data-list > .leverui-data-list__item + .leverui-data-list__item {
-  border-top: 1px solid var(--leverui-colors-border);
+  border-top: 1px solid var(--lui-colors-border);
 }
 ```
 

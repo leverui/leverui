@@ -2,8 +2,8 @@
   .leverui-steps__root:not([data-unstyled])[data-orientation='horizontal']
     .leverui-steps__separator:not([data-unstyled]) {
     width: 100%;
-    height: var(--leverui-private-steps-thickness);
-    margin-inline: var(--leverui-private-steps-gutter);
+    height: var(--lui-private-steps-thickness);
+    margin-inline: var(--lui-private-steps-gutter);
   }
 
   .leverui-steps__root:not([data-unstyled])[data-orientation='vertical'] {
@@ -21,13 +21,11 @@
 
     .leverui-steps__separator:not([data-unstyled]) {
       position: absolute;
-      top: calc(var(--leverui-private-steps-size) + var(--leverui-private-steps-gutter));
-      inset-inline-start: calc(var(--leverui-private-steps-size) / 2 - 1px);
-      width: var(--leverui-private-steps-thickness);
+      top: calc(var(--lui-private-steps-size) + var(--lui-private-steps-gutter));
+      inset-inline-start: calc(var(--lui-private-steps-size) / 2 - 1px);
+      width: var(--lui-private-steps-thickness);
       height: 100%;
-      max-height: calc(
-        100% - var(--leverui-private-steps-size) - var(--leverui-private-steps-gutter) * 2
-      );
+      max-height: calc(100% - var(--lui-private-steps-size) - var(--lui-private-steps-gutter) * 2);
     }
   }
 }

@@ -1,8 +1,8 @@
 .avatar-example-overflow-trigger {
-  border-radius: var(--leverui-radii-full);
+  border-radius: var(--lui-radii-full);
 }
 
 .avatar-example-overflow-trigger:focus-visible {
-  outline: 2px solid var(--leverui-colors-color-palette-focus-ring);
+  outline: 2px solid var(--lui-colors-color-palette-focus-ring);
   outline-offset: 2px;
 }

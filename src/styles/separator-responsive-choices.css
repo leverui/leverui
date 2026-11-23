@@ -1,16 +1,16 @@
 @layer leverui.recipes {
   @media (min-width: 480px) {
     .leverui-separator:not([data-unstyled])[data-size-sm='xs'] {
-      --leverui-private-separator-thickness: 0.5px;
+      --lui-private-separator-thickness: 0.5px;
     }
     .leverui-separator:not([data-unstyled])[data-size-sm='sm'] {
-      --leverui-private-separator-thickness: 1px;
+      --lui-private-separator-thickness: 1px;
     }
     .leverui-separator:not([data-unstyled])[data-size-sm='md'] {
-      --leverui-private-separator-thickness: 2px;
+      --lui-private-separator-thickness: 2px;
     }
     .leverui-separator:not([data-unstyled])[data-size-sm='lg'] {
-      --leverui-private-separator-thickness: 3px;
+      --lui-private-separator-thickness: 3px;
     }
     .leverui-separator:not([data-unstyled])[data-variant-sm='solid'] {
       border-style: solid;
@@ -25,16 +25,16 @@
 
   @media (min-width: 768px) {
     .leverui-separator:not([data-unstyled])[data-size-md='xs'] {
-      --leverui-private-separator-thickness: 0.5px;
+      --lui-private-separator-thickness: 0.5px;
     }
     .leverui-separator:not([data-unstyled])[data-size-md='sm'] {
-      --leverui-private-separator-thickness: 1px;
+      --lui-private-separator-thickness: 1px;
     }
     .leverui-separator:not([data-unstyled])[data-size-md='md'] {
-      --leverui-private-separator-thickness: 2px;
+      --lui-private-separator-thickness: 2px;
     }
     .leverui-separator:not([data-unstyled])[data-size-md='lg'] {
-      --leverui-private-separator-thickness: 3px;
+      --lui-private-separator-thickness: 3px;
     }
     .leverui-separator:not([data-unstyled])[data-variant-md='solid'] {
       border-style: solid;
@@ -49,16 +49,16 @@
 
   @media (min-width: 1024px) {
     .leverui-separator:not([data-unstyled])[data-size-lg='xs'] {
-      --leverui-private-separator-thickness: 0.5px;
+      --lui-private-separator-thickness: 0.5px;
     }
     .leverui-separator:not([data-unstyled])[data-size-lg='sm'] {
-      --leverui-private-separator-thickness: 1px;
+      --lui-private-separator-thickness: 1px;
     }
     .leverui-separator:not([data-unstyled])[data-size-lg='md'] {
-      --leverui-private-separator-thickness: 2px;
+      --lui-private-separator-thickness: 2px;
     }
     .leverui-separator:not([data-unstyled])[data-size-lg='lg'] {
-      --leverui-private-separator-thickness: 3px;
+      --lui-private-separator-thickness: 3px;
     }
     .leverui-separator:not([data-unstyled])[data-variant-lg='solid'] {
       border-style: solid;
@@ -73,16 +73,16 @@
 
   @media (min-width: 1280px) {
     .leverui-separator:not([data-unstyled])[data-size-xl='xs'] {
-      --leverui-private-separator-thickness: 0.5px;
+      --lui-private-separator-thickness: 0.5px;
     }
     .leverui-separator:not([data-unstyled])[data-size-xl='sm'] {
-      --leverui-private-separator-thickness: 1px;
+      --lui-private-separator-thickness: 1px;
     }
     .leverui-separator:not([data-unstyled])[data-size-xl='md'] {
-      --leverui-private-separator-thickness: 2px;
+      --lui-private-separator-thickness: 2px;
     }
     .leverui-separator:not([data-unstyled])[data-size-xl='lg'] {
-      --leverui-private-separator-thickness: 3px;
+      --lui-private-separator-thickness: 3px;
     }
     .leverui-separator:not([data-unstyled])[data-variant-xl='solid'] {
       border-style: solid;
@@ -97,16 +97,16 @@
 
   @media (min-width: 1536px) {
     .leverui-separator:not([data-unstyled])[data-size-2xl='xs'] {
-      --leverui-private-separator-thickness: 0.5px;
+      --lui-private-separator-thickness: 0.5px;
     }
     .leverui-separator:not([data-unstyled])[data-size-2xl='sm'] {
-      --leverui-private-separator-thickness: 1px;
+      --lui-private-separator-thickness: 1px;
     }
     .leverui-separator:not([data-unstyled])[data-size-2xl='md'] {
-      --leverui-private-separator-thickness: 2px;
+      --lui-private-separator-thickness: 2px;
     }
     .leverui-separator:not([data-unstyled])[data-size-2xl='lg'] {
-      --leverui-private-separator-thickness: 3px;
+      --lui-private-separator-thickness: 3px;
     }
     .leverui-separator:not([data-unstyled])[data-variant-2xl='solid'] {
       border-style: solid;

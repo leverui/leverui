@@ -8,11 +8,11 @@
 }
 
 .accordion-rich-icon {
-  font-size: var(--leverui-font-sizes-lg);
-  color: var(--leverui-colors-fg-subtle);
+  font-size: var(--lui-font-sizes-lg);
+  color: var(--lui-colors-fg-subtle);
 }
 
 .accordion-rich-hint {
-  font-size: var(--leverui-font-sizes-sm);
-  color: var(--leverui-colors-fg-muted);
+  font-size: var(--lui-font-sizes-sm);
+  color: var(--lui-colors-fg-muted);
 }

@@ -55,8 +55,8 @@ export function ComboboxExplorerDemo(): JSX.Element {
       <Combobox.Root collection={collection()} onInputValueChange={changeInput} open>
         <Combobox.Label
           style={{
-            'margin-bottom': 'var(--leverui-spacing-2)',
-            'font-weight': 'var(--leverui-font-weights-medium)',
+            'margin-bottom': 'var(--lui-spacing-2)',
+            'font-weight': 'var(--lui-font-weights-medium)',
           }}
         >
           Select framework

@@ -43,8 +43,8 @@ own class to change one badge.
 
 ```css
 .status-badge {
-  --leverui-colors-color-palette-solid: #24406d;
-  --leverui-colors-color-palette-contrast: white;
+  --lui-colors-color-palette-solid: #24406d;
+  --lui-colors-color-palette-contrast: white;
 }
 ```
 

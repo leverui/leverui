@@ -33,9 +33,9 @@ export const drawerContracts = [
       "[data-contained='false']",
       "[data-state='open']",
       "[data-state='closed']",
-      '--leverui-drawer-background',
-      '--leverui-drawer-max-width',
-      '--leverui-drawer-z-index',
+      '--lui-drawer-background',
+      '--lui-drawer-max-width',
+      '--lui-drawer-z-index',
     ],
   },
 ];

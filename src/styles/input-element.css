@@ -5,10 +5,10 @@
     justify-content: center;
     position: absolute;
     z-index: 2;
-    color: var(--leverui-colors-fg-muted);
+    color: var(--lui-colors-fg-muted);
     height: 100%;
-    font-size: var(--leverui-font-sizes-sm);
-    padding-inline: var(--leverui-spacing-3);
+    font-size: var(--lui-font-sizes-sm);
+    padding-inline: var(--lui-spacing-3);
   }
 
   .leverui-input-element:not([data-unstyled])[data-placement='start'] {

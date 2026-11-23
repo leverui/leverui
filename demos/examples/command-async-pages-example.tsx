@@ -65,9 +65,9 @@ export function CommandAsyncPagesExample(): JSX.Element {
                 variant="outline"
                 size="sm"
                 style={{
-                  'min-width': 'var(--leverui-spacing-64)',
+                  'min-width': 'var(--lui-spacing-64)',
                   'justify-content': 'flex-start',
-                  color: 'var(--leverui-colors-fg-muted)',
+                  color: 'var(--lui-colors-fg-muted)',
                 }}
               >
                 <SearchIcon /> Search...
@@ -90,7 +90,7 @@ export function CommandAsyncPagesExample(): JSX.Element {
                 </Show>
                 <Command.Input placeholder={page()?.placeholder ?? 'Type a command or search...'} />
                 <Show when={command().loading}>
-                  <Spinner size="sm" style={{ color: 'var(--leverui-colors-fg-muted)' }} />
+                  <Spinner size="sm" style={{ color: 'var(--lui-colors-fg-muted)' }} />
                 </Show>
               </Command.Control>
               <Command.List>
@@ -112,8 +112,8 @@ export function CommandAsyncPagesExample(): JSX.Element {
                             <PackageIcon
                               aria-hidden="true"
                               style={{
-                                width: 'var(--leverui-spacing-5)',
-                                height: 'var(--leverui-spacing-5)',
+                                width: 'var(--lui-spacing-5)',
+                                height: 'var(--lui-spacing-5)',
                               }}
                             />
                           </Match>
@@ -125,7 +125,7 @@ export function CommandAsyncPagesExample(): JSX.Element {
                             textStyle="xs"
                             style={{
                               'margin-inline-start': 'auto',
-                              color: 'var(--leverui-colors-fg-muted)',
+                              color: 'var(--lui-colors-fg-muted)',
                             }}
                           >
                             {item.description}

@@ -28,7 +28,7 @@ export function renderHeadingHydrationTree({
     /** Supply live provider defaults after hydration. */
     get value() {
       return {
-        style: { color: `var(--leverui-colors-${blue() ? 'blue' : 'red'}-500)` },
+        style: { color: `var(--lui-colors-${blue() ? 'blue' : 'red'}-500)` },
       };
     },
     /** Render the semantic heading and its update control. */

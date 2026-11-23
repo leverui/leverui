@@ -77,7 +77,7 @@ const linkCollection = createTreeCollection<LinkNode>({
 /** Mix nested documentation folders with internal and outbound links. */
 export function TreeViewLinks(): JSX.Element {
   return (
-    <TreeView.Root collection={linkCollection} style={{ 'max-width': 'var(--leverui-sizes-2xs)' }}>
+    <TreeView.Root collection={linkCollection} style={{ 'max-width': 'var(--lui-sizes-2xs)' }}>
       <TreeView.Tree>
         <TreeView.Node<LinkNode>
           render={

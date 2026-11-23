@@ -30,7 +30,7 @@ The active tab has a `data-selected` attribute.
 
 ```css
 .active-blue[data-selected] {
-  background: var(--leverui-colors-blue-500);
+  background: var(--lui-colors-blue-500);
   color: white;
 }
 ```
@@ -93,9 +93,9 @@ default.
 
 ## Customize with CSS
 
-Override the `--leverui-*` theme variables, such as
-`--leverui-tabs-indicator-bg`, `--leverui-tabs-indicator-shadow`, and
-`--leverui-tabs-trigger-radius`, or style the `.leverui-tabs__*` part classes.
+Override the `--lui-*` theme variables, such as
+`--lui-tabs-indicator-bg`, `--lui-tabs-indicator-shadow`, and
+`--lui-tabs-trigger-radius`, or style the `.leverui-tabs__*` part classes.
 Every part accepts `class` and `style`. `unstyled` on the root or a single part
 turns off its default styles.
 

@@ -4,12 +4,12 @@
 
 [All variables](README.md)
 
-| Variable              | Value  |
-| --------------------- | ------ |
-| `--leverui-blurs-2xl` | `24px` |
-| `--leverui-blurs-3xl` | `40px` |
-| `--leverui-blurs-4xl` | `64px` |
-| `--leverui-blurs-lg`  | `12px` |
-| `--leverui-blurs-md`  | `8px`  |
-| `--leverui-blurs-sm`  | `4px`  |
-| `--leverui-blurs-xl`  | `16px` |
+| Variable          | Value  |
+| ----------------- | ------ |
+| `--lui-blurs-2xl` | `24px` |
+| `--lui-blurs-3xl` | `40px` |
+| `--lui-blurs-4xl` | `64px` |
+| `--lui-blurs-lg`  | `12px` |
+| `--lui-blurs-md`  | `8px`  |
+| `--lui-blurs-sm`  | `4px`  |
+| `--lui-blurs-xl`  | `16px` |

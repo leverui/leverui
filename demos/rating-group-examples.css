@@ -1,5 +1,5 @@
 .rating-example-emoji {
-  min-width: var(--leverui-sizes-9);
+  min-width: var(--lui-sizes-9);
   filter: grayscale(1);
   transition: scale 0.1s;
 }
@@ -13,5 +13,5 @@
 }
 
 .example-rating-group-label {
-  gap: var(--leverui-spacing-4);
+  gap: var(--lui-spacing-4);
 }

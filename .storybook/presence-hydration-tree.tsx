@@ -46,7 +46,7 @@ export function renderPresenceHydrationTree(
             },
             skipAnimationOnMount: true,
             lazyMount: options.lazyMount,
-            style: { padding: 'var(--leverui-spacing-4)' },
+            style: { padding: 'var(--lui-spacing-4)' },
             'data-testid': 'presence-hydrated-content',
             children: 'Hydrated presence',
           }),

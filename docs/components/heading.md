@@ -58,19 +58,19 @@ size, also set the line height and the letter spacing.
 
 ```css
 .leverui-heading {
-  font-weight: var(--leverui-font-weights-normal);
-  font-size: var(--leverui-font-sizes-4xl);
+  font-weight: var(--lui-font-weights-normal);
+  font-size: var(--lui-font-sizes-4xl);
   line-height: 2.5rem;
 }
 ```
 
 ### Changing heading font globally
 
-Set `--leverui-fonts-heading` in your theme.
+Set `--lui-fonts-heading` in your theme.
 
 ```css
 :root {
-  --leverui-fonts-heading: 'Playfair Display', serif;
+  --lui-fonts-heading: 'Playfair Display', serif;
 }
 ```
 

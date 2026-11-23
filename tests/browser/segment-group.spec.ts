@@ -60,7 +60,7 @@ async function verifiesSegmentSize({ page }: { page: Page }): Promise<void> {
     await root.evaluate(
       /** Read the scoped size variable exposed in computed CSS. */
       (element) =>
-        getComputedStyle(element).getPropertyValue('--leverui-private-segment-radius').trim(),
+        getComputedStyle(element).getPropertyValue('--lui-private-segment-radius').trim(),
     ),
   ).not.toBe('');
   expect(

@@ -21,5 +21,5 @@ const markup = renderText();
 assert.match(markup, /<article[^>]*id="packed-server-text"/);
 assert.match(markup, /leverui-text/);
 assert.match(markup, /data-line-clamp="value"/);
-assert.match(markup, /--leverui-private-text-line-clamp:2/);
+assert.match(markup, /--lui-private-text-line-clamp:2/);
 console.log('Packed Text server rendering passed.');

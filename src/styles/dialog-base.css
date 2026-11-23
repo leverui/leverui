@@ -1,22 +1,22 @@
 @layer leverui.recipes {
   .leverui-dialog__backdrop[data-leverui-dialog-css] {
-    background: var(--leverui-colors-black-alpha-500);
+    background: var(--lui-colors-black-alpha-500);
     position: fixed;
     left: 0;
     top: 0;
     width: 100dvw;
     height: 100dvh;
-    --leverui-private-dialog-z-index: var(--leverui-z-index-popover);
-    z-index: calc(var(--leverui-private-dialog-z-index) + var(--layer-index, 0) - 1);
+    --lui-private-dialog-z-index: var(--lui-z-index-popover);
+    z-index: calc(var(--lui-private-dialog-z-index) + var(--layer-index, 0) - 1);
 
     &[data-state='open'] {
       animation-name: fade-in;
-      animation-duration: var(--leverui-durations-slow);
+      animation-duration: var(--lui-durations-slow);
     }
 
     &[data-state='closed'] {
       animation-name: fade-out;
-      animation-duration: var(--leverui-durations-moderate);
+      animation-duration: var(--lui-durations-moderate);
     }
   }
 
@@ -27,8 +27,8 @@
     position: fixed;
     left: 0;
     top: 0;
-    --leverui-private-dialog-z-index: var(--leverui-z-index-popover);
-    z-index: calc(var(--leverui-private-dialog-z-index) + var(--layer-index, 0));
+    --lui-private-dialog-z-index: var(--lui-z-index-popover);
+    z-index: calc(var(--lui-private-dialog-z-index) + var(--layer-index, 0));
     justify-content: center;
     overscroll-behavior-y: none;
   }
@@ -39,21 +39,21 @@
     position: relative;
     width: 100%;
     outline: 0;
-    border-radius: var(--leverui-radii-l3);
-    font-size: var(--leverui-font-sizes-sm);
+    border-radius: var(--lui-radii-l3);
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
-    margin-block: var(--leverui-private-dialog-margin, var(--leverui-private-dialog-base-margin));
-    --leverui-private-dialog-z-index: var(--leverui-z-index-popover);
-    z-index: calc(var(--leverui-private-dialog-z-index) + var(--layer-index, 0));
-    background: var(--leverui-colors-bg-panel);
-    box-shadow: var(--leverui-shadows-lg);
+    margin-block: var(--lui-private-dialog-margin, var(--lui-private-dialog-base-margin));
+    --lui-private-dialog-z-index: var(--lui-z-index-popover);
+    z-index: calc(var(--lui-private-dialog-z-index) + var(--layer-index, 0));
+    background: var(--lui-colors-bg-panel);
+    box-shadow: var(--lui-shadows-lg);
 
     &[data-state='open'] {
-      animation-duration: var(--leverui-durations-moderate);
+      animation-duration: var(--lui-durations-moderate);
     }
 
     &[data-state='closed'] {
-      animation-duration: var(--leverui-durations-faster);
+      animation-duration: var(--lui-durations-faster);
     }
   }
 

@@ -48,11 +48,11 @@ Import `styles.css` once, before your own CSS.
 `data-selected`.
 
 Variables, for one meter or a whole theme:
-`--leverui-password-strength-selected-background`,
-`--leverui-password-strength-unselected-background`,
-`--leverui-password-strength-segment-height`,
-`--leverui-password-strength-segment-radius`,
-`--leverui-password-strength-label-font-size`,
-`--leverui-password-strength-label-line-height`.
+`--lui-password-strength-selected-background`,
+`--lui-password-strength-unselected-background`,
+`--lui-password-strength-segment-height`,
+`--lui-password-strength-segment-radius`,
+`--lui-password-strength-label-font-size`,
+`--lui-password-strength-label-line-height`.
 
 `class` and `style` also work.

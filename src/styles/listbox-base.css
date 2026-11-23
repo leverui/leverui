@@ -2,35 +2,29 @@
   .leverui-listbox__root:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
-    gap: var(--leverui-listbox-root-gap, var(--leverui-spacing-1\.5));
+    gap: var(--lui-listbox-root-gap, var(--lui-spacing-1\.5));
     width: 100%;
   }
 
   .leverui-listbox__content:not([data-unstyled]) {
     display: flex;
-    max-height: var(--leverui-listbox-content-max-height, var(--leverui-sizes-96));
-    padding: var(--leverui-listbox-content-padding, var(--leverui-spacing-1));
-    gap: var(--leverui-listbox-content-gap, var(--leverui-spacing-1));
-    font-size: var(--leverui-font-sizes-sm);
+    max-height: var(--lui-listbox-content-max-height, var(--lui-sizes-96));
+    padding: var(--lui-listbox-content-padding, var(--lui-spacing-1));
+    gap: var(--lui-listbox-content-gap, var(--lui-spacing-1));
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
     outline: none;
-    scroll-padding: var(--leverui-spacing-1);
-    --leverui-private-listbox-item-padding-x: var(
-      --leverui-listbox-item-padding-x,
-      var(--leverui-spacing-2)
+    scroll-padding: var(--lui-spacing-1);
+    --lui-private-listbox-item-padding-x: var(--lui-listbox-item-padding-x, var(--lui-spacing-2));
+    --lui-private-listbox-item-padding-y: var(
+      --lui-listbox-item-padding-y,
+      var(--lui-spacing-1\.5)
     );
-    --leverui-private-listbox-item-padding-y: var(
-      --leverui-listbox-item-padding-y,
-      var(--leverui-spacing-1\.5)
-    );
-    background: var(
-      --leverui-listbox-content-background,
-      var(--leverui-private-listbox-background)
-    );
+    background: var(--lui-listbox-content-background, var(--lui-private-listbox-background));
     border-style: solid;
-    border-width: var(--leverui-private-listbox-border-width, 0);
-    border-color: var(--leverui-listbox-content-border-color, var(--leverui-colors-border));
-    border-radius: var(--leverui-private-listbox-radius, 0);
+    border-width: var(--lui-private-listbox-border-width, 0);
+    border-color: var(--lui-listbox-content-border-color, var(--lui-colors-border));
+    border-radius: var(--lui-private-listbox-radius, 0);
   }
 
   .leverui-listbox__content:not([data-unstyled])[data-orientation='horizontal'] {
@@ -46,11 +40,11 @@
   .leverui-listbox__list:not([data-unstyled]) {
     display: flex;
     flex: 1 1 auto;
-    gap: var(--leverui-listbox-content-gap, var(--leverui-spacing-1));
+    gap: var(--lui-listbox-content-gap, var(--lui-spacing-1));
     min-width: 0;
     min-height: 0;
     outline: none;
-    scroll-padding: var(--leverui-spacing-1);
+    scroll-padding: var(--lui-spacing-1);
   }
 
   .leverui-listbox__list:not([data-unstyled])[data-orientation='horizontal'] {
@@ -68,22 +62,19 @@
     user-select: none;
     display: flex;
     align-items: center;
-    gap: var(--leverui-spacing-2);
-    cursor: var(--leverui-cursor-option);
+    gap: var(--lui-spacing-2);
+    cursor: var(--lui-cursor-option);
     justify-content: space-between;
     flex: 1;
     text-align: start;
-    border-radius: var(--leverui-radii-l1);
-    padding-block: var(--leverui-private-listbox-item-padding-y, var(--leverui-spacing-1\.5));
-    padding-inline: var(--leverui-private-listbox-item-padding-x, var(--leverui-spacing-2));
+    border-radius: var(--lui-radii-l1);
+    padding-block: var(--lui-private-listbox-item-padding-y, var(--lui-spacing-1\.5));
+    padding-inline: var(--lui-private-listbox-item-padding-x, var(--lui-spacing-2));
   }
 
   .leverui-listbox__item:not([data-unstyled])[data-highlighted] {
     outline: 2px solid;
-    outline-color: var(
-      --leverui-listbox-highlight-outline-color,
-      var(--leverui-colors-border-emphasized)
-    );
+    outline-color: var(--lui-listbox-highlight-outline-color, var(--lui-colors-border-emphasized));
   }
 
   .leverui-listbox__item:not([data-unstyled]):is(
@@ -98,10 +89,10 @@
 
   .leverui-listbox__item:not([data-unstyled]):is([data-selected], [aria-selected='true']) {
     background: var(
-      --leverui-listbox-selected-background,
-      var(--leverui-private-listbox-selected-background)
+      --lui-listbox-selected-background,
+      var(--lui-private-listbox-selected-background)
     );
-    color: var(--leverui-private-listbox-selected-color, inherit);
+    color: var(--lui-private-listbox-selected-color, inherit);
   }
 
   @media (hover: hover) {
@@ -111,14 +102,14 @@
         [data-selected],
         [aria-selected='true']
       ) {
-      background: var(--leverui-private-listbox-hover-background);
+      background: var(--lui-private-listbox-hover-background);
     }
   }
 
   /* The primitive keeps Empty mounted as a status region; pad it only while it shows a message. */
   .leverui-listbox__empty:not([data-unstyled]):not(:empty) {
-    padding-block: var(--leverui-private-listbox-item-padding-y, var(--leverui-spacing-1\.5));
-    padding-inline: var(--leverui-private-listbox-item-padding-x, var(--leverui-spacing-2));
+    padding-block: var(--lui-private-listbox-item-padding-y, var(--lui-spacing-1\.5));
+    padding-inline: var(--lui-private-listbox-item-padding-x, var(--lui-spacing-2));
   }
 
   .leverui-listbox__itemText:not([data-unstyled]) {
@@ -126,7 +117,7 @@
   }
 
   .leverui-listbox__itemGroup:not([data-unstyled]) {
-    margin-top: var(--leverui-spacing-1\.5);
+    margin-top: var(--lui-spacing-1\.5);
   }
 
   .leverui-listbox__itemGroup:not([data-unstyled]):first-of-type {
@@ -134,15 +125,15 @@
   }
 
   .leverui-listbox__itemGroupLabel:not([data-unstyled]) {
-    padding-block: var(--leverui-spacing-1\.5);
-    padding-inline: var(--leverui-spacing-2);
-    font-weight: var(--leverui-font-weights-medium);
+    padding-block: var(--lui-spacing-1\.5);
+    padding-inline: var(--lui-spacing-2);
+    font-weight: var(--lui-font-weights-medium);
   }
 
   .leverui-listbox__label:not([data-unstyled]) {
-    font-weight: var(--leverui-font-weights-medium);
+    font-weight: var(--lui-font-weights-medium);
     user-select: none;
-    font-size: var(--leverui-font-sizes-sm);
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
   }
 
@@ -153,7 +144,7 @@
       [aria-disabled='true']
     ) {
     opacity: 0.5;
-    cursor: var(--leverui-cursor-disabled);
+    cursor: var(--lui-cursor-disabled);
   }
 
   .leverui-listbox__valueText:not([data-unstyled]) {
@@ -172,7 +163,7 @@
   }
 
   .leverui-listbox__itemIndicator:not([data-unstyled]) :where(svg) {
-    width: var(--leverui-sizes-4);
-    height: var(--leverui-sizes-4);
+    width: var(--lui-sizes-4);
+    height: var(--lui-sizes-4);
   }
 }

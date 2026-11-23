@@ -30,8 +30,8 @@ function renderThemeContract(): JSX.Element {
 /** Verify native props, CSS responsiveness, and appearance without inserted styles. */
 async function verifiesThemeContract({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderThemeContract);
-  const consumerCss = `.responsive-theme { padding: var(--leverui-spacing-2); }
-    @media (min-width: 48em) { .responsive-theme { padding: var(--leverui-spacing-4); } }`;
+  const consumerCss = `.responsive-theme { padding: var(--lui-spacing-2); }
+    @media (min-width: 48em) { .responsive-theme { padding: var(--lui-spacing-4); } }`;
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setViewportSize({ width: 600, height: 700 });
   await page.setContent(`<style>${defaultCss}</style><style>${consumerCss}</style>${markup}`);

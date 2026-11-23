@@ -120,7 +120,7 @@ export function TreeViewMutation(): JSX.Element {
   }
 
   return (
-    <TreeView.Root collection={collection()} style={{ 'max-width': 'var(--leverui-sizes-sm)' }}>
+    <TreeView.Root collection={collection()} style={{ 'max-width': 'var(--lui-sizes-sm)' }}>
       <TreeView.Label>Project files</TreeView.Label>
       <TreeView.Tree>
         <TreeView.Node<TreeNode>

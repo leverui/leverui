@@ -7,13 +7,13 @@
   .leverui-collapsible__root:not([data-unstyled])
     .leverui-collapsible__content:not([data-unstyled])[data-state='open'] {
     animation-name: expand-height, fade-in;
-    animation-duration: var(--leverui-durations-moderate);
+    animation-duration: var(--lui-durations-moderate);
   }
 
   .leverui-collapsible__root:not([data-unstyled])
     .leverui-collapsible__content:not([data-unstyled])[data-state='closed'] {
     animation-name: collapse-height, fade-out;
-    animation-duration: var(--leverui-durations-moderate);
+    animation-duration: var(--lui-durations-moderate);
   }
 
   .leverui-collapsible__root:not([data-unstyled])

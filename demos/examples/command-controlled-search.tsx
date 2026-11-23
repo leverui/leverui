@@ -69,9 +69,9 @@ export function CommandControlledSearchExample(): JSX.Element {
                   variant="outline"
                   size="sm"
                   style={{
-                    'min-width': 'var(--leverui-spacing-64)',
+                    'min-width': 'var(--lui-spacing-64)',
                     'justify-content': 'flex-start',
-                    color: 'var(--leverui-colors-fg-muted)',
+                    color: 'var(--lui-colors-fg-muted)',
                   }}
                 >
                   <SearchIcon /> {query() || 'Search commands...'}
@@ -141,11 +141,11 @@ export function CommandControlledSearchExample(): JSX.Element {
           </Portal>
         </Command.Dialog>
       </Command.Provider>
-      <HStack gap="2" wrap="wrap" style={{ 'margin-top': 'var(--leverui-spacing-4)' }}>
+      <HStack gap="2" wrap="wrap" style={{ 'margin-top': 'var(--lui-spacing-4)' }}>
         <Text
           textStyle="sm"
           style={{
-            color: 'var(--leverui-colors-fg-muted)',
+            color: 'var(--lui-colors-fg-muted)',
           }}
         >
           Try
@@ -164,11 +164,11 @@ export function CommandControlledSearchExample(): JSX.Element {
       <Text
         textStyle="sm"
         style={{
-          'margin-top': 'var(--leverui-spacing-2)',
-          color: 'var(--leverui-colors-fg-muted)',
+          'margin-top': 'var(--lui-spacing-2)',
+          color: 'var(--lui-colors-fg-muted)',
         }}
       >
-        Query: <Span style={{ color: 'var(--leverui-colors-fg)' }}>{query() || 'empty'}</Span>
+        Query: <Span style={{ color: 'var(--lui-colors-fg)' }}>{query() || 'empty'}</Span>
       </Text>
     </>
   );
