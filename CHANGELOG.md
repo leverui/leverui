@@ -29,6 +29,11 @@ follows [Semantic Versioning](https://semver.org/). Prereleases are numbered
 
 ### Fixed
 
+- Stack, Wrap, and Bleed resolve custom spacing tokens whose names start with
+  a digit, such as `2xs` and `2xl`. They wrote the name as raw CSS before, so
+  the gap was lost.
+- Spacing and size props pass every CSS length through unchanged, including
+  less common units such as `2cap` and uppercase units such as `10PX`.
 - Every component now switches at the same widths. Some breakpoints were
   written in `rem` and others in pixels, so they drifted apart when the
   browser's font size was not 16px. All of them now use pixels.
