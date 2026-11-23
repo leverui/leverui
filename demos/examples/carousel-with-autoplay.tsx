@@ -12,7 +12,7 @@ export function CarouselWithAutoplay(): JSX.Element {
       <HStack
         textStyle="sm"
         style={{
-          'margin-bottom': 'var(--leverui-spacing-4)',
+          'margin-bottom': 'var(--lui-spacing-4)',
         }}
       >
         <ClockIcon /> {'autoPlay={{ delay: 2000 }}'} or {'autoPlay={true}'}

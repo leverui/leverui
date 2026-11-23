@@ -1,59 +1,53 @@
-@layer leverui.recipes {
-  .leverui-date-input__root:not([data-unstyled])[data-variant='outline'] {
-    --leverui-private-date-input-background: transparent;
-    --leverui-private-date-input-border-width: 1px;
-    --leverui-private-date-input-border-color: var(--leverui-colors-border);
-    --leverui-private-date-input-radius: var(--leverui-date-input-radius, var(--leverui-radii-l2));
-    --leverui-private-date-input-variant-padding: initial;
-    --leverui-private-date-input-focus-outline-width: var(--focus-ring-width, 1px);
-    --leverui-private-date-input-focus-shadow: none;
-    --leverui-private-date-input-segment-focus-background: var(
-      --leverui-colors-color-palette-emphasized
-    );
-    --leverui-private-date-input-segment-focus-color: var(--leverui-colors-fg);
+@layer lui.recipes {
+  .lui-date-input__root:not([data-unstyled])[data-variant='outline'] {
+    --lui-private-date-input-background: transparent;
+    --lui-private-date-input-border-width: 1px;
+    --lui-private-date-input-border-color: var(--lui-colors-border);
+    --lui-private-date-input-radius: var(--lui-date-input-radius, var(--lui-radii-l2));
+    --lui-private-date-input-variant-padding: initial;
+    --lui-private-date-input-focus-outline-width: var(--focus-ring-width, 1px);
+    --lui-private-date-input-focus-shadow: none;
+    --lui-private-date-input-segment-focus-background: var(--lui-colors-color-palette-emphasized);
+    --lui-private-date-input-segment-focus-color: var(--lui-colors-fg);
   }
 
-  .leverui-date-input__root:not([data-unstyled])[data-variant='subtle'] {
-    --leverui-private-date-input-background: var(--leverui-colors-bg-muted);
-    --leverui-private-date-input-border-width: 1px;
-    --leverui-private-date-input-border-color: transparent;
-    --leverui-private-date-input-radius: var(--leverui-date-input-radius, var(--leverui-radii-l2));
-    --leverui-private-date-input-variant-padding: initial;
-    --leverui-private-date-input-focus-outline-width: var(--focus-ring-width, 1px);
-    --leverui-private-date-input-focus-shadow: none;
-    --leverui-private-date-input-segment-focus-background: var(
-      --leverui-colors-color-palette-subtle
-    );
-    --leverui-private-date-input-segment-focus-color: var(--leverui-colors-color-palette-fg);
+  .lui-date-input__root:not([data-unstyled])[data-variant='subtle'] {
+    --lui-private-date-input-background: var(--lui-colors-bg-muted);
+    --lui-private-date-input-border-width: 1px;
+    --lui-private-date-input-border-color: transparent;
+    --lui-private-date-input-radius: var(--lui-date-input-radius, var(--lui-radii-l2));
+    --lui-private-date-input-variant-padding: initial;
+    --lui-private-date-input-focus-outline-width: var(--focus-ring-width, 1px);
+    --lui-private-date-input-focus-shadow: none;
+    --lui-private-date-input-segment-focus-background: var(--lui-colors-color-palette-subtle);
+    --lui-private-date-input-segment-focus-color: var(--lui-colors-color-palette-fg);
   }
 
-  .leverui-date-input__root:not([data-unstyled])[data-variant='flushed'] {
-    --leverui-private-date-input-background: transparent;
-    --leverui-private-date-input-border-width: 0 0 1px;
-    --leverui-private-date-input-border-color: var(--leverui-colors-border);
-    --leverui-private-date-input-radius: 0;
-    --leverui-private-date-input-variant-padding: 0;
-    --leverui-private-date-input-focus-outline-width: 0;
-    --leverui-private-date-input-focus-shadow: none;
-    --leverui-private-date-input-segment-focus-background: var(
-      --leverui-colors-color-palette-subtle
-    );
-    --leverui-private-date-input-segment-focus-color: var(--leverui-colors-color-palette-fg);
+  .lui-date-input__root:not([data-unstyled])[data-variant='flushed'] {
+    --lui-private-date-input-background: transparent;
+    --lui-private-date-input-border-width: 0 0 1px;
+    --lui-private-date-input-border-color: var(--lui-colors-border);
+    --lui-private-date-input-radius: 0;
+    --lui-private-date-input-variant-padding: 0;
+    --lui-private-date-input-focus-outline-width: 0;
+    --lui-private-date-input-focus-shadow: none;
+    --lui-private-date-input-segment-focus-background: var(--lui-colors-color-palette-subtle);
+    --lui-private-date-input-segment-focus-color: var(--lui-colors-color-palette-fg);
   }
 
-  .leverui-date-input__segmentGroup:not([data-unstyled]):is(:focus, [data-focus]) {
-    border-color: var(--leverui-private-date-input-focus-color);
+  .lui-date-input__segmentGroup:not([data-unstyled]):is(:focus, [data-focus]) {
+    border-color: var(--lui-private-date-input-focus-color);
     outline-offset: 0;
-    outline-width: var(--leverui-private-date-input-focus-outline-width, 1px);
-    outline-color: var(--leverui-private-date-input-focus-color);
+    outline-width: var(--lui-private-date-input-focus-outline-width, 1px);
+    outline-color: var(--lui-private-date-input-focus-color);
     outline-style: var(--focus-ring-style, solid);
-    box-shadow: var(--leverui-private-date-input-focus-shadow, none);
+    box-shadow: var(--lui-private-date-input-focus-shadow, none);
   }
 
-  .leverui-date-input__segmentGroup:not([data-unstyled])[data-variant='flushed']:is(
+  .lui-date-input__segmentGroup:not([data-unstyled])[data-variant='flushed']:is(
       :focus,
       [data-focus]
     ) {
-    box-shadow: 0 1px 0 0 var(--leverui-private-date-input-focus-color);
+    box-shadow: 0 1px 0 0 var(--lui-private-date-input-focus-color);
   }
 }

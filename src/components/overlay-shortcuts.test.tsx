@@ -53,8 +53,8 @@ async function verifiesToggleTip(): Promise<void> {
   );
   fireEvent.click(screen.getByRole('button', { name: 'Details' }));
   const content = await screen.findByText('Encrypted at rest');
-  const surface = content.closest('.leverui-popover__content');
-  expect(surface?.classList.contains('leverui-toggle-tip')).toBe(true);
+  const surface = content.closest('.lui-popover__content');
+  expect(surface?.classList.contains('lui-toggle-tip')).toBe(true);
   expect(surface?.getAttribute('aria-label')).toBe('Additional information');
 }
 

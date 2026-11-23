@@ -31,8 +31,8 @@ function renderInstalledAlert() {
 const markup = renderInstalledAlert();
 assert.match(markup, /<div[^>]*id="packed-server-alert"/);
 assert.match(markup, /role="alert"/);
-assert.match(markup, /leverui-alert__indicator/);
-assert.match(markup, /leverui-alert__title/);
+assert.match(markup, /lui-alert__indicator/);
+assert.match(markup, /lui-alert__title/);
 assert.match(markup, /Caution/);
 assert.doesNotMatch(markup, /\s(?:status|variant|size|colorPalette)=/);
 console.log('Packed Alert server rendering passed.');

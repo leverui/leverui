@@ -88,15 +88,15 @@ export function ComboboxRehydrateExample(): JSX.Element {
           <Combobox.Content>
             <Combobox.Status>
               {loading() ? (
-                <HStack style={{ padding: 'var(--leverui-spacing-2)' }}>
+                <HStack style={{ padding: 'var(--lui-spacing-2)' }}>
                   <Spinner size="xs" />
                   <Span>Loading...</Span>
                 </HStack>
               ) : error() ? (
                 <Span
                   style={{
-                    padding: 'var(--leverui-spacing-2)',
-                    color: 'var(--leverui-colors-fg-error)',
+                    padding: 'var(--lui-spacing-2)',
+                    color: 'var(--lui-colors-fg-error)',
                   }}
                 >
                   {error()}
@@ -113,10 +113,10 @@ export function ComboboxRehydrateExample(): JSX.Element {
                   (member) => (
                     <Combobox.Item item={member}>
                       <HStack justify="space-between" textStyle="sm">
-                        <Span style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>
+                        <Span style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>
                           {member.name}
                         </Span>
-                        <Span style={{ color: 'var(--leverui-colors-fg-muted)' }}>
+                        <Span style={{ color: 'var(--lui-colors-fg-muted)' }}>
                           {member.role} / {member.station}
                         </Span>
                       </HStack>

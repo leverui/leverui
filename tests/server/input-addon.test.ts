@@ -28,7 +28,7 @@ function renderServerInputAddon(): string {
 function verifiesServerInputAddon(): void {
   const markup = renderServerInputAddon();
   expect(markup).toContain('id="server-input-addon"');
-  expect(markup).toContain('leverui-input-addon');
+  expect(markup).toContain('lui-input-addon');
   expect(markup).toContain('https://');
   expect(markup).not.toMatch(/<div[^>]*\s(?:size|variant|recipe|unstyled)=/);
 }

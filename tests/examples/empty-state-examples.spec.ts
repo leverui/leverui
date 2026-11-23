@@ -6,7 +6,7 @@ const stories = ['basic', 'action', 'list', 'sizes'];
 async function verifiesEmptyStateStories({ page }: { page: Page }): Promise<void> {
   for (const story of stories) {
     await page.goto(`/iframe.html?id=components-empty-state--${story}`);
-    await expect(page.locator('#storybook-root .leverui-empty-state__root').first()).toBeVisible();
+    await expect(page.locator('#storybook-root .lui-empty-state__root').first()).toBeVisible();
   }
 }
 
@@ -18,7 +18,7 @@ async function verifiesEmptyStateComposition({ page }: { page: Page }): Promise<
   await page.goto('/iframe.html?id=components-empty-state--list');
   await expect(page.locator('#storybook-root li')).toHaveCount(2);
   await page.goto('/iframe.html?id=components-empty-state--sizes');
-  await expect(page.locator('#storybook-root .leverui-empty-state__root')).toHaveCount(3);
+  await expect(page.locator('#storybook-root .lui-empty-state__root')).toHaveCount(3);
 }
 
 test('all four Empty State examples render', verifiesEmptyStateStories);

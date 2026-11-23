@@ -76,7 +76,7 @@ function AspectRatioRoot(props: RuntimeProps): JSX.Element {
     () => ({
       ...native,
       style: aspectRatioVariableStyle(padding(), native.style),
-      class: cx('leverui-aspect-ratio', local.class),
+      class: cx('lui-aspect-ratio', local.class),
       'data-unstyled': local.unstyled ? '' : undefined,
       ref: attachNode,
     }),

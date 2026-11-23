@@ -1,105 +1,93 @@
-@layer leverui.recipes {
-  .leverui-timeline__root:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-timeline__root:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     width: 100%;
-    --leverui-private-timeline-thickness: 1px;
+    --lui-private-timeline-thickness: 1px;
   }
 
-  @scope (.leverui-timeline__root:not([data-unstyled])) to (.leverui-timeline__root) {
-    .leverui-timeline__item:not([data-unstyled]) {
+  @scope (.lui-timeline__root:not([data-unstyled])) to (.lui-timeline__root) {
+    .lui-timeline__item:not([data-unstyled]) {
       display: flex;
       position: relative;
       align-items: flex-start;
       flex-shrink: 0;
-      gap: var(--leverui-timeline-item-gap, var(--leverui-spacing-4));
-      --leverui-private-timeline-content-gap: var(--leverui-spacing-6);
+      gap: var(--lui-timeline-item-gap, var(--lui-spacing-4));
+      --lui-private-timeline-content-gap: var(--lui-spacing-6);
 
       &:last-child {
-        --leverui-private-timeline-content-gap: 0;
-        --leverui-private-timeline-separator-display: var(
-          --leverui-private-timeline-last-separator-display
+        --lui-private-timeline-content-gap: 0;
+        --lui-private-timeline-separator-display: var(
+          --lui-private-timeline-last-separator-display
         );
       }
     }
 
-    .leverui-timeline__separator:not([data-unstyled]) {
-      display: var(--leverui-private-timeline-separator-display);
+    .lui-timeline__separator:not([data-unstyled]) {
+      display: var(--lui-private-timeline-separator-display);
       position: absolute;
       border-inline-start-width: var(
-        --leverui-timeline-line-width,
-        var(--leverui-private-timeline-thickness)
+        --lui-timeline-line-width,
+        var(--lui-private-timeline-thickness)
       );
       margin-inline-start: calc(
-        -1 * var(--leverui-timeline-line-width, var(--leverui-private-timeline-thickness)) / 2
+        -1 * var(--lui-timeline-line-width, var(--lui-private-timeline-thickness)) / 2
       );
       inset-inline-start: calc(
-        var(--leverui-timeline-indicator-size, var(--leverui-private-timeline-indicator-size)) / 2
+        var(--lui-timeline-indicator-size, var(--lui-private-timeline-indicator-size)) / 2
       );
       inset-block: 0;
-      border-color: var(--leverui-timeline-line-color, var(--leverui-colors-border));
+      border-color: var(--lui-timeline-line-color, var(--lui-colors-border));
     }
 
-    .leverui-timeline__indicator:not([data-unstyled]) {
-      outline: 2px solid var(--leverui-colors-bg);
+    .lui-timeline__indicator:not([data-unstyled]) {
+      outline: 2px solid var(--lui-colors-bg);
       position: relative;
       flex-shrink: 0;
-      width: var(--leverui-timeline-indicator-size, var(--leverui-private-timeline-indicator-size));
-      height: var(
-        --leverui-timeline-indicator-size,
-        var(--leverui-private-timeline-indicator-size)
-      );
-      font-size: var(--leverui-private-timeline-font-size);
+      width: var(--lui-timeline-indicator-size, var(--lui-private-timeline-indicator-size));
+      height: var(--lui-timeline-indicator-size, var(--lui-private-timeline-indicator-size));
+      font-size: var(--lui-private-timeline-font-size);
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: var(--leverui-radii-full);
-      font-weight: var(--leverui-font-weights-medium);
-      background: var(
-        --leverui-timeline-indicator-bg,
-        var(--leverui-private-timeline-indicator-bg)
-      );
+      border-radius: var(--lui-radii-full);
+      font-weight: var(--lui-font-weights-medium);
+      background: var(--lui-timeline-indicator-bg, var(--lui-private-timeline-indicator-bg));
       color: var(
-        --leverui-timeline-indicator-color,
-        var(--leverui-private-timeline-indicator-color, inherit)
+        --lui-timeline-indicator-color,
+        var(--lui-private-timeline-indicator-color, inherit)
       );
-      border-width: var(--leverui-private-timeline-indicator-border-width, 0);
-      border-color: var(--leverui-private-timeline-indicator-border-color, transparent);
+      border-width: var(--lui-private-timeline-indicator-border-width, 0);
+      border-color: var(--lui-private-timeline-indicator-border-color, transparent);
     }
 
-    .leverui-timeline__connector:not([data-unstyled]) {
+    .lui-timeline__connector:not([data-unstyled]) {
       align-self: stretch;
       position: relative;
     }
 
-    .leverui-timeline__content:not([data-unstyled]) {
-      padding-bottom: var(
-        --leverui-timeline-content-gap,
-        var(--leverui-private-timeline-content-gap)
-      );
+    .lui-timeline__content:not([data-unstyled]) {
+      padding-bottom: var(--lui-timeline-content-gap, var(--lui-private-timeline-content-gap));
       display: flex;
       flex-direction: column;
       width: 100%;
-      gap: var(--leverui-spacing-2);
+      gap: var(--lui-spacing-2);
     }
 
-    .leverui-timeline__title:not([data-unstyled]) {
+    .lui-timeline__title:not([data-unstyled]) {
       display: flex;
-      font-weight: var(--leverui-font-weights-medium);
+      font-weight: var(--lui-font-weights-medium);
       flex-wrap: wrap;
-      gap: var(--leverui-spacing-1\.5);
+      gap: var(--lui-spacing-1\.5);
       align-items: center;
-      font-size: var(
-        --leverui-timeline-title-font-size,
-        var(--leverui-private-timeline-title-font-size)
-      );
-      line-height: var(--leverui-private-timeline-title-line-height);
-      margin-top: var(--leverui-private-timeline-title-margin-top);
+      font-size: var(--lui-timeline-title-font-size, var(--lui-private-timeline-title-font-size));
+      line-height: var(--lui-private-timeline-title-line-height);
+      margin-top: var(--lui-private-timeline-title-margin-top);
     }
 
-    .leverui-timeline__description:not([data-unstyled]) {
-      color: var(--leverui-colors-fg-muted);
-      font-size: var(--leverui-font-sizes-xs);
+    .lui-timeline__description:not([data-unstyled]) {
+      color: var(--lui-colors-fg-muted);
+      font-size: var(--lui-font-sizes-xs);
       line-height: 1rem;
     }
   }

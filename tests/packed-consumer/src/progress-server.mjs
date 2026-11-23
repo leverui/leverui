@@ -40,7 +40,7 @@ assert.match(markup, /role="progressbar"/);
 assert.match(markup, /aria-labelledby="packed-server-progress-label"/);
 assert.match(markup, /aria-valuenow="30"/);
 assert.match(markup, /aria-valuemax="60"/);
-assert.match(markup, /leverui-progress__range/);
+assert.match(markup, /lui-progress__range/);
 assert.match(markup, /width:50%/);
 assert.doesNotMatch(markup, /\s(?:size|recipe|striped|animated)=/);
 console.log('Packed Progress server rendering passed.');

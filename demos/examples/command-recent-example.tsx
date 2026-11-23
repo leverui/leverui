@@ -80,9 +80,9 @@ export function CommandRecentExample(): JSX.Element {
                 variant="outline"
                 size="sm"
                 style={{
-                  'min-width': 'var(--leverui-spacing-64)',
+                  'min-width': 'var(--lui-spacing-64)',
                   'justify-content': 'flex-start',
-                  color: 'var(--leverui-colors-fg-muted)',
+                  color: 'var(--lui-colors-fg-muted)',
                 }}
               >
                 <SearchIcon /> Search commands...

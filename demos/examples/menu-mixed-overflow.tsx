@@ -39,7 +39,7 @@ export function MenuMixedLayout(): JSX.Element {
       <Portal>
         <Menu.Positioner>
           <Menu.Content>
-            <Group grow style={{ '--leverui-group-gap': '0px' }}>
+            <Group grow style={{ '--lui-group-gap': '0px' }}>
               <For each={horizontalMenuItems}>
                 {
                   /** Stack each compact action's icon and label. */
@@ -47,8 +47,8 @@ export function MenuMixedLayout(): JSX.Element {
                     <Menu.Item
                       value={item.value}
                       style={{
-                        width: 'var(--leverui-sizes-14)',
-                        gap: 'var(--leverui-spacing-1)',
+                        width: 'var(--lui-sizes-14)',
+                        gap: 'var(--lui-spacing-1)',
                         'flex-direction': 'column',
                         'justify-content': 'center',
                       }}

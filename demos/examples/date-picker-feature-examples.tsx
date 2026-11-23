@@ -21,7 +21,7 @@ export function DatePickerMultipleMonths(): JSX.Element {
         <DatePicker.Content>
           <DatePicker.View view="day">
             <DatePicker.Header />
-            <Flex style={{ gap: 'var(--leverui-spacing-4)' }}>
+            <Flex style={{ gap: 'var(--lui-spacing-4)' }}>
               <DatePicker.DayTable />
               <DatePicker.DayTable offset={1} />
             </Flex>

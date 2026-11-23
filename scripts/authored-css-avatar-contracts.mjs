@@ -5,7 +5,7 @@ export const avatarContracts = [
     required: [
       ...['root', 'image', 'fallback'].map(
         /** Identify one styled public part. */
-        (part) => `.leverui-avatar__${part}`,
+        (part) => `.lui-avatar__${part}`,
       ),
       ...['full', '2xs', 'xs', 'sm', 'md', 'lg', 'xl', '2xl'].map(
         /** Require every base size. */
@@ -33,7 +33,7 @@ export const avatarContracts = [
         /** Require every responsive group-border selector. */
         (breakpoint) => `[data-borderless-${breakpoint}=`,
       ),
-      '[data-leverui-group-item]',
+      '[data-lui-group-item]',
     ],
   },
 ];

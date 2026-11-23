@@ -15,7 +15,7 @@ export const floatingPanelContracts = [
     required: [
       ...styledParts.map(
         /** Require each default styled part under its opt-out attribute. */
-        (part) => `.leverui-floating-panel__${part}[data-leverui-floating-panel-css]`,
+        (part) => `.lui-floating-panel__${part}[data-lui-floating-panel-css]`,
       ),
       "[data-state='open']",
       "[data-placement='n']",
@@ -26,8 +26,8 @@ export const floatingPanelContracts = [
       "[data-placement='nw']",
       "[data-placement='se']",
       "[data-placement='sw']",
-      '--leverui-colors-bg-panel',
-      '--leverui-colors-bg-subtle',
+      '--lui-colors-bg-panel',
+      '--lui-colors-bg-subtle',
     ],
   },
 ];

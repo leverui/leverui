@@ -22,7 +22,7 @@ export function CommandListPart(props: ContentProps): JSX.Element {
       /** Put the caller's results inside the primitive's listbox. */
       get children() {
         return createComponent(PrimitiveCombobox.List, {
-          class: 'leverui-command__listbox',
+          class: 'lui-command__listbox',
           /** Name the listbox itself rather than its scroll container. */
           get 'aria-label'() {
             return list['aria-label'];

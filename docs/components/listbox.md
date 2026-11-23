@@ -158,11 +158,11 @@ class name.
 
 ```css
 .my-listbox {
-  --leverui-listbox-content-max-height: 18rem;
-  --leverui-listbox-selected-background: #fef08a;
+  --lui-listbox-content-max-height: 18rem;
+  --lui-listbox-selected-background: #fef08a;
 }
 
-.my-listbox .leverui-listbox__item {
+.my-listbox .lui-listbox__item {
   border-radius: 0.75rem;
 }
 ```

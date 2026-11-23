@@ -85,7 +85,7 @@ function verifiesReactiveDefaults(): void {
           <Timeline.Root data-testid="inherited">
             <Timeline.Item>
               <Timeline.Indicator data-testid="inherited-indicator" />
-              <span class="leverui-timeline__title" data-testid="style-probe">
+              <span class="lui-timeline__title" data-testid="style-probe">
                 Custom title
               </span>
             </Timeline.Item>
@@ -116,7 +116,7 @@ function verifiesReactiveDefaults(): void {
   expect(inherited.getAttribute('data-variant')).toBe('outline');
   expect(inherited.className).toBe(previousRootClass);
   expect(indicator.className).toBe(previousIndicatorClass);
-  expect(screen.getByTestId('style-probe').className).toBe('leverui-timeline__title');
+  expect(screen.getByTestId('style-probe').className).toBe('lui-timeline__title');
   expect(fixed.className).toBe(fixedClass);
 }
 

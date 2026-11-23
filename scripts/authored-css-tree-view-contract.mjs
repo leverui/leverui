@@ -3,7 +3,7 @@ export const treeViewContracts = [
   {
     family: 'tree-view',
     required: [
-      '.leverui-tree-view__root:not([data-unstyled])',
+      '.lui-tree-view__root:not([data-unstyled])',
       ...[
         'branch',
         'branchContent',
@@ -19,16 +19,16 @@ export const treeViewContracts = [
         'nodeCheckbox',
       ].map(
         /** Keep each public compound part present in authored CSS. */
-        (part) => `.leverui-tree-view__${part}`,
+        (part) => `.lui-tree-view__${part}`,
       ),
-      '--leverui-tree-indent-size',
-      '--leverui-tree-indentation',
-      '--leverui-tree-icon-size',
-      '--leverui-tree-padding-inline',
-      '--leverui-tree-padding-block',
-      '--leverui-tree-font-size',
-      '--leverui-tree-line-height',
-      '--leverui-tree-item-gap',
+      '--lui-tree-indent-size',
+      '--lui-tree-indentation',
+      '--lui-tree-icon-size',
+      '--lui-tree-padding-inline',
+      '--lui-tree-padding-block',
+      '--lui-tree-font-size',
+      '--lui-tree-line-height',
+      '--lui-tree-item-gap',
       ...['xs', 'sm'].map(
         /** Require every finite Tree View size. */
         (size) => `[data-size='${size}']`,

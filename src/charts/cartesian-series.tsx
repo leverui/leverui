@@ -35,7 +35,7 @@ export interface CartesianSeriesLayerProps {
 export function CartesianSeriesLayer(props: CartesianSeriesLayerProps): JSX.Element {
   const id = createUniqueId();
   return (
-    <g class="leverui-cartesian-chart__seriesLayer">
+    <g class="lui-cartesian-chart__seriesLayer">
       <For each={props.series}>
         {/** Render one series using its theme color and numeric samples. */}
         {(series, seriesIndex) => {
@@ -66,7 +66,7 @@ export function CartesianSeriesLayer(props: CartesianSeriesLayerProps): JSX.Elem
             props.gradient || props.valueGradient ? `url(#${gradientId()})` : color();
           return (
             <g
-              class="leverui-cartesian-chart__series"
+              class="lui-cartesian-chart__series"
               data-series={series.name}
               data-muted={
                 props.highlightedSeries && props.highlightedSeries !== series.name ? '' : undefined
@@ -101,14 +101,14 @@ export function CartesianSeriesLayer(props: CartesianSeriesLayerProps): JSX.Elem
                   <>
                     <Show when={props.kind === 'area'}>
                       <path
-                        class="leverui-cartesian-chart__area"
+                        class="lui-cartesian-chart__area"
                         d={chartAreaPath(segment, props.curve)}
                         fill={fill()}
                         fill-opacity={props.gradient ? 1 : props.fillOpacity}
                       />
                     </Show>
                     <path
-                      class="leverui-cartesian-chart__line"
+                      class="lui-cartesian-chart__line"
                       d={chartLinePath(segment, props.curve)}
                       stroke={
                         series.strokeGradientStops?.length
@@ -132,7 +132,7 @@ export function CartesianSeriesLayer(props: CartesianSeriesLayerProps): JSX.Elem
                   {(point) => (
                     <>
                       <circle
-                        class="leverui-cartesian-chart__dot"
+                        class="lui-cartesian-chart__dot"
                         cx={point.x}
                         cy={point.y}
                         r={
@@ -145,13 +145,13 @@ export function CartesianSeriesLayer(props: CartesianSeriesLayerProps): JSX.Elem
                           point.index === props.activeIndex
                             ? series.activeDotStroke
                             : series.dotStroke,
-                          'var(--leverui-colors-bg)',
+                          'var(--lui-colors-bg)',
                         )}
                         stroke-width={series.dotStrokeWidth ?? 1}
                       />
                       <Show when={props.pointLabels}>
                         <text
-                          class="leverui-cartesian-chart__pointLabel"
+                          class="lui-cartesian-chart__pointLabel"
                           data-position={props.pointLabelPosition}
                           x={point.x + (props.pointLabelPosition === 'right' ? 10 : 0)}
                           y={point.y - (props.pointLabelPosition === 'right' ? 0 : 4)}

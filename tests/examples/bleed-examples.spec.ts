@@ -5,7 +5,7 @@ async function verifiesBleedLayouts({ page }: { page: Page }): Promise<void> {
   await page.setViewportSize({ width: 1280, height: 720 });
 
   await page.goto('/iframe.html?id=layout-bleed--basic');
-  const basic = page.locator('#storybook-root .leverui-bleed');
+  const basic = page.locator('#storybook-root .lui-bleed');
   await expect(basic).toHaveCount(1);
   await expect(basic).toHaveCSS('margin-left', '-40px');
   await expect(basic).toHaveCSS('margin-right', '-40px');
@@ -30,13 +30,13 @@ async function verifiesBleedLayouts({ page }: { page: Page }): Promise<void> {
   }
 
   await page.goto('/iframe.html?id=layout-bleed--vertical');
-  const vertical = page.locator('#storybook-root .leverui-bleed');
+  const vertical = page.locator('#storybook-root .lui-bleed');
   await expect(vertical).toHaveCSS('margin-top', '-40px');
   await expect(vertical).toHaveCSS('margin-bottom', '-40px');
   await expect(vertical).toHaveCSS('margin-left', '0px');
 
   await page.goto('/iframe.html?id=layout-bleed--direction');
-  const directions = page.locator('#storybook-root .leverui-bleed');
+  const directions = page.locator('#storybook-root .lui-bleed');
   await expect(directions).toHaveCount(4);
   for (const [index, property] of [
     'margin-left',
@@ -58,7 +58,7 @@ async function verifiesBleedCardCss({ page }: { page: Page }): Promise<void> {
   await expect(pattern).toHaveCSS('height', '80px');
   await expect(pattern).toHaveCSS('background-image', /data:image\/svg\+xml/);
   await expect(pattern).not.toHaveAttribute('style');
-  await page.addStyleTag({ content: '.bleed-gallery-card { --leverui-spacing-10: 48px; }' });
+  await page.addStyleTag({ content: '.bleed-gallery-card { --lui-spacing-10: 48px; }' });
   await expect(card).toHaveCSS('padding-left', '48px');
 }
 

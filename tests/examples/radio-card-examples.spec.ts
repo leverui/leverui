@@ -59,7 +59,7 @@ async function verifiesCompositionAndIndicator({ page }: { page: Page }): Promis
 
   await page.goto('/iframe.html?id=components-radio-card--custom-indicator');
   const indicatorGroup = page.getByRole('radiogroup', { name: 'Select framework' });
-  const selected = page.locator('.leverui-radio-card__itemIndicator svg.lucide-check');
+  const selected = page.locator('.lui-radio-card__itemIndicator svg.lucide-check');
   await expect(selected).toHaveCount(1);
   await indicatorGroup.getByText('Vite', { exact: true }).click();
   await expect(indicatorGroup.getByRole('radio', { name: 'Vite' })).toBeChecked();
@@ -85,24 +85,24 @@ async function verifiesMatrices({ page }: { page: Page }): Promise<void> {
 async function verifiesIconCards({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-radio-card--centered');
   await expect(page.getByRole('radio')).toHaveCount(3);
-  await expect(page.locator('span.leverui-icon')).toHaveCount(3);
-  await expect(page.locator('span.leverui-icon').first()).toHaveCSS('font-size', '24px');
-  await expect(page.locator('span.leverui-icon').first()).toHaveCSS('margin-bottom', '8px');
+  await expect(page.locator('span.lui-icon')).toHaveCount(3);
+  await expect(page.locator('span.lui-icon').first()).toHaveCSS('font-size', '24px');
+  await expect(page.locator('span.lui-icon').first()).toHaveCSS('margin-bottom', '8px');
 
   await page.goto('/iframe.html?id=components-radio-card--icon');
   await expect(page.getByText('This user cannot sign in to the app')).toBeVisible();
-  await expect(page.locator('span.leverui-icon')).toHaveCount(3);
-  await expect(page.locator('span.leverui-icon').first()).toHaveCSS('margin-bottom', '8px');
+  await expect(page.locator('span.lui-icon')).toHaveCount(3);
+  await expect(page.locator('span.lui-icon').first()).toHaveCSS('margin-bottom', '8px');
 
   await page.goto('/iframe.html?id=components-radio-card--without-indicator');
   await page.getByText('Mobile pay', { exact: true }).click();
   await expect(page.getByRole('radio', { name: 'Mobile pay' })).toBeChecked();
-  await expect(page.locator('.leverui-radio-card__itemIndicator')).toHaveCount(0);
-  await expect(page.locator('span.leverui-icon').first()).toHaveCSS('font-size', '24px');
+  await expect(page.locator('.lui-radio-card__itemIndicator')).toHaveCount(0);
+  await expect(page.locator('span.lui-icon').first()).toHaveCSS('font-size', '24px');
 
   await page.goto('/iframe.html?id=components-radio-card--without-indicator-vertical');
   await expect(page.getByRole('radio')).toHaveCount(3);
-  await expect(page.locator('span.leverui-icon').first()).toHaveCSS('font-size', '24px');
+  await expect(page.locator('span.lui-icon').first()).toHaveCSS('font-size', '24px');
 }
 
 /** Follow the breakpoint in the responsive payment story. */

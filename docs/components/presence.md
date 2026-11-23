@@ -20,7 +20,7 @@ Keeps an element in the page while its CSS entry and exit animations run.
 
 ## Customize with CSS
 
-Always has the `.leverui-presence` class and sets `data-state` to `"open"` or
+Always has the `.lui-presence` class and sets `data-state` to `"open"` or
 `"closed"`. Presence animates nothing by itself. Add your own class and
 animation rules, and respect the reduced-motion setting.
 

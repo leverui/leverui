@@ -35,8 +35,8 @@ function verifiesServerStatus(): void {
   expect(markup).toContain('status__indicator');
   expect(markup).toContain('Ready');
   expect(markup).toContain('data-size="lg"');
-  expect(markup).toContain('data-leverui-color-palette="green"');
-  expect(markup).not.toContain('data-leverui-private-style-runtime');
+  expect(markup).toContain('data-lui-color-palette="green"');
+  expect(markup).not.toContain('data-lui-private-style-runtime');
   expect(markup).not.toMatch(/<div[^>]*\s(?:size|recipe|css|unstyled)=/);
 }
 

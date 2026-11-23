@@ -23,7 +23,7 @@ function verifiesUnstyledAccordion(): void {
   );
 
   const trigger = screen.getByRole('button', { name: 'First disclosure' });
-  const root = trigger.closest('.leverui-accordion__root');
+  const root = trigger.closest('.lui-accordion__root');
   expect(root?.getAttribute('data-unstyled')).toBe('');
   expect(root?.classList.contains('consumer-accordion')).toBe(true);
   expect(trigger.getAttribute('data-unstyled')).toBe('');

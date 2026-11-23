@@ -9,8 +9,8 @@ type DialogAppearance = Pick<
 >;
 export type OverlayFamily = 'dialog' | 'drawer';
 interface DialogPartAttributes {
-  'data-leverui-dialog-css'?: string | undefined;
-  'data-leverui-drawer-css'?: string | undefined;
+  'data-lui-dialog-css'?: string | undefined;
+  'data-lui-drawer-css'?: string | undefined;
   'data-size'?: string | undefined;
   'data-size-sm'?: string | undefined;
   'data-size-md-down'?: string | undefined;
@@ -108,7 +108,7 @@ export function useDialogAuthoredStyles(props: DialogAppearance): DialogAuthored
     const bare = Boolean(props.unstyled || unstyled);
     const selectedSize = size();
     return {
-      'data-leverui-dialog-css': bare ? undefined : '',
+      'data-lui-dialog-css': bare ? undefined : '',
       'data-size': selectedSize?.base,
       'data-size-sm': selectedSize?.sm,
       'data-size-md': selectedSize?.md,

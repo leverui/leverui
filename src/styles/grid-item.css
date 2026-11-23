@@ -1,144 +1,144 @@
-@layer leverui.recipes {
-  .leverui-grid-item {
+@layer lui.recipes {
+  .lui-grid-item {
     &[data-grid-item-area-base] {
-      grid-area: var(--leverui-private-grid-item-area-base);
+      grid-area: var(--lui-private-grid-item-area-base);
     }
     &[data-grid-item-column-base] {
-      grid-column: var(--leverui-private-grid-item-column-base);
+      grid-column: var(--lui-private-grid-item-column-base);
     }
     &[data-grid-item-row-base] {
-      grid-row: var(--leverui-private-grid-item-row-base);
+      grid-row: var(--lui-private-grid-item-row-base);
     }
     &[data-grid-item-column-start-base] {
-      grid-column-start: var(--leverui-private-grid-item-column-start-base);
+      grid-column-start: var(--lui-private-grid-item-column-start-base);
     }
     &[data-grid-item-column-end-base] {
-      grid-column-end: var(--leverui-private-grid-item-column-end-base);
+      grid-column-end: var(--lui-private-grid-item-column-end-base);
     }
     &[data-grid-item-row-start-base] {
-      grid-row-start: var(--leverui-private-grid-item-row-start-base);
+      grid-row-start: var(--lui-private-grid-item-row-start-base);
     }
     &[data-grid-item-row-end-base] {
-      grid-row-end: var(--leverui-private-grid-item-row-end-base);
+      grid-row-end: var(--lui-private-grid-item-row-end-base);
     }
 
     @media (min-width: 480px) {
       &[data-grid-item-area-sm] {
-        grid-area: var(--leverui-private-grid-item-area-sm);
+        grid-area: var(--lui-private-grid-item-area-sm);
       }
       &[data-grid-item-column-sm] {
-        grid-column: var(--leverui-private-grid-item-column-sm);
+        grid-column: var(--lui-private-grid-item-column-sm);
       }
       &[data-grid-item-row-sm] {
-        grid-row: var(--leverui-private-grid-item-row-sm);
+        grid-row: var(--lui-private-grid-item-row-sm);
       }
       &[data-grid-item-column-start-sm] {
-        grid-column-start: var(--leverui-private-grid-item-column-start-sm);
+        grid-column-start: var(--lui-private-grid-item-column-start-sm);
       }
       &[data-grid-item-column-end-sm] {
-        grid-column-end: var(--leverui-private-grid-item-column-end-sm);
+        grid-column-end: var(--lui-private-grid-item-column-end-sm);
       }
       &[data-grid-item-row-start-sm] {
-        grid-row-start: var(--leverui-private-grid-item-row-start-sm);
+        grid-row-start: var(--lui-private-grid-item-row-start-sm);
       }
       &[data-grid-item-row-end-sm] {
-        grid-row-end: var(--leverui-private-grid-item-row-end-sm);
+        grid-row-end: var(--lui-private-grid-item-row-end-sm);
       }
     }
 
     @media (min-width: 768px) {
       &[data-grid-item-area-md] {
-        grid-area: var(--leverui-private-grid-item-area-md);
+        grid-area: var(--lui-private-grid-item-area-md);
       }
       &[data-grid-item-column-md] {
-        grid-column: var(--leverui-private-grid-item-column-md);
+        grid-column: var(--lui-private-grid-item-column-md);
       }
       &[data-grid-item-row-md] {
-        grid-row: var(--leverui-private-grid-item-row-md);
+        grid-row: var(--lui-private-grid-item-row-md);
       }
       &[data-grid-item-column-start-md] {
-        grid-column-start: var(--leverui-private-grid-item-column-start-md);
+        grid-column-start: var(--lui-private-grid-item-column-start-md);
       }
       &[data-grid-item-column-end-md] {
-        grid-column-end: var(--leverui-private-grid-item-column-end-md);
+        grid-column-end: var(--lui-private-grid-item-column-end-md);
       }
       &[data-grid-item-row-start-md] {
-        grid-row-start: var(--leverui-private-grid-item-row-start-md);
+        grid-row-start: var(--lui-private-grid-item-row-start-md);
       }
       &[data-grid-item-row-end-md] {
-        grid-row-end: var(--leverui-private-grid-item-row-end-md);
+        grid-row-end: var(--lui-private-grid-item-row-end-md);
       }
     }
 
     @media (min-width: 1024px) {
       &[data-grid-item-area-lg] {
-        grid-area: var(--leverui-private-grid-item-area-lg);
+        grid-area: var(--lui-private-grid-item-area-lg);
       }
       &[data-grid-item-column-lg] {
-        grid-column: var(--leverui-private-grid-item-column-lg);
+        grid-column: var(--lui-private-grid-item-column-lg);
       }
       &[data-grid-item-row-lg] {
-        grid-row: var(--leverui-private-grid-item-row-lg);
+        grid-row: var(--lui-private-grid-item-row-lg);
       }
       &[data-grid-item-column-start-lg] {
-        grid-column-start: var(--leverui-private-grid-item-column-start-lg);
+        grid-column-start: var(--lui-private-grid-item-column-start-lg);
       }
       &[data-grid-item-column-end-lg] {
-        grid-column-end: var(--leverui-private-grid-item-column-end-lg);
+        grid-column-end: var(--lui-private-grid-item-column-end-lg);
       }
       &[data-grid-item-row-start-lg] {
-        grid-row-start: var(--leverui-private-grid-item-row-start-lg);
+        grid-row-start: var(--lui-private-grid-item-row-start-lg);
       }
       &[data-grid-item-row-end-lg] {
-        grid-row-end: var(--leverui-private-grid-item-row-end-lg);
+        grid-row-end: var(--lui-private-grid-item-row-end-lg);
       }
     }
 
     @media (min-width: 1280px) {
       &[data-grid-item-area-xl] {
-        grid-area: var(--leverui-private-grid-item-area-xl);
+        grid-area: var(--lui-private-grid-item-area-xl);
       }
       &[data-grid-item-column-xl] {
-        grid-column: var(--leverui-private-grid-item-column-xl);
+        grid-column: var(--lui-private-grid-item-column-xl);
       }
       &[data-grid-item-row-xl] {
-        grid-row: var(--leverui-private-grid-item-row-xl);
+        grid-row: var(--lui-private-grid-item-row-xl);
       }
       &[data-grid-item-column-start-xl] {
-        grid-column-start: var(--leverui-private-grid-item-column-start-xl);
+        grid-column-start: var(--lui-private-grid-item-column-start-xl);
       }
       &[data-grid-item-column-end-xl] {
-        grid-column-end: var(--leverui-private-grid-item-column-end-xl);
+        grid-column-end: var(--lui-private-grid-item-column-end-xl);
       }
       &[data-grid-item-row-start-xl] {
-        grid-row-start: var(--leverui-private-grid-item-row-start-xl);
+        grid-row-start: var(--lui-private-grid-item-row-start-xl);
       }
       &[data-grid-item-row-end-xl] {
-        grid-row-end: var(--leverui-private-grid-item-row-end-xl);
+        grid-row-end: var(--lui-private-grid-item-row-end-xl);
       }
     }
 
     @media (min-width: 1536px) {
       &[data-grid-item-area-2xl] {
-        grid-area: var(--leverui-private-grid-item-area-2xl);
+        grid-area: var(--lui-private-grid-item-area-2xl);
       }
       &[data-grid-item-column-2xl] {
-        grid-column: var(--leverui-private-grid-item-column-2xl);
+        grid-column: var(--lui-private-grid-item-column-2xl);
       }
       &[data-grid-item-row-2xl] {
-        grid-row: var(--leverui-private-grid-item-row-2xl);
+        grid-row: var(--lui-private-grid-item-row-2xl);
       }
       &[data-grid-item-column-start-2xl] {
-        grid-column-start: var(--leverui-private-grid-item-column-start-2xl);
+        grid-column-start: var(--lui-private-grid-item-column-start-2xl);
       }
       &[data-grid-item-column-end-2xl] {
-        grid-column-end: var(--leverui-private-grid-item-column-end-2xl);
+        grid-column-end: var(--lui-private-grid-item-column-end-2xl);
       }
       &[data-grid-item-row-start-2xl] {
-        grid-row-start: var(--leverui-private-grid-item-row-start-2xl);
+        grid-row-start: var(--lui-private-grid-item-row-start-2xl);
       }
       &[data-grid-item-row-end-2xl] {
-        grid-row-end: var(--leverui-private-grid-item-row-end-2xl);
+        grid-row-end: var(--lui-private-grid-item-row-end-2xl);
       }
     }
   }

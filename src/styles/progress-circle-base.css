@@ -1,60 +1,57 @@
-@layer leverui.recipes {
-  .leverui-progress-circle__root:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-progress-circle__root:not([data-unstyled]) {
     display: inline-flex;
     position: relative;
-    font-size: var(--leverui-font-sizes-sm);
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
   }
 
-  .leverui-progress-circle__circle:not([data-unstyled]) {
-    --size: var(--leverui-progress-circle-size, var(--leverui-private-progress-circle-size));
-    --thickness: var(
-      --leverui-progress-circle-thickness,
-      var(--leverui-private-progress-circle-thickness)
-    );
+  .lui-progress-circle__circle:not([data-unstyled]) {
+    --size: var(--lui-progress-circle-size, var(--lui-private-progress-circle-size));
+    --thickness: var(--lui-progress-circle-thickness, var(--lui-private-progress-circle-thickness));
   }
 
-  .leverui-progress-circle__circle:not([data-unstyled])[data-state='indeterminate'] {
+  .lui-progress-circle__circle:not([data-unstyled])[data-state='indeterminate'] {
     animation: spin 2s linear infinite;
   }
 
-  .leverui-progress-circle__circleTrack:not([data-unstyled], [stroke]) {
-    stroke: var(--leverui-progress-circle-track-color, var(--leverui-colors-color-palette-muted));
+  .lui-progress-circle__circleTrack:not([data-unstyled], [stroke]) {
+    stroke: var(--lui-progress-circle-track-color, var(--lui-colors-color-palette-muted));
   }
 
-  .leverui-progress-circle__circleRange:not([data-unstyled], [stroke]) {
-    stroke: var(--leverui-progress-circle-range-color, var(--leverui-colors-color-palette-solid));
+  .lui-progress-circle__circleRange:not([data-unstyled], [stroke]) {
+    stroke: var(--lui-progress-circle-range-color, var(--lui-colors-color-palette-solid));
   }
 
-  .leverui-progress-circle__circleRange:not([data-unstyled]) {
+  .lui-progress-circle__circleRange:not([data-unstyled]) {
     transition-property: stroke-dashoffset, stroke-dasharray;
     transition-duration: 0.6s;
   }
 
-  .leverui-progress-circle__circleRange:not([data-unstyled])[data-state='indeterminate'] {
+  .lui-progress-circle__circleRange:not([data-unstyled])[data-state='indeterminate'] {
     animation: circular-progress 1.5s linear infinite;
   }
 
-  .leverui-progress-circle__label:not([data-unstyled]) {
+  .lui-progress-circle__label:not([data-unstyled]) {
     display: inline-flex;
   }
 
-  .leverui-progress-circle__valueText:not([data-unstyled]) {
-    font-size: var(--leverui-private-progress-circle-value-font-size);
-    line-height: var(--leverui-private-progress-circle-value-line-height);
-    font-weight: var(--leverui-font-weights-medium);
-    letter-spacing: var(--leverui-letter-spacings-tight);
+  .lui-progress-circle__valueText:not([data-unstyled]) {
+    font-size: var(--lui-private-progress-circle-value-font-size);
+    line-height: var(--lui-private-progress-circle-value-line-height);
+    font-weight: var(--lui-font-weights-medium);
+    letter-spacing: var(--lui-letter-spacings-tight);
     font-variant-numeric: tabular-nums;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  @layer leverui.recipes {
-    .leverui-progress-circle__circle:not([data-unstyled])[data-state='indeterminate'],
-    .leverui-progress-circle__circleRange:not([data-unstyled])[data-state='indeterminate'] {
+  @layer lui.recipes {
+    .lui-progress-circle__circle:not([data-unstyled])[data-state='indeterminate'],
+    .lui-progress-circle__circleRange:not([data-unstyled])[data-state='indeterminate'] {
       animation: none;
     }
-    .leverui-progress-circle__circleRange:not([data-unstyled]) {
+    .lui-progress-circle__circleRange:not([data-unstyled]) {
       transition-duration: 0s;
     }
   }

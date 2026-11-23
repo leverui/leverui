@@ -65,9 +65,7 @@ function AccordionItemStatus() {
   return (
     <Box
       style={{
-        color: item().expanded
-          ? 'var(--leverui-colors-green-fg)'
-          : 'var(--leverui-colors-fg-muted)',
+        color: item().expanded ? 'var(--lui-colors-green-fg)' : 'var(--lui-colors-fg-muted)',
       }}
     >
       {item().expanded ? 'Expanded' : 'Collapsed'}

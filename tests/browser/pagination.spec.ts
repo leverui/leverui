@@ -6,10 +6,8 @@ async function verifiesBasicPagination({ page }: { page: Page }): Promise<void> 
   const root = page.getByTestId('pagination-root');
   await expect(root).toBeVisible({ timeout: 30_000 });
   await expect(root).toHaveAttribute('aria-label', 'Article pages');
-  await expect(root).toHaveClass(/leverui-pagination__root/);
-  await expect(root.locator('[data-pagination-item]').first()).toHaveClass(
-    /leverui-pagination__item/,
-  );
+  await expect(root).toHaveClass(/lui-pagination__root/);
+  await expect(root.locator('[data-pagination-item]').first()).toHaveClass(/lui-pagination__item/);
   await expect(page.getByTestId('pagination-prev')).toBeDisabled();
   await expect(page.getByTestId('pagination-compact')).toHaveText('1 of 10');
   await expect(page.getByTestId('pagination-short')).toHaveText('1 / 10');
@@ -59,10 +57,10 @@ async function verifiesPageTextCss({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-pagination--basic');
   const text = page.getByTestId('pagination-compact');
   await expect(text).toBeVisible({ timeout: 30_000 });
-  await expect(text).toHaveClass(/leverui-pagination__page-text/);
+  await expect(text).toHaveClass(/lui-pagination__page-text/);
   await expect(text).toHaveCSS('font-weight', '500');
   await page.addStyleTag({
-    content: '.leverui-pagination__page-text { font-weight: 700; }',
+    content: '.lui-pagination__page-text { font-weight: 700; }',
   });
   await expect(text).toHaveCSS('font-weight', '700');
 }

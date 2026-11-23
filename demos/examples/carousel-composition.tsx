@@ -12,7 +12,7 @@ function PropertyCard(props: { data: CarouselProperty }): JSX.Element {
         <Image
           src={props.data.image}
           alt={props.data.title}
-          style={{ 'border-radius': 'var(--leverui-radii-l2)', width: '100%', height: '200px' }}
+          style={{ 'border-radius': 'var(--lui-radii-l2)', width: '100%', height: '200px' }}
           draggable={false}
         />
         {props.data.favorite && (
@@ -20,8 +20,8 @@ function PropertyCard(props: { data: CarouselProperty }): JSX.Element {
             size="sm"
             style={{
               position: 'absolute',
-              top: 'var(--leverui-spacing-2)',
-              'inset-inline-start': 'var(--leverui-spacing-2)',
+              top: 'var(--lui-spacing-2)',
+              'inset-inline-start': 'var(--lui-spacing-2)',
             }}
           >
             Guest favorite
@@ -32,7 +32,7 @@ function PropertyCard(props: { data: CarouselProperty }): JSX.Element {
         <Span
           textStyle="sm"
           style={{
-            'font-weight': 'var(--leverui-font-weights-semibold)',
+            'font-weight': 'var(--lui-font-weights-semibold)',
           }}
         >
           {props.data.title}
@@ -40,17 +40,17 @@ function PropertyCard(props: { data: CarouselProperty }): JSX.Element {
         <HStack
           textStyle="xs"
           style={{
-            color: 'var(--leverui-colors-fg-muted)',
+            color: 'var(--lui-colors-fg-muted)',
           }}
         >
           <Span>
             ${props.data.price} for {props.data.nights} nights
           </Span>
           <HStack gap="1">
-            <Icon style={{ color: 'var(--leverui-colors-orange-solid)' }}>
+            <Icon style={{ color: 'var(--lui-colors-orange-solid)' }}>
               <StarIcon />
             </Icon>
-            <Span style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>
+            <Span style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>
               {props.data.rating}
             </Span>
           </HStack>
@@ -69,7 +69,7 @@ export function CarouselComposition(): JSX.Element {
       class="carousel-example-gap-3"
     >
       <HStack justify="space-between">
-        <Span style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>
+        <Span style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>
           Popular homes this week
         </Span>
         <HStack>

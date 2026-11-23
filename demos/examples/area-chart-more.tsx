@@ -39,7 +39,7 @@ export function AreaChartGradient(): JSX.Element {
 /** Compare gaps from nulls with a connected line. */
 export function AreaChartNulls(): JSX.Element {
   return (
-    <SimpleGrid minChildWidth="400px" style={{ gap: 'var(--leverui-spacing-10)' }}>
+    <SimpleGrid minChildWidth="400px" style={{ gap: 'var(--lui-spacing-10)' }}>
       <For each={[false, true]}>
         {/** Render one null-handling policy with the same sales values. */}
         {(connectNulls) => (
@@ -141,7 +141,7 @@ export function AreaChartTypes(): JSX.Element {
     (item) => ({ ...item, stroke: 'white', strokeWidth: 3 }),
   );
   return (
-    <SimpleGrid minChildWidth="400px" style={{ gap: 'var(--leverui-spacing-10)' }}>
+    <SimpleGrid minChildWidth="400px" style={{ gap: 'var(--lui-spacing-10)' }}>
       <For each={curveTypes}>
         {/** Label and draw one curve mode in a separate chart. */}
         {(curve) => (
@@ -149,8 +149,8 @@ export function AreaChartTypes(): JSX.Element {
             <Text
               textStyle="sm"
               style={{
-                'font-weight': 'var(--leverui-font-weights-semibold)',
-                'margin-inline-start': 'var(--leverui-spacing-8)',
+                'font-weight': 'var(--lui-font-weights-semibold)',
+                'margin-inline-start': 'var(--lui-spacing-8)',
               }}
             >{`<Area type="${curve}" />`}</Text>
             <AreaChart

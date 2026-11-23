@@ -5,25 +5,21 @@ import { tabsContract } from './authored-css-tabs-contract.mjs';
 export const coreContracts = [
   {
     family: 'skip-nav',
-    required: [
-      '.leverui-skip-nav:not([data-unstyled])',
-      ':focus-visible',
-      '.leverui-skip-nav-content',
-    ],
+    required: ['.lui-skip-nav:not([data-unstyled])', ':focus-visible', '.lui-skip-nav-content'],
   },
   {
     family: 'visually-hidden',
-    required: ['.leverui-visually-hidden:not([data-unstyled])', 'clip: rect(0 0 0 0)'],
+    required: ['.lui-visually-hidden:not([data-unstyled])', 'clip: rect(0 0 0 0)'],
   },
   {
     family: 'command-dialog',
     files: ['command-dialog.css', 'visually-hidden.css'],
-    required: ['.leverui-command-dialog__content', '.leverui-command-dialog__accessible-label'],
+    required: ['.lui-command-dialog__content', '.lui-command-dialog__accessible-label'],
   },
   {
     family: 'heading',
     required: [
-      '.leverui-heading:not([data-unstyled])',
+      '.lui-heading:not([data-unstyled])',
       ...['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl', '7xl'].map(
         /** Require every finite Heading size selector. */
         (size) => `[data-size='${size}']`,
@@ -41,17 +37,17 @@ export const coreContracts = [
   {
     family: 'text',
     required: [
-      '.leverui-text',
+      '.lui-text',
       '[data-truncate]',
       "[data-line-clamp='value']",
       "[data-line-clamp='none']",
-      '--leverui-private-text-line-clamp',
+      '--lui-private-text-line-clamp',
     ],
   },
   {
     family: 'textarea',
     required: [
-      '.leverui-textarea',
+      '.lui-textarea',
       ...['xs', 'sm', 'lg', 'xl'].map(
         /** Require each nondefault authored Textarea size. */
         (size) => `[data-size='${size}']`,
@@ -70,14 +66,14 @@ export const coreContracts = [
         ],
       ),
       '[data-autoresize]',
-      '--leverui-private-textarea-font-size',
-      '--leverui-private-textarea-focus-color',
+      '--lui-private-textarea-font-size',
+      '--lui-private-textarea-focus-color',
     ],
   },
   {
     family: 'spinner',
     required: [
-      '.leverui-spinner:not([data-unstyled])',
+      '.lui-spinner:not([data-unstyled])',
       ...['inherit', 'xs', 'sm', 'md', 'lg', 'xl'].map(
         /** Require every finite Spinner size selector. */
         (size) => `[data-size='${size}']`,
@@ -86,18 +82,18 @@ export const coreContracts = [
         /** Require an authored responsive size selector at each breakpoint. */
         (breakpoint) => `[data-size-${breakpoint}='xl']`,
       ),
-      '--leverui-spinner-track-color',
-      'animation: var(--leverui-animations-spin)',
+      '--lui-spinner-track-color',
+      'animation: var(--lui-animations-spin)',
       'border-bottom-color:',
     ],
   },
   {
     family: 'loader',
     required: [
-      '.leverui-loader:not([data-unstyled])',
-      '.leverui-loader__indicator',
-      '.leverui-loader__content',
-      '.leverui-loader-overlay:not([data-unstyled])',
+      '.lui-loader:not([data-unstyled])',
+      '.lui-loader__indicator',
+      '.lui-loader__content',
+      '.lui-loader-overlay:not([data-unstyled])',
     ],
   },
   buttonContract,
@@ -105,7 +101,7 @@ export const coreContracts = [
   {
     family: 'icon-button',
     required: [
-      '.leverui-button.leverui-icon-button:not(',
+      '.lui-button.lui-icon-button:not(',
       'padding-inline: 0',
       'padding-block: 0',
       'font-size: 1.2em',
@@ -116,7 +112,7 @@ export const coreContracts = [
     required: [
       ...['root', 'control', 'thumb', 'indicator', 'label'].map(
         /** Require every styled Switch part. */
-        (part) => `.leverui-switch__${part}`,
+        (part) => `.lui-switch__${part}`,
       ),
       ...['xs', 'sm', 'lg'].map(
         /** Require the nondefault Switch sizes. */
@@ -158,7 +154,7 @@ export const coreContracts = [
         'closeTrigger',
       ].map(
         /** Require every Dialog part with authored presentation. */
-        (part) => `.leverui-dialog__${part}`,
+        (part) => `.lui-dialog__${part}`,
       ),
       ...['xs', 'sm', 'md', 'lg', 'xl', 'cover', 'full'].map(
         /** Require every finite Dialog size. */

@@ -155,21 +155,21 @@ use `as` or `asChild`.
 
 ## Customize with CSS
 
-Import `@leverui/components/styles.css`, then override the `--leverui-*` tokens
+Import `@leverui/components/styles.css`, then override the `--lui-*` tokens
 or style the part classes. The class names are stable.
 
 ```css
-.leverui-radio-card__itemControl {
+.lui-radio-card__itemControl {
   border-radius: 0.75rem;
 }
 ```
 
 The root and items have `data-size` and `data-variant`, plus a version of each
-for every breakpoint. The indicator also has `.leverui-radiomark`.
+for every breakpoint. The indicator also has `.lui-radiomark`.
 
-Variables for one group: `--leverui-radio-card-root-gap`,
-`--leverui-radio-card-radius`, `--leverui-radio-card-control-padding`,
-`--leverui-radio-card-control-gap`.
+Variables for one group: `--lui-radio-card-root-gap`,
+`--lui-radio-card-radius`, `--lui-radio-card-control-padding`,
+`--lui-radio-card-control-gap`.
 
 Every public part takes `class`, `style`, and `unstyled`.
 

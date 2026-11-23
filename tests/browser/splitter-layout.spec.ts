@@ -20,7 +20,7 @@ async function verifiesResponsiveOrientation({ page }: { page: Page }): Promise<
   const trigger = page.getByTestId('splitter-responsive-trigger');
   await expect(trigger).toHaveAttribute('data-orientation', 'horizontal', { timeout: 30_000 });
   await expect(trigger).toHaveCSS('min-width', '8px');
-  await expect(trigger.locator('.leverui-splitter__resizeTriggerIndicator')).toHaveCSS(
+  await expect(trigger.locator('.lui-splitter__resizeTriggerIndicator')).toHaveCSS(
     'height',
     '24px',
   );
@@ -33,10 +33,7 @@ async function verifiesResponsiveOrientation({ page }: { page: Page }): Promise<
   await expect(root).toHaveAttribute('data-orientation', 'vertical');
   await expect(trigger).toHaveAttribute('data-orientation', 'vertical');
   await expect(trigger).toHaveCSS('min-height', '8px');
-  await expect(trigger.locator('.leverui-splitter__resizeTriggerIndicator')).toHaveCSS(
-    'width',
-    '24px',
-  );
+  await expect(trigger.locator('.lui-splitter__resizeTriggerIndicator')).toHaveCSS('width', '24px');
   await expect(panel).toHaveAttribute('data-original-panel', 'true');
   const vertical = await panelBox(panel);
   expect(vertical.height).toBeLessThan(before.height);

@@ -6,7 +6,7 @@ const breakpoints = ['sm', 'md', 'lg', 'xl', '2xl'];
 export const buttonContract = {
   family: 'button',
   required: [
-    '.leverui-button',
+    '.lui-button',
     ...sizes.map(
       /** Require each public base size. */
       (size) => `[data-size='${size}']`,

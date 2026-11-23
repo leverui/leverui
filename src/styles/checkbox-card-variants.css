@@ -1,66 +1,62 @@
-@layer leverui.recipes {
-  .leverui-checkbox-card:not([data-unstyled]) {
-    border-width: var(--leverui-private-checkbox-card-border-width, 0);
-    border-color: var(--leverui-private-checkbox-card-border-color, currentColor);
-    background-color: var(--leverui-private-checkbox-card-background, transparent);
-    color: var(--leverui-private-checkbox-card-color, inherit);
+@layer lui.recipes {
+  .lui-checkbox-card:not([data-unstyled]) {
+    border-width: var(--lui-private-checkbox-card-border-width, 0);
+    border-color: var(--lui-private-checkbox-card-border-color, currentColor);
+    background-color: var(--lui-private-checkbox-card-background, transparent);
+    color: var(--lui-private-checkbox-card-color, inherit);
 
     &[data-variant='surface'] {
-      --leverui-private-checkbox-card-border-width: 1px;
-      --leverui-private-checkbox-card-border-color: var(--leverui-colors-border);
-      --leverui-private-checkbox-card-checked-background: var(
-        --leverui-colors-color-palette-subtle
-      );
-      --leverui-private-checkbox-card-checked-color: var(--leverui-colors-color-palette-fg);
-      --leverui-private-checkbox-card-checked-border: var(--leverui-colors-color-palette-muted);
-      --leverui-private-checkbox-card-disabled-background: var(--leverui-colors-bg-muted);
+      --lui-private-checkbox-card-border-width: 1px;
+      --lui-private-checkbox-card-border-color: var(--lui-colors-border);
+      --lui-private-checkbox-card-checked-background: var(--lui-colors-color-palette-subtle);
+      --lui-private-checkbox-card-checked-color: var(--lui-colors-color-palette-fg);
+      --lui-private-checkbox-card-checked-border: var(--lui-colors-color-palette-muted);
+      --lui-private-checkbox-card-disabled-background: var(--lui-colors-bg-muted);
     }
     &[data-variant='subtle'] {
-      --leverui-private-checkbox-card-background: var(--leverui-colors-bg-muted);
-      --leverui-private-checkbox-card-checked-control-background: var(
-        --leverui-colors-color-palette-muted
-      );
-      --leverui-private-checkbox-card-checked-control-color: var(--leverui-colors-color-palette-fg);
+      --lui-private-checkbox-card-background: var(--lui-colors-bg-muted);
+      --lui-private-checkbox-card-checked-control-background: var(--lui-colors-color-palette-muted);
+      --lui-private-checkbox-card-checked-control-color: var(--lui-colors-color-palette-fg);
     }
     &[data-variant='outline'] {
-      --leverui-private-checkbox-card-border-width: 1px;
-      --leverui-private-checkbox-card-border-color: var(--leverui-colors-border);
-      --leverui-private-checkbox-card-checked-border: var(--leverui-colors-color-palette-solid);
-      --leverui-private-checkbox-card-checked-shadow: inset 0 0 0 1px
-        var(--leverui-colors-color-palette-solid);
+      --lui-private-checkbox-card-border-width: 1px;
+      --lui-private-checkbox-card-border-color: var(--lui-colors-border);
+      --lui-private-checkbox-card-checked-border: var(--lui-colors-color-palette-solid);
+      --lui-private-checkbox-card-checked-shadow: inset 0 0 0 1px
+        var(--lui-colors-color-palette-solid);
     }
     &[data-variant='solid'] {
-      --leverui-private-checkbox-card-border-width: 1px;
-      --leverui-private-checkbox-card-checked-background: var(--leverui-colors-color-palette-solid);
-      --leverui-private-checkbox-card-checked-color: var(--leverui-colors-color-palette-contrast);
-      --leverui-private-checkbox-card-checked-border: var(--leverui-colors-color-palette-solid);
+      --lui-private-checkbox-card-border-width: 1px;
+      --lui-private-checkbox-card-checked-background: var(--lui-colors-color-palette-solid);
+      --lui-private-checkbox-card-checked-color: var(--lui-colors-color-palette-contrast);
+      --lui-private-checkbox-card-checked-border: var(--lui-colors-color-palette-solid);
     }
 
     &[data-state='checked'] {
       background-color: var(
-        --leverui-private-checkbox-card-checked-background,
-        var(--leverui-private-checkbox-card-background, transparent)
+        --lui-private-checkbox-card-checked-background,
+        var(--lui-private-checkbox-card-background, transparent)
       );
       color: var(
-        --leverui-private-checkbox-card-checked-color,
-        var(--leverui-private-checkbox-card-color, inherit)
+        --lui-private-checkbox-card-checked-color,
+        var(--lui-private-checkbox-card-color, inherit)
       );
       border-color: var(
-        --leverui-private-checkbox-card-checked-border,
-        var(--leverui-private-checkbox-card-border-color, currentColor)
+        --lui-private-checkbox-card-checked-border,
+        var(--lui-private-checkbox-card-border-color, currentColor)
       );
-      box-shadow: var(--leverui-private-checkbox-card-checked-shadow, none);
+      box-shadow: var(--lui-private-checkbox-card-checked-shadow, none);
     }
     &[data-disabled] {
       background-color: var(
-        --leverui-private-checkbox-card-disabled-background,
-        var(--leverui-private-checkbox-card-background, transparent)
+        --lui-private-checkbox-card-disabled-background,
+        var(--lui-private-checkbox-card-background, transparent)
       );
     }
   }
 
-  .leverui-checkbox-card__control:not([data-unstyled])[data-state='checked'] {
-    background-color: var(--leverui-private-checkbox-card-checked-control-background, transparent);
-    color: var(--leverui-private-checkbox-card-checked-control-color, inherit);
+  .lui-checkbox-card__control:not([data-unstyled])[data-state='checked'] {
+    background-color: var(--lui-private-checkbox-card-checked-control-background, transparent);
+    color: var(--lui-private-checkbox-card-checked-control-color, inherit);
   }
 }

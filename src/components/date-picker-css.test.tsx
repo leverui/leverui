@@ -38,11 +38,11 @@ function verifiesDatePickerAppearanceHooks(): void {
   );
   const root = screen.getByTestId('root');
   const input = screen.getByTestId('input');
-  expect(root).toHaveClass('leverui-date-picker__root', 'consumer-date-picker');
+  expect(root).toHaveClass('lui-date-picker__root', 'consumer-date-picker');
   expect(root).toHaveAttribute('data-size', 'xs');
-  expect(input).toHaveClass('leverui-date-picker__input', 'consumer-input');
+  expect(input).toHaveClass('lui-date-picker__input', 'consumer-input');
   expect(input).toHaveAttribute('data-variant', 'outline');
-  expect(input).toHaveAttribute('data-leverui-color-palette', 'red');
+  expect(input).toHaveAttribute('data-lui-color-palette', 'red');
   expect(root).toHaveStyle({ width: '280px' });
   setLarge(true);
   flush();
@@ -54,7 +54,7 @@ function verifiesDatePickerAppearanceHooks(): void {
   expect(input).toHaveAttribute('data-variant', 'flushed');
   expect(input).toHaveAttribute('data-hide-outside-days', 'true');
   expect(input).toHaveAttribute('data-hide-outside-days-lg', 'false');
-  expect(input).toHaveAttribute('data-leverui-color-palette', 'blue');
+  expect(input).toHaveAttribute('data-lui-color-palette', 'blue');
   expect(input).toHaveAttribute('data-unstyled', '');
 }
 

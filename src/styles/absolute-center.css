@@ -1,13 +1,13 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   :where([dir='ltr']) {
-    --leverui-private-absolute-center-inline-translate: -50%;
+    --lui-private-absolute-center-inline-translate: -50%;
   }
 
   :where([dir='rtl']) {
-    --leverui-private-absolute-center-inline-translate: 50%;
+    --lui-private-absolute-center-inline-translate: 50%;
   }
 
-  .leverui-absolute-center:not([data-unstyled]) {
+  .lui-absolute-center:not([data-unstyled]) {
     position: absolute;
     display: flex;
     align-items: center;
@@ -24,7 +24,7 @@
     }
 
     &[data-axis='horizontal'] {
-      translate: var(--leverui-private-absolute-center-inline-translate, -50%);
+      translate: var(--lui-private-absolute-center-inline-translate, -50%);
     }
 
     &[data-axis='vertical'] {
@@ -32,7 +32,7 @@
     }
 
     &[data-axis='both'] {
-      translate: var(--leverui-private-absolute-center-inline-translate, -50%) -50%;
+      translate: var(--lui-private-absolute-center-inline-translate, -50%) -50%;
     }
   }
 }

@@ -11,11 +11,11 @@ async function verifiesThemePolymorphism({ page }: { page: Page }): Promise<void
   await expect(section).toHaveAttribute('data-ref-tag', 'section');
 
   await expect(child).toHaveJSProperty('tagName', 'BUTTON');
-  await expect(child).toHaveAttribute('data-leverui-color-mode', 'dark');
+  await expect(child).toHaveAttribute('data-lui-color-mode', 'dark');
   await expect(child).toHaveAttribute('data-parent-attribute', 'true');
   await expect(child).toHaveAttribute('data-parent-ref', 'true');
   await expect(child).toHaveAttribute('data-child-ref', 'true');
-  await expect(child).toHaveClass(/leverui-theme/);
+  await expect(child).toHaveClass(/lui-theme/);
   await expect(child).toHaveClass(/parent-theme/);
   await expect(child).toHaveClass(/child-theme/);
   await expect(child).toHaveCSS('color', 'rgb(12, 34, 56)');

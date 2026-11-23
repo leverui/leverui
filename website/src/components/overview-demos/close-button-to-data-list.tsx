@@ -20,7 +20,7 @@ import { For, type Component } from 'solid-js';
 import { type JSX } from '@solidjs/web';
 import { PopupSurface } from './shared';
 
-const muted = 'var(--leverui-colors-gray-muted)';
+const muted = 'var(--lui-colors-gray-muted)';
 const tint = 'var(--overview-tint)';
 const actions = [
   { label: 'New file', value: 'new-file' },
@@ -158,7 +158,7 @@ function CommandDemo(): JSX.Element {
 function ContainerDemo(): JSX.Element {
   return (
     <Box style={{ width: '100%', padding: '12px 0', background: muted }}>
-      <Container style={{ '--leverui-container-max-width': '150px' }}>
+      <Container style={{ '--lui-container-max-width': '150px' }}>
         <Stack gap="2">
           <Box style={{ height: '16px', background: tint }} />
           <Box style={{ height: '32px', background: tint }} />

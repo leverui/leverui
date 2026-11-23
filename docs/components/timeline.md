@@ -70,17 +70,17 @@ wins. The part classes also work on plain HTML elements inside a Timeline root.
 
 Import `@leverui/components/styles.css` first.
 
-- `.leverui-timeline__root`
-- `.leverui-timeline__item`
-- `.leverui-timeline__connector`
-- `.leverui-timeline__separator`
-- `.leverui-timeline__indicator`
-- `.leverui-timeline__content`
-- `.leverui-timeline__title`
-- `.leverui-timeline__description`
+- `.lui-timeline__root`
+- `.lui-timeline__item`
+- `.lui-timeline__connector`
+- `.lui-timeline__separator`
+- `.lui-timeline__indicator`
+- `.lui-timeline__content`
+- `.lui-timeline__title`
+- `.lui-timeline__description`
 
 ```css
-.leverui-timeline__title {
+.lui-timeline__title {
   letter-spacing: 0.01em;
 }
 ```
@@ -89,12 +89,12 @@ The root has `data-size`, `data-variant`, and `data-show-last-separator`, plus
 one per screen size you set, such as `data-size-md`. `class` and `style` work
 on each part.
 
-Set `--leverui-timeline-indicator-size` on the root to resize the markers. The
+Set `--lui-timeline-indicator-size` on the root to resize the markers. The
 connector line stays centered. Other variables:
-`--leverui-timeline-indicator-bg`, `--leverui-timeline-indicator-color`,
-`--leverui-timeline-line-color`, `--leverui-timeline-line-width`,
-`--leverui-timeline-item-gap`, `--leverui-timeline-content-gap`,
-`--leverui-timeline-title-font-size`.
+`--lui-timeline-indicator-bg`, `--lui-timeline-indicator-color`,
+`--lui-timeline-line-color`, `--lui-timeline-line-width`,
+`--lui-timeline-item-gap`, `--lui-timeline-content-gap`,
+`--lui-timeline-title-font-size`.
 
 ## Explorer
 

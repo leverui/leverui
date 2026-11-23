@@ -106,7 +106,7 @@ export function SliderDraggingIndicator(): JSX.Element {
 /** Render marker indicators with semantic color labels. */
 export function SliderCustomMarkerLabels(): JSX.Element {
   return (
-    <Slider.Root style={{ width: 'var(--leverui-sizes-xs)' }} defaultValue={[50]}>
+    <Slider.Root style={{ width: 'var(--lui-sizes-xs)' }} defaultValue={[50]}>
       <Slider.Control>
         <Slider.Track>
           <Slider.Range />
@@ -121,8 +121,8 @@ export function SliderCustomMarkerLabels(): JSX.Element {
                   <Slider.MarkerIndicator />
                   <Slider.MarkerLabel
                     style={{
-                      color: `var(--leverui-colors-${mark.color.replace('.', '-')})`,
-                      'font-weight': 'var(--leverui-font-weights-medium)',
+                      color: `var(--lui-colors-${mark.color.replace('.', '-')})`,
+                      'font-weight': 'var(--lui-font-weights-medium)',
                     }}
                   >
                     {mark.label}

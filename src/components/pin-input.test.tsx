@@ -28,8 +28,8 @@ function verifiesPinInputComposition(): void {
   const first = screen.getByTestId('pin-first') as HTMLInputElement;
   const second = screen.getByTestId('pin-second') as HTMLInputElement;
   const hidden = screen.getByTestId('pin-hidden') as HTMLInputElement;
-  expect(first.className).toContain('leverui-pin-input__input');
-  expect(screen.getByTestId('pin-control').className).toContain('leverui-pin-input__control');
+  expect(first.className).toContain('lui-pin-input__input');
+  expect(screen.getByTestId('pin-control').className).toContain('lui-pin-input__control');
   expect(first.value).toBe('1');
   expect(second.value).toBe('2');
   expect(first.getAttribute('aria-label')).toBeTruthy();

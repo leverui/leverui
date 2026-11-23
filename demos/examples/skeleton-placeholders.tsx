@@ -7,8 +7,8 @@ export function SkeletonBasic(): JSX.Element {
     <HStack gap="5">
       <SkeletonCircle size="12" />
       <Stack style={{ flex: '1' }}>
-        <Skeleton style={{ height: 'var(--leverui-sizes-5)' }} />
-        <Skeleton style={{ height: 'var(--leverui-sizes-5)', width: '80%' }} />
+        <Skeleton style={{ height: 'var(--lui-sizes-5)' }} />
+        <Skeleton style={{ height: 'var(--lui-sizes-5)', width: '80%' }} />
       </Stack>
     </HStack>
   );
@@ -17,7 +17,7 @@ export function SkeletonBasic(): JSX.Element {
 /** Show avatar, text, and media placeholders for a feed card. */
 export function SkeletonForFeed(): JSX.Element {
   return (
-    <Stack gap="6" style={{ 'max-width': 'var(--leverui-sizes-xs)' }}>
+    <Stack gap="6" style={{ 'max-width': 'var(--lui-sizes-xs)' }}>
       <HStack style={{ width: '100%' }}>
         <SkeletonCircle size="10" />
         <SkeletonText noOfLines={2} />
@@ -38,11 +38,11 @@ export function SkeletonWithVariants(): JSX.Element {
     <Stack gap="5">
       <HStack gap="5">
         <Text style={{ width: '8ch' }}>pulse</Text>
-        <Skeleton style={{ flex: '1', height: 'var(--leverui-sizes-5)' }} variant="pulse" />
+        <Skeleton style={{ flex: '1', height: 'var(--lui-sizes-5)' }} variant="pulse" />
       </HStack>
       <HStack gap="5">
         <Text style={{ width: '8ch' }}>shine</Text>
-        <Skeleton style={{ flex: '1', height: 'var(--leverui-sizes-5)' }} variant="shine" />
+        <Skeleton style={{ flex: '1', height: 'var(--lui-sizes-5)' }} variant="shine" />
       </HStack>
     </Stack>
   );

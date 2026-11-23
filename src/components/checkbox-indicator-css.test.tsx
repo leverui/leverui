@@ -18,7 +18,7 @@ async function verifiesIndicatorState(): Promise<void> {
     ),
   );
   const input = screen.getByRole('checkbox') as HTMLInputElement;
-  const indicator = document.querySelector('.leverui-checkbox__indicator');
+  const indicator = document.querySelector('.lui-checkbox__indicator');
   expect(indicator?.tagName.toLowerCase()).toBe('svg');
   expect(indicator?.getAttribute('data-unstyled')).toBe('');
   expect(indicator?.getAttribute('data-state')).toBe('unchecked');
@@ -29,7 +29,7 @@ async function verifiesIndicatorState(): Promise<void> {
     /** Observe the primitive's transition on the same SVG element. */
     () => expect(indicator?.getAttribute('data-state')).toBe('checked'),
   );
-  expect(document.querySelector('.leverui-checkbox__indicator')).toBe(indicator);
+  expect(document.querySelector('.lui-checkbox__indicator')).toBe(indicator);
 }
 
 it('keeps the default SVG and glyph hooks through checked changes', verifiesIndicatorState);

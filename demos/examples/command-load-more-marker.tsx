@@ -21,9 +21,9 @@ export function LoadMoreMarker(props: { loading: boolean; onVisible: () => void 
       ref={marker}
       textStyle="xs"
       style={{
-        'padding-block': 'var(--leverui-spacing-2)',
+        'padding-block': 'var(--lui-spacing-2)',
         'text-align': 'center',
-        color: 'var(--leverui-colors-fg-muted)',
+        color: 'var(--lui-colors-fg-muted)',
       }}
     >
       <Show when={props.loading}>Loading more…</Show>

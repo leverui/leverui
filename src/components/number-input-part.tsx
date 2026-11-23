@@ -78,7 +78,7 @@ function renderNumberInputPartImpl(
         return composeRecipeClassNames(
           `number-input__${slot}`,
           undefined,
-          slot === 'input' ? 'leverui-input' : undefined,
+          slot === 'input' ? 'lui-input' : undefined,
           local.class,
           local.className,
         );

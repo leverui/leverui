@@ -1,116 +1,116 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 480px) {
-    .leverui-avatar__root:not([data-unstyled])[data-variant-sm='solid'] {
-      --leverui-private-avatar-background: var(--leverui-colors-color-palette-solid);
-      --leverui-private-avatar-foreground: var(--leverui-colors-color-palette-contrast);
-      --leverui-private-avatar-border-width: 0;
-      --leverui-private-avatar-border-color: var(--leverui-colors-border);
+    .lui-avatar__root:not([data-unstyled])[data-variant-sm='solid'] {
+      --lui-private-avatar-background: var(--lui-colors-color-palette-solid);
+      --lui-private-avatar-foreground: var(--lui-colors-color-palette-contrast);
+      --lui-private-avatar-border-width: 0;
+      --lui-private-avatar-border-color: var(--lui-colors-border);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-variant-sm='subtle'] {
-      --leverui-private-avatar-background: var(--leverui-colors-color-palette-muted);
-      --leverui-private-avatar-foreground: var(--leverui-colors-color-palette-fg);
-      --leverui-private-avatar-border-width: 0;
-      --leverui-private-avatar-border-color: var(--leverui-colors-border);
+    .lui-avatar__root:not([data-unstyled])[data-variant-sm='subtle'] {
+      --lui-private-avatar-background: var(--lui-colors-color-palette-muted);
+      --lui-private-avatar-foreground: var(--lui-colors-color-palette-fg);
+      --lui-private-avatar-border-width: 0;
+      --lui-private-avatar-border-color: var(--lui-colors-border);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-variant-sm='outline'] {
-      --leverui-private-avatar-background: transparent;
-      --leverui-private-avatar-foreground: var(--leverui-colors-color-palette-fg);
-      --leverui-private-avatar-border-width: 1px;
-      --leverui-private-avatar-border-color: var(
-        --leverui-colors-color-palette-border,
-        var(--leverui-colors-color-palette-muted)
+    .lui-avatar__root:not([data-unstyled])[data-variant-sm='outline'] {
+      --lui-private-avatar-background: transparent;
+      --lui-private-avatar-foreground: var(--lui-colors-color-palette-fg);
+      --lui-private-avatar-border-width: 1px;
+      --lui-private-avatar-border-color: var(
+        --lui-colors-color-palette-border,
+        var(--lui-colors-color-palette-muted)
       );
     }
   }
   @media (min-width: 768px) {
-    .leverui-avatar__root:not([data-unstyled])[data-variant-md='solid'] {
-      --leverui-private-avatar-background: var(--leverui-colors-color-palette-solid);
-      --leverui-private-avatar-foreground: var(--leverui-colors-color-palette-contrast);
-      --leverui-private-avatar-border-width: 0;
-      --leverui-private-avatar-border-color: var(--leverui-colors-border);
+    .lui-avatar__root:not([data-unstyled])[data-variant-md='solid'] {
+      --lui-private-avatar-background: var(--lui-colors-color-palette-solid);
+      --lui-private-avatar-foreground: var(--lui-colors-color-palette-contrast);
+      --lui-private-avatar-border-width: 0;
+      --lui-private-avatar-border-color: var(--lui-colors-border);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-variant-md='subtle'] {
-      --leverui-private-avatar-background: var(--leverui-colors-color-palette-muted);
-      --leverui-private-avatar-foreground: var(--leverui-colors-color-palette-fg);
-      --leverui-private-avatar-border-width: 0;
-      --leverui-private-avatar-border-color: var(--leverui-colors-border);
+    .lui-avatar__root:not([data-unstyled])[data-variant-md='subtle'] {
+      --lui-private-avatar-background: var(--lui-colors-color-palette-muted);
+      --lui-private-avatar-foreground: var(--lui-colors-color-palette-fg);
+      --lui-private-avatar-border-width: 0;
+      --lui-private-avatar-border-color: var(--lui-colors-border);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-variant-md='outline'] {
-      --leverui-private-avatar-background: transparent;
-      --leverui-private-avatar-foreground: var(--leverui-colors-color-palette-fg);
-      --leverui-private-avatar-border-width: 1px;
-      --leverui-private-avatar-border-color: var(
-        --leverui-colors-color-palette-border,
-        var(--leverui-colors-color-palette-muted)
+    .lui-avatar__root:not([data-unstyled])[data-variant-md='outline'] {
+      --lui-private-avatar-background: transparent;
+      --lui-private-avatar-foreground: var(--lui-colors-color-palette-fg);
+      --lui-private-avatar-border-width: 1px;
+      --lui-private-avatar-border-color: var(
+        --lui-colors-color-palette-border,
+        var(--lui-colors-color-palette-muted)
       );
     }
   }
   @media (min-width: 1024px) {
-    .leverui-avatar__root:not([data-unstyled])[data-variant-lg='solid'] {
-      --leverui-private-avatar-background: var(--leverui-colors-color-palette-solid);
-      --leverui-private-avatar-foreground: var(--leverui-colors-color-palette-contrast);
-      --leverui-private-avatar-border-width: 0;
-      --leverui-private-avatar-border-color: var(--leverui-colors-border);
+    .lui-avatar__root:not([data-unstyled])[data-variant-lg='solid'] {
+      --lui-private-avatar-background: var(--lui-colors-color-palette-solid);
+      --lui-private-avatar-foreground: var(--lui-colors-color-palette-contrast);
+      --lui-private-avatar-border-width: 0;
+      --lui-private-avatar-border-color: var(--lui-colors-border);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-variant-lg='subtle'] {
-      --leverui-private-avatar-background: var(--leverui-colors-color-palette-muted);
-      --leverui-private-avatar-foreground: var(--leverui-colors-color-palette-fg);
-      --leverui-private-avatar-border-width: 0;
-      --leverui-private-avatar-border-color: var(--leverui-colors-border);
+    .lui-avatar__root:not([data-unstyled])[data-variant-lg='subtle'] {
+      --lui-private-avatar-background: var(--lui-colors-color-palette-muted);
+      --lui-private-avatar-foreground: var(--lui-colors-color-palette-fg);
+      --lui-private-avatar-border-width: 0;
+      --lui-private-avatar-border-color: var(--lui-colors-border);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-variant-lg='outline'] {
-      --leverui-private-avatar-background: transparent;
-      --leverui-private-avatar-foreground: var(--leverui-colors-color-palette-fg);
-      --leverui-private-avatar-border-width: 1px;
-      --leverui-private-avatar-border-color: var(
-        --leverui-colors-color-palette-border,
-        var(--leverui-colors-color-palette-muted)
+    .lui-avatar__root:not([data-unstyled])[data-variant-lg='outline'] {
+      --lui-private-avatar-background: transparent;
+      --lui-private-avatar-foreground: var(--lui-colors-color-palette-fg);
+      --lui-private-avatar-border-width: 1px;
+      --lui-private-avatar-border-color: var(
+        --lui-colors-color-palette-border,
+        var(--lui-colors-color-palette-muted)
       );
     }
   }
   @media (min-width: 1280px) {
-    .leverui-avatar__root:not([data-unstyled])[data-variant-xl='solid'] {
-      --leverui-private-avatar-background: var(--leverui-colors-color-palette-solid);
-      --leverui-private-avatar-foreground: var(--leverui-colors-color-palette-contrast);
-      --leverui-private-avatar-border-width: 0;
-      --leverui-private-avatar-border-color: var(--leverui-colors-border);
+    .lui-avatar__root:not([data-unstyled])[data-variant-xl='solid'] {
+      --lui-private-avatar-background: var(--lui-colors-color-palette-solid);
+      --lui-private-avatar-foreground: var(--lui-colors-color-palette-contrast);
+      --lui-private-avatar-border-width: 0;
+      --lui-private-avatar-border-color: var(--lui-colors-border);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-variant-xl='subtle'] {
-      --leverui-private-avatar-background: var(--leverui-colors-color-palette-muted);
-      --leverui-private-avatar-foreground: var(--leverui-colors-color-palette-fg);
-      --leverui-private-avatar-border-width: 0;
-      --leverui-private-avatar-border-color: var(--leverui-colors-border);
+    .lui-avatar__root:not([data-unstyled])[data-variant-xl='subtle'] {
+      --lui-private-avatar-background: var(--lui-colors-color-palette-muted);
+      --lui-private-avatar-foreground: var(--lui-colors-color-palette-fg);
+      --lui-private-avatar-border-width: 0;
+      --lui-private-avatar-border-color: var(--lui-colors-border);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-variant-xl='outline'] {
-      --leverui-private-avatar-background: transparent;
-      --leverui-private-avatar-foreground: var(--leverui-colors-color-palette-fg);
-      --leverui-private-avatar-border-width: 1px;
-      --leverui-private-avatar-border-color: var(
-        --leverui-colors-color-palette-border,
-        var(--leverui-colors-color-palette-muted)
+    .lui-avatar__root:not([data-unstyled])[data-variant-xl='outline'] {
+      --lui-private-avatar-background: transparent;
+      --lui-private-avatar-foreground: var(--lui-colors-color-palette-fg);
+      --lui-private-avatar-border-width: 1px;
+      --lui-private-avatar-border-color: var(
+        --lui-colors-color-palette-border,
+        var(--lui-colors-color-palette-muted)
       );
     }
   }
   @media (min-width: 1536px) {
-    .leverui-avatar__root:not([data-unstyled])[data-variant-2xl='solid'] {
-      --leverui-private-avatar-background: var(--leverui-colors-color-palette-solid);
-      --leverui-private-avatar-foreground: var(--leverui-colors-color-palette-contrast);
-      --leverui-private-avatar-border-width: 0;
-      --leverui-private-avatar-border-color: var(--leverui-colors-border);
+    .lui-avatar__root:not([data-unstyled])[data-variant-2xl='solid'] {
+      --lui-private-avatar-background: var(--lui-colors-color-palette-solid);
+      --lui-private-avatar-foreground: var(--lui-colors-color-palette-contrast);
+      --lui-private-avatar-border-width: 0;
+      --lui-private-avatar-border-color: var(--lui-colors-border);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-variant-2xl='subtle'] {
-      --leverui-private-avatar-background: var(--leverui-colors-color-palette-muted);
-      --leverui-private-avatar-foreground: var(--leverui-colors-color-palette-fg);
-      --leverui-private-avatar-border-width: 0;
-      --leverui-private-avatar-border-color: var(--leverui-colors-border);
+    .lui-avatar__root:not([data-unstyled])[data-variant-2xl='subtle'] {
+      --lui-private-avatar-background: var(--lui-colors-color-palette-muted);
+      --lui-private-avatar-foreground: var(--lui-colors-color-palette-fg);
+      --lui-private-avatar-border-width: 0;
+      --lui-private-avatar-border-color: var(--lui-colors-border);
     }
-    .leverui-avatar__root:not([data-unstyled])[data-variant-2xl='outline'] {
-      --leverui-private-avatar-background: transparent;
-      --leverui-private-avatar-foreground: var(--leverui-colors-color-palette-fg);
-      --leverui-private-avatar-border-width: 1px;
-      --leverui-private-avatar-border-color: var(
-        --leverui-colors-color-palette-border,
-        var(--leverui-colors-color-palette-muted)
+    .lui-avatar__root:not([data-unstyled])[data-variant-2xl='outline'] {
+      --lui-private-avatar-background: transparent;
+      --lui-private-avatar-foreground: var(--lui-colors-color-palette-fg);
+      --lui-private-avatar-border-width: 1px;
+      --lui-private-avatar-border-color: var(
+        --lui-colors-color-palette-border,
+        var(--lui-colors-color-palette-muted)
       );
     }
   }

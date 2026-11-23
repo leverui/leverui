@@ -41,7 +41,7 @@ export function DatePickerCalendarControlled(): JSX.Element {
       <Text
         textStyle="sm"
         style={{
-          'font-weight': 'var(--leverui-font-weights-medium)',
+          'font-weight': 'var(--lui-font-weights-medium)',
         }}
       >
         Selected: {value()[0]?.toString() || 'None'}
@@ -65,7 +65,7 @@ export function DatePickerCalendarMultipleMonths(): JSX.Element {
       <DatePicker.Content unstyled>
         <DatePicker.View view="day">
           <DatePicker.Header />
-          <Flex style={{ gap: 'var(--leverui-spacing-4)' }}>
+          <Flex style={{ gap: 'var(--lui-spacing-4)' }}>
             <DatePicker.DayTable />
             <DatePicker.DayTable offset={1} />
           </Flex>

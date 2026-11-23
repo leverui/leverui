@@ -9,10 +9,10 @@ async function verifiesReactivePortal({ page }: { page: Page }): Promise<void> {
   const portalBox = page.getByTestId('portal-box');
 
   await expect(scope).toBeVisible({ timeout: 30_000 });
-  await expect(scope).toHaveAttribute('data-leverui-color-mode', 'dark');
+  await expect(scope).toHaveAttribute('data-lui-color-mode', 'dark');
   await expect(portalScope).toHaveJSProperty('tagName', 'SECTION');
   await expect(portalScope).toHaveAttribute('data-as-child', 'true');
-  await expect(portalScope).toHaveAttribute('data-leverui-color-mode', 'dark');
+  await expect(portalScope).toHaveAttribute('data-lui-color-mode', 'dark');
   await expect(page.getByTestId('reactive-box')).toHaveCSS('background-color', 'rgb(9, 9, 11)');
   await expect(portalBox).toHaveCSS('color', 'rgb(239, 68, 68)');
   await expect(portalScope.getByTestId('portal-box')).toHaveCount(1);
@@ -21,8 +21,8 @@ async function verifiesReactivePortal({ page }: { page: Page }): Promise<void> {
 
   await page.getByRole('button', { name: 'Toggle appearance' }).click();
 
-  await expect(scope).toHaveAttribute('data-leverui-color-mode', 'light');
-  await expect(portalScope).toHaveAttribute('data-leverui-color-mode', 'light');
+  await expect(scope).toHaveAttribute('data-lui-color-mode', 'light');
+  await expect(portalScope).toHaveAttribute('data-lui-color-mode', 'light');
   await expect(page.getByTestId('reactive-box')).toHaveCSS(
     'background-color',
     'rgb(255, 255, 255)',

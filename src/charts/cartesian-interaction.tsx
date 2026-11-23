@@ -36,7 +36,7 @@ export function CartesianInteraction(props: CartesianInteractionProps): JSX.Elem
   return (
     <>
       <rect
-        class="leverui-cartesian-chart__interaction"
+        class="lui-cartesian-chart__interaction"
         x={props.plot.left}
         y={props.plot.top}
         width={props.plot.width - props.plot.left - props.plot.right}
@@ -46,7 +46,7 @@ export function CartesianInteraction(props: CartesianInteractionProps): JSX.Elem
       />
       <Show when={selectedIndex() !== null}>
         <line
-          class="leverui-cartesian-chart__cursor"
+          class="lui-cartesian-chart__cursor"
           x1={chartX(props.plot, selectedIndex() ?? 0, props.data.length)}
           x2={chartX(props.plot, selectedIndex() ?? 0, props.data.length)}
           y1={props.plot.top}
@@ -74,7 +74,7 @@ export function CartesianTooltip(props: CartesianInteractionProps): JSX.Element 
         when={customContent()}
         fallback={
           <div
-            class="leverui-cartesian-chart__tooltip"
+            class="lui-cartesian-chart__tooltip"
             role="tooltip"
             style={{
               left: `${Math.min(props.plot.width - 135, chartX(props.plot, selectedIndex() ?? 0, props.data.length) + 12)}px`,
@@ -84,11 +84,11 @@ export function CartesianTooltip(props: CartesianInteractionProps): JSX.Element 
             <For each={props.series}>
               {/** Show one color-coded value for the active category. */}
               {(series) => (
-                <div class="leverui-cartesian-chart__tooltipItem">
+                <div class="lui-cartesian-chart__tooltipItem">
                   <span
-                    class="leverui-cartesian-chart__tooltipSwatch"
+                    class="lui-cartesian-chart__tooltipSwatch"
                     style={{
-                      '--leverui-private-cartesian-color': chartColor(series.color, series.color),
+                      '--lui-private-cartesian-color': chartColor(series.color, series.color),
                     }}
                   />
                   <span>

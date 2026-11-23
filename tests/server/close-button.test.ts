@@ -20,7 +20,7 @@ function renderCloseButton(props: Parameters<typeof CloseButtonExport>[0]): stri
 function verifiesDefaultCloseButton(): void {
   const markup = renderCloseButton({});
   expect(markup).toMatch(/^<button[^>]*aria-label="Close"[^>]*type="button"/);
-  expect(markup).toContain('class="leverui-button leverui-icon-button leverui-close-button"');
+  expect(markup).toContain('class="lui-button lui-icon-button lui-close-button"');
   expect(markup).toMatch(/<svg[^>]*aria-hidden="true"/);
 }
 

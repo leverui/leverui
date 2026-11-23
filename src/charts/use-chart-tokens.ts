@@ -34,19 +34,17 @@ function scaleSegment(step: string): string {
 export function chartColorToken(key: ChartColor | undefined): string | undefined {
   if (key === undefined) return undefined;
   const isToken = /^[a-z][a-zA-Z]*(?:\.[a-zA-Z0-9]+)+$/.test(key) || singleWordColors.has(key);
-  return isToken ? `var(--leverui-colors-${variableSegment(key)})` : key;
+  return isToken ? `var(--lui-colors-${variableSegment(key)})` : key;
 }
 
 /** Read a size token as its CSS variable, or return a raw CSS length unchanged. */
 export function chartSizeToken(key: ChartSize | undefined): string | undefined {
   if (key === undefined) return undefined;
-  return scaleStep.test(key) || sizeNames.test(key)
-    ? `var(--leverui-sizes-${scaleSegment(key)})`
-    : key;
+  return scaleStep.test(key) || sizeNames.test(key) ? `var(--lui-sizes-${scaleSegment(key)})` : key;
 }
 
 /** Read a spacing token as its CSS variable, or return a raw CSS length unchanged. */
 export function chartSpacingToken(key: ChartSpacing | undefined): string | undefined {
   if (key === undefined) return undefined;
-  return scaleStep.test(key) ? `var(--leverui-spacing-${scaleSegment(key)})` : key;
+  return scaleStep.test(key) ? `var(--lui-spacing-${scaleSegment(key)})` : key;
 }

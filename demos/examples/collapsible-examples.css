@@ -1,11 +1,11 @@
 .collapsible-example-trigger {
-  padding-block: var(--leverui-spacing-3);
+  padding-block: var(--lui-spacing-3);
 }
 
 .collapsible-example-inline-trigger {
   display: flex;
   align-items: center;
-  gap: var(--leverui-spacing-2);
+  gap: var(--lui-spacing-2);
 }
 
 .collapsible-example-disabled-trigger[data-disabled] {
@@ -13,12 +13,12 @@
 }
 
 .collapsible-example-panel {
-  padding: var(--leverui-spacing-4);
-  border: 1px solid var(--leverui-colors-border);
+  padding: var(--lui-spacing-4);
+  border: 1px solid var(--lui-colors-border);
 }
 
 .collapsible-example-rounded-panel {
-  border-radius: var(--leverui-radii-l2);
+  border-radius: var(--lui-radii-l2);
 }
 
 .collapsible-example-preview-content[data-state='closed'] {
@@ -26,7 +26,7 @@
 }
 
 .collapsible-example-preview-trigger {
-  margin-top: var(--leverui-spacing-4);
+  margin-top: var(--lui-spacing-4);
 }
 
 .collapsible-example-down-indicator,
@@ -43,11 +43,11 @@
 }
 
 .collapsible-example-state {
-  font-weight: var(--leverui-font-weights-medium);
+  font-weight: var(--lui-font-weights-medium);
 }
 
 .collapsible-example-description {
-  color: var(--leverui-colors-fg-muted);
+  color: var(--lui-colors-fg-muted);
 }
 
 .collapsible-example-full-content {

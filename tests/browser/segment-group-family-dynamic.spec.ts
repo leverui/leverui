@@ -21,13 +21,10 @@ async function verifiesDynamicItems({ page }: { page: Page }): Promise<void> {
   const indicator = page.getByTestId('segment-dynamic-indicator');
   await expect(radios).toHaveCount(2, { timeout: 30_000 });
   await expect(selected).toBeChecked();
-  await expectIndicatorAligned(indicator, root.locator('.leverui-segment-group__item').nth(1));
+  await expectIndicatorAligned(indicator, root.locator('.lui-segment-group__item').nth(1));
   await expect(root.locator('[aria-hidden="true"]')).toHaveText('◆');
   expect(await form.evaluate(formValue)).toBe('Solid');
-  const smallHeight = await root
-    .locator('.leverui-segment-group__item')
-    .first()
-    .evaluate(itemHeight);
+  const smallHeight = await root.locator('.lui-segment-group__item').first().evaluate(itemHeight);
   await root.evaluate(
     /** Mark the machine root so reactive updates cannot silently replace it. */
     (element) => element.setAttribute('data-original-root', 'true'),
@@ -44,19 +41,16 @@ async function verifiesDynamicItems({ page }: { page: Page }): Promise<void> {
   await expect(selected).toBeChecked();
   await expect(selected).toHaveAttribute('data-original-radio', 'true');
   await expect(root.locator('[aria-hidden="true"]')).toHaveText('◇');
-  await expectIndicatorAligned(indicator, root.locator('.leverui-segment-group__item').nth(1));
+  await expectIndicatorAligned(indicator, root.locator('.lui-segment-group__item').nth(1));
   expect(await form.evaluate(formValue)).toBe('Solid');
   await page.getByTestId('segment-toggle-size').click();
-  const largeHeight = await root
-    .locator('.leverui-segment-group__item')
-    .first()
-    .evaluate(itemHeight);
+  const largeHeight = await root.locator('.lui-segment-group__item').first().evaluate(itemHeight);
   expect(largeHeight).not.toBe(smallHeight);
   await expect(root).toHaveAttribute('data-original-root', 'true');
-  await expectIndicatorAligned(indicator, root.locator('.leverui-segment-group__item').nth(1));
+  await expectIndicatorAligned(indicator, root.locator('.lui-segment-group__item').nth(1));
   await root.getByText('Vue').click();
   await expect(root.getByRole('radio', { name: 'Vue' })).toBeChecked();
-  await expectIndicatorAligned(indicator, root.locator('.leverui-segment-group__item').nth(2));
+  await expectIndicatorAligned(indicator, root.locator('.lui-segment-group__item').nth(2));
   expect(await form.evaluate(formValue)).toBe('Vue');
 }
 

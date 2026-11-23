@@ -31,13 +31,13 @@ function renderRequest(buttonClass: string): string {
 /** Keep server markup deterministic without a style cache shared across requests. */
 function verifiesRequestIsolation(): void {
   const first = renderRequest('first-consumer');
-  expect(first).toContain('leverui-box consumer-box');
-  expect(first).toContain('leverui-button first-consumer');
+  expect(first).toContain('lui-box consumer-box');
+  expect(first).toContain('lui-button first-consumer');
   expect(first).not.toContain('<style');
   expect(renderRequest('first-consumer')).toBe(first);
 
   const second = renderRequest('second-consumer');
-  expect(second).toContain('leverui-button second-consumer');
+  expect(second).toContain('lui-button second-consumer');
   expect(second).not.toContain('first-consumer');
   expect(renderRequest('first-consumer')).toBe(first);
 }

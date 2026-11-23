@@ -9,13 +9,13 @@ async function verifiesNativePagination({ page }: { page: Page }): Promise<void>
   await expect(root).toHaveAttribute('data-pagination-root');
   await expect(root).toHaveAttribute('data-received-root-ref', 'true');
   await expect(root).toHaveAttribute('data-unstyled', '');
-  await expect(root).toHaveClass(/leverui-pagination__root/);
+  await expect(root).toHaveClass(/lui-pagination__root/);
   await expect(text).toHaveAttribute('data-received-text-ref', 'true');
   await expect(text).toHaveAttribute('data-unstyled', '');
-  await expect(text).toHaveClass(/leverui-pagination__page-text/);
+  await expect(text).toHaveClass(/lui-pagination__page-text/);
   await expect(text).toHaveCSS('font-weight', '400');
   await page.addStyleTag({
-    content: '.leverui-pagination__page-text { font-weight: 600; }',
+    content: '.lui-pagination__page-text { font-weight: 600; }',
   });
   await expect(text).toHaveCSS('font-weight', '600');
   await root.getByRole('button', { name: 'page 2' }).click();

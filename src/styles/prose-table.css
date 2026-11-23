@@ -1,5 +1,5 @@
-@layer leverui.recipes {
-  .leverui-prose:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-prose:not([data-unstyled]) {
     & :where(table):not(.not-prose, .not-prose *) {
       width: 100%;
       table-layout: auto;
@@ -9,16 +9,16 @@
     }
     & :where(thead):not(.not-prose, .not-prose *) {
       border-bottom-width: 1px;
-      color: var(--leverui-colors-fg);
+      color: var(--lui-colors-fg);
     }
     & :where(tbody tr):not(.not-prose, .not-prose *) {
       border-bottom-width: 1px;
-      border-bottom-color: var(--leverui-colors-border);
+      border-bottom-color: var(--lui-colors-border);
     }
     & :where(thead th):not(.not-prose, .not-prose *) {
       padding-inline: 1em;
       padding-bottom: 0.65em;
-      font-weight: var(--leverui-font-weights-medium);
+      font-weight: var(--lui-font-weights-medium);
       text-align: start;
     }
     & :where(tbody td, tfoot td):not(.not-prose, .not-prose *) {
@@ -43,10 +43,10 @@
       font-size: 0.85em;
       line-height: 1.25em;
       margin-top: 0.85em;
-      color: var(--leverui-colors-fg-muted);
+      color: var(--lui-colors-fg-muted);
     }
     & :where(h1, h2, h3, h4, h5, h6):not(.not-prose, .not-prose *) {
-      color: var(--leverui-colors-fg);
+      color: var(--lui-colors-fg);
       font-weight: 600;
     }
   }

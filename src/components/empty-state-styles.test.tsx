@@ -29,9 +29,9 @@ function verifiesNativeCssScopes(): void {
   const inner = screen.getByTestId('inner');
   expect(outer.getAttribute('data-size')).toBe('sm');
   expect(inner.getAttribute('data-size')).toBe('md');
-  expect(
-    screen.getByTestId('outer-content').classList.contains('leverui-empty-state__content'),
-  ).toBe(true);
+  expect(screen.getByTestId('outer-content').classList.contains('lui-empty-state__content')).toBe(
+    true,
+  );
 
   setLarge(true);
   flush();

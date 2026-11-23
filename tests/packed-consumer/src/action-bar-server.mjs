@@ -31,7 +31,7 @@ function renderPackedActionBar() {
 }
 
 const markup = renderPackedActionBar();
-assert.match(markup, /leverui-action-bar__content/);
+assert.match(markup, /lui-action-bar__content/);
 assert.match(markup, /data-placement="bottom-start"/);
 assert.match(markup, /1 selected/);
 assert.match(markup, /type="button"/);

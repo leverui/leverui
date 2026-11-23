@@ -148,21 +148,21 @@ so the rating logic and the CSS use the same direction.
 
 ## Customize with CSS
 
-Classes: `.leverui-rating-group__root`, `__label`, `__control`, `__item`,
+Classes: `.lui-rating-group__root`, `__label`, `__control`, `__item`,
 `__itemIndicator`. The root has `data-size`, a `data-size-*` attribute for each
 breakpoint, and attributes for selection, hover, disabled, and focus. The
 indicator has `data-highlighted`, `data-checked`, and `data-half`.
 
-Per-group variables: `--leverui-rating-group-item-font-size`,
-`--leverui-rating-group-item-line-height`,
-`--leverui-rating-group-background-color`,
-`--leverui-rating-group-foreground-color`.
+Per-group variables: `--lui-rating-group-item-font-size`,
+`--lui-rating-group-item-line-height`,
+`--lui-rating-group-background-color`,
+`--lui-rating-group-foreground-color`.
 
 ```css
 .product-rating {
-  --leverui-rating-group-foreground-color: #ef4444;
-  --leverui-rating-group-background-color: #e5e7eb;
-  --leverui-rating-group-item-font-size: 1.75rem;
+  --lui-rating-group-foreground-color: #ef4444;
+  --lui-rating-group-background-color: #e5e7eb;
+  --lui-rating-group-item-font-size: 1.75rem;
 }
 ```
 

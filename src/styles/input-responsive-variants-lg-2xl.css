@@ -1,97 +1,97 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 1024px) {
-    .leverui-input:not([data-unstyled])[data-variant-lg='outline'] {
-      --leverui-private-input-background: transparent;
-      --leverui-private-input-border-width: 1px;
-      --leverui-private-input-border-color: var(--leverui-colors-border);
-      --leverui-private-input-radius: var(--leverui-radii-l2);
-      --leverui-private-input-padding: var(--leverui-private-input-size-padding);
-      --leverui-private-input-focus-outline-width: var(--focus-ring-width, 1px);
-      --leverui-private-input-focus-shadow: none;
+    .lui-input:not([data-unstyled])[data-variant-lg='outline'] {
+      --lui-private-input-background: transparent;
+      --lui-private-input-border-width: 1px;
+      --lui-private-input-border-color: var(--lui-colors-border);
+      --lui-private-input-radius: var(--lui-radii-l2);
+      --lui-private-input-padding: var(--lui-private-input-size-padding);
+      --lui-private-input-focus-outline-width: var(--focus-ring-width, 1px);
+      --lui-private-input-focus-shadow: none;
     }
 
-    .leverui-input:not([data-unstyled])[data-variant-lg='subtle'] {
-      --leverui-private-input-background: var(--leverui-colors-bg-muted);
-      --leverui-private-input-border-width: 1px;
-      --leverui-private-input-border-color: transparent;
-      --leverui-private-input-radius: var(--leverui-radii-l2);
-      --leverui-private-input-padding: var(--leverui-private-input-size-padding);
-      --leverui-private-input-focus-outline-width: var(--focus-ring-width, 1px);
-      --leverui-private-input-focus-shadow: none;
+    .lui-input:not([data-unstyled])[data-variant-lg='subtle'] {
+      --lui-private-input-background: var(--lui-colors-bg-muted);
+      --lui-private-input-border-width: 1px;
+      --lui-private-input-border-color: transparent;
+      --lui-private-input-radius: var(--lui-radii-l2);
+      --lui-private-input-padding: var(--lui-private-input-size-padding);
+      --lui-private-input-focus-outline-width: var(--focus-ring-width, 1px);
+      --lui-private-input-focus-shadow: none;
     }
 
-    .leverui-input:not([data-unstyled])[data-variant-lg='flushed'] {
-      --leverui-private-input-background: transparent;
-      --leverui-private-input-border-width: 0 0 1px;
-      --leverui-private-input-border-color: var(--leverui-colors-border);
-      --leverui-private-input-radius: 0;
-      --leverui-private-input-padding: 0;
-      --leverui-private-input-focus-outline-width: 0;
-      --leverui-private-input-focus-shadow: 0 1px 0 0 var(--leverui-private-input-focus-color);
+    .lui-input:not([data-unstyled])[data-variant-lg='flushed'] {
+      --lui-private-input-background: transparent;
+      --lui-private-input-border-width: 0 0 1px;
+      --lui-private-input-border-color: var(--lui-colors-border);
+      --lui-private-input-radius: 0;
+      --lui-private-input-padding: 0;
+      --lui-private-input-focus-outline-width: 0;
+      --lui-private-input-focus-shadow: 0 1px 0 0 var(--lui-private-input-focus-color);
     }
   }
 
   @media (min-width: 1280px) {
-    .leverui-input:not([data-unstyled])[data-variant-xl='outline'] {
-      --leverui-private-input-background: transparent;
-      --leverui-private-input-border-width: 1px;
-      --leverui-private-input-border-color: var(--leverui-colors-border);
-      --leverui-private-input-radius: var(--leverui-radii-l2);
-      --leverui-private-input-padding: var(--leverui-private-input-size-padding);
-      --leverui-private-input-focus-outline-width: var(--focus-ring-width, 1px);
-      --leverui-private-input-focus-shadow: none;
+    .lui-input:not([data-unstyled])[data-variant-xl='outline'] {
+      --lui-private-input-background: transparent;
+      --lui-private-input-border-width: 1px;
+      --lui-private-input-border-color: var(--lui-colors-border);
+      --lui-private-input-radius: var(--lui-radii-l2);
+      --lui-private-input-padding: var(--lui-private-input-size-padding);
+      --lui-private-input-focus-outline-width: var(--focus-ring-width, 1px);
+      --lui-private-input-focus-shadow: none;
     }
 
-    .leverui-input:not([data-unstyled])[data-variant-xl='subtle'] {
-      --leverui-private-input-background: var(--leverui-colors-bg-muted);
-      --leverui-private-input-border-width: 1px;
-      --leverui-private-input-border-color: transparent;
-      --leverui-private-input-radius: var(--leverui-radii-l2);
-      --leverui-private-input-padding: var(--leverui-private-input-size-padding);
-      --leverui-private-input-focus-outline-width: var(--focus-ring-width, 1px);
-      --leverui-private-input-focus-shadow: none;
+    .lui-input:not([data-unstyled])[data-variant-xl='subtle'] {
+      --lui-private-input-background: var(--lui-colors-bg-muted);
+      --lui-private-input-border-width: 1px;
+      --lui-private-input-border-color: transparent;
+      --lui-private-input-radius: var(--lui-radii-l2);
+      --lui-private-input-padding: var(--lui-private-input-size-padding);
+      --lui-private-input-focus-outline-width: var(--focus-ring-width, 1px);
+      --lui-private-input-focus-shadow: none;
     }
 
-    .leverui-input:not([data-unstyled])[data-variant-xl='flushed'] {
-      --leverui-private-input-background: transparent;
-      --leverui-private-input-border-width: 0 0 1px;
-      --leverui-private-input-border-color: var(--leverui-colors-border);
-      --leverui-private-input-radius: 0;
-      --leverui-private-input-padding: 0;
-      --leverui-private-input-focus-outline-width: 0;
-      --leverui-private-input-focus-shadow: 0 1px 0 0 var(--leverui-private-input-focus-color);
+    .lui-input:not([data-unstyled])[data-variant-xl='flushed'] {
+      --lui-private-input-background: transparent;
+      --lui-private-input-border-width: 0 0 1px;
+      --lui-private-input-border-color: var(--lui-colors-border);
+      --lui-private-input-radius: 0;
+      --lui-private-input-padding: 0;
+      --lui-private-input-focus-outline-width: 0;
+      --lui-private-input-focus-shadow: 0 1px 0 0 var(--lui-private-input-focus-color);
     }
   }
 
   @media (min-width: 1536px) {
-    .leverui-input:not([data-unstyled])[data-variant-2xl='outline'] {
-      --leverui-private-input-background: transparent;
-      --leverui-private-input-border-width: 1px;
-      --leverui-private-input-border-color: var(--leverui-colors-border);
-      --leverui-private-input-radius: var(--leverui-radii-l2);
-      --leverui-private-input-padding: var(--leverui-private-input-size-padding);
-      --leverui-private-input-focus-outline-width: var(--focus-ring-width, 1px);
-      --leverui-private-input-focus-shadow: none;
+    .lui-input:not([data-unstyled])[data-variant-2xl='outline'] {
+      --lui-private-input-background: transparent;
+      --lui-private-input-border-width: 1px;
+      --lui-private-input-border-color: var(--lui-colors-border);
+      --lui-private-input-radius: var(--lui-radii-l2);
+      --lui-private-input-padding: var(--lui-private-input-size-padding);
+      --lui-private-input-focus-outline-width: var(--focus-ring-width, 1px);
+      --lui-private-input-focus-shadow: none;
     }
 
-    .leverui-input:not([data-unstyled])[data-variant-2xl='subtle'] {
-      --leverui-private-input-background: var(--leverui-colors-bg-muted);
-      --leverui-private-input-border-width: 1px;
-      --leverui-private-input-border-color: transparent;
-      --leverui-private-input-radius: var(--leverui-radii-l2);
-      --leverui-private-input-padding: var(--leverui-private-input-size-padding);
-      --leverui-private-input-focus-outline-width: var(--focus-ring-width, 1px);
-      --leverui-private-input-focus-shadow: none;
+    .lui-input:not([data-unstyled])[data-variant-2xl='subtle'] {
+      --lui-private-input-background: var(--lui-colors-bg-muted);
+      --lui-private-input-border-width: 1px;
+      --lui-private-input-border-color: transparent;
+      --lui-private-input-radius: var(--lui-radii-l2);
+      --lui-private-input-padding: var(--lui-private-input-size-padding);
+      --lui-private-input-focus-outline-width: var(--focus-ring-width, 1px);
+      --lui-private-input-focus-shadow: none;
     }
 
-    .leverui-input:not([data-unstyled])[data-variant-2xl='flushed'] {
-      --leverui-private-input-background: transparent;
-      --leverui-private-input-border-width: 0 0 1px;
-      --leverui-private-input-border-color: var(--leverui-colors-border);
-      --leverui-private-input-radius: 0;
-      --leverui-private-input-padding: 0;
-      --leverui-private-input-focus-outline-width: 0;
-      --leverui-private-input-focus-shadow: 0 1px 0 0 var(--leverui-private-input-focus-color);
+    .lui-input:not([data-unstyled])[data-variant-2xl='flushed'] {
+      --lui-private-input-background: transparent;
+      --lui-private-input-border-width: 0 0 1px;
+      --lui-private-input-border-color: var(--lui-colors-border);
+      --lui-private-input-radius: 0;
+      --lui-private-input-padding: 0;
+      --lui-private-input-focus-outline-width: 0;
+      --lui-private-input-focus-shadow: 0 1px 0 0 var(--lui-private-input-focus-color);
     }
   }
 }

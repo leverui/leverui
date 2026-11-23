@@ -86,7 +86,7 @@ async function verifiesInitiallyOpenDialogHydration({ page }: { page: Page }): P
   );
   await page.goto('/iframe.html?id=setup-hydration-host--ready');
   await page.setContent(
-    `${generateHydrationScript()}<style>${defaultCss}</style><style>:root{--leverui-colors-bg-panel:rgb(12,34,56)}</style><div id="dialog-hydration-root">${markup}</div>`,
+    `${generateHydrationScript()}<style>${defaultCss}</style><style>:root{--lui-colors-bg-panel:rgb(12,34,56)}</style><div id="dialog-hydration-root">${markup}</div>`,
   );
 
   const root = page.locator('#dialog-hydration-root');
@@ -105,10 +105,10 @@ async function verifiesInitiallyOpenDialogHydration({ page }: { page: Page }): P
   await expect(trigger).toHaveAttribute('aria-controls', contentId);
   await expect(content).toHaveAttribute('aria-labelledby', titleId);
   await expect(content).toHaveAttribute('aria-describedby', descriptionId);
-  await expect(content).toHaveAttribute('data-leverui-dialog-css', '');
+  await expect(content).toHaveAttribute('data-lui-dialog-css', '');
   await expect(content).toHaveCSS('background-color', 'rgb(12, 34, 56)');
   await expect(content).toHaveCSS('max-width', '512px');
-  await expect(page.locator('.leverui-dialog__positioner')).toHaveCSS('align-items', 'center');
+  await expect(page.locator('.lui-dialog__positioner')).toHaveCSS('align-items', 'center');
   const errors: string[] = [];
 
   /** Capture errors while Solid hydrates and moves the open content. */

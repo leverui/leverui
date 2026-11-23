@@ -34,13 +34,13 @@ export function HorizontalBarAxes(props: {
     props.plot.height - props.plot.bottom,
   ];
   return (
-    <g class="leverui-bar-chart__axes" data-bar-axes="">
+    <g class="lui-bar-chart__axes" data-bar-axes="">
       <Show when={props.showGrid}>
         <For each={gridY()}>
           {/** Span each category center and both outer plot edges. */}
           {(y) => (
             <line
-              class="leverui-bar-chart__grid-line"
+              class="lui-bar-chart__grid-line"
               x1={props.plot.left}
               x2={props.plot.width - props.plot.right}
               y1={y}
@@ -57,7 +57,7 @@ export function HorizontalBarAxes(props: {
             const label = () => String(row[props.xKey] ?? '');
             return (
               <text
-                class="leverui-bar-chart__tick"
+                class="lui-bar-chart__tick"
                 x={props.plot.left - 10}
                 y={center(index())}
                 text-anchor="end"
@@ -74,7 +74,7 @@ export function HorizontalBarAxes(props: {
           {/** Label a fifth of the horizontal numeric domain. */}
           {(index) => (
             <text
-              class="leverui-bar-chart__tick"
+              class="lui-bar-chart__tick"
               x={tickX(index)}
               y={props.plot.height - props.plot.bottom + 22}
               text-anchor="middle"

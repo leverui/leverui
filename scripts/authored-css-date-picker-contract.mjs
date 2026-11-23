@@ -33,7 +33,7 @@ export const datePickerContracts = [
     required: [
       ...styledParts.map(
         /** Require an authored selector for each styled public part. */
-        (part) => `.leverui-date-picker__${part}`,
+        (part) => `.lui-date-picker__${part}`,
       ),
       ...sizes.map(
         /** Require each scalar size choice. */

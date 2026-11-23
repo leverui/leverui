@@ -1,9 +1,9 @@
-@layer leverui.recipes {
-  .leverui-menu__content[data-leverui-menu-css] {
+@layer lui.recipes {
+  .lui-menu__content[data-lui-menu-css] {
     transform-origin: var(--transform-origin);
 
     &[data-state='open'] {
-      animation-duration: var(--leverui-durations-fast);
+      animation-duration: var(--lui-durations-fast);
 
       &[data-placement^='top'] {
         animation-name: slide-from-bottom, fade-in;
@@ -20,7 +20,7 @@
     }
 
     &[data-state='closed'] {
-      animation-duration: var(--leverui-durations-faster);
+      animation-duration: var(--lui-durations-faster);
 
       &[data-placement^='top'] {
         animation-name: slide-to-bottom, fade-out;

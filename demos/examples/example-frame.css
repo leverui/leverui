@@ -1,7 +1,7 @@
 .example-layout-inset {
-  padding: var(--leverui-spacing-4);
+  padding: var(--lui-spacing-4);
 }
 
 .example-component-inset {
-  padding: var(--leverui-spacing-10);
+  padding: var(--lui-spacing-10);
 }

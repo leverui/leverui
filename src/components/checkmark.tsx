@@ -14,7 +14,7 @@ type CheckmarkState = 'unchecked' | 'checked' | 'indeterminate';
 type CheckmarkAttributes = SvgChildProps & {
   'data-state': CheckmarkState;
   'data-disabled'?: string | undefined;
-  'data-leverui-color-palette'?: string | undefined;
+  'data-lui-color-palette'?: string | undefined;
   'data-unstyled'?: string | undefined;
 };
 
@@ -69,7 +69,7 @@ function CheckmarkRoot(props: CheckmarkRootProps): JSX.Element {
       ...checkmarkAttributes(choices()),
       'data-state': state(),
       'data-disabled': local.disabled ? '' : undefined,
-      'data-leverui-color-palette': readCheckmarkPalette(local.colorPalette),
+      'data-lui-color-palette': readCheckmarkPalette(local.colorPalette),
       'data-unstyled': local.unstyled ? '' : undefined,
       class: composeRecipeClassNames('checkmark', undefined, local.class, local.className),
       ref: attachNode,

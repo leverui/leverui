@@ -50,7 +50,7 @@
   align-items: center;
 }
 .site-stage {
-  border-radius: var(--leverui-radii-full);
+  border-radius: var(--lui-radii-full);
 }
 .wordmark img {
   display: block;
@@ -63,10 +63,10 @@
 .wordmark .wordmark-dark {
   display: none;
 }
-html[data-leverui-color-mode='dark'] .wordmark .wordmark-light {
+html[data-lui-color-mode='dark'] .wordmark .wordmark-light {
   display: none;
 }
-html[data-leverui-color-mode='dark'] .wordmark .wordmark-dark {
+html[data-lui-color-mode='dark'] .wordmark .wordmark-dark {
   display: block;
 }
 .desktop-nav {
@@ -74,34 +74,34 @@ html[data-leverui-color-mode='dark'] .wordmark .wordmark-dark {
   grid-column: 2;
   align-items: center;
   gap: 4px;
-  color: var(--leverui-colors-fg-muted);
+  color: var(--lui-colors-fg-muted);
   font-size: 13px;
 }
 .desktop-nav a {
   padding: 5px 12px;
   border-radius: 9999px;
-  font-weight: var(--leverui-font-weights-medium);
+  font-weight: var(--lui-font-weights-medium);
   white-space: nowrap;
 }
 .desktop-nav a:hover {
-  color: var(--leverui-colors-fg);
+  color: var(--lui-colors-fg);
 }
 /* Hovering shows the same pill as the current section, in light gray. */
 .desktop-nav a:not(.active):hover {
-  background: var(--leverui-colors-gray-muted);
+  background: var(--lui-colors-gray-muted);
 }
 /* The home page has no current section, so hovering there shows the filled pill itself. */
 .site-header-shell[data-home] .desktop-nav a:not(.active):hover {
-  background: var(--leverui-colors-fg);
-  color: var(--leverui-colors-bg);
+  background: var(--lui-colors-fg);
+  color: var(--lui-colors-bg);
 }
 /*
  * The current section is a filled pill: dark on light pages, light on dark pages. It keeps the
  * same font weight as the other links, so marking a link never moves its neighbors.
  */
 .desktop-nav a.active {
-  background: var(--leverui-colors-fg);
-  color: var(--leverui-colors-bg);
+  background: var(--lui-colors-fg);
+  color: var(--lui-colors-bg);
 }
 .header-actions {
   display: flex;
@@ -110,7 +110,7 @@ html[data-leverui-color-mode='dark'] .wordmark .wordmark-dark {
   justify-self: end;
   gap: 4px;
 }
-.site-theme-toggle.leverui-icon-button {
+.site-theme-toggle.lui-icon-button {
   display: grid;
   place-items: center;
   width: 38px;
@@ -118,21 +118,21 @@ html[data-leverui-color-mode='dark'] .wordmark .wordmark-dark {
   min-width: 38px;
   padding: 8px;
   border: 0;
-  border-radius: var(--leverui-radii-full);
+  border-radius: var(--lui-radii-full);
   background: transparent;
   color: var(--site-fg);
 }
-.site-theme-toggle.leverui-icon-button:hover {
-  background: var(--leverui-colors-gray-subtle);
+.site-theme-toggle.lui-icon-button:hover {
+  background: var(--lui-colors-gray-subtle);
 }
 .site-theme-toggle .site-icon {
   font-size: 18px;
 }
 .site-theme-toggle .site-theme-moon,
-html[data-leverui-color-mode='dark'] .site-theme-toggle .site-theme-sun {
+html[data-lui-color-mode='dark'] .site-theme-toggle .site-theme-sun {
   display: none;
 }
-html[data-leverui-color-mode='dark'] .site-theme-toggle .site-theme-moon {
+html[data-lui-color-mode='dark'] .site-theme-toggle .site-theme-moon {
   display: block;
 }
 /*
@@ -144,12 +144,12 @@ html[data-leverui-color-mode='dark'] .site-theme-toggle .site-theme-moon {
   place-items: center;
   width: 38px;
   height: 38px;
-  border-radius: var(--leverui-radii-full);
+  border-radius: var(--lui-radii-full);
   color: var(--site-fg);
   font-size: 17px;
 }
 .github-link:hover {
-  background: var(--leverui-colors-gray-subtle);
+  background: var(--lui-colors-gray-subtle);
   color: var(--site-fg);
 }
 :is(.site-search-trigger, .github-link, .site-theme-toggle) .site-icon {
@@ -162,13 +162,13 @@ html[data-leverui-color-mode='dark'] .site-theme-toggle .site-theme-moon {
   align-items: center;
   justify-content: center;
   border: 0;
-  border-radius: var(--leverui-radii-full);
+  border-radius: var(--lui-radii-full);
   background: transparent;
 }
 .menu-toggle:hover {
-  background: var(--leverui-colors-gray-subtle);
+  background: var(--lui-colors-gray-subtle);
 }
 .menu-toggle .site-icon {
-  color: var(--leverui-colors-fg);
+  color: var(--lui-colors-fg);
   font-size: 20px;
 }

@@ -1,51 +1,51 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 1536px) {
-    .leverui-heading:not([data-unstyled]) {
+    .lui-heading:not([data-unstyled]) {
       &[data-size-2xl='xs'] {
-        font-size: var(--leverui-font-sizes-xs);
+        font-size: var(--lui-font-sizes-xs);
         line-height: 1rem;
       }
       &[data-size-2xl='sm'] {
-        font-size: var(--leverui-font-sizes-sm);
+        font-size: var(--lui-font-sizes-sm);
         line-height: 1.25rem;
       }
       &[data-size-2xl='md'] {
-        font-size: var(--leverui-font-sizes-md);
+        font-size: var(--lui-font-sizes-md);
         line-height: 1.5rem;
       }
       &[data-size-2xl='lg'] {
-        font-size: var(--leverui-font-sizes-lg);
+        font-size: var(--lui-font-sizes-lg);
         line-height: 1.75rem;
       }
       &[data-size-2xl='xl'] {
-        font-size: var(--leverui-font-sizes-xl);
+        font-size: var(--lui-font-sizes-xl);
         line-height: 1.875rem;
       }
       &[data-size-2xl='2xl'] {
-        font-size: var(--leverui-font-sizes-2xl);
+        font-size: var(--lui-font-sizes-2xl);
         line-height: 2rem;
       }
       &[data-size-2xl='3xl'] {
-        font-size: var(--leverui-font-sizes-3xl);
+        font-size: var(--lui-font-sizes-3xl);
         line-height: 2.375rem;
       }
       &[data-size-2xl='4xl'] {
-        font-size: var(--leverui-font-sizes-4xl);
+        font-size: var(--lui-font-sizes-4xl);
         line-height: 2.75rem;
         letter-spacing: -0.025em;
       }
       &[data-size-2xl='5xl'] {
-        font-size: var(--leverui-font-sizes-5xl);
+        font-size: var(--lui-font-sizes-5xl);
         line-height: 3.75rem;
         letter-spacing: -0.025em;
       }
       &[data-size-2xl='6xl'] {
-        font-size: var(--leverui-font-sizes-6xl);
+        font-size: var(--lui-font-sizes-6xl);
         line-height: 4.5rem;
         letter-spacing: -0.025em;
       }
       &[data-size-2xl='7xl'] {
-        font-size: var(--leverui-font-sizes-7xl);
+        font-size: var(--lui-font-sizes-7xl);
         line-height: 5.75rem;
         letter-spacing: -0.025em;
       }

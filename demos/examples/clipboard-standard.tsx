@@ -142,7 +142,7 @@ export function ClipboardWithStore(): JSX.Element {
 /** Show every public Clipboard part for the guide's anatomy explorer. */
 export function ClipboardExplorerDemo(): JSX.Element {
   return (
-    <Stack gap="6" style={{ 'max-width': 'var(--leverui-sizes-sm)' }}>
+    <Stack gap="6" style={{ 'max-width': 'var(--lui-sizes-sm)' }}>
       <Clipboard.Root value="https://leverui.com">
         <Clipboard.Label class="clipboard-example-label">Copy link</Clipboard.Label>
         <Stack direction="row" gap="2" align="center">

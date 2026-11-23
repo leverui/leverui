@@ -24,7 +24,7 @@ function renderInstalledBlockquote() {
 
 const markup = renderInstalledBlockquote();
 assert.match(markup, /<figure[^>]*id="packed-server-blockquote"/);
-assert.match(markup, /leverui-blockquote/);
+assert.match(markup, /lui-blockquote/);
 assert.match(markup, /<blockquote[^>]*>Installed quote<\/blockquote>/);
 assert.match(markup, /<figcaption[^>]*>Installed author<\/figcaption>/);
 assert.doesNotMatch(markup, /\svariant="solid"/);

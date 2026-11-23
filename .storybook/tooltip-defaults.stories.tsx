@@ -32,7 +32,7 @@ function TooltipDefaultsExample(): JSX.Element {
 
   return (
     <>
-      <style>{'html{--leverui-colors-bg-inverted:rgb(12,34,56)}'}</style>
+      <style>{'html{--lui-colors-bg-inverted:rgb(12,34,56)}'}</style>
       <div style={{ padding: '140px', display: 'flex', gap: '90px' }}>
         <TooltipPropsProvider value={readDefaults}>
           <TooltipRoot>

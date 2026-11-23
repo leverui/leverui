@@ -30,10 +30,10 @@ async function verifiesAlertContract({ page }: { page: Page }): Promise<void> {
   await expect(root).toBeVisible({ timeout: 15_000 });
   await expect(root).toHaveAttribute('role', 'status');
   await expect(root).toHaveAttribute('data-status', 'info');
-  await expect(root).not.toHaveAttribute('data-leverui-private-style-runtime');
+  await expect(root).not.toHaveAttribute('data-lui-private-style-runtime');
   for (const part of ['indicator', 'content', 'title', 'description']) {
     await expect(page.getByTestId(`alert-default-${part}`)).not.toHaveAttribute(
-      'data-leverui-private-style-runtime',
+      'data-lui-private-style-runtime',
     );
   }
   await expect(root).toHaveCSS('display', 'flex');
@@ -51,7 +51,7 @@ async function verifiesAlertContract({ page }: { page: Page }): Promise<void> {
   await expect(page.getByTestId('alert-responsive')).toHaveAttribute('data-size', 'sm');
   await expect(page.getByTestId('alert-responsive')).toHaveAttribute('data-size-md', 'lg');
   await expect(page.getByTestId('alert-responsive')).not.toHaveAttribute(
-    'data-leverui-private-style-runtime',
+    'data-lui-private-style-runtime',
   );
 }
 

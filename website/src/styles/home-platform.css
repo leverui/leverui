@@ -1,6 +1,6 @@
 .feature-section {
   border-top: 1px solid var(--site-border);
-  background: var(--leverui-colors-bg-subtle);
+  background: var(--lui-colors-bg-subtle);
 }
 .feature-section h2 {
   margin: 0 0 40px;
@@ -21,7 +21,7 @@
   padding: 16px 16px 24px;
   border: 1px solid var(--site-border);
   border-radius: 20px;
-  background: var(--leverui-colors-bg-panel);
+  background: var(--lui-colors-bg-panel);
 }
 .feature-card-wide {
   grid-column: span 3;
@@ -34,7 +34,7 @@
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 14px;
-  background: var(--leverui-colors-bg-subtle);
+  background: var(--lui-colors-bg-subtle);
 }
 .feature-card h3 {
   margin: 0 8px 6px;
@@ -93,8 +93,8 @@
   width: 28px;
   height: 28px;
   padding: 0;
-  border: 2px solid var(--leverui-colors-bg-panel);
-  border-radius: var(--leverui-radii-full);
+  border: 2px solid var(--lui-colors-bg-panel);
+  border-radius: var(--lui-radii-full);
   cursor: pointer;
 }
 .feature-swatch[aria-pressed='true'] {
@@ -115,12 +115,12 @@
   justify-items: start;
   gap: 14px;
   padding: 14px;
-  border: 1px solid var(--leverui-colors-border);
+  border: 1px solid var(--lui-colors-border);
   border-radius: 14px;
-  background: var(--leverui-colors-bg);
-  color: var(--leverui-colors-fg);
+  background: var(--lui-colors-bg);
+  color: var(--lui-colors-fg);
   font-size: 13px;
-  font-weight: var(--leverui-font-weights-medium);
+  font-weight: var(--lui-font-weights-medium);
 }
 .closing-section {
   border-top: 1px solid var(--site-border);
@@ -140,8 +140,8 @@
 .closing-command {
   padding: 12px 22px;
   border: 1px solid var(--site-border);
-  border-radius: var(--leverui-radii-full);
-  background: var(--leverui-colors-bg-subtle);
+  border-radius: var(--lui-radii-full);
+  background: var(--lui-colors-bg-subtle);
   font-size: 14px;
 }
 .closing-actions {

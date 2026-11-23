@@ -32,5 +32,5 @@ assert.match(markup, /<div[^>]*id="packed-server-tag"/);
 assert.match(markup, /<span[^>]*>Installed category<\/span>/);
 assert.match(markup, /<button[^>]*type="button"/);
 assert.match(markup, /<button[^>]*aria-label="Close"/);
-assert.match(markup, /leverui-tag__closeTrigger/);
+assert.match(markup, /lui-tag__closeTrigger/);
 assert.doesNotMatch(markup, /<div[^>]*\s(?:size|variant)=/);

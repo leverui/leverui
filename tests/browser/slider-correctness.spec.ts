@@ -7,7 +7,7 @@ async function dragAcross(page: Page, mode: CollisionMode): Promise<number[]> {
   const root = page.getByTestId(`slider-collision-${mode}`);
   const thumbs = root.getByRole('slider');
   const thumbBounds = await thumbs.first().boundingBox();
-  const controlBounds = await root.locator('.leverui-slider__control').boundingBox();
+  const controlBounds = await root.locator('.lui-slider__control').boundingBox();
   if (!thumbBounds || !controlBounds) throw new Error(`${mode} slider has no visible bounds`);
   await page.mouse.move(
     thumbBounds.x + thumbBounds.width / 2,
@@ -71,9 +71,9 @@ type SliderStyle = {
 
 /** Read browser computed styles for one CSS matrix entry. */
 function readSliderStyle(element: Element): SliderStyle {
-  const control = element.querySelector('.leverui-slider__control');
-  const track = element.querySelector('.leverui-slider__track');
-  const thumb = element.querySelector('.leverui-slider__thumb');
+  const control = element.querySelector('.lui-slider__control');
+  const track = element.querySelector('.lui-slider__track');
+  const thumb = element.querySelector('.lui-slider__thumb');
   if (!control || !track || !thumb) throw new Error('Slider matrix parts are missing');
   return {
     direction: getComputedStyle(control).flexDirection,
@@ -120,9 +120,9 @@ async function verifiesConsumerCss({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-slider-correctness--matrix');
   await page.addStyleTag({
     content:
-      '.leverui-slider__thumb { border-color: rgb(1, 2, 3); }' +
+      '.lui-slider__thumb { border-color: rgb(1, 2, 3); }' +
       '[data-testid="slider-matrix-md-outline-horizontal"] {' +
-      '--leverui-slider-thumb-size: 31px; --leverui-slider-range-color: rgb(4, 5, 6); }',
+      '--lui-slider-thumb-size: 31px; --lui-slider-range-color: rgb(4, 5, 6); }',
   });
   const root = page.getByTestId('slider-matrix-md-outline-horizontal');
   const thumb = root.getByRole('slider');
@@ -132,10 +132,7 @@ async function verifiesConsumerCss({ page }: { page: Page }): Promise<void> {
   );
   expect(borderColor).toBe('rgb(1, 2, 3)');
   expect((await root.evaluate(readSliderStyle)).thumbWidth).toBe(31);
-  await expect(root.locator('.leverui-slider__range')).toHaveCSS(
-    'background-color',
-    'rgb(4, 5, 6)',
-  );
+  await expect(root.locator('.lui-slider__range')).toHaveCSS('background-color', 'rgb(4, 5, 6)');
 }
 
 test('Slider accepts a consumer CSS override', verifiesConsumerCss);
@@ -164,7 +161,7 @@ test('Slider follows responsive size and variant CSS', verifiesResponsiveAppeara
 /** Verify the public native paths keep the primitive semantics without default CSS. */
 async function verifiesNativeComposition({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-slider-correctness--native');
-  const root = page.locator('section.leverui-slider__root');
+  const root = page.locator('section.lui-slider__root');
   const thumb = page.getByTestId('slider-native-thumb');
   const track = page.getByTestId('slider-native-track');
   await expect(root).toHaveAttribute('data-root-ref', 'true');

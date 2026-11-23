@@ -36,13 +36,13 @@ function verifiesOwnedTagParts(): void {
   );
   const label = screen.getByTestId('owned-label');
   expect(label.tagName).toBe('STRONG');
-  expect(label.className).toContain('leverui-tag__label');
+  expect(label.className).toContain('lui-tag__label');
   expect(label.textContent).toBe('Draft');
   const close = screen.getByTestId('owned-close');
   expect(close.tagName).toBe('BUTTON');
   expect(close.getAttribute('type')).toBe('button');
   expect(close.getAttribute('aria-label')).toBe('Close');
-  expect(close.className).toContain('leverui-tag__closeTrigger');
+  expect(close.className).toContain('lui-tag__closeTrigger');
   expect(close.className).toContain('owned-close');
   expect(close.querySelector('svg')).not.toBeNull();
   close.click();

@@ -6,7 +6,7 @@ const storyIds = ['basic', 'sizes', 'format-bits', 'locale', 'unit-display'] as 
 async function verifiesFormatByteStories({ page }: { page: Page }): Promise<void> {
   for (const id of storyIds) {
     await page.goto(`/iframe.html?id=components-format-byte--${id}`);
-    await expect(page.locator('#storybook-root .leverui-text').first()).toHaveText(/\d/);
+    await expect(page.locator('#storybook-root .lui-text').first()).toHaveText(/\d/);
   }
 }
 

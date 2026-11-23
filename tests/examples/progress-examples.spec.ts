@@ -21,7 +21,7 @@ async function verifiesProgressStories({ page }: { page: Page }): Promise<void> 
   test.setTimeout(120_000);
   for (const [story, count] of Object.entries(counts)) {
     await page.goto(`/iframe.html?id=components-progress--${story}`);
-    await expect(page.locator('#storybook-root .leverui-progress__track')).toHaveCount(count);
+    await expect(page.locator('#storybook-root .lui-progress__track')).toHaveCount(count);
   }
 }
 
@@ -30,7 +30,7 @@ async function verifiesProgressComposition({ page }: { page: Page }): Promise<vo
   await page.goto('/iframe.html?id=components-progress--size-matrix');
   await expect(page.locator('#storybook-root tbody tr')).toHaveCount(10);
   await page.goto('/iframe.html?id=components-progress--composition');
-  await expect(page.locator('#storybook-root .leverui-progress__label')).toHaveText([
+  await expect(page.locator('#storybook-root .lui-progress__label')).toHaveText([
     'Private users',
     'Editors',
     'Projects',

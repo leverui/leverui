@@ -59,7 +59,7 @@ async function verifiesAuthoredAbsoluteCenter({ page }: { page: Page }): Promise
   const markup = `${frames}${nestedLtr}<div class="frame" id="unstyled-frame">${renderCenter('both', 'unstyled', true)}</div>`;
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(
-    `<style>${defaultCss}.frame{position:relative;width:200px;height:100px}.leverui-absolute-center{width:40px;height:20px}</style>${markup}`,
+    `<style>${defaultCss}.frame{position:relative;width:200px;height:100px}.lui-absolute-center{width:40px;height:20px}</style>${markup}`,
   );
   for (const id of ['both', 'horizontal', 'rtl-both', 'rtl-horizontal', 'nested-ltr']) {
     expect(Math.abs(await centerOffset(page, id, 'x'))).toBeLessThan(1.5);

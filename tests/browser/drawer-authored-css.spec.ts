@@ -7,13 +7,13 @@ const css = await readFile(new URL('../../dist/styles.css', import.meta.url), 'u
 async function loadDrawerCss(page: Page): Promise<void> {
   await page.setContent(`
     <style>${css}</style>
-    <div id="positioner" class="leverui-drawer__positioner" data-leverui-drawer-css
+    <div id="positioner" class="lui-drawer__positioner" data-lui-drawer-css
       data-placement="end">
-      <div id="content" class="leverui-drawer__content" data-leverui-drawer-css
+      <div id="content" class="lui-drawer__content" data-lui-drawer-css
         data-size="xs" data-placement="end" data-state="open">
-        <header id="header" class="leverui-drawer__header" data-leverui-drawer-css>Title</header>
-        <div id="body" class="leverui-drawer__body" data-leverui-drawer-css>Body</div>
-        <footer id="footer" class="leverui-drawer__footer" data-leverui-drawer-css>Footer</footer>
+        <header id="header" class="lui-drawer__header" data-lui-drawer-css>Title</header>
+        <div id="body" class="lui-drawer__body" data-lui-drawer-css>Body</div>
+        <footer id="footer" class="lui-drawer__footer" data-lui-drawer-css>Footer</footer>
       </div>
     </div>
   `);
@@ -30,12 +30,12 @@ async function verifiesDrawerStyles({ page }: { page: Page }): Promise<void> {
   await expect(content).toHaveCSS('animation-name', 'slide-from-right-full, fade-in');
   await content.evaluate(
     /** Suppress entrance motion while the initial-open lifecycle marker is present. */
-    (element) => element.setAttribute('data-leverui-private-skip-initial-animation', ''),
+    (element) => element.setAttribute('data-lui-private-skip-initial-animation', ''),
   );
   await expect(content).toHaveCSS('animation-name', 'none');
   await content.evaluate(
     /** Resume normal motion after the initial-open lifecycle ends. */
-    (element) => element.removeAttribute('data-leverui-private-skip-initial-animation'),
+    (element) => element.removeAttribute('data-lui-private-skip-initial-animation'),
   );
   await expect(page.locator('#header')).toHaveCSS('padding-top', '24px');
   await expect(page.locator('#body')).toHaveCSS('overflow', 'auto');

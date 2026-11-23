@@ -55,10 +55,10 @@ async function verifiesSelection(): Promise<void> {
   const listbox = screen.getByRole('listbox');
   const solid = screen.getByRole('option', { name: 'Solid' });
   // The primitive puts the listbox role on List, inside the styled Content surface.
-  expect(listbox.className).toContain('leverui-listbox__list');
-  expect(listbox.parentElement?.className).toContain('leverui-listbox__content');
-  expect(listbox.closest('[data-listbox-root]')?.className).toContain('leverui-listbox__root');
-  expect(listbox.closest('[data-listbox-root]')?.className).not.toContain('leverui-leverui');
+  expect(listbox.className).toContain('lui-listbox__list');
+  expect(listbox.parentElement?.className).toContain('lui-listbox__content');
+  expect(listbox.closest('[data-listbox-root]')?.className).toContain('lui-listbox__root');
+  expect(listbox.closest('[data-listbox-root]')?.className).not.toContain('lui-lui');
   expect(solid.querySelector('svg[aria-hidden="true"]')).not.toBeNull();
   expect(screen.getByText('Choose one')).toBeInTheDocument();
   fireEvent.click(solid);

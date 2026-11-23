@@ -4,7 +4,7 @@ export const emptyStateContracts = [
     required: [
       ...['root', 'content', 'indicator', 'title', 'description'].map(
         /** Require authored rules for every public Empty State part. */
-        (part) => `.leverui-empty-state__${part}:not([data-unstyled]`,
+        (part) => `.lui-empty-state__${part}:not([data-unstyled]`,
       ),
       ...['sm', 'md', 'lg'].map(
         /** Require each finite base size. */
@@ -18,13 +18,13 @@ export const emptyStateContracts = [
             (size) => `[data-size-${breakpoint}='${size}']`,
           ),
       ),
-      '--leverui-empty-state-padding-inline',
-      '--leverui-empty-state-padding-block',
-      '--leverui-empty-state-gap',
-      '--leverui-empty-state-indicator-size',
-      '--leverui-empty-state-title-size',
-      '--leverui-colors-fg-muted',
-      '--leverui-colors-fg-subtle',
+      '--lui-empty-state-padding-inline',
+      '--lui-empty-state-padding-block',
+      '--lui-empty-state-gap',
+      '--lui-empty-state-indicator-size',
+      '--lui-empty-state-title-size',
+      '--lui-colors-fg-muted',
+      '--lui-colors-fg-subtle',
     ],
   },
 ];

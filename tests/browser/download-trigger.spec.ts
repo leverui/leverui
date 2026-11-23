@@ -19,7 +19,7 @@ async function verifiesBasic({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-download-trigger--basic');
   const trigger = page.getByRole('button', { name: 'Download txt' });
   await expect(trigger).toHaveAttribute('type', 'button');
-  await expect(trigger).toHaveClass(/leverui-download-trigger/);
+  await expect(trigger).toHaveClass(/lui-download-trigger/);
   await expect(trigger).toHaveCSS('color', 'rgb(9, 9, 11)');
   await page.addStyleTag({ content: '.download-override { color: rgb(1, 2, 3); }' });
   await expect(trigger).toHaveCSS('color', 'rgb(1, 2, 3)');
@@ -36,8 +36,8 @@ test('DownloadTrigger saves a native text button', verifiesBasic);
 async function verifiesStyledChild({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-download-trigger--styled-button');
   const trigger = page.getByTestId('styled-download');
-  await expect(trigger).toHaveClass(/leverui-button/);
-  await expect(trigger).toHaveClass(/leverui-download-trigger/);
+  await expect(trigger).toHaveClass(/lui-button/);
+  await expect(trigger).toHaveClass(/lui-download-trigger/);
   await expect(trigger).toHaveAttribute('data-download-ref', 'BUTTON');
   await trigger.focus();
   const downloadPromise = page.waitForEvent('download');

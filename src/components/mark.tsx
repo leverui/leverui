@@ -50,14 +50,14 @@ function MarkRoot(props: MarkRootProps): JSX.Element {
     /** Keep native attributes, treatment, and palette reactive. */
     () => ({
       ...native,
-      class: cx('leverui-mark', local.class),
+      class: cx('lui-mark', local.class),
       'data-variant': variants().base,
       'data-variant-sm': variants().sm,
       'data-variant-md': variants().md,
       'data-variant-lg': variants().lg,
       'data-variant-xl': variants().xl,
       'data-variant-2xl': variants()['2xl'],
-      'data-leverui-color-palette': local.colorPalette,
+      'data-lui-color-palette': local.colorPalette,
       'data-unstyled': local.unstyled ? '' : undefined,
       ref: attachNode,
     }),

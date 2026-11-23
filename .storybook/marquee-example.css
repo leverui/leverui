@@ -1,5 +1,5 @@
 .marquee-example-contract-item {
-  padding-inline: var(--leverui-spacing-4);
+  padding-inline: var(--lui-spacing-4);
 }
 
 .marquee-example-css-width,
@@ -32,9 +32,9 @@
 }
 
 .consumer-marquee {
-  --leverui-marquee-duration: 27s;
-  --leverui-marquee-delay: 3s;
-  --leverui-marquee-loop-count: 5;
-  --leverui-marquee-edge-color: rgb(0, 128, 0);
-  --leverui-marquee-edge-size: 25%;
+  --lui-marquee-duration: 27s;
+  --lui-marquee-delay: 3s;
+  --lui-marquee-loop-count: 5;
+  --lui-marquee-edge-color: rgb(0, 128, 0);
+  --lui-marquee-edge-size: 25%;
 }

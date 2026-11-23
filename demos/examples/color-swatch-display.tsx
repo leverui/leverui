@@ -61,7 +61,7 @@ export function ColorSwatchWithAlpha(): JSX.Element {
 export function ColorSwatchWithBadge(): JSX.Element {
   return (
     <Badge>
-      <ColorSwatch value="#bada55" style={{ '--leverui-swatch-size': '0.82em' }} />
+      <ColorSwatch value="#bada55" style={{ '--lui-swatch-size': '0.82em' }} />
       #bada55
     </Badge>
   );

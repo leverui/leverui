@@ -117,14 +117,12 @@ function verifiesGroupPositions(): void {
 
   const first = screen.getByTestId('first-group-button');
   const last = screen.getByTestId('last-group-button');
-  expect(first.hasAttribute('data-leverui-group-first')).toBe(true);
-  expect(first.style.getPropertyValue('--leverui-group-count')).toBe('2');
-  expect(first.style.getPropertyValue('--leverui-group-index')).toBe('0');
-  expect(screen.getByTestId('group-separator').hasAttribute('data-leverui-group-auto-skip')).toBe(
-    true,
-  );
-  expect(last.hasAttribute('data-leverui-group-last')).toBe(true);
-  expect(last.style.getPropertyValue('--leverui-group-index')).toBe('1');
+  expect(first.hasAttribute('data-lui-group-first')).toBe(true);
+  expect(first.style.getPropertyValue('--lui-group-count')).toBe('2');
+  expect(first.style.getPropertyValue('--lui-group-index')).toBe('0');
+  expect(screen.getByTestId('group-separator').hasAttribute('data-lui-group-auto-skip')).toBe(true);
+  expect(last.hasAttribute('data-lui-group-last')).toBe(true);
+  expect(last.style.getPropertyValue('--lui-group-index')).toBe('1');
 }
 
 it('positions direct ButtonGroup children around skipped elements', verifiesGroupPositions);
@@ -139,10 +137,7 @@ async function verifiesReactiveSkipMarker(): Promise<void> {
       <>
         <ButtonGroup attached>
           <Button data-testid="first-reactive-group">First</Button>
-          <Button
-            data-testid="middle-reactive-group"
-            data-leverui-group-skip={skip() ? '' : undefined}
-          >
+          <Button data-testid="middle-reactive-group" data-lui-group-skip={skip() ? '' : undefined}>
             Middle
           </Button>
           <Button data-testid="last-reactive-group">Last</Button>
@@ -157,23 +152,23 @@ async function verifiesReactiveSkipMarker(): Promise<void> {
   );
   const first = screen.getByTestId('first-reactive-group');
   const last = screen.getByTestId('last-reactive-group');
-  expect(first.style.getPropertyValue('--leverui-group-count')).toBe('3');
+  expect(first.style.getPropertyValue('--lui-group-count')).toBe('3');
 
   setSkip(true);
   flush();
   await waitFor(
     /** Wait for the group observer to reindex the remaining actions. */
-    () => expect(first.style.getPropertyValue('--leverui-group-count')).toBe('2'),
+    () => expect(first.style.getPropertyValue('--lui-group-count')).toBe('2'),
   );
-  expect(last.style.getPropertyValue('--leverui-group-index')).toBe('1');
+  expect(last.style.getPropertyValue('--lui-group-index')).toBe('1');
 
   setSkip(false);
   flush();
   await waitFor(
     /** Wait for the restored action to regain its group position. */
-    () => expect(first.style.getPropertyValue('--leverui-group-count')).toBe('3'),
+    () => expect(first.style.getPropertyValue('--lui-group-count')).toBe('3'),
   );
-  expect(last.style.getPropertyValue('--leverui-group-index')).toBe('2');
+  expect(last.style.getPropertyValue('--lui-group-index')).toBe('2');
 }
 
 it('reindexes ButtonGroup when a skip marker changes', verifiesReactiveSkipMarker);

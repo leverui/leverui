@@ -98,7 +98,7 @@ const appearanceMatrix = [
 function SwitchAppearanceExample(): JSX.Element {
   return (
     <>
-      <style>{'.switch-consumer .leverui-switch__control { background: rgb(1, 99, 222); }'}</style>
+      <style>{'.switch-consumer .lui-switch__control { background: rgb(1, 99, 222); }'}</style>
       <div style={{ display: 'grid', gap: '16px', padding: '24px' }}>
         <For each={appearanceMatrix}>
           {
@@ -121,7 +121,7 @@ function SwitchAppearanceExample(): JSX.Element {
           <Switch.Control data-testid="switch-css-override-control" />
           <Switch.Label>Consumer override</Switch.Label>
         </Switch.Root>
-        <Switch.Root style={{ '--leverui-colors-bg-emphasized': 'rgb(8, 88, 152)' }}>
+        <Switch.Root style={{ '--lui-colors-bg-emphasized': 'rgb(8, 88, 152)' }}>
           <Switch.HiddenInput />
           <Switch.Control
             data-testid="switch-native-style-control"

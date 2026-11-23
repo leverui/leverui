@@ -12,11 +12,11 @@ function MarqueeCssOverrides(): JSX.Element {
         <Marquee.Root
           class="marquee-example-css-width"
           style={{
-            '--leverui-marquee-duration': '30s',
-            '--leverui-marquee-delay': '5s',
-            '--leverui-marquee-loop-count': '4',
-            '--leverui-marquee-edge-color': 'rgb(255, 0, 0)',
-            '--leverui-marquee-edge-size': '35%',
+            '--lui-marquee-duration': '30s',
+            '--lui-marquee-delay': '5s',
+            '--lui-marquee-loop-count': '4',
+            '--lui-marquee-edge-color': 'rgb(255, 0, 0)',
+            '--lui-marquee-edge-size': '35%',
           }}
           data-testid="marquee-css-root"
         >

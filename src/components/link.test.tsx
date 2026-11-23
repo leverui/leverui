@@ -28,7 +28,7 @@ function verifiesNativeLink(): void {
   expect(link.tagName).toBe('A');
   expect(link.getAttribute('href')).toBe('#destination');
   expect(link.getAttribute('variant')).toBeNull();
-  expect(link.className).toContain('leverui-link');
+  expect(link.className).toContain('lui-link');
   expect(link.getAttribute('role')).toBeNull();
 }
 
@@ -95,7 +95,7 @@ function verifiesChildLink(): void {
   expect(routed).toBe(received);
   expect(routed.getAttribute('href')).toBe('/about');
   expect(routed.getAttribute('aria-current')).toBe('page');
-  expect(routed.className).toContain('leverui-link');
+  expect(routed.className).toContain('lui-link');
 }
 
 /** Verify the box and stretched overlay remain native, separate elements. */
@@ -114,10 +114,10 @@ function verifiesLinkBox(): void {
     ),
   );
   expect(screen.getByTestId('box').tagName).toBe('ARTICLE');
-  expect(screen.getByTestId('box').className).toContain('leverui-linkbox');
+  expect(screen.getByTestId('box').className).toContain('lui-linkbox');
   expect(screen.getByTestId('overlay').tagName).toBe('A');
   expect(screen.getByTestId('overlay').getAttribute('href')).toBe('#article');
-  expect(screen.getByTestId('overlay').className).toContain('leverui-linkbox__overlay');
+  expect(screen.getByTestId('overlay').className).toContain('lui-linkbox__overlay');
   expect(screen.getByTestId('inner').getAttribute('href')).toBe('#author');
 }
 

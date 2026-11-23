@@ -13,7 +13,7 @@ export function PasswordInputWithHookForm(): JSX.Element {
 
   return (
     <form onSubmit={submitForm}>
-      <Stack gap="4" align="flex-start" style={{ 'max-width': 'var(--leverui-sizes-sm)' }}>
+      <Stack gap="4" align="flex-start" style={{ 'max-width': 'var(--lui-sizes-sm)' }}>
         <Field.Root>
           <Field.Label>Username</Field.Label>
           <Input name="username" />

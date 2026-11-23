@@ -16,11 +16,11 @@
 .docs-index-hero p {
   font-size: 17px;
   line-height: 1.7;
-  color: var(--leverui-colors-fg-muted);
+  color: var(--lui-colors-fg-muted);
   max-width: 600px;
 }
 .guide-card-grid a:hover {
-  border-color: var(--leverui-colors-border-emphasized);
+  border-color: var(--lui-colors-border-emphasized);
   transform: translateY(-2px);
 }
 .guide-card-grid {
@@ -32,9 +32,9 @@
   min-height: 210px;
   position: relative;
   padding: 27px;
-  border: 1px solid var(--leverui-colors-border);
+  border: 1px solid var(--lui-colors-border);
   border-radius: 12px;
-  background: var(--leverui-colors-bg-panel);
+  background: var(--lui-colors-bg-panel);
   transition:
     border-color 0.2s,
     transform 0.2s;
@@ -49,7 +49,7 @@
 }
 .guide-card-grid p {
   font-size: 12px;
-  color: var(--leverui-colors-fg-muted);
+  color: var(--lui-colors-fg-muted);
   line-height: 1.5;
 }
 .guide-card-arrow {

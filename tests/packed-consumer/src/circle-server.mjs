@@ -20,8 +20,8 @@ function renderInstalledCircle() {
 const markup = renderInstalledCircle();
 assert.match(markup, /id="packed-server-circle"/);
 assert.match(markup, /Installed server circle/);
-assert.match(markup, /leverui-circle/);
-assert.match(markup, /--leverui-private-square-size-base:/);
+assert.match(markup, /lui-circle/);
+assert.match(markup, /--lui-private-square-size-base:/);
 assert.doesNotMatch(markup, /border-radius:9999px/);
 assert.match(markup, /position:fixed/);
 assert.doesNotMatch(markup, /\s(?:size|css)=/);

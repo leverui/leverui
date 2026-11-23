@@ -55,7 +55,7 @@ export function PackedSwitchTypes(): JSX.Element {
     <Switch.PropsProvider value={{ size: 'lg', variant: 'raised' }}>
       <Switch.RootProvider
         value={machine}
-        style={{ '--leverui-colors-color-palette-solid': 'rgb(8, 88, 152)' }}
+        style={{ '--lui-colors-color-palette-solid': 'rgb(8, 88, 152)' }}
       >
         <Switch.HiddenInput />
         <Switch.Control style={{ 'border-radius': '7px' }}>

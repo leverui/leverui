@@ -34,7 +34,7 @@ async function verifiesRatingSize({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-rating-group--contract');
   const root = page.getByTestId('rating-group-root');
   const item = page.getByRole('radio', { name: '2 stars' });
-  await expect(root).toHaveClass(/leverui-rating-group__root/, { timeout: 30_000 });
+  await expect(root).toHaveClass(/lui-rating-group__root/, { timeout: 30_000 });
   const before = await item.evaluate(
     /** Read the initial authored CSS size. */
     (element) => getComputedStyle(element).fontSize,
@@ -63,7 +63,7 @@ async function verifiesRatingCssOverride({ page }: { page: Page }): Promise<void
   await expect(root).toHaveAttribute('data-size', 'sm');
   await page.addStyleTag({
     content:
-      '.leverui-rating-group__root { --leverui-rating-group-foreground-color: rgb(1, 2, 3); --leverui-rating-group-item-font-size: 37px; }',
+      '.lui-rating-group__root { --lui-rating-group-foreground-color: rgb(1, 2, 3); --lui-rating-group-item-font-size: 37px; }',
   });
   const foreground = selected.locator('[data-fg]');
   const color = await foreground.evaluate(
@@ -87,9 +87,9 @@ async function verifiesUnstyledRating({ page }: { page: Page }): Promise<void> {
   const group = page.getByRole('radiogroup', { name: 'Unstyled score' });
   const fourth = group.getByRole('radio', { name: '4 stars' });
   await expect(root).toHaveAttribute('data-unstyled', '');
-  await expect(root).toHaveClass(/leverui-rating-group__root/);
+  await expect(root).toHaveClass(/lui-rating-group__root/);
   await expect(group).toHaveAttribute('data-unstyled', '');
-  await expect(group.locator('.leverui-rating-group__itemIndicator').first()).toHaveAttribute(
+  await expect(group.locator('.lui-rating-group__itemIndicator').first()).toHaveAttribute(
     'data-unstyled',
     '',
   );
@@ -111,10 +111,7 @@ async function verifiesRatingStates({ page }: { page: Page }): Promise<void> {
   // Zag 2 names an item holding a half value by that value.
   const half = page.getByRole('radio', { name: '2.5 stars' });
   await expect(half).toHaveAttribute('aria-checked', 'true', { timeout: 30_000 });
-  await expect(half.locator('.leverui-rating-group__itemIndicator')).toHaveAttribute(
-    'data-half',
-    '',
-  );
+  await expect(half.locator('.lui-rating-group__itemIndicator')).toHaveAttribute('data-half', '');
   await expect(half.locator('svg')).toHaveCount(2);
   await page.goto('/iframe.html?id=components-rating-group--disabled');
   const second = page.getByRole('radio', { name: '2 stars' });

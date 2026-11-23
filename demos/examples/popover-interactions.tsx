@@ -52,7 +52,7 @@ export function PopoverMultipleTriggers(): JSX.Element {
                     <>
                       <Popover.Title
                         style={{
-                          'font-weight': 'var(--leverui-font-weights-medium)',
+                          'font-weight': 'var(--lui-font-weights-medium)',
                           'text-transform': 'capitalize',
                         }}
                       >
@@ -90,7 +90,7 @@ export function PopoverNested(): JSX.Element {
           <Popover.Content>
             <Popover.Arrow />
             <Popover.Body>
-              <Text style={{ 'margin-bottom': 'var(--leverui-spacing-4)' }}>
+              <Text style={{ 'margin-bottom': 'var(--lui-spacing-4)' }}>
                 The Lanternwright Chronicles is a fantasy novel series about an apprentice
                 lamplighter in a city that rearranges itself every night.
               </Text>

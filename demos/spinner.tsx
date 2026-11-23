@@ -59,7 +59,7 @@ export const CustomIndicator: Story = {
 export const TrackColor: Story = {
   render: SpinnerWithTrackColor,
   parameters: guide(
-    "Use the `--leverui-spinner-track-color` variable to change the color of the spinner's track.",
+    "Use the `--lui-spinner-track-color` variable to change the color of the spinner's track.",
   ),
 };
 export const Label: Story = {

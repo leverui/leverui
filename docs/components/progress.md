@@ -111,12 +111,12 @@ For a fast task, update the text at a pace that is useful to hear.
 ## Customize with CSS
 
 Import `@leverui/components/styles.css` before your own stylesheet. Set the
-public `--leverui-*` variables or style the stable `.leverui-progress__*`
-classes, such as `.leverui-progress__range`.
+public `--lui-*` variables or style the stable `.lui-progress__*`
+classes, such as `.lui-progress__range`.
 
-Track variables: `--leverui-progress-track-height`,
-`--leverui-progress-track-color`, and `--leverui-progress-track-radius`. Range
-variable: `--leverui-progress-range-color`.
+Track variables: `--lui-progress-track-height`,
+`--lui-progress-track-color`, and `--lui-progress-track-radius`. Range
+variable: `--lui-progress-range-color`.
 
 `unstyled` turns off the default styles but keeps the semantics and the styling
 hooks. `class` and `style` work on any part.

@@ -116,18 +116,18 @@ Also takes `class`, `style`, standard HTML attributes, and a callback `ref`.
 ## Customize with CSS
 
 Import `@leverui/components/styles.css`, then write plain CSS for the stable
-part classes: `.leverui-stat__group`, `.leverui-stat__root`,
-`.leverui-stat__label`, `.leverui-stat__valueText`, `.leverui-stat__valueUnit`,
-`.leverui-stat__helpText`, and `.leverui-stat__indicator`.
+part classes: `.lui-stat__group`, `.lui-stat__root`,
+`.lui-stat__label`, `.lui-stat__valueText`, `.lui-stat__valueUnit`,
+`.lui-stat__helpText`, and `.lui-stat__indicator`.
 
 The root has `data-size`, plus `data-size-sm` through `data-size-2xl` for
 responsive sizes. Indicators have `data-type="up"` or `"down"`. Colors and
-spacing come from public `--leverui-*` variables. Override them for a whole
+spacing come from public `--lui-*` variables. Override them for a whole
 theme or one stat. To give your own element a part's default styles, put that
 part's class on it.
 
 ```css
-.leverui-stat__label {
+.lui-stat__label {
   color: rebeccapurple;
 }
 ```

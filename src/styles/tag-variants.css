@@ -1,28 +1,28 @@
-@layer leverui.recipes {
-  .leverui-tag__root:not([data-unstyled]) {
-    --leverui-private-tag-background: var(--leverui-colors-color-palette-subtle);
-    --leverui-private-tag-color: var(--leverui-colors-color-palette-fg);
-    --leverui-private-tag-shadow: inset 0 0 0 1px var(--leverui-colors-color-palette-muted);
+@layer lui.recipes {
+  .lui-tag__root:not([data-unstyled]) {
+    --lui-private-tag-background: var(--lui-colors-color-palette-subtle);
+    --lui-private-tag-color: var(--lui-colors-color-palette-fg);
+    --lui-private-tag-shadow: inset 0 0 0 1px var(--lui-colors-color-palette-muted);
 
     &[data-variant='subtle'] {
-      --leverui-private-tag-background: var(--leverui-colors-color-palette-subtle);
-      --leverui-private-tag-color: var(--leverui-colors-color-palette-fg);
-      --leverui-private-tag-shadow: none;
+      --lui-private-tag-background: var(--lui-colors-color-palette-subtle);
+      --lui-private-tag-color: var(--lui-colors-color-palette-fg);
+      --lui-private-tag-shadow: none;
     }
     &[data-variant='solid'] {
-      --leverui-private-tag-background: var(--leverui-colors-color-palette-solid);
-      --leverui-private-tag-color: var(--leverui-colors-color-palette-contrast);
-      --leverui-private-tag-shadow: none;
+      --lui-private-tag-background: var(--lui-colors-color-palette-solid);
+      --lui-private-tag-color: var(--lui-colors-color-palette-contrast);
+      --lui-private-tag-shadow: none;
     }
     &[data-variant='outline'] {
-      --leverui-private-tag-background: transparent;
-      --leverui-private-tag-color: var(--leverui-colors-color-palette-fg);
-      --leverui-private-tag-shadow: inset 0 0 0 1px var(--leverui-colors-color-palette-border);
+      --lui-private-tag-background: transparent;
+      --lui-private-tag-color: var(--lui-colors-color-palette-fg);
+      --lui-private-tag-shadow: inset 0 0 0 1px var(--lui-colors-color-palette-border);
     }
     &[data-variant='surface'] {
-      --leverui-private-tag-background: var(--leverui-colors-color-palette-subtle);
-      --leverui-private-tag-color: var(--leverui-colors-color-palette-fg);
-      --leverui-private-tag-shadow: inset 0 0 0 1px var(--leverui-colors-color-palette-muted);
+      --lui-private-tag-background: var(--lui-colors-color-palette-subtle);
+      --lui-private-tag-color: var(--lui-colors-color-palette-fg);
+      --lui-private-tag-shadow: inset 0 0 0 1px var(--lui-colors-color-palette-muted);
     }
   }
 }

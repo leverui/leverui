@@ -35,7 +35,7 @@ function verifiesNativeSwatch(): void {
   expect(swatch.tagName).toBe('SPAN');
   expect(swatch.getAttribute('data-value')).toBe('rgba(255, 0, 0, 0.5)');
   expect(swatch.getAttribute('title')).toBe('Sample');
-  expect(swatch.className).toContain('leverui-color-swatch');
+  expect(swatch.className).toContain('lui-color-swatch');
   expect(swatch.hasAttribute('size')).toBe(false);
   expect(swatch.hasAttribute('shape')).toBe(false);
   setColor('blue');
@@ -95,7 +95,7 @@ function verifiesMixedColors(): void {
   expect(mixed.hasAttribute('items')).toBe(false);
   expect(mixed.querySelectorAll('[data-value]')).toHaveLength(3);
   expect(mixed.querySelector('[data-value="blue"]')?.getAttribute('class')).toContain(
-    'leverui-color-swatch',
+    'lui-color-swatch',
   );
 }
 
@@ -183,7 +183,7 @@ function verifiesSwatchComposition(): void {
   expect(child?.tagName).toBe('STRONG');
   expect(child?.getAttribute('title')).toBe('Blue sample');
   expect(child?.getAttribute('data-value')).toBe('blue');
-  expect(child?.className).toContain('leverui-color-swatch');
+  expect(child?.className).toContain('lui-color-swatch');
 }
 
 it(

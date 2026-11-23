@@ -202,25 +202,25 @@ With no value text, put the label directly under `Root`. Keep the state only in
 
 ## Customize with CSS
 
-Load the package stylesheet once. Variables: `--leverui-slider-thumb-size`,
-`--leverui-slider-track-size`, `--leverui-slider-marker-size`,
-`--leverui-slider-track-color`, `--leverui-slider-range-color`,
-`--leverui-slider-thumb-color`, `--leverui-slider-thumb-border-color`.
+Load the package stylesheet once. Variables: `--lui-slider-thumb-size`,
+`--lui-slider-track-size`, `--lui-slider-marker-size`,
+`--lui-slider-track-color`, `--lui-slider-range-color`,
+`--lui-slider-thumb-color`, `--lui-slider-thumb-border-color`.
 
-Every part has a stable `.leverui-slider__*` class and state attributes for
+Every part has a stable `.lui-slider__*` class and state attributes for
 selectors. `class` and `style` work on the root and every part. `unstyled`
 turns off the default styles and keeps the behavior.
 
 ```css
 .volume-slider {
-  --leverui-slider-thumb-size: 1.75rem;
-  --leverui-slider-range-color: rebeccapurple;
+  --lui-slider-thumb-size: 1.75rem;
+  --lui-slider-range-color: rebeccapurple;
 }
 ```
 
 Put `class="volume-slider"` on `Slider.Root`. Style one part with a selector
-such as `.leverui-slider__thumb`, or a state with
-`.leverui-slider__thumb[data-focus-visible]`.
+such as `.lui-slider__thumb`, or a state with
+`.lui-slider__thumb[data-focus-visible]`.
 
 ## Explorer
 

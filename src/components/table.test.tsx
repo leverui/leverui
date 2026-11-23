@@ -168,11 +168,11 @@ function verifiesCallerOwnedParts(): void {
   const nativeColumn = screen.getByTestId('owned-column');
   expect(scroll.tagName).toBe('SECTION');
   expect(scroll.getAttribute('title')).toBe('Inventory scroll');
-  expect(scroll.className).toContain('leverui-table__scrollArea');
+  expect(scroll.className).toContain('lui-table__scrollArea');
   expect(scroll.querySelector('table tbody td')?.textContent).toBe('Notebook');
   expect(nativeColumn).toBe(column);
   expect(nativeColumn.getAttribute('width')).toBe('25%');
-  expect(nativeColumn.className).toContain('leverui-table__column');
+  expect(nativeColumn.className).toContain('lui-table__column');
 }
 
 it('keeps caller-owned scroll and column elements native', verifiesCallerOwnedParts);

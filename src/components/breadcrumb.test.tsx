@@ -26,7 +26,7 @@ function verifiesProviderFreeMarkup(): void {
   expect(root.getAttribute('aria-label')).toBe('breadcrumb');
   expect(root.getAttribute('data-size')).toBe('md');
   expect(root.getAttribute('data-variant')).toBe('plain');
-  expect(root.hasAttribute('data-leverui-private-style-runtime')).toBe(false);
+  expect(root.hasAttribute('data-lui-private-style-runtime')).toBe(false);
   expect(screen.getByRole('link', { name: 'Docs' }).getAttribute('href')).toBe('/docs');
   expect(screen.getByRole('link', { name: 'Components' }).getAttribute('aria-current')).toBe(
     'page',

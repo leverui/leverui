@@ -19,14 +19,14 @@ const colorPalettes = [
 const cellStyle = { 'padding-right': '32px', 'padding-bottom': '32px' } as const;
 const headingStyle = {
   ...cellStyle,
-  'font-size': 'var(--leverui-font-sizes-sm)',
-  color: 'var(--leverui-colors-fg-muted)',
+  'font-size': 'var(--lui-font-sizes-sm)',
+  color: 'var(--lui-colors-fg-muted)',
   'font-weight': 'normal',
   'text-align': 'left',
 } as const;
 const labelStyle = {
-  'font-size': 'var(--leverui-font-sizes-sm)',
-  color: 'var(--leverui-colors-fg-muted)',
+  'font-size': 'var(--lui-font-sizes-sm)',
+  color: 'var(--lui-colors-fg-muted)',
   'min-width': '8ch',
 } as const;
 
@@ -38,7 +38,7 @@ export function TabsSizes(): JSX.Element {
         style={{
           'font-size': '0.875rem',
           'line-height': '1.5',
-          color: 'var(--leverui-colors-fg-muted)',
+          color: 'var(--lui-colors-fg-muted)',
         }}
       >
         <tr>
@@ -60,7 +60,7 @@ export function TabsSizes(): JSX.Element {
                       defaultValue="settings"
                       size={size}
                       variant={variant}
-                      style={{ 'margin-top': 'var(--leverui-spacing-3)', 'min-width': '300px' }}
+                      style={{ 'margin-top': 'var(--lui-spacing-3)', 'min-width': '300px' }}
                     >
                       <Tabs.List>
                         <Tabs.Trigger value="settings">Settings</Tabs.Trigger>
@@ -68,12 +68,12 @@ export function TabsSizes(): JSX.Element {
                       </Tabs.List>
                       <Tabs.ContentGroup>
                         <Tabs.Content value="settings">
-                          <Text style={{ 'font-size': 'var(--leverui-font-sizes-sm)' }}>
+                          <Text style={{ 'font-size': 'var(--lui-font-sizes-sm)' }}>
                             Change your workspace name, language, and time zone.
                           </Text>
                         </Tabs.Content>
                         <Tabs.Content value="billing">
-                          <Text style={{ 'font-size': 'var(--leverui-font-sizes-sm)' }}>
+                          <Text style={{ 'font-size': 'var(--lui-font-sizes-sm)' }}>
                             Update your payment card and download past invoices.
                           </Text>
                         </Tabs.Content>
@@ -120,7 +120,7 @@ export function TabsVariants(): JSX.Element {
                       defaultValue="settings"
                       variant={variant}
                       colorPalette={palette}
-                      style={{ 'margin-top': 'var(--leverui-spacing-3)', 'min-width': '300px' }}
+                      style={{ 'margin-top': 'var(--lui-spacing-3)', 'min-width': '300px' }}
                     >
                       <Tabs.List>
                         <Tabs.Trigger value="settings">Settings</Tabs.Trigger>
@@ -128,12 +128,12 @@ export function TabsVariants(): JSX.Element {
                       </Tabs.List>
                       <Tabs.ContentGroup>
                         <Tabs.Content value="settings">
-                          <Text style={{ 'font-size': 'var(--leverui-font-sizes-sm)' }}>
+                          <Text style={{ 'font-size': 'var(--lui-font-sizes-sm)' }}>
                             Change your workspace name, language, and time zone.
                           </Text>
                         </Tabs.Content>
                         <Tabs.Content value="billing">
-                          <Text style={{ 'font-size': 'var(--leverui-font-sizes-sm)' }}>
+                          <Text style={{ 'font-size': 'var(--lui-font-sizes-sm)' }}>
                             Update your payment card and download past invoices.
                           </Text>
                         </Tabs.Content>

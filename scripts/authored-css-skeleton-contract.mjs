@@ -1,11 +1,11 @@
 export const skeletonContentContract = {
   family: 'skeleton',
   required: [
-    '.leverui-skeleton:not([data-unstyled])',
-    '.leverui-skeleton.leverui-skeleton:not([data-unstyled])[data-loading]',
-    '.leverui-skeleton.leverui-circle:not([data-unstyled])[data-loading]',
-    '.leverui-skeleton-text:not([data-unstyled])',
-    '.leverui-skeleton-text__line:not([data-unstyled])[data-loading]',
+    '.lui-skeleton:not([data-unstyled])',
+    '.lui-skeleton.lui-skeleton:not([data-unstyled])[data-loading]',
+    '.lui-skeleton.lui-circle:not([data-unstyled])[data-loading]',
+    '.lui-skeleton-text:not([data-unstyled])',
+    '.lui-skeleton-text__line:not([data-unstyled])[data-loading]',
     '[data-last-line]',
     ...['shine', 'none'].map(
       /** Require every public scalar motion treatment. */
@@ -19,13 +19,13 @@ export const skeletonContentContract = {
           (variant) => `[data-variant-${breakpoint}='${variant}']`,
         ),
     ),
-    '--leverui-skeleton-bg',
-    '--leverui-skeleton-start-color',
-    '--leverui-skeleton-end-color',
-    '--leverui-skeleton-duration',
-    '--leverui-skeleton-fade-duration',
-    '--leverui-skeleton-text-width',
-    '--leverui-skeleton-line-height',
-    '--leverui-skeleton-last-line-width',
+    '--lui-skeleton-bg',
+    '--lui-skeleton-start-color',
+    '--lui-skeleton-end-color',
+    '--lui-skeleton-duration',
+    '--lui-skeleton-fade-duration',
+    '--lui-skeleton-text-width',
+    '--lui-skeleton-line-height',
+    '--lui-skeleton-last-line-width',
   ],
 };

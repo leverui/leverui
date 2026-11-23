@@ -38,8 +38,8 @@ function verifiesDefaultLoader(): void {
   const loader = screen.getByTestId('default-loader');
   expect(loader).toBe(wrapper);
   expect(loader.tagName).toBe('SPAN');
-  expect(loader.className).toContain('leverui-loader');
-  expect(loader.querySelector('.leverui-spinner')).not.toBeNull();
+  expect(loader.className).toContain('lui-loader');
+  expect(loader.querySelector('.lui-spinner')).not.toBeNull();
   expect(loader.querySelector('div')).not.toBeNull();
   expect(loader.textContent).toContain('Submit');
   expect(screen.queryByTestId('bypassed-loader')).toBeNull();
@@ -73,11 +73,11 @@ function verifiesLoaderContent(): void {
   const start = screen.getByTestId('start-loader');
   const end = screen.getByTestId('end-loader');
   const suppressed = screen.getByTestId('null-loader');
-  expect(contentNodes(start)[0]).toBe(start.querySelector('.leverui-spinner'));
-  expect(contentNodes(end).at(-1)).toBe(end.querySelector('.leverui-spinner'));
+  expect(contentNodes(start)[0]).toBe(start.querySelector('.lui-spinner'));
+  expect(contentNodes(end).at(-1)).toBe(end.querySelector('.lui-spinner'));
   expect(start.textContent).toBe('Loading');
   expect(suppressed.textContent).toBe('Ready');
-  expect(suppressed.querySelector('.leverui-spinner')).toBeNull();
+  expect(suppressed.querySelector('.lui-spinner')).toBeNull();
   expect(screen.getByTestId('custom-loader').textContent).toBe('◌Working');
 }
 
@@ -109,10 +109,10 @@ function verifiesReactiveLoader(): void {
     () => <Example />,
   );
   const loader = screen.getByTestId('reactive-loader');
-  expect(contentNodes(loader)[0]).toBe(loader.querySelector('.leverui-spinner'));
+  expect(contentNodes(loader)[0]).toBe(loader.querySelector('.lui-spinner'));
   setPlacement('end');
   flush();
-  expect(contentNodes(loader).at(-1)).toBe(loader.querySelector('.leverui-spinner'));
+  expect(contentNodes(loader).at(-1)).toBe(loader.querySelector('.lui-spinner'));
   setVisible(false);
   flush();
   expect(screen.queryByTestId('reactive-loader')).toBeNull();
@@ -149,7 +149,7 @@ function verifiesLoaderOverlay(): void {
   );
   expect(screen.getByTestId('selected-loader')).toBe(selected);
   expect(screen.getByTestId('loader-overlay')).toBe(overlay);
-  expect(overlay?.className).toContain('leverui-loader-overlay');
+  expect(overlay?.className).toContain('lui-loader-overlay');
 }
 
 it('forwards Loader and LoaderOverlay native refs', verifiesLoaderOverlay);

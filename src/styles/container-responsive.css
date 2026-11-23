@@ -1,5 +1,5 @@
-@layer leverui.recipes {
-  .leverui-container:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-container:not([data-unstyled]) {
     @media (min-width: 480px) {
       &[data-center-content-sm='true'] {
         display: flex;
@@ -12,10 +12,10 @@
         align-items: normal;
       }
       &[data-fluid-sm='true'] {
-        max-width: var(--leverui-container-fluid-max-width, var(--leverui-sizes-full));
+        max-width: var(--lui-container-fluid-max-width, var(--lui-sizes-full));
       }
       &[data-fluid-sm='false'] {
-        max-width: var(--leverui-container-max-width, var(--leverui-sizes-8xl));
+        max-width: var(--lui-container-max-width, var(--lui-sizes-8xl));
       }
     }
 
@@ -31,10 +31,10 @@
         align-items: normal;
       }
       &[data-fluid-md='true'] {
-        max-width: var(--leverui-container-fluid-max-width, var(--leverui-sizes-full));
+        max-width: var(--lui-container-fluid-max-width, var(--lui-sizes-full));
       }
       &[data-fluid-md='false'] {
-        max-width: var(--leverui-container-max-width, var(--leverui-sizes-8xl));
+        max-width: var(--lui-container-max-width, var(--lui-sizes-8xl));
       }
     }
 
@@ -50,10 +50,10 @@
         align-items: normal;
       }
       &[data-fluid-lg='true'] {
-        max-width: var(--leverui-container-fluid-max-width, var(--leverui-sizes-full));
+        max-width: var(--lui-container-fluid-max-width, var(--lui-sizes-full));
       }
       &[data-fluid-lg='false'] {
-        max-width: var(--leverui-container-max-width, var(--leverui-sizes-8xl));
+        max-width: var(--lui-container-max-width, var(--lui-sizes-8xl));
       }
     }
 
@@ -69,10 +69,10 @@
         align-items: normal;
       }
       &[data-fluid-xl='true'] {
-        max-width: var(--leverui-container-fluid-max-width, var(--leverui-sizes-full));
+        max-width: var(--lui-container-fluid-max-width, var(--lui-sizes-full));
       }
       &[data-fluid-xl='false'] {
-        max-width: var(--leverui-container-max-width, var(--leverui-sizes-8xl));
+        max-width: var(--lui-container-max-width, var(--lui-sizes-8xl));
       }
     }
 
@@ -88,10 +88,10 @@
         align-items: normal;
       }
       &[data-fluid-2xl='true'] {
-        max-width: var(--leverui-container-fluid-max-width, var(--leverui-sizes-full));
+        max-width: var(--lui-container-fluid-max-width, var(--lui-sizes-full));
       }
       &[data-fluid-2xl='false'] {
-        max-width: var(--leverui-container-max-width, var(--leverui-sizes-8xl));
+        max-width: var(--lui-container-max-width, var(--lui-sizes-8xl));
       }
     }
   }

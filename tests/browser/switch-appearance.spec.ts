@@ -14,7 +14,7 @@ async function verifiesSwitchAppearance({ page }: { page: Page }): Promise<void>
     for (const variant of ['solid', 'raised'] as const) {
       const root = page.getByTestId(`switch-matrix-${name}-${variant}`);
       await expect(root).toBeVisible({ timeout: 30_000 });
-      const control = root.locator('.leverui-switch__control');
+      const control = root.locator('.lui-switch__control');
       const actual = await control.evaluate(
         /** Read the browser's resolved track width for this recipe combination. */
         (element) => getComputedStyle(element).width,
@@ -35,10 +35,10 @@ async function verifiesSwitchAppearance({ page }: { page: Page }): Promise<void>
   await expect(page.getByTestId('switch-native-style-control')).toHaveCSS('border-radius', '7px');
   const unstyledRoot = page.getByTestId('switch-unstyled-root');
   await expect(unstyledRoot).toHaveAttribute('data-unstyled', '');
-  await expect(unstyledRoot.locator('.leverui-switch__control')).not.toHaveCSS('width', '40px');
+  await expect(unstyledRoot.locator('.lui-switch__control')).not.toHaveCSS('width', '40px');
   const unstyledControl = page
     .getByTestId('switch-unstyled-control-root')
-    .locator('.leverui-switch__control');
+    .locator('.lui-switch__control');
   await expect(unstyledControl).toHaveAttribute('data-unstyled', '');
   await expect(unstyledControl).not.toHaveCSS('width', '40px');
 }
@@ -51,8 +51,8 @@ async function verifiesResponsiveSwitchSizes({ page }: { page: Page }): Promise<
   const objectRoot = page.getByTestId('switch-responsive-object');
   const arrayRoot = page.getByTestId('switch-responsive-array');
   await expect(objectRoot).toBeVisible({ timeout: 30_000 });
-  await expect(objectRoot).not.toHaveAttribute('data-leverui-private-style-runtime', '');
-  await expect(arrayRoot).not.toHaveAttribute('data-leverui-private-style-runtime', '');
+  await expect(objectRoot).not.toHaveAttribute('data-lui-private-style-runtime', '');
+  await expect(arrayRoot).not.toHaveAttribute('data-lui-private-style-runtime', '');
   const cases = [
     { viewport: 400, object: '24px', array: '48px' },
     { viewport: 500, object: '32px', array: '48px' },
@@ -63,11 +63,11 @@ async function verifiesResponsiveSwitchSizes({ page }: { page: Page }): Promise<
   ] as const;
   for (const { viewport, object, array } of cases) {
     await page.setViewportSize({ width: viewport, height: 700 });
-    await expect(objectRoot.locator('.leverui-switch__control')).toHaveCSS('width', object);
-    await expect(arrayRoot.locator('.leverui-switch__control')).toHaveCSS('width', array);
+    await expect(objectRoot.locator('.lui-switch__control')).toHaveCSS('width', object);
+    await expect(arrayRoot.locator('.lui-switch__control')).toHaveCSS('width', array);
   }
   await expect(objectRoot.getByRole('checkbox')).not.toBeChecked();
-  await objectRoot.locator('.leverui-switch__control').click();
+  await objectRoot.locator('.lui-switch__control').click();
   await expect(objectRoot.getByRole('checkbox')).toBeChecked();
 }
 
@@ -78,8 +78,8 @@ async function readVariantAppearance(root: Locator): Promise<Record<string, stri
   return root.evaluate(
     /** Compare browser-computed values rather than copied CSS declarations. */
     (element) => {
-      const control = element.querySelector('.leverui-switch__control');
-      const thumb = element.querySelector('.leverui-switch__thumb');
+      const control = element.querySelector('.lui-switch__control');
+      const thumb = element.querySelector('.lui-switch__thumb');
       if (!control || !thumb) throw new Error('Switch appearance parts are missing.');
       const track = getComputedStyle(control);
       const handle = getComputedStyle(thumb);
@@ -105,8 +105,8 @@ async function verifiesResponsiveSwitchVariants({ page }: { page: Page }): Promi
   const solidReference = page.getByTestId('switch-variant-solid-reference');
   const raisedReference = page.getByTestId('switch-variant-raised-reference');
   await expect(objectRoot).toBeVisible({ timeout: 30_000 });
-  await expect(objectRoot).not.toHaveAttribute('data-leverui-private-style-runtime', '');
-  await expect(arrayRoot).not.toHaveAttribute('data-leverui-private-style-runtime', '');
+  await expect(objectRoot).not.toHaveAttribute('data-lui-private-style-runtime', '');
+  await expect(arrayRoot).not.toHaveAttribute('data-lui-private-style-runtime', '');
   const cases = [
     { viewport: 400, object: '20px', array: '10px' },
     { viewport: 500, object: '10px', array: '10px' },
@@ -117,13 +117,13 @@ async function verifiesResponsiveSwitchVariants({ page }: { page: Page }): Promi
   ] as const;
   for (const { viewport, object, array } of cases) {
     await page.setViewportSize({ width: viewport, height: 700 });
-    await expect(objectRoot.locator('.leverui-switch__control')).toHaveCSS('height', object);
-    await expect(arrayRoot.locator('.leverui-switch__control')).toHaveCSS('height', array);
-    await expect(objectRoot.locator('.leverui-switch__thumb')).toHaveCSS(
+    await expect(objectRoot.locator('.lui-switch__control')).toHaveCSS('height', object);
+    await expect(arrayRoot.locator('.lui-switch__control')).toHaveCSS('height', array);
+    await expect(objectRoot.locator('.lui-switch__thumb')).toHaveCSS(
       'scale',
       object === '20px' ? '0.8' : '1',
     );
-    await expect(arrayRoot.locator('.leverui-switch__thumb')).toHaveCSS(
+    await expect(arrayRoot.locator('.lui-switch__thumb')).toHaveCSS(
       'scale',
       array === '20px' ? '0.8' : '1',
     );
@@ -134,8 +134,8 @@ async function verifiesResponsiveSwitchVariants({ page }: { page: Page }): Promi
       .poll(() => readVariantAppearance(arrayRoot))
       .toEqual(await readVariantAppearance(array === '20px' ? solidReference : raisedReference));
   }
-  await objectRoot.locator('.leverui-switch__control').click();
-  await raisedReference.locator('.leverui-switch__control').click();
+  await objectRoot.locator('.lui-switch__control').click();
+  await raisedReference.locator('.lui-switch__control').click();
   await expect(objectRoot.getByRole('checkbox')).toBeChecked();
   await expect(raisedReference.getByRole('checkbox')).toBeChecked();
   await expect

@@ -32,7 +32,7 @@ async function verifiesFlex({ page }: { page: Page }): Promise<void> {
   await expect(root).toBeVisible({ timeout: 30_000 });
   await expect(root).toHaveCSS('display', 'flex');
   await expect(root).toHaveCSS('gap', '16px');
-  await expect(root).toHaveClass(/leverui-flex/);
+  await expect(root).toHaveClass(/lui-flex/);
   const first = await requiredBox(page.getByTestId('flex-first-item'));
   const second = await requiredBox(page.getByTestId('flex-second-item'));
   expectNear(second.x - first.x - first.width, 16);
@@ -59,7 +59,7 @@ async function verifiesFlex({ page }: { page: Page }): Promise<void> {
   await expect(responsive).toHaveCSS('flex-direction', 'row');
   await expect(page.getByTestId('flex-token-basis')).toHaveCSS('flex-basis', '40px');
   await page.addStyleTag({
-    content: '.leverui-flex[data-testid="flex-token-basis"] { --leverui-sizes-10: 52px; }',
+    content: '.lui-flex[data-testid="flex-token-basis"] { --lui-sizes-10: 52px; }',
   });
   await expect(page.getByTestId('flex-token-basis')).toHaveCSS('flex-basis', '52px');
   const wrapFirst = await requiredBox(page.getByTestId('flex-wrap-first'));
@@ -115,7 +115,7 @@ async function verifiesFlex({ page }: { page: Page }): Promise<void> {
 
   await page.setViewportSize({ width: 900, height: 700 });
   await expect(responsive).toHaveCSS('flex-direction', 'column');
-  await page.addStyleTag({ content: '.leverui-flex[data-testid="flex-default"] { gap: 21px; }' });
+  await page.addStyleTag({ content: '.lui-flex[data-testid="flex-default"] { gap: 21px; }' });
   await expect(root).toHaveCSS('gap', '21px');
 }
 

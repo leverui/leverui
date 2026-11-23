@@ -20,7 +20,7 @@ function verifiesServerPasswordInput(): void {
     /** Render from the built server entry point. */
     () => createComponent(server.PasswordInput, { 'aria-label': 'Password' }),
   );
-  expect(markup).toContain('leverui-password-input__visibility-trigger');
+  expect(markup).toContain('lui-password-input__visibility-trigger');
   expect(markup).toContain('type="password"');
 }
 
@@ -32,7 +32,7 @@ function verifiesServerStrengthMeter(): void {
     /** Render a selected strength segment without client-side style insertion. */
     () => createComponent(server.PasswordStrengthMeter, { value: 3 }),
   );
-  expect(markup).toContain('leverui-password-strength-meter__segment');
+  expect(markup).toContain('lui-password-strength-meter__segment');
   expect(markup).toContain('data-strength-level="high"');
   expect(markup.match(/\sdata-selected(?:=""|(?=[\s/>]))/g)).toHaveLength(3);
 }

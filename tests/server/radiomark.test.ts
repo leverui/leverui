@@ -35,9 +35,9 @@ function verifiesServerRadiomark(): void {
   expect(markup).toMatch(/<span[^>]*id="server-checked"/);
   expect(markup).toMatch(/\sdata\-checked(?:=""|(?=[\s/>]))/);
   expect(markup).toMatch(/\sdata\-disabled(?:=""|(?=[\s/>]))/);
-  expect(markup).toMatch(/<span[^>]*class="dot leverui-radiomark__dot"[^>]*><\/span><\/span>/);
+  expect(markup).toMatch(/<span[^>]*class="dot lui-radiomark__dot"[^>]*><\/span><\/span>/);
   expect(markup).not.toContain('Selected');
-  expect(markup).toContain('leverui-radiomark');
+  expect(markup).toContain('lui-radiomark');
   expect(markup).not.toMatch(/<span[^>]*\s(?:checked|disabled|size|variant)=/);
 }
 

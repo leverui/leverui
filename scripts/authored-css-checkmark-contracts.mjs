@@ -2,7 +2,7 @@ export const checkmarkContracts = [
   {
     family: 'checkmark',
     required: [
-      '.leverui-checkmark:not([data-unstyled])',
+      '.lui-checkmark:not([data-unstyled])',
       ...['xs', 'sm', 'md', 'lg'].map(
         /** Require each finite SVG size. */
         (size) => `[data-size='${size}']`,

@@ -29,16 +29,16 @@ export function ScatterAxes(props: {
   }
 
   return (
-    <g class="leverui-scatter-chart__axes" data-scatter-axes="">
+    <g class="lui-scatter-chart__axes" data-scatter-axes="">
       <line
-        class="leverui-scatter-chart__axis-line"
+        class="lui-scatter-chart__axis-line"
         x1={props.plot.left}
         x2={props.plot.width - props.plot.right}
         y1={props.plot.height - props.plot.bottom}
         y2={props.plot.height - props.plot.bottom}
       />
       <line
-        class="leverui-scatter-chart__axis-line"
+        class="lui-scatter-chart__axis-line"
         x1={props.plot.left}
         x2={props.plot.left}
         y1={props.plot.top}
@@ -47,7 +47,7 @@ export function ScatterAxes(props: {
       <For each={xTicks()}>
         {/** Mark one numeric position on the x axis. */}
         {(value) => (
-          <g class="leverui-scatter-chart__tick">
+          <g class="lui-scatter-chart__tick">
             <line
               x1={scatterX(props.plot, value)}
               x2={scatterX(props.plot, value)}
@@ -55,7 +55,7 @@ export function ScatterAxes(props: {
               y2={props.plot.height - props.plot.bottom + 6}
             />
             <text
-              class="leverui-scatter-chart__tick-label"
+              class="lui-scatter-chart__tick-label"
               x={Math.min(scatterX(props.plot, value), props.plot.width - 18)}
               y={props.plot.height - props.plot.bottom + 16.5}
               text-anchor="middle"
@@ -71,7 +71,7 @@ export function ScatterAxes(props: {
           /** Read the value represented by this vertical tick. */
           const value = () => props.plot.yMin + ((props.plot.yMax - props.plot.yMin) * index) / 4;
           return (
-            <g class="leverui-scatter-chart__tick">
+            <g class="lui-scatter-chart__tick">
               <line
                 x1={props.plot.left - 5}
                 x2={props.plot.left}
@@ -79,7 +79,7 @@ export function ScatterAxes(props: {
                 y2={scatterY(props.plot, value())}
               />
               <text
-                class="leverui-scatter-chart__tick-label"
+                class="lui-scatter-chart__tick-label"
                 x={props.plot.left - 8}
                 y={scatterY(props.plot, value()) + 4.25}
                 text-anchor="end"

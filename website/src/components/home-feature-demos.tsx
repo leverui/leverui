@@ -63,7 +63,7 @@ export function ThemeDemo(): JSX.Element {
             <button
               type="button"
               class="feature-swatch"
-              style={{ background: `var(--leverui-colors-${name}-solid)` }}
+              style={{ background: `var(--lui-colors-${name}-solid)` }}
               aria-label={name}
               aria-pressed={palette() === name ? 'true' : 'false'}
               onClick={

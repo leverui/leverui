@@ -10,7 +10,7 @@ export const dateInputContracts = [
     required: [
       ...styledParts.map(
         /** Require a default authored selector for each styled public part. */
-        (part) => `.leverui-date-input__${part}:not([data-unstyled])`,
+        (part) => `.lui-date-input__${part}:not([data-unstyled])`,
       ),
       ...sizes.map(
         /** Require each scalar size rule. */

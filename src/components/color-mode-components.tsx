@@ -62,7 +62,7 @@ export type ColorModeButtonProps = Omit<
 export function ColorModeButton(props: ColorModeButtonProps): JSX.Element {
   const { toggleColorMode } = createColorMode();
   return (
-    <ClientOnly fallback={<Skeleton class="leverui-color-mode-button-placeholder" />}>
+    <ClientOnly fallback={<Skeleton class="lui-color-mode-button-placeholder" />}>
       <IconButton
         onClick={toggleColorMode}
         variant="ghost"
@@ -70,7 +70,7 @@ export function ColorModeButton(props: ColorModeButtonProps): JSX.Element {
         size="sm"
         {...props}
       >
-        <ColorModeIcon class="leverui-color-mode-icon" />
+        <ColorModeIcon class="lui-color-mode-icon" />
       </IconButton>
     </ClientOnly>
   );
@@ -98,9 +98,7 @@ function ForcedColorMode(
   props: ForcedColorModeProps & { appearance: 'light' | 'dark' },
 ): JSX.Element {
   const [local, rest] = splitProps(props, ['class']);
-  return (
-    <Theme hasBackground={false} {...rest} class={['leverui-color-mode-scope', local.class]} />
-  );
+  return <Theme hasBackground={false} {...rest} class={['lui-color-mode-scope', local.class]} />;
 }
 
 /** Keep the children in light mode whatever the document uses. */

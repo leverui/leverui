@@ -34,5 +34,5 @@ a native list element when they are one.
 
 Defaults: `display: flex`, `flex-wrap: wrap`, `gap: 8px`. Override `Wrap` or
 `WrapItem` with your own classes. `unstyled` keeps the element and turns off its
-default styles. To change the defaults in one place, set `--leverui-wrap-gap` on
-a `Wrap` that has no `gap` prop, or `--leverui-wrap-item-align` on a `WrapItem`.
+default styles. To change the defaults in one place, set `--lui-wrap-gap` on
+a `Wrap` that has no `gap` prop, or `--lui-wrap-item-align` on a `WrapItem`.

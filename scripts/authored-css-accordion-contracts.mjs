@@ -5,7 +5,7 @@ export const accordionContracts = [
     required: [
       ...['root', 'item', 'itemTrigger', 'itemContent', 'itemBody', 'itemIndicator'].map(
         /** Identify one public part selector. */
-        (part) => `.leverui-accordion__${part}`,
+        (part) => `.lui-accordion__${part}`,
       ),
       ...['sm', 'md', 'lg'].map(
         /** Identify a base size. */

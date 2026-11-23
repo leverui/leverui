@@ -1,44 +1,41 @@
-@layer leverui.recipes {
-  .leverui-separator:not([data-unstyled]) {
-    --leverui-private-separator-thickness: 1px;
+@layer lui.recipes {
+  .lui-separator:not([data-unstyled]) {
+    --lui-private-separator-thickness: 1px;
     display: block;
     border: 0;
-    border-color: var(--leverui-separator-color, var(--leverui-colors-border));
+    border-color: var(--lui-separator-color, var(--lui-colors-border));
     border-style: solid;
-    border-top-width: var(
-      --leverui-separator-thickness,
-      var(--leverui-private-separator-thickness)
-    );
+    border-top-width: var(--lui-separator-thickness, var(--lui-private-separator-thickness));
   }
 
-  .leverui-separator:not([data-unstyled])[data-size='xs'] {
-    --leverui-private-separator-thickness: 0.5px;
+  .lui-separator:not([data-unstyled])[data-size='xs'] {
+    --lui-private-separator-thickness: 0.5px;
   }
-  .leverui-separator:not([data-unstyled])[data-size='sm'] {
-    --leverui-private-separator-thickness: 1px;
+  .lui-separator:not([data-unstyled])[data-size='sm'] {
+    --lui-private-separator-thickness: 1px;
   }
-  .leverui-separator:not([data-unstyled])[data-size='md'] {
-    --leverui-private-separator-thickness: 2px;
+  .lui-separator:not([data-unstyled])[data-size='md'] {
+    --lui-private-separator-thickness: 2px;
   }
-  .leverui-separator:not([data-unstyled])[data-size='lg'] {
-    --leverui-private-separator-thickness: 3px;
+  .lui-separator:not([data-unstyled])[data-size='lg'] {
+    --lui-private-separator-thickness: 3px;
   }
 
-  .leverui-separator:not([data-unstyled])[data-variant='solid'] {
+  .lui-separator:not([data-unstyled])[data-variant='solid'] {
     border-style: solid;
   }
-  .leverui-separator:not([data-unstyled])[data-variant='dashed'] {
+  .lui-separator:not([data-unstyled])[data-variant='dashed'] {
     border-style: dashed;
   }
-  .leverui-separator:not([data-unstyled])[data-variant='dotted'] {
+  .lui-separator:not([data-unstyled])[data-variant='dotted'] {
     border-style: dotted;
   }
 
-  .leverui-separator:not([data-unstyled])[data-orientation='vertical'] {
+  .lui-separator:not([data-unstyled])[data-orientation='vertical'] {
     border-top-width: 0;
     border-inline-start-width: var(
-      --leverui-separator-thickness,
-      var(--leverui-private-separator-thickness)
+      --lui-separator-thickness,
+      var(--lui-private-separator-thickness)
     );
   }
 }

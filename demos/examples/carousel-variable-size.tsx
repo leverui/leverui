@@ -47,8 +47,8 @@ export function CarouselVariableSize(): JSX.Element {
                   style={{
                     width: item().width,
                     height: '100px',
-                    background: 'var(--leverui-colors-bg-emphasized)',
-                    'border-radius': 'var(--leverui-radii-l2)',
+                    background: 'var(--lui-colors-bg-emphasized)',
+                    'border-radius': 'var(--lui-radii-l2)',
                   }}
                 >
                   {item().label}

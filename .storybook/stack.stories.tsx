@@ -28,7 +28,7 @@ function renderCustomSeparator(props: StackSeparatorRenderProps): JSX.Element {
   return (
     <StackSeparator
       {...props}
-      style={{ 'border-color': 'var(--leverui-colors-red-500)' }}
+      style={{ 'border-color': 'var(--lui-colors-red-500)' }}
       data-testid="stack-custom-line"
     />
   );

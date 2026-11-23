@@ -14,7 +14,7 @@ const menuItems = [
 export function BreadcrumbWithMenu(): JSX.Element {
   return (
     <Breadcrumb.Root>
-      <Breadcrumb.List style={{ gap: 'var(--leverui-spacing-4)' }}>
+      <Breadcrumb.List style={{ gap: 'var(--lui-spacing-4)' }}>
         <Breadcrumb.Item>
           <Breadcrumb.Link href="#">Docs</Breadcrumb.Link>
         </Breadcrumb.Item>

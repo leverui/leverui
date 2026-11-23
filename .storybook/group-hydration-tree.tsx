@@ -48,7 +48,7 @@ export function renderGroupHydrationTree(components: GroupHydrationComponents): 
                 component: 'button',
                 id: 'hydrated-group-middle',
                 /** Exclude the middle native child after the toggle. */
-                get 'data-leverui-group-skip'() {
+                get 'data-lui-group-skip'() {
                   return skipMiddle() ? '' : undefined;
                 },
                 children: 'Middle',

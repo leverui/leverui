@@ -13,7 +13,7 @@ async function verifiesDrawerContract({ page }: { page: Page }): Promise<void> {
   await expect(content).toHaveAttribute('role', 'dialog');
   await expect(content).toHaveAttribute('data-drawer-ref-tag', 'div');
   await expect(content).toHaveJSProperty('tagName', 'DIV');
-  await expect(content).toHaveClass(/leverui-drawer__content/);
+  await expect(content).toHaveClass(/lui-drawer__content/);
   await expect(page.getByTestId('drawer-open-state')).toHaveText('true');
   await expect(page.getByRole('textbox', { name: 'Drawer first field' })).toBeFocused();
   const contentId = await content.getAttribute('id');
@@ -34,7 +34,7 @@ async function verifiesDrawerContract({ page }: { page: Page }): Promise<void> {
   await page.getByTestId('nested-drawer-trigger').click();
   const nested = page.getByTestId('nested-drawer-content');
   await expect(nested).toBeVisible();
-  await expect(nested).toHaveClass(/leverui-drawer__content/);
+  await expect(nested).toHaveClass(/lui-drawer__content/);
   await expect(nested.getByRole('button', { name: 'Close nested Drawer' })).toBeVisible();
   await nested.getByRole('button', { name: 'Close nested Drawer' }).click();
   await expect(nested).toHaveCount(0);

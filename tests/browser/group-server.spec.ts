@@ -102,9 +102,9 @@ async function verifiesServerGroup({ page }: { page: Page }): Promise<void> {
   await expect(responsive).toHaveCSS('display', 'inline-flex');
   await expect(responsive).toHaveAttribute('data-orientation-md', 'vertical');
   await expect(responsive).toHaveAttribute('data-grow-md', 'true');
-  await expect(responsive).not.toHaveAttribute('data-leverui-private-style-runtime');
+  await expect(responsive).not.toHaveAttribute('data-lui-private-style-runtime');
   await expect(responsive).toHaveCSS('flex-direction', 'row');
-  await expect(buttonGroup).toHaveClass(/leverui-button-group/);
+  await expect(buttonGroup).toHaveClass(/lui-button-group/);
   await expect(buttonGroup).toHaveAttribute('data-attached', '');
   await expect(buttonGroup).toHaveCSS('gap', '0px');
   await expect(responsiveButtonGroup).toHaveCSS('flex-direction', 'row');

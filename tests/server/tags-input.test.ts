@@ -43,9 +43,9 @@ function renderServerTagsInput(): string {
 function verifiesServerTagsInput(): void {
   const markup = renderServerTagsInput();
   expect(markup).toContain('data-tags-input-');
-  expect(markup).toContain('leverui-tags-input__root');
-  expect(markup).toContain('leverui-tags-input__itemPreview');
-  expect(markup).toContain('leverui-tags-input__hiddenInput');
+  expect(markup).toContain('lui-tags-input__root');
+  expect(markup).toContain('lui-tags-input__itemPreview');
+  expect(markup).toContain('lui-tags-input__hiddenInput');
   expect(markup).toContain('data-size="sm"');
   expect(markup).toContain('Solid');
   expect(markup).toContain('TypeScript');

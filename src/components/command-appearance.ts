@@ -26,7 +26,7 @@ type Breakpoint = 'sm' | 'md' | 'lg' | 'xl' | '2xl';
 type SizeAttribute = 'data-size' | `data-size-${Breakpoint}`;
 export type CommandAppearanceAttributes = Partial<
   Record<SizeAttribute, CommandSize | undefined> & {
-    'data-leverui-color-palette': string | undefined;
+    'data-lui-color-palette': string | undefined;
   }
 >;
 
@@ -68,6 +68,6 @@ export function commandAppearanceAttributes(
     'data-size-lg': size.lg,
     'data-size-xl': size.xl,
     'data-size-2xl': size['2xl'],
-    'data-leverui-color-palette': state.colorPalette(),
+    'data-lui-color-palette': state.colorPalette(),
   };
 }

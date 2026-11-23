@@ -15,11 +15,12 @@ async function verifiesEmptyStateParts({ page }: { page: Page }): Promise<void> 
   await expect(page.getByTestId('empty-lg')).toHaveCSS('padding-top', '64px');
   await expect(page.getByTestId('empty-css-override')).toHaveCSS('padding-top', '20px');
   await expect(
-    page.getByTestId('empty-css-override').locator('.leverui-empty-state__content'),
+    page.getByTestId('empty-css-override').locator('.lui-empty-state__content'),
   ).toHaveCSS('gap', '2px');
-  await expect(
-    page.getByTestId('empty-css-override').locator('.leverui-empty-state__title'),
-  ).toHaveCSS('color', 'rgb(11, 99, 176)');
+  await expect(page.getByTestId('empty-css-override').locator('.lui-empty-state__title')).toHaveCSS(
+    'color',
+    'rgb(11, 99, 176)',
+  );
   await expect(page.getByTestId('empty-unstyled')).toHaveCSS('padding-top', '0px');
   await expect(page.getByTestId('empty-responsive')).toHaveCSS('padding-top', '24px');
   await page.setViewportSize({ width: 900, height: 720 });

@@ -8,7 +8,7 @@ async function verifiesListboxCssContract({ page }: { page: Page }): Promise<voi
   const selected = content.getByRole('option', { name: 'Solid' });
   await expect(content).toBeVisible({ timeout: 30_000 });
   await expect(root).toHaveClass(/consumer-listbox/);
-  await expect(root).toHaveClass(/leverui-listbox__root/);
+  await expect(root).toHaveClass(/lui-listbox__root/);
   await expect(root).toHaveCSS('width', '280px');
   await expect(content).toHaveCSS('box-shadow', 'rgb(2, 132, 199) 0px 0px 0px 2px inset');
   await expect(selected).toHaveCSS('background-color', 'rgb(253, 230, 138)');

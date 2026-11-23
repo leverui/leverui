@@ -87,7 +87,7 @@ test('Date Picker selects a day from its popup', verifiesBasicSelection);
 /** Keep the date field clear of both Input Group adornments through authored CSS. */
 async function verifiesInputGroupPadding({ page }: { page: Page }): Promise<void> {
   await openStory(page, 'input-group');
-  const input = page.locator('.leverui-input-group__field');
+  const input = page.locator('.lui-input-group__field');
   await expect(input).toBeVisible();
   await expect(input).toHaveCSS('padding-inline-start', '40px');
   await expect(input).toHaveCSS('padding-inline-end', '40px');

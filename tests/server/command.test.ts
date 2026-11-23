@@ -56,9 +56,9 @@ function renderServerCommand(): string {
 /** Preserve native semantics and authored hooks without leaking appearance props. */
 function verifiesServerCommand(): void {
   const markup = renderServerCommand();
-  expect(markup).toContain('leverui-command__root');
-  expect(markup).toContain('leverui-command__input');
-  expect(markup).toContain('leverui-command__item');
+  expect(markup).toContain('lui-command__root');
+  expect(markup).toContain('lui-command__input');
+  expect(markup).toContain('lui-command__item');
   expect(markup).toContain('data-size="sm"');
   expect(markup).toContain('role="combobox"');
   expect(markup).toContain('Open file');

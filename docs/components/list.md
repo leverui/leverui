@@ -39,17 +39,17 @@ reads a signal, the lists update in place.
 ## Customize with CSS
 
 Import `@leverui/components/styles.css` once in your app. Set
-`--leverui-list-gap` on a list or a wrapping class to change the space between
+`--lui-list-gap` on a list or a wrapping class to change the space between
 items and nested lists.
 
 ```css
 .compact-list {
-  --leverui-list-gap: var(--leverui-spacing-1);
+  --lui-list-gap: var(--lui-spacing-1);
 }
 ```
 
-Classes: `.leverui-list__root`, `.leverui-list__item`, and
-`.leverui-list__indicator`. Put one on your own element inside a `List.Root`
+Classes: `.lui-list__root`, `.lui-list__item`, and
+`.lui-list__indicator`. Put one on your own element inside a `List.Root`
 and it picks up the list's variant. The root has `data-variant` and
 `data-align`, plus one per screen size you set, such as `data-variant-md`.
 

@@ -81,7 +81,7 @@ function renderColorPickerRoot(
     () => colorPickerAppearanceAttributes(appearance),
     {
       /** Gate authored defaults when the caller opts out. */
-      get 'data-leverui-color-picker-css'() {
+      get 'data-lui-color-picker-css'() {
         return local.unstyled ? undefined : '';
       },
       /** Expose the caller's unstyled choice to custom CSS. */

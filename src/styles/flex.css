@@ -1,109 +1,109 @@
-@layer leverui.recipes {
-  .leverui-flex {
-    --leverui-private-flex-align-base: initial;
-    --leverui-private-flex-align-sm: initial;
-    --leverui-private-flex-align-md: initial;
-    --leverui-private-flex-align-lg: initial;
-    --leverui-private-flex-align-xl: initial;
-    --leverui-private-flex-align-2xl: initial;
-    --leverui-private-flex-justify-base: initial;
-    --leverui-private-flex-justify-sm: initial;
-    --leverui-private-flex-justify-md: initial;
-    --leverui-private-flex-justify-lg: initial;
-    --leverui-private-flex-justify-xl: initial;
-    --leverui-private-flex-justify-2xl: initial;
-    --leverui-private-flex-wrap-base: initial;
-    --leverui-private-flex-wrap-sm: initial;
-    --leverui-private-flex-wrap-md: initial;
-    --leverui-private-flex-wrap-lg: initial;
-    --leverui-private-flex-wrap-xl: initial;
-    --leverui-private-flex-wrap-2xl: initial;
-    --leverui-private-flex-direction-base: initial;
-    --leverui-private-flex-direction-sm: initial;
-    --leverui-private-flex-direction-md: initial;
-    --leverui-private-flex-direction-lg: initial;
-    --leverui-private-flex-direction-xl: initial;
-    --leverui-private-flex-direction-2xl: initial;
-    --leverui-private-flex-basis-base: initial;
-    --leverui-private-flex-basis-sm: initial;
-    --leverui-private-flex-basis-md: initial;
-    --leverui-private-flex-basis-lg: initial;
-    --leverui-private-flex-basis-xl: initial;
-    --leverui-private-flex-basis-2xl: initial;
-    --leverui-private-flex-grow-base: initial;
-    --leverui-private-flex-grow-sm: initial;
-    --leverui-private-flex-grow-md: initial;
-    --leverui-private-flex-grow-lg: initial;
-    --leverui-private-flex-grow-xl: initial;
-    --leverui-private-flex-grow-2xl: initial;
-    --leverui-private-flex-shrink-base: initial;
-    --leverui-private-flex-shrink-sm: initial;
-    --leverui-private-flex-shrink-md: initial;
-    --leverui-private-flex-shrink-lg: initial;
-    --leverui-private-flex-shrink-xl: initial;
-    --leverui-private-flex-shrink-2xl: initial;
+@layer lui.recipes {
+  .lui-flex {
+    --lui-private-flex-align-base: initial;
+    --lui-private-flex-align-sm: initial;
+    --lui-private-flex-align-md: initial;
+    --lui-private-flex-align-lg: initial;
+    --lui-private-flex-align-xl: initial;
+    --lui-private-flex-align-2xl: initial;
+    --lui-private-flex-justify-base: initial;
+    --lui-private-flex-justify-sm: initial;
+    --lui-private-flex-justify-md: initial;
+    --lui-private-flex-justify-lg: initial;
+    --lui-private-flex-justify-xl: initial;
+    --lui-private-flex-justify-2xl: initial;
+    --lui-private-flex-wrap-base: initial;
+    --lui-private-flex-wrap-sm: initial;
+    --lui-private-flex-wrap-md: initial;
+    --lui-private-flex-wrap-lg: initial;
+    --lui-private-flex-wrap-xl: initial;
+    --lui-private-flex-wrap-2xl: initial;
+    --lui-private-flex-direction-base: initial;
+    --lui-private-flex-direction-sm: initial;
+    --lui-private-flex-direction-md: initial;
+    --lui-private-flex-direction-lg: initial;
+    --lui-private-flex-direction-xl: initial;
+    --lui-private-flex-direction-2xl: initial;
+    --lui-private-flex-basis-base: initial;
+    --lui-private-flex-basis-sm: initial;
+    --lui-private-flex-basis-md: initial;
+    --lui-private-flex-basis-lg: initial;
+    --lui-private-flex-basis-xl: initial;
+    --lui-private-flex-basis-2xl: initial;
+    --lui-private-flex-grow-base: initial;
+    --lui-private-flex-grow-sm: initial;
+    --lui-private-flex-grow-md: initial;
+    --lui-private-flex-grow-lg: initial;
+    --lui-private-flex-grow-xl: initial;
+    --lui-private-flex-grow-2xl: initial;
+    --lui-private-flex-shrink-base: initial;
+    --lui-private-flex-shrink-sm: initial;
+    --lui-private-flex-shrink-md: initial;
+    --lui-private-flex-shrink-lg: initial;
+    --lui-private-flex-shrink-xl: initial;
+    --lui-private-flex-shrink-2xl: initial;
 
     display: flex;
-    align-items: var(--leverui-private-flex-align-base, normal);
-    justify-content: var(--leverui-private-flex-justify-base, normal);
-    flex-wrap: var(--leverui-private-flex-wrap-base, nowrap);
-    flex-direction: var(--leverui-private-flex-direction-base, row);
-    flex-basis: var(--leverui-private-flex-basis-base, auto);
-    flex-grow: var(--leverui-private-flex-grow-base, 0);
-    flex-shrink: var(--leverui-private-flex-shrink-base, 1);
+    align-items: var(--lui-private-flex-align-base, normal);
+    justify-content: var(--lui-private-flex-justify-base, normal);
+    flex-wrap: var(--lui-private-flex-wrap-base, nowrap);
+    flex-direction: var(--lui-private-flex-direction-base, row);
+    flex-basis: var(--lui-private-flex-basis-base, auto);
+    flex-grow: var(--lui-private-flex-grow-base, 0);
+    flex-shrink: var(--lui-private-flex-shrink-base, 1);
 
     &[data-inline='true'] {
       display: inline-flex;
     }
 
     @media (min-width: 480px) {
-      align-items: var(--leverui-private-flex-align-sm, normal);
-      justify-content: var(--leverui-private-flex-justify-sm, normal);
-      flex-wrap: var(--leverui-private-flex-wrap-sm, nowrap);
-      flex-direction: var(--leverui-private-flex-direction-sm, row);
-      flex-basis: var(--leverui-private-flex-basis-sm, auto);
-      flex-grow: var(--leverui-private-flex-grow-sm, 0);
-      flex-shrink: var(--leverui-private-flex-shrink-sm, 1);
+      align-items: var(--lui-private-flex-align-sm, normal);
+      justify-content: var(--lui-private-flex-justify-sm, normal);
+      flex-wrap: var(--lui-private-flex-wrap-sm, nowrap);
+      flex-direction: var(--lui-private-flex-direction-sm, row);
+      flex-basis: var(--lui-private-flex-basis-sm, auto);
+      flex-grow: var(--lui-private-flex-grow-sm, 0);
+      flex-shrink: var(--lui-private-flex-shrink-sm, 1);
     }
 
     @media (min-width: 768px) {
-      align-items: var(--leverui-private-flex-align-md, normal);
-      justify-content: var(--leverui-private-flex-justify-md, normal);
-      flex-wrap: var(--leverui-private-flex-wrap-md, nowrap);
-      flex-direction: var(--leverui-private-flex-direction-md, row);
-      flex-basis: var(--leverui-private-flex-basis-md, auto);
-      flex-grow: var(--leverui-private-flex-grow-md, 0);
-      flex-shrink: var(--leverui-private-flex-shrink-md, 1);
+      align-items: var(--lui-private-flex-align-md, normal);
+      justify-content: var(--lui-private-flex-justify-md, normal);
+      flex-wrap: var(--lui-private-flex-wrap-md, nowrap);
+      flex-direction: var(--lui-private-flex-direction-md, row);
+      flex-basis: var(--lui-private-flex-basis-md, auto);
+      flex-grow: var(--lui-private-flex-grow-md, 0);
+      flex-shrink: var(--lui-private-flex-shrink-md, 1);
     }
 
     @media (min-width: 1024px) {
-      align-items: var(--leverui-private-flex-align-lg, normal);
-      justify-content: var(--leverui-private-flex-justify-lg, normal);
-      flex-wrap: var(--leverui-private-flex-wrap-lg, nowrap);
-      flex-direction: var(--leverui-private-flex-direction-lg, row);
-      flex-basis: var(--leverui-private-flex-basis-lg, auto);
-      flex-grow: var(--leverui-private-flex-grow-lg, 0);
-      flex-shrink: var(--leverui-private-flex-shrink-lg, 1);
+      align-items: var(--lui-private-flex-align-lg, normal);
+      justify-content: var(--lui-private-flex-justify-lg, normal);
+      flex-wrap: var(--lui-private-flex-wrap-lg, nowrap);
+      flex-direction: var(--lui-private-flex-direction-lg, row);
+      flex-basis: var(--lui-private-flex-basis-lg, auto);
+      flex-grow: var(--lui-private-flex-grow-lg, 0);
+      flex-shrink: var(--lui-private-flex-shrink-lg, 1);
     }
 
     @media (min-width: 1280px) {
-      align-items: var(--leverui-private-flex-align-xl, normal);
-      justify-content: var(--leverui-private-flex-justify-xl, normal);
-      flex-wrap: var(--leverui-private-flex-wrap-xl, nowrap);
-      flex-direction: var(--leverui-private-flex-direction-xl, row);
-      flex-basis: var(--leverui-private-flex-basis-xl, auto);
-      flex-grow: var(--leverui-private-flex-grow-xl, 0);
-      flex-shrink: var(--leverui-private-flex-shrink-xl, 1);
+      align-items: var(--lui-private-flex-align-xl, normal);
+      justify-content: var(--lui-private-flex-justify-xl, normal);
+      flex-wrap: var(--lui-private-flex-wrap-xl, nowrap);
+      flex-direction: var(--lui-private-flex-direction-xl, row);
+      flex-basis: var(--lui-private-flex-basis-xl, auto);
+      flex-grow: var(--lui-private-flex-grow-xl, 0);
+      flex-shrink: var(--lui-private-flex-shrink-xl, 1);
     }
 
     @media (min-width: 1536px) {
-      align-items: var(--leverui-private-flex-align-2xl, normal);
-      justify-content: var(--leverui-private-flex-justify-2xl, normal);
-      flex-wrap: var(--leverui-private-flex-wrap-2xl, nowrap);
-      flex-direction: var(--leverui-private-flex-direction-2xl, row);
-      flex-basis: var(--leverui-private-flex-basis-2xl, auto);
-      flex-grow: var(--leverui-private-flex-grow-2xl, 0);
-      flex-shrink: var(--leverui-private-flex-shrink-2xl, 1);
+      align-items: var(--lui-private-flex-align-2xl, normal);
+      justify-content: var(--lui-private-flex-justify-2xl, normal);
+      flex-wrap: var(--lui-private-flex-wrap-2xl, nowrap);
+      flex-direction: var(--lui-private-flex-direction-2xl, row);
+      flex-basis: var(--lui-private-flex-basis-2xl, auto);
+      flex-grow: var(--lui-private-flex-grow-2xl, 0);
+      flex-shrink: var(--lui-private-flex-shrink-2xl, 1);
     }
   }
 }

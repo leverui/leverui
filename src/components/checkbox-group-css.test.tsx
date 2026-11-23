@@ -36,7 +36,7 @@ function verifiesNativeGroup(): void {
   const group = screen.getByRole('group', { name: 'Choices' });
   expect(group.tagName).toBe('SECTION');
   expect(groupNode).toBe(group);
-  expect(group.className).toContain('leverui-checkbox-group');
+  expect(group.className).toContain('lui-checkbox-group');
   expect(group.className).toContain('consumer-group');
   expect((group as HTMLElement).style.gap).toBe('2rem');
   expect(mounted.container.querySelector('style')).toBeNull();
@@ -59,7 +59,7 @@ function verifiesUnstyledGroup(): void {
     ),
   );
   const group = screen.getByTestId('group');
-  expect(group.className).toContain('leverui-checkbox-group');
+  expect(group.className).toContain('lui-checkbox-group');
   expect(group.hasAttribute('data-unstyled')).toBe(true);
 }
 

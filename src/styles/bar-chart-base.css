@@ -1,62 +1,62 @@
-@layer leverui.recipes {
-  .leverui-bar-chart:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-bar-chart:not([data-unstyled]) {
     position: relative;
     width: 100%;
-    min-width: var(--leverui-bar-chart-min-width, 280px);
+    min-width: var(--lui-bar-chart-min-width, 280px);
 
-    .leverui-bar-chart__svg {
+    .lui-bar-chart__svg {
       display: block;
       width: 100%;
       overflow: visible;
     }
 
-    .leverui-bar-chart__axes {
+    .lui-bar-chart__axes {
       font-family: inherit;
-      font-size: var(--leverui-bar-chart-axis-font-size, 12px);
-      fill: var(--leverui-bar-chart-axis-color, var(--leverui-colors-fg-muted));
+      font-size: var(--lui-bar-chart-axis-font-size, 12px);
+      fill: var(--lui-bar-chart-axis-color, var(--lui-colors-fg-muted));
     }
 
-    .leverui-bar-chart__grid-line {
+    .lui-bar-chart__grid-line {
       stroke: var(
-        --leverui-bar-chart-grid-color,
-        var(--leverui-chart-grid-color, var(--leverui-colors-border-muted))
+        --lui-bar-chart-grid-color,
+        var(--lui-chart-grid-color, var(--lui-colors-border-muted))
       );
-      stroke-opacity: var(--leverui-chart-grid-opacity, 1);
-      stroke-dasharray: var(--leverui-chart-grid-dasharray, none);
+      stroke-opacity: var(--lui-chart-grid-opacity, 1);
+      stroke-dasharray: var(--lui-chart-grid-dasharray, none);
     }
 
-    .leverui-bar-chart__axes[data-grid-dashed] .leverui-bar-chart__grid-line {
-      stroke-dasharray: var(--leverui-chart-grid-dasharray, 3 3);
+    .lui-bar-chart__axes[data-grid-dashed] .lui-bar-chart__grid-line {
+      stroke-dasharray: var(--lui-chart-grid-dasharray, 3 3);
     }
 
-    .leverui-bar-chart__axis-line {
+    .lui-bar-chart__axis-line {
       fill: none;
-      stroke: var(--leverui-bar-chart-axis-line-color, var(--leverui-colors-border));
+      stroke: var(--lui-bar-chart-axis-line-color, var(--lui-colors-border));
     }
 
-    .leverui-bar-chart__bar-label {
-      font-size: var(--leverui-bar-chart-label-font-size, 12px);
-      font-weight: var(--leverui-bar-chart-label-weight, 600);
-      fill: var(--leverui-bar-chart-label-color, var(--leverui-colors-fg));
+    .lui-bar-chart__bar-label {
+      font-size: var(--lui-bar-chart-label-font-size, 12px);
+      font-weight: var(--lui-bar-chart-label-weight, 600);
+      fill: var(--lui-bar-chart-label-color, var(--lui-colors-fg));
     }
 
-    .leverui-bar-chart__wick {
-      stroke: var(--leverui-bar-chart-wick-color, var(--leverui-colors-fg));
-      stroke-width: var(--leverui-bar-chart-wick-width, 1.5);
+    .lui-bar-chart__wick {
+      stroke: var(--lui-bar-chart-wick-color, var(--lui-colors-fg));
+      stroke-width: var(--lui-bar-chart-wick-width, 1.5);
     }
 
-    .leverui-bar-chart__reference-area {
-      fill: var(--leverui-bar-chart-reference-fill, var(--leverui-colors-red-muted));
-      fill-opacity: var(--leverui-bar-chart-reference-opacity, 0.4);
+    .lui-bar-chart__reference-area {
+      fill: var(--lui-bar-chart-reference-fill, var(--lui-colors-red-muted));
+      fill-opacity: var(--lui-bar-chart-reference-opacity, 0.4);
     }
 
-    .leverui-bar-chart__reference-label {
-      fill: var(--leverui-bar-chart-reference-label-color, var(--leverui-colors-red-fg));
-      font-size: var(--leverui-bar-chart-reference-label-font-size, 12px);
+    .lui-bar-chart__reference-label {
+      fill: var(--lui-bar-chart-reference-label-color, var(--lui-colors-red-fg));
+      font-size: var(--lui-bar-chart-reference-label-font-size, 12px);
     }
 
-    .leverui-bar-chart__reference-line {
-      stroke: var(--leverui-bar-chart-reference-line-color, var(--leverui-colors-red-fg));
+    .lui-bar-chart__reference-line {
+      stroke: var(--lui-bar-chart-reference-line-color, var(--lui-colors-red-fg));
       stroke-dasharray: 3 3;
     }
   }

@@ -22,7 +22,7 @@ export function TokensAnimationStyle(): JSX.Element {
     setAnimation(undefined);
   }
   return (
-    <Stack gap="8" align="flex-start" style={{ 'margin-bottom': 'var(--leverui-spacing-8)' }}>
+    <Stack gap="8" align="flex-start" style={{ 'margin-bottom': 'var(--lui-spacing-8)' }}>
       <HStack wrap="wrap">
         <For each={animationNames}>
           {
@@ -84,8 +84,8 @@ export function TokensLayerStyle(): JSX.Element {
     <Stack
       gap="20"
       style={{
-        'margin-top': 'var(--leverui-spacing-10)',
-        'margin-bottom': 'var(--leverui-spacing-20)',
+        'margin-top': 'var(--lui-spacing-10)',
+        'margin-bottom': 'var(--lui-spacing-20)',
       }}
     >
       <For each={layerStyleGroups}>
@@ -95,8 +95,8 @@ export function TokensLayerStyle(): JSX.Element {
             <Stack gap="4">
               <Text
                 style={{
-                  'font-weight': 'var(--leverui-font-weights-medium)',
-                  color: 'var(--leverui-colors-fg-muted)',
+                  'font-weight': 'var(--lui-font-weights-medium)',
+                  color: 'var(--lui-colors-fg-muted)',
                 }}
               >
                 layerStyle: {title.toLowerCase()}.*
@@ -108,7 +108,7 @@ export function TokensLayerStyle(): JSX.Element {
                     (layerStyle) => (
                       <Center
                         class="token-style-layer"
-                        data-leverui-color-palette="teal"
+                        data-lui-color-palette="teal"
                         data-layer-style={layerStyle}
                       >
                         {layerStyle}
@@ -164,15 +164,15 @@ export function TokensTextStyles(): JSX.Element {
               <Text
                 textStyle="sm"
                 style={{
-                  'font-weight': 'var(--leverui-font-weights-medium)',
-                  color: 'var(--leverui-colors-fg-muted)',
+                  'font-weight': 'var(--lui-font-weights-medium)',
+                  color: 'var(--lui-colors-fg-muted)',
                 }}
               >
                 textStyle: {textStyle}
               </Text>
               <Text
                 style={{
-                  'font-size': `var(--leverui-font-sizes-${textStyle})`,
+                  'font-size': `var(--lui-font-sizes-${textStyle})`,
                   'line-height': textStyleLineHeights[textStyle],
                   'letter-spacing': ['4xl', '5xl', '6xl', '7xl'].includes(textStyle)
                     ? '-0.025em'

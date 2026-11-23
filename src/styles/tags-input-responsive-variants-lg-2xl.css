@@ -1,148 +1,148 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 1024px) {
-    .leverui-tags-input__root:not([data-unstyled]) {
+    .lui-tags-input__root:not([data-unstyled]) {
       &[data-variant-lg='outline'] {
-        --leverui-private-tags-input-control-bg: var(--leverui-colors-bg);
-        --leverui-private-tags-input-control-border-width: 1px;
-        --leverui-private-tags-input-control-border-bottom-width: 1px;
-        --leverui-private-tags-input-control-border-color: var(--leverui-colors-border);
-        --leverui-private-tags-input-control-radius: var(--leverui-radii-l2);
-        --leverui-private-tags-input-control-px: var(--leverui-private-tags-input-px);
-        --leverui-private-tags-input-focus-outline-width: 1px;
-        --leverui-private-tags-input-focus-shadow: none;
-        --leverui-private-tags-input-preview-bg: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-tags-input-preview-border-width: 0px;
-        --leverui-private-tags-input-preview-hover-bg: var(--leverui-colors-color-palette-muted);
-        --leverui-private-tags-input-preview-hover-border-color: transparent;
+        --lui-private-tags-input-control-bg: var(--lui-colors-bg);
+        --lui-private-tags-input-control-border-width: 1px;
+        --lui-private-tags-input-control-border-bottom-width: 1px;
+        --lui-private-tags-input-control-border-color: var(--lui-colors-border);
+        --lui-private-tags-input-control-radius: var(--lui-radii-l2);
+        --lui-private-tags-input-control-px: var(--lui-private-tags-input-px);
+        --lui-private-tags-input-focus-outline-width: 1px;
+        --lui-private-tags-input-focus-shadow: none;
+        --lui-private-tags-input-preview-bg: var(--lui-colors-color-palette-subtle);
+        --lui-private-tags-input-preview-border-width: 0px;
+        --lui-private-tags-input-preview-hover-bg: var(--lui-colors-color-palette-muted);
+        --lui-private-tags-input-preview-hover-border-color: transparent;
       }
       &[data-variant-lg='subtle'] {
-        --leverui-private-tags-input-control-bg: var(--leverui-colors-bg-muted);
-        --leverui-private-tags-input-control-border-width: 1px;
-        --leverui-private-tags-input-control-border-bottom-width: 1px;
-        --leverui-private-tags-input-control-border-color: transparent;
-        --leverui-private-tags-input-control-radius: var(--leverui-radii-l2);
-        --leverui-private-tags-input-control-px: var(--leverui-private-tags-input-px);
-        --leverui-private-tags-input-focus-outline-width: 1px;
-        --leverui-private-tags-input-focus-shadow: none;
-        --leverui-private-tags-input-preview-bg: var(--leverui-colors-bg);
-        --leverui-private-tags-input-preview-border-width: 1px;
-        --leverui-private-tags-input-preview-hover-bg: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-tags-input-preview-hover-border-color: var(
-          --leverui-colors-color-palette-emphasized
+        --lui-private-tags-input-control-bg: var(--lui-colors-bg-muted);
+        --lui-private-tags-input-control-border-width: 1px;
+        --lui-private-tags-input-control-border-bottom-width: 1px;
+        --lui-private-tags-input-control-border-color: transparent;
+        --lui-private-tags-input-control-radius: var(--lui-radii-l2);
+        --lui-private-tags-input-control-px: var(--lui-private-tags-input-px);
+        --lui-private-tags-input-focus-outline-width: 1px;
+        --lui-private-tags-input-focus-shadow: none;
+        --lui-private-tags-input-preview-bg: var(--lui-colors-bg);
+        --lui-private-tags-input-preview-border-width: 1px;
+        --lui-private-tags-input-preview-hover-bg: var(--lui-colors-color-palette-subtle);
+        --lui-private-tags-input-preview-hover-border-color: var(
+          --lui-colors-color-palette-emphasized
         );
       }
       &[data-variant-lg='flushed'] {
-        --leverui-private-tags-input-control-bg: transparent;
-        --leverui-private-tags-input-control-border-width: 0px;
-        --leverui-private-tags-input-control-border-bottom-width: 1px;
-        --leverui-private-tags-input-control-border-color: var(--leverui-colors-border);
-        --leverui-private-tags-input-control-radius: 0px;
-        --leverui-private-tags-input-control-px: 0px;
-        --leverui-private-tags-input-focus-outline-width: 0px;
-        --leverui-private-tags-input-focus-shadow: 0px 1px 0px 0px
-          var(--leverui-private-tags-input-active-focus-color);
-        --leverui-private-tags-input-preview-bg: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-tags-input-preview-border-width: 0px;
-        --leverui-private-tags-input-preview-hover-bg: var(--leverui-colors-color-palette-muted);
-        --leverui-private-tags-input-preview-hover-border-color: transparent;
+        --lui-private-tags-input-control-bg: transparent;
+        --lui-private-tags-input-control-border-width: 0px;
+        --lui-private-tags-input-control-border-bottom-width: 1px;
+        --lui-private-tags-input-control-border-color: var(--lui-colors-border);
+        --lui-private-tags-input-control-radius: 0px;
+        --lui-private-tags-input-control-px: 0px;
+        --lui-private-tags-input-focus-outline-width: 0px;
+        --lui-private-tags-input-focus-shadow: 0px 1px 0px 0px
+          var(--lui-private-tags-input-active-focus-color);
+        --lui-private-tags-input-preview-bg: var(--lui-colors-color-palette-subtle);
+        --lui-private-tags-input-preview-border-width: 0px;
+        --lui-private-tags-input-preview-hover-bg: var(--lui-colors-color-palette-muted);
+        --lui-private-tags-input-preview-hover-border-color: transparent;
       }
     }
   }
   @media (min-width: 1280px) {
-    .leverui-tags-input__root:not([data-unstyled]) {
+    .lui-tags-input__root:not([data-unstyled]) {
       &[data-variant-xl='outline'] {
-        --leverui-private-tags-input-control-bg: var(--leverui-colors-bg);
-        --leverui-private-tags-input-control-border-width: 1px;
-        --leverui-private-tags-input-control-border-bottom-width: 1px;
-        --leverui-private-tags-input-control-border-color: var(--leverui-colors-border);
-        --leverui-private-tags-input-control-radius: var(--leverui-radii-l2);
-        --leverui-private-tags-input-control-px: var(--leverui-private-tags-input-px);
-        --leverui-private-tags-input-focus-outline-width: 1px;
-        --leverui-private-tags-input-focus-shadow: none;
-        --leverui-private-tags-input-preview-bg: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-tags-input-preview-border-width: 0px;
-        --leverui-private-tags-input-preview-hover-bg: var(--leverui-colors-color-palette-muted);
-        --leverui-private-tags-input-preview-hover-border-color: transparent;
+        --lui-private-tags-input-control-bg: var(--lui-colors-bg);
+        --lui-private-tags-input-control-border-width: 1px;
+        --lui-private-tags-input-control-border-bottom-width: 1px;
+        --lui-private-tags-input-control-border-color: var(--lui-colors-border);
+        --lui-private-tags-input-control-radius: var(--lui-radii-l2);
+        --lui-private-tags-input-control-px: var(--lui-private-tags-input-px);
+        --lui-private-tags-input-focus-outline-width: 1px;
+        --lui-private-tags-input-focus-shadow: none;
+        --lui-private-tags-input-preview-bg: var(--lui-colors-color-palette-subtle);
+        --lui-private-tags-input-preview-border-width: 0px;
+        --lui-private-tags-input-preview-hover-bg: var(--lui-colors-color-palette-muted);
+        --lui-private-tags-input-preview-hover-border-color: transparent;
       }
       &[data-variant-xl='subtle'] {
-        --leverui-private-tags-input-control-bg: var(--leverui-colors-bg-muted);
-        --leverui-private-tags-input-control-border-width: 1px;
-        --leverui-private-tags-input-control-border-bottom-width: 1px;
-        --leverui-private-tags-input-control-border-color: transparent;
-        --leverui-private-tags-input-control-radius: var(--leverui-radii-l2);
-        --leverui-private-tags-input-control-px: var(--leverui-private-tags-input-px);
-        --leverui-private-tags-input-focus-outline-width: 1px;
-        --leverui-private-tags-input-focus-shadow: none;
-        --leverui-private-tags-input-preview-bg: var(--leverui-colors-bg);
-        --leverui-private-tags-input-preview-border-width: 1px;
-        --leverui-private-tags-input-preview-hover-bg: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-tags-input-preview-hover-border-color: var(
-          --leverui-colors-color-palette-emphasized
+        --lui-private-tags-input-control-bg: var(--lui-colors-bg-muted);
+        --lui-private-tags-input-control-border-width: 1px;
+        --lui-private-tags-input-control-border-bottom-width: 1px;
+        --lui-private-tags-input-control-border-color: transparent;
+        --lui-private-tags-input-control-radius: var(--lui-radii-l2);
+        --lui-private-tags-input-control-px: var(--lui-private-tags-input-px);
+        --lui-private-tags-input-focus-outline-width: 1px;
+        --lui-private-tags-input-focus-shadow: none;
+        --lui-private-tags-input-preview-bg: var(--lui-colors-bg);
+        --lui-private-tags-input-preview-border-width: 1px;
+        --lui-private-tags-input-preview-hover-bg: var(--lui-colors-color-palette-subtle);
+        --lui-private-tags-input-preview-hover-border-color: var(
+          --lui-colors-color-palette-emphasized
         );
       }
       &[data-variant-xl='flushed'] {
-        --leverui-private-tags-input-control-bg: transparent;
-        --leverui-private-tags-input-control-border-width: 0px;
-        --leverui-private-tags-input-control-border-bottom-width: 1px;
-        --leverui-private-tags-input-control-border-color: var(--leverui-colors-border);
-        --leverui-private-tags-input-control-radius: 0px;
-        --leverui-private-tags-input-control-px: 0px;
-        --leverui-private-tags-input-focus-outline-width: 0px;
-        --leverui-private-tags-input-focus-shadow: 0px 1px 0px 0px
-          var(--leverui-private-tags-input-active-focus-color);
-        --leverui-private-tags-input-preview-bg: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-tags-input-preview-border-width: 0px;
-        --leverui-private-tags-input-preview-hover-bg: var(--leverui-colors-color-palette-muted);
-        --leverui-private-tags-input-preview-hover-border-color: transparent;
+        --lui-private-tags-input-control-bg: transparent;
+        --lui-private-tags-input-control-border-width: 0px;
+        --lui-private-tags-input-control-border-bottom-width: 1px;
+        --lui-private-tags-input-control-border-color: var(--lui-colors-border);
+        --lui-private-tags-input-control-radius: 0px;
+        --lui-private-tags-input-control-px: 0px;
+        --lui-private-tags-input-focus-outline-width: 0px;
+        --lui-private-tags-input-focus-shadow: 0px 1px 0px 0px
+          var(--lui-private-tags-input-active-focus-color);
+        --lui-private-tags-input-preview-bg: var(--lui-colors-color-palette-subtle);
+        --lui-private-tags-input-preview-border-width: 0px;
+        --lui-private-tags-input-preview-hover-bg: var(--lui-colors-color-palette-muted);
+        --lui-private-tags-input-preview-hover-border-color: transparent;
       }
     }
   }
   @media (min-width: 1536px) {
-    .leverui-tags-input__root:not([data-unstyled]) {
+    .lui-tags-input__root:not([data-unstyled]) {
       &[data-variant-2xl='outline'] {
-        --leverui-private-tags-input-control-bg: var(--leverui-colors-bg);
-        --leverui-private-tags-input-control-border-width: 1px;
-        --leverui-private-tags-input-control-border-bottom-width: 1px;
-        --leverui-private-tags-input-control-border-color: var(--leverui-colors-border);
-        --leverui-private-tags-input-control-radius: var(--leverui-radii-l2);
-        --leverui-private-tags-input-control-px: var(--leverui-private-tags-input-px);
-        --leverui-private-tags-input-focus-outline-width: 1px;
-        --leverui-private-tags-input-focus-shadow: none;
-        --leverui-private-tags-input-preview-bg: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-tags-input-preview-border-width: 0px;
-        --leverui-private-tags-input-preview-hover-bg: var(--leverui-colors-color-palette-muted);
-        --leverui-private-tags-input-preview-hover-border-color: transparent;
+        --lui-private-tags-input-control-bg: var(--lui-colors-bg);
+        --lui-private-tags-input-control-border-width: 1px;
+        --lui-private-tags-input-control-border-bottom-width: 1px;
+        --lui-private-tags-input-control-border-color: var(--lui-colors-border);
+        --lui-private-tags-input-control-radius: var(--lui-radii-l2);
+        --lui-private-tags-input-control-px: var(--lui-private-tags-input-px);
+        --lui-private-tags-input-focus-outline-width: 1px;
+        --lui-private-tags-input-focus-shadow: none;
+        --lui-private-tags-input-preview-bg: var(--lui-colors-color-palette-subtle);
+        --lui-private-tags-input-preview-border-width: 0px;
+        --lui-private-tags-input-preview-hover-bg: var(--lui-colors-color-palette-muted);
+        --lui-private-tags-input-preview-hover-border-color: transparent;
       }
       &[data-variant-2xl='subtle'] {
-        --leverui-private-tags-input-control-bg: var(--leverui-colors-bg-muted);
-        --leverui-private-tags-input-control-border-width: 1px;
-        --leverui-private-tags-input-control-border-bottom-width: 1px;
-        --leverui-private-tags-input-control-border-color: transparent;
-        --leverui-private-tags-input-control-radius: var(--leverui-radii-l2);
-        --leverui-private-tags-input-control-px: var(--leverui-private-tags-input-px);
-        --leverui-private-tags-input-focus-outline-width: 1px;
-        --leverui-private-tags-input-focus-shadow: none;
-        --leverui-private-tags-input-preview-bg: var(--leverui-colors-bg);
-        --leverui-private-tags-input-preview-border-width: 1px;
-        --leverui-private-tags-input-preview-hover-bg: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-tags-input-preview-hover-border-color: var(
-          --leverui-colors-color-palette-emphasized
+        --lui-private-tags-input-control-bg: var(--lui-colors-bg-muted);
+        --lui-private-tags-input-control-border-width: 1px;
+        --lui-private-tags-input-control-border-bottom-width: 1px;
+        --lui-private-tags-input-control-border-color: transparent;
+        --lui-private-tags-input-control-radius: var(--lui-radii-l2);
+        --lui-private-tags-input-control-px: var(--lui-private-tags-input-px);
+        --lui-private-tags-input-focus-outline-width: 1px;
+        --lui-private-tags-input-focus-shadow: none;
+        --lui-private-tags-input-preview-bg: var(--lui-colors-bg);
+        --lui-private-tags-input-preview-border-width: 1px;
+        --lui-private-tags-input-preview-hover-bg: var(--lui-colors-color-palette-subtle);
+        --lui-private-tags-input-preview-hover-border-color: var(
+          --lui-colors-color-palette-emphasized
         );
       }
       &[data-variant-2xl='flushed'] {
-        --leverui-private-tags-input-control-bg: transparent;
-        --leverui-private-tags-input-control-border-width: 0px;
-        --leverui-private-tags-input-control-border-bottom-width: 1px;
-        --leverui-private-tags-input-control-border-color: var(--leverui-colors-border);
-        --leverui-private-tags-input-control-radius: 0px;
-        --leverui-private-tags-input-control-px: 0px;
-        --leverui-private-tags-input-focus-outline-width: 0px;
-        --leverui-private-tags-input-focus-shadow: 0px 1px 0px 0px
-          var(--leverui-private-tags-input-active-focus-color);
-        --leverui-private-tags-input-preview-bg: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-tags-input-preview-border-width: 0px;
-        --leverui-private-tags-input-preview-hover-bg: var(--leverui-colors-color-palette-muted);
-        --leverui-private-tags-input-preview-hover-border-color: transparent;
+        --lui-private-tags-input-control-bg: transparent;
+        --lui-private-tags-input-control-border-width: 0px;
+        --lui-private-tags-input-control-border-bottom-width: 1px;
+        --lui-private-tags-input-control-border-color: var(--lui-colors-border);
+        --lui-private-tags-input-control-radius: 0px;
+        --lui-private-tags-input-control-px: 0px;
+        --lui-private-tags-input-focus-outline-width: 0px;
+        --lui-private-tags-input-focus-shadow: 0px 1px 0px 0px
+          var(--lui-private-tags-input-active-focus-color);
+        --lui-private-tags-input-preview-bg: var(--lui-colors-color-palette-subtle);
+        --lui-private-tags-input-preview-border-width: 0px;
+        --lui-private-tags-input-preview-hover-bg: var(--lui-colors-color-palette-muted);
+        --lui-private-tags-input-preview-hover-border-color: transparent;
       }
     }
   }

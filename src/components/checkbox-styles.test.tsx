@@ -25,7 +25,7 @@ function verifiesNativeCssChoices(): void {
   const control = screen.getByTestId('control');
   expect(root.getAttribute('data-size')).toBe('sm');
   expect(control.getAttribute('data-size')).toBe('sm');
-  expect(control.className).toContain('leverui-checkmark');
+  expect(control.className).toContain('lui-checkmark');
   const rootClass = root.className;
   setLarge(true);
   flush();

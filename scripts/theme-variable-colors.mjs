@@ -92,7 +92,7 @@ export function colorSections(entries) {
 export function aliasSection(aliases) {
   /** The alias name after its prefix, such as `500` or `solid`. */
   function name(variable) {
-    return variable.replace('--leverui-colors-color-palette-', '');
+    return variable.replace('--lui-colors-color-palette-', '');
   }
   const ordered = [...aliases].sort(
     /** Put shades first, lightest to darkest, then the roles. */
@@ -112,7 +112,7 @@ export function aliasSection(aliases) {
     '## Palette aliases',
     '',
     'These point at whichever palette is in use. Set the palette with',
-    '`colorPalette` on a component, or `data-leverui-color-palette` on any',
+    '`colorPalette` on a component, or `data-lui-color-palette` on any',
     'element. Gray is the default.',
     '',
     '| Variable | Means |',

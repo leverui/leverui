@@ -53,11 +53,7 @@ function IconContractExample(): JSX.Element {
         <Icon size="sm" class="icon-custom-size" data-testid="icon-custom-size" />
         <Icon unstyled class="icon-unstyled" data-testid="icon-unstyled" />
         <Icon role="img" aria-label="Saved" aria-hidden="false" data-testid="icon-named" />
-        <Icon
-          style={{ color: 'var(--leverui-colors-red-500)' }}
-          size="lg"
-          data-testid="icon-colored"
-        />
+        <Icon style={{ color: 'var(--lui-colors-red-500)' }} size="lg" data-testid="icon-colored" />
         <Icon class="icon-consumer-color" data-testid="icon-css" />
         <Icon asChild={renderCustomSvg} size="lg" />
         <SquareIcon size="sm" data-testid="icon-created" />

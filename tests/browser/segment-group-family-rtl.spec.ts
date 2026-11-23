@@ -35,7 +35,7 @@ async function verifiesRtlSegments({ page }: { page: Page }): Promise<void> {
   await expect
     .poll(
       /** Wait for the Zag indicator to reach the newly selected item. */
-      () => indicatorOffset(indicator, root.locator('.leverui-segment-group__item').nth(1)),
+      () => indicatorOffset(indicator, root.locator('.lui-segment-group__item').nth(1)),
     )
     .toBeLessThan(2);
   await second.press(backwardKey);

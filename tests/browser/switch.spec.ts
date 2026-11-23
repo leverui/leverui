@@ -27,7 +27,7 @@ async function verifiesSwitchRecipe({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-switch--contract');
   const root = page.getByTestId('switch-root');
   const control = page.getByTestId('switch-control');
-  await expect(root).toHaveClass(/leverui-switch__root/, { timeout: 30_000 });
+  await expect(root).toHaveClass(/lui-switch__root/, { timeout: 30_000 });
   const before = await control.evaluate(
     /** Read the initial track width from the applied recipe. */
     (element) => getComputedStyle(element).width,

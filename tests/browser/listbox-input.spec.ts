@@ -7,7 +7,7 @@ async function verifiesFilterGuide({ page }: { page: Page }): Promise<void> {
   const listbox = page.getByRole('listbox', { name: 'Select Framework' });
   const options = listbox.getByRole('option');
   await expect(options).toHaveCount(11, { timeout: 30_000 });
-  await expect(input).toHaveClass(/leverui-input/);
+  await expect(input).toHaveClass(/lui-input/);
   await input.fill('NUXT');
   await expect(options).toHaveCount(1);
   await expect(options.first()).toHaveAccessibleName('Nuxt.js');

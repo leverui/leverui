@@ -60,7 +60,7 @@ function AbsoluteCenterRoot(props: RuntimeProps): JSX.Element {
     /** Keep native attributes, classes, and axis selection reactive. */
     () => ({
       ...native,
-      class: cx('leverui-absolute-center', local.class),
+      class: cx('lui-absolute-center', local.class),
       'data-axis': local.axis ?? 'both',
       'data-unstyled': local.unstyled ? '' : undefined,
       ref: attachNode,

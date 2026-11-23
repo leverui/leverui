@@ -18,7 +18,7 @@ async function verifiesResponsiveSize({ page }: { page: Page }): Promise<void> {
   const root = page.getByTestId('segment-responsive-root');
   const form = page.getByTestId('segment-responsive-form');
   const selected = root.getByRole('radio', { name: 'Solid' });
-  const item = root.locator('.leverui-segment-group__item').nth(1);
+  const item = root.locator('.lui-segment-group__item').nth(1);
   const indicator = page.getByTestId('segment-responsive-indicator');
   await expect(selected).toBeChecked({ timeout: 30_000 });
   const smallHeight = await item.evaluate(itemHeight);

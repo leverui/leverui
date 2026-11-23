@@ -1,8 +1,8 @@
 .carousel-appearance-override {
-  --leverui-spacing-2: 24px;
+  --lui-spacing-2: 24px;
   width: 320px;
 }
 
-.carousel-appearance-override .leverui-carousel__indicator {
+.carousel-appearance-override .lui-carousel__indicator {
   background: rgb(255 0 0);
 }

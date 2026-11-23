@@ -37,7 +37,7 @@ type Breakpoint = 'sm' | 'md' | 'lg' | 'xl' | '2xl';
 type Attribute =
   | `data-${Choice}`
   | `data-${Choice}-${Breakpoint}`
-  | 'data-leverui-color-palette'
+  | 'data-lui-color-palette'
   | 'data-borderless'
   | `data-borderless-${Breakpoint}`
   | 'data-unstyled';
@@ -108,7 +108,7 @@ export function avatarAppearanceAttributes(appearance: AvatarAppearance): Avatar
     ...choiceAttributes('variant', variant),
     ...choiceAttributes('shape', shape),
     ...borderlessAttributes(appearance.borderless),
-    'data-leverui-color-palette': readPalette(appearance.colorPalette),
+    'data-lui-color-palette': readPalette(appearance.colorPalette),
     'data-unstyled': appearance.unstyled ? '' : undefined,
   };
 }

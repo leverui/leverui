@@ -1,41 +1,41 @@
-@layer leverui.recipes {
-  .leverui-color-swatch:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-color-swatch:not([data-unstyled]) {
     &[data-size='2xs'] {
-      --leverui-swatch-size: var(--leverui-sizes-3\.5);
+      --lui-swatch-size: var(--lui-sizes-3\.5);
     }
     &[data-size='xs'] {
-      --leverui-swatch-size: var(--leverui-sizes-4);
+      --lui-swatch-size: var(--lui-sizes-4);
     }
     &[data-size='sm'] {
-      --leverui-swatch-size: var(--leverui-sizes-4\.5);
+      --lui-swatch-size: var(--lui-sizes-4\.5);
     }
     &[data-size='md'] {
-      --leverui-swatch-size: var(--leverui-sizes-5);
+      --lui-swatch-size: var(--lui-sizes-5);
     }
     &[data-size='lg'] {
-      --leverui-swatch-size: var(--leverui-sizes-6);
+      --lui-swatch-size: var(--lui-sizes-6);
     }
     &[data-size='xl'] {
-      --leverui-swatch-size: var(--leverui-sizes-7);
+      --lui-swatch-size: var(--lui-sizes-7);
     }
     &[data-size='2xl'] {
-      --leverui-swatch-size: var(--leverui-sizes-8);
+      --lui-swatch-size: var(--lui-sizes-8);
     }
     &[data-size='inherit'] {
-      --leverui-swatch-size: inherit;
+      --lui-swatch-size: inherit;
     }
     &[data-size='full'] {
-      --leverui-swatch-size: 100%;
+      --lui-swatch-size: 100%;
     }
 
     &[data-shape='square'] {
-      --leverui-swatch-radius: 0px;
+      --lui-swatch-radius: 0px;
     }
     &[data-shape='circle'] {
-      --leverui-swatch-radius: var(--leverui-radii-full);
+      --lui-swatch-radius: var(--lui-radii-full);
     }
     &[data-shape='rounded'] {
-      --leverui-swatch-radius: var(--leverui-radii-l1);
+      --lui-swatch-radius: var(--lui-radii-l1);
     }
   }
 }

@@ -4,13 +4,13 @@
 
 [All variables](README.md)
 
-| Variable                    | Value         |
-| --------------------------- | ------------- |
-| `--leverui-cursor-button`   | `pointer`     |
-| `--leverui-cursor-checkbox` | `default`     |
-| `--leverui-cursor-disabled` | `not-allowed` |
-| `--leverui-cursor-menuitem` | `default`     |
-| `--leverui-cursor-option`   | `default`     |
-| `--leverui-cursor-radio`    | `default`     |
-| `--leverui-cursor-slider`   | `default`     |
-| `--leverui-cursor-switch`   | `pointer`     |
+| Variable                | Value         |
+| ----------------------- | ------------- |
+| `--lui-cursor-button`   | `pointer`     |
+| `--lui-cursor-checkbox` | `default`     |
+| `--lui-cursor-disabled` | `not-allowed` |
+| `--lui-cursor-menuitem` | `default`     |
+| `--lui-cursor-option`   | `default`     |
+| `--lui-cursor-radio`    | `default`     |
+| `--lui-cursor-slider`   | `default`     |
+| `--lui-cursor-switch`   | `pointer`     |

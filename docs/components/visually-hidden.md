@@ -33,4 +33,4 @@ real or do not render it.
 
 Renders a `span` by default. The rules that hide it are in the Lever UI
 stylesheet. To hide your own elements the same way, give them the
-`.leverui-visually-hidden` class. `class` and `style` work.
+`.lui-visually-hidden` class. `class` and `style` work.

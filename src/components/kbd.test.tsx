@@ -28,7 +28,7 @@ function verifiesNativeKbd(): void {
   expect(key.tagName).toBe('KBD');
   expect(key.textContent).toBe('Esc');
   expect(key.getAttribute('title')).toBe('Escape key');
-  expect(key.className).toContain('leverui-kbd');
+  expect(key.className).toContain('lui-kbd');
   expect(key.hasAttribute('size')).toBe(false);
   expect(key.hasAttribute('variant')).toBe(false);
   expect(key.hasAttribute('role')).toBe(false);
@@ -99,7 +99,7 @@ function verifiesKbdComposition(): void {
   expect(screen.getByTestId('selected')).toBe(selected);
   expect(selected?.tagName).toBe('SPAN');
   expect(screen.getByTestId('child').tagName).toBe('STRONG');
-  expect(screen.getByTestId('child').className).toContain('leverui-kbd');
+  expect(screen.getByTestId('child').className).toContain('lui-kbd');
 }
 
 test('Kbd renders native semantics and filters appearance props', verifiesNativeKbd);

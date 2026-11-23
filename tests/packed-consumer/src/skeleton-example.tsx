@@ -49,7 +49,7 @@ export function PackedSkeleton(): JSX.Element {
         {renderTextLine}
       </SkeletonText>
       <SkeletonPropsProvider value={readVariantDefaults}>
-        <Skeleton id="packed-skeleton-inherited" style={{ height: 'var(--leverui-sizes-5)' }} />
+        <Skeleton id="packed-skeleton-inherited" style={{ height: 'var(--lui-sizes-5)' }} />
       </SkeletonPropsProvider>
       <Skeleton asChild={renderOwnedSkeleton} variant="none" />
       <button type="button" id="packed-skeleton-toggle" onClick={toggleLoading}>

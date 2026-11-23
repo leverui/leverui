@@ -26,7 +26,7 @@ async function verifiesClipboardHydration({ page }: { page: Page }): Promise<voi
     `${generateHydrationScript()}<style>${defaultCss}</style><div id="clipboard-hydration-root">${markup}</div>`,
   );
   const host = page.locator('#clipboard-hydration-root');
-  const root = host.locator('.leverui-clipboard__root');
+  const root = host.locator('.lui-clipboard__root');
   const input = host.locator('input');
   const trigger = host.getByRole('button', { name: 'Copy to clipboard' });
   const label = host.getByText('Hydrated label');

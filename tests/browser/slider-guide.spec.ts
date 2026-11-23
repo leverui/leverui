@@ -8,8 +8,8 @@ async function verifiesSliderGuide({ page }: { page: Page }): Promise<void> {
   for (const label of ['Low', 'Medium', 'High']) {
     await expect(page.getByText(label, { exact: true })).toBeVisible();
   }
-  await expect(page.locator('.leverui-slider__markerIndicator')).toHaveCount(3);
-  const colors = await page.locator('.leverui-slider__markerLabel').evaluateAll(
+  await expect(page.locator('.lui-slider__markerIndicator')).toHaveCount(3);
+  const colors = await page.locator('.lui-slider__markerLabel').evaluateAll(
     /** Verify that custom labels resolve to distinct palette colors. */
     (labels) => labels.map((label) => getComputedStyle(label).color),
   );

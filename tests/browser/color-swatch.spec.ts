@@ -7,7 +7,7 @@ async function verifiesColorSwatchMatrix({ page }: { page: Page }): Promise<void
   await expect(swatch).toHaveJSProperty('tagName', 'SPAN');
   await expect(swatch).toHaveAttribute('data-value', 'red');
   await expect(swatch).toHaveAttribute('title', 'Red sample');
-  await expect(swatch).toHaveClass(/leverui-color-swatch/);
+  await expect(swatch).toHaveClass(/lui-color-swatch/);
   await expect(swatch).toHaveCSS('width', '20px');
   await expect(swatch).toHaveCSS('height', '20px');
   await expect(swatch).not.toHaveAttribute('size');
@@ -48,20 +48,20 @@ async function verifiesMixedSwatches({ page }: { page: Page }): Promise<void> {
     'span 2 / span 2',
   );
   await page.addStyleTag({
-    content: '.leverui-color-swatch__mix-grid { column-gap: 3px; }',
+    content: '.lui-color-swatch__mix-grid { column-gap: 3px; }',
   });
-  await expect(page.getByTestId('mix-three').locator('.leverui-color-swatch__mix-grid')).toHaveCSS(
+  await expect(page.getByTestId('mix-three').locator('.lui-color-swatch__mix-grid')).toHaveCSS(
     'column-gap',
     '3px',
   );
-  await page.addStyleTag({ content: '#mix-three { --leverui-swatch-color: rebeccapurple; }' });
+  await page.addStyleTag({ content: '#mix-three { --lui-swatch-color: rebeccapurple; }' });
   const firstColor = await page
     .getByTestId('mix-three')
     .locator('[data-mix-cell]')
     .first()
     .evaluate(
       /** Keep a mix cell's own value ahead of an outer swatch override. */
-      (element) => getComputedStyle(element).getPropertyValue('--leverui-swatch-color').trim(),
+      (element) => getComputedStyle(element).getPropertyValue('--lui-swatch-color').trim(),
     );
   expect(firstColor).toBe('red');
 }
@@ -100,12 +100,9 @@ async function verifiesReactiveSwatch({ page }: { page: Page }): Promise<void> {
     'rgb(55, 66, 77)',
   );
   await expect(page.getByTestId('swatch-unstyled')).toHaveCSS('display', 'inline');
+  await expect(page.locator('#swatch-css-override')).toHaveCSS('--lui-swatch-checker-size', '4px');
   await expect(page.locator('#swatch-css-override')).toHaveCSS(
-    '--leverui-swatch-checker-size',
-    '4px',
-  );
-  await expect(page.locator('#swatch-css-override')).toHaveCSS(
-    '--leverui-swatch-color',
+    '--lui-swatch-color',
     'rgb(102, 51, 153)',
   );
   await expect(page.locator('#swatch-css-override')).toHaveCSS(

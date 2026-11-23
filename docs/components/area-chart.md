@@ -158,31 +158,31 @@ The chart takes focus when the tooltip is on.
 
 ```css
 .traffic-area {
-  --leverui-cartesian-chart-legend-gap: 1rem;
-  --leverui-cartesian-chart-tooltip-bg: #f0faf8;
+  --lui-cartesian-chart-legend-gap: 1rem;
+  --lui-cartesian-chart-tooltip-bg: #f0faf8;
 }
 
-.traffic-area .leverui-cartesian-chart__gridLine {
+.traffic-area .lui-cartesian-chart__gridLine {
   stroke: #a6c9c0;
 }
 ```
 
 ### Variables
 
-| Variable                               | Default      | Description                    |
-| -------------------------------------- | ------------ | ------------------------------ |
-| `--leverui-cartesian-chart-min-width`  | `280px`      | Narrowest the chart gets.      |
-| `--leverui-cartesian-chart-legend-gap` | `12px`       | Space between legend items.    |
-| `--leverui-cartesian-chart-tooltip-bg` | Panel color  | Tooltip background.            |
-| `--leverui-chart-axis-line-color`      | Border color | Axis line and tick mark color. |
+| Variable                           | Default      | Description                    |
+| ---------------------------------- | ------------ | ------------------------------ |
+| `--lui-cartesian-chart-min-width`  | `280px`      | Narrowest the chart gets.      |
+| `--lui-cartesian-chart-legend-gap` | `12px`       | Space between legend items.    |
+| `--lui-cartesian-chart-tooltip-bg` | Panel color  | Tooltip background.            |
+| `--lui-chart-axis-line-color`      | Border color | Axis line and tick mark color. |
 
 Grid variables are in [Cartesian Grid](cartesian-grid.md).
 
 ### Classes
 
-Root: `.leverui-area-chart` and `.leverui-cartesian-chart__root`.
+Root: `.lui-area-chart` and `.lui-cartesian-chart__root`.
 
-Parts, each prefixed with `.leverui-cartesian-chart__`: `svg`, `axes`,
+Parts, each prefixed with `.lui-cartesian-chart__`: `svg`, `axes`,
 `rightAxis`, `axisLine`, `axisTitle`, `gridLine`, `cursor`, `series`, `area`,
 `line`, `dot`, `pointLabel`, `referenceLine`, `referenceArea`,
 `referenceValue`, `referenceValueLabel`, `referencePoint`, `referenceLabel`,

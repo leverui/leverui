@@ -163,7 +163,7 @@ async function verifiesConsumerOverride({ page }: { page: Page }): Promise<void>
   const content = page.getByTestId('collapsible-content');
   await expect(content).toBeAttached({ timeout: 30_000 });
   await page.addStyleTag({
-    content: '.leverui-collapsible__content { overflow: visible; animation-duration: 700ms; }',
+    content: '.lui-collapsible__content { overflow: visible; animation-duration: 700ms; }',
   });
   await page.getByTestId('collapsible-trigger').click();
   await expect(content).toHaveCSS('overflow', 'visible');

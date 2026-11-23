@@ -64,7 +64,7 @@ async function verifiesConsumerCss({ page }: { page: Page }): Promise<void> {
   await page.addStyleTag({
     content: `
       .consumer-card { border-radius: 17px; }
-      .consumer-card-control { padding: 19px; --leverui-checkbox-card-control-gap: 23px; }
+      .consumer-card-control { padding: 19px; --lui-checkbox-card-control-gap: 23px; }
       .consumer-card-content { gap: 11px; }
       .consumer-card-label { font-weight: 800; }
       .consumer-card-description { opacity: 0.9; }

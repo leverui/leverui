@@ -35,9 +35,9 @@ export function CommandFooterActionsExample(): JSX.Element {
                 variant="outline"
                 size="sm"
                 style={{
-                  'min-width': 'var(--leverui-spacing-64)',
+                  'min-width': 'var(--lui-spacing-64)',
                   'justify-content': 'flex-start',
-                  color: 'var(--leverui-colors-fg-muted)',
+                  color: 'var(--lui-colors-fg-muted)',
                 }}
               >
                 <SearchIcon /> Search apps and commands...
@@ -78,7 +78,7 @@ export function CommandFooterActionsExample(): JSX.Element {
                                 <Span
                                   textStyle="xs"
                                   style={{
-                                    color: 'var(--leverui-colors-fg-subtle)',
+                                    color: 'var(--lui-colors-fg-subtle)',
                                   }}
                                 >
                                   {item.type}
@@ -94,21 +94,21 @@ export function CommandFooterActionsExample(): JSX.Element {
                 <Command.Empty>No results found</Command.Empty>
               </Command.List>
               <Command.Footer>
-                <Box style={{ color: 'var(--leverui-colors-fg-muted)', display: 'inline-flex' }}>
+                <Box style={{ color: 'var(--lui-colors-fg-muted)', display: 'inline-flex' }}>
                   <CommandIcon />
                 </Box>
                 <HStack
                   gap="2"
-                  style={{ 'margin-inline-start': 'auto', color: 'var(--leverui-colors-fg)' }}
+                  style={{ 'margin-inline-start': 'auto', color: 'var(--lui-colors-fg)' }}
                 >
-                  <Span style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>
+                  <Span style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>
                     {highlighted()?.action ?? 'Open'}
                   </Span>
                   <Kbd size="sm" variant="subtle">
                     ↵
                   </Kbd>
                 </HStack>
-                <Separator orientation="vertical" style={{ height: 'var(--leverui-sizes-4)' }} />
+                <Separator orientation="vertical" style={{ height: 'var(--lui-sizes-4)' }} />
                 <HStack gap="2">
                   <Span>Actions</Span>
                   <HStack gap="1">

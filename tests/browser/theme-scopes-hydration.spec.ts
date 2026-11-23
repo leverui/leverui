@@ -58,9 +58,9 @@ async function verifiesScopeHydration({ page }: { page: Page }): Promise<void> {
   await page.evaluate(hydrateInBrowser);
 
   await expect(page.locator('#hydration-root')).toHaveAttribute('data-hydrated', 'true');
-  await expect(scope).toHaveAttribute('data-leverui-color-mode', 'dark');
+  await expect(scope).toHaveAttribute('data-lui-color-mode', 'dark');
   await expect(scope).toHaveAttribute('data-before-hydration', 'true');
-  await expect(innerScope).toHaveAttribute('data-leverui-color-mode', 'light');
+  await expect(innerScope).toHaveAttribute('data-lui-color-mode', 'light');
   await expect(innerScope).toHaveAttribute('data-before-hydration', 'true');
   await expect(box).toHaveCSS('background-color', 'rgb(9, 9, 11)');
   await expect(innerBox).toHaveCSS('background-color', 'rgb(255, 255, 255)');

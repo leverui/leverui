@@ -20,5 +20,5 @@ function renderPackedDownloadTrigger() {
 const markup = renderPackedDownloadTrigger();
 assert.match(markup, /<button[^>]*type="button"/);
 assert.match(markup, /Save packed file<\/button>/);
-assert.match(markup, /leverui-download-trigger/);
+assert.match(markup, /lui-download-trigger/);
 assert.doesNotMatch(markup, /packed payload|packed\.txt|mimeType=/);

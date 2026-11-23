@@ -1,46 +1,44 @@
-@layer leverui.recipes {
-  .leverui-action-bar__positioner:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-action-bar__positioner:not([data-unstyled]) {
     position: fixed;
     display: flex;
     pointer-events: none;
     inset-inline: 0;
-    bottom: calc(
-      env(safe-area-inset-bottom) + var(--leverui-action-bar-offset, var(--leverui-spacing-4))
-    );
-    justify-content: var(--leverui-private-action-bar-justify, center);
-    padding-inline-start: var(--leverui-private-action-bar-start-padding, 0);
-    padding-inline-end: var(--leverui-private-action-bar-end-padding, 0);
+    bottom: calc(env(safe-area-inset-bottom) + var(--lui-action-bar-offset, var(--lui-spacing-4)));
+    justify-content: var(--lui-private-action-bar-justify, center);
+    padding-inline-start: var(--lui-private-action-bar-start-padding, 0);
+    padding-inline-end: var(--lui-private-action-bar-end-padding, 0);
   }
 
-  .leverui-action-bar__content:not([data-unstyled]) {
-    background: var(--leverui-colors-bg-panel);
-    box-shadow: var(--leverui-shadows-md);
+  .lui-action-bar__content:not([data-unstyled]) {
+    background: var(--lui-colors-bg-panel);
+    box-shadow: var(--lui-shadows-md);
     display: flex;
     align-items: center;
-    gap: var(--leverui-spacing-3);
-    border-radius: var(--leverui-radii-l3);
-    padding-block: var(--leverui-spacing-2\.5);
-    padding-inline: var(--leverui-spacing-3);
+    gap: var(--lui-spacing-3);
+    border-radius: var(--lui-radii-l3);
+    padding-block: var(--lui-spacing-2\.5);
+    padding-inline: var(--lui-spacing-3);
     pointer-events: auto;
     translate: calc(-1 * var(--scrollbar-width) / 2) 0px;
   }
 
-  .leverui-action-bar__separator:not([data-unstyled]) {
+  .lui-action-bar__separator:not([data-unstyled]) {
     width: 1px;
-    height: var(--leverui-sizes-5);
-    background: var(--leverui-colors-border);
+    height: var(--lui-sizes-5);
+    background: var(--lui-colors-border);
   }
 
-  .leverui-action-bar__selectionTrigger:not([data-unstyled]) {
+  .lui-action-bar__selectionTrigger:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
-    gap: var(--leverui-spacing-2);
+    gap: var(--lui-spacing-2);
     align-self: stretch;
-    font-size: var(--leverui-font-sizes-sm);
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
-    padding-inline: var(--leverui-spacing-4);
-    padding-block: var(--leverui-spacing-1);
-    border-radius: var(--leverui-radii-l2);
-    border: 1px dashed var(--leverui-colors-border);
+    padding-inline: var(--lui-spacing-4);
+    padding-block: var(--lui-spacing-1);
+    border-radius: var(--lui-radii-l2);
+    border: 1px dashed var(--lui-colors-border);
   }
 }

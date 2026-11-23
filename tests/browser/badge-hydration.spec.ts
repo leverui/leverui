@@ -31,8 +31,8 @@ async function verifiesBadgeHydration({ page }: { page: Page }): Promise<void> {
   );
   const badge = page.locator('#hydrated-badge');
   await expect(badge).toHaveAttribute('data-size', 'xs');
-  await expect(badge).toHaveAttribute('data-leverui-color-palette', 'blue');
-  await expect(badge).not.toHaveAttribute('data-leverui-private-style-runtime');
+  await expect(badge).toHaveAttribute('data-lui-color-palette', 'blue');
+  await expect(badge).not.toHaveAttribute('data-lui-private-style-runtime');
   await expect(badge).toHaveCSS('min-height', '16px');
   await expect(badge).toHaveCSS('background-color', 'rgb(37, 99, 235)');
   await badge.evaluate(
@@ -53,7 +53,7 @@ async function verifiesBadgeHydration({ page }: { page: Page }): Promise<void> {
   await expect(badge).toHaveCSS('min-height', '16px');
   await page.locator('#badge-hydration-toggle').click();
   await expect(badge).toHaveAttribute('data-size', 'lg');
-  await expect(badge).not.toHaveAttribute('data-leverui-private-style-runtime');
+  await expect(badge).not.toHaveAttribute('data-lui-private-style-runtime');
   await expect(badge).toHaveCSS('min-height', '28px');
   await expect(badge).toHaveCSS('background-color', 'rgb(37, 99, 235)');
   expect(errors).toEqual([]);

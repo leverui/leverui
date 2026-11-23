@@ -32,8 +32,8 @@ function renderPackedClipboard() {
 }
 
 const markup = renderPackedClipboard();
-assert.match(markup, /leverui-clipboard__root/);
-assert.match(markup, /leverui-clipboard__trigger/);
+assert.match(markup, /lui-clipboard__root/);
+assert.match(markup, /lui-clipboard__trigger/);
 assert.match(markup, /Packed Clipboard value/);
 assert.match(markup, /Packed copy label/);
 assert.match(markup, /Named packed value/);

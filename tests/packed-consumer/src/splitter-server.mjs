@@ -24,7 +24,7 @@ function renderInstalledSplitter() {
 }
 
 const markup = renderInstalledSplitter();
-assert.match(markup, /leverui-splitter__root/);
+assert.match(markup, /lui-splitter__root/);
 assert.match(markup, /role="separator"/);
 assert.match(markup, /aria-label="Resize"/);
 assert.match(markup, /aria-valuenow="40"/);

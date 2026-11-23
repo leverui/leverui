@@ -123,7 +123,7 @@ export function renderListboxDialog(
                       placeholder="Search for apps or command..."
                       autoHighlight
                       style={{
-                        'min-height': 'var(--leverui-sizes-6)',
+                        'min-height': 'var(--lui-sizes-6)',
                         outline: '0',
                         width: '100%',
                       }}

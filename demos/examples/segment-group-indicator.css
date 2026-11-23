@@ -1,4 +1,4 @@
 .example-segment-group-teal-indicator {
-  --leverui-segment-group-indicator-background: var(--leverui-colors-teal-500);
-  --leverui-segment-group-indicator-shadow: var(--leverui-shadows-md);
+  --lui-segment-group-indicator-background: var(--lui-colors-teal-500);
+  --lui-segment-group-indicator-shadow: var(--lui-shadows-md);
 }

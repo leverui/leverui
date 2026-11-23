@@ -8,7 +8,7 @@ async function verifiesEditableBrowser({ page }: { page: Page }): Promise<void> 
   const preview = page.getByTestId('editable-preview');
   const input = page.getByTestId('editable-input');
   await expect(input).toHaveJSProperty('type', 'text', { timeout: 30_000 });
-  await expect(root).toHaveClass(/leverui-editable__root/);
+  await expect(root).toHaveClass(/lui-editable__root/);
   await expect(root).toHaveCSS('display', 'inline-flex');
   await expect(preview).toHaveText('Click to edit');
   await page.getByTestId('editable-edit').click();
@@ -22,10 +22,10 @@ async function verifiesEditableBrowser({ page }: { page: Page }): Promise<void> 
   await expect(preview).toHaveText('Updated name');
   await page.addStyleTag({
     content: `[data-testid="editable-contract"] {
-      --leverui-colors-bg-muted: rgb(30, 40, 90);
-      --leverui-editable-gap: 11px;
-      --leverui-editable-padding-inline: 13px;
-      --leverui-editable-control-height: 48px;
+      --lui-colors-bg-muted: rgb(30, 40, 90);
+      --lui-editable-gap: 11px;
+      --lui-editable-padding-inline: 13px;
+      --lui-editable-control-height: 48px;
     }`,
   });
   await preview.hover();

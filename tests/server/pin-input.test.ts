@@ -44,9 +44,9 @@ function renderServerPinInput(mask = false): string {
 function verifiesServerPinInput(): void {
   const markup = renderServerPinInput();
   expect(markup).toContain('data-pin-input-');
-  expect(markup).toContain('leverui-pin-input__root');
-  expect(markup).toContain('leverui-pin-input__input');
-  expect(markup).toContain('leverui-input');
+  expect(markup).toContain('lui-pin-input__root');
+  expect(markup).toContain('lui-pin-input__input');
+  expect(markup).toContain('lui-input');
   expect(markup).toContain('data-size="md"');
   expect(markup).toContain('data-variant="outline"');
   expect(markup).toContain('name="code"');
@@ -87,7 +87,7 @@ function verifiesProviderFreePinInput(): void {
   );
   expect(markup).toContain('data-size-md="lg"');
   expect(markup).toContain('data-attached-md="false"');
-  expect(markup).toContain('leverui-input');
+  expect(markup).toContain('lui-input');
 }
 
 test('published Pin Input needs no style provider for static CSS', verifiesProviderFreePinInput);

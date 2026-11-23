@@ -1,53 +1,53 @@
-@layer leverui.recipes {
-  .leverui-toast__root:not([data-unstyled]) {
-    .leverui-toast__title:not([data-unstyled]) {
-      font-weight: var(--leverui-font-weights-medium);
-      font-size: var(--leverui-font-sizes-sm);
+@layer lui.recipes {
+  .lui-toast__root:not([data-unstyled]) {
+    .lui-toast__title:not([data-unstyled]) {
+      font-weight: var(--lui-font-weights-medium);
+      font-size: var(--lui-font-sizes-sm);
       line-height: 1.25rem;
-      margin-inline-end: var(--leverui-spacing-2);
+      margin-inline-end: var(--lui-spacing-2);
     }
 
-    .leverui-toast__description:not([data-unstyled]) {
+    .lui-toast__description:not([data-unstyled]) {
       display: inline;
-      font-size: var(--leverui-font-sizes-sm);
+      font-size: var(--lui-font-sizes-sm);
       line-height: 1.25rem;
       opacity: 0.8;
     }
 
-    .leverui-toast__indicator:not([data-unstyled]) {
+    .lui-toast__indicator:not([data-unstyled]) {
       flex-shrink: 0;
-      width: var(--leverui-sizes-5);
-      height: var(--leverui-sizes-5);
+      width: var(--lui-sizes-5);
+      height: var(--lui-sizes-5);
     }
 
-    .leverui-toast__actionTrigger:not([data-unstyled]) {
-      font-size: var(--leverui-font-sizes-sm);
+    .lui-toast__actionTrigger:not([data-unstyled]) {
+      font-size: var(--lui-font-sizes-sm);
       line-height: 1.25rem;
-      font-weight: var(--leverui-font-weights-medium);
-      height: var(--leverui-sizes-8);
-      padding-inline: var(--leverui-spacing-3);
-      border-radius: var(--leverui-radii-l2);
+      font-weight: var(--lui-font-weights-medium);
+      height: var(--lui-sizes-8);
+      padding-inline: var(--lui-spacing-3);
+      border-radius: var(--lui-radii-l2);
       align-self: center;
       border-width: 1px;
-      border-color: var(--leverui-toast-border-color, inherit);
+      border-color: var(--lui-toast-border-color, inherit);
       transition: background 200ms;
 
       &:hover {
-        background: var(--leverui-toast-trigger-bg);
+        background: var(--lui-toast-trigger-bg);
       }
     }
 
-    .leverui-toast__closeTrigger:not([data-unstyled]) {
+    .lui-toast__closeTrigger:not([data-unstyled]) {
       position: absolute;
-      top: var(--leverui-spacing-1);
-      inset-inline-end: var(--leverui-spacing-1);
-      padding: var(--leverui-spacing-1);
+      top: var(--lui-spacing-1);
+      inset-inline-end: var(--lui-spacing-1);
+      padding: var(--lui-spacing-1);
       display: inline-flex;
       align-items: center;
       justify-content: center;
       color: color-mix(in srgb, currentColor 60%, transparent);
-      border-radius: var(--leverui-radii-l2);
-      font-size: var(--leverui-font-sizes-md);
+      border-radius: var(--lui-radii-l2);
+      font-size: var(--lui-font-sizes-md);
       line-height: 1.5rem;
       transition: background 200ms;
 
@@ -59,9 +59,9 @@
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .leverui-toast__root:not([data-unstyled]) {
-      .leverui-toast__actionTrigger:not([data-unstyled]),
-      .leverui-toast__closeTrigger:not([data-unstyled]) {
+    .lui-toast__root:not([data-unstyled]) {
+      .lui-toast__actionTrigger:not([data-unstyled]),
+      .lui-toast__closeTrigger:not([data-unstyled]) {
         transition: none;
       }
     }

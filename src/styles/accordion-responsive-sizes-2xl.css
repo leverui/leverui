@@ -1,23 +1,23 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 1536px) {
-    .leverui-accordion__root:not([data-unstyled]) {
+    .lui-accordion__root:not([data-unstyled]) {
       &[data-size-2xl='sm'] {
-        --leverui-private-accordion-padding-x: var(--leverui-spacing-3);
-        --leverui-private-accordion-padding-y: var(--leverui-spacing-2);
-        --leverui-private-accordion-font-size: var(--leverui-font-sizes-sm);
-        --leverui-private-accordion-line-height: 1.25rem;
+        --lui-private-accordion-padding-x: var(--lui-spacing-3);
+        --lui-private-accordion-padding-y: var(--lui-spacing-2);
+        --lui-private-accordion-font-size: var(--lui-font-sizes-sm);
+        --lui-private-accordion-line-height: 1.25rem;
       }
       &[data-size-2xl='md'] {
-        --leverui-private-accordion-padding-x: var(--leverui-spacing-4);
-        --leverui-private-accordion-padding-y: var(--leverui-spacing-2);
-        --leverui-private-accordion-font-size: var(--leverui-font-sizes-md);
-        --leverui-private-accordion-line-height: 1.5rem;
+        --lui-private-accordion-padding-x: var(--lui-spacing-4);
+        --lui-private-accordion-padding-y: var(--lui-spacing-2);
+        --lui-private-accordion-font-size: var(--lui-font-sizes-md);
+        --lui-private-accordion-line-height: 1.5rem;
       }
       &[data-size-2xl='lg'] {
-        --leverui-private-accordion-padding-x: var(--leverui-spacing-4\.5);
-        --leverui-private-accordion-padding-y: var(--leverui-spacing-2\.5);
-        --leverui-private-accordion-font-size: var(--leverui-font-sizes-lg);
-        --leverui-private-accordion-line-height: 1.75rem;
+        --lui-private-accordion-padding-x: var(--lui-spacing-4\.5);
+        --lui-private-accordion-padding-y: var(--lui-spacing-2\.5);
+        --lui-private-accordion-font-size: var(--lui-font-sizes-lg);
+        --lui-private-accordion-line-height: 1.75rem;
       }
     }
   }

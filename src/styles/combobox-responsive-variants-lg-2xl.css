@@ -1,185 +1,185 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 1024px) {
-    .leverui-combobox__input:not([data-unstyled])[data-variant-lg='outline'] {
-      --leverui-private-combobox-input-background: transparent;
-      --leverui-private-combobox-border-width: 1px;
-      --leverui-private-combobox-border-color: var(
-        --leverui-combobox-border-color,
-        var(--leverui-colors-border)
+    .lui-combobox__input:not([data-unstyled])[data-variant-lg='outline'] {
+      --lui-private-combobox-input-background: transparent;
+      --lui-private-combobox-border-width: 1px;
+      --lui-private-combobox-border-color: var(
+        --lui-combobox-border-color,
+        var(--lui-colors-border)
       );
-      --leverui-private-combobox-variant-radius: var(--leverui-radii-l2);
-      --leverui-private-combobox-variant-padding-x: var(--leverui-private-combobox-input-padding-x);
-      --leverui-private-combobox-variant-padding-end: var(
-        --leverui-private-combobox-input-padding-end,
-        var(--leverui-private-combobox-input-padding-x)
+      --lui-private-combobox-variant-radius: var(--lui-radii-l2);
+      --lui-private-combobox-variant-padding-x: var(--lui-private-combobox-input-padding-x);
+      --lui-private-combobox-variant-padding-end: var(
+        --lui-private-combobox-input-padding-end,
+        var(--lui-private-combobox-input-padding-x)
       );
-      --leverui-private-combobox-focus-outline-width: var(--focus-ring-width, 1px);
-      --leverui-private-combobox-focus-shadow: none;
+      --lui-private-combobox-focus-outline-width: var(--focus-ring-width, 1px);
+      --lui-private-combobox-focus-shadow: none;
     }
-    .leverui-combobox__indicatorGroup:not([data-unstyled])[data-variant-lg='outline'] {
-      --leverui-private-combobox-variant-indicator-padding-x: var(
-        --leverui-private-combobox-input-padding-x
-      );
-    }
-    .leverui-combobox__input:not([data-unstyled])[data-variant-lg='subtle'] {
-      --leverui-private-combobox-input-background: var(
-        --leverui-combobox-subtle-background,
-        var(--leverui-colors-bg-muted)
-      );
-      --leverui-private-combobox-border-width: 1px;
-      --leverui-private-combobox-border-color: transparent;
-      --leverui-private-combobox-variant-radius: var(--leverui-radii-l2);
-      --leverui-private-combobox-variant-padding-x: var(--leverui-private-combobox-input-padding-x);
-      --leverui-private-combobox-variant-padding-end: var(
-        --leverui-private-combobox-input-padding-end,
-        var(--leverui-private-combobox-input-padding-x)
-      );
-      --leverui-private-combobox-focus-outline-width: var(--focus-ring-width, 1px);
-      --leverui-private-combobox-focus-shadow: none;
-    }
-    .leverui-combobox__indicatorGroup:not([data-unstyled])[data-variant-lg='subtle'] {
-      --leverui-private-combobox-variant-indicator-padding-x: var(
-        --leverui-private-combobox-input-padding-x
+    .lui-combobox__indicatorGroup:not([data-unstyled])[data-variant-lg='outline'] {
+      --lui-private-combobox-variant-indicator-padding-x: var(
+        --lui-private-combobox-input-padding-x
       );
     }
-    .leverui-combobox__input:not([data-unstyled])[data-variant-lg='flushed'] {
-      --leverui-private-combobox-input-background: transparent;
-      --leverui-private-combobox-border-width: 0 0 1px;
-      --leverui-private-combobox-border-color: var(
-        --leverui-combobox-border-color,
-        var(--leverui-colors-border)
+    .lui-combobox__input:not([data-unstyled])[data-variant-lg='subtle'] {
+      --lui-private-combobox-input-background: var(
+        --lui-combobox-subtle-background,
+        var(--lui-colors-bg-muted)
       );
-      --leverui-private-combobox-variant-radius: 0;
-      --leverui-private-combobox-variant-padding-x: 0;
-      --leverui-private-combobox-variant-padding-end: 0;
-      --leverui-private-combobox-focus-outline-width: 0;
-      --leverui-private-combobox-focus-shadow: 0 1px 0 0
-        var(--leverui-combobox-focus-color, var(--leverui-colors-color-palette-focus-ring));
+      --lui-private-combobox-border-width: 1px;
+      --lui-private-combobox-border-color: transparent;
+      --lui-private-combobox-variant-radius: var(--lui-radii-l2);
+      --lui-private-combobox-variant-padding-x: var(--lui-private-combobox-input-padding-x);
+      --lui-private-combobox-variant-padding-end: var(
+        --lui-private-combobox-input-padding-end,
+        var(--lui-private-combobox-input-padding-x)
+      );
+      --lui-private-combobox-focus-outline-width: var(--focus-ring-width, 1px);
+      --lui-private-combobox-focus-shadow: none;
     }
-    .leverui-combobox__indicatorGroup:not([data-unstyled])[data-variant-lg='flushed'] {
-      --leverui-private-combobox-variant-indicator-padding-x: 0;
+    .lui-combobox__indicatorGroup:not([data-unstyled])[data-variant-lg='subtle'] {
+      --lui-private-combobox-variant-indicator-padding-x: var(
+        --lui-private-combobox-input-padding-x
+      );
+    }
+    .lui-combobox__input:not([data-unstyled])[data-variant-lg='flushed'] {
+      --lui-private-combobox-input-background: transparent;
+      --lui-private-combobox-border-width: 0 0 1px;
+      --lui-private-combobox-border-color: var(
+        --lui-combobox-border-color,
+        var(--lui-colors-border)
+      );
+      --lui-private-combobox-variant-radius: 0;
+      --lui-private-combobox-variant-padding-x: 0;
+      --lui-private-combobox-variant-padding-end: 0;
+      --lui-private-combobox-focus-outline-width: 0;
+      --lui-private-combobox-focus-shadow: 0 1px 0 0
+        var(--lui-combobox-focus-color, var(--lui-colors-color-palette-focus-ring));
+    }
+    .lui-combobox__indicatorGroup:not([data-unstyled])[data-variant-lg='flushed'] {
+      --lui-private-combobox-variant-indicator-padding-x: 0;
     }
   }
   @media (min-width: 1280px) {
-    .leverui-combobox__input:not([data-unstyled])[data-variant-xl='outline'] {
-      --leverui-private-combobox-input-background: transparent;
-      --leverui-private-combobox-border-width: 1px;
-      --leverui-private-combobox-border-color: var(
-        --leverui-combobox-border-color,
-        var(--leverui-colors-border)
+    .lui-combobox__input:not([data-unstyled])[data-variant-xl='outline'] {
+      --lui-private-combobox-input-background: transparent;
+      --lui-private-combobox-border-width: 1px;
+      --lui-private-combobox-border-color: var(
+        --lui-combobox-border-color,
+        var(--lui-colors-border)
       );
-      --leverui-private-combobox-variant-radius: var(--leverui-radii-l2);
-      --leverui-private-combobox-variant-padding-x: var(--leverui-private-combobox-input-padding-x);
-      --leverui-private-combobox-variant-padding-end: var(
-        --leverui-private-combobox-input-padding-end,
-        var(--leverui-private-combobox-input-padding-x)
+      --lui-private-combobox-variant-radius: var(--lui-radii-l2);
+      --lui-private-combobox-variant-padding-x: var(--lui-private-combobox-input-padding-x);
+      --lui-private-combobox-variant-padding-end: var(
+        --lui-private-combobox-input-padding-end,
+        var(--lui-private-combobox-input-padding-x)
       );
-      --leverui-private-combobox-focus-outline-width: var(--focus-ring-width, 1px);
-      --leverui-private-combobox-focus-shadow: none;
+      --lui-private-combobox-focus-outline-width: var(--focus-ring-width, 1px);
+      --lui-private-combobox-focus-shadow: none;
     }
-    .leverui-combobox__indicatorGroup:not([data-unstyled])[data-variant-xl='outline'] {
-      --leverui-private-combobox-variant-indicator-padding-x: var(
-        --leverui-private-combobox-input-padding-x
-      );
-    }
-    .leverui-combobox__input:not([data-unstyled])[data-variant-xl='subtle'] {
-      --leverui-private-combobox-input-background: var(
-        --leverui-combobox-subtle-background,
-        var(--leverui-colors-bg-muted)
-      );
-      --leverui-private-combobox-border-width: 1px;
-      --leverui-private-combobox-border-color: transparent;
-      --leverui-private-combobox-variant-radius: var(--leverui-radii-l2);
-      --leverui-private-combobox-variant-padding-x: var(--leverui-private-combobox-input-padding-x);
-      --leverui-private-combobox-variant-padding-end: var(
-        --leverui-private-combobox-input-padding-end,
-        var(--leverui-private-combobox-input-padding-x)
-      );
-      --leverui-private-combobox-focus-outline-width: var(--focus-ring-width, 1px);
-      --leverui-private-combobox-focus-shadow: none;
-    }
-    .leverui-combobox__indicatorGroup:not([data-unstyled])[data-variant-xl='subtle'] {
-      --leverui-private-combobox-variant-indicator-padding-x: var(
-        --leverui-private-combobox-input-padding-x
+    .lui-combobox__indicatorGroup:not([data-unstyled])[data-variant-xl='outline'] {
+      --lui-private-combobox-variant-indicator-padding-x: var(
+        --lui-private-combobox-input-padding-x
       );
     }
-    .leverui-combobox__input:not([data-unstyled])[data-variant-xl='flushed'] {
-      --leverui-private-combobox-input-background: transparent;
-      --leverui-private-combobox-border-width: 0 0 1px;
-      --leverui-private-combobox-border-color: var(
-        --leverui-combobox-border-color,
-        var(--leverui-colors-border)
+    .lui-combobox__input:not([data-unstyled])[data-variant-xl='subtle'] {
+      --lui-private-combobox-input-background: var(
+        --lui-combobox-subtle-background,
+        var(--lui-colors-bg-muted)
       );
-      --leverui-private-combobox-variant-radius: 0;
-      --leverui-private-combobox-variant-padding-x: 0;
-      --leverui-private-combobox-variant-padding-end: 0;
-      --leverui-private-combobox-focus-outline-width: 0;
-      --leverui-private-combobox-focus-shadow: 0 1px 0 0
-        var(--leverui-combobox-focus-color, var(--leverui-colors-color-palette-focus-ring));
+      --lui-private-combobox-border-width: 1px;
+      --lui-private-combobox-border-color: transparent;
+      --lui-private-combobox-variant-radius: var(--lui-radii-l2);
+      --lui-private-combobox-variant-padding-x: var(--lui-private-combobox-input-padding-x);
+      --lui-private-combobox-variant-padding-end: var(
+        --lui-private-combobox-input-padding-end,
+        var(--lui-private-combobox-input-padding-x)
+      );
+      --lui-private-combobox-focus-outline-width: var(--focus-ring-width, 1px);
+      --lui-private-combobox-focus-shadow: none;
     }
-    .leverui-combobox__indicatorGroup:not([data-unstyled])[data-variant-xl='flushed'] {
-      --leverui-private-combobox-variant-indicator-padding-x: 0;
+    .lui-combobox__indicatorGroup:not([data-unstyled])[data-variant-xl='subtle'] {
+      --lui-private-combobox-variant-indicator-padding-x: var(
+        --lui-private-combobox-input-padding-x
+      );
+    }
+    .lui-combobox__input:not([data-unstyled])[data-variant-xl='flushed'] {
+      --lui-private-combobox-input-background: transparent;
+      --lui-private-combobox-border-width: 0 0 1px;
+      --lui-private-combobox-border-color: var(
+        --lui-combobox-border-color,
+        var(--lui-colors-border)
+      );
+      --lui-private-combobox-variant-radius: 0;
+      --lui-private-combobox-variant-padding-x: 0;
+      --lui-private-combobox-variant-padding-end: 0;
+      --lui-private-combobox-focus-outline-width: 0;
+      --lui-private-combobox-focus-shadow: 0 1px 0 0
+        var(--lui-combobox-focus-color, var(--lui-colors-color-palette-focus-ring));
+    }
+    .lui-combobox__indicatorGroup:not([data-unstyled])[data-variant-xl='flushed'] {
+      --lui-private-combobox-variant-indicator-padding-x: 0;
     }
   }
   @media (min-width: 1536px) {
-    .leverui-combobox__input:not([data-unstyled])[data-variant-2xl='outline'] {
-      --leverui-private-combobox-input-background: transparent;
-      --leverui-private-combobox-border-width: 1px;
-      --leverui-private-combobox-border-color: var(
-        --leverui-combobox-border-color,
-        var(--leverui-colors-border)
+    .lui-combobox__input:not([data-unstyled])[data-variant-2xl='outline'] {
+      --lui-private-combobox-input-background: transparent;
+      --lui-private-combobox-border-width: 1px;
+      --lui-private-combobox-border-color: var(
+        --lui-combobox-border-color,
+        var(--lui-colors-border)
       );
-      --leverui-private-combobox-variant-radius: var(--leverui-radii-l2);
-      --leverui-private-combobox-variant-padding-x: var(--leverui-private-combobox-input-padding-x);
-      --leverui-private-combobox-variant-padding-end: var(
-        --leverui-private-combobox-input-padding-end,
-        var(--leverui-private-combobox-input-padding-x)
+      --lui-private-combobox-variant-radius: var(--lui-radii-l2);
+      --lui-private-combobox-variant-padding-x: var(--lui-private-combobox-input-padding-x);
+      --lui-private-combobox-variant-padding-end: var(
+        --lui-private-combobox-input-padding-end,
+        var(--lui-private-combobox-input-padding-x)
       );
-      --leverui-private-combobox-focus-outline-width: var(--focus-ring-width, 1px);
-      --leverui-private-combobox-focus-shadow: none;
+      --lui-private-combobox-focus-outline-width: var(--focus-ring-width, 1px);
+      --lui-private-combobox-focus-shadow: none;
     }
-    .leverui-combobox__indicatorGroup:not([data-unstyled])[data-variant-2xl='outline'] {
-      --leverui-private-combobox-variant-indicator-padding-x: var(
-        --leverui-private-combobox-input-padding-x
-      );
-    }
-    .leverui-combobox__input:not([data-unstyled])[data-variant-2xl='subtle'] {
-      --leverui-private-combobox-input-background: var(
-        --leverui-combobox-subtle-background,
-        var(--leverui-colors-bg-muted)
-      );
-      --leverui-private-combobox-border-width: 1px;
-      --leverui-private-combobox-border-color: transparent;
-      --leverui-private-combobox-variant-radius: var(--leverui-radii-l2);
-      --leverui-private-combobox-variant-padding-x: var(--leverui-private-combobox-input-padding-x);
-      --leverui-private-combobox-variant-padding-end: var(
-        --leverui-private-combobox-input-padding-end,
-        var(--leverui-private-combobox-input-padding-x)
-      );
-      --leverui-private-combobox-focus-outline-width: var(--focus-ring-width, 1px);
-      --leverui-private-combobox-focus-shadow: none;
-    }
-    .leverui-combobox__indicatorGroup:not([data-unstyled])[data-variant-2xl='subtle'] {
-      --leverui-private-combobox-variant-indicator-padding-x: var(
-        --leverui-private-combobox-input-padding-x
+    .lui-combobox__indicatorGroup:not([data-unstyled])[data-variant-2xl='outline'] {
+      --lui-private-combobox-variant-indicator-padding-x: var(
+        --lui-private-combobox-input-padding-x
       );
     }
-    .leverui-combobox__input:not([data-unstyled])[data-variant-2xl='flushed'] {
-      --leverui-private-combobox-input-background: transparent;
-      --leverui-private-combobox-border-width: 0 0 1px;
-      --leverui-private-combobox-border-color: var(
-        --leverui-combobox-border-color,
-        var(--leverui-colors-border)
+    .lui-combobox__input:not([data-unstyled])[data-variant-2xl='subtle'] {
+      --lui-private-combobox-input-background: var(
+        --lui-combobox-subtle-background,
+        var(--lui-colors-bg-muted)
       );
-      --leverui-private-combobox-variant-radius: 0;
-      --leverui-private-combobox-variant-padding-x: 0;
-      --leverui-private-combobox-variant-padding-end: 0;
-      --leverui-private-combobox-focus-outline-width: 0;
-      --leverui-private-combobox-focus-shadow: 0 1px 0 0
-        var(--leverui-combobox-focus-color, var(--leverui-colors-color-palette-focus-ring));
+      --lui-private-combobox-border-width: 1px;
+      --lui-private-combobox-border-color: transparent;
+      --lui-private-combobox-variant-radius: var(--lui-radii-l2);
+      --lui-private-combobox-variant-padding-x: var(--lui-private-combobox-input-padding-x);
+      --lui-private-combobox-variant-padding-end: var(
+        --lui-private-combobox-input-padding-end,
+        var(--lui-private-combobox-input-padding-x)
+      );
+      --lui-private-combobox-focus-outline-width: var(--focus-ring-width, 1px);
+      --lui-private-combobox-focus-shadow: none;
     }
-    .leverui-combobox__indicatorGroup:not([data-unstyled])[data-variant-2xl='flushed'] {
-      --leverui-private-combobox-variant-indicator-padding-x: 0;
+    .lui-combobox__indicatorGroup:not([data-unstyled])[data-variant-2xl='subtle'] {
+      --lui-private-combobox-variant-indicator-padding-x: var(
+        --lui-private-combobox-input-padding-x
+      );
+    }
+    .lui-combobox__input:not([data-unstyled])[data-variant-2xl='flushed'] {
+      --lui-private-combobox-input-background: transparent;
+      --lui-private-combobox-border-width: 0 0 1px;
+      --lui-private-combobox-border-color: var(
+        --lui-combobox-border-color,
+        var(--lui-colors-border)
+      );
+      --lui-private-combobox-variant-radius: 0;
+      --lui-private-combobox-variant-padding-x: 0;
+      --lui-private-combobox-variant-padding-end: 0;
+      --lui-private-combobox-focus-outline-width: 0;
+      --lui-private-combobox-focus-shadow: 0 1px 0 0
+        var(--lui-combobox-focus-color, var(--lui-colors-color-palette-focus-ring));
+    }
+    .lui-combobox__indicatorGroup:not([data-unstyled])[data-variant-2xl='flushed'] {
+      --lui-private-combobox-variant-indicator-padding-x: 0;
     }
   }
 }

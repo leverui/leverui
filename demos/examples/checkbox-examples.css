@@ -7,33 +7,33 @@
 }
 
 .checkbox-example-palette-variant {
-  margin-bottom: var(--leverui-spacing-4);
+  margin-bottom: var(--lui-spacing-4);
 }
 
 .checkbox-example-description {
   align-items: flex-start;
-  gap: var(--leverui-spacing-4);
+  gap: var(--lui-spacing-4);
 }
 
 .checkbox-example-description-copy {
-  color: var(--leverui-colors-fg-muted);
+  color: var(--lui-colors-fg-muted);
 }
 
 .checkbox-example-form {
-  max-width: var(--leverui-sizes-sm);
+  max-width: var(--lui-sizes-sm);
 }
 
 .checkbox-example-remember {
-  margin-top: var(--leverui-spacing-2);
+  margin-top: var(--lui-spacing-2);
 }
 
 .checkbox-example-submit {
-  margin-top: var(--leverui-spacing-3);
+  margin-top: var(--lui-spacing-3);
 }
 
 .checkbox-example-group-legend {
-  font-size: var(--leverui-font-sizes-sm);
-  margin-bottom: var(--leverui-spacing-2);
+  font-size: var(--lui-font-sizes-sm);
+  margin-bottom: var(--lui-spacing-2);
 }
 
 .checkbox-example-aligned-submit {
@@ -41,7 +41,7 @@
 }
 
 .checkbox-example-weekday {
-  margin-inline-start: var(--leverui-spacing-6);
+  margin-inline-start: var(--lui-spacing-6);
 }
 
 .example-checkbox-column {

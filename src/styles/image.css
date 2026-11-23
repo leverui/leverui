@@ -1,19 +1,16 @@
-@layer leverui.recipes {
-  .leverui-image {
-    --leverui-private-image-align-base: initial;
-    --leverui-private-image-align-sm: initial;
-    --leverui-private-image-align-md: initial;
-    --leverui-private-image-align-lg: initial;
-    --leverui-private-image-align-xl: initial;
-    --leverui-private-image-align-2xl: initial;
+@layer lui.recipes {
+  .lui-image {
+    --lui-private-image-align-base: initial;
+    --lui-private-image-align-sm: initial;
+    --lui-private-image-align-md: initial;
+    --lui-private-image-align-lg: initial;
+    --lui-private-image-align-xl: initial;
+    --lui-private-image-align-2xl: initial;
   }
 
-  .leverui-image:not([data-unstyled]) {
-    object-fit: var(--leverui-image-fit, cover);
-    object-position: var(
-      --leverui-private-image-align-base,
-      var(--leverui-image-position, 50% 50%)
-    );
+  .lui-image:not([data-unstyled]) {
+    object-fit: var(--lui-image-fit, cover);
+    object-position: var(--lui-private-image-align-base, var(--lui-image-position, 50% 50%));
 
     &[data-fit-base='cover'] {
       object-fit: cover;
@@ -32,10 +29,7 @@
     }
 
     @media (min-width: 480px) {
-      object-position: var(
-        --leverui-private-image-align-sm,
-        var(--leverui-image-position, 50% 50%)
-      );
+      object-position: var(--lui-private-image-align-sm, var(--lui-image-position, 50% 50%));
       &[data-fit-sm='cover'] {
         object-fit: cover;
       }
@@ -54,10 +48,7 @@
     }
 
     @media (min-width: 768px) {
-      object-position: var(
-        --leverui-private-image-align-md,
-        var(--leverui-image-position, 50% 50%)
-      );
+      object-position: var(--lui-private-image-align-md, var(--lui-image-position, 50% 50%));
       &[data-fit-md='cover'] {
         object-fit: cover;
       }
@@ -76,10 +67,7 @@
     }
 
     @media (min-width: 1024px) {
-      object-position: var(
-        --leverui-private-image-align-lg,
-        var(--leverui-image-position, 50% 50%)
-      );
+      object-position: var(--lui-private-image-align-lg, var(--lui-image-position, 50% 50%));
       &[data-fit-lg='cover'] {
         object-fit: cover;
       }
@@ -98,10 +86,7 @@
     }
 
     @media (min-width: 1280px) {
-      object-position: var(
-        --leverui-private-image-align-xl,
-        var(--leverui-image-position, 50% 50%)
-      );
+      object-position: var(--lui-private-image-align-xl, var(--lui-image-position, 50% 50%));
       &[data-fit-xl='cover'] {
         object-fit: cover;
       }
@@ -120,10 +105,7 @@
     }
 
     @media (min-width: 1536px) {
-      object-position: var(
-        --leverui-private-image-align-2xl,
-        var(--leverui-image-position, 50% 50%)
-      );
+      object-position: var(--lui-private-image-align-2xl, var(--lui-image-position, 50% 50%));
       &[data-fit-2xl='cover'] {
         object-fit: cover;
       }

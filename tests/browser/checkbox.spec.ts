@@ -34,7 +34,7 @@ async function verifiesCheckboxBrowserContract({ page }: { page: Page }): Promis
   await expect(root).toHaveAttribute('data-ref-tag', 'label');
   await expect(root).toHaveAttribute('data-state', 'unchecked');
   await expect(control).toHaveCSS('width', '16px');
-  const indicator = control.locator('.leverui-checkbox__indicator');
+  const indicator = control.locator('.lui-checkbox__indicator');
   await expect(indicator).toHaveCSS('stroke-width', '3px');
   await expect(indicator.locator('[data-glyph="checked"]')).toHaveCSS('display', 'none');
   await expect(page.getByTestId('default-input')).toBeChecked();
@@ -123,7 +123,7 @@ async function verifiesServerCheckbox({ page }: { page: Page }): Promise<void> {
   await page.setContent(`<style>${defaultCss}</style>${markup}`);
   await expect(page.locator('[data-checkbox-root]')).toHaveAttribute('data-state', 'checked');
   await expect(page.locator('[data-checkbox-control]')).toHaveCSS('width', '24px');
-  await expect(page.locator('.leverui-checkbox__indicator [data-glyph="checked"]')).toHaveCSS(
+  await expect(page.locator('.lui-checkbox__indicator [data-glyph="checked"]')).toHaveCSS(
     'display',
     'inline',
   );

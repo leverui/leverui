@@ -1,26 +1,26 @@
-@layer leverui.recipes {
-  .leverui-checkmark:not([data-unstyled]) {
-    --leverui-private-checkmark-base-background: transparent;
-    --leverui-private-checkmark-active-background: transparent;
-    --leverui-private-checkmark-base-border: transparent;
-    --leverui-private-checkmark-active-border: transparent;
-    --leverui-private-checkmark-base-color: var(--leverui-colors-white);
-    --leverui-private-checkmark-active-color: var(--leverui-colors-white);
-    --leverui-private-checkmark-filled-active-background: var(--leverui-colors-bg);
-    --leverui-private-checkmark-filled-background: var(--leverui-colors-bg);
-    --leverui-private-checkmark-background: var(--leverui-private-checkmark-base-background);
-    --leverui-private-checkmark-border: var(--leverui-private-checkmark-base-border);
-    --leverui-private-checkmark-color: var(--leverui-private-checkmark-base-color);
-    --leverui-private-checkmark-fill: var(--leverui-private-checkmark-background);
+@layer lui.recipes {
+  .lui-checkmark:not([data-unstyled]) {
+    --lui-private-checkmark-base-background: transparent;
+    --lui-private-checkmark-active-background: transparent;
+    --lui-private-checkmark-base-border: transparent;
+    --lui-private-checkmark-active-border: transparent;
+    --lui-private-checkmark-base-color: var(--lui-colors-white);
+    --lui-private-checkmark-active-color: var(--lui-colors-white);
+    --lui-private-checkmark-filled-active-background: var(--lui-colors-bg);
+    --lui-private-checkmark-filled-background: var(--lui-colors-bg);
+    --lui-private-checkmark-background: var(--lui-private-checkmark-base-background);
+    --lui-private-checkmark-border: var(--lui-private-checkmark-base-border);
+    --lui-private-checkmark-color: var(--lui-private-checkmark-base-color);
+    --lui-private-checkmark-fill: var(--lui-private-checkmark-background);
     display: inline-block;
     flex-shrink: 0;
-    width: var(--leverui-private-checkmark-size);
-    height: var(--leverui-private-checkmark-size);
-    padding: var(--leverui-private-checkmark-padding, 0);
-    border: 1px solid var(--leverui-private-checkmark-border);
-    border-radius: var(--leverui-radii-l1);
-    color: var(--leverui-private-checkmark-color);
-    background-color: var(--leverui-private-checkmark-fill);
-    cursor: var(--leverui-cursor-checkbox);
+    width: var(--lui-private-checkmark-size);
+    height: var(--lui-private-checkmark-size);
+    padding: var(--lui-private-checkmark-padding, 0);
+    border: 1px solid var(--lui-private-checkmark-border);
+    border-radius: var(--lui-radii-l1);
+    color: var(--lui-private-checkmark-color);
+    background-color: var(--lui-private-checkmark-fill);
+    cursor: var(--lui-cursor-checkbox);
   }
 }

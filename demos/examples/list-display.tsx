@@ -38,7 +38,7 @@ export function ListNested(): JSX.Element {
       <List.Item>Top-level item</List.Item>
       <List.Item>
         Top-level item with a list inside
-        <List.Root style={{ 'padding-inline-start': 'var(--leverui-spacing-5)' }}>
+        <List.Root style={{ 'padding-inline-start': 'var(--lui-spacing-5)' }}>
           <List.Item>Nested item</List.Item>
           <List.Item>Nested item</List.Item>
           <List.Item>Nested item</List.Item>
@@ -74,7 +74,7 @@ function renderIconItem(item: string, index: Accessor<number>): JSX.Element {
     <List.Item>
       <List.Indicator
         asChild={index() === 2 ? renderDashedIcon : renderCheckIcon}
-        style={{ color: 'var(--leverui-colors-green-500)' }}
+        style={{ color: 'var(--lui-colors-green-500)' }}
       />
       {item}
     </List.Item>
@@ -84,11 +84,7 @@ function renderIconItem(item: string, index: Accessor<number>): JSX.Element {
 /** Place green Bootstrap Icons before the three list items. */
 export function ListWithIcon(): JSX.Element {
   return (
-    <List.Root
-      style={{ '--leverui-list-gap': 'var(--leverui-spacing-2)' }}
-      variant="plain"
-      align="center"
-    >
+    <List.Root style={{ '--lui-list-gap': 'var(--lui-spacing-2)' }} variant="plain" align="center">
       <For each={sampleItems}>{renderIconItem}</For>
     </List.Root>
   );

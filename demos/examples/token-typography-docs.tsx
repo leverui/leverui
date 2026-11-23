@@ -18,8 +18,8 @@ export function TokensFont(): JSX.Element {
               <Stack style={{ flex: '1' }}>
                 <Text
                   style={{
-                    'font-family': `var(--leverui-fonts-${font})`,
-                    'font-size': 'var(--leverui-font-sizes-3xl)',
+                    'font-family': `var(--lui-fonts-${font})`,
+                    'font-size': 'var(--lui-font-sizes-3xl)',
                   }}
                 >
                   Ag
@@ -29,8 +29,8 @@ export function TokensFont(): JSX.Element {
                   as="pre"
                   style={{
                     'text-wrap': 'balance',
-                    color: 'var(--leverui-colors-fg-muted)',
-                    'font-size': 'var(--leverui-font-sizes-xs)',
+                    color: 'var(--lui-colors-fg-muted)',
+                    'font-size': 'var(--lui-font-sizes-xs)',
                   }}
                 >
                   {tokens.getByName(`fonts.${font}`)?.originalValue}
@@ -57,7 +57,7 @@ export function TokensFontSizes(): JSX.Element {
               return (
                 <Stack direction="row" align="center">
                   <Text style={{ width: '4rem' }}>{token?.extensions.prop}</Text>
-                  <Text style={{ width: '6rem', color: 'var(--leverui-colors-fg-muted)' }}>
+                  <Text style={{ width: '6rem', color: 'var(--lui-colors-fg-muted)' }}>
                     {token?.value}
                   </Text>
                   <Text style={{ 'font-size': token?.value?.toString() }}>Ag</Text>
@@ -84,13 +84,13 @@ export function TokensFontWeights(): JSX.Element {
               return (
                 <Stack direction="row" align="center">
                   <Text style={{ width: '6rem' }}>{token?.extensions.prop}</Text>
-                  <Text style={{ width: '6rem', color: 'var(--leverui-colors-fg-muted)' }}>
+                  <Text style={{ width: '6rem', color: 'var(--lui-colors-fg-muted)' }}>
                     {token?.value}
                   </Text>
                   <Text
                     style={{
                       'font-weight': token?.value,
-                      'font-size': 'var(--leverui-font-sizes-2xl)',
+                      'font-size': 'var(--lui-font-sizes-2xl)',
                     }}
                   >
                     Ag
@@ -117,7 +117,7 @@ export function TokensLineHeights(): JSX.Element {
               const token = tokens.getByName(`lineHeights.${name}`);
               return (
                 <Stack>
-                  <HStack style={{ color: 'var(--leverui-colors-fg-muted)' }}>
+                  <HStack style={{ color: 'var(--lui-colors-fg-muted)' }}>
                     <Text>
                       {token?.extensions.prop} / {token?.value}
                     </Text>
@@ -125,7 +125,7 @@ export function TokensLineHeights(): JSX.Element {
                   <Text
                     style={{
                       'line-height': token?.value,
-                      'font-size': 'var(--leverui-font-sizes-2xl)',
+                      'font-size': 'var(--lui-font-sizes-2xl)',
                     }}
                   >
                     The Lanternwright Chronicles is a fantasy novel series about a city that
@@ -155,13 +155,13 @@ export function TokensLetterSpacings(): JSX.Element {
               const token = tokens.getByName(`letterSpacings.${name}`);
               return (
                 <Stack>
-                  <Text style={{ color: 'var(--leverui-colors-fg-muted)' }}>
+                  <Text style={{ color: 'var(--lui-colors-fg-muted)' }}>
                     {token?.extensions.prop} / {token?.value}
                   </Text>
                   <Text
                     style={{
                       'letter-spacing': token?.value?.toString(),
-                      'font-size': 'var(--leverui-font-sizes-2xl)',
+                      'font-size': 'var(--lui-font-sizes-2xl)',
                     }}
                   >
                     Wren Ashford

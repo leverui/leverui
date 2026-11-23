@@ -7,7 +7,7 @@ async function verifiesKbdMatrix({ page }: { page: Page }): Promise<void> {
   const keyboard = page.getByTestId('kbd-default');
   await expect(keyboard).toHaveJSProperty('tagName', 'KBD');
   await expect(keyboard).toHaveText('F12');
-  await expect(keyboard).toHaveClass(/leverui-kbd/);
+  await expect(keyboard).toHaveClass(/lui-kbd/);
   await expect(keyboard).toHaveCSS('display', 'inline-flex');
   await expect(keyboard).not.toHaveAttribute('role');
   await expect(keyboard).not.toHaveAttribute('size');
@@ -58,7 +58,7 @@ async function verifiesKbdComposition({ page }: { page: Page }): Promise<void> {
   await expect(page.getByTestId('kbd-selected')).toHaveJSProperty('tagName', 'SPAN');
   await expect(page.getByTestId('kbd-selected')).toHaveAttribute('data-ref-tag', 'span');
   await expect(page.getByTestId('kbd-child')).toHaveAttribute('aria-label', 'Command key');
-  await expect(page.getByTestId('kbd-child')).toHaveClass(/leverui-kbd/);
+  await expect(page.getByTestId('kbd-child')).toHaveClass(/lui-kbd/);
   await expect(page.getByTestId('kbd-unstyled')).toHaveCSS('display', 'inline');
   await expect(page.getByTestId('kbd-custom-spacing')).toHaveCSS('letter-spacing', '2px');
   await expect(page.getByTestId('kbd-css')).toHaveCSS('color', 'rgb(20, 30, 40)');
@@ -84,7 +84,7 @@ async function verifiesKbdCssScopes({ page }: { page: Page }): Promise<void> {
 
   await page.addStyleTag({
     content:
-      '.leverui-kbd[data-testid="kbd-default"]{white-space:normal;background-color:rgb(1, 2, 3)}',
+      '.lui-kbd[data-testid="kbd-default"]{white-space:normal;background-color:rgb(1, 2, 3)}',
   });
   await expect(page.getByTestId('kbd-default')).toHaveCSS('white-space', 'normal');
   await expect(page.getByTestId('kbd-default')).toHaveCSS('background-color', 'rgb(1, 2, 3)');

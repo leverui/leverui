@@ -11,7 +11,7 @@ const states = [false, true] as const;
 function SwitchVisualContract(): JSX.Element {
   return (
     <>
-      <style>{'.switch-token-override { --leverui-colors-blue-solid: rgb(3, 111, 77); }'}</style>
+      <style>{'.switch-token-override { --lui-colors-blue-solid: rgb(3, 111, 77); }'}</style>
       <div style={{ display: 'grid', gap: '16px', padding: '24px' }}>
         <For each={sizes}>
           {

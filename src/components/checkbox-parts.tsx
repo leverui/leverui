@@ -19,7 +19,7 @@ export function CheckboxControl(props: CheckboxControlProps): JSX.Element {
     presentation,
     /** Apply Checkmark size and treatment to the primitive's visible control. */
     attributes: () => checkmarkAttributes(presentation().choices),
-    sharedClass: 'leverui-checkmark',
+    sharedClass: 'lui-checkmark',
     /** Supply the default SVG only when consumers omit children. */
     defaultChildren: () => createComponent(CheckboxIndicator, {}),
   });

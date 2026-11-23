@@ -20,7 +20,7 @@ export function PackedGrid(): JSX.Element {
     <Grid
       id="packed-grid"
       templateColumns={wide() ? '40px 40px 40px' : '40px 40px'}
-      style={{ gap: 'var(--leverui-spacing-4)' }}
+      style={{ gap: 'var(--lui-spacing-4)' }}
     >
       <GridItem
         as="button"

@@ -28,7 +28,7 @@
   justify-content: space-between;
   width: 100%;
   font-size: 18px;
-  font-weight: var(--leverui-font-weights-semibold);
+  font-weight: var(--lui-font-weights-semibold);
 }
 /* The section's content clips while it opens and closes, so links are inset, not outdented. */
 .site-menu-groups h2 {
@@ -36,7 +36,7 @@
   padding-inline: 12px;
   color: var(--site-fg);
   font-size: 16px;
-  font-weight: var(--leverui-font-weights-semibold);
+  font-weight: var(--lui-font-weights-semibold);
   line-height: 24px;
   letter-spacing: normal;
 }
@@ -46,7 +46,7 @@
 .site-menu-groups a {
   display: block;
   padding: 9px 12px;
-  border-radius: var(--leverui-radii-full);
+  border-radius: var(--lui-radii-full);
   color: var(--site-muted);
   font-size: 16px;
   line-height: 24px;
@@ -55,9 +55,9 @@
   background: var(--site-nav-hover-bg);
 }
 .site-menu-groups a[aria-current='page'] {
-  background: var(--leverui-colors-gray-muted);
+  background: var(--lui-colors-gray-muted);
   color: var(--site-fg);
-  font-weight: var(--leverui-font-weights-medium);
+  font-weight: var(--lui-font-weights-medium);
 }
 .site-menu-external {
   display: flex;
@@ -66,5 +66,5 @@
   padding: 20px 0;
   color: var(--site-fg);
   font-size: 18px;
-  font-weight: var(--leverui-font-weights-semibold);
+  font-weight: var(--lui-font-weights-semibold);
 }

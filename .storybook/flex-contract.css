@@ -1,11 +1,11 @@
 .flex-contract-default {
   width: 240px;
   height: 80px;
-  gap: var(--leverui-spacing-4);
+  gap: var(--lui-spacing-4);
 }
 
 .flex-contract-inline {
-  gap: var(--leverui-spacing-2);
+  gap: var(--lui-spacing-2);
 }
 
 .flex-contract-aliases {

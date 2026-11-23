@@ -10,12 +10,12 @@ async function verifiesComboboxBrowser({ page }: { page: Page }): Promise<void> 
   await expect(input).toHaveAttribute('required', '');
   await expect(input).toHaveAttribute('aria-describedby', /helper-text/);
   await expect(input).toHaveCSS('min-height', '36px');
-  await expect(root).toHaveClass(/leverui-combobox__root/);
+  await expect(root).toHaveClass(/lui-combobox__root/);
   await trigger.click();
   await expect(page.getByTestId('open-state')).toHaveText('open');
   await page.evaluate(
     /** Check root-scoped variables reach the input and portalled popup. */
-    () => document.documentElement.style.setProperty('--leverui-combobox-radius', '17px'),
+    () => document.documentElement.style.setProperty('--lui-combobox-radius', '17px'),
   );
   await expect(input).toHaveCSS('border-radius', '17px');
   await expect(page.getByTestId('combobox-content')).toHaveCSS('border-radius', '17px');

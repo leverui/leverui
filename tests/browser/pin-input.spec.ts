@@ -6,9 +6,9 @@ async function verifiesPinInputBrowser({ page }: { page: Page }): Promise<void> 
   const root = page.getByTestId('pin-root');
   const first = page.getByTestId('pin-0');
   const second = page.getByTestId('pin-1');
-  await expect(root).toHaveClass(/leverui-pin-input__root/, { timeout: 30_000 });
-  await expect(first).toHaveClass(/leverui-pin-input__input/);
-  await expect(page.getByTestId('pin-control')).toHaveClass(/leverui-pin-input__control/);
+  await expect(root).toHaveClass(/lui-pin-input__root/, { timeout: 30_000 });
+  await expect(first).toHaveClass(/lui-pin-input__input/);
+  await expect(page.getByTestId('pin-control')).toHaveClass(/lui-pin-input__control/);
   await first.fill('1');
   await expect(second).toBeFocused();
   await second.fill('2');

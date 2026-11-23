@@ -13,7 +13,7 @@ const viewportSteps = [
 async function readControl(
   root: Locator,
 ): Promise<{ minHeight: string; borderTopWidth: string; background: string }> {
-  return root.locator('.leverui-tags-input__control').evaluate(
+  return root.locator('.lui-tags-input__control').evaluate(
     /** Sample the public part's visible CSS presentation. */
     (element) => {
       const style = getComputedStyle(element);
@@ -35,7 +35,7 @@ async function verifiesResponsiveAppearance({ page }: { page: Page }): Promise<v
   await expect(root).toHaveAttribute('data-size-2xl', 'lg');
   await expect(root).toHaveAttribute('data-variant', 'outline');
   await expect(root).toHaveAttribute('data-variant-2xl', 'flushed');
-  await expect(root).toHaveAttribute('data-leverui-color-palette', 'blue');
+  await expect(root).toHaveAttribute('data-lui-color-palette', 'blue');
   const backgrounds: string[] = [];
   for (const { width, height, topBorder } of viewportSteps) {
     await page.setViewportSize({ width, height: 800 });
@@ -57,7 +57,7 @@ test('responsive Tags Input sizes and variants use authored CSS', verifiesRespon
 async function verifiesReactiveAppearance({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=internal-tags-input-css--contract');
   const root = page.getByTestId('tags-css-reactive');
-  const control = root.locator('.leverui-tags-input__control');
+  const control = root.locator('.lui-tags-input__control');
   await expect(root).toBeVisible({ timeout: 30_000 });
   await expect(root).toHaveAttribute('data-size', 'sm');
   await control.evaluate(
@@ -83,29 +83,26 @@ async function verifiesConsumerCss({ page }: { page: Page }): Promise<void> {
   await page.setViewportSize({ width: 400, height: 800 });
   await page.goto('/iframe.html?id=internal-tags-input-css--contract');
   const root = page.getByTestId('tags-css-responsive');
-  const preview = root.locator('.leverui-tags-input__itemPreview');
+  const preview = root.locator('.lui-tags-input__itemPreview');
   await expect(root).toBeVisible({ timeout: 30_000 });
   await page.addStyleTag({
     content: `[data-testid='tags-css-responsive'] {
-      --leverui-colors-color-palette-subtle: rgb(10 90 150);
+      --lui-colors-color-palette-subtle: rgb(10 90 150);
     }`,
   });
   await expect(preview).toHaveCSS('background-color', 'rgb(10, 90, 150)');
   await page.addStyleTag({
-    content: `[data-testid='tags-css-responsive'] .leverui-tags-input__control {
+    content: `[data-testid='tags-css-responsive'] .lui-tags-input__control {
       background: rgb(20 30 40);
     }`,
   });
-  await expect(root.locator('.leverui-tags-input__control')).toHaveCSS(
+  await expect(root.locator('.lui-tags-input__control')).toHaveCSS(
     'background-color',
     'rgb(20, 30, 40)',
   );
   const unstyled = page.getByTestId('tags-css-unstyled');
-  await expect(unstyled.locator('.leverui-tags-input__control')).not.toHaveCSS(
-    'min-height',
-    '40px',
-  );
-  await expect(unstyled.locator('.leverui-tags-input__item')).toHaveCount(1);
+  await expect(unstyled.locator('.lui-tags-input__control')).not.toHaveCSS('min-height', '40px');
+  await expect(unstyled.locator('.lui-tags-input__item')).toHaveCount(1);
 }
 
 test('consumer CSS and unstyled Tags Input keep stable part hooks', verifiesConsumerCss);

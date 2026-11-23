@@ -81,7 +81,7 @@ import { HydrationScript, type JSX } from '@solidjs/web';
 /** Render the page around the app. */
 export default function Document(props: { children?: JSX.Element }): JSX.Element {
   return (
-    <html lang="en" data-leverui-color-mode="light">
+    <html lang="en" data-lui-color-mode="light">
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

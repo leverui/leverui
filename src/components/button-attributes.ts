@@ -32,6 +32,6 @@ export function buttonAttributes(props: ButtonAppearance): Record<string, string
     'data-variant-lg': variant.lg,
     'data-variant-xl': variant.xl,
     'data-variant-2xl': variant['2xl'],
-    'data-leverui-color-palette': props.colorPalette,
+    'data-lui-color-palette': props.colorPalette,
   };
 }

@@ -1,18 +1,18 @@
 .brand-theme {
-  --leverui-colors-bg: #f5f0ff;
-  --leverui-colors-fg: #281c42;
-  --leverui-colors-blue-solid: #6254c7;
-  --leverui-colors-blue-contrast: #fff;
-  --leverui-colors-blue-subtle: #e9e1ff;
-  --leverui-colors-blue-fg: #43328c;
-  --leverui-colors-blue-border: #7a69db;
-  --leverui-radii-l2: 12px;
+  --lui-colors-bg: #f5f0ff;
+  --lui-colors-fg: #281c42;
+  --lui-colors-blue-solid: #6254c7;
+  --lui-colors-blue-contrast: #fff;
+  --lui-colors-blue-subtle: #e9e1ff;
+  --lui-colors-blue-fg: #43328c;
+  --lui-colors-blue-border: #7a69db;
+  --lui-radii-l2: 12px;
 }
 
 .css-theme-content {
-  background: var(--leverui-colors-bg);
-  color: var(--leverui-colors-fg);
-  padding: var(--leverui-spacing-4);
+  background: var(--lui-colors-bg);
+  color: var(--lui-colors-fg);
+  padding: var(--lui-spacing-4);
 }
 
 .css-theme-gallery {

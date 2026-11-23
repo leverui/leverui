@@ -31,7 +31,7 @@ function verifiesServerDownload(): void {
   expect(markup).toContain('<button');
   expect(markup).toContain('type="button"');
   expect(markup).toContain('aria-label="Save server file"');
-  expect(markup).toContain('leverui-download-trigger');
+  expect(markup).toContain('lui-download-trigger');
   expect(markup).toContain('Save</button>');
   expect(markup).not.toContain('server payload');
   expect(markup).not.toContain('server.txt');
@@ -56,7 +56,7 @@ function verifiesSelectedAnchor(): void {
       }),
   );
   expect(markup).toMatch(/<a[^>]*href="#download"/);
-  expect(markup).toContain('leverui-download-trigger consumer-download');
+  expect(markup).toContain('lui-download-trigger consumer-download');
   expect(markup).toContain('Save selected file</a>');
   expect(markup).not.toContain('type="button"');
   expect(markup).not.toContain('selected payload');

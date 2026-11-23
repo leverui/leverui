@@ -1,39 +1,39 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   :where([dir='ltr']) {
-    --leverui-private-loader-inline-translate: -50%;
+    --lui-private-loader-inline-translate: -50%;
   }
 
   :where([dir='rtl']) {
-    --leverui-private-loader-inline-translate: 50%;
+    --lui-private-loader-inline-translate: 50%;
   }
 
-  .leverui-loader:not([data-unstyled]) {
+  .lui-loader:not([data-unstyled]) {
     display: contents;
   }
 
-  .leverui-loader:not([data-unstyled]) .leverui-loader__indicator {
+  .lui-loader:not([data-unstyled]) .lui-loader__indicator {
     position: absolute;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     inset-inline-start: 50%;
     top: 50%;
-    translate: var(--leverui-private-loader-inline-translate, -50%) -50%;
+    translate: var(--lui-private-loader-inline-translate, -50%) -50%;
   }
 
-  .leverui-loader:not([data-unstyled]) .leverui-loader__content {
+  .lui-loader:not([data-unstyled]) .lui-loader__content {
     display: contents;
     visibility: hidden;
   }
 
-  .leverui-loader-overlay:not([data-unstyled]) {
+  .lui-loader-overlay:not([data-unstyled]) {
     position: absolute;
     inset: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: var(--leverui-sizes-full);
-    height: var(--leverui-sizes-full);
-    gap: var(--leverui-spacing-2);
+    width: var(--lui-sizes-full);
+    height: var(--lui-sizes-full);
+    gap: var(--lui-spacing-2);
   }
 }

@@ -1,92 +1,92 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 480px) {
-    .leverui-slider__root:not([data-unstyled]) {
+    .lui-slider__root:not([data-unstyled]) {
       &[data-size-sm='sm'] {
-        --leverui-slider-thumb-size: var(--leverui-sizes-4);
-        --leverui-slider-track-size: var(--leverui-sizes-1\.5);
-        --leverui-slider-marker-size: var(--leverui-sizes-1);
-        --leverui-private-slider-marker-center: 6px;
-        --leverui-private-slider-marker-inset: 3px;
+        --lui-slider-thumb-size: var(--lui-sizes-4);
+        --lui-slider-track-size: var(--lui-sizes-1\.5);
+        --lui-slider-marker-size: var(--lui-sizes-1);
+        --lui-private-slider-marker-center: 6px;
+        --lui-private-slider-marker-inset: 3px;
       }
       &[data-size-sm='md'] {
-        --leverui-slider-thumb-size: var(--leverui-sizes-5);
-        --leverui-slider-track-size: var(--leverui-sizes-2);
-        --leverui-slider-marker-size: var(--leverui-sizes-1);
-        --leverui-private-slider-marker-center: 8px;
-        --leverui-private-slider-marker-inset: 4px;
+        --lui-slider-thumb-size: var(--lui-sizes-5);
+        --lui-slider-track-size: var(--lui-sizes-2);
+        --lui-slider-marker-size: var(--lui-sizes-1);
+        --lui-private-slider-marker-center: 8px;
+        --lui-private-slider-marker-inset: 4px;
       }
       &[data-size-sm='lg'] {
-        --leverui-slider-thumb-size: var(--leverui-sizes-6);
-        --leverui-slider-track-size: var(--leverui-sizes-2\.5);
-        --leverui-slider-marker-size: var(--leverui-sizes-1\.5);
-        --leverui-private-slider-marker-center: 9px;
-        --leverui-private-slider-marker-inset: 5px;
+        --lui-slider-thumb-size: var(--lui-sizes-6);
+        --lui-slider-track-size: var(--lui-sizes-2\.5);
+        --lui-slider-marker-size: var(--lui-sizes-1\.5);
+        --lui-private-slider-marker-center: 9px;
+        --lui-private-slider-marker-inset: 5px;
       }
       &[data-variant-sm='outline'] {
-        --leverui-slider-track-color: color-mix(
+        --lui-slider-track-color: color-mix(
           in srgb,
-          var(--leverui-colors-bg-emphasized) 72%,
+          var(--lui-colors-bg-emphasized) 72%,
           transparent
         );
-        --leverui-slider-thumb-color: var(--leverui-colors-bg);
-        --leverui-slider-thumb-border-color: var(--leverui-colors-color-palette-solid);
-        --leverui-private-slider-track-shadow: var(--leverui-shadows-inset);
-        --leverui-private-slider-thumb-border-width: 2px;
-        --leverui-private-slider-disabled-track-color: var(--leverui-slider-track-color);
+        --lui-slider-thumb-color: var(--lui-colors-bg);
+        --lui-slider-thumb-border-color: var(--lui-colors-color-palette-solid);
+        --lui-private-slider-track-shadow: var(--lui-shadows-inset);
+        --lui-private-slider-thumb-border-width: 2px;
+        --lui-private-slider-disabled-track-color: var(--lui-slider-track-color);
       }
       &[data-variant-sm='solid'] {
-        --leverui-slider-track-color: var(--leverui-colors-color-palette-subtle);
-        --leverui-slider-thumb-color: var(--leverui-colors-color-palette-solid);
-        --leverui-slider-thumb-border-color: var(--leverui-colors-border);
-        --leverui-private-slider-track-shadow: none;
-        --leverui-private-slider-thumb-border-width: 0;
-        --leverui-private-slider-disabled-track-color: var(--leverui-colors-bg-muted);
+        --lui-slider-track-color: var(--lui-colors-color-palette-subtle);
+        --lui-slider-thumb-color: var(--lui-colors-color-palette-solid);
+        --lui-slider-thumb-border-color: var(--lui-colors-border);
+        --lui-private-slider-track-shadow: none;
+        --lui-private-slider-thumb-border-width: 0;
+        --lui-private-slider-disabled-track-color: var(--lui-colors-bg-muted);
       }
     }
   }
 
   @media (min-width: 768px) {
-    .leverui-slider__root:not([data-unstyled]) {
+    .lui-slider__root:not([data-unstyled]) {
       &[data-size-md='sm'] {
-        --leverui-slider-thumb-size: var(--leverui-sizes-4);
-        --leverui-slider-track-size: var(--leverui-sizes-1\.5);
-        --leverui-slider-marker-size: var(--leverui-sizes-1);
-        --leverui-private-slider-marker-center: 6px;
-        --leverui-private-slider-marker-inset: 3px;
+        --lui-slider-thumb-size: var(--lui-sizes-4);
+        --lui-slider-track-size: var(--lui-sizes-1\.5);
+        --lui-slider-marker-size: var(--lui-sizes-1);
+        --lui-private-slider-marker-center: 6px;
+        --lui-private-slider-marker-inset: 3px;
       }
       &[data-size-md='md'] {
-        --leverui-slider-thumb-size: var(--leverui-sizes-5);
-        --leverui-slider-track-size: var(--leverui-sizes-2);
-        --leverui-slider-marker-size: var(--leverui-sizes-1);
-        --leverui-private-slider-marker-center: 8px;
-        --leverui-private-slider-marker-inset: 4px;
+        --lui-slider-thumb-size: var(--lui-sizes-5);
+        --lui-slider-track-size: var(--lui-sizes-2);
+        --lui-slider-marker-size: var(--lui-sizes-1);
+        --lui-private-slider-marker-center: 8px;
+        --lui-private-slider-marker-inset: 4px;
       }
       &[data-size-md='lg'] {
-        --leverui-slider-thumb-size: var(--leverui-sizes-6);
-        --leverui-slider-track-size: var(--leverui-sizes-2\.5);
-        --leverui-slider-marker-size: var(--leverui-sizes-1\.5);
-        --leverui-private-slider-marker-center: 9px;
-        --leverui-private-slider-marker-inset: 5px;
+        --lui-slider-thumb-size: var(--lui-sizes-6);
+        --lui-slider-track-size: var(--lui-sizes-2\.5);
+        --lui-slider-marker-size: var(--lui-sizes-1\.5);
+        --lui-private-slider-marker-center: 9px;
+        --lui-private-slider-marker-inset: 5px;
       }
       &[data-variant-md='outline'] {
-        --leverui-slider-track-color: color-mix(
+        --lui-slider-track-color: color-mix(
           in srgb,
-          var(--leverui-colors-bg-emphasized) 72%,
+          var(--lui-colors-bg-emphasized) 72%,
           transparent
         );
-        --leverui-slider-thumb-color: var(--leverui-colors-bg);
-        --leverui-slider-thumb-border-color: var(--leverui-colors-color-palette-solid);
-        --leverui-private-slider-track-shadow: var(--leverui-shadows-inset);
-        --leverui-private-slider-thumb-border-width: 2px;
-        --leverui-private-slider-disabled-track-color: var(--leverui-slider-track-color);
+        --lui-slider-thumb-color: var(--lui-colors-bg);
+        --lui-slider-thumb-border-color: var(--lui-colors-color-palette-solid);
+        --lui-private-slider-track-shadow: var(--lui-shadows-inset);
+        --lui-private-slider-thumb-border-width: 2px;
+        --lui-private-slider-disabled-track-color: var(--lui-slider-track-color);
       }
       &[data-variant-md='solid'] {
-        --leverui-slider-track-color: var(--leverui-colors-color-palette-subtle);
-        --leverui-slider-thumb-color: var(--leverui-colors-color-palette-solid);
-        --leverui-slider-thumb-border-color: var(--leverui-colors-border);
-        --leverui-private-slider-track-shadow: none;
-        --leverui-private-slider-thumb-border-width: 0;
-        --leverui-private-slider-disabled-track-color: var(--leverui-colors-bg-muted);
+        --lui-slider-track-color: var(--lui-colors-color-palette-subtle);
+        --lui-slider-thumb-color: var(--lui-colors-color-palette-solid);
+        --lui-slider-thumb-border-color: var(--lui-colors-border);
+        --lui-private-slider-track-shadow: none;
+        --lui-private-slider-thumb-border-width: 0;
+        --lui-private-slider-disabled-track-color: var(--lui-colors-bg-muted);
       }
     }
   }

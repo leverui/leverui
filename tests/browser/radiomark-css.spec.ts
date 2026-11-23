@@ -114,10 +114,10 @@ async function verifiesConsumerCss({ page }: { page: Page }): Promise<void> {
     `<style>${defaultCss}</style><style>
       .consumer-mark { color: rgb(12, 34, 56); }
       .consumer-palette {
-        --leverui-colors-color-palette-solid: rgb(12, 34, 56);
-        --leverui-radii-full: 7px;
+        --lui-colors-color-palette-solid: rgb(12, 34, 56);
+        --lui-radii-full: 7px;
       }
-      .leverui-radiomark__dot { scale: 0.8; }
+      .lui-radiomark__dot { scale: 0.8; }
     </style>${blue}${red}${custom}${plain}`,
   );
   expect((await appearance(page, 'blue-mark')).backgroundColor).not.toBe(
@@ -125,15 +125,12 @@ async function verifiesConsumerCss({ page }: { page: Page }): Promise<void> {
   );
   await expect(page.locator('#custom-mark')).toHaveCSS('background-color', 'rgb(12, 34, 56)');
   await expect(page.locator('#custom-mark')).toHaveCSS('border-radius', '7px');
-  await expect(page.locator('#custom-mark .leverui-radiomark__dot')).toHaveCSS('scale', '0.8');
-  await expect(page.locator('#custom-mark .leverui-radiomark__dot')).toHaveCSS(
-    'border-radius',
-    '7px',
-  );
+  await expect(page.locator('#custom-mark .lui-radiomark__dot')).toHaveCSS('scale', '0.8');
+  await expect(page.locator('#custom-mark .lui-radiomark__dot')).toHaveCSS('border-radius', '7px');
   const unstyled = page.locator('#unstyled-mark');
   await expect(unstyled).toHaveAttribute('data-checked', '');
   await expect(unstyled).toHaveAttribute('aria-label', 'Selected');
-  await expect(unstyled.locator('.leverui-radiomark__dot')).toHaveCount(1);
+  await expect(unstyled.locator('.lui-radiomark__dot')).toHaveCount(1);
   await expect(unstyled).toHaveCSS('color', 'rgb(12, 34, 56)');
 }
 

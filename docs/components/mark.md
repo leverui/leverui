@@ -42,13 +42,13 @@ A Mark rendered as a link keeps a link's focus and keyboard behavior.
 
 ## Customize with CSS
 
-Every Mark has the class `.leverui-mark` and `data-variant` attributes. These
+Every Mark has the class `.lui-mark` and `data-variant` attributes. These
 names are stable.
 
 ```css
 .article-emphasis {
   white-space: normal;
-  --leverui-colors-color-palette-subtle: #dceaff;
+  --lui-colors-color-palette-subtle: #dceaff;
 }
 ```
 

@@ -1,21 +1,21 @@
-@layer leverui.recipes {
-  .leverui-alert__root:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-alert__root:not([data-unstyled]) {
     width: 100%;
     display: flex;
     align-items: flex-start;
     position: relative;
-    border-radius: var(--leverui-radii-l3);
+    border-radius: var(--lui-radii-l3);
   }
 
-  .leverui-alert__root:not([data-unstyled]) .leverui-alert__title:not([data-unstyled]) {
-    font-weight: var(--leverui-font-weights-medium);
+  .lui-alert__root:not([data-unstyled]) .lui-alert__title:not([data-unstyled]) {
+    font-weight: var(--lui-font-weights-medium);
   }
 
-  .leverui-alert__root:not([data-unstyled]) .leverui-alert__description:not([data-unstyled]) {
+  .lui-alert__root:not([data-unstyled]) .lui-alert__description:not([data-unstyled]) {
     display: inline;
   }
 
-  .leverui-alert__root:not([data-unstyled]) .leverui-alert__indicator:not([data-unstyled]) {
+  .lui-alert__root:not([data-unstyled]) .lui-alert__indicator:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -29,11 +29,11 @@
     }
   }
 
-  .leverui-alert__root:not([data-unstyled]) .leverui-alert__content:not([data-unstyled]) {
-    display: var(--leverui-private-alert-content-display, flex);
+  .lui-alert__root:not([data-unstyled]) .lui-alert__content:not([data-unstyled]) {
+    display: var(--lui-private-alert-content-display, flex);
     flex: 1;
-    flex-direction: var(--leverui-private-alert-content-direction, column);
-    align-items: var(--leverui-private-alert-content-align, normal);
-    gap: var(--leverui-spacing-1);
+    flex-direction: var(--lui-private-alert-content-direction, column);
+    align-items: var(--lui-private-alert-content-align, normal);
+    gap: var(--lui-spacing-1);
   }
 }

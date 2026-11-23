@@ -1,51 +1,51 @@
 .example-dialog-body-bottom {
-  padding-bottom: var(--leverui-spacing-8);
+  padding-bottom: var(--lui-spacing-8);
 }
 
 .example-dialog-body-bottom-six {
-  padding-bottom: var(--leverui-spacing-6);
+  padding-bottom: var(--lui-spacing-6);
 }
 
 .example-dialog-body-top {
-  padding-top: var(--leverui-spacing-4);
+  padding-top: var(--lui-spacing-4);
 }
 
 .example-dialog-body-spaced > * + * {
-  margin-top: var(--leverui-spacing-4);
+  margin-top: var(--lui-spacing-4);
 }
 
 .example-dialog-body-context {
-  padding-top: var(--leverui-spacing-6);
+  padding-top: var(--lui-spacing-6);
 }
 
 .example-dialog-body-context > * + * {
-  margin-top: var(--leverui-spacing-3);
+  margin-top: var(--lui-spacing-3);
 }
 
 .example-dialog-description-gap {
-  margin-bottom: var(--leverui-spacing-4);
+  margin-bottom: var(--lui-spacing-4);
 }
 
 .example-dialog-close-outside {
   top: 0;
-  inset-inline-end: calc(-1 * var(--leverui-spacing-12));
-  background: var(--leverui-colors-bg);
+  inset-inline-end: calc(-1 * var(--lui-spacing-12));
+  background: var(--lui-colors-bg);
 }
 
 .example-dialog-video {
-  border-radius: var(--leverui-radii-lg);
+  border-radius: var(--lui-radii-lg);
   overflow: hidden;
 }
 
 .example-dialog-popover-title {
-  font-weight: var(--leverui-font-weights-medium);
+  font-weight: var(--lui-font-weights-medium);
 }
 
 .example-dialog-popover-text {
-  margin-block: var(--leverui-spacing-4);
+  margin-block: var(--lui-spacing-4);
 }
 
 .example-dialog-blurred-backdrop {
-  backdrop-filter: blur(var(--leverui-blurs-md));
-  background: var(--leverui-colors-black-alpha-600);
+  backdrop-filter: blur(var(--lui-blurs-md));
+  background: var(--lui-colors-black-alpha-600);
 }

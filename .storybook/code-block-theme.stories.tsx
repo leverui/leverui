@@ -28,7 +28,7 @@ function CodeBlockThemeExample(): JSX.Element {
       <CodeBlock.Root
         code="const custom = true"
         data-testid="theme-custom-root"
-        style={{ '--leverui-code-block-radius': '19px', 'border-width': '4px' }}
+        style={{ '--lui-code-block-radius': '19px', 'border-width': '4px' }}
       >
         <CodeBlock.Header>
           <CodeBlock.Title data-testid="theme-custom-title">custom.ts</CodeBlock.Title>
@@ -56,7 +56,7 @@ function CodeBlockThemeExample(): JSX.Element {
       </CodeBlock.Root>
       <CodeBlock.Root
         code="Native style"
-        style={{ 'border-width': '5px', 'border-color': 'var(--leverui-colors-purple-500)' }}
+        style={{ 'border-width': '5px', 'border-color': 'var(--lui-colors-purple-500)' }}
         data-testid="theme-instance-css-root"
       >
         <CodeBody testId="theme-instance-css-code" />

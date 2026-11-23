@@ -22,7 +22,7 @@ function offsetLength(value: string | number): string {
   if (numeric === undefined) return String(value);
   const absolute = Math.abs(numeric);
   const token = String(absolute).replace('.', '\\.');
-  const length = `var(--leverui-spacing-${token}, ${absolute}px)`;
+  const length = `var(--lui-spacing-${token}, ${absolute}px)`;
   return numeric < 0 ? `calc(-1 * ${length})` : length;
 }
 
@@ -37,8 +37,7 @@ function addSide(result: InputGroupRootOffsets, side: Side, value: InputGroupOff
     if (current === undefined) continue;
     const suffix = breakpoint === 'base' ? '' : `-${breakpoint}`;
     result.attributes[`data-group-${side}${suffix}`] = '';
-    result.variables[`--leverui-private-input-group-${side}-offset${suffix}`] =
-      offsetLength(current);
+    result.variables[`--lui-private-input-group-${side}-offset${suffix}`] = offsetLength(current);
   }
 }
 

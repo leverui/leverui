@@ -5,10 +5,10 @@ export async function verifyPackedRatingGroup(page) {
   const root = page.getByTestId('packed-rating-group-root');
   const second = page.getByRole('radio', { name: '2 stars' });
   const fourth = page.getByRole('radio', { name: '4 stars' });
-  const indicator = second.locator('.leverui-rating-group__itemIndicator');
+  const indicator = second.locator('.lui-rating-group__itemIndicator');
   await root.waitFor();
-  assert.match(await root.getAttribute('class'), /leverui-rating-group__root/);
-  assert.match(await indicator.getAttribute('class'), /leverui-rating-group__itemIndicator/);
+  assert.match(await root.getAttribute('class'), /lui-rating-group__root/);
+  assert.match(await indicator.getAttribute('class'), /lui-rating-group__itemIndicator/);
   assert.equal(await indicator.locator('svg').count(), 2);
   assert.equal(
     await indicator.evaluate(

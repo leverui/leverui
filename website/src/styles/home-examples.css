@@ -41,7 +41,7 @@
   gap: 10px;
   min-width: 0;
 }
-.home-example-row > .leverui-input {
+.home-example-row > .lui-input {
   flex: 1;
   min-width: 0;
 }
@@ -53,7 +53,7 @@
   line-height: 1.35;
 }
 .home-example-person strong {
-  font-weight: var(--leverui-font-weights-medium);
+  font-weight: var(--lui-font-weights-medium);
 }
 .home-example-person span {
   overflow: hidden;
@@ -71,6 +71,6 @@
   }
 }
 /* Lift the cards off the tinted planes behind them. */
-.home-examples .leverui-card__root {
-  box-shadow: var(--leverui-shadows-sm);
+.home-examples .lui-card__root {
+  box-shadow: var(--lui-shadows-sm);
 }

@@ -4,9 +4,9 @@ export const groupContracts = [
   {
     family: 'group',
     required: [
-      '.leverui-group',
-      '.leverui-button-group',
-      '--leverui-group-gap',
+      '.lui-group',
+      '.lui-button-group',
+      '--lui-group-gap',
       "[data-stacking='first-on-top']",
       "[data-stacking='last-on-top']",
       ...breakpoints.flatMap(
@@ -14,9 +14,9 @@ export const groupContracts = [
         (breakpoint) => [
           `[data-joined-${breakpoint}='horizontal']`,
           `[data-joined-${breakpoint}='vertical']`,
-          `--leverui-private-group-align-${breakpoint}`,
-          `--leverui-private-group-justify-${breakpoint}`,
-          `--leverui-private-group-wrap-${breakpoint}`,
+          `--lui-private-group-align-${breakpoint}`,
+          `--lui-private-group-justify-${breakpoint}`,
+          `--lui-private-group-wrap-${breakpoint}`,
         ],
       ),
       ...breakpoints.slice(1).flatMap(

@@ -7,8 +7,8 @@ async function readVariant(root: Locator): Promise<Record<string, string>> {
   return root.evaluate(
     /** Sample computed presentation after the active media query settles. */
     (element) => {
-      const list = element.querySelector('.leverui-tabs__list');
-      const trigger = element.querySelector('.leverui-tabs__trigger[data-selected]');
+      const list = element.querySelector('.lui-tabs__list');
+      const trigger = element.querySelector('.lui-tabs__trigger[data-selected]');
       if (!list || !trigger) throw new Error('Selected Tabs parts are missing.');
       const listStyle = getComputedStyle(list);
       const triggerStyle = getComputedStyle(trigger);
@@ -109,16 +109,16 @@ async function verifiesConsumerOverrides({ page }: { page: Page }): Promise<void
   await page.setViewportSize({ width: 400, height: 800 });
   await page.goto('/iframe.html?id=internal-tabs-responsive-variant--contract');
   const root = page.getByTestId('tabs-variant-authored');
-  const trigger = root.locator('.leverui-tabs__trigger[data-selected]');
+  const trigger = root.locator('.lui-tabs__trigger[data-selected]');
   await expect(root).toBeVisible({ timeout: 30_000 });
   await page.addStyleTag({
     content: `[data-testid='tabs-variant-authored'] {
-      --leverui-colors-color-palette-subtle: rgb(10 90 150);
+      --lui-colors-color-palette-subtle: rgb(10 90 150);
     }`,
   });
   await expect(trigger).toHaveCSS('background-color', 'rgb(10, 90, 150)');
   await page.addStyleTag({
-    content: `[data-testid='tabs-variant-authored'] .leverui-tabs__trigger[data-selected] {
+    content: `[data-testid='tabs-variant-authored'] .lui-tabs__trigger[data-selected] {
       background: rgb(20 30 40);
     }`,
   });

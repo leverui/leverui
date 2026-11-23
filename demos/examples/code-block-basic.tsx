@@ -103,7 +103,7 @@ export function CodeBlockWithTitle(): JSX.Element {
       <CodeBlock.Root code={htmlFile.code} language={htmlFile.language}>
         <CodeBlock.Header>
           <CodeBlock.Title>
-            <FileCodeIcon style={{ color: 'var(--leverui-colors-orange-300)' }} />
+            <FileCodeIcon style={{ color: 'var(--lui-colors-orange-300)' }} />
             {htmlFile.title}
           </CodeBlock.Title>
         </CodeBlock.Header>

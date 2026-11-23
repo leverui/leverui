@@ -42,8 +42,8 @@ export function FloatUsage() {
 `placement` joins `top`, `middle`, or `bottom` with `start`, `center`, or `end`,
 as in `top-end`. `start` and `end` swap sides in right-to-left text.
 
-Override the offsets with `--leverui-float-offset-x` and
-`--leverui-float-offset-y` in your own class.
+Override the offsets with `--lui-float-offset-x` and
+`--lui-float-offset-y` in your own class.
 
 If a floating badge conveys a state, give that state a text label for screen
 readers, and hide repeated visual text from them.

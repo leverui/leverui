@@ -56,7 +56,7 @@ function verifiesBarChartHooks(): void {
       />
     ),
   );
-  const root = view.container.querySelector('.leverui-bar-chart');
+  const root = view.container.querySelector('.lui-bar-chart');
   if (!(root instanceof HTMLDivElement)) throw new Error('The Bar Chart root did not mount.');
   expect(root).toHaveClass('consumer-bars');
   expect(root).toHaveAttribute('id', 'bar-native-root');
@@ -69,23 +69,23 @@ function verifiesBarChartHooks(): void {
   expect(root).toHaveAttribute('data-interactive', '');
   expect(root).toHaveAttribute('data-orientation', 'vertical');
   expect(root).toHaveStyle({ width: '340px' });
-  expect(root.querySelector('.leverui-bar-chart__svg')).not.toBeNull();
-  expect(root.querySelector('.leverui-bar-chart__axes')).not.toBeNull();
-  expect(root.querySelector('.leverui-bar-chart__bar-label')).not.toBeNull();
-  expect(root.querySelector('.leverui-bar-chart__reference-area')).not.toBeNull();
-  expect(root.querySelector('.leverui-bar-chart__reference-line')).not.toBeNull();
-  expect(root.querySelector('.leverui-bar-chart__reference-area')).toHaveAttribute(
+  expect(root.querySelector('.lui-bar-chart__svg')).not.toBeNull();
+  expect(root.querySelector('.lui-bar-chart__axes')).not.toBeNull();
+  expect(root.querySelector('.lui-bar-chart__bar-label')).not.toBeNull();
+  expect(root.querySelector('.lui-bar-chart__reference-area')).not.toBeNull();
+  expect(root.querySelector('.lui-bar-chart__reference-line')).not.toBeNull();
+  expect(root.querySelector('.lui-bar-chart__reference-area')).toHaveAttribute(
     'style',
-    'fill: var(--leverui-colors-green-solid);',
+    'fill: var(--lui-colors-green-solid);',
   );
-  expect(root.querySelector('.leverui-bar-chart__reference-line')).toHaveAttribute(
+  expect(root.querySelector('.lui-bar-chart__reference-line')).toHaveAttribute(
     'style',
-    'stroke: var(--leverui-colors-blue-solid);',
+    'stroke: var(--lui-colors-blue-solid);',
   );
-  expect(root.querySelector('.leverui-bar-chart__legend')).not.toBeNull();
+  expect(root.querySelector('.lui-bar-chart__legend')).not.toBeNull();
 
   fireEvent.focus(root);
-  expect(root.querySelector('.leverui-bar-chart__tooltip')).not.toBeNull();
+  expect(root.querySelector('.lui-bar-chart__tooltip')).not.toBeNull();
   expect(root).toHaveAttribute('data-consumer-focus', 'true');
   fireEvent.keyDown(root, { key: 'ArrowRight' });
   expect(root).toHaveAttribute('data-consumer-key', 'ArrowRight');
@@ -95,7 +95,7 @@ function verifiesBarChartHooks(): void {
   flush();
   setUnstyled(true);
   flush();
-  expect(view.container.querySelector('.leverui-bar-chart')).toBe(root);
+  expect(view.container.querySelector('.lui-bar-chart')).toBe(root);
   expect(root).toHaveAttribute('data-orientation', 'horizontal');
   expect(root).toHaveAttribute('data-legend-placement', 'top-right');
   expect(root).toHaveAttribute('data-unstyled', '');
@@ -134,7 +134,7 @@ function verifiesPassiveNativeHandlers(): void {
   expect(root).not.toHaveAttribute('data-interactive');
   expect(fireEvent.keyDown(root, { key: 'ArrowRight' })).toBe(true);
   expect(root).toHaveAttribute('data-arrow-prevented', 'false');
-  expect(root.querySelector('.leverui-bar-chart__tooltip')).toBeNull();
+  expect(root.querySelector('.lui-bar-chart__tooltip')).toBeNull();
 }
 
 it(

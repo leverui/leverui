@@ -30,7 +30,7 @@ export const categoryPrefixes = new Map([
 async function declarations(name, allowRepeats = false) {
   const css = await readFile(new URL(name, styles), 'utf8');
   const result = new Map();
-  for (const match of css.matchAll(/^\s*(--leverui-[^:\s]+):\s*([\s\S]*?);/gm)) {
+  for (const match of css.matchAll(/^\s*(--lui-[^:\s]+):\s*([\s\S]*?);/gm)) {
     const [, variable, raw] = match;
     if (!allowRepeats && result.has(variable)) throw new Error(`${name} repeats ${variable}`);
     result.set(variable, raw.replace(/\s+/g, ' ').trim());
@@ -42,7 +42,7 @@ async function declarations(name, allowRepeats = false) {
 /** Map a public token variable to its original theme category. */
 function categoryFor(variable) {
   for (const [category, prefix] of categoryPrefixes) {
-    if (variable.startsWith(`--leverui-${prefix}-`)) return category;
+    if (variable.startsWith(`--lui-${prefix}-`)) return category;
   }
   return undefined;
 }
@@ -80,7 +80,7 @@ export async function paletteAliases() {
   const aliases = new Set();
   for (const source of ['palette-scales-01.css', 'palette-scales-02.css']) {
     for (const variable of (await declarations(source, true)).keys()) {
-      if (variable.startsWith('--leverui-colors-color-palette-')) aliases.add(variable);
+      if (variable.startsWith('--lui-colors-color-palette-')) aliases.add(variable);
     }
   }
   return [...aliases].sort();

@@ -55,9 +55,9 @@ export function ScatterMarks(props: {
         .join(' '),
   );
   return (
-    <g class="leverui-scatter-chart__series" data-scatter-series={props.entries[0]?.series.name}>
+    <g class="lui-scatter-chart__series" data-scatter-series={props.entries[0]?.series.name}>
       <Show when={props.connectDots && props.entries.length > 1}>
-        <path class="leverui-scatter-chart__connection" d={line()} />
+        <path class="lui-scatter-chart__connection" d={line()} />
       </Show>
       <For each={props.entries}>
         {/** Draw a point with a hit target and a readable accessible label. */}
@@ -68,7 +68,7 @@ export function ScatterMarks(props: {
           }
           return (
             <circle
-              class="leverui-scatter-chart__point"
+              class="lui-scatter-chart__point"
               data-scatter-point=""
               cx={scatterX(props.plot, entry.x)}
               cy={scatterY(props.plot, entry.y)}

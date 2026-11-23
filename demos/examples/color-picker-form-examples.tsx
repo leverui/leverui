@@ -19,7 +19,7 @@ export function ColorPickerHookForm(): JSX.Element {
 
   return (
     <form onSubmit={submit}>
-      <Stack gap="4" align="flex-start" style={{ 'max-width': 'var(--leverui-sizes-sm)' }}>
+      <Stack gap="4" align="flex-start" style={{ 'max-width': 'var(--lui-sizes-sm)' }}>
         <ColorPicker.Root
           name="color"
           defaultValue={ColorPicker.parseColor('#000000')}

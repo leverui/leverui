@@ -37,8 +37,8 @@ function SelectedEmoji(props: {
       size="40px"
       textStyle="lg"
       style={{
-        background: 'var(--leverui-colors-bg-muted)',
-        'border-radius': 'var(--leverui-radii-sm)',
+        background: 'var(--lui-colors-bg-muted)',
+        'border-radius': 'var(--lui-radii-sm)',
       }}
       data-testid="selected-emoji"
     >
@@ -105,7 +105,7 @@ export function renderListboxEmojiTree(
               style={{
                 display: 'grid',
                 'grid-template-columns': 'repeat(8, 1fr)',
-                gap: 'var(--leverui-spacing-1)',
+                gap: 'var(--lui-spacing-1)',
               }}
             >
               <For each={collection().items}>
@@ -121,7 +121,7 @@ export function renderListboxEmojiTree(
                         display: 'flex',
                         'align-items': 'center',
                         'justify-content': 'center',
-                        'border-radius': 'var(--leverui-radii-md)',
+                        'border-radius': 'var(--lui-radii-md)',
                         'font-size': '22px',
                       }}
                     >

@@ -3,10 +3,10 @@
 }
 
 .segment-group-card-body {
-  gap: var(--leverui-spacing-6);
+  gap: var(--lui-spacing-6);
 }
 
 .segment-group-card-footer {
   justify-content: space-between;
-  margin-top: var(--leverui-spacing-3);
+  margin-top: var(--lui-spacing-3);
 }

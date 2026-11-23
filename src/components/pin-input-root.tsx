@@ -83,7 +83,7 @@ function renderPinInputRoot(input: RootInput): JSX.Element {
         return composeRecipeClassNames('pin-input__root', undefined, local.class, local.className);
       },
       /** Bind semantic palette variables for all visible fields. */
-      get 'data-leverui-color-palette'() {
+      get 'data-lui-color-palette'() {
         return local.colorPalette;
       },
       /** Suppress authored root and part presentation without changing the primitive state. */

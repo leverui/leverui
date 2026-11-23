@@ -152,7 +152,7 @@ async function verifiesRootProvider(): Promise<void> {
     () =>
       expect((screen.getByRole('radio', { name: 'Solid' }) as HTMLInputElement).checked).toBe(true),
   );
-  const root = document.querySelector('.leverui-radio-card__root');
+  const root = document.querySelector('.lui-radio-card__root');
   expect(root).not.toBeNull();
   expect(root).toHaveAttribute('aria-orientation', 'horizontal');
   expect(root).not.toHaveAttribute('orientation');
@@ -173,12 +173,10 @@ function verifiesUnstyledCard(): void {
   );
   const root = screen.getByRole('radiogroup');
   expect(root).toHaveAttribute('data-unstyled');
-  const item = screen.getByText('Solid').closest('.leverui-radio-card__item');
+  const item = screen.getByText('Solid').closest('.lui-radio-card__item');
   expect(item).toHaveAttribute('data-unstyled');
-  expect(item?.querySelector('.leverui-radio-card__itemControl')).toHaveAttribute('data-unstyled');
-  expect(item?.querySelector('.leverui-radio-card__itemIndicator')).toHaveAttribute(
-    'data-unstyled',
-  );
+  expect(item?.querySelector('.lui-radio-card__itemControl')).toHaveAttribute('data-unstyled');
+  expect(item?.querySelector('.lui-radio-card__itemIndicator')).toHaveAttribute('data-unstyled');
   expect((screen.getByRole('radio', { name: 'Solid' }) as HTMLInputElement).checked).toBe(true);
 }
 

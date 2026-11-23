@@ -30,7 +30,7 @@ async function verifiesStackHydration({ page }: { page: Page }): Promise<void> {
   const stack = page.locator('#hydrated-stack');
   const first = page.locator('#hydrated-stack-first');
   const second = page.locator('#hydrated-stack-second');
-  const line = stack.locator('.leverui-stack-separator');
+  const line = stack.locator('.lui-stack-separator');
   await expect(stack).toHaveCSS('flex-direction', 'column');
   await expect(line).toHaveCSS('border-top-width', '1px');
   for (const locator of [stack, first, second, line]) {

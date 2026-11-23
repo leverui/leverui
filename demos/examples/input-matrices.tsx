@@ -54,8 +54,8 @@ export function InputSizeMatrix(): JSX.Element {
                 <td style={{ 'padding-right': '32px', 'padding-bottom': '32px' }}>
                   <Span
                     style={{
-                      'font-size': 'var(--leverui-font-sizes-sm)',
-                      color: 'var(--leverui-colors-fg-muted)',
+                      'font-size': 'var(--lui-font-sizes-sm)',
+                      color: 'var(--lui-colors-fg-muted)',
                       'min-width': '8ch',
                     }}
                   >
@@ -90,8 +90,8 @@ export function InputVariantMatrix(): JSX.Element {
                 <td style={{ 'padding-right': '32px', 'padding-bottom': '32px' }}>
                   <Span
                     style={{
-                      'font-size': 'var(--leverui-font-sizes-sm)',
-                      color: 'var(--leverui-colors-fg-muted)',
+                      'font-size': 'var(--lui-font-sizes-sm)',
+                      color: 'var(--lui-colors-fg-muted)',
                       'min-width': '8ch',
                     }}
                   >
@@ -109,8 +109,8 @@ export function InputVariantMatrix(): JSX.Element {
           <td style={{ 'padding-right': '32px', 'padding-bottom': '32px' }}>
             <Span
               style={{
-                'font-size': 'var(--leverui-font-sizes-sm)',
-                color: 'var(--leverui-colors-fg-muted)',
+                'font-size': 'var(--lui-font-sizes-sm)',
+                color: 'var(--lui-colors-fg-muted)',
                 'min-width': '8ch',
               }}
             >

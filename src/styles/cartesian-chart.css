@@ -1,106 +1,106 @@
-@layer leverui.recipes {
-  .leverui-cartesian-chart__root {
+@layer lui.recipes {
+  .lui-cartesian-chart__root {
     position: relative;
     width: 100%;
-    min-width: var(--leverui-cartesian-chart-min-width, 280px);
+    min-width: var(--lui-cartesian-chart-min-width, 280px);
   }
 
-  .leverui-cartesian-chart__svg {
+  .lui-cartesian-chart__svg {
     display: block;
     width: 100%;
     overflow: visible;
   }
 
-  .leverui-cartesian-chart__axes,
-  .leverui-cartesian-chart__rightAxis {
+  .lui-cartesian-chart__axes,
+  .lui-cartesian-chart__rightAxis {
     font-family: inherit;
     font-size: 12px;
-    fill: var(--leverui-colors-fg-muted);
+    fill: var(--lui-colors-fg-muted);
   }
 
-  .leverui-cartesian-chart__gridLine {
-    stroke: var(--leverui-chart-grid-color, var(--leverui-colors-border-muted));
-    stroke-opacity: var(--leverui-chart-grid-opacity, 1);
-    stroke-dasharray: var(--leverui-chart-grid-dasharray, none);
+  .lui-cartesian-chart__gridLine {
+    stroke: var(--lui-chart-grid-color, var(--lui-colors-border-muted));
+    stroke-opacity: var(--lui-chart-grid-opacity, 1);
+    stroke-dasharray: var(--lui-chart-grid-dasharray, none);
   }
 
-  .leverui-cartesian-chart__axisLine {
+  .lui-cartesian-chart__axisLine {
     fill: none;
-    stroke: var(--leverui-chart-axis-line-color, var(--leverui-colors-border));
+    stroke: var(--lui-chart-axis-line-color, var(--lui-colors-border));
   }
 
-  .leverui-cartesian-chart__cursor {
-    stroke: var(--leverui-colors-border-emphasized);
+  .lui-cartesian-chart__cursor {
+    stroke: var(--lui-colors-border-emphasized);
     stroke-dasharray: 3 3;
   }
 
-  .leverui-cartesian-chart__interaction {
+  .lui-cartesian-chart__interaction {
     fill: transparent;
   }
 
-  .leverui-cartesian-chart__gradientStart {
+  .lui-cartesian-chart__gradientStart {
     stop-opacity: 0.3;
   }
 
-  .leverui-cartesian-chart__gradientEnd {
+  .lui-cartesian-chart__gradientEnd {
     stop-opacity: 0.05;
   }
 
-  .leverui-cartesian-chart__axes[data-grid-dashed] .leverui-cartesian-chart__gridLine {
-    stroke-dasharray: var(--leverui-chart-grid-dasharray, 3 3);
+  .lui-cartesian-chart__axes[data-grid-dashed] .lui-cartesian-chart__gridLine {
+    stroke-dasharray: var(--lui-chart-grid-dasharray, 3 3);
   }
 
-  .leverui-cartesian-chart__axisTitle {
-    fill: var(--leverui-colors-fg);
+  .lui-cartesian-chart__axisTitle {
+    fill: var(--lui-colors-fg);
   }
 
-  .leverui-cartesian-chart__series[data-muted] {
+  .lui-cartesian-chart__series[data-muted] {
     opacity: 0.2;
   }
 
-  .leverui-cartesian-chart__pointLabel {
+  .lui-cartesian-chart__pointLabel {
     font-size: 12px;
     font-weight: 600;
-    fill: var(--leverui-colors-fg);
+    fill: var(--lui-colors-fg);
   }
 
-  .leverui-cartesian-chart__pointLabel[data-position='right'] {
+  .lui-cartesian-chart__pointLabel[data-position='right'] {
     text-anchor: start;
     dominant-baseline: middle;
   }
 
-  .leverui-cartesian-chart__pointLabel[data-position='top'] {
+  .lui-cartesian-chart__pointLabel[data-position='top'] {
     text-anchor: middle;
   }
 
-  .leverui-cartesian-chart__referenceArea {
+  .lui-cartesian-chart__referenceArea {
     fill-opacity: 0.2;
   }
 
-  .leverui-cartesian-chart__referenceLabel {
+  .lui-cartesian-chart__referenceLabel {
     font-size: 12px;
-    fill: var(--leverui-colors-red-fg);
+    fill: var(--lui-colors-red-fg);
   }
 
-  .leverui-cartesian-chart__referenceValueLabel {
+  .lui-cartesian-chart__referenceValueLabel {
     font-size: 12px;
   }
 
-  .leverui-cartesian-chart__referencePoint {
-    stroke: var(--leverui-colors-bg);
+  .lui-cartesian-chart__referencePoint {
+    stroke: var(--lui-colors-bg);
     stroke-width: 2;
   }
 
-  .leverui-cartesian-chart__legend {
+  .lui-cartesian-chart__legend {
     display: flex;
     justify-content: center;
-    gap: var(--leverui-cartesian-chart-legend-gap, 12px);
+    gap: var(--lui-cartesian-chart-legend-gap, 12px);
     margin-top: 10px;
     font-size: 12px;
-    color: var(--leverui-colors-fg-muted);
+    color: var(--lui-colors-fg-muted);
   }
 
-  .leverui-cartesian-chart__legend[data-placement='top-right'] {
+  .lui-cartesian-chart__legend[data-placement='top-right'] {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -108,43 +108,43 @@
     margin-top: 0;
   }
 
-  .leverui-cartesian-chart__legendItem {
+  .lui-cartesian-chart__legendItem {
     display: inline-flex;
     align-items: center;
     gap: 6px;
     font-size: 12px;
   }
 
-  .leverui-cartesian-chart__legendSwatch {
+  .lui-cartesian-chart__legendSwatch {
     width: 8px;
     height: 8px;
     border-radius: 2px;
-    background: var(--leverui-private-cartesian-color);
+    background: var(--lui-private-cartesian-color);
   }
 
-  .leverui-cartesian-chart__tooltip {
+  .lui-cartesian-chart__tooltip {
     position: absolute;
     top: 8px;
     padding: 8px 10px;
-    border: 1px solid var(--leverui-colors-border);
+    border: 1px solid var(--lui-colors-border);
     border-radius: 6px;
-    background: var(--leverui-cartesian-chart-tooltip-bg, var(--leverui-colors-bg-panel));
-    box-shadow: var(--leverui-shadows-sm);
+    background: var(--lui-cartesian-chart-tooltip-bg, var(--lui-colors-bg-panel));
+    box-shadow: var(--lui-shadows-sm);
     font-size: 12px;
     pointer-events: none;
     z-index: 1;
   }
 
-  .leverui-cartesian-chart__tooltipItem {
+  .lui-cartesian-chart__tooltipItem {
     display: flex;
     align-items: center;
     gap: 6px;
   }
 
-  .leverui-cartesian-chart__tooltipSwatch {
+  .lui-cartesian-chart__tooltipSwatch {
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: var(--leverui-private-cartesian-color);
+    background: var(--lui-private-cartesian-color);
   }
 }

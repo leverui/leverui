@@ -65,7 +65,7 @@ async function verifiesOverlays({ page }: { page: Page }): Promise<void> {
 /** Resolve the async list and keep virtual options bounded. */
 async function verifiesAsyncAndVirtual({ page }: { page: Page }): Promise<void> {
   await openStory(page, 'async-loading');
-  const spinner = page.locator('#storybook-root .leverui-spinner');
+  const spinner = page.locator('#storybook-root .lui-spinner');
   await expect(spinner).toBeVisible();
   await expect(spinner).toHaveCount(0);
   await page.getByRole('combobox').click();

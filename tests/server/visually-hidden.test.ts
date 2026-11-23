@@ -52,7 +52,7 @@ function verifiesServerHiddenContent(): void {
   const span = renderHiddenSpan();
   expect(span).toContain('Accessible text');
   expect(span).toMatch(/<span[^>]*id="server-hidden"/);
-  expect(span).toContain('leverui-visually-hidden');
+  expect(span).toContain('lui-visually-hidden');
   expect(span).not.toMatch(/style="[^"]*clip/);
   expect(span).not.toMatch(/<span[^>]*\s(?:aria-hidden|hidden)(?:=|\s|>)/);
 
@@ -60,7 +60,7 @@ function verifiesServerHiddenContent(): void {
   expect(input).toMatch(/<input[^>]*id="server-hidden-input"/);
   expect(input).toContain('data-parent="hidden"');
   expect(input).toContain('aria-label="Hidden search"');
-  expect(input).toContain('leverui-visually-hidden');
+  expect(input).toContain('lui-visually-hidden');
   expect(input).not.toContain('<span');
 }
 

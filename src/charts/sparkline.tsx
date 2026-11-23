@@ -120,7 +120,7 @@ export function Sparkline(props: SparklineProps): JSX.Element {
       height={height()}
       viewBox={`0 0 ${width()} ${height()}`}
       preserveAspectRatio="none"
-      class={['leverui-sparkline', props.class, props.className]}
+      class={['lui-sparkline', props.class, props.className]}
       data-gradient={props.gradient ? '' : undefined}
       data-unstyled={props.unstyled ? '' : undefined}
       style={sparklineStyle(props)}
@@ -130,8 +130,8 @@ export function Sparkline(props: SparklineProps): JSX.Element {
       <Show when={props.gradient}>
         <defs>
           <linearGradient id={gradientId} x1="0" x2="0" y1="0" y2="1">
-            <stop class="leverui-sparkline__gradient-start" offset="0%" />
-            <stop class="leverui-sparkline__gradient-end" offset="100%" />
+            <stop class="lui-sparkline__gradient-start" offset="0%" />
+            <stop class="lui-sparkline__gradient-end" offset="100%" />
           </linearGradient>
         </defs>
       </Show>
@@ -149,12 +149,12 @@ export function Sparkline(props: SparklineProps): JSX.Element {
           <>
             <Show when={props.type !== 'line'}>
               <path
-                class="leverui-sparkline__area"
+                class="lui-sparkline__area"
                 d={sparklineAreaPath(line(), points(), height(), props.inset)}
                 fill={props.gradient ? `url(#${gradientId})` : undefined}
               />
             </Show>
-            <path class="leverui-sparkline__line" d={line()} fill="none" />
+            <path class="lui-sparkline__line" d={line()} fill="none" />
           </>
         }
       >
@@ -162,7 +162,7 @@ export function Sparkline(props: SparklineProps): JSX.Element {
           {/** Draw each sample as an eight-pixel column. */}
           {(point, index) => (
             <rect
-              class="leverui-sparkline__bar"
+              class="lui-sparkline__bar"
               x={sparklineBarX(width(), points().length, index())}
               y={point.y}
               width="8"
@@ -170,9 +170,9 @@ export function Sparkline(props: SparklineProps): JSX.Element {
               style={
                 props.data[index()]?.fill
                   ? {
-                      '--leverui-private-sparkline-bar-color': chartColor(
+                      '--lui-private-sparkline-bar-color': chartColor(
                         props.data[index()]?.fill,
-                        'var(--leverui-colors-teal-solid)',
+                        'var(--lui-colors-teal-solid)',
                       ),
                     }
                   : undefined
@@ -185,13 +185,13 @@ export function Sparkline(props: SparklineProps): JSX.Element {
         {(point) => (
           <>
             <line
-              class="leverui-sparkline__active-guide"
+              class="lui-sparkline__active-guide"
               x1={point().x}
               x2={point().x}
               y1="5"
               y2={height() - 5}
             />
-            <circle class="leverui-sparkline__active-point" cx={point().x} cy={point().y} r="3" />
+            <circle class="lui-sparkline__active-point" cx={point().x} cy={point().y} r="3" />
           </>
         )}
       </Show>

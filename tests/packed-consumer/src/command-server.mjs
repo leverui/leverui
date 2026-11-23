@@ -43,9 +43,9 @@ function renderCommand() {
 }
 
 const markup = renderCommand();
-assert.match(markup, /leverui-command__root/);
-assert.match(markup, /leverui-command__input/);
-assert.match(markup, /leverui-command__item/);
+assert.match(markup, /lui-command__root/);
+assert.match(markup, /lui-command__input/);
+assert.match(markup, /lui-command__item/);
 assert.match(markup, /role="combobox"/);
 assert.match(markup, /data-size="sm"/);
 assert.doesNotMatch(markup, /\s(?:css|recipe|unstyled)=/);

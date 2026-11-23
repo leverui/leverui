@@ -1,59 +1,58 @@
-@layer leverui.recipes {
-  .leverui-file-upload__root:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-file-upload__root:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    gap: var(--leverui-spacing-4);
+    gap: var(--lui-spacing-4);
   }
 
-  .leverui-file-upload__root:not([data-unstyled]) .leverui-file-upload__label:not([data-unstyled]) {
-    font-size: var(--leverui-font-sizes-sm);
+  .lui-file-upload__root:not([data-unstyled]) .lui-file-upload__label:not([data-unstyled]) {
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
-    font-weight: var(--leverui-font-weights-medium);
+    font-weight: var(--lui-font-weights-medium);
   }
 
-  .leverui-file-upload__root:not([data-unstyled])
-    .leverui-file-upload__dropzone:not([data-unstyled]) {
+  .lui-file-upload__root:not([data-unstyled]) .lui-file-upload__dropzone:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: var(--leverui-sizes-2xs);
-    padding-block: var(--leverui-spacing-2);
-    padding-inline: var(--leverui-spacing-3);
-    gap: var(--leverui-spacing-4);
-    background: var(--leverui-colors-bg);
+    min-height: var(--lui-sizes-2xs);
+    padding-block: var(--lui-spacing-2);
+    padding-inline: var(--lui-spacing-3);
+    gap: var(--lui-spacing-4);
+    background: var(--lui-colors-bg);
     border-width: 2px;
     border-style: dashed;
-    border-radius: var(--leverui-radii-l3);
+    border-radius: var(--lui-radii-l3);
     transition-property: background, background-color, background-image, background-position;
-    transition-duration: var(--leverui-durations-moderate);
+    transition-duration: var(--lui-durations-moderate);
 
     &:hover {
-      background: var(--leverui-colors-bg-subtle);
+      background: var(--lui-colors-bg-subtle);
     }
 
     &:is(:focus-visible, [data-focus-visible]) {
-      outline: 2px solid var(--leverui-colors-color-palette-focus-ring);
+      outline: 2px solid var(--lui-colors-color-palette-focus-ring);
       outline-offset: 2px;
     }
 
     &[data-dragging] {
-      background: var(--leverui-colors-color-palette-subtle);
+      background: var(--lui-colors-color-palette-subtle);
       border-style: solid;
-      border-color: var(--leverui-colors-color-palette-solid);
+      border-color: var(--lui-colors-color-palette-solid);
     }
   }
 
-  .leverui-file-upload__root:not([data-unstyled])
-    .leverui-file-upload__dropzoneContent:not([data-unstyled]) {
+  .lui-file-upload__root:not([data-unstyled])
+    .lui-file-upload__dropzoneContent:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: var(--leverui-spacing-1);
-    font-size: var(--leverui-font-sizes-sm);
+    gap: var(--lui-spacing-1);
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
   }
 }

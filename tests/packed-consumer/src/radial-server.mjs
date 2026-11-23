@@ -29,10 +29,10 @@ function renderRadialCharts() {
 }
 
 const { radial, bars } = renderRadialCharts();
-assert.match(radial, /leverui-radial-chart__sector/);
+assert.match(radial, /lui-radial-chart__sector/);
 assert.match(radial, /consumer-share/);
-assert.match(radial, /leverui-radial-chart__labelLine/);
-assert.match(bars, /leverui-radial-bar-chart__track/);
+assert.match(radial, /lui-radial-chart__labelLine/);
+assert.match(bars, /lui-radial-bar-chart__track/);
 assert.match(bars, /consumer-rings/);
-assert.match(bars, /leverui-radial-bar-chart__label/);
+assert.match(bars, /lui-radial-bar-chart__label/);
 console.log('Packed Radial Chart and Radial Bar Chart server rendering passed.');

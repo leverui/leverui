@@ -1,6 +1,6 @@
-@layer leverui.recipes {
-  .leverui-wrap__listitem:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-wrap__listitem:not([data-unstyled]) {
     display: flex;
-    align-items: var(--leverui-wrap-item-align, flex-start);
+    align-items: var(--lui-wrap-item-align, flex-start);
   }
 }

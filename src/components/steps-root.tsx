@@ -76,7 +76,7 @@ function renderStepsRoot(
         return composeRecipeClassNames('steps__root', undefined, local.class, local.className);
       },
       /** Bind semantic palette tokens when requested. */
-      get 'data-leverui-color-palette'() {
+      get 'data-lui-color-palette'() {
         return local.colorPalette;
       },
       /** Suppress default presentation while retaining machine behavior. */

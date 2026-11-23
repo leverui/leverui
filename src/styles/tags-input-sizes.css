@@ -1,26 +1,26 @@
-@layer leverui.recipes {
-  .leverui-tags-input__root:not([data-unstyled])[data-size='xs'] {
-    --leverui-private-tags-input-height: var(--leverui-sizes-8);
-    --leverui-private-tags-input-item-height: var(--leverui-sizes-6);
-    --leverui-private-tags-input-font-size: var(--leverui-font-sizes-xs);
-    --leverui-private-tags-input-line-height: 1rem;
+@layer lui.recipes {
+  .lui-tags-input__root:not([data-unstyled])[data-size='xs'] {
+    --lui-private-tags-input-height: var(--lui-sizes-8);
+    --lui-private-tags-input-item-height: var(--lui-sizes-6);
+    --lui-private-tags-input-font-size: var(--lui-font-sizes-xs);
+    --lui-private-tags-input-line-height: 1rem;
   }
-  .leverui-tags-input__root:not([data-unstyled])[data-size='sm'] {
-    --leverui-private-tags-input-height: var(--leverui-sizes-9);
-    --leverui-private-tags-input-item-height: var(--leverui-sizes-6);
-    --leverui-private-tags-input-font-size: var(--leverui-font-sizes-sm);
-    --leverui-private-tags-input-line-height: 1.25rem;
+  .lui-tags-input__root:not([data-unstyled])[data-size='sm'] {
+    --lui-private-tags-input-height: var(--lui-sizes-9);
+    --lui-private-tags-input-item-height: var(--lui-sizes-6);
+    --lui-private-tags-input-font-size: var(--lui-font-sizes-sm);
+    --lui-private-tags-input-line-height: 1.25rem;
   }
-  .leverui-tags-input__root:not([data-unstyled])[data-size='md'] {
-    --leverui-private-tags-input-height: var(--leverui-sizes-10);
-    --leverui-private-tags-input-item-height: var(--leverui-sizes-7);
-    --leverui-private-tags-input-font-size: var(--leverui-font-sizes-sm);
-    --leverui-private-tags-input-line-height: 1.25rem;
+  .lui-tags-input__root:not([data-unstyled])[data-size='md'] {
+    --lui-private-tags-input-height: var(--lui-sizes-10);
+    --lui-private-tags-input-item-height: var(--lui-sizes-7);
+    --lui-private-tags-input-font-size: var(--lui-font-sizes-sm);
+    --lui-private-tags-input-line-height: 1.25rem;
   }
-  .leverui-tags-input__root:not([data-unstyled])[data-size='lg'] {
-    --leverui-private-tags-input-height: var(--leverui-sizes-11);
-    --leverui-private-tags-input-item-height: var(--leverui-sizes-8);
-    --leverui-private-tags-input-font-size: var(--leverui-font-sizes-md);
-    --leverui-private-tags-input-line-height: 1.5rem;
+  .lui-tags-input__root:not([data-unstyled])[data-size='lg'] {
+    --lui-private-tags-input-height: var(--lui-sizes-11);
+    --lui-private-tags-input-item-height: var(--lui-sizes-8);
+    --lui-private-tags-input-font-size: var(--lui-font-sizes-md);
+    --lui-private-tags-input-line-height: 1.5rem;
   }
 }

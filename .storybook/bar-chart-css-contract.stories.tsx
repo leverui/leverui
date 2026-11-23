@@ -39,8 +39,8 @@ function BarChartCssContract(): JSX.Element {
       <div
         data-testid="bar-chart-contract"
         style={{
-          '--leverui-bar-chart-axis-font-size': '17px',
-          '--leverui-bar-chart-grid-color': 'rgb(255, 0, 0)',
+          '--lui-bar-chart-axis-font-size': '17px',
+          '--lui-bar-chart-grid-color': 'rgb(255, 0, 0)',
         }}
       >
         <BarChart

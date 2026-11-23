@@ -23,7 +23,7 @@ function renderInstalledAvatar() {
 const markup = renderInstalledAvatar();
 assert.match(markup, /data-avatar-root="packed-server-avatar"/);
 assert.match(markup, /data-avatar-/);
-assert.match(markup, /leverui-avatar__root/);
+assert.match(markup, /lui-avatar__root/);
 assert.match(markup, /data-variant="outline"/);
 assert.match(markup, />GH<\/span>/);
 assert.doesNotMatch(markup, /\s(?:size|variant|name)=/);

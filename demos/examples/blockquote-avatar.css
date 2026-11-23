@@ -1,11 +1,11 @@
 .blockquote-example-surface {
-  background: var(--leverui-colors-bg-subtle);
-  padding: var(--leverui-spacing-8);
+  background: var(--lui-colors-bg-subtle);
+  padding: var(--lui-spacing-8);
 }
 
 .blockquote-example-avatar-icon {
   opacity: 0.4;
-  width: var(--leverui-sizes-10);
-  height: var(--leverui-sizes-10);
+  width: var(--lui-sizes-10);
+  height: var(--lui-sizes-10);
   transform: rotate(180deg);
 }

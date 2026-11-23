@@ -25,7 +25,7 @@ function verifiesServerColorModeScript(): void {
   expect(markup.endsWith('</script>')).toBe(true);
   expect(markup).toContain(server.getColorModeScript({ defaultMode: 'dark' }));
   expect(markup).toContain("localStorage.getItem('leverui-color-mode')");
-  expect(markup).toContain("root.setAttribute('data-leverui-color-mode', mode)");
+  expect(markup).toContain("root.setAttribute('data-lui-color-mode', mode)");
 }
 
 test('published ColorModeScript renders its script on the server', verifiesServerColorModeScript);

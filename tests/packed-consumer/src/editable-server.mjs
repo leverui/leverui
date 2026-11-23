@@ -25,8 +25,8 @@ function renderInstalledEditable() {
 
 const markup = renderInstalledEditable();
 assert.match(markup, /data-editable-/);
-assert.match(markup, /leverui-editable__root/);
-assert.match(markup, /leverui-editable__input/);
+assert.match(markup, /lui-editable__root/);
+assert.match(markup, /lui-editable__input/);
 assert.match(markup, /Packed value/);
 assert.doesNotMatch(markup, /\s(?:recipe|unstyled|activationMode)=/);
 console.log('Packed Editable server rendering passed.');

@@ -58,8 +58,8 @@ function verifiesRootComposition(): void {
   expect(circle.tagName).toBe('SECTION');
   expect(linearRoot).toBe(linear);
   expect(circleRoot).toBe(circle);
-  expect(linear.className).toContain('leverui-progress__root');
-  expect(circle.className).toContain('leverui-progress-circle__root');
+  expect(linear.className).toContain('lui-progress__root');
+  expect(circle.className).toContain('lui-progress-circle__root');
   expect(screen.getByTestId('linear-owned-track').getAttribute('aria-valuenow')).toBe('30');
   expect(screen.getByTestId('circle-owned-svg').getAttribute('aria-valuenow')).toBe('60');
 }

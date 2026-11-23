@@ -13,7 +13,7 @@ export const inputContracts = [
       'input-states.css',
     ],
     required: [
-      '.leverui-input:not([data-unstyled])',
+      '.lui-input:not([data-unstyled])',
       "[data-size='2xs']",
       "[data-size='xs']",
       "[data-size='sm']",

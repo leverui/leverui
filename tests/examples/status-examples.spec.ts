@@ -7,7 +7,7 @@ async function verifiesStatusStories({ page }: { page: Page }): Promise<void> {
   test.setTimeout(120_000);
   for (const [story, count] of Object.entries(counts)) {
     await page.goto(`/iframe.html?id=components-status--${story}`);
-    await expect(page.locator('#storybook-root .leverui-status__root')).toHaveCount(count, {
+    await expect(page.locator('#storybook-root .lui-status__root')).toHaveCount(count, {
       timeout: 45_000,
     });
   }

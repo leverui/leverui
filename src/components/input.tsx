@@ -71,7 +71,7 @@ function InputRoot(props: InputRootProps): JSX.Element {
           ...field,
           ...inputAppearanceAttributes(local.size, local.variant, 'Input'),
           class: composeRecipeClassNames('input', undefined, local.class, local.className),
-          'data-leverui-color-palette': local.colorPalette,
+          'data-lui-color-palette': local.colorPalette,
           'data-unstyled': local.unstyled ? '' : undefined,
           ref: local.ref,
         };

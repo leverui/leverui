@@ -101,7 +101,7 @@ async function verifiesTextCss({ page }: { page: Page }): Promise<void> {
   );
   const plain = page.locator('#plain-text');
   await expect(plain).toHaveJSProperty('tagName', 'ARTICLE');
-  await expect(plain).toHaveClass(/leverui-text/);
+  await expect(plain).toHaveClass(/lui-text/);
   await expect(plain).toHaveCSS('font-size', '19px');
   await expect(plain).not.toHaveAttribute('style');
   const truncated = page.locator('#truncated-text');

@@ -29,10 +29,10 @@ function renderServerBars(): string {
 function verifiesServerBars(): void {
   const markup = renderServerBars();
   expect(markup).toContain('aria-label="Signed results"');
-  expect(markup).toMatch(/class="leverui-bar-chart(?:\s|")/);
+  expect(markup).toMatch(/class="lui-bar-chart(?:\s|")/);
   expect(markup).toContain('data-orientation="vertical"');
-  expect(markup).toContain('leverui-bar-chart__svg');
-  expect(markup).toContain('leverui-bar-chart__grid-line');
+  expect(markup).toContain('lui-bar-chart__svg');
+  expect(markup).toContain('lui-bar-chart__grid-line');
   expect(markup).toContain('data-bar-category="Gain"');
   expect(markup).toContain('data-bar-category="Loss"');
   expect(markup).toContain('data-bar-axes');

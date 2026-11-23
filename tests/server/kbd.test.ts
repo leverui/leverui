@@ -35,7 +35,7 @@ function verifiesServerKbd(): void {
   expect(markup).toMatch(/<kbd[^>]*id="server-kbd"/);
   expect(markup).toMatch(/<span[^>]*id="server-kbd-span"/);
   expect(markup.match(/title="Shared key"/g)).toHaveLength(2);
-  expect(markup).toContain('leverui-kbd');
+  expect(markup).toContain('lui-kbd');
   expect(markup).not.toMatch(/\s(?:as|size|variant|unstyled)=/);
 }
 

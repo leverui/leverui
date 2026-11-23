@@ -1,7 +1,7 @@
 .site-footer {
-  border-top: 1px solid var(--leverui-colors-border);
-  background: var(--leverui-colors-bg);
-  color: var(--leverui-colors-fg-muted);
+  border-top: 1px solid var(--lui-colors-border);
+  background: var(--lui-colors-bg);
+  color: var(--lui-colors-fg-muted);
 }
 .site-footer-inner {
   width: min(100% - 48px, 1220px);
@@ -26,7 +26,7 @@
   font-size: 13px;
 }
 .footer-links strong {
-  color: var(--leverui-colors-fg);
+  color: var(--lui-colors-fg);
   font-size: 13px;
   margin-bottom: 7px;
 }
@@ -34,7 +34,7 @@
   color: var(--site-fg);
 }
 .footer-bottom {
-  border-top: 1px solid var(--leverui-colors-border);
+  border-top: 1px solid var(--lui-colors-border);
   width: min(100% - 48px, 1220px);
   margin: auto;
   padding: 24px 0;

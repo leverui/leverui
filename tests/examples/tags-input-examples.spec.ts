@@ -34,7 +34,7 @@ async function openStory(page: Page, id: string): Promise<void> {
 
 /** Read the visible machine item text in the current story. */
 function tagText(page: Page) {
-  return page.locator('.leverui-tags-input__itemText');
+  return page.locator('.lui-tags-input__itemText');
 }
 
 /** Require all 22 examples to render their input control. */

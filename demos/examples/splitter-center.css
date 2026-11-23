@@ -1,7 +1,7 @@
 .splitter-example-center {
   width: 100%;
   height: 100%;
-  font-size: var(--leverui-font-sizes-2xl);
+  font-size: var(--lui-font-sizes-2xl);
 }
 
 .example-splitter-fill {
@@ -10,9 +10,9 @@
 }
 
 .example-splitter-title {
-  font-size: var(--leverui-font-sizes-2xl);
+  font-size: var(--lui-font-sizes-2xl);
 }
 
 .example-splitter-note {
-  color: var(--leverui-colors-fg-muted);
+  color: var(--lui-colors-fg-muted);
 }

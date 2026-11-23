@@ -28,7 +28,7 @@ async function verifyContained(
   const content = page.getByTestId('drawer-responsive-css-content');
   const positioner = page.getByTestId('drawer-responsive-css-positioner');
   await expect(content).toBeVisible({ timeout: 30_000 });
-  await expect(content).toHaveAttribute('data-leverui-drawer-css', '');
+  await expect(content).toHaveAttribute('data-lui-drawer-css', '');
   const id = await content.getAttribute('id');
   if (!id) throw new Error('Contained Drawer has no primitive content ID.');
   for (const [width, contained] of cases) {

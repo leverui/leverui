@@ -45,8 +45,8 @@ function renderPaletteSamples() {
 async function verifiesPaletteOverrides({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderPaletteSamples);
   const overrides = `
-    .direct-button { --leverui-colors-color-palette-solid: rgb(98, 84, 199); }
-    .brand-scope { --leverui-colors-blue-solid: rgb(140, 60, 70); }
+    .direct-button { --lui-colors-color-palette-solid: rgb(98, 84, 199); }
+    .brand-scope { --lui-colors-blue-solid: rgb(140, 60, 70); }
   `;
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(`<style>${defaultCss}</style><style>${overrides}</style>${markup}`);

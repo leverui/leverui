@@ -49,7 +49,7 @@ function BreadcrumbRootComponent(props: BreadcrumbRootRuntimeProps): JSX.Element
       ...native,
       'aria-label': native['aria-label'] ?? 'breadcrumb',
       ...breadcrumbAttributes(choices()),
-      'data-leverui-color-palette': readBreadcrumbPalette(local.colorPalette),
+      'data-lui-color-palette': readBreadcrumbPalette(local.colorPalette),
       'data-unstyled': local.unstyled ? '' : undefined,
       class: composeRecipeClassNames('breadcrumb__root', undefined, local.class, local.className),
       ref: attachNode,

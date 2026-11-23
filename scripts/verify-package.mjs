@@ -14,13 +14,10 @@ assert.equal(
   import.meta.resolve('@leverui/components/styles.css'),
   new URL('../dist/styles.css', import.meta.url).href,
 );
-assert.match(
-  defaultCss,
-  /@layer leverui\.reset,leverui\.base,leverui\.tokens,leverui\.recipes,leverui\.utilities;/,
-);
-assert.match(defaultCss, /--leverui-colors-bg:/);
-assert.match(defaultCss, /--leverui-spacing-4:/);
-assert.match(defaultCss, /\.leverui-box\s*\{\s*box-sizing:\s*border-box[;}]/);
+assert.match(defaultCss, /@layer lui\.reset,lui\.base,lui\.tokens,lui\.recipes,lui\.utilities;/);
+assert.match(defaultCss, /--lui-colors-bg:/);
+assert.match(defaultCss, /--lui-spacing-4:/);
+assert.match(defaultCss, /\.lui-box\s*\{\s*box-sizing:\s*border-box[;}]/);
 assert.doesNotMatch(defaultCss, /chakra/i);
 
 assert.equal(manifest.exports['./styled-system'], undefined);
@@ -42,7 +39,7 @@ function renderExample() {
 const html = renderToString(renderExample);
 
 assert.match(html, /Lever UI/);
-assert.match(html, /class="leverui-box consumer-box\s*"/);
+assert.match(html, /class="lui-box consumer-box\s*"/);
 assert.doesNotMatch(html, /data-emotion=/);
 assert.doesNotMatch(html, /chakra-/);
 

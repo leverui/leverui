@@ -96,7 +96,7 @@ function ExpandCollapseControls(): JSX.Element {
 /** Show a single control for expanding or collapsing all folders. */
 export function TreeViewExpandCollapseAll(): JSX.Element {
   return (
-    <TreeView.Root collection={collection} style={{ 'max-width': 'var(--leverui-sizes-sm)' }}>
+    <TreeView.Root collection={collection} style={{ 'max-width': 'var(--lui-sizes-sm)' }}>
       <HStack justify="space-between">
         <TreeView.Label>Project files</TreeView.Label>
         <ExpandCollapseControls />
@@ -130,7 +130,7 @@ export function TreeViewExplicitExpand(): JSX.Element {
   return (
     <TreeView.Root
       collection={collection}
-      style={{ 'max-width': 'var(--leverui-sizes-sm)' }}
+      style={{ 'max-width': 'var(--lui-sizes-sm)' }}
       expandOnClick={false}
     >
       <TreeView.Label>Project files</TreeView.Label>

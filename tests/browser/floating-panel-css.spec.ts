@@ -8,18 +8,18 @@ async function verifiesCssContract({ page }: { page: Page }): Promise<void> {
   const bareContent = page.getByTestId('floating-css-bare-content');
 
   await expect(styled).toBeVisible({ timeout: 30_000 });
-  await expect(styled).toHaveClass(/leverui-floating-panel__content/);
+  await expect(styled).toHaveClass(/lui-floating-panel__content/);
   await expect(styled).toHaveClass(/consumer-content/);
-  await expect(styled).toHaveAttribute('data-leverui-floating-panel-css', '');
+  await expect(styled).toHaveAttribute('data-lui-floating-panel-css', '');
   await expect(styled).toHaveCSS('display', 'flex');
   await expect(styled).toHaveCSS('min-height', '123px');
   await expect(bareBody).toHaveAttribute('data-unstyled', '');
-  await expect(bareBody).not.toHaveAttribute('data-leverui-floating-panel-css');
+  await expect(bareBody).not.toHaveAttribute('data-lui-floating-panel-css');
   await expect(bareContent).toHaveAttribute('data-unstyled', '');
-  await expect(bareContent).not.toHaveAttribute('data-leverui-floating-panel-css');
+  await expect(bareContent).not.toHaveAttribute('data-lui-floating-panel-css');
 
   await page.addStyleTag({
-    content: '.consumer-content { --leverui-colors-bg-panel: rgb(12, 34, 56); }',
+    content: '.consumer-content { --lui-colors-bg-panel: rgb(12, 34, 56); }',
   });
   await expect(styled).toHaveCSS('background-color', 'rgb(12, 34, 56)');
 }

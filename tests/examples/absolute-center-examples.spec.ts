@@ -5,32 +5,32 @@ async function verifiesAbsoluteCenterLayouts({ page }: { page: Page }): Promise<
   await page.setViewportSize({ width: 1280, height: 720 });
 
   await page.goto('/iframe.html?id=layout-absolutecenter--basic');
-  const basic = page.locator('#storybook-root .leverui-absolute-center');
+  const basic = page.locator('#storybook-root .lui-absolute-center');
   await expect(basic).toBeVisible();
   await expect(basic).toHaveCSS('position', 'absolute');
   await expect(basic).toContainText('Centered content');
 
   await page.goto('/iframe.html?id=layout-absolutecenter--with-axis');
-  const axes = page.locator('#storybook-root .leverui-absolute-center');
+  const axes = page.locator('#storybook-root .lui-absolute-center');
   await expect(axes).toHaveCount(3);
   await expect(axes.nth(0)).toContainText('horizontal');
   await expect(axes.nth(1)).toContainText('vertical');
   await expect(axes.nth(2)).toContainText('both');
 
   await page.goto('/iframe.html?id=layout-absolutecenter--with-content');
-  const content = page.locator('#storybook-root .leverui-absolute-center');
+  const content = page.locator('#storybook-root .lui-absolute-center');
   await expect(content).toHaveCSS('width', '44px');
   await expect(content.locator('.lucide-heart')).toBeVisible();
 
   await page.goto('/iframe.html?id=layout-absolutecenter--with-overlay');
-  const overlay = page.locator('#storybook-root .leverui-absolute-center');
+  const overlay = page.locator('#storybook-root .lui-absolute-center');
   await expect(overlay).toContainText('Loading...');
   await expect(overlay).toHaveCSS('backdrop-filter', 'blur(2px)');
 
   await page.goto('/iframe.html?id=layout-absolutecenter--with-rtl');
   const rtl = page.locator('#storybook-root [dir="rtl"]');
   await expect(rtl).toHaveCount(3);
-  await expect(page.locator('#storybook-root .leverui-absolute-center')).toHaveCount(3);
+  await expect(page.locator('#storybook-root .lui-absolute-center')).toHaveCount(3);
 }
 
 /** Preserve the centered heart icon and default-sized red badge. */

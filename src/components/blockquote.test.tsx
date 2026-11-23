@@ -36,20 +36,18 @@ function verifiesBlockquoteParts(): void {
   const root = screen.getByTestId('quote-root');
   expect(root).toBe(figure);
   expect(root.tagName).toBe('FIGURE');
-  expect(root.className).toContain('leverui-blockquote');
+  expect(root.className).toContain('lui-blockquote');
   expect(root.getAttribute('data-variant')).toBe('subtle');
   expect(root.getAttribute('data-justify')).toBe('start');
   expect(root.hasAttribute('variant')).toBe(false);
   expect(root.hasAttribute('justify')).toBe(false);
   expect(screen.getByTestId('quote-content').tagName).toBe('BLOCKQUOTE');
-  expect(screen.getByTestId('quote-content').className).toContain('leverui-blockquote__content');
+  expect(screen.getByTestId('quote-content').className).toContain('lui-blockquote__content');
   expect(screen.getByTestId('quote-content').getAttribute('cite')).toBe('https://example.com');
   expect(screen.getByTestId('quote-caption').tagName).toBe('FIGCAPTION');
-  expect(screen.getByTestId('quote-caption').className).toContain('leverui-blockquote__caption');
+  expect(screen.getByTestId('quote-caption').className).toContain('lui-blockquote__caption');
   expect(screen.getByTestId('quote-icon').tagName.toLowerCase()).toBe('svg');
-  expect(screen.getByTestId('quote-icon').getAttribute('class')).toContain(
-    'leverui-blockquote__icon',
-  );
+  expect(screen.getByTestId('quote-icon').getAttribute('class')).toContain('lui-blockquote__icon');
   expect(screen.getByTestId('quote-icon').querySelector('path')).not.toBeNull();
   expect(screen.getByTestId('quote-icon').getAttribute('aria-hidden')).toBe('true');
 }
@@ -132,7 +130,7 @@ function verifiesAuthoredChoices(): void {
           justify={{ base: 'start', md: 'end' }}
           title="Custom quote"
           class="article-quote"
-          style={{ '--leverui-colors-color-palette-solid': 'rebeccapurple' }}
+          style={{ '--lui-colors-color-palette-solid': 'rebeccapurple' }}
           data-testid="authored-quote"
         >
           <Blockquote.Content class="custom-content">Custom</Blockquote.Content>
@@ -147,11 +145,9 @@ function verifiesAuthoredChoices(): void {
   expect(quote.getAttribute('data-variant-md')).toBe('solid');
   expect(quote.getAttribute('data-justify-md')).toBe('end');
   expect(quote.classList.contains('article-quote')).toBe(true);
-  expect(quote.style.getPropertyValue('--leverui-colors-color-palette-solid')).toBe(
-    'rebeccapurple',
-  );
+  expect(quote.style.getPropertyValue('--lui-colors-color-palette-solid')).toBe('rebeccapurple');
   expect(screen.getByText('Custom').classList.contains('custom-content')).toBe(true);
-  expect(quote.hasAttribute('data-leverui-private-style-runtime')).toBe(false);
+  expect(quote.hasAttribute('data-lui-private-style-runtime')).toBe(false);
 }
 
 it('keeps finite Blockquote choices on native CSS hooks', verifiesAuthoredChoices);

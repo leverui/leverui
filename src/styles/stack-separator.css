@@ -1,114 +1,114 @@
-@layer leverui.recipes {
-  .leverui-stack-separator:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-stack-separator:not([data-unstyled]) {
     border-width: 0;
     align-self: stretch;
     border-color: inherit;
     width: auto;
     height: auto;
-    margin-inline: var(--leverui-private-stack-margin-inline, 0);
-    margin-block: var(--leverui-private-stack-margin-block, 0);
-    border-inline-start-width: var(--leverui-private-stack-border-inline, 0);
-    border-top-width: var(--leverui-private-stack-border-top, 0);
+    margin-inline: var(--lui-private-stack-margin-inline, 0);
+    margin-block: var(--lui-private-stack-margin-block, 0);
+    border-inline-start-width: var(--lui-private-stack-border-inline, 0);
+    border-top-width: var(--lui-private-stack-border-top, 0);
   }
 
-  .leverui-stack:not([data-unstyled]) {
+  .lui-stack:not([data-unstyled]) {
     &[data-direction-base='column'],
     &[data-direction-base='column-reverse'] {
-      --leverui-private-stack-margin-inline: 0;
-      --leverui-private-stack-margin-block: var(--leverui-private-stack-gap-base, 0.5rem);
-      --leverui-private-stack-border-inline: 0;
-      --leverui-private-stack-border-top: 1px;
+      --lui-private-stack-margin-inline: 0;
+      --lui-private-stack-margin-block: var(--lui-private-stack-gap-base, 0.5rem);
+      --lui-private-stack-border-inline: 0;
+      --lui-private-stack-border-top: 1px;
     }
     &[data-direction-base='row'],
     &[data-direction-base='row-reverse'] {
-      --leverui-private-stack-margin-inline: var(--leverui-private-stack-gap-base, 0.5rem);
-      --leverui-private-stack-margin-block: 0;
-      --leverui-private-stack-border-inline: 1px;
-      --leverui-private-stack-border-top: 0;
+      --lui-private-stack-margin-inline: var(--lui-private-stack-gap-base, 0.5rem);
+      --lui-private-stack-margin-block: 0;
+      --lui-private-stack-border-inline: 1px;
+      --lui-private-stack-border-top: 0;
     }
 
     @media (min-width: 480px) {
       &[data-direction-sm='column'],
       &[data-direction-sm='column-reverse'] {
-        --leverui-private-stack-margin-inline: 0;
-        --leverui-private-stack-margin-block: var(--leverui-private-stack-gap-sm, 0.5rem);
-        --leverui-private-stack-border-inline: 0;
-        --leverui-private-stack-border-top: 1px;
+        --lui-private-stack-margin-inline: 0;
+        --lui-private-stack-margin-block: var(--lui-private-stack-gap-sm, 0.5rem);
+        --lui-private-stack-border-inline: 0;
+        --lui-private-stack-border-top: 1px;
       }
       &[data-direction-sm='row'],
       &[data-direction-sm='row-reverse'] {
-        --leverui-private-stack-margin-inline: var(--leverui-private-stack-gap-sm, 0.5rem);
-        --leverui-private-stack-margin-block: 0;
-        --leverui-private-stack-border-inline: 1px;
-        --leverui-private-stack-border-top: 0;
+        --lui-private-stack-margin-inline: var(--lui-private-stack-gap-sm, 0.5rem);
+        --lui-private-stack-margin-block: 0;
+        --lui-private-stack-border-inline: 1px;
+        --lui-private-stack-border-top: 0;
       }
     }
 
     @media (min-width: 768px) {
       &[data-direction-md='column'],
       &[data-direction-md='column-reverse'] {
-        --leverui-private-stack-margin-inline: 0;
-        --leverui-private-stack-margin-block: var(--leverui-private-stack-gap-md, 0.5rem);
-        --leverui-private-stack-border-inline: 0;
-        --leverui-private-stack-border-top: 1px;
+        --lui-private-stack-margin-inline: 0;
+        --lui-private-stack-margin-block: var(--lui-private-stack-gap-md, 0.5rem);
+        --lui-private-stack-border-inline: 0;
+        --lui-private-stack-border-top: 1px;
       }
       &[data-direction-md='row'],
       &[data-direction-md='row-reverse'] {
-        --leverui-private-stack-margin-inline: var(--leverui-private-stack-gap-md, 0.5rem);
-        --leverui-private-stack-margin-block: 0;
-        --leverui-private-stack-border-inline: 1px;
-        --leverui-private-stack-border-top: 0;
+        --lui-private-stack-margin-inline: var(--lui-private-stack-gap-md, 0.5rem);
+        --lui-private-stack-margin-block: 0;
+        --lui-private-stack-border-inline: 1px;
+        --lui-private-stack-border-top: 0;
       }
     }
 
     @media (min-width: 1024px) {
       &[data-direction-lg='column'],
       &[data-direction-lg='column-reverse'] {
-        --leverui-private-stack-margin-inline: 0;
-        --leverui-private-stack-margin-block: var(--leverui-private-stack-gap-lg, 0.5rem);
-        --leverui-private-stack-border-inline: 0;
-        --leverui-private-stack-border-top: 1px;
+        --lui-private-stack-margin-inline: 0;
+        --lui-private-stack-margin-block: var(--lui-private-stack-gap-lg, 0.5rem);
+        --lui-private-stack-border-inline: 0;
+        --lui-private-stack-border-top: 1px;
       }
       &[data-direction-lg='row'],
       &[data-direction-lg='row-reverse'] {
-        --leverui-private-stack-margin-inline: var(--leverui-private-stack-gap-lg, 0.5rem);
-        --leverui-private-stack-margin-block: 0;
-        --leverui-private-stack-border-inline: 1px;
-        --leverui-private-stack-border-top: 0;
+        --lui-private-stack-margin-inline: var(--lui-private-stack-gap-lg, 0.5rem);
+        --lui-private-stack-margin-block: 0;
+        --lui-private-stack-border-inline: 1px;
+        --lui-private-stack-border-top: 0;
       }
     }
 
     @media (min-width: 1280px) {
       &[data-direction-xl='column'],
       &[data-direction-xl='column-reverse'] {
-        --leverui-private-stack-margin-inline: 0;
-        --leverui-private-stack-margin-block: var(--leverui-private-stack-gap-xl, 0.5rem);
-        --leverui-private-stack-border-inline: 0;
-        --leverui-private-stack-border-top: 1px;
+        --lui-private-stack-margin-inline: 0;
+        --lui-private-stack-margin-block: var(--lui-private-stack-gap-xl, 0.5rem);
+        --lui-private-stack-border-inline: 0;
+        --lui-private-stack-border-top: 1px;
       }
       &[data-direction-xl='row'],
       &[data-direction-xl='row-reverse'] {
-        --leverui-private-stack-margin-inline: var(--leverui-private-stack-gap-xl, 0.5rem);
-        --leverui-private-stack-margin-block: 0;
-        --leverui-private-stack-border-inline: 1px;
-        --leverui-private-stack-border-top: 0;
+        --lui-private-stack-margin-inline: var(--lui-private-stack-gap-xl, 0.5rem);
+        --lui-private-stack-margin-block: 0;
+        --lui-private-stack-border-inline: 1px;
+        --lui-private-stack-border-top: 0;
       }
     }
 
     @media (min-width: 1536px) {
       &[data-direction-2xl='column'],
       &[data-direction-2xl='column-reverse'] {
-        --leverui-private-stack-margin-inline: 0;
-        --leverui-private-stack-margin-block: var(--leverui-private-stack-gap-2xl, 0.5rem);
-        --leverui-private-stack-border-inline: 0;
-        --leverui-private-stack-border-top: 1px;
+        --lui-private-stack-margin-inline: 0;
+        --lui-private-stack-margin-block: var(--lui-private-stack-gap-2xl, 0.5rem);
+        --lui-private-stack-border-inline: 0;
+        --lui-private-stack-border-top: 1px;
       }
       &[data-direction-2xl='row'],
       &[data-direction-2xl='row-reverse'] {
-        --leverui-private-stack-margin-inline: var(--leverui-private-stack-gap-2xl, 0.5rem);
-        --leverui-private-stack-margin-block: 0;
-        --leverui-private-stack-border-inline: 1px;
-        --leverui-private-stack-border-top: 0;
+        --lui-private-stack-margin-inline: var(--lui-private-stack-gap-2xl, 0.5rem);
+        --lui-private-stack-margin-block: 0;
+        --lui-private-stack-border-inline: 1px;
+        --lui-private-stack-border-top: 0;
       }
     }
   }

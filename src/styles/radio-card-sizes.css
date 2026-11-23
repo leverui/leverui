@@ -1,28 +1,28 @@
-@layer leverui.recipes {
-  .leverui-radio-card__item:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-radio-card__item:not([data-unstyled]) {
     &[data-size='sm'] {
-      --leverui-private-radio-card-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-radio-card-line-height: 1.25rem;
-      --leverui-private-radio-card-padding: var(--leverui-spacing-3);
-      --leverui-private-radio-card-gap: var(--leverui-spacing-1\.5);
-      --leverui-private-radio-card-addon-padding-x: var(--leverui-spacing-3);
-      --leverui-private-radio-card-addon-padding-y: var(--leverui-spacing-1\.5);
+      --lui-private-radio-card-font-size: var(--lui-font-sizes-sm);
+      --lui-private-radio-card-line-height: 1.25rem;
+      --lui-private-radio-card-padding: var(--lui-spacing-3);
+      --lui-private-radio-card-gap: var(--lui-spacing-1\.5);
+      --lui-private-radio-card-addon-padding-x: var(--lui-spacing-3);
+      --lui-private-radio-card-addon-padding-y: var(--lui-spacing-1\.5);
     }
     &[data-size='md'] {
-      --leverui-private-radio-card-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-radio-card-line-height: 1.25rem;
-      --leverui-private-radio-card-padding: var(--leverui-spacing-4);
-      --leverui-private-radio-card-gap: var(--leverui-spacing-2\.5);
-      --leverui-private-radio-card-addon-padding-x: var(--leverui-spacing-4);
-      --leverui-private-radio-card-addon-padding-y: var(--leverui-spacing-2);
+      --lui-private-radio-card-font-size: var(--lui-font-sizes-sm);
+      --lui-private-radio-card-line-height: 1.25rem;
+      --lui-private-radio-card-padding: var(--lui-spacing-4);
+      --lui-private-radio-card-gap: var(--lui-spacing-2\.5);
+      --lui-private-radio-card-addon-padding-x: var(--lui-spacing-4);
+      --lui-private-radio-card-addon-padding-y: var(--lui-spacing-2);
     }
     &[data-size='lg'] {
-      --leverui-private-radio-card-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-radio-card-line-height: 1.5rem;
-      --leverui-private-radio-card-padding: var(--leverui-spacing-4);
-      --leverui-private-radio-card-gap: var(--leverui-spacing-3\.5);
-      --leverui-private-radio-card-addon-padding-x: var(--leverui-spacing-4);
-      --leverui-private-radio-card-addon-padding-y: var(--leverui-spacing-2);
+      --lui-private-radio-card-font-size: var(--lui-font-sizes-md);
+      --lui-private-radio-card-line-height: 1.5rem;
+      --lui-private-radio-card-padding: var(--lui-spacing-4);
+      --lui-private-radio-card-gap: var(--lui-spacing-3\.5);
+      --lui-private-radio-card-addon-padding-x: var(--lui-spacing-4);
+      --lui-private-radio-card-addon-padding-y: var(--lui-spacing-2);
     }
   }
 }

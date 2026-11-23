@@ -1,5 +1,5 @@
-@layer leverui.recipes {
-  .leverui-text {
+@layer lui.recipes {
+  .lui-text {
     &[data-truncate] {
       overflow: hidden;
       text-overflow: ellipsis;
@@ -8,7 +8,7 @@
     &[data-line-clamp='value'] {
       overflow: hidden;
       display: -webkit-box;
-      -webkit-line-clamp: var(--leverui-private-text-line-clamp);
+      -webkit-line-clamp: var(--lui-private-text-line-clamp);
       -webkit-box-orient: vertical;
       text-wrap: wrap;
     }

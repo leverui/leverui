@@ -5,7 +5,7 @@ export async function verifyPackedSlider(page) {
   const root = page.getByTestId('packed-slider-root');
   const thumb = page.getByRole('slider', { name: 'Volume' });
   await root.waitFor();
-  assert.match(await root.getAttribute('class'), /leverui-slider__root/);
+  assert.match(await root.getAttribute('class'), /lui-slider__root/);
   assert.equal(
     await thumb.evaluate(
       /** Read an ordinary consumer stylesheet's override. */

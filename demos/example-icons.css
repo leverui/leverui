@@ -3,7 +3,7 @@
  * Lucide writes width="24" and height="24" when no size is passed, so icons with an explicit
  * size keep it. The base layer lets component rules that size their own icons still win.
  */
-@layer leverui.base {
+@layer lui.base {
   :where(.lucide[width='24'][height='24']) {
     width: 1em;
     height: 1em;

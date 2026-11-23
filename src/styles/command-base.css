@@ -1,31 +1,31 @@
-@layer leverui.recipes {
-  .leverui-command__root:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-command__root:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     position: relative;
     width: 100%;
     min-height: 0;
     outline: 0;
-    background: var(--leverui-command-background, var(--leverui-colors-bg-panel));
-    border-radius: var(--leverui-command-radius, var(--leverui-radii-l3));
+    background: var(--lui-command-background, var(--lui-colors-bg-panel));
+    border-radius: var(--lui-command-radius, var(--lui-radii-l3));
     overflow: hidden;
-    font-size: var(--leverui-font-sizes-sm);
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
-    --leverui-private-command-control-padding-x: var(--leverui-spacing-4);
-    --leverui-private-command-input-height: var(--leverui-sizes-12);
-    --leverui-private-command-indicator-size: var(--leverui-sizes-4);
-    --leverui-private-command-list-padding: var(--leverui-spacing-1\.5);
-    --leverui-private-command-item-padding-x: var(--leverui-spacing-2\.5);
-    --leverui-private-command-item-padding-y: var(--leverui-spacing-2);
-    --leverui-private-command-item-gap: var(--leverui-spacing-2);
-    --leverui-private-command-list-max-height: var(--leverui-sizes-96);
-    --leverui-private-command-footer-padding-y: var(--leverui-spacing-2\.5);
-    --leverui-private-command-control-gap: var(--leverui-spacing-2);
-    --leverui-private-command-result-font-size: var(--leverui-font-sizes-sm);
-    --leverui-private-command-result-line-height: 1.25rem;
+    --lui-private-command-control-padding-x: var(--lui-spacing-4);
+    --lui-private-command-input-height: var(--lui-sizes-12);
+    --lui-private-command-indicator-size: var(--lui-sizes-4);
+    --lui-private-command-list-padding: var(--lui-spacing-1\.5);
+    --lui-private-command-item-padding-x: var(--lui-spacing-2\.5);
+    --lui-private-command-item-padding-y: var(--lui-spacing-2);
+    --lui-private-command-item-gap: var(--lui-spacing-2);
+    --lui-private-command-list-max-height: var(--lui-sizes-96);
+    --lui-private-command-footer-padding-y: var(--lui-spacing-2\.5);
+    --lui-private-command-control-gap: var(--lui-spacing-2);
+    --lui-private-command-result-font-size: var(--lui-font-sizes-sm);
+    --lui-private-command-result-line-height: 1.25rem;
   }
 
-  .leverui-command__label:not([data-unstyled]) {
+  .lui-command__label:not([data-unstyled]) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -37,84 +37,84 @@
     border: 0;
   }
 
-  .leverui-command__control:not([data-unstyled]) {
+  .lui-command__control:not([data-unstyled]) {
     display: flex;
     align-items: center;
     gap: var(
-      --leverui-command-control-gap,
-      var(--leverui-private-command-control-gap, var(--leverui-spacing-2))
+      --lui-command-control-gap,
+      var(--lui-private-command-control-gap, var(--lui-spacing-2))
     );
     padding-inline: var(
-      --leverui-command-control-padding-x,
-      var(--leverui-private-command-control-padding-x, var(--leverui-spacing-4))
+      --lui-command-control-padding-x,
+      var(--lui-private-command-control-padding-x, var(--lui-spacing-4))
     );
     border-bottom-width: 1px;
     border-bottom-style: solid;
     flex-shrink: 0;
   }
 
-  .leverui-command__indicator:not([data-unstyled]) {
+  .lui-command__indicator:not([data-unstyled]) {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--leverui-colors-fg-muted);
+    color: var(--lui-colors-fg-muted);
     flex-shrink: 0;
   }
 
-  .leverui-command__indicator:not([data-unstyled]) svg {
+  .lui-command__indicator:not([data-unstyled]) svg {
     width: var(
-      --leverui-command-indicator-size,
-      var(--leverui-private-command-indicator-size, var(--leverui-sizes-4))
+      --lui-command-indicator-size,
+      var(--lui-private-command-indicator-size, var(--lui-sizes-4))
     );
     height: var(
-      --leverui-command-indicator-size,
-      var(--leverui-private-command-indicator-size, var(--leverui-sizes-4))
+      --lui-command-indicator-size,
+      var(--lui-private-command-indicator-size, var(--lui-sizes-4))
     );
   }
 
-  .leverui-command__input:not([data-unstyled]) {
+  .lui-command__input:not([data-unstyled]) {
     flex: 1;
     width: 100%;
     min-width: 0;
     height: var(
-      --leverui-command-input-height,
-      var(--leverui-private-command-input-height, var(--leverui-sizes-12))
+      --lui-command-input-height,
+      var(--lui-private-command-input-height, var(--lui-sizes-12))
     );
     background: transparent;
     outline: 0;
-    font-size: var(--leverui-private-command-result-font-size, var(--leverui-font-sizes-sm));
-    line-height: var(--leverui-private-command-result-line-height, 1.25rem);
+    font-size: var(--lui-private-command-result-font-size, var(--lui-font-sizes-sm));
+    line-height: var(--lui-private-command-result-line-height, 1.25rem);
   }
 
-  .leverui-command__input:not([data-unstyled])::placeholder {
-    color: var(--leverui-colors-fg-muted);
+  .lui-command__input:not([data-unstyled])::placeholder {
+    color: var(--lui-colors-fg-muted);
   }
 
-  .leverui-command__list:not([data-unstyled]) {
+  .lui-command__list:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
     overflow: hidden;
     outline: 0;
     max-height: var(
-      --leverui-command-list-max-height,
-      var(--leverui-private-command-list-max-height, var(--leverui-sizes-96))
+      --lui-command-list-max-height,
+      var(--lui-private-command-list-max-height, var(--lui-sizes-96))
     );
     padding: var(
-      --leverui-command-list-padding,
-      var(--leverui-private-command-list-padding, var(--leverui-spacing-1\.5))
+      --lui-command-list-padding,
+      var(--lui-private-command-list-padding, var(--lui-spacing-1\.5))
     );
     scroll-padding-block: var(
-      --leverui-command-list-padding,
-      var(--leverui-private-command-list-padding, var(--leverui-spacing-1\.5))
+      --lui-command-list-padding,
+      var(--lui-private-command-list-padding, var(--lui-spacing-1\.5))
     );
   }
 
-  .leverui-command__list:not([data-unstyled]) > :not(.leverui-command__listbox) {
+  .lui-command__list:not([data-unstyled]) > :not(.lui-command__listbox) {
     flex-shrink: 0;
   }
 
   /* The primitive puts the listbox role on a List inside Command's scroll container. */
-  .leverui-command__list:not([data-unstyled]) > .leverui-command__listbox {
+  .lui-command__list:not([data-unstyled]) > .lui-command__listbox {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
@@ -125,7 +125,7 @@
     outline: 0;
   }
 
-  .leverui-command__listbox > * {
+  .lui-command__listbox > * {
     flex-shrink: 0;
   }
 }

@@ -5,11 +5,11 @@ Lever UI animates with plain CSS. Anything that opens and closes has
 
 ```css
 .details-panel[data-state='open'] {
-  animation: fade-in var(--leverui-durations-slow);
+  animation: fade-in var(--lui-durations-slow);
 }
 
 .details-panel[data-state='closed'] {
-  animation: fade-out var(--leverui-durations-moderate);
+  animation: fade-out var(--lui-durations-moderate);
 }
 ```
 
@@ -55,7 +55,7 @@ An open element has `data-state="open"`.
 
 ```css
 .details-panel[data-state='open'] {
-  animation: details-in var(--leverui-durations-slow) var(--leverui-easings-ease-out);
+  animation: details-in var(--lui-durations-slow) var(--lui-easings-ease-out);
 }
 ```
 
@@ -79,7 +79,7 @@ A closed element has `data-state="closed"`.
 
 ```css
 .details-panel[data-state='closed'] {
-  animation: details-out var(--leverui-durations-moderate) var(--leverui-easings-ease-in);
+  animation: details-out var(--lui-durations-moderate) var(--lui-easings-ease-in);
 }
 ```
 
@@ -101,12 +101,12 @@ List several keyframes in `animation-name` to run them together.
 ```css
 .details-panel[data-state='open'] {
   animation-name: fade-in, scale-in;
-  animation-duration: var(--leverui-durations-slow);
+  animation-duration: var(--lui-durations-slow);
 }
 
 .details-panel[data-state='closed'] {
   animation-name: fade-out, scale-out;
-  animation-duration: var(--leverui-durations-faster);
+  animation-duration: var(--lui-durations-faster);
 }
 ```
 
@@ -129,20 +129,20 @@ The expand and collapse keyframes read the size from `--height` or `--width`.
 
 ## Timing
 
-| Duration variable              | Value   |
-| ------------------------------ | ------- |
-| `--leverui-durations-fastest`  | `50ms`  |
-| `--leverui-durations-faster`   | `100ms` |
-| `--leverui-durations-fast`     | `150ms` |
-| `--leverui-durations-moderate` | `200ms` |
-| `--leverui-durations-slow`     | `300ms` |
-| `--leverui-durations-slower`   | `400ms` |
-| `--leverui-durations-slowest`  | `500ms` |
+| Duration variable          | Value   |
+| -------------------------- | ------- |
+| `--lui-durations-fastest`  | `50ms`  |
+| `--lui-durations-faster`   | `100ms` |
+| `--lui-durations-fast`     | `150ms` |
+| `--lui-durations-moderate` | `200ms` |
+| `--lui-durations-slow`     | `300ms` |
+| `--lui-durations-slower`   | `400ms` |
+| `--lui-durations-slowest`  | `500ms` |
 
-Easings: `--leverui-easings-ease-in`, `-ease-out`, `-ease-in-out`, and
+Easings: `--lui-easings-ease-in`, `-ease-out`, `-ease-in-out`, and
 `-ease-in-smooth`.
 
-Loops come ready to use: `animation: var(--leverui-animations-spin)`. Also
+Loops come ready to use: `animation: var(--lui-animations-spin)`. Also
 `-ping`, `-pulse`, and `-bounce`.
 
 Full lists: [durations](../theme-variables/durations.md),
@@ -170,14 +170,14 @@ once.
 - `animation: none` also works, and `Presence` then removes closing content at
   once. `1ms` keeps `animationend` events firing.
 - No `!important` needed in ordinary CSS. Inside a cascade layer of your own,
-  order it after the `leverui.*` layers or add `!important`.
+  order it after the `lui.*` layers or add `!important`.
 
 For your own animations, add a calmer version in the same stylesheet.
 
 ```css
 .details-panel[data-state='open'] {
   animation-name: slide-from-bottom, fade-in;
-  animation-duration: var(--leverui-durations-slow);
+  animation-duration: var(--lui-durations-slow);
 }
 
 @media (prefers-reduced-motion: reduce) {

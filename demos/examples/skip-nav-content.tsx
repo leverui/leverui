@@ -10,8 +10,8 @@ export function SkipNavWithContent(): JSX.Element {
       <Box class="skip-nav-example-panel skip-nav-example-panel--gray">
         <Text
           style={{
-            'font-weight': 'var(--leverui-font-weights-medium)',
-            'margin-bottom': 'var(--leverui-spacing-2)',
+            'font-weight': 'var(--lui-font-weights-medium)',
+            'margin-bottom': 'var(--lui-spacing-2)',
           }}
         >
           Site header
@@ -19,32 +19,32 @@ export function SkipNavWithContent(): JSX.Element {
         <VStack align="start" gap="1">
           <Text
             style={{
-              'font-size': 'var(--leverui-font-sizes-sm)',
-              color: 'var(--leverui-colors-gray-600)',
+              'font-size': 'var(--lui-font-sizes-sm)',
+              color: 'var(--lui-colors-gray-600)',
             }}
           >
             • Home
           </Text>
           <Text
             style={{
-              'font-size': 'var(--leverui-font-sizes-sm)',
-              color: 'var(--leverui-colors-gray-600)',
+              'font-size': 'var(--lui-font-sizes-sm)',
+              color: 'var(--lui-colors-gray-600)',
             }}
           >
             • About
           </Text>
           <Text
             style={{
-              'font-size': 'var(--leverui-font-sizes-sm)',
-              color: 'var(--leverui-colors-gray-600)',
+              'font-size': 'var(--lui-font-sizes-sm)',
+              color: 'var(--lui-colors-gray-600)',
             }}
           >
             • Services
           </Text>
           <Text
             style={{
-              'font-size': 'var(--leverui-font-sizes-sm)',
-              color: 'var(--leverui-colors-gray-600)',
+              'font-size': 'var(--lui-font-sizes-sm)',
+              color: 'var(--lui-colors-gray-600)',
             }}
           >
             • Contact
@@ -68,8 +68,8 @@ export function SkipNavWithContent(): JSX.Element {
             </Text>
             <Text
               style={{
-                'font-size': 'var(--leverui-font-sizes-sm)',
-                color: 'var(--leverui-colors-purple-600)',
+                'font-size': 'var(--lui-font-sizes-sm)',
+                color: 'var(--lui-colors-purple-600)',
               }}
             >
               This helps people who use a screen reader and people who get around mostly with a

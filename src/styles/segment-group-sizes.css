@@ -1,32 +1,32 @@
-@layer leverui.recipes {
-  .leverui-segment-group__root:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-segment-group__root:not([data-unstyled]) {
     &[data-size='xs'] {
-      --leverui-private-segment-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-segment-line-height: 1rem;
-      --leverui-private-segment-padding-inline: var(--leverui-spacing-3);
-      --leverui-private-segment-gap: var(--leverui-spacing-1);
-      --leverui-private-segment-height: var(--leverui-sizes-6);
+      --lui-private-segment-font-size: var(--lui-font-sizes-xs);
+      --lui-private-segment-line-height: 1rem;
+      --lui-private-segment-padding-inline: var(--lui-spacing-3);
+      --lui-private-segment-gap: var(--lui-spacing-1);
+      --lui-private-segment-height: var(--lui-sizes-6);
     }
     &[data-size='sm'] {
-      --leverui-private-segment-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-segment-line-height: 1.25rem;
-      --leverui-private-segment-padding-inline: var(--leverui-spacing-4);
-      --leverui-private-segment-gap: var(--leverui-spacing-2);
-      --leverui-private-segment-height: var(--leverui-sizes-8);
+      --lui-private-segment-font-size: var(--lui-font-sizes-sm);
+      --lui-private-segment-line-height: 1.25rem;
+      --lui-private-segment-padding-inline: var(--lui-spacing-4);
+      --lui-private-segment-gap: var(--lui-spacing-2);
+      --lui-private-segment-height: var(--lui-sizes-8);
     }
     &[data-size='md'] {
-      --leverui-private-segment-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-segment-line-height: 1.25rem;
-      --leverui-private-segment-padding-inline: var(--leverui-spacing-4);
-      --leverui-private-segment-gap: var(--leverui-spacing-2);
-      --leverui-private-segment-height: var(--leverui-sizes-10);
+      --lui-private-segment-font-size: var(--lui-font-sizes-sm);
+      --lui-private-segment-line-height: 1.25rem;
+      --lui-private-segment-padding-inline: var(--lui-spacing-4);
+      --lui-private-segment-gap: var(--lui-spacing-2);
+      --lui-private-segment-height: var(--lui-sizes-10);
     }
     &[data-size='lg'] {
-      --leverui-private-segment-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-segment-line-height: 1.5rem;
-      --leverui-private-segment-padding-inline: var(--leverui-spacing-4\.5);
-      --leverui-private-segment-gap: var(--leverui-spacing-3);
-      --leverui-private-segment-height: var(--leverui-sizes-11);
+      --lui-private-segment-font-size: var(--lui-font-sizes-md);
+      --lui-private-segment-line-height: 1.5rem;
+      --lui-private-segment-padding-inline: var(--lui-spacing-4\.5);
+      --lui-private-segment-gap: var(--lui-spacing-3);
+      --lui-private-segment-height: var(--lui-sizes-11);
     }
   }
 }

@@ -29,8 +29,8 @@ export function SegmentGroupItem<As extends SegmentGroupItemElement = 'label'>(
         return (
           <>
             {usesNonLabel() ? (
-              <label class="leverui-segment-group__item-hit-area">
-                <span class="leverui-segment-group__item-hit-target" aria-hidden="true" />
+              <label class="lui-segment-group__item-hit-area">
+                <span class="lui-segment-group__item-hit-target" aria-hidden="true" />
                 {props.children}
               </label>
             ) : (

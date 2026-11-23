@@ -48,9 +48,9 @@ export function renderImageExplorerTree(
   return (
     <>
       <div style={{ padding: '24px' }}>
-        <Flex style={{ gap: 'var(--leverui-spacing-6)', 'max-width': '800px' }}>
+        <Flex style={{ gap: 'var(--lui-spacing-6)', 'max-width': '800px' }}>
           <Listbox.Root
-            style={{ 'max-width': 'var(--leverui-sizes-2xs)' }}
+            style={{ 'max-width': 'var(--lui-sizes-2xs)' }}
             collection={collection}
             value={[selectedValue()]}
             onValueChange={handleValueChange}
@@ -84,9 +84,9 @@ export function renderImageExplorerTree(
                   <Box>
                     <Text
                       style={{
-                        'font-size': 'var(--leverui-font-sizes-lg)',
-                        'font-weight': 'var(--leverui-font-weights-semibold)',
-                        'margin-bottom': 'var(--leverui-spacing-3)',
+                        'font-size': 'var(--lui-font-sizes-lg)',
+                        'font-weight': 'var(--lui-font-weights-semibold)',
+                        'margin-bottom': 'var(--lui-spacing-3)',
                       }}
                     >
                       {image.label}
@@ -95,7 +95,7 @@ export function renderImageExplorerTree(
                       src={image.url}
                       alt={image.label}
                       style={{
-                        'border-radius': 'var(--leverui-radii-md)',
+                        'border-radius': 'var(--lui-radii-md)',
                         'max-height': '400px',
                         width: '100%',
                       }}
@@ -103,9 +103,9 @@ export function renderImageExplorerTree(
                     />
                     <Text
                       style={{
-                        'font-size': 'var(--leverui-font-sizes-sm)',
-                        color: 'var(--leverui-colors-fg-muted)',
-                        'margin-top': 'var(--leverui-spacing-2)',
+                        'font-size': 'var(--lui-font-sizes-sm)',
+                        color: 'var(--lui-colors-fg-muted)',
+                        'margin-top': 'var(--lui-spacing-2)',
                       }}
                     >
                       {image.description}

@@ -4,7 +4,7 @@ import { expect, test, type Page } from '@playwright/test';
 async function verifiesSparklineCss({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=internal-sparkline-css-contract--contract');
   const chart = page.getByTestId('sparkline-reactive').locator('svg');
-  const line = chart.locator('.leverui-sparkline__line');
+  const line = chart.locator('.lui-sparkline__line');
   await expect(chart).toBeVisible({ timeout: 30_000 });
   await expect(chart).toHaveClass(/consumer-chart/);
   await expect(chart).toHaveAttribute('data-ref-tag', 'svg');
@@ -22,7 +22,7 @@ async function verifiesSparklineCss({ page }: { page: Page }): Promise<void> {
   await expect(chart).toHaveAttribute('data-original', 'true');
   const unstyled = page.getByTestId('sparkline-unstyled').locator('svg');
   await expect(unstyled).toHaveAttribute('data-unstyled', '');
-  await expect(unstyled.locator('.leverui-sparkline__line')).not.toHaveCSS('stroke-width', '2px');
+  await expect(unstyled.locator('.lui-sparkline__line')).not.toHaveCSS('stroke-width', '2px');
 }
 
 test('Sparkline authored CSS preserves native and reactive behavior', verifiesSparklineCss);

@@ -25,10 +25,10 @@ export function DrawerWithContext(): JSX.Element {
                 (store) => (
                   <Drawer.Body
                     style={{
-                      'padding-top': 'var(--leverui-spacing-6)',
+                      'padding-top': 'var(--lui-spacing-6)',
                       display: 'flex',
                       'flex-direction': 'column',
-                      gap: 'var(--leverui-spacing-3)',
+                      gap: 'var(--lui-spacing-3)',
                     }}
                   >
                     <p>Drawer is open: {store().open ? 'true' : 'false'}</p>

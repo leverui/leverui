@@ -16,7 +16,7 @@ async function verifiesQrTheme({ page }: { page: Page }): Promise<void> {
   for (const [size, width] of sizes) {
     await expect(page.getByTestId(`qr-frame-${size}`)).toHaveCSS('width', width);
   }
-  await expect(page.getByTestId('qr-size-full')).toHaveCSS('--leverui-qr-code-size', '100%');
+  await expect(page.getByTestId('qr-size-full')).toHaveCSS('--lui-qr-code-size', '100%');
   await page.setViewportSize({ width: 600, height: 800 });
   await expect(page.getByTestId('qr-responsive-frame')).toHaveCSS('width', '40px');
   await page.setViewportSize({ width: 900, height: 800 });
@@ -25,13 +25,13 @@ async function verifiesQrTheme({ page }: { page: Page }): Promise<void> {
   expect(
     await page.getByTestId('qr-unstyled-frame').evaluate(
       /** Confirm the unstyled root contributes no default size variable. */
-      (element) => getComputedStyle(element).getPropertyValue('--leverui-qr-code-size'),
+      (element) => getComputedStyle(element).getPropertyValue('--lui-qr-code-size'),
     ),
   ).toBe('');
-  await expect(page.getByTestId('qr-outer-root')).toHaveCSS('--leverui-qr-code-size', '80px');
-  await expect(page.getByTestId('qr-inner-root')).toHaveCSS('--leverui-qr-code-size', '240px');
+  await expect(page.getByTestId('qr-outer-root')).toHaveCSS('--lui-qr-code-size', '80px');
+  await expect(page.getByTestId('qr-inner-root')).toHaveCSS('--lui-qr-code-size', '240px');
   await page.addStyleTag({
-    content: '[data-testid="qr-override-frame"] { --leverui-qr-code-size: 111px; }',
+    content: '[data-testid="qr-override-frame"] { --lui-qr-code-size: 111px; }',
   });
   await expect(page.getByTestId('qr-override-frame')).toHaveCSS('width', '111px');
 }
@@ -52,7 +52,7 @@ async function verifiesQrScopes({ page }: { page: Page }): Promise<void> {
   expect(darkBg).not.toBe(lightBg);
   await page.evaluate(
     /** Change the document mode without replacing either nested Theme. */
-    () => document.documentElement.setAttribute('data-leverui-color-mode', 'dark'),
+    () => document.documentElement.setAttribute('data-lui-color-mode', 'dark'),
   );
   await expect(dark).toHaveCSS('background-color', darkBg);
   await expect(light).toHaveCSS('background-color', lightBg);

@@ -32,8 +32,8 @@ export function SkeletonContractExample(): JSX.Element {
           variant="shine"
           style={{
             ...blockStyle,
-            '--leverui-skeleton-start-color': '#ff0080',
-            '--leverui-skeleton-end-color': '#ffaa00',
+            '--lui-skeleton-start-color': '#ff0080',
+            '--lui-skeleton-end-color': '#ffaa00',
           }}
           data-testid="skeleton-shine"
         />

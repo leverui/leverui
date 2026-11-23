@@ -74,15 +74,15 @@ function verifiesServerTimeline(): void {
   const markup = renderServerTimeline();
   expect(markup).toMatch(/<div[^>]*id="server-timeline"[^>]*role="list"/);
   expect(markup).toMatch(/<div[^>]*id="server-timeline-item"[^>]*role="listitem"/);
-  expect(markup).toContain('leverui-timeline__separator');
-  expect(markup).toContain('leverui-timeline__indicator');
+  expect(markup).toContain('lui-timeline__separator');
+  expect(markup).toContain('lui-timeline__indicator');
   expect(markup).toContain('Shipped');
   expect(markup).toContain('Today');
   expect(markup).toContain('data-size="sm"');
   expect(markup).toContain('data-variant="outline"');
   expect(markup).toContain('data-show-last-separator="true"');
-  expect(markup).not.toContain('data-leverui-private-style-runtime');
-  expect(markup).not.toContain('--leverui-private-timeline-indicator-size');
+  expect(markup).not.toContain('data-lui-private-style-runtime');
+  expect(markup).not.toContain('--lui-private-timeline-indicator-size');
   expect(markup).not.toMatch(/--timeline-(?:indicator-size|content-gap|separator-display)/);
   expect(markup).not.toMatch(/<div[^>]*\s(?:size|variant|showLastSeparator|recipe|css|unstyled)=/);
 }

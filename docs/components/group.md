@@ -33,8 +33,8 @@ edges and the stacking order.
 
 Responsive: `orientation`, `attached`, `grow`, and `stacking`.
 
-Variables: `--leverui-group-gap` for spacing, `--leverui-group-align`,
-`--leverui-group-justify`, and `--leverui-group-wrap`.
+Variables: `--lui-group-gap` for spacing, `--lui-group-align`,
+`--lui-group-justify`, and `--lui-group-wrap`.
 
 Layout only. `Group` adds no shared keyboard or selection behavior, so give
 each control its own accessible name and behavior.

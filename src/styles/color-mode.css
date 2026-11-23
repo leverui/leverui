@@ -1,19 +1,19 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   /* The placeholder ColorModeButton shows before hydration. */
-  .leverui-color-mode-button-placeholder {
-    width: var(--leverui-sizes-9);
-    height: var(--leverui-sizes-9);
+  .lui-color-mode-button-placeholder {
+    width: var(--lui-sizes-9);
+    height: var(--lui-sizes-9);
   }
 
   /* Outrank IconButton's size rule so ColorModeButton keeps its 20px icon. */
-  .leverui-color-mode-icon,
-  .leverui-button:not([data-unstyled]) .leverui-color-mode-icon:is(svg, [data-leverui-icon]) {
-    width: var(--leverui-sizes-5);
-    height: var(--leverui-sizes-5);
+  .lui-color-mode-icon,
+  .lui-button:not([data-unstyled]) .lui-color-mode-icon:is(svg, [data-lui-icon]) {
+    width: var(--lui-sizes-5);
+    height: var(--lui-sizes-5);
   }
 
   /* LightMode and DarkMode scope colors without adding a layout box. */
-  .leverui-color-mode-scope {
+  .lui-color-mode-scope {
     display: contents;
   }
 }

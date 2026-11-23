@@ -10,7 +10,7 @@ async function verifiesCodeBlockThemeExtension({ page }: { page: Page }): Promis
   await expect(page.getByTestId('theme-custom-code')).toHaveCSS('overflow-x', 'auto');
 
   const unstyled = page.getByTestId('theme-unstyled-root');
-  await expect(unstyled).toHaveClass(/leverui-code-block__root/);
+  await expect(unstyled).toHaveClass(/lui-code-block__root/);
   await expect(unstyled).toHaveAttribute('data-unstyled', '');
   await expect(unstyled).toHaveCSS('border-top-width', '0px');
   await expect(unstyled).toHaveCSS('border-radius', '0px');
@@ -20,10 +20,10 @@ async function verifiesCodeBlockThemeExtension({ page }: { page: Page }): Promis
   await expect(page.getByTestId('theme-unstyled-code')).toHaveJSProperty('tagName', 'PRE');
   await expect(unstyled.locator('code')).toHaveText('Unstyled source');
 
-  await page.addStyleTag({ content: ':root { --leverui-code-block-radius: 27px; }' });
+  await page.addStyleTag({ content: ':root { --lui-code-block-radius: 27px; }' });
   await expect(page.getByTestId('theme-css-root')).toHaveCSS('border-radius', '27px');
   await page.addStyleTag({
-    content: '[data-testid="theme-css-root"] { --leverui-code-block-radius: 23px; }',
+    content: '[data-testid="theme-css-root"] { --lui-code-block-radius: 23px; }',
   });
   await expect(page.getByTestId('theme-css-root')).toHaveCSS('border-radius', '23px');
   await expect(page.getByTestId('theme-instance-css-root')).toHaveCSS('border-top-width', '5px');

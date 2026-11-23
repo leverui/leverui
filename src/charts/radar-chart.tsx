@@ -112,7 +112,7 @@ export function RadarChart(props: RadarChartProps): JSX.Element {
     >
       <svg
         ref={chartSvg}
-        class="leverui-radar-chart__svg"
+        class="lui-radar-chart__svg"
         role="img"
         aria-label={props['aria-label'] ?? 'Radar chart'}
         viewBox={`0 0 ${width()} ${height()}`}

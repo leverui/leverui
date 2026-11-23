@@ -112,13 +112,13 @@ the page has more than one navigation landmark, give the root its own label.
 
 ## Customize with CSS
 
-Classes: `.leverui-breadcrumb__root`, `__list`, `__item`, `__link`,
+Classes: `.lui-breadcrumb__root`, `__list`, `__item`, `__link`,
 `__currentLink`, `__separator`, `__ellipsis`. The root also sets `data-size`,
-`data-variant`, and `data-leverui-color-palette`.
+`data-variant`, and `data-lui-color-palette`.
 
 ```css
-.site-trail .leverui-breadcrumb__link {
-  color: var(--leverui-colors-blue-fg);
+.site-trail .lui-breadcrumb__link {
+  color: var(--lui-colors-blue-fg);
 }
 ```
 

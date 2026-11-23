@@ -21,10 +21,10 @@ export function PopoverBasic(): JSX.Element {
           <Popover.Content>
             <Popover.Arrow />
             <Popover.Body>
-              <Popover.Title style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>
+              <Popover.Title style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>
                 Lanternwright Notes
               </Popover.Title>
-              <Text style={{ 'margin-block': 'var(--leverui-spacing-4)' }}>
+              <Text style={{ 'margin-block': 'var(--lui-spacing-4)' }}>
                 The Lanternwright Chronicles is a fantasy novel series about an apprentice
                 lamplighter in a city that rearranges itself every night.
               </Text>
@@ -89,10 +89,10 @@ export function PopoverLazyMounted(): JSX.Element {
           <Popover.Content>
             <Popover.Arrow />
             <Popover.Body>
-              <Popover.Title style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>
+              <Popover.Title style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>
                 Lanternwright Notes
               </Popover.Title>
-              <Text style={{ 'margin-block': 'var(--leverui-spacing-4)' }}>
+              <Text style={{ 'margin-block': 'var(--lui-spacing-4)' }}>
                 The Lanternwright Chronicles is a fantasy novel series about an apprentice
                 lamplighter in a city that rearranges itself every night.
               </Text>
@@ -120,18 +120,18 @@ export function PopoverCustomBg(): JSX.Element {
       />
       <Portal>
         <Popover.Positioner>
-          <Popover.Content style={{ '--leverui-popover-background': 'lightblue' }}>
+          <Popover.Content style={{ '--lui-popover-background': 'lightblue' }}>
             <Popover.Arrow />
             <Popover.Body>
-              <Popover.Title style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>
+              <Popover.Title style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>
                 Lanternwright Notes
               </Popover.Title>
-              <Text style={{ 'margin-block': 'var(--leverui-spacing-4)' }}>
+              <Text style={{ 'margin-block': 'var(--lui-spacing-4)' }}>
                 The Lanternwright Chronicles is a fantasy novel series about an apprentice
                 lamplighter in a city that rearranges itself every night.
               </Text>
               <Input
-                style={{ background: 'var(--leverui-colors-bg)' }}
+                style={{ background: 'var(--lui-colors-bg)' }}
                 placeholder="Your favorite character"
                 size="sm"
               />

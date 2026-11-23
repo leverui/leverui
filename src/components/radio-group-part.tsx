@@ -67,7 +67,7 @@ export function renderRadioGroupPart<Props extends RuntimePartProps>(
         return composeRecipeClassNames(
           `radio-group__${slot}`,
           undefined,
-          slot === 'itemControl' ? 'leverui-radiomark' : undefined,
+          slot === 'itemControl' ? 'lui-radiomark' : undefined,
           local.class,
           local.className,
         );

@@ -25,8 +25,8 @@ async function checksMarkerAndSize({ page }: { page: Page }): Promise<void> {
   await expect(page.getByText('Target')).toBeVisible();
   await openStory(page, 'bar-size');
   await expectCustomPropertyLength(
-    page.locator('#storybook-root [style*="--leverui-bar-segment-size:"]').first(),
-    '--leverui-bar-segment-size',
+    page.locator('#storybook-root [style*="--lui-bar-segment-size:"]').first(),
+    '--lui-bar-segment-size',
     '0.75rem',
   );
   await expect(page.locator('#storybook-root')).toContainText('35%');

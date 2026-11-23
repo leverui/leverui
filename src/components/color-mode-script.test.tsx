@@ -5,7 +5,7 @@ import { ColorModeScript, colorModeStorageKey, getColorModeScript } from '../ind
 afterEach(
   /** Reset the document, storage, and stubs between tests. */
   () => {
-    document.documentElement.removeAttribute('data-leverui-color-mode');
+    document.documentElement.removeAttribute('data-lui-color-mode');
     document.documentElement.className = '';
     document.documentElement.style.colorScheme = '';
     localStorage.clear();
@@ -30,7 +30,7 @@ function runScript(script: string): void {
 
 /** Read the mode the script left on the document. */
 function appliedMode(): string | null {
-  return document.documentElement.getAttribute('data-leverui-color-mode');
+  return document.documentElement.getAttribute('data-lui-color-mode');
 }
 
 /** Apply a saved choice to the attribute, the class, and the color scheme. */

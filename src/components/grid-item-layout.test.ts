@@ -10,9 +10,9 @@ function verifiesResponsiveSpans(): void {
     'data-grid-item-row-base': '',
   });
   expect(gridItemVariableStyle(placement, undefined)).toMatchObject({
-    '--leverui-private-grid-item-column-base': 'span 1/span 1',
-    '--leverui-private-grid-item-column-md': 'span 2/span 2',
-    '--leverui-private-grid-item-row-base': 'auto',
+    '--lui-private-grid-item-column-base': 'span 1/span 1',
+    '--lui-private-grid-item-column-md': 'span 2/span 2',
+    '--lui-private-grid-item-row-base': 'auto',
   });
 }
 

@@ -22,7 +22,7 @@ test('horizontal Bar Chart axes match placement', checksHorizontalAxes);
 async function checksHorizontalFrame({ page }: { page: Page }): Promise<void> {
   await page.setViewportSize({ width: 375, height: 700 });
   await page.goto('/iframe.html?id=charts-bar-chart--horizontal');
-  const root = page.locator('#storybook-root .leverui-bar-chart');
+  const root = page.locator('#storybook-root .lui-bar-chart');
   const svg = root.locator('svg');
   await expect(svg).toBeVisible();
   const january = svg.locator('[data-bar-series="windows"][data-bar-category="January"]');

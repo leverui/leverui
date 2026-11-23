@@ -25,8 +25,8 @@ async function verifiesReferenceSizes({ page }: { page: Page }): Promise<void> {
     const colors = await thumb.evaluate(
       /** Read the source recipe's gray solid thumb and track tokens. */
       (element) => ({
-        palette: getComputedStyle(element).getPropertyValue('--leverui-colors-color-palette-solid'),
-        thumb: getComputedStyle(element).getPropertyValue('--leverui-private-scroll-area-thumb-bg'),
+        palette: getComputedStyle(element).getPropertyValue('--lui-colors-color-palette-solid'),
+        thumb: getComputedStyle(element).getPropertyValue('--lui-private-scroll-area-thumb-bg'),
       }),
     );
     expect(colors.palette.trim()).toBe('#18181b');
@@ -73,7 +73,7 @@ async function verifiesCssThemeOverride({ page }: { page: Page }): Promise<void>
   await page.goto('/iframe.html?id=components-scroll-area-layout--basic');
   const thumb = page.getByTestId('scrollbar').locator('[data-scroll-area-thumb]');
   await page.addStyleTag({
-    content: ':root { --leverui-colors-gray-solid: rgb(255, 0, 0) !important; }',
+    content: ':root { --lui-colors-gray-solid: rgb(255, 0, 0) !important; }',
   });
   await expect
     .poll(
@@ -94,7 +94,7 @@ async function verifiesScrollbarVariable({ page }: { page: Page }): Promise<void
   await page.goto('/iframe.html?id=components-scroll-area-layout--basic');
   const scrollbar = page.getByTestId('scrollbar');
   await page.addStyleTag({
-    content: '.leverui-scroll-area__root { --leverui-scroll-area-scrollbar-size: 14px; }',
+    content: '.lui-scroll-area__root { --lui-scroll-area-scrollbar-size: 14px; }',
   });
   await expect(scrollbar).toHaveCSS('width', '14px');
 }

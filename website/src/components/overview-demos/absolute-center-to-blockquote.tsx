@@ -13,7 +13,7 @@ import { type Component } from 'solid-js';
 import { type JSX } from '@solidjs/web';
 import { PopupSurface } from './shared';
 
-const muted = 'var(--leverui-colors-gray-muted)';
+const muted = 'var(--lui-colors-gray-muted)';
 const tint = 'var(--overview-tint)';
 
 /** A small block in the middle of a larger one. */

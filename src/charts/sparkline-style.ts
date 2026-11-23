@@ -16,16 +16,13 @@ interface SparklineStyleOptions {
 export function sparklineStyle(props: SparklineStyleOptions): NativeStyle {
   const defaults: Record<string, string> = {};
   if (props.width !== undefined)
-    defaults['--leverui-sparkline-width'] =
+    defaults['--lui-sparkline-width'] =
       typeof props.width === 'number' ? `${props.width}px` : props.width;
-  if (props.height !== undefined) defaults['--leverui-sparkline-height'] = `${props.height}px`;
+  if (props.height !== undefined) defaults['--lui-sparkline-height'] = `${props.height}px`;
   if (props.color)
-    defaults['--leverui-sparkline-color'] = chartColor(
-      props.color,
-      'var(--leverui-colors-teal-solid)',
-    );
+    defaults['--lui-sparkline-color'] = chartColor(props.color, 'var(--lui-colors-teal-solid)');
   if (props.fillOpacity !== undefined)
-    defaults['--leverui-sparkline-area-opacity'] = `${props.fillOpacity}`;
+    defaults['--lui-sparkline-area-opacity'] = `${props.fillOpacity}`;
   if (props.unstyled && typeof props.width === 'string') defaults.width = props.width;
   if (typeof props.style === 'string') {
     const declarations = Object.entries(defaults)

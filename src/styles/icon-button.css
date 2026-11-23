@@ -1,10 +1,10 @@
-@layer leverui.recipes {
-  .leverui-button.leverui-icon-button:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-button.lui-icon-button:not([data-unstyled]) {
     padding-inline: 0;
     padding-block: 0;
   }
 
-  .leverui-button.leverui-icon-button:not([data-unstyled]) :is(svg, [data-leverui-icon]) {
+  .lui-button.lui-icon-button:not([data-unstyled]) :is(svg, [data-lui-icon]) {
     font-size: 1.2em;
   }
 }

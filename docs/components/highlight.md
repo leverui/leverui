@@ -41,8 +41,8 @@ overrides it.
 ```css
 .search-match {
   padding-inline: 2px;
-  background-color: var(--leverui-colors-orange-subtle);
-  color: var(--leverui-colors-orange-fg);
+  background-color: var(--lui-colors-orange-subtle);
+  color: var(--lui-colors-orange-fg);
 }
 ```
 

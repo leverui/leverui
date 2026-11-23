@@ -25,7 +25,7 @@ export async function verifyPackedStack(page) {
   const root = page.locator('#packed-stack');
   const first = page.locator('#packed-stack-first');
   const last = page.locator('#packed-stack-last');
-  const lines = root.locator('.leverui-stack-separator');
+  const lines = root.locator('.lui-stack-separator');
   await root.waitFor({ state: 'visible' });
   assert.deepEqual(
     await first.evaluate(

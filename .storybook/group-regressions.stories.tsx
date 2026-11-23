@@ -30,7 +30,7 @@ function GroupRegressionsExample(): JSX.Element {
         <button type="button" data-testid="focus-first">
           First
         </button>
-        <button type="button" data-leverui-group-skip data-testid="focus-skipped">
+        <button type="button" data-lui-group-skip data-testid="focus-skipped">
           Skipped
         </button>
         <button type="button" data-testid="focus-last">

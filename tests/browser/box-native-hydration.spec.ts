@@ -57,7 +57,7 @@ async function verifiesNativeBoxHydration({ page }: { page: Page }): Promise<voi
       /** Check public class tokens without depending on hydration whitespace. */
       (element) => [...element.classList],
     ),
-  ).toEqual(['leverui-box', 'consumer-native-box']);
+  ).toEqual(['lui-box', 'consumer-native-box']);
   await expect(box).toHaveCSS('padding', '13px');
   expect(errors).toEqual([]);
 }

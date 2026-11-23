@@ -70,7 +70,7 @@ export function renderListHydrationTree({
         <ListItem id="hydrated-icon-item">
           <ListIndicator
             asChild={renderHydratedIcon}
-            style={{ color: 'var(--leverui-colors-green-500)' }}
+            style={{ color: 'var(--lui-colors-green-500)' }}
             ref={markHydratedIcon}
           />
           Icon task

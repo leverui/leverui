@@ -24,8 +24,8 @@ async function checkCase(page: Page, selection: (typeof cases)[number]): Promise
   const coverPadding =
     selection.size === 'cover' || (selection.pattern === 'up' && selection.width >= 500);
   await expect(positioner).toHaveCSS('padding', coverPadding ? '40px' : '0px');
-  await expect(content).toHaveAttribute('data-leverui-dialog-css', '');
-  await expect(content).toHaveClass(/\bleverui-dialog__content\b/);
+  await expect(content).toHaveAttribute('data-lui-dialog-css', '');
+  await expect(content).toHaveClass(/\blui-dialog__content\b/);
 }
 
 /** Verify upward, array, and downward finite choices through media queries. */

@@ -90,7 +90,7 @@ function renderTabsRoot(
         return composeRecipeClassNames('tabs__root', undefined, local.class, local.className);
       },
       /** Scope palette variables to this root's authored styles. */
-      get 'data-leverui-color-palette'() {
+      get 'data-lui-color-palette'() {
         return local.colorPalette;
       },
       /** Suppress authored presentation for an unstyled root. */

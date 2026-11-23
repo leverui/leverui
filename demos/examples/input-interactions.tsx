@@ -19,7 +19,7 @@ export function InputCharacterCounter(): JSX.Element {
         <Span
           textStyle="xs"
           style={{
-            color: 'var(--leverui-colors-fg-muted)',
+            color: 'var(--lui-colors-fg-muted)',
           }}
         >
           {value().length} / {maxCharacters}
@@ -64,7 +64,7 @@ export function InputClearButton(): JSX.Element {
           <CloseButton
             size="xs"
             onClick={clearValue}
-            style={{ 'margin-inline-end': 'calc(-1 * var(--leverui-spacing-2))' }}
+            style={{ 'margin-inline-end': 'calc(-1 * var(--lui-spacing-2))' }}
           />
         ) : undefined
       }

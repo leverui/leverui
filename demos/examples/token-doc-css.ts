@@ -45,7 +45,7 @@ export type TokenDocCategory = keyof typeof categoryPrefixes;
 /** Read published custom property declarations from authored CSS. */
 function declarations(css: string): Map<string, string> {
   const values = new Map<string, string>();
-  for (const match of css.matchAll(/--leverui-([\w./\\-]+)\s*:\s*([^;]+);/g)) {
+  for (const match of css.matchAll(/--lui-([\w./\\-]+)\s*:\s*([^;]+);/g)) {
     const name = match[1]?.replaceAll('\\', '');
     const value = match[2]?.replace(/\s+/g, ' ').trim();
     if (name && value) values.set(name, value);
@@ -108,7 +108,7 @@ export function tokenDocEntries(category: TokenDocCategory): TokenDocEntry[] {
             category,
             negative: false as const,
             pixelValue,
-            cssVar: { ref: `var(--leverui-${name})` },
+            cssVar: { ref: `var(--lui-${name})` },
             conditions,
           },
         };

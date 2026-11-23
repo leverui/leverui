@@ -1,11 +1,11 @@
 @media (max-width: 47.999rem) {
   .toast-demo-region {
-    inset-inline: var(--leverui-spacing-4);
+    inset-inline: var(--lui-spacing-4);
   }
 }
 
 @media (min-width: 48rem) {
   .toast-demo-root {
-    width: var(--leverui-sizes-sm);
+    width: var(--lui-sizes-sm);
   }
 }

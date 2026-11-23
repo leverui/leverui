@@ -8,8 +8,8 @@ const variants = ['outline', 'solid'] as const;
 const cellStyle = { 'padding-right': '32px', 'padding-bottom': '32px' } as const;
 const headingStyle = {
   ...cellStyle,
-  'font-size': 'var(--leverui-font-sizes-sm)',
-  color: 'var(--leverui-colors-fg-muted)',
+  'font-size': 'var(--lui-font-sizes-sm)',
+  color: 'var(--lui-colors-fg-muted)',
   'font-weight': 'normal',
   'text-align': 'left',
 } as const;
@@ -37,8 +37,8 @@ export function SliderSizes(): JSX.Element {
               <th scope="row" style={headingStyle}>
                 <Span
                   style={{
-                    'font-size': 'var(--leverui-font-sizes-sm)',
-                    color: 'var(--leverui-colors-fg-muted)',
+                    'font-size': 'var(--lui-font-sizes-sm)',
+                    color: 'var(--lui-colors-fg-muted)',
                     'min-width': '8ch',
                   }}
                 >
@@ -95,8 +95,8 @@ export function SliderVariants(): JSX.Element {
               <th scope="row" style={headingStyle}>
                 <Span
                   style={{
-                    'font-size': 'var(--leverui-font-sizes-sm)',
-                    color: 'var(--leverui-colors-fg-muted)',
+                    'font-size': 'var(--lui-font-sizes-sm)',
+                    color: 'var(--lui-colors-fg-muted)',
                     'min-width': '8ch',
                   }}
                 >
@@ -110,7 +110,7 @@ export function SliderVariants(): JSX.Element {
                       defaultValue={[40]}
                       colorPalette={palette}
                       variant={variant}
-                      style={{ 'min-width': '200px', 'margin-bottom': 'var(--leverui-spacing-2)' }}
+                      style={{ 'min-width': '200px', 'margin-bottom': 'var(--lui-spacing-2)' }}
                     >
                       <Slider.Control>
                         <Slider.Track>

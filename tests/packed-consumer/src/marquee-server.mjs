@@ -36,5 +36,5 @@ function renderMarquee() {
 const markup = renderToString(renderMarquee);
 assert.match(markup, /aria-roledescription="marquee"/);
 assert.match(markup, /Packed ticker/);
-assert.match(markup, /leverui-marquee__content/);
+assert.match(markup, /lui-marquee__content/);
 assert.match(markup, /Packed item/);

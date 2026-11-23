@@ -32,7 +32,7 @@ region.
 
 ## Customize with CSS
 
-`.leverui-badge` takes its colors from the palette variables. Set them on your
+`.lui-badge` takes its colors from the palette variables. Set them on your
 own class to change one badge.
 
 ```tsx
@@ -43,8 +43,8 @@ own class to change one badge.
 
 ```css
 .status-badge {
-  --leverui-colors-color-palette-solid: #24406d;
-  --leverui-colors-color-palette-contrast: white;
+  --lui-colors-color-palette-solid: #24406d;
+  --lui-colors-color-palette-contrast: white;
 }
 ```
 

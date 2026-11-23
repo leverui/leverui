@@ -8,7 +8,7 @@ export function colorSwatchValueStyle(value: string, consumerStyle: NativeStyle)
     throw new TypeError('ColorSwatch value must contain one CSS color.');
   }
   if (typeof consumerStyle === 'string') {
-    return `${consumerStyle};--leverui-private-swatch-value:${value}`;
+    return `${consumerStyle};--lui-private-swatch-value:${value}`;
   }
-  return { '--leverui-private-swatch-value': value, ...consumerStyle };
+  return { '--lui-private-swatch-value': value, ...consumerStyle };
 }

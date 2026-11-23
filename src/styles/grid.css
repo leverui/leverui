@@ -1,121 +1,121 @@
-@layer leverui.recipes {
-  .leverui-grid {
-    --leverui-private-grid-template-columns-base: initial;
-    --leverui-private-grid-template-columns-sm: initial;
-    --leverui-private-grid-template-columns-md: initial;
-    --leverui-private-grid-template-columns-lg: initial;
-    --leverui-private-grid-template-columns-xl: initial;
-    --leverui-private-grid-template-columns-2xl: initial;
-    --leverui-private-grid-auto-flow-base: initial;
-    --leverui-private-grid-auto-flow-sm: initial;
-    --leverui-private-grid-auto-flow-md: initial;
-    --leverui-private-grid-auto-flow-lg: initial;
-    --leverui-private-grid-auto-flow-xl: initial;
-    --leverui-private-grid-auto-flow-2xl: initial;
-    --leverui-private-grid-auto-rows-base: initial;
-    --leverui-private-grid-auto-rows-sm: initial;
-    --leverui-private-grid-auto-rows-md: initial;
-    --leverui-private-grid-auto-rows-lg: initial;
-    --leverui-private-grid-auto-rows-xl: initial;
-    --leverui-private-grid-auto-rows-2xl: initial;
-    --leverui-private-grid-auto-columns-base: initial;
-    --leverui-private-grid-auto-columns-sm: initial;
-    --leverui-private-grid-auto-columns-md: initial;
-    --leverui-private-grid-auto-columns-lg: initial;
-    --leverui-private-grid-auto-columns-xl: initial;
-    --leverui-private-grid-auto-columns-2xl: initial;
-    --leverui-private-grid-template-rows-base: initial;
-    --leverui-private-grid-template-rows-sm: initial;
-    --leverui-private-grid-template-rows-md: initial;
-    --leverui-private-grid-template-rows-lg: initial;
-    --leverui-private-grid-template-rows-xl: initial;
-    --leverui-private-grid-template-rows-2xl: initial;
-    --leverui-private-grid-template-areas-base: initial;
-    --leverui-private-grid-template-areas-sm: initial;
-    --leverui-private-grid-template-areas-md: initial;
-    --leverui-private-grid-template-areas-lg: initial;
-    --leverui-private-grid-template-areas-xl: initial;
-    --leverui-private-grid-template-areas-2xl: initial;
-    --leverui-private-grid-column-base: initial;
-    --leverui-private-grid-column-sm: initial;
-    --leverui-private-grid-column-md: initial;
-    --leverui-private-grid-column-lg: initial;
-    --leverui-private-grid-column-xl: initial;
-    --leverui-private-grid-column-2xl: initial;
-    --leverui-private-grid-row-base: initial;
-    --leverui-private-grid-row-sm: initial;
-    --leverui-private-grid-row-md: initial;
-    --leverui-private-grid-row-lg: initial;
-    --leverui-private-grid-row-xl: initial;
-    --leverui-private-grid-row-2xl: initial;
+@layer lui.recipes {
+  .lui-grid {
+    --lui-private-grid-template-columns-base: initial;
+    --lui-private-grid-template-columns-sm: initial;
+    --lui-private-grid-template-columns-md: initial;
+    --lui-private-grid-template-columns-lg: initial;
+    --lui-private-grid-template-columns-xl: initial;
+    --lui-private-grid-template-columns-2xl: initial;
+    --lui-private-grid-auto-flow-base: initial;
+    --lui-private-grid-auto-flow-sm: initial;
+    --lui-private-grid-auto-flow-md: initial;
+    --lui-private-grid-auto-flow-lg: initial;
+    --lui-private-grid-auto-flow-xl: initial;
+    --lui-private-grid-auto-flow-2xl: initial;
+    --lui-private-grid-auto-rows-base: initial;
+    --lui-private-grid-auto-rows-sm: initial;
+    --lui-private-grid-auto-rows-md: initial;
+    --lui-private-grid-auto-rows-lg: initial;
+    --lui-private-grid-auto-rows-xl: initial;
+    --lui-private-grid-auto-rows-2xl: initial;
+    --lui-private-grid-auto-columns-base: initial;
+    --lui-private-grid-auto-columns-sm: initial;
+    --lui-private-grid-auto-columns-md: initial;
+    --lui-private-grid-auto-columns-lg: initial;
+    --lui-private-grid-auto-columns-xl: initial;
+    --lui-private-grid-auto-columns-2xl: initial;
+    --lui-private-grid-template-rows-base: initial;
+    --lui-private-grid-template-rows-sm: initial;
+    --lui-private-grid-template-rows-md: initial;
+    --lui-private-grid-template-rows-lg: initial;
+    --lui-private-grid-template-rows-xl: initial;
+    --lui-private-grid-template-rows-2xl: initial;
+    --lui-private-grid-template-areas-base: initial;
+    --lui-private-grid-template-areas-sm: initial;
+    --lui-private-grid-template-areas-md: initial;
+    --lui-private-grid-template-areas-lg: initial;
+    --lui-private-grid-template-areas-xl: initial;
+    --lui-private-grid-template-areas-2xl: initial;
+    --lui-private-grid-column-base: initial;
+    --lui-private-grid-column-sm: initial;
+    --lui-private-grid-column-md: initial;
+    --lui-private-grid-column-lg: initial;
+    --lui-private-grid-column-xl: initial;
+    --lui-private-grid-column-2xl: initial;
+    --lui-private-grid-row-base: initial;
+    --lui-private-grid-row-sm: initial;
+    --lui-private-grid-row-md: initial;
+    --lui-private-grid-row-lg: initial;
+    --lui-private-grid-row-xl: initial;
+    --lui-private-grid-row-2xl: initial;
 
     display: grid;
-    grid-template-columns: var(--leverui-private-grid-template-columns-base, none);
-    grid-auto-flow: var(--leverui-private-grid-auto-flow-base, row);
-    grid-auto-rows: var(--leverui-private-grid-auto-rows-base, auto);
-    grid-auto-columns: var(--leverui-private-grid-auto-columns-base, auto);
-    grid-template-rows: var(--leverui-private-grid-template-rows-base, none);
-    grid-template-areas: var(--leverui-private-grid-template-areas-base, none);
-    grid-column: var(--leverui-private-grid-column-base, auto);
-    grid-row: var(--leverui-private-grid-row-base, auto);
+    grid-template-columns: var(--lui-private-grid-template-columns-base, none);
+    grid-auto-flow: var(--lui-private-grid-auto-flow-base, row);
+    grid-auto-rows: var(--lui-private-grid-auto-rows-base, auto);
+    grid-auto-columns: var(--lui-private-grid-auto-columns-base, auto);
+    grid-template-rows: var(--lui-private-grid-template-rows-base, none);
+    grid-template-areas: var(--lui-private-grid-template-areas-base, none);
+    grid-column: var(--lui-private-grid-column-base, auto);
+    grid-row: var(--lui-private-grid-row-base, auto);
 
     &[data-inline='true'] {
       display: inline-grid;
     }
 
     @media (min-width: 480px) {
-      grid-template-columns: var(--leverui-private-grid-template-columns-sm, none);
-      grid-auto-flow: var(--leverui-private-grid-auto-flow-sm, row);
-      grid-auto-rows: var(--leverui-private-grid-auto-rows-sm, auto);
-      grid-auto-columns: var(--leverui-private-grid-auto-columns-sm, auto);
-      grid-template-rows: var(--leverui-private-grid-template-rows-sm, none);
-      grid-template-areas: var(--leverui-private-grid-template-areas-sm, none);
-      grid-column: var(--leverui-private-grid-column-sm, auto);
-      grid-row: var(--leverui-private-grid-row-sm, auto);
+      grid-template-columns: var(--lui-private-grid-template-columns-sm, none);
+      grid-auto-flow: var(--lui-private-grid-auto-flow-sm, row);
+      grid-auto-rows: var(--lui-private-grid-auto-rows-sm, auto);
+      grid-auto-columns: var(--lui-private-grid-auto-columns-sm, auto);
+      grid-template-rows: var(--lui-private-grid-template-rows-sm, none);
+      grid-template-areas: var(--lui-private-grid-template-areas-sm, none);
+      grid-column: var(--lui-private-grid-column-sm, auto);
+      grid-row: var(--lui-private-grid-row-sm, auto);
     }
 
     @media (min-width: 768px) {
-      grid-template-columns: var(--leverui-private-grid-template-columns-md, none);
-      grid-auto-flow: var(--leverui-private-grid-auto-flow-md, row);
-      grid-auto-rows: var(--leverui-private-grid-auto-rows-md, auto);
-      grid-auto-columns: var(--leverui-private-grid-auto-columns-md, auto);
-      grid-template-rows: var(--leverui-private-grid-template-rows-md, none);
-      grid-template-areas: var(--leverui-private-grid-template-areas-md, none);
-      grid-column: var(--leverui-private-grid-column-md, auto);
-      grid-row: var(--leverui-private-grid-row-md, auto);
+      grid-template-columns: var(--lui-private-grid-template-columns-md, none);
+      grid-auto-flow: var(--lui-private-grid-auto-flow-md, row);
+      grid-auto-rows: var(--lui-private-grid-auto-rows-md, auto);
+      grid-auto-columns: var(--lui-private-grid-auto-columns-md, auto);
+      grid-template-rows: var(--lui-private-grid-template-rows-md, none);
+      grid-template-areas: var(--lui-private-grid-template-areas-md, none);
+      grid-column: var(--lui-private-grid-column-md, auto);
+      grid-row: var(--lui-private-grid-row-md, auto);
     }
 
     @media (min-width: 1024px) {
-      grid-template-columns: var(--leverui-private-grid-template-columns-lg, none);
-      grid-auto-flow: var(--leverui-private-grid-auto-flow-lg, row);
-      grid-auto-rows: var(--leverui-private-grid-auto-rows-lg, auto);
-      grid-auto-columns: var(--leverui-private-grid-auto-columns-lg, auto);
-      grid-template-rows: var(--leverui-private-grid-template-rows-lg, none);
-      grid-template-areas: var(--leverui-private-grid-template-areas-lg, none);
-      grid-column: var(--leverui-private-grid-column-lg, auto);
-      grid-row: var(--leverui-private-grid-row-lg, auto);
+      grid-template-columns: var(--lui-private-grid-template-columns-lg, none);
+      grid-auto-flow: var(--lui-private-grid-auto-flow-lg, row);
+      grid-auto-rows: var(--lui-private-grid-auto-rows-lg, auto);
+      grid-auto-columns: var(--lui-private-grid-auto-columns-lg, auto);
+      grid-template-rows: var(--lui-private-grid-template-rows-lg, none);
+      grid-template-areas: var(--lui-private-grid-template-areas-lg, none);
+      grid-column: var(--lui-private-grid-column-lg, auto);
+      grid-row: var(--lui-private-grid-row-lg, auto);
     }
 
     @media (min-width: 1280px) {
-      grid-template-columns: var(--leverui-private-grid-template-columns-xl, none);
-      grid-auto-flow: var(--leverui-private-grid-auto-flow-xl, row);
-      grid-auto-rows: var(--leverui-private-grid-auto-rows-xl, auto);
-      grid-auto-columns: var(--leverui-private-grid-auto-columns-xl, auto);
-      grid-template-rows: var(--leverui-private-grid-template-rows-xl, none);
-      grid-template-areas: var(--leverui-private-grid-template-areas-xl, none);
-      grid-column: var(--leverui-private-grid-column-xl, auto);
-      grid-row: var(--leverui-private-grid-row-xl, auto);
+      grid-template-columns: var(--lui-private-grid-template-columns-xl, none);
+      grid-auto-flow: var(--lui-private-grid-auto-flow-xl, row);
+      grid-auto-rows: var(--lui-private-grid-auto-rows-xl, auto);
+      grid-auto-columns: var(--lui-private-grid-auto-columns-xl, auto);
+      grid-template-rows: var(--lui-private-grid-template-rows-xl, none);
+      grid-template-areas: var(--lui-private-grid-template-areas-xl, none);
+      grid-column: var(--lui-private-grid-column-xl, auto);
+      grid-row: var(--lui-private-grid-row-xl, auto);
     }
 
     @media (min-width: 1536px) {
-      grid-template-columns: var(--leverui-private-grid-template-columns-2xl, none);
-      grid-auto-flow: var(--leverui-private-grid-auto-flow-2xl, row);
-      grid-auto-rows: var(--leverui-private-grid-auto-rows-2xl, auto);
-      grid-auto-columns: var(--leverui-private-grid-auto-columns-2xl, auto);
-      grid-template-rows: var(--leverui-private-grid-template-rows-2xl, none);
-      grid-template-areas: var(--leverui-private-grid-template-areas-2xl, none);
-      grid-column: var(--leverui-private-grid-column-2xl, auto);
-      grid-row: var(--leverui-private-grid-row-2xl, auto);
+      grid-template-columns: var(--lui-private-grid-template-columns-2xl, none);
+      grid-auto-flow: var(--lui-private-grid-auto-flow-2xl, row);
+      grid-auto-rows: var(--lui-private-grid-auto-rows-2xl, auto);
+      grid-auto-columns: var(--lui-private-grid-auto-columns-2xl, auto);
+      grid-template-rows: var(--lui-private-grid-template-rows-2xl, none);
+      grid-template-areas: var(--lui-private-grid-template-areas-2xl, none);
+      grid-column: var(--lui-private-grid-column-2xl, auto);
+      grid-row: var(--lui-private-grid-row-2xl, auto);
     }
   }
 }

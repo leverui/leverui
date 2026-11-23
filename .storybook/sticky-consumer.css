@@ -17,16 +17,16 @@
 }
 
 .consumer-sticky-offset {
-  --leverui-sticky-top: var(--leverui-spacing-4);
+  --lui-sticky-top: var(--lui-spacing-4);
 }
 
 .consumer-sticky-responsive {
-  --leverui-sticky-top: var(--leverui-spacing-4);
+  --lui-sticky-top: var(--lui-spacing-4);
 }
 
 @media (min-width: 48rem) {
   .consumer-sticky-responsive {
-    --leverui-sticky-top: var(--leverui-spacing-8);
+    --lui-sticky-top: var(--lui-spacing-8);
   }
 }
 

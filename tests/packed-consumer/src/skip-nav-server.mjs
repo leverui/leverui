@@ -18,4 +18,4 @@ const markup = renderInstalledPair();
 assert.match(markup, /<a[^>]*href="#packed-server-main"/);
 assert.match(markup, /<div[^>]*id="packed-server-main"/);
 assert.match(markup, /tabindex="-1"/i);
-assert.match(markup, /leverui-skip-nav/);
+assert.match(markup, /lui-skip-nav/);

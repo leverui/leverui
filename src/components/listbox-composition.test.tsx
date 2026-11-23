@@ -50,7 +50,7 @@ async function verifiesExternalMachine(): Promise<void> {
     () => <Example />,
   );
   const root = screen.getByTestId('provider-root');
-  expect(root.className).toContain('leverui-listbox__root');
+  expect(root.className).toContain('lui-listbox__root');
   expect(screen.getByTestId('external-value')).toHaveTextContent('react');
   fireEvent.click(screen.getByRole('option', { name: 'Solid' }));
   await waitFor(

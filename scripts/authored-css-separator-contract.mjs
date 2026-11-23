@@ -1,10 +1,10 @@
 export const separatorContentContract = {
   family: 'separator',
   required: [
-    '.leverui-separator:not([data-unstyled])',
-    '--leverui-separator-color',
-    '--leverui-separator-thickness',
-    '--leverui-private-separator-thickness',
+    '.lui-separator:not([data-unstyled])',
+    '--lui-separator-color',
+    '--lui-separator-thickness',
+    '--lui-private-separator-thickness',
     ...['xs', 'sm', 'md', 'lg'].map(
       /** Require every scalar thickness. */
       (size) => `[data-size='${size}']`,

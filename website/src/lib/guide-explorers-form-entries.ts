@@ -53,7 +53,7 @@ export const formEntryGuideExplorers: Readonly<Record<string, GuideExplorerConfi
       'control',
       'textarea',
     ],
-    selectors: { input: 'input.leverui-editable__input' },
+    selectors: { input: 'input.lui-editable__input' },
     Demo: lazyExport(
       /** Load the maintained preview only on the Editable guide. */
       () => import('../../../demos/examples/editable-explorer-demo'),
@@ -73,9 +73,9 @@ export const formEntryGuideExplorers: Readonly<Record<string, GuideExplorerConfi
       'requiredIndicator',
     ],
     selectors: {
-      input: '.leverui-input',
-      select: '.leverui-native-select__field',
-      textarea: '.leverui-textarea',
+      input: '.lui-input',
+      select: '.lui-native-select__field',
+      textarea: '.lui-textarea',
     },
     Demo: lazyExport(
       /** Load the maintained preview only on the Field guide. */

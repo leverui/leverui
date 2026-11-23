@@ -17,26 +17,26 @@ See the [consumer theme guide](theme-guide.md) for a complete example.
 
 ## Public variable contract
 
-Foundation tokens use `--leverui-*` names. A token such as
-`--leverui-colors-blue-500` can be overridden at the root; semantic roles such
-as `--leverui-colors-bg` describe how components use those values. Import your
+Foundation tokens use `--lui-*` names. A token such as
+`--lui-colors-blue-500` can be overridden at the root; semantic roles such
+as `--lui-colors-bg` describe how components use those values. Import your
 CSS after the package stylesheet:
 
 ```css
 :root {
-  --leverui-colors-blue-500: #6254c7;
-  --leverui-fonts-body: 'Inter', sans-serif;
-  --leverui-radii-md: 0.75rem;
+  --lui-colors-blue-500: #6254c7;
+  --lui-fonts-body: 'Inter', sans-serif;
+  --lui-radii-md: 0.75rem;
 }
 ```
 
 The [generated variable reference](theme-variables/README.md) lists values
 directly from the authored stylesheet, including mode defaults and source
 files. Public variables are customization hooks. Names beginning
-`--leverui-private-*` are implementation details.
+`--lui-private-*` are implementation details.
 
-Palette roles such as `--leverui-colors-blue-solid`,
-`--leverui-colors-blue-contrast`, and `--leverui-colors-blue-focus-ring` can
+Palette roles such as `--lui-colors-blue-solid`,
+`--lui-colors-blue-contrast`, and `--lui-colors-blue-focus-ring` can
 be changed independently. A component's `colorPalette` choice selects the
 corresponding palette through authored CSS. An enclosing `Theme` can set
 `colorPalette` for descendants that inherit that choice. The
@@ -45,7 +45,7 @@ currently emitted by the stylesheet.
 
 ## Color modes and nested scopes
 
-The root color mode uses `data-leverui-color-mode="light"` or `"dark"` on
+The root color mode uses `data-lui-color-mode="light"` or `"dark"` on
 `html`. Light is the default when no mode is specified. When the initial mode
 is known on the server, render that attribute in server HTML so the first
 paint and hydration agree.
@@ -63,9 +63,9 @@ import { Button, Theme } from '@leverui/components';
 
 ```css
 .editor-panel {
-  --leverui-colors-bg: #10111a;
-  --leverui-colors-fg: #f7f7fb;
-  --leverui-colors-blue-solid: #6e9bff;
+  --lui-colors-bg: #10111a;
+  --lui-colors-fg: #f7f7fb;
+  --lui-colors-blue-solid: #6e9bff;
 }
 ```
 
@@ -86,12 +86,12 @@ semantic values. See [scoped CSS themes](custom-systems.md) for examples.
 The stylesheet uses named layers in this order:
 
 ```css
-@layer leverui.reset, leverui.base, leverui.tokens, leverui.recipes, leverui.utilities;
+@layer lui.reset, lui.base, lui.tokens, lui.recipes, lui.utilities;
 ```
 
 The stylesheet has no page-wide rules. It does not reset, color, or set fonts on
 `html`, `body`, or your own elements. The `reset` layer applies only to elements
-with a `leverui-` class. Layout and typography primitives such as `Box`, `Text`,
+with a `lui-` class. Layout and typography primitives such as `Box`, `Text`,
 and `Stack` inherit font, color, and line height from their surroundings. Every
 other component sets the theme font, text color, and line height on its
 outermost element, and the parts inside it inherit them. Your page keeps its own

@@ -1,6 +1,6 @@
-@layer leverui.recipes {
-  .leverui-quote:not([data-unstyled]) {
-    font-weight: var(--leverui-font-weights-bold);
+@layer lui.recipes {
+  .lui-quote:not([data-unstyled]) {
+    font-weight: var(--lui-font-weights-bold);
     line-height: 1.2;
   }
 }

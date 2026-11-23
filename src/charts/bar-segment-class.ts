@@ -21,7 +21,7 @@ export type BarSegmentPart =
 
 /** Compose a stable Bar Segment hook with a caller class. */
 export function barSegmentClass(part: BarSegmentPart, consumer?: ClassValue): string {
-  const base = `leverui-bar-segment__${part}`;
+  const base = `lui-bar-segment__${part}`;
   const consumerClass = classValueString(consumer);
   return consumerClass ? `${base} ${consumerClass}` : base;
 }

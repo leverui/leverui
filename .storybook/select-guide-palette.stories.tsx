@@ -39,15 +39,15 @@ function PaletteSelectGuide(): JSX.Element {
             <Select.Trigger
               data-testid="select-palette-trigger"
               style={{
-                'border-color': 'var(--leverui-colors-color-palette-muted)',
-                background: 'var(--leverui-colors-color-palette-subtle)',
-                color: 'var(--leverui-colors-color-palette-fg)',
+                'border-color': 'var(--lui-colors-color-palette-muted)',
+                background: 'var(--lui-colors-color-palette-subtle)',
+                color: 'var(--lui-colors-color-palette-fg)',
               }}
             >
               <Select.ValueText placeholder="Select framework" />
             </Select.Trigger>
             <Select.IndicatorGroup>
-              <Select.Indicator style={{ color: 'var(--leverui-colors-color-palette-fg)' }} />
+              <Select.Indicator style={{ color: 'var(--lui-colors-color-palette-fg)' }} />
             </Select.IndicatorGroup>
           </Select.Control>
           <Portal>

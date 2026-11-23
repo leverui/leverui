@@ -19,9 +19,9 @@ async function verifiesFocusTrapContract({ page }: { page: Page }): Promise<void
   await expect(root).toBeVisible({ timeout: 30_000 });
   await expect(root).toHaveJSProperty('tagName', 'DIV');
   await expect(root).toHaveAttribute('data-custom', 'retained');
-  await expect(root).toHaveClass(/leverui-focus-trap/);
+  await expect(root).toHaveClass(/lui-focus-trap/);
   await expect(root).toHaveCSS('padding', '17px');
-  await page.addStyleTag({ content: '.leverui-focus-trap { border-top: 3px solid red; }' });
+  await page.addStyleTag({ content: '.lui-focus-trap { border-top: 3px solid red; }' });
   await expect(root).toHaveCSS('border-top-width', '3px');
   await outside.focus();
   await expect(outside).toBeFocused();
@@ -54,7 +54,7 @@ async function verifiesPolymorphicFocusTrap({ page }: { page: Page }): Promise<v
   const section = page.getByTestId('focus-trap-section');
   await expect(section).toBeVisible({ timeout: 30_000 });
   await expect(section).toHaveJSProperty('tagName', 'SECTION');
-  await expect(section).toHaveClass(/leverui-focus-trap/);
+  await expect(section).toHaveClass(/lui-focus-trap/);
   await expect(section).toHaveAttribute('data-section-ref', 'attached');
   await openFromKeyboard(sectionLauncher);
   await expect(page.getByRole('textbox', { name: 'Section input' })).toBeFocused();
@@ -64,7 +64,7 @@ async function verifiesPolymorphicFocusTrap({ page }: { page: Page }): Promise<v
   const childLauncher = page.getByTestId('focus-trap-child-launcher');
   const child = page.getByTestId('focus-trap-child');
   await expect(child).toHaveJSProperty('tagName', 'ARTICLE');
-  await expect(child).toHaveClass(/leverui-focus-trap/);
+  await expect(child).toHaveClass(/lui-focus-trap/);
   await expect(child).toHaveAttribute('data-child-ref', 'attached');
   await expect(child).toHaveAttribute('data-child-owned-ref', 'attached');
   await openFromKeyboard(childLauncher);

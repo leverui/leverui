@@ -39,11 +39,11 @@ function renderServerDateInput(): string {
 /** Check styled SSR markup and machine-generated form state. */
 function verifiesServerMarkup(): void {
   const markup = renderServerDateInput();
-  expect(markup).toContain('leverui-date-input__root');
-  expect(markup).toContain('leverui-date-input__label');
-  expect(markup).toContain('leverui-date-input__control');
-  expect(markup).toContain('leverui-date-input__segmentGroup');
-  expect(markup).toContain('leverui-date-input__segment');
+  expect(markup).toContain('lui-date-input__root');
+  expect(markup).toContain('lui-date-input__label');
+  expect(markup).toContain('lui-date-input__control');
+  expect(markup).toContain('lui-date-input__segmentGroup');
+  expect(markup).toContain('lui-date-input__segment');
   expect(markup).toContain('value="3/14/2026"');
   expect(markup).not.toMatch(/\s(?:recipe|unstyled|onValueChange)=/);
 }

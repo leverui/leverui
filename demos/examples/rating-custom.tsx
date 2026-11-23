@@ -67,7 +67,7 @@ export function RatingColors(): JSX.Element {
               align="center"
               direction="row"
               gap="10"
-              style={{ 'padding-inline': 'var(--leverui-spacing-4)' }}
+              style={{ 'padding-inline': 'var(--lui-spacing-4)' }}
             >
               <Text style={{ 'min-width': '8ch' }}>{colorPalette}</Text>
               <RatingGroup.Root count={5} defaultValue={3} size="sm" colorPalette={colorPalette}>

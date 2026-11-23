@@ -81,8 +81,8 @@ function verifiesServerCards(): void {
   const markup = renderServerCards();
   expect(markup).toContain('name="saved"');
   expect(markup).toContain('name="external"');
-  expect(markup).toContain('leverui-checkbox-card__control');
-  expect(markup).toContain('leverui-checkbox-card__description');
+  expect(markup).toContain('lui-checkbox-card__control');
+  expect(markup).toContain('lui-checkbox-card__description');
   expect(markup).toContain('data-checkbox-card-');
   expect(markup).toContain('data-state="checked"');
   expect(markup).not.toMatch(/\s(?:defaultChecked|size|variant|recipe)=/);

@@ -15,11 +15,11 @@ const { Text, TextPropsProvider } = (await import(serverEntry)) as ServerExports
 const defaultCss = await readFile(new URL('../../dist/styles.css', import.meta.url), 'utf8');
 const responsiveTextCss = `
   .text-server-responsive, .text-hydration-responsive {
-    font-size: var(--leverui-font-sizes-sm);
+    font-size: var(--lui-font-sizes-sm);
   }
   @media (min-width: 48rem) {
     .text-server-responsive, .text-hydration-responsive {
-      font-size: var(--leverui-font-sizes-lg);
+      font-size: var(--lui-font-sizes-lg);
     }
   }
 `;
@@ -115,7 +115,7 @@ async function verifiesTextHydration({ page }: { page: Page }): Promise<void> {
   await page.setViewportSize({ width: 600, height: 700 });
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(
-    `${generateHydrationScript()}<style data-leverui-default>${defaultCss}</style><style>${responsiveTextCss}</style><div id="text-hydration-root">${markup}</div>`,
+    `${generateHydrationScript()}<style data-lui-default>${defaultCss}</style><style>${responsiveTextCss}</style><div id="text-hydration-root">${markup}</div>`,
   );
   const text = page.locator('#hydrated-text');
   const root = page.locator('#text-hydration-root');

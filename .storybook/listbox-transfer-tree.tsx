@@ -69,7 +69,7 @@ function TransferListbox(props: {
       <VisuallyHidden>
         <Listbox.Label>{props.label}</Listbox.Label>
       </VisuallyHidden>
-      <Listbox.Content style={{ 'min-height': 'var(--leverui-sizes-96)' }}>
+      <Listbox.Content style={{ 'min-height': 'var(--lui-sizes-96)' }}>
         <Listbox.List ref={props.onContentRef}>
           <Show
             when={props.collection.items.length > 0}
@@ -78,9 +78,9 @@ function TransferListbox(props: {
                 style={{
                   width: '100%',
                   height: '100%',
-                  padding: 'var(--leverui-spacing-4)',
-                  color: 'var(--leverui-colors-fg-muted)',
-                  'font-size': 'var(--leverui-font-sizes-sm)',
+                  padding: 'var(--lui-spacing-4)',
+                  color: 'var(--lui-colors-fg-muted)',
+                  'font-size': 'var(--lui-font-sizes-sm)',
                 }}
               >
                 No items available
@@ -138,7 +138,7 @@ export function renderListboxTransferTree(
   return (
     <>
       <div style={{ padding: '24px' }}>
-        <Flex style={{ gap: 'var(--leverui-spacing-4)', 'max-width': '600px' }} align="stretch">
+        <Flex style={{ gap: 'var(--lui-spacing-4)', 'max-width': '600px' }} align="stretch">
           <TransferListbox
             Listbox={Listbox}
             VisuallyHidden={VisuallyHidden}
@@ -149,7 +149,7 @@ export function renderListboxTransferTree(
             onSelectionChange={state.setSelectedSource}
             onContentRef={setSourceContent}
           />
-          <VStack justify="center" gap="2" style={{ 'padding-block': 'var(--leverui-spacing-8)' }}>
+          <VStack justify="center" gap="2" style={{ 'padding-block': 'var(--lui-spacing-8)' }}>
             <IconButton
               aria-label="Move selected characters right"
               size="xs"

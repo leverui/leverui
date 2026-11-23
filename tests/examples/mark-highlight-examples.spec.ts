@@ -13,7 +13,7 @@ const highlightExamples = [
 async function verifiesMarkExamples({ page }: { page: Page }): Promise<void> {
   for (const name of markExamples) {
     await page.goto(`/iframe.html?id=typography-mark--${name}`);
-    await expect(page.locator('#storybook-root .leverui-mark').first()).toBeVisible();
+    await expect(page.locator('#storybook-root .lui-mark').first()).toBeVisible();
   }
 }
 
@@ -21,15 +21,12 @@ async function verifiesMarkExamples({ page }: { page: Page }): Promise<void> {
 async function verifiesHighlightExamples({ page }: { page: Page }): Promise<void> {
   for (const name of highlightExamples) {
     await page.goto(`/iframe.html?id=typography-highlight--${name}`);
-    await expect(page.locator('#storybook-root .leverui-mark').first()).toBeVisible();
+    await expect(page.locator('#storybook-root .lui-mark').first()).toBeVisible();
   }
   await page.goto('/iframe.html?id=typography-highlight--basic');
-  await expect(page.locator('#storybook-root .leverui-mark')).toHaveCSS('padding-left', '2px');
+  await expect(page.locator('#storybook-root .lui-mark')).toHaveCSS('padding-left', '2px');
   await page.goto('/iframe.html?id=typography-highlight--squiggle');
-  await expect(page.locator('#storybook-root .leverui-mark').first()).toHaveCSS(
-    'font-style',
-    'italic',
-  );
+  await expect(page.locator('#storybook-root .lui-mark').first()).toHaveCSS('font-style', 'italic');
 }
 
 test('public Mark examples use authored CSS', verifiesMarkExamples);

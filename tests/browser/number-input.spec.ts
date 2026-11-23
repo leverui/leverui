@@ -8,8 +8,8 @@ async function verifiesNumberInputBrowser({ page }: { page: Page }): Promise<voi
   const increment = page.getByTestId('number-increment');
   const decrement = page.getByTestId('number-decrement');
   await expect(input).toHaveAttribute('aria-roledescription', 'number field', { timeout: 30_000 });
-  await expect(root).toHaveClass(/leverui-number-input__root/);
-  await expect(input).toHaveClass(/leverui-number-input__input/);
+  await expect(root).toHaveClass(/lui-number-input__root/);
+  await expect(input).toHaveClass(/lui-number-input__input/);
   await expect(input).toHaveValue('2');
   await increment.click();
   await expect(input).toHaveValue('4');
@@ -47,7 +47,7 @@ async function verifiesGroupedNumberInput({ page }: { page: Page }): Promise<voi
   await page.getByTestId('grouped-number-offset').click();
   expect(await readStartPadding(input)).toBe(height - 4);
   await page.addStyleTag({
-    content: '.leverui-number-input__input { padding-inline-start: 48px; }',
+    content: '.lui-number-input__input { padding-inline-start: 48px; }',
   });
   expect(await readStartPadding(input)).toBe(48);
   await page.getByTestId('grouped-number-adornment').click();

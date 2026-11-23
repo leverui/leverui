@@ -96,7 +96,7 @@ export function SplitterIdeLayout(): JSX.Element {
             <Stack
               gap="1"
               style={{
-                padding: 'var(--leverui-spacing-2)',
+                padding: 'var(--lui-spacing-2)',
                 height: '100%',
                 width: '100%',
                 'overflow-y': 'auto',

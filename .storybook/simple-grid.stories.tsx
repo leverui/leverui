@@ -30,7 +30,7 @@ function SimpleGridContractExample(): JSX.Element {
 
   return (
     <>
-      <style>{`.simple-grid-contract-basic { width: 260px; gap: var(--leverui-spacing-4); }
+      <style>{`.simple-grid-contract-basic { width: 260px; gap: var(--lui-spacing-4); }
         .simple-grid-contract-responsive { width: 400px; gap: 8px; }
         @media (min-width: 48rem) { .simple-grid-contract-responsive { gap: 16px; } }
         .simple-grid-contract-260 { width: 260px; gap: 8px; }

@@ -70,7 +70,7 @@ export const CustomIndicator: Story = {
   parameters: {
     guide: {
       description:
-        'Customize the indicator appearance using CSS variables like `--leverui-segment-group-indicator-background` and `--leverui-segment-group-indicator-shadow`.',
+        'Customize the indicator appearance using CSS variables like `--lui-segment-group-indicator-background` and `--lui-segment-group-indicator-shadow`.',
     },
   },
 };

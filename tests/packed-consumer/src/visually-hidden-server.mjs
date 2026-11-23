@@ -18,7 +18,7 @@ function renderHidden() {
 const markup = renderHidden();
 assert.match(markup, /<span[^>]*id="packed-server-hidden"/);
 assert.match(markup, /Server hidden text/);
-assert.match(markup, /leverui-visually-hidden/);
+assert.match(markup, /lui-visually-hidden/);
 assert.doesNotMatch(markup, /style="[^"]*clip/);
 assert.doesNotMatch(markup, /aria-hidden="true"/);
 console.log('Packed Visually Hidden server rendering passed.');

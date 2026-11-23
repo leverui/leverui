@@ -1,5 +1,5 @@
-@layer leverui.recipes {
-  .leverui-em:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-em:not([data-unstyled]) {
     font-style: italic;
   }
 }

@@ -12,6 +12,6 @@
 }
 
 .card-story-override {
-  --leverui-card-padding: 44px;
-  --leverui-colors-bg-panel: rgb(12, 34, 56);
+  --lui-card-padding: 44px;
+  --lui-colors-bg-panel: rgb(12, 34, 56);
 }

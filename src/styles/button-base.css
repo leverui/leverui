@@ -1,37 +1,37 @@
-@layer leverui.recipes {
-  .leverui-button:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-button:not([data-unstyled]) {
     display: inline-flex;
     appearance: none;
     align-items: center;
     justify-content: center;
     user-select: none;
     position: relative;
-    border-radius: var(--leverui-radii-l2);
+    border-radius: var(--lui-radii-l2);
     white-space: nowrap;
     vertical-align: middle;
     border: 1px solid transparent;
-    cursor: var(--leverui-cursor-button);
+    cursor: var(--lui-cursor-button);
     flex-shrink: 0;
     outline: 0;
     line-height: 1.2;
     isolation: isolate;
-    font-weight: var(--leverui-font-weights-medium);
+    font-weight: var(--lui-font-weights-medium);
     transition-property:
       background-color, border-color, color, fill, stroke, opacity, box-shadow, translate, transform;
-    transition-duration: var(--leverui-durations-moderate);
+    transition-duration: var(--lui-durations-moderate);
   }
 
-  .leverui-button:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
-    outline: 2px solid var(--leverui-colors-color-palette-focus-ring);
+  .lui-button:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
+    outline: 2px solid var(--lui-colors-color-palette-focus-ring);
     outline-offset: 2px;
   }
 
-  .leverui-button:not([data-unstyled]):is(:disabled, [data-disabled], [aria-disabled='true']) {
+  .lui-button:not([data-unstyled]):is(:disabled, [data-disabled], [aria-disabled='true']) {
     opacity: 0.5;
-    cursor: var(--leverui-cursor-disabled);
+    cursor: var(--lui-cursor-disabled);
   }
 
-  .leverui-button:not([data-unstyled]) :is(svg, [data-leverui-icon]) {
+  .lui-button:not([data-unstyled]) :is(svg, [data-lui-icon]) {
     flex-shrink: 0;
   }
 }

@@ -27,7 +27,7 @@ export function layoutVariableStyle(
       if (value !== undefined) current = value;
       const selected = propagate ? current : value;
       if (selected !== undefined) {
-        variables[`--leverui-private-${namespace}-${name}-${breakpoint}`] = String(selected);
+        variables[`--lui-private-${namespace}-${name}-${breakpoint}`] = String(selected);
       }
     }
   }

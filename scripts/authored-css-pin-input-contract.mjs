@@ -3,9 +3,9 @@ export const pinInputContracts = [
   {
     family: 'pin-input',
     required: [
-      '.leverui-pin-input__root',
-      '.leverui-pin-input__control:not([data-unstyled])',
-      '.leverui-pin-input__input.leverui-input:not([data-unstyled])',
+      '.lui-pin-input__root',
+      '.lui-pin-input__control:not([data-unstyled])',
+      '.lui-pin-input__input.lui-input:not([data-unstyled])',
       "[data-attached='true']",
       ...['sm', 'md', 'lg', 'xl', '2xl'].flatMap(
         /** Require both attached states so later breakpoints can reverse one. */

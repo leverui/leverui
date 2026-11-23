@@ -36,11 +36,11 @@ async function verifiesSizes({ page }: { page: Page }): Promise<void> {
   }
   const small = page
     .getByTestId('guide-radio-card-size-sm')
-    .locator('.leverui-radio-card__itemControl')
+    .locator('.lui-radio-card__itemControl')
     .first();
   const large = page
     .getByTestId('guide-radio-card-size-lg')
-    .locator('.leverui-radio-card__itemControl')
+    .locator('.lui-radio-card__itemControl')
     .first();
   const smallPadding = await small.evaluate(
     /** Read the compact card's computed spacing. */
@@ -78,7 +78,7 @@ async function verifiesColors({ page }: { page: Page }): Promise<void> {
   }
   const redBorder = await page
     .getByTestId('guide-radio-card-color-red')
-    .locator('.leverui-radio-card__item')
+    .locator('.lui-radio-card__item')
     .first()
     .evaluate(
       /** Read the selected red palette border. */
@@ -86,7 +86,7 @@ async function verifiesColors({ page }: { page: Page }): Promise<void> {
     );
   const blueBorder = await page
     .getByTestId('guide-radio-card-color-blue')
-    .locator('.leverui-radio-card__item')
+    .locator('.lui-radio-card__item')
     .first()
     .evaluate(
       /** Read the selected blue palette border. */
@@ -107,7 +107,7 @@ async function verifiesVariants({ page }: { page: Page }): Promise<void> {
   }
   const outline = await page
     .getByTestId('guide-radio-card-variant-outline')
-    .locator('.leverui-radio-card__item')
+    .locator('.lui-radio-card__item')
     .first()
     .evaluate(
       /** Read the selected outline card's background. */
@@ -115,7 +115,7 @@ async function verifiesVariants({ page }: { page: Page }): Promise<void> {
     );
   const solid = await page
     .getByTestId('guide-radio-card-variant-solid')
-    .locator('.leverui-radio-card__item')
+    .locator('.lui-radio-card__item')
     .first()
     .evaluate(
       /** Read the selected solid card's background. */

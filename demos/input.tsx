@@ -118,7 +118,7 @@ export const EndButton: Story = {
 export const FocusErrorColor: Story = {
   render: InputFocusErrorColor,
   parameters: guide(
-    'Use the `--leverui-input-focus-color` and `--leverui-input-error-color` CSS custom properties to change the color of the input when it is focused or in an error state.',
+    'Use the `--lui-input-focus-color` and `--lui-input-error-color` CSS custom properties to change the color of the input when it is focused or in an error state.',
   ),
 };
 export const PlaceholderStyle: Story = {

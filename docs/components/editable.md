@@ -87,16 +87,16 @@ export function EditableName() {
 
 Import the Lever UI stylesheet before your own CSS.
 
-Classes: `.leverui-editable__root`, `.leverui-editable__preview`,
-`.leverui-editable__input`, `.leverui-editable__textarea`. The textarea also has
+Classes: `.lui-editable__root`, `.lui-editable__preview`,
+`.lui-editable__input`, `.lui-editable__textarea`. The textarea also has
 the input class.
 
 Attributes: `data-size` on the root, `data-size-*` for sizes set per screen
 size, and editing-state attributes on the parts.
 
-Variables: `--leverui-editable-gap`, `--leverui-editable-padding-block`,
-`--leverui-editable-padding-inline`, `--leverui-editable-control-height`,
-`--leverui-editable-font-size`, `--leverui-editable-focus-color`.
+Variables: `--lui-editable-gap`, `--lui-editable-padding-block`,
+`--lui-editable-padding-inline`, `--lui-editable-control-height`,
+`--lui-editable-font-size`, `--lui-editable-focus-color`.
 
 The root and every part accept `unstyled`, `class`, `style`, native HTML
 attributes, refs, `as`, and `asChild`. Prop types follow the tag you pick:

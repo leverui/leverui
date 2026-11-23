@@ -48,12 +48,12 @@ export function ColorModeForced(): JSX.Element {
 export function ColorModeValue(): JSX.Element {
   const { toggleColorMode } = createColorMode();
 
-  const bg = createColorModeValue('var(--leverui-colors-red-500)', 'var(--leverui-colors-red-200)');
-  const color = createColorModeValue('white', 'var(--leverui-colors-gray-800)');
+  const bg = createColorModeValue('var(--lui-colors-red-500)', 'var(--lui-colors-red-200)');
+  const color = createColorModeValue('white', 'var(--lui-colors-gray-800)');
 
   return (
     <Stack align="flex-start" gap="4">
-      <Box style={{ padding: 'var(--leverui-spacing-2)', background: bg(), color: color() }}>
+      <Box style={{ padding: 'var(--lui-spacing-2)', background: bg(), color: color() }}>
         This box changes color when you switch the color mode.
       </Box>
       <Button variant="outline" size="sm" onClick={toggleColorMode}>

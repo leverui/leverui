@@ -1,5 +1,5 @@
-@layer leverui.recipes {
-  .leverui-input-addon:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-input-addon:not([data-unstyled]) {
     flex: 0 0 auto;
     width: auto;
     display: flex;
@@ -7,13 +7,13 @@
     white-space: nowrap;
     align-self: stretch;
     border-style: solid;
-    border-width: var(--leverui-private-input-addon-border-width, 1px);
-    border-color: var(--leverui-private-input-addon-border-color, var(--leverui-colors-border));
-    border-radius: var(--leverui-private-input-addon-radius, var(--leverui-radii-l2));
-    background: var(--leverui-private-input-addon-background, var(--leverui-colors-bg-muted));
-    font-size: var(--leverui-private-input-addon-font-size, var(--leverui-font-sizes-sm));
-    line-height: var(--leverui-private-input-addon-line-height, 1.25rem);
-    padding-inline: var(--leverui-private-input-addon-padding, var(--leverui-spacing-3));
-    --input-height: var(--leverui-private-input-addon-height, var(--leverui-sizes-10));
+    border-width: var(--lui-private-input-addon-border-width, 1px);
+    border-color: var(--lui-private-input-addon-border-color, var(--lui-colors-border));
+    border-radius: var(--lui-private-input-addon-radius, var(--lui-radii-l2));
+    background: var(--lui-private-input-addon-background, var(--lui-colors-bg-muted));
+    font-size: var(--lui-private-input-addon-font-size, var(--lui-font-sizes-sm));
+    line-height: var(--lui-private-input-addon-line-height, 1.25rem);
+    padding-inline: var(--lui-private-input-addon-padding, var(--lui-spacing-3));
+    --input-height: var(--lui-private-input-addon-height, var(--lui-sizes-10));
   }
 }

@@ -38,6 +38,6 @@ assert.match(markup, /<ol[^>]*id="packed-server-list"/);
 assert.match(markup, /role="list"/);
 assert.match(markup, /<li[^>]*id="packed-server-item"/);
 assert.match(markup, /<span[^>]*id="packed-server-indicator"/);
-assert.match(markup, /leverui-list__root/);
+assert.match(markup, /lui-list__root/);
 assert.match(markup, /id="packed-server-list"[^>]*data-variant="plain"/);
 assert.doesNotMatch(markup, /\s(?:variant|align|as)=/);

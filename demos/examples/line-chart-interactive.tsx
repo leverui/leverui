@@ -16,7 +16,7 @@ function customerTooltip(row: CartesianDatum, series: readonly CartesianSeries[]
         width: '160px',
         padding: '12px',
         'border-radius': '4px',
-        background: 'var(--leverui-colors-teal-subtle)',
+        background: 'var(--lui-colors-teal-subtle)',
         'pointer-events': 'none',
         'z-index': '1',
       }}
@@ -30,7 +30,7 @@ function customerTooltip(row: CartesianDatum, series: readonly CartesianSeries[]
               style={{
                 width: '8px',
                 height: '8px',
-                background: `var(--leverui-colors-${item.color.replace('.', '-')})`,
+                background: `var(--lui-colors-${item.color.replace('.', '-')})`,
               }}
             />
             <Text textStyle="xl">{row[item.name]}</Text>
@@ -81,7 +81,7 @@ export function LineChartLegendInteraction(): JSX.Element {
       <HStack
         textStyle="xs"
         style={{
-          color: 'var(--leverui-colors-teal-fg)',
+          color: 'var(--lui-colors-teal-fg)',
         }}
       >
         Hover on &quot;mac&quot; ↑

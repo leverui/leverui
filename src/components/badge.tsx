@@ -51,7 +51,7 @@ function BadgeRoot(props: BadgeRootProps): JSX.Element {
     /** Keep native props, variants, and palette attributes reactive. */
     () => ({
       ...native,
-      class: cx('leverui-badge', local.class),
+      class: cx('lui-badge', local.class),
       'data-size': sizes().base ?? 'sm',
       'data-size-sm': sizes().sm,
       'data-size-md': sizes().md,
@@ -59,7 +59,7 @@ function BadgeRoot(props: BadgeRootProps): JSX.Element {
       'data-size-xl': sizes().xl,
       'data-size-2xl': sizes()['2xl'],
       'data-variant': local.variant ?? 'subtle',
-      'data-leverui-color-palette': local.colorPalette,
+      'data-lui-color-palette': local.colorPalette,
       'data-unstyled': local.unstyled ? '' : undefined,
       ref: attachNode,
     }),

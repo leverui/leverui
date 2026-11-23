@@ -89,7 +89,7 @@ export function NumberInputStepper(): JSX.Element {
         <NumberInput.ValueText
           style={{
             'text-align': 'center',
-            'font-size': 'var(--leverui-font-sizes-lg)',
+            'font-size': 'var(--lui-font-sizes-lg)',
             'min-width': '3ch',
           }}
         />

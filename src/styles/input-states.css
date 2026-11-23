@@ -1,29 +1,29 @@
-@layer leverui.recipes {
-  .leverui-input:not([data-unstyled]):is(
+@layer lui.recipes {
+  .lui-input:not([data-unstyled]):is(
       :disabled,
       [disabled],
       [data-disabled],
       [aria-disabled='true']
     ) {
     opacity: 0.5;
-    cursor: var(--leverui-cursor-disabled);
+    cursor: var(--lui-cursor-disabled);
   }
 
-  .leverui-input:not([data-unstyled]):is(
+  .lui-input:not([data-unstyled]):is(
       [data-invalid],
       [aria-invalid='true'],
       [data-state='invalid']
     ) {
-    --leverui-private-input-focus-color: var(--leverui-private-input-error-color);
-    --leverui-private-input-border-color: var(--leverui-private-input-error-color);
+    --lui-private-input-focus-color: var(--lui-private-input-error-color);
+    --lui-private-input-border-color: var(--lui-private-input-error-color);
   }
 
-  .leverui-input:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
+  .lui-input:not([data-unstyled]):is(:focus-visible, [data-focus-visible]) {
     outline-offset: 0;
-    outline-width: var(--leverui-private-input-focus-outline-width, 1px);
-    outline-color: var(--leverui-private-input-focus-color);
+    outline-width: var(--lui-private-input-focus-outline-width, 1px);
+    outline-color: var(--lui-private-input-focus-color);
     outline-style: var(--focus-ring-style, solid);
-    border-color: var(--leverui-private-input-focus-color);
-    box-shadow: var(--leverui-private-input-focus-shadow, none);
+    border-color: var(--lui-private-input-focus-color);
+    box-shadow: var(--lui-private-input-focus-shadow, none);
   }
 }

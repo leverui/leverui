@@ -1,71 +1,71 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 1024px) {
-    .leverui-breadcrumb__root:not([data-unstyled]) {
+    .lui-breadcrumb__root:not([data-unstyled]) {
       &[data-size-lg='sm'] {
-        --leverui-private-breadcrumb-gap: var(--leverui-spacing-1);
-        --leverui-private-breadcrumb-font-size: var(--leverui-font-sizes-xs);
-        --leverui-private-breadcrumb-line-height: 1rem;
+        --lui-private-breadcrumb-gap: var(--lui-spacing-1);
+        --lui-private-breadcrumb-font-size: var(--lui-font-sizes-xs);
+        --lui-private-breadcrumb-line-height: 1rem;
       }
       &[data-size-lg='md'] {
-        --leverui-private-breadcrumb-gap: var(--leverui-spacing-1\.5);
-        --leverui-private-breadcrumb-font-size: var(--leverui-font-sizes-sm);
-        --leverui-private-breadcrumb-line-height: 1.25rem;
+        --lui-private-breadcrumb-gap: var(--lui-spacing-1\.5);
+        --lui-private-breadcrumb-font-size: var(--lui-font-sizes-sm);
+        --lui-private-breadcrumb-line-height: 1.25rem;
       }
       &[data-size-lg='lg'] {
-        --leverui-private-breadcrumb-gap: var(--leverui-spacing-2);
-        --leverui-private-breadcrumb-font-size: var(--leverui-font-sizes-md);
-        --leverui-private-breadcrumb-line-height: 1.5rem;
+        --lui-private-breadcrumb-gap: var(--lui-spacing-2);
+        --lui-private-breadcrumb-font-size: var(--lui-font-sizes-md);
+        --lui-private-breadcrumb-line-height: 1.5rem;
       }
       &[data-variant-lg='plain'] {
-        --leverui-private-breadcrumb-link-color: var(--leverui-colors-fg-muted);
-        --leverui-private-breadcrumb-link-hover-color: var(--leverui-colors-fg);
-        --leverui-private-breadcrumb-current-color: var(--leverui-colors-fg);
-        --leverui-private-breadcrumb-decoration: none;
-        --leverui-private-breadcrumb-decoration-offset: auto;
-        --leverui-private-breadcrumb-decoration-color: currentColor;
+        --lui-private-breadcrumb-link-color: var(--lui-colors-fg-muted);
+        --lui-private-breadcrumb-link-hover-color: var(--lui-colors-fg);
+        --lui-private-breadcrumb-current-color: var(--lui-colors-fg);
+        --lui-private-breadcrumb-decoration: none;
+        --lui-private-breadcrumb-decoration-offset: auto;
+        --lui-private-breadcrumb-decoration-color: currentColor;
       }
       &[data-variant-lg='underline'] {
-        --leverui-private-breadcrumb-link-color: var(--leverui-colors-color-palette-fg);
-        --leverui-private-breadcrumb-link-hover-color: var(--leverui-colors-color-palette-fg);
-        --leverui-private-breadcrumb-current-color: var(--leverui-colors-color-palette-fg);
-        --leverui-private-breadcrumb-decoration: underline;
-        --leverui-private-breadcrumb-decoration-offset: 0.2em;
-        --leverui-private-breadcrumb-decoration-color: var(--leverui-colors-color-palette-muted);
+        --lui-private-breadcrumb-link-color: var(--lui-colors-color-palette-fg);
+        --lui-private-breadcrumb-link-hover-color: var(--lui-colors-color-palette-fg);
+        --lui-private-breadcrumb-current-color: var(--lui-colors-color-palette-fg);
+        --lui-private-breadcrumb-decoration: underline;
+        --lui-private-breadcrumb-decoration-offset: 0.2em;
+        --lui-private-breadcrumb-decoration-color: var(--lui-colors-color-palette-muted);
       }
     }
   }
   @media (min-width: 1280px) {
-    .leverui-breadcrumb__root:not([data-unstyled]) {
+    .lui-breadcrumb__root:not([data-unstyled]) {
       &[data-size-xl='sm'] {
-        --leverui-private-breadcrumb-gap: var(--leverui-spacing-1);
-        --leverui-private-breadcrumb-font-size: var(--leverui-font-sizes-xs);
-        --leverui-private-breadcrumb-line-height: 1rem;
+        --lui-private-breadcrumb-gap: var(--lui-spacing-1);
+        --lui-private-breadcrumb-font-size: var(--lui-font-sizes-xs);
+        --lui-private-breadcrumb-line-height: 1rem;
       }
       &[data-size-xl='md'] {
-        --leverui-private-breadcrumb-gap: var(--leverui-spacing-1\.5);
-        --leverui-private-breadcrumb-font-size: var(--leverui-font-sizes-sm);
-        --leverui-private-breadcrumb-line-height: 1.25rem;
+        --lui-private-breadcrumb-gap: var(--lui-spacing-1\.5);
+        --lui-private-breadcrumb-font-size: var(--lui-font-sizes-sm);
+        --lui-private-breadcrumb-line-height: 1.25rem;
       }
       &[data-size-xl='lg'] {
-        --leverui-private-breadcrumb-gap: var(--leverui-spacing-2);
-        --leverui-private-breadcrumb-font-size: var(--leverui-font-sizes-md);
-        --leverui-private-breadcrumb-line-height: 1.5rem;
+        --lui-private-breadcrumb-gap: var(--lui-spacing-2);
+        --lui-private-breadcrumb-font-size: var(--lui-font-sizes-md);
+        --lui-private-breadcrumb-line-height: 1.5rem;
       }
       &[data-variant-xl='plain'] {
-        --leverui-private-breadcrumb-link-color: var(--leverui-colors-fg-muted);
-        --leverui-private-breadcrumb-link-hover-color: var(--leverui-colors-fg);
-        --leverui-private-breadcrumb-current-color: var(--leverui-colors-fg);
-        --leverui-private-breadcrumb-decoration: none;
-        --leverui-private-breadcrumb-decoration-offset: auto;
-        --leverui-private-breadcrumb-decoration-color: currentColor;
+        --lui-private-breadcrumb-link-color: var(--lui-colors-fg-muted);
+        --lui-private-breadcrumb-link-hover-color: var(--lui-colors-fg);
+        --lui-private-breadcrumb-current-color: var(--lui-colors-fg);
+        --lui-private-breadcrumb-decoration: none;
+        --lui-private-breadcrumb-decoration-offset: auto;
+        --lui-private-breadcrumb-decoration-color: currentColor;
       }
       &[data-variant-xl='underline'] {
-        --leverui-private-breadcrumb-link-color: var(--leverui-colors-color-palette-fg);
-        --leverui-private-breadcrumb-link-hover-color: var(--leverui-colors-color-palette-fg);
-        --leverui-private-breadcrumb-current-color: var(--leverui-colors-color-palette-fg);
-        --leverui-private-breadcrumb-decoration: underline;
-        --leverui-private-breadcrumb-decoration-offset: 0.2em;
-        --leverui-private-breadcrumb-decoration-color: var(--leverui-colors-color-palette-muted);
+        --lui-private-breadcrumb-link-color: var(--lui-colors-color-palette-fg);
+        --lui-private-breadcrumb-link-hover-color: var(--lui-colors-color-palette-fg);
+        --lui-private-breadcrumb-current-color: var(--lui-colors-color-palette-fg);
+        --lui-private-breadcrumb-decoration: underline;
+        --lui-private-breadcrumb-decoration-offset: 0.2em;
+        --lui-private-breadcrumb-decoration-color: var(--lui-colors-color-palette-muted);
       }
     }
   }

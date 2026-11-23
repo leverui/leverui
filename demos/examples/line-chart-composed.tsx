@@ -59,22 +59,22 @@ export function LineChartComposition(): JSX.Element {
             {(series) => (
               <Stat.Root size="sm">
                 <Stat.Label
-                  style={{ 'font-size': 'var(--leverui-font-sizes-xs)', 'line-height': '1rem' }}
+                  style={{ 'font-size': 'var(--lui-font-sizes-xs)', 'line-height': '1rem' }}
                 >
                   <Box
                     style={{
-                      width: 'var(--leverui-sizes-2)',
-                      height: 'var(--leverui-sizes-2)',
+                      width: 'var(--lui-sizes-2)',
+                      height: 'var(--lui-sizes-2)',
                       background: series.color
-                        ? `var(--leverui-colors-${series.color.replace('.', '-')})`
+                        ? `var(--lui-colors-${series.color.replace('.', '-')})`
                         : undefined,
                       display: 'inline-block',
-                      'margin-inline-end': 'var(--leverui-spacing-1)',
+                      'margin-inline-end': 'var(--lui-spacing-1)',
                     }}
                   />
                   {series.label}
                 </Stat.Label>
-                <Stat.ValueText style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>
+                <Stat.ValueText style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>
                   {channelTotal(series.name)}
                 </Stat.ValueText>
               </Stat.Root>
@@ -127,7 +127,7 @@ export function LineChartTypes(): JSX.Element {
     { name: 'linux', color: 'blue.solid', strokeWidth: 2 },
   ];
   return (
-    <SimpleGrid minChildWidth="400px" style={{ gap: 'var(--leverui-spacing-10)' }}>
+    <SimpleGrid minChildWidth="400px" style={{ gap: 'var(--lui-spacing-10)' }}>
       <For each={curveTypes}>
         {/** Label and draw one interpolation mode in a separate chart. */}
         {(curve) => (
@@ -135,8 +135,8 @@ export function LineChartTypes(): JSX.Element {
             <Text
               textStyle="sm"
               style={{
-                'font-weight': 'var(--leverui-font-weights-semibold)',
-                'margin-inline-start': 'var(--leverui-spacing-8)',
+                'font-weight': 'var(--lui-font-weights-semibold)',
+                'margin-inline-start': 'var(--lui-spacing-8)',
               }}
             >{`<LineChart curve="${curve}" />`}</Text>
             <LineChart

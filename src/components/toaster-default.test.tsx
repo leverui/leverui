@@ -19,8 +19,8 @@ async function verifiesDefaultToaster(): Promise<void> {
   toaster.create({ title: 'Saved', description: 'File saved successfully', type: 'info' });
   const description = await screen.findByText('File saved successfully');
   expect(screen.getByText('Saved')).toBeTruthy();
-  expect(description.closest('.leverui-toaster-default__toast')).not.toBeNull();
-  expect(description.closest('.leverui-toaster-default')).not.toBeNull();
+  expect(description.closest('.lui-toaster-default__toast')).not.toBeNull();
+  expect(description.closest('.lui-toaster-default')).not.toBeNull();
 }
 
 /** Show a spinner for a loading notification. */
@@ -31,8 +31,8 @@ async function verifiesLoadingSpinner(): Promise<void> {
   );
   toaster.create({ description: 'Uploading', type: 'loading' });
   const description = await screen.findByText('Uploading');
-  const toast = description.closest('.leverui-toaster-default__toast');
-  expect(toast?.querySelector('.leverui-toaster-default__spinner')).not.toBeNull();
+  const toast = description.closest('.lui-toaster-default__toast');
+  expect(toast?.querySelector('.lui-toaster-default__spinner')).not.toBeNull();
 }
 
 it('renders shared toaster notifications with the default layout', verifiesDefaultToaster);

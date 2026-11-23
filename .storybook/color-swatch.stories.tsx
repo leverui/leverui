@@ -23,7 +23,7 @@ function ColorSwatchMatrix(): JSX.Element {
 
   return (
     <>
-      <style>{`#swatch-css-override { --leverui-swatch-color: rgb(102, 51, 153); --leverui-swatch-checker-size: 4px; } #swatch-background-override { background: rgb(55, 66, 77); } #swatch-css-background { background: rgb(21, 33, 45); }`}</style>
+      <style>{`#swatch-css-override { --lui-swatch-color: rgb(102, 51, 153); --lui-swatch-checker-size: 4px; } #swatch-background-override { background: rgb(55, 66, 77); } #swatch-css-background { background: rgb(21, 33, 45); }`}</style>
       <div data-testid="swatch-matrix">
         <ColorSwatch value="red" data-testid="swatch-default" title="Red sample" />
         {sizes.map(
@@ -34,7 +34,7 @@ function ColorSwatchMatrix(): JSX.Element {
                 display: 'inline-flex',
                 width: '48px',
                 height: '48px',
-                '--leverui-swatch-size': '48px',
+                '--lui-swatch-size': '48px',
               }}
             >
               <ColorSwatch value="blue" size={size} data-testid={`swatch-${size}`} />

@@ -1,10 +1,10 @@
 /* Headings link to themselves with a quiet underline in fg and border.emphasized. */
 .guide-heading-anchor,
 .guide-markdown :is(h2, h3) > a.guide-heading-anchor {
-  color: var(--leverui-colors-fg);
+  color: var(--lui-colors-fg);
   font: inherit;
   text-decoration: underline;
-  text-decoration-color: var(--leverui-colors-border-emphasized);
+  text-decoration-color: var(--lui-colors-border-emphasized);
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
 }

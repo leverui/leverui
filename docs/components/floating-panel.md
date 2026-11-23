@@ -113,7 +113,7 @@ Open a panel from code anywhere with [`createOverlay`](overlay-manager.md).
 ## Customize with CSS
 
 Load the [package stylesheet](../getting-started.md) first. Each part has a
-`leverui-floating-panel__<part>` class and a part attribute, such as
+`lui-floating-panel__<part>` class and a part attribute, such as
 `data-floating-panel-content`. A selector that starts from an element around
 `Root` does not reach a part in a portal. Use a class on the part for one
 panel, a selector for every panel, or `style` for a single value.
@@ -125,12 +125,12 @@ panel, a selector for every panel, or `style` for a single value.
 ```
 
 ```css
-@layer leverui.recipes {
-  .notes-panel[data-leverui-floating-panel-css] {
-    border: 1px solid var(--leverui-colors-border);
+@layer lui.recipes {
+  .notes-panel[data-lui-floating-panel-css] {
+    border: 1px solid var(--lui-colors-border);
   }
 }
 ```
 
-`--leverui-colors-bg-panel` sets the content's default background. `unstyled`
+`--lui-colors-bg-panel` sets the content's default background. `unstyled`
 on a part or on `Root` turns off its Lever UI styles.

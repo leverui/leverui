@@ -5,16 +5,16 @@ import { Button, Center, Dialog, Flex, Menu, Portal, Text } from '../../src';
 /** Hide an open menu when horizontal scrolling detaches its trigger. */
 export function MenuHideWhenDetached(): JSX.Element {
   return (
-    <Center style={{ 'min-height': 'var(--leverui-sizes-sm)' }}>
+    <Center style={{ 'min-height': 'var(--lui-sizes-sm)' }}>
       <Flex
         style={{
           width: '300px',
           height: '100%',
           'overflow-x': 'auto',
-          'column-gap': 'var(--leverui-spacing-6)',
-          padding: 'var(--leverui-spacing-4)',
+          'column-gap': 'var(--lui-spacing-6)',
+          padding: 'var(--lui-spacing-4)',
           'border-width': '1px',
-          background: 'var(--leverui-colors-bg-subtle)',
+          background: 'var(--lui-colors-bg-subtle)',
         }}
       >
         <For each={[0, 1, 2, 3, 4, 5]}>
@@ -23,9 +23,9 @@ export function MenuHideWhenDetached(): JSX.Element {
             (index) => (
               <div
                 style={{
-                  background: 'var(--leverui-colors-bg-panel)',
-                  padding: 'var(--leverui-spacing-4)',
-                  'border-radius': 'var(--leverui-radii-md)',
+                  background: 'var(--lui-colors-bg-panel)',
+                  padding: 'var(--lui-spacing-4)',
+                  'border-radius': 'var(--lui-radii-md)',
                 }}
               >
                 <Text>Item{index}</Text>
@@ -42,9 +42,9 @@ export function MenuHideWhenDetached(): JSX.Element {
                   <button
                     {...getProps()}
                     style={{
-                      background: 'var(--leverui-colors-green-100)',
-                      padding: 'var(--leverui-spacing-4)',
-                      'border-radius': 'var(--leverui-radii-md)',
+                      background: 'var(--lui-colors-green-100)',
+                      padding: 'var(--lui-spacing-4)',
+                      'border-radius': 'var(--lui-radii-md)',
                     }}
                   >
                     Menu
@@ -95,7 +95,7 @@ export function MenuOpenFromDialog(): JSX.Element {
               style={{
                 display: 'flex',
                 'flex-direction': 'column',
-                gap: 'var(--leverui-spacing-4)',
+                gap: 'var(--lui-spacing-4)',
               }}
             >
               <DialogMenu />

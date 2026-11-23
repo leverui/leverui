@@ -54,7 +54,7 @@ export function BarAxes(props: {
 
   return (
     <g
-      class="leverui-bar-chart__axes"
+      class="lui-bar-chart__axes"
       data-bar-axes=""
       data-grid-dashed={props.gridDashed ? '' : undefined}
     >
@@ -63,7 +63,7 @@ export function BarAxes(props: {
           {/** Span one numeric tick across all category bands. */}
           {(tick) => (
             <line
-              class="leverui-bar-chart__grid-line"
+              class="lui-bar-chart__grid-line"
               x1={props.plot.left}
               x2={props.plot.width - props.plot.right}
               y1={chartY(props.plot, tick)}
@@ -78,7 +78,7 @@ export function BarAxes(props: {
           {(_, index) => (
             <Show when={index() % (props.xTickEvery ?? 1) === 0}>
               <line
-                class="leverui-bar-chart__grid-line"
+                class="lui-bar-chart__grid-line"
                 x1={center(index())}
                 x2={center(index())}
                 y1={props.plot.top}
@@ -90,7 +90,7 @@ export function BarAxes(props: {
       </Show>
       <Show when={props.showAxisLines}>
         <path
-          class="leverui-bar-chart__axis-line"
+          class="lui-bar-chart__axis-line"
           d={`M ${props.plot.left} ${props.plot.top} V ${props.plot.height - props.plot.bottom} H ${props.plot.width - props.plot.right}`}
         />
       </Show>
@@ -99,7 +99,7 @@ export function BarAxes(props: {
           {/** Align one numeric label with its horizontal grid line. */}
           {(tick) => (
             <text
-              class="leverui-bar-chart__tick"
+              class="lui-bar-chart__tick"
               x={
                 props.yAxisPlacement === 'right'
                   ? props.plot.width - props.plot.right + 9
@@ -136,7 +136,7 @@ export function BarAxes(props: {
                   )
                 ) : (
                   <text
-                    class="leverui-bar-chart__tick"
+                    class="lui-bar-chart__tick"
                     x={center(index())}
                     y={props.plot.height - props.plot.bottom + 22}
                     text-anchor="middle"
@@ -151,7 +151,7 @@ export function BarAxes(props: {
       </Show>
       <Show when={props.xAxisLabel}>
         <text
-          class="leverui-bar-chart__axis-label"
+          class="lui-bar-chart__axis-label"
           x={(props.plot.left + props.plot.width - props.plot.right) / 2}
           y={props.plot.height - 15}
           text-anchor="middle"
@@ -161,7 +161,7 @@ export function BarAxes(props: {
       </Show>
       <Show when={props.yAxisLabel}>
         <text
-          class="leverui-bar-chart__axis-label"
+          class="lui-bar-chart__axis-label"
           x={props.plot.left - 55}
           y={yAxisLabelY()}
           text-anchor="start"

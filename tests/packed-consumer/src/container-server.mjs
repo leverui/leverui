@@ -20,7 +20,7 @@ function renderInstalledContainer() {
 const markup = renderInstalledContainer();
 assert.match(markup, /id="packed-server-container"/);
 assert.match(markup, /Installed server container/);
-assert.match(markup, /leverui-container/);
+assert.match(markup, /lui-container/);
 assert.match(markup, /data-center-content-base="true"/);
 assert.match(markup, /data-fluid-base="true"/);
 assert.doesNotMatch(markup, /\s(?:fluid|centerContent)=/);

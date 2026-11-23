@@ -1,87 +1,87 @@
-@layer leverui.recipes {
-  .leverui-stack:not([data-unstyled]) {
-    --leverui-private-stack-direction-base: initial;
-    --leverui-private-stack-direction-sm: initial;
-    --leverui-private-stack-direction-md: initial;
-    --leverui-private-stack-direction-lg: initial;
-    --leverui-private-stack-direction-xl: initial;
-    --leverui-private-stack-direction-2xl: initial;
-    --leverui-private-stack-align-base: initial;
-    --leverui-private-stack-align-sm: initial;
-    --leverui-private-stack-align-md: initial;
-    --leverui-private-stack-align-lg: initial;
-    --leverui-private-stack-align-xl: initial;
-    --leverui-private-stack-align-2xl: initial;
-    --leverui-private-stack-justify-base: initial;
-    --leverui-private-stack-justify-sm: initial;
-    --leverui-private-stack-justify-md: initial;
-    --leverui-private-stack-justify-lg: initial;
-    --leverui-private-stack-justify-xl: initial;
-    --leverui-private-stack-justify-2xl: initial;
-    --leverui-private-stack-wrap-base: initial;
-    --leverui-private-stack-wrap-sm: initial;
-    --leverui-private-stack-wrap-md: initial;
-    --leverui-private-stack-wrap-lg: initial;
-    --leverui-private-stack-wrap-xl: initial;
-    --leverui-private-stack-wrap-2xl: initial;
-    --leverui-private-stack-gap-base: initial;
-    --leverui-private-stack-gap-sm: initial;
-    --leverui-private-stack-gap-md: initial;
-    --leverui-private-stack-gap-lg: initial;
-    --leverui-private-stack-gap-xl: initial;
-    --leverui-private-stack-gap-2xl: initial;
-    --leverui-private-stack-render-gap-base: initial;
-    --leverui-private-stack-render-gap-sm: initial;
-    --leverui-private-stack-render-gap-md: initial;
-    --leverui-private-stack-render-gap-lg: initial;
-    --leverui-private-stack-render-gap-xl: initial;
-    --leverui-private-stack-render-gap-2xl: initial;
+@layer lui.recipes {
+  .lui-stack:not([data-unstyled]) {
+    --lui-private-stack-direction-base: initial;
+    --lui-private-stack-direction-sm: initial;
+    --lui-private-stack-direction-md: initial;
+    --lui-private-stack-direction-lg: initial;
+    --lui-private-stack-direction-xl: initial;
+    --lui-private-stack-direction-2xl: initial;
+    --lui-private-stack-align-base: initial;
+    --lui-private-stack-align-sm: initial;
+    --lui-private-stack-align-md: initial;
+    --lui-private-stack-align-lg: initial;
+    --lui-private-stack-align-xl: initial;
+    --lui-private-stack-align-2xl: initial;
+    --lui-private-stack-justify-base: initial;
+    --lui-private-stack-justify-sm: initial;
+    --lui-private-stack-justify-md: initial;
+    --lui-private-stack-justify-lg: initial;
+    --lui-private-stack-justify-xl: initial;
+    --lui-private-stack-justify-2xl: initial;
+    --lui-private-stack-wrap-base: initial;
+    --lui-private-stack-wrap-sm: initial;
+    --lui-private-stack-wrap-md: initial;
+    --lui-private-stack-wrap-lg: initial;
+    --lui-private-stack-wrap-xl: initial;
+    --lui-private-stack-wrap-2xl: initial;
+    --lui-private-stack-gap-base: initial;
+    --lui-private-stack-gap-sm: initial;
+    --lui-private-stack-gap-md: initial;
+    --lui-private-stack-gap-lg: initial;
+    --lui-private-stack-gap-xl: initial;
+    --lui-private-stack-gap-2xl: initial;
+    --lui-private-stack-render-gap-base: initial;
+    --lui-private-stack-render-gap-sm: initial;
+    --lui-private-stack-render-gap-md: initial;
+    --lui-private-stack-render-gap-lg: initial;
+    --lui-private-stack-render-gap-xl: initial;
+    --lui-private-stack-render-gap-2xl: initial;
 
     display: flex;
-    flex-direction: var(--leverui-private-stack-direction-base, column);
-    align-items: var(--leverui-private-stack-align-base, normal);
-    justify-content: var(--leverui-private-stack-justify-base, normal);
-    flex-wrap: var(--leverui-private-stack-wrap-base, nowrap);
-    gap: var(--leverui-private-stack-render-gap-base, 0.5rem);
+    flex-direction: var(--lui-private-stack-direction-base, column);
+    align-items: var(--lui-private-stack-align-base, normal);
+    justify-content: var(--lui-private-stack-justify-base, normal);
+    flex-wrap: var(--lui-private-stack-wrap-base, nowrap);
+    gap: var(--lui-private-stack-render-gap-base, 0.5rem);
 
     @media (min-width: 480px) {
-      flex-direction: var(--leverui-private-stack-direction-sm, column);
-      align-items: var(--leverui-private-stack-align-sm, normal);
-      justify-content: var(--leverui-private-stack-justify-sm, normal);
-      flex-wrap: var(--leverui-private-stack-wrap-sm, nowrap);
-      gap: var(--leverui-private-stack-render-gap-sm, 0.5rem);
+      flex-direction: var(--lui-private-stack-direction-sm, column);
+      align-items: var(--lui-private-stack-align-sm, normal);
+      justify-content: var(--lui-private-stack-justify-sm, normal);
+      flex-wrap: var(--lui-private-stack-wrap-sm, nowrap);
+      gap: var(--lui-private-stack-render-gap-sm, 0.5rem);
     }
 
     @media (min-width: 768px) {
-      flex-direction: var(--leverui-private-stack-direction-md, column);
-      align-items: var(--leverui-private-stack-align-md, normal);
-      justify-content: var(--leverui-private-stack-justify-md, normal);
-      flex-wrap: var(--leverui-private-stack-wrap-md, nowrap);
-      gap: var(--leverui-private-stack-render-gap-md, 0.5rem);
+      flex-direction: var(--lui-private-stack-direction-md, column);
+      align-items: var(--lui-private-stack-align-md, normal);
+      justify-content: var(--lui-private-stack-justify-md, normal);
+      flex-wrap: var(--lui-private-stack-wrap-md, nowrap);
+      gap: var(--lui-private-stack-render-gap-md, 0.5rem);
     }
 
     @media (min-width: 1024px) {
-      flex-direction: var(--leverui-private-stack-direction-lg, column);
-      align-items: var(--leverui-private-stack-align-lg, normal);
-      justify-content: var(--leverui-private-stack-justify-lg, normal);
-      flex-wrap: var(--leverui-private-stack-wrap-lg, nowrap);
-      gap: var(--leverui-private-stack-render-gap-lg, 0.5rem);
+      flex-direction: var(--lui-private-stack-direction-lg, column);
+      align-items: var(--lui-private-stack-align-lg, normal);
+      justify-content: var(--lui-private-stack-justify-lg, normal);
+      flex-wrap: var(--lui-private-stack-wrap-lg, nowrap);
+      gap: var(--lui-private-stack-render-gap-lg, 0.5rem);
     }
 
     @media (min-width: 1280px) {
-      flex-direction: var(--leverui-private-stack-direction-xl, column);
-      align-items: var(--leverui-private-stack-align-xl, normal);
-      justify-content: var(--leverui-private-stack-justify-xl, normal);
-      flex-wrap: var(--leverui-private-stack-wrap-xl, nowrap);
-      gap: var(--leverui-private-stack-render-gap-xl, 0.5rem);
+      flex-direction: var(--lui-private-stack-direction-xl, column);
+      align-items: var(--lui-private-stack-align-xl, normal);
+      justify-content: var(--lui-private-stack-justify-xl, normal);
+      flex-wrap: var(--lui-private-stack-wrap-xl, nowrap);
+      gap: var(--lui-private-stack-render-gap-xl, 0.5rem);
     }
 
     @media (min-width: 1536px) {
-      flex-direction: var(--leverui-private-stack-direction-2xl, column);
-      align-items: var(--leverui-private-stack-align-2xl, normal);
-      justify-content: var(--leverui-private-stack-justify-2xl, normal);
-      flex-wrap: var(--leverui-private-stack-wrap-2xl, nowrap);
-      gap: var(--leverui-private-stack-render-gap-2xl, 0.5rem);
+      flex-direction: var(--lui-private-stack-direction-2xl, column);
+      align-items: var(--lui-private-stack-align-2xl, normal);
+      justify-content: var(--lui-private-stack-justify-2xl, normal);
+      flex-wrap: var(--lui-private-stack-wrap-2xl, nowrap);
+      gap: var(--lui-private-stack-render-gap-2xl, 0.5rem);
     }
   }
 }

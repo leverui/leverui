@@ -36,7 +36,7 @@ side so the bar never covers text.
 | `unstyled` | `false` | Boolean                                               | Turn off the Lever UI styles.                  |
 | `ids`      | —       | Partial root, viewport, content, scrollbar, thumb IDs | Ids of the elements the state machine manages. |
 
-No `colorPalette` prop. Set the `--leverui-scroll-area-*` variables for colors
+No `colorPalette` prop. Set the `--lui-scroll-area-*` variables for colors
 and scrollbar thickness. `ScrollArea.PropsProvider` sets the default look for
 the scroll areas inside it. Defaults are reactive. A prop on a root wins.
 
@@ -75,7 +75,7 @@ directions, render a horizontal scrollbar and a vertical one.
 | `as`      | `div`   | Native HTML tag       | HTML tag to render.      |
 | `asChild` | —       | Solid render callback | Render your own element. |
 
-Give it a class or set `--leverui-scroll-area-thumb-color`.
+Give it a class or set `--lui-scroll-area-thumb-color`.
 
 ### Corner
 

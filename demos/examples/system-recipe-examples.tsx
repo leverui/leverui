@@ -34,14 +34,14 @@ export function SystemNativeButton(): JSX.Element {
 export function SystemCompoundBoolean(): JSX.Element {
   return (
     <Stack>
-      <div class="consumer-system-badge" data-variant="solid" data-leverui-color-palette="gray">
+      <div class="consumer-system-badge" data-variant="solid" data-lui-color-palette="gray">
         Hello
       </div>
       <div
         class="consumer-system-badge"
         data-variant="solid"
         data-pressed
-        data-leverui-color-palette="gray"
+        data-lui-color-palette="gray"
       >
         Hello
       </div>
@@ -52,7 +52,7 @@ export function SystemCompoundBoolean(): JSX.Element {
 /** Select the gray palette and solid variant with finite attributes. */
 export function SystemCompoundColorPalette(): JSX.Element {
   return (
-    <div class="consumer-system-badge" data-variant="solid" data-leverui-color-palette="gray">
+    <div class="consumer-system-badge" data-variant="solid" data-lui-color-palette="gray">
       Hello
     </div>
   );

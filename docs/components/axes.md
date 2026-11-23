@@ -139,4 +139,4 @@ Off by default.
 <LineChart showYAxis showAxisLines />
 ```
 
-Set the color with `--leverui-chart-axis-line-color`.
+Set the color with `--lui-chart-axis-line-color`.

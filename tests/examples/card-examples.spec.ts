@@ -17,9 +17,9 @@ async function verifiesEveryCardExample({ page }: { page: Page }): Promise<void>
   test.setTimeout(120_000);
   for (const id of exampleIds) {
     await page.goto(`/iframe.html?id=components-card--${id}`);
-    const card = page.locator('[class*="leverui-card__root"]').first();
+    const card = page.locator('[class*="lui-card__root"]').first();
     await expect(card, `Card example ${id} should render`).toBeVisible({ timeout: 45_000 });
-    await expect(card).not.toHaveAttribute('data-leverui-private-style-runtime');
+    await expect(card).not.toHaveAttribute('data-lui-private-style-runtime');
   }
 }
 
@@ -51,13 +51,13 @@ test('Card signup form labels both fields', verifiesCardForm);
 /** Confirm local example CSS preserves the two distinctive root layouts. */
 async function verifiesCardExampleCss({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-card--basic');
-  await expect(page.locator('.leverui-card__root').first()).toHaveCSS('width', '320px');
+  await expect(page.locator('.lui-card__root').first()).toHaveCSS('width', '320px');
   await page.goto('/iframe.html?id=components-card--image');
-  await expect(page.locator('.leverui-card__root').first()).toHaveCSS('max-width', '384px');
+  await expect(page.locator('.lui-card__root').first()).toHaveCSS('max-width', '384px');
   await expect(page.locator('.card-example-price')).toHaveCSS('font-size', '24px');
   await page.goto('/iframe.html?id=components-card--horizontal');
-  await expect(page.locator('.leverui-card__root').first()).toHaveCSS('flex-direction', 'row');
-  await expect(page.locator('.leverui-card__root').first()).toHaveCSS('overflow', 'hidden');
+  await expect(page.locator('.lui-card__root').first()).toHaveCSS('flex-direction', 'row');
+  await expect(page.locator('.lui-card__root').first()).toHaveCSS('overflow', 'hidden');
 }
 
 test('Card examples use authored CSS for their local layouts', verifiesCardExampleCss);

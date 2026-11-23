@@ -69,7 +69,7 @@ export function TagsInputClear(): JSX.Element {
       <Span
         textStyle="xs"
         style={{
-          color: 'var(--leverui-colors-fg-muted)',
+          color: 'var(--lui-colors-fg-muted)',
           'margin-inline-start': 'auto',
         }}
       >
@@ -96,7 +96,7 @@ export function TagsInputSanitizedValue(): JSX.Element {
       <Text
         textStyle="xs"
         style={{
-          color: 'var(--leverui-colors-fg-muted)',
+          color: 'var(--lui-colors-fg-muted)',
         }}
       >
         Tags are trimmed and converted to lowercase.
@@ -129,7 +129,7 @@ export function TagsInputMax(): JSX.Element {
             <HStack
               justify="space-between"
               hidden={api().value.length === 0}
-              style={{ 'margin-top': 'var(--leverui-spacing-2\\.5)' }}
+              style={{ 'margin-top': 'var(--lui-spacing-2\\.5)' }}
             >
               <Span>
                 You've invited <Badge>{api().value.length} / 3 guests</Badge> to your event

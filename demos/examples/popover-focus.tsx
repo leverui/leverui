@@ -45,12 +45,10 @@ export function PopoverOpenFromDialog(): JSX.Element {
                   <Popover.Content>
                     <Popover.Arrow />
                     <Popover.Body>
-                      <Popover.Title
-                        style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}
-                      >
+                      <Popover.Title style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>
                         Lanternwright Notes
                       </Popover.Title>
-                      <Text style={{ 'margin-block': 'var(--leverui-spacing-4)' }}>
+                      <Text style={{ 'margin-block': 'var(--lui-spacing-4)' }}>
                         The Lanternwright Chronicles is a fantasy novel series about an apprentice
                         lamplighter in a city that rearranges itself every night.
                       </Text>
@@ -89,9 +87,7 @@ export function PopoverInitialFocus(): JSX.Element {
             <Popover.Arrow />
             <Popover.Body>The Prev button gets focus when this popover opens.</Popover.Body>
             <Popover.Footer>
-              <Box style={{ 'font-size': 'var(--leverui-font-sizes-sm)', flex: '1' }}>
-                Step 2 of 4
-              </Box>
+              <Box style={{ 'font-size': 'var(--lui-font-sizes-sm)', flex: '1' }}>Step 2 of 4</Box>
               <Group>
                 <Button size="sm" ref={setPrevious}>
                   Prev

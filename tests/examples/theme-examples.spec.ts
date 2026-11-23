@@ -4,10 +4,10 @@ import { expect, test, type Page } from '@playwright/test';
 async function verifiesBasicTheme({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=foundations-theme--basic');
   await expect(page.getByRole('button', { name: 'Auto button' })).toBeVisible();
-  const scopes = page.locator('#storybook-root [data-leverui-theme]');
+  const scopes = page.locator('#storybook-root [data-lui-theme]');
   await expect(scopes).toHaveCount(2);
-  await expect(scopes.nth(0)).toHaveAttribute('data-leverui-color-mode', 'dark');
-  await expect(scopes.nth(1)).toHaveAttribute('data-leverui-color-mode', 'light');
+  await expect(scopes.nth(0)).toHaveAttribute('data-lui-color-mode', 'dark');
+  await expect(scopes.nth(1)).toHaveAttribute('data-lui-color-mode', 'light');
   await expect(scopes.nth(0).getByRole('button', { name: 'Dark button' })).toBeVisible();
   await expect(scopes.nth(1).getByRole('button', { name: 'Light button' })).toBeVisible();
 }
@@ -15,10 +15,10 @@ async function verifiesBasicTheme({ page }: { page: Page }): Promise<void> {
 /** Preserve dark then light mode through nested scoped content. */
 async function verifiesNestedTheme({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=foundations-theme--nested');
-  const scopes = page.locator('#storybook-root [data-leverui-theme]');
+  const scopes = page.locator('#storybook-root [data-lui-theme]');
   await expect(scopes).toHaveCount(2);
-  await expect(scopes.nth(0)).toHaveAttribute('data-leverui-color-mode', 'dark');
-  await expect(scopes.nth(1)).toHaveAttribute('data-leverui-color-mode', 'light');
+  await expect(scopes.nth(0)).toHaveAttribute('data-lui-color-mode', 'dark');
+  await expect(scopes.nth(1)).toHaveAttribute('data-lui-color-mode', 'light');
   await expect(scopes.nth(1).getByText('Light theme')).toBeVisible();
   const nestedBoxes = page.locator('#storybook-root .theme-example-nested-box');
   await expect(nestedBoxes).toHaveCount(3);
@@ -32,8 +32,8 @@ async function verifiesPortalledTheme({ page }: { page: Page }): Promise<void> {
   await page.getByRole('button', { name: 'Click me' }).first().click();
   const content = page.locator('[data-popover-content]');
   await expect(content).toBeVisible();
-  await expect(content).toHaveAttribute('data-leverui-theme', '');
-  await expect(content).toHaveAttribute('data-leverui-color-mode', 'dark');
+  await expect(content).toHaveAttribute('data-lui-theme', '');
+  await expect(content).toHaveAttribute('data-lui-color-mode', 'dark');
   await expect(content.getByText('Lanternwright notes')).toBeVisible();
   await expect(content.getByPlaceholder('Search')).toBeVisible();
   await expect(content.locator('.theme-example-popover-title')).toHaveCSS('font-weight', '500');

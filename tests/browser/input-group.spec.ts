@@ -5,11 +5,11 @@ async function verifiesElementComposition({ page }: { page: Page }): Promise<voi
   await page.goto('/iframe.html?id=components-input-group--contract&viewMode=story');
   const group = page.getByTestId('input-group-elements');
   const input = page.getByRole('textbox', { name: 'Website' });
-  const start = group.locator('.leverui-input-element').first();
-  const end = group.locator('.leverui-input-element').last();
+  const start = group.locator('.lui-input-element').first();
+  const end = group.locator('.lui-input-element').last();
   await expect(input).toBeVisible({ timeout: 30_000 });
   await expect(group).toHaveCSS('display', 'flex');
-  await expect(start).toHaveAttribute('data-leverui-input-group-start-element', '');
+  await expect(start).toHaveAttribute('data-lui-input-group-start-element', '');
   await expect(start).not.toHaveAttribute('style');
   await expect(start).toHaveCSS('pointer-events', 'none');
   await expect(start).toHaveCSS('position', 'absolute');
@@ -36,13 +36,12 @@ async function verifiesElementComposition({ page }: { page: Page }): Promise<voi
   );
   expect(changedPadding).not.toBe(initialPadding);
   await page.getByTestId('input-group-end-toggle').click();
-  await expect(group.locator('.leverui-input-element')).toHaveCount(1);
+  await expect(group.locator('.lui-input-element')).toHaveCount(1);
   await expect(input).toHaveValue('example');
-  await page.addStyleTag({ content: '.leverui-input-group { --leverui-colors-fg-muted: red; }' });
+  await page.addStyleTag({ content: '.lui-input-group { --lui-colors-fg-muted: red; }' });
   await expect(start).toHaveCSS('color', 'rgb(255, 0, 0)');
   await page.addStyleTag({
-    content:
-      '.leverui-input-group [data-leverui-input-group-start-element] { pointer-events: auto; }',
+    content: '.lui-input-group [data-lui-input-group-start-element] { pointer-events: auto; }',
   });
   await expect(start).toHaveCSS('pointer-events', 'auto');
 }
@@ -56,14 +55,14 @@ test(
 async function verifiesAttachedAddons({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-input-group--contract&viewMode=story');
   const group = page.getByTestId('input-group-addons');
-  const addons = group.locator('.leverui-input-addon');
+  const addons = group.locator('.lui-input-addon');
   const input = page.getByRole('spinbutton', { name: 'Amount' });
   await expect(input).toBeVisible({ timeout: 30_000 });
   await expect(addons).toHaveCount(2);
   await expect(group).toHaveCSS('gap', '0px');
-  await expect(addons.first()).toHaveAttribute('data-leverui-group-first', '');
-  await expect(input).toHaveAttribute('data-leverui-group-between', '');
-  await expect(addons.last()).toHaveAttribute('data-leverui-group-last', '');
+  await expect(addons.first()).toHaveAttribute('data-lui-group-first', '');
+  await expect(input).toHaveAttribute('data-lui-group-between', '');
+  await expect(addons.last()).toHaveAttribute('data-lui-group-last', '');
   await input.fill('12');
   await expect(input).toHaveValue('12');
 }
@@ -77,7 +76,7 @@ async function verifiesCustomFieldPadding({ page }: { page: Page }): Promise<voi
   await expect(input).toBeVisible({ timeout: 30_000 });
   await expect(input).toHaveCSS('padding-inline-start', '40px');
   await page.addStyleTag({
-    content: '.leverui-input-group__field { --leverui-input-group-field-height: 48px; }',
+    content: '.lui-input-group__field { --lui-input-group-field-height: 48px; }',
   });
   await expect(input).toHaveCSS('padding-inline-start', '48px');
   await input.fill('justin');
@@ -99,8 +98,8 @@ test('Input Group resolves numeric offsets to spacing tokens', verifiesNumericOf
 /** Preserve an explicit native override from startElementProps. */
 async function verifiesStartElementPropsOverride({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-input-group--contract&viewMode=story');
-  const start = page.getByTestId('input-group-interactive').locator('.leverui-input-element');
-  await expect(start).toHaveAttribute('data-leverui-input-group-start-element', '');
+  const start = page.getByTestId('input-group-interactive').locator('.lui-input-element');
+  await expect(start).toHaveAttribute('data-lui-input-group-start-element', '');
   await expect(start).toHaveCSS('pointer-events', 'auto');
 }
 

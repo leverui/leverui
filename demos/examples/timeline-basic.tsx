@@ -29,7 +29,7 @@ export function TimelineBasic(): JSX.Element {
           </Timeline.Indicator>
         </Timeline.Connector>
         <Timeline.Content>
-          <Timeline.Title style={{ 'font-size': 'var(--leverui-font-sizes-sm)' }}>
+          <Timeline.Title style={{ 'font-size': 'var(--lui-font-sizes-sm)' }}>
             Customs cleared
           </Timeline.Title>
           <Timeline.Description>15 March 2025</Timeline.Description>
@@ -43,7 +43,7 @@ export function TimelineBasic(): JSX.Element {
           </Timeline.Indicator>
         </Timeline.Connector>
         <Timeline.Content>
-          <Timeline.Title style={{ 'font-size': 'var(--leverui-font-sizes-sm)' }}>
+          <Timeline.Title style={{ 'font-size': 'var(--lui-font-sizes-sm)' }}>
             Order delivered
           </Timeline.Title>
           <Timeline.Description>17 March 2025, 10:30 am</Timeline.Description>

@@ -41,10 +41,10 @@ function verifiesCommandAppearanceHooks(): void {
   );
   const root = screen.getByTestId('root');
   const input = screen.getByTestId('input');
-  expect(root).toHaveClass('leverui-command__root', 'consumer-command');
+  expect(root).toHaveClass('lui-command__root', 'consumer-command');
   expect(root).toHaveAttribute('data-size', 'md');
-  expect(input).toHaveClass('leverui-command__input', 'consumer-input');
-  expect(input).toHaveAttribute('data-leverui-color-palette', 'red');
+  expect(input).toHaveClass('lui-command__input', 'consumer-input');
+  expect(input).toHaveAttribute('data-lui-color-palette', 'red');
   expect(root).toHaveStyle({ width: '280px' });
   setLarge(true);
   flush();
@@ -53,7 +53,7 @@ function verifiesCommandAppearanceHooks(): void {
   expect(screen.getByTestId('input')).toBe(input);
   expect(root).toHaveAttribute('data-size', 'sm');
   expect(input).toHaveAttribute('data-size-md', 'lg');
-  expect(input).toHaveAttribute('data-leverui-color-palette', 'blue');
+  expect(input).toHaveAttribute('data-lui-color-palette', 'blue');
   expect(input).toHaveAttribute('data-unstyled', '');
 }
 

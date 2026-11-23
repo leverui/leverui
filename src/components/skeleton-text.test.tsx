@@ -30,14 +30,14 @@ function verifiesTextProviderBoundary(): void {
 
   const plain = screen.getByTitle('plain-text');
   const provider = screen.getByTitle('provider-text');
-  const lines = provider.querySelectorAll('.leverui-skeleton');
+  const lines = provider.querySelectorAll('.lui-skeleton');
   expect(lines).toHaveLength(2);
   expect(provider.className).toBe(plain.className);
   const firstLine = lines[0];
   const firstVariant = firstLine?.getAttribute('data-variant');
   setProviderLoading(true);
   flush();
-  expect(provider.querySelectorAll('.leverui-skeleton')).toHaveLength(2);
+  expect(provider.querySelectorAll('.lui-skeleton')).toHaveLength(2);
   expect(provider.className).toBe(plain.className);
   expect(firstLine?.getAttribute('data-variant')).toBe(firstVariant);
   setProviderVariant('shine');

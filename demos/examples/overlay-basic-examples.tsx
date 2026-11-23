@@ -35,7 +35,7 @@ export function OverlayUpdate(): JSX.Element {
           <Box
             textStyle="sm"
             style={{
-              color: 'var(--leverui-colors-fg-muted)',
+              color: 'var(--lui-colors-fg-muted)',
             }}
           >
             Version 2.4 is installed. There is nothing to download.

@@ -100,31 +100,31 @@ const [active, setActive] = createSignal<number | null>(null);
 
 ```css
 .visitors-sparkline {
-  --leverui-sparkline-line-width: 1.5;
-  --leverui-sparkline-reference-color: #a6c9c0;
+  --lui-sparkline-line-width: 1.5;
+  --lui-sparkline-reference-color: #a6c9c0;
 }
 ```
 
 ### Variables
 
-| Variable                                  | Default                 | Description                      |
-| ----------------------------------------- | ----------------------- | -------------------------------- |
-| `--leverui-sparkline-width`               | `112px`                 | Chart width.                     |
-| `--leverui-sparkline-height`              | `48px`                  | Chart height.                    |
-| `--leverui-sparkline-color`               | Solid teal              | Line, fill and bar color.        |
-| `--leverui-sparkline-area-opacity`        | `0.2`                   | Area fill opacity.               |
-| `--leverui-sparkline-line-width`          | `2`                     | Line thickness.                  |
-| `--leverui-sparkline-reference-color`     | Emphasized border color | Reference line color.            |
-| `--leverui-sparkline-label-color`         | Muted text color        | Reference value color.           |
-| `--leverui-sparkline-active-point-stroke` | Background color        | Outline color of the active dot. |
+| Variable                              | Default                 | Description                      |
+| ------------------------------------- | ----------------------- | -------------------------------- |
+| `--lui-sparkline-width`               | `112px`                 | Chart width.                     |
+| `--lui-sparkline-height`              | `48px`                  | Chart height.                    |
+| `--lui-sparkline-color`               | Solid teal              | Line, fill and bar color.        |
+| `--lui-sparkline-area-opacity`        | `0.2`                   | Area fill opacity.               |
+| `--lui-sparkline-line-width`          | `2`                     | Line thickness.                  |
+| `--lui-sparkline-reference-color`     | Emphasized border color | Reference line color.            |
+| `--lui-sparkline-label-color`         | Muted text color        | Reference value color.           |
+| `--lui-sparkline-active-point-stroke` | Background color        | Outline color of the active dot. |
 
 The `color`, `width`, `height` and `fillOpacity` props set the matching
 variable, so a prop wins over a variable set in CSS.
 
 ### Classes
 
-Root: `.leverui-sparkline`.
+Root: `.lui-sparkline`.
 
-Parts, each prefixed with `.leverui-sparkline__`: `area`, `line`, `bar`,
+Parts, each prefixed with `.lui-sparkline__`: `area`, `line`, `bar`,
 `reference-line`, `reference-label`, `active-guide`, `active-point`,
 `gradient-start`, `gradient-end`.

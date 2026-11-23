@@ -70,9 +70,9 @@ export function ComboboxInputInContentExample(): JSX.Element {
             <Combobox.List>
               <Combobox.Input
                 style={{
-                  'margin-top': 'calc(-1 * var(--leverui-spacing-1))',
-                  'min-height': 'var(--leverui-sizes-8)',
-                  'padding-inline': 'var(--leverui-spacing-3)',
+                  'margin-top': 'calc(-1 * var(--lui-spacing-1))',
+                  'min-height': 'var(--lui-sizes-8)',
+                  'padding-inline': 'var(--lui-spacing-3)',
                   border: 'none',
                   outline: 'none',
                 }}
@@ -80,9 +80,9 @@ export function ComboboxInputInContentExample(): JSX.Element {
               />
               <Combobox.ItemGroup
                 style={{
-                  'border-top': '1px solid var(--leverui-colors-border)',
-                  'padding-top': 'var(--leverui-spacing-1)',
-                  'padding-inline': 'var(--leverui-spacing-1)',
+                  'border-top': '1px solid var(--lui-colors-border)',
+                  'padding-top': 'var(--lui-spacing-1)',
+                  'padding-inline': 'var(--lui-spacing-1)',
                 }}
               >
                 <For each={collection().items}>

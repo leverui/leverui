@@ -29,7 +29,7 @@ function verifiesCircleParts(): void {
   const track = screen.getByTestId('track');
   const range = screen.getByTestId('range');
   expect(root.hasAttribute('data-progress-root')).toBe(true);
-  expect(root.className).toContain('leverui-progress-circle__root');
+  expect(root.className).toContain('lui-progress-circle__root');
   expect(root.hasAttribute('size')).toBe(false);
   expect(circle).toBe(screen.getByTestId('circle'));
   expect(circle.tagName.toLowerCase()).toBe('svg');

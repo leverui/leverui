@@ -77,7 +77,7 @@ test('Color Picker works inside a dialog', verifiesDialog);
 async function verifiesInputGroupPadding({ page }: { page: Page }): Promise<void> {
   for (const id of ['input-only', 'trigger-in-input']) {
     await openStory(page, id);
-    const input = page.locator('.leverui-input-group__field');
+    const input = page.locator('.lui-input-group__field');
     await expect(input).toBeVisible();
     await expect(input).toHaveCSS('padding-inline-start', '40px');
     await expect(input).toHaveCSS('padding-inline-end', '40px');
@@ -89,12 +89,12 @@ test('Color Picker input groups use authored field padding', verifiesInputGroupP
 /** Verify portal content receives the root's finite appearance choices. */
 async function verifiesPortalAppearance({ page }: { page: Page }): Promise<void> {
   await openStory(page, 'swatch-and-input');
-  const root = page.locator('.leverui-color-picker__root');
+  const root = page.locator('.lui-color-picker__root');
   await expect(root).toHaveAttribute('data-size', 'xs');
-  await root.locator('.leverui-color-picker__trigger').click();
+  await root.locator('.lui-color-picker__trigger').click();
   const content = page.getByRole('dialog');
   await expect(content).toHaveAttribute('data-size', 'xs');
-  await expect(content).toHaveAttribute('data-leverui-color-picker-css', '');
+  await expect(content).toHaveAttribute('data-lui-color-picker-css', '');
 }
 
 test('Color Picker appearance reaches portaled content', verifiesPortalAppearance);

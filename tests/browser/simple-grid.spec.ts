@@ -29,8 +29,8 @@ async function verifiesSimpleGrid({ page }: { page: Page }): Promise<void> {
   await expect(basic).toHaveCSS('display', 'grid');
   await expect(basic).toHaveCSS('grid-template-columns', '122px 122px');
   await expect(basic).toHaveCSS('gap', '16px');
-  await expect(basic).toHaveClass(/leverui-simple-grid/);
-  await expect(basic).toHaveClass(/leverui-grid/);
+  await expect(basic).toHaveClass(/lui-simple-grid/);
+  await expect(basic).toHaveClass(/lui-grid/);
   await expect(basic).not.toHaveAttribute('columns');
   await expect(basic).not.toHaveAttribute('minChildWidth');
   await expect(page.getByTestId('simple-grid-responsive')).toHaveCSS(
@@ -56,7 +56,7 @@ async function verifiesSimpleGrid({ page }: { page: Page }): Promise<void> {
   await expect(child).toHaveJSProperty('tagName', 'SECTION');
   await expect(child).toHaveCSS('display', 'grid');
   await expect(child).toHaveClass(/child-grid/);
-  await expect(child).toHaveClass(/leverui-simple-grid/);
+  await expect(child).toHaveClass(/lui-simple-grid/);
   const live = page.getByTestId('simple-grid-live');
   await expect(live).toHaveJSProperty('tagName', 'BUTTON');
   await expect(live).toHaveAttribute('data-grid-ref', 'button');
@@ -77,10 +77,10 @@ async function verifiesSimpleGrid({ page }: { page: Page }): Promise<void> {
   expect(await trackCount(page, 'simple-grid-array')).toBe(3);
   expect(await trackCount(page, 'simple-grid-auto-responsive')).toBe(2);
   expect(await trackCount(page, 'simple-grid-skipped-width')).toBe(2);
-  await page.addStyleTag({ content: ':root { --leverui-sizes-24: 140px; }' });
+  await page.addStyleTag({ content: ':root { --lui-sizes-24: 140px; }' });
   expect(await trackCount(page, 'simple-grid-token')).toBe(1);
   await page.addStyleTag({
-    content: '.leverui-simple-grid[data-testid="simple-grid-basic"] { gap: 20px; }',
+    content: '.lui-simple-grid[data-testid="simple-grid-basic"] { gap: 20px; }',
   });
   await expect(basic).toHaveCSS('gap', '20px');
 }
@@ -102,7 +102,7 @@ function renderServerGrid(): JSX.Element {
 async function verifiesServerGrid({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderServerGrid);
   expect(markup).toContain('id="server-simple-grid"');
-  expect(markup).toContain('leverui-simple-grid');
+  expect(markup).toContain('lui-simple-grid');
   expect(markup).not.toMatch(/\s(?:columns|minChildWidth)=/);
   await page.setViewportSize({ width: 600, height: 700 });
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');

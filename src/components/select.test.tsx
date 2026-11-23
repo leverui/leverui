@@ -66,10 +66,8 @@ function verifiesSelection(): void {
     ),
   );
   const root = screen.getByText('Framework').closest('[data-select-root]');
-  expect(root).toHaveClass('leverui-select__root');
-  expect(screen.getByRole('combobox', { name: 'Framework' })).toHaveClass(
-    'leverui-select__trigger',
-  );
+  expect(root).toHaveClass('lui-select__root');
+  expect(screen.getByRole('combobox', { name: 'Framework' })).toHaveClass('lui-select__trigger');
   expect(screen.getByText('Solid', { selector: '[data-select-value-text]' })).toBeInTheDocument();
   expect(root?.querySelector('[data-select-item][data-value="vue"]')).toHaveAttribute(
     'aria-disabled',

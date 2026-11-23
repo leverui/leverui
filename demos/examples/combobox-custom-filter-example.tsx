@@ -65,7 +65,7 @@ export function ComboboxCustomFilterExample(): JSX.Element {
                         <Span
                           textStyle="sm"
                           style={{
-                            'font-weight': 'var(--leverui-font-weights-medium)',
+                            'font-weight': 'var(--lui-font-weights-medium)',
                           }}
                         >
                           {person.name}
@@ -73,7 +73,7 @@ export function ComboboxCustomFilterExample(): JSX.Element {
                         <Span
                           textStyle="xs"
                           style={{
-                            color: 'var(--leverui-colors-fg-muted)',
+                            color: 'var(--lui-colors-fg-muted)',
                           }}
                         >
                           {person.email}

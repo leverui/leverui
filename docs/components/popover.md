@@ -176,9 +176,9 @@ Load the [package stylesheet](../getting-started.md) first. Set `class` or
 
 ```css
 .account-popover {
-  --leverui-popover-background: #f5f8ff;
-  --leverui-popover-size: 24rem;
-  --leverui-popover-padding: 1.25rem;
+  --lui-popover-background: #f5f8ff;
+  --lui-popover-size: 24rem;
+  --lui-popover-padding: 1.25rem;
 }
 ```
 

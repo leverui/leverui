@@ -24,9 +24,9 @@ function verifiesServerMarkup(): void {
   expect(markup).toContain('aria-roledescription="marquee"');
   expect(markup).toContain('aria-live="off"');
   expect(markup).toContain('Hydrated news ticker');
-  expect(markup).toContain('leverui-marquee__root');
-  expect(markup).toContain('leverui-marquee__viewport');
-  expect(markup).toContain('leverui-marquee__content');
+  expect(markup).toContain('lui-marquee__root');
+  expect(markup).toContain('lui-marquee__viewport');
+  expect(markup).toContain('lui-marquee__content');
   expect(markup).toContain('Breaking news');
   expect(markup).toContain('aria-hidden="true"');
 }

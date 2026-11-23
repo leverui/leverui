@@ -19,7 +19,7 @@ add this rule once. An icon with its own `size` keeps it. Components that size
 their own icons, such as `Button`, still do.
 
 ```css
-@layer leverui.base {
+@layer lui.base {
   :where(.lucide[width='24'][height='24']) {
     width: 1em;
     height: 1em;
@@ -58,9 +58,9 @@ theme. `size` is never passed as a native `size` attribute. Responsive: pass an
 object keyed by breakpoint or an array.
 
 Import `@leverui/components/styles.css` once. Restyle with `class` or `style`,
-target `.leverui-icon`, or set `--leverui-icon-size` on a named size. No
+target `.lui-icon`, or set `--lui-icon-size` on a named size. No
 `!important` needed. The SVG `color` attribute takes a CSS color, not a token
-name such as `red.500`. Use `var(--leverui-colors-red-500)` in CSS.
+name such as `red.500`. Use `var(--lui-colors-red-500)` in CSS.
 
 `IconPropsProvider` sets a default size, class, and native attributes for the
 icons inside it. The defaults can be reactive. Each Icon keeps its own element,

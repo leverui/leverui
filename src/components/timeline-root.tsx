@@ -50,7 +50,7 @@ function TimelineRootComponent(props: TimelineRootRuntimeProps): JSX.Element {
       ...native,
       ...timelineAttributes(choices()),
       role: native.role ?? 'list',
-      'data-leverui-color-palette': readTimelinePalette(local.colorPalette),
+      'data-lui-color-palette': readTimelinePalette(local.colorPalette),
       'data-unstyled': local.unstyled ? '' : undefined,
       class: composeRecipeClassNames('timeline__root', undefined, local.class, local.className),
       ref: attachNode,

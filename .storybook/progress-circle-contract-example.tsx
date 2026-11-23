@@ -86,7 +86,7 @@ export function ProgressCircleContractExample(): JSX.Element {
             <ProgressCircle.Range />
           </ProgressCircle.Circle>
         </ProgressCircle.Root>
-        <ProgressCircle.Root value={50} style={{ '--leverui-progress-circle-thickness': '10px' }}>
+        <ProgressCircle.Root value={50} style={{ '--lui-progress-circle-thickness': '10px' }}>
           <ProgressCircle.Circle data-testid="circle-thick">
             <ProgressCircle.Track />
             <ProgressCircle.Range />

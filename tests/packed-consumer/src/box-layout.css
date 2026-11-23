@@ -1,6 +1,6 @@
 .packed-box-surface {
-  background: var(--leverui-colors-bg);
-  padding: var(--leverui-spacing-4);
+  background: var(--lui-colors-bg);
+  padding: var(--lui-spacing-4);
 }
 
 .packed-box-raw-spacing {
@@ -35,5 +35,5 @@
 }
 
 .release-tree-shake-box {
-  padding: var(--leverui-spacing-4);
+  padding: var(--lui-spacing-4);
 }

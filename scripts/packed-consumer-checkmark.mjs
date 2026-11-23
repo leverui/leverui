@@ -8,7 +8,7 @@ export async function verifyPackedCheckmark(page) {
   assert.equal(await root.getAttribute('data-state'), 'unchecked');
   assert.equal(await root.getAttribute('role'), null);
   assert.equal(await root.locator('path, polyline').count(), 0);
-  assert.match((await root.getAttribute('class')) ?? '', /leverui-checkmark/);
+  assert.match((await root.getAttribute('class')) ?? '', /lui-checkmark/);
   const child = page.locator('#packed-checkmark-child');
   assert.equal(await child.getAttribute('viewBox'), '0 0 32 32');
   assert.equal(await child.locator('polyline').count(), 1);

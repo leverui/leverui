@@ -78,7 +78,7 @@ export function CarouselWithThumbnails(): JSX.Element {
             (item, index) => (
               <Carousel.Indicator index={index} unstyled class="carousel-example-thumbnail">
                 <Image
-                  style={{ width: 'var(--leverui-spacing-20)', 'aspect-ratio': '16 / 9' }}
+                  style={{ width: 'var(--lui-spacing-20)', 'aspect-ratio': '16 / 9' }}
                   src={item().url}
                   alt={item().label}
                 />

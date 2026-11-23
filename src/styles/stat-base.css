@@ -1,85 +1,85 @@
-@layer leverui.recipes {
-  .leverui-stat__group:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-stat__group:not([data-unstyled]) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
   }
 
-  .leverui-stat__root:not([data-unstyled]) {
+  .lui-stat__root:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
-    gap: var(--leverui-spacing-1);
+    gap: var(--lui-spacing-1);
     position: relative;
     flex: 1;
-    --leverui-private-stat-value-font-size: var(--leverui-font-sizes-2xl);
-    --leverui-private-stat-value-line-height: 2rem;
+    --lui-private-stat-value-font-size: var(--lui-font-sizes-2xl);
+    --lui-private-stat-value-line-height: 2rem;
 
     &[data-size='sm'] {
-      --leverui-private-stat-value-font-size: var(--leverui-font-sizes-xl);
-      --leverui-private-stat-value-line-height: 1.875rem;
+      --lui-private-stat-value-font-size: var(--lui-font-sizes-xl);
+      --lui-private-stat-value-line-height: 1.875rem;
     }
     &[data-size='md'] {
-      --leverui-private-stat-value-font-size: var(--leverui-font-sizes-2xl);
-      --leverui-private-stat-value-line-height: 2rem;
+      --lui-private-stat-value-font-size: var(--lui-font-sizes-2xl);
+      --lui-private-stat-value-line-height: 2rem;
     }
     &[data-size='lg'] {
-      --leverui-private-stat-value-font-size: var(--leverui-font-sizes-3xl);
-      --leverui-private-stat-value-line-height: 2.375rem;
+      --lui-private-stat-value-font-size: var(--lui-font-sizes-3xl);
+      --lui-private-stat-value-line-height: 2.375rem;
     }
   }
 
-  @scope (.leverui-stat__root:not([data-unstyled])) to (.leverui-stat__root) {
-    .leverui-stat__label:not([data-unstyled]) {
+  @scope (.lui-stat__root:not([data-unstyled])) to (.lui-stat__root) {
+    .lui-stat__label:not([data-unstyled]) {
       display: inline-flex;
-      gap: var(--leverui-spacing-1\.5);
+      gap: var(--lui-spacing-1\.5);
       align-items: center;
-      color: var(--leverui-colors-fg-muted);
-      font-size: var(--leverui-font-sizes-sm);
+      color: var(--lui-colors-fg-muted);
+      font-size: var(--lui-font-sizes-sm);
       line-height: 1.25rem;
     }
 
-    .leverui-stat__helpText:not([data-unstyled]) {
-      color: var(--leverui-colors-fg-muted);
-      font-size: var(--leverui-font-sizes-xs);
+    .lui-stat__helpText:not([data-unstyled]) {
+      color: var(--lui-colors-fg-muted);
+      font-size: var(--lui-font-sizes-xs);
       line-height: 1rem;
     }
 
-    .leverui-stat__valueUnit:not([data-unstyled]) {
-      color: var(--leverui-colors-fg-muted);
-      font-size: var(--leverui-font-sizes-xs);
+    .lui-stat__valueUnit:not([data-unstyled]) {
+      color: var(--lui-colors-fg-muted);
+      font-size: var(--lui-font-sizes-xs);
       line-height: 1rem;
       font-weight: initial;
       letter-spacing: initial;
     }
 
-    .leverui-stat__valueText:not([data-unstyled]) {
+    .lui-stat__valueText:not([data-unstyled]) {
       vertical-align: baseline;
-      font-weight: var(--leverui-font-weights-semibold);
-      letter-spacing: var(--leverui-letter-spacings-tight);
+      font-weight: var(--lui-font-weights-semibold);
+      letter-spacing: var(--lui-letter-spacings-tight);
       font-feature-settings: 'pnum';
       font-variant-numeric: proportional-nums;
       display: inline-flex;
-      gap: var(--leverui-spacing-1);
-      font-size: var(--leverui-private-stat-value-font-size);
-      line-height: var(--leverui-private-stat-value-line-height);
+      gap: var(--lui-spacing-1);
+      font-size: var(--lui-private-stat-value-font-size);
+      line-height: var(--lui-private-stat-value-line-height);
     }
 
-    .leverui-stat__indicator:not([data-unstyled]) {
+    .lui-stat__indicator:not([data-unstyled]) {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      margin-inline-end: var(--leverui-spacing-1);
+      margin-inline-end: var(--lui-spacing-1);
 
       & :where(svg) {
         width: 1em;
         height: 1em;
       }
       &[data-type='up'] {
-        color: var(--leverui-colors-fg-success);
+        color: var(--lui-colors-fg-success);
       }
       &[data-type='down'] {
-        color: var(--leverui-colors-fg-error);
+        color: var(--lui-colors-fg-error);
       }
     }
   }

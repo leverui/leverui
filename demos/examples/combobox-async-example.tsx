@@ -74,18 +74,18 @@ export function ComboboxAsyncExample(): JSX.Element {
       </Combobox.Control>
       <Portal>
         <Combobox.Positioner>
-          <Combobox.Content style={{ 'min-width': 'var(--leverui-sizes-sm)' }}>
+          <Combobox.Content style={{ 'min-width': 'var(--lui-sizes-sm)' }}>
             <Combobox.List>
               {loading() ? (
-                <HStack style={{ padding: 'var(--leverui-spacing-2)' }}>
+                <HStack style={{ padding: 'var(--lui-spacing-2)' }}>
                   <Spinner size="xs" style={{ 'border-width': '1px' }} />
                   <Span>Loading...</Span>
                 </HStack>
               ) : error() ? (
                 <Span
                   style={{
-                    padding: 'var(--leverui-spacing-2)',
-                    color: 'var(--leverui-colors-fg-error)',
+                    padding: 'var(--lui-spacing-2)',
+                    color: 'var(--lui-colors-fg-error)',
                   }}
                 >
                   Could not load the crew
@@ -99,7 +99,7 @@ export function ComboboxAsyncExample(): JSX.Element {
                         <HStack justify="space-between" textStyle="sm">
                           <Span
                             style={{
-                              'font-weight': 'var(--leverui-font-weights-medium)',
+                              'font-weight': 'var(--lui-font-weights-medium)',
                               overflow: 'hidden',
                               'text-overflow': 'ellipsis',
                               'white-space': 'nowrap',
@@ -109,7 +109,7 @@ export function ComboboxAsyncExample(): JSX.Element {
                           </Span>
                           <Span
                             style={{
-                              color: 'var(--leverui-colors-fg-muted)',
+                              color: 'var(--lui-colors-fg-muted)',
                               overflow: 'hidden',
                               'text-overflow': 'ellipsis',
                               'white-space': 'nowrap',

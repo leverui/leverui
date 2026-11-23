@@ -1,50 +1,50 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 480px) {
-    .leverui-switch__root:not([data-unstyled]) {
+    .lui-switch__root:not([data-unstyled]) {
       &[data-size-sm='xs'] {
-        --leverui-private-switch-width: var(--leverui-sizes-6);
-        --leverui-private-switch-height: var(--leverui-sizes-3);
-        --leverui-private-switch-indicator-font-size: var(--leverui-font-sizes-xs);
+        --lui-private-switch-width: var(--lui-sizes-6);
+        --lui-private-switch-height: var(--lui-sizes-3);
+        --lui-private-switch-indicator-font-size: var(--lui-font-sizes-xs);
       }
       &[data-size-sm='sm'] {
-        --leverui-private-switch-width: var(--leverui-sizes-8);
-        --leverui-private-switch-height: var(--leverui-sizes-4);
-        --leverui-private-switch-indicator-font-size: var(--leverui-font-sizes-xs);
+        --lui-private-switch-width: var(--lui-sizes-8);
+        --lui-private-switch-height: var(--lui-sizes-4);
+        --lui-private-switch-indicator-font-size: var(--lui-font-sizes-xs);
       }
       &[data-size-sm='md'] {
-        --leverui-private-switch-width: var(--leverui-sizes-10);
-        --leverui-private-switch-height: var(--leverui-sizes-5);
-        --leverui-private-switch-indicator-font-size: var(--leverui-font-sizes-sm);
+        --lui-private-switch-width: var(--lui-sizes-10);
+        --lui-private-switch-height: var(--lui-sizes-5);
+        --lui-private-switch-indicator-font-size: var(--lui-font-sizes-sm);
       }
       &[data-size-sm='lg'] {
-        --leverui-private-switch-width: var(--leverui-sizes-12);
-        --leverui-private-switch-height: var(--leverui-sizes-6);
-        --leverui-private-switch-indicator-font-size: var(--leverui-font-sizes-md);
+        --lui-private-switch-width: var(--lui-sizes-12);
+        --lui-private-switch-height: var(--lui-sizes-6);
+        --lui-private-switch-indicator-font-size: var(--lui-font-sizes-md);
       }
     }
   }
 
   @media (min-width: 768px) {
-    .leverui-switch__root:not([data-unstyled]) {
+    .lui-switch__root:not([data-unstyled]) {
       &[data-size-md='xs'] {
-        --leverui-private-switch-width: var(--leverui-sizes-6);
-        --leverui-private-switch-height: var(--leverui-sizes-3);
-        --leverui-private-switch-indicator-font-size: var(--leverui-font-sizes-xs);
+        --lui-private-switch-width: var(--lui-sizes-6);
+        --lui-private-switch-height: var(--lui-sizes-3);
+        --lui-private-switch-indicator-font-size: var(--lui-font-sizes-xs);
       }
       &[data-size-md='sm'] {
-        --leverui-private-switch-width: var(--leverui-sizes-8);
-        --leverui-private-switch-height: var(--leverui-sizes-4);
-        --leverui-private-switch-indicator-font-size: var(--leverui-font-sizes-xs);
+        --lui-private-switch-width: var(--lui-sizes-8);
+        --lui-private-switch-height: var(--lui-sizes-4);
+        --lui-private-switch-indicator-font-size: var(--lui-font-sizes-xs);
       }
       &[data-size-md='md'] {
-        --leverui-private-switch-width: var(--leverui-sizes-10);
-        --leverui-private-switch-height: var(--leverui-sizes-5);
-        --leverui-private-switch-indicator-font-size: var(--leverui-font-sizes-sm);
+        --lui-private-switch-width: var(--lui-sizes-10);
+        --lui-private-switch-height: var(--lui-sizes-5);
+        --lui-private-switch-indicator-font-size: var(--lui-font-sizes-sm);
       }
       &[data-size-md='lg'] {
-        --leverui-private-switch-width: var(--leverui-sizes-12);
-        --leverui-private-switch-height: var(--leverui-sizes-6);
-        --leverui-private-switch-indicator-font-size: var(--leverui-font-sizes-md);
+        --lui-private-switch-width: var(--lui-sizes-12);
+        --lui-private-switch-height: var(--lui-sizes-6);
+        --lui-private-switch-indicator-font-size: var(--lui-font-sizes-md);
       }
     }
   }

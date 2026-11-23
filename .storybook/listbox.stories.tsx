@@ -136,7 +136,7 @@ function ListboxCssContractExample(): JSX.Element {
         collection={collection}
         defaultValue={['solid']}
         class="consumer-listbox"
-        style={{ width: '280px', '--leverui-listbox-selected-background': 'rgb(253, 230, 138)' }}
+        style={{ width: '280px', '--lui-listbox-selected-background': 'rgb(253, 230, 138)' }}
         data-testid="listbox-css-root"
       >
         <Listbox.Label>Styled frameworks</Listbox.Label>

@@ -16,6 +16,6 @@
 }
 
 .example-table-sticky-name {
-  min-width: var(--leverui-sizes-40);
+  min-width: var(--lui-sizes-40);
   left: 0;
 }

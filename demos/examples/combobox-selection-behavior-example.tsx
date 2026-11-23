@@ -35,12 +35,12 @@ function ComboboxSelectionDemo(props: { behavior: SelectionBehavior }): JSX.Elem
 
   return (
     <Box>
-      <Stack style={{ 'margin-bottom': 'var(--leverui-spacing-4)' }}>
+      <Stack style={{ 'margin-bottom': 'var(--lui-spacing-4)' }}>
         <Heading as="h3">Selection behavior: {props.behavior}</Heading>
         <Text
           textStyle="sm"
           style={{
-            color: 'var(--leverui-colors-gray-600)',
+            color: 'var(--lui-colors-gray-600)',
           }}
         >
           {descriptions[props.behavior]}
@@ -78,7 +78,7 @@ function ComboboxSelectionDemo(props: { behavior: SelectionBehavior }): JSX.Elem
 /** Compare replace, clear, and preserve selection behavior in one story. */
 export function ComboboxSelectionBehaviorExample(): JSX.Element {
   return (
-    <Stack gap="8" style={{ padding: 'var(--leverui-spacing-4)' }}>
+    <Stack gap="8" style={{ padding: 'var(--lui-spacing-4)' }}>
       <ComboboxSelectionDemo behavior="replace" />
       <ComboboxSelectionDemo behavior="clear" />
       <ComboboxSelectionDemo behavior="preserve" />

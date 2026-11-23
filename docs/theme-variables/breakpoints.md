@@ -4,10 +4,10 @@
 
 [All variables](README.md)
 
-| Variable                    | Value    |
-| --------------------------- | -------- |
-| `--leverui-breakpoints-2xl` | `1536px` |
-| `--leverui-breakpoints-lg`  | `1024px` |
-| `--leverui-breakpoints-md`  | `768px`  |
-| `--leverui-breakpoints-sm`  | `480px`  |
-| `--leverui-breakpoints-xl`  | `1280px` |
+| Variable                | Value    |
+| ----------------------- | -------- |
+| `--lui-breakpoints-2xl` | `1536px` |
+| `--lui-breakpoints-lg`  | `1024px` |
+| `--lui-breakpoints-md`  | `768px`  |
+| `--lui-breakpoints-sm`  | `480px`  |
+| `--lui-breakpoints-xl`  | `1280px` |

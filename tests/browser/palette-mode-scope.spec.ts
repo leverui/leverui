@@ -7,7 +7,7 @@ const blueOnDark = 'rgb(163, 207, 255)';
 /** Verify palette colors follow the nearest light or dark scope, not the page's mode. */
 async function verifiesPaletteFollowsModeScope({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=internal-palette-mode-scope--contract');
-  await expect(page.locator('html')).toHaveAttribute('data-leverui-color-mode', 'light');
+  await expect(page.locator('html')).toHaveAttribute('data-lui-color-mode', 'light');
   await expect(page.getByTestId('scope-page-button')).toHaveCSS('color', grayOnLight);
   await expect(page.getByTestId('scope-dark-button')).toHaveCSS('color', grayOnDark);
   await expect(page.getByTestId('scope-dark-light-button')).toHaveCSS('color', grayOnLight);

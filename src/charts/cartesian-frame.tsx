@@ -69,8 +69,8 @@ export function CartesianFrame(props: CartesianFrameProps): JSX.Element {
         }
       }
       class={[
-        'leverui-cartesian-chart__root',
-        `leverui-${props.chart.kind ?? 'area'}-chart`,
+        'lui-cartesian-chart__root',
+        `lui-${props.chart.kind ?? 'area'}-chart`,
         native().class,
       ]}
       style={native().style}

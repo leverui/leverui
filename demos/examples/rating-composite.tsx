@@ -17,8 +17,8 @@ export function RatingTestimonial(): JSX.Element {
           <Avatar.Image src="/demo-images/avatars/avatar-2.webp" />
         </Avatar.Root>
         <Stack gap="0" textStyle="sm">
-          <Text style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>Oskar Brandt</Text>
-          <Text style={{ color: 'var(--leverui-colors-fg-muted)' }}>CTO, Fernhill Labs</Text>
+          <Text style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>Oskar Brandt</Text>
+          <Text style={{ color: 'var(--lui-colors-fg-muted)' }}>CTO, Fernhill Labs</Text>
         </Stack>
       </HStack>
     </Stack>

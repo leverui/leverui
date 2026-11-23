@@ -36,7 +36,7 @@ function verifiesBox(): void {
   const box = screen.getByTestId('box');
   expect(box.tagName).toBe('DIV');
   expect(box.textContent).toBe('Content');
-  expect([...box.classList]).toEqual(['leverui-box', 'consumer-box-test']);
+  expect([...box.classList]).toEqual(['lui-box', 'consumer-box-test']);
   expect(box.getAttribute('aria-label')).toBe('Content panel');
 }
 
@@ -56,7 +56,7 @@ function verifiesButtonLoading(): void {
   expect(button.getAttribute('type')).toBe('button');
   expect(button.hasAttribute('disabled')).toBe(true);
   expect(button.hasAttribute('aria-busy')).toBe(false);
-  expect(button.className).toContain('leverui-button');
+  expect(button.className).toContain('lui-button');
 }
 
 /** Verify native, alias, and stable classes appear once. */
@@ -68,14 +68,14 @@ function verifiesComponentClasses(): void {
         <Button
           data-testid="class-button"
           class="native-button"
-          {...{ className: 'alias-button leverui-button' }}
+          {...{ className: 'alias-button lui-button' }}
         >
           Save
         </Button>
         <Spinner
           data-testid="class-spinner"
           class="native-spinner"
-          {...{ className: 'alias-spinner leverui-spinner' }}
+          {...{ className: 'alias-spinner lui-spinner' }}
         />
       </>
     );
@@ -85,15 +85,15 @@ function verifiesComponentClasses(): void {
   const buttonClasses = screen.getByTestId('class-button').className.split(/\s+/);
   const spinnerClasses = screen.getByTestId('class-spinner').className.split(/\s+/);
   expect(buttonClasses).toEqual(
-    expect.arrayContaining(['leverui-button', 'native-button', 'alias-button']),
+    expect.arrayContaining(['lui-button', 'native-button', 'alias-button']),
   );
   expect(spinnerClasses).toEqual(
-    expect.arrayContaining(['leverui-spinner', 'native-spinner', 'alias-spinner']),
+    expect.arrayContaining(['lui-spinner', 'native-spinner', 'alias-spinner']),
   );
   expect(countClass(buttonClasses, 'alias-button')).toBe(1);
   expect(countClass(spinnerClasses, 'alias-spinner')).toBe(1);
-  expect(countClass(buttonClasses, 'leverui-button')).toBe(1);
-  expect(countClass(spinnerClasses, 'leverui-spinner')).toBe(1);
+  expect(countClass(buttonClasses, 'lui-button')).toBe(1);
+  expect(countClass(spinnerClasses, 'lui-spinner')).toBe(1);
 }
 
 /** Verify a consumer class composes with Button's stable hook. */
@@ -108,7 +108,7 @@ function verifiesConsumerClass(): void {
   }
 
   render(renderButton);
-  expect(screen.getByTestId('custom-button').className).toContain('leverui-button');
+  expect(screen.getByTestId('custom-button').className).toContain('lui-button');
   expect(screen.getByTestId('custom-button').className).toContain('custom-button');
 }
 
@@ -146,7 +146,7 @@ function verifiesAsChildStyling(): void {
   render(renderLink);
   const link = screen.getByRole('link', { name: 'Help' });
   expect(link.getAttribute('href')).toBe('/help');
-  expect(link.classList.contains('leverui-box')).toBe(true);
+  expect(link.classList.contains('lui-box')).toBe(true);
   expect(link.classList.contains('consumer-help-link')).toBe(true);
 }
 

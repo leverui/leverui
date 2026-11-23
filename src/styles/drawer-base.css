@@ -1,50 +1,50 @@
-@layer leverui.recipes {
-  .leverui-drawer__backdrop[data-leverui-drawer-css] {
-    --leverui-drawer-z-index: var(--leverui-z-index-popover);
+@layer lui.recipes {
+  .lui-drawer__backdrop[data-lui-drawer-css] {
+    --lui-drawer-z-index: var(--lui-z-index-popover);
     position: fixed;
     inset-inline-start: 0;
     top: 0;
     width: 100vw;
     height: 100dvh;
-    background: var(--leverui-colors-black-alpha-500);
-    z-index: calc(var(--leverui-drawer-z-index) + var(--layer-index, 0) - 1);
+    background: var(--lui-colors-black-alpha-500);
+    z-index: calc(var(--lui-drawer-z-index) + var(--layer-index, 0) - 1);
   }
 
-  .leverui-drawer__positioner[data-leverui-drawer-css] {
-    --leverui-drawer-z-index: var(--leverui-z-index-popover);
-    --leverui-private-drawer-contained-padding: 0;
+  .lui-drawer__positioner[data-lui-drawer-css] {
+    --lui-drawer-z-index: var(--lui-z-index-popover);
+    --lui-private-drawer-contained-padding: 0;
     position: fixed;
     inset-inline-start: 0;
     top: 0;
     display: flex;
-    padding: var(--leverui-private-drawer-contained-padding);
+    padding: var(--lui-private-drawer-contained-padding);
     width: 100vw;
     height: 100dvh;
-    z-index: calc(var(--leverui-drawer-z-index) + var(--layer-index, 0));
+    z-index: calc(var(--lui-drawer-z-index) + var(--layer-index, 0));
     overscroll-behavior-y: none;
   }
 
-  .leverui-drawer__content[data-leverui-drawer-css] {
-    --leverui-drawer-z-index: var(--leverui-z-index-popover);
-    --leverui-drawer-background: var(--leverui-colors-bg-panel);
-    --leverui-private-drawer-size-max-width: var(--leverui-sizes-xs);
-    --leverui-private-drawer-height: auto;
-    --leverui-private-drawer-radius: 0;
-    --leverui-drawer-max-width: var(--leverui-private-drawer-size-max-width);
+  .lui-drawer__content[data-lui-drawer-css] {
+    --lui-drawer-z-index: var(--lui-z-index-popover);
+    --lui-drawer-background: var(--lui-colors-bg-panel);
+    --lui-private-drawer-size-max-width: var(--lui-sizes-xs);
+    --lui-private-drawer-height: auto;
+    --lui-private-drawer-radius: 0;
+    --lui-drawer-max-width: var(--lui-private-drawer-size-max-width);
     position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: var(--leverui-drawer-max-width);
-    height: var(--leverui-private-drawer-height);
+    max-width: var(--lui-drawer-max-width);
+    height: var(--lui-private-drawer-height);
     max-height: 100dvh;
     outline: 0;
-    font-size: var(--leverui-font-sizes-sm);
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
     color: inherit;
-    background: var(--leverui-drawer-background);
-    border-radius: var(--leverui-private-drawer-radius);
-    box-shadow: var(--leverui-shadows-lg);
-    z-index: calc(var(--leverui-drawer-z-index) + var(--layer-index, 0));
+    background: var(--lui-drawer-background);
+    border-radius: var(--lui-private-drawer-radius);
+    box-shadow: var(--lui-shadows-lg);
+    z-index: calc(var(--lui-drawer-z-index) + var(--layer-index, 0));
   }
 }

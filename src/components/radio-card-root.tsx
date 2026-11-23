@@ -83,13 +83,13 @@ function renderRadioCardRoot(
         return composeRecipeClassNames(
           'radio-card__root',
           undefined,
-          'leverui-radio-card',
+          'lui-radio-card',
           local.class,
           local.className,
         );
       },
       /** Scope the selected semantic palette to Card descendants. */
-      get 'data-leverui-color-palette'() {
+      get 'data-lui-color-palette'() {
         return readRadiomarkPalette(local.colorPalette);
       },
       /** Suppress authored presentation without changing selection. */

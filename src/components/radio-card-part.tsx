@@ -77,7 +77,7 @@ export function renderRadioCardPart<Props extends RuntimePartProps>(
         return composeRecipeClassNames(
           `radio-card__${slot}`,
           undefined,
-          slot === 'itemIndicator' ? 'leverui-radiomark' : undefined,
+          slot === 'itemIndicator' ? 'lui-radiomark' : undefined,
           local.class,
           local.className,
         );

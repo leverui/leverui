@@ -1,73 +1,73 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 1024px) {
-    .leverui-radio-group__root:not([data-unstyled]) {
+    .lui-radio-group__root:not([data-unstyled]) {
       &[data-size-lg='xs'] {
-        --leverui-private-radio-group-item-gap: var(--leverui-spacing-1\.5);
-        --leverui-private-radio-group-font-size: var(--leverui-font-sizes-xs);
-        --leverui-private-radio-group-line-height: 1rem;
+        --lui-private-radio-group-item-gap: var(--lui-spacing-1\.5);
+        --lui-private-radio-group-font-size: var(--lui-font-sizes-xs);
+        --lui-private-radio-group-line-height: 1rem;
       }
       &[data-size-lg='sm'] {
-        --leverui-private-radio-group-item-gap: var(--leverui-spacing-2);
-        --leverui-private-radio-group-font-size: var(--leverui-font-sizes-sm);
-        --leverui-private-radio-group-line-height: 1.25rem;
+        --lui-private-radio-group-item-gap: var(--lui-spacing-2);
+        --lui-private-radio-group-font-size: var(--lui-font-sizes-sm);
+        --lui-private-radio-group-line-height: 1.25rem;
       }
       &[data-size-lg='md'] {
-        --leverui-private-radio-group-item-gap: var(--leverui-spacing-2\.5);
-        --leverui-private-radio-group-font-size: var(--leverui-font-sizes-sm);
-        --leverui-private-radio-group-line-height: 1.25rem;
+        --lui-private-radio-group-item-gap: var(--lui-spacing-2\.5);
+        --lui-private-radio-group-font-size: var(--lui-font-sizes-sm);
+        --lui-private-radio-group-line-height: 1.25rem;
       }
       &[data-size-lg='lg'] {
-        --leverui-private-radio-group-item-gap: var(--leverui-spacing-3);
-        --leverui-private-radio-group-font-size: var(--leverui-font-sizes-md);
-        --leverui-private-radio-group-line-height: 1.5rem;
+        --lui-private-radio-group-item-gap: var(--lui-spacing-3);
+        --lui-private-radio-group-font-size: var(--lui-font-sizes-md);
+        --lui-private-radio-group-line-height: 1.5rem;
       }
     }
   }
   @media (min-width: 1280px) {
-    .leverui-radio-group__root:not([data-unstyled]) {
+    .lui-radio-group__root:not([data-unstyled]) {
       &[data-size-xl='xs'] {
-        --leverui-private-radio-group-item-gap: var(--leverui-spacing-1\.5);
-        --leverui-private-radio-group-font-size: var(--leverui-font-sizes-xs);
-        --leverui-private-radio-group-line-height: 1rem;
+        --lui-private-radio-group-item-gap: var(--lui-spacing-1\.5);
+        --lui-private-radio-group-font-size: var(--lui-font-sizes-xs);
+        --lui-private-radio-group-line-height: 1rem;
       }
       &[data-size-xl='sm'] {
-        --leverui-private-radio-group-item-gap: var(--leverui-spacing-2);
-        --leverui-private-radio-group-font-size: var(--leverui-font-sizes-sm);
-        --leverui-private-radio-group-line-height: 1.25rem;
+        --lui-private-radio-group-item-gap: var(--lui-spacing-2);
+        --lui-private-radio-group-font-size: var(--lui-font-sizes-sm);
+        --lui-private-radio-group-line-height: 1.25rem;
       }
       &[data-size-xl='md'] {
-        --leverui-private-radio-group-item-gap: var(--leverui-spacing-2\.5);
-        --leverui-private-radio-group-font-size: var(--leverui-font-sizes-sm);
-        --leverui-private-radio-group-line-height: 1.25rem;
+        --lui-private-radio-group-item-gap: var(--lui-spacing-2\.5);
+        --lui-private-radio-group-font-size: var(--lui-font-sizes-sm);
+        --lui-private-radio-group-line-height: 1.25rem;
       }
       &[data-size-xl='lg'] {
-        --leverui-private-radio-group-item-gap: var(--leverui-spacing-3);
-        --leverui-private-radio-group-font-size: var(--leverui-font-sizes-md);
-        --leverui-private-radio-group-line-height: 1.5rem;
+        --lui-private-radio-group-item-gap: var(--lui-spacing-3);
+        --lui-private-radio-group-font-size: var(--lui-font-sizes-md);
+        --lui-private-radio-group-line-height: 1.5rem;
       }
     }
   }
   @media (min-width: 1536px) {
-    .leverui-radio-group__root:not([data-unstyled]) {
+    .lui-radio-group__root:not([data-unstyled]) {
       &[data-size-2xl='xs'] {
-        --leverui-private-radio-group-item-gap: var(--leverui-spacing-1\.5);
-        --leverui-private-radio-group-font-size: var(--leverui-font-sizes-xs);
-        --leverui-private-radio-group-line-height: 1rem;
+        --lui-private-radio-group-item-gap: var(--lui-spacing-1\.5);
+        --lui-private-radio-group-font-size: var(--lui-font-sizes-xs);
+        --lui-private-radio-group-line-height: 1rem;
       }
       &[data-size-2xl='sm'] {
-        --leverui-private-radio-group-item-gap: var(--leverui-spacing-2);
-        --leverui-private-radio-group-font-size: var(--leverui-font-sizes-sm);
-        --leverui-private-radio-group-line-height: 1.25rem;
+        --lui-private-radio-group-item-gap: var(--lui-spacing-2);
+        --lui-private-radio-group-font-size: var(--lui-font-sizes-sm);
+        --lui-private-radio-group-line-height: 1.25rem;
       }
       &[data-size-2xl='md'] {
-        --leverui-private-radio-group-item-gap: var(--leverui-spacing-2\.5);
-        --leverui-private-radio-group-font-size: var(--leverui-font-sizes-sm);
-        --leverui-private-radio-group-line-height: 1.25rem;
+        --lui-private-radio-group-item-gap: var(--lui-spacing-2\.5);
+        --lui-private-radio-group-font-size: var(--lui-font-sizes-sm);
+        --lui-private-radio-group-line-height: 1.25rem;
       }
       &[data-size-2xl='lg'] {
-        --leverui-private-radio-group-item-gap: var(--leverui-spacing-3);
-        --leverui-private-radio-group-font-size: var(--leverui-font-sizes-md);
-        --leverui-private-radio-group-line-height: 1.5rem;
+        --lui-private-radio-group-item-gap: var(--lui-spacing-3);
+        --lui-private-radio-group-font-size: var(--lui-font-sizes-md);
+        --lui-private-radio-group-line-height: 1.5rem;
       }
     }
   }

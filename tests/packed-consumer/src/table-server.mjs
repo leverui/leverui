@@ -36,5 +36,5 @@ const markup = renderPackedTable();
 assert.match(markup, /<table[^>]*id="packed-server-table"/);
 assert.match(markup, /<caption[^>]*>Installed inventory<\/caption>/);
 assert.match(markup, /<tbody[^>]*>.*<tr[^>]*>.*<td[^>]*>Notebook<\/td>/s);
-assert.match(markup, /leverui-table__cell/);
+assert.match(markup, /lui-table__cell/);
 assert.doesNotMatch(markup, /<table[^>]*\s(?:size|variant|native)=/);

@@ -17,12 +17,12 @@ import { Box, Button } from '@leverui/components';
 
 ```css
 .content-panel {
-  padding: var(--leverui-spacing-2);
+  padding: var(--lui-spacing-2);
 }
 
 @media (min-width: 768px) {
   .content-panel {
-    padding: var(--leverui-spacing-6);
+    padding: var(--lui-spacing-6);
   }
 }
 ```

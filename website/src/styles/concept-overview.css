@@ -1,8 +1,8 @@
 .concept-overview-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--leverui-spacing-6);
-  margin-top: var(--leverui-spacing-6);
+  gap: var(--lui-spacing-6);
+  margin-top: var(--lui-spacing-6);
 }
 .concept-overview-card {
   position: relative;
@@ -10,10 +10,10 @@
   flex-direction: column;
   overflow: hidden;
   border: 1px solid var(--site-border);
-  border-radius: var(--leverui-radii-lg);
+  border-radius: var(--lui-radii-lg);
   color: var(--site-fg);
-  font-size: var(--leverui-font-sizes-sm);
-  line-height: var(--leverui-line-heights-moderate);
+  font-size: var(--lui-font-sizes-sm);
+  line-height: var(--lui-line-heights-moderate);
 }
 .concept-overview-card:hover,
 .concept-overview-card:focus-within {
@@ -25,12 +25,12 @@
   place-items: center;
   height: 148px;
   margin: 0;
-  padding: var(--leverui-spacing-5);
+  padding: var(--lui-spacing-5);
   overflow: hidden;
-  background: var(--leverui-colors-bg-subtle);
+  background: var(--lui-colors-bg-subtle);
 }
 .concept-overview-card > a {
-  padding: var(--leverui-spacing-3) var(--leverui-spacing-4);
+  padding: var(--lui-spacing-3) var(--lui-spacing-4);
   border-bottom: 1px solid var(--site-border);
   color: var(--site-fg);
   font-weight: 600;

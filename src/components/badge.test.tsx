@@ -31,7 +31,7 @@ function verifiesNativeBadge(): void {
   expect(badge.tagName).toBe('SPAN');
   expect(badge.textContent).toBe('Active');
   expect(badge.getAttribute('title')).toBe('Current status');
-  expect(badge.className).toContain('leverui-badge');
+  expect(badge.className).toContain('lui-badge');
   expect(badge.hasAttribute('size')).toBe(false);
   expect(badge.hasAttribute('variant')).toBe(false);
   expect(badge.hasAttribute('role')).toBe(false);
@@ -113,7 +113,7 @@ function verifiesPolymorphism(): void {
   expect(screen.getByTestId('section-badge')).toBe(section);
   expect(section?.tagName).toBe('SECTION');
   expect(screen.getByTestId('child-badge').tagName).toBe('STRONG');
-  expect(screen.getByTestId('child-badge').className).toContain('leverui-badge');
+  expect(screen.getByTestId('child-badge').className).toContain('lui-badge');
 }
 
 it('supports native polymorphism and Solid child composition', verifiesPolymorphism);

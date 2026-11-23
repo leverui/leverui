@@ -44,11 +44,11 @@ function renderServerActionBar(open: boolean): string {
 /** Verify open server markup exposes native part hooks and no recipe props. */
 function verifiesOpenServerActionBar(): void {
   const markup = renderServerActionBar(true);
-  expect(markup).toContain('leverui-action-bar__positioner');
+  expect(markup).toContain('lui-action-bar__positioner');
   expect(markup).toContain('data-placement="bottom-end"');
-  expect(markup).toContain('leverui-action-bar__content');
-  expect(markup).toContain('leverui-action-bar__selectionTrigger');
-  expect(markup).toContain('leverui-action-bar__separator');
+  expect(markup).toContain('lui-action-bar__content');
+  expect(markup).toContain('lui-action-bar__selectionTrigger');
+  expect(markup).toContain('lui-action-bar__separator');
   expect(markup).toContain('2 selected');
   expect(markup).toContain('type="button"');
 }
@@ -56,7 +56,7 @@ function verifiesOpenServerActionBar(): void {
 /** Keep lazily mounted content out of closed server markup. */
 function verifiesClosedServerActionBar(): void {
   const markup = renderServerActionBar(false);
-  expect(markup).toContain('leverui-action-bar__positioner');
+  expect(markup).toContain('lui-action-bar__positioner');
   expect(markup).not.toContain('2 selected');
 }
 

@@ -24,7 +24,7 @@ export async function verifyPackedAvatar(page) {
     'SECTION',
   );
   assert.equal(await group.getAttribute('data-avatar-group-ref'), 'section');
-  assert.equal(await group.locator('[data-leverui-group-item]').count(), 2);
+  assert.equal(await group.locator('[data-lui-group-item]').count(), 2);
   assert.equal(
     await group
       .locator('[data-avatar-root]')

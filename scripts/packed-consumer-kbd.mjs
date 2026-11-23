@@ -41,7 +41,7 @@ export async function verifyPackedKbd(page) {
   assert.equal(await child.getAttribute('data-parent-ref'), 'true');
   assert.equal(await child.getAttribute('data-child-ref'), 'true');
   assert.equal(await child.getAttribute('aria-label'), 'Command key');
-  assert.match((await child.getAttribute('class')) ?? '', /leverui-kbd/);
+  assert.match((await child.getAttribute('class')) ?? '', /lui-kbd/);
   assert.equal(
     await page.locator('#packed-kbd-default').evaluate(
       /** Confirm the installed stylesheet applies Kbd's base display. */

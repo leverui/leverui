@@ -44,7 +44,7 @@ CSS overrides the defaults without `!important`.
 ```css
 .order-checkmark {
   border-radius: 50%;
-  --leverui-colors-color-palette-solid: rebeccapurple;
+  --lui-colors-color-palette-solid: rebeccapurple;
 }
 ```
 

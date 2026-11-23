@@ -66,7 +66,7 @@ export function renderFloatingPanelPart(input: FloatingPanelPartInput): JSX.Elem
     () => nativeHtmlAttributes(local),
     {
       /** Enable authored defaults only for styled parts. */
-      get 'data-leverui-floating-panel-css'() {
+      get 'data-lui-floating-panel-css'() {
         return rootUnstyled() || local.unstyled ? undefined : '';
       },
       /** Mark opted-out parts for consumer selectors. */

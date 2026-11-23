@@ -5,7 +5,7 @@ export async function verifyPackedBlockquote(page) {
   const quote = page.locator('#packed-blockquote');
   assert.equal(await quote.locator('blockquote').getAttribute('cite'), 'https://example.com');
   assert.equal(await quote.locator('figcaption cite').textContent(), 'Installed author');
-  assert.match((await quote.getAttribute('class')) ?? '', /leverui-blockquote/);
+  assert.match((await quote.getAttribute('class')) ?? '', /lui-blockquote/);
   assert.equal(await quote.getAttribute('variant'), null);
   assert.equal(
     await quote.evaluate(

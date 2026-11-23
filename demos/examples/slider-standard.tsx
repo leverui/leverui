@@ -114,7 +114,7 @@ export function SliderLabel(): JSX.Element {
 /** Pair the Volume label with a live numeric value. */
 export function SliderValueText(): JSX.Element {
   return (
-    <Slider.Root style={{ 'max-width': 'var(--leverui-sizes-sm)' }} size="sm" defaultValue={[40]}>
+    <Slider.Root style={{ 'max-width': 'var(--lui-sizes-sm)' }} size="sm" defaultValue={[40]}>
       <HStack justify="space-between">
         <Slider.Label>Volume</Slider.Label>
         <Slider.ValueText />

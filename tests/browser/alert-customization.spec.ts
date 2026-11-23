@@ -21,7 +21,7 @@ async function verifiesAlertVariants({ page }: { page: Page }): Promise<void> {
   await expect(palette).not.toHaveCSS('background-color', 'rgb(219, 234, 254)');
   await expect(responsive).toHaveCSS('font-size', '12px');
   await expect(responsiveStatus).toHaveAttribute('data-status-md', 'success');
-  await expect(responsiveStatus).not.toHaveAttribute('data-leverui-private-style-runtime');
+  await expect(responsiveStatus).not.toHaveAttribute('data-lui-private-style-runtime');
   await expect(responsiveStatus).toHaveCSS(
     'background-color',
     await page.getByTestId('alert-default').evaluate(
@@ -57,12 +57,12 @@ async function verifiesAlertThemeScopes({ page }: { page: Page }): Promise<void>
   await expect(light).toHaveCSS('background-color', 'rgb(219, 234, 254)');
   await page.evaluate(
     /** Change the document mode while explicit nested scopes stay fixed. */
-    () => document.documentElement.setAttribute('data-leverui-color-mode', 'dark'),
+    () => document.documentElement.setAttribute('data-lui-color-mode', 'dark'),
   );
   await expect(dark).toHaveCSS('background-color', 'rgb(20, 32, 74)');
   await expect(light).toHaveCSS('background-color', 'rgb(219, 234, 254)');
   await page.addStyleTag({
-    content: '[data-testid="alert-scope-dark"] { --leverui-colors-blue-subtle: rgb(18 52 86); }',
+    content: '[data-testid="alert-scope-dark"] { --lui-colors-blue-subtle: rgb(18 52 86); }',
   });
   await expect(dark).toHaveCSS('background-color', 'rgb(18, 52, 86)');
   await expect(light).toHaveCSS('background-color', 'rgb(219, 234, 254)');

@@ -1,38 +1,35 @@
-@layer leverui.recipes {
-  .leverui-listbox__content:not([data-unstyled]):is(
-      [data-variant='subtle'],
-      [data-variant='solid']
-    ) {
-    --leverui-private-listbox-background: var(--leverui-colors-bg-panel);
-    --leverui-private-listbox-border-width: 1px;
-    --leverui-private-listbox-radius: var(--leverui-radii-l2);
+@layer lui.recipes {
+  .lui-listbox__content:not([data-unstyled]):is([data-variant='subtle'], [data-variant='solid']) {
+    --lui-private-listbox-background: var(--lui-colors-bg-panel);
+    --lui-private-listbox-border-width: 1px;
+    --lui-private-listbox-radius: var(--lui-radii-l2);
   }
 
-  .leverui-listbox__content:not([data-unstyled])[data-variant='plain'] {
-    --leverui-private-listbox-background: transparent;
-    --leverui-private-listbox-border-width: 0;
-    --leverui-private-listbox-radius: 0;
+  .lui-listbox__content:not([data-unstyled])[data-variant='plain'] {
+    --lui-private-listbox-background: transparent;
+    --lui-private-listbox-border-width: 0;
+    --lui-private-listbox-radius: 0;
   }
 
-  .leverui-listbox__item:not([data-unstyled])[data-variant='subtle'] {
-    --leverui-private-listbox-selected-background: var(--leverui-colors-bg-muted);
-    --leverui-private-listbox-selected-color: inherit;
-    --leverui-private-listbox-hover-background: color-mix(
+  .lui-listbox__item:not([data-unstyled])[data-variant='subtle'] {
+    --lui-private-listbox-selected-background: var(--lui-colors-bg-muted);
+    --lui-private-listbox-selected-color: inherit;
+    --lui-private-listbox-hover-background: color-mix(
       in srgb,
-      var(--leverui-colors-bg-emphasized) 60%,
+      var(--lui-colors-bg-emphasized) 60%,
       transparent
     );
   }
 
-  .leverui-listbox__item:not([data-unstyled])[data-variant='solid'] {
-    --leverui-private-listbox-selected-background: var(--leverui-colors-color-palette-solid);
-    --leverui-private-listbox-selected-color: var(--leverui-colors-color-palette-contrast);
-    --leverui-private-listbox-hover-background: initial;
+  .lui-listbox__item:not([data-unstyled])[data-variant='solid'] {
+    --lui-private-listbox-selected-background: var(--lui-colors-color-palette-solid);
+    --lui-private-listbox-selected-color: var(--lui-colors-color-palette-contrast);
+    --lui-private-listbox-hover-background: initial;
   }
 
-  .leverui-listbox__item:not([data-unstyled])[data-variant='plain'] {
-    --leverui-private-listbox-selected-background: transparent;
-    --leverui-private-listbox-selected-color: inherit;
-    --leverui-private-listbox-hover-background: initial;
+  .lui-listbox__item:not([data-unstyled])[data-variant='plain'] {
+    --lui-private-listbox-selected-background: transparent;
+    --lui-private-listbox-selected-color: inherit;
+    --lui-private-listbox-hover-background: initial;
   }
 }

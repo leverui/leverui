@@ -43,7 +43,7 @@ function StatusRootComponent(props: StatusRootRuntimeProps): JSX.Element {
     () => ({
       ...native,
       ...statusSizeAttributes(selected()),
-      'data-leverui-color-palette': readStatusPalette(local.colorPalette),
+      'data-lui-color-palette': readStatusPalette(local.colorPalette),
       'data-unstyled': local.unstyled ? '' : undefined,
       class: composeRecipeClassNames('status__root', undefined, local.class, local.className),
       ref: attachNode,

@@ -63,7 +63,7 @@ export function PackedQrCodeCompositions(): JSX.Element {
     <div>
       <QrCodeWithInput />
       <QrCodeWithSpinner />
-      <ClosedQrCode value="https://example.com" fill="var(--leverui-colors-blue-600)">
+      <ClosedQrCode value="https://example.com" fill="var(--lui-colors-blue-600)">
         UI
       </ClosedQrCode>
     </div>

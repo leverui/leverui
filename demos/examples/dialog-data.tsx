@@ -62,7 +62,7 @@ export function DialogDatalist(): JSX.Element {
                 </DataList.Root>
                 <Textarea
                   placeholder="Add a note"
-                  style={{ 'margin-top': 'var(--leverui-spacing-8)' }}
+                  style={{ 'margin-top': 'var(--lui-spacing-8)' }}
                 />
               </Dialog.Body>
               <Dialog.CloseTrigger

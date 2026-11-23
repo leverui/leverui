@@ -84,13 +84,13 @@ export function BarListBar(props: BarListBarProps): JSX.Element {
               <div
                 class={barListClass('fill')}
                 style={{
-                  '--leverui-private-bar-list-width': `${chart().getValuePercent('value', item.value, [0, chart().getMax('value')])}%`,
-                  '--leverui-private-bar-list-color': chartColor(
+                  '--lui-private-bar-list-width': `${chart().getValuePercent('value', item.value, [0, chart().getMax('value')])}%`,
+                  '--lui-private-bar-list-color': chartColor(
                     chart().series.find(
                       /** Use the series assigned to item names regardless of ordering. */
                       (series) => series.name === 'name',
                     )?.color,
-                    'var(--leverui-colors-teal-subtle)',
+                    'var(--lui-colors-teal-subtle)',
                   ),
                 }}
               />

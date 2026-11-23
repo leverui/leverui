@@ -1,65 +1,65 @@
-@layer leverui.recipes {
-  .leverui-progress__root:not([data-unstyled]) {
-    --leverui-private-progress-stripe-pattern: linear-gradient(
+@layer lui.recipes {
+  .lui-progress__root:not([data-unstyled]) {
+    --lui-private-progress-stripe-pattern: linear-gradient(
       45deg,
-      var(--leverui-progress-stripe-color) 25%,
+      var(--lui-progress-stripe-color) 25%,
       transparent 25%,
       transparent 50%,
-      var(--leverui-progress-stripe-color) 50%,
-      var(--leverui-progress-stripe-color) 75%,
+      var(--lui-progress-stripe-color) 50%,
+      var(--lui-progress-stripe-color) 75%,
       transparent 75%,
       transparent
     );
     &[data-size='xs'] {
-      --leverui-private-progress-track-height: var(--leverui-sizes-1\.5);
+      --lui-private-progress-track-height: var(--lui-sizes-1\.5);
     }
     &[data-size='sm'] {
-      --leverui-private-progress-track-height: var(--leverui-sizes-2);
+      --lui-private-progress-track-height: var(--lui-sizes-2);
     }
     &[data-size='md'] {
-      --leverui-private-progress-track-height: var(--leverui-sizes-2\.5);
+      --lui-private-progress-track-height: var(--lui-sizes-2\.5);
     }
     &[data-size='lg'] {
-      --leverui-private-progress-track-height: var(--leverui-sizes-3);
+      --lui-private-progress-track-height: var(--lui-sizes-3);
     }
     &[data-size='xl'] {
-      --leverui-private-progress-track-height: var(--leverui-sizes-4);
+      --lui-private-progress-track-height: var(--lui-sizes-4);
     }
     &[data-shape='square'] {
-      --leverui-private-progress-track-radius: 0;
+      --lui-private-progress-track-radius: 0;
     }
     &[data-shape='rounded'] {
-      --leverui-private-progress-track-radius: var(--leverui-radii-l1);
+      --lui-private-progress-track-radius: var(--lui-radii-l1);
     }
     &[data-shape='full'] {
-      --leverui-private-progress-track-radius: var(--leverui-radii-full);
+      --lui-private-progress-track-radius: var(--lui-radii-full);
     }
     &[data-variant='outline'] {
-      --leverui-private-progress-track-color: var(--leverui-colors-bg-muted);
-      --leverui-private-progress-range-color: var(--leverui-colors-color-palette-solid);
-      --leverui-private-progress-track-shadow: var(--leverui-shadows-inset);
+      --lui-private-progress-track-color: var(--lui-colors-bg-muted);
+      --lui-private-progress-range-color: var(--lui-colors-color-palette-solid);
+      --lui-private-progress-track-shadow: var(--lui-shadows-inset);
     }
     &[data-variant='subtle'] {
-      --leverui-private-progress-track-color: var(--leverui-colors-color-palette-muted);
-      --leverui-private-progress-range-color: color-mix(
+      --lui-private-progress-track-color: var(--lui-colors-color-palette-muted);
+      --lui-private-progress-range-color: color-mix(
         in srgb,
-        var(--leverui-colors-color-palette-solid) 72%,
+        var(--lui-colors-color-palette-solid) 72%,
         transparent
       );
-      --leverui-private-progress-track-shadow: none;
+      --lui-private-progress-track-shadow: none;
     }
     &[data-striped='true'] {
-      --leverui-private-progress-stripes: var(--leverui-private-progress-stripe-pattern);
+      --lui-private-progress-stripes: var(--lui-private-progress-stripe-pattern);
     }
     &[data-striped='false'] {
-      --leverui-private-progress-stripes: none;
+      --lui-private-progress-stripes: none;
     }
     &[data-animated='true'] {
-      --leverui-private-animate-from: var(--leverui-progress-stripe-size, 1rem);
-      --leverui-private-progress-animation: bg-position 1s linear infinite;
+      --lui-private-animate-from: var(--lui-progress-stripe-size, 1rem);
+      --lui-private-progress-animation: bg-position 1s linear infinite;
     }
     &[data-animated='false'] {
-      --leverui-private-progress-animation: none;
+      --lui-private-progress-animation: none;
     }
   }
 }

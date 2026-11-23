@@ -121,7 +121,7 @@ export function DatePickerPresetsSidebar(): JSX.Element {
         <Stack
           gap="0"
           class="date-picker-presets-sidebar"
-          style={{ 'padding-block': 'var(--leverui-spacing-2)' }}
+          style={{ 'padding-block': 'var(--lui-spacing-2)' }}
         >
           <For each={sidebarPresets}>
             {
@@ -142,7 +142,7 @@ export function DatePickerPresetsSidebar(): JSX.Element {
                         <Span
                           textStyle="sm"
                           style={{
-                            color: 'var(--leverui-colors-fg-muted)',
+                            color: 'var(--lui-colors-fg-muted)',
                           }}
                         >
                           {formatSidebarDate(preset.value)}
@@ -155,12 +155,12 @@ export function DatePickerPresetsSidebar(): JSX.Element {
             }
           </For>
         </Stack>
-        <DatePicker.View view="day" style={{ padding: 'var(--leverui-spacing-3)' }}>
+        <DatePicker.View view="day" style={{ padding: 'var(--lui-spacing-3)' }}>
           <HStack justify="space-between" gap="0">
             <DatePicker.RangeText
               style={{
-                'padding-inline-start': 'var(--leverui-spacing-4)',
-                'font-weight': 'var(--leverui-font-weights-medium)',
+                'padding-inline-start': 'var(--lui-spacing-4)',
+                'font-weight': 'var(--lui-font-weights-medium)',
               }}
             />
             <Spacer />

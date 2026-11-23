@@ -97,16 +97,16 @@ Import your CSS after `styles.css`.
 
 ```css
 .account-form {
-  --leverui-colors-bg-muted: #f4f0fa;
+  --lui-colors-bg-muted: #f4f0fa;
 }
 
-.account-form .leverui-input {
+.account-form .lui-input {
   border-radius: 0.5rem;
 }
 ```
 
-Focus and invalid colors: set `--leverui-input-focus-color` or
-`--leverui-input-error-color` on the input or an element that contains it.
+Focus and invalid colors: set `--lui-input-focus-color` or
+`--lui-input-error-color` on the input or an element that contains it.
 
 Use `style` for a one-off change, `unstyled` to turn off the Lever UI styles,
 and your own CSS to add variants. Input Addon, Element, and Group are separate

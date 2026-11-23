@@ -22,8 +22,8 @@ function verifiesServerMarkup(): void {
   // Zag 2 identifies the root by its scoped part attribute instead of an id.
   expect(markup).toMatch(/data-carousel-root="hydrated-carousel"[^>]*role="region"/);
   expect(markup).toContain('aria-roledescription="carousel"');
-  expect(markup).toContain('leverui-carousel__root');
-  expect(markup).toContain('leverui-carousel__itemGroup');
+  expect(markup).toContain('lui-carousel__root');
+  expect(markup).toContain('lui-carousel__itemGroup');
   expect(markup).toContain('First slide');
   expect(markup).toContain('Second slide');
   expect(markup).toContain('1 / 2');

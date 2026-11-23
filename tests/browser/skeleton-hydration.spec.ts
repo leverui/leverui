@@ -32,10 +32,10 @@ async function verifiesSkeletonHydration({ page }: { page: Page }): Promise<void
   const host = page.locator('#skeleton-hydration-root');
   const skeleton = page.locator('#hydrated-skeleton');
   const text = page.locator('#hydrated-skeleton-text');
-  await expect(text.locator('.leverui-skeleton')).toHaveCount(2);
+  await expect(text.locator('.lui-skeleton')).toHaveCount(2);
   await expect(text).toHaveText('Finished textFinished text');
   await text
-    .locator('.leverui-skeleton')
+    .locator('.lui-skeleton')
     .first()
     .evaluate(
       /** Mark the first server-rendered text line before attachment. */
@@ -70,9 +70,9 @@ async function verifiesSkeletonHydration({ page }: { page: Page }): Promise<void
   await expect(host).toHaveAttribute('data-hydrated', 'true');
   await expect(skeleton).toHaveAttribute('data-server-node', 'true');
   await page.locator('#skeleton-hydration-toggle').click();
-  await expect(text.locator('.leverui-skeleton')).toHaveCount(1);
+  await expect(text.locator('.lui-skeleton')).toHaveCount(1);
   await expect(text).toContainText('Finished text');
-  await expect(text.locator('.leverui-skeleton').first()).toHaveAttribute(
+  await expect(text.locator('.lui-skeleton').first()).toHaveAttribute(
     'data-first-text-line',
     'true',
   );

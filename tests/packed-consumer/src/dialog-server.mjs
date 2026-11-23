@@ -50,8 +50,8 @@ function renderDialog() {
 const markup = renderToString(renderDialog);
 assert.match(markup, /role="dialog"/);
 assert.match(markup, /aria-labelledby="[^"]+"/);
-assert.match(markup, /leverui-dialog__header/);
-assert.match(markup, /leverui-dialog__body/);
-assert.match(markup, /leverui-dialog__footer/);
+assert.match(markup, /lui-dialog__header/);
+assert.match(markup, /lui-dialog__body/);
+assert.match(markup, /lui-dialog__footer/);
 assert.match(markup, /Installed Dialog/);
 assert.match(markup, /Server actions/);

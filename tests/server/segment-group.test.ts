@@ -35,8 +35,8 @@ function verifiesServerSegmentGroup(): void {
   const markup = renderServerSegmentGroup();
   // The primitive keeps SegmentGroup on the radio group's part attributes.
   expect(markup).toContain('data-radio-group-root');
-  expect(markup).toContain('leverui-segment-group__root');
-  expect(markup).toContain('leverui-segment-group__indicator');
+  expect(markup).toContain('lui-segment-group__root');
+  expect(markup).toContain('lui-segment-group__indicator');
   expect(markup).toContain('data-orientation="horizontal"');
   expect(markup).toContain('data-size="md"');
   expect(markup).toContain('data-state="checked"');

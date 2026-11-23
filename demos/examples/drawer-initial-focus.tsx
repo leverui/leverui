@@ -33,7 +33,7 @@ export function DrawerWithInitialFocus(): JSX.Element {
                 Update your first name and email, then save. The email field is focused when the
                 drawer opens.
               </p>
-              <Stack style={{ 'margin-top': 'var(--leverui-spacing-5)' }}>
+              <Stack style={{ 'margin-top': 'var(--lui-spacing-5)' }}>
                 <Input defaultValue="Mara" placeholder="First name" />
                 <Input ref={emailInput} placeholder="Email" />
               </Stack>

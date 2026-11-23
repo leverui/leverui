@@ -1,9 +1,9 @@
-@layer leverui.recipes {
-  .leverui-input-group:not([data-unstyled]) {
-    width: var(--leverui-input-group-width, 100%);
+@layer lui.recipes {
+  .lui-input-group:not([data-unstyled]) {
+    width: var(--lui-input-group-width, 100%);
   }
 
-  .leverui-input-group > [data-leverui-input-group-start-element] {
+  .lui-input-group > [data-lui-input-group-start-element] {
     pointer-events: none;
   }
 }

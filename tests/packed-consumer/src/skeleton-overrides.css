@@ -1,4 +1,4 @@
-.leverui-skeleton[data-custom-skeleton] {
+.lui-skeleton[data-custom-skeleton] {
   border-width: 3px;
-  --leverui-skeleton-duration: 2s;
+  --lui-skeleton-duration: 2s;
 }

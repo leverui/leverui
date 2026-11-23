@@ -18,7 +18,7 @@ function verifiesServerDataList(): void {
   expect(markup).toMatch(/<div[^>]*id="hydrated-data-list-item"/);
   expect(markup).toMatch(/<dt[^>]*>Status<\/dt>/);
   expect(markup).toMatch(/<dd[^>]*id="hydrated-data-list-value"[^>]*>Pending<\/dd>/);
-  expect(markup).toContain('leverui-data-list__root');
+  expect(markup).toContain('lui-data-list__root');
   expect(markup).not.toMatch(/\s(?:orientation|size|variant)=/);
 }
 

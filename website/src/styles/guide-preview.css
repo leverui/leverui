@@ -57,7 +57,7 @@
 .guide-story-tabs button {
   padding: 8px 14px;
   border: 0;
-  border-radius: var(--leverui-radii-full);
+  border-radius: var(--lui-radii-full);
   background: transparent;
   color: var(--site-muted);
   font: inherit;
@@ -76,7 +76,7 @@
   overflow: hidden;
   border: 1px solid var(--site-border);
   border-radius: 6px;
-  background: var(--leverui-colors-gray-900);
+  background: var(--lui-colors-gray-900);
 }
 .guide-story-code .guide-code-block {
   margin: 0;

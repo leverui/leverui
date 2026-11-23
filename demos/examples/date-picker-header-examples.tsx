@@ -70,9 +70,7 @@ export function DatePickerHeaderLayout(): JSX.Element {
           <DatePicker.Content>
             <DatePicker.View view="day">
               <HStack>
-                <DatePicker.RangeText
-                  style={{ 'padding-inline-start': 'var(--leverui-spacing-4)' }}
-                />
+                <DatePicker.RangeText style={{ 'padding-inline-start': 'var(--lui-spacing-4)' }} />
                 <Spacer />
                 <DatePicker.PrevTrigger />
                 <DatePicker.NextTrigger />

@@ -27,8 +27,8 @@ export function ListboxDialogGroup(props: ListboxDialogGroupProps): JSX.Element 
               <Listbox.ItemText>{item.label}</Listbox.ItemText>
               <Span
                 style={{
-                  'font-size': 'var(--leverui-font-sizes-xs)',
-                  color: 'var(--leverui-colors-fg-muted)',
+                  'font-size': 'var(--lui-font-sizes-xs)',
+                  color: 'var(--lui-colors-fg-muted)',
                 }}
               >
                 {item.type}

@@ -136,13 +136,13 @@ Import `@leverui/components/styles.css` once, then override the tokens or the
 part classes in your own stylesheet.
 
 ```css
-.leverui-native-select__field {
+.lui-native-select__field {
   border-color: rebeccapurple;
 }
 ```
 
-Classes: `.leverui-native-select__root`, `.leverui-native-select__field`, and
-`.leverui-native-select__indicator`.
+Classes: `.lui-native-select__root`, `.lui-native-select__field`, and
+`.lui-native-select__indicator`.
 
 `unstyled` on the root or on a single part turns off its default styles. The
 native behavior, the classes, and the native `select` stay.

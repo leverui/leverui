@@ -7,7 +7,7 @@ async function verifiesHandle({ page }: { page: Page }): Promise<void> {
   const separator = page.getByTestId('splitter-handle-separator');
   await expect(trigger).toHaveAttribute('aria-valuenow', '40', { timeout: 30_000 });
   await expect(separator).toHaveCount(1);
-  await expect(trigger.locator('.leverui-splitter__resizeTriggerIndicator')).toHaveCount(0);
+  await expect(trigger.locator('.lui-splitter__resizeTriggerIndicator')).toHaveCount(0);
   await expect(separator).toHaveCSS('width', '1px');
   await trigger.focus();
   await page.keyboard.press('ArrowRight');

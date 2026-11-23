@@ -63,9 +63,9 @@ export function CommandMultipleExample(): JSX.Element {
                   variant="outline"
                   size="sm"
                   style={{
-                    'min-width': 'var(--leverui-spacing-64)',
+                    'min-width': 'var(--lui-spacing-64)',
                     'justify-content': 'flex-start',
-                    color: 'var(--leverui-colors-fg-muted)',
+                    color: 'var(--lui-colors-fg-muted)',
                   }}
                 >
                   <TagIcon /> Add labels...
@@ -105,7 +105,7 @@ export function CommandMultipleExample(): JSX.Element {
                           <Show when={values().includes(item.value)}>
                             <Box
                               style={{
-                                color: 'var(--leverui-colors-fg)',
+                                color: 'var(--lui-colors-fg)',
                                 'margin-inline-start': 'auto',
                               }}
                             >
@@ -154,15 +154,15 @@ export function CommandMultipleExample(): JSX.Element {
           <Text
             textStyle="sm"
             style={{
-              'margin-top': 'var(--leverui-spacing-4)',
-              color: 'var(--leverui-colors-fg-muted)',
+              'margin-top': 'var(--lui-spacing-4)',
+              color: 'var(--lui-colors-fg-muted)',
             }}
           >
             No labels selected
           </Text>
         }
       >
-        <Wrap style={{ 'margin-top': 'var(--leverui-spacing-4)' }} gap="1.5">
+        <Wrap style={{ 'margin-top': 'var(--lui-spacing-4)' }} gap="1.5">
           <For each={selected()}>
             {
               /** Display one surface badge for each selected label. */

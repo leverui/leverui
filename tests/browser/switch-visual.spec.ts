@@ -18,8 +18,8 @@ async function readAppearance(root: ReturnType<Page['getByTestId']>): Promise<{
   return root.evaluate(
     /** Measure the actual visual parts rather than recipe source objects. */
     (element) => {
-      const control = element.querySelector('.leverui-switch__control');
-      const thumb = element.querySelector('.leverui-switch__thumb');
+      const control = element.querySelector('.lui-switch__control');
+      const thumb = element.querySelector('.lui-switch__thumb');
       if (!control || !thumb) throw new Error('Switch visual parts were not rendered.');
       const trackStyle = getComputedStyle(control);
       return {
@@ -52,9 +52,7 @@ async function verifiesSwitchVisuals({ page }: { page: Page }): Promise<void> {
       await expect(off.getByRole('checkbox')).not.toBeChecked();
     }
   }
-  const tokenControl = page
-    .getByTestId('visual-token-override')
-    .locator('.leverui-switch__control');
+  const tokenControl = page.getByTestId('visual-token-override').locator('.lui-switch__control');
   await expect(tokenControl).toHaveCSS('background-color', 'rgb(3, 111, 77)');
   const rtlRoot = page.getByTestId('visual-rtl');
   await expect(rtlRoot).toHaveAttribute('dir', 'rtl');
@@ -85,7 +83,7 @@ async function verifiesSwitchFocus({ page }: { page: Page }): Promise<void> {
   await pressBrowserTab(page);
   await pressBrowserTab(page, true);
   await expect(solid.getByRole('checkbox')).toBeFocused();
-  const solidControl = solid.locator('.leverui-switch__control');
+  const solidControl = solid.locator('.lui-switch__control');
   await expect(solidControl).toHaveAttribute('data-focus-visible', '');
   await expectOutsideFocusRing(solidControl);
   const raised = page.getByTestId('visual-xs-raised-off');
@@ -93,7 +91,7 @@ async function verifiesSwitchFocus({ page }: { page: Page }): Promise<void> {
   await pressBrowserTab(page);
   await pressBrowserTab(page, true);
   await expect(raised.getByRole('checkbox')).toBeFocused();
-  const raisedThumb = raised.locator('.leverui-switch__thumb');
+  const raisedThumb = raised.locator('.lui-switch__thumb');
   await expect(raisedThumb).toHaveAttribute('data-focus-visible', '');
   await expectOutsideFocusRing(raisedThumb);
 }

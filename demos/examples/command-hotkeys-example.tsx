@@ -99,9 +99,9 @@ export function CommandHotkeysExample(): JSX.Element {
                   variant="outline"
                   size="sm"
                   style={{
-                    'min-width': 'var(--leverui-spacing-64)',
+                    'min-width': 'var(--lui-spacing-64)',
                     'justify-content': 'space-between',
-                    color: 'var(--leverui-colors-fg-muted)',
+                    color: 'var(--lui-colors-fg-muted)',
                   }}
                 >
                   <HStack gap="2">
@@ -187,7 +187,7 @@ export function CommandHotkeysExample(): JSX.Element {
       <Text
         textStyle="sm"
         style={{
-          color: 'var(--leverui-colors-fg-muted)',
+          color: 'var(--lui-colors-fg-muted)',
         }}
       >
         {lastRun() ? `Ran ${lastRun()}` : 'Try G then I, or C, with the menu closed'}

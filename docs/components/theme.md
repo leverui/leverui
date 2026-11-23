@@ -46,10 +46,10 @@ browsers and screen readers.
 
 ## Customize with CSS
 
-Add a class to set public `--leverui-*` variables for that section only. See
+Add a class to set public `--lui-*` variables for that section only. See
 the [CSS theme guide](../theme-guide.md). Changing a palette scale color on the
 nested element does not recompute a background color it inherited. Set
-`--leverui-colors-bg` directly when you need to.
+`--lui-colors-bg` directly when you need to.
 
 ```tsx
 <Theme appearance="dark" class="preview-panel">
@@ -59,6 +59,6 @@ nested element does not recompute a background color it inherited. Set
 
 ```css
 .preview-panel {
-  padding: var(--leverui-spacing-4);
+  padding: var(--lui-spacing-4);
 }
 ```

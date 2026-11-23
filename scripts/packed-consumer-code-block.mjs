@@ -4,10 +4,10 @@ import assert from 'node:assert/strict';
 export async function verifyPackedCodeBlock(page) {
   await page.context().grantPermissions(['clipboard-read', 'clipboard-write']);
   const root = page.locator('#packed-code-block');
-  const content = root.locator('.leverui-code-block__content');
+  const content = root.locator('.lui-code-block__content');
   const code = page.locator('#packed-code-block-code');
   const collapse = page.locator('#packed-code-block-collapse');
-  assert.match((await root.getAttribute('class')) ?? '', /leverui-code-block__root/);
+  assert.match((await root.getAttribute('class')) ?? '', /lui-code-block__root/);
   assert.equal(await root.getAttribute('size'), null);
   const inheritedRoot = page.locator('section#packed-code-block-provider');
   assert.equal(await inheritedRoot.count(), 1);

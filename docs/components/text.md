@@ -44,7 +44,7 @@ tighten the letter spacing. `label` is `sm` with a medium font weight.
 
 `Span`, `Box`, `Center`, `Stack`, `HStack`, `VStack`, `Flex`, `Square`, and
 `Circle` accept the same prop. Each name is a rule in the stylesheet's
-`leverui.utilities` layer, so it overrides component styles. Any other name
+`lui.utilities` layer, so it overrides component styles. Any other name
 throws an error. For other sizes, use `class` or `style`.
 
 ### Clipping
@@ -76,7 +76,7 @@ import { Text, TextPropsProvider } from '@leverui/components';
 
 ## Customize with CSS
 
-Class: `.leverui-text`.
+Class: `.lui-text`.
 
 ```tsx
 <Text class="supporting-copy">Supporting copy</Text>
@@ -84,8 +84,8 @@ Class: `.leverui-text`.
 
 ```css
 .supporting-copy {
-  color: var(--leverui-colors-fg-muted);
-  font-size: var(--leverui-font-sizes-sm);
+  color: var(--lui-colors-fg-muted);
+  font-size: var(--lui-font-sizes-sm);
 }
 ```
 

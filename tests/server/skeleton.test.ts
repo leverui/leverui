@@ -45,7 +45,7 @@ function verifiesServerSkeletons(): void {
   expect(markup).toMatch(/<div[^>]*id="server-circle"/);
   expect(markup).toMatch(/<div[^>]*id="server-text"/);
   expect(markup).toMatch(/<div[^>]*id="server-loaded"[^>]*>Ready<\/div>/);
-  expect(markup).toContain('leverui-skeleton');
+  expect(markup).toContain('lui-skeleton');
   expect(markup).not.toMatch(/<div[^>]*\s(?:loading|variant|noOfLines|size)=/);
 }
 
@@ -75,7 +75,7 @@ function verifiesServerTextWithProvider(): void {
   );
 
   expect(markup).toContain('id="server-provider-text"');
-  expect(markup.match(/class="[^"]*leverui-skeleton(?:\s|")/g)).toHaveLength(2);
+  expect(markup.match(/class="[^"]*lui-skeleton(?:\s|")/g)).toHaveLength(2);
   expect(markup.match(/Hidden server content/g)).toHaveLength(2);
 }
 

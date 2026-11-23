@@ -1,7 +1,7 @@
 # Color Mode
 
 Dark mode is one attribute on the `html` element:
-`data-leverui-color-mode="dark"`. A short script sets it before the page
+`data-lui-color-mode="dark"`. A short script sets it before the page
 paints. `createColorMode` reads and changes it from your components.
 
 ```tsx
@@ -30,7 +30,7 @@ the text `getColorModeScript()` returns.
 
 ```html
 <!-- index.html -->
-<html lang="en" data-leverui-color-mode="light">
+<html lang="en" data-lui-color-mode="light">
   <head>
     <script>
       (function () {
@@ -45,7 +45,7 @@ the text `getColorModeScript()` returns.
               ? 'dark'
               : 'light';
         var root = document.documentElement;
-        root.setAttribute('data-leverui-color-mode', mode);
+        root.setAttribute('data-lui-color-mode', mode);
         root.classList.add(mode);
         root.style.colorScheme = mode;
       })();
@@ -68,7 +68,7 @@ import { HydrationScript, type JSX } from '@solidjs/web';
 /** Render the page around the app. */
 export default function Document(props: { children?: JSX.Element }): JSX.Element {
   return (
-    <html lang="en" data-leverui-color-mode="light">
+    <html lang="en" data-lui-color-mode="light">
       <head>
         <meta charset="utf-8" />
         <ColorModeScript />
@@ -93,7 +93,7 @@ export default function Document(props: { children?: JSX.Element }): JSX.Element
 
 1. Reads the choice saved in `localStorage` under `leverui-color-mode`.
 2. With no saved choice, uses `defaultMode`. `system` follows the device.
-3. Sets `data-leverui-color-mode` on `html`, adds a `light` or `dark` class, and
+3. Sets `data-lui-color-mode` on `html`, adds a `light` or `dark` class, and
    sets `color-scheme` so native controls match.
 
 It runs before the first paint, so there is no flash of the wrong colors. A
@@ -130,8 +130,8 @@ const value = createColorModeValue('<light-mode-value>', '<dark-mode-value>');
 
 <!-- example: color-mode/Value -->
 
-For colors, prefer CSS. Lever UI's variables, such as `--leverui-colors-bg` and
-`--leverui-colors-fg`, already change with the mode. For your own colors, use a
+For colors, prefer CSS. Lever UI's variables, such as `--lui-colors-bg` and
+`--lui-colors-fg`, already change with the mode. For your own colors, use a
 selector.
 
 ```css
@@ -139,7 +139,7 @@ selector.
   border-color: #d4d4d8;
 }
 
-[data-leverui-color-mode='dark'] .promo {
+[data-lui-color-mode='dark'] .promo {
   border-color: #3f3f46;
 }
 ```

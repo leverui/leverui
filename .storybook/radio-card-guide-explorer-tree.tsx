@@ -25,17 +25,17 @@ export function renderRadioCardExplorer(components: RadioCardExplorerComponents)
             {
               /** Keep the Explorer metadata under each native radio label. */
               (item) => (
-                <RadioCard.Item value={item.value} class="leverui-radio-card-explorer-item">
+                <RadioCard.Item value={item.value} class="lui-radio-card-explorer-item">
                   <RadioCard.ItemHiddenInput />
                   <RadioCard.ItemControl>
                     <RadioCard.ItemContent>
                       <RadioCard.ItemText>{item.title}</RadioCard.ItemText>
-                      <RadioCard.ItemDescription class="leverui-radio-card-explorer-description">
+                      <RadioCard.ItemDescription class="lui-radio-card-explorer-description">
                         {item.description}
                       </RadioCard.ItemDescription>
                     </RadioCard.ItemContent>
                     <RadioCard.ItemIndicator
-                      class="leverui-radio-card-explorer-indicator"
+                      class="lui-radio-card-explorer-indicator"
                       checked={
                         /** Style the selected SVG as the indicator root. */
                         (getProps) => (
@@ -56,7 +56,7 @@ export function renderRadioCardExplorer(components: RadioCardExplorerComponents)
                       }
                     />
                   </RadioCard.ItemControl>
-                  <RadioCard.ItemAddon class="leverui-radio-card-explorer-addon">
+                  <RadioCard.ItemAddon class="lui-radio-card-explorer-addon">
                     {item.addon}
                   </RadioCard.ItemAddon>
                 </RadioCard.Item>

@@ -1,62 +1,62 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 1280px) {
-    .leverui-progress__root:not([data-unstyled]) {
+    .lui-progress__root:not([data-unstyled]) {
       &[data-variant-xl='outline'] {
-        --leverui-private-progress-track-color: var(--leverui-colors-bg-muted);
-        --leverui-private-progress-range-color: var(--leverui-colors-color-palette-solid);
-        --leverui-private-progress-track-shadow: var(--leverui-shadows-inset);
+        --lui-private-progress-track-color: var(--lui-colors-bg-muted);
+        --lui-private-progress-range-color: var(--lui-colors-color-palette-solid);
+        --lui-private-progress-track-shadow: var(--lui-shadows-inset);
       }
       &[data-variant-xl='subtle'] {
-        --leverui-private-progress-track-color: var(--leverui-colors-color-palette-muted);
-        --leverui-private-progress-range-color: color-mix(
+        --lui-private-progress-track-color: var(--lui-colors-color-palette-muted);
+        --lui-private-progress-range-color: color-mix(
           in srgb,
-          var(--leverui-colors-color-palette-solid) 72%,
+          var(--lui-colors-color-palette-solid) 72%,
           transparent
         );
-        --leverui-private-progress-track-shadow: none;
+        --lui-private-progress-track-shadow: none;
       }
       &[data-striped-xl='true'] {
-        --leverui-private-progress-stripes: var(--leverui-private-progress-stripe-pattern);
+        --lui-private-progress-stripes: var(--lui-private-progress-stripe-pattern);
       }
       &[data-striped-xl='false'] {
-        --leverui-private-progress-stripes: none;
+        --lui-private-progress-stripes: none;
       }
       &[data-animated-xl='true'] {
-        --leverui-private-progress-animation: bg-position 1s linear infinite;
+        --lui-private-progress-animation: bg-position 1s linear infinite;
       }
       &[data-animated-xl='false'] {
-        --leverui-private-progress-animation: none;
+        --lui-private-progress-animation: none;
       }
     }
   }
 
   @media (min-width: 1536px) {
-    .leverui-progress__root:not([data-unstyled]) {
+    .lui-progress__root:not([data-unstyled]) {
       &[data-variant-2xl='outline'] {
-        --leverui-private-progress-track-color: var(--leverui-colors-bg-muted);
-        --leverui-private-progress-range-color: var(--leverui-colors-color-palette-solid);
-        --leverui-private-progress-track-shadow: var(--leverui-shadows-inset);
+        --lui-private-progress-track-color: var(--lui-colors-bg-muted);
+        --lui-private-progress-range-color: var(--lui-colors-color-palette-solid);
+        --lui-private-progress-track-shadow: var(--lui-shadows-inset);
       }
       &[data-variant-2xl='subtle'] {
-        --leverui-private-progress-track-color: var(--leverui-colors-color-palette-muted);
-        --leverui-private-progress-range-color: color-mix(
+        --lui-private-progress-track-color: var(--lui-colors-color-palette-muted);
+        --lui-private-progress-range-color: color-mix(
           in srgb,
-          var(--leverui-colors-color-palette-solid) 72%,
+          var(--lui-colors-color-palette-solid) 72%,
           transparent
         );
-        --leverui-private-progress-track-shadow: none;
+        --lui-private-progress-track-shadow: none;
       }
       &[data-striped-2xl='true'] {
-        --leverui-private-progress-stripes: var(--leverui-private-progress-stripe-pattern);
+        --lui-private-progress-stripes: var(--lui-private-progress-stripe-pattern);
       }
       &[data-striped-2xl='false'] {
-        --leverui-private-progress-stripes: none;
+        --lui-private-progress-stripes: none;
       }
       &[data-animated-2xl='true'] {
-        --leverui-private-progress-animation: bg-position 1s linear infinite;
+        --lui-private-progress-animation: bg-position 1s linear infinite;
       }
       &[data-animated-2xl='false'] {
-        --leverui-private-progress-animation: none;
+        --lui-private-progress-animation: none;
       }
     }
   }

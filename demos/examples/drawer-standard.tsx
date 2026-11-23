@@ -112,8 +112,8 @@ export function DrawerWithOffset(): JSX.Element {
       />
       <Portal>
         <Drawer.Backdrop />
-        <Drawer.Positioner style={{ padding: 'var(--leverui-spacing-4)' }}>
-          <Drawer.Content style={{ 'border-radius': 'var(--leverui-radii-md)' }}>
+        <Drawer.Positioner style={{ padding: 'var(--lui-spacing-4)' }}>
+          <Drawer.Content style={{ 'border-radius': 'var(--lui-radii-md)' }}>
             <Drawer.Header>
               <Drawer.Title>Save report</Drawer.Title>
             </Drawer.Header>

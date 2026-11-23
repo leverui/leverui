@@ -29,7 +29,7 @@ async function verifiesIconComposition({ page }: { page: Page }): Promise<void> 
   await page.goto('/iframe.html?id=components-icon--custom-svg');
   await expect(page.locator('#storybook-root svg[viewBox="0 0 32 32"]')).toHaveCount(1);
   await page.goto('/iframe.html?id=components-icon--sizes');
-  await expect(page.locator('#storybook-root .leverui-icon')).toHaveCount(6);
+  await expect(page.locator('#storybook-root .lui-icon')).toHaveCount(6);
   await expect(page.locator('#storybook-root svg')).toHaveCount(6);
   await expect(page.locator('#storybook-root p')).toHaveText(['xs', 'sm', 'md', 'lg', 'xl', '2xl']);
   await expect(page.locator('#storybook-root p').first()).toHaveCSS('font-size', '14px');

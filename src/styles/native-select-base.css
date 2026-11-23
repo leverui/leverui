@@ -1,47 +1,46 @@
-@layer leverui.recipes {
-  .leverui-native-select__root:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-native-select__root:not([data-unstyled]) {
     height: fit-content;
     display: flex;
     width: 100%;
     position: relative;
-    --leverui-private-native-select-height: var(--leverui-sizes-10);
-    --leverui-private-input-group-field-height: var(--leverui-private-native-select-height);
-    --leverui-private-native-select-font-size: var(--leverui-font-sizes-sm);
-    --leverui-private-native-select-line-height: 1.25rem;
-    --leverui-private-native-select-padding-start: var(--leverui-spacing-3);
-    --leverui-private-native-select-padding-end: var(--leverui-spacing-8);
-    --leverui-private-native-select-indicator-font-size: var(--leverui-font-sizes-lg);
-    --leverui-private-native-select-indicator-inset-end: var(--leverui-spacing-2);
-    --leverui-private-native-select-background: transparent;
-    --leverui-private-native-select-border-width: 1px;
-    --leverui-private-native-select-border-color: var(--leverui-colors-border);
-    --leverui-private-native-select-color: inherit;
-    --leverui-private-native-select-focus-width: var(--focus-ring-width, 1px);
+    --lui-private-native-select-height: var(--lui-sizes-10);
+    --lui-private-input-group-field-height: var(--lui-private-native-select-height);
+    --lui-private-native-select-font-size: var(--lui-font-sizes-sm);
+    --lui-private-native-select-line-height: 1.25rem;
+    --lui-private-native-select-padding-start: var(--lui-spacing-3);
+    --lui-private-native-select-padding-end: var(--lui-spacing-8);
+    --lui-private-native-select-indicator-font-size: var(--lui-font-sizes-lg);
+    --lui-private-native-select-indicator-inset-end: var(--lui-spacing-2);
+    --lui-private-native-select-background: transparent;
+    --lui-private-native-select-border-width: 1px;
+    --lui-private-native-select-border-color: var(--lui-colors-border);
+    --lui-private-native-select-color: inherit;
+    --lui-private-native-select-focus-width: var(--focus-ring-width, 1px);
   }
 
-  .leverui-native-select__root:not([data-unstyled])
-    .leverui-native-select__field:not([data-unstyled]) {
+  .lui-native-select__root:not([data-unstyled]) .lui-native-select__field:not([data-unstyled]) {
     width: 100%;
     min-width: 0;
     outline: 0;
     appearance: none;
-    border-radius: var(--leverui-radii-l2);
+    border-radius: var(--lui-radii-l2);
     border-style: solid;
-    border-width: var(--leverui-private-native-select-border-width);
-    border-color: var(--leverui-private-native-select-border-color);
-    background: var(--leverui-private-native-select-background);
-    color: var(--leverui-private-native-select-color);
-    height: var(--leverui-private-native-select-height);
-    font-size: var(--leverui-private-native-select-font-size);
-    line-height: var(--leverui-private-native-select-line-height);
-    padding-inline-start: var(--leverui-private-native-select-padding-start);
-    padding-inline-end: var(--leverui-private-native-select-padding-end);
-    --leverui-private-native-select-error-color: var(--leverui-colors-border-error);
+    border-width: var(--lui-private-native-select-border-width);
+    border-color: var(--lui-private-native-select-border-color);
+    background: var(--lui-private-native-select-background);
+    color: var(--lui-private-native-select-color);
+    height: var(--lui-private-native-select-height);
+    font-size: var(--lui-private-native-select-font-size);
+    line-height: var(--lui-private-native-select-line-height);
+    padding-inline-start: var(--lui-private-native-select-padding-start);
+    padding-inline-end: var(--lui-private-native-select-padding-end);
+    --lui-private-native-select-error-color: var(--lui-colors-border-error);
   }
 
-  .leverui-native-select__root:not([data-unstyled])
-    .leverui-native-select__field:not([data-unstyled])
+  .lui-native-select__root:not([data-unstyled])
+    .lui-native-select__field:not([data-unstyled])
     > :is(option, optgroup) {
-    background: var(--leverui-colors-bg);
+    background: var(--lui-colors-bg);
   }
 }

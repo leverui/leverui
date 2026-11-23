@@ -58,7 +58,7 @@ function verifiesHalfRating(): void {
   );
   // Zag 2.0.0-next.4 names the half-selected item by its value, "2.5 stars".
   const third = screen.getByRole('radio', { name: '2.5 stars' });
-  const indicator = third.querySelector('.leverui-rating-group__itemIndicator');
+  const indicator = third.querySelector('.lui-rating-group__itemIndicator');
   expect(third).toHaveAttribute('aria-checked', 'true');
   expect(indicator).toHaveAttribute('data-half', '');
   expect(indicator?.querySelectorAll('svg')).toHaveLength(2);

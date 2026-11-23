@@ -1,41 +1,41 @@
-@layer leverui.recipes {
-  .leverui-spacer:not([data-unstyled]) {
-    flex: var(--leverui-spacer-flex, 1);
+@layer lui.recipes {
+  .lui-spacer:not([data-unstyled]) {
+    flex: var(--lui-spacer-flex, 1);
     justify-self: stretch;
     align-self: stretch;
   }
 
-  .leverui-spacer[data-spacer-flex-base] {
-    flex: var(--leverui-private-spacer-flex-base);
+  .lui-spacer[data-spacer-flex-base] {
+    flex: var(--lui-private-spacer-flex-base);
   }
 
   @media (min-width: 480px) {
-    .leverui-spacer[data-spacer-flex-sm] {
-      flex: var(--leverui-private-spacer-flex-sm);
+    .lui-spacer[data-spacer-flex-sm] {
+      flex: var(--lui-private-spacer-flex-sm);
     }
   }
 
   @media (min-width: 768px) {
-    .leverui-spacer[data-spacer-flex-md] {
-      flex: var(--leverui-private-spacer-flex-md);
+    .lui-spacer[data-spacer-flex-md] {
+      flex: var(--lui-private-spacer-flex-md);
     }
   }
 
   @media (min-width: 1024px) {
-    .leverui-spacer[data-spacer-flex-lg] {
-      flex: var(--leverui-private-spacer-flex-lg);
+    .lui-spacer[data-spacer-flex-lg] {
+      flex: var(--lui-private-spacer-flex-lg);
     }
   }
 
   @media (min-width: 1280px) {
-    .leverui-spacer[data-spacer-flex-xl] {
-      flex: var(--leverui-private-spacer-flex-xl);
+    .lui-spacer[data-spacer-flex-xl] {
+      flex: var(--lui-private-spacer-flex-xl);
     }
   }
 
   @media (min-width: 1536px) {
-    .leverui-spacer[data-spacer-flex-2xl] {
-      flex: var(--leverui-private-spacer-flex-2xl);
+    .lui-spacer[data-spacer-flex-2xl] {
+      flex: var(--lui-private-spacer-flex-2xl);
     }
   }
 }

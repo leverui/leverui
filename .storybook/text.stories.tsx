@@ -64,7 +64,7 @@ function TextContractExample(): JSX.Element {
         value={{
           class: 'provider-text',
           style: {
-            color: active() ? 'var(--leverui-colors-blue-500)' : 'var(--leverui-colors-red-500)',
+            color: active() ? 'var(--lui-colors-blue-500)' : 'var(--lui-colors-red-500)',
             'text-decoration': 'underline',
             'letter-spacing': '0.05em',
           },
@@ -79,7 +79,7 @@ function TextContractExample(): JSX.Element {
           style={{
             'text-transform': 'uppercase',
             'font-weight': 'bold',
-            'font-size': active() ? 'var(--leverui-font-sizes-xl)' : 'var(--leverui-font-sizes-sm)',
+            'font-size': active() ? 'var(--lui-font-sizes-xl)' : 'var(--lui-font-sizes-sm)',
           }}
           onClick={recordInstanceClick}
         >
@@ -89,7 +89,7 @@ function TextContractExample(): JSX.Element {
           as="span"
           ref={markSpan}
           data-testid="span-text"
-          style={{ color: 'var(--leverui-colors-green-500)' }}
+          style={{ color: 'var(--lui-colors-green-500)' }}
         >
           Inline text
         </Text>

@@ -37,6 +37,6 @@ function renderInstalledAccordion() {
 const markup = renderInstalledAccordion();
 assert.match(markup, /data-accordion-root="packed-server-accordion"/);
 assert.match(markup, /data-variant="subtle"/);
-assert.match(markup, /leverui-accordion__itemTrigger/);
+assert.match(markup, /lui-accordion__itemTrigger/);
 assert.match(markup, /Installed panel/);
 console.log('Packed Accordion server rendering passed.');

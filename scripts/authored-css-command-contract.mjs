@@ -26,7 +26,7 @@ export const commandContracts = [
     required: [
       ...parts.map(
         /** Require authored presentation for every public part. */
-        (part) => `.leverui-command__${part}:not([data-unstyled])`,
+        (part) => `.lui-command__${part}:not([data-unstyled])`,
       ),
       ...sizes.map(
         /** Require each scalar size. */
@@ -42,8 +42,8 @@ export const commandContracts = [
       ),
       '[data-highlighted]',
       '[data-disabled]',
-      '--leverui-command-background',
-      '--leverui-command-radius',
+      '--lui-command-background',
+      '--lui-command-radius',
     ],
   },
 ];

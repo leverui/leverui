@@ -19,7 +19,7 @@ function pickPalette(name: string): (typeof randomPalettes)[number] {
 /** Reveal names beyond the first three Avatars in a menu. */
 export function AvatarWithOverflow(): JSX.Element {
   return (
-    <Group style={{ '--leverui-group-gap': 'var(--leverui-spacing-2)' }}>
+    <Group style={{ '--lui-group-gap': 'var(--lui-spacing-2)' }}>
       <For each={visibleNames}>
         {
           /** Show one visible Avatar with its stable palette. */

@@ -1,18 +1,18 @@
-@layer leverui.recipes {
-  .leverui-link:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-link:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
-    gap: var(--leverui-spacing-1\.5);
+    gap: var(--lui-spacing-1\.5);
     cursor: pointer;
-    border-radius: var(--leverui-radii-l1);
-    color: var(--leverui-colors-color-palette-fg);
+    border-radius: var(--lui-radii-l1);
+    color: var(--lui-colors-color-palette-fg);
     outline: none;
-    text-decoration-line: var(--leverui-private-link-decoration-line, none);
-    text-underline-offset: var(--leverui-private-link-underline-offset, auto);
-    text-decoration-color: var(--leverui-private-link-decoration-color, currentColor);
+    text-decoration-line: var(--lui-private-link-decoration-line, none);
+    text-underline-offset: var(--lui-private-link-underline-offset, auto);
+    text-decoration-color: var(--lui-private-link-decoration-color, currentColor);
 
     &:is(:focus-visible, [data-focus-visible]) {
-      outline: 2px solid var(--leverui-colors-color-palette-focus-ring);
+      outline: 2px solid var(--lui-colors-color-palette-focus-ring);
       outline-offset: 2px;
     }
   }

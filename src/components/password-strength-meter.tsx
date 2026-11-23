@@ -40,16 +40,16 @@ export function PasswordStrengthMeter(props: PasswordStrengthMeterProps): JSX.El
       align="flex-end"
       gap="1"
       {...rest}
-      class={['leverui-password-strength-meter', local.class]}
+      class={['lui-password-strength-meter', local.class]}
       data-strength-level={presentation().level}
     >
-      <HStack class="leverui-password-strength-meter__track">
+      <HStack class="lui-password-strength-meter__track">
         <For each={segments()}>
           {
             /** Render one selected or unselected strength segment. */
             (index) => (
               <div
-                class="leverui-password-strength-meter__segment"
+                class="lui-password-strength-meter__segment"
                 data-selected={index < local.value ? '' : undefined}
               />
             )
@@ -57,7 +57,7 @@ export function PasswordStrengthMeter(props: PasswordStrengthMeterProps): JSX.El
         </For>
       </HStack>
       <Show when={presentation().label}>
-        <HStack class="leverui-password-strength-meter__label">{presentation().label}</HStack>
+        <HStack class="lui-password-strength-meter__label">{presentation().label}</HStack>
       </Show>
     </Stack>
   );

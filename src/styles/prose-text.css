@@ -1,12 +1,12 @@
-@layer leverui.recipes {
-  .leverui-prose:not([data-unstyled]) {
-    color: var(--leverui-prose-color, var(--leverui-colors-fg-muted));
-    max-width: var(--leverui-prose-max-width, 65ch);
-    font-size: var(--leverui-prose-font-size, var(--leverui-font-sizes-sm));
-    line-height: var(--leverui-prose-line-height, 1.7em);
+@layer lui.recipes {
+  .lui-prose:not([data-unstyled]) {
+    color: var(--lui-prose-color, var(--lui-colors-fg-muted));
+    max-width: var(--lui-prose-max-width, 65ch);
+    font-size: var(--lui-prose-font-size, var(--lui-font-sizes-sm));
+    line-height: var(--lui-prose-line-height, 1.7em);
 
     &[data-size='lg'] {
-      font-size: var(--leverui-prose-font-size, var(--leverui-font-sizes-md));
+      font-size: var(--lui-prose-font-size, var(--lui-font-sizes-md));
     }
 
     & :where(p):not(.not-prose, .not-prose *) {
@@ -16,14 +16,14 @@
       margin-block: 1.285em;
       padding-inline: 1.285em;
       border-inline-start-width: 0.25em;
-      color: var(--leverui-colors-fg);
+      color: var(--lui-colors-fg);
     }
     & :where(a):not(.not-prose, .not-prose *) {
-      color: var(--leverui-colors-fg);
+      color: var(--lui-colors-fg);
       text-decoration: underline;
       text-underline-offset: 3px;
       text-decoration-thickness: 2px;
-      text-decoration-color: var(--leverui-colors-border-muted);
+      text-decoration-color: var(--lui-colors-border-muted);
       font-weight: 500;
     }
     & :where(strong):not(.not-prose, .not-prose *) {
@@ -60,8 +60,8 @@
     }
     & :where(img):not(.not-prose, .not-prose *) {
       margin-block: 1.7em;
-      border-radius: var(--leverui-radii-lg);
-      box-shadow: var(--leverui-shadows-inset);
+      border-radius: var(--lui-radii-lg);
+      box-shadow: var(--lui-shadows-inset);
     }
     & :where(picture, video):not(.not-prose, .not-prose *) {
       margin-block: 1.7em;
@@ -71,21 +71,21 @@
     }
     & :where(kbd):not(.not-prose, .not-prose *) {
       font-size: 0.85em;
-      border-radius: var(--leverui-radii-xs);
+      border-radius: var(--lui-radii-xs);
       padding-block: 0.15em;
       padding-inline: 0.35em;
       font-family: inherit;
-      color: var(--leverui-colors-fg-muted);
+      color: var(--lui-colors-fg-muted);
       box-shadow:
-        0 0 0 1px var(--leverui-colors-border),
-        0 1px 0 1px var(--leverui-colors-border);
+        0 0 0 1px var(--lui-colors-border),
+        0 1px 0 1px var(--lui-colors-border);
     }
     & :where(code):not(.not-prose, .not-prose *) {
       font-size: 0.925em;
-      background: var(--leverui-colors-bg-muted);
+      background: var(--lui-colors-bg-muted);
       letter-spacing: -0.01em;
       line-height: 1;
-      border-radius: var(--leverui-radii-md);
+      border-radius: var(--lui-radii-md);
       border-width: 1px;
       padding-inline: 0.25em;
     }
@@ -103,9 +103,9 @@
       font-size: 0.8em;
     }
     & :where(pre):not(.not-prose, .not-prose *) {
-      background-color: var(--leverui-colors-bg-muted);
+      background-color: var(--lui-colors-bg-muted);
       margin-block: 1.6em;
-      border-radius: var(--leverui-radii-md);
+      border-radius: var(--lui-radii-md);
       font-size: 0.9em;
       padding-block: 0.65em;
       padding-inline: 1em;

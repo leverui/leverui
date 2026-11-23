@@ -22,7 +22,7 @@ async function verifiesHeadingContract({ page }: { page: Page }): Promise<void> 
   await expect(heading).toHaveJSProperty('tagName', 'H2');
   await expect(heading).toHaveCSS('font-size', '20px');
   await expect(heading).toHaveCSS('font-weight', '600');
-  await expect(heading).toHaveClass(/leverui-heading/);
+  await expect(heading).toHaveClass(/lui-heading/);
   await expect(heading).not.toHaveAttribute('size');
   await expect(page.getByRole('heading', { name: 'Default heading', level: 2 })).toBeVisible();
 
@@ -54,10 +54,10 @@ async function verifiesHeadingContract({ page }: { page: Page }): Promise<void> 
   await link.focus();
   await expect(link).toBeFocused();
   await expect(page.getByTestId('heading-weight')).toHaveCSS('font-weight', '400');
-  await expect(page.getByTestId('heading-unstyled')).toHaveClass(/leverui-heading/);
+  await expect(page.getByTestId('heading-unstyled')).toHaveClass(/lui-heading/);
   await expect(page.getByTestId('heading-local-style')).toHaveCSS('font-size', '30px');
 
-  await page.addStyleTag({ content: '.leverui-heading.consumer-heading{font-weight:300}' });
+  await page.addStyleTag({ content: '.lui-heading.consumer-heading{font-weight:300}' });
   await expect(page.getByTestId('heading-css-override')).toHaveCSS('font-weight', '300');
   await inherited.evaluate(
     /** Mark the original native heading before changing provider defaults. */
@@ -85,7 +85,7 @@ async function verifiesCustomHeadingSystem({ page }: { page: Page }): Promise<vo
   await expect(heading).toHaveCSS('line-height', '40px');
   await expect(heading).toHaveCSS('font-weight', '400');
   await expect(heading).toHaveCSS('font-family', 'Georgia, serif');
-  await expect(heading).toHaveClass(/leverui-heading/);
+  await expect(heading).toHaveClass(/lui-heading/);
 }
 
 test('Heading uses consumer font tokens and native style', verifiesCustomHeadingSystem);

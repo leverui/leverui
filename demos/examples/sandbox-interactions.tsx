@@ -20,7 +20,7 @@ export function SandboxReRenders(): JSX.Element {
       <Box
         data-testid="sandbox-color-box"
         style={{
-          background: isRed() ? 'var(--leverui-colors-red-200)' : 'var(--leverui-colors-blue-200)',
+          background: isRed() ? 'var(--lui-colors-red-200)' : 'var(--lui-colors-blue-200)',
         }}
       >
         <TimeStamp />
@@ -28,17 +28,17 @@ export function SandboxReRenders(): JSX.Element {
       <Box
         as="mark"
         style={{
-          color: 'var(--leverui-colors-red-500)',
-          background: 'var(--leverui-colors-bg-error)',
-          'padding-inline': 'var(--leverui-spacing-2)',
-          'padding-block': 'var(--leverui-spacing-3)',
+          color: 'var(--lui-colors-red-500)',
+          background: 'var(--lui-colors-bg-error)',
+          'padding-inline': 'var(--lui-spacing-2)',
+          'padding-block': 'var(--lui-spacing-3)',
         }}
       >
         Welcome
       </Box>
       <Box
         style={{
-          background: isRed() ? 'var(--leverui-colors-red-200)' : 'var(--leverui-colors-blue-200)',
+          background: isRed() ? 'var(--lui-colors-red-200)' : 'var(--lui-colors-blue-200)',
         }}
         asChild={
           /** Keep the native button while forwarding the changing Box style. */
@@ -63,12 +63,12 @@ export function SandboxColorPalette(): JSX.Element {
       <For each={['blue', 'green', 'red']}>
         {/** Scope each row's semantic color tokens to one palette. */}
         {(color) => (
-          <Box data-leverui-color-palette={color}>
+          <Box data-lui-color-palette={color}>
             <Box
               style={{
-                background: 'var(--leverui-colors-color-palette-muted)',
-                color: 'var(--leverui-colors-color-palette-fg)',
-                padding: 'var(--leverui-spacing-4)',
+                background: 'var(--lui-colors-color-palette-muted)',
+                color: 'var(--lui-colors-color-palette-fg)',
+                padding: 'var(--lui-spacing-4)',
               }}
             >
               Welcome to the{' '}

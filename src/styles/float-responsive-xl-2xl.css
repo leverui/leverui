@@ -1,70 +1,70 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 1280px) {
-    .leverui-float {
+    .lui-float {
       &[data-placement-xl^='top-'] {
-        inset-block-start: var(--leverui-float-offset-y, var(--leverui-private-float-y-xl, 0px));
+        inset-block-start: var(--lui-float-offset-y, var(--lui-private-float-y-xl, 0px));
         inset-block-end: auto;
-        --leverui-private-float-translate-y: -50%;
+        --lui-private-float-translate-y: -50%;
       }
       &[data-placement-xl^='middle-'] {
         inset-block-start: 50%;
         inset-block-end: 50%;
-        --leverui-private-float-translate-y: -50%;
+        --lui-private-float-translate-y: -50%;
       }
       &[data-placement-xl^='bottom-'] {
         inset-block-start: auto;
-        inset-block-end: var(--leverui-float-offset-y, var(--leverui-private-float-y-xl, 0px));
-        --leverui-private-float-translate-y: 50%;
+        inset-block-end: var(--lui-float-offset-y, var(--lui-private-float-y-xl, 0px));
+        --lui-private-float-translate-y: 50%;
       }
       &[data-placement-xl$='-start'] {
-        inset-inline-start: var(--leverui-float-offset-x, var(--leverui-private-float-x-xl, 0px));
+        inset-inline-start: var(--lui-float-offset-x, var(--lui-private-float-x-xl, 0px));
         inset-inline-end: auto;
-        --leverui-private-float-translate-x: -50%;
+        --lui-private-float-translate-x: -50%;
       }
       &[data-placement-xl$='-center'] {
         inset-inline-start: 50%;
         inset-inline-end: 50%;
-        --leverui-private-float-translate-x: -50%;
+        --lui-private-float-translate-x: -50%;
       }
       &[data-placement-xl$='-end'] {
         inset-inline-start: auto;
-        inset-inline-end: var(--leverui-float-offset-x, var(--leverui-private-float-x-xl, 0px));
-        --leverui-private-float-translate-x: 50%;
+        inset-inline-end: var(--lui-float-offset-x, var(--lui-private-float-x-xl, 0px));
+        --lui-private-float-translate-x: 50%;
       }
     }
   }
 
   @media (min-width: 1536px) {
-    .leverui-float {
+    .lui-float {
       &[data-placement-2xl^='top-'] {
-        inset-block-start: var(--leverui-float-offset-y, var(--leverui-private-float-y-2xl, 0px));
+        inset-block-start: var(--lui-float-offset-y, var(--lui-private-float-y-2xl, 0px));
         inset-block-end: auto;
-        --leverui-private-float-translate-y: -50%;
+        --lui-private-float-translate-y: -50%;
       }
       &[data-placement-2xl^='middle-'] {
         inset-block-start: 50%;
         inset-block-end: 50%;
-        --leverui-private-float-translate-y: -50%;
+        --lui-private-float-translate-y: -50%;
       }
       &[data-placement-2xl^='bottom-'] {
         inset-block-start: auto;
-        inset-block-end: var(--leverui-float-offset-y, var(--leverui-private-float-y-2xl, 0px));
-        --leverui-private-float-translate-y: 50%;
+        inset-block-end: var(--lui-float-offset-y, var(--lui-private-float-y-2xl, 0px));
+        --lui-private-float-translate-y: 50%;
       }
       &[data-placement-2xl$='-start'] {
-        inset-inline-start: var(--leverui-float-offset-x, var(--leverui-private-float-x-2xl, 0px));
+        inset-inline-start: var(--lui-float-offset-x, var(--lui-private-float-x-2xl, 0px));
         inset-inline-end: auto;
-        --leverui-private-float-translate-x: -50%;
+        --lui-private-float-translate-x: -50%;
       }
       &[data-placement-2xl$='-center'] {
         inset-inline-start: 50%;
         inset-inline-end: 50%;
-        --leverui-private-float-translate-x: -50%;
+        --lui-private-float-translate-x: -50%;
       }
       &[data-placement-2xl$='-end'] {
         inset-inline-start: auto;
-        inset-inline-end: var(--leverui-float-offset-x, var(--leverui-private-float-x-2xl, 0px));
-        --leverui-private-float-translate-x: 50%;
+        inset-inline-end: var(--lui-float-offset-x, var(--lui-private-float-x-2xl, 0px));
+        --lui-private-float-translate-x: 50%;
       }
     }
   }

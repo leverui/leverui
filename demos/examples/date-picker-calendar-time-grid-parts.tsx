@@ -46,8 +46,8 @@ export function TimeGrid(props: TimeGridProps): JSX.Element {
     <Stack
       gap="2"
       style={{
-        'padding-inline': 'var(--leverui-spacing-4)',
-        'padding-bottom': 'var(--leverui-spacing-4)',
+        'padding-inline': 'var(--lui-spacing-4)',
+        'padding-bottom': 'var(--lui-spacing-4)',
         flex: '1',
         'overflow-y': 'auto',
         'max-height': '380px',
@@ -61,8 +61,8 @@ export function TimeGrid(props: TimeGridProps): JSX.Element {
               variant={props.selectedTime?.compare(time) === 0 ? 'solid' : 'outline'}
               size="sm"
               style={{
-                'border-radius': 'var(--leverui-radii-lg)',
-                'font-weight': 'var(--leverui-font-weights-semibold)',
+                'border-radius': 'var(--lui-radii-lg)',
+                'font-weight': 'var(--lui-font-weights-semibold)',
               }}
               onClick={
                 /** Select or clear the clicked meeting time. */

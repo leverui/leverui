@@ -32,13 +32,13 @@ palette.
 ## Customize with CSS
 
 Import `@leverui/components/styles.css` before your own stylesheet. Style
-`.leverui-radiomark`, or `.leverui-radiomark__dot` for the dot. Props show up
+`.lui-radiomark`, or `.lui-radiomark__dot` for the dot. Props show up
 as `data-size`, `data-variant`, and `data-filled`. A value for one screen size
 adds a suffix, such as `data-size-md`. State shows up as `data-checked` and
-`data-disabled`, the palette as `data-leverui-color-palette`.
+`data-disabled`, the palette as `data-lui-color-palette`.
 
 ```css
-.leverui-radiomark[data-checked] {
+.lui-radiomark[data-checked] {
   outline-offset: 3px;
 }
 ```

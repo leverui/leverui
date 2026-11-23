@@ -12,7 +12,7 @@ type GetChildProps = Parameters<NonNullable<BreadcrumbLinkProps['asChild']>>[0];
 /** Show consumer-owned content using the public link class. */
 function BreadcrumbStyleProbe(): JSX.Element {
   return (
-    <span class="leverui-breadcrumb__link" data-testid="breadcrumb-style-probe">
+    <span class="lui-breadcrumb__link" data-testid="breadcrumb-style-probe">
       Style probe
     </span>
   );

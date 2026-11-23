@@ -20,7 +20,7 @@ export function SeparatorVertical(): JSX.Element {
   return (
     <HStack gap="4">
       <Text>First</Text>
-      <Separator orientation="vertical" style={{ height: 'var(--leverui-sizes-4)' }} />
+      <Separator orientation="vertical" style={{ height: 'var(--lui-sizes-4)' }} />
       <Text>Second</Text>
     </HStack>
   );

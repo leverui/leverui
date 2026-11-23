@@ -17,7 +17,7 @@ async function verifiesKbdStories({ page }: { page: Page }): Promise<void> {
   test.setTimeout(120_000);
   for (const [story, count] of Object.entries(counts)) {
     await page.goto(`/iframe.html?id=components-kbd--${story}`);
-    await expect(page.locator('#storybook-root .leverui-kbd')).toHaveCount(count, {
+    await expect(page.locator('#storybook-root .lui-kbd')).toHaveCount(count, {
       timeout: 45_000,
     });
   }

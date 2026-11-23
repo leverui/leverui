@@ -57,7 +57,7 @@ async function verifiesHydration(
   await expect(positioner).toHaveAttribute('data-server-node', 'true');
   if (portalled) {
     const bridge = page.locator('#hydrated-action-bar-theme-bridge');
-    await expect(bridge).toHaveAttribute('data-leverui-color-mode', 'dark');
+    await expect(bridge).toHaveAttribute('data-lui-color-mode', 'dark');
     expect(
       await bridge.evaluate(
         /** Keep the hydrated theme bridge in the owning document body. */

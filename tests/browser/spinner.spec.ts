@@ -47,9 +47,7 @@ async function verifiesSpinnerBrowserContract({ page }: { page: Page }): Promise
   await expect(page.getByTestId('unstyled-spinner')).toHaveCSS('border-top-width', '0px');
   await expect(page.getByRole('status', { name: 'Fetching results' })).toBeVisible();
   await expect(
-    page.locator(
-      '[data-testid="spinner-contract"] .leverui-spinner[data-leverui-private-style-runtime]',
-    ),
+    page.locator('[data-testid="spinner-contract"] .lui-spinner[data-lui-private-style-runtime]'),
   ).toHaveCount(0);
 
   await page.getByTestId('spinner-toggle').click();
@@ -81,11 +79,11 @@ async function verifiesServerSpinner({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderServerSpinner);
   expect(markup).toContain('id="server-spinner"');
   expect(markup).toContain('data-size="lg"');
-  expect(markup).not.toContain('data-leverui-private-style-runtime');
+  expect(markup).not.toContain('data-lui-private-style-runtime');
   expect(markup).not.toMatch(/<span[^>]*\ssize=/);
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(
-    `<style>${defaultCss}</style><style>.consumer-spinner { --leverui-spinner-track-color: rgb(10, 20, 30); animation-duration: 0.8s; }</style>${markup}`,
+    `<style>${defaultCss}</style><style>.consumer-spinner { --lui-spinner-track-color: rgb(10, 20, 30); animation-duration: 0.8s; }</style>${markup}`,
   );
   const spinner = page.locator('#server-spinner');
   await expect(spinner).toHaveCSS('width', '32px');

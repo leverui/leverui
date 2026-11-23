@@ -3,7 +3,7 @@ export const tagsInputContracts = [
   {
     family: 'tags-input',
     required: [
-      '.leverui-tags-input__root:not([data-unstyled])',
+      '.lui-tags-input__root:not([data-unstyled])',
       ...[
         'label',
         'control',
@@ -16,7 +16,7 @@ export const tagsInputContracts = [
         'clearTrigger',
       ].map(
         /** Keep all styled compound parts in the public CSS bundle. */
-        (part) => `.leverui-tags-input__${part}:not([data-unstyled])`,
+        (part) => `.lui-tags-input__${part}:not([data-unstyled])`,
       ),
       ...['xs', 'sm', 'md', 'lg'].map(
         /** Require each base size selector. */

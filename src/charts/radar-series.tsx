@@ -38,9 +38,9 @@ export function RadarSeriesShape(props: RadarSeriesProps): JSX.Element {
   const color = () => chartColor(props.series.color, props.series.color);
 
   return (
-    <g class="leverui-radar-chart__series" data-radar-series={props.series.name}>
+    <g class="lui-radar-chart__series" data-radar-series={props.series.name}>
       <path
-        class="leverui-radar-chart__shape"
+        class="lui-radar-chart__shape"
         d={radarPath(points())}
         stroke={color()}
         fill={props.linesOnly ? 'none' : color()}
@@ -56,9 +56,9 @@ export function RadarSeriesShape(props: RadarSeriesProps): JSX.Element {
             props.onPointEnter(index());
           }
           return (
-            <g class="leverui-radar-chart__point" data-radar-point={index()}>
+            <g class="lui-radar-chart__point" data-radar-point={index()}>
               <circle
-                class="leverui-radar-chart__point-dot"
+                class="lui-radar-chart__point-dot"
                 cx={point.x}
                 cy={point.y}
                 r={props.dots ? 3 : 9}
@@ -69,7 +69,7 @@ export function RadarSeriesShape(props: RadarSeriesProps): JSX.Element {
               />
               <Show when={props.pointLabels && typeof value() === 'number'}>
                 <text
-                  class="leverui-radar-chart__point-label"
+                  class="lui-radar-chart__point-label"
                   x={point.x}
                   y={point.y}
                   text-anchor="middle"

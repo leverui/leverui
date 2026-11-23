@@ -22,6 +22,6 @@ function renderPackedCollapsible() {
 }
 
 const markup = renderPackedCollapsible();
-assert.match(markup, /leverui-collapsible__content/);
+assert.match(markup, /lui-collapsible__content/);
 assert.match(markup, /Packed disclosure details/);
 assert.match(markup, /aria-expanded="true"/);

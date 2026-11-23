@@ -86,9 +86,9 @@ export function CommandKeywordsExample(): JSX.Element {
                 variant="outline"
                 size="sm"
                 style={{
-                  'min-width': 'var(--leverui-spacing-64)',
+                  'min-width': 'var(--lui-spacing-64)',
                   'justify-content': 'flex-start',
-                  color: 'var(--leverui-colors-fg-muted)',
+                  color: 'var(--lui-colors-fg-muted)',
                 }}
               >
                 <SearchIcon /> Search workspace...
@@ -124,7 +124,7 @@ export function CommandKeywordsExample(): JSX.Element {
                                     truncate
                                     textStyle="xs"
                                     style={{
-                                      color: 'var(--leverui-colors-fg-muted)',
+                                      color: 'var(--lui-colors-fg-muted)',
                                     }}
                                   >
                                     {item.description}

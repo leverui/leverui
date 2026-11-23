@@ -90,7 +90,7 @@ async function verifiesAspectRatio({ page }: { page: Page }): Promise<void> {
   expectNear((await requiredBox(page.getByTestId('map-ratio'))).height, 135);
   expectNear((await requiredBox(page.getByTestId('array-ratio'))).height, 135);
   await page.addStyleTag({
-    content: '.leverui-aspect-ratio[data-testid="reactive-ratio"]::before { padding-bottom: 75%; }',
+    content: '.lui-aspect-ratio[data-testid="reactive-ratio"]::before { padding-bottom: 75%; }',
   });
   expectNear((await requiredBox(reactive)).height, 150);
 }

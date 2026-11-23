@@ -17,7 +17,7 @@ async function verifiesListSemantics({ page }: { page: Page }): Promise<void> {
   await expect(unordered).toHaveAttribute('role', 'list');
   await expect(unordered).toHaveAttribute('title', 'Tasks');
   await expect(unordered).toHaveAttribute('data-variant', 'marker');
-  await expect(unordered).not.toHaveAttribute('data-leverui-private-style-runtime');
+  await expect(unordered).not.toHaveAttribute('data-lui-private-style-runtime');
   await expect(unordered).toHaveCSS('display', 'flex');
   await expect(unordered).toHaveCSS('list-style-type', 'disc');
   await expect(page.getByTestId('list-default-item')).toHaveCSS('display', 'list-item');
@@ -30,7 +30,7 @@ async function verifiesListSemantics({ page }: { page: Page }): Promise<void> {
   await expect(page.getByTestId('list-indicator')).toHaveJSProperty('tagName', 'svg');
   await expect(page.getByTestId('list-indicator')).toHaveCSS('display', 'block');
   await expect(page.getByTestId('list-indicator')).toHaveClass(/consumer-list-icon/);
-  await expect(page.getByTestId('list-indicator')).toHaveClass(/leverui-list__indicator/);
+  await expect(page.getByTestId('list-indicator')).toHaveClass(/lui-list__indicator/);
   await expect(page.getByTestId('list-indicator')).toHaveAttribute('role', 'img');
   await expect(page.getByTestId('list-indicator')).toHaveAttribute('aria-label', 'Complete');
   await expect(page.getByTestId('list-indicator')).toHaveAttribute('data-parent-ref', 'received');
@@ -47,12 +47,12 @@ async function verifiesListSemantics({ page }: { page: Page }): Promise<void> {
   await expect(childRoot).toHaveAttribute('role', 'list');
   await expect(childRoot).toHaveAttribute('data-root-ref', 'received');
   await expect(childRoot).toHaveClass(/consumer-list-root/);
-  await expect(childRoot).toHaveClass(/leverui-list__root/);
+  await expect(childRoot).toHaveClass(/lui-list__root/);
   await expect(childItem).toHaveJSProperty('tagName', 'LI');
   await expect(childItem).toHaveText('Selected child item');
   await expect(childItem).toHaveAttribute('data-item-ref', 'received');
   await expect(childItem).toHaveClass(/consumer-list-item/);
-  await expect(childItem).toHaveClass(/leverui-list__item/);
+  await expect(childItem).toHaveClass(/lui-list__item/);
   await expect(page.getByTestId('list-align-start-item')).toHaveCSS('align-items', 'flex-start');
   await expect(page.getByTestId('list-align-end-item')).toHaveCSS('align-items', 'flex-end');
   await expect(page.getByTestId('list-ordered-item')).toHaveCSS('display', 'list-item');
@@ -142,8 +142,8 @@ async function verifiesListReactivity({ page }: { page: Page }): Promise<void> {
 
   await page.addStyleTag({
     content:
-      '.leverui-list__item[data-testid="list-default-item"]{color:rgb(10, 20, 30)}' +
-      '.leverui-list__root[data-testid="list-default"]{--leverui-list-gap:12px}',
+      '.lui-list__item[data-testid="list-default-item"]{color:rgb(10, 20, 30)}' +
+      '.lui-list__root[data-testid="list-default"]{--lui-list-gap:12px}',
   });
   await expect(page.getByTestId('list-default-item')).toHaveCSS('color', 'rgb(10, 20, 30)');
   await expect(page.getByTestId('list-default')).toHaveCSS('row-gap', '12px');

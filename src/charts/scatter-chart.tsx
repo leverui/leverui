@@ -130,7 +130,7 @@ export function ScatterChart(props: ScatterChartProps): JSX.Element {
       onKeyDown={keyDown}
     >
       <svg
-        class="leverui-scatter-chart__svg"
+        class="lui-scatter-chart__svg"
         role="img"
         aria-label={props['aria-label'] ?? 'Scatter chart'}
         viewBox={`0 0 ${plot().width} ${plot().height}`}
@@ -139,7 +139,7 @@ export function ScatterChart(props: ScatterChartProps): JSX.Element {
       >
         <ScatterAxes plot={plot()} xTicks={props.xTicks} xFormatter={props.xFormatter} />
         <Show when={props.tooltip && activeEntry()}>
-          <g class="leverui-scatter-chart__cursor" data-scatter-cursor="">
+          <g class="lui-scatter-chart__cursor" data-scatter-cursor="">
             <line
               x1={scatterX(plot(), activeEntry()?.x ?? 0)}
               x2={scatterX(plot(), activeEntry()?.x ?? 0)}
@@ -159,7 +159,7 @@ export function ScatterChart(props: ScatterChartProps): JSX.Element {
           {(ends) => (
             <line
               data-scatter-trend=""
-              class="leverui-scatter-chart__trend"
+              class="lui-scatter-chart__trend"
               x1={scatterX(plot(), ends()[0].x)}
               x2={scatterX(plot(), ends()[1].x)}
               y1={scatterY(plot(), ends()[0].y)}

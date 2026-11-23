@@ -66,7 +66,7 @@ async function verifiesGridCss({ page }: { page: Page }): Promise<void> {
   const nestedValue = await page.locator('#nested-server-grid').evaluate(
     /** Confirm the nested Grid resets its parent's private track selection. */
     (element) =>
-      getComputedStyle(element).getPropertyValue('--leverui-private-grid-template-columns-base'),
+      getComputedStyle(element).getPropertyValue('--lui-private-grid-template-columns-base'),
   );
   expect(nestedValue.trim()).toBe('');
   await expect(page.locator('#unstyled-server-grid')).toHaveCSS('display', 'inline-grid');

@@ -35,14 +35,14 @@
 .page-not-found nav a {
   padding: 8px 18px;
   border: 1px solid var(--site-border);
-  border-radius: var(--leverui-radii-full);
+  border-radius: var(--lui-radii-full);
   color: var(--site-fg);
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
 }
 .page-not-found nav a:hover {
-  background: var(--leverui-colors-gray-subtle);
+  background: var(--lui-colors-gray-subtle);
 }
 .page-not-found nav a.page-not-found-primary {
   border-color: var(--site-fg);

@@ -49,7 +49,7 @@ Set `aria-current="page"` on the current page's link.
 
 ```css
 .nav-link[aria-current='page'] {
-  color: var(--leverui-colors-blue-500);
+  color: var(--lui-colors-blue-500);
   font-weight: bold;
 }
 ```
@@ -99,7 +99,7 @@ For a clickable card, use `LinkBox` and `LinkOverlay`. See
 ## Customize with CSS
 
 Import `@leverui/components/styles.css` once, before your own CSS. Classes:
-`.leverui-link`, `.leverui-linkbox`, and `.leverui-linkbox__overlay`. Style one
+`.lui-link`, `.lui-linkbox`, and `.lui-linkbox__overlay`. Style one
 link with `class` and `style`. CSS object props, general style props, and
 custom recipes are not part of the public API.
 

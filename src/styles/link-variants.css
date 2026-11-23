@@ -1,14 +1,14 @@
-@layer leverui.recipes {
-  .leverui-link:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-link:not([data-unstyled]) {
     &[data-variant='underline'] {
-      --leverui-private-link-decoration-line: underline;
-      --leverui-private-link-underline-offset: 3px;
-      --leverui-private-link-decoration-color: color-mix(in srgb, currentColor 20%, transparent);
+      --lui-private-link-decoration-line: underline;
+      --lui-private-link-underline-offset: 3px;
+      --lui-private-link-decoration-color: color-mix(in srgb, currentColor 20%, transparent);
     }
     &[data-variant='plain'] {
-      --leverui-private-link-decoration-line: none;
-      --leverui-private-link-underline-offset: auto;
-      --leverui-private-link-decoration-color: currentColor;
+      --lui-private-link-decoration-line: none;
+      --lui-private-link-underline-offset: auto;
+      --lui-private-link-decoration-color: currentColor;
     }
     &[data-variant='plain']:hover {
       text-decoration-line: underline;
@@ -17,14 +17,14 @@
     }
     @media (min-width: 480px) {
       &[data-variant-sm='underline'] {
-        --leverui-private-link-decoration-line: underline;
-        --leverui-private-link-underline-offset: 3px;
-        --leverui-private-link-decoration-color: color-mix(in srgb, currentColor 20%, transparent);
+        --lui-private-link-decoration-line: underline;
+        --lui-private-link-underline-offset: 3px;
+        --lui-private-link-decoration-color: color-mix(in srgb, currentColor 20%, transparent);
       }
       &[data-variant-sm='plain'] {
-        --leverui-private-link-decoration-line: none;
-        --leverui-private-link-underline-offset: auto;
-        --leverui-private-link-decoration-color: currentColor;
+        --lui-private-link-decoration-line: none;
+        --lui-private-link-underline-offset: auto;
+        --lui-private-link-decoration-color: currentColor;
       }
       &[data-variant-sm='plain']:hover {
         text-decoration-line: underline;
@@ -34,14 +34,14 @@
     }
     @media (min-width: 768px) {
       &[data-variant-md='underline'] {
-        --leverui-private-link-decoration-line: underline;
-        --leverui-private-link-underline-offset: 3px;
-        --leverui-private-link-decoration-color: color-mix(in srgb, currentColor 20%, transparent);
+        --lui-private-link-decoration-line: underline;
+        --lui-private-link-underline-offset: 3px;
+        --lui-private-link-decoration-color: color-mix(in srgb, currentColor 20%, transparent);
       }
       &[data-variant-md='plain'] {
-        --leverui-private-link-decoration-line: none;
-        --leverui-private-link-underline-offset: auto;
-        --leverui-private-link-decoration-color: currentColor;
+        --lui-private-link-decoration-line: none;
+        --lui-private-link-underline-offset: auto;
+        --lui-private-link-decoration-color: currentColor;
       }
       &[data-variant-md='plain']:hover {
         text-decoration-line: underline;
@@ -51,14 +51,14 @@
     }
     @media (min-width: 1024px) {
       &[data-variant-lg='underline'] {
-        --leverui-private-link-decoration-line: underline;
-        --leverui-private-link-underline-offset: 3px;
-        --leverui-private-link-decoration-color: color-mix(in srgb, currentColor 20%, transparent);
+        --lui-private-link-decoration-line: underline;
+        --lui-private-link-underline-offset: 3px;
+        --lui-private-link-decoration-color: color-mix(in srgb, currentColor 20%, transparent);
       }
       &[data-variant-lg='plain'] {
-        --leverui-private-link-decoration-line: none;
-        --leverui-private-link-underline-offset: auto;
-        --leverui-private-link-decoration-color: currentColor;
+        --lui-private-link-decoration-line: none;
+        --lui-private-link-underline-offset: auto;
+        --lui-private-link-decoration-color: currentColor;
       }
       &[data-variant-lg='plain']:hover {
         text-decoration-line: underline;
@@ -68,14 +68,14 @@
     }
     @media (min-width: 1280px) {
       &[data-variant-xl='underline'] {
-        --leverui-private-link-decoration-line: underline;
-        --leverui-private-link-underline-offset: 3px;
-        --leverui-private-link-decoration-color: color-mix(in srgb, currentColor 20%, transparent);
+        --lui-private-link-decoration-line: underline;
+        --lui-private-link-underline-offset: 3px;
+        --lui-private-link-decoration-color: color-mix(in srgb, currentColor 20%, transparent);
       }
       &[data-variant-xl='plain'] {
-        --leverui-private-link-decoration-line: none;
-        --leverui-private-link-underline-offset: auto;
-        --leverui-private-link-decoration-color: currentColor;
+        --lui-private-link-decoration-line: none;
+        --lui-private-link-underline-offset: auto;
+        --lui-private-link-decoration-color: currentColor;
       }
       &[data-variant-xl='plain']:hover {
         text-decoration-line: underline;
@@ -85,14 +85,14 @@
     }
     @media (min-width: 1536px) {
       &[data-variant-2xl='underline'] {
-        --leverui-private-link-decoration-line: underline;
-        --leverui-private-link-underline-offset: 3px;
-        --leverui-private-link-decoration-color: color-mix(in srgb, currentColor 20%, transparent);
+        --lui-private-link-decoration-line: underline;
+        --lui-private-link-underline-offset: 3px;
+        --lui-private-link-decoration-color: color-mix(in srgb, currentColor 20%, transparent);
       }
       &[data-variant-2xl='plain'] {
-        --leverui-private-link-decoration-line: none;
-        --leverui-private-link-underline-offset: auto;
-        --leverui-private-link-decoration-color: currentColor;
+        --lui-private-link-decoration-line: none;
+        --lui-private-link-underline-offset: auto;
+        --lui-private-link-decoration-color: currentColor;
       }
       &[data-variant-2xl='plain']:hover {
         text-decoration-line: underline;

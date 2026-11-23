@@ -6,7 +6,7 @@ import { Table } from '../src';
 /** Apply the public Table cell class to a consumer-owned native cell. */
 function TableCellProbe(): JSX.Element {
   return (
-    <td class="leverui-table__cell" data-testid="table-style-probe">
+    <td class="lui-table__cell" data-testid="table-style-probe">
       Custom cell
     </td>
   );

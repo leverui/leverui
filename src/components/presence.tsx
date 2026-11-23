@@ -61,7 +61,7 @@ function PresenceRoot(props: RuntimeProps): JSX.Element {
       'data-state': api().presenceProps['data-state'],
       ...native,
       'data-presence-root': '',
-      class: cx('leverui-presence', local.class),
+      class: cx('lui-presence', local.class),
       ref: attachNode,
     }),
   );

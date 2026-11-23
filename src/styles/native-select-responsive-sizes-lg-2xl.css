@@ -1,155 +1,155 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 1024px) {
-    .leverui-native-select__root:not([data-unstyled])[data-size-lg='xs'] {
-      --leverui-private-native-select-height: var(--leverui-sizes-8);
-      --leverui-private-native-select-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-native-select-line-height: 1rem;
-      --leverui-private-native-select-padding-start: var(--leverui-spacing-2);
-      --leverui-private-native-select-padding-end: var(--leverui-spacing-6);
-      --leverui-private-native-select-indicator-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-native-select-indicator-inset-end: var(--leverui-spacing-1\.5);
+    .lui-native-select__root:not([data-unstyled])[data-size-lg='xs'] {
+      --lui-private-native-select-height: var(--lui-sizes-8);
+      --lui-private-native-select-font-size: var(--lui-font-sizes-xs);
+      --lui-private-native-select-line-height: 1rem;
+      --lui-private-native-select-padding-start: var(--lui-spacing-2);
+      --lui-private-native-select-padding-end: var(--lui-spacing-6);
+      --lui-private-native-select-indicator-font-size: var(--lui-font-sizes-sm);
+      --lui-private-native-select-indicator-inset-end: var(--lui-spacing-1\.5);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-size-lg='sm'] {
-      --leverui-private-native-select-height: var(--leverui-sizes-9);
-      --leverui-private-native-select-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-native-select-line-height: 1.25rem;
-      --leverui-private-native-select-padding-start: var(--leverui-spacing-2\.5);
-      --leverui-private-native-select-padding-end: var(--leverui-spacing-8);
-      --leverui-private-native-select-indicator-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-native-select-indicator-inset-end: var(--leverui-spacing-2);
+    .lui-native-select__root:not([data-unstyled])[data-size-lg='sm'] {
+      --lui-private-native-select-height: var(--lui-sizes-9);
+      --lui-private-native-select-font-size: var(--lui-font-sizes-sm);
+      --lui-private-native-select-line-height: 1.25rem;
+      --lui-private-native-select-padding-start: var(--lui-spacing-2\.5);
+      --lui-private-native-select-padding-end: var(--lui-spacing-8);
+      --lui-private-native-select-indicator-font-size: var(--lui-font-sizes-md);
+      --lui-private-native-select-indicator-inset-end: var(--lui-spacing-2);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-size-lg='md'] {
-      --leverui-private-native-select-height: var(--leverui-sizes-10);
-      --leverui-private-native-select-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-native-select-line-height: 1.25rem;
-      --leverui-private-native-select-padding-start: var(--leverui-spacing-3);
-      --leverui-private-native-select-padding-end: var(--leverui-spacing-8);
-      --leverui-private-native-select-indicator-font-size: var(--leverui-font-sizes-lg);
-      --leverui-private-native-select-indicator-inset-end: var(--leverui-spacing-2);
+    .lui-native-select__root:not([data-unstyled])[data-size-lg='md'] {
+      --lui-private-native-select-height: var(--lui-sizes-10);
+      --lui-private-native-select-font-size: var(--lui-font-sizes-sm);
+      --lui-private-native-select-line-height: 1.25rem;
+      --lui-private-native-select-padding-start: var(--lui-spacing-3);
+      --lui-private-native-select-padding-end: var(--lui-spacing-8);
+      --lui-private-native-select-indicator-font-size: var(--lui-font-sizes-lg);
+      --lui-private-native-select-indicator-inset-end: var(--lui-spacing-2);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-size-lg='lg'] {
-      --leverui-private-native-select-height: var(--leverui-sizes-11);
-      --leverui-private-native-select-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-native-select-line-height: 1.5rem;
-      --leverui-private-native-select-padding-start: var(--leverui-spacing-4);
-      --leverui-private-native-select-padding-end: var(--leverui-spacing-8);
-      --leverui-private-native-select-indicator-font-size: var(--leverui-font-sizes-xl);
-      --leverui-private-native-select-indicator-inset-end: var(--leverui-spacing-3);
+    .lui-native-select__root:not([data-unstyled])[data-size-lg='lg'] {
+      --lui-private-native-select-height: var(--lui-sizes-11);
+      --lui-private-native-select-font-size: var(--lui-font-sizes-md);
+      --lui-private-native-select-line-height: 1.5rem;
+      --lui-private-native-select-padding-start: var(--lui-spacing-4);
+      --lui-private-native-select-padding-end: var(--lui-spacing-8);
+      --lui-private-native-select-indicator-font-size: var(--lui-font-sizes-xl);
+      --lui-private-native-select-indicator-inset-end: var(--lui-spacing-3);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-size-lg='xl'] {
-      --leverui-private-native-select-height: var(--leverui-sizes-12);
-      --leverui-private-native-select-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-native-select-line-height: 1.5rem;
-      --leverui-private-native-select-padding-start: var(--leverui-spacing-4\.5);
-      --leverui-private-native-select-padding-end: var(--leverui-spacing-10);
-      --leverui-private-native-select-indicator-font-size: var(--leverui-font-sizes-xl);
-      --leverui-private-native-select-indicator-inset-end: var(--leverui-spacing-3);
+    .lui-native-select__root:not([data-unstyled])[data-size-lg='xl'] {
+      --lui-private-native-select-height: var(--lui-sizes-12);
+      --lui-private-native-select-font-size: var(--lui-font-sizes-md);
+      --lui-private-native-select-line-height: 1.5rem;
+      --lui-private-native-select-padding-start: var(--lui-spacing-4\.5);
+      --lui-private-native-select-padding-end: var(--lui-spacing-10);
+      --lui-private-native-select-indicator-font-size: var(--lui-font-sizes-xl);
+      --lui-private-native-select-indicator-inset-end: var(--lui-spacing-3);
     }
   }
   @media (min-width: 1280px) {
-    .leverui-native-select__root:not([data-unstyled])[data-size-xl='xs'] {
-      --leverui-private-native-select-height: var(--leverui-sizes-8);
-      --leverui-private-native-select-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-native-select-line-height: 1rem;
-      --leverui-private-native-select-padding-start: var(--leverui-spacing-2);
-      --leverui-private-native-select-padding-end: var(--leverui-spacing-6);
-      --leverui-private-native-select-indicator-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-native-select-indicator-inset-end: var(--leverui-spacing-1\.5);
+    .lui-native-select__root:not([data-unstyled])[data-size-xl='xs'] {
+      --lui-private-native-select-height: var(--lui-sizes-8);
+      --lui-private-native-select-font-size: var(--lui-font-sizes-xs);
+      --lui-private-native-select-line-height: 1rem;
+      --lui-private-native-select-padding-start: var(--lui-spacing-2);
+      --lui-private-native-select-padding-end: var(--lui-spacing-6);
+      --lui-private-native-select-indicator-font-size: var(--lui-font-sizes-sm);
+      --lui-private-native-select-indicator-inset-end: var(--lui-spacing-1\.5);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-size-xl='sm'] {
-      --leverui-private-native-select-height: var(--leverui-sizes-9);
-      --leverui-private-native-select-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-native-select-line-height: 1.25rem;
-      --leverui-private-native-select-padding-start: var(--leverui-spacing-2\.5);
-      --leverui-private-native-select-padding-end: var(--leverui-spacing-8);
-      --leverui-private-native-select-indicator-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-native-select-indicator-inset-end: var(--leverui-spacing-2);
+    .lui-native-select__root:not([data-unstyled])[data-size-xl='sm'] {
+      --lui-private-native-select-height: var(--lui-sizes-9);
+      --lui-private-native-select-font-size: var(--lui-font-sizes-sm);
+      --lui-private-native-select-line-height: 1.25rem;
+      --lui-private-native-select-padding-start: var(--lui-spacing-2\.5);
+      --lui-private-native-select-padding-end: var(--lui-spacing-8);
+      --lui-private-native-select-indicator-font-size: var(--lui-font-sizes-md);
+      --lui-private-native-select-indicator-inset-end: var(--lui-spacing-2);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-size-xl='md'] {
-      --leverui-private-native-select-height: var(--leverui-sizes-10);
-      --leverui-private-native-select-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-native-select-line-height: 1.25rem;
-      --leverui-private-native-select-padding-start: var(--leverui-spacing-3);
-      --leverui-private-native-select-padding-end: var(--leverui-spacing-8);
-      --leverui-private-native-select-indicator-font-size: var(--leverui-font-sizes-lg);
-      --leverui-private-native-select-indicator-inset-end: var(--leverui-spacing-2);
+    .lui-native-select__root:not([data-unstyled])[data-size-xl='md'] {
+      --lui-private-native-select-height: var(--lui-sizes-10);
+      --lui-private-native-select-font-size: var(--lui-font-sizes-sm);
+      --lui-private-native-select-line-height: 1.25rem;
+      --lui-private-native-select-padding-start: var(--lui-spacing-3);
+      --lui-private-native-select-padding-end: var(--lui-spacing-8);
+      --lui-private-native-select-indicator-font-size: var(--lui-font-sizes-lg);
+      --lui-private-native-select-indicator-inset-end: var(--lui-spacing-2);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-size-xl='lg'] {
-      --leverui-private-native-select-height: var(--leverui-sizes-11);
-      --leverui-private-native-select-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-native-select-line-height: 1.5rem;
-      --leverui-private-native-select-padding-start: var(--leverui-spacing-4);
-      --leverui-private-native-select-padding-end: var(--leverui-spacing-8);
-      --leverui-private-native-select-indicator-font-size: var(--leverui-font-sizes-xl);
-      --leverui-private-native-select-indicator-inset-end: var(--leverui-spacing-3);
+    .lui-native-select__root:not([data-unstyled])[data-size-xl='lg'] {
+      --lui-private-native-select-height: var(--lui-sizes-11);
+      --lui-private-native-select-font-size: var(--lui-font-sizes-md);
+      --lui-private-native-select-line-height: 1.5rem;
+      --lui-private-native-select-padding-start: var(--lui-spacing-4);
+      --lui-private-native-select-padding-end: var(--lui-spacing-8);
+      --lui-private-native-select-indicator-font-size: var(--lui-font-sizes-xl);
+      --lui-private-native-select-indicator-inset-end: var(--lui-spacing-3);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-size-xl='xl'] {
-      --leverui-private-native-select-height: var(--leverui-sizes-12);
-      --leverui-private-native-select-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-native-select-line-height: 1.5rem;
-      --leverui-private-native-select-padding-start: var(--leverui-spacing-4\.5);
-      --leverui-private-native-select-padding-end: var(--leverui-spacing-10);
-      --leverui-private-native-select-indicator-font-size: var(--leverui-font-sizes-xl);
-      --leverui-private-native-select-indicator-inset-end: var(--leverui-spacing-3);
+    .lui-native-select__root:not([data-unstyled])[data-size-xl='xl'] {
+      --lui-private-native-select-height: var(--lui-sizes-12);
+      --lui-private-native-select-font-size: var(--lui-font-sizes-md);
+      --lui-private-native-select-line-height: 1.5rem;
+      --lui-private-native-select-padding-start: var(--lui-spacing-4\.5);
+      --lui-private-native-select-padding-end: var(--lui-spacing-10);
+      --lui-private-native-select-indicator-font-size: var(--lui-font-sizes-xl);
+      --lui-private-native-select-indicator-inset-end: var(--lui-spacing-3);
     }
   }
   @media (min-width: 1536px) {
-    .leverui-native-select__root:not([data-unstyled])[data-size-2xl='xs'] {
-      --leverui-private-native-select-height: var(--leverui-sizes-8);
-      --leverui-private-native-select-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-native-select-line-height: 1rem;
-      --leverui-private-native-select-padding-start: var(--leverui-spacing-2);
-      --leverui-private-native-select-padding-end: var(--leverui-spacing-6);
-      --leverui-private-native-select-indicator-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-native-select-indicator-inset-end: var(--leverui-spacing-1\.5);
+    .lui-native-select__root:not([data-unstyled])[data-size-2xl='xs'] {
+      --lui-private-native-select-height: var(--lui-sizes-8);
+      --lui-private-native-select-font-size: var(--lui-font-sizes-xs);
+      --lui-private-native-select-line-height: 1rem;
+      --lui-private-native-select-padding-start: var(--lui-spacing-2);
+      --lui-private-native-select-padding-end: var(--lui-spacing-6);
+      --lui-private-native-select-indicator-font-size: var(--lui-font-sizes-sm);
+      --lui-private-native-select-indicator-inset-end: var(--lui-spacing-1\.5);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-size-2xl='sm'] {
-      --leverui-private-native-select-height: var(--leverui-sizes-9);
-      --leverui-private-native-select-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-native-select-line-height: 1.25rem;
-      --leverui-private-native-select-padding-start: var(--leverui-spacing-2\.5);
-      --leverui-private-native-select-padding-end: var(--leverui-spacing-8);
-      --leverui-private-native-select-indicator-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-native-select-indicator-inset-end: var(--leverui-spacing-2);
+    .lui-native-select__root:not([data-unstyled])[data-size-2xl='sm'] {
+      --lui-private-native-select-height: var(--lui-sizes-9);
+      --lui-private-native-select-font-size: var(--lui-font-sizes-sm);
+      --lui-private-native-select-line-height: 1.25rem;
+      --lui-private-native-select-padding-start: var(--lui-spacing-2\.5);
+      --lui-private-native-select-padding-end: var(--lui-spacing-8);
+      --lui-private-native-select-indicator-font-size: var(--lui-font-sizes-md);
+      --lui-private-native-select-indicator-inset-end: var(--lui-spacing-2);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-size-2xl='md'] {
-      --leverui-private-native-select-height: var(--leverui-sizes-10);
-      --leverui-private-native-select-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-native-select-line-height: 1.25rem;
-      --leverui-private-native-select-padding-start: var(--leverui-spacing-3);
-      --leverui-private-native-select-padding-end: var(--leverui-spacing-8);
-      --leverui-private-native-select-indicator-font-size: var(--leverui-font-sizes-lg);
-      --leverui-private-native-select-indicator-inset-end: var(--leverui-spacing-2);
+    .lui-native-select__root:not([data-unstyled])[data-size-2xl='md'] {
+      --lui-private-native-select-height: var(--lui-sizes-10);
+      --lui-private-native-select-font-size: var(--lui-font-sizes-sm);
+      --lui-private-native-select-line-height: 1.25rem;
+      --lui-private-native-select-padding-start: var(--lui-spacing-3);
+      --lui-private-native-select-padding-end: var(--lui-spacing-8);
+      --lui-private-native-select-indicator-font-size: var(--lui-font-sizes-lg);
+      --lui-private-native-select-indicator-inset-end: var(--lui-spacing-2);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-size-2xl='lg'] {
-      --leverui-private-native-select-height: var(--leverui-sizes-11);
-      --leverui-private-native-select-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-native-select-line-height: 1.5rem;
-      --leverui-private-native-select-padding-start: var(--leverui-spacing-4);
-      --leverui-private-native-select-padding-end: var(--leverui-spacing-8);
-      --leverui-private-native-select-indicator-font-size: var(--leverui-font-sizes-xl);
-      --leverui-private-native-select-indicator-inset-end: var(--leverui-spacing-3);
+    .lui-native-select__root:not([data-unstyled])[data-size-2xl='lg'] {
+      --lui-private-native-select-height: var(--lui-sizes-11);
+      --lui-private-native-select-font-size: var(--lui-font-sizes-md);
+      --lui-private-native-select-line-height: 1.5rem;
+      --lui-private-native-select-padding-start: var(--lui-spacing-4);
+      --lui-private-native-select-padding-end: var(--lui-spacing-8);
+      --lui-private-native-select-indicator-font-size: var(--lui-font-sizes-xl);
+      --lui-private-native-select-indicator-inset-end: var(--lui-spacing-3);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-size-2xl='xl'] {
-      --leverui-private-native-select-height: var(--leverui-sizes-12);
-      --leverui-private-native-select-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-native-select-line-height: 1.5rem;
-      --leverui-private-native-select-padding-start: var(--leverui-spacing-4\.5);
-      --leverui-private-native-select-padding-end: var(--leverui-spacing-10);
-      --leverui-private-native-select-indicator-font-size: var(--leverui-font-sizes-xl);
-      --leverui-private-native-select-indicator-inset-end: var(--leverui-spacing-3);
+    .lui-native-select__root:not([data-unstyled])[data-size-2xl='xl'] {
+      --lui-private-native-select-height: var(--lui-sizes-12);
+      --lui-private-native-select-font-size: var(--lui-font-sizes-md);
+      --lui-private-native-select-line-height: 1.5rem;
+      --lui-private-native-select-padding-start: var(--lui-spacing-4\.5);
+      --lui-private-native-select-padding-end: var(--lui-spacing-10);
+      --lui-private-native-select-indicator-font-size: var(--lui-font-sizes-xl);
+      --lui-private-native-select-indicator-inset-end: var(--lui-spacing-3);
     }
   }
 }

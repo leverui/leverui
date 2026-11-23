@@ -18,12 +18,12 @@ export function BarReferences(props: {
   const areaHeight = () =>
     Math.abs(chartY(props.plot, props.area?.from ?? 0) - chartY(props.plot, props.area?.to ?? 0));
   return (
-    <g class="leverui-bar-chart__references" data-bar-references="" aria-hidden="true">
+    <g class="lui-bar-chart__references" data-bar-references="" aria-hidden="true">
       <Show when={props.area}>
         {(area) => (
           <>
             <rect
-              class="leverui-bar-chart__reference-area"
+              class="lui-bar-chart__reference-area"
               x={props.plot.left}
               y={areaTop()}
               width={props.plot.width - props.plot.left - props.plot.right}
@@ -32,7 +32,7 @@ export function BarReferences(props: {
             />
             <Show when={area().label}>
               <text
-                class="leverui-bar-chart__reference-label"
+                class="lui-bar-chart__reference-label"
                 x={props.plot.left + 5}
                 y={areaTop() + 5}
               >
@@ -45,7 +45,7 @@ export function BarReferences(props: {
       <Show when={props.value}>
         {(value) => (
           <line
-            class="leverui-bar-chart__reference-line"
+            class="lui-bar-chart__reference-line"
             x1={props.plot.left}
             x2={props.plot.width - props.plot.right}
             y1={chartY(props.plot, value().value)}

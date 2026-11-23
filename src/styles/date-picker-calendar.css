@@ -1,97 +1,96 @@
-@layer leverui.recipes {
-  .leverui-date-picker__content:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-date-picker__content:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
-    gap: var(--leverui-spacing-3);
-    padding: var(--leverui-date-picker-content-padding, var(--leverui-spacing-3));
-    min-width: var(--leverui-date-picker-content-min-width, 18rem);
-    background: var(--leverui-date-picker-content-background, var(--leverui-colors-bg-panel));
-    border-radius: var(--leverui-date-picker-radius, var(--leverui-radii-l2));
-    box-shadow: var(--leverui-date-picker-content-shadow, var(--leverui-shadows-lg));
-    color: var(--leverui-colors-fg);
+    gap: var(--lui-spacing-3);
+    padding: var(--lui-date-picker-content-padding, var(--lui-spacing-3));
+    min-width: var(--lui-date-picker-content-min-width, 18rem);
+    background: var(--lui-date-picker-content-background, var(--lui-colors-bg-panel));
+    border-radius: var(--lui-date-picker-radius, var(--lui-radii-l2));
+    box-shadow: var(--lui-date-picker-content-shadow, var(--lui-shadows-lg));
+    color: var(--lui-colors-fg);
     z-index: calc(
-      var(--leverui-date-picker-z-index, var(--leverui-z-index-popover)) + var(--layer-index, 0)
+      var(--lui-date-picker-z-index, var(--lui-z-index-popover)) + var(--layer-index, 0)
     );
     outline: none;
-    --leverui-private-date-picker-input-height: var(--leverui-sizes-10);
-    --leverui-private-date-picker-input-padding: var(--leverui-spacing-3);
-    --leverui-private-date-picker-indicators-offset: var(--leverui-spacing-3);
-    --leverui-private-date-picker-cell-size: var(--leverui-sizes-10);
-    --leverui-private-date-picker-nav-size: var(--leverui-sizes-8);
-    --leverui-private-date-picker-select-height: var(--leverui-sizes-10);
+    --lui-private-date-picker-input-height: var(--lui-sizes-10);
+    --lui-private-date-picker-input-padding: var(--lui-spacing-3);
+    --lui-private-date-picker-indicators-offset: var(--lui-spacing-3);
+    --lui-private-date-picker-cell-size: var(--lui-sizes-10);
+    --lui-private-date-picker-nav-size: var(--lui-sizes-8);
+    --lui-private-date-picker-select-height: var(--lui-sizes-10);
   }
 
-  .leverui-date-picker__view:not([data-unstyled]) {
+  .lui-date-picker__view:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
-    gap: var(--leverui-spacing-3);
+    gap: var(--lui-spacing-3);
   }
 
-  .leverui-date-picker__viewControl:not([data-unstyled]) {
+  .lui-date-picker__viewControl:not([data-unstyled]) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: var(--leverui-spacing-2);
+    gap: var(--lui-spacing-2);
     height: var(
-      --leverui-date-picker-nav-size,
-      var(--leverui-private-date-picker-nav-size, var(--leverui-sizes-8))
+      --lui-date-picker-nav-size,
+      var(--lui-private-date-picker-nav-size, var(--lui-sizes-8))
     );
   }
 
-  .leverui-date-picker__viewTrigger:not([data-unstyled]) {
+  .lui-date-picker__viewTrigger:not([data-unstyled]) {
     display: inline-flex;
     flex: 1;
     align-items: center;
     justify-content: center;
-    gap: var(--leverui-spacing-1);
-    padding-block: var(--leverui-spacing-1\.5);
-    padding-inline: var(--leverui-spacing-2);
-    font-size: var(--leverui-font-sizes-sm);
+    gap: var(--lui-spacing-1);
+    padding-block: var(--lui-spacing-1\.5);
+    padding-inline: var(--lui-spacing-2);
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
-    font-weight: var(--leverui-font-weights-semibold);
-    border-radius: var(--leverui-radii-l2);
+    font-weight: var(--lui-font-weights-semibold);
+    border-radius: var(--lui-radii-l2);
   }
 
-  .leverui-date-picker__rangeText:not([data-unstyled]) {
-    font-size: var(--leverui-font-sizes-sm);
+  .lui-date-picker__rangeText:not([data-unstyled]) {
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
-    font-weight: var(--leverui-font-weights-semibold);
+    font-weight: var(--lui-font-weights-semibold);
   }
 
-  :is(.leverui-date-picker__prevTrigger, .leverui-date-picker__nextTrigger):not([data-unstyled]) {
+  :is(.lui-date-picker__prevTrigger, .lui-date-picker__nextTrigger):not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: var(
-      --leverui-date-picker-nav-size,
-      var(--leverui-private-date-picker-nav-size, var(--leverui-sizes-8))
+      --lui-date-picker-nav-size,
+      var(--lui-private-date-picker-nav-size, var(--lui-sizes-8))
     );
     height: var(
-      --leverui-date-picker-nav-size,
-      var(--leverui-private-date-picker-nav-size, var(--leverui-sizes-8))
+      --lui-date-picker-nav-size,
+      var(--lui-private-date-picker-nav-size, var(--lui-sizes-8))
     );
-    border-radius: var(--leverui-radii-l2);
-    color: var(--leverui-colors-fg);
+    border-radius: var(--lui-radii-l2);
+    color: var(--lui-colors-fg);
   }
 
-  :is(.leverui-date-picker__prevTrigger, .leverui-date-picker__nextTrigger):not([data-unstyled])
-    svg {
-    width: var(--leverui-sizes-4);
-    height: var(--leverui-sizes-4);
+  :is(.lui-date-picker__prevTrigger, .lui-date-picker__nextTrigger):not([data-unstyled]) svg {
+    width: var(--lui-sizes-4);
+    height: var(--lui-sizes-4);
   }
 
-  :is(.leverui-date-picker__monthSelect, .leverui-date-picker__yearSelect):not([data-unstyled]) {
+  :is(.lui-date-picker__monthSelect, .lui-date-picker__yearSelect):not([data-unstyled]) {
     height: var(
-      --leverui-date-picker-select-height,
-      var(--leverui-private-date-picker-select-height, var(--leverui-sizes-10))
+      --lui-date-picker-select-height,
+      var(--lui-private-date-picker-select-height, var(--lui-sizes-10))
     );
-    padding-inline-start: var(--leverui-spacing-2);
-    padding-inline-end: var(--leverui-spacing-8);
-    font-size: var(--leverui-font-sizes-sm);
+    padding-inline-start: var(--lui-spacing-2);
+    padding-inline-end: var(--lui-spacing-8);
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
     border-width: 1px;
     border-style: solid;
-    border-radius: var(--leverui-radii-l2);
+    border-radius: var(--lui-radii-l2);
     outline: none;
     appearance: none;
     field-sizing: content;
@@ -103,9 +102,9 @@
 
   /* Zag 2 sets no z-index and isolates the positioner, so the content's z-index
      cannot escape it. Stack the positioner itself, offset by its layer index. */
-  .leverui-date-picker__positioner {
+  .lui-date-picker__positioner {
     z-index: calc(
-      var(--leverui-date-picker-z-index, var(--leverui-z-index-popover)) + var(--layer-index, 0)
+      var(--lui-date-picker-z-index, var(--lui-z-index-popover)) + var(--layer-index, 0)
     );
   }
 }

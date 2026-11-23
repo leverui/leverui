@@ -60,7 +60,7 @@ export function ClosedAlert(props: ClosedAlertProps) {
 Takes the alert's appearance props and any native `div` attribute. Import the
 Lever UI stylesheet once in your app.
 
-Style the parts with CSS classes or `--leverui-*` variables.
+Style the parts with CSS classes or `--lui-*` variables.
 
 ## Props
 

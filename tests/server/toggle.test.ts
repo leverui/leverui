@@ -33,8 +33,8 @@ function renderServerToggle(): string {
 function verifiesServerToggle(): void {
   const markup = renderServerToggle();
   expect(markup).toContain('data-toggle-');
-  expect(markup).toContain('leverui-toggle__root');
-  expect(markup).toContain('leverui-toggle__indicator');
+  expect(markup).toContain('lui-toggle__root');
+  expect(markup).toContain('lui-toggle__indicator');
   expect(markup).toContain('aria-pressed="true"');
   expect(markup).toContain('type="button"');
   expect(markup).toContain('On');

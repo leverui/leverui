@@ -15,7 +15,7 @@ async function verifiesWrapLayouts({ page }: { page: Page }): Promise<void> {
   await page.setViewportSize({ width: 1280, height: 720 });
   for (const layout of layouts) {
     await page.goto(`/iframe.html?id=layout-wrap--${layout.id}`);
-    const wrap = page.locator('#storybook-root .leverui-wrap');
+    const wrap = page.locator('#storybook-root .lui-wrap');
     await expect(wrap).toBeVisible();
     await expect(wrap.locator(':scope > :not(style)')).toHaveCount(layout.count);
     await expect(wrap).toHaveCSS('display', 'flex');
@@ -30,7 +30,7 @@ async function verifiesWrapLayouts({ page }: { page: Page }): Promise<void> {
 async function verifiesResponsiveWrap({ page }: { page: Page }): Promise<void> {
   await page.setViewportSize({ width: 400, height: 720 });
   await page.goto('/iframe.html?id=layout-wrap--responsive');
-  const wrap = page.locator('#storybook-root .leverui-wrap');
+  const wrap = page.locator('#storybook-root .lui-wrap');
   await expect(wrap).toHaveCSS('gap', '12px');
   await expect(wrap).toHaveCSS('justify-content', 'center');
   await page.setViewportSize({ width: 1280, height: 720 });

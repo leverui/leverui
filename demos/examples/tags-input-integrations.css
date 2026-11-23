@@ -1,14 +1,14 @@
 .example-tags-input-copy-label {
-  margin-bottom: var(--leverui-spacing-2);
-  font-weight: var(--leverui-font-weights-medium);
+  margin-bottom: var(--lui-spacing-2);
+  font-weight: var(--lui-font-weights-medium);
 }
 
 .example-tags-input-copy-value {
-  margin-inline-end: var(--leverui-spacing-3);
-  font-family: var(--leverui-fonts-mono);
-  font-size: var(--leverui-font-sizes-sm);
+  margin-inline-end: var(--lui-spacing-3);
+  font-family: var(--lui-fonts-mono);
+  font-size: var(--lui-font-sizes-sm);
 }
 
 .example-tags-input-submit {
-  margin-top: var(--leverui-spacing-3);
+  margin-top: var(--lui-spacing-3);
 }

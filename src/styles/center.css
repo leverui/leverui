@@ -1,8 +1,8 @@
-@layer leverui.recipes {
-  .leverui-center:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-center:not([data-unstyled]) {
     display: flex;
-    align-items: var(--leverui-center-align, center);
-    justify-content: var(--leverui-center-justify, center);
+    align-items: var(--lui-center-align, center);
+    justify-content: var(--lui-center-justify, center);
 
     &[data-inline='true'] {
       display: inline-flex;

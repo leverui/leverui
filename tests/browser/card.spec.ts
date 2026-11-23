@@ -10,7 +10,7 @@ async function verifiesCardMatrix({ page }: { page: Page }): Promise<void> {
   await expect(outline.locator('p')).toHaveText('Card description');
   await expect(outline).toHaveCSS('border-top-width', '1px');
   await expect(outline).toHaveCSS('width', '280px');
-  await expect(outline).not.toHaveAttribute('data-leverui-private-style-runtime');
+  await expect(outline).not.toHaveAttribute('data-lui-private-style-runtime');
   await expect(page.getByTestId('card-elevated')).toHaveCSS('border-top-width', '0px');
   await expect(page.getByTestId('card-subtle')).toHaveCSS('border-top-width', '0px');
   await expect(page.getByTestId('card-sm-body')).toHaveCSS('padding-top', '16px');

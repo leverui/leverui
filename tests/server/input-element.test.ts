@@ -27,7 +27,7 @@ function renderServerElement(): string {
 function verifiesServerElement(): void {
   const markup = renderServerElement();
   expect(markup).toContain('id="server-input-element"');
-  expect(markup).toContain('leverui-input-element');
+  expect(markup).toContain('lui-input-element');
   expect(markup).toContain('kg');
   expect(markup).not.toMatch(/<div[^>]*\splacement=/);
 }

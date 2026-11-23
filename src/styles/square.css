@@ -1,35 +1,35 @@
-@layer leverui.recipes {
-  :is(.leverui-square, .leverui-circle) {
-    width: var(--leverui-private-square-size-base, var(--leverui-square-size, auto));
-    height: var(--leverui-private-square-size-base, var(--leverui-square-size, auto));
+@layer lui.recipes {
+  :is(.lui-square, .lui-circle) {
+    width: var(--lui-private-square-size-base, var(--lui-square-size, auto));
+    height: var(--lui-private-square-size-base, var(--lui-square-size, auto));
 
     @media (min-width: 480px) {
-      width: var(--leverui-private-square-size-sm, var(--leverui-square-size, auto));
-      height: var(--leverui-private-square-size-sm, var(--leverui-square-size, auto));
+      width: var(--lui-private-square-size-sm, var(--lui-square-size, auto));
+      height: var(--lui-private-square-size-sm, var(--lui-square-size, auto));
     }
 
     @media (min-width: 768px) {
-      width: var(--leverui-private-square-size-md, var(--leverui-square-size, auto));
-      height: var(--leverui-private-square-size-md, var(--leverui-square-size, auto));
+      width: var(--lui-private-square-size-md, var(--lui-square-size, auto));
+      height: var(--lui-private-square-size-md, var(--lui-square-size, auto));
     }
 
     @media (min-width: 1024px) {
-      width: var(--leverui-private-square-size-lg, var(--leverui-square-size, auto));
-      height: var(--leverui-private-square-size-lg, var(--leverui-square-size, auto));
+      width: var(--lui-private-square-size-lg, var(--lui-square-size, auto));
+      height: var(--lui-private-square-size-lg, var(--lui-square-size, auto));
     }
 
     @media (min-width: 1280px) {
-      width: var(--leverui-private-square-size-xl, var(--leverui-square-size, auto));
-      height: var(--leverui-private-square-size-xl, var(--leverui-square-size, auto));
+      width: var(--lui-private-square-size-xl, var(--lui-square-size, auto));
+      height: var(--lui-private-square-size-xl, var(--lui-square-size, auto));
     }
 
     @media (min-width: 1536px) {
-      width: var(--leverui-private-square-size-2xl, var(--leverui-square-size, auto));
-      height: var(--leverui-private-square-size-2xl, var(--leverui-square-size, auto));
+      width: var(--lui-private-square-size-2xl, var(--lui-square-size, auto));
+      height: var(--lui-private-square-size-2xl, var(--lui-square-size, auto));
     }
   }
 
-  :is(.leverui-square, .leverui-circle):not([data-unstyled]) {
+  :is(.lui-square, .lui-circle):not([data-unstyled]) {
     display: flex;
     align-items: center;
     justify-content: center;

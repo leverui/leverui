@@ -90,7 +90,7 @@ async function verifiesCenter({ page }: { page: Page }): Promise<void> {
   await expect(conditionalOnly).toHaveCSS('display', 'inline-flex');
   await expect(openBaseArray).toHaveCSS('display', 'inline-flex');
   await page.addStyleTag({
-    content: '.leverui-center[data-testid="center-default"] { gap: 17px; }',
+    content: '.lui-center[data-testid="center-default"] { gap: 17px; }',
   });
   await expect(root).toHaveCSS('gap', '17px');
 }
@@ -176,7 +176,7 @@ async function verifiesPlainCenterCss({ page }: { page: Page }): Promise<void> {
   await page.setViewportSize({ width: 900, height: 700 });
   await expect(page.locator('#responsive-server-center')).toHaveCSS('display', 'inline-flex');
   await expect(page.locator('#responsive-reset-center')).toHaveCSS('display', 'flex');
-  await page.addStyleTag({ content: '.consumer-center { --leverui-center-justify: flex-end; }' });
+  await page.addStyleTag({ content: '.consumer-center { --lui-center-justify: flex-end; }' });
   await expect(inline).toHaveCSS('justify-content', 'flex-end');
 }
 

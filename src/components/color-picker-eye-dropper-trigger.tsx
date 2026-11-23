@@ -92,7 +92,7 @@ function ColorPickerEyeDropperTriggerImpl(props: RuntimeTriggerProps): JSX.Eleme
     <IconButton
       {...rest}
       {...colorPickerAppearanceAttributes(appearance)}
-      data-leverui-color-picker-css={appearance.unstyled() || local.unstyled ? undefined : ''}
+      data-lui-color-picker-css={appearance.unstyled() || local.unstyled ? undefined : ''}
       data-unstyled={appearance.unstyled() || local.unstyled ? '' : undefined}
       unstyled={appearance.unstyled() || local.unstyled}
       loading={local.loading}

@@ -43,7 +43,7 @@ export function AccordionControlled(): JSX.Element {
   const [value, setValue] = createSignal(['second-item']);
   return (
     <Stack gap="4">
-      <Text style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>
+      <Text style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>
         Expanded: {value().join(', ')}
       </Text>
       <Accordion.Root

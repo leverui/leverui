@@ -33,7 +33,7 @@ function verifiesNativeInput(): void {
   expect(input).toHaveProperty('value', 'draft');
   expect(input.hasAttribute('data-field-input')).toBe(false);
   expect(input.hasAttribute('aria-invalid')).toBe(false);
-  expect(input.className).toContain('leverui-input');
+  expect(input.className).toContain('lui-input');
 }
 
 it('preserves native input props and the primitive Field attributes', verifiesNativeInput);
@@ -146,7 +146,7 @@ function verifiesChildInput(): void {
   expect(input).toBe(received);
   expect(input.getAttribute('id')).toBe('child-field');
   expect(input.hasAttribute('required')).toBe(true);
-  expect(input.className).toContain('leverui-input');
+  expect(input.className).toContain('lui-input');
 }
 
 it('forwards field props through a Solid child renderer', verifiesChildInput);

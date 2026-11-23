@@ -27,7 +27,7 @@ function verifiesNativeTextarea(): void {
   expect(control).toBe(received);
   expect(control.value).toBe('draft');
   expect(control.rows).toBe(4);
-  expect(control.className).toContain('leverui-textarea');
+  expect(control.className).toContain('lui-textarea');
   expect(control.hasAttribute('data-field-textarea')).toBe(false);
 }
 
@@ -146,7 +146,7 @@ function verifiesChildTextarea(): void {
   expect(control).toBe(received);
   expect(control.getAttribute('id')).toBe('child-notes');
   expect(control.hasAttribute('required')).toBe(true);
-  expect(control.className).toContain('leverui-textarea');
+  expect(control.className).toContain('lui-textarea');
 }
 
 it('forwards Field and recipe props through a Solid child', verifiesChildTextarea);

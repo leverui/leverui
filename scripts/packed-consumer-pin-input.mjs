@@ -4,7 +4,7 @@ import { expect } from '@playwright/test';
 export async function verifyPackedPinInput(page) {
   const first = page.getByTestId('packed-pin-0');
   const second = page.getByTestId('packed-pin-1');
-  await expect(first).toHaveClass(/leverui-pin-input__input/);
+  await expect(first).toHaveClass(/lui-pin-input__input/);
   await expect(first).toHaveAttribute('type', 'password');
   await expect(first).toHaveCSS('border-radius', '12px');
   await first.fill('1');

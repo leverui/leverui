@@ -18,8 +18,8 @@ const fields = [
 ] as const;
 
 const errorStyle = {
-  color: 'var(--leverui-colors-red-fg)',
-  'margin-top': 'var(--leverui-spacing-3)',
+  color: 'var(--lui-colors-red-fg)',
+  'margin-top': 'var(--lui-spacing-3)',
 } as const;
 
 /** Validate each registration field before advancing to the next step. */
@@ -112,7 +112,7 @@ export function StepsValidation(): JSX.Element {
       <Steps.CompletedContent>
         <Text>Registration complete!</Text>
       </Steps.CompletedContent>
-      <ButtonGroup size="sm" variant="outline" style={{ 'margin-top': 'var(--leverui-spacing-4)' }}>
+      <ButtonGroup size="sm" variant="outline" style={{ 'margin-top': 'var(--lui-spacing-4)' }}>
         <Steps.PrevTrigger
           asChild={
             /** Forward the validated guide's previous-step action. */

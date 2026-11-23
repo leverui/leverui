@@ -9,8 +9,8 @@ export function HighlightBasic(): JSX.Element {
       query="Thursday"
       markStyle={{
         'padding-inline': '2px',
-        'background-color': 'var(--leverui-colors-orange-subtle)',
-        color: 'var(--leverui-colors-orange-fg)',
+        'background-color': 'var(--lui-colors-orange-subtle)',
+        color: 'var(--lui-colors-orange-fg)',
       }}
     >
       Your parcel arrives on Thursday before noon.
@@ -21,12 +21,12 @@ export function HighlightBasic(): JSX.Element {
 /** Emphasize three terms in the heading. */
 export function HighlightMultiple(): JSX.Element {
   return (
-    <Heading style={{ 'line-height': 'var(--leverui-line-heights-tall)' }}>
+    <Heading style={{ 'line-height': 'var(--lui-line-heights-tall)' }}>
       <Highlight
         query={['helmet', 'gloves', 'water bottle']}
         markStyle={{
           'padding-inline': '2px',
-          'background-color': 'var(--leverui-colors-teal-muted)',
+          'background-color': 'var(--lui-colors-teal-muted)',
         }}
       >
         Bring a helmet, gloves and a water bottle on the ride.
@@ -51,7 +51,7 @@ export function HighlightSearchQuery(): JSX.Element {
                 <Highlight
                   ignoreCase
                   query="desk"
-                  markStyle={{ 'font-weight': 'var(--leverui-font-weights-semibold)' }}
+                  markStyle={{ 'font-weight': 'var(--lui-font-weights-semibold)' }}
                 >
                   {item}
                 </Highlight>
@@ -67,7 +67,7 @@ export function HighlightSearchQuery(): JSX.Element {
 /** Apply the custom font weight to one matched word. */
 export function HighlightWithCustomStyle(): JSX.Element {
   return (
-    <Highlight query="6 pm" markStyle={{ 'font-weight': 'var(--leverui-font-weights-semibold)' }}>
+    <Highlight query="6 pm" markStyle={{ 'font-weight': 'var(--lui-font-weights-semibold)' }}>
       The library closes at 6 pm on weekdays.
     </Highlight>
   );

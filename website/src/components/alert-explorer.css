@@ -75,13 +75,11 @@
   outline-offset: 2px;
 }
 
-.alert-explorer[data-highlight-part='root'] .alert-explorer-preview .leverui-alert__root,
-.alert-explorer[data-highlight-part='indicator'] .alert-explorer-preview .leverui-alert__indicator,
-.alert-explorer[data-highlight-part='content'] .alert-explorer-preview .leverui-alert__content,
-.alert-explorer[data-highlight-part='title'] .alert-explorer-preview .leverui-alert__title,
-.alert-explorer[data-highlight-part='description']
-  .alert-explorer-preview
-  .leverui-alert__description {
+.alert-explorer[data-highlight-part='root'] .alert-explorer-preview .lui-alert__root,
+.alert-explorer[data-highlight-part='indicator'] .alert-explorer-preview .lui-alert__indicator,
+.alert-explorer[data-highlight-part='content'] .alert-explorer-preview .lui-alert__content,
+.alert-explorer[data-highlight-part='title'] .alert-explorer-preview .lui-alert__title,
+.alert-explorer[data-highlight-part='description'] .alert-explorer-preview .lui-alert__description {
   outline: 2px solid var(--site-accent);
   outline-offset: 2px;
 }

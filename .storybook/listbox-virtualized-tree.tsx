@@ -89,7 +89,7 @@ export function renderVirtualizedListbox(
     <>
       <div style={{ padding: '24px' }}>
         <Listbox.Root
-          style={{ 'max-width': 'var(--leverui-sizes-sm)' }}
+          style={{ 'max-width': 'var(--lui-sizes-sm)' }}
           collection={collection}
           scrollToIndexFn={scrollToIndex}
         >

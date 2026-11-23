@@ -1,105 +1,105 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 1024px) {
-    .leverui-switch__root:not([data-unstyled]) {
+    .lui-switch__root:not([data-unstyled]) {
       &[data-variant-lg='solid'] {
-        --leverui-private-switch-control-height: var(--leverui-private-switch-height);
-        --leverui-private-switch-control-bg: var(--leverui-colors-bg-emphasized);
-        --leverui-private-switch-control-checked-bg: var(--leverui-colors-color-palette-solid);
-        --leverui-private-switch-control-shadow: none;
-        --leverui-private-switch-control-focus-width: 2px;
-        --leverui-private-switch-thumb-position: static;
-        --leverui-private-switch-thumb-top: 0px;
-        --leverui-private-switch-thumb-scale: 0.8;
-        --leverui-private-switch-thumb-shadow: var(--leverui-shadows-sm);
-        --leverui-private-switch-thumb-checked-bg: var(--leverui-colors-color-palette-contrast);
-        --leverui-private-switch-thumb-focus-width: 0px;
+        --lui-private-switch-control-height: var(--lui-private-switch-height);
+        --lui-private-switch-control-bg: var(--lui-colors-bg-emphasized);
+        --lui-private-switch-control-checked-bg: var(--lui-colors-color-palette-solid);
+        --lui-private-switch-control-shadow: none;
+        --lui-private-switch-control-focus-width: 2px;
+        --lui-private-switch-thumb-position: static;
+        --lui-private-switch-thumb-top: 0px;
+        --lui-private-switch-thumb-scale: 0.8;
+        --lui-private-switch-thumb-shadow: var(--lui-shadows-sm);
+        --lui-private-switch-thumb-checked-bg: var(--lui-colors-color-palette-contrast);
+        --lui-private-switch-thumb-focus-width: 0px;
       }
       &[data-variant-lg='raised'] {
-        --leverui-private-switch-control-height: calc(var(--leverui-private-switch-height) / 2);
-        --leverui-private-switch-control-bg: var(--leverui-colors-bg-muted);
-        --leverui-private-switch-control-checked-bg: color-mix(
+        --lui-private-switch-control-height: calc(var(--lui-private-switch-height) / 2);
+        --lui-private-switch-control-bg: var(--lui-colors-bg-muted);
+        --lui-private-switch-control-checked-bg: color-mix(
           in srgb,
-          var(--leverui-colors-color-palette-solid) 60%,
+          var(--lui-colors-color-palette-solid) 60%,
           transparent
         );
-        --leverui-private-switch-control-shadow: var(--leverui-shadows-inset);
-        --leverui-private-switch-control-focus-width: 0px;
-        --leverui-private-switch-thumb-position: relative;
-        --leverui-private-switch-thumb-top: calc(var(--leverui-private-switch-height) * -0.25);
-        --leverui-private-switch-thumb-scale: 1;
-        --leverui-private-switch-thumb-shadow: var(--leverui-shadows-xs);
-        --leverui-private-switch-thumb-checked-bg: var(--leverui-colors-color-palette-solid);
-        --leverui-private-switch-thumb-focus-width: 2px;
+        --lui-private-switch-control-shadow: var(--lui-shadows-inset);
+        --lui-private-switch-control-focus-width: 0px;
+        --lui-private-switch-thumb-position: relative;
+        --lui-private-switch-thumb-top: calc(var(--lui-private-switch-height) * -0.25);
+        --lui-private-switch-thumb-scale: 1;
+        --lui-private-switch-thumb-shadow: var(--lui-shadows-xs);
+        --lui-private-switch-thumb-checked-bg: var(--lui-colors-color-palette-solid);
+        --lui-private-switch-thumb-focus-width: 2px;
       }
     }
   }
 
   @media (min-width: 1280px) {
-    .leverui-switch__root:not([data-unstyled]) {
+    .lui-switch__root:not([data-unstyled]) {
       &[data-variant-xl='solid'] {
-        --leverui-private-switch-control-height: var(--leverui-private-switch-height);
-        --leverui-private-switch-control-bg: var(--leverui-colors-bg-emphasized);
-        --leverui-private-switch-control-checked-bg: var(--leverui-colors-color-palette-solid);
-        --leverui-private-switch-control-shadow: none;
-        --leverui-private-switch-control-focus-width: 2px;
-        --leverui-private-switch-thumb-position: static;
-        --leverui-private-switch-thumb-top: 0px;
-        --leverui-private-switch-thumb-scale: 0.8;
-        --leverui-private-switch-thumb-shadow: var(--leverui-shadows-sm);
-        --leverui-private-switch-thumb-checked-bg: var(--leverui-colors-color-palette-contrast);
-        --leverui-private-switch-thumb-focus-width: 0px;
+        --lui-private-switch-control-height: var(--lui-private-switch-height);
+        --lui-private-switch-control-bg: var(--lui-colors-bg-emphasized);
+        --lui-private-switch-control-checked-bg: var(--lui-colors-color-palette-solid);
+        --lui-private-switch-control-shadow: none;
+        --lui-private-switch-control-focus-width: 2px;
+        --lui-private-switch-thumb-position: static;
+        --lui-private-switch-thumb-top: 0px;
+        --lui-private-switch-thumb-scale: 0.8;
+        --lui-private-switch-thumb-shadow: var(--lui-shadows-sm);
+        --lui-private-switch-thumb-checked-bg: var(--lui-colors-color-palette-contrast);
+        --lui-private-switch-thumb-focus-width: 0px;
       }
       &[data-variant-xl='raised'] {
-        --leverui-private-switch-control-height: calc(var(--leverui-private-switch-height) / 2);
-        --leverui-private-switch-control-bg: var(--leverui-colors-bg-muted);
-        --leverui-private-switch-control-checked-bg: color-mix(
+        --lui-private-switch-control-height: calc(var(--lui-private-switch-height) / 2);
+        --lui-private-switch-control-bg: var(--lui-colors-bg-muted);
+        --lui-private-switch-control-checked-bg: color-mix(
           in srgb,
-          var(--leverui-colors-color-palette-solid) 60%,
+          var(--lui-colors-color-palette-solid) 60%,
           transparent
         );
-        --leverui-private-switch-control-shadow: var(--leverui-shadows-inset);
-        --leverui-private-switch-control-focus-width: 0px;
-        --leverui-private-switch-thumb-position: relative;
-        --leverui-private-switch-thumb-top: calc(var(--leverui-private-switch-height) * -0.25);
-        --leverui-private-switch-thumb-scale: 1;
-        --leverui-private-switch-thumb-shadow: var(--leverui-shadows-xs);
-        --leverui-private-switch-thumb-checked-bg: var(--leverui-colors-color-palette-solid);
-        --leverui-private-switch-thumb-focus-width: 2px;
+        --lui-private-switch-control-shadow: var(--lui-shadows-inset);
+        --lui-private-switch-control-focus-width: 0px;
+        --lui-private-switch-thumb-position: relative;
+        --lui-private-switch-thumb-top: calc(var(--lui-private-switch-height) * -0.25);
+        --lui-private-switch-thumb-scale: 1;
+        --lui-private-switch-thumb-shadow: var(--lui-shadows-xs);
+        --lui-private-switch-thumb-checked-bg: var(--lui-colors-color-palette-solid);
+        --lui-private-switch-thumb-focus-width: 2px;
       }
     }
   }
 
   @media (min-width: 1536px) {
-    .leverui-switch__root:not([data-unstyled]) {
+    .lui-switch__root:not([data-unstyled]) {
       &[data-variant-2xl='solid'] {
-        --leverui-private-switch-control-height: var(--leverui-private-switch-height);
-        --leverui-private-switch-control-bg: var(--leverui-colors-bg-emphasized);
-        --leverui-private-switch-control-checked-bg: var(--leverui-colors-color-palette-solid);
-        --leverui-private-switch-control-shadow: none;
-        --leverui-private-switch-control-focus-width: 2px;
-        --leverui-private-switch-thumb-position: static;
-        --leverui-private-switch-thumb-top: 0px;
-        --leverui-private-switch-thumb-scale: 0.8;
-        --leverui-private-switch-thumb-shadow: var(--leverui-shadows-sm);
-        --leverui-private-switch-thumb-checked-bg: var(--leverui-colors-color-palette-contrast);
-        --leverui-private-switch-thumb-focus-width: 0px;
+        --lui-private-switch-control-height: var(--lui-private-switch-height);
+        --lui-private-switch-control-bg: var(--lui-colors-bg-emphasized);
+        --lui-private-switch-control-checked-bg: var(--lui-colors-color-palette-solid);
+        --lui-private-switch-control-shadow: none;
+        --lui-private-switch-control-focus-width: 2px;
+        --lui-private-switch-thumb-position: static;
+        --lui-private-switch-thumb-top: 0px;
+        --lui-private-switch-thumb-scale: 0.8;
+        --lui-private-switch-thumb-shadow: var(--lui-shadows-sm);
+        --lui-private-switch-thumb-checked-bg: var(--lui-colors-color-palette-contrast);
+        --lui-private-switch-thumb-focus-width: 0px;
       }
       &[data-variant-2xl='raised'] {
-        --leverui-private-switch-control-height: calc(var(--leverui-private-switch-height) / 2);
-        --leverui-private-switch-control-bg: var(--leverui-colors-bg-muted);
-        --leverui-private-switch-control-checked-bg: color-mix(
+        --lui-private-switch-control-height: calc(var(--lui-private-switch-height) / 2);
+        --lui-private-switch-control-bg: var(--lui-colors-bg-muted);
+        --lui-private-switch-control-checked-bg: color-mix(
           in srgb,
-          var(--leverui-colors-color-palette-solid) 60%,
+          var(--lui-colors-color-palette-solid) 60%,
           transparent
         );
-        --leverui-private-switch-control-shadow: var(--leverui-shadows-inset);
-        --leverui-private-switch-control-focus-width: 0px;
-        --leverui-private-switch-thumb-position: relative;
-        --leverui-private-switch-thumb-top: calc(var(--leverui-private-switch-height) * -0.25);
-        --leverui-private-switch-thumb-scale: 1;
-        --leverui-private-switch-thumb-shadow: var(--leverui-shadows-xs);
-        --leverui-private-switch-thumb-checked-bg: var(--leverui-colors-color-palette-solid);
-        --leverui-private-switch-thumb-focus-width: 2px;
+        --lui-private-switch-control-shadow: var(--lui-shadows-inset);
+        --lui-private-switch-control-focus-width: 0px;
+        --lui-private-switch-thumb-position: relative;
+        --lui-private-switch-thumb-top: calc(var(--lui-private-switch-height) * -0.25);
+        --lui-private-switch-thumb-scale: 1;
+        --lui-private-switch-thumb-shadow: var(--lui-shadows-xs);
+        --lui-private-switch-thumb-checked-bg: var(--lui-colors-color-palette-solid);
+        --lui-private-switch-thumb-focus-width: 2px;
       }
     }
   }

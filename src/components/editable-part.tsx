@@ -69,7 +69,7 @@ function renderEditablePartImpl(slot: EditablePartSlot, props: unknown): JSX.Ele
       get class() {
         return composeRecipeClassNames(
           `editable__${slot}`,
-          slot === 'textarea' ? 'leverui-editable__input' : undefined,
+          slot === 'textarea' ? 'lui-editable__input' : undefined,
           local.class,
           local.className,
         );

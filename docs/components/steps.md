@@ -64,15 +64,15 @@ Accepts `class` and `style`. `unstyled` also works on a single part.
 ## Customize with CSS
 
 Override the public variables or style the part classes. Every public part,
-including `Number` and `CompletedContent`, has a stable `.leverui-steps__*`
+including `Number` and `CompletedContent`, has a stable `.lui-steps__*`
 class.
 
 ```css
 .my-steps {
-  --leverui-colors-color-palette-solid: #145a80;
+  --lui-colors-color-palette-solid: #145a80;
 }
 
-.my-steps .leverui-steps__indicator {
+.my-steps .lui-steps__indicator {
   border-radius: 0.5rem;
 }
 ```

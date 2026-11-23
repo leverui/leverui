@@ -83,7 +83,7 @@ function offsetCssValue(value: string | number): string {
   if (text === '0') return '0px';
   if (/^-?\d+(?:\.\d+)?$/.test(text)) {
     const negative = text.startsWith('-');
-    const token = `var(--leverui-spacing-${text.replace('-', '').replace('.', '\\.')})`;
+    const token = `var(--lui-spacing-${text.replace('-', '').replace('.', '\\.')})`;
     return negative ? `calc(-1 * ${token})` : token;
   }
   return text;

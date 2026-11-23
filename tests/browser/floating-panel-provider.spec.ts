@@ -16,7 +16,7 @@ async function verifiesExternalPanel({ page }: { page: Page }): Promise<void> {
   const titleId = await title.getAttribute('id');
   if (!titleId) throw new Error('Floating Panel title has no ID.');
   await expect(content).toHaveAttribute('aria-labelledby', titleId);
-  await expect(content).toHaveClass(/leverui-floating-panel__content/);
+  await expect(content).toHaveClass(/lui-floating-panel__content/);
   const beforeId = await content.getAttribute('id');
   if (!beforeId) throw new Error('Floating Panel content has no ID.');
   await page.getByTestId('floating-external-move').click();

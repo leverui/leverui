@@ -42,7 +42,7 @@ function renderStickyExamples(): string {
 async function verifiesStickyCss({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(
-    `<style>${defaultCss}</style><style>.consumer-sticky { --leverui-sticky-top: 21px; }</style>${renderStickyExamples()}`,
+    `<style>${defaultCss}</style><style>.consumer-sticky { --lui-sticky-top: 21px; }</style>${renderStickyExamples()}`,
   );
   const native = page.locator('#native-sticky');
   await expect(native).toHaveCSS('position', 'sticky');
@@ -55,7 +55,7 @@ async function verifiesStickyCss({ page }: { page: Page }): Promise<void> {
       /** Read the stable class without depending on server HTML whitespace. */
       (element) => [...element.classList],
     ),
-  ).toEqual(['leverui-sticky']);
+  ).toEqual(['lui-sticky']);
 }
 
 test('Sticky defaults and unstyled composition work without scripts', verifiesStickyCss);

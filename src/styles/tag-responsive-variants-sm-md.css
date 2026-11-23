@@ -1,49 +1,49 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 480px) {
-    .leverui-tag__root:not([data-unstyled]) {
+    .lui-tag__root:not([data-unstyled]) {
       &[data-variant-sm='subtle'] {
-        --leverui-private-tag-background: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-tag-color: var(--leverui-colors-color-palette-fg);
-        --leverui-private-tag-shadow: none;
+        --lui-private-tag-background: var(--lui-colors-color-palette-subtle);
+        --lui-private-tag-color: var(--lui-colors-color-palette-fg);
+        --lui-private-tag-shadow: none;
       }
       &[data-variant-sm='solid'] {
-        --leverui-private-tag-background: var(--leverui-colors-color-palette-solid);
-        --leverui-private-tag-color: var(--leverui-colors-color-palette-contrast);
-        --leverui-private-tag-shadow: none;
+        --lui-private-tag-background: var(--lui-colors-color-palette-solid);
+        --lui-private-tag-color: var(--lui-colors-color-palette-contrast);
+        --lui-private-tag-shadow: none;
       }
       &[data-variant-sm='outline'] {
-        --leverui-private-tag-background: transparent;
-        --leverui-private-tag-color: var(--leverui-colors-color-palette-fg);
-        --leverui-private-tag-shadow: inset 0 0 0 1px var(--leverui-colors-color-palette-border);
+        --lui-private-tag-background: transparent;
+        --lui-private-tag-color: var(--lui-colors-color-palette-fg);
+        --lui-private-tag-shadow: inset 0 0 0 1px var(--lui-colors-color-palette-border);
       }
       &[data-variant-sm='surface'] {
-        --leverui-private-tag-background: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-tag-color: var(--leverui-colors-color-palette-fg);
-        --leverui-private-tag-shadow: inset 0 0 0 1px var(--leverui-colors-color-palette-muted);
+        --lui-private-tag-background: var(--lui-colors-color-palette-subtle);
+        --lui-private-tag-color: var(--lui-colors-color-palette-fg);
+        --lui-private-tag-shadow: inset 0 0 0 1px var(--lui-colors-color-palette-muted);
       }
     }
   }
   @media (min-width: 768px) {
-    .leverui-tag__root:not([data-unstyled]) {
+    .lui-tag__root:not([data-unstyled]) {
       &[data-variant-md='subtle'] {
-        --leverui-private-tag-background: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-tag-color: var(--leverui-colors-color-palette-fg);
-        --leverui-private-tag-shadow: none;
+        --lui-private-tag-background: var(--lui-colors-color-palette-subtle);
+        --lui-private-tag-color: var(--lui-colors-color-palette-fg);
+        --lui-private-tag-shadow: none;
       }
       &[data-variant-md='solid'] {
-        --leverui-private-tag-background: var(--leverui-colors-color-palette-solid);
-        --leverui-private-tag-color: var(--leverui-colors-color-palette-contrast);
-        --leverui-private-tag-shadow: none;
+        --lui-private-tag-background: var(--lui-colors-color-palette-solid);
+        --lui-private-tag-color: var(--lui-colors-color-palette-contrast);
+        --lui-private-tag-shadow: none;
       }
       &[data-variant-md='outline'] {
-        --leverui-private-tag-background: transparent;
-        --leverui-private-tag-color: var(--leverui-colors-color-palette-fg);
-        --leverui-private-tag-shadow: inset 0 0 0 1px var(--leverui-colors-color-palette-border);
+        --lui-private-tag-background: transparent;
+        --lui-private-tag-color: var(--lui-colors-color-palette-fg);
+        --lui-private-tag-shadow: inset 0 0 0 1px var(--lui-colors-color-palette-border);
       }
       &[data-variant-md='surface'] {
-        --leverui-private-tag-background: var(--leverui-colors-color-palette-subtle);
-        --leverui-private-tag-color: var(--leverui-colors-color-palette-fg);
-        --leverui-private-tag-shadow: inset 0 0 0 1px var(--leverui-colors-color-palette-muted);
+        --lui-private-tag-background: var(--lui-colors-color-palette-subtle);
+        --lui-private-tag-color: var(--lui-colors-color-palette-fg);
+        --lui-private-tag-shadow: inset 0 0 0 1px var(--lui-colors-color-palette-muted);
       }
     }
   }

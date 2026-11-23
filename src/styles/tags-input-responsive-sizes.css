@@ -1,132 +1,132 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 480px) {
-    .leverui-tags-input__root:not([data-unstyled])[data-size-sm='xs'] {
-      --leverui-private-tags-input-height: var(--leverui-sizes-8);
-      --leverui-private-tags-input-item-height: var(--leverui-sizes-6);
-      --leverui-private-tags-input-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-tags-input-line-height: 1rem;
+    .lui-tags-input__root:not([data-unstyled])[data-size-sm='xs'] {
+      --lui-private-tags-input-height: var(--lui-sizes-8);
+      --lui-private-tags-input-item-height: var(--lui-sizes-6);
+      --lui-private-tags-input-font-size: var(--lui-font-sizes-xs);
+      --lui-private-tags-input-line-height: 1rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-sm='sm'] {
-      --leverui-private-tags-input-height: var(--leverui-sizes-9);
-      --leverui-private-tags-input-item-height: var(--leverui-sizes-6);
-      --leverui-private-tags-input-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-tags-input-line-height: 1.25rem;
+    .lui-tags-input__root:not([data-unstyled])[data-size-sm='sm'] {
+      --lui-private-tags-input-height: var(--lui-sizes-9);
+      --lui-private-tags-input-item-height: var(--lui-sizes-6);
+      --lui-private-tags-input-font-size: var(--lui-font-sizes-sm);
+      --lui-private-tags-input-line-height: 1.25rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-sm='md'] {
-      --leverui-private-tags-input-height: var(--leverui-sizes-10);
-      --leverui-private-tags-input-item-height: var(--leverui-sizes-7);
-      --leverui-private-tags-input-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-tags-input-line-height: 1.25rem;
+    .lui-tags-input__root:not([data-unstyled])[data-size-sm='md'] {
+      --lui-private-tags-input-height: var(--lui-sizes-10);
+      --lui-private-tags-input-item-height: var(--lui-sizes-7);
+      --lui-private-tags-input-font-size: var(--lui-font-sizes-sm);
+      --lui-private-tags-input-line-height: 1.25rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-sm='lg'] {
-      --leverui-private-tags-input-height: var(--leverui-sizes-11);
-      --leverui-private-tags-input-item-height: var(--leverui-sizes-8);
-      --leverui-private-tags-input-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-tags-input-line-height: 1.5rem;
+    .lui-tags-input__root:not([data-unstyled])[data-size-sm='lg'] {
+      --lui-private-tags-input-height: var(--lui-sizes-11);
+      --lui-private-tags-input-item-height: var(--lui-sizes-8);
+      --lui-private-tags-input-font-size: var(--lui-font-sizes-md);
+      --lui-private-tags-input-line-height: 1.5rem;
     }
   }
   @media (min-width: 768px) {
-    .leverui-tags-input__root:not([data-unstyled])[data-size-md='xs'] {
-      --leverui-private-tags-input-height: var(--leverui-sizes-8);
-      --leverui-private-tags-input-item-height: var(--leverui-sizes-6);
-      --leverui-private-tags-input-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-tags-input-line-height: 1rem;
+    .lui-tags-input__root:not([data-unstyled])[data-size-md='xs'] {
+      --lui-private-tags-input-height: var(--lui-sizes-8);
+      --lui-private-tags-input-item-height: var(--lui-sizes-6);
+      --lui-private-tags-input-font-size: var(--lui-font-sizes-xs);
+      --lui-private-tags-input-line-height: 1rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-md='sm'] {
-      --leverui-private-tags-input-height: var(--leverui-sizes-9);
-      --leverui-private-tags-input-item-height: var(--leverui-sizes-6);
-      --leverui-private-tags-input-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-tags-input-line-height: 1.25rem;
+    .lui-tags-input__root:not([data-unstyled])[data-size-md='sm'] {
+      --lui-private-tags-input-height: var(--lui-sizes-9);
+      --lui-private-tags-input-item-height: var(--lui-sizes-6);
+      --lui-private-tags-input-font-size: var(--lui-font-sizes-sm);
+      --lui-private-tags-input-line-height: 1.25rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-md='md'] {
-      --leverui-private-tags-input-height: var(--leverui-sizes-10);
-      --leverui-private-tags-input-item-height: var(--leverui-sizes-7);
-      --leverui-private-tags-input-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-tags-input-line-height: 1.25rem;
+    .lui-tags-input__root:not([data-unstyled])[data-size-md='md'] {
+      --lui-private-tags-input-height: var(--lui-sizes-10);
+      --lui-private-tags-input-item-height: var(--lui-sizes-7);
+      --lui-private-tags-input-font-size: var(--lui-font-sizes-sm);
+      --lui-private-tags-input-line-height: 1.25rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-md='lg'] {
-      --leverui-private-tags-input-height: var(--leverui-sizes-11);
-      --leverui-private-tags-input-item-height: var(--leverui-sizes-8);
-      --leverui-private-tags-input-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-tags-input-line-height: 1.5rem;
+    .lui-tags-input__root:not([data-unstyled])[data-size-md='lg'] {
+      --lui-private-tags-input-height: var(--lui-sizes-11);
+      --lui-private-tags-input-item-height: var(--lui-sizes-8);
+      --lui-private-tags-input-font-size: var(--lui-font-sizes-md);
+      --lui-private-tags-input-line-height: 1.5rem;
     }
   }
   @media (min-width: 1024px) {
-    .leverui-tags-input__root:not([data-unstyled])[data-size-lg='xs'] {
-      --leverui-private-tags-input-height: var(--leverui-sizes-8);
-      --leverui-private-tags-input-item-height: var(--leverui-sizes-6);
-      --leverui-private-tags-input-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-tags-input-line-height: 1rem;
+    .lui-tags-input__root:not([data-unstyled])[data-size-lg='xs'] {
+      --lui-private-tags-input-height: var(--lui-sizes-8);
+      --lui-private-tags-input-item-height: var(--lui-sizes-6);
+      --lui-private-tags-input-font-size: var(--lui-font-sizes-xs);
+      --lui-private-tags-input-line-height: 1rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-lg='sm'] {
-      --leverui-private-tags-input-height: var(--leverui-sizes-9);
-      --leverui-private-tags-input-item-height: var(--leverui-sizes-6);
-      --leverui-private-tags-input-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-tags-input-line-height: 1.25rem;
+    .lui-tags-input__root:not([data-unstyled])[data-size-lg='sm'] {
+      --lui-private-tags-input-height: var(--lui-sizes-9);
+      --lui-private-tags-input-item-height: var(--lui-sizes-6);
+      --lui-private-tags-input-font-size: var(--lui-font-sizes-sm);
+      --lui-private-tags-input-line-height: 1.25rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-lg='md'] {
-      --leverui-private-tags-input-height: var(--leverui-sizes-10);
-      --leverui-private-tags-input-item-height: var(--leverui-sizes-7);
-      --leverui-private-tags-input-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-tags-input-line-height: 1.25rem;
+    .lui-tags-input__root:not([data-unstyled])[data-size-lg='md'] {
+      --lui-private-tags-input-height: var(--lui-sizes-10);
+      --lui-private-tags-input-item-height: var(--lui-sizes-7);
+      --lui-private-tags-input-font-size: var(--lui-font-sizes-sm);
+      --lui-private-tags-input-line-height: 1.25rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-lg='lg'] {
-      --leverui-private-tags-input-height: var(--leverui-sizes-11);
-      --leverui-private-tags-input-item-height: var(--leverui-sizes-8);
-      --leverui-private-tags-input-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-tags-input-line-height: 1.5rem;
+    .lui-tags-input__root:not([data-unstyled])[data-size-lg='lg'] {
+      --lui-private-tags-input-height: var(--lui-sizes-11);
+      --lui-private-tags-input-item-height: var(--lui-sizes-8);
+      --lui-private-tags-input-font-size: var(--lui-font-sizes-md);
+      --lui-private-tags-input-line-height: 1.5rem;
     }
   }
   @media (min-width: 1280px) {
-    .leverui-tags-input__root:not([data-unstyled])[data-size-xl='xs'] {
-      --leverui-private-tags-input-height: var(--leverui-sizes-8);
-      --leverui-private-tags-input-item-height: var(--leverui-sizes-6);
-      --leverui-private-tags-input-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-tags-input-line-height: 1rem;
+    .lui-tags-input__root:not([data-unstyled])[data-size-xl='xs'] {
+      --lui-private-tags-input-height: var(--lui-sizes-8);
+      --lui-private-tags-input-item-height: var(--lui-sizes-6);
+      --lui-private-tags-input-font-size: var(--lui-font-sizes-xs);
+      --lui-private-tags-input-line-height: 1rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-xl='sm'] {
-      --leverui-private-tags-input-height: var(--leverui-sizes-9);
-      --leverui-private-tags-input-item-height: var(--leverui-sizes-6);
-      --leverui-private-tags-input-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-tags-input-line-height: 1.25rem;
+    .lui-tags-input__root:not([data-unstyled])[data-size-xl='sm'] {
+      --lui-private-tags-input-height: var(--lui-sizes-9);
+      --lui-private-tags-input-item-height: var(--lui-sizes-6);
+      --lui-private-tags-input-font-size: var(--lui-font-sizes-sm);
+      --lui-private-tags-input-line-height: 1.25rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-xl='md'] {
-      --leverui-private-tags-input-height: var(--leverui-sizes-10);
-      --leverui-private-tags-input-item-height: var(--leverui-sizes-7);
-      --leverui-private-tags-input-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-tags-input-line-height: 1.25rem;
+    .lui-tags-input__root:not([data-unstyled])[data-size-xl='md'] {
+      --lui-private-tags-input-height: var(--lui-sizes-10);
+      --lui-private-tags-input-item-height: var(--lui-sizes-7);
+      --lui-private-tags-input-font-size: var(--lui-font-sizes-sm);
+      --lui-private-tags-input-line-height: 1.25rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-xl='lg'] {
-      --leverui-private-tags-input-height: var(--leverui-sizes-11);
-      --leverui-private-tags-input-item-height: var(--leverui-sizes-8);
-      --leverui-private-tags-input-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-tags-input-line-height: 1.5rem;
+    .lui-tags-input__root:not([data-unstyled])[data-size-xl='lg'] {
+      --lui-private-tags-input-height: var(--lui-sizes-11);
+      --lui-private-tags-input-item-height: var(--lui-sizes-8);
+      --lui-private-tags-input-font-size: var(--lui-font-sizes-md);
+      --lui-private-tags-input-line-height: 1.5rem;
     }
   }
   @media (min-width: 1536px) {
-    .leverui-tags-input__root:not([data-unstyled])[data-size-2xl='xs'] {
-      --leverui-private-tags-input-height: var(--leverui-sizes-8);
-      --leverui-private-tags-input-item-height: var(--leverui-sizes-6);
-      --leverui-private-tags-input-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-tags-input-line-height: 1rem;
+    .lui-tags-input__root:not([data-unstyled])[data-size-2xl='xs'] {
+      --lui-private-tags-input-height: var(--lui-sizes-8);
+      --lui-private-tags-input-item-height: var(--lui-sizes-6);
+      --lui-private-tags-input-font-size: var(--lui-font-sizes-xs);
+      --lui-private-tags-input-line-height: 1rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-2xl='sm'] {
-      --leverui-private-tags-input-height: var(--leverui-sizes-9);
-      --leverui-private-tags-input-item-height: var(--leverui-sizes-6);
-      --leverui-private-tags-input-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-tags-input-line-height: 1.25rem;
+    .lui-tags-input__root:not([data-unstyled])[data-size-2xl='sm'] {
+      --lui-private-tags-input-height: var(--lui-sizes-9);
+      --lui-private-tags-input-item-height: var(--lui-sizes-6);
+      --lui-private-tags-input-font-size: var(--lui-font-sizes-sm);
+      --lui-private-tags-input-line-height: 1.25rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-2xl='md'] {
-      --leverui-private-tags-input-height: var(--leverui-sizes-10);
-      --leverui-private-tags-input-item-height: var(--leverui-sizes-7);
-      --leverui-private-tags-input-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-tags-input-line-height: 1.25rem;
+    .lui-tags-input__root:not([data-unstyled])[data-size-2xl='md'] {
+      --lui-private-tags-input-height: var(--lui-sizes-10);
+      --lui-private-tags-input-item-height: var(--lui-sizes-7);
+      --lui-private-tags-input-font-size: var(--lui-font-sizes-sm);
+      --lui-private-tags-input-line-height: 1.25rem;
     }
-    .leverui-tags-input__root:not([data-unstyled])[data-size-2xl='lg'] {
-      --leverui-private-tags-input-height: var(--leverui-sizes-11);
-      --leverui-private-tags-input-item-height: var(--leverui-sizes-8);
-      --leverui-private-tags-input-font-size: var(--leverui-font-sizes-md);
-      --leverui-private-tags-input-line-height: 1.5rem;
+    .lui-tags-input__root:not([data-unstyled])[data-size-2xl='lg'] {
+      --lui-private-tags-input-height: var(--lui-sizes-11);
+      --lui-private-tags-input-item-height: var(--lui-sizes-8);
+      --lui-private-tags-input-font-size: var(--lui-font-sizes-md);
+      --lui-private-tags-input-line-height: 1.5rem;
     }
   }
 }

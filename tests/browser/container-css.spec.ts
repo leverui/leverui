@@ -38,7 +38,7 @@ async function verifiesContainerCss({ page }: { page: Page }): Promise<void> {
   await page.setContent(`<style>${defaultCss}</style>${markup}`);
   const plain = page.locator('#plain-container');
   const responsive = page.locator('#responsive-container');
-  await expect(plain).not.toHaveAttribute('data-leverui-private-style-runtime', '');
+  await expect(plain).not.toHaveAttribute('data-lui-private-style-runtime', '');
   await expect(plain).toHaveCSS('position', 'relative');
   await expect(plain).toHaveCSS('max-width', '1440px');
   await expect(plain).toHaveCSS('padding-left', '16px');
@@ -57,9 +57,9 @@ async function verifiesContainerCss({ page }: { page: Page }): Promise<void> {
   await expect(responsive).toHaveCSS('align-items', 'center');
   await expect(responsive).toHaveCSS('max-width', '100%');
   await expect(page.locator('#unstyled-container')).toHaveCSS('position', 'static');
-  await page.addStyleTag({ content: ':root { --leverui-sizes-full: 90%; }' });
+  await page.addStyleTag({ content: ':root { --lui-sizes-full: 90%; }' });
   await expect(responsive).toHaveCSS('max-width', '90%');
-  await page.addStyleTag({ content: ':root { --leverui-sizes-8xl: 80rem; }' });
+  await page.addStyleTag({ content: ':root { --lui-sizes-8xl: 80rem; }' });
   await expect(plain).toHaveCSS('max-width', '1280px');
   await page.addStyleTag({
     content: '.consumer-container { max-width: 60rem; padding-inline: 3rem; }',

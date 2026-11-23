@@ -6,8 +6,8 @@ export function MenuCheckIcon(): JSX.Element {
     <svg
       aria-hidden="true"
       viewBox="0 0 24 24"
-      width="var(--leverui-sizes-4)"
-      height="var(--leverui-sizes-4)"
+      width="var(--lui-sizes-4)"
+      height="var(--lui-sizes-4)"
       fill="none"
       stroke="currentColor"
       stroke-width="2"

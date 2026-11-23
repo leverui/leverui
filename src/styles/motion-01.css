@@ -1,4 +1,4 @@
-@layer leverui.base {
+@layer lui.base {
   @-webkit-keyframes spin {
     0% {
       -webkit-transform: rotate(0deg);
@@ -97,42 +97,42 @@
   }
   @-webkit-keyframes bg-position {
     from {
-      -webkit-background-position: var(--leverui-private-animate-from, 1rem) 0;
-      background-position: var(--leverui-private-animate-from, 1rem) 0;
+      -webkit-background-position: var(--lui-private-animate-from, 1rem) 0;
+      background-position: var(--lui-private-animate-from, 1rem) 0;
     }
     to {
-      -webkit-background-position: var(--leverui-private-animate-to, 0) 0;
-      background-position: var(--leverui-private-animate-to, 0) 0;
+      -webkit-background-position: var(--lui-private-animate-to, 0) 0;
+      background-position: var(--lui-private-animate-to, 0) 0;
     }
   }
   @keyframes bg-position {
     from {
-      -webkit-background-position: var(--leverui-private-animate-from, 1rem) 0;
-      background-position: var(--leverui-private-animate-from, 1rem) 0;
+      -webkit-background-position: var(--lui-private-animate-from, 1rem) 0;
+      background-position: var(--lui-private-animate-from, 1rem) 0;
     }
     to {
-      -webkit-background-position: var(--leverui-private-animate-to, 0) 0;
-      background-position: var(--leverui-private-animate-to, 0) 0;
+      -webkit-background-position: var(--lui-private-animate-to, 0) 0;
+      background-position: var(--lui-private-animate-to, 0) 0;
     }
   }
   @-webkit-keyframes position {
     from {
-      inset-inline-start: var(--leverui-private-animate-from-x);
-      inset-block-start: var(--leverui-private-animate-from-y);
+      inset-inline-start: var(--lui-private-animate-from-x);
+      inset-block-start: var(--lui-private-animate-from-y);
     }
     to {
-      inset-inline-start: var(--leverui-private-animate-to-x);
-      inset-block-start: var(--leverui-private-animate-to-y);
+      inset-inline-start: var(--lui-private-animate-to-x);
+      inset-block-start: var(--lui-private-animate-to-y);
     }
   }
   @keyframes position {
     from {
-      inset-inline-start: var(--leverui-private-animate-from-x);
-      inset-block-start: var(--leverui-private-animate-from-y);
+      inset-inline-start: var(--lui-private-animate-from-x);
+      inset-block-start: var(--lui-private-animate-from-y);
     }
     to {
-      inset-inline-start: var(--leverui-private-animate-to-x);
-      inset-block-start: var(--leverui-private-animate-to-y);
+      inset-inline-start: var(--lui-private-animate-to-x);
+      inset-block-start: var(--lui-private-animate-to-y);
     }
   }
   @-webkit-keyframes circular-progress {

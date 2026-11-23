@@ -20,9 +20,7 @@ function PaymentCards(props: PaymentCardsProps): JSX.Element {
       align="center"
       justify={props.wideHorizontal ? 'center' : undefined}
       class={
-        props.wideHorizontal
-          ? 'leverui-radio-card-payment-wide'
-          : 'leverui-radio-card-payment-compact'
+        props.wideHorizontal ? 'lui-radio-card-payment-wide' : 'lui-radio-card-payment-compact'
       }
       defaultValue="wallet"
       data-testid={props.testId}
@@ -46,7 +44,7 @@ function PaymentCards(props: PaymentCardsProps): JSX.Element {
                     <RadioCardGuideIcon kind={item.icon} />
                   </Icon>
                   <RadioCard.ItemText
-                    class={props.wideHorizontal ? 'leverui-radio-card-payment-offset' : undefined}
+                    class={props.wideHorizontal ? 'lui-radio-card-payment-offset' : undefined}
                   >
                     {item.title}
                   </RadioCard.ItemText>

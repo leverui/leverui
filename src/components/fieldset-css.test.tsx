@@ -27,14 +27,14 @@ function verifiesUnstyledFieldset(): void {
   render(Example);
   const root = screen.getByTestId('unstyled-group');
   expect(root).toHaveAttribute('data-unstyled', '');
-  expect(root).toHaveClass('leverui-fieldset__root', 'consumer-group');
+  expect(root).toHaveClass('lui-fieldset__root', 'consumer-group');
   expect(root).toHaveStyle('--consumer-gap: 1rem');
   for (const part of ['legend', 'helper', 'content']) {
     expect(screen.getByTestId(`unstyled-${part}`)).toHaveAttribute('data-unstyled', '');
   }
-  expect(screen.getByTestId('unstyled-legend')).toHaveClass('leverui-fieldset__legend');
-  expect(screen.getByTestId('unstyled-helper')).toHaveClass('leverui-fieldset__helperText');
-  expect(screen.getByTestId('unstyled-content')).toHaveClass('leverui-fieldset__content');
+  expect(screen.getByTestId('unstyled-legend')).toHaveClass('lui-fieldset__legend');
+  expect(screen.getByTestId('unstyled-helper')).toHaveClass('lui-fieldset__helperText');
+  expect(screen.getByTestId('unstyled-content')).toHaveClass('lui-fieldset__content');
 }
 
 test('unstyled Fieldset keeps native and part contracts', verifiesUnstyledFieldset);

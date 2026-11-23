@@ -1,76 +1,76 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 480px) {
-    .leverui-field__root[data-orientation-sm='vertical'] {
-      --leverui-private-field-direction: column;
-      --leverui-private-field-align: flex-start;
-      --leverui-private-field-justify: normal;
-      --leverui-private-field-label-flex: 0 1 auto;
+    .lui-field__root[data-orientation-sm='vertical'] {
+      --lui-private-field-direction: column;
+      --lui-private-field-align: flex-start;
+      --lui-private-field-justify: normal;
+      --lui-private-field-label-flex: 0 1 auto;
     }
-    .leverui-field__root[data-orientation-sm='horizontal'] {
-      --leverui-private-field-direction: row;
-      --leverui-private-field-align: center;
-      --leverui-private-field-justify: space-between;
-      --leverui-private-field-label-flex: 0 0 var(--leverui-field-label-width, 80px);
+    .lui-field__root[data-orientation-sm='horizontal'] {
+      --lui-private-field-direction: row;
+      --lui-private-field-align: center;
+      --lui-private-field-justify: space-between;
+      --lui-private-field-label-flex: 0 0 var(--lui-field-label-width, 80px);
     }
   }
 
   @media (min-width: 768px) {
-    .leverui-field__root[data-orientation-md='vertical'] {
-      --leverui-private-field-direction: column;
-      --leverui-private-field-align: flex-start;
-      --leverui-private-field-justify: normal;
-      --leverui-private-field-label-flex: 0 1 auto;
+    .lui-field__root[data-orientation-md='vertical'] {
+      --lui-private-field-direction: column;
+      --lui-private-field-align: flex-start;
+      --lui-private-field-justify: normal;
+      --lui-private-field-label-flex: 0 1 auto;
     }
-    .leverui-field__root[data-orientation-md='horizontal'] {
-      --leverui-private-field-direction: row;
-      --leverui-private-field-align: center;
-      --leverui-private-field-justify: space-between;
-      --leverui-private-field-label-flex: 0 0 var(--leverui-field-label-width, 80px);
+    .lui-field__root[data-orientation-md='horizontal'] {
+      --lui-private-field-direction: row;
+      --lui-private-field-align: center;
+      --lui-private-field-justify: space-between;
+      --lui-private-field-label-flex: 0 0 var(--lui-field-label-width, 80px);
     }
   }
 
   @media (min-width: 1024px) {
-    .leverui-field__root[data-orientation-lg='vertical'] {
-      --leverui-private-field-direction: column;
-      --leverui-private-field-align: flex-start;
-      --leverui-private-field-justify: normal;
-      --leverui-private-field-label-flex: 0 1 auto;
+    .lui-field__root[data-orientation-lg='vertical'] {
+      --lui-private-field-direction: column;
+      --lui-private-field-align: flex-start;
+      --lui-private-field-justify: normal;
+      --lui-private-field-label-flex: 0 1 auto;
     }
-    .leverui-field__root[data-orientation-lg='horizontal'] {
-      --leverui-private-field-direction: row;
-      --leverui-private-field-align: center;
-      --leverui-private-field-justify: space-between;
-      --leverui-private-field-label-flex: 0 0 var(--leverui-field-label-width, 80px);
+    .lui-field__root[data-orientation-lg='horizontal'] {
+      --lui-private-field-direction: row;
+      --lui-private-field-align: center;
+      --lui-private-field-justify: space-between;
+      --lui-private-field-label-flex: 0 0 var(--lui-field-label-width, 80px);
     }
   }
 
   @media (min-width: 1280px) {
-    .leverui-field__root[data-orientation-xl='vertical'] {
-      --leverui-private-field-direction: column;
-      --leverui-private-field-align: flex-start;
-      --leverui-private-field-justify: normal;
-      --leverui-private-field-label-flex: 0 1 auto;
+    .lui-field__root[data-orientation-xl='vertical'] {
+      --lui-private-field-direction: column;
+      --lui-private-field-align: flex-start;
+      --lui-private-field-justify: normal;
+      --lui-private-field-label-flex: 0 1 auto;
     }
-    .leverui-field__root[data-orientation-xl='horizontal'] {
-      --leverui-private-field-direction: row;
-      --leverui-private-field-align: center;
-      --leverui-private-field-justify: space-between;
-      --leverui-private-field-label-flex: 0 0 var(--leverui-field-label-width, 80px);
+    .lui-field__root[data-orientation-xl='horizontal'] {
+      --lui-private-field-direction: row;
+      --lui-private-field-align: center;
+      --lui-private-field-justify: space-between;
+      --lui-private-field-label-flex: 0 0 var(--lui-field-label-width, 80px);
     }
   }
 
   @media (min-width: 1536px) {
-    .leverui-field__root[data-orientation-2xl='vertical'] {
-      --leverui-private-field-direction: column;
-      --leverui-private-field-align: flex-start;
-      --leverui-private-field-justify: normal;
-      --leverui-private-field-label-flex: 0 1 auto;
+    .lui-field__root[data-orientation-2xl='vertical'] {
+      --lui-private-field-direction: column;
+      --lui-private-field-align: flex-start;
+      --lui-private-field-justify: normal;
+      --lui-private-field-label-flex: 0 1 auto;
     }
-    .leverui-field__root[data-orientation-2xl='horizontal'] {
-      --leverui-private-field-direction: row;
-      --leverui-private-field-align: center;
-      --leverui-private-field-justify: space-between;
-      --leverui-private-field-label-flex: 0 0 var(--leverui-field-label-width, 80px);
+    .lui-field__root[data-orientation-2xl='horizontal'] {
+      --lui-private-field-direction: row;
+      --lui-private-field-align: center;
+      --lui-private-field-justify: space-between;
+      --lui-private-field-label-flex: 0 0 var(--lui-field-label-width, 80px);
     }
   }
 }

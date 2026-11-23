@@ -1,12 +1,12 @@
 .consumer-brand-space {
-  margin-left: var(--leverui-brand-space-compact, 4px);
+  margin-left: var(--lui-brand-space-compact, 4px);
 }
 
-.consumer-brand-button.leverui-button {
-  background: var(--leverui-colors-blue-solid, #6254c7);
-  color: var(--leverui-colors-blue-contrast, white);
+.consumer-brand-button.lui-button {
+  background: var(--lui-colors-blue-solid, #6254c7);
+  color: var(--lui-colors-blue-contrast, white);
 }
 
-.consumer-brand-button.leverui-button:is(:hover, [data-hover]) {
-  background: color-mix(in srgb, var(--leverui-colors-blue-solid, #6254c7) 90%, transparent);
+.consumer-brand-button.lui-button:is(:hover, [data-hover]) {
+  background: color-mix(in srgb, var(--lui-colors-blue-solid, #6254c7) 90%, transparent);
 }

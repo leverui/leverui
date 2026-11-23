@@ -1,76 +1,58 @@
-@layer leverui.recipes {
-  .leverui-group {
-    --leverui-private-group-align-base: initial;
-    --leverui-private-group-align-sm: initial;
-    --leverui-private-group-align-md: initial;
-    --leverui-private-group-align-lg: initial;
-    --leverui-private-group-align-xl: initial;
-    --leverui-private-group-align-2xl: initial;
-    --leverui-private-group-justify-base: initial;
-    --leverui-private-group-justify-sm: initial;
-    --leverui-private-group-justify-md: initial;
-    --leverui-private-group-justify-lg: initial;
-    --leverui-private-group-justify-xl: initial;
-    --leverui-private-group-justify-2xl: initial;
-    --leverui-private-group-wrap-base: initial;
-    --leverui-private-group-wrap-sm: initial;
-    --leverui-private-group-wrap-md: initial;
-    --leverui-private-group-wrap-lg: initial;
-    --leverui-private-group-wrap-xl: initial;
-    --leverui-private-group-wrap-2xl: initial;
+@layer lui.recipes {
+  .lui-group {
+    --lui-private-group-align-base: initial;
+    --lui-private-group-align-sm: initial;
+    --lui-private-group-align-md: initial;
+    --lui-private-group-align-lg: initial;
+    --lui-private-group-align-xl: initial;
+    --lui-private-group-align-2xl: initial;
+    --lui-private-group-justify-base: initial;
+    --lui-private-group-justify-sm: initial;
+    --lui-private-group-justify-md: initial;
+    --lui-private-group-justify-lg: initial;
+    --lui-private-group-justify-xl: initial;
+    --lui-private-group-justify-2xl: initial;
+    --lui-private-group-wrap-base: initial;
+    --lui-private-group-wrap-sm: initial;
+    --lui-private-group-wrap-md: initial;
+    --lui-private-group-wrap-lg: initial;
+    --lui-private-group-wrap-xl: initial;
+    --lui-private-group-wrap-2xl: initial;
   }
 
-  .leverui-group:not([data-unstyled]) {
-    align-items: var(--leverui-private-group-align-base, var(--leverui-group-align, center));
-    justify-content: var(
-      --leverui-private-group-justify-base,
-      var(--leverui-group-justify, flex-start)
-    );
-    flex-wrap: var(--leverui-private-group-wrap-base, var(--leverui-group-wrap, nowrap));
+  .lui-group:not([data-unstyled]) {
+    align-items: var(--lui-private-group-align-base, var(--lui-group-align, center));
+    justify-content: var(--lui-private-group-justify-base, var(--lui-group-justify, flex-start));
+    flex-wrap: var(--lui-private-group-wrap-base, var(--lui-group-wrap, nowrap));
 
     @media (min-width: 480px) {
-      align-items: var(--leverui-private-group-align-sm, var(--leverui-group-align, center));
-      justify-content: var(
-        --leverui-private-group-justify-sm,
-        var(--leverui-group-justify, flex-start)
-      );
-      flex-wrap: var(--leverui-private-group-wrap-sm, var(--leverui-group-wrap, nowrap));
+      align-items: var(--lui-private-group-align-sm, var(--lui-group-align, center));
+      justify-content: var(--lui-private-group-justify-sm, var(--lui-group-justify, flex-start));
+      flex-wrap: var(--lui-private-group-wrap-sm, var(--lui-group-wrap, nowrap));
     }
 
     @media (min-width: 768px) {
-      align-items: var(--leverui-private-group-align-md, var(--leverui-group-align, center));
-      justify-content: var(
-        --leverui-private-group-justify-md,
-        var(--leverui-group-justify, flex-start)
-      );
-      flex-wrap: var(--leverui-private-group-wrap-md, var(--leverui-group-wrap, nowrap));
+      align-items: var(--lui-private-group-align-md, var(--lui-group-align, center));
+      justify-content: var(--lui-private-group-justify-md, var(--lui-group-justify, flex-start));
+      flex-wrap: var(--lui-private-group-wrap-md, var(--lui-group-wrap, nowrap));
     }
 
     @media (min-width: 1024px) {
-      align-items: var(--leverui-private-group-align-lg, var(--leverui-group-align, center));
-      justify-content: var(
-        --leverui-private-group-justify-lg,
-        var(--leverui-group-justify, flex-start)
-      );
-      flex-wrap: var(--leverui-private-group-wrap-lg, var(--leverui-group-wrap, nowrap));
+      align-items: var(--lui-private-group-align-lg, var(--lui-group-align, center));
+      justify-content: var(--lui-private-group-justify-lg, var(--lui-group-justify, flex-start));
+      flex-wrap: var(--lui-private-group-wrap-lg, var(--lui-group-wrap, nowrap));
     }
 
     @media (min-width: 1280px) {
-      align-items: var(--leverui-private-group-align-xl, var(--leverui-group-align, center));
-      justify-content: var(
-        --leverui-private-group-justify-xl,
-        var(--leverui-group-justify, flex-start)
-      );
-      flex-wrap: var(--leverui-private-group-wrap-xl, var(--leverui-group-wrap, nowrap));
+      align-items: var(--lui-private-group-align-xl, var(--lui-group-align, center));
+      justify-content: var(--lui-private-group-justify-xl, var(--lui-group-justify, flex-start));
+      flex-wrap: var(--lui-private-group-wrap-xl, var(--lui-group-wrap, nowrap));
     }
 
     @media (min-width: 1536px) {
-      align-items: var(--leverui-private-group-align-2xl, var(--leverui-group-align, center));
-      justify-content: var(
-        --leverui-private-group-justify-2xl,
-        var(--leverui-group-justify, flex-start)
-      );
-      flex-wrap: var(--leverui-private-group-wrap-2xl, var(--leverui-group-wrap, nowrap));
+      align-items: var(--lui-private-group-align-2xl, var(--lui-group-align, center));
+      justify-content: var(--lui-private-group-justify-2xl, var(--lui-group-justify, flex-start));
+      flex-wrap: var(--lui-private-group-wrap-2xl, var(--lui-group-wrap, nowrap));
     }
   }
 }

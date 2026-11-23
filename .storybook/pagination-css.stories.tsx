@@ -6,7 +6,7 @@ import { Pagination } from '../src';
 function CssPagination(): JSX.Element {
   return (
     <>
-      <style>{`.pagination-css { --leverui-colors-blue-500: rgb(13, 97, 142); color: var(--leverui-colors-blue-500); }`}</style>
+      <style>{`.pagination-css { --lui-colors-blue-500: rgb(13, 97, 142); color: var(--lui-colors-blue-500); }`}</style>
       <Pagination.Root
         class="pagination-css"
         count={30}

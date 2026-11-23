@@ -116,7 +116,7 @@ function verifiesReactiveChoices(): void {
   expect(root.getAttribute('data-size')).toBe('xs');
   expect(root.getAttribute('data-variant')).toBe('solid');
   expect(root.hasAttribute('data-filled')).toBe(false);
-  expect(root.getAttribute('data-leverui-color-palette')).toBe('blue');
+  expect(root.getAttribute('data-lui-color-palette')).toBe('blue');
   setSize('lg');
   flush();
   setVariant('outline');
@@ -129,7 +129,7 @@ function verifiesReactiveChoices(): void {
   expect(root.getAttribute('data-size')).toBe('lg');
   expect(root.getAttribute('data-variant')).toBe('outline');
   expect(root.hasAttribute('data-filled')).toBe(true);
-  expect(root.getAttribute('data-leverui-color-palette')).toBe('red');
+  expect(root.getAttribute('data-lui-color-palette')).toBe('red');
 }
 
 it('updates CSS choices on the same standalone SVG', verifiesReactiveChoices);

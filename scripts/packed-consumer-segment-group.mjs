@@ -5,11 +5,11 @@ export async function verifyPackedSegmentGroup(page) {
   const root = page.getByTestId('packed-segment-group-root');
   const react = page.getByRole('radio', { name: 'React' });
   const solid = page.getByRole('radio', { name: 'Solid' });
-  const item = page.locator('.leverui-segment-group__item').first();
+  const item = page.locator('.lui-segment-group__item').first();
   const indicator = page.getByTestId('packed-segment-group-indicator');
   await root.waitFor();
-  assert.match(await root.getAttribute('class'), /leverui-segment-group__root/);
-  assert.match(await indicator.getAttribute('class'), /leverui-segment-group__indicator/);
+  assert.match(await root.getAttribute('class'), /lui-segment-group__root/);
+  assert.match(await indicator.getAttribute('class'), /lui-segment-group__indicator/);
   assert.equal(
     await item.evaluate(
       /** Read the installed app's CSS part override. */

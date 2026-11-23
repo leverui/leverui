@@ -47,7 +47,7 @@ function HighlightDemo(): JSX.Element {
     <Text textStyle="sm">
       <Highlight
         query="Thursday"
-        markStyle={{ padding: '0 2px', background: 'var(--leverui-colors-orange-subtle)' }}
+        markStyle={{ padding: '0 2px', background: 'var(--lui-colors-orange-subtle)' }}
       >
         Your parcel arrives on Thursday.
       </Highlight>
@@ -116,7 +116,7 @@ function ImageDemo(): JSX.Element {
       src="/demo-images/scenes/mountains.webp"
       alt=""
       fit="cover"
-      style={{ width: '160px', height: '100px', 'border-radius': 'var(--leverui-radii-md)' }}
+      style={{ width: '160px', height: '100px', 'border-radius': 'var(--lui-radii-md)' }}
     />
   );
 }

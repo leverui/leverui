@@ -6,11 +6,11 @@ const breakpoints = ['sm', 'md', 'lg', 'xl', '2xl'];
 export const colorSwatchContentContract = {
   family: 'color-swatch',
   required: [
-    '.leverui-color-swatch:not([data-unstyled])',
-    '.leverui-color-swatch[data-mix]',
-    '.leverui-color-swatch__mix-grid',
-    '.leverui-color-swatch[data-mix-cell]',
-    '.leverui-color-swatch[data-mix-last]',
+    '.lui-color-swatch:not([data-unstyled])',
+    '.lui-color-swatch[data-mix]',
+    '.lui-color-swatch__mix-grid',
+    '.lui-color-swatch[data-mix-cell]',
+    '.lui-color-swatch[data-mix-last]',
     ...sizes.map(
       /** Require each scalar size choice. */
       (size) => `[data-size='${size}']`,
@@ -35,11 +35,11 @@ export const colorSwatchContentContract = {
           (shape) => `[data-shape-${breakpoint}='${shape}']`,
         ),
     ),
-    '--leverui-swatch-color',
-    '--leverui-swatch-size',
-    '--leverui-swatch-radius',
-    '--leverui-swatch-checker-size',
-    '--leverui-swatch-checker-bg',
-    '--leverui-swatch-checker-fg',
+    '--lui-swatch-color',
+    '--lui-swatch-size',
+    '--lui-swatch-radius',
+    '--lui-swatch-checker-size',
+    '--lui-swatch-checker-bg',
+    '--lui-swatch-checker-fg',
   ],
 };

@@ -26,7 +26,7 @@ async function verifiesNumberInputAppearance({ page }: { page: Page }): Promise<
   const control = page.getByTestId('responsive-number-control');
   await expect(root).toHaveAttribute('data-size', 'xs');
   await expect(input).toHaveAttribute('data-variant', 'outline');
-  await expect(input).toHaveClass(/leverui-input/);
+  await expect(input).toHaveClass(/lui-input/);
   const small = await readGeometry(input, control);
   await page.setViewportSize({ width: 900, height: 700 });
   const large = await readGeometry(input, control);
@@ -35,7 +35,7 @@ async function verifiesNumberInputAppearance({ page }: { page: Page }): Promise<
   expect(large[2]).not.toBe(small[2]);
   await root.evaluate(
     /** Override the documented public stepper variable through native CSS. */
-    (element) => element.style.setProperty('--leverui-number-input-stepper-width', '40px'),
+    (element) => element.style.setProperty('--lui-number-input-stepper-width', '40px'),
   );
   const custom = await readGeometry(input, control);
   expect(custom[1]).toBe(40);

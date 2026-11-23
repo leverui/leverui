@@ -3,14 +3,14 @@ export const chartTooltipContracts = [
   {
     family: 'chart-tooltip',
     required: [
-      '.leverui-chart-tooltip',
-      '.leverui-chart-tooltip__label',
-      '.leverui-chart-tooltip__item',
-      '.leverui-chart-tooltip__swatch',
-      '.leverui-chart-tooltip__values',
-      '.leverui-chart-tooltip__name',
-      '.leverui-chart-tooltip__value',
-      '--leverui-chart-tooltip-bg',
+      '.lui-chart-tooltip',
+      '.lui-chart-tooltip__label',
+      '.lui-chart-tooltip__item',
+      '.lui-chart-tooltip__swatch',
+      '.lui-chart-tooltip__values',
+      '.lui-chart-tooltip__name',
+      '.lui-chart-tooltip__value',
+      '--lui-chart-tooltip-bg',
     ],
   },
 ];

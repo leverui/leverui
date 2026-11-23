@@ -7,7 +7,7 @@ async function verifiesSpanContract({ page }: { page: Page }): Promise<void> {
   const native = page.getByTestId('span-default');
   await expect(native).toBeVisible({ timeout: 15_000 });
   await expect(native).toHaveJSProperty('tagName', 'SPAN');
-  await expect(native).toHaveClass(/leverui-span/);
+  await expect(native).toHaveClass(/lui-span/);
   await expect(native).toHaveCSS('display', 'inline');
   await expect(native).toHaveAttribute('title', 'Inline segment');
   await expect(native).toHaveAttribute('data-ref-tag', 'span');
@@ -23,11 +23,11 @@ async function verifiesSpanContract({ page }: { page: Page }): Promise<void> {
   await expect(selected).toHaveJSProperty('tagName', 'A');
   await expect(selected).toHaveAttribute('href', '#span-target');
   await expect(selected).toHaveAttribute('data-ref-tag', 'a');
-  await expect(selected).toHaveClass(/leverui-span/);
+  await expect(selected).toHaveClass(/lui-span/);
   await selected.click();
   await expect(page.getByTestId('span-clicks')).toHaveText('1');
   await expect(page.getByTestId('span-child')).toHaveAttribute('href', '#span-child-target');
-  await expect(page.getByTestId('span-child')).toHaveClass(/leverui-span/);
+  await expect(page.getByTestId('span-child')).toHaveClass(/lui-span/);
 }
 
 test('Span preserves inline semantics and consumer styling', verifiesSpanContract);

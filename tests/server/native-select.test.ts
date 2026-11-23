@@ -48,9 +48,9 @@ function verifiesServerMarkup(): void {
   expect(markup).toContain('name="country"');
   expect(markup).toContain('required');
   expect(markup).toContain('aria-invalid="true"');
-  expect(markup).toContain('leverui-native-select__root');
-  expect(markup).toContain('leverui-native-select__field');
-  expect(markup).toContain('leverui-native-select__indicator');
+  expect(markup).toContain('lui-native-select__root');
+  expect(markup).toContain('lui-native-select__field');
+  expect(markup).toContain('lui-native-select__indicator');
   expect(markup).toMatch(/<option[^>]*\svalue(?:="")?[^>]*>Choose<\/option>/);
   expect(markup).not.toContain('placeholder="Choose"');
 }

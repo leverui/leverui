@@ -65,7 +65,7 @@ async function verifiesPaletteAndUnstyled({ page }: { page: Page }): Promise<voi
   });
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(
-    `<style>${defaultCss}</style><style>.consumer-checkmark { color: rgb(12, 34, 56); } .consumer-palette { --leverui-colors-color-palette-solid: rgb(12, 34, 56); }</style>${blue}${red}${custom}${plain}`,
+    `<style>${defaultCss}</style><style>.consumer-checkmark { color: rgb(12, 34, 56); } .consumer-palette { --lui-colors-color-palette-solid: rgb(12, 34, 56); }</style>${blue}${red}${custom}${plain}`,
   );
   const blueColor = await appearance(page, 'blue-checkmark');
   const redColor = await appearance(page, 'red-checkmark');

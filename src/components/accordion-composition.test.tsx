@@ -154,7 +154,7 @@ function verifiesPropsProvider(): void {
     () => <ProviderExample />,
   );
   const trigger = screen.getByRole('button', { name: 'First' });
-  const root = trigger.closest('.leverui-accordion__root');
+  const root = trigger.closest('.lui-accordion__root');
   expect(root?.getAttribute('data-size')).toBe('sm');
   screen.getByRole('button', { name: 'Grow' }).click();
   expect(root?.getAttribute('data-size')).toBe('lg');

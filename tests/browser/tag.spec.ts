@@ -10,8 +10,8 @@ async function verifiesTagParts({ page }: { page: Page }): Promise<void> {
   await expect(root).toHaveAttribute('data-ref-tag', 'div');
   await expect(root).toHaveAttribute('data-size', 'sm');
   await expect(root).toHaveAttribute('data-variant', 'surface');
-  await expect(root).toHaveAttribute('data-leverui-color-palette', 'blue');
-  await expect(root).not.toHaveAttribute('data-leverui-private-style-runtime');
+  await expect(root).toHaveAttribute('data-lui-color-palette', 'blue');
+  await expect(root).not.toHaveAttribute('data-lui-private-style-runtime');
   await expect(root).not.toHaveAttribute('size');
   await expect(root).not.toHaveAttribute('variant');
   await expect(root).toHaveCSS('display', 'inline-flex');
@@ -33,7 +33,7 @@ async function verifiesTagParts({ page }: { page: Page }): Promise<void> {
   );
   await expect(close).toHaveCSS('outline-width', '2px');
   await page.addStyleTag({
-    content: '.leverui-tag__root { gap: 13px; } .leverui-tag__label { color: rgb(102, 51, 153); }',
+    content: '.lui-tag__root { gap: 13px; } .lui-tag__label { color: rgb(102, 51, 153); }',
   });
   await expect(root).toHaveCSS('gap', '13px');
   await expect(page.getByTestId('tag-label')).toHaveCSS('color', 'rgb(102, 51, 153)');
@@ -41,7 +41,7 @@ async function verifiesTagParts({ page }: { page: Page }): Promise<void> {
     /** Compose a consumer label through the public part class. */
     (element) => {
       const label = document.createElement('span');
-      label.className = 'leverui-tag__label';
+      label.className = 'lui-tag__label';
       label.dataset.testid = 'tag-consumer-label';
       label.textContent = 'Custom';
       element.append(label);

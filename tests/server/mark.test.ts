@@ -61,9 +61,9 @@ function verifiesServerMark(): void {
   expect(markup).toContain('href="#server-mark"');
   expect(markup.match(/title="Shared emphasis"/g)).toHaveLength(3);
   expect(markup.match(/provided-mark/g)).toHaveLength(3);
-  expect(markup).toContain('leverui-mark');
+  expect(markup).toContain('lui-mark');
   expect(markup.match(/data-variant="text"/g)).toHaveLength(3);
-  expect(markup).not.toContain('data-leverui-private-style-runtime');
+  expect(markup).not.toContain('data-lui-private-style-runtime');
   expect(markup).not.toMatch(/<(?:mark|strong|a)[^>]*\s(?:as|variant|recipe|unstyled)=/);
 }
 

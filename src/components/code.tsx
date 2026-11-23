@@ -52,7 +52,7 @@ function CodeRoot(props: CodeRootProps): JSX.Element {
     /** Keep native attributes, size, variant, and palette reactive. */
     () => ({
       ...native,
-      class: cx('leverui-code', local.class, local.className),
+      class: cx('lui-code', local.class, local.className),
       'data-size': sizes().base ?? 'sm',
       'data-size-sm': sizes().sm,
       'data-size-md': sizes().md,
@@ -60,7 +60,7 @@ function CodeRoot(props: CodeRootProps): JSX.Element {
       'data-size-xl': sizes().xl,
       'data-size-2xl': sizes()['2xl'],
       'data-variant': local.variant ?? 'subtle',
-      'data-leverui-color-palette': local.colorPalette,
+      'data-lui-color-palette': local.colorPalette,
       'data-unstyled': local.unstyled ? '' : undefined,
       ref: attachNode,
     }),

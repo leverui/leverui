@@ -86,7 +86,7 @@ export function TreeViewFilter(): JSX.Element {
           (details) => setExpanded(details.expandedValue)
         }
       >
-        <TreeView.Label class="leverui-visually-hidden">Tree</TreeView.Label>
+        <TreeView.Label class="lui-visually-hidden">Tree</TreeView.Label>
         <TreeView.Tree>
           <TreeView.Node<TreeNode>
             indentGuide={() => <TreeView.BranchIndentGuide />}
@@ -96,7 +96,7 @@ export function TreeViewFilter(): JSX.Element {
                 const label = (
                   <Highlight
                     query={[query()]}
-                    markStyle={{ 'background-color': 'var(--leverui-colors-gray-emphasized)' }}
+                    markStyle={{ 'background-color': 'var(--lui-colors-gray-emphasized)' }}
                   >
                     {node.name}
                   </Highlight>

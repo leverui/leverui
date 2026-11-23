@@ -62,7 +62,7 @@ function BleedRoot(props: RuntimeProps): JSX.Element {
     () => ({
       ...native,
       style: bleedVariableStyle(local, native.style),
-      class: cx('leverui-bleed', local.class),
+      class: cx('lui-bleed', local.class),
       'data-unstyled': local.unstyled ? '' : undefined,
       ref: attachNode,
     }),

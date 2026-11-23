@@ -90,7 +90,7 @@ async function verifiesCircle({ page }: { page: Page }): Promise<void> {
   await page.setViewportSize({ width: 900, height: 700 });
   expectNear((await requiredBox(responsive)).width, 48);
   expectNear((await requiredBox(responsive)).height, 48);
-  await page.addStyleTag({ content: ':root { --leverui-sizes-10: 3rem; }' });
+  await page.addStyleTag({ content: ':root { --lui-sizes-10: 3rem; }' });
   expectNear((await requiredBox(token)).width, 48);
 }
 

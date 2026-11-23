@@ -27,11 +27,11 @@ async function verifiesEmHydration({ page }: { page: Page }): Promise<void> {
   );
   expect(markup).toContain('<em');
   expect(markup).toContain('title="Hydrated emphasis"');
-  expect(markup).toContain('leverui-em');
+  expect(markup).toContain('lui-em');
   expect(markup).not.toContain('fontStyle=');
   await page.goto('/iframe.html?id=setup-hydration-host--ready');
   await page.setContent(
-    `${generateHydrationScript()}<style>${defaultCss}</style><style>.leverui-em{font-style:oblique}.em-hydrated-plain{font-style:normal}</style><div id="em-hydration-root">${markup}</div>`,
+    `${generateHydrationScript()}<style>${defaultCss}</style><style>.lui-em{font-style:oblique}.em-hydrated-plain{font-style:normal}</style><div id="em-hydration-root">${markup}</div>`,
   );
   const root = page.locator('#em-hydration-root');
   const emphasized = page.locator('#hydrated-em');
@@ -69,9 +69,9 @@ async function verifiesEmWithoutScripts({ page }: { page: Page }): Promise<void>
   await page.setContent(`<style>${defaultCss}</style>${markup}`);
   const emphasized = page.locator('#hydrated-em');
   await expect(emphasized).toHaveJSProperty('tagName', 'EM');
-  await expect(emphasized).toHaveClass(/leverui-em/);
+  await expect(emphasized).toHaveClass(/lui-em/);
   await expect(emphasized).toHaveCSS('font-style', 'italic');
-  await page.addStyleTag({ content: '.leverui-em{font-style:oblique}' });
+  await page.addStyleTag({ content: '.lui-em{font-style:oblique}' });
   await expect(emphasized).toHaveCSS('font-style', 'oblique');
 }
 

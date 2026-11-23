@@ -25,14 +25,14 @@ export const sparklineContracts = [
   {
     family: 'sparkline',
     required: [
-      '.leverui-sparkline:not([data-unstyled])',
+      '.lui-sparkline:not([data-unstyled])',
       ...parts.map(
         /** Require each SVG part's authored selector. */
-        (part) => `.leverui-sparkline__${part}`,
+        (part) => `.lui-sparkline__${part}`,
       ),
       ...variables.map(
         /** Require every documented consumer override. */
-        (name) => `--leverui-sparkline-${name}`,
+        (name) => `--lui-sparkline-${name}`,
       ),
       '[data-gradient]',
     ],

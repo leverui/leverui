@@ -1,57 +1,57 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 480px) {
-    .leverui-radiomark:not([data-unstyled])[data-filled-sm='true'] {
-      --leverui-private-radiomark-background: var(--leverui-colors-bg);
+    .lui-radiomark:not([data-unstyled])[data-filled-sm='true'] {
+      --lui-private-radiomark-background: var(--lui-colors-bg);
     }
-    .leverui-radiomark:not([data-unstyled])[data-filled-sm='false']:not([data-checked]) {
-      --leverui-private-radiomark-background: var(--leverui-private-radiomark-unfilled-background);
+    .lui-radiomark:not([data-unstyled])[data-filled-sm='false']:not([data-checked]) {
+      --lui-private-radiomark-background: var(--lui-private-radiomark-unfilled-background);
     }
-    .leverui-radiomark:not([data-unstyled])[data-filled-sm='false'][data-checked] {
-      --leverui-private-radiomark-background: var(--leverui-private-radiomark-checked-background);
+    .lui-radiomark:not([data-unstyled])[data-filled-sm='false'][data-checked] {
+      --lui-private-radiomark-background: var(--lui-private-radiomark-checked-background);
     }
   }
   @media (min-width: 768px) {
-    .leverui-radiomark:not([data-unstyled])[data-filled-md='true'] {
-      --leverui-private-radiomark-background: var(--leverui-colors-bg);
+    .lui-radiomark:not([data-unstyled])[data-filled-md='true'] {
+      --lui-private-radiomark-background: var(--lui-colors-bg);
     }
-    .leverui-radiomark:not([data-unstyled])[data-filled-md='false']:not([data-checked]) {
-      --leverui-private-radiomark-background: var(--leverui-private-radiomark-unfilled-background);
+    .lui-radiomark:not([data-unstyled])[data-filled-md='false']:not([data-checked]) {
+      --lui-private-radiomark-background: var(--lui-private-radiomark-unfilled-background);
     }
-    .leverui-radiomark:not([data-unstyled])[data-filled-md='false'][data-checked] {
-      --leverui-private-radiomark-background: var(--leverui-private-radiomark-checked-background);
+    .lui-radiomark:not([data-unstyled])[data-filled-md='false'][data-checked] {
+      --lui-private-radiomark-background: var(--lui-private-radiomark-checked-background);
     }
   }
   @media (min-width: 1024px) {
-    .leverui-radiomark:not([data-unstyled])[data-filled-lg='true'] {
-      --leverui-private-radiomark-background: var(--leverui-colors-bg);
+    .lui-radiomark:not([data-unstyled])[data-filled-lg='true'] {
+      --lui-private-radiomark-background: var(--lui-colors-bg);
     }
-    .leverui-radiomark:not([data-unstyled])[data-filled-lg='false']:not([data-checked]) {
-      --leverui-private-radiomark-background: var(--leverui-private-radiomark-unfilled-background);
+    .lui-radiomark:not([data-unstyled])[data-filled-lg='false']:not([data-checked]) {
+      --lui-private-radiomark-background: var(--lui-private-radiomark-unfilled-background);
     }
-    .leverui-radiomark:not([data-unstyled])[data-filled-lg='false'][data-checked] {
-      --leverui-private-radiomark-background: var(--leverui-private-radiomark-checked-background);
+    .lui-radiomark:not([data-unstyled])[data-filled-lg='false'][data-checked] {
+      --lui-private-radiomark-background: var(--lui-private-radiomark-checked-background);
     }
   }
   @media (min-width: 1280px) {
-    .leverui-radiomark:not([data-unstyled])[data-filled-xl='true'] {
-      --leverui-private-radiomark-background: var(--leverui-colors-bg);
+    .lui-radiomark:not([data-unstyled])[data-filled-xl='true'] {
+      --lui-private-radiomark-background: var(--lui-colors-bg);
     }
-    .leverui-radiomark:not([data-unstyled])[data-filled-xl='false']:not([data-checked]) {
-      --leverui-private-radiomark-background: var(--leverui-private-radiomark-unfilled-background);
+    .lui-radiomark:not([data-unstyled])[data-filled-xl='false']:not([data-checked]) {
+      --lui-private-radiomark-background: var(--lui-private-radiomark-unfilled-background);
     }
-    .leverui-radiomark:not([data-unstyled])[data-filled-xl='false'][data-checked] {
-      --leverui-private-radiomark-background: var(--leverui-private-radiomark-checked-background);
+    .lui-radiomark:not([data-unstyled])[data-filled-xl='false'][data-checked] {
+      --lui-private-radiomark-background: var(--lui-private-radiomark-checked-background);
     }
   }
   @media (min-width: 1536px) {
-    .leverui-radiomark:not([data-unstyled])[data-filled-2xl='true'] {
-      --leverui-private-radiomark-background: var(--leverui-colors-bg);
+    .lui-radiomark:not([data-unstyled])[data-filled-2xl='true'] {
+      --lui-private-radiomark-background: var(--lui-colors-bg);
     }
-    .leverui-radiomark:not([data-unstyled])[data-filled-2xl='false']:not([data-checked]) {
-      --leverui-private-radiomark-background: var(--leverui-private-radiomark-unfilled-background);
+    .lui-radiomark:not([data-unstyled])[data-filled-2xl='false']:not([data-checked]) {
+      --lui-private-radiomark-background: var(--lui-private-radiomark-unfilled-background);
     }
-    .leverui-radiomark:not([data-unstyled])[data-filled-2xl='false'][data-checked] {
-      --leverui-private-radiomark-background: var(--leverui-private-radiomark-checked-background);
+    .lui-radiomark:not([data-unstyled])[data-filled-2xl='false'][data-checked] {
+      --lui-private-radiomark-background: var(--lui-private-radiomark-checked-background);
     }
   }
 }

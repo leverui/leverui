@@ -6,7 +6,7 @@ export async function verifyPackedFieldset(page) {
   const root = page.getByTestId('packed-fieldset-root');
   const legend = page.getByTestId('packed-fieldset-legend');
   const input = page.getByTestId('packed-fieldset-input');
-  await expect(root).toHaveClass(/leverui-fieldset__root/);
+  await expect(root).toHaveClass(/lui-fieldset__root/);
   await expect(root).toHaveAttribute('aria-labelledby', /fieldset::packed-contact::legend/);
   await expect(root).toHaveAttribute('aria-describedby', /helper-text/);
   await expect(legend).toHaveCSS('font-size', '14px');

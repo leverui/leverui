@@ -59,8 +59,8 @@ function renderInstalledTabs() {
 }
 
 const markup = renderInstalledTabs();
-assert.match(markup, /leverui-tabs__root/);
-assert.match(markup, /leverui-tabs__contentGroup/);
+assert.match(markup, /lui-tabs__root/);
+assert.match(markup, /lui-tabs__contentGroup/);
 assert.match(markup, /aria-selected="true"/);
 assert.match(markup, /First server panel/);
 console.log('Packed external Tabs server rendering passed.');

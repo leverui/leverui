@@ -69,7 +69,7 @@ async function verifiesAuthoredShapes({ page }: { page: Page }): Promise<void> {
   await page.setViewportSize({ width: 600, height: 700 });
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(
-    `<style>${defaultCss}</style><style>.consumer-square { --leverui-sizes-8: 37px; } .consumer-square-size { --leverui-square-size: 42px; } .consumer-circle { --leverui-circle-radius: 6px; }</style>${renderNativeShapes()}`,
+    `<style>${defaultCss}</style><style>.consumer-square { --lui-sizes-8: 37px; } .consumer-square-size { --lui-square-size: 42px; } .consumer-circle { --lui-circle-radius: 6px; }</style>${renderNativeShapes()}`,
   );
   const square = page.locator('#css-square');
   await expect(square).toHaveCSS('width', '37px');
@@ -97,7 +97,7 @@ async function verifiesAuthoredShapes({ page }: { page: Page }): Promise<void> {
       /** Compare the two public class hooks without depending on SSR whitespace. */
       (element) => [...element.classList],
     ),
-  ).toEqual(['leverui-square', 'consumer-square']);
+  ).toEqual(['lui-square', 'consumer-square']);
   await page.setViewportSize({ width: 900, height: 700 });
   await expect(square).toHaveCSS('width', '48px');
   await expect(square).toHaveCSS('height', '48px');

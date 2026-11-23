@@ -34,7 +34,7 @@ async function verifiesBarListHydration({ page }: { page: Page }): Promise<void>
   await page.setContent(
     `${generateHydrationScript()}<style>${defaultCss}</style><div id="bar-list-hydration-root">${markup}</div>`,
   );
-  const first = page.locator('.leverui-bar-list__row').first();
+  const first = page.locator('.lui-bar-list__row').first();
   await first.evaluate(markServerRow);
   await expect(first).toHaveCSS('min-height', '40px');
   const errors: string[] = [];
@@ -50,7 +50,7 @@ async function verifiesBarListHydration({ page }: { page: Page }): Promise<void>
   await expect(first).toHaveAttribute('data-server-node', 'true');
   await first.focus();
   await expect(first).toHaveAttribute('data-hovered', '');
-  await expect(page.locator('.leverui-bar-list__tooltip')).toBeVisible();
+  await expect(page.locator('.lui-bar-list__tooltip')).toBeVisible();
   expect(errors).toEqual([]);
 }
 

@@ -24,7 +24,7 @@ export const selectContracts = [
     required: [
       ...styledParts.map(
         /** Require a default authored selector for every styled public part. */
-        (part) => `.leverui-select__${part}:not([data-unstyled])`,
+        (part) => `.lui-select__${part}:not([data-unstyled])`,
       ),
       ...sizes.map(
         /** Require each scalar size rule. */

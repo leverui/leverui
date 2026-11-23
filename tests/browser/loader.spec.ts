@@ -26,31 +26,25 @@ async function verifiesLoaderBrowserContract({ page }: { page: Page }): Promise<
   await expect(parent).toHaveCSS('padding', '8px');
   await expect(loader).toHaveCSS('display', 'contents');
   await expect(loader).not.toHaveAttribute('role');
-  await expect(loader.locator('.leverui-spinner')).not.toHaveAttribute('aria-hidden');
-  await expect(loader.locator('.leverui-spinner')).toHaveCSS('width', '16px');
-  await expect(loader.locator('.leverui-spinner')).toHaveCSS('border-top-width', '2px');
+  await expect(loader.locator('.lui-spinner')).not.toHaveAttribute('aria-hidden');
+  await expect(loader.locator('.lui-spinner')).toHaveCSS('width', '16px');
+  await expect(loader.locator('.lui-spinner')).toHaveCSS('border-top-width', '2px');
   await expect(loader.locator('div')).toHaveCSS('position', 'absolute');
-  await expect(loader.locator('.leverui-loader__indicator')).toHaveCSS('display', 'flex');
+  await expect(loader.locator('.lui-loader__indicator')).toHaveCSS('display', 'flex');
   await expect(loader.locator('span').last()).toHaveCSS('visibility', 'hidden');
   await expect(page.getByTestId('text-start')).toContainText('Loading...');
   await expect(page.getByTestId('text-end')).toContainText('Loading...');
   await expect(page.getByTestId('custom-indicator')).toHaveText('◌');
   await expect(page.getByTestId('null-indicator')).toHaveText('Ready');
-  await expect(page.getByTestId('null-indicator').locator('.leverui-spinner')).toHaveCount(0);
+  await expect(page.getByTestId('null-indicator').locator('.lui-spinner')).toHaveCount(0);
   const unstyledLoader = page.getByTestId('unstyled-loader');
-  await expect(unstyledLoader).toHaveClass(/leverui-loader/);
+  await expect(unstyledLoader).toHaveClass(/lui-loader/);
   await expect(unstyledLoader).toHaveAttribute('data-unstyled', '');
   await expect(unstyledLoader).toHaveCSS('display', 'inline');
-  await expect(unstyledLoader.locator('.leverui-loader__indicator')).toHaveCSS(
-    'position',
-    'static',
-  );
-  await expect(unstyledLoader.locator('.leverui-loader__content')).toHaveCSS(
-    'visibility',
-    'visible',
-  );
+  await expect(unstyledLoader.locator('.lui-loader__indicator')).toHaveCSS('position', 'static');
+  await expect(unstyledLoader.locator('.lui-loader__content')).toHaveCSS('visibility', 'visible');
   const unstyledOverlay = page.getByTestId('unstyled-overlay');
-  await expect(unstyledOverlay).toHaveClass(/leverui-loader-overlay/);
+  await expect(unstyledOverlay).toHaveClass(/lui-loader-overlay/);
   await expect(unstyledOverlay).toHaveAttribute('data-unstyled', '');
   await expect(unstyledOverlay).toHaveCSS('position', 'static');
 
@@ -63,7 +57,7 @@ async function verifiesLoaderBrowserContract({ page }: { page: Page }): Promise<
   await expect(overlay).toHaveCSS('width', '200px');
   await expect(overlay).toHaveCSS('height', '100px');
   await expect(overlay).toHaveCSS('gap', '8px');
-  await page.addStyleTag({ content: ':root { --leverui-spacing-2: 12px; }' });
+  await page.addStyleTag({ content: ':root { --lui-spacing-2: 12px; }' });
   await expect(parent).toHaveCSS('padding', '12px');
 
   await page.getByTestId('loader-toggle').click();
@@ -94,11 +88,11 @@ async function verifiesServerLoader({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderServerLoader);
   expect(markup).toContain('id="server-loader"');
   expect(markup).not.toContain('id="server-bypass"');
-  expect(markup).toContain('leverui-loader-overlay');
+  expect(markup).toContain('lui-loader-overlay');
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(`<style>${defaultCss}</style>${markup}`);
   await expect(page.locator('#server-loader')).toHaveCSS('display', 'contents');
-  await expect(page.locator('#server-loader .leverui-spinner')).toHaveCSS('width', '16px');
+  await expect(page.locator('#server-loader .lui-spinner')).toHaveCSS('width', '16px');
   await expect(page.locator('#server-overlay')).toHaveCSS('width', '200px');
   await expect(page.locator('#server-overlay')).toHaveCSS('height', '100px');
 }

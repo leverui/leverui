@@ -94,7 +94,7 @@ function renderNumberInputRoot(
         );
       },
       /** Scope the semantic palette to all numeric parts. */
-      get 'data-leverui-color-palette'() {
+      get 'data-lui-color-palette'() {
         return local.colorPalette;
       },
       /** Let authored CSS suppress the root presentation. */

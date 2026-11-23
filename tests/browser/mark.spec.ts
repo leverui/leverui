@@ -7,7 +7,7 @@ async function verifiesMarkVariants({ page }: { page: Page }): Promise<void> {
   const base = page.getByTestId('mark-default');
   await expect(base).toBeVisible({ timeout: 45_000 });
   await expect(base).toHaveJSProperty('tagName', 'MARK');
-  await expect(base).toHaveClass(/leverui-mark/);
+  await expect(base).toHaveClass(/lui-mark/);
   await expect(base).toHaveCSS('white-space', 'nowrap');
   await expect(base).toHaveCSS('background-color', 'rgba(0, 0, 0, 0)');
 
@@ -15,7 +15,7 @@ async function verifiesMarkVariants({ page }: { page: Page }): Promise<void> {
   const solid = page.getByTestId('mark-solid');
   const text = page.getByTestId('mark-text');
   const plain = page.getByTestId('mark-plain');
-  await expect(solid).not.toHaveAttribute('data-leverui-private-style-runtime');
+  await expect(solid).not.toHaveAttribute('data-lui-private-style-runtime');
   const solidBackground = await solid.evaluate(
     /** Read the blue solid treatment's computed background. */
     (element) => getComputedStyle(element).backgroundColor,
@@ -42,7 +42,7 @@ async function verifiesMarkVariants({ page }: { page: Page }): Promise<void> {
   await page.setViewportSize({ width: 900, height: 800 });
   await expect(responsive).toHaveCSS('background-color', solidBackground);
   await page.addStyleTag({
-    content: '[data-testid="mark-solid"] { --leverui-colors-color-palette-solid: rgb(18 52 86); }',
+    content: '[data-testid="mark-solid"] { --lui-colors-color-palette-solid: rgb(18 52 86); }',
   });
   await expect(solid).toHaveCSS('background-color', 'rgb(18, 52, 86)');
 }
@@ -67,21 +67,21 @@ async function verifiesMarkComposition({ page }: { page: Page }): Promise<void> 
   const providerElement = page.getByTestId('mark-provider-as');
   await expect(providerElement).toHaveJSProperty('tagName', 'STRONG');
   await expect(providerElement).toHaveAttribute('title', 'Provider element');
-  await expect(providerElement).toHaveClass(/leverui-mark/);
+  await expect(providerElement).toHaveClass(/lui-mark/);
   const localElement = page.getByTestId('mark-provider-as-override');
   await expect(localElement).toHaveJSProperty('tagName', 'MARK');
   await expect(localElement).toHaveAttribute('title', 'Provider element');
-  await expect(localElement).toHaveClass(/leverui-mark/);
+  await expect(localElement).toHaveClass(/lui-mark/);
   await expect(providerElement).not.toHaveAttribute('as');
   await expect(localElement).not.toHaveAttribute('as');
   const childLink = page.getByRole('link', { name: 'Child link label' });
-  await expect(childLink).toHaveClass(/leverui-mark/);
+  await expect(childLink).toHaveClass(/lui-mark/);
   await expect(childLink).toHaveClass(/provider-mark/);
   await childLink.focus();
   await expect(childLink).toBeFocused();
   await expect(page.getByTestId('mark-unstyled')).toHaveCSS('white-space', 'normal');
   await expect(page.getByTestId('mark-style')).toHaveCSS('letter-spacing', '1px');
-  await page.addStyleTag({ content: '.leverui-mark.consumer-mark{white-space:normal}' });
+  await page.addStyleTag({ content: '.lui-mark.consumer-mark{white-space:normal}' });
   await expect(page.getByTestId('mark-consumer-css')).toHaveCSS('white-space', 'normal');
 
   await inherited.evaluate(

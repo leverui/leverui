@@ -1,4 +1,4 @@
-@layer leverui.base {
+@layer lui.base {
   @keyframes expand-height {
     from {
       height: var(--collapsed-height, 0);

@@ -96,7 +96,7 @@ export function SplitterResizeEvents(): JSX.Element {
         role="log"
 
         style={{
-          padding: 'var(--leverui-spacing-2)',
+          padding: 'var(--lui-spacing-2)',
           width: '100%',
           'border-width': '1px',
           'min-height': '100px',
@@ -110,7 +110,7 @@ export function SplitterResizeEvents(): JSX.Element {
             <Span
               textStyle="sm"
               style={{
-                color: 'var(--leverui-colors-fg-muted)',
+                color: 'var(--lui-colors-fg-muted)',
               }}
             >
               Resize events will appear here...
@@ -125,17 +125,17 @@ export function SplitterResizeEvents(): JSX.Element {
                   as="pre"
                   textStyle="sm"
                   style={{
-                    'font-family': 'var(--leverui-fonts-mono)',
+                    'font-family': 'var(--lui-fonts-mono)',
                   }}
                 >
-                  <Span style={{ color: 'var(--leverui-colors-fg-muted)' }}>
+                  <Span style={{ color: 'var(--lui-colors-fg-muted)' }}>
                     {new Date(entry.time).toLocaleTimeString()}
                   </Span>
-                  <Span style={{ 'font-weight': 'var(--leverui-font-weights-bold)' }}>
+                  <Span style={{ 'font-weight': 'var(--lui-font-weights-bold)' }}>
                     {entry.name}
                   </Span>
                   <Show when={entry.sizes}>
-                    <Span style={{ color: 'var(--leverui-colors-fg-muted)' }}>{entry.sizes}</Span>
+                    <Span style={{ color: 'var(--lui-colors-fg-muted)' }}>{entry.sizes}</Span>
                   </Show>
                 </HStack>
               )

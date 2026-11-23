@@ -1,6 +1,6 @@
-@layer leverui.recipes {
-  .leverui-sticky:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-sticky:not([data-unstyled]) {
     position: sticky;
-    top: var(--leverui-sticky-top, 0px);
+    top: var(--lui-sticky-top, 0px);
   }
 }

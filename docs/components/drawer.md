@@ -103,7 +103,7 @@ Load the [package stylesheet](../getting-started.md) first. The root takes only
 the listed `size`, `placement`, and `contained` values, plus `unstyled`. It
 does not take a recipe object.
 
-Every part has a fixed `.leverui-drawer__*` class. To style one drawer, use
+Every part has a fixed `.lui-drawer__*` class. To style one drawer, use
 `class` or Solid's `style` prop.
 
 ```tsx
@@ -112,6 +112,6 @@ Every part has a fixed `.leverui-drawer__*` class. To style one drawer, use
 
 ```css
 .settings-drawer {
-  --leverui-drawer-background: #f7f9ff;
+  --lui-drawer-background: #f7f9ff;
 }
 ```

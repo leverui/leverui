@@ -26,11 +26,11 @@ export const barSegmentContracts = [
     required: [
       ...parts.map(
         /** Require each styled public part in authored CSS. */
-        (part) => `.leverui-bar-segment__${part}`,
+        (part) => `.lui-bar-segment__${part}`,
       ),
       ...['size', 'root-gap', 'content-gap', 'row-gap', 'legend-gap', 'bar-gap'].map(
         /** Require each documented consumer variable. */
-        (name) => `--leverui-bar-segment-${name}`,
+        (name) => `--lui-bar-segment-${name}`,
       ),
       "[data-text-style='xs']",
       '[data-has-label]',

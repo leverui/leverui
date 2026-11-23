@@ -41,10 +41,10 @@ function FileEntry(props: { node: FileNode; level: number } & FileTreeProps): JS
       textStyle="sm"
       style={{
         width: '100%',
-        'padding-inline-start': `var(--leverui-spacing-${props.level * 4 + 2})`,
-        'padding-inline-end': 'var(--leverui-spacing-2)',
-        'padding-block': 'var(--leverui-spacing-1)',
-        'border-radius': 'var(--leverui-radii-l2)',
+        'padding-inline-start': `var(--lui-spacing-${props.level * 4 + 2})`,
+        'padding-inline-end': 'var(--lui-spacing-2)',
+        'padding-block': 'var(--lui-spacing-1)',
+        'border-radius': 'var(--lui-radii-l2)',
         cursor: 'pointer',
         'flex-shrink': '0',
       }}
@@ -65,15 +65,15 @@ function TreeNode(props: { node: FileNode; level: number } & FileTreeProps): JSX
         gap="0.5"
         style={{
           width: '100%',
-          'padding-inline-start': props.level > 0 ? 'var(--leverui-spacing-4)' : '0',
+          'padding-inline-start': props.level > 0 ? 'var(--lui-spacing-4)' : '0',
         }}
       >
         <HStack
           gap="2"
           textStyle="sm"
           style={{
-            'padding-inline': 'var(--leverui-spacing-2)',
-            'padding-block': 'var(--leverui-spacing-1)',
+            'padding-inline': 'var(--lui-spacing-2)',
+            'padding-block': 'var(--lui-spacing-1)',
             'flex-shrink': '0',
           }}
         >
@@ -109,8 +109,8 @@ export function FileTree(props: FileTreeProps): JSX.Element {
   return (
     <>
       <style>{`.file-tree-entry[data-current] {
-        background: var(--leverui-colors-bg-emphasized);
-        color: var(--leverui-colors-yellow-solid);
+        background: var(--lui-colors-bg-emphasized);
+        color: var(--lui-colors-yellow-solid);
       }`}</style>
       <Stack gap="0.5" style={{ width: '100%' }}>
         <For each={props.nodes}>

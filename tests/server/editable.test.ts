@@ -37,8 +37,8 @@ function renderServerEditable(): string {
 function verifiesServerEditable(): void {
   const markup = renderServerEditable();
   expect(markup).toContain('data-editable-');
-  expect(markup).toContain('leverui-editable__root');
-  expect(markup).toContain('leverui-editable__input');
+  expect(markup).toContain('lui-editable__root');
+  expect(markup).toContain('lui-editable__input');
   expect(markup).toContain('Server name');
   expect(markup).toContain('Name');
   expect(markup).not.toMatch(/\s(?:recipe|unstyled|activationMode)=/);

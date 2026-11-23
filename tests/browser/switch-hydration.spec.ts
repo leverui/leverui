@@ -95,10 +95,10 @@ async function verifiesSwitchWithoutRuntime({ page }: { page: Page }): Promise<v
     'utf8',
   );
   await page.setContent(`<style>${defaultCss}</style>${markup}`);
-  const root = page.locator('.leverui-switch__root').first();
+  const root = page.locator('.lui-switch__root').first();
   await expect(root).toHaveAttribute('data-size', 'md');
-  await expect(root.locator('.leverui-switch__control')).toHaveCSS('width', '40px');
-  await expect(root.locator('.leverui-switch__thumb')).toHaveCSS('translate', '20px');
+  await expect(root.locator('.lui-switch__control')).toHaveCSS('width', '40px');
+  await expect(root.locator('.lui-switch__thumb')).toHaveCSS('translate', '20px');
   await expect(root.getByRole('checkbox')).toBeChecked();
 }
 

@@ -5,7 +5,7 @@ export type AlertPart = (typeof alertParts)[number];
 /** Show a CSS hook for the selected public Alert part. */
 export function alertExplorerCode(part: AlertPart): string {
   return `/* Target the ${part} part from your own stylesheet. */
-.my-alert .leverui-alert__${part} {
-  outline: 2px solid var(--leverui-colors-blue-500);
+.my-alert .lui-alert__${part} {
+  outline: 2px solid var(--lui-colors-blue-500);
 }`;
 }

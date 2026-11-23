@@ -18,11 +18,11 @@ function renderSemanticInline() {
 
 const markup = renderSemanticInline();
 assert.match(markup, /<em[^>]*id="packed-server-em"/);
-assert.match(markup, /leverui-em/);
+assert.match(markup, /lui-em/);
 assert.match(markup, /<strong[^>]*id="packed-server-strong"/);
-assert.match(markup, /leverui-strong/);
+assert.match(markup, /lui-strong/);
 assert.match(markup, /<q[^>]*id="packed-server-quote"/);
-assert.match(markup, /leverui-quote/);
+assert.match(markup, /lui-quote/);
 assert.match(markup, /<span[^>]*id="packed-server-span"/);
-assert.match(markup, /leverui-span/);
+assert.match(markup, /lui-span/);
 console.log('Packed semantic typography server rendering passed.');

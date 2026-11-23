@@ -30,8 +30,8 @@ async function verifiesDateInputHydration({ page }: { page: Page }): Promise<voi
     `${generateHydrationScript()}<style>${defaultCss}</style><div id="date-input-hydration-root">${markup}</div>`,
   );
   const host = page.locator('#date-input-hydration-root');
-  const root = host.locator('.leverui-date-input__root');
-  const group = host.locator('.leverui-date-input__segmentGroup');
+  const root = host.locator('.lui-date-input__root');
+  const group = host.locator('.lui-date-input__segmentGroup');
   const hidden = host.locator('input[name="hydrated-date"]');
   const day = group.locator('[data-type="day"]');
   await expect(group.getByRole('spinbutton')).toHaveCount(3);

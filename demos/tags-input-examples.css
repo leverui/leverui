@@ -1,13 +1,13 @@
 .tags-input-long-tags {
-  max-width: var(--leverui-sizes-md);
+  max-width: var(--lui-sizes-md);
 }
 
 .tags-input-start-control {
-  padding-inline-start: var(--leverui-spacing-8);
+  padding-inline-start: var(--lui-spacing-8);
 }
 
 .tags-input-padded-control {
-  padding-inline-end: var(--leverui-spacing-8);
+  padding-inline-end: var(--lui-spacing-8);
 }
 
 .tags-input-colored-preview[data-highlighted] {

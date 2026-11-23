@@ -12,7 +12,7 @@ export async function verifyPackedEmptyState(page) {
   assert.equal(await title.textContent(), 'No items');
   assert.equal(await page.locator('#packed-empty-description').textContent(), 'Add one to begin.');
   assert.equal(await page.locator('#packed-empty-action').textContent(), 'Add item');
-  assert.match((await root.getAttribute('class')) ?? '', /leverui-empty-state__root/);
+  assert.match((await root.getAttribute('class')) ?? '', /lui-empty-state__root/);
   assert.equal(
     await root.evaluate(
       /** Read the installed small-size vertical padding. */

@@ -8,14 +8,14 @@ const activeAttribute = 'data-guide-explorer-active';
 
 /** Resolve the CSS selector that identifies one public part. */
 function partSelector(config: GuideExplorerConfig, slug: string, part: string): string {
-  return config.selectors?.[part] ?? `.leverui-${slug}__${part}`;
+  return config.selectors?.[part] ?? `.lui-${slug}__${part}`;
 }
 
 /** Show a copyable CSS hook for the selected public part. */
 function explorerCode(config: GuideExplorerConfig, slug: string, part: string): string {
   return `/* Target the ${part} part from your own stylesheet. */
 .my-${slug} ${partSelector(config, slug, part)} {
-  outline: 2px solid var(--leverui-colors-blue-500);
+  outline: 2px solid var(--lui-colors-blue-500);
 }`;
 }
 

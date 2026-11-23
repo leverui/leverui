@@ -22,7 +22,7 @@ async function verifiesFieldBrowser({ page }: { page: Page }): Promise<void> {
   await expect(page.getByText('Enter a valid address')).toBeVisible();
   await page.addStyleTag({
     content:
-      '[data-testid="field-contract"] { --leverui-colors-fg-error: rgb(90, 30, 170); --leverui-field-label-width: 96px; }',
+      '[data-testid="field-contract"] { --lui-colors-fg-error: rgb(90, 30, 170); --lui-field-label-width: 96px; }',
   });
   await expect(page.getByText('Enter a valid address')).toHaveCSS('color', 'rgb(90, 30, 170)');
   await expect(page.getByText('Email', { exact: false })).toHaveCSS('flex-basis', '96px');

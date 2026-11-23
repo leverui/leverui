@@ -13,8 +13,8 @@ async function openStory(page: Page, story: string, testId: string): Promise<Loc
 async function verifiesDefaultSkipLink({ page }: { page: Page }): Promise<void> {
   const link = await openStory(page, 'basic', 'skip-nav-link');
   const content = page.getByTestId('skip-nav-content');
-  await expect(link).toHaveAttribute('href', '#leverui-skip-nav');
-  await expect(content).toHaveAttribute('id', 'leverui-skip-nav');
+  await expect(link).toHaveAttribute('href', '#lui-skip-nav');
+  await expect(content).toHaveAttribute('id', 'lui-skip-nav');
   await expect(content).toHaveAttribute('tabindex', '-1');
   await expect(link).toHaveAttribute('data-received-link-ref', 'true');
   await expect(content).toHaveAttribute('data-received-content-ref', 'true');
@@ -29,7 +29,7 @@ async function verifiesDefaultSkipLink({ page }: { page: Page }): Promise<void> 
   await expect(link).toHaveCSS('outline-style', 'solid');
   await page.keyboard.press('Enter');
   await expect(content).toBeFocused();
-  await expect(page).toHaveURL(/#leverui-skip-nav$/);
+  await expect(page).toHaveURL(/#lui-skip-nav$/);
 }
 
 test('default Skip Nav bypasses repeated navigation by keyboard', verifiesDefaultSkipLink);
@@ -63,12 +63,12 @@ test('custom Skip Nav target follows reactive IDs', verifiesCustomTarget);
 async function verifiesChildAnchor({ page }: { page: Page }): Promise<void> {
   const link = await openStory(page, 'child', 'skip-nav-child-link');
   const content = page.getByTestId('skip-nav-main-content');
-  await expect(link).toHaveAttribute('href', '#leverui-skip-nav');
-  await expect(link).toHaveClass(/leverui-skip-nav/);
+  await expect(link).toHaveAttribute('href', '#lui-skip-nav');
+  await expect(link).toHaveClass(/lui-skip-nav/);
   await expect(content).toHaveJSProperty('tagName', 'MAIN');
   await expect(content).toHaveAttribute('tabindex', '-1');
   await expect(content).toHaveAttribute('data-received-content-ref', 'true');
-  await expect(content).toHaveClass(/leverui-skip-nav-content/);
+  await expect(content).toHaveClass(/lui-skip-nav-content/);
   await expect(content).toHaveText('Caller-owned main element');
   await link.focus();
   await page.keyboard.press('Enter');

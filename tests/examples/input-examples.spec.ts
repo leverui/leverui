@@ -82,9 +82,9 @@ async function verifiesAdornments({ page }: { page: Page }): Promise<void> {
   await openInputStory(page, 'start-text');
   await expect(page.getByText('https://')).toBeVisible();
   await openInputStory(page, 'start-icon');
-  await expect(page.locator('.leverui-input-group .lucide-user')).toBeVisible();
+  await expect(page.locator('.lui-input-group .lucide-user')).toBeVisible();
   await openInputStory(page, 'end-icon');
-  await expect(page.locator('.leverui-input-group .lucide-mail')).toBeVisible();
+  await expect(page.locator('.lui-input-group .lucide-mail')).toBeVisible();
   await openInputStory(page, 'kbd');
   await expect(page.getByText('⌘K')).toBeVisible();
 }
@@ -100,7 +100,7 @@ async function verifiesFields({ page }: { page: Page }): Promise<void> {
   await openInputStory(page, 'focus-error-color');
   await expect(page.locator('input')).toHaveCount(6);
   await expect(page.getByPlaceholder('Focus me').first()).toHaveCSS(
-    '--leverui-input-focus-color',
+    '--lui-input-focus-color',
     'lime',
   );
 }

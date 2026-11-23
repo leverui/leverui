@@ -113,17 +113,17 @@ Also takes native textarea attributes, event handlers, refs, `class`, and
 ## Customize with CSS
 
 Import your own CSS after `styles.css`. Override a public token, or style the
-stable `.leverui-textarea` class. The defaults sit in a CSS layer, so normal
+stable `.lui-textarea` class. The defaults sit in a CSS layer, so normal
 CSS overrides them. `data-size`, `data-variant`, and
-`data-leverui-color-palette` also work in selectors.
+`data-lui-color-palette` also work in selectors.
 
 ```css
-.feedback-form .leverui-textarea {
+.feedback-form .lui-textarea {
   border-radius: 0.75rem;
 }
 
-.feedback-form .leverui-textarea[data-invalid] {
-  border-color: var(--leverui-colors-border-error);
+.feedback-form .lui-textarea[data-invalid] {
+  border-color: var(--lui-colors-border-error);
 }
 ```
 

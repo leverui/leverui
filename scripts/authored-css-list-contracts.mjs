@@ -2,10 +2,10 @@ export const listContracts = [
   {
     family: 'list',
     required: [
-      '.leverui-list__root:not([data-unstyled])',
+      '.lui-list__root:not([data-unstyled])',
       ...['root', 'item', 'indicator'].map(
         /** Require each public List part hook. */
-        (part) => `.leverui-list__${part}:not([data-unstyled]`,
+        (part) => `.lui-list__${part}:not([data-unstyled]`,
       ),
       ...['marker', 'plain'].map(
         /** Require both finite List treatments. */
@@ -28,9 +28,9 @@ export const listContracts = [
           ),
         ],
       ),
-      '--leverui-colors-fg-subtle',
-      '--leverui-list-gap',
-      '--leverui-spacing-2',
+      '--lui-colors-fg-subtle',
+      '--lui-list-gap',
+      '--lui-spacing-2',
     ],
   },
 ];

@@ -73,7 +73,7 @@ export function TreeViewColors(): JSX.Element {
         {(palette) => (
           <TreeView.Root
             collection={collection}
-            style={{ 'max-width': 'var(--leverui-sizes-xs)' }}
+            style={{ 'max-width': 'var(--lui-sizes-xs)' }}
             size="sm"
             colorPalette={palette}
             defaultSelectedValue={['node_modules']}
@@ -113,7 +113,7 @@ export function TreeViewSizes(): JSX.Element {
         {(size) => (
           <TreeView.Root
             collection={collection}
-            style={{ 'max-width': 'var(--leverui-sizes-sm)' }}
+            style={{ 'max-width': 'var(--lui-sizes-sm)' }}
             size={size}
           >
             <TreeView.Label>Tree (size={size})</TreeView.Label>
@@ -152,7 +152,7 @@ export function TreeViewVariants(): JSX.Element {
         {(variant) => (
           <TreeView.Root
             collection={collection}
-            style={{ 'max-width': 'var(--leverui-sizes-sm)' }}
+            style={{ 'max-width': 'var(--lui-sizes-sm)' }}
             size="sm"
             variant={variant}
             colorPalette="teal"

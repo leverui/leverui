@@ -6,13 +6,13 @@ import type { RadarSeries } from './radar-chart-types';
 /** Explain the color of each visible radar series below the plot. */
 export function RadarLegend(props: { series: readonly RadarSeries[] }): JSX.Element {
   return (
-    <div class="leverui-radar-chart__legend">
+    <div class="lui-radar-chart__legend">
       <For each={props.series.slice().reverse()}>
         {/** Pair a small square marker with its series name. */}
         {(series) => (
-          <span class="leverui-radar-chart__legend-item">
+          <span class="lui-radar-chart__legend-item">
             <span
-              class="leverui-radar-chart__legend-swatch"
+              class="lui-radar-chart__legend-swatch"
               style={{ background: chartColor(series.color, series.color) }}
             />
             {series.name}

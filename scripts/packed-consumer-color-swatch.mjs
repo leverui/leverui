@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 export async function verifyPackedColorSwatch(page) {
   const alpha = page.locator('#packed-swatch-alpha');
   assert.equal(await alpha.getAttribute('data-value'), 'rgba(255, 0, 0, 0.5)');
-  assert.match((await alpha.getAttribute('class')) ?? '', /leverui-color-swatch/);
+  assert.match((await alpha.getAttribute('class')) ?? '', /lui-color-swatch/);
   assert.equal(
     await alpha.evaluate(
       /** Read the installed swatch's default size. */

@@ -25,7 +25,7 @@ export function InputEndButton(): JSX.Element {
   return (
     <Group attached style={{ width: '100%', 'max-width': '24rem' }}>
       <Input style={{ flex: '1' }} placeholder="Enter your email" />
-      <Button style={{ background: 'var(--leverui-colors-bg-subtle)' }} variant="outline">
+      <Button style={{ background: 'var(--lui-colors-bg-subtle)' }} variant="outline">
         Submit
       </Button>
     </Group>
@@ -91,7 +91,7 @@ export function InputStartText(): JSX.Element {
   return (
     <InputGroup
       startElement="https://"
-      startElementProps={{ style: { color: 'var(--leverui-colors-fg-muted)' } }}
+      startElementProps={{ style: { color: 'var(--lui-colors-fg-muted)' } }}
     >
       <Input style={{ 'padding-inline-start': '7ch' }} placeholder="yoursite.com" />
     </InputGroup>
@@ -115,10 +115,7 @@ function DomainSelect(): JSX.Element {
       variant="plain"
       style={{ width: 'auto', 'margin-inline-end': '-0.25rem' }}
     >
-      <NativeSelect.Field
-        defaultValue=".com"
-        style={{ 'font-size': 'var(--leverui-font-sizes-sm)' }}
-      >
+      <NativeSelect.Field defaultValue=".com" style={{ 'font-size': 'var(--lui-font-sizes-sm)' }}>
         <option value=".com">.com</option>
         <option value=".org">.org</option>
         <option value=".net">.net</option>

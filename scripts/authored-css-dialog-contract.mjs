@@ -19,7 +19,7 @@ export const dialogContracts = [
     required: [
       ...parts.map(
         /** Require one default CSS rule per styled public part. */
-        (part) => `.leverui-dialog__${part}[data-leverui-dialog-css]`,
+        (part) => `.lui-dialog__${part}[data-lui-dialog-css]`,
       ),
       ...sizes.map(
         /** Require each scalar size in the default stylesheet. */
@@ -47,7 +47,7 @@ export const dialogContracts = [
         /** Require each motion preset with an authored animation. */
         (preset) => `[data-motion-preset='${preset}']`,
       ),
-      '--leverui-private-dialog-size-max-width',
+      '--lui-private-dialog-size-max-width',
     ],
   },
 ];

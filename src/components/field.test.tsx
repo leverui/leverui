@@ -47,7 +47,7 @@ async function verifiesFieldComposition(): Promise<void> {
   const input = screen.getByTestId('field-control') as HTMLInputElement;
   const root = screen.getByTestId('field-root');
   expect(receivedRoot).toBe(root);
-  expect(root.className).toContain('leverui-field__root');
+  expect(root.className).toContain('lui-field__root');
   expect(screen.getByText('Email', { exact: false }).getAttribute('for')).toBe('email');
   expect(input.required).toBe(true);
   expect(screen.getByText('We will send a receipt').tagName).toBe('SPAN');
@@ -61,7 +61,7 @@ async function verifiesFieldComposition(): Promise<void> {
   expect(screen.getByTestId('field-control')).toBe(input);
   expect(input.getAttribute('aria-invalid')).toBe('true');
   expect(screen.getByText('Enter a valid email').tagName).toBe('SPAN');
-  expect(screen.getByText('Enter a valid email').className).toContain('leverui-field__errorText');
+  expect(screen.getByText('Enter a valid email').className).toContain('lui-field__errorText');
   await waitFor(
     /** Let the primitive observe the conditional error text after validation changes. */
     () => expect(input.getAttribute('aria-describedby')).toContain('error-text'),
@@ -105,7 +105,7 @@ async function verifiesExternalField(): Promise<void> {
   const root = screen.getByTestId('external-root');
   const input = screen.getByTestId('external-input') as HTMLInputElement;
   expect(receivedRoot).toBe(root);
-  expect(root.className).toContain('leverui-field__root');
+  expect(root.className).toContain('lui-field__root');
   expect(input.id).toBe('external');
   expect(input.required).toBe(true);
   await waitFor(

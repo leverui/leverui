@@ -8,7 +8,7 @@ type AlertBreakpoint = 'sm' | 'md' | 'lg' | 'xl' | '2xl';
 type AlertAttribute =
   | `data-${AlertChoice}`
   | `data-${AlertChoice}-${AlertBreakpoint}`
-  | 'data-leverui-color-palette'
+  | 'data-lui-color-palette'
   | 'data-unstyled';
 export type AlertRootAttributes = Partial<Record<AlertAttribute, string | undefined>>;
 
@@ -30,7 +30,7 @@ export function alertRootAttributes(
     ...alertVariantAttributes(readAlertVariant(choices.variant)),
     ...alertInlineAttributes(readAlertInline(choices.inline)),
     ...alertStatusAttributes(readAlertStatus(choices.status)),
-    'data-leverui-color-palette': readAlertPalette(choices.colorPalette),
+    'data-lui-color-palette': readAlertPalette(choices.colorPalette),
     'data-unstyled': unstyled ? '' : undefined,
   };
 }

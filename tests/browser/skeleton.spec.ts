@@ -15,8 +15,8 @@ async function verifiesSkeletonAppearance({ page }: { page: Page }): Promise<voi
   await expect(circle).toHaveCSS('border-radius', '9999px');
   await expect(page.getByTestId('skeleton-hidden-child')).toHaveCSS('visibility', 'hidden');
   await expect(page.getByTestId('skeleton-loaded-child')).toHaveCSS('visibility', 'visible');
-  await expect(shine).toHaveCSS('--leverui-skeleton-start-color', '#ff0080');
-  await expect(shine).toHaveCSS('--leverui-skeleton-end-color', '#ffaa00');
+  await expect(shine).toHaveCSS('--lui-skeleton-start-color', '#ff0080');
+  await expect(shine).toHaveCSS('--lui-skeleton-end-color', '#ffaa00');
   for (const attribute of ['loading', 'variant', 'size', 'noOfLines']) {
     await expect(pulse).not.toHaveAttribute(attribute);
   }
@@ -42,9 +42,9 @@ test('Skeleton resolves responsive variants with authored CSS', verifiesResponsi
 async function verifiesSkeletonUpdates({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=feedback-skeleton--contract');
   const root = page.getByTitle('skeleton-text-root');
-  await expect(root).toHaveClass(/leverui-skeleton-text/);
+  await expect(root).toHaveClass(/lui-skeleton-text/);
   await expect(root).toHaveClass(/custom-text-stack/);
-  const lines = root.locator('.leverui-skeleton');
+  const lines = root.locator('.lui-skeleton');
   const reactive = page.getByTestId('skeleton-reactive');
   const inherited = page.getByTestId('skeleton-inherited');
   await expect(lines).toHaveCount(3);
@@ -68,7 +68,7 @@ test('Skeleton updates text, content, and provider variants in place', verifiesS
 async function verifiesSkeletonTextProviderBoundary({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=feedback-skeleton--contract');
   const root = page.locator('[title="skeleton-provider-text"]');
-  const lines = root.locator('.leverui-skeleton');
+  const lines = root.locator('.lui-skeleton');
   const children = page.getByTestId('skeleton-provider-text-child');
   await expect(lines).toHaveCount(2);
   await expect(root).toHaveCSS('gap', '8px');

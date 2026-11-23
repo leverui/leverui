@@ -56,7 +56,7 @@ function BlockquoteRootComponent(props: BlockquoteRootRuntimeProps): JSX.Element
     () => ({
       ...native,
       ...blockquoteAttributes(variants(), justifications()),
-      'data-leverui-color-palette': readBlockquotePalette(local.colorPalette),
+      'data-lui-color-palette': readBlockquotePalette(local.colorPalette),
       'data-unstyled': local.unstyled ? '' : undefined,
       class: composeRecipeClassNames('blockquote__root', undefined, local.class, local.className),
       ref: attachNode,

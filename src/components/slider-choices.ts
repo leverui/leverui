@@ -42,7 +42,7 @@ export function sliderAttributes(appearance: SliderAppearance): {
   'data-variant-lg': SliderVariant | undefined;
   'data-variant-xl': SliderVariant | undefined;
   'data-variant-2xl': SliderVariant | undefined;
-  'data-leverui-color-palette': string | undefined;
+  'data-lui-color-palette': string | undefined;
   'data-unstyled': string | undefined;
 } {
   const palette = appearance.colorPalette;
@@ -64,7 +64,7 @@ export function sliderAttributes(appearance: SliderAppearance): {
     'data-variant-lg': variant.lg,
     'data-variant-xl': variant.xl,
     'data-variant-2xl': variant['2xl'],
-    'data-leverui-color-palette': palette?.trim(),
+    'data-lui-color-palette': palette?.trim(),
     'data-unstyled': appearance.unstyled ? '' : undefined,
   };
 }

@@ -29,11 +29,11 @@ Import `@leverui/components/styles.css` once, before your own CSS. The italic
 style works in server-rendered HTML with no scripts. No CSS objects, general
 style props, or custom recipes.
 
-Target `.leverui-em`. The default sits in a CSS layer, so ordinary CSS
+Target `.lui-em`. The default sits in a CSS layer, so ordinary CSS
 overrides it.
 
 ```css
-.leverui-em {
+.lui-em {
   font-style: normal;
 }
 ```

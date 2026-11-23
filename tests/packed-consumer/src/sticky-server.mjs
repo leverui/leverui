@@ -21,7 +21,7 @@ const markup = renderInstalledSticky();
 assert.match(markup, /id="packed-server-sticky"/);
 assert.match(markup, /title="Installed sticky"/);
 assert.match(markup, /Server sticky content/);
-assert.match(markup, /leverui-sticky/);
+assert.match(markup, /lui-sticky/);
 assert.doesNotMatch(markup, /position:sticky/);
 assert.match(markup, /top:16px/);
 assert.doesNotMatch(markup, /\s(?:css|unstyled|asChild)=/);

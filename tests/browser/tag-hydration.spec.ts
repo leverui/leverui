@@ -25,7 +25,7 @@ async function verifiesTagHydration({ page }: { page: Page }): Promise<void> {
     /** Render the shared tree through the published server entry. */
     () => renderTagHydrationTree(server),
   );
-  expect(markup).toContain('leverui-tag__label');
+  expect(markup).toContain('lui-tag__label');
   expect(markup).toContain('aria-label="Close"');
   await page.goto('/iframe.html?id=setup-hydration-host--ready');
   await page.setContent(

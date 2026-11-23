@@ -41,7 +41,7 @@ export function AvatarGroupWithStacking(): JSX.Element {
       </AvatarGroup>
       <AvatarGroup
         size="lg"
-        style={{ '--leverui-avatar-group-overlap': 'var(--leverui-spacing-1)' }}
+        style={{ '--lui-avatar-group-overlap': 'var(--lui-spacing-1)' }}
         borderless
       >
         <For each={avatarGroupItems}>

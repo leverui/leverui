@@ -2,8 +2,8 @@ export const checkboxContracts = [
   {
     family: 'checkbox',
     required: [
-      '.leverui-checkbox:not([data-unstyled])',
-      '.leverui-checkbox__label:not([data-unstyled])',
+      '.lui-checkbox:not([data-unstyled])',
+      '.lui-checkbox__label:not([data-unstyled])',
       "[data-size='xs']",
       "[data-size='sm']",
       "[data-size='md']",

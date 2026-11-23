@@ -35,9 +35,9 @@ function renderServerSwitch(): string {
 function verifiesServerSwitch(): void {
   const markup = renderServerSwitch();
   expect(markup).toContain('data-switch-');
-  expect(markup).toContain('leverui-switch__root');
-  expect(markup).toContain('leverui-switch__control');
-  expect(markup).toContain('leverui-switch__thumb');
+  expect(markup).toContain('lui-switch__root');
+  expect(markup).toContain('lui-switch__control');
+  expect(markup).toContain('lui-switch__thumb');
   expect(markup).toContain('type="checkbox"');
   expect(markup).toContain('name="notifications"');
   expect(markup).toContain('Notifications');
@@ -122,7 +122,7 @@ function verifiesResponsiveServerSwitch(): void {
   expect(markup).toContain('data-variant="solid"');
   expect(markup).toContain('data-variant-sm="raised"');
   expect(markup).toContain('data-variant-md="solid"');
-  expect(markup).not.toContain('data-leverui-private-style-runtime');
+  expect(markup).not.toContain('data-lui-private-style-runtime');
   expect(markup).toContain('type="checkbox"');
 }
 

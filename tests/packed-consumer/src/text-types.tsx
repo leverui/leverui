@@ -41,7 +41,7 @@ function receiveSpan(element: HTMLSpanElement): void {
 }
 
 export const customTone = (
-  <Text style={{ color: 'var(--leverui-colors-blue-500)' }}>Consumer styled text</Text>
+  <Text style={{ color: 'var(--lui-colors-blue-500)' }}>Consumer styled text</Text>
 );
 export const span = (
   <Text as="span" ref={receiveSpan}>
@@ -49,7 +49,7 @@ export const span = (
   </Text>
 );
 export const defaults = (
-  <TextPropsProvider value={{ style: { color: 'var(--leverui-colors-fg-muted)' } }}>
+  <TextPropsProvider value={{ style: { color: 'var(--lui-colors-fg-muted)' } }}>
     <Text>Muted text</Text>
   </TextPropsProvider>
 );

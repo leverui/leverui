@@ -21,7 +21,7 @@ async function verifiesEveryCheckboxCardExample({ page }: { page: Page }): Promi
   for (const id of storyIds) {
     await page.goto(`/iframe.html?id=components-checkbox-card--${id}`);
     await expect(
-      page.locator('[data-checkbox-root].leverui-checkbox-card').first(),
+      page.locator('[data-checkbox-root].lui-checkbox-card').first(),
       `Checkbox Card example ${id} should render`,
     ).toBeVisible({ timeout: 90_000 });
   }
@@ -69,9 +69,9 @@ async function verifiesIndicatorFreeCopy({ page }: { page: Page }): Promise<void
 /** Match the variant count and compact size-table header. */
 async function verifiesAppearanceTables({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-checkbox-card--variant-matrix');
-  await expect(page.locator('.leverui-checkbox-card')).toHaveCount(120);
+  await expect(page.locator('.lui-checkbox-card')).toHaveCount(120);
   await page.goto('/iframe.html?id=components-checkbox-card--size-matrix');
-  await expect(page.locator('.leverui-checkbox-card')).toHaveCount(6);
+  await expect(page.locator('.lui-checkbox-card')).toHaveCount(6);
   await expect(page.locator('#storybook-root thead')).toHaveCSS('height', '53px');
 }
 
@@ -79,13 +79,10 @@ async function verifiesAppearanceTables({ page }: { page: Page }): Promise<void>
 async function verifiesExampleCss({ page }: { page: Page }): Promise<void> {
   test.setTimeout(120_000);
   await page.goto('/iframe.html?id=components-checkbox-card--basic');
-  const basic = page.locator('.leverui-checkbox-card').first();
+  const basic = page.locator('.lui-checkbox-card').first();
   await expect(basic).toHaveCSS('max-width', '240px', { timeout: 90_000 });
   await page.goto('/iframe.html?id=components-checkbox-card--group');
-  await expect(page.locator('.leverui-checkbox-card').first().locator('..')).toHaveCSS(
-    'gap',
-    '8px',
-  );
+  await expect(page.locator('.lui-checkbox-card').first().locator('..')).toHaveCSS('gap', '8px');
   await page.goto('/iframe.html?id=components-checkbox-card--icon');
   await expect(page.locator('#storybook-root svg.lucide').first()).toHaveCSS('font-size', '24px');
 }

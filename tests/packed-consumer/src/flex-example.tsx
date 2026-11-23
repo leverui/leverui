@@ -24,7 +24,7 @@ export function PackedFlex(): JSX.Element {
         id="packed-flex"
         ref={markButton}
         direction={column() ? 'column' : 'row'}
-        style={{ gap: 'var(--leverui-spacing-4)', width: '240px', height: '80px' }}
+        style={{ gap: 'var(--lui-spacing-4)', width: '240px', height: '80px' }}
         onClick={toggleDirection}
         aria-label="Packed flex"
       >

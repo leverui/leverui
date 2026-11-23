@@ -108,21 +108,21 @@ inside a Solid owner and pass the accessor to `PinInput.RootProvider`.
 Load the Lever UI stylesheet first. The class names are stable.
 
 ```css
-.leverui-pin-input__input {
+.lui-pin-input__input {
   border-color: rebeccapurple;
 }
 ```
 
-The root, label, control, and input each have a `.leverui-pin-input__*` class.
-Each visible input also has `.leverui-input`, so it gets the Input component's
-styles. Set the `--leverui-*` variables on a parent, or target a part class.
+The root, label, control, and input each have a `.lui-pin-input__*` class.
+Each visible input also has `.lui-input`, so it gets the Input component's
+styles. Set the `--lui-*` variables on a parent, or target a part class.
 
 ```css
 .verification-code {
-  --leverui-colors-border: rebeccapurple;
+  --lui-colors-border: rebeccapurple;
 }
 
-.verification-code .leverui-pin-input__input {
+.verification-code .lui-pin-input__input {
   background: lavender;
 }
 ```

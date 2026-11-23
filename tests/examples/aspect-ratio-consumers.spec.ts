@@ -41,7 +41,7 @@ test('Carousel dialog keeps its AspectRatio image frames', verifiesCarouselRatio
 async function verifiesDialogVideo({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-dialog--close-outside');
   await page.getByRole('button', { name: 'Open dialog' }).click();
-  const frame = page.getByRole('dialog').locator('.leverui-aspect-ratio');
+  const frame = page.getByRole('dialog').locator('.lui-aspect-ratio');
   await expect(frame).toBeVisible();
   await expect(frame).toHaveCSS('overflow', 'hidden');
   const bounds = await frame.boundingBox();

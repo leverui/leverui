@@ -3,7 +3,7 @@
 }
 
 .toggle-guide-button:is([data-state='on'], [data-pressed]) {
-  background: var(--leverui-colors-color-palette-solid);
-  color: var(--leverui-colors-color-palette-contrast);
+  background: var(--lui-colors-color-palette-solid);
+  color: var(--lui-colors-color-palette-contrast);
   border-color: transparent;
 }

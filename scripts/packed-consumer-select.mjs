@@ -5,7 +5,7 @@ export async function verifyPackedSelect(page) {
   const root = page.getByTestId('packed-select-root');
   const trigger = page.getByRole('combobox', { name: 'Framework' });
   await root.waitFor();
-  assert.match(await root.getAttribute('class'), /leverui-select__root/);
+  assert.match(await root.getAttribute('class'), /lui-select__root/);
   assert.equal(
     await trigger.evaluate(
       /** Read the plain consumer stylesheet's override. */

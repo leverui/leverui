@@ -15,7 +15,7 @@ async function verifiesTimelineParts({ page }: { page: Page }): Promise<void> {
   await expect(root).toHaveAttribute('data-size', 'sm');
   await expect(root).toHaveAttribute('data-variant', 'solid');
   await expect(root).toHaveAttribute('data-show-last-separator', 'false');
-  await expect(root).not.toHaveAttribute('data-leverui-private-style-runtime');
+  await expect(root).not.toHaveAttribute('data-lui-private-style-runtime');
   await expect(first).toHaveAttribute('role', 'listitem');
   await expect(first).toHaveCSS('display', 'flex');
   await expect(indicator).toHaveCSS('width', '16px');
@@ -76,10 +76,10 @@ async function verifiesResponsiveVariants({ page }: { page: Page }): Promise<voi
   await expect(treatmentIndicator).toHaveCSS('border-top-width', '1px');
   await expect(lastLine).not.toHaveCSS('display', 'none');
 
-  const subtle = page.getByTestId('timeline-subtle').locator('.leverui-timeline__indicator');
-  const solid = page.getByTestId('timeline-solid').locator('.leverui-timeline__indicator');
-  const outline = page.getByTestId('timeline-outline').locator('.leverui-timeline__indicator');
-  const plain = page.getByTestId('timeline-plain').locator('.leverui-timeline__indicator');
+  const subtle = page.getByTestId('timeline-subtle').locator('.lui-timeline__indicator');
+  const solid = page.getByTestId('timeline-solid').locator('.lui-timeline__indicator');
+  const outline = page.getByTestId('timeline-outline').locator('.lui-timeline__indicator');
+  const plain = page.getByTestId('timeline-plain').locator('.lui-timeline__indicator');
   await expect(subtle).toHaveCSS('width', '16px');
   await expect(solid).toHaveCSS('width', '20px');
   await expect(outline).toHaveCSS('width', '24px');
@@ -99,10 +99,10 @@ async function verifiesConsumerCssHooks({ page }: { page: Page }): Promise<void>
   await page.addStyleTag({
     content: `
       .consumer-timeline {
-        --leverui-timeline-indicator-size: 40px;
-        --leverui-timeline-line-color: rgb(200 10 20);
+        --lui-timeline-indicator-size: 40px;
+        --lui-timeline-line-color: rgb(200 10 20);
       }
-      .consumer-timeline .leverui-timeline__title { font-size: 18px; }
+      .consumer-timeline .lui-timeline__title { font-size: 18px; }
     `,
   });
   await expect(page.getByTestId('timeline-first-indicator')).toHaveCSS('width', '40px');
@@ -120,14 +120,14 @@ async function verifiesFlexibleComposition({ page }: { page: Page }): Promise<vo
   await page.goto('/iframe.html?id=content-timeline--contract');
   const before = page.getByTestId('timeline-content-before').locator('[role="listitem"]');
   const alternating = page.getByTestId('timeline-alternating').locator('[role="listitem"]');
-  await expect(before.locator('.leverui-timeline__content').first()).toContainText('2026');
-  await expect(before.locator('.leverui-timeline__connector')).toHaveCount(1);
-  await expect(before.locator('.leverui-timeline__content').last()).toContainText('First event');
+  await expect(before.locator('.lui-timeline__content').first()).toContainText('2026');
+  await expect(before.locator('.lui-timeline__connector')).toHaveCount(1);
+  await expect(before.locator('.lui-timeline__content').last()).toContainText('First event');
   await expect(alternating).toHaveCount(2);
-  await expect(alternating.nth(0).locator('.leverui-timeline__content').last()).toContainText(
+  await expect(alternating.nth(0).locator('.lui-timeline__content').last()).toContainText(
     'First event',
   );
-  await expect(alternating.nth(1).locator('.leverui-timeline__content').first()).toContainText(
+  await expect(alternating.nth(1).locator('.lui-timeline__content').first()).toContainText(
     'Second event',
   );
 }

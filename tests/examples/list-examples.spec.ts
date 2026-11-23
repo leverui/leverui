@@ -18,7 +18,7 @@ async function verifiesListStructure({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-list--ordered');
   await expect(page.locator('#storybook-root ol li')).toHaveCount(3);
   await page.goto('/iframe.html?id=components-list--icon');
-  await expect(page.locator('#storybook-root li svg.leverui-list__indicator')).toHaveCount(3);
+  await expect(page.locator('#storybook-root li svg.lui-list__indicator')).toHaveCount(3);
   await expect(page.locator('#storybook-root li svg.lucide-circle-check')).toHaveCount(2);
   await expect(
     page.locator('#storybook-root li').last().locator('svg.lucide-circle-dashed'),

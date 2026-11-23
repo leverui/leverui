@@ -143,31 +143,31 @@ names such as `blue.500` are built in. A token name becomes its CSS variable.
 A plain CSS value, such as `#ccc` or `2rem`, is returned as is.
 
 A color token is a palette and a shade: `blue.500` is the `blue` palette,
-shade `500`, which is `--leverui-colors-blue-500`. See every color on the
+shade `500`, which is `--lui-colors-blue-500`. See every color on the
 [Colors](../colors.md) page. Sizes and spacing are listed in the
 [size](../theme-variables/sizes.md) and
 [spacing](../theme-variables/spacing.md) references.
 
 To add a color of your own, define its variable in CSS, then pass its name:
-`--leverui-colors-brand-500` is `brand.500`.
+`--lui-colors-brand-500` is `brand.500`.
 
 ### `color`
 
 ```tsx
-chart.color('blue.500'); // var(--leverui-colors-blue-500)
+chart.color('blue.500'); // var(--lui-colors-blue-500)
 chart.color('#ccc'); // #ccc
 ```
 
 ### `size`
 
 ```tsx
-const chartSize = chart.size('4'); // var(--leverui-sizes-4)
+const chartSize = chart.size('4'); // var(--lui-sizes-4)
 ```
 
 ### `spacing`
 
 ```tsx
-const chartPadding = chart.spacing('4'); // var(--leverui-spacing-4)
+const chartPadding = chart.spacing('4'); // var(--lui-spacing-4)
 ```
 
 ## Sorting

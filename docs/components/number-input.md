@@ -156,19 +156,19 @@ Load the package CSS first. Then override the tokens or style the part
 classes. The class names are stable.
 
 ```css
-.leverui-number-input__input {
+.lui-number-input__input {
   border-color: rebeccapurple;
 }
 ```
 
 The root, input, control, triggers, scrubber, label, and value text each have a
-`.leverui-number-input__*` class. The input also has `.leverui-input`, so it
+`.lui-number-input__*` class. The input also has `.lui-input`, so it
 gets the `Input` size, variant, focus, disabled, and invalid styles.
 
 Root `size` and `variant` are responsive.
 
-Stepper buttons: set `--leverui-number-input-stepper-width` or
-`--leverui-number-input-stepper-radius` on the root.
+Stepper buttons: set `--lui-number-input-stepper-width` or
+`--lui-number-input-stepper-radius` on the root.
 
 ## Explorer
 

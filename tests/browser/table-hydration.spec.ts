@@ -27,7 +27,7 @@ async function verifiesTableHydration({ page }: { page: Page }): Promise<void> {
   );
   expect(markup).toContain('<table');
   expect(markup).toContain('<tbody');
-  expect(markup).toContain('leverui-table__cell');
+  expect(markup).toContain('lui-table__cell');
   await page.goto('/iframe.html?id=setup-hydration-host--ready');
   await page.setContent(
     `${generateHydrationScript()}<style>${defaultCss}</style><div id="table-hydration-root">${markup}</div>`,

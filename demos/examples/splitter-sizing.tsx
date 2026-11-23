@@ -32,7 +32,7 @@ export function SplitterControlled(): JSX.Element {
           </Center>
         </Splitter.Panel>
       </Splitter.Root>
-      <Code style={{ color: 'var(--leverui-colors-fg-muted)' }}>
+      <Code style={{ color: 'var(--lui-colors-fg-muted)' }}>
         Panel A: {sizes()[0]?.toFixed(1)}% | Panel B: {sizes()[1]?.toFixed(1)}%
       </Code>
     </Stack>
@@ -102,7 +102,7 @@ export function SplitterMinMaxConstraints(): JSX.Element {
         <Splitter.Panel id="a">
           <Stack align="center" justify="center" gap="2" style={{ width: '100%', height: '100%' }}>
             <Center textStyle="2xl">A</Center>
-            <Code size="sm" style={{ color: 'var(--leverui-colors-fg-muted)' }}>
+            <Code size="sm" style={{ color: 'var(--lui-colors-fg-muted)' }}>
               {sizes()[0]?.toFixed(1)}% (min: 20%, max: 60%)
             </Code>
           </Stack>
@@ -111,7 +111,7 @@ export function SplitterMinMaxConstraints(): JSX.Element {
         <Splitter.Panel id="b">
           <Stack align="center" justify="center" gap="2" style={{ width: '100%', height: '100%' }}>
             <Center textStyle="2xl">B</Center>
-            <Code size="sm" style={{ color: 'var(--leverui-colors-fg-muted)' }}>
+            <Code size="sm" style={{ color: 'var(--lui-colors-fg-muted)' }}>
               {sizes()[1]?.toFixed(1)}% (min: 40%)
             </Code>
           </Stack>

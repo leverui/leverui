@@ -58,9 +58,9 @@ export function CommandEmptyStateExample(): JSX.Element {
                 variant="outline"
                 size="sm"
                 style={{
-                  'min-width': 'var(--leverui-spacing-64)',
+                  'min-width': 'var(--lui-spacing-64)',
                   'justify-content': 'flex-start',
-                  color: 'var(--leverui-colors-fg-muted)',
+                  color: 'var(--lui-colors-fg-muted)',
                 }}
               >
                 <SearchIcon /> Search labels...
@@ -84,10 +84,10 @@ export function CommandEmptyStateExample(): JSX.Element {
                       <Command.Item item={item}>
                         <Box
                           style={{
-                            width: 'var(--leverui-sizes-2\\.5)',
-                            height: 'var(--leverui-sizes-2\\.5)',
-                            'border-radius': 'var(--leverui-radii-full)',
-                            background: `var(--leverui-colors-${item.color.replace('.', '-')})`,
+                            width: 'var(--lui-sizes-2\\.5)',
+                            height: 'var(--lui-sizes-2\\.5)',
+                            'border-radius': 'var(--lui-radii-full)',
+                            background: `var(--lui-colors-${item.color.replace('.', '-')})`,
                           }}
                         />
                         <Command.ItemText highlight>{item.label}</Command.ItemText>

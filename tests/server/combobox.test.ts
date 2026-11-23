@@ -84,8 +84,8 @@ function renderServerCombobox(): string {
 function verifiesServerCombobox(): void {
   const markup = renderServerCombobox();
   expect(markup).toContain('data-combobox-');
-  expect(markup).toContain('leverui-combobox__root');
-  expect(markup).toContain('leverui-combobox__input');
+  expect(markup).toContain('lui-combobox__root');
+  expect(markup).toContain('lui-combobox__input');
   expect(markup).toContain('role="combobox"');
   expect(markup).toContain('name="framework"');
   expect(markup).toContain('value="Solid"');

@@ -1,13 +1,13 @@
 .reactive-scope-alpha {
-  --leverui-colors-blue-500: #123456;
-  --leverui-radii-l2: 0px;
+  --lui-colors-blue-500: #123456;
+  --lui-radii-l2: 0px;
 }
 
 .reactive-scope-beta {
-  --leverui-colors-blue-500: #a95500;
-  --leverui-radii-l2: 16px;
+  --lui-colors-blue-500: #a95500;
+  --lui-radii-l2: 16px;
 }
 
 .reactive-scope-token {
-  background: var(--leverui-colors-blue-500);
+  background: var(--lui-colors-blue-500);
 }

@@ -1,6 +1,6 @@
 import type { BoxProps, ButtonProps } from '@leverui/components';
 
-export const brandColor = '--leverui-colors-brand-500' as const;
+export const brandColor = '--lui-colors-brand-500' as const;
 export const brandSelector = '[data-brand]' as const;
 export const button: ButtonProps = {
   variant: 'solid',
@@ -11,7 +11,7 @@ export const button: ButtonProps = {
 export const invalidButton: ButtonProps = { variant: 'brand', children: 'Save' };
 export const box: BoxProps = {
   class: 'consumer-brand-space',
-  style: { 'margin-left': 'var(--leverui-spacing-1)' },
+  style: { 'margin-left': 'var(--lui-spacing-1)' },
   children: 'Space',
 };
 // @ts-expect-error Native Box props do not accept the unsupported object-style API.

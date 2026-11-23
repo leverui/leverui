@@ -15,7 +15,7 @@ export type BarListPart =
 
 /** Keep every Bar List part targetable by one stable consumer CSS hook. */
 export function barListClass(part: BarListPart, consumer?: ClassValue): string {
-  const base = `leverui-bar-list__${part}`;
+  const base = `lui-bar-list__${part}`;
   const consumerClass = classValueString(consumer);
   return consumerClass ? `${base} ${consumerClass}` : base;
 }

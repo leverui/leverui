@@ -49,7 +49,7 @@ function verifiesServerHeading(): void {
   expect(markup).toMatch(/<h1[^>]*id="server-h1"/);
   expect(markup).toMatch(/<h2[^>]*id="server-h2"/);
   expect(markup).toContain('title="Server title"');
-  expect(markup).toContain('leverui-heading');
+  expect(markup).toContain('lui-heading');
   expect(markup).toContain('Server heading');
   expect(markup).toContain('Smaller heading');
   expect(markup).not.toMatch(/<h[12][^>]*\s(?:size|recipe|unstyled)=/);

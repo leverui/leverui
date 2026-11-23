@@ -1,40 +1,40 @@
-@layer leverui.recipes {
-  .leverui-hoverCard__content:not([data-unstyled]) {
-    --leverui-hover-card-background: var(--leverui-colors-bg-panel);
-    --leverui-hover-card-max-width: var(--leverui-sizes-80);
-    --leverui-hover-card-z-index: var(--leverui-z-index-popover);
-    --leverui-hover-card-padding: var(--leverui-spacing-5);
+@layer lui.recipes {
+  .lui-hoverCard__content:not([data-unstyled]) {
+    --lui-hover-card-background: var(--lui-colors-bg-panel);
+    --lui-hover-card-max-width: var(--lui-sizes-80);
+    --lui-hover-card-z-index: var(--lui-z-index-popover);
+    --lui-hover-card-padding: var(--lui-spacing-5);
     position: relative;
     display: flex;
     flex-direction: column;
-    font-size: var(--leverui-font-sizes-sm);
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
-    background: var(--leverui-hover-card-background);
-    box-shadow: var(--leverui-shadows-lg);
-    max-width: var(--leverui-hover-card-max-width);
-    border-radius: var(--leverui-radii-l3);
-    z-index: calc(var(--leverui-hover-card-z-index) + var(--layer-index, 0));
+    background: var(--lui-hover-card-background);
+    box-shadow: var(--lui-shadows-lg);
+    max-width: var(--lui-hover-card-max-width);
+    border-radius: var(--lui-radii-l3);
+    z-index: calc(var(--lui-hover-card-z-index) + var(--layer-index, 0));
     transform-origin: var(--transform-origin);
     outline: 0;
-    padding: var(--leverui-hover-card-padding);
+    padding: var(--lui-hover-card-padding);
   }
 
-  .leverui-hoverCard__arrow:not([data-unstyled]) {
-    --leverui-hover-card-arrow-size: var(--leverui-sizes-3);
-    --arrow-size: var(--leverui-hover-card-arrow-size);
-    --arrow-background: var(--leverui-hover-card-background);
+  .lui-hoverCard__arrow:not([data-unstyled]) {
+    --lui-hover-card-arrow-size: var(--lui-sizes-3);
+    --arrow-size: var(--lui-hover-card-arrow-size);
+    --arrow-background: var(--lui-hover-card-background);
   }
 
-  .leverui-hoverCard__arrowTip:not([data-unstyled]) {
+  .lui-hoverCard__arrowTip:not([data-unstyled]) {
     border-top-width: 0.5px;
     border-left-width: 0.5px;
   }
 
   /* Zag 2 sets no z-index and isolates the positioner, so the content's z-index
      cannot escape it. Stack the positioner itself, offset by its layer index. */
-  .leverui-hoverCard__positioner {
+  .lui-hoverCard__positioner {
     z-index: calc(
-      var(--leverui-hover-card-z-index, var(--leverui-z-index-popover)) + var(--layer-index, 0)
+      var(--lui-hover-card-z-index, var(--lui-z-index-popover)) + var(--layer-index, 0)
     );
   }
 }

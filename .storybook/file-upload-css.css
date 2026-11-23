@@ -1,5 +1,5 @@
 .file-upload-css-root {
-  --leverui-colors-bg: rgb(241 247 253);
+  --lui-colors-bg: rgb(241 247 253);
 }
 
 .file-upload-css-label {
@@ -10,7 +10,7 @@
   border-color: rgb(21 87 156);
 }
 
-.file-upload-css-root .leverui-file-upload__item {
+.file-upload-css-root .lui-file-upload__item {
   border-color: rgb(21 87 156);
 }
 

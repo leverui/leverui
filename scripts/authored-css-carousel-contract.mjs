@@ -3,11 +3,11 @@ export const carouselContracts = [
   {
     family: 'carousel',
     required: [
-      '.leverui-carousel__root',
-      '.leverui-carousel__item',
-      '.leverui-carousel__control',
-      '.leverui-carousel__indicatorGroup',
-      '.leverui-carousel__indicator',
+      '.lui-carousel__root',
+      '.lui-carousel__item',
+      '.lui-carousel__control',
+      '.lui-carousel__indicatorGroup',
+      '.lui-carousel__indicator',
       "[data-orientation='horizontal']",
       "[data-orientation='vertical']",
       '[data-current]',

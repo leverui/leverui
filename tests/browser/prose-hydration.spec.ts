@@ -26,7 +26,7 @@ async function verifiesProseHydration({ page }: { page: Page }): Promise<void> {
     () => renderProseHydrationTree(server),
   );
   expect(markup).toContain('<article');
-  expect(markup).toContain('leverui-prose');
+  expect(markup).toContain('lui-prose');
   await page.goto('/iframe.html?id=setup-hydration-host--ready');
   await page.setContent(
     `${generateHydrationScript()}<style>${defaultCss}</style><div id="prose-hydration-root">${markup}</div>`,

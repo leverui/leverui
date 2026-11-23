@@ -11,8 +11,8 @@ async function verifiesNativeSwitchComposition({ page }: { page: Page }): Promis
   await expect(control).toHaveJSProperty('tagName', 'DIV');
   await expect(root).toHaveAttribute('data-root-ref', 'true');
   await expect(control).toHaveAttribute('data-control-ref', 'true');
-  await expect(root).toHaveClass(/leverui-switch__root/);
-  await expect(control).toHaveClass(/leverui-switch__control/);
+  await expect(root).toHaveClass(/lui-switch__root/);
+  await expect(control).toHaveClass(/lui-switch__control/);
   await expect(control).toHaveCSS('width', '48px');
   await expect(input).not.toBeChecked();
   await control.click();

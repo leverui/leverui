@@ -143,7 +143,7 @@ function Demo() {
     "Here's an example of a custom filter that matches multiple properties of an item.",
   ),
   customAnimation: copy(
-    'To customize the animation of the combobox, set the `--leverui-combobox-content-open-animation` and `--leverui-combobox-content-closed-animation` variables on the `Combobox.Content` component.',
+    'To customize the animation of the combobox, set the `--lui-combobox-content-open-animation` and `--lui-combobox-content-closed-animation` variables on the `Combobox.Content` component.',
   ),
   openFromPopover: copy(
     'To use the combobox within a dialog or popover component, avoid wrapping the `Combobox.Positioner` within the `Portal`.',

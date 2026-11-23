@@ -1,38 +1,38 @@
 .responsive-object[data-padding='2'],
 .responsive-array {
-  padding: var(--leverui-spacing-2);
+  padding: var(--lui-spacing-2);
 }
 
 .responsive-object[data-padding='4'] {
-  padding: var(--leverui-spacing-4);
+  padding: var(--lui-spacing-4);
 }
 
 .responsive-palette {
-  background: var(--leverui-colors-blue-600);
+  background: var(--lui-colors-blue-600);
 }
 
 @media (min-width: 48rem) {
   .responsive-size {
-    --leverui-colors-color-palette-solid: var(--leverui-colors-red-solid);
-    --leverui-colors-color-palette-contrast: var(--leverui-colors-red-contrast);
-    --leverui-colors-color-palette-fg: var(--leverui-colors-red-fg);
-    --leverui-colors-color-palette-subtle: var(--leverui-colors-red-subtle);
-    --leverui-colors-color-palette-muted: var(--leverui-colors-red-muted);
-    --leverui-colors-color-palette-border: var(--leverui-colors-red-border);
-    --leverui-colors-color-palette-focus-ring: var(--leverui-colors-red-focus-ring);
+    --lui-colors-color-palette-solid: var(--lui-colors-red-solid);
+    --lui-colors-color-palette-contrast: var(--lui-colors-red-contrast);
+    --lui-colors-color-palette-fg: var(--lui-colors-red-fg);
+    --lui-colors-color-palette-subtle: var(--lui-colors-red-subtle);
+    --lui-colors-color-palette-muted: var(--lui-colors-red-muted);
+    --lui-colors-color-palette-border: var(--lui-colors-red-border);
+    --lui-colors-color-palette-focus-ring: var(--lui-colors-red-focus-ring);
   }
 
   .responsive-object[data-padding],
   .responsive-array {
-    padding: var(--leverui-spacing-6);
+    padding: var(--lui-spacing-6);
   }
 
   .responsive-range {
-    padding: var(--leverui-spacing-8);
+    padding: var(--lui-spacing-8);
   }
 
   .responsive-palette {
-    background: var(--leverui-colors-red-600);
+    background: var(--lui-colors-red-600);
   }
 }
 

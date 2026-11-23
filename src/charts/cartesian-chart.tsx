@@ -78,7 +78,7 @@ export function CartesianChart(props: CartesianChartProps): JSX.Element {
       onMeasure={measure}
     >
       <svg
-        class="leverui-cartesian-chart__svg"
+        class="lui-cartesian-chart__svg"
         role="img"
         aria-label={props['aria-label'] ?? 'Cartesian chart'}
         width={width()}

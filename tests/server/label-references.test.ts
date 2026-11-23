@@ -108,14 +108,14 @@ const cases: readonly [string, LabelChoice, Record<string, boolean>][] = [
  */
 function verifiesPopoverReferences(): void {
   for (const [, choice, expected] of cases) {
-    expect(references(renderPopover(choice), 'leverui-popover__content')).toEqual(expected);
+    expect(references(renderPopover(choice), 'lui-popover__content')).toEqual(expected);
   }
 }
 
 /** Dialog content references only the labelling parts it renders, too. */
 function verifiesDialogReferences(): void {
   for (const [, choice, expected] of cases) {
-    expect(references(renderDialog(choice), 'leverui-dialog__content')).toEqual(expected);
+    expect(references(renderDialog(choice), 'lui-dialog__content')).toEqual(expected);
   }
 }
 

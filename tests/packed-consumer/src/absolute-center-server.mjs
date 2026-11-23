@@ -25,7 +25,7 @@ function renderInstalledCenter() {
 const markup = renderInstalledCenter();
 assert.match(markup, /id="packed-server-center"/);
 assert.match(markup, /Installed server center/);
-assert.match(markup, /leverui-absolute-center/);
+assert.match(markup, /lui-absolute-center/);
 assert.match(markup, /data-axis="both"/);
 assert.doesNotMatch(markup, /\saxis=/);
 console.log('Packed AbsoluteCenter server rendering passed.');

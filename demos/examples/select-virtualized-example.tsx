@@ -54,7 +54,7 @@ export function SelectVirtualized(): JSX.Element {
 
   return (
     <Select.Root
-      style={{ 'max-width': 'var(--leverui-sizes-sm)' }}
+      style={{ 'max-width': 'var(--lui-sizes-sm)' }}
       size="sm"
       collection={collection}
       scrollToIndexFn={scrollToIndex}

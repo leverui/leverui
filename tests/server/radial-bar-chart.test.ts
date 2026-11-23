@@ -26,7 +26,7 @@ function renderServerRadialBars(): string {
 /** Keep curved label references unique and present in server markup. */
 function verifiesServerRadialBars(): void {
   const markup = renderServerRadialBars();
-  const ids = [...markup.matchAll(/id="(leverui-radial-label-[^"]+)"/g)].map(
+  const ids = [...markup.matchAll(/id="(lui-radial-label-[^"]+)"/g)].map(
     /** Capture each server-generated SVG path identifier. */
     (match) => match[1],
   );

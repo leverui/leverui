@@ -31,12 +31,12 @@ export function CartesianGradient(props: CartesianGradientProps): JSX.Element {
           fallback={
             <>
               <stop
-                class="leverui-cartesian-chart__gradientStart"
+                class="lui-cartesian-chart__gradientStart"
                 offset="0%"
                 stop-color={props.color}
               />
               <stop
-                class="leverui-cartesian-chart__gradientEnd"
+                class="lui-cartesian-chart__gradientEnd"
                 offset="100%"
                 stop-color={props.color}
               />
@@ -45,8 +45,8 @@ export function CartesianGradient(props: CartesianGradientProps): JSX.Element {
         >
           <stop offset="0%" stop-color={props.color} />
           <stop offset={zeroOffset()} stop-color={props.color} />
-          <stop offset={zeroOffset()} stop-color="var(--leverui-colors-red-solid)" />
-          <stop offset="100%" stop-color="var(--leverui-colors-red-solid)" />
+          <stop offset={zeroOffset()} stop-color="var(--lui-colors-red-solid)" />
+          <stop offset="100%" stop-color="var(--lui-colors-red-solid)" />
         </Show>
       </linearGradient>
     </defs>

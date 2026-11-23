@@ -1,5 +1,5 @@
 .accordion-rich-actions > :not(style, [hidden]) ~ :not(style, [hidden]) {
-  margin-block-start: var(--leverui-spacing-4);
+  margin-block-start: var(--lui-spacing-4);
 }
 
 .accordion-rich-action-host {

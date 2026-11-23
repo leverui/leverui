@@ -22,7 +22,7 @@ function renderInstalledHighlight() {
 }
 
 const markup = renderInstalledHighlight();
-assert.match(markup, /<mark[^>]*class="[^"]*leverui-mark[^"]*provided-mark/);
+assert.match(markup, /<mark[^>]*class="[^"]*lui-mark[^"]*provided-mark/);
 assert.match(markup, /title="Provided match"/);
 assert.match(markup, />Solid<\/mark>/);
 assert.doesNotMatch(markup, /<mark[^>]*\svariant=/);

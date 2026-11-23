@@ -124,26 +124,26 @@ prop on a root wins.
 
 ## Customize with CSS
 
-Classes: `.leverui-code-block__root`, plus `__header`, `__title`, `__control`,
+Classes: `.lui-code-block__root`, plus `__header`, `__title`, `__control`,
 `__content`, `__code`, `__codeText`, `__overlay`, and `__footer`.
 
 Set variables on `:root`, a theme wrapper, or one code block.
 
-| Variable                              | Sets                              |
-| ------------------------------------- | --------------------------------- |
-| `--leverui-code-block-bg`             | Background.                       |
-| `--leverui-code-block-fg`             | Text color.                       |
-| `--leverui-code-block-radius`         | Corner radius.                    |
-| `--leverui-code-block-padding`        | Inner spacing.                    |
-| `--leverui-code-block-max-height`     | Height before the code scrolls.   |
-| `--leverui-code-block-code-font-size` | Code text size.                   |
-| `--leverui-code-block-header-height`  | Header and footer height.         |
-| `--leverui-code-block-highlight-bg`   | Background of a highlighted line. |
+| Variable                          | Sets                              |
+| --------------------------------- | --------------------------------- |
+| `--lui-code-block-bg`             | Background.                       |
+| `--lui-code-block-fg`             | Text color.                       |
+| `--lui-code-block-radius`         | Corner radius.                    |
+| `--lui-code-block-padding`        | Inner spacing.                    |
+| `--lui-code-block-max-height`     | Height before the code scrolls.   |
+| `--lui-code-block-code-font-size` | Code text size.                   |
+| `--lui-code-block-header-height`  | Header and footer height.         |
+| `--lui-code-block-highlight-bg`   | Background of a highlighted line. |
 
 ```css
 .api-sample {
-  --leverui-code-block-radius: 12px;
-  --leverui-code-block-max-height: 480px;
+  --lui-code-block-radius: 12px;
+  --lui-code-block-max-height: 480px;
 }
 ```
 

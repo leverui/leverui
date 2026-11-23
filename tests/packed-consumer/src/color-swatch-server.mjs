@@ -17,6 +17,6 @@ function renderInstalledSwatch() {
 const markup = renderToString(renderInstalledSwatch);
 assert.match(markup, /<span[^>]*id="packed-server-swatch"/);
 assert.match(markup, /data-value="transparent"/);
-assert.match(markup, /leverui-color-swatch/);
+assert.match(markup, /lui-color-swatch/);
 assert.doesNotMatch(markup, /\s(?:items|size|shape)=/);
 console.log('Packed Color Swatch server rendering passed.');

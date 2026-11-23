@@ -5,7 +5,7 @@ import { Image } from '../../src';
 export function ImageBasic(): JSX.Element {
   return (
     <Image
-      style={{ 'border-radius': 'var(--leverui-radii-md)' }}
+      style={{ 'border-radius': 'var(--lui-radii-md)' }}
       src="/demo-images/avatars/avatar-2.webp"
       alt="Oskar Brandt"
     />
@@ -41,7 +41,7 @@ export function ImageWithFit(): JSX.Element {
     <Image
       style={{
         border: '1px solid red',
-        'border-radius': 'var(--leverui-radii-md)',
+        'border-radius': 'var(--lui-radii-md)',
         height: '200px',
         width: '300px',
       }}

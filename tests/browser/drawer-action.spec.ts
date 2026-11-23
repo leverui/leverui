@@ -11,7 +11,7 @@ async function verifiesDrawerActions({ page }: { page: Page }): Promise<void> {
   await trigger.click();
   await expect(content).toBeVisible();
   await expect(page.getByTestId('action-drawer-prevented')).toHaveClass(
-    /leverui-drawer__actionTrigger/,
+    /lui-drawer__actionTrigger/,
   );
   // The prevented action is a Lever-owned button, not a primitive drawer part.
   await expect(page.getByTestId('action-drawer-prevented')).not.toHaveAttribute(

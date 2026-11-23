@@ -16,7 +16,7 @@ import { type JSX } from '@solidjs/web';
 import { HelperIcon, PopupSurface } from './shared';
 
 const day = DatePicker.parseDate('2026-03-11');
-const muted = { color: 'var(--leverui-colors-fg-muted)' };
+const muted = { color: 'var(--lui-colors-fg-muted)' };
 
 /** A date typed in as month, day and year. */
 function DateInputDemo(): JSX.Element {
@@ -105,7 +105,7 @@ function DrawerDemo(): JSX.Element {
     <HStack
       justify="flex-end"
       align="stretch"
-      style={{ width: '100%', height: '100%', background: 'var(--leverui-colors-gray-muted)' }}
+      style={{ width: '100%', height: '100%', background: 'var(--lui-colors-gray-muted)' }}
     >
       <PopupSurface width="60%">
         <Text textStyle="label">Filters</Text>

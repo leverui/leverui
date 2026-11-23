@@ -83,7 +83,7 @@ export function BarChart(props: BarChartProps): JSX.Element {
           if (typeof external === 'function') external(element);
         }
       }
-      class={['leverui-bar-chart', nativeLocal.class, nativeLocal.className]}
+      class={['lui-bar-chart', nativeLocal.class, nativeLocal.className]}
       style={nativeLocal.style}
       data-orientation={props.orientation ?? 'vertical'}
       data-legend-placement={props.showLegend ? (props.legendPlacement ?? 'bottom') : undefined}
@@ -101,7 +101,7 @@ export function BarChart(props: BarChartProps): JSX.Element {
       onKeyDown={keyDown}
     >
       <svg
-        class="leverui-bar-chart__svg"
+        class="lui-bar-chart__svg"
         role="img"
         aria-label={props['aria-label'] ?? 'Bar chart'}
         width={plot().width}

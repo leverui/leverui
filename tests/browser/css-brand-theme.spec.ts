@@ -5,7 +5,7 @@ test.setTimeout(60_000);
 
 /** Switch the document mode while the branded section stays explicitly light. */
 function setRootDarkMode(): void {
-  document.documentElement.setAttribute('data-leverui-color-mode', 'dark');
+  document.documentElement.setAttribute('data-lui-color-mode', 'dark');
 }
 
 /** Open a CSS theme story after Storybook has rendered its component tree. */
@@ -18,7 +18,7 @@ async function openThemeStory(page: Page, story: 'brand' | 'default'): Promise<v
 async function verifiesBrandTheme({ page }: { page: Page }): Promise<void> {
   await openThemeStory(page, 'brand');
 
-  await expect(page.getByTestId('theme-panel')).toHaveAttribute('data-leverui-color-mode', 'light');
+  await expect(page.getByTestId('theme-panel')).toHaveAttribute('data-lui-color-mode', 'light');
   await expect(page.getByTestId('theme-panel')).toHaveCSS('background-color', 'rgb(245, 240, 255)');
   await expect(page.getByTestId('theme-content')).toHaveCSS('color', 'rgb(40, 28, 66)');
   await expect(page.getByTestId('theme-content')).toHaveCSS('padding', '16px');
@@ -35,10 +35,10 @@ async function verifiesBrandTheme({ page }: { page: Page }): Promise<void> {
     'rgb(122, 105, 219)',
   );
   await expect(page.getByTestId('nested-button')).toHaveCSS('background-color', 'rgb(98, 84, 199)');
-  await page.addStyleTag({ content: ':root { --leverui-spacing-4: 24px; }' });
+  await page.addStyleTag({ content: ':root { --lui-spacing-4: 24px; }' });
   await expect(page.getByTestId('theme-content')).toHaveCSS('padding', '24px');
   await expect(page.getByTestId('inherited-theme')).not.toHaveAttribute(
-    'data-leverui-color-mode',
+    'data-lui-color-mode',
     'dark',
   );
 

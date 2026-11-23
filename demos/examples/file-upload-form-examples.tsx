@@ -94,7 +94,7 @@ export function FileUploadInputClear(): JSX.Element {
                   variant="plain"
                   aria-label="Clear file"
                   style={{
-                    'margin-inline-end': 'calc(var(--leverui-spacing-1) * -1)',
+                    'margin-inline-end': 'calc(var(--lui-spacing-1) * -1)',
                     'pointer-events': 'auto',
                   }}
                 />

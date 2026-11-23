@@ -57,7 +57,7 @@ export function ChatCard(): JSX.Element {
     requestAnimationFrame(
       /** Wait for the new message to render. */
       () => {
-        const viewport = thread?.querySelector('.leverui-scroll-area__viewport');
+        const viewport = thread?.querySelector('.lui-scroll-area__viewport');
         viewport?.scrollTo({ top: viewport.scrollHeight, behavior: 'smooth' });
       },
     );

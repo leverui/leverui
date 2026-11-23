@@ -8,5 +8,5 @@ export function spacingCssValue(value: string | number): string {
   const raw = String(value);
   if (cssLength.test(raw) || cssKeyword.test(raw) || !spacingKey.test(raw)) return raw;
   const key = raw.replace(/[^a-zA-Z0-9_-]/g, '\\$&');
-  return raw === '0' ? `var(--leverui-spacing-${key}, 0)` : `var(--leverui-spacing-${key})`;
+  return raw === '0' ? `var(--lui-spacing-${key}, 0)` : `var(--lui-spacing-${key})`;
 }

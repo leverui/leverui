@@ -36,9 +36,9 @@ function renderServerField(): string {
 /** Verify server markup retains native field state and scoped style hooks. */
 function verifiesServerField(): void {
   const markup = renderServerField();
-  expect(markup).toContain('leverui-field__root');
-  expect(markup).toContain('leverui-field__label');
-  expect(markup).toContain('leverui-field__errorText');
+  expect(markup).toContain('lui-field__root');
+  expect(markup).toContain('lui-field__label');
+  expect(markup).toContain('lui-field__errorText');
   expect(markup).toContain('data-orientation="vertical"');
   expect(markup).toContain('for="server-email"');
   expect(markup).toContain('aria-invalid="true"');
@@ -65,7 +65,7 @@ function verifiesProviderFreeField(): void {
         },
       }),
   );
-  expect(markup).toContain('leverui-field__root');
+  expect(markup).toContain('lui-field__root');
   expect(markup).toContain('for="provider-free-field"');
 }
 

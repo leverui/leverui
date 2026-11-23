@@ -42,8 +42,8 @@ function verifiesPublishedCharts(): void {
   const markup = renderCharts();
   expect(markup).toContain('aria-label="Published radar chart"');
   expect(markup).toContain('aria-label="Published scatter chart"');
-  expect(markup).toContain('leverui-radar-chart__grid');
-  expect(markup).toContain('leverui-scatter-chart__axes');
+  expect(markup).toContain('lui-radar-chart__grid');
+  expect(markup).toContain('lui-scatter-chart__axes');
   expect(markup).toContain('consumer-radar');
   expect(markup).toContain('consumer-scatter');
 }

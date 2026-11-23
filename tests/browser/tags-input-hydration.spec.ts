@@ -24,7 +24,7 @@ async function verifiesTagsInputHydration({ page }: { page: Page }): Promise<voi
     `${generateHydrationScript()}<style>${defaultCss}</style><div id="tags-input-hydration-root">${markup}</div>`,
   );
   const input = page.getByPlaceholder('Add framework');
-  const tags = page.locator('#tags-input-hydration-root .leverui-tags-input__item');
+  const tags = page.locator('#tags-input-hydration-root .lui-tags-input__item');
   await expect(tags).toHaveCount(2);
   const originalInputId = await input.getAttribute('id');
   const originalLabelFor = await page.getByText('Frameworks', { exact: true }).getAttribute('for');

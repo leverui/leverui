@@ -36,7 +36,7 @@ async function verifiesCircleStates({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-progress-circle--custom-thickness');
   await expect(page.locator('#storybook-root circle').first()).toHaveCSS('stroke-width', '2px');
   await page.goto('/iframe.html?id=components-progress-circle--value-text');
-  await expect(page.locator('#storybook-root .leverui-progress-circle__valueText')).toHaveText([
+  await expect(page.locator('#storybook-root .lui-progress-circle__valueText')).toHaveText([
     '5%',
     '5%',
     '5%',

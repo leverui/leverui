@@ -38,7 +38,7 @@ export function BarChartNoGap(): JSX.Element {
     <BarChart
       data={monthlySales}
       xKey="month"
-      series={[{ name: 'sales', color: 'teal.solid', stroke: 'var(--leverui-colors-bg)' }]}
+      series={[{ name: 'sales', color: 'teal.solid', stroke: 'var(--lui-colors-bg)' }]}
       xTickFormatter={shortMonth}
       categoryGap={0}
       yDomain={[0, 100000]}

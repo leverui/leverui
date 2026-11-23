@@ -82,7 +82,7 @@ export function RadialBarChart(props: RadialBarChartProps): JSX.Element {
     <div
       {...native}
       ref={props.ref}
-      class={['leverui-radial-bar-chart', props.class, props.className]}
+      class={['lui-radial-bar-chart', props.class, props.className]}
       data-label={props.label ? '' : undefined}
       data-legend={props.legend ? '' : undefined}
       role={interactive() ? 'group' : props.role}
@@ -119,11 +119,11 @@ export function RadialBarChart(props: RadialBarChartProps): JSX.Element {
         /** Preserve consumer keyboard handling. */ (event) =>
           runRadialEvent(event, keyDown, props.onKeyDown)
       }
-      style={chartRootStyle('--leverui-private-radial-bar-size', props.size, props.style)}
+      style={chartRootStyle('--lui-private-radial-bar-size', props.size, props.style)}
     >
       <svg
         ref={svgRef}
-        class="leverui-radial-bar-chart__svg"
+        class="lui-radial-bar-chart__svg"
         role="img"
         aria-label={props['aria-label'] ?? 'Radial bar chart'}
         width={width()}
@@ -134,10 +134,10 @@ export function RadialBarChart(props: RadialBarChartProps): JSX.Element {
           <For each={entries()}>
             {/** Draw the background track and value arc for one concentric ring. */}
             {(entry) => (
-              <g class="leverui-radial-bar-chart__ring" data-radial-bar={entry.datum.name}>
-                <path class="leverui-radial-bar-chart__track" d={entry.background} />
+              <g class="lui-radial-bar-chart__ring" data-radial-bar={entry.datum.name}>
+                <path class="lui-radial-bar-chart__track" d={entry.background} />
                 <path
-                  class="leverui-radial-bar-chart__value"
+                  class="lui-radial-bar-chart__value"
                   d={entry.foreground}
                   fill={chartColor(entry.datum.color, entry.datum.color)}
                   onPointerEnter={
@@ -148,17 +148,17 @@ export function RadialBarChart(props: RadialBarChartProps): JSX.Element {
                 />
                 <Show when={props.label}>
                   <text
-                    class="leverui-radial-bar-chart__label"
+                    class="lui-radial-bar-chart__label"
                     dominant-baseline="central"
                     pointer-events="none"
                   >
                     <defs>
                       <path
-                        id={`leverui-radial-label-${labelId}-${entry.index}`}
+                        id={`lui-radial-label-${labelId}-${entry.index}`}
                         d={radialBarLabelPath(width() / 2, entry.radius)}
                       />
                     </defs>
-                    <textPath href={`#leverui-radial-label-${labelId}-${entry.index}`}>
+                    <textPath href={`#lui-radial-label-${labelId}-${entry.index}`}>
                       {entry.datum.value}
                     </textPath>
                   </text>

@@ -27,7 +27,7 @@ async function verifiesStrongHydration({ page }: { page: Page }): Promise<void> 
   );
   expect(markup).toContain('<strong');
   expect(markup).toContain('title="Hydrated importance"');
-  expect(markup).toContain('leverui-strong');
+  expect(markup).toContain('lui-strong');
   await page.goto('/iframe.html?id=setup-hydration-host--ready');
   await page.setContent(
     `${generateHydrationScript()}<style>${defaultCss}</style><style>.strong-hydrated-plain{font-weight:400}</style><div id="strong-hydration-root">${markup}</div>`,
@@ -66,9 +66,9 @@ async function verifiesStrongWithoutScripts({ page }: { page: Page }): Promise<v
   await page.setContent(`<style>${defaultCss}</style>${markup}`);
   const strong = page.locator('#hydrated-strong');
   await expect(strong).toHaveJSProperty('tagName', 'STRONG');
-  await expect(strong).toHaveClass(/leverui-strong/);
+  await expect(strong).toHaveClass(/lui-strong/);
   await expect(strong).toHaveCSS('font-weight', '600');
-  await page.addStyleTag({ content: '.leverui-strong{font-weight:300}' });
+  await page.addStyleTag({ content: '.lui-strong{font-weight:300}' });
   await expect(strong).toHaveCSS('font-weight', '300');
 }
 

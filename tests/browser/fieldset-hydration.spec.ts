@@ -25,7 +25,7 @@ async function verifiesFieldsetHydration({ page }: { page: Page }): Promise<void
   );
   await page.goto('/iframe.html?id=setup-hydration-host--ready');
   await page.setContent(
-    `${generateHydrationScript()}<style data-leverui-default>${defaultCss}</style><div id="fieldset-hydration-root">${markup}</div>`,
+    `${generateHydrationScript()}<style data-lui-default>${defaultCss}</style><div id="fieldset-hydration-root">${markup}</div>`,
   );
   const group = page.getByTestId('hydrated-fieldset');
   const input = page.getByTestId('hydrated-fieldset-input');
@@ -46,7 +46,7 @@ async function verifiesFieldsetHydration({ page }: { page: Page }): Promise<void
   );
   await input.fill('typed before hydration');
   await expect(group).toHaveCSS('display', 'flex');
-  await expect(page.locator('style[data-leverui-default]')).toHaveCount(1);
+  await expect(page.locator('style[data-lui-default]')).toHaveCount(1);
   const errors: string[] = [];
 
   /** Capture hydration and interaction errors in Chromium. */
@@ -66,7 +66,7 @@ async function verifiesFieldsetHydration({ page }: { page: Page }): Promise<void
     'Group help',
   );
   await expect(group).toHaveCSS('display', 'flex');
-  await expect(page.locator('style[data-leverui-default]')).toHaveCount(1);
+  await expect(page.locator('style[data-lui-default]')).toHaveCount(1);
   await page.getByTestId('hydrated-fieldset-toggle').click();
   await expect(group).toHaveAttribute('data-invalid', '');
   await expect(group).toHaveAttribute('aria-describedby', /error-text/);
@@ -77,7 +77,7 @@ async function verifiesFieldsetHydration({ page }: { page: Page }): Promise<void
   await expect(page.getByText('Group error')).toHaveCount(0);
   await expect(group).not.toHaveAttribute('aria-describedby', /error-text/);
   await expect(group).toHaveAttribute('aria-describedby', /helper-text/);
-  await expect(page.locator('style[data-leverui-default]')).toHaveCount(1);
+  await expect(page.locator('style[data-lui-default]')).toHaveCount(1);
   expect(errors).toEqual([]);
 }
 

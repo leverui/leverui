@@ -21,10 +21,10 @@ function renderInstalledBleed() {
 const markup = renderInstalledBleed();
 assert.match(markup, /id="packed-server-bleed"/);
 assert.match(markup, /Installed server bleed/);
-assert.match(markup, /leverui-bleed/);
+assert.match(markup, /lui-bleed/);
 assert.match(markup, /position:fixed/);
-assert.match(markup, /--leverui-private-bleed-inline-start-base:/);
-assert.match(markup, /--leverui-private-bleed-block-end-base:/);
+assert.match(markup, /--lui-private-bleed-inline-start-base:/);
+assert.match(markup, /--lui-private-bleed-block-end-base:/);
 assert.doesNotMatch(markup, /margin-inline-start:/);
 assert.doesNotMatch(markup, /\s(?:inline|blockEnd|css)=/);
 console.log('Packed Bleed server rendering passed.');

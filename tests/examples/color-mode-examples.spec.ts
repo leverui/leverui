@@ -13,44 +13,44 @@ async function verifiesEveryColorModeExample({ page }: { page: Page }): Promise<
 /** Check that the basic and icon controls toggle the root mode. */
 async function verifiesColorModeToggles({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-color-mode--basic');
-  await expect(page.locator('html')).toHaveAttribute('data-leverui-color-mode', 'light');
+  await expect(page.locator('html')).toHaveAttribute('data-lui-color-mode', 'light');
   await page.getByRole('button', { name: 'Toggle mode' }).click();
-  await expect(page.locator('html')).toHaveAttribute('data-leverui-color-mode', 'dark');
+  await expect(page.locator('html')).toHaveAttribute('data-lui-color-mode', 'dark');
 
   await page.goto('/iframe.html?id=components-color-mode--icon-button');
   const button = page.getByRole('button', { name: 'Toggle color mode' });
   const lightIcon = await button.locator('svg').innerHTML();
   await expect(button.locator('svg')).toHaveCSS('width', '20px');
   await button.click();
-  await expect(page.locator('html')).toHaveAttribute('data-leverui-color-mode', 'dark');
+  await expect(page.locator('html')).toHaveAttribute('data-lui-color-mode', 'dark');
   await expect(button.locator('svg')).not.toHaveJSProperty('innerHTML', lightIcon);
 }
 
 /** Keep forced scopes stable while the parent mode changes. */
 async function verifiesForcedScopes({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-color-mode--forced');
-  const scopes = page.locator('#storybook-root [data-leverui-theme]');
+  const scopes = page.locator('#storybook-root [data-lui-theme]');
   await expect(scopes).toHaveCount(2);
-  await expect(scopes.nth(0)).toHaveAttribute('data-leverui-color-mode', 'light');
-  await expect(scopes.nth(1)).toHaveAttribute('data-leverui-color-mode', 'dark');
+  await expect(scopes.nth(0)).toHaveAttribute('data-lui-color-mode', 'light');
+  await expect(scopes.nth(1)).toHaveAttribute('data-lui-color-mode', 'dark');
   await page.getByRole('button', { name: 'Toggle mode' }).click();
-  await expect(page.locator('html')).toHaveAttribute('data-leverui-color-mode', 'dark');
-  await expect(scopes.nth(0)).toHaveAttribute('data-leverui-color-mode', 'light');
-  await expect(scopes.nth(1)).toHaveAttribute('data-leverui-color-mode', 'dark');
+  await expect(page.locator('html')).toHaveAttribute('data-lui-color-mode', 'dark');
+  await expect(scopes.nth(0)).toHaveAttribute('data-lui-color-mode', 'light');
+  await expect(scopes.nth(1)).toHaveAttribute('data-lui-color-mode', 'dark');
 }
 
 /** Change the value box colors and fallback icon on mode toggles. */
 async function verifiesModeValues({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-color-mode--value');
   const box = page.getByText('This box changes color when you switch the color mode.');
-  await expect(page.locator('html')).toHaveAttribute('data-leverui-color-mode', 'light');
+  await expect(page.locator('html')).toHaveAttribute('data-lui-color-mode', 'light');
   await expect(box).toHaveCSS('padding', '8px');
   const initialBackground = await box.evaluate(
     /** Read the browser-resolved color instead of an implementation class. */
     (element) => getComputedStyle(element).backgroundColor,
   );
   await page.getByRole('button', { name: 'Toggle mode' }).click();
-  await expect(page.locator('html')).toHaveAttribute('data-leverui-color-mode', 'dark');
+  await expect(page.locator('html')).toHaveAttribute('data-lui-color-mode', 'dark');
   await expect
     .poll(
       /** Observe the new resolved background after the Solid signal updates. */
@@ -61,12 +61,12 @@ async function verifiesModeValues({ page }: { page: Page }): Promise<void> {
         ),
     )
     .not.toBe(initialBackground);
-  await page.addStyleTag({ content: ':root { --leverui-spacing-2: 12px; }' });
+  await page.addStyleTag({ content: ':root { --lui-spacing-2: 12px; }' });
   await expect(box).toHaveCSS('padding', '12px');
 
   await page.goto('/iframe.html?id=components-color-mode--value-fallback');
   await page.getByRole('button', { name: 'Toggle color mode' }).click();
-  await expect(page.locator('html')).toHaveAttribute('data-leverui-color-mode', 'dark');
+  await expect(page.locator('html')).toHaveAttribute('data-lui-color-mode', 'dark');
 }
 
 test('all Color Mode examples render', verifiesEveryColorModeExample);

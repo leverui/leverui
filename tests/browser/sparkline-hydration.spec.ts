@@ -44,7 +44,7 @@ async function verifiesSparklineHydration({ page }: { page: Page }): Promise<voi
   await expect(page.locator('#sparkline-hydration-root')).toHaveAttribute('data-hydrated', 'true');
   await expect(chart).toHaveAttribute('data-server-element', 'true');
   await expect(chart).toHaveAttribute('viewBox', '0 0 192 48');
-  await expect(chart.locator('.leverui-sparkline__gradient-start')).toHaveCSS('stop-opacity', '1');
+  await expect(chart.locator('.lui-sparkline__gradient-start')).toHaveCSS('stop-opacity', '1');
   expect(errors).toEqual([]);
 }
 
@@ -65,11 +65,8 @@ async function verifiesStaticSparklineCss({ browser }: { browser: Browser }): Pr
     await page.setContent(`<style>${defaultCss}</style><div style="width:192px">${markup}</div>`);
     const chart = page.getByRole('img', { name: 'Hydrated Sparkline' });
     await expect(chart).toHaveCSS('width', '192px');
-    await expect(chart.locator('.leverui-sparkline__line')).toHaveCSS('stroke-width', '2px');
-    await expect(chart.locator('.leverui-sparkline__gradient-start')).toHaveCSS(
-      'stop-opacity',
-      '1',
-    );
+    await expect(chart.locator('.lui-sparkline__line')).toHaveCSS('stroke-width', '2px');
+    await expect(chart.locator('.lui-sparkline__gradient-start')).toHaveCSS('stop-opacity', '1');
   } finally {
     await context.close();
   }

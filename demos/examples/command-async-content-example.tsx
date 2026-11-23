@@ -41,9 +41,9 @@ export function CommandAsyncContentExample(): JSX.Element {
                 variant="outline"
                 size="sm"
                 style={{
-                  'min-width': 'var(--leverui-spacing-64)',
+                  'min-width': 'var(--lui-spacing-64)',
                   'justify-content': 'flex-start',
-                  color: 'var(--leverui-colors-fg-muted)',
+                  color: 'var(--lui-colors-fg-muted)',
                 }}
               >
                 <UsersIcon /> Search people...
@@ -60,7 +60,7 @@ export function CommandAsyncContentExample(): JSX.Element {
                 <Command.Indicator />
                 <Command.Input placeholder="Search by name, e.g. Priya or Marcus..." />
                 <Show when={command().loading}>
-                  <Spinner size="sm" style={{ color: 'var(--leverui-colors-fg-muted)' }} />
+                  <Spinner size="sm" style={{ color: 'var(--lui-colors-fg-muted)' }} />
                 </Show>
               </Command.Control>
               <Command.List>
@@ -81,7 +81,7 @@ export function CommandAsyncContentExample(): JSX.Element {
                           textStyle="xs"
                           style={{
                             'margin-inline-start': 'auto',
-                            color: 'var(--leverui-colors-fg-muted)',
+                            color: 'var(--lui-colors-fg-muted)',
                           }}
                         >
                           {user.title}
@@ -102,10 +102,10 @@ export function CommandAsyncContentExample(): JSX.Element {
                     role="alert"
                     textStyle="sm"
                     style={{
-                      'padding-inline': 'var(--leverui-spacing-3)',
-                      'padding-block': 'var(--leverui-spacing-6)',
+                      'padding-inline': 'var(--lui-spacing-3)',
+                      'padding-block': 'var(--lui-spacing-6)',
                       'text-align': 'center',
-                      color: 'var(--leverui-colors-fg-muted)',
+                      color: 'var(--lui-colors-fg-muted)',
                     }}
                   >
                     Search failed.{' '}

@@ -70,7 +70,7 @@ function renderTagsInputRoot(input: RootInput): JSX.Element {
         return composeRecipeClassNames('tags-input__root', undefined, local.class, local.className);
       },
       /** Bind the requested semantic palette to every visible part. */
-      get 'data-leverui-color-palette'() {
+      get 'data-lui-color-palette'() {
         return local.colorPalette;
       },
       /** Suppress default presentation while retaining machine semantics. */

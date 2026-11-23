@@ -38,7 +38,7 @@ function renderPackedColorPicker() {
 }
 
 const markup = renderPackedColorPicker();
-assert.match(markup, /leverui-color-picker__root/);
-assert.match(markup, /leverui-color-picker__trigger/);
+assert.match(markup, /lui-color-picker__root/);
+assert.match(markup, /lui-color-picker__trigger/);
 assert.match(markup, /Packed color/);
 assert.match(markup, /#EB5E41/);

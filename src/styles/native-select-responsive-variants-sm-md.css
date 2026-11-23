@@ -1,68 +1,68 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 480px) {
-    .leverui-native-select__root:not([data-unstyled])[data-variant-sm='outline'] {
-      --leverui-private-native-select-background: transparent;
-      --leverui-private-native-select-border-width: 1px;
-      --leverui-private-native-select-border-color: var(--leverui-colors-border);
-      --leverui-private-native-select-color: inherit;
-      --leverui-private-native-select-focus-width: var(--focus-ring-width, 1px);
+    .lui-native-select__root:not([data-unstyled])[data-variant-sm='outline'] {
+      --lui-private-native-select-background: transparent;
+      --lui-private-native-select-border-width: 1px;
+      --lui-private-native-select-border-color: var(--lui-colors-border);
+      --lui-private-native-select-color: inherit;
+      --lui-private-native-select-focus-width: var(--focus-ring-width, 1px);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-variant-sm='subtle'] {
-      --leverui-private-native-select-background: var(--leverui-colors-bg-muted);
-      --leverui-private-native-select-border-width: 1px;
-      --leverui-private-native-select-border-color: transparent;
-      --leverui-private-native-select-color: inherit;
-      --leverui-private-native-select-focus-width: var(--focus-ring-width, 1px);
+    .lui-native-select__root:not([data-unstyled])[data-variant-sm='subtle'] {
+      --lui-private-native-select-background: var(--lui-colors-bg-muted);
+      --lui-private-native-select-border-width: 1px;
+      --lui-private-native-select-border-color: transparent;
+      --lui-private-native-select-color: inherit;
+      --lui-private-native-select-focus-width: var(--focus-ring-width, 1px);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-variant-sm='plain'] {
-      --leverui-private-native-select-background: transparent;
-      --leverui-private-native-select-border-width: 0;
-      --leverui-private-native-select-border-color: var(--leverui-colors-border);
-      --leverui-private-native-select-color: var(--leverui-colors-fg);
-      --leverui-private-native-select-focus-width: 2px;
+    .lui-native-select__root:not([data-unstyled])[data-variant-sm='plain'] {
+      --lui-private-native-select-background: transparent;
+      --lui-private-native-select-border-width: 0;
+      --lui-private-native-select-border-color: var(--lui-colors-border);
+      --lui-private-native-select-color: var(--lui-colors-fg);
+      --lui-private-native-select-focus-width: 2px;
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-variant-sm='ghost'] {
-      --leverui-private-native-select-background: transparent;
-      --leverui-private-native-select-border-width: 0;
-      --leverui-private-native-select-border-color: var(--leverui-colors-border);
-      --leverui-private-native-select-color: inherit;
-      --leverui-private-native-select-focus-width: var(--focus-ring-width, 1px);
+    .lui-native-select__root:not([data-unstyled])[data-variant-sm='ghost'] {
+      --lui-private-native-select-background: transparent;
+      --lui-private-native-select-border-width: 0;
+      --lui-private-native-select-border-color: var(--lui-colors-border);
+      --lui-private-native-select-color: inherit;
+      --lui-private-native-select-focus-width: var(--focus-ring-width, 1px);
     }
   }
   @media (min-width: 768px) {
-    .leverui-native-select__root:not([data-unstyled])[data-variant-md='outline'] {
-      --leverui-private-native-select-background: transparent;
-      --leverui-private-native-select-border-width: 1px;
-      --leverui-private-native-select-border-color: var(--leverui-colors-border);
-      --leverui-private-native-select-color: inherit;
-      --leverui-private-native-select-focus-width: var(--focus-ring-width, 1px);
+    .lui-native-select__root:not([data-unstyled])[data-variant-md='outline'] {
+      --lui-private-native-select-background: transparent;
+      --lui-private-native-select-border-width: 1px;
+      --lui-private-native-select-border-color: var(--lui-colors-border);
+      --lui-private-native-select-color: inherit;
+      --lui-private-native-select-focus-width: var(--focus-ring-width, 1px);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-variant-md='subtle'] {
-      --leverui-private-native-select-background: var(--leverui-colors-bg-muted);
-      --leverui-private-native-select-border-width: 1px;
-      --leverui-private-native-select-border-color: transparent;
-      --leverui-private-native-select-color: inherit;
-      --leverui-private-native-select-focus-width: var(--focus-ring-width, 1px);
+    .lui-native-select__root:not([data-unstyled])[data-variant-md='subtle'] {
+      --lui-private-native-select-background: var(--lui-colors-bg-muted);
+      --lui-private-native-select-border-width: 1px;
+      --lui-private-native-select-border-color: transparent;
+      --lui-private-native-select-color: inherit;
+      --lui-private-native-select-focus-width: var(--focus-ring-width, 1px);
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-variant-md='plain'] {
-      --leverui-private-native-select-background: transparent;
-      --leverui-private-native-select-border-width: 0;
-      --leverui-private-native-select-border-color: var(--leverui-colors-border);
-      --leverui-private-native-select-color: var(--leverui-colors-fg);
-      --leverui-private-native-select-focus-width: 2px;
+    .lui-native-select__root:not([data-unstyled])[data-variant-md='plain'] {
+      --lui-private-native-select-background: transparent;
+      --lui-private-native-select-border-width: 0;
+      --lui-private-native-select-border-color: var(--lui-colors-border);
+      --lui-private-native-select-color: var(--lui-colors-fg);
+      --lui-private-native-select-focus-width: 2px;
     }
 
-    .leverui-native-select__root:not([data-unstyled])[data-variant-md='ghost'] {
-      --leverui-private-native-select-background: transparent;
-      --leverui-private-native-select-border-width: 0;
-      --leverui-private-native-select-border-color: var(--leverui-colors-border);
-      --leverui-private-native-select-color: inherit;
-      --leverui-private-native-select-focus-width: var(--focus-ring-width, 1px);
+    .lui-native-select__root:not([data-unstyled])[data-variant-md='ghost'] {
+      --lui-private-native-select-background: transparent;
+      --lui-private-native-select-border-width: 0;
+      --lui-private-native-select-border-color: var(--lui-colors-border);
+      --lui-private-native-select-color: inherit;
+      --lui-private-native-select-focus-width: var(--focus-ring-width, 1px);
     }
   }
 }

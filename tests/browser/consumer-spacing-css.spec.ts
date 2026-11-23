@@ -61,7 +61,7 @@ async function verifiesConsumerSpacingHydration({ page }: { page: Page }): Promi
   await expect(box).toHaveClass(/consumer-spacing-roomy/);
   await expect(box).toHaveCSS('margin-left', '12px');
   await expect(box).toHaveAttribute('data-before-hydration', 'true');
-  await page.addStyleTag({ content: ':root { --leverui-spacing-3: 14px; }' });
+  await page.addStyleTag({ content: ':root { --lui-spacing-3: 14px; }' });
   await expect(box).toHaveCSS('margin-left', '14px');
   expect(errors).toEqual([]);
 }

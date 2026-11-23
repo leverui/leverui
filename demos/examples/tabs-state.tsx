@@ -79,7 +79,7 @@ export function TabsDynamicAdd(): JSX.Element {
                     as="span"
                     role="button"
                     size="2xs"
-                    style={{ 'margin-inline-end': 'calc(-1 * var(--leverui-spacing-2))' }}
+                    style={{ 'margin-inline-end': 'calc(-1 * var(--lui-spacing-2))' }}
                     onClick={remove}
                   />
                 </Tabs.Trigger>
@@ -88,7 +88,7 @@ export function TabsDynamicAdd(): JSX.Element {
           }
         </For>
         <Button
-          style={{ 'align-self': 'center', 'margin-inline-start': 'var(--leverui-spacing-2)' }}
+          style={{ 'align-self': 'center', 'margin-inline-start': 'var(--lui-spacing-2)' }}
           size="2xs"
           variant="ghost"
           onClick={addTab}
@@ -102,7 +102,7 @@ export function TabsDynamicAdd(): JSX.Element {
             /** Render one panel for each dynamic tab. */
             (item) => (
               <Tabs.Content value={item.id}>
-                <Heading size="xl" style={{ 'margin-block': 'var(--leverui-spacing-6)' }}>
+                <Heading size="xl" style={{ 'margin-block': 'var(--lui-spacing-6)' }}>
                   {item.content} {item.id}
                 </Heading>
                 <Text>

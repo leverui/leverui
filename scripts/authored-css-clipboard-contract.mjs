@@ -3,8 +3,8 @@ export const clipboardContracts = [
   {
     family: 'clipboard',
     required: [
-      '.leverui-clipboard__root',
-      '.leverui-clipboard__indicator',
+      '.lui-clipboard__root',
+      '.lui-clipboard__indicator',
       ':not([data-unstyled])',
       'width: 1em',
       'height: 1em',

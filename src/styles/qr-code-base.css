@@ -1,28 +1,28 @@
-@layer leverui.recipes {
-  .leverui-qr-code__root:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-qr-code__root:not([data-unstyled]) {
     position: relative;
     width: fit-content;
-    --leverui-qr-code-size: var(--leverui-private-qr-code-size);
-    --leverui-qr-code-overlay-size: calc(var(--leverui-qr-code-size) / 3);
+    --lui-qr-code-size: var(--lui-private-qr-code-size);
+    --lui-qr-code-overlay-size: calc(var(--lui-qr-code-size) / 3);
   }
 
-  .leverui-qr-code__frame:not([data-unstyled]) {
-    width: var(--leverui-qr-code-size);
-    height: var(--leverui-qr-code-size);
+  .lui-qr-code__frame:not([data-unstyled]) {
+    width: var(--lui-qr-code-size);
+    height: var(--lui-qr-code-size);
   }
 
-  .leverui-qr-code__frame:not([data-unstyled], [fill]) {
+  .lui-qr-code__frame:not([data-unstyled], [fill]) {
     fill: currentColor;
   }
 
-  .leverui-qr-code__overlay:not([data-unstyled]) {
+  .lui-qr-code__overlay:not([data-unstyled]) {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: var(--leverui-qr-code-overlay-size);
-    height: var(--leverui-qr-code-overlay-size);
-    padding: var(--leverui-spacing-1);
-    background: var(--leverui-colors-bg);
-    border-radius: var(--leverui-radii-l1);
+    width: var(--lui-qr-code-overlay-size);
+    height: var(--lui-qr-code-overlay-size);
+    padding: var(--lui-spacing-1);
+    background: var(--lui-colors-bg);
+    border-radius: var(--lui-radii-l1);
   }
 }

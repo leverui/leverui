@@ -52,7 +52,7 @@ function verifiesSeparatorChildComposition(): void {
   expect(separator.tagName).toBe('SPAN');
   expect(separator.getAttribute('role')).toBe('separator');
   expect(separator.getAttribute('aria-orientation')).toBe('vertical');
-  expect(separator.className).toContain('leverui-separator');
+  expect(separator.className).toContain('lui-separator');
   expect(parentElement).toBe(separator);
   expect(childElement).toBe(separator);
   fireEvent.click(separator);

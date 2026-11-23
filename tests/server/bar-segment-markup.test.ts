@@ -49,20 +49,18 @@ function renderBarSegment(barSize?: string): string {
 /** Require stable hooks and only geometry or color in native styles. */
 function verifiesBarSegmentMarkup(): void {
   const markup = renderBarSegment();
-  expect(markup).toContain('leverui-bar-segment__root');
-  expect(markup).toContain('leverui-bar-segment__segment');
-  expect(markup).toContain('leverui-bar-segment__valueItem');
-  expect(markup).toContain('leverui-bar-segment__labelItem');
+  expect(markup).toContain('lui-bar-segment__root');
+  expect(markup).toContain('lui-bar-segment__segment');
+  expect(markup).toContain('lui-bar-segment__valueItem');
+  expect(markup).toContain('lui-bar-segment__labelItem');
   expect(markup).toContain('id="server-bar-segment"');
   expect(markup).toContain('aria-label="Server segments"');
   expect(markup).toContain('id="server-segment-content"');
   expect(markup).toContain('aria-label="Bars"');
-  expect(markup).toContain('--leverui-private-bar-segment-flex:60 1 0');
+  expect(markup).toContain('--lui-private-bar-segment-flex:60 1 0');
   expect(markup).not.toMatch(/style="[^"]*(?:display|font-size|border-radius):/);
-  expect(renderBarSegment('3rem')).toContain('--leverui-bar-segment-size:3rem');
-  expect(renderBarSegment('12')).toContain(
-    '--leverui-bar-segment-size:var(--leverui-spacing-12, 3rem)',
-  );
+  expect(renderBarSegment('3rem')).toContain('--lui-bar-segment-size:3rem');
+  expect(renderBarSegment('12')).toContain('--lui-bar-segment-size:var(--lui-spacing-12, 3rem)');
 }
 
 test('Bar Segment server output uses authored presentation', verifiesBarSegmentMarkup);

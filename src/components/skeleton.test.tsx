@@ -54,8 +54,8 @@ function verifiesSkeletonState(): void {
   const inherited = screen.getByTestId('inherited-skeleton');
   expect(skeleton).toBe(received);
   expect(skeleton.textContent).toBe('Loaded content');
-  expect(skeleton.className).toContain('leverui-skeleton');
-  expect(screen.getByTestId('owned-skeleton').className).toContain('leverui-skeleton');
+  expect(skeleton.className).toContain('lui-skeleton');
+  expect(screen.getByTestId('owned-skeleton').className).toContain('lui-skeleton');
   expect(skeleton.hasAttribute('loading')).toBe(false);
   const beforeLoading = skeleton.getAttribute('data-loading');
   setLoading(false);
@@ -91,8 +91,8 @@ function verifiesSkeletonCircle(): void {
   const circle = screen.getByTestId('circle');
   expect(circle).toBe(received);
   expect(circle.tagName).toBe('DIV');
-  expect(circle.className).toContain('leverui-skeleton');
-  expect(circle.className).toContain('leverui-circle');
+  expect(circle.className).toContain('lui-skeleton');
+  expect(circle.className).toContain('lui-circle');
 }
 
 it('composes circle and skeleton on one native element', verifiesSkeletonCircle);
@@ -126,19 +126,19 @@ function verifiesSkeletonText(): void {
 
   const root = screen.getByTitle('text-root');
   expect(root).toBe(received);
-  expect(root.querySelectorAll('.leverui-skeleton')).toHaveLength(3);
+  expect(root.querySelectorAll('.lui-skeleton')).toHaveLength(3);
   expect(root.querySelectorAll('[data-testid="text-content"]')).toHaveLength(3);
   const firstContent = root.querySelector('[data-testid="text-content"]');
   setLineCount(5);
   flush();
-  expect(root.querySelectorAll('.leverui-skeleton')).toHaveLength(5);
+  expect(root.querySelectorAll('.lui-skeleton')).toHaveLength(5);
   expect(root.querySelectorAll('[data-testid="text-content"]')).toHaveLength(5);
-  const first = root.querySelector('.leverui-skeleton');
+  const first = root.querySelector('.lui-skeleton');
   setLoading(false);
   flush();
-  expect(root.querySelectorAll('.leverui-skeleton')).toHaveLength(1);
+  expect(root.querySelectorAll('.lui-skeleton')).toHaveLength(1);
   expect(root.querySelectorAll('[data-testid="text-content"]')).toHaveLength(1);
-  expect(root.querySelector('.leverui-skeleton')).toBe(first);
+  expect(root.querySelector('.lui-skeleton')).toBe(first);
   expect(root.querySelector('[data-testid="text-content"]')).toBe(firstContent);
   expect(root.textContent).toBe('Finished text');
 }
@@ -164,10 +164,10 @@ function verifiesSkeletonHelperComposition(): void {
 
   const circle = screen.getByTestId('owned-skeleton');
   const text = screen.getByTestId('owned-text-root');
-  expect(circle.className).toContain('leverui-circle');
-  expect(circle.className).toContain('leverui-skeleton');
+  expect(circle.className).toContain('lui-circle');
+  expect(circle.className).toContain('lui-skeleton');
   expect(text.tagName).toBe('SECTION');
-  expect(text.querySelectorAll('.leverui-skeleton')).toHaveLength(2);
+  expect(text.querySelectorAll('.lui-skeleton')).toHaveLength(2);
 }
 
 it('composes caller-owned circle and text roots', verifiesSkeletonHelperComposition);

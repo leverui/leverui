@@ -53,7 +53,7 @@ export function ProgressCircleWithRoundCap(): JSX.Element {
 export function ProgressCircleWithThickness(): JSX.Element {
   return (
     <ProgressCircle.Root value={75}>
-      <ProgressCircle.Circle style={{ '--leverui-progress-circle-thickness': '2px' }}>
+      <ProgressCircle.Circle style={{ '--lui-progress-circle-thickness': '2px' }}>
         <ProgressCircle.Track />
         <ProgressCircle.Range />
       </ProgressCircle.Circle>

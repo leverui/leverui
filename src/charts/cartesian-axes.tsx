@@ -64,7 +64,7 @@ export function CartesianAxes(props: CartesianAxesProps): JSX.Element {
 
   return (
     <g
-      class="leverui-cartesian-chart__axes"
+      class="lui-cartesian-chart__axes"
       aria-hidden="true"
       data-grid-dashed={props.gridDashed ? '' : undefined}
     >
@@ -73,7 +73,7 @@ export function CartesianAxes(props: CartesianAxesProps): JSX.Element {
           {/** Span one numeric tick across the plot. */}
           {(tick) => (
             <line
-              class="leverui-cartesian-chart__gridLine"
+              class="lui-cartesian-chart__gridLine"
               x1={props.plot.left}
               x2={props.plot.width - props.plot.right}
               y1={chartY(props.plot, tick)}
@@ -86,7 +86,7 @@ export function CartesianAxes(props: CartesianAxesProps): JSX.Element {
             {/** Align one vertical grid line with its category. */}
             {(category) => (
               <line
-                class="leverui-cartesian-chart__gridLine"
+                class="lui-cartesian-chart__gridLine"
                 x1={chartX(props.plot, category.index, props.data.length)}
                 x2={chartX(props.plot, category.index, props.data.length)}
                 y1={props.plot.top}
@@ -98,7 +98,7 @@ export function CartesianAxes(props: CartesianAxesProps): JSX.Element {
       </Show>
       <Show when={props.showAxisLines}>
         <line
-          class="leverui-cartesian-chart__axisLine"
+          class="lui-cartesian-chart__axisLine"
           x1={props.plot.left}
           x2={props.plot.width - props.plot.right}
           y1={baseline()}
@@ -108,7 +108,7 @@ export function CartesianAxes(props: CartesianAxesProps): JSX.Element {
           {/** Mark one category on the axis line. */}
           {(category) => (
             <line
-              class="leverui-cartesian-chart__axisLine"
+              class="lui-cartesian-chart__axisLine"
               x1={chartX(props.plot, category.index, props.data.length)}
               x2={chartX(props.plot, category.index, props.data.length)}
               y1={baseline()}
@@ -118,7 +118,7 @@ export function CartesianAxes(props: CartesianAxesProps): JSX.Element {
         </For>
         <Show when={props.showYAxis}>
           <line
-            class="leverui-cartesian-chart__axisLine"
+            class="lui-cartesian-chart__axisLine"
             x1={props.plot.left}
             x2={props.plot.left}
             y1={props.plot.top}
@@ -162,7 +162,7 @@ export function CartesianAxes(props: CartesianAxesProps): JSX.Element {
       </Show>
       <Show when={props.xAxisLabel}>
         <text
-          class="leverui-cartesian-chart__axisTitle"
+          class="lui-cartesian-chart__axisTitle"
           x={props.plot.width / 2}
           y={props.plot.height - 5}
           text-anchor="middle"
@@ -172,7 +172,7 @@ export function CartesianAxes(props: CartesianAxesProps): JSX.Element {
       </Show>
       <Show when={props.yAxisLabel}>
         <text
-          class="leverui-cartesian-chart__axisTitle"
+          class="lui-cartesian-chart__axisTitle"
           transform={`translate(16 ${props.plot.height / 2}) rotate(-90)`}
           text-anchor="middle"
         >

@@ -20,7 +20,7 @@ function renderHeading() {
 const markup = renderHeading();
 assert.match(markup, /<h3[^>]*id="packed-server-heading"/);
 assert.match(markup, /data-size="4xl"/);
-assert.match(markup, /leverui-heading/);
+assert.match(markup, /lui-heading/);
 
 const standalone = renderToString(
   /** Render the same public Heading with packaged CSS. */

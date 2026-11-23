@@ -8,11 +8,11 @@ async function verifiesTabsFamily({ page }: { page: Page }): Promise<void> {
   const second = page.getByTestId('tabs-family-second');
   const group = page.getByTestId('tabs-family-group');
   await expect(root).toBeVisible({ timeout: 30_000 });
-  await expect(root).toHaveClass(/leverui-tabs__root/);
+  await expect(root).toHaveClass(/lui-tabs__root/);
   await expect(first).toHaveAttribute('href', '#first');
   await expect(first).toHaveAttribute('role', 'tab');
   await expect(first).toHaveAttribute('aria-selected', 'true');
-  await expect(group).toHaveClass(/leverui-tabs__contentGroup/);
+  await expect(group).toHaveClass(/lui-tabs__contentGroup/);
   await expect(page.getByTestId('tabs-family-panel-first')).toBeVisible();
   await expect(root).toHaveAttribute('data-size', 'sm');
   await expect(root).toHaveAttribute('data-variant', 'enclosed');

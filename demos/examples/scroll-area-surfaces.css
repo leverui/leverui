@@ -1,25 +1,25 @@
 .scroll-area-example-copy {
-  font-size: var(--leverui-font-sizes-sm);
+  font-size: var(--lui-font-sizes-sm);
   line-height: 1.25rem;
 }
 
 /* The scrollbar sits over the content, so text keeps clear of it on that side. */
 .scroll-area-example-copy,
 .scroll-area-example-gutter {
-  padding-inline-end: var(--leverui-spacing-5);
+  padding-inline-end: var(--lui-spacing-5);
 }
 
 .scroll-area-example-basic {
   height: 8.5rem;
-  max-width: var(--leverui-sizes-lg);
+  max-width: var(--lui-sizes-lg);
 }
 
 .scroll-area-example-stack {
-  max-width: var(--leverui-sizes-lg);
+  max-width: var(--lui-sizes-lg);
 }
 
 .scroll-area-example-label {
-  font-weight: var(--leverui-font-weights-medium);
+  font-weight: var(--lui-font-weights-medium);
 }
 
 .scroll-area-example-size {
@@ -28,18 +28,18 @@
 
 .scroll-area-example-both {
   height: 12rem;
-  width: var(--leverui-sizes-lg);
-  padding: var(--leverui-spacing-2);
+  width: var(--lui-sizes-lg);
+  padding: var(--lui-spacing-2);
 }
 
 /* Text also keeps clear of the horizontal scrollbar along the bottom. */
 .scroll-area-example-wide {
   width: 40rem;
-  padding-block-end: var(--leverui-spacing-3);
+  padding-block-end: var(--lui-spacing-3);
 }
 
 .scroll-area-example-corner {
-  background: var(--leverui-colors-bg);
+  background: var(--lui-colors-bg);
 }
 
 .scroll-area-example-horizontal,
@@ -48,18 +48,18 @@
 }
 
 .scroll-area-example-horizontal-content {
-  padding-block: var(--leverui-spacing-4);
+  padding-block: var(--lui-spacing-4);
 }
 
 .scroll-area-example-row {
-  gap: var(--leverui-spacing-4);
+  gap: var(--lui-spacing-4);
 }
 
 .scroll-area-example-tile {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--leverui-colors-bg-emphasized);
+  background-color: var(--lui-colors-bg-emphasized);
   background-clip: padding-box;
   background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
   border-width: 1px;
@@ -67,18 +67,18 @@
 
 .scroll-area-example-tile-horizontal {
   flex-shrink: 0;
-  width: var(--leverui-sizes-40);
-  height: var(--leverui-sizes-20);
-  border-radius: var(--leverui-radii-sm);
+  width: var(--lui-sizes-40);
+  height: var(--lui-sizes-20);
+  border-radius: var(--lui-radii-sm);
 }
 
 .scroll-area-example-tile-shadow {
-  height: var(--leverui-sizes-20);
+  height: var(--lui-sizes-20);
 }
 
 .scroll-area-example-shadow-root {
   height: 20rem;
-  max-width: var(--leverui-sizes-lg);
+  max-width: var(--lui-sizes-lg);
 }
 
 .scroll-area-example-rtl {
@@ -86,8 +86,8 @@
 }
 
 .scroll-area-example-rtl-content {
-  padding: var(--leverui-spacing-2);
-  padding-inline-end: var(--leverui-spacing-5);
+  padding: var(--lui-spacing-2);
+  padding-inline-end: var(--lui-spacing-5);
 }
 
 /* One sentence to a line, so neighboring sentences do not run together. */
@@ -100,30 +100,30 @@
 }
 
 .scroll-area-example-store .scroll-area-example-copy {
-  font-size: var(--leverui-font-sizes-md);
+  font-size: var(--lui-font-sizes-md);
   line-height: 1.5rem;
 }
 
 .scroll-area-example-thumb-root {
   height: 8rem;
-  max-width: var(--leverui-sizes-2xl);
+  max-width: var(--lui-sizes-2xl);
 }
 
 .scroll-area-example-thumb-copy {
-  font-size: var(--leverui-font-sizes-md);
+  font-size: var(--lui-font-sizes-md);
   line-height: 1.5rem;
 }
 
 .scroll-area-example-red-track {
-  background: var(--leverui-colors-red-subtle);
+  background: var(--lui-colors-red-subtle);
 }
 
 .scroll-area-example-red-thumb {
-  background: var(--leverui-colors-red-solid);
+  background: var(--lui-colors-red-solid);
 }
 
 .scroll-area-example-controls {
-  max-width: var(--leverui-sizes-xl);
+  max-width: var(--lui-sizes-xl);
 }
 
 .scroll-area-example-control-root {
@@ -132,7 +132,7 @@
 }
 
 .scroll-area-example-copy > * + * {
-  margin-block-start: var(--leverui-spacing-4);
+  margin-block-start: var(--lui-spacing-4);
 }
 
 .scroll-area-example-shadow {

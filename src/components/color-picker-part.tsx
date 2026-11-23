@@ -72,7 +72,7 @@ export function renderColorPickerPart(input: ColorPickerPartInput): JSX.Element 
     () => colorPickerAppearanceAttributes(appearance),
     {
       /** Keep authored defaults off parts opted out by root or caller. */
-      get 'data-leverui-color-picker-css'() {
+      get 'data-lui-color-picker-css'() {
         return appearance.unstyled() || local.unstyled ? undefined : '';
       },
       /** Expose the unstyled choice to consumer CSS. */

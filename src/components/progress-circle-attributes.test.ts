@@ -13,7 +13,7 @@ function verifiesResponsive(): void {
   ).toMatchObject({
     'data-size': 'sm',
     'data-size-md': 'xl',
-    'data-leverui-color-palette': 'teal',
+    'data-lui-color-palette': 'teal',
     'data-unstyled': '',
   });
 }

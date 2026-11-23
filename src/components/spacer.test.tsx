@@ -49,7 +49,7 @@ function verifiesChildComposition(): void {
   );
 
   const button = screen.getByRole('button', { name: 'Fill space' });
-  expect(button).toHaveClass('leverui-spacer');
+  expect(button).toHaveClass('lui-spacer');
   expect(parentElement).toBe(button);
   expect(childElement).toBe(button);
   fireEvent.click(button);

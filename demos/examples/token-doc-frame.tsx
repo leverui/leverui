@@ -14,20 +14,20 @@ export function TokenDoc(props: TokenDocProps): JSX.Element {
   return (
     <Box
       style={{
-        background: 'var(--leverui-colors-bg)',
-        'border-radius': 'var(--leverui-radii-lg)',
+        background: 'var(--lui-colors-bg)',
+        'border-radius': 'var(--lui-radii-lg)',
         'border-width': '0.5px',
-        'margin-top': props.mt ? 'var(--leverui-spacing-8)' : undefined,
-        'margin-block': props.my ? 'var(--leverui-spacing-8)' : undefined,
+        'margin-top': props.mt ? 'var(--lui-spacing-8)' : undefined,
+        'margin-block': props.my ? 'var(--lui-spacing-8)' : undefined,
       }}
     >
-      <Box style={{ padding: 'var(--leverui-spacing-6)', 'padding-bottom': '0' }}>
+      <Box style={{ padding: 'var(--lui-spacing-6)', 'padding-bottom': '0' }}>
         {props.title && (
           <Box
             as="h2"
             style={{
-              'font-weight': 'var(--leverui-font-weights-medium)',
-              'font-size': 'var(--leverui-font-sizes-sm)',
+              'font-weight': 'var(--lui-font-weights-medium)',
+              'font-size': 'var(--lui-font-sizes-sm)',
             }}
           >
             {props.title}
@@ -35,7 +35,7 @@ export function TokenDoc(props: TokenDocProps): JSX.Element {
         )}
         {props.action}
       </Box>
-      <Box style={{ padding: 'var(--leverui-spacing-6)' }}>{props.children}</Box>
+      <Box style={{ padding: 'var(--lui-spacing-6)' }}>{props.children}</Box>
     </Box>
   );
 }

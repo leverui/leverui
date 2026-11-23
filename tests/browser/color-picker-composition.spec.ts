@@ -12,7 +12,7 @@ async function verifiesComposition({ page }: { page: Page }): Promise<void> {
   await expect(root).toHaveJSProperty('tagName', 'SECTION');
   await expect(root).toHaveAttribute('data-root-ref', 'attached');
   await expect(trigger).toHaveAttribute('data-trigger-ref', 'attached');
-  await expect(trigger).toHaveClass(/leverui-color-picker__trigger/);
+  await expect(trigger).toHaveClass(/lui-color-picker__trigger/);
   const smallHeight = await input.evaluate(
     /** Read the initial input size before provider defaults change. */
     (element) => Number.parseFloat(getComputedStyle(element).height),

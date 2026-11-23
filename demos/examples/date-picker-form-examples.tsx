@@ -14,7 +14,7 @@ export function DatePickerForm(): JSX.Element {
 
   return (
     <form onSubmit={submit}>
-      <Stack gap="4" align="flex-start" style={{ 'max-width': 'var(--leverui-sizes-sm)' }}>
+      <Stack gap="4" align="flex-start" style={{ 'max-width': 'var(--lui-sizes-sm)' }}>
         <DatePicker.Root name="date">
           <DatePicker.Label>Appointment date</DatePicker.Label>
           <DatePicker.Control>
@@ -80,7 +80,7 @@ export function DatePickerHookForm(): JSX.Element {
 
   return (
     <form onSubmit={submit}>
-      <Stack gap="4" align="flex-start" style={{ 'max-width': 'var(--leverui-sizes-sm)' }}>
+      <Stack gap="4" align="flex-start" style={{ 'max-width': 'var(--lui-sizes-sm)' }}>
         <Field.Root invalid={submitted() && !firstName().trim()}>
           <Field.Label>First name</Field.Label>
           <Input value={firstName()} onInput={updateName} />

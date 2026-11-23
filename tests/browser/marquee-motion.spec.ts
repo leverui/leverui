@@ -9,7 +9,7 @@ async function verifiesVerticalMotion({ page }: { page: Page }): Promise<void> {
   await expect(root).toHaveAttribute('data-orientation', 'vertical');
   const loopCount = await root.evaluate(
     /** Read the public loop count after recipe and machine styles merge. */
-    (element) => getComputedStyle(element).getPropertyValue('--leverui-marquee-loop-count').trim(),
+    (element) => getComputedStyle(element).getPropertyValue('--lui-marquee-loop-count').trim(),
   );
   expect(loopCount).toBe('3');
   await expect(page.getByTestId('marquee-vertical-viewport')).toHaveAttribute(

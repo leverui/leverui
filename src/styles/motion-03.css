@@ -1,4 +1,4 @@
-@layer leverui.base {
+@layer lui.base {
   @-webkit-keyframes slide-from-bottom-full {
     from {
       -webkit-translate: 0 100%;
@@ -141,10 +141,10 @@
   }
   @-webkit-keyframes slide-from-top {
     0% {
-      -webkit-translate: 0 calc(var(--leverui-private-slide-from-top-distance, 0.5rem) * -1);
-      -moz-translate: 0 calc(var(--leverui-private-slide-from-top-distance, 0.5rem) * -1);
-      -ms-translate: 0 calc(var(--leverui-private-slide-from-top-distance, 0.5rem) * -1);
-      translate: 0 calc(var(--leverui-private-slide-from-top-distance, 0.5rem) * -1);
+      -webkit-translate: 0 calc(var(--lui-private-slide-from-top-distance, 0.5rem) * -1);
+      -moz-translate: 0 calc(var(--lui-private-slide-from-top-distance, 0.5rem) * -1);
+      -ms-translate: 0 calc(var(--lui-private-slide-from-top-distance, 0.5rem) * -1);
+      translate: 0 calc(var(--lui-private-slide-from-top-distance, 0.5rem) * -1);
     }
     to {
       -webkit-translate: 0;
@@ -155,10 +155,10 @@
   }
   @keyframes slide-from-top {
     0% {
-      -webkit-translate: 0 calc(var(--leverui-private-slide-from-top-distance, 0.5rem) * -1);
-      -moz-translate: 0 calc(var(--leverui-private-slide-from-top-distance, 0.5rem) * -1);
-      -ms-translate: 0 calc(var(--leverui-private-slide-from-top-distance, 0.5rem) * -1);
-      translate: 0 calc(var(--leverui-private-slide-from-top-distance, 0.5rem) * -1);
+      -webkit-translate: 0 calc(var(--lui-private-slide-from-top-distance, 0.5rem) * -1);
+      -moz-translate: 0 calc(var(--lui-private-slide-from-top-distance, 0.5rem) * -1);
+      -ms-translate: 0 calc(var(--lui-private-slide-from-top-distance, 0.5rem) * -1);
+      translate: 0 calc(var(--lui-private-slide-from-top-distance, 0.5rem) * -1);
     }
     to {
       -webkit-translate: 0;

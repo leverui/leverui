@@ -30,7 +30,7 @@ async function verifiesSliderCssChoices({ page }: { page: Page }): Promise<void>
   await page.goto('/iframe.html?id=components-slider--contract');
   const root = page.getByTestId('slider-root');
   const thumb = page.getByTestId('slider-thumb');
-  await expect(root).toHaveClass(/leverui-slider__root/, { timeout: 30_000 });
+  await expect(root).toHaveClass(/lui-slider__root/, { timeout: 30_000 });
   const before = await thumb.evaluate(
     /** Read the applied CSS width before the live update. */
     (element) => getComputedStyle(element).width,
@@ -90,7 +90,7 @@ async function verifiesSliderStates({ page }: { page: Page }): Promise<void> {
   );
   expect(direction).toBe('column');
   const markerDirection = await provider
-    .locator('.leverui-slider__marker')
+    .locator('.lui-slider__marker')
     .first()
     .evaluate(
       /** Ensure vertical marks receive their corresponding CSS orientation. */

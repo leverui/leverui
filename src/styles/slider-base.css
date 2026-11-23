@@ -1,93 +1,92 @@
-@layer leverui.recipes {
-  .leverui-slider__root:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-slider__root:not([data-unstyled]) {
     display: flex;
     flex-direction: column;
-    gap: var(--leverui-spacing-1);
-    font-size: var(--leverui-font-sizes-sm);
+    gap: var(--lui-spacing-1);
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
     position: relative;
     isolation: isolate;
     touch-action: none;
   }
 
-  .leverui-slider__label:not([data-unstyled]) {
-    font-weight: var(--leverui-font-weights-medium);
-    font-size: var(--leverui-font-sizes-sm);
+  .lui-slider__label:not([data-unstyled]) {
+    font-weight: var(--lui-font-weights-medium);
+    font-size: var(--lui-font-sizes-sm);
     line-height: 1.25rem;
   }
 
-  .leverui-slider__control:not([data-unstyled]) {
+  .lui-slider__control:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;
     position: relative;
-    cursor: var(--leverui-cursor-slider);
+    cursor: var(--lui-cursor-slider);
 
     &[data-disabled] {
-      cursor: var(--leverui-cursor-disabled);
+      cursor: var(--lui-cursor-disabled);
     }
   }
 
-  .leverui-slider__track:not([data-unstyled]) {
+  .lui-slider__track:not([data-unstyled]) {
     overflow: hidden;
-    border-radius: var(--leverui-radii-full);
+    border-radius: var(--lui-radii-full);
     flex: 1;
-    background: var(--leverui-slider-track-color);
+    background: var(--lui-slider-track-color);
   }
 
-  .leverui-slider__range:not([data-unstyled]) {
+  .lui-slider__range:not([data-unstyled]) {
     width: inherit;
     height: inherit;
-    background: var(--leverui-slider-range-color, var(--leverui-colors-color-palette-solid));
+    background: var(--lui-slider-range-color, var(--lui-colors-color-palette-solid));
 
     &[data-disabled] {
-      background: var(--leverui-colors-border-emphasized) !important;
+      background: var(--lui-colors-border-emphasized) !important;
     }
   }
 
-  .leverui-slider__markerGroup:not([data-unstyled]) {
+  .lui-slider__markerGroup:not([data-unstyled]) {
     position: absolute !important;
     z-index: 1;
   }
 
-  .leverui-slider__marker:not([data-unstyled]) {
+  .lui-slider__marker:not([data-unstyled]) {
     display: flex;
     align-items: center;
-    gap: calc(var(--leverui-slider-thumb-size) / 2);
-    color: var(--leverui-colors-fg-muted);
-    font-size: var(--leverui-font-sizes-xs);
+    gap: calc(var(--lui-slider-thumb-size) / 2);
+    color: var(--lui-colors-fg-muted);
+    font-size: var(--lui-font-sizes-xs);
     line-height: 1rem;
-    --leverui-private-slider-marker-bg: var(--leverui-colors-white);
+    --lui-private-slider-marker-bg: var(--lui-colors-white);
 
     &[data-state='under-value'] {
-      --leverui-private-slider-marker-bg: var(--leverui-colors-bg);
+      --lui-private-slider-marker-bg: var(--lui-colors-bg);
     }
   }
 
-  .leverui-slider__markerIndicator:not([data-unstyled]) {
-    width: var(--leverui-slider-marker-size);
-    height: var(--leverui-slider-marker-size);
-    border-radius: var(--leverui-radii-full);
-    background: var(--leverui-slider-marker-color, var(--leverui-private-slider-marker-bg));
+  .lui-slider__markerIndicator:not([data-unstyled]) {
+    width: var(--lui-slider-marker-size);
+    height: var(--lui-slider-marker-size);
+    border-radius: var(--lui-radii-full);
+    background: var(--lui-slider-marker-color, var(--lui-private-slider-marker-bg));
   }
 
-  .leverui-slider__thumb:not([data-unstyled]) {
-    width: var(--leverui-slider-thumb-size);
-    height: var(--leverui-slider-thumb-size);
+  .lui-slider__thumb:not([data-unstyled]) {
+    width: var(--lui-slider-thumb-size);
+    height: var(--lui-slider-thumb-size);
     display: flex;
     align-items: center;
     justify-content: center;
     outline: 0;
     z-index: 2;
-    border-radius: var(--leverui-radii-full);
-    transition: box-shadow var(--leverui-durations-fast);
-    cursor: var(--leverui-cursor-slider);
-    background: var(--leverui-slider-thumb-color);
+    border-radius: var(--lui-radii-full);
+    transition: box-shadow var(--lui-durations-fast);
+    cursor: var(--lui-cursor-slider);
+    background: var(--lui-slider-thumb-color);
 
     &:is(:focus-visible, [data-focus-visible]) {
       box-shadow:
-        0 0 0 0 var(--leverui-colors-white),
-        0 0 0 3px
-          color-mix(in srgb, var(--leverui-colors-color-palette-focus-ring) 50%, transparent),
+        0 0 0 0 var(--lui-colors-white),
+        0 0 0 3px color-mix(in srgb, var(--lui-colors-color-palette-focus-ring) 50%, transparent),
         0 0 0 0 transparent;
     }
   }

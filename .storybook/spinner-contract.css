@@ -1,17 +1,17 @@
 .spinner-inherited-blue {
-  color: var(--leverui-colors-blue-500);
+  color: var(--lui-colors-blue-500);
 }
 
 .spinner-palette-teal {
-  color: var(--leverui-colors-teal-600);
+  color: var(--lui-colors-teal-600);
 }
 
 .spinner-red {
-  color: var(--leverui-colors-red-500);
+  color: var(--lui-colors-red-500);
 }
 
 .spinner-track {
-  --leverui-spinner-track-color: #abcdef;
+  --lui-spinner-track-color: #abcdef;
 }
 
 .spinner-fast {

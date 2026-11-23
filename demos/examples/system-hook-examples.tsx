@@ -4,7 +4,7 @@ import { Button, Center, Square } from '../../src';
 /** Show a green scoped palette with translucent border and text. */
 export function SystemColorPalette(): JSX.Element {
   return (
-    <Center class="consumer-system-palette" data-leverui-color-palette="green">
+    <Center class="consumer-system-palette" data-lui-color-palette="green">
       3
     </Center>
   );

@@ -35,7 +35,7 @@ function verifiesPlainText(): void {
 
   expect(screen.getByTestId('root').tagName).toBe('DIV');
   expect(screen.getByTestId('root').hasAttribute('data-has-line-numbers')).toBe(true);
-  expect(screen.getByTestId('root').getAttribute('data-leverui-color-mode')).toBe('dark');
+  expect(screen.getByTestId('root').getAttribute('data-lui-color-mode')).toBe('dark');
   expect(screen.getByTestId('code').tagName).toBe('CODE');
   expect(screen.getByTestId('code').hasAttribute('data-plaintext')).toBe(true);
   expect(screen.getByTestId('code').hasAttribute('data-word-wrap')).toBe(true);

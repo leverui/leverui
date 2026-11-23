@@ -25,12 +25,12 @@ function verifiesProviderFreeActions(): void {
   const button = screen.getByRole('button', { name: 'Save' });
   const icon = screen.getByRole('button', { name: 'Options' });
   const close = screen.getByRole('button', { name: 'Close' });
-  expect([...button.classList]).toEqual(['leverui-button']);
+  expect([...button.classList]).toEqual(['lui-button']);
   expect(button.getAttribute('data-size')).toBe('sm');
   expect(button.getAttribute('data-variant')).toBe('outline');
-  expect(button.getAttribute('data-leverui-color-palette')).toBe('blue');
-  expect(icon.classList.contains('leverui-icon-button')).toBe(true);
-  expect(close.classList.contains('leverui-close-button')).toBe(true);
+  expect(button.getAttribute('data-lui-color-palette')).toBe('blue');
+  expect(icon.classList.contains('lui-icon-button')).toBe(true);
+  expect(close.classList.contains('lui-close-button')).toBe(true);
 
   setSize('lg');
   flush();

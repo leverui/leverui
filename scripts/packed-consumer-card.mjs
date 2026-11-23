@@ -5,7 +5,7 @@ export async function verifyPackedCard(page) {
   const card = page.locator('#packed-card');
   assert.equal(await card.locator('h3').textContent(), 'Installed card');
   assert.equal(await card.locator('p').textContent(), 'Installed description');
-  assert.match((await card.getAttribute('class')) ?? '', /leverui-card/);
+  assert.match((await card.getAttribute('class')) ?? '', /lui-card/);
   assert.equal(await card.getAttribute('variant'), null);
   assert.equal(await card.getAttribute('size'), null);
   assert.equal(
@@ -30,7 +30,7 @@ export async function verifyPackedCard(page) {
   );
 
   const configured = page.locator('#packed-custom-card');
-  assert.equal(await configured.getAttribute('data-leverui-private-style-runtime'), null);
+  assert.equal(await configured.getAttribute('data-lui-private-style-runtime'), null);
   assert.match(
     await configured.evaluate(
       /** Read the consumer CSS gradient. */

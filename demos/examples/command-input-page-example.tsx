@@ -99,9 +99,9 @@ export function CommandInputPageExample(): JSX.Element {
                   variant="outline"
                   size="sm"
                   style={{
-                    'min-width': 'var(--leverui-spacing-64)',
+                    'min-width': 'var(--lui-spacing-64)',
                     'justify-content': 'flex-start',
-                    color: 'var(--leverui-colors-fg-muted)',
+                    color: 'var(--lui-colors-fg-muted)',
                   }}
                 >
                   <SearchIcon /> Search actions...
@@ -163,8 +163,8 @@ export function CommandInputPageExample(): JSX.Element {
         </Command.Dialog>
       </Command.Provider>
       <Stack gap="1" textStyle="sm">
-        <Text style={{ 'font-weight': 'var(--leverui-font-weights-medium)' }}>{title()}</Text>
-        <Text style={{ color: 'var(--leverui-colors-fg-muted)' }}>
+        <Text style={{ 'font-weight': 'var(--lui-font-weights-medium)' }}>{title()}</Text>
+        <Text style={{ color: 'var(--lui-colors-fg-muted)' }}>
           {invited().length ? `Invited ${invited().join(', ')}` : 'No invites yet'}
         </Text>
       </Stack>

@@ -98,7 +98,7 @@ function PopoverDemo(): JSX.Element {
       </Button>
       <PopupSurface width="190px">
         <Text textStyle="label">Storage</Text>
-        <Text style={{ color: 'var(--leverui-colors-fg-muted)' }}>12 GB of 20 GB used.</Text>
+        <Text style={{ color: 'var(--lui-colors-fg-muted)' }}>12 GB of 20 GB used.</Text>
       </PopupSurface>
     </Stack>
   );

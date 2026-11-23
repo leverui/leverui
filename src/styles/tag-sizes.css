@@ -1,56 +1,56 @@
-@layer leverui.recipes {
-  .leverui-tag__root:not([data-unstyled]) {
-    padding-inline: var(--leverui-private-tag-padding);
-    min-height: var(--leverui-private-tag-min-height);
-    gap: var(--leverui-private-tag-gap);
-    --leverui-private-tag-padding: var(--leverui-spacing-1\.5);
-    --leverui-private-tag-min-height: var(--leverui-spacing-5);
-    --leverui-private-tag-gap: var(--leverui-spacing-1);
-    --leverui-private-tag-avatar-size: var(--leverui-spacing-3\.5);
-    --leverui-private-tag-element-size: var(--leverui-spacing-3\.5);
-    --leverui-private-tag-element-offset: -2px;
-    --leverui-private-tag-label-font-size: var(--leverui-font-sizes-xs);
-    --leverui-private-tag-label-line-height: 1rem;
+@layer lui.recipes {
+  .lui-tag__root:not([data-unstyled]) {
+    padding-inline: var(--lui-private-tag-padding);
+    min-height: var(--lui-private-tag-min-height);
+    gap: var(--lui-private-tag-gap);
+    --lui-private-tag-padding: var(--lui-spacing-1\.5);
+    --lui-private-tag-min-height: var(--lui-spacing-5);
+    --lui-private-tag-gap: var(--lui-spacing-1);
+    --lui-private-tag-avatar-size: var(--lui-spacing-3\.5);
+    --lui-private-tag-element-size: var(--lui-spacing-3\.5);
+    --lui-private-tag-element-offset: -2px;
+    --lui-private-tag-label-font-size: var(--lui-font-sizes-xs);
+    --lui-private-tag-label-line-height: 1rem;
 
     &[data-size='sm'] {
-      --leverui-private-tag-padding: var(--leverui-spacing-1\.5);
-      --leverui-private-tag-min-height: var(--leverui-spacing-4\.5);
-      --leverui-private-tag-gap: var(--leverui-spacing-1);
-      --leverui-private-tag-avatar-size: var(--leverui-spacing-3);
-      --leverui-private-tag-element-size: var(--leverui-spacing-3);
-      --leverui-private-tag-element-offset: -2px;
-      --leverui-private-tag-label-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-tag-label-line-height: 1rem;
+      --lui-private-tag-padding: var(--lui-spacing-1\.5);
+      --lui-private-tag-min-height: var(--lui-spacing-4\.5);
+      --lui-private-tag-gap: var(--lui-spacing-1);
+      --lui-private-tag-avatar-size: var(--lui-spacing-3);
+      --lui-private-tag-element-size: var(--lui-spacing-3);
+      --lui-private-tag-element-offset: -2px;
+      --lui-private-tag-label-font-size: var(--lui-font-sizes-xs);
+      --lui-private-tag-label-line-height: 1rem;
     }
     &[data-size='md'] {
-      --leverui-private-tag-padding: var(--leverui-spacing-1\.5);
-      --leverui-private-tag-min-height: var(--leverui-spacing-5);
-      --leverui-private-tag-gap: var(--leverui-spacing-1);
-      --leverui-private-tag-avatar-size: var(--leverui-spacing-3\.5);
-      --leverui-private-tag-element-size: var(--leverui-spacing-3\.5);
-      --leverui-private-tag-element-offset: -2px;
-      --leverui-private-tag-label-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-tag-label-line-height: 1rem;
+      --lui-private-tag-padding: var(--lui-spacing-1\.5);
+      --lui-private-tag-min-height: var(--lui-spacing-5);
+      --lui-private-tag-gap: var(--lui-spacing-1);
+      --lui-private-tag-avatar-size: var(--lui-spacing-3\.5);
+      --lui-private-tag-element-size: var(--lui-spacing-3\.5);
+      --lui-private-tag-element-offset: -2px;
+      --lui-private-tag-label-font-size: var(--lui-font-sizes-xs);
+      --lui-private-tag-label-line-height: 1rem;
     }
     &[data-size='lg'] {
-      --leverui-private-tag-padding: var(--leverui-spacing-2);
-      --leverui-private-tag-min-height: var(--leverui-spacing-6);
-      --leverui-private-tag-gap: var(--leverui-spacing-1\.5);
-      --leverui-private-tag-avatar-size: var(--leverui-spacing-4\.5);
-      --leverui-private-tag-element-size: var(--leverui-spacing-4);
-      --leverui-private-tag-element-offset: -3px;
-      --leverui-private-tag-label-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-tag-label-line-height: 1.25rem;
+      --lui-private-tag-padding: var(--lui-spacing-2);
+      --lui-private-tag-min-height: var(--lui-spacing-6);
+      --lui-private-tag-gap: var(--lui-spacing-1\.5);
+      --lui-private-tag-avatar-size: var(--lui-spacing-4\.5);
+      --lui-private-tag-element-size: var(--lui-spacing-4);
+      --lui-private-tag-element-offset: -3px;
+      --lui-private-tag-label-font-size: var(--lui-font-sizes-sm);
+      --lui-private-tag-label-line-height: 1.25rem;
     }
     &[data-size='xl'] {
-      --leverui-private-tag-padding: var(--leverui-spacing-2\.5);
-      --leverui-private-tag-min-height: var(--leverui-spacing-8);
-      --leverui-private-tag-gap: var(--leverui-spacing-1\.5);
-      --leverui-private-tag-avatar-size: var(--leverui-spacing-6);
-      --leverui-private-tag-element-size: var(--leverui-spacing-4\.5);
-      --leverui-private-tag-element-offset: -4px;
-      --leverui-private-tag-label-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-tag-label-line-height: 1.25rem;
+      --lui-private-tag-padding: var(--lui-spacing-2\.5);
+      --lui-private-tag-min-height: var(--lui-spacing-8);
+      --lui-private-tag-gap: var(--lui-spacing-1\.5);
+      --lui-private-tag-avatar-size: var(--lui-spacing-6);
+      --lui-private-tag-element-size: var(--lui-spacing-4\.5);
+      --lui-private-tag-element-offset: -4px;
+      --lui-private-tag-label-font-size: var(--lui-font-sizes-sm);
+      --lui-private-tag-label-line-height: 1.25rem;
     }
   }
 }

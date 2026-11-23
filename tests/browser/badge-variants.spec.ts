@@ -54,7 +54,7 @@ async function verifiesBadgeVariants({ page }: { page: Page }): Promise<void> {
   await expect(page.getByTestId('badge-green')).toHaveCSS('background-color', 'rgb(22, 163, 74)');
   await page.evaluate(
     /** Select the mapped palette's dark document color mode. */
-    () => document.documentElement.setAttribute('data-leverui-color-mode', 'dark'),
+    () => document.documentElement.setAttribute('data-lui-color-mode', 'dark'),
   );
   await expect(subtle).toHaveCSS('background-color', 'rgb(20, 32, 74)');
   await expect(subtle).toHaveCSS('color', 'rgb(163, 207, 255)');
@@ -74,7 +74,7 @@ async function verifiesBadgeCssOverride({ page }: { page: Page }): Promise<void>
   await expect(badge).toHaveCSS('background-color', 'rgb(37, 99, 235)');
   await page.addStyleTag({
     content:
-      '[data-testid="badge-css-override"] { --leverui-colors-color-palette-solid: rgb(18 52 86); }',
+      '[data-testid="badge-css-override"] { --lui-colors-color-palette-solid: rgb(18 52 86); }',
   });
   await expect(badge).toHaveCSS('background-color', 'rgb(18, 52, 86)');
 }
@@ -93,12 +93,12 @@ async function verifiesBadgeThemeScopes({ page }: { page: Page }): Promise<void>
   await expect(light).toHaveCSS('color', 'rgb(23, 61, 166)');
   await page.evaluate(
     /** Invert the document mode while explicit nested scopes remain fixed. */
-    () => document.documentElement.setAttribute('data-leverui-color-mode', 'dark'),
+    () => document.documentElement.setAttribute('data-lui-color-mode', 'dark'),
   );
   await expect(dark).toHaveCSS('background-color', 'rgb(20, 32, 74)');
   await expect(light).toHaveCSS('background-color', 'rgb(219, 234, 254)');
   await page.addStyleTag({
-    content: '[data-testid="badge-dark-scope"] { --leverui-colors-blue-subtle: rgb(18 52 86); }',
+    content: '[data-testid="badge-dark-scope"] { --lui-colors-blue-subtle: rgb(18 52 86); }',
   });
   await expect(dark).toHaveCSS('background-color', 'rgb(18, 52, 86)');
   await expect(light).toHaveCSS('background-color', 'rgb(219, 234, 254)');
@@ -111,8 +111,8 @@ async function verifiesAttachedBadgeGroup({ page }: { page: Page }): Promise<voi
   const blue = page.getByTestId('badge-group-blue');
   const green = page.getByTestId('badge-group-green');
   await expect(group).toHaveCSS('gap', '0px');
-  await expect(blue).toHaveAttribute('data-leverui-group-first', '');
-  await expect(green).toHaveAttribute('data-leverui-group-last', '');
+  await expect(blue).toHaveAttribute('data-lui-group-first', '');
+  await expect(green).toHaveAttribute('data-lui-group-last', '');
   await expect(blue).toHaveCSS('border-top-right-radius', '0px');
   await expect(green).toHaveCSS('border-top-left-radius', '0px');
   await expect(blue).toHaveCSS('background-color', 'rgb(37, 99, 235)');

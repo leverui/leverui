@@ -33,7 +33,7 @@ async function verifiesPinInputHydration({ page }: { page: Page }): Promise<void
   const first = page.getByTestId('hydrated-pin-0');
   const second = page.getByTestId('hydrated-pin-1');
   const hidden = root.locator('input[name="hydrated-code"]');
-  await expect(root).toHaveClass(/leverui-pin-input__root/);
+  await expect(root).toHaveClass(/lui-pin-input__root/);
   await expect(first).toHaveValue('3');
   await expect(first).toHaveAttribute('type', 'password');
   await expect(first).toHaveAttribute('aria-label', 'pin code 1 of 4');
@@ -65,7 +65,7 @@ async function verifiesPinInputHydration({ page }: { page: Page }): Promise<void
   await expect(first).toHaveAttribute('id', inputId ?? '');
   await expect(first).toHaveValue('3');
   await expect(first).toHaveAttribute('type', 'password');
-  await expect(first).toHaveClass(/leverui-pin-input__input/);
+  await expect(first).toHaveClass(/lui-pin-input__input/);
   await expect(root).toHaveAttribute('data-root-ref', 'true');
   await expect(first).toHaveAttribute('data-parent-ref', 'true');
   await expect(first).toHaveAttribute('data-child-ref', 'true');

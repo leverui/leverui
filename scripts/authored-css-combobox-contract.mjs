@@ -25,7 +25,7 @@ export const comboboxContracts = [
     required: [
       ...styledParts.map(
         /** Require one default authored selector per styled public part. */
-        (part) => `.leverui-combobox__${part}:not([data-unstyled])`,
+        (part) => `.lui-combobox__${part}:not([data-unstyled])`,
       ),
       ...sizes.map(
         /** Require each scalar size choice. */

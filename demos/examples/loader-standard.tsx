@@ -9,7 +9,7 @@ export function LoaderBasic(): JSX.Element {
     <HStack
       textStyle="sm"
       style={{
-        'font-weight': 'var(--leverui-font-weights-medium)',
+        'font-weight': 'var(--lui-font-weights-medium)',
       }}
     >
       <Loader text="Loading...">View report</Loader>
@@ -36,14 +36,14 @@ export function LoaderWithOverlay(): JSX.Element {
   }
 
   return (
-    <Stack gap="4" style={{ 'max-width': 'var(--leverui-sizes-xl)' }}>
+    <Stack gap="4" style={{ 'max-width': 'var(--lui-sizes-xl)' }}>
       <Box
         style={{
           position: 'relative',
-          padding: 'var(--leverui-spacing-6)',
-          background: 'var(--leverui-colors-bg-panel)',
-          'box-shadow': 'var(--leverui-shadows-sm)',
-          'border-radius': 'var(--leverui-radii-l3)',
+          padding: 'var(--lui-spacing-6)',
+          background: 'var(--lui-colors-bg-panel)',
+          'box-shadow': 'var(--lui-shadows-sm)',
+          'border-radius': 'var(--lui-radii-l3)',
         }}
       >
         <Stack gap="4">

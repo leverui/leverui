@@ -1,6 +1,6 @@
 .date-picker-presets-layout {
-  padding: var(--leverui-spacing-3);
-  gap: var(--leverui-spacing-3);
+  padding: var(--lui-spacing-3);
+  gap: var(--lui-spacing-3);
   flex-direction: column;
 }
 
@@ -18,22 +18,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--leverui-spacing-1);
-  height: var(--leverui-sizes-10);
-  padding-inline: var(--leverui-spacing-4);
-  font-size: var(--leverui-font-sizes-sm);
+  gap: var(--lui-spacing-1);
+  height: var(--lui-sizes-10);
+  padding-inline: var(--lui-spacing-4);
+  font-size: var(--lui-font-sizes-sm);
   line-height: 1.25rem;
 }
 
 .date-picker-preset-shortcut[data-selected] {
-  background: var(--leverui-colors-color-palette-subtle);
-  color: var(--leverui-colors-color-palette-fg);
+  background: var(--lui-colors-color-palette-subtle);
+  color: var(--lui-colors-color-palette-fg);
 }
 
 @media (min-width: 30rem) {
   .date-picker-presets-layout {
-    padding: var(--leverui-spacing-4);
-    gap: var(--leverui-spacing-6);
+    padding: var(--lui-spacing-4);
+    gap: var(--lui-spacing-6);
     flex-direction: row;
   }
 
@@ -42,7 +42,7 @@
   }
 
   .date-picker-presets-sidebar {
-    min-width: var(--leverui-sizes-2xs);
+    min-width: var(--lui-sizes-2xs);
     border-bottom-width: 0;
     border-inline-end-width: 1px;
   }

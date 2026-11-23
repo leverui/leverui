@@ -28,7 +28,7 @@ async function verifyChoices(
   await page.goto(`/iframe.html?id=${story}`);
   const content = page.getByTestId('drawer-responsive-css-content');
   await expect(content).toBeVisible({ timeout: 30_000 });
-  await expect(content).toHaveAttribute('data-leverui-drawer-css', '');
+  await expect(content).toHaveAttribute('data-lui-drawer-css', '');
   const id = await content.getAttribute('id');
   if (!id) throw new Error('Responsive Drawer has no primitive content ID.');
   for (const [width, maxWidth, animation] of cases) {

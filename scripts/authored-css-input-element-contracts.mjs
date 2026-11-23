@@ -3,7 +3,7 @@ export const inputElementContracts = [
   {
     family: 'input-element',
     required: [
-      '.leverui-input-element',
+      '.lui-input-element',
       "[data-placement='start']",
       "[data-placement='end']",
       "[data-placement-sm='start']",

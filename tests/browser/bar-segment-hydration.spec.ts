@@ -34,7 +34,7 @@ async function verifiesBarSegmentHydration({ page }: { page: Page }): Promise<vo
   await page.setContent(
     `${generateHydrationScript()}<style>${defaultCss}</style><div id="bar-segment-hydration-root">${markup}</div>`,
   );
-  const first = page.locator('.leverui-bar-segment__segment').first();
+  const first = page.locator('.lui-bar-segment__segment').first();
   await first.evaluate(markServerSegment);
   await expect(first).toHaveCSS('height', '40px');
   const errors: string[] = [];

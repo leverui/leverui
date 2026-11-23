@@ -66,7 +66,7 @@ export function RadarScatterFrame(props: RadarScatterFrameProps): JSX.Element {
           untrack(() => props.ref)?.(element);
         }
       }
-      class={[`leverui-${props.kind}-chart`, split()[0].class, split()[0].className]}
+      class={[`lui-${props.kind}-chart`, split()[0].class, split()[0].className]}
       role={props.interactive ? 'group' : split()[0].role}
       tabindex={props.interactive ? '0' : split()[0].tabindex}
       aria-label={props.interactive ? props.keyboardLabel : split()[0]['aria-label']}
@@ -75,8 +75,8 @@ export function RadarScatterFrame(props: RadarScatterFrameProps): JSX.Element {
       onKeyDown={keyDown}
       style={radarScatterRootStyle(
         props.kind === 'radar'
-          ? '--leverui-private-radar-chart-width'
-          : '--leverui-private-scatter-chart-height',
+          ? '--lui-private-radar-chart-width'
+          : '--lui-private-scatter-chart-height',
         props.dimension,
         split()[0].style,
       )}

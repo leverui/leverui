@@ -64,7 +64,7 @@ async function verifiesPaletteNamespace({ page }: { page: Page }): Promise<void>
   expect(await page.evaluate(readButtonColor)).toBe(defaultColor);
 
   await page.setContent(
-    `${base}<style>:root { --leverui-colors-blue-solid: rgb(255, 0, 0); }</style>${markup}`,
+    `${base}<style>:root { --lui-colors-blue-solid: rgb(255, 0, 0); }</style>${markup}`,
   );
   expect(await page.evaluate(readButtonColor)).toBe('rgb(255, 0, 0)');
 }
@@ -83,7 +83,7 @@ async function verifiesPublicShadowVariable({ page }: { page: Page }): Promise<v
   expect(await page.evaluate(readShadow)).toBe(defaultShadow);
 
   await page.setContent(
-    `${base}<style>:root { --leverui-shadows-md: 0 0 0 3px rgb(255, 0, 0); }</style>${markup}`,
+    `${base}<style>:root { --lui-shadows-md: 0 0 0 3px rgb(255, 0, 0); }</style>${markup}`,
   );
   expect(await page.evaluate(readShadow)).toContain('rgb(255, 0, 0)');
 }

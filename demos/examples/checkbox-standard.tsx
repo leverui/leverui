@@ -137,7 +137,7 @@ export function CheckboxWithSizes(): JSX.Element {
 /** Show every public Checkbox part for the guide's anatomy explorer. */
 export function CheckboxExplorerDemo(): JSX.Element {
   return (
-    <CheckboxGroup defaultValue={['terms']} style={{ gap: 'var(--leverui-spacing-4)' }}>
+    <CheckboxGroup defaultValue={['terms']} style={{ gap: 'var(--lui-spacing-4)' }}>
       <For
         each={[
           { value: 'terms', label: 'Accept terms and conditions' },

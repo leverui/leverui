@@ -5,20 +5,20 @@ async function verifiesMappedGeometry({ page }: { page: Page }): Promise<void> {
   for (const width of [375, 900]) {
     await page.setViewportSize({ width, height: 700 });
     await page.goto('/iframe.html?id=charts-area-chart--basic');
-    await expect(
-      page.locator('.leverui-area-chart .leverui-cartesian-chart__axes text'),
-    ).toHaveText(['Feb', 'Mar', 'May', 'Jun', 'Aug', 'Oct', 'Nov']);
+    await expect(page.locator('.lui-area-chart .lui-cartesian-chart__axes text')).toHaveText([
+      'Feb',
+      'Mar',
+      'May',
+      'Jun',
+      'Aug',
+      'Oct',
+      'Nov',
+    ]);
     await page.goto('/iframe.html?id=charts-line-chart--point-label');
-    const chart = page.locator('.leverui-line-chart');
-    await expect(chart.locator('.leverui-cartesian-chart__dot').first()).toHaveAttribute(
-      'cx',
-      '40',
-    );
-    await expect(chart.locator('.leverui-cartesian-chart__dot').first()).toHaveAttribute(
-      'cy',
-      '40',
-    );
-    const firstDot = chart.locator('.leverui-cartesian-chart__dot').first();
+    const chart = page.locator('.lui-line-chart');
+    await expect(chart.locator('.lui-cartesian-chart__dot').first()).toHaveAttribute('cx', '40');
+    await expect(chart.locator('.lui-cartesian-chart__dot').first()).toHaveAttribute('cy', '40');
+    const firstDot = chart.locator('.lui-cartesian-chart__dot').first();
     await expect(firstDot).toHaveAttribute('r', '3');
     await expect(firstDot).toHaveAttribute('stroke-width', '2');
     expect(
@@ -27,7 +27,7 @@ async function verifiesMappedGeometry({ page }: { page: Page }): Promise<void> {
         (dot) => getComputedStyle(dot).stroke === getComputedStyle(dot).fill,
       ),
     ).toBe(true);
-    const gridLines = chart.locator('.leverui-cartesian-chart__gridLine');
+    const gridLines = chart.locator('.lui-cartesian-chart__gridLine');
     await expect(gridLines).toHaveCount(7);
     expect(
       await gridLines.evaluateAll(

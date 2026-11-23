@@ -94,7 +94,7 @@ export function PinInputWithHookForm(): JSX.Element {
 
   return (
     <form onSubmit={submit}>
-      <Stack gap="4" align="flex-start" style={{ 'max-width': 'var(--leverui-sizes-sm)' }}>
+      <Stack gap="4" align="flex-start" style={{ 'max-width': 'var(--lui-sizes-sm)' }}>
         <Field.Root invalid={invalid()}>
           <PinInput.Root count={4} value={value()} onValueChange={updateValue}>
             <PinInput.HiddenInput />
@@ -149,9 +149,7 @@ export function PinInputAutoSubmit(): JSX.Element {
         <Text
           textStyle="sm"
           style={{
-            color: submitted()
-              ? 'var(--leverui-colors-fg-success)'
-              : 'var(--leverui-colors-fg-muted)',
+            color: submitted() ? 'var(--lui-colors-fg-success)' : 'var(--lui-colors-fg-muted)',
           }}
         >
           {submitted()

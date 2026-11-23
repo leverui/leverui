@@ -55,7 +55,7 @@ export const StartEndColor: Story = {
   parameters: {
     guide: {
       description:
-        'Use the `--leverui-skeleton-start-color` and `--leverui-skeleton-end-color` CSS variables to change the start and end color of the skeleton.',
+        'Use the `--lui-skeleton-start-color` and `--lui-skeleton-end-color` CSS variables to change the start and end color of the skeleton.',
     },
   },
 };

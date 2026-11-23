@@ -21,10 +21,7 @@ async function verifiesRtlHalfSelection({ page }: { page: Page }): Promise<void>
   await fourth.hover({ position: { x: rightHalf + 1, y: middle } });
   await fourth.hover({ position: { x: rightHalf, y: middle } });
   await fourth.click({ position: { x: rightHalf, y: middle } });
-  await expect(fourth.locator('.leverui-rating-group__itemIndicator')).toHaveAttribute(
-    'data-half',
-    '',
-  );
+  await expect(fourth.locator('.lui-rating-group__itemIndicator')).toHaveAttribute('data-half', '');
   expect(await form.evaluate(readRtlScore)).toBe('3.5');
   // Zag 2 names an item holding a half value by that value.
   await expect(fourth).toHaveAccessibleName('3.5 stars');

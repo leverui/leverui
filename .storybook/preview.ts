@@ -22,7 +22,7 @@ function withGalleryTheme(
   createEffect(
     () => (context.globals.theme === 'dark' ? 'dark' : 'light'),
     (mode) => {
-      document.documentElement.dataset.leveruiColorMode = mode;
+      document.documentElement.dataset.luiColorMode = mode;
       document.documentElement.classList.toggle('dark', mode === 'dark');
       document.documentElement.classList.toggle('light', mode === 'light');
     },

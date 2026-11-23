@@ -4,10 +4,10 @@
 
 [All variables](README.md)
 
-| Variable                          | Value   |
-| --------------------------------- | ------- |
-| `--leverui-line-heights-moderate` | `1.5`   |
-| `--leverui-line-heights-short`    | `1.375` |
-| `--leverui-line-heights-shorter`  | `1.25`  |
-| `--leverui-line-heights-tall`     | `1.625` |
-| `--leverui-line-heights-taller`   | `2`     |
+| Variable                      | Value   |
+| ----------------------------- | ------- |
+| `--lui-line-heights-moderate` | `1.5`   |
+| `--lui-line-heights-short`    | `1.375` |
+| `--lui-line-heights-shorter`  | `1.25`  |
+| `--lui-line-heights-tall`     | `1.625` |
+| `--lui-line-heights-taller`   | `2`     |

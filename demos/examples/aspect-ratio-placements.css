@@ -6,7 +6,7 @@
   max-width: 400px;
 }
 
-.ratio-gallery-image .leverui-image {
+.ratio-gallery-image .lui-image {
   object-fit: cover;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .ratio-carousel-thumb {
-  width: var(--leverui-spacing-16);
+  width: var(--lui-spacing-16);
   cursor: pointer;
 }
 

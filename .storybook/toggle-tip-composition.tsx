@@ -41,11 +41,11 @@ export function ToggleTipComposition(props: ToggleTipCompositionProps): JSX.Elem
           <Popover.Content
             style={{
               width: 'auto',
-              'padding-inline': 'var(--leverui-spacing-2)',
-              'padding-block': 'var(--leverui-spacing-1)',
-              'font-size': 'var(--leverui-font-sizes-xs)',
+              'padding-inline': 'var(--lui-spacing-2)',
+              'padding-block': 'var(--lui-spacing-1)',
+              'font-size': 'var(--lui-font-sizes-xs)',
               'line-height': '1rem',
-              'border-radius': 'var(--leverui-radii-sm)',
+              'border-radius': 'var(--lui-radii-sm)',
             }}
             aria-label={local.contentLabel}
             {...local.contentProps}

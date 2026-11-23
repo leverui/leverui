@@ -42,7 +42,7 @@ export function renderToastHydrationTree({
       children: (item) =>
         createComponent(Toast.Root, {
           id: 'hydrated-toast',
-          style: { width: 'var(--leverui-sizes-sm)' },
+          style: { width: 'var(--lui-sizes-sm)' },
           /** Create the title beneath the nearest toast root. */
           get children() {
             return createComponent(Toast.Content, {

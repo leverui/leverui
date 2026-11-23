@@ -148,25 +148,25 @@ splitters work together.
 
 ## Customize with CSS
 
-The root and every public part have a stable `.leverui-splitter__*` class. The
+The root and every public part have a stable `.lui-splitter__*` class. The
 resize trigger carries attributes for its orientation and for its focus,
 dragging, and disabled states. Use `style` to size one splitter. `unstyled`
 turns off the Lever UI look but keeps resizing and the part classes.
 
 ```css
 .my-splitter {
-  --leverui-splitter-thumb-size: 12px;
-  --leverui-splitter-handle-size: 28px;
-  --leverui-splitter-border-size: 2px;
+  --lui-splitter-thumb-size: 12px;
+  --lui-splitter-handle-size: 28px;
+  --lui-splitter-border-size: 2px;
 }
 
-.my-splitter .leverui-splitter__resizeTriggerIndicator {
+.my-splitter .lui-splitter__resizeTriggerIndicator {
   background: rebeccapurple;
 }
 ```
 
-Variables also include `--leverui-splitter-border-color` and
-`--leverui-splitter-thumb-color`. Your own class on the trigger, the separator,
+Variables also include `--lui-splitter-border-color` and
+`--lui-splitter-thumb-color`. Your own class on the trigger, the separator,
 or the indicator can override its CSS.
 
 ## Explorer

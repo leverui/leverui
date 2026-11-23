@@ -1,7 +1,7 @@
 .consumer-spacing-compact {
-  margin-inline-start: var(--leverui-spacing-1);
+  margin-inline-start: var(--lui-spacing-1);
 }
 
 .consumer-spacing-roomy {
-  margin-inline-start: var(--leverui-spacing-3);
+  margin-inline-start: var(--lui-spacing-3);
 }

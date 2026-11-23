@@ -1,32 +1,26 @@
-@layer leverui.recipes {
-  .leverui-input:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-input:not([data-unstyled]) {
     width: 100%;
-    min-width: var(--leverui-private-input-height);
+    min-width: var(--lui-private-input-height);
     outline: 0;
     position: relative;
     appearance: none;
     text-align: start;
-    height: var(--leverui-private-input-height);
-    font-size: var(--leverui-private-input-font-size, var(--leverui-font-sizes-sm));
-    line-height: var(--leverui-private-input-line-height, 1.25rem);
-    padding-inline: var(--leverui-private-input-padding, var(--leverui-spacing-3));
+    height: var(--lui-private-input-height);
+    font-size: var(--lui-private-input-font-size, var(--lui-font-sizes-sm));
+    line-height: var(--lui-private-input-line-height, 1.25rem);
+    padding-inline: var(--lui-private-input-padding, var(--lui-spacing-3));
     border-style: solid;
-    border-width: var(--leverui-private-input-border-width, 1px);
-    border-color: var(--leverui-private-input-border-color, var(--leverui-colors-border));
-    border-radius: var(--leverui-private-input-radius, var(--leverui-radii-l2));
-    background: var(--leverui-private-input-background, transparent);
-    --leverui-private-input-height: var(
-      --leverui-private-input-size-height,
-      var(--leverui-sizes-10)
+    border-width: var(--lui-private-input-border-width, 1px);
+    border-color: var(--lui-private-input-border-color, var(--lui-colors-border));
+    border-radius: var(--lui-private-input-radius, var(--lui-radii-l2));
+    background: var(--lui-private-input-background, transparent);
+    --lui-private-input-height: var(--lui-private-input-size-height, var(--lui-sizes-10));
+    --lui-private-input-group-field-height: var(--lui-private-input-height);
+    --lui-private-input-focus-color: var(
+      --lui-input-focus-color,
+      var(--lui-colors-color-palette-focus-ring)
     );
-    --leverui-private-input-group-field-height: var(--leverui-private-input-height);
-    --leverui-private-input-focus-color: var(
-      --leverui-input-focus-color,
-      var(--leverui-colors-color-palette-focus-ring)
-    );
-    --leverui-private-input-error-color: var(
-      --leverui-input-error-color,
-      var(--leverui-colors-border-error)
-    );
+    --lui-private-input-error-color: var(--lui-input-error-color, var(--lui-colors-border-error));
   }
 }

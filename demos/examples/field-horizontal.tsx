@@ -6,7 +6,7 @@ export function FieldHorizontal(): JSX.Element {
   return (
     <Stack
       gap="8"
-      style={{ 'max-width': 'var(--leverui-sizes-sm)', '--leverui-field-label-width': '96px' }}
+      style={{ 'max-width': 'var(--lui-sizes-sm)', '--lui-field-label-width': '96px' }}
     >
       <Field.Root orientation="horizontal">
         <Field.Label>Name</Field.Label>

@@ -27,7 +27,7 @@ export function FloatingPanelPosition(): JSX.Element {
         (details) => setPosition(details.position)
       }
     >
-      <HStack align="start" style={{ padding: 'var(--leverui-spacing-3)' }}>
+      <HStack align="start" style={{ padding: 'var(--lui-spacing-3)' }}>
         <FloatingPanel.Trigger
           asChild={
             /** Apply machine attributes to the outline button. */
@@ -38,7 +38,7 @@ export function FloatingPanelPosition(): JSX.Element {
             )
           }
         />
-        <Grid templateColumns="repeat(3, 1fr)" style={{ gap: 'var(--leverui-spacing-1)' }}>
+        <Grid templateColumns="repeat(3, 1fr)" style={{ gap: 'var(--lui-spacing-1)' }}>
           <span />
           <IconButton
             size="xs"
@@ -92,9 +92,9 @@ export function FloatingPanelPosition(): JSX.Element {
         <Text
           textStyle="xs"
           style={{
-            'font-family': 'var(--leverui-fonts-mono)',
-            color: 'var(--leverui-colors-fg-muted)',
-            'padding-top': 'var(--leverui-spacing-1)',
+            'font-family': 'var(--lui-fonts-mono)',
+            color: 'var(--lui-colors-fg-muted)',
+            'padding-top': 'var(--lui-spacing-1)',
           }}
         >
           x: {Math.round(position().x)}, y: {Math.round(position().y)}

@@ -115,7 +115,7 @@ export function ColorPickerInputOnly(): JSX.Element {
           endElementProps={{ class: 'color-picker-example-adornment' }}
           endElement={<ColorPicker.EyeDropper size="xs" variant="ghost" />}
         >
-          <ColorPicker.Input class="leverui-input-group__field" />
+          <ColorPicker.Input class="lui-input-group__field" />
         </InputGroup>
       </ColorPicker.Control>
     </ColorPicker.Root>
@@ -142,7 +142,7 @@ export function ColorPickerTriggerInInput(): JSX.Element {
           endElementProps={{ class: 'color-picker-example-adornment' }}
           endElement={<ColorPicker.EyeDropperTrigger size="xs" variant="ghost" />}
         >
-          <ColorPicker.Input class="leverui-input-group__field" />
+          <ColorPicker.Input class="lui-input-group__field" />
         </InputGroup>
       </ColorPicker.Control>
       <Portal>

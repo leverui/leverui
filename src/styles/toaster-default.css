@@ -1,23 +1,23 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   /* The ready-made layout that `<Toaster />` renders for the shared `toaster`. */
-  .leverui-toaster-default__spinner {
-    color: var(--leverui-colors-blue-solid);
+  .lui-toaster-default__spinner {
+    color: var(--lui-colors-blue-solid);
   }
 
-  .leverui-toaster-default__text {
+  .lui-toaster-default__text {
     flex: 1;
     max-width: 100%;
   }
 
   @media (width < 768px) {
-    .leverui-toast__toaster.leverui-toaster-default:not([data-unstyled]) {
-      inset-inline: var(--leverui-spacing-4);
+    .lui-toast__toaster.lui-toaster-default:not([data-unstyled]) {
+      inset-inline: var(--lui-spacing-4);
     }
   }
 
   @media (min-width: 768px) {
-    .leverui-toast__root.leverui-toaster-default__toast:not([data-unstyled]) {
-      width: var(--leverui-sizes-sm);
+    .lui-toast__root.lui-toaster-default__toast:not([data-unstyled]) {
+      width: var(--lui-sizes-sm);
     }
   }
 }

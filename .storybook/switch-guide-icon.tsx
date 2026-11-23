@@ -24,9 +24,7 @@ export function SwitchGuideIcon(props: {
           height="1em"
           fill="currentColor"
           style={{
-            color: props.color
-              ? `var(--leverui-colors-${props.color.replace('.', '-')})`
-              : undefined,
+            color: props.color ? `var(--lui-colors-${props.color.replace('.', '-')})` : undefined,
           }}
         >
           <path d={glyph().path} />

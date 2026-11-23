@@ -85,16 +85,16 @@ export function RadialChart(props: RadialChartProps): JSX.Element {
     <div
       {...native}
       ref={props.ref}
-      class={['leverui-radial-chart', props.class, props.className]}
+      class={['lui-radial-chart', props.class, props.className]}
       data-chart-shape={innerRadius() > 0 ? 'donut' : 'pie'}
       data-label-placement={props.label}
       data-legend={props.legend ? '' : undefined}
       data-detached={props.detached ? '' : undefined}
-      style={chartRootStyle('--leverui-private-radial-chart-size', props.size, props.style)}
+      style={chartRootStyle('--lui-private-radial-chart-size', props.size, props.style)}
     >
       <svg
         ref={svgRef}
-        class="leverui-radial-chart__svg"
+        class="lui-radial-chart__svg"
         role="img"
         aria-label={props['aria-label'] ?? 'Radial chart'}
         width={size()}
@@ -141,12 +141,12 @@ export function RadialChart(props: RadialChartProps): JSX.Element {
               }
               return (
                 <path
-                  class="leverui-radial-chart__sector"
+                  class="lui-radial-chart__sector"
                   d={path()}
                   fill={fill()}
                   style={{
-                    '--leverui-private-radial-sector-stroke': props.stroke,
-                    '--leverui-private-radial-sector-stroke-width': props.strokeWidth,
+                    '--lui-private-radial-sector-stroke': props.stroke,
+                    '--lui-private-radial-sector-stroke-width': props.strokeWidth,
                   }}
                   tabindex="0"
                   aria-label={`${sector.datum.name}: ${sector.datum.value}`}

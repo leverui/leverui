@@ -20,7 +20,7 @@ async function verifiesEveryAlertExample({ page }: { page: Page }): Promise<void
   for (const id of exampleIds) {
     await page.goto(`/iframe.html?id=components-alert--${id}`);
     await expect(
-      page.locator('[class*="leverui-alert__root"]').first(),
+      page.locator('[class*="lui-alert__root"]').first(),
       `Alert example ${id} should render`,
     ).toBeVisible({ timeout: 45_000 });
   }
@@ -39,7 +39,7 @@ async function verifiesAlertTables({ page }: { page: Page }): Promise<void> {
 /** Verify the four statuses retain their distinct message copy. */
 async function verifiesStatusMessages({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-alert--status');
-  await expect(page.locator('[class*="leverui-alert__root"]')).toHaveCount(4);
+  await expect(page.locator('[class*="lui-alert__root"]')).toHaveCount(4);
   await expect(page.getByText('Maintenance starts on Sunday at 2 am')).toBeVisible();
 }
 

@@ -18,7 +18,7 @@ async function verifiesEveryBreadcrumbExample({ page }: { page: Page }): Promise
   for (const id of exampleIds) {
     await page.goto(`/iframe.html?id=components-breadcrumb--${id}`);
     await expect(
-      page.locator('[class*="leverui-breadcrumb__root"]').first(),
+      page.locator('[class*="lui-breadcrumb__root"]').first(),
       `Breadcrumb example ${id} should render`,
     ).toBeVisible({ timeout: 45_000 });
   }

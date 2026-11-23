@@ -13,7 +13,7 @@ const series = [{ name: 'sales', color: 'teal.solid' }];
 
 /** Read the x position of each category label. */
 function labelXs(container: HTMLElement): number[] {
-  return [...container.querySelectorAll('.leverui-cartesian-chart__axes text')].map(
+  return [...container.querySelectorAll('.lui-cartesian-chart__axes text')].map(
     /** Read one label's x attribute. */
     (label) => Number(label.getAttribute('x')),
   );
@@ -36,7 +36,7 @@ function checksTickAngle(): void {
     /** Mount a chart with rotated labels. */
     () => <LineChart data={data} series={series} xKey="month" xTickAngle={-45} />,
   );
-  const label = container.querySelector('.leverui-cartesian-chart__axes text');
+  const label = container.querySelector('.lui-cartesian-chart__axes text');
   expect(label?.getAttribute('text-anchor')).toBe('end');
   expect(label?.getAttribute('transform')).toMatch(/^rotate\(-45 /);
 }
@@ -47,12 +47,12 @@ function checksAxisLines(): void {
     /** Mount a chart with axis lines and a value axis. */
     () => <LineChart data={data} series={series} xKey="month" showAxisLines showYAxis />,
   );
-  expect(container.querySelectorAll('.leverui-cartesian-chart__axisLine')).toHaveLength(5);
+  expect(container.querySelectorAll('.lui-cartesian-chart__axisLine')).toHaveLength(5);
   const plain = render(
     /** Mount the default chart without axis lines. */
     () => <LineChart data={data} series={series} xKey="month" />,
   );
-  expect(plain.container.querySelectorAll('.leverui-cartesian-chart__axisLine')).toHaveLength(0);
+  expect(plain.container.querySelectorAll('.lui-cartesian-chart__axisLine')).toHaveLength(0);
 }
 
 /** Keep the axis options off the chart's root element. */
@@ -71,7 +71,7 @@ function checksNoStrayAttributes(): void {
       />
     ),
   );
-  const root = container.querySelector('.leverui-cartesian-chart__root');
+  const root = container.querySelector('.lui-cartesian-chart__root');
   const names = [...(root?.attributes ?? [])].map(
     /** Read one attribute's name as the browser stores it. */
     (attribute) => attribute.name.toLowerCase(),

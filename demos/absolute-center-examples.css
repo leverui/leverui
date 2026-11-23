@@ -1,11 +1,11 @@
 .absolute-center-gallery-frame {
-  padding: var(--leverui-spacing-10);
+  padding: var(--lui-spacing-10);
 }
 
 .absolute-center-gallery-panel {
   position: relative;
-  background: var(--leverui-colors-bg-muted);
-  border-radius: var(--leverui-radii-md);
+  background: var(--lui-colors-bg-muted);
+  border-radius: var(--lui-radii-md);
 }
 
 .absolute-center-gallery-panel--basic,
@@ -25,7 +25,7 @@
 
 .absolute-center-gallery-panel--overlay {
   height: 120px;
-  padding: var(--leverui-spacing-10);
+  padding: var(--lui-spacing-10);
 }
 
 .absolute-center-gallery-panel--rtl {
@@ -33,19 +33,19 @@
 }
 
 .absolute-center-gallery-content {
-  padding-inline: var(--leverui-spacing-4);
-  padding-block: var(--leverui-spacing-2);
-  border-radius: var(--leverui-radii-md);
-  background: var(--leverui-colors-bg-emphasized);
-  color: var(--leverui-colors-fg);
+  padding-inline: var(--lui-spacing-4);
+  padding-block: var(--lui-spacing-2);
+  border-radius: var(--lui-radii-md);
+  background: var(--lui-colors-bg-emphasized);
+  color: var(--lui-colors-fg);
 }
 
 .absolute-center-gallery-axis-content {
-  padding-inline: var(--leverui-spacing-3);
-  padding-block: var(--leverui-spacing-1);
-  border-radius: var(--leverui-radii-sm);
-  background: var(--leverui-colors-blue-solid);
-  color: var(--leverui-colors-blue-contrast);
+  padding-inline: var(--lui-spacing-3);
+  padding-block: var(--lui-spacing-1);
+  border-radius: var(--lui-radii-sm);
+  background: var(--lui-colors-blue-solid);
+  color: var(--lui-colors-blue-contrast);
 }
 
 .absolute-center-gallery-heart {
@@ -53,9 +53,9 @@
   place-items: center;
   inline-size: 44px;
   block-size: 44px;
-  border-radius: var(--leverui-radii-full);
-  background: var(--leverui-colors-red-solid);
-  color: var(--leverui-colors-red-contrast);
+  border-radius: var(--lui-radii-full);
+  background: var(--lui-colors-red-solid);
+  color: var(--lui-colors-red-contrast);
   font-size: 20px;
   line-height: 1;
 }
@@ -68,7 +68,7 @@
 }
 
 .absolute-center-gallery-label {
-  font-weight: var(--leverui-font-weights-medium);
+  font-weight: var(--lui-font-weights-medium);
 }
 
 .absolute-center-gallery-dimmed {
@@ -76,27 +76,27 @@
 }
 
 .absolute-center-gallery-loading {
-  color: var(--leverui-colors-fg-muted);
-  font-size: var(--leverui-font-sizes-sm);
+  color: var(--lui-colors-fg-muted);
+  font-size: var(--lui-font-sizes-sm);
 }
 
 .absolute-center-gallery-rtl-content {
-  padding-inline: var(--leverui-spacing-4);
-  padding-block: var(--leverui-spacing-2);
-  border-radius: var(--leverui-radii-md);
-  background: var(--leverui-colors-green-solid);
-  color: var(--leverui-colors-green-contrast);
+  padding-inline: var(--lui-spacing-4);
+  padding-block: var(--lui-spacing-2);
+  border-radius: var(--lui-radii-md);
+  background: var(--lui-colors-green-solid);
+  color: var(--lui-colors-green-contrast);
 }
 
 .absolute-center-gallery-overlay {
-  padding: var(--leverui-spacing-4);
-  border-radius: var(--leverui-radii-md);
-  background: color-mix(in srgb, var(--leverui-colors-bg) 80%, transparent);
+  padding: var(--lui-spacing-4);
+  border-radius: var(--lui-radii-md);
+  background: color-mix(in srgb, var(--lui-colors-bg) 80%, transparent);
   backdrop-filter: blur(2px);
 }
 
 @media (max-width: 700px) {
   .absolute-center-gallery-frame {
-    padding: var(--leverui-spacing-6);
+    padding: var(--lui-spacing-6);
   }
 }

@@ -11,7 +11,7 @@ export function ProgressCircleWithColors(): JSX.Element {
         {
           /** Compare three circle sizes for one color palette. */
           (colorPalette) => (
-            <HStack gap="10" style={{ 'padding-inline': 'var(--leverui-spacing-4)' }}>
+            <HStack gap="10" style={{ 'padding-inline': 'var(--lui-spacing-4)' }}>
               <Text style={{ 'min-width': '8ch' }}>{colorPalette}</Text>
               <ProgressCircle.Root size="sm" value={30} colorPalette={colorPalette}>
                 <ProgressCircle.Circle>

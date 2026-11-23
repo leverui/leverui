@@ -39,11 +39,11 @@ assert.match(html, /part="notice"/);
 assert.match(html, />Native text<\/div>/);
 assert.doesNotMatch(html, /Replaced child/);
 assert.match(html, /Packed Button/);
-assert.match(html, /data-leverui-color-mode="dark"/);
-assert.match(html, /leverui-button/);
+assert.match(html, /data-lui-color-mode="dark"/);
+assert.match(html, /lui-button/);
 assert.match(html, /id="packed-button"[^>]*data-size="md"/);
 assert.match(html, /id="packed-button"[^>]*data-variant="solid"/);
-assert.match(html, /id="packed-button"[^>]*data-leverui-color-palette="blue"/);
+assert.match(html, /id="packed-button"[^>]*data-lui-color-palette="blue"/);
 
 /** Render a named consumer class and a CSS-customized Button without a provider. */
 function renderConsumerCss() {
@@ -70,9 +70,9 @@ const packageCss = readFileSync(
   'utf8',
 );
 const consumerCss = readFileSync(new URL('./consumer-system.css', import.meta.url), 'utf8');
-assert.match(packageCss, /\.leverui-button/);
+assert.match(packageCss, /\.lui-button/);
 assert.match(consumerCss, /\.consumer-brand-space/);
-assert.match(consumerCss, /--leverui-colors-blue-solid/);
+assert.match(consumerCss, /--lui-colors-blue-solid/);
 
 /** Keep native button type separate from CSS appearance selection. */
 function renderNativeTypeButton() {

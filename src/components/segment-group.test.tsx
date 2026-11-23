@@ -37,7 +37,7 @@ async function verifiesGeneratedItems(): Promise<void> {
   const solid = screen.getByRole('radio', { name: 'Solid' }) as HTMLInputElement;
   const vue = screen.getByRole('radio', { name: 'Vue' }) as HTMLInputElement;
   expect(root).toHaveAttribute('data-orientation', 'horizontal');
-  expect(root).toHaveClass('leverui-segment-group__root');
+  expect(root).toHaveClass('lui-segment-group__root');
   expect(react.checked).toBe(true);
   expect(vue.disabled).toBe(true);
   fireEvent.click(screen.getByText('Solid'));

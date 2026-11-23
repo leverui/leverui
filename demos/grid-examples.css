@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: var(--leverui-sizes-20);
-  background-color: var(--leverui-colors-bg-emphasized);
+  height: var(--lui-sizes-20);
+  background-color: var(--lui-colors-bg-emphasized);
   background-clip: padding-box;
   background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
   border-width: 1px;
@@ -15,11 +15,11 @@
 }
 
 .grid-example-gap-4 {
-  gap: var(--leverui-spacing-4);
+  gap: var(--lui-spacing-4);
 }
 
 .grid-example-gap-6 {
-  gap: var(--leverui-spacing-6);
+  gap: var(--lui-spacing-6);
 }
 
 .grid-example-height {
@@ -27,21 +27,21 @@
 }
 
 .grid-example-item--green {
-  background: var(--leverui-colors-green-500);
+  background: var(--lui-colors-green-500);
 }
 
 .grid-example-item--pink {
-  background: var(--leverui-colors-pink-500);
+  background: var(--lui-colors-pink-500);
 }
 
 .grid-example-item--red {
-  background: var(--leverui-colors-red-500);
+  background: var(--lui-colors-red-500);
 }
 
 .grid-example-item--teal {
-  background: var(--leverui-colors-teal-500);
+  background: var(--lui-colors-teal-500);
 }
 
 .grid-example-item--yellow {
-  background: var(--leverui-colors-yellow-500);
+  background: var(--lui-colors-yellow-500);
 }

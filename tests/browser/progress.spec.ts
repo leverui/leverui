@@ -98,7 +98,7 @@ async function verifiesConsumerCss({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=feedback-progress--contract');
   await page.addStyleTag({
     content: `
-      [data-testid='progress-default'] { --leverui-progress-track-height: 17px; }
+      [data-testid='progress-default'] { --lui-progress-track-height: 17px; }
       .consumer-progress-range { background-color: rgb(12, 34, 56); }
     `,
   });

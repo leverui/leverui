@@ -33,7 +33,7 @@ function verifiesCompoundMarkup(): void {
   expect(screen.getByTestId('title').tagName).toBe('H3');
   expect(screen.getByTestId('description').tagName).toBe('P');
   expect(screen.getByRole('button', { name: 'Clear filters' })).toBeDefined();
-  expect(root.className).toContain('leverui-empty-state__root');
+  expect(root.className).toContain('lui-empty-state__root');
 }
 
 it('renders native Empty State parts and caller actions', verifiesCompoundMarkup);

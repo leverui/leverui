@@ -12,7 +12,7 @@ async function verifiesAspectRatioExamples({ page }: { page: Page }): Promise<vo
     ['video', 560, 560, 'iframe'],
   ] as const) {
     await page.goto(`/iframe.html?id=layout-aspectratio--${story}`);
-    const ratio = page.locator('#storybook-root .leverui-aspect-ratio');
+    const ratio = page.locator('#storybook-root .lui-aspect-ratio');
     await expect(ratio).toBeVisible();
     const bounds = await ratio.boundingBox();
     expect(bounds?.width).toBe(width);
@@ -22,7 +22,7 @@ async function verifiesAspectRatioExamples({ page }: { page: Page }): Promise<vo
 
   await page.setViewportSize({ width: 400, height: 720 });
   await page.goto('/iframe.html?id=layout-aspectratio--responsive');
-  const narrow = page.locator('#storybook-root .leverui-aspect-ratio');
+  const narrow = page.locator('#storybook-root .lui-aspect-ratio');
   await expect(narrow).toBeVisible();
   const bounds = await narrow.boundingBox();
   expect(bounds?.width).toBe(300);

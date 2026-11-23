@@ -1,53 +1,53 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 480px) {
-    .leverui-tree-view__root:not([data-unstyled])[data-size-sm='xs'] {
-      --leverui-private-tree-default-icon-size: var(--leverui-spacing-3);
-      --leverui-private-tree-default-padding-inline: var(--leverui-spacing-2);
-      --leverui-private-tree-default-padding-block: var(--leverui-spacing-1);
-      --leverui-private-tree-default-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-tree-default-line-height: 1rem;
+    .lui-tree-view__root:not([data-unstyled])[data-size-sm='xs'] {
+      --lui-private-tree-default-icon-size: var(--lui-spacing-3);
+      --lui-private-tree-default-padding-inline: var(--lui-spacing-2);
+      --lui-private-tree-default-padding-block: var(--lui-spacing-1);
+      --lui-private-tree-default-font-size: var(--lui-font-sizes-xs);
+      --lui-private-tree-default-line-height: 1rem;
     }
 
-    .leverui-tree-view__root:not([data-unstyled])[data-size-sm='sm'] {
-      --leverui-private-tree-default-icon-size: var(--leverui-spacing-3);
-      --leverui-private-tree-default-padding-inline: var(--leverui-spacing-3);
-      --leverui-private-tree-default-padding-block: var(--leverui-spacing-1);
-      --leverui-private-tree-default-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-tree-default-line-height: 1.25rem;
+    .lui-tree-view__root:not([data-unstyled])[data-size-sm='sm'] {
+      --lui-private-tree-default-icon-size: var(--lui-spacing-3);
+      --lui-private-tree-default-padding-inline: var(--lui-spacing-3);
+      --lui-private-tree-default-padding-block: var(--lui-spacing-1);
+      --lui-private-tree-default-font-size: var(--lui-font-sizes-sm);
+      --lui-private-tree-default-line-height: 1.25rem;
     }
 
-    .leverui-tree-view__root:not([data-unstyled])[data-size-sm='md'] {
-      --leverui-private-tree-default-icon-size: var(--leverui-spacing-4);
-      --leverui-private-tree-default-padding-inline: var(--leverui-spacing-3);
-      --leverui-private-tree-default-padding-block: calc(var(--leverui-spacing-1) * 1.5);
-      --leverui-private-tree-default-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-tree-default-line-height: 1.25rem;
+    .lui-tree-view__root:not([data-unstyled])[data-size-sm='md'] {
+      --lui-private-tree-default-icon-size: var(--lui-spacing-4);
+      --lui-private-tree-default-padding-inline: var(--lui-spacing-3);
+      --lui-private-tree-default-padding-block: calc(var(--lui-spacing-1) * 1.5);
+      --lui-private-tree-default-font-size: var(--lui-font-sizes-sm);
+      --lui-private-tree-default-line-height: 1.25rem;
     }
   }
 
   @media (min-width: 768px) {
-    .leverui-tree-view__root:not([data-unstyled])[data-size-md='xs'] {
-      --leverui-private-tree-default-icon-size: var(--leverui-spacing-3);
-      --leverui-private-tree-default-padding-inline: var(--leverui-spacing-2);
-      --leverui-private-tree-default-padding-block: var(--leverui-spacing-1);
-      --leverui-private-tree-default-font-size: var(--leverui-font-sizes-xs);
-      --leverui-private-tree-default-line-height: 1rem;
+    .lui-tree-view__root:not([data-unstyled])[data-size-md='xs'] {
+      --lui-private-tree-default-icon-size: var(--lui-spacing-3);
+      --lui-private-tree-default-padding-inline: var(--lui-spacing-2);
+      --lui-private-tree-default-padding-block: var(--lui-spacing-1);
+      --lui-private-tree-default-font-size: var(--lui-font-sizes-xs);
+      --lui-private-tree-default-line-height: 1rem;
     }
 
-    .leverui-tree-view__root:not([data-unstyled])[data-size-md='sm'] {
-      --leverui-private-tree-default-icon-size: var(--leverui-spacing-3);
-      --leverui-private-tree-default-padding-inline: var(--leverui-spacing-3);
-      --leverui-private-tree-default-padding-block: var(--leverui-spacing-1);
-      --leverui-private-tree-default-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-tree-default-line-height: 1.25rem;
+    .lui-tree-view__root:not([data-unstyled])[data-size-md='sm'] {
+      --lui-private-tree-default-icon-size: var(--lui-spacing-3);
+      --lui-private-tree-default-padding-inline: var(--lui-spacing-3);
+      --lui-private-tree-default-padding-block: var(--lui-spacing-1);
+      --lui-private-tree-default-font-size: var(--lui-font-sizes-sm);
+      --lui-private-tree-default-line-height: 1.25rem;
     }
 
-    .leverui-tree-view__root:not([data-unstyled])[data-size-md='md'] {
-      --leverui-private-tree-default-icon-size: var(--leverui-spacing-4);
-      --leverui-private-tree-default-padding-inline: var(--leverui-spacing-3);
-      --leverui-private-tree-default-padding-block: calc(var(--leverui-spacing-1) * 1.5);
-      --leverui-private-tree-default-font-size: var(--leverui-font-sizes-sm);
-      --leverui-private-tree-default-line-height: 1.25rem;
+    .lui-tree-view__root:not([data-unstyled])[data-size-md='md'] {
+      --lui-private-tree-default-icon-size: var(--lui-spacing-4);
+      --lui-private-tree-default-padding-inline: var(--lui-spacing-3);
+      --lui-private-tree-default-padding-block: calc(var(--lui-spacing-1) * 1.5);
+      --lui-private-tree-default-font-size: var(--lui-font-sizes-sm);
+      --lui-private-tree-default-line-height: 1.25rem;
     }
   }
 }

@@ -81,7 +81,7 @@ async function verifiesCustomSystemsHydration({ page }: { page: Page }): Promise
   await alpha.evaluate(markElement);
 
   await page.addStyleTag({
-    content: '.css-scope-alpha { --leverui-colors-blue-600: #333333; }',
+    content: '.css-scope-alpha { --lui-colors-blue-600: #333333; }',
   });
   await expect(alpha).toHaveCSS('background-color', 'rgb(51, 51, 51)');
   await expect(page.locator('#beta-box')).toHaveCSS('background-color', 'rgb(169, 85, 0)');

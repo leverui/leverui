@@ -30,7 +30,7 @@ function renderInstalledDataList() {
 
 const markup = renderToString(renderInstalledDataList);
 assert.match(markup, /<dl[^>]*id="packed-server-data-list"/);
-assert.match(markup, /<div[^>]*leverui-data-list__item/);
+assert.match(markup, /<div[^>]*lui-data-list__item/);
 assert.match(markup, /<dt[^>]*>Status<\/dt>/);
 assert.match(markup, /<dd[^>]*>Active<\/dd>/);
 assert.doesNotMatch(markup, /\sorientation="horizontal"/);

@@ -3,8 +3,8 @@ export const collapsibleContracts = [
   {
     family: 'collapsible',
     required: [
-      '.leverui-collapsible__root',
-      '.leverui-collapsible__content',
+      '.lui-collapsible__root',
+      '.lui-collapsible__content',
       "[data-state='open']",
       "[data-state='closed']",
       '[data-has-collapsed-size]',

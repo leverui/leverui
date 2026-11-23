@@ -23,24 +23,24 @@ import { Marquee } from '@leverui/components';
 ```tsx
 <Marquee.Root
   style={{
-    '--leverui-marquee-duration': '30s',
-    '--leverui-marquee-delay': '0s',
-    '--leverui-marquee-loop-count': 'infinite',
-    '--leverui-marquee-edge-color': 'var(--leverui-colors-bg)',
-    '--leverui-marquee-edge-size': '20%',
+    '--lui-marquee-duration': '30s',
+    '--lui-marquee-delay': '0s',
+    '--lui-marquee-loop-count': 'infinite',
+    '--lui-marquee-edge-color': 'var(--lui-colors-bg)',
+    '--lui-marquee-edge-size': '20%',
   }}
 >
   {/* ... */}
 </Marquee.Root>
 ```
 
-| Variable                       | Description                                  | Default                    |
-| ------------------------------ | -------------------------------------------- | -------------------------- |
-| `--leverui-marquee-duration`   | How long the animation takes                 | Computed                   |
-| `--leverui-marquee-delay`      | How long to wait before the animation starts | `0s`                       |
-| `--leverui-marquee-loop-count` | How many times the animation runs            | `infinite`                 |
-| `--leverui-marquee-edge-color` | The color of the fade at the edges           | `var(--leverui-colors-bg)` |
-| `--leverui-marquee-edge-size`  | The size of the fade at the edges            | `20%`                      |
+| Variable                   | Description                                  | Default                |
+| -------------------------- | -------------------------------------------- | ---------------------- |
+| `--lui-marquee-duration`   | How long the animation takes                 | Computed               |
+| `--lui-marquee-delay`      | How long to wait before the animation starts | `0s`                   |
+| `--lui-marquee-loop-count` | How many times the animation runs            | `infinite`             |
+| `--lui-marquee-edge-color` | The color of the fade at the edges           | `var(--lui-colors-bg)` |
+| `--lui-marquee-edge-size`  | The size of the fade at the edges            | `20%`                  |
 
 ## Props
 
@@ -71,7 +71,7 @@ settings. Edge fades must not hide item text that assistive technology needs.
 
 ## Customize with CSS
 
-Each part has a stable `.leverui-marquee__*` class. `class` and `style` work on
+Each part has a stable `.lui-marquee__*` class. `class` and `style` work on
 the root, viewport, content, item, and edge. `unstyled` on the root or a part
 turns off its default styles. Behavior stays the same.
 
@@ -83,15 +83,15 @@ turns off its default styles. Behavior stays the same.
 
 ```css
 .featured-marquee {
-  --leverui-marquee-edge-size: 12%;
-  --leverui-marquee-edge-color: var(--page-background);
-  --leverui-marquee-duration: 30s;
+  --lui-marquee-edge-size: 12%;
+  --lui-marquee-edge-color: var(--page-background);
+  --lui-marquee-duration: 30s;
 }
 
-.featured-marquee .leverui-marquee__item {
+.featured-marquee .lui-marquee__item {
   padding-inline: 1rem;
 }
 ```
 
-The root also has `--leverui-marquee-spacing`. The measurement variables the
+The root also has `--lui-marquee-spacing`. The measurement variables the
 marquee sets inline are internal.

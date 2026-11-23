@@ -1,15 +1,15 @@
-@layer leverui.recipes {
-  .leverui-toast__root:not([data-unstyled]) {
-    --leverui-toast-trigger-bg: var(--leverui-colors-bg-muted);
+@layer lui.recipes {
+  .lui-toast__root:not([data-unstyled]) {
+    --lui-toast-trigger-bg: var(--lui-colors-bg-muted);
     width: 100%;
     display: flex;
     align-items: flex-start;
     position: relative;
-    gap: var(--leverui-spacing-3);
-    padding-block: var(--leverui-spacing-4);
-    padding-inline-start: var(--leverui-spacing-4);
-    padding-inline-end: var(--leverui-spacing-6);
-    border-radius: var(--leverui-radii-l2);
+    gap: var(--lui-spacing-3);
+    padding-block: var(--lui-spacing-4);
+    padding-inline-start: var(--lui-spacing-4);
+    padding-inline-end: var(--lui-spacing-6);
+    border-radius: var(--lui-radii-l2);
     translate: var(--x) var(--y);
     scale: var(--scale);
     z-index: var(--z-index);
@@ -23,9 +23,9 @@
       height 400ms,
       box-shadow 200ms;
     transition-timing-function: cubic-bezier(0.21, 1.02, 0.73, 1);
-    background: var(--leverui-colors-bg-panel);
-    color: var(--leverui-colors-fg);
-    box-shadow: var(--leverui-shadows-xl);
+    background: var(--lui-colors-bg-panel);
+    color: var(--lui-colors-fg);
+    box-shadow: var(--lui-shadows-xl);
 
     &[data-state='closed'] {
       transition:
@@ -37,13 +37,13 @@
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .leverui-toast__root:not([data-unstyled]) {
+    .lui-toast__root:not([data-unstyled]) {
       transition: none;
     }
   }
 
   /* Zag 2 no longer sets an inline z-index on the toast group. */
-  .leverui-toast__toaster {
-    z-index: var(--leverui-z-index-toast);
+  .lui-toast__toaster {
+    z-index: var(--lui-z-index-toast);
   }
 }

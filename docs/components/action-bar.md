@@ -58,5 +58,5 @@ import { ActionBar } from '@leverui/components';
 Custom layouts: `ActionBar.RootProvider`, `ActionBar.PropsProvider`,
 `ActionBar.Context`, `useActionBarContext`.
 
-Styling: pass `class`, set variables such as `--leverui-action-bar-offset`, or
-target the stable `leverui-action-bar__*` classes.
+Styling: pass `class`, set variables such as `--lui-action-bar-offset`, or
+target the stable `lui-action-bar__*` classes.

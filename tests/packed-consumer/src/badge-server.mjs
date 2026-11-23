@@ -21,7 +21,7 @@ function renderInstalledBadge() {
 
 const markup = renderInstalledBadge();
 assert.match(markup, /<span[^>]*id="packed-server-badge"/);
-assert.match(markup, /leverui-badge/);
+assert.match(markup, /lui-badge/);
 assert.match(markup, /title="Server status"/);
 assert.match(markup, />Active<\/span>/);
 assert.doesNotMatch(markup, /\s(?:size|variant|colorPalette)=/);

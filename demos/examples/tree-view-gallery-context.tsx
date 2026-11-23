@@ -87,7 +87,7 @@ function ContextNode(props: { node: TreeNode; branch?: boolean }): JSX.Element {
 /** Open Rename and Delete actions on a tree item's context gesture. */
 export function TreeViewContextMenu(): JSX.Element {
   return (
-    <TreeView.Root collection={collection} style={{ 'max-width': 'var(--leverui-sizes-sm)' }}>
+    <TreeView.Root collection={collection} style={{ 'max-width': 'var(--lui-sizes-sm)' }}>
       <TreeView.Label>Project files</TreeView.Label>
       <TreeView.Tree>
         <TreeView.Node<TreeNode>

@@ -16,10 +16,10 @@ export const codeBlockContracts = [
   {
     family: 'code-block',
     required: [
-      '.leverui-code-block__root:not([data-unstyled])',
+      '.lui-code-block__root:not([data-unstyled])',
       ...styledParts.map(
         /** Require a default CSS rule for each styled public part. */
-        (part) => `.leverui-code-block__${part}:not([data-unstyled])`,
+        (part) => `.lui-code-block__${part}:not([data-unstyled])`,
       ),
       ...sizes.map(
         /** Require each scalar CodeBlock size. */
@@ -38,8 +38,8 @@ export const codeBlockContracts = [
       '[data-word-wrap]',
       "[data-diff='added']",
       "[data-diff='removed']",
-      '--leverui-code-block-bg',
-      '--leverui-code-block-padding',
+      '--lui-code-block-bg',
+      '--lui-code-block-padding',
     ],
   },
 ];

@@ -48,7 +48,7 @@ export function widthToColumns(width: SimpleGridWidth | undefined): ResponsiveVa
       const resolved = sizeCssValue(value);
       const size =
         typeof value === 'number' && value !== 0
-          ? `var(--leverui-sizes-${value}, ${value}px)`
+          ? `var(--lui-sizes-${value}, ${value}px)`
           : resolved;
       return `repeat(auto-fit, minmax(${size}, 1fr))`;
     },

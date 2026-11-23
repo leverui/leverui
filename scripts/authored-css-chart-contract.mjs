@@ -43,39 +43,39 @@ export const chartContracts = [
   {
     family: 'bar-chart',
     required: [
-      '.leverui-bar-chart:not([data-unstyled])',
+      '.lui-bar-chart:not([data-unstyled])',
       ...barParts.map(
         /** Keep fixed Bar Chart presentation in the stylesheet. */
-        (part) => `.leverui-bar-chart__${part}`,
+        (part) => `.lui-bar-chart__${part}`,
       ),
-      '--leverui-bar-chart-axis-font-size',
-      '--leverui-bar-chart-legend-gap',
-      '--leverui-bar-chart-tooltip-background',
+      '--lui-bar-chart-axis-font-size',
+      '--lui-bar-chart-legend-gap',
+      '--lui-bar-chart-tooltip-background',
       "[data-placement='top-right']",
     ],
   },
   {
     family: 'radar-chart',
     required: [
-      '.leverui-radar-chart',
+      '.lui-radar-chart',
       ...radarParts.map(
         /** Keep fixed Radar Chart presentation in the stylesheet. */
-        (part) => `.leverui-radar-chart__${part}`,
+        (part) => `.lui-radar-chart__${part}`,
       ),
-      '--leverui-radar-chart-grid-stroke',
-      '--leverui-radar-chart-legend-gap',
+      '--lui-radar-chart-grid-stroke',
+      '--lui-radar-chart-legend-gap',
     ],
   },
   {
     family: 'scatter-chart',
     required: [
-      '.leverui-scatter-chart',
+      '.lui-scatter-chart',
       ...scatterParts.map(
         /** Keep fixed Scatter Chart presentation in the stylesheet. */
-        (part) => `.leverui-scatter-chart__${part}`,
+        (part) => `.lui-scatter-chart__${part}`,
       ),
-      '--leverui-scatter-chart-axis-stroke',
-      '--leverui-scatter-chart-legend-gap',
+      '--lui-scatter-chart-axis-stroke',
+      '--lui-scatter-chart-legend-gap',
     ],
   },
 ];

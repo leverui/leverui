@@ -58,7 +58,7 @@ async function verifiesSkipNavCss({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   const markup = renderSkipNavExamples();
   expect(markup).not.toMatch(/style="[^"]*outline/);
-  const consumerCss = String.raw`:root { --leverui-spacing-2\.5: 1.5rem; } .consumer-skip { top: 18px; } .consumer-destination { outline: 1px solid red; }`;
+  const consumerCss = String.raw`:root { --lui-spacing-2\.5: 1.5rem; } .consumer-skip { top: 18px; } .consumer-destination { outline: 1px solid red; }`;
   await page.setContent(`<style>${defaultCss}</style><style>${consumerCss}</style>${markup}`);
   const defaultLink = page.locator('a[href="#default-main"]');
   await expect(defaultLink).toHaveCSS('position', 'absolute');
@@ -71,8 +71,8 @@ async function verifiesSkipNavCss({ page }: { page: Page }): Promise<void> {
   await expect(page.locator('a[href="#unstyled-main"]')).toHaveCSS('position', 'static');
   await expect(page.locator('a[href="#native-style-main"]')).toHaveCSS('top', '12px');
   await expect(page.locator('a[href="#unstyled-native-main"]')).toHaveCSS('position', 'relative');
-  await expect(defaultLink).toHaveClass(/leverui-skip-nav/);
-  await expect(page.locator('#default-main')).toHaveClass(/leverui-skip-nav-content/);
+  await expect(defaultLink).toHaveClass(/lui-skip-nav/);
+  await expect(page.locator('#default-main')).toHaveClass(/lui-skip-nav-content/);
 }
 
 test('Skip Nav defaults and consumer overrides work without scripts', verifiesSkipNavCss);

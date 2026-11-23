@@ -7,7 +7,7 @@ async function verifiesListboxBrowser({ page }: { page: Page }): Promise<void> {
   const content = page.getByRole('listbox');
   const solid = page.getByRole('option', { name: 'Solid' });
   await expect(content).toBeVisible({ timeout: 30_000 });
-  await expect(root).toHaveClass(/leverui-listbox__root/);
+  await expect(root).toHaveClass(/lui-listbox__root/);
   await expect(content).toHaveAttribute('aria-labelledby', /label/);
   await expect(content).toHaveAttribute('data-orientation', 'vertical');
   await expect(page.getByRole('option', { name: 'Vue' })).toHaveAttribute('aria-disabled', 'true');

@@ -13,7 +13,7 @@ export const timelineContracts = [
         'description',
       ].map(
         /** Require every public Timeline part hook. */
-        (part) => `.leverui-timeline__${part}:not([data-unstyled]`,
+        (part) => `.lui-timeline__${part}:not([data-unstyled]`,
       ),
       ...['sm', 'md', 'lg', 'xl'].map(
         /** Require every base Timeline size. */
@@ -40,8 +40,8 @@ export const timelineContracts = [
       ),
       `[data-show-last-separator='true']`,
       `[data-show-last-separator='false']`,
-      '--leverui-colors-color-palette-solid',
-      '--leverui-colors-border',
+      '--lui-colors-color-palette-solid',
+      '--lui-colors-border',
     ],
   },
 ];

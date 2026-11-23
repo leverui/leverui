@@ -18,5 +18,5 @@ const markup = renderToString(renderTrap);
 assert.match(markup, /<section\b[^>]*data-testid="installed-focus-trap"/);
 assert.match(markup, /Installed focus trap/);
 assert.match(markup, /padding:17px/);
-assert.match(markup, /leverui-focus-trap/);
+assert.match(markup, /lui-focus-trap/);
 assert.doesNotMatch(markup, /\bdisabled=/);

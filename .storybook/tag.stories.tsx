@@ -60,7 +60,7 @@ function TagContractExample(): JSX.Element {
           <Tag.Label data-testid="tag-label">
             A long label that should stop after one visible line
           </Tag.Label>
-          <span class="leverui-tag__label" data-testid="tag-style-probe">
+          <span class="lui-tag__label" data-testid="tag-style-probe">
             Custom label
           </span>
           <Tag.EndElement data-testid="tag-end">

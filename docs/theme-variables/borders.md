@@ -4,10 +4,10 @@
 
 [All variables](README.md)
 
-| Variable               | Value         |
-| ---------------------- | ------------- |
-| `--leverui-borders-lg` | `4px solid`   |
-| `--leverui-borders-md` | `2px solid`   |
-| `--leverui-borders-sm` | `1px solid`   |
-| `--leverui-borders-xl` | `8px solid`   |
-| `--leverui-borders-xs` | `0.5px solid` |
+| Variable           | Value         |
+| ------------------ | ------------- |
+| `--lui-borders-lg` | `4px solid`   |
+| `--lui-borders-md` | `2px solid`   |
+| `--lui-borders-sm` | `1px solid`   |
+| `--lui-borders-xl` | `8px solid`   |
+| `--lui-borders-xs` | `0.5px solid` |

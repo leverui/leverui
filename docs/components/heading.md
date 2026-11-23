@@ -51,26 +51,26 @@ import { Heading, HeadingPropsProvider } from '@leverui/components';
 ## Customization
 
 Your plain CSS overrides the heading styles without `!important`. Target
-`.leverui-heading` and the `data-size` attribute. If you override the font
+`.lui-heading` and the `data-size` attribute. If you override the font
 size, also set the line height and the letter spacing.
 
 ### Changing default styles
 
 ```css
-.leverui-heading {
-  font-weight: var(--leverui-font-weights-normal);
-  font-size: var(--leverui-font-sizes-4xl);
+.lui-heading {
+  font-weight: var(--lui-font-weights-normal);
+  font-size: var(--lui-font-sizes-4xl);
   line-height: 2.5rem;
 }
 ```
 
 ### Changing heading font globally
 
-Set `--leverui-fonts-heading` in your theme.
+Set `--lui-fonts-heading` in your theme.
 
 ```css
 :root {
-  --leverui-fonts-heading: 'Playfair Display', serif;
+  --lui-fonts-heading: 'Playfair Display', serif;
 }
 ```
 

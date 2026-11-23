@@ -30,8 +30,8 @@ function renderThemeContract(): JSX.Element {
 /** Verify native props, CSS responsiveness, and appearance without inserted styles. */
 async function verifiesThemeContract({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderThemeContract);
-  const consumerCss = `.responsive-theme { padding: var(--leverui-spacing-2); }
-    @media (min-width: 48em) { .responsive-theme { padding: var(--leverui-spacing-4); } }`;
+  const consumerCss = `.responsive-theme { padding: var(--lui-spacing-2); }
+    @media (min-width: 48em) { .responsive-theme { padding: var(--lui-spacing-4); } }`;
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setViewportSize({ width: 600, height: 700 });
   await page.setContent(`<style>${defaultCss}</style><style>${consumerCss}</style>${markup}`);
@@ -39,8 +39,8 @@ async function verifiesThemeContract({ page }: { page: Page }): Promise<void> {
   const theme = page.locator('#theme-contract');
   await expect(theme).toHaveJSProperty('tagName', 'SECTION');
   await expect(theme).toHaveAttribute('aria-label', 'Dark section');
-  await expect(theme).toHaveAttribute('data-leverui-color-mode', 'dark');
-  await expect(theme).toHaveClass(/leverui-theme/);
+  await expect(theme).toHaveAttribute('data-lui-color-mode', 'dark');
+  await expect(theme).toHaveClass(/lui-theme/);
   await expect(theme).toHaveClass(/consumer-theme/);
   await expect(theme).toHaveCSS('color-scheme', 'dark');
   await expect(theme).toHaveCSS('border-top-width', '3px');

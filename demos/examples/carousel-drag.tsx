@@ -12,7 +12,7 @@ export function CarouselWithMouseDrag(): JSX.Element {
       <HStack
         textStyle="sm"
         style={{
-          'margin-bottom': 'var(--leverui-spacing-4)',
+          'margin-bottom': 'var(--lui-spacing-4)',
         }}
       >
         Click and drag to change slides

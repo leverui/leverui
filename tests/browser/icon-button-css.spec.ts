@@ -39,9 +39,9 @@ function renderNativeAction(): JSX.Element {
 /** Verify default presentation and consumer overrides require only published CSS. */
 async function verifiesIconActionCss({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderServerActions);
-  expect(markup).toContain('leverui-icon-button');
-  expect(markup).toContain('leverui-close-button');
-  expect(markup).not.toContain('data-leverui-private-style-runtime');
+  expect(markup).toContain('lui-icon-button');
+  expect(markup).toContain('lui-close-button');
+  expect(markup).not.toContain('data-lui-private-style-runtime');
   expect(markup).not.toMatch(/<style[^>]*>[^<]+<\/style>/);
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(`<style>${defaultCss}</style>${markup}`);
@@ -65,7 +65,7 @@ test('IconButton and CloseButton use authored CSS after server rendering', verif
 /** Preserve square icon geometry with a native consumer style. */
 async function verifiesNativeIconAction({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderNativeAction);
-  expect(markup).not.toContain('data-leverui-private-style-runtime');
+  expect(markup).not.toContain('data-lui-private-style-runtime');
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(`<style>${defaultCss}</style>${markup}`);
   const button = page.locator('#native-icon-action');

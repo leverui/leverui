@@ -32,7 +32,7 @@ async function verifiesSeparatorRecipe({ page }: { page: Page }): Promise<void> 
     await expect(page.getByTestId(`separator-${size}`)).toHaveCSS('border-top-width', width);
   }
   const hairline = page.getByTestId('separator-xs');
-  await expect(hairline).toHaveCSS('--leverui-private-separator-thickness', '0.5px');
+  await expect(hairline).toHaveCSS('--lui-private-separator-thickness', '0.5px');
   await expectHairlineWidth(hairline);
   const vertical = page.getByTestId('separator-vertical');
   await expect(vertical).toHaveAttribute('aria-orientation', 'vertical');
@@ -72,7 +72,7 @@ test('Separator resolves responsive CSS axes without style tags', verifiesRespon
 async function verifiesSeparatorComposition({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=content-separator--contract');
   const inherited = page.getByTestId('separator-inherited');
-  await expect(inherited).toHaveCSS('--leverui-private-separator-thickness', '0.5px');
+  await expect(inherited).toHaveCSS('--lui-private-separator-thickness', '0.5px');
   await expectHairlineWidth(inherited);
   await inherited.evaluate(
     /** Mark the provider-owned node before changing its default size. */
@@ -98,7 +98,7 @@ async function verifiesSeparatorComposition({ page }: { page: Page }): Promise<v
   await expect(page.getByTestId('separator-unstyled')).toHaveCSS('border-top-width', '2px');
 
   await page.addStyleTag({
-    content: '.consumer-separator{border-top-color:rgb(1, 2, 3);--leverui-separator-thickness:4px}',
+    content: '.consumer-separator{border-top-color:rgb(1, 2, 3);--lui-separator-thickness:4px}',
   });
   await expect(page.getByTestId('separator-consumer-css')).toHaveCSS(
     'border-top-color',

@@ -5,7 +5,7 @@ export const cardContracts = [
     required: [
       ...['root', 'header', 'body', 'footer', 'title', 'description'].map(
         /** Check each public Card part in its authored CSS source. */
-        (part) => `.leverui-card__${part}:not([data-unstyled])`,
+        (part) => `.lui-card__${part}:not([data-unstyled])`,
       ),
       ...['sm', 'md', 'lg'].map(
         /** Check every scalar Card size. */
@@ -28,7 +28,7 @@ export const cardContracts = [
           ),
         ],
       ),
-      '--leverui-card-padding',
+      '--lui-card-padding',
     ],
   },
 ];

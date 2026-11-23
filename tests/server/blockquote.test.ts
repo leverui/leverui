@@ -19,7 +19,7 @@ function verifiesServerBlockquote(): void {
   expect(markup).toContain('<figcaption');
   expect(markup).toContain('A quote');
   expect(markup).toContain('A writer');
-  expect(markup).toContain('leverui-blockquote');
+  expect(markup).toContain('lui-blockquote');
   expect(markup).toContain('data-justify="start"');
   expect(markup).toContain('data-variant="solid"');
   expect(markup).not.toMatch(/\sjustify="start"/);

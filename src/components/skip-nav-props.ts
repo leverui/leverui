@@ -3,7 +3,7 @@ import type { RenderChild } from '../styled-system/child-props';
 import type { NativeElementProps, NativeElementTag } from './native-element-props';
 
 /** Pair the skip link and destination with a Lever UI ID. */
-export const skipNavTargetId = 'leverui-skip-nav';
+export const skipNavTargetId = 'lui-skip-nav';
 
 export interface SkipNavOptions {
   /** Suppress the authored presentation while retaining navigation behavior. */

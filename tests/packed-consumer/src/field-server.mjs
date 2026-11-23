@@ -26,10 +26,10 @@ function renderInstalledField() {
 }
 
 const markup = renderInstalledField();
-assert.match(markup, /leverui-field__root/);
-assert.match(markup, /leverui-field__label/);
-assert.match(markup, /leverui-field__helperText/);
-assert.match(markup, /leverui-field__errorText/);
+assert.match(markup, /lui-field__root/);
+assert.match(markup, /lui-field__label/);
+assert.match(markup, /lui-field__helperText/);
+assert.match(markup, /lui-field__errorText/);
 assert.match(markup, /data-orientation="vertical"/);
 assert.match(markup, /for="packed-server-field"/);
 assert.match(markup, /aria-invalid="true"/);

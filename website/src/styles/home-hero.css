@@ -9,7 +9,7 @@
   --hero-plane: color-mix(in srgb, var(--site-accent) 9%, transparent);
   --hero-plane-strong: color-mix(in srgb, var(--site-accent) 15%, transparent);
 }
-html[data-leverui-color-mode='dark'] .hero-band {
+html[data-lui-color-mode='dark'] .hero-band {
   --hero-plane: color-mix(in srgb, var(--site-accent) 14%, transparent);
   --hero-plane-strong: color-mix(in srgb, var(--site-accent) 24%, transparent);
 }
@@ -58,11 +58,11 @@ html[data-leverui-color-mode='dark'] .hero-band {
   display: inline-flex;
   align-items: center;
   padding: 6px 14px;
-  border-radius: var(--leverui-radii-full);
+  border-radius: var(--lui-radii-full);
   background: var(--site-accent-soft);
   color: var(--site-accent-bright);
   font-size: 13px;
-  font-weight: var(--leverui-font-weights-medium);
+  font-weight: var(--lui-font-weights-medium);
 }
 .hero h1 {
   margin: 24px 0 16px;
@@ -88,7 +88,7 @@ html[data-leverui-color-mode='dark'] .hero-band {
   display: flex;
   gap: 12px;
 }
-.hero-actions .leverui-button {
+.hero-actions .lui-button {
   min-width: 150px;
   justify-content: center;
 }

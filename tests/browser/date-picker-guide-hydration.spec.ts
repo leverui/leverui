@@ -24,7 +24,7 @@ async function verifiesJalaliHydration({ page }: { page: Page }): Promise<void> 
     `${generateHydrationScript()}<style>${defaultCss}</style><div id="date-picker-guide-hydration-root">${markup}</div>`,
   );
   const host = page.locator('#date-picker-guide-hydration-root');
-  const root = host.locator('.leverui-date-picker__root');
+  const root = host.locator('.lui-date-picker__root');
   const grid = host.getByTestId('hydrated-jalali-days');
   const input = host.getByTestId('hydrated-jalali-input');
   const selected = grid.locator('td[aria-selected="true"]');

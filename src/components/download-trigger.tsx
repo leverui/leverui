@@ -68,7 +68,7 @@ function DownloadTriggerRoot(props: RuntimeProps): JSX.Element {
     /** Follow native attributes and the consumer's class without generating CSS. */
     () => ({
       ...native,
-      class: cx('leverui-download-trigger', local.class),
+      class: cx('lui-download-trigger', local.class),
       type: local.as && local.as !== 'button' ? native.type : 'button',
       onClick: handleClick,
       ref: attachNode,

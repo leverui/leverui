@@ -43,7 +43,7 @@ function verifiesServerTextarea(): void {
   expect(openingTag).toContain('id="server-notes"');
   expect(openingTag).toContain('aria-invalid="true"');
   expect(openingTag).toContain('required');
-  expect(openingTag).toContain('leverui-textarea');
+  expect(openingTag).toContain('lui-textarea');
   expect(openingTag).not.toMatch(/\s(?:value|defaultValue|size|variant|autoresize)=/);
   expect(markup).toMatch(/<textarea\b[^>]*>First line\nSecond line<\/textarea>/);
   expect(markup).toContain('for="server-notes"');

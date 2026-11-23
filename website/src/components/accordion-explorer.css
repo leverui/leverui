@@ -129,12 +129,12 @@
   max-height: 400px;
 }
 
-.accordion-explorer[data-highlight-part='root'] .leverui-accordion__root,
-.accordion-explorer[data-highlight-part='item'] .leverui-accordion__item,
-.accordion-explorer[data-highlight-part='itemTrigger'] .leverui-accordion__itemTrigger,
-.accordion-explorer[data-highlight-part='itemContent'] .leverui-accordion__itemContent,
-.accordion-explorer[data-highlight-part='itemIndicator'] .leverui-accordion__itemIndicator,
-.accordion-explorer[data-highlight-part='itemBody'] .leverui-accordion__itemBody {
+.accordion-explorer[data-highlight-part='root'] .lui-accordion__root,
+.accordion-explorer[data-highlight-part='item'] .lui-accordion__item,
+.accordion-explorer[data-highlight-part='itemTrigger'] .lui-accordion__itemTrigger,
+.accordion-explorer[data-highlight-part='itemContent'] .lui-accordion__itemContent,
+.accordion-explorer[data-highlight-part='itemIndicator'] .lui-accordion__itemIndicator,
+.accordion-explorer[data-highlight-part='itemBody'] .lui-accordion__itemBody {
   outline: 2px solid var(--site-accent);
   outline-offset: 2px;
 }

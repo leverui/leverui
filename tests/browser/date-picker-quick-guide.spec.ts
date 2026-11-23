@@ -65,7 +65,7 @@ async function verifiesAdornedPicker({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-datepicker-quick-guide--adorned');
   const input = page.getByTestId('date-picker-grouped-input');
   await expect(input).toBeVisible({ timeout: 30_000 });
-  await expect(input).toHaveClass(/leverui-input-group__field/);
+  await expect(input).toHaveClass(/lui-input-group__field/);
   await expect(input).toHaveCSS('padding-inline-start', '40px');
   await expect(input).toHaveCSS('padding-inline-end', '40px');
   await page.getByRole('button', { name: 'Open adorned calendar' }).click();

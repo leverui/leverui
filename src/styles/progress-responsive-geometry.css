@@ -1,145 +1,145 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 480px) {
-    .leverui-progress__root:not([data-unstyled]) {
+    .lui-progress__root:not([data-unstyled]) {
       &[data-size-sm='xs'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-1\.5);
+        --lui-private-progress-track-height: var(--lui-sizes-1\.5);
       }
       &[data-size-sm='sm'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-2);
+        --lui-private-progress-track-height: var(--lui-sizes-2);
       }
       &[data-size-sm='md'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-2\.5);
+        --lui-private-progress-track-height: var(--lui-sizes-2\.5);
       }
       &[data-size-sm='lg'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-3);
+        --lui-private-progress-track-height: var(--lui-sizes-3);
       }
       &[data-size-sm='xl'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-4);
+        --lui-private-progress-track-height: var(--lui-sizes-4);
       }
       &[data-shape-sm='square'] {
-        --leverui-private-progress-track-radius: 0;
+        --lui-private-progress-track-radius: 0;
       }
       &[data-shape-sm='rounded'] {
-        --leverui-private-progress-track-radius: var(--leverui-radii-l1);
+        --lui-private-progress-track-radius: var(--lui-radii-l1);
       }
       &[data-shape-sm='full'] {
-        --leverui-private-progress-track-radius: var(--leverui-radii-full);
+        --lui-private-progress-track-radius: var(--lui-radii-full);
       }
     }
   }
 
   @media (min-width: 768px) {
-    .leverui-progress__root:not([data-unstyled]) {
+    .lui-progress__root:not([data-unstyled]) {
       &[data-size-md='xs'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-1\.5);
+        --lui-private-progress-track-height: var(--lui-sizes-1\.5);
       }
       &[data-size-md='sm'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-2);
+        --lui-private-progress-track-height: var(--lui-sizes-2);
       }
       &[data-size-md='md'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-2\.5);
+        --lui-private-progress-track-height: var(--lui-sizes-2\.5);
       }
       &[data-size-md='lg'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-3);
+        --lui-private-progress-track-height: var(--lui-sizes-3);
       }
       &[data-size-md='xl'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-4);
+        --lui-private-progress-track-height: var(--lui-sizes-4);
       }
       &[data-shape-md='square'] {
-        --leverui-private-progress-track-radius: 0;
+        --lui-private-progress-track-radius: 0;
       }
       &[data-shape-md='rounded'] {
-        --leverui-private-progress-track-radius: var(--leverui-radii-l1);
+        --lui-private-progress-track-radius: var(--lui-radii-l1);
       }
       &[data-shape-md='full'] {
-        --leverui-private-progress-track-radius: var(--leverui-radii-full);
+        --lui-private-progress-track-radius: var(--lui-radii-full);
       }
     }
   }
 
   @media (min-width: 1024px) {
-    .leverui-progress__root:not([data-unstyled]) {
+    .lui-progress__root:not([data-unstyled]) {
       &[data-size-lg='xs'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-1\.5);
+        --lui-private-progress-track-height: var(--lui-sizes-1\.5);
       }
       &[data-size-lg='sm'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-2);
+        --lui-private-progress-track-height: var(--lui-sizes-2);
       }
       &[data-size-lg='md'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-2\.5);
+        --lui-private-progress-track-height: var(--lui-sizes-2\.5);
       }
       &[data-size-lg='lg'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-3);
+        --lui-private-progress-track-height: var(--lui-sizes-3);
       }
       &[data-size-lg='xl'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-4);
+        --lui-private-progress-track-height: var(--lui-sizes-4);
       }
       &[data-shape-lg='square'] {
-        --leverui-private-progress-track-radius: 0;
+        --lui-private-progress-track-radius: 0;
       }
       &[data-shape-lg='rounded'] {
-        --leverui-private-progress-track-radius: var(--leverui-radii-l1);
+        --lui-private-progress-track-radius: var(--lui-radii-l1);
       }
       &[data-shape-lg='full'] {
-        --leverui-private-progress-track-radius: var(--leverui-radii-full);
+        --lui-private-progress-track-radius: var(--lui-radii-full);
       }
     }
   }
 
   @media (min-width: 1280px) {
-    .leverui-progress__root:not([data-unstyled]) {
+    .lui-progress__root:not([data-unstyled]) {
       &[data-size-xl='xs'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-1\.5);
+        --lui-private-progress-track-height: var(--lui-sizes-1\.5);
       }
       &[data-size-xl='sm'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-2);
+        --lui-private-progress-track-height: var(--lui-sizes-2);
       }
       &[data-size-xl='md'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-2\.5);
+        --lui-private-progress-track-height: var(--lui-sizes-2\.5);
       }
       &[data-size-xl='lg'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-3);
+        --lui-private-progress-track-height: var(--lui-sizes-3);
       }
       &[data-size-xl='xl'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-4);
+        --lui-private-progress-track-height: var(--lui-sizes-4);
       }
       &[data-shape-xl='square'] {
-        --leverui-private-progress-track-radius: 0;
+        --lui-private-progress-track-radius: 0;
       }
       &[data-shape-xl='rounded'] {
-        --leverui-private-progress-track-radius: var(--leverui-radii-l1);
+        --lui-private-progress-track-radius: var(--lui-radii-l1);
       }
       &[data-shape-xl='full'] {
-        --leverui-private-progress-track-radius: var(--leverui-radii-full);
+        --lui-private-progress-track-radius: var(--lui-radii-full);
       }
     }
   }
 
   @media (min-width: 1536px) {
-    .leverui-progress__root:not([data-unstyled]) {
+    .lui-progress__root:not([data-unstyled]) {
       &[data-size-2xl='xs'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-1\.5);
+        --lui-private-progress-track-height: var(--lui-sizes-1\.5);
       }
       &[data-size-2xl='sm'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-2);
+        --lui-private-progress-track-height: var(--lui-sizes-2);
       }
       &[data-size-2xl='md'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-2\.5);
+        --lui-private-progress-track-height: var(--lui-sizes-2\.5);
       }
       &[data-size-2xl='lg'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-3);
+        --lui-private-progress-track-height: var(--lui-sizes-3);
       }
       &[data-size-2xl='xl'] {
-        --leverui-private-progress-track-height: var(--leverui-sizes-4);
+        --lui-private-progress-track-height: var(--lui-sizes-4);
       }
       &[data-shape-2xl='square'] {
-        --leverui-private-progress-track-radius: 0;
+        --lui-private-progress-track-radius: 0;
       }
       &[data-shape-2xl='rounded'] {
-        --leverui-private-progress-track-radius: var(--leverui-radii-l1);
+        --lui-private-progress-track-radius: var(--lui-radii-l1);
       }
       &[data-shape-2xl='full'] {
-        --leverui-private-progress-track-radius: var(--leverui-radii-full);
+        --lui-private-progress-track-radius: var(--lui-radii-full);
       }
     }
   }

@@ -31,7 +31,7 @@ async function verifiesResponsiveHydration({ page }: { page: Page }): Promise<vo
   const content = page.getByTestId('hydrated-drawer-content');
   const id = await content.getAttribute('id');
   if (!id) throw new Error('Responsive Drawer server content has no ID.');
-  await expect(content).toHaveAttribute('data-leverui-drawer-css', '');
+  await expect(content).toHaveAttribute('data-lui-drawer-css', '');
   await expect(content).toHaveAttribute('data-size-md-down', 'full');
   await expect(content).toHaveAttribute('data-placement-md-down', 'bottom');
   await expect(content).toHaveCSS('max-width', '100%');

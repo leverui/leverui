@@ -75,7 +75,7 @@ export function renderNativeInline(
     /** Keep native attributes and consumer classes reactive. */
     () => ({
       ...native,
-      class: cx(`leverui-${family}`, local.class, local.className),
+      class: cx(`lui-${family}`, local.class, local.className),
       'data-unstyled': local.unstyled ? '' : undefined,
       ref: attachNode,
     }),

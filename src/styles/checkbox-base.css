@@ -1,23 +1,23 @@
-@layer leverui.recipes {
-  .leverui-checkbox:not([data-unstyled]) {
-    --leverui-private-checkbox-gap: var(--leverui-spacing-2\.5);
-    --leverui-private-checkbox-label-font-size: var(--leverui-font-sizes-sm);
-    --leverui-private-checkbox-label-line-height: 1.25rem;
+@layer lui.recipes {
+  .lui-checkbox:not([data-unstyled]) {
+    --lui-private-checkbox-gap: var(--lui-spacing-2\.5);
+    --lui-private-checkbox-label-font-size: var(--lui-font-sizes-sm);
+    --lui-private-checkbox-label-line-height: 1.25rem;
     display: inline-flex;
-    gap: var(--leverui-private-checkbox-gap);
+    gap: var(--lui-private-checkbox-gap);
     align-items: center;
     vertical-align: top;
     position: relative;
   }
 
-  .leverui-checkbox__label:not([data-unstyled]) {
-    font-weight: var(--leverui-font-weights-medium);
+  .lui-checkbox__label:not([data-unstyled]) {
+    font-weight: var(--lui-font-weights-medium);
     user-select: none;
-    font-size: var(--leverui-private-checkbox-label-font-size);
-    line-height: var(--leverui-private-checkbox-label-line-height);
+    font-size: var(--lui-private-checkbox-label-font-size);
+    line-height: var(--lui-private-checkbox-label-line-height);
   }
 
-  .leverui-checkbox__label:not([data-unstyled])[data-disabled] {
+  .lui-checkbox__label:not([data-unstyled])[data-disabled] {
     opacity: 0.5;
   }
 }

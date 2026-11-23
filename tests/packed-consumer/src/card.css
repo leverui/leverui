@@ -1,10 +1,10 @@
 .packed-custom-card {
-  --leverui-card-padding: var(--leverui-spacing-10);
+  --lui-card-padding: var(--lui-spacing-10);
   background: linear-gradient(90deg, #6545a0, #6254c7);
   border-width: 0;
 }
 
-.packed-custom-card .leverui-card__title {
-  font-size: var(--leverui-font-sizes-2xl);
+.packed-custom-card .lui-card__title {
+  font-size: var(--lui-font-sizes-2xl);
   line-height: 2rem;
 }

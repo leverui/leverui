@@ -3,7 +3,7 @@
 @import '@fontsource-variable/wix-madefor-text/wght-italic.css';
 
 :root {
-  --leverui-fonts-body: 'Wix Madefor Text Variable', sans-serif;
-  --leverui-fonts-heading: 'Wix Madefor Text Variable', sans-serif;
-  --leverui-fonts-mono: 'Roboto Mono', monospace;
+  --lui-fonts-body: 'Wix Madefor Text Variable', sans-serif;
+  --lui-fonts-heading: 'Wix Madefor Text Variable', sans-serif;
+  --lui-fonts-mono: 'Roboto Mono', monospace;
 }

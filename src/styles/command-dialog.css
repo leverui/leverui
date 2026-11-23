@@ -1,5 +1,5 @@
-@layer leverui.recipes {
-  .leverui-command-dialog__content:not([data-unstyled]) {
+@layer lui.recipes {
+  .lui-command-dialog__content:not([data-unstyled]) {
     overflow: hidden;
   }
 }

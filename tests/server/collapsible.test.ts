@@ -41,10 +41,10 @@ function renderServerCollapsible(open: boolean): string {
 /** Verify open server markup includes accessible controls and styled slots. */
 function verifiesOpenMarkup(): void {
   const markup = renderServerCollapsible(true);
-  expect(markup).toContain('leverui-collapsible__root');
-  expect(markup).toContain('leverui-collapsible__trigger');
-  expect(markup).toContain('leverui-collapsible__content');
-  expect(markup).toContain('leverui-collapsible__indicator');
+  expect(markup).toContain('lui-collapsible__root');
+  expect(markup).toContain('lui-collapsible__trigger');
+  expect(markup).toContain('lui-collapsible__content');
+  expect(markup).toContain('lui-collapsible__indicator');
   expect(markup).toContain('aria-expanded="true"');
   expect(markup).toContain('Server details');
   expect(markup).not.toMatch(/\s(?:recipe|unstyled|lazyMount|unmountOnExit)=/);

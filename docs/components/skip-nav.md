@@ -29,7 +29,7 @@ import { SkipNavContent, SkipNavLink } from '@leverui/components';
 `SkipNavContent` marks where `SkipNavLink` jumps to. The link is hidden until
 it has focus. Finish the [stylesheet setup](../getting-started.md) first.
 
-Both parts use `leverui-skip-nav` as the target id by default. For another
+Both parts use `lui-skip-nav` as the target id by default. For another
 target, give **both** parts the same `id`. On `SkipNavLink`, `id` sets the
 fragment in the `href`. `SkipNavContent` has `tabIndex={-1}`: code can focus it,
 `Tab` skips it. Keep the link near the start of the document. Give the target
@@ -43,8 +43,8 @@ router handles the hash link and the browser does not move focus.
 
 ## Customize with CSS
 
-`.leverui-skip-nav` styles the link and `.leverui-skip-nav-content` its target.
-`--leverui-colors-bg-panel` sets the background of the focused link. `unstyled`
+`.lui-skip-nav` styles the link and `.lui-skip-nav-content` its target.
+`--lui-colors-bg-panel` sets the background of the focused link. `unstyled`
 on the link turns off its default styles.
 
 For one-off changes, use `class` or `style`. Neither part supports object CSS,

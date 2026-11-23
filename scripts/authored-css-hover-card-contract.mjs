@@ -3,9 +3,9 @@ export const hoverCardContracts = [
   {
     family: 'hover-card',
     required: [
-      '.leverui-hoverCard__content:not([data-unstyled])',
-      '.leverui-hoverCard__arrow:not([data-unstyled])',
-      '.leverui-hoverCard__arrowTip:not([data-unstyled])',
+      '.lui-hoverCard__content:not([data-unstyled])',
+      '.lui-hoverCard__arrow:not([data-unstyled])',
+      '.lui-hoverCard__arrowTip:not([data-unstyled])',
       "[data-size='xs']",
       "[data-size='lg']",
       "[data-size-sm='sm']",
@@ -14,9 +14,9 @@ export const hoverCardContracts = [
       "[data-state='closed']",
       "[data-placement^='top']",
       "[data-placement^='right']",
-      '--leverui-hover-card-background',
-      '--leverui-hover-card-padding',
-      '--leverui-hover-card-arrow-size',
+      '--lui-hover-card-background',
+      '--lui-hover-card-padding',
+      '--lui-hover-card-arrow-size',
     ],
   },
 ];

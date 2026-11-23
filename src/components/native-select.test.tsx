@@ -45,8 +45,8 @@ async function verifiesNativeControl(): Promise<void> {
   const select = screen.getByRole('combobox', { name: 'Country' }) as HTMLSelectElement;
   expect(received).toBe(select);
   expect(select.name).toBe('country');
-  expect(select.className).toContain('leverui-native-select__field');
-  expect(screen.getByTestId('select-root').className).toContain('leverui-native-select__root');
+  expect(select.className).toContain('lui-native-select__field');
+  expect(screen.getByTestId('select-root').className).toContain('lui-native-select__root');
   expect(select.options[0]?.value).toBe('');
   expect(select.options[0]?.textContent).toBe('Choose a country');
   expect(screen.getByTestId('select-indicator').querySelector('svg')).not.toBeNull();

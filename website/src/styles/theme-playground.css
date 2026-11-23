@@ -12,7 +12,7 @@
 }
 .playground-hero p {
   max-width: 640px;
-  color: var(--leverui-colors-fg-muted);
+  color: var(--lui-colors-fg-muted);
   font-size: 17px;
   line-height: 1.7;
 }
@@ -23,9 +23,9 @@
 }
 .playground-controls {
   padding: 32px;
-  border: 1px solid var(--leverui-colors-border);
+  border: 1px solid var(--lui-colors-border);
   border-radius: 17px;
-  background: var(--leverui-colors-bg-panel);
+  background: var(--lui-colors-bg-panel);
 }
 .playground-controls h2 {
   margin: 14px 0 9px;
@@ -33,7 +33,7 @@
 }
 .playground-controls > p {
   margin-bottom: 32px;
-  color: var(--leverui-colors-fg-muted);
+  color: var(--lui-colors-fg-muted);
   font-size: 14px;
   line-height: 1.6;
 }
@@ -46,7 +46,7 @@
 }
 .playground-controls legend,
 .playground-radius-input {
-  color: var(--leverui-colors-fg);
+  color: var(--lui-colors-fg);
   font-size: 13px;
   font-weight: 650;
 }
@@ -58,19 +58,19 @@
 .playground-swatches button {
   width: 33px;
   height: 33px;
-  border: 2px solid var(--leverui-colors-bg);
+  border: 2px solid var(--lui-colors-bg);
   border-radius: 50%;
   box-shadow: 0 0 0 2px transparent;
 }
 .playground-swatches button[aria-pressed='true'],
 .playground-swatches button:focus-visible {
-  box-shadow: 0 0 0 3px var(--leverui-colors-cyan-focus-ring);
+  box-shadow: 0 0 0 3px var(--lui-colors-cyan-focus-ring);
 }
 .playground-color-input {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--leverui-colors-fg-muted);
+  color: var(--lui-colors-fg-muted);
   font-size: 12px;
 }
 .playground-color-input input {
@@ -82,7 +82,7 @@
 }
 .playground-color-input code {
   margin-left: auto;
-  color: var(--leverui-colors-fg);
+  color: var(--lui-colors-fg);
 }
 .playground-radius-input {
   display: block;
@@ -96,7 +96,7 @@
   display: block;
   width: 100%;
   margin-top: 16px;
-  accent-color: var(--leverui-colors-cyan-solid);
+  accent-color: var(--lui-colors-cyan-solid);
 }
 .playground-css-heading {
   display: flex;
@@ -110,10 +110,10 @@
 }
 .playground-css-heading button {
   padding: 7px 10px;
-  border: 1px solid var(--leverui-colors-border);
+  border: 1px solid var(--lui-colors-border);
   border-radius: 6px;
-  background: var(--leverui-colors-bg-subtle);
-  color: var(--leverui-colors-fg);
+  background: var(--lui-colors-bg-subtle);
+  color: var(--lui-colors-fg);
   font-size: 11px;
 }
 .playground-controls .guide-code-block {
@@ -121,8 +121,8 @@
 }
 .playground-controls .guide-code-block pre {
   border: 0;
-  background: var(--leverui-colors-gray-900);
-  color: var(--leverui-colors-gray-300);
+  background: var(--lui-colors-gray-900);
+  color: var(--lui-colors-gray-300);
 }
 .playground-controls > a {
   color: var(--site-fg);

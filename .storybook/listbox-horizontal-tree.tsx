@@ -48,7 +48,7 @@ export function renderHorizontalListbox(
                       style={{
                         'flex-direction': 'column',
                         'align-items': 'flex-start',
-                        gap: 'var(--leverui-spacing-2)',
+                        gap: 'var(--lui-spacing-2)',
                         position: 'relative',
                       }}
                     >
@@ -57,9 +57,9 @@ export function renderHorizontalListbox(
                         alt={album.title}
                         fit="cover"
                         style={{
-                          background: 'var(--leverui-colors-bg-subtle)',
+                          background: 'var(--lui-colors-bg-subtle)',
                           'aspect-ratio': '1',
-                          'border-radius': 'var(--leverui-radii-l2)',
+                          'border-radius': 'var(--lui-radii-l2)',
                           'flex-shrink': '0',
                           height: '150px',
                           'min-width': '150px',
@@ -68,26 +68,26 @@ export function renderHorizontalListbox(
                       <Stack gap="0">
                         <Text
                           style={{
-                            'font-size': 'var(--leverui-font-sizes-sm)',
-                            'font-weight': 'var(--leverui-font-weights-medium)',
+                            'font-size': 'var(--lui-font-sizes-sm)',
+                            'font-weight': 'var(--lui-font-weights-medium)',
                             'white-space': 'nowrap',
                           }}
                         >
                           {album.title}
                         </Text>
-                        <Text style={{ 'font-size': 'var(--leverui-font-sizes-xs)' }}>
+                        <Text style={{ 'font-size': 'var(--lui-font-sizes-xs)' }}>
                           {album.artist}
                         </Text>
                       </Stack>
                       <Listbox.ItemIndicator
                         style={{
                           position: 'absolute',
-                          top: 'var(--leverui-spacing-4)',
-                          right: 'var(--leverui-spacing-4)',
-                          background: 'var(--leverui-colors-color-palette-solid)',
-                          color: 'var(--leverui-colors-color-palette-contrast)',
+                          top: 'var(--lui-spacing-4)',
+                          right: 'var(--lui-spacing-4)',
+                          background: 'var(--lui-colors-color-palette-solid)',
+                          color: 'var(--lui-colors-color-palette-contrast)',
                           'border-width': '2px',
-                          'border-color': 'var(--leverui-colors-fg-inverted)',
+                          'border-color': 'var(--lui-colors-fg-inverted)',
                         }}
                       />
                     </Listbox.Item>

@@ -37,11 +37,11 @@ async function hydrateInBrowser(): Promise<void> {
 /** Verify external default CSS survives hydration without duplicated styles. */
 async function verifiesDefaultHydration({ page }: { page: Page }): Promise<void> {
   const markup = renderToString(renderDefaultExample);
-  expect(markup).not.toContain('--leverui-colors-blue-500:');
+  expect(markup).not.toContain('--lui-colors-blue-500:');
 
   await page.goto('/iframe.html?id=setup-browser-smoke--ready');
   await page.setContent(
-    `${generateHydrationScript()}<style data-leverui-default>${defaultCss}</style><style data-leverui-fixture>${fixtureCss}</style><div id="hydration-root">${markup}</div>`,
+    `${generateHydrationScript()}<style data-lui-default>${defaultCss}</style><style data-lui-fixture>${fixtureCss}</style><div id="hydration-root">${markup}</div>`,
   );
 
   const box = page.getByTestId('default-hydrated-box');
@@ -54,8 +54,8 @@ async function verifiesDefaultHydration({ page }: { page: Page }): Promise<void>
     (element) => element.setAttribute('data-server-node', 'true'),
   );
 
-  await expect(page.locator('style[data-leverui-default]')).toHaveCount(1);
-  await expect(page.locator('style[data-leverui-fixture]')).toHaveCount(1);
+  await expect(page.locator('style[data-lui-default]')).toHaveCount(1);
+  await expect(page.locator('style[data-lui-fixture]')).toHaveCount(1);
   const errors: string[] = [];
 
   /** Record browser errors raised while hydrating the fixture. */
@@ -72,8 +72,8 @@ async function verifiesDefaultHydration({ page }: { page: Page }): Promise<void>
   await expect(box).toHaveCSS('background-color', 'rgb(59, 130, 246)');
   await expect(box).toHaveCSS('padding', '16px');
   expect(errors).toEqual([]);
-  await expect(page.locator('style[data-leverui-default]')).toHaveCount(1);
-  await expect(page.locator('style[data-leverui-fixture]')).toHaveCount(1);
+  await expect(page.locator('style[data-lui-default]')).toHaveCount(1);
+  await expect(page.locator('style[data-lui-fixture]')).toHaveCount(1);
 }
 
 test('hydrates default styles without duplicate CSS', verifiesDefaultHydration);

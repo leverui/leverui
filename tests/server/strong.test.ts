@@ -38,7 +38,7 @@ function verifiesServerStrong(): void {
   expect(markup).toContain('Important');
   expect(markup).toMatch(/<a[^>]*id="server-strong-link"/);
   expect(markup).toContain('href="#destination"');
-  expect(markup).toContain('leverui-strong');
+  expect(markup).toContain('lui-strong');
   expect(markup).not.toMatch(/<(?:strong|a)[^>]*\s(?:as|asChild|css|unstyled|role)=/);
 }
 

@@ -46,7 +46,7 @@ async function verifiesDefaults({ page }: { page: Page }): Promise<void> {
   async function readSize(): Promise<string> {
     return root.evaluate(
       /** Read the current inherited scrollbar thickness. */
-      (element) => getComputedStyle(element).getPropertyValue('--leverui-private-scroll-area-size'),
+      (element) => getComputedStyle(element).getPropertyValue('--lui-private-scroll-area-size'),
     );
   }
   const before = await readSize();

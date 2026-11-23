@@ -51,7 +51,7 @@ export function ComboboxCustomItemExample(): JSX.Element {
           <Combobox.Trigger />
         </Combobox.IndicatorGroup>
       </Combobox.Control>
-      <Stack style={{ 'margin-top': 'var(--leverui-spacing-2)' }}>
+      <Stack style={{ 'margin-top': 'var(--lui-spacing-2)' }}>
         <For each={selected()}>
           {
             /** Show the selected brand's initials badge and name in a bordered row. */
@@ -59,7 +59,7 @@ export function ComboboxCustomItemExample(): JSX.Element {
               <HStack
                 textStyle="sm"
                 style={{
-                  padding: 'var(--leverui-spacing-1)',
+                  padding: 'var(--lui-spacing-1)',
                   'border-width': '1px',
                 }}
               >
@@ -68,7 +68,7 @@ export function ComboboxCustomItemExample(): JSX.Element {
                   shape="rounded"
                   variant="subtle"
                   aria-hidden="true"
-                  style={{ margin: 'var(--leverui-spacing-1)' }}
+                  style={{ margin: 'var(--lui-spacing-1)' }}
                 >
                   <Avatar.Fallback name={item.label} />
                 </Avatar.Root>

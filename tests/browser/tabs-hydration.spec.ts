@@ -32,7 +32,7 @@ async function verifiesTabsHydration({ page }: { page: Page }): Promise<void> {
   await page.setContent(
     `${generateHydrationScript()}<style>${defaultCss}</style><div id="tabs-hydration-root">${markup}</div>`,
   );
-  const root = page.locator('.leverui-tabs__root');
+  const root = page.locator('.lui-tabs__root');
   const one = page.getByTestId('hydrated-tab-one');
   const two = page.getByTestId('hydrated-tab-two');
   const firstPanel = page.getByTestId('hydrated-panel-one');
@@ -95,7 +95,7 @@ async function verifiesTabsWithoutRuntimeStyles({ page }: { page: Page }): Promi
     () => renderTabsHydrationTree(components),
   );
   await page.setContent(`<style>${defaultCss}</style>${markup}`);
-  const root = page.locator('.leverui-tabs__root');
+  const root = page.locator('.lui-tabs__root');
   await expect(root).toHaveAttribute('data-size', 'sm');
   await expect(root).toHaveAttribute('data-variant', 'subtle');
   await expect(root).toHaveAttribute('data-variant-md', 'plain');

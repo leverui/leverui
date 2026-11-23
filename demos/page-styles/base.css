@@ -1,41 +1,41 @@
 /* Page-wide base styles for the demo website and Storybook only. The library does not ship them. */
-@layer leverui.base {
+@layer lui.base {
   * {
     font-feature-settings: 'cv11';
   }
   html {
-    color: var(--leverui-colors-fg);
-    background: var(--leverui-colors-bg);
+    color: var(--lui-colors-fg);
+    background: var(--lui-colors-bg);
     line-height: 1.5;
   }
   /* The demo pages set the text color on html, so components inherit it from the page. */
-  :where([class^='leverui-'], [class*=' leverui-']) {
+  :where([class^='lui-'], [class*=' lui-']) {
     color: inherit;
   }
   *::-webkit-input-placeholder {
-    --mix-color: color-mix(in srgb, var(--leverui-colors-fg-muted) 80%, transparent);
-    color: var(--mix-color, var(--leverui-colors-fg-muted));
+    --mix-color: color-mix(in srgb, var(--lui-colors-fg-muted) 80%, transparent);
+    color: var(--mix-color, var(--lui-colors-fg-muted));
   }
   *::-moz-placeholder {
-    --mix-color: color-mix(in srgb, var(--leverui-colors-fg-muted) 80%, transparent);
-    color: var(--mix-color, var(--leverui-colors-fg-muted));
+    --mix-color: color-mix(in srgb, var(--lui-colors-fg-muted) 80%, transparent);
+    color: var(--mix-color, var(--lui-colors-fg-muted));
   }
   *:-ms-input-placeholder {
-    --mix-color: color-mix(in srgb, var(--leverui-colors-fg-muted) 80%, transparent);
-    color: var(--mix-color, var(--leverui-colors-fg-muted));
+    --mix-color: color-mix(in srgb, var(--lui-colors-fg-muted) 80%, transparent);
+    color: var(--mix-color, var(--lui-colors-fg-muted));
   }
   *::placeholder,
   *[data-placeholder] {
-    --mix-color: color-mix(in srgb, var(--leverui-colors-fg-muted) 80%, transparent);
-    color: var(--mix-color, var(--leverui-colors-fg-muted));
+    --mix-color: color-mix(in srgb, var(--lui-colors-fg-muted) 80%, transparent);
+    color: var(--mix-color, var(--lui-colors-fg-muted));
   }
   *::selection {
     --mix-background: color-mix(
       in srgb,
-      var(--leverui-colors-color-palette-emphasized) 80%,
+      var(--lui-colors-color-palette-emphasized) 80%,
       transparent
     );
-    background: var(--mix-background, var(--leverui-colors-color-palette-emphasized));
-    --bg-currentcolor: var(--mix-background, var(--leverui-colors-color-palette-emphasized));
+    background: var(--mix-background, var(--lui-colors-color-palette-emphasized));
+    --bg-currentcolor: var(--mix-background, var(--lui-colors-color-palette-emphasized));
   }
 }

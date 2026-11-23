@@ -49,6 +49,6 @@ assert.match(markup, /id="packed-server-local"/);
 assert.match(markup, /<article[^>]*id="packed-server-link-box"/);
 assert.match(markup, /id="packed-server-overlay"/);
 assert.match(markup, /href="#article"/);
-assert.match(markup, /leverui-linkbox__overlay/);
+assert.match(markup, /lui-linkbox__overlay/);
 assert.match(markup, /id="packed-server-link"[^>]*data-variant="underline"/);
 assert.doesNotMatch(markup, /\s(?:variant|as)=/);

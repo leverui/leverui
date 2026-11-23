@@ -1,12 +1,12 @@
 .span-story-styled {
-  color: var(--leverui-colors-red-500);
-  font-weight: var(--leverui-font-weights-bold);
+  color: var(--lui-colors-red-500);
+  font-weight: var(--lui-font-weights-bold);
 }
 
 .span-story-red {
-  color: var(--leverui-colors-red-500);
+  color: var(--lui-colors-red-500);
 }
 
 .span-story-blue {
-  color: var(--leverui-colors-blue-500);
+  color: var(--lui-colors-blue-500);
 }

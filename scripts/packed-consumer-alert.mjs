@@ -10,7 +10,7 @@ export async function verifyPackedAlert(page) {
   assert.equal(await title.getAttribute('data-alert-child-ref'), 'button');
   assert.equal(await title.textContent(), 'Package alert');
   assert.equal(await page.locator('#packed-alert-description').textContent(), 'Details');
-  assert.match((await root.getAttribute('class')) ?? '', /leverui-alert__root/);
+  assert.match((await root.getAttribute('class')) ?? '', /lui-alert__root/);
   assert.equal(await indicator.locator('svg').getAttribute('aria-hidden'), 'true');
   assert.equal(await root.getAttribute('status'), null);
 

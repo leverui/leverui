@@ -11,5 +11,5 @@ export function sizeCssValue(value: string | number): string {
     return raw;
   }
   const key = raw.replace(/[^a-zA-Z0-9_-]/g, '\\$&');
-  return `var(--leverui-sizes-${key})`;
+  return `var(--lui-sizes-${key})`;
 }

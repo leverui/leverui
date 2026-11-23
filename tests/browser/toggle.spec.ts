@@ -27,7 +27,7 @@ test('Toggle preserves pressed state with click and Space', verifiesToggleIntera
 async function verifiesTogglePresentation({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-toggle--contract');
   const root = page.getByTestId('toggle-root');
-  await expect(root).toHaveClass(/leverui-toggle__root/, { timeout: 30_000 });
+  await expect(root).toHaveClass(/lui-toggle__root/, { timeout: 30_000 });
   const before = await root.evaluate(
     /** Read the child Button's unpressed background. */
     (element) => getComputedStyle(element).backgroundColor,

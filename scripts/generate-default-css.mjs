@@ -6,11 +6,10 @@ import { defaultCssFiles } from './default-css-sources.mjs';
 const output = new URL('../dist/styles.css', import.meta.url);
 const sourceDirectory = new URL('../src/styles/', import.meta.url);
 
-// The same widths as the `--leverui-breakpoints-*` variables and `breakpoint-thresholds.ts`.
+// The same widths as the `--lui-breakpoints-*` variables and `breakpoint-thresholds.ts`.
 const breakpointWidths = ['480px', '768px', '1024px', '1280px', '1536px'];
 
-const layerOrder =
-  '@layer leverui.reset,leverui.base,leverui.tokens,leverui.recipes,leverui.utilities;';
+const layerOrder = '@layer lui.reset,lui.base,lui.tokens,lui.recipes,lui.utilities;';
 
 /** Keep the ordered bundle list synchronized with every authored CSS file. */
 async function verifySourceList() {
@@ -41,7 +40,7 @@ async function readSource(name) {
   if (css.trimEnd().split('\n').length > 200) {
     throw new Error(`CSS source exceeds 200 lines: ${name}`);
   }
-  if (!css.startsWith('@layer leverui.')) {
+  if (!css.startsWith('@layer lui.')) {
     throw new Error(`CSS source must declare a Lever UI layer: ${name}`);
   }
   return css.trimEnd();
@@ -59,7 +58,7 @@ const authored = `${layerOrder}\n${[...sources.values()].join('\n')}\n`;
 // Remove only whitespace and comments. Rewriting values would change what code reads back
 // from a variable, such as `150ms` becoming `.15s`.
 const { code: css } = await transform(authored, { loader: 'css', minifyWhitespace: true });
-if (!css.includes('--leverui-colors-bg:')) {
+if (!css.includes('--lui-colors-bg:')) {
   throw new Error('The default stylesheet is missing semantic color tokens.');
 }
 

@@ -1,14 +1,14 @@
 .spinner-example-teal {
-  color: var(--leverui-colors-teal-500);
+  color: var(--lui-colors-teal-500);
 }
 
 .spinner-example-green {
-  color: var(--leverui-colors-green-500);
-  margin: var(--leverui-spacing-3);
+  color: var(--lui-colors-green-500);
+  margin: var(--lui-spacing-3);
 }
 
 .spinner-example-blue {
-  color: var(--leverui-colors-blue-500);
+  color: var(--lui-colors-blue-500);
 }
 
 .spinner-example-fast {
@@ -29,18 +29,18 @@
 }
 
 .spinner-example-palette {
-  color: var(--leverui-colors-color-palette-600);
+  color: var(--lui-colors-color-palette-600);
 }
 
 .spinner-example-palette-row {
-  padding-inline: var(--leverui-spacing-4);
+  padding-inline: var(--lui-spacing-4);
 }
 
 .spinner-example-track {
-  color: var(--leverui-colors-red-500);
-  --leverui-spinner-track-color: var(--leverui-colors-gray-200);
+  color: var(--lui-colors-red-500);
+  --lui-spinner-track-color: var(--lui-colors-gray-200);
 }
 
 .spinner-example-label {
-  color: var(--leverui-colors-teal-600);
+  color: var(--lui-colors-teal-600);
 }
