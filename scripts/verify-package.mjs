@@ -20,7 +20,7 @@ assert.match(
 );
 assert.match(defaultCss, /--leverui-colors-bg:/);
 assert.match(defaultCss, /--leverui-spacing-4:/);
-assert.match(defaultCss, /\.leverui-box\s*\{\s*box-sizing:\s*border-box;/);
+assert.match(defaultCss, /\.leverui-box\s*\{\s*box-sizing:\s*border-box[;}]/);
 assert.doesNotMatch(defaultCss, /chakra/i);
 
 assert.equal(manifest.exports['./styled-system'], undefined);

@@ -4,6 +4,13 @@ All notable changes to `@leverui/components` are recorded here. The project
 follows [Semantic Versioning](https://semver.org/). Prereleases are numbered
 `-next.N` and may still include breaking changes.
 
+## Unreleased
+
+### Changed
+
+- `@leverui/components/styles.css` ships without whitespace or comments, which
+  makes it about 16% smaller. Rules and values are unchanged.
+
 ## 1.0.0-next.0
 
 First public alpha.

@@ -1,4 +1,5 @@
 import { readFile, readdir, writeFile } from 'node:fs/promises';
+import { transform } from 'esbuild';
 import { verifyAuthoredCssContract } from './authored-css-contract.mjs';
 import { defaultCssFiles } from './default-css-sources.mjs';
 
@@ -37,7 +38,10 @@ async function loadSource(name) {
 await verifySourceList();
 const sources = new Map(await Promise.all(defaultCssFiles.map(loadSource)));
 verifyAuthoredCssContract(sources);
-const css = `${layerOrder}\n${[...sources.values()].join('\n')}\n`;
+const authored = `${layerOrder}\n${[...sources.values()].join('\n')}\n`;
+// Remove only whitespace and comments. Rewriting values would change what code reads back
+// from a variable, such as `150ms` becoming `.15s`.
+const { code: css } = await transform(authored, { loader: 'css', minifyWhitespace: true });
 if (!css.includes('--leverui-colors-bg:')) {
   throw new Error('The default stylesheet is missing semantic color tokens.');
 }
@@ -48,5 +52,5 @@ if (process.argv.includes('--check')) {
   console.log('Default stylesheet matches authored Lever UI CSS.');
 } else {
   await writeFile(output, css);
-  console.log('Bundled authored Lever UI CSS into dist/styles.css.');
+  console.log('Bundled and minified authored Lever UI CSS into dist/styles.css.');
 }
