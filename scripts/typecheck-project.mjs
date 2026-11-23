@@ -10,10 +10,11 @@ const projectRoot = fileURLToPath(new URL('../', import.meta.url));
 const worker = fileURLToPath(new URL('./typecheck-worker.mjs', import.meta.url));
 const sourceRoot = join(projectRoot, 'src');
 const sourceIndex = join(projectRoot, 'src/index.ts');
-const memoryMiB = 1280;
-const singleFileMemoryMiB = 1536;
-// Keep heavy Storybook type graphs below the worker's memory cap.
-const batchSize = 4;
+const memoryMiB = 2048;
+const singleFileMemoryMiB = 3072;
+// Every worker loads the shared type graph first, so larger batches spend less time
+// reloading it. Sixty-four roots stay near 1.5 GiB.
+const batchSize = 64;
 // Each worker can reach its heap cap, so run one per CPU and per 3 GiB of memory.
 const jobs = Number(
   process.env.LEVERUI_TYPECHECK_JOBS ??
@@ -91,7 +92,7 @@ async function checkBatch(configPath, files, limitMiB = memoryMiB) {
     return;
   }
   if (outOfMemory && limitMiB < singleFileMemoryMiB) {
-    console.log(`Retrying ${relative(projectRoot, files[0])} with a 1.5 GiB heap cap.`);
+    console.log(`Retrying ${relative(projectRoot, files[0])} with a 3 GiB heap cap.`);
     await checkBatch(configPath, files, singleFileMemoryMiB);
     return;
   }
