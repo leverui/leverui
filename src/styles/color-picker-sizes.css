@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   [data-lui-color-picker-css][data-size='2xs'] {
     --lui-private-color-picker-swatch-size: var(--lui-sizes-4\.5);
     --lui-private-color-picker-trigger-height: var(--lui-sizes-7);

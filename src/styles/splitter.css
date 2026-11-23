@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-splitter__root:not([data-unstyled]) {
     --lui-splitter-border-color: var(--lui-colors-border);
     --lui-splitter-thumb-color: var(--lui-colors-bg);

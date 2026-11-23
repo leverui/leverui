@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-color-swatch:not([data-unstyled]) {
     &[data-size='2xs'] {
       --lui-swatch-size: var(--lui-sizes-3\.5);

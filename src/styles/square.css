@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   :is(.lui-square, .lui-circle) {
     width: var(--lui-private-square-size-base, var(--lui-square-size, auto));
     height: var(--lui-private-square-size-base, var(--lui-square-size, auto));

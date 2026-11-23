@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-number-input__input {
     --lui-private-input-group-field-height: var(--lui-private-input-height, var(--lui-sizes-10));
   }

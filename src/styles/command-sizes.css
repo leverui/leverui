@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-command__root:not([data-unstyled])[data-size='sm'] {
     --lui-private-command-control-padding-x: var(--lui-spacing-3);
     --lui-private-command-input-height: var(--lui-sizes-10);

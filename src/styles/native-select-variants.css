@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-native-select__root:not([data-unstyled])[data-variant='outline'] {
     --lui-private-native-select-background: transparent;
     --lui-private-native-select-border-width: 1px;

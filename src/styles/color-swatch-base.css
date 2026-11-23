@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-color-swatch:not([data-unstyled]) {
     --lui-swatch-color: var(--lui-private-swatch-value, transparent);
     --lui-private-swatch-checker-size: var(--lui-swatch-checker-size, 8px);

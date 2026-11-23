@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-scatter-chart {
     position: relative;
     width: var(--lui-scatter-chart-width, 100%);

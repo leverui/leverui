@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-popover__content:not([data-unstyled]) {
     --lui-popover-background: var(--lui-colors-bg-panel);
     --lui-popover-size: var(--lui-sizes-xs);

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 480px) {
     .lui-field__root[data-orientation-sm='vertical'] {
       --lui-private-field-direction: column;

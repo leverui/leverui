@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-progress__root:not([data-unstyled]) {
     --lui-private-progress-stripe-pattern: linear-gradient(
       45deg,

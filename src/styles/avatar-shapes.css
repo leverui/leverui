@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-avatar__root:not([data-unstyled])[data-shape='square'] {
     --lui-private-avatar-radius: 0px;
   }

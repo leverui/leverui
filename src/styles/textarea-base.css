@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-textarea:not([data-unstyled]) {
     width: 100%;
     min-width: 0;

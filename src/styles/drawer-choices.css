@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-drawer__content[data-lui-drawer-css] {
     &[data-size='xs'] {
       --lui-private-drawer-size-max-width: var(--lui-sizes-xs);

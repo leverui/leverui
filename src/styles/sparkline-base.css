@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-sparkline:not([data-unstyled]) {
     display: block;
     overflow: visible;

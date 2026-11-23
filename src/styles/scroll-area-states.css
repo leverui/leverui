@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-scroll-area__scrollbar:not([data-unstyled]):is(:hover, :active) {
     --lui-private-scroll-area-thumb-bg: var(
       --lui-scroll-area-thumb-hover-color,

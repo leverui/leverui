@@ -1,4 +1,4 @@
-@layer leverui.tokens {
+@layer lui.tokens {
   :where(html) {
     --lui-colors-transparent: transparent;
     --lui-colors-current: currentColor;

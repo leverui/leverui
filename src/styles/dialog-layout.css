@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-dialog__header[data-lui-dialog-css] {
     display: flex;
     gap: var(--lui-spacing-2);

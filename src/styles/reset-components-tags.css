@@ -1,4 +1,4 @@
-@layer leverui.reset {
+@layer lui.reset {
   /* Tag-specific resets, applied only to elements with a lui- class. */
   :where(hr):where([class^='lui-'], [class*=' lui-']) {
     height: 0px;

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 480px) {
     .lui-editable__root[data-size-sm='sm'] {
       --lui-private-editable-font-size: var(--lui-font-sizes-sm);

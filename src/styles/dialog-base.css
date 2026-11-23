@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-dialog__backdrop[data-lui-dialog-css] {
     background: var(--lui-colors-black-alpha-500);
     position: fixed;

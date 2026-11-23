@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-timeline__root:not([data-unstyled]) {
     display: flex;
     flex-direction: column;

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-progress-circle__root:not([data-unstyled]) {
     display: inline-flex;
     position: relative;
@@ -46,7 +46,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  @layer leverui.recipes {
+  @layer lui.recipes {
     .lui-progress-circle__circle:not([data-unstyled])[data-state='indeterminate'],
     .lui-progress-circle__circleRange:not([data-unstyled])[data-state='indeterminate'] {
       animation: none;

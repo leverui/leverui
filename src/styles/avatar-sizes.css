@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-avatar__root:not([data-unstyled])[data-size='full'] {
     --lui-private-avatar-size: 100%;
     --lui-private-avatar-font-size: 100%;

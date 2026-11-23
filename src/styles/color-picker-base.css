@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-color-picker__root[data-lui-color-picker-css] {
     display: flex;
     flex-direction: column;

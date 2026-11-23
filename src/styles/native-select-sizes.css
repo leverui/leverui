@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-native-select__root:not([data-unstyled])[data-size='xs'] {
     --lui-private-native-select-height: var(--lui-sizes-8);
     --lui-private-native-select-font-size: var(--lui-font-sizes-xs);

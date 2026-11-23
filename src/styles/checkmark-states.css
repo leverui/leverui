@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-checkmark:not([data-unstyled]):is([data-state='checked'], [data-state='indeterminate']) {
     --lui-private-checkmark-background: var(--lui-private-checkmark-active-background);
     --lui-private-checkmark-border: var(--lui-private-checkmark-active-border);

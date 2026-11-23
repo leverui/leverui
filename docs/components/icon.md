@@ -19,7 +19,7 @@ add this rule once. An icon with its own `size` keeps it. Components that size
 their own icons, such as `Button`, still do.
 
 ```css
-@layer leverui.base {
+@layer lui.base {
   :where(.lucide[width='24'][height='24']) {
     width: 1em;
     height: 1em;

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-drawer__backdrop[data-lui-drawer-css] {
     &[data-state='open'] {
       animation-name: fade-in;

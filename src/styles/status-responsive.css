@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 480px) {
     .lui-status__root:not([data-unstyled]) {
       &[data-size-sm='sm'] {

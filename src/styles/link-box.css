@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-linkbox:not([data-unstyled]) {
     position: relative;
 

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-checkbox:not([data-unstyled]) {
     --lui-private-checkbox-gap: var(--lui-spacing-2\.5);
     --lui-private-checkbox-label-font-size: var(--lui-font-sizes-sm);

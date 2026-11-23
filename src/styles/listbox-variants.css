@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-listbox__content:not([data-unstyled]):is([data-variant='subtle'], [data-variant='solid']) {
     --lui-private-listbox-background: var(--lui-colors-bg-panel);
     --lui-private-listbox-border-width: 1px;

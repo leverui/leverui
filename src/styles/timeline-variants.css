@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-timeline__root:not([data-unstyled]) {
     --lui-private-timeline-indicator-bg: var(--lui-colors-color-palette-solid);
     --lui-private-timeline-indicator-color: var(--lui-colors-color-palette-contrast);

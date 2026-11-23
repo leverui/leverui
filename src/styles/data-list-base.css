@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-data-list__root:not([data-unstyled]) {
     --lui-private-data-list-root-gap: var(--lui-spacing-4);
     --lui-private-data-list-item-display: flex;

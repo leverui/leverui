@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-skip-nav:not([data-unstyled]) {
     display: inline-flex;
     background: var(--lui-colors-bg-panel);

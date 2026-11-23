@@ -78,7 +78,7 @@ async function verifiesGroup({ page }: { page: Page }): Promise<void> {
   await expect(responsive).toHaveCSS('flex-direction', 'row');
   await expect(page.getByTestId('group-aliases')).toHaveCSS('align-items', 'flex-start');
   await page.addStyleTag({
-    content: '@layer leverui.base { [data-testid="group-radius-first"] { border-radius: 19px; } }',
+    content: '@layer lui.base { [data-testid="group-radius-first"] { border-radius: 19px; } }',
   });
   await expect(page.getByTestId('group-radius-first')).toHaveCSS('border-top-right-radius', '0px');
   await expect(page.getByTestId('group-aliases')).toHaveCSS('justify-content', 'space-between');

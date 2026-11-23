@@ -44,7 +44,7 @@ tighten the letter spacing. `label` is `sm` with a medium font weight.
 
 `Span`, `Box`, `Center`, `Stack`, `HStack`, `VStack`, `Flex`, `Square`, and
 `Circle` accept the same prop. Each name is a rule in the stylesheet's
-`leverui.utilities` layer, so it overrides component styles. Any other name
+`lui.utilities` layer, so it overrides component styles. Any other name
 throws an error. For other sizes, use `class` or `style`.
 
 ### Clipping

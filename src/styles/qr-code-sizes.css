@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-qr-code__root:not([data-unstyled])[data-size='2xs'] {
     --lui-private-qr-code-size: 40px;
   }

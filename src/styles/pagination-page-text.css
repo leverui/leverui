@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-pagination__page-text:not([data-unstyled]) {
     font-weight: var(--lui-font-weights-medium);
   }

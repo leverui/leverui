@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-accordion__root:not([data-unstyled]) {
     &[data-size='sm'] {
       --lui-private-accordion-padding-x: var(--lui-spacing-3);

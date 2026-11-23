@@ -125,7 +125,7 @@ panel, a selector for every panel, or `style` for a single value.
 ```
 
 ```css
-@layer leverui.recipes {
+@layer lui.recipes {
   .notes-panel[data-lui-floating-panel-css] {
     border: 1px solid var(--lui-colors-border);
   }

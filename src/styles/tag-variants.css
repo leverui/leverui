@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-tag__root:not([data-unstyled]) {
     --lui-private-tag-background: var(--lui-colors-color-palette-subtle);
     --lui-private-tag-color: var(--lui-colors-color-palette-fg);

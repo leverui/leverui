@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-rating-group__root:not([data-unstyled]) {
     &[data-size='xs'] {
       --lui-private-rating-group-item-font-size: var(--lui-font-sizes-sm);

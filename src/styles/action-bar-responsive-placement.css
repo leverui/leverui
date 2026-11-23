@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 480px) {
     .lui-action-bar__positioner:not([data-unstyled]) {
       &[data-placement-sm='bottom'] {

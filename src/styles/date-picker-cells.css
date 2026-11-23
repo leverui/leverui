@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-date-picker__table:not([data-unstyled]) {
     border-collapse: separate;
     border-spacing: 0;

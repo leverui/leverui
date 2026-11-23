@@ -1,5 +1,5 @@
 /* Page-wide base styles for the demo website and Storybook only. The library does not ship them. */
-@layer leverui.base {
+@layer lui.base {
   * {
     font-feature-settings: 'cv11';
   }

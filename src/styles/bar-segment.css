@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-bar-segment__root {
     display: flex;
     flex-direction: column;

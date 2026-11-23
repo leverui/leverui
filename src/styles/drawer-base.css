@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-drawer__backdrop[data-lui-drawer-css] {
     --lui-drawer-z-index: var(--lui-z-index-popover);
     position: fixed;

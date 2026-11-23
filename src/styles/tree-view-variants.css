@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-tree-view__root:not([data-unstyled])[data-variant='subtle'] {
     --lui-private-tree-selected-bg: var(--lui-colors-color-palette-subtle);
     --lui-private-tree-selected-fg: var(--lui-colors-color-palette-fg);

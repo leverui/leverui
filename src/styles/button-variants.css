@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-button:not([data-unstyled]) {
     background-color: var(--lui-private-button-bg, transparent);
     color: var(--lui-private-button-fg, inherit);

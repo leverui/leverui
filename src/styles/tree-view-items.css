@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-tree-view__root:not([data-unstyled])
     :is(.lui-tree-view__branchControl, .lui-tree-view__item):not([data-unstyled]) {
     --lui-private-tree-depth: calc(var(--depth) - 1);

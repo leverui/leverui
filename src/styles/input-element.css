@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-input-element:not([data-unstyled]) {
     display: flex;
     align-items: center;

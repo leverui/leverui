@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-radar-chart {
     position: relative;
     width: var(--lui-radar-chart-width, var(--lui-private-radar-chart-width, 384px));

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-prose:not([data-unstyled]) {
     color: var(--lui-prose-color, var(--lui-colors-fg-muted));
     max-width: var(--lui-prose-max-width, 65ch);

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-date-picker__input:not([data-unstyled])[data-variant='outline'] {
     --lui-private-date-picker-input-background: transparent;
     --lui-private-date-picker-border-width: 1px;

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 1280px) {
     .lui-tabs__root:not([data-unstyled])[data-variant][data-variant-xl] {
       .lui-tabs__list:not([data-unstyled]) {

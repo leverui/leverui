@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-input-addon:not([data-unstyled])[data-variant='outline'] {
     --lui-private-input-addon-border-width: 1px;
     --lui-private-input-addon-border-color: var(--lui-colors-border);

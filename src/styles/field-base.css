@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-field__root:not([data-unstyled]) {
     display: flex;
     width: 100%;

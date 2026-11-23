@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-input-group:not([data-unstyled]) {
     width: var(--lui-input-group-width, 100%);
   }

@@ -1,4 +1,4 @@
-@layer leverui.base {
+@layer lui.base {
   @-webkit-keyframes slide-from-bottom {
     0% {
       -webkit-translate: 0 var(--lui-private-slide-from-bottom-distance, 0.5rem);

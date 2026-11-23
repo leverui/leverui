@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-popover__content:not([data-unstyled]) {
     &[data-state='open'] {
       animation-name: scale-in, fade-in;

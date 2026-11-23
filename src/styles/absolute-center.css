@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   :where([dir='ltr']) {
     --lui-private-absolute-center-inline-translate: -50%;
   }

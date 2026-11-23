@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-list__root:not([data-unstyled]) {
     --lui-private-list-item-display: list-item;
     --lui-private-list-variant-align: normal;

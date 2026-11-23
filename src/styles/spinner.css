@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-spinner:not([data-unstyled]) {
     display: inline-block;
     border-color: currentColor;

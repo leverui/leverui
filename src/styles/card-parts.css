@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-card__header:not([data-unstyled]) {
     padding-inline: var(--lui-card-padding);
     padding-top: var(--lui-card-padding);

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-tree-view__root:not([data-unstyled]) {
     --lui-private-tree-open-animation: none;
     --lui-private-tree-closed-animation: none;

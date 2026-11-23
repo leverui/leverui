@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-separator:not([data-unstyled]) {
     --lui-private-separator-thickness: 1px;
     display: block;

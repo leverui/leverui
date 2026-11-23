@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-segment-group__root:not([data-unstyled]) {
     --lui-private-segment-radius: var(--lui-segment-group-radius, var(--lui-radii-l2));
     border-radius: var(--lui-private-segment-radius);

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-combobox__input:not([data-unstyled])[data-variant='outline'] {
     --lui-private-combobox-input-background: transparent;
     --lui-private-combobox-border-width: 1px;

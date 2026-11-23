@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-command__item:not([data-unstyled]) {
     position: relative;
     user-select: none;

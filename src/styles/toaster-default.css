@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   /* The ready-made layout that `<Toaster />` renders for the shared `toaster`. */
   .lui-toaster-default__spinner {
     color: var(--lui-colors-blue-solid);

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-toast__root:not([data-unstyled]) {
     &:is([data-type='warning'], [data-type='success'], [data-type='error']) {
       --lui-toast-trigger-bg: color-mix(in srgb, white 10%, transparent);

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-chart-tooltip {
     position: absolute;
     display: flex;

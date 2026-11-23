@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-toast__root:not([data-unstyled]) {
     --lui-toast-trigger-bg: var(--lui-colors-bg-muted);
     width: 100%;

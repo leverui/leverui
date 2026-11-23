@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 1024px) {
     .lui-drawer__content[data-lui-drawer-css] {
       &[data-size-lg='xs'] {

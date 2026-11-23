@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-combobox__label:not([data-unstyled])[data-disabled],
   .lui-combobox__input:not([data-unstyled]):is([data-disabled], :disabled) {
     opacity: 0.5;

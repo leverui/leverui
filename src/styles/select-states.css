@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-select__trigger:not([data-unstyled]):is([data-placeholder-shown], [data-placeholder]) {
     color: color-mix(in srgb, var(--lui-colors-fg-muted) 80%, transparent);
   }

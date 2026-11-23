@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-alert__root:not([data-unstyled], [data-lui-color-palette]) {
     &[data-status='info'] {
       --lui-colors-color-palette-50: var(--lui-colors-blue-50);

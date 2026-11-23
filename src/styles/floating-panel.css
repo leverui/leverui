@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-floating-panel__positioner[data-lui-floating-panel-css] {
     --lui-private-floating-panel-z-index: var(--lui-z-index-popover);
     z-index: calc(var(--lui-private-floating-panel-z-index) + var(--layer-index, 0));

@@ -1,4 +1,4 @@
-@layer leverui.utilities {
+@layer lui.utilities {
   /* Named typography presets selected by the textStyle prop. */
   [data-text-style='2xs'] {
     font-size: var(--lui-font-sizes-2xs);

@@ -8,18 +8,21 @@ follows [Semantic Versioning](https://semver.org/). Prereleases are numbered
 
 ### Changed
 
-- **Breaking:** CSS variables, classes, and data attributes use the short
-  `lui` prefix instead of `leverui`. Rename them in your own CSS and code:
+- **Breaking:** CSS variables, classes, data attributes, and layer names use
+  the short `lui` prefix instead of `leverui`. Rename them in your own CSS and
+  code:
 
   | Before                | After             |
   | --------------------- | ----------------- |
   | `--leverui-colors-bg` | `--lui-colors-bg` |
   | `.leverui-button`     | `.lui-button`     |
   | `data-leverui-theme`  | `data-lui-theme`  |
+  | `leverui.recipes`     | `lui.recipes`     |
 
-  The default SkipNav target id is now `lui-skip-nav`. Layer names such as
-  `leverui.recipes`, the `leverui-color-mode` storage key, and the package name
-  are unchanged.
+  With Tailwind, the layer line is now
+  `@layer theme, base, lui, components, utilities;`. The default SkipNav target
+  id is now `lui-skip-nav`. The `leverui-color-mode` storage key and the
+  package name are unchanged.
 
 - `@leverui/components/styles.css` ships without whitespace or comments, which
   makes it about 16% smaller. Rules and values are unchanged.

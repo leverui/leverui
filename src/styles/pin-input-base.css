@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-pin-input__root {
     --lui-private-pin-input-gap: var(--lui-spacing-2);
     --lui-private-pin-input-overlap: 0px;

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-tabs__root:not([data-unstyled])[data-variant='outline'] {
     .lui-tabs__list:not([data-unstyled]) {
       --lui-private-line-thickness: 1px;

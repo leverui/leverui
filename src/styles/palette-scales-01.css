@@ -1,4 +1,4 @@
-@layer leverui.tokens {
+@layer lui.tokens {
   /*
    * A palette applies to its own element and to the light or dark scopes nested inside it, unless
    * another palette sits in between. Declaring the aliases again on those scopes makes them pick

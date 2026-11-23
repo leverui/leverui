@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-tooltip__content:not([data-unstyled]) {
     --lui-tooltip-background: var(--lui-colors-bg-inverted);
     --lui-tooltip-foreground: var(--lui-colors-fg-inverted);

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-checkbox-card:not([data-unstyled]) {
     --lui-private-checkbox-card-align: flex-start;
     --lui-private-checkbox-card-justify: normal;

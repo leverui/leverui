@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-skeleton:not([data-unstyled])[data-variant='shine'] {
     --lui-private-skeleton-background: var(--lui-private-skeleton-shine-background);
     --lui-private-skeleton-background-size: 400% 100%;

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-tabs__root:not([data-unstyled]) {
     --lui-tabs-trigger-radius: var(--lui-radii-l2);
     --lui-tabs-indicator-shadow: var(--lui-shadows-xs);

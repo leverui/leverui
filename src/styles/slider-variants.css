@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-slider__root:not([data-unstyled]) {
     --lui-slider-range-color: var(--lui-colors-color-palette-solid);
     --lui-slider-track-color: color-mix(in srgb, var(--lui-colors-bg-emphasized) 72%, transparent);

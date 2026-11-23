@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-skeleton:not([data-unstyled]) {
     --lui-private-skeleton-pulse-background: var(
       --lui-skeleton-bg,

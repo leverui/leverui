@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-code-block__root:not([data-unstyled])[data-size='sm'] {
     --lui-private-code-block-padding: var(--lui-spacing-4);
     --lui-private-code-block-radius: var(--lui-radii-md);

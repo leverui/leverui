@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-breadcrumb__root:not([data-unstyled]) {
     --lui-private-breadcrumb-gap: var(--lui-spacing-1\.5);
     --lui-private-breadcrumb-font-size: var(--lui-font-sizes-sm);

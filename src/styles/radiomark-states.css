@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-radiomark:not([data-unstyled])[data-checked] {
     --lui-private-radiomark-background: var(--lui-private-radiomark-checked-background);
     --lui-private-radiomark-border: var(--lui-private-radiomark-checked-border);

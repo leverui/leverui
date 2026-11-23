@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-bleed {
     margin-inline-start: calc(var(--lui-private-bleed-inline-start-base, 0px) * -1);
     margin-inline-end: calc(var(--lui-private-bleed-inline-end-base, 0px) * -1);

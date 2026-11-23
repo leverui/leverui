@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-avatar__root:not([data-unstyled])[data-variant='solid'] {
     --lui-private-avatar-background: var(--lui-colors-color-palette-solid);
     --lui-private-avatar-foreground: var(--lui-colors-color-palette-contrast);

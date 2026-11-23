@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-avatar-group:not([data-unstyled]) {
     --lui-group-gap: 0px;
 

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-line-chart .lui-cartesian-chart__gridLine {
     stroke: var(--lui-chart-grid-color, var(--lui-colors-border));
   }

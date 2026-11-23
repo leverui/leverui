@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-date-picker__input:not([data-unstyled]):is([data-invalid], [aria-invalid='true']) {
     --lui-private-date-picker-focus-color: var(--lui-private-date-picker-error-color);
     border-color: var(--lui-private-date-picker-error-color);

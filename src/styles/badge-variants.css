@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   :is(.lui-badge, .lui-code):not([data-unstyled], [data-lui-private-style-runtime]) {
     &[data-variant='solid'] {
       background-color: var(--lui-colors-color-palette-solid);

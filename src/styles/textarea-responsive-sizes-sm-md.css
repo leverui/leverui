@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 480px) {
     .lui-textarea:not([data-unstyled])[data-size-sm='xs'] {
       --lui-private-textarea-font-size: var(--lui-font-sizes-xs);

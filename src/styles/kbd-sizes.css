@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-kbd:not([data-unstyled]) {
     &[data-size='sm'] {
       --lui-private-kbd-size: var(--lui-sizes-4\.5);

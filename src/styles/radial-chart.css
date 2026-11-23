@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-radial-chart {
     position: relative;
     width: var(--lui-private-radial-chart-size, 200px);

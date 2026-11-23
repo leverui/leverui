@@ -170,7 +170,7 @@ once.
 - `animation: none` also works, and `Presence` then removes closing content at
   once. `1ms` keeps `animationend` events firing.
 - No `!important` needed in ordinary CSS. Inside a cascade layer of your own,
-  order it after the `leverui.*` layers or add `!important`.
+  order it after the `lui.*` layers or add `!important`.
 
 For your own animations, add a calmer version in the same stylesheet.
 

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-steps__root:not([data-unstyled])[data-size='xs'] {
     --lui-private-steps-root-gap: var(--lui-spacing-2\.5);
     --lui-private-steps-size: var(--lui-sizes-6);

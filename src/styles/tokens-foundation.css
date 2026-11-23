@@ -1,4 +1,4 @@
-@layer leverui.tokens {
+@layer lui.tokens {
   :where(html) {
     --lui-aspect-ratios-square: 1/1;
     --lui-aspect-ratios-landscape: 4/3;

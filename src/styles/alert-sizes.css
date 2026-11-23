@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-alert__root:not([data-unstyled]) {
     gap: var(--lui-private-alert-gap);
     padding: var(--lui-private-alert-padding);

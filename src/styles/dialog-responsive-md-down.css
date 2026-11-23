@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (width < 768px) {
     .lui-dialog__content[data-lui-dialog-css][data-size-md-down='xs'] {
       --lui-private-dialog-size-max-width: var(--lui-sizes-sm);

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-clipboard__root:not([data-unstyled]) .lui-clipboard__indicator:not([data-unstyled]) svg {
     width: 1em;
     height: 1em;

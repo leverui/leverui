@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-native-select__root:not([data-unstyled])
     .lui-native-select__field:not([data-unstyled]):is(
       :disabled,

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-radiomark:not([data-unstyled]) {
     --lui-private-radiomark-unfilled-background: transparent;
     --lui-private-radiomark-background: var(--lui-private-radiomark-unfilled-background);

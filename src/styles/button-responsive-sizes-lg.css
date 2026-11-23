@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 1024px) {
     .lui-button:not([data-unstyled])[data-size-lg='2xs'] {
       height: var(--lui-sizes-6);

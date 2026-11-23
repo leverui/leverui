@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-tag__root:not([data-unstyled]) {
     padding-inline: var(--lui-private-tag-padding);
     min-height: var(--lui-private-tag-min-height);

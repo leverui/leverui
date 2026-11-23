@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-tabs__root:not([data-unstyled]) {
     &[data-variant='subtle'] .lui-tabs__trigger:not([data-unstyled]) {
       border-radius: var(--lui-tabs-trigger-radius);

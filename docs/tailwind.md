@@ -1,17 +1,17 @@
 # Tailwind CSS
 
 Use Tailwind 4 classes on Lever UI components and their parts. Name the cascade
-layers before both imports, with `leverui` between Tailwind's `base` and
+layers before both imports, with `lui` between Tailwind's `base` and
 `components` layers.
 
 ```css
-@layer theme, base, leverui, components, utilities;
+@layer theme, base, lui, components, utilities;
 
 @import 'tailwindcss';
 @import '@leverui/components/styles.css';
 ```
 
-Lever UI puts all of its rules in layers inside `leverui`. With this order:
+Lever UI puts all of its rules in layers inside `lui`. With this order:
 
 - Tailwind's base styles come first, so they do not remove component padding,
   borders, or backgrounds.

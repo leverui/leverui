@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-bar-chart:not([data-unstyled]) {
     position: relative;
     width: 100%;

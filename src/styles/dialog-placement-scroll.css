@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-dialog__positioner[data-lui-dialog-css] {
     &[data-placement='center'] {
       align-items: center;

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 480px) {
     .lui-card__root:not([data-unstyled])[data-size-sm='sm'] {
       --lui-card-padding: var(--lui-spacing-4);

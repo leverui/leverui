@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 480px) {
     .lui-skeleton:not([data-unstyled])[data-variant-sm='pulse'] {
       --lui-private-skeleton-background: var(--lui-private-skeleton-pulse-background);

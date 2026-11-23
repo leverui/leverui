@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (1024px <= width < 1280px) {
     .lui-group:not([data-unstyled])[data-joined-lg='horizontal']:has(
         > :nth-child(2 of :not(style):not([data-lui-group-skip]):not([data-lui-group-auto-skip]))

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-date-input__root:not([data-unstyled])[data-variant='outline'] {
     --lui-private-date-input-background: transparent;
     --lui-private-date-input-border-width: 1px;

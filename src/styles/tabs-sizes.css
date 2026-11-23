@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-tabs__root:not([data-unstyled]) {
     --lui-private-tabs-height: var(--lui-sizes-10);
     --lui-private-tabs-content-padding: var(--lui-spacing-4);

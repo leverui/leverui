@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-prose:not([data-unstyled]) {
     & :where(ol, ul):not(.not-prose, .not-prose *) {
       margin-block: 1em;

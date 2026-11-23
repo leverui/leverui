@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 480px) {
     .lui-radiomark:not([data-unstyled])[data-filled-sm='true'] {
       --lui-private-radiomark-background: var(--lui-colors-bg);

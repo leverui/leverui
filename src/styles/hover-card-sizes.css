@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-hoverCard__content:not([data-unstyled]) {
     &[data-size='xs'] {
       --lui-hover-card-padding: var(--lui-spacing-3);

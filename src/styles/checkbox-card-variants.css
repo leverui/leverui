@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-checkbox-card:not([data-unstyled]) {
     border-width: var(--lui-private-checkbox-card-border-width, 0);
     border-color: var(--lui-private-checkbox-card-border-color, currentColor);

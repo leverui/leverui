@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-number-input__root:not([data-unstyled])[data-size='xs'] {
     --lui-private-number-input-stepper-width: var(
       --lui-number-input-stepper-width,

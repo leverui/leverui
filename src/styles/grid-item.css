@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-grid-item {
     &[data-grid-item-area-base] {
       grid-area: var(--lui-private-grid-item-area-base);

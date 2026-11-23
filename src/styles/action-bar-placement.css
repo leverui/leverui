@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-action-bar__positioner:not([data-unstyled]) {
     &[data-placement='bottom'] {
       --lui-private-action-bar-justify: center;

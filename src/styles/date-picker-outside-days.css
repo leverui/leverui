@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-date-picker__tableCellTrigger:not(
       [data-unstyled]
     )[data-outside-range][data-hide-outside-days='true'] {

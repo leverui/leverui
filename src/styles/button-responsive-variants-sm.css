@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 480px) {
     .lui-button:not([data-unstyled])[data-variant-sm='solid'] {
       --lui-private-button-bg: var(--lui-colors-color-palette-solid);

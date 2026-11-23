@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   /* Breakpoint rules add an edge without removing the earlier edge. */
   @media (min-width: 480px) {
     .lui-separator:not([data-unstyled])[data-orientation-sm='horizontal'] {

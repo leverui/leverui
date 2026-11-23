@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-radiomark:not([data-unstyled]) {
     &[data-size='xs'] {
       --lui-private-radiomark-size: var(--lui-sizes-3);

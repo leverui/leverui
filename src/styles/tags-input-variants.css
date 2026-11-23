@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-tags-input__root:not([data-unstyled]) {
     &[data-variant='outline'] {
       --lui-private-tags-input-control-bg: var(--lui-colors-bg);

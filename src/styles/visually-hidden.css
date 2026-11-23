@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-visually-hidden:not([data-unstyled]),
   .lui-command-dialog__accessible-label {
     border: 0;

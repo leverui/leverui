@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-prose:not([data-unstyled]) {
     & :where(table):not(.not-prose, .not-prose *) {
       width: 100%;

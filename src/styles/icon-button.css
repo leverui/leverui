@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-button.lui-icon-button:not([data-unstyled]) {
     padding-inline: 0;
     padding-block: 0;

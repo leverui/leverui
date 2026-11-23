@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 480px) {
     .lui-avatar__root:not([data-unstyled])[data-size-sm='full'] {
       --lui-private-avatar-size: 100%;

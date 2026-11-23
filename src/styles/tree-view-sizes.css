@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-tree-view__root:not([data-unstyled])[data-size='xs'] {
     --lui-private-tree-default-icon-size: var(--lui-spacing-3);
     --lui-private-tree-default-padding-inline: var(--lui-spacing-2);

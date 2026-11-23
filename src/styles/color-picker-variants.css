@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-color-picker__trigger[data-lui-color-picker-css][data-variant='outline'] {
     border: 1px solid var(--lui-colors-border);
   }

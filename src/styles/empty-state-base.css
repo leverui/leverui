@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-empty-state__root:not([data-unstyled]) {
     --lui-private-empty-state-padding-inline: var(--lui-spacing-8);
     --lui-private-empty-state-padding-block: var(--lui-spacing-12);

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 1536px) {
     .lui-accordion__root:not([data-unstyled]) {
       &[data-variant-2xl='outline'] {

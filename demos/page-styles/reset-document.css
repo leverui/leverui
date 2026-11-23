@@ -1,5 +1,5 @@
 /* Page-wide reset for the demo website and Storybook only. The library does not ship it. */
-@layer leverui.reset {
+@layer lui.reset {
   html {
     line-height: 1.5;
     --font-fallback:

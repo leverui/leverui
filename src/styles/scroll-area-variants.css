@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-scroll-area__root:not([data-unstyled]) {
     &[data-variant='hover'] {
       --lui-private-scroll-area-opacity: 0;

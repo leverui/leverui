@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-menu__content[data-lui-menu-css] {
     --lui-menu-background: var(--lui-colors-bg-panel);
     --lui-menu-z-index: var(--lui-z-index-popover);

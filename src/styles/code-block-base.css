@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-code-block__root:not([data-unstyled]) {
     overflow: hidden;
     color: var(--lui-code-block-fg, var(--lui-colors-fg));

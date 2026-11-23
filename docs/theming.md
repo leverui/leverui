@@ -86,7 +86,7 @@ semantic values. See [scoped CSS themes](custom-systems.md) for examples.
 The stylesheet uses named layers in this order:
 
 ```css
-@layer leverui.reset, leverui.base, leverui.tokens, leverui.recipes, leverui.utilities;
+@layer lui.reset, lui.base, lui.tokens, lui.recipes, lui.utilities;
 ```
 
 The stylesheet has no page-wide rules. It does not reset, color, or set fonts on

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 480px) {
     .lui-avatar__root:not([data-unstyled])[data-borderless-sm='true'] {
       --lui-private-avatar-group-border-width: 0px;

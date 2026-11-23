@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-carousel__root:not([data-unstyled]) {
     position: relative;
     display: flex;

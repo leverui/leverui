@@ -14,10 +14,7 @@ assert.equal(
   import.meta.resolve('@leverui/components/styles.css'),
   new URL('../dist/styles.css', import.meta.url).href,
 );
-assert.match(
-  defaultCss,
-  /@layer leverui\.reset,leverui\.base,leverui\.tokens,leverui\.recipes,leverui\.utilities;/,
-);
+assert.match(defaultCss, /@layer lui\.reset,lui\.base,lui\.tokens,lui\.recipes,lui\.utilities;/);
 assert.match(defaultCss, /--lui-colors-bg:/);
 assert.match(defaultCss, /--lui-spacing-4:/);
 assert.match(defaultCss, /\.lui-box\s*\{\s*box-sizing:\s*border-box[;}]/);

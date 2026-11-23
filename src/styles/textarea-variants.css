@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-textarea:not([data-unstyled])[data-variant='outline'] {
     --lui-private-textarea-background: transparent;
     --lui-private-textarea-border-width: 1px;

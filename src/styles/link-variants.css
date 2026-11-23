@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-link:not([data-unstyled]) {
     &[data-variant='underline'] {
       --lui-private-link-decoration-line: underline;

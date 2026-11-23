@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-timeline__root:not([data-unstyled]) {
     --lui-private-timeline-indicator-size: var(--lui-sizes-5);
     --lui-private-timeline-font-size: var(--lui-font-sizes-xs);

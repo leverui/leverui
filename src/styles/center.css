@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-center:not([data-unstyled]) {
     display: flex;
     align-items: var(--lui-center-align, center);

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-steps__root:not([data-unstyled])[data-variant='solid'] {
     --lui-private-steps-incomplete-bg: transparent;
     --lui-private-steps-incomplete-border-width: var(--lui-private-steps-thickness);

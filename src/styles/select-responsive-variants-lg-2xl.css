@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 1024px) {
     .lui-select__trigger:not([data-unstyled])[data-variant-lg='outline'] {
       --lui-private-select-background: transparent;

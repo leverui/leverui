@@ -1,4 +1,4 @@
-@layer leverui.reset {
+@layer lui.reset {
   /*
    * Each Lever UI element resets itself. Nothing here reaches elements without a
    * lui- class, so the consumer's own markup keeps its browser and app styles.

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-select__root:not([data-unstyled])[data-size='xs'],
   .lui-select__content:not([data-unstyled])[data-size='xs'] {
     --lui-private-select-trigger-height: var(--lui-sizes-8);

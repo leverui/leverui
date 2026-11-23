@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-combobox__root:not([data-unstyled])[data-size='xs'],
   .lui-combobox__content:not([data-unstyled])[data-size='xs'] {
     --lui-private-combobox-input-height: var(--lui-sizes-8);

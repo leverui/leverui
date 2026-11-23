@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-radiomark:not([data-unstyled]) {
     &[data-variant='solid'] {
       --lui-private-radiomark-border: var(--lui-colors-border-emphasized);

@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-action-bar__content:not([data-unstyled])[data-state='open'] {
     animation-name: slide-from-bottom, fade-in;
     animation-duration: var(--lui-durations-moderate);

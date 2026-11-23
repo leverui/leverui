@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   /* The placeholder ColorModeButton shows before hydration. */
   .lui-color-mode-button-placeholder {
     width: var(--lui-sizes-9);

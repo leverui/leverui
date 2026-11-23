@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-drawer__header[data-lui-drawer-css] {
     display: flex;
     align-items: center;

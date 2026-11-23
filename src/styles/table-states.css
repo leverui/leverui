@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @scope (.lui-table__root:not([data-unstyled])) to (.lui-table__root) {
     :is(.lui-table__columnHeader, :scope[data-native] thead th):not([data-unstyled]) {
       border-bottom-width: 1px;

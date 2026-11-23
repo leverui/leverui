@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-slider__root:not([data-unstyled])[data-orientation='vertical'] {
     display: inline-flex;
 

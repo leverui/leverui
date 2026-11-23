@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-alert__root:not([data-unstyled]) {
     background: var(--lui-private-alert-background, transparent);
     color: var(--lui-private-alert-foreground);

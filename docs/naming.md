@@ -12,15 +12,16 @@ public APIs. The full spellings below are the only product names to use.
 | PascalCase identifiers and component names                | `LeverUI`  |
 | npm and GitHub organizations                              | `leverui`  |
 | Repository and asset paths                                | `leverui`  |
-| CSS layer names and storage keys                          | `leverui`  |
-| CSS variables, classes, and data attributes               | `lui`      |
+| Storage keys                                              | `leverui`  |
+| CSS variables, classes, data attributes, and layer names  | `lui`      |
 
-Use the short `lui` prefix for every CSS variable, class, and data attribute.
-Layer names and storage keys keep `leverui`.
+Use the short `lui` prefix for everything in CSS and HTML: variables, classes,
+data attributes, and layer names. JavaScript, storage keys, and the package
+name keep `leverui`.
 
 For example, use `--lui-colors-bg`, `.lui-button`, `data-lui-color-mode`,
-`leverui.recipes`, and `@leverui/components`. Do not shorten any of these to
-the standalone word. This rule applies to private implementation details
+`lui.recipes`, `leverui-color-mode`, and `@leverui/components`. Do not shorten
+any of these to the standalone word. This rule applies to private implementation details
 as well as exported names and text emitted by code. Prose may use `Lever UI`
 but never the shortened product name.
 

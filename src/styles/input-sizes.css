@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-input:not([data-unstyled])[data-size='2xs'] {
     --lui-private-input-font-size: var(--lui-font-sizes-xs);
     --lui-private-input-line-height: 1rem;

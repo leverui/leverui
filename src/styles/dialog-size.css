@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-dialog__content[data-lui-dialog-css] {
     --lui-private-dialog-size-max-width: var(--lui-sizes-lg);
     --lui-private-dialog-size-height: auto;

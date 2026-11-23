@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-tags-input__root:not([data-unstyled])[data-size='xs'] {
     --lui-private-tags-input-height: var(--lui-sizes-8);
     --lui-private-tags-input-item-height: var(--lui-sizes-6);

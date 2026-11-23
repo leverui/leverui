@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 1280px) {
     :is(.lui-date-picker__root, .lui-date-picker__content):not([data-unstyled])[data-size-xl='xs'] {
       --lui-private-date-picker-input-height: var(--lui-sizes-8);

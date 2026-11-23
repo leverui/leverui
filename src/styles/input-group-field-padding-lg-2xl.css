@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-input-group:not([data-unstyled]) {
     @media (min-width: 1024px) {
       &[data-group-start-lg] {

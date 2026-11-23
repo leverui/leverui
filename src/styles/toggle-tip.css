@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   /* The compact help surface that ToggleTip and InfoTip render. */
   .lui-popover__content.lui-toggle-tip:not([data-unstyled]) {
     width: auto;

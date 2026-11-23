@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   /* Slide away from the trigger and fade, by placement (slide-fade). */
   .lui-color-picker__content[data-lui-color-picker-css] {
     transform-origin: var(--transform-origin);

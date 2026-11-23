@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-editable__root:not([data-unstyled]) {
     display: inline-flex;
     align-items: center;

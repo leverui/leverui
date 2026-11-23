@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-stack-separator:not([data-unstyled]) {
     border-width: 0;
     align-self: stretch;

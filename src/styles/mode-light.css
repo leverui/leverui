@@ -1,4 +1,4 @@
-@layer leverui.tokens {
+@layer lui.tokens {
   @scope (html:not([data-lui-color-mode=dark]), [data-lui-theme][data-lui-color-mode=light]) to ([data-lui-theme][data-lui-color-mode]) {
     :scope {
       --lui-colors-bg: var(--lui-colors-white);

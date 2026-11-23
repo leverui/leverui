@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 480px) {
     .lui-input-element:not([data-unstyled])[data-placement-sm='start'] {
       inset-inline-start: 0;

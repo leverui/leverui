@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   @media (min-width: 480px) {
     .lui-fieldset__root[data-size-sm='sm'] {
       --lui-private-fieldset-space-y: var(--lui-spacing-2);

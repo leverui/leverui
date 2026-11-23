@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-date-input__segmentGroup:not([data-unstyled])[data-size='2xs'] {
     --lui-private-date-input-font-size: var(--lui-font-sizes-xs);
     --lui-private-date-input-line-height: 1rem;

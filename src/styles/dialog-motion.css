@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-dialog__content[data-lui-dialog-css]:not([data-lui-private-skip-initial-animation]) {
     &[data-motion-preset='scale'] {
       &[data-state='open'] {

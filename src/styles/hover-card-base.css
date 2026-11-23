@@ -1,4 +1,4 @@
-@layer leverui.recipes {
+@layer lui.recipes {
   .lui-hoverCard__content:not([data-unstyled]) {
     --lui-hover-card-background: var(--lui-colors-bg-panel);
     --lui-hover-card-max-width: var(--lui-sizes-80);
