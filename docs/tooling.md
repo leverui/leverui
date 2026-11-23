@@ -40,9 +40,11 @@ authored token or mode CSS. The theme-reference check rejects drift.
 props table lists a prop that the component does not accept, so a renamed or
 removed prop must be updated in its guide in the same change.
 
-`pnpm build` also bundles `src/styles/*.css` into `dist/styles.css`.
-Import `@leverui/components/styles.css` before an application's theme CSS.
-Components read those static rules directly from the stylesheet.
+`pnpm build` also bundles `src/styles/*.css` into `dist/styles.css` and strips
+its whitespace and comments. Values stay as authored, so a variable reads back
+the same string. Import `@leverui/components/styles.css` before an
+application's theme CSS. Components read those static rules directly from the
+stylesheet.
 
 The repository uses the JavaScript TypeScript 6 compiler for type checks and
 declarations. `pnpm typecheck` first builds fresh declarations, then checks
