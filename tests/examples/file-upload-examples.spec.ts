@@ -61,8 +61,8 @@ async function verifiesFileCounts({ page }: { page: Page }): Promise<void> {
   await page
     .locator('input[type="file"]')
     .setInputFiles([sampleFile('alpha.txt'), sampleFile('beta.txt')]);
-  await expect(page.getByText('alpha.txt')).toBeVisible();
-  await expect(page.getByText('beta.txt')).toBeVisible();
+  await expect(page.getByText('alpha.txt', { exact: true })).toBeVisible();
+  await expect(page.getByText('beta.txt', { exact: true })).toBeVisible();
 
   await openStory(page, 'conditional-dropzone');
   await expect(page.getByText('3 more files allowed')).toBeVisible();
