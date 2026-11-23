@@ -3,8 +3,8 @@
 Lever UI is an accessible component library for SolidJS 2. It ships with a
 default CSS theme and supports server rendering and hydration.
 
-> **Alpha:** `1.0.0-next.0` is the first public release. APIs may still change
-> before 1.0.
+> **Alpha:** APIs may still change before 1.0. See the
+> [changelog](CHANGELOG.md) for what changed in each release.
 
 ## Install
 

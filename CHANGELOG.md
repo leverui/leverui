@@ -4,7 +4,9 @@ All notable changes to `@leverui/components` are recorded here. The project
 follows [Semantic Versioning](https://semver.org/). Prereleases are numbered
 `-next.N` and may still include breaking changes.
 
-## Unreleased
+## 1.0.0-next.1
+
+Second alpha.
 
 ### Changed
 
