@@ -19,8 +19,8 @@ root:
 
 GitHub Actions runs the build, tests, lint, typecheck, and formatting check as
 parallel jobs on every pull request and push to `main`. Typecheck is the
-slowest, at about an hour. The packed consumer and release bundle checks run
-before a release instead; see [Releasing](releasing.md). The workflow is
+slowest. The packed consumer and release bundle checks run before a release
+instead; see [Releasing](releasing.md). The workflow is
 `.github/workflows/ci.yml`.
 
 `pnpm format` applies Prettier. `pnpm lint:fix` applies only safe ESLint fixes;
@@ -47,8 +47,10 @@ Components read those static rules directly from the stylesheet.
 The repository uses the JavaScript TypeScript 6 compiler for type checks and
 declarations. `pnpm typecheck` first builds fresh declarations, then checks
 remaining source files, stories, browser and server tests, and configuration
-in sequential batches. The declaration build checks emitted public
-barrels and records passed batches in a validated workspace. The root
+in batches. Those batches run several at a time: one worker per CPU and per
+3 GiB of memory. Set `LEVERUI_TYPECHECK_JOBS` to choose the number. The
+declaration build checks emitted public barrels and records passed batches in
+a validated workspace. The root
 configuration enables `exactOptionalPropertyTypes` and
 `noUncheckedIndexedAccess` for every check, so the library stays valid for
 applications, such as the website, that turn them on. After a failure,
