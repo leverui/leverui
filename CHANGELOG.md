@@ -11,6 +11,14 @@ follows [Semantic Versioning](https://semver.org/). Prereleases are numbered
 - `@leverui/components/styles.css` ships without whitespace or comments, which
   makes it about 16% smaller. Rules and values are unchanged.
 
+### Fixed
+
+- Every component now switches at the same widths. Some breakpoints were
+  written in `rem` and others in pixels, so they drifted apart when the
+  browser's font size was not 16px. All of them now use pixels.
+- DatePicker and Command applied their `lg` styles from 992px. They now start
+  at 1024px, like every other component.
+
 ## 1.0.0-next.0
 
 First public alpha.

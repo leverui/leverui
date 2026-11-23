@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     .leverui-float {
       &[data-placement-xl^='top-'] {
         inset-block-start: var(--leverui-float-offset-y, var(--leverui-private-float-y-xl, 0px));
@@ -34,7 +34,7 @@
     }
   }
 
-  @media (min-width: 96rem) {
+  @media (min-width: 1536px) {
     .leverui-float {
       &[data-placement-2xl^='top-'] {
         inset-block-start: var(--leverui-float-offset-y, var(--leverui-private-float-y-2xl, 0px));

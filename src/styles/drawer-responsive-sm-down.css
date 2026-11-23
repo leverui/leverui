@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (max-width: 479px) {
+  @media (width < 480px) {
     .leverui-drawer__content[data-leverui-drawer-css] {
       &[data-size-sm-down='xs'] {
         --leverui-private-drawer-size-max-width: var(--leverui-sizes-xs);

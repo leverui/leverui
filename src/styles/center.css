@@ -8,7 +8,7 @@
       display: inline-flex;
     }
 
-    @media (min-width: 30rem) {
+    @media (min-width: 480px) {
       &[data-inline-sm='true'] {
         display: inline-flex;
       }
@@ -17,7 +17,7 @@
       }
     }
 
-    @media (min-width: 48rem) {
+    @media (min-width: 768px) {
       &[data-inline-md='true'] {
         display: inline-flex;
       }
@@ -26,7 +26,7 @@
       }
     }
 
-    @media (min-width: 64rem) {
+    @media (min-width: 1024px) {
       &[data-inline-lg='true'] {
         display: inline-flex;
       }
@@ -35,7 +35,7 @@
       }
     }
 
-    @media (min-width: 80rem) {
+    @media (min-width: 1280px) {
       &[data-inline-xl='true'] {
         display: inline-flex;
       }
@@ -44,7 +44,7 @@
       }
     }
 
-    @media (min-width: 96rem) {
+    @media (min-width: 1536px) {
       &[data-inline-2xl='true'] {
         display: inline-flex;
       }

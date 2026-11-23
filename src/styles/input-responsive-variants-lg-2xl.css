@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 64rem) {
+  @media (min-width: 1024px) {
     .leverui-input:not([data-unstyled])[data-variant-lg='outline'] {
       --leverui-private-input-background: transparent;
       --leverui-private-input-border-width: 1px;
@@ -31,7 +31,7 @@
     }
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     .leverui-input:not([data-unstyled])[data-variant-xl='outline'] {
       --leverui-private-input-background: transparent;
       --leverui-private-input-border-width: 1px;
@@ -63,7 +63,7 @@
     }
   }
 
-  @media (min-width: 96rem) {
+  @media (min-width: 1536px) {
     .leverui-input:not([data-unstyled])[data-variant-2xl='outline'] {
       --leverui-private-input-background: transparent;
       --leverui-private-input-border-width: 1px;

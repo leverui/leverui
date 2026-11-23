@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 64rem) {
+  @media (min-width: 1024px) {
     .leverui-mark:not([data-unstyled], [data-leverui-private-style-runtime]) {
       &[data-variant-lg='subtle'] {
         --leverui-private-mark-background: var(--leverui-colors-color-palette-subtle);
@@ -23,7 +23,7 @@
       }
     }
   }
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     .leverui-mark:not([data-unstyled], [data-leverui-private-style-runtime]) {
       &[data-variant-xl='subtle'] {
         --leverui-private-mark-background: var(--leverui-colors-color-palette-subtle);
@@ -47,7 +47,7 @@
       }
     }
   }
-  @media (min-width: 96rem) {
+  @media (min-width: 1536px) {
     .leverui-mark:not([data-unstyled], [data-leverui-private-style-runtime]) {
       &[data-variant-2xl='subtle'] {
         --leverui-private-mark-background: var(--leverui-colors-color-palette-subtle);

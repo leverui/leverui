@@ -9,13 +9,13 @@
     max-width: 100%;
   }
 
-  @media (max-width: 47.999rem) {
+  @media (width < 768px) {
     .leverui-toast__toaster.leverui-toaster-default:not([data-unstyled]) {
       inset-inline: var(--leverui-spacing-4);
     }
   }
 
-  @media (min-width: 48rem) {
+  @media (min-width: 768px) {
     .leverui-toast__root.leverui-toaster-default__toast:not([data-unstyled]) {
       width: var(--leverui-sizes-sm);
     }

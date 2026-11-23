@@ -5,7 +5,7 @@
     visibility: hidden;
   }
 
-  @media (min-width: 30rem) {
+  @media (min-width: 480px) {
     .leverui-date-picker__tableCellTrigger:not(
         [data-unstyled]
       )[data-outside-range][data-hide-outside-days-sm='true'] {
@@ -18,7 +18,7 @@
     }
   }
 
-  @media (min-width: 48rem) {
+  @media (min-width: 768px) {
     .leverui-date-picker__tableCellTrigger:not(
         [data-unstyled]
       )[data-outside-range][data-hide-outside-days-md='true'] {
@@ -31,7 +31,7 @@
     }
   }
 
-  @media (min-width: 62rem) {
+  @media (min-width: 1024px) {
     .leverui-date-picker__tableCellTrigger:not(
         [data-unstyled]
       )[data-outside-range][data-hide-outside-days-lg='true'] {
@@ -44,7 +44,7 @@
     }
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     .leverui-date-picker__tableCellTrigger:not(
         [data-unstyled]
       )[data-outside-range][data-hide-outside-days-xl='true'] {
@@ -57,7 +57,7 @@
     }
   }
 
-  @media (min-width: 96rem) {
+  @media (min-width: 1536px) {
     .leverui-date-picker__tableCellTrigger:not(
         [data-unstyled]
       )[data-outside-range][data-hide-outside-days-2xl='true'] {

@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 30rem) {
+  @media (min-width: 480px) {
     .leverui-editable__root[data-size-sm='sm'] {
       --leverui-private-editable-font-size: var(--leverui-font-sizes-sm);
       --leverui-private-editable-line-height: 1.25rem;
@@ -17,7 +17,7 @@
     }
   }
 
-  @media (min-width: 48rem) {
+  @media (min-width: 768px) {
     .leverui-editable__root[data-size-md='sm'] {
       --leverui-private-editable-font-size: var(--leverui-font-sizes-sm);
       --leverui-private-editable-line-height: 1.25rem;
@@ -35,7 +35,7 @@
     }
   }
 
-  @media (min-width: 64rem) {
+  @media (min-width: 1024px) {
     .leverui-editable__root[data-size-lg='sm'] {
       --leverui-private-editable-font-size: var(--leverui-font-sizes-sm);
       --leverui-private-editable-line-height: 1.25rem;
@@ -53,7 +53,7 @@
     }
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     .leverui-editable__root[data-size-xl='sm'] {
       --leverui-private-editable-font-size: var(--leverui-font-sizes-sm);
       --leverui-private-editable-line-height: 1.25rem;
@@ -71,7 +71,7 @@
     }
   }
 
-  @media (min-width: 96rem) {
+  @media (min-width: 1536px) {
     .leverui-editable__root[data-size-2xl='sm'] {
       --leverui-private-editable-font-size: var(--leverui-font-sizes-sm);
       --leverui-private-editable-line-height: 1.25rem;

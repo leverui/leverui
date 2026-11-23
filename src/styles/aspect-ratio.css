@@ -25,31 +25,31 @@
       object-fit: cover;
     }
 
-    @media (min-width: 30rem) {
+    @media (min-width: 480px) {
       &::before {
         padding-bottom: var(--leverui-private-aspect-ratio-padding-sm, 75%);
       }
     }
 
-    @media (min-width: 48rem) {
+    @media (min-width: 768px) {
       &::before {
         padding-bottom: var(--leverui-private-aspect-ratio-padding-md, 75%);
       }
     }
 
-    @media (min-width: 64rem) {
+    @media (min-width: 1024px) {
       &::before {
         padding-bottom: var(--leverui-private-aspect-ratio-padding-lg, 75%);
       }
     }
 
-    @media (min-width: 80rem) {
+    @media (min-width: 1280px) {
       &::before {
         padding-bottom: var(--leverui-private-aspect-ratio-padding-xl, 75%);
       }
     }
 
-    @media (min-width: 96rem) {
+    @media (min-width: 1536px) {
       &::before {
         padding-bottom: var(--leverui-private-aspect-ratio-padding-2xl, 75%);
       }

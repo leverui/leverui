@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 64rem) {
+  @media (min-width: 1024px) {
     .leverui-native-select__root:not([data-unstyled])[data-variant-lg='outline'] {
       --leverui-private-native-select-background: transparent;
       --leverui-private-native-select-border-width: 1px;
@@ -32,7 +32,7 @@
       --leverui-private-native-select-focus-width: var(--focus-ring-width, 1px);
     }
   }
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     .leverui-native-select__root:not([data-unstyled])[data-variant-xl='outline'] {
       --leverui-private-native-select-background: transparent;
       --leverui-private-native-select-border-width: 1px;
@@ -65,7 +65,7 @@
       --leverui-private-native-select-focus-width: var(--focus-ring-width, 1px);
     }
   }
-  @media (min-width: 96rem) {
+  @media (min-width: 1536px) {
     .leverui-native-select__root:not([data-unstyled])[data-variant-2xl='outline'] {
       --leverui-private-native-select-background: transparent;
       --leverui-private-native-select-border-width: 1px;

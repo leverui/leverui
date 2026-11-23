@@ -25,7 +25,7 @@
       column-gap: var(--leverui-private-wrap-column-gap-base);
     }
 
-    @media (min-width: 30rem) {
+    @media (min-width: 480px) {
       &[data-wrap-align-sm] {
         align-items: var(--leverui-private-wrap-align-sm);
       }
@@ -46,7 +46,7 @@
       }
     }
 
-    @media (min-width: 48rem) {
+    @media (min-width: 768px) {
       &[data-wrap-align-md] {
         align-items: var(--leverui-private-wrap-align-md);
       }
@@ -67,7 +67,7 @@
       }
     }
 
-    @media (min-width: 64rem) {
+    @media (min-width: 1024px) {
       &[data-wrap-align-lg] {
         align-items: var(--leverui-private-wrap-align-lg);
       }
@@ -88,7 +88,7 @@
       }
     }
 
-    @media (min-width: 80rem) {
+    @media (min-width: 1280px) {
       &[data-wrap-align-xl] {
         align-items: var(--leverui-private-wrap-align-xl);
       }
@@ -109,7 +109,7 @@
       }
     }
 
-    @media (min-width: 96rem) {
+    @media (min-width: 1536px) {
       &[data-wrap-align-2xl] {
         align-items: var(--leverui-private-wrap-align-2xl);
       }

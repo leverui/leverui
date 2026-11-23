@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 30rem) {
+  @media (min-width: 480px) {
     .leverui-tree-view__root:not([data-unstyled])[data-size-sm='xs'] {
       --leverui-private-tree-default-icon-size: var(--leverui-spacing-3);
       --leverui-private-tree-default-padding-inline: var(--leverui-spacing-2);
@@ -25,7 +25,7 @@
     }
   }
 
-  @media (min-width: 48rem) {
+  @media (min-width: 768px) {
     .leverui-tree-view__root:not([data-unstyled])[data-size-md='xs'] {
       --leverui-private-tree-default-icon-size: var(--leverui-spacing-3);
       --leverui-private-tree-default-padding-inline: var(--leverui-spacing-2);

@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 30rem) {
+  @media (min-width: 480px) {
     .leverui-tabs__root:not([data-unstyled]) {
       &[data-size-sm='sm'] {
         --leverui-private-tabs-height: var(--leverui-sizes-9);
@@ -30,7 +30,7 @@
     }
   }
 
-  @media (min-width: 48rem) {
+  @media (min-width: 768px) {
     .leverui-tabs__root:not([data-unstyled]) {
       &[data-size-md='sm'] {
         --leverui-private-tabs-height: var(--leverui-sizes-9);
@@ -61,7 +61,7 @@
     }
   }
 
-  @media (min-width: 64rem) {
+  @media (min-width: 1024px) {
     .leverui-tabs__root:not([data-unstyled]) {
       &[data-size-lg='sm'] {
         --leverui-private-tabs-height: var(--leverui-sizes-9);
@@ -92,7 +92,7 @@
     }
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     .leverui-tabs__root:not([data-unstyled]) {
       &[data-size-xl='sm'] {
         --leverui-private-tabs-height: var(--leverui-sizes-9);
@@ -123,7 +123,7 @@
     }
   }
 
-  @media (min-width: 96rem) {
+  @media (min-width: 1536px) {
     .leverui-tabs__root:not([data-unstyled]) {
       &[data-size-2xl='sm'] {
         --leverui-private-tabs-height: var(--leverui-sizes-9);

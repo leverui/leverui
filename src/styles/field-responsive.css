@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 30rem) {
+  @media (min-width: 480px) {
     .leverui-field__root[data-orientation-sm='vertical'] {
       --leverui-private-field-direction: column;
       --leverui-private-field-align: flex-start;
@@ -14,7 +14,7 @@
     }
   }
 
-  @media (min-width: 48rem) {
+  @media (min-width: 768px) {
     .leverui-field__root[data-orientation-md='vertical'] {
       --leverui-private-field-direction: column;
       --leverui-private-field-align: flex-start;
@@ -29,7 +29,7 @@
     }
   }
 
-  @media (min-width: 64rem) {
+  @media (min-width: 1024px) {
     .leverui-field__root[data-orientation-lg='vertical'] {
       --leverui-private-field-direction: column;
       --leverui-private-field-align: flex-start;
@@ -44,7 +44,7 @@
     }
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     .leverui-field__root[data-orientation-xl='vertical'] {
       --leverui-private-field-direction: column;
       --leverui-private-field-align: flex-start;
@@ -59,7 +59,7 @@
     }
   }
 
-  @media (min-width: 96rem) {
+  @media (min-width: 1536px) {
     .leverui-field__root[data-orientation-2xl='vertical'] {
       --leverui-private-field-direction: column;
       --leverui-private-field-align: flex-start;

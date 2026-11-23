@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 30rem) {
+  @media (min-width: 480px) {
     .leverui-input-element:not([data-unstyled])[data-placement-sm='start'] {
       inset-inline-start: 0;
       inset-inline-end: auto;
@@ -10,7 +10,7 @@
     }
   }
 
-  @media (min-width: 48rem) {
+  @media (min-width: 768px) {
     .leverui-input-element:not([data-unstyled])[data-placement-md='start'] {
       inset-inline-start: 0;
       inset-inline-end: auto;
@@ -21,7 +21,7 @@
     }
   }
 
-  @media (min-width: 64rem) {
+  @media (min-width: 1024px) {
     .leverui-input-element:not([data-unstyled])[data-placement-lg='start'] {
       inset-inline-start: 0;
       inset-inline-end: auto;
@@ -32,7 +32,7 @@
     }
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     .leverui-input-element:not([data-unstyled])[data-placement-xl='start'] {
       inset-inline-start: 0;
       inset-inline-end: auto;
@@ -43,7 +43,7 @@
     }
   }
 
-  @media (min-width: 96rem) {
+  @media (min-width: 1536px) {
     .leverui-input-element:not([data-unstyled])[data-placement-2xl='start'] {
       inset-inline-start: 0;
       inset-inline-end: auto;

@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 64rem) {
+  @media (min-width: 1024px) {
     .leverui-steps__root:not([data-unstyled])[data-variant-lg='solid'] {
       --leverui-private-steps-incomplete-bg: transparent;
       --leverui-private-steps-incomplete-border-width: var(--leverui-private-steps-thickness);
@@ -27,7 +27,7 @@
     }
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     .leverui-steps__root:not([data-unstyled])[data-variant-xl='solid'] {
       --leverui-private-steps-incomplete-bg: transparent;
       --leverui-private-steps-incomplete-border-width: var(--leverui-private-steps-thickness);
@@ -55,7 +55,7 @@
     }
   }
 
-  @media (min-width: 96rem) {
+  @media (min-width: 1536px) {
     .leverui-steps__root:not([data-unstyled])[data-variant-2xl='solid'] {
       --leverui-private-steps-incomplete-bg: transparent;
       --leverui-private-steps-incomplete-border-width: var(--leverui-private-steps-thickness);

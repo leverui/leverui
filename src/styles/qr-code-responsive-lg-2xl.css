@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 64rem) {
+  @media (min-width: 1024px) {
     .leverui-qr-code__root:not([data-unstyled])[data-size-lg='2xs'] {
       --leverui-private-qr-code-size: 40px;
     }
@@ -25,7 +25,7 @@
       --leverui-private-qr-code-size: 100%;
     }
   }
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     .leverui-qr-code__root:not([data-unstyled])[data-size-xl='2xs'] {
       --leverui-private-qr-code-size: 40px;
     }
@@ -51,7 +51,7 @@
       --leverui-private-qr-code-size: 100%;
     }
   }
-  @media (min-width: 96rem) {
+  @media (min-width: 1536px) {
     .leverui-qr-code__root:not([data-unstyled])[data-size-2xl='2xs'] {
       --leverui-private-qr-code-size: 40px;
     }

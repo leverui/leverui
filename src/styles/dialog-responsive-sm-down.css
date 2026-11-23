@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (max-width: 479px) {
+  @media (width < 480px) {
     .leverui-dialog__content[data-leverui-dialog-css][data-size-sm-down='xs'] {
       --leverui-private-dialog-size-max-width: var(--leverui-sizes-sm);
     }

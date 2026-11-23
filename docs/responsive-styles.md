@@ -20,7 +20,7 @@ import { Box, Button } from '@leverui/components';
   padding: var(--leverui-spacing-2);
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 768px) {
   .content-panel {
     padding: var(--leverui-spacing-6);
   }
@@ -39,9 +39,9 @@ before JavaScript runs.
 | `xl`       |        1280px |
 | `2xl`      |        1536px |
 
-Widths are in `rem` at a 16px reference size, so browser font settings and
-zoom can shift a breakpoint. Button size arrays follow `base`, `sm`, `md`,
-`lg`, `xl`, `2xl` order. Use `null` to leave a breakpoint unchanged.
+Widths are in pixels, so the browser's font size setting does not move a
+breakpoint. Button size arrays follow `base`, `sm`, `md`, `lg`, `xl`, `2xl`
+order. Use `null` to leave a breakpoint unchanged.
 
 ```tsx
 <Button size={['sm', null, 'lg']}>Save</Button>

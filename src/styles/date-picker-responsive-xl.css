@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     :is(.leverui-date-picker__root, .leverui-date-picker__content):not(
         [data-unstyled]
       )[data-size-xl='xs'] {
