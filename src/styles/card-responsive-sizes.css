@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 30rem) {
+  @media (min-width: 480px) {
     .leverui-card__root:not([data-unstyled])[data-size-sm='sm'] {
       --leverui-card-padding: var(--leverui-spacing-4);
       --leverui-private-card-title-size: var(--leverui-font-sizes-md);
@@ -19,7 +19,7 @@
     }
   }
 
-  @media (min-width: 48rem) {
+  @media (min-width: 768px) {
     .leverui-card__root:not([data-unstyled])[data-size-md='sm'] {
       --leverui-card-padding: var(--leverui-spacing-4);
       --leverui-private-card-title-size: var(--leverui-font-sizes-md);
@@ -39,7 +39,7 @@
     }
   }
 
-  @media (min-width: 64rem) {
+  @media (min-width: 1024px) {
     .leverui-card__root:not([data-unstyled])[data-size-lg='sm'] {
       --leverui-card-padding: var(--leverui-spacing-4);
       --leverui-private-card-title-size: var(--leverui-font-sizes-md);
@@ -59,7 +59,7 @@
     }
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     .leverui-card__root:not([data-unstyled])[data-size-xl='sm'] {
       --leverui-card-padding: var(--leverui-spacing-4);
       --leverui-private-card-title-size: var(--leverui-font-sizes-md);
@@ -79,7 +79,7 @@
     }
   }
 
-  @media (min-width: 96rem) {
+  @media (min-width: 1536px) {
     .leverui-card__root:not([data-unstyled])[data-size-2xl='sm'] {
       --leverui-card-padding: var(--leverui-spacing-4);
       --leverui-private-card-title-size: var(--leverui-font-sizes-md);

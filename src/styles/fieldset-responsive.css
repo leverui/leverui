@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 30rem) {
+  @media (min-width: 480px) {
     .leverui-fieldset__root[data-size-sm='sm'] {
       --leverui-private-fieldset-space-y: var(--leverui-spacing-2);
       --leverui-private-fieldset-content-gap: var(--leverui-spacing-1\.5);
@@ -20,7 +20,7 @@
     }
   }
 
-  @media (min-width: 48rem) {
+  @media (min-width: 768px) {
     .leverui-fieldset__root[data-size-md='sm'] {
       --leverui-private-fieldset-space-y: var(--leverui-spacing-2);
       --leverui-private-fieldset-content-gap: var(--leverui-spacing-1\.5);
@@ -41,7 +41,7 @@
     }
   }
 
-  @media (min-width: 64rem) {
+  @media (min-width: 1024px) {
     .leverui-fieldset__root[data-size-lg='sm'] {
       --leverui-private-fieldset-space-y: var(--leverui-spacing-2);
       --leverui-private-fieldset-content-gap: var(--leverui-spacing-1\.5);
@@ -62,7 +62,7 @@
     }
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     .leverui-fieldset__root[data-size-xl='sm'] {
       --leverui-private-fieldset-space-y: var(--leverui-spacing-2);
       --leverui-private-fieldset-content-gap: var(--leverui-spacing-1\.5);
@@ -83,7 +83,7 @@
     }
   }
 
-  @media (min-width: 96rem) {
+  @media (min-width: 1536px) {
     .leverui-fieldset__root[data-size-2xl='sm'] {
       --leverui-private-fieldset-space-y: var(--leverui-spacing-2);
       --leverui-private-fieldset-content-gap: var(--leverui-spacing-1\.5);

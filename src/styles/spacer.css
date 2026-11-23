@@ -9,31 +9,31 @@
     flex: var(--leverui-private-spacer-flex-base);
   }
 
-  @media (min-width: 30rem) {
+  @media (min-width: 480px) {
     .leverui-spacer[data-spacer-flex-sm] {
       flex: var(--leverui-private-spacer-flex-sm);
     }
   }
 
-  @media (min-width: 48rem) {
+  @media (min-width: 768px) {
     .leverui-spacer[data-spacer-flex-md] {
       flex: var(--leverui-private-spacer-flex-md);
     }
   }
 
-  @media (min-width: 64rem) {
+  @media (min-width: 1024px) {
     .leverui-spacer[data-spacer-flex-lg] {
       flex: var(--leverui-private-spacer-flex-lg);
     }
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     .leverui-spacer[data-spacer-flex-xl] {
       flex: var(--leverui-private-spacer-flex-xl);
     }
   }
 
-  @media (min-width: 96rem) {
+  @media (min-width: 1536px) {
     .leverui-spacer[data-spacer-flex-2xl] {
       flex: var(--leverui-private-spacer-flex-2xl);
     }

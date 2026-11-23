@@ -28,7 +28,7 @@
     );
     flex-wrap: var(--leverui-private-group-wrap-base, var(--leverui-group-wrap, nowrap));
 
-    @media (min-width: 30rem) {
+    @media (min-width: 480px) {
       align-items: var(--leverui-private-group-align-sm, var(--leverui-group-align, center));
       justify-content: var(
         --leverui-private-group-justify-sm,
@@ -37,7 +37,7 @@
       flex-wrap: var(--leverui-private-group-wrap-sm, var(--leverui-group-wrap, nowrap));
     }
 
-    @media (min-width: 48rem) {
+    @media (min-width: 768px) {
       align-items: var(--leverui-private-group-align-md, var(--leverui-group-align, center));
       justify-content: var(
         --leverui-private-group-justify-md,
@@ -46,7 +46,7 @@
       flex-wrap: var(--leverui-private-group-wrap-md, var(--leverui-group-wrap, nowrap));
     }
 
-    @media (min-width: 64rem) {
+    @media (min-width: 1024px) {
       align-items: var(--leverui-private-group-align-lg, var(--leverui-group-align, center));
       justify-content: var(
         --leverui-private-group-justify-lg,
@@ -55,7 +55,7 @@
       flex-wrap: var(--leverui-private-group-wrap-lg, var(--leverui-group-wrap, nowrap));
     }
 
-    @media (min-width: 80rem) {
+    @media (min-width: 1280px) {
       align-items: var(--leverui-private-group-align-xl, var(--leverui-group-align, center));
       justify-content: var(
         --leverui-private-group-justify-xl,
@@ -64,7 +64,7 @@
       flex-wrap: var(--leverui-private-group-wrap-xl, var(--leverui-group-wrap, nowrap));
     }
 
-    @media (min-width: 96rem) {
+    @media (min-width: 1536px) {
       align-items: var(--leverui-private-group-align-2xl, var(--leverui-group-align, center));
       justify-content: var(
         --leverui-private-group-justify-2xl,

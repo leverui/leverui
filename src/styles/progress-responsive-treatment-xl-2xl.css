@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     .leverui-progress__root:not([data-unstyled]) {
       &[data-variant-xl='outline'] {
         --leverui-private-progress-track-color: var(--leverui-colors-bg-muted);
@@ -30,7 +30,7 @@
     }
   }
 
-  @media (min-width: 96rem) {
+  @media (min-width: 1536px) {
     .leverui-progress__root:not([data-unstyled]) {
       &[data-variant-2xl='outline'] {
         --leverui-private-progress-track-color: var(--leverui-colors-bg-muted);

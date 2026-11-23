@@ -44,7 +44,7 @@
     flex-wrap: var(--leverui-private-stack-wrap-base, nowrap);
     gap: var(--leverui-private-stack-render-gap-base, 0.5rem);
 
-    @media (min-width: 30rem) {
+    @media (min-width: 480px) {
       flex-direction: var(--leverui-private-stack-direction-sm, column);
       align-items: var(--leverui-private-stack-align-sm, normal);
       justify-content: var(--leverui-private-stack-justify-sm, normal);
@@ -52,7 +52,7 @@
       gap: var(--leverui-private-stack-render-gap-sm, 0.5rem);
     }
 
-    @media (min-width: 48rem) {
+    @media (min-width: 768px) {
       flex-direction: var(--leverui-private-stack-direction-md, column);
       align-items: var(--leverui-private-stack-align-md, normal);
       justify-content: var(--leverui-private-stack-justify-md, normal);
@@ -60,7 +60,7 @@
       gap: var(--leverui-private-stack-render-gap-md, 0.5rem);
     }
 
-    @media (min-width: 64rem) {
+    @media (min-width: 1024px) {
       flex-direction: var(--leverui-private-stack-direction-lg, column);
       align-items: var(--leverui-private-stack-align-lg, normal);
       justify-content: var(--leverui-private-stack-justify-lg, normal);
@@ -68,7 +68,7 @@
       gap: var(--leverui-private-stack-render-gap-lg, 0.5rem);
     }
 
-    @media (min-width: 80rem) {
+    @media (min-width: 1280px) {
       flex-direction: var(--leverui-private-stack-direction-xl, column);
       align-items: var(--leverui-private-stack-align-xl, normal);
       justify-content: var(--leverui-private-stack-justify-xl, normal);
@@ -76,7 +76,7 @@
       gap: var(--leverui-private-stack-render-gap-xl, 0.5rem);
     }
 
-    @media (min-width: 96rem) {
+    @media (min-width: 1536px) {
       flex-direction: var(--leverui-private-stack-direction-2xl, column);
       align-items: var(--leverui-private-stack-align-2xl, normal);
       justify-content: var(--leverui-private-stack-justify-2xl, normal);

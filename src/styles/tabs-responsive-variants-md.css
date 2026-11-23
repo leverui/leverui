@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 48rem) {
+  @media (min-width: 768px) {
     .leverui-tabs__root:not([data-unstyled])[data-variant][data-variant-md] {
       .leverui-tabs__list:not([data-unstyled]) {
         --leverui-private-tabs-variant-display: inline-flex;

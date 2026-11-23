@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 30rem) {
+  @media (min-width: 480px) {
     .leverui-button:not([data-unstyled])[data-variant-sm='solid'] {
       --leverui-private-button-bg: var(--leverui-colors-color-palette-solid);
       --leverui-private-button-fg: var(--leverui-colors-color-palette-contrast);

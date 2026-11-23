@@ -16,11 +16,11 @@
       max-width: var(--leverui-container-fluid-max-width, var(--leverui-sizes-full));
     }
 
-    @media (min-width: 48rem) {
+    @media (min-width: 768px) {
       padding-inline: var(--leverui-container-padding-md, var(--leverui-spacing-6));
     }
 
-    @media (min-width: 64rem) {
+    @media (min-width: 1024px) {
       padding-inline: var(--leverui-container-padding-lg, var(--leverui-spacing-8));
     }
   }

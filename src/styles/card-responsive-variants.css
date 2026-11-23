@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 30rem) {
+  @media (min-width: 480px) {
     .leverui-card__root:not([data-unstyled])[data-variant-sm='elevated'] {
       --leverui-private-card-background: var(--leverui-colors-bg-panel);
       --leverui-private-card-shadow: var(--leverui-shadows-md);
@@ -16,7 +16,7 @@
     }
   }
 
-  @media (min-width: 48rem) {
+  @media (min-width: 768px) {
     .leverui-card__root:not([data-unstyled])[data-variant-md='elevated'] {
       --leverui-private-card-background: var(--leverui-colors-bg-panel);
       --leverui-private-card-shadow: var(--leverui-shadows-md);
@@ -33,7 +33,7 @@
     }
   }
 
-  @media (min-width: 64rem) {
+  @media (min-width: 1024px) {
     .leverui-card__root:not([data-unstyled])[data-variant-lg='elevated'] {
       --leverui-private-card-background: var(--leverui-colors-bg-panel);
       --leverui-private-card-shadow: var(--leverui-shadows-md);
@@ -50,7 +50,7 @@
     }
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     .leverui-card__root:not([data-unstyled])[data-variant-xl='elevated'] {
       --leverui-private-card-background: var(--leverui-colors-bg-panel);
       --leverui-private-card-shadow: var(--leverui-shadows-md);
@@ -67,7 +67,7 @@
     }
   }
 
-  @media (min-width: 96rem) {
+  @media (min-width: 1536px) {
     .leverui-card__root:not([data-unstyled])[data-variant-2xl='elevated'] {
       --leverui-private-card-background: var(--leverui-colors-bg-panel);
       --leverui-private-card-shadow: var(--leverui-shadows-md);

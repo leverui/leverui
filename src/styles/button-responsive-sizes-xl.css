@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     .leverui-button:not([data-unstyled])[data-size-xl='2xs'] {
       height: var(--leverui-sizes-6);
       min-width: var(--leverui-sizes-6);

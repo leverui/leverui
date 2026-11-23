@@ -1,6 +1,6 @@
 @layer leverui.recipes {
   .leverui-input-group:not([data-unstyled]) {
-    @media (min-width: 64rem) {
+    @media (min-width: 1024px) {
       &[data-group-start-lg] {
         > :is(
           .leverui-input,
@@ -37,7 +37,7 @@
         }
       }
     }
-    @media (min-width: 80rem) {
+    @media (min-width: 1280px) {
       &[data-group-start-xl] {
         > :is(
           .leverui-input,
@@ -74,7 +74,7 @@
         }
       }
     }
-    @media (min-width: 96rem) {
+    @media (min-width: 1536px) {
       &[data-group-start-2xl] {
         > :is(
           .leverui-input,

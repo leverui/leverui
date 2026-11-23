@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 64rem) {
+  @media (min-width: 1024px) {
     .leverui-steps__root:not([data-unstyled])[data-size-lg='xs'] {
       --leverui-private-steps-root-gap: var(--leverui-spacing-2\.5);
       --leverui-private-steps-size: var(--leverui-sizes-6);
@@ -41,7 +41,7 @@
     }
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     .leverui-steps__root:not([data-unstyled])[data-size-xl='xs'] {
       --leverui-private-steps-root-gap: var(--leverui-spacing-2\.5);
       --leverui-private-steps-size: var(--leverui-sizes-6);
@@ -83,7 +83,7 @@
     }
   }
 
-  @media (min-width: 96rem) {
+  @media (min-width: 1536px) {
     .leverui-steps__root:not([data-unstyled])[data-size-2xl='xs'] {
       --leverui-private-steps-root-gap: var(--leverui-spacing-2\.5);
       --leverui-private-steps-size: var(--leverui-sizes-6);

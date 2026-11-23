@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 30rem) {
+  @media (min-width: 480px) {
     .leverui-number-input__root:not([data-unstyled])[data-size-sm='xs'] {
       --leverui-private-number-input-stepper-width: var(
         --leverui-number-input-stepper-width,
@@ -33,7 +33,7 @@
     }
   }
 
-  @media (min-width: 48rem) {
+  @media (min-width: 768px) {
     .leverui-number-input__root:not([data-unstyled])[data-size-md='xs'] {
       --leverui-private-number-input-stepper-width: var(
         --leverui-number-input-stepper-width,

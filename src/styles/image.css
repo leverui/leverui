@@ -31,7 +31,7 @@
       object-fit: scale-down;
     }
 
-    @media (min-width: 30rem) {
+    @media (min-width: 480px) {
       object-position: var(
         --leverui-private-image-align-sm,
         var(--leverui-image-position, 50% 50%)
@@ -53,7 +53,7 @@
       }
     }
 
-    @media (min-width: 48rem) {
+    @media (min-width: 768px) {
       object-position: var(
         --leverui-private-image-align-md,
         var(--leverui-image-position, 50% 50%)
@@ -75,7 +75,7 @@
       }
     }
 
-    @media (min-width: 64rem) {
+    @media (min-width: 1024px) {
       object-position: var(
         --leverui-private-image-align-lg,
         var(--leverui-image-position, 50% 50%)
@@ -97,7 +97,7 @@
       }
     }
 
-    @media (min-width: 80rem) {
+    @media (min-width: 1280px) {
       object-position: var(
         --leverui-private-image-align-xl,
         var(--leverui-image-position, 50% 50%)
@@ -119,7 +119,7 @@
       }
     }
 
-    @media (min-width: 96rem) {
+    @media (min-width: 1536px) {
       object-position: var(
         --leverui-private-image-align-2xl,
         var(--leverui-image-position, 50% 50%)

@@ -9,7 +9,7 @@
     --leverui-private-tree-selected-fg: var(--leverui-colors-color-palette-contrast);
   }
 
-  @media (min-width: 30rem) {
+  @media (min-width: 480px) {
     .leverui-tree-view__root:not([data-unstyled])[data-variant-sm='subtle'] {
       --leverui-private-tree-selected-bg: var(--leverui-colors-color-palette-subtle);
       --leverui-private-tree-selected-fg: var(--leverui-colors-color-palette-fg);
@@ -21,7 +21,7 @@
     }
   }
 
-  @media (min-width: 48rem) {
+  @media (min-width: 768px) {
     .leverui-tree-view__root:not([data-unstyled])[data-variant-md='subtle'] {
       --leverui-private-tree-selected-bg: var(--leverui-colors-color-palette-subtle);
       --leverui-private-tree-selected-fg: var(--leverui-colors-color-palette-fg);
@@ -33,7 +33,7 @@
     }
   }
 
-  @media (min-width: 64rem) {
+  @media (min-width: 1024px) {
     .leverui-tree-view__root:not([data-unstyled])[data-variant-lg='subtle'] {
       --leverui-private-tree-selected-bg: var(--leverui-colors-color-palette-subtle);
       --leverui-private-tree-selected-fg: var(--leverui-colors-color-palette-fg);
@@ -45,7 +45,7 @@
     }
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     .leverui-tree-view__root:not([data-unstyled])[data-variant-xl='subtle'] {
       --leverui-private-tree-selected-bg: var(--leverui-colors-color-palette-subtle);
       --leverui-private-tree-selected-fg: var(--leverui-colors-color-palette-fg);
@@ -57,7 +57,7 @@
     }
   }
 
-  @media (min-width: 96rem) {
+  @media (min-width: 1536px) {
     .leverui-tree-view__root:not([data-unstyled])[data-variant-2xl='subtle'] {
       --leverui-private-tree-selected-bg: var(--leverui-colors-color-palette-subtle);
       --leverui-private-tree-selected-fg: var(--leverui-colors-color-palette-fg);

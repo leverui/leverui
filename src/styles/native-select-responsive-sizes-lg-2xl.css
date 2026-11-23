@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 64rem) {
+  @media (min-width: 1024px) {
     .leverui-native-select__root:not([data-unstyled])[data-size-lg='xs'] {
       --leverui-private-native-select-height: var(--leverui-sizes-8);
       --leverui-private-native-select-font-size: var(--leverui-font-sizes-xs);
@@ -50,7 +50,7 @@
       --leverui-private-native-select-indicator-inset-end: var(--leverui-spacing-3);
     }
   }
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     .leverui-native-select__root:not([data-unstyled])[data-size-xl='xs'] {
       --leverui-private-native-select-height: var(--leverui-sizes-8);
       --leverui-private-native-select-font-size: var(--leverui-font-sizes-xs);
@@ -101,7 +101,7 @@
       --leverui-private-native-select-indicator-inset-end: var(--leverui-spacing-3);
     }
   }
-  @media (min-width: 96rem) {
+  @media (min-width: 1536px) {
     .leverui-native-select__root:not([data-unstyled])[data-size-2xl='xs'] {
       --leverui-private-native-select-height: var(--leverui-sizes-8);
       --leverui-private-native-select-font-size: var(--leverui-font-sizes-xs);

@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 64rem) {
+  @media (min-width: 1024px) {
     .leverui-tags-input__root:not([data-unstyled]) {
       &[data-variant-lg='outline'] {
         --leverui-private-tags-input-control-bg: var(--leverui-colors-bg);
@@ -48,7 +48,7 @@
       }
     }
   }
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     .leverui-tags-input__root:not([data-unstyled]) {
       &[data-variant-xl='outline'] {
         --leverui-private-tags-input-control-bg: var(--leverui-colors-bg);
@@ -97,7 +97,7 @@
       }
     }
   }
-  @media (min-width: 96rem) {
+  @media (min-width: 1536px) {
     .leverui-tags-input__root:not([data-unstyled]) {
       &[data-variant-2xl='outline'] {
         --leverui-private-tags-input-control-bg: var(--leverui-colors-bg);

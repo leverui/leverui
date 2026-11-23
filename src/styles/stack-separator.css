@@ -27,7 +27,7 @@
       --leverui-private-stack-border-top: 0;
     }
 
-    @media (min-width: 30rem) {
+    @media (min-width: 480px) {
       &[data-direction-sm='column'],
       &[data-direction-sm='column-reverse'] {
         --leverui-private-stack-margin-inline: 0;
@@ -44,7 +44,7 @@
       }
     }
 
-    @media (min-width: 48rem) {
+    @media (min-width: 768px) {
       &[data-direction-md='column'],
       &[data-direction-md='column-reverse'] {
         --leverui-private-stack-margin-inline: 0;
@@ -61,7 +61,7 @@
       }
     }
 
-    @media (min-width: 64rem) {
+    @media (min-width: 1024px) {
       &[data-direction-lg='column'],
       &[data-direction-lg='column-reverse'] {
         --leverui-private-stack-margin-inline: 0;
@@ -78,7 +78,7 @@
       }
     }
 
-    @media (min-width: 80rem) {
+    @media (min-width: 1280px) {
       &[data-direction-xl='column'],
       &[data-direction-xl='column-reverse'] {
         --leverui-private-stack-margin-inline: 0;
@@ -95,7 +95,7 @@
       }
     }
 
-    @media (min-width: 96rem) {
+    @media (min-width: 1536px) {
       &[data-direction-2xl='column'],
       &[data-direction-2xl='column-reverse'] {
         --leverui-private-stack-margin-inline: 0;

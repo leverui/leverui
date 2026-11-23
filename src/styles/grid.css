@@ -63,7 +63,7 @@
       display: inline-grid;
     }
 
-    @media (min-width: 30rem) {
+    @media (min-width: 480px) {
       grid-template-columns: var(--leverui-private-grid-template-columns-sm, none);
       grid-auto-flow: var(--leverui-private-grid-auto-flow-sm, row);
       grid-auto-rows: var(--leverui-private-grid-auto-rows-sm, auto);
@@ -74,7 +74,7 @@
       grid-row: var(--leverui-private-grid-row-sm, auto);
     }
 
-    @media (min-width: 48rem) {
+    @media (min-width: 768px) {
       grid-template-columns: var(--leverui-private-grid-template-columns-md, none);
       grid-auto-flow: var(--leverui-private-grid-auto-flow-md, row);
       grid-auto-rows: var(--leverui-private-grid-auto-rows-md, auto);
@@ -85,7 +85,7 @@
       grid-row: var(--leverui-private-grid-row-md, auto);
     }
 
-    @media (min-width: 64rem) {
+    @media (min-width: 1024px) {
       grid-template-columns: var(--leverui-private-grid-template-columns-lg, none);
       grid-auto-flow: var(--leverui-private-grid-auto-flow-lg, row);
       grid-auto-rows: var(--leverui-private-grid-auto-rows-lg, auto);
@@ -96,7 +96,7 @@
       grid-row: var(--leverui-private-grid-row-lg, auto);
     }
 
-    @media (min-width: 80rem) {
+    @media (min-width: 1280px) {
       grid-template-columns: var(--leverui-private-grid-template-columns-xl, none);
       grid-auto-flow: var(--leverui-private-grid-auto-flow-xl, row);
       grid-auto-rows: var(--leverui-private-grid-auto-rows-xl, auto);
@@ -107,7 +107,7 @@
       grid-row: var(--leverui-private-grid-row-xl, auto);
     }
 
-    @media (min-width: 96rem) {
+    @media (min-width: 1536px) {
       grid-template-columns: var(--leverui-private-grid-template-columns-2xl, none);
       grid-auto-flow: var(--leverui-private-grid-auto-flow-2xl, row);
       grid-auto-rows: var(--leverui-private-grid-auto-rows-2xl, auto);

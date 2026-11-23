@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (width < 30rem) {
+  @media (width < 480px) {
     .leverui-group:not([data-unstyled])[data-joined-base='vertical']:has(
         > :nth-child(
           2 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
@@ -32,7 +32,7 @@
       }
     }
   }
-  @media (30rem <= width < 48rem) {
+  @media (480px <= width < 768px) {
     .leverui-group:not([data-unstyled])[data-joined-sm='vertical']:has(
         > :nth-child(
           2 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])
@@ -65,7 +65,7 @@
       }
     }
   }
-  @media (48rem <= width < 64rem) {
+  @media (768px <= width < 1024px) {
     .leverui-group:not([data-unstyled])[data-joined-md='vertical']:has(
         > :nth-child(
           2 of :not(style):not([data-leverui-group-skip]):not([data-leverui-group-auto-skip])

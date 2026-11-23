@@ -42,7 +42,8 @@ removed prop must be updated in its guide in the same change.
 
 `pnpm build` also bundles `src/styles/*.css` into `dist/styles.css` and strips
 its whitespace and comments. Values stay as authored, so a variable reads back
-the same string. Import `@leverui/components/styles.css` before an
+the same string. The bundler rejects a width query that is not one of the five
+pixel breakpoints. Import `@leverui/components/styles.css` before an
 application's theme CSS. Components read those static rules directly from the
 stylesheet.
 

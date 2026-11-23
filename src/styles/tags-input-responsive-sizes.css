@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 30rem) {
+  @media (min-width: 480px) {
     .leverui-tags-input__root:not([data-unstyled])[data-size-sm='xs'] {
       --leverui-private-tags-input-height: var(--leverui-sizes-8);
       --leverui-private-tags-input-item-height: var(--leverui-sizes-6);
@@ -25,7 +25,7 @@
       --leverui-private-tags-input-line-height: 1.5rem;
     }
   }
-  @media (min-width: 48rem) {
+  @media (min-width: 768px) {
     .leverui-tags-input__root:not([data-unstyled])[data-size-md='xs'] {
       --leverui-private-tags-input-height: var(--leverui-sizes-8);
       --leverui-private-tags-input-item-height: var(--leverui-sizes-6);
@@ -51,7 +51,7 @@
       --leverui-private-tags-input-line-height: 1.5rem;
     }
   }
-  @media (min-width: 64rem) {
+  @media (min-width: 1024px) {
     .leverui-tags-input__root:not([data-unstyled])[data-size-lg='xs'] {
       --leverui-private-tags-input-height: var(--leverui-sizes-8);
       --leverui-private-tags-input-item-height: var(--leverui-sizes-6);
@@ -77,7 +77,7 @@
       --leverui-private-tags-input-line-height: 1.5rem;
     }
   }
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     .leverui-tags-input__root:not([data-unstyled])[data-size-xl='xs'] {
       --leverui-private-tags-input-height: var(--leverui-sizes-8);
       --leverui-private-tags-input-item-height: var(--leverui-sizes-6);
@@ -103,7 +103,7 @@
       --leverui-private-tags-input-line-height: 1.5rem;
     }
   }
-  @media (min-width: 96rem) {
+  @media (min-width: 1536px) {
     .leverui-tags-input__root:not([data-unstyled])[data-size-2xl='xs'] {
       --leverui-private-tags-input-height: var(--leverui-sizes-8);
       --leverui-private-tags-input-item-height: var(--leverui-sizes-6);

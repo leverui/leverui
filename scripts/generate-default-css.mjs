@@ -6,6 +6,9 @@ import { defaultCssFiles } from './default-css-sources.mjs';
 const output = new URL('../dist/styles.css', import.meta.url);
 const sourceDirectory = new URL('../src/styles/', import.meta.url);
 
+// The same widths as the `--leverui-breakpoints-*` variables and `breakpoint-thresholds.ts`.
+const breakpointWidths = ['480px', '768px', '1024px', '1280px', '1536px'];
+
 const layerOrder =
   '@layer leverui.reset,leverui.base,leverui.tokens,leverui.recipes,leverui.utilities;';
 
@@ -18,9 +21,23 @@ async function verifySourceList() {
   }
 }
 
+/** Reject a width query that is not one of the five pixel breakpoints. */
+function verifyBreakpoints(name, css) {
+  for (const [query] of css.matchAll(/@media[^{]*width[^{]*/g)) {
+    for (const [width] of query.matchAll(/[\d.]+[a-z]+/g)) {
+      if (!breakpointWidths.includes(width)) {
+        throw new Error(
+          `CSS source uses a width that is not a breakpoint: ${name}: ${query.trim()}`,
+        );
+      }
+    }
+  }
+}
+
 /** Read one authored CSS fragment and reject source files over the project limit. */
 async function readSource(name) {
   const css = await readFile(new URL(name, sourceDirectory), 'utf8');
+  verifyBreakpoints(name, css);
   if (css.trimEnd().split('\n').length > 200) {
     throw new Error(`CSS source exceeds 200 lines: ${name}`);
   }

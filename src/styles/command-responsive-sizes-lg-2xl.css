@@ -1,5 +1,5 @@
 @layer leverui.recipes {
-  @media (min-width: 62rem) {
+  @media (min-width: 1024px) {
     .leverui-command__root:not([data-unstyled])[data-size-lg='sm'] {
       --leverui-private-command-control-padding-x: var(--leverui-spacing-3);
       --leverui-private-command-input-height: var(--leverui-sizes-10);
@@ -46,7 +46,7 @@
     }
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: 1280px) {
     .leverui-command__root:not([data-unstyled])[data-size-xl='sm'] {
       --leverui-private-command-control-padding-x: var(--leverui-spacing-3);
       --leverui-private-command-input-height: var(--leverui-sizes-10);
@@ -93,7 +93,7 @@
     }
   }
 
-  @media (min-width: 96rem) {
+  @media (min-width: 1536px) {
     .leverui-command__root:not([data-unstyled])[data-size-2xl='sm'] {
       --leverui-private-command-control-padding-x: var(--leverui-spacing-3);
       --leverui-private-command-input-height: var(--leverui-sizes-10);
