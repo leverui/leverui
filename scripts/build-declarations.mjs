@@ -16,7 +16,7 @@ import {
 const projectRoot = fileURLToPath(new URL('../', import.meta.url));
 const sourceRoot = join(projectRoot, 'src');
 const entryFile = join(sourceRoot, 'index.ts');
-const batchSize = 16;
+const batchSize = 64;
 const memoryMiB = Number(process.env.LEVERUI_DECLARATION_MEMORY_MIB ?? 2048);
 
 if (!Number.isInteger(memoryMiB) || memoryMiB < 256) {

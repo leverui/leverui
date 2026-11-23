@@ -55,9 +55,11 @@ configuration enables `exactOptionalPropertyTypes` and
 `noUncheckedIndexedAccess` for every check, so the library stays valid for
 applications, such as the website, that turn them on. After a failure,
 rerun the builder with its printed `--resume` path. A memory-limited batch
-splits into smaller checks. Project checks use a 1.25 GiB heap cap and a
-1.5 GiB cap only for an individual file that needs it. This avoids the
-full-project native TypeScript 7 process that exceeded 3 GiB.
+splits into smaller checks. Project checks run 64 roots per process under a
+2 GiB heap cap, and a 3 GiB cap only for an individual file that needs it.
+Declaration checks run 64 modules per process. Each process loads the shared
+type graph first, so larger batches are faster. This avoids the full-project
+native TypeScript 7 process that exceeded 3 GiB.
 
 Keep these rules enforced as components and examples evolve. A passing build
 or format check does not count as passing lint.
