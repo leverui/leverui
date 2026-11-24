@@ -100,6 +100,14 @@ under `latest`, and the prerelease becomes what a plain
 `npm install @leverui/components` installs. The `prepack` script rebuilds the
 package before it is uploaded.
 
+Until `1.0.0` ships, also point `latest` at the new prerelease. npm set
+`latest` on the first publish, so without this step a plain
+`npm install @leverui/components` keeps installing the older prerelease:
+
+```sh
+npm dist-tag add @leverui/components@1.0.0-next.1 latest
+```
+
 Confirm the release and its tags:
 
 ```sh
