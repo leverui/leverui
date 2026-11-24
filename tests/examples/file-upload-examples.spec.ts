@@ -43,7 +43,7 @@ async function verifiesNativePicker({ page }: { page: Page }): Promise<void> {
   await page.getByRole('button', { name: 'Upload file' }).click();
   const chooser = await chooserPromise;
   await chooser.setFiles(sampleFile('notes.txt'));
-  await expect(page.getByText('notes.txt')).toBeVisible();
+  await expect(page.getByText('notes.txt', { exact: true })).toBeVisible();
 
   await openStory(page, 'accepted-files');
   await expect(page.locator('input[type="file"]')).toHaveAttribute('accept', 'image/png');

@@ -45,7 +45,8 @@ async function verifiesButtonGeometry({ page }: { page: Page }): Promise<void> {
       async () => (await basic.boundingBox())?.width,
       { timeout: 15_000 },
     )
-    .toBeCloseTo(78.85, 1);
+    // Linux and macOS draw the label a fraction of a pixel apart.
+    .toBeCloseTo(78.85, 0);
   const basicBounds = await basic.boundingBox();
   expect(basicBounds?.height).toBe(40);
 
