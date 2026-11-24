@@ -24,6 +24,11 @@ packed archive into a separate app and renders it in Chromium. The release
 bundle check runs before a release instead; see [Releasing](releasing.md). The
 workflow is `.github/workflows/ci.yml`.
 
+The browser and example suites take about an hour each, so they run nightly in
+`.github/workflows/browser.yml` instead of on every pull request. Start a run
+by hand from the repository's Actions tab. A failed run keeps its Playwright
+traces as a downloadable artifact for seven days.
+
 `pnpm format` applies Prettier. `pnpm lint:fix` applies only safe ESLint fixes;
 review the diff afterward.
 

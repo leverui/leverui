@@ -1,0 +1,48 @@
+name: Browser tests
+
+# The browser and example suites take about an hour each, so they run nightly
+# instead of on every pull request. They also run when this file changes, and
+# can be started by hand from the Actions tab.
+on:
+  schedule:
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths: ['.github/workflows/browser.yml']
+
+permissions:
+  contents: read
+
+jobs:
+  browser:
+    name: Browser
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/install
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm test:browser
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-results
+          path: test-results
+          retention-days: 7
+
+  examples:
+    name: Examples
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/install
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm test:examples
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: example-results
+          path: test-results
+          retention-days: 7
