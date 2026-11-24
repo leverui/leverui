@@ -22,7 +22,8 @@ const webServerCommands = [
 export default defineConfig({
   testDir: exampleGallery ? './tests/examples' : './tests/browser',
   ...(switchGuideOnly && { testMatch: '**/switch-guide-*.spec.ts' }),
-  timeout: 60_000,
+  // GitHub's machines are slower, and gallery tests open many stories in one test.
+  timeout: process.env.CI ? 180_000 : 60_000,
   expect: { timeout: 15_000 },
   workers: 2,
   use: {

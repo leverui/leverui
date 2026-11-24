@@ -65,7 +65,10 @@ async function verifiesClosedHydration({ page }: { page: Page }): Promise<void> 
   await expect(content).toBeVisible();
   await expect(content).toHaveCSS('background-color', 'rgb(12, 34, 56)');
   expect(await content.evaluate(isInsideServerRoot)).toBe(false);
-  await page.mouse.move(400, 200);
+  // Leave through the far corner, which neither the trigger nor the tooltip can reach.
+  const viewport = page.viewportSize();
+  if (!viewport) throw new Error('The page has no viewport size.');
+  await page.mouse.move(viewport.width - 1, viewport.height - 1);
   await expect(content).toHaveCount(0);
   expect(errors).toEqual([]);
 }
