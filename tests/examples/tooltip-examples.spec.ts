@@ -126,11 +126,12 @@ async function verifiesMultipleTooltips({ page }: { page: Page }): Promise<void>
 /** Verify delayed opening and pointer entry into interactive content. */
 async function verifiesTimingAndInteraction({ page }: { page: Page }): Promise<void> {
   await page.goto('/iframe.html?id=components-tooltip--delay');
-  await page.getByRole('button', { name: /Delay/ }).hover();
   const delayed = page.getByText('This tooltip opens after half a second');
-  await page.waitForTimeout(200);
-  await expect(delayed).not.toBeVisible();
+  // Time from before the hover, so a slow machine can only make the delay look longer.
+  const hoverStart = Date.now();
+  await page.getByRole('button', { name: /Delay/ }).hover();
   await expect(delayed).toBeVisible();
+  expect(Date.now() - hoverStart).toBeGreaterThanOrEqual(450);
 
   await page.goto('/iframe.html?id=components-tooltip--interactive');
   await page.getByRole('button', { name: 'Hover me' }).hover();

@@ -1,5 +1,10 @@
 import { expect, test, type Page } from '@playwright/test';
 
+/** Read the page's current clock time. */
+function readNow(): number {
+  return Date.now();
+}
+
 /** Open one advanced Combobox gallery canvas. */
 async function openStory(page: Page, id: string): Promise<void> {
   await page.goto(`/iframe.html?id=components-combobox--${id}`);
@@ -74,10 +79,15 @@ test('Combobox branded company list disables Halcyon', verifiesDisabledItem);
 
 /** Check asynchronous crew results, loading feedback, and request failures. */
 async function verifiesAsync({ page }: { page: Page }): Promise<void> {
+  await page.clock.install();
   await openStory(page, 'async');
   const input = page.getByRole('combobox');
+  await expect(input).toBeVisible();
+  // Hold the simulated request so slow machines still see the brief loading state.
+  await page.clock.pauseAt((await page.evaluate(readNow)) + 1_000);
   await input.fill('rhea');
   await expect(page.getByText('Loading...')).toBeVisible();
+  await page.clock.resume();
   await expect(page.getByRole('option', { name: /Rhea Solano/ })).toBeVisible();
   await expect(page.getByRole('option')).toHaveCount(1);
   await page.context().setOffline(true);
