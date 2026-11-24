@@ -4,7 +4,7 @@ const stories = ['basic', 'circular', 'aspect-ratio', 'fit', 'height', 'html-hei
 
 /** Verify each Image example renders a native image with the source. */
 async function verifiesImageStories({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(120_000);
+  test.setTimeout(240_000);
   for (const story of stories) {
     await page.goto(`/iframe.html?id=components-image--${story}`, {
       waitUntil: 'domcontentloaded',

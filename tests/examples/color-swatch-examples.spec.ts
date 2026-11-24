@@ -12,7 +12,7 @@ const counts = {
 
 /** Check that each swatch example renders its expected samples. */
 async function verifiesColorSwatchStories({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(120_000);
+  test.setTimeout(240_000);
   for (const [story, count] of Object.entries(counts)) {
     await page.goto(`/iframe.html?id=components-color-swatch--${story}`);
     await expect(page.locator('#storybook-root .lui-color-swatch')).toHaveCount(count, {

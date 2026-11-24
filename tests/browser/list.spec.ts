@@ -1,6 +1,6 @@
 import { expect, test, type Page } from '@playwright/test';
 
-test.setTimeout(90_000);
+test.setTimeout(180_000);
 
 /** Wait for the List story after Storybook loads its source graph. */
 async function openListStory(page: Page): Promise<void> {

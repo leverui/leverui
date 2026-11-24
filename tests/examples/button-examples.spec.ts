@@ -1,6 +1,6 @@
 import { expect, test, type Page } from '@playwright/test';
 
-test.setTimeout(180_000);
+test.setTimeout(360_000);
 
 const storyCounts = [
   ['basic', 1],

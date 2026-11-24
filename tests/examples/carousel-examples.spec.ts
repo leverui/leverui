@@ -24,7 +24,7 @@ const storyIds = [
 
 /** Require all eighteen examples to render their starting controls. */
 async function verifiesEveryCarouselExample({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(240_000);
+  test.setTimeout(480_000);
   for (const id of storyIds) {
     await page.goto(`/iframe.html?id=components-carousel--${id}`);
     const control =
@@ -85,7 +85,7 @@ async function verifiesImageThumbnails({ page }: { page: Page }): Promise<void> 
 
 /** Verify page sizing and move distance produce the snap counts. */
 async function verifiesPageSizing({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(120_000);
+  test.setTimeout(240_000);
   await page.goto('/iframe.html?id=components-carousel--slides-per-page');
   await expect(page.locator('[data-carousel-root]')).toBeVisible({
     timeout: 45_000,

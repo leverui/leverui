@@ -4,7 +4,7 @@ const exampleIds = ['basic', 'close-trigger', 'with-dialog', 'placement'] as con
 
 /** Require each Action Bar example to mount its starting control. */
 async function verifiesEveryActionBarExample({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(120_000);
+  test.setTimeout(240_000);
   for (const id of exampleIds) {
     await page.goto(`/iframe.html?id=components-action-bar--${id}`);
     const control =

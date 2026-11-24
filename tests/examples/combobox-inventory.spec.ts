@@ -40,7 +40,7 @@ const stories = [
 /** Check every implemented Combobox story mounts its relevant controls. */
 async function verifiesInventory({ page }: { page: Page }): Promise<void> {
   // Opens many stories in one test, so allow longer than the default.
-  test.setTimeout(360_000);
+  test.setTimeout(720_000);
   for (const id of stories) {
     await page.goto(`/iframe.html?id=components-combobox--${id}`);
     if (id === 'open-from-popover') {

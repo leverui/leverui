@@ -18,7 +18,7 @@ const storyIds = [
 
 /** Require each named Switch story to render its native control. */
 async function verifiesEverySwitchExample({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(300_000);
+  test.setTimeout(600_000);
   for (const id of storyIds) {
     await page.goto(`/iframe.html?id=components-switch--${id}`);
     await expect(

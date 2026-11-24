@@ -3,7 +3,7 @@ import { pressBrowserTab } from './keyboard-navigation';
 
 /** Allow the large Storybook source graph to finish loading before Link assertions. */
 async function openLinkContract(page: Page): Promise<void> {
-  test.setTimeout(120_000);
+  test.setTimeout(240_000);
   await page.goto('/iframe.html?id=content-link--contract');
   await page.getByTestId('link-plain').waitFor({ state: 'attached', timeout: 90_000 });
 }

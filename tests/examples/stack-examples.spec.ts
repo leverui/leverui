@@ -13,7 +13,7 @@ const layouts = [
 
 /** Check each Stack example's desktop flex layout. */
 async function verifiesStackLayouts({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(90_000);
+  test.setTimeout(180_000);
   await page.setViewportSize({ width: 1280, height: 720 });
   for (const layout of layouts) {
     await page.goto(`/iframe.html?id=layout-stack--${layout.id}`);

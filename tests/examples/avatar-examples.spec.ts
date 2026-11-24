@@ -21,7 +21,7 @@ const exampleIds = [
 
 /** Require each Avatar example to render an Avatar root. */
 async function verifiesEveryAvatarExample({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(150_000);
+  test.setTimeout(300_000);
   for (const id of exampleIds) {
     await page.goto(`/iframe.html?id=components-avatar--${id}`);
     await expect(

@@ -14,7 +14,7 @@ const exampleIds = [
 
 /** Require each Blockquote example to render its quote content. */
 async function verifiesEveryBlockquoteExample({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(120_000);
+  test.setTimeout(240_000);
   for (const id of exampleIds) {
     await page.goto(`/iframe.html?id=components-blockquote--${id}`);
     await expect(

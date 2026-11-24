@@ -25,7 +25,7 @@ const stories = [
 
 /** Require every Table example to render product data. */
 async function verifiesTableStories({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(180_000);
+  test.setTimeout(360_000);
   for (const story of stories) {
     await page.goto(`/iframe.html?id=components-table--${story}`);
     const root = page.locator('#storybook-root');

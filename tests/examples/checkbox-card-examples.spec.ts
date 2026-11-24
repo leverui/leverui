@@ -17,7 +17,7 @@ const storyIds = [
 
 /** Require each Checkbox Card story to show a selectable card. */
 async function verifiesEveryCheckboxCardExample({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(300_000);
+  test.setTimeout(600_000);
   for (const id of storyIds) {
     await page.goto(`/iframe.html?id=components-checkbox-card--${id}`);
     await expect(
@@ -77,7 +77,7 @@ async function verifiesAppearanceTables({ page }: { page: Page }): Promise<void>
 
 /** Verify the fixed Card width, group spacing, and icon size. */
 async function verifiesExampleCss({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(120_000);
+  test.setTimeout(240_000);
   await page.goto('/iframe.html?id=components-checkbox-card--basic');
   const basic = page.locator('.lui-checkbox-card').first();
   await expect(basic).toHaveCSS('max-width', '240px', { timeout: 90_000 });

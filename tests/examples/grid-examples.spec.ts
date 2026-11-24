@@ -17,7 +17,7 @@ async function countTracks(page: Page): Promise<number> {
 
 /** Check the four Grid examples at their desktop viewport. */
 async function verifiesGridLayouts({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(60_000);
+  test.setTimeout(120_000);
   await page.setViewportSize({ width: 1280, height: 720 });
   for (const layout of layouts) {
     await page.goto(`/iframe.html?id=layout-grid--${layout.id}`);

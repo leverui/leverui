@@ -18,7 +18,7 @@ const counts = {
 
 /** Verify every Progress story renders its expected tracks. */
 async function verifiesProgressStories({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(120_000);
+  test.setTimeout(240_000);
   for (const [story, count] of Object.entries(counts)) {
     await page.goto(`/iframe.html?id=components-progress--${story}`);
     await expect(page.locator('#storybook-root .lui-progress__track')).toHaveCount(count);

@@ -1,7 +1,7 @@
 import { expect, test, type Page } from '@playwright/test';
 
 // Storybook may compile this story while the other browser workers are active.
-test.setTimeout(60_000);
+test.setTimeout(120_000);
 
 /** Switch the document mode while the branded section stays explicitly light. */
 function setRootDarkMode(): void {

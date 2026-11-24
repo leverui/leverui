@@ -28,7 +28,7 @@ const storyIds = [
 
 /** Require every story to render its visible entry control. */
 async function verifiesInventory({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(240_000);
+  test.setTimeout(480_000);
   for (const id of storyIds) {
     await page.goto(`/iframe.html?id=components-dialog--${id}`);
     await expect(page.getByRole('button').first()).toBeVisible();

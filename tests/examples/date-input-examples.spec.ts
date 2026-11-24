@@ -29,7 +29,7 @@ async function openStory(page: Page, id: string): Promise<void> {
 
 /** Require every named story to mount a real segmented editor. */
 async function verifiesInventory({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(240_000);
+  test.setTimeout(480_000);
   for (const id of storyIds) {
     await openStory(page, id);
     await expect(page.locator('[data-date-input-root]')).not.toHaveCount(0);

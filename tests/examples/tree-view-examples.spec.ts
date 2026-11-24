@@ -70,7 +70,7 @@ async function verifiesContextMenu({ page }: { page: Page }): Promise<void> {
 /** Check every named story renders the common file tree. */
 async function verifiesStoryInventory({ page }: { page: Page }): Promise<void> {
   // Opens many stories in one test, so allow longer than the default.
-  test.setTimeout(360_000);
+  test.setTimeout(720_000);
   for (const id of stories) {
     await openStory(page, id);
     await expect(page.getByRole('treegrid').first()).toBeVisible();

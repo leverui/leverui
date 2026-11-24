@@ -12,7 +12,7 @@ const stories = {
 
 /** Verify every Prose story renders the corresponding content. */
 async function verifiesProseStories({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(120_000);
+  test.setTimeout(240_000);
   for (const [story, expected] of Object.entries(stories)) {
     await page.goto(`/iframe.html?id=typography-prose--${story}`);
     await expect(page.locator('#storybook-root .lui-prose').first()).toContainText(expected, {

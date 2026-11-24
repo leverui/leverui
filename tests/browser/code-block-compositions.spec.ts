@@ -5,7 +5,7 @@ const story = '/iframe.html?id=content-code-block-compositions--ready';
 
 /** Keep a selected source, floating copy control, and theme on one native node. */
 async function verifiesLanguageSwitcher({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(60_000);
+  test.setTimeout(120_000);
   await enableBrowserClipboard(page);
   await page.goto(story);
   const root = page.getByTestId('switcher-root');

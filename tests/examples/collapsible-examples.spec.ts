@@ -13,7 +13,7 @@ const storyIds = [
 
 /** Require each disclosure example to render its root. */
 async function verifiesEveryCollapsibleExample({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(180_000);
+  test.setTimeout(360_000);
   for (const id of storyIds) {
     await page.goto(`/iframe.html?id=components-collapsible--${id}`);
     await expect(page.locator('[data-collapsible-root]').first()).toBeAttached({

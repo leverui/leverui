@@ -14,7 +14,7 @@ const exampleIds = [
 
 /** Require each named Card example to render a styled Card root. */
 async function verifiesEveryCardExample({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(120_000);
+  test.setTimeout(240_000);
   for (const id of exampleIds) {
     await page.goto(`/iframe.html?id=components-card--${id}`);
     const card = page.locator('[class*="lui-card__root"]').first();

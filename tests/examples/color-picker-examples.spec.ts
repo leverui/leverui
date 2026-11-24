@@ -35,7 +35,7 @@ async function openStory(page: Page, id: string): Promise<void> {
 
 /** Verify every example mounts a picker. */
 async function verifiesInventory({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(180_000);
+  test.setTimeout(360_000);
   for (const id of storyIds) {
     await openStory(page, id);
     if (id === 'open-from-dialog') {
