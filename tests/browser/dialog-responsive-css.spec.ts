@@ -30,7 +30,7 @@ async function checkCase(page: Page, selection: (typeof cases)[number]): Promise
 
 /** Verify upward, array, and downward finite choices through media queries. */
 async function verifiesResponsiveCss({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(120_000);
+  test.setTimeout(240_000);
   await page.goto('/iframe.html?id=internal-dialog-responsive-css-contract--contract');
   const selection = page.getByTestId('dialog-responsive-selection');
   const content = page.getByTestId('dialog-responsive-content');

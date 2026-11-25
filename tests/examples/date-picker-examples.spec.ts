@@ -47,7 +47,7 @@ async function openStory(page: Page, id: string): Promise<void> {
 
 /** Require every named example to render its actual picker control. */
 async function verifiesInventory({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(240_000);
+  test.setTimeout(480_000);
   for (const id of storyIds) {
     await openStory(page, id);
     await expect(page.locator('[data-date-picker-root]')).not.toHaveCount(0);

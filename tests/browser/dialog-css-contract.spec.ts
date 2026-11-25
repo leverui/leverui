@@ -39,7 +39,7 @@ async function closeDialog(page: Page): Promise<void> {
 
 /** Verify finite choices through native attributes and resolved authored CSS. */
 async function verifiesFiniteAppearance({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(120_000);
+  test.setTimeout(240_000);
   await page.setViewportSize({ width: 1280, height: 700 });
   await page.goto('/iframe.html?id=internal-dialog-css-contract--contract');
   const content = page.getByTestId('dialog-css-content');

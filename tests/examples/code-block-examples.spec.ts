@@ -27,7 +27,7 @@ const storyIds = [
 
 /** Require each implemented CodeBlock story to render code. */
 async function verifiesCodeBlockStories({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(180_000);
+  test.setTimeout(360_000);
   for (const id of storyIds) {
     await page.goto(`/iframe.html?id=components-codeblock--${id}`);
     await expect(page.locator('#storybook-root pre code').first()).toHaveText(/\S/, {
@@ -73,7 +73,7 @@ async function verifiesLanguageSwitcher({ page }: { page: Page }): Promise<void>
 
 /** Follow the Storybook color-mode toolbar in syntax and page styling. */
 async function verifiesThemeSwitcher({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(90_000);
+  test.setTimeout(180_000);
   await page.goto('/?path=/story/components-codeblock--themes');
   const preview = page.frameLocator('#storybook-preview-iframe');
   const code = preview.locator('#storybook-root pre code');

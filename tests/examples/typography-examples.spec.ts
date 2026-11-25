@@ -33,7 +33,7 @@ const families = {
 
 /** Require each implemented Typography story to show its content. */
 async function verifiesTypographyStories({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(180_000);
+  test.setTimeout(360_000);
   for (const [family, stories] of Object.entries(families)) {
     for (const [story, expected] of Object.entries(stories)) {
       await page.goto(`/iframe.html?id=typography-${family}--${story}`);

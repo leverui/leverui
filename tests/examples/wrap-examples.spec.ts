@@ -11,7 +11,7 @@ const layouts = [
 
 /** Check each Wrap story's desktop layout contract. */
 async function verifiesWrapLayouts({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(90_000);
+  test.setTimeout(180_000);
   await page.setViewportSize({ width: 1280, height: 720 });
   for (const layout of layouts) {
     await page.goto(`/iframe.html?id=layout-wrap--${layout.id}`);

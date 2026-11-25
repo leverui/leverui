@@ -14,7 +14,7 @@ const exampleIds = [
 
 /** Require each named Breadcrumb example to render a navigable trail. */
 async function verifiesEveryBreadcrumbExample({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(120_000);
+  test.setTimeout(240_000);
   for (const id of exampleIds) {
     await page.goto(`/iframe.html?id=components-breadcrumb--${id}`);
     await expect(

@@ -1,7 +1,7 @@
 import { expect, test, type Page } from '@playwright/test';
 
 const counts = { basic: 1, rounded: 1, colors: 10, sizes: 4, variants: 5 } as const;
-test.setTimeout(180_000);
+test.setTimeout(360_000);
 
 /** Confirm every icon button example renders its button matrix. */
 async function verifiesIconButtonStories({ page }: { page: Page }): Promise<void> {

@@ -65,7 +65,9 @@ async function verifiesClosedHydration({ page }: { page: Page }): Promise<void> 
   await expect(content).toBeVisible();
   await expect(content).toHaveCSS('background-color', 'rgb(12, 34, 56)');
   expect(await content.evaluate(isInsideServerRoot)).toBe(false);
-  await page.mouse.move(400, 200);
+  // Linux Chromium sends no pointerleave on a setContent page, so close with Escape;
+  // tooltip.spec.ts covers closing on pointer leave.
+  await page.keyboard.press('Escape');
   await expect(content).toHaveCount(0);
   expect(errors).toEqual([]);
 }

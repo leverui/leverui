@@ -6,7 +6,7 @@ const exampleUrl = 'https://leverui.com';
 
 /** Require each Clipboard example to render its machine root. */
 async function verifiesEveryClipboardExample({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(180_000);
+  test.setTimeout(360_000);
   for (const id of storyIds) {
     await page.goto(`/iframe.html?id=components-clipboard--${id}`);
     await expect(

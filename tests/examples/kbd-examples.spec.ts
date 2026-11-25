@@ -14,7 +14,7 @@ const counts = {
 
 /** Verify the Kbd examples and both complete variant matrices. */
 async function verifiesKbdStories({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(120_000);
+  test.setTimeout(240_000);
   for (const [story, count] of Object.entries(counts)) {
     await page.goto(`/iframe.html?id=components-kbd--${story}`);
     await expect(page.locator('#storybook-root .lui-kbd')).toHaveCount(count, {

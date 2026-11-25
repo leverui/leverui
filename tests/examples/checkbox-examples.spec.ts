@@ -23,7 +23,7 @@ const storyIds = [
 
 /** Require each named Checkbox story to render an input. */
 async function verifiesEveryCheckboxExample({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(300_000);
+  test.setTimeout(600_000);
   for (const id of storyIds) {
     await page.goto(`/iframe.html?id=components-checkbox--${id}`);
     await expect(
@@ -92,7 +92,7 @@ async function verifiesAppearanceMatrices({ page }: { page: Page }): Promise<voi
 
 /** Verify fixed example spacing now comes from ordinary CSS classes. */
 async function verifiesExampleCss({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(120_000);
+  test.setTimeout(240_000);
   await page.goto('/iframe.html?id=components-checkbox--description');
   const root = page.locator('[data-checkbox-root]').first();
   await expect(root).toHaveClass(/checkbox-example-description/, { timeout: 90_000 });

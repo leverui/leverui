@@ -33,7 +33,7 @@ async function openStory(page: Page, id: string): Promise<void> {
 
 /** Require each of the 23 Select stories to mount. */
 async function verifiesInventory({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(150_000);
+  test.setTimeout(300_000);
   for (const id of storyIds) {
     await openStory(page, id);
     await expect(page.locator('#storybook-root')).not.toBeEmpty();

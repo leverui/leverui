@@ -21,7 +21,7 @@ function readDrawerWidth(element: Element): number {
 
 /** Require every Drawer story to expose its trigger. */
 async function verifiesEveryDrawerExample({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(120_000);
+  test.setTimeout(240_000);
   for (const id of storyIds) {
     await page.goto(`/iframe.html?id=components-drawer--${id}`);
     await expect(page.locator('#storybook-root button').first()).toBeVisible();

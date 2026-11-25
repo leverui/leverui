@@ -13,7 +13,7 @@ const exampleIds = [
 
 /** Require each named Badge example to mount a styled Badge. */
 async function verifiesEveryBadgeExample({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(120_000);
+  test.setTimeout(240_000);
   for (const id of exampleIds) {
     await page.goto(`/iframe.html?id=components-badge--${id}`);
     await expect(

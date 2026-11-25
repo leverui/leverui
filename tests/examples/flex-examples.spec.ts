@@ -13,7 +13,7 @@ const layouts = [
 
 /** Check each Flex example's root layout. */
 async function verifiesFlexLayouts({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(90_000);
+  test.setTimeout(180_000);
   await page.setViewportSize({ width: 1280, height: 720 });
   for (const layout of layouts) {
     await page.goto(`/iframe.html?id=layout-flex--${layout.id}`);

@@ -11,7 +11,7 @@ async function openTooltip(page: Page, example: string, triggerName: string): Pr
   return content;
 }
 
-/** Compare a browser box with the measured within rendering tolerance. */
+/** Compare a browser box with the measured one, allowing for Linux and macOS text widths. */
 async function expectReferenceBox(
   locator: Locator,
   reference: { x: number; y: number; width: number; height: number },
@@ -30,7 +30,7 @@ async function expectReferenceBox(
         );
       },
     )
-    .toBeLessThan(2);
+    .toBeLessThan(5);
 }
 
 /** Preserve the bottom surface and eight-pixel arrow. */

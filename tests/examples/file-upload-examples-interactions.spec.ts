@@ -20,7 +20,7 @@ async function verifiesFormAndClear({ page }: { page: Page }): Promise<void> {
 
   await openStory(page, 'input-clear');
   await page.locator('input[type="file"]').setInputFiles(sampleFile('attachment.txt'));
-  await expect(page.getByText('attachment.txt')).toBeVisible();
+  await expect(page.getByText('attachment.txt', { exact: true })).toBeVisible();
   await page.getByRole('button', { name: 'Clear file' }).click();
   await expect(page.getByText('Select file(s)')).toBeVisible();
 }
@@ -40,7 +40,7 @@ async function verifiesDialog({ page }: { page: Page }): Promise<void> {
   await page.getByRole('button', { name: 'Open dialog' }).click();
   await expect(page.getByRole('dialog', { name: 'Upload a file' })).toBeVisible();
   await page.locator('input[type="file"]').setInputFiles(sampleFile('dialog.txt'));
-  await expect(page.getByText('dialog.txt')).toBeVisible();
+  await expect(page.getByText('dialog.txt', { exact: true })).toBeVisible();
 }
 
 /** Check image previews and clipboard file selection. */

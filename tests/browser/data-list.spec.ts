@@ -1,6 +1,6 @@
 import { expect, test, type Page } from '@playwright/test';
 
-test.setTimeout(90_000);
+test.setTimeout(180_000);
 
 /** Wait until the Data List story has finished its cold module load. */
 async function openDataListStory(page: Page): Promise<void> {

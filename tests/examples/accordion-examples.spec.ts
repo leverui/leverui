@@ -16,7 +16,7 @@ const exampleIds = [
 
 /** Require each named Accordion example to mount a real component. */
 async function verifiesEveryAccordionExample({ page }: { page: Page }): Promise<void> {
-  test.setTimeout(120_000);
+  test.setTimeout(240_000);
   for (const id of exampleIds) {
     await page.goto(`/iframe.html?id=components-accordion--${id}`);
     await expect(

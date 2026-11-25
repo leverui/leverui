@@ -6,20 +6,21 @@ async function verifiesHoverCardTiming({ page }: { page: Page }): Promise<void> 
   const trigger = page.getByTestId('hover-timing-trigger');
   const content = page.getByTestId('hover-timing-content');
   await expect(trigger).toBeVisible({ timeout: 30_000 });
+  // Time from before each move, so a slow machine can only make a delay look longer.
+  const openStart = Date.now();
   await trigger.hover();
-  await page.waitForTimeout(120);
-  await expect(content).toHaveCount(0);
   await expect(content).toBeVisible({ timeout: 5_000 });
+  expect(Date.now() - openStart).toBeGreaterThanOrEqual(550);
 
   const triggerBox = await trigger.boundingBox();
   const contentBox = await content.boundingBox();
   if (!triggerBox || !contentBox) throw new Error('Hover Card placement boxes are missing.');
   expect(contentBox.y + contentBox.height).toBeLessThan(triggerBox.y + 8);
 
+  const closeStart = Date.now();
   await page.mouse.move(1_000, 650);
-  await page.waitForTimeout(120);
-  await expect(content).toBeVisible();
   await expect(content).toHaveCount(0, { timeout: 5_000 });
+  expect(Date.now() - closeStart).toBeGreaterThanOrEqual(350);
 }
 
 test('Hover Card honors delays and top placement', verifiesHoverCardTiming);
